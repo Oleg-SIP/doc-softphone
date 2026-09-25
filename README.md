@@ -48,8 +48,8 @@ choosing English in the selector keeps English.
 
 ## Publishing
 
-`.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every
-push to `main`. The address comes from the repository's Pages settings, so
+`.github/workflows/deploy.yml` builds every push and publishes the
+repository's default branch to GitHub Pages. The address comes from the repository's Pages settings, so
 nothing in the code changes when the site moves:
 
 1. **Settings → Pages → Build and deployment → Source: GitHub Actions.**
