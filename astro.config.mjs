@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { languages } from './src/i18n/languages.mjs';
 import { languageRedirect } from './src/i18n/redirect.mjs';
+import { sidebar } from './src/i18n/sidebar.mjs';
 
 /* Where the site is published. The defaults are the final address;
    a test deployment overrides them, e.g. for GitHub Pages:
@@ -24,6 +25,7 @@ export default defineConfig({
       favicon: '/favicon.svg',
       defaultLocale: 'root',
       locales,
+      sidebar,
       customCss: ['./src/styles/theme.css'],
       head: [
         { tag: 'link', attrs: { rel: 'icon', href: `${base.replace(/\/$/, '')}/favicon.ico`, sizes: '32x32' } },

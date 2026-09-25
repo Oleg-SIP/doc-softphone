@@ -1,6 +1,19 @@
 {
   "docs.name": "Tài liệu",
   "docs.site": "Trang web sản phẩm",
-  "docs.map.title": "Tài liệu bao gồm những gì",
-  "docs.map.lead": "Các hướng dẫn đang được viết. Mỗi chủ đề dưới đây sẽ trở thành một chương riêng — bằng cả ba mươi ngôn ngữ mà điện thoại hỗ trợ."
+  "docs.home.title": "Tài liệu AI Softphone",
+  "docs.home.lead": "Cách kết nối AI Softphone với tổng đài, thiết lập âm thanh và ghi âm cuộc gọi, và ghi lại các cuộc họp trong ứng dụng khác.",
+  "docs.start": "Trước khi bắt đầu",
+  "docs.sections": "Các phần",
+  "docs.sec.sip.desc": "Kết nối điện thoại với tổng đài IP hoặc nhà cung cấp VoIP, sau đó thiết lập âm thanh, codec, BLF và ghi âm cuộc gọi.",
+  "docs.sec.capture.desc": "Ghi lại cuộc họp trong Zoom, Teams, Meet hoặc bất kỳ ứng dụng nào khác ngay từ máy tính.",
+  "nav.sip": "Tài khoản SIP",
+  "nav.sip.setup": "Thiết lập tài khoản SIP",
+  "nav.sip.advanced": "Cài đặt nâng cao của tài khoản SIP",
+  "nav.sip.devices": "Thiết bị",
+  "nav.sip.codecs": "Codec",
+  "nav.sip.recording": "Ghi âm cuộc gọi",
+  "nav.capture": "Ghi âm bên ngoài",
+  "nav.capture.setup": "Thiết lập ghi âm bên ngoài",
+  "docs.soon": "Bài viết này đang được soạn."
 }

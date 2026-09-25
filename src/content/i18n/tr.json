@@ -1,6 +1,19 @@
 {
   "docs.name": "Belgeler",
   "docs.site": "Ürün web sitesi",
-  "docs.map.title": "Belgeler neleri kapsıyor",
-  "docs.map.lead": "Kılavuzlar şu anda yazılıyor. Aşağıdaki her konu kendi başına bir bölüm olacak — telefonun konuştuğu otuz dilin hepsinde."
+  "docs.home.title": "AI Softphone belgeleri",
+  "docs.home.lead": "AI Softphone'u santralinize bağlama, ses ve çağrı kaydını ayarlama ve diğer uygulamalardaki toplantıları kaydetme.",
+  "docs.start": "Başlamadan önce",
+  "docs.sections": "Bölümler",
+  "docs.sec.sip.desc": "Telefonu IP santralinize veya VoIP sağlayıcınıza bağlayın, ardından ses, kodekler, BLF ve çağrı kaydını ayarlayın.",
+  "docs.sec.capture.desc": "Zoom, Teams, Meet veya başka herhangi bir uygulamadaki toplantıları doğrudan bilgisayardan kaydedin.",
+  "nav.sip": "SIP hesapları",
+  "nav.sip.setup": "SIP hesabı kurulumu",
+  "nav.sip.advanced": "SIP hesabının gelişmiş ayarları",
+  "nav.sip.devices": "Aygıtlar",
+  "nav.sip.codecs": "Kodekler",
+  "nav.sip.recording": "Çağrı kaydı",
+  "nav.capture": "Harici kayıt",
+  "nav.capture.setup": "Harici kaydın ayarlanması",
+  "docs.soon": "Bu makale hazırlanıyor."
 }

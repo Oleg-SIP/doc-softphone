@@ -1,6 +1,19 @@
 {
   "docs.name": "Dokumentáció",
   "docs.site": "A termék weboldala",
-  "docs.map.title": "Mit tartalmaz a dokumentáció",
-  "docs.map.lead": "Az útmutatók most készülnek. Az alábbi témák mindegyike külön fejezet lesz — mind a harminc nyelven, amelyen a telefon beszél."
+  "docs.home.title": "AI Softphone dokumentáció",
+  "docs.home.lead": "Hogyan csatlakoztassa az AI Softphone-t a telefonközpontjához, hogyan állítsa be a hangot és a hívásrögzítést, és hogyan rögzítsen értekezleteket más alkalmazásokban.",
+  "docs.start": "Mielőtt elkezdené",
+  "docs.sections": "Részek",
+  "docs.sec.sip.desc": "A telefon csatlakoztatása IP-alközponthoz vagy VoIP-szolgáltatóhoz, majd a hang, a kodekek, a BLF és a hívásrögzítés beállítása.",
+  "docs.sec.capture.desc": "Értekezletek rögzítése Zoomban, Teamsben, Meetben vagy bármely más alkalmazásban közvetlenül a számítógépről.",
+  "nav.sip": "SIP-fiókok",
+  "nav.sip.setup": "SIP-fiók beállítása",
+  "nav.sip.advanced": "SIP-fiók speciális beállításai",
+  "nav.sip.devices": "Eszközök",
+  "nav.sip.codecs": "Kodekek",
+  "nav.sip.recording": "Hívásrögzítés",
+  "nav.capture": "Külső rögzítés",
+  "nav.capture.setup": "Külső rögzítés beállítása",
+  "docs.soon": "Ez a cikk készülőben van."
 }

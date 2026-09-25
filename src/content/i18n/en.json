@@ -1,6 +1,19 @@
 {
   "docs.name": "Documentation",
   "docs.site": "Product website",
-  "docs.map.title": "What the documentation covers",
-  "docs.map.lead": "The guides are being written now. Each topic below becomes a chapter of its own, in all thirty languages the phone speaks."
+  "docs.home.title": "AI Softphone documentation",
+  "docs.home.lead": "How to connect AI Softphone to your PBX, set up sound and call recording, and record meetings held in other applications.",
+  "docs.start": "Before you start",
+  "docs.sections": "Sections",
+  "docs.sec.sip.desc": "Connect the phone to your IP PBX or VoIP provider, then set up sound, codecs, BLF and call recording.",
+  "docs.sec.capture.desc": "Record meetings in Zoom, Teams, Meet or any other application straight from the computer.",
+  "nav.sip": "SIP accounts",
+  "nav.sip.setup": "Setting up a SIP account",
+  "nav.sip.advanced": "Advanced SIP account settings",
+  "nav.sip.devices": "Devices",
+  "nav.sip.codecs": "Codecs",
+  "nav.sip.recording": "Call recording",
+  "nav.capture": "External recording",
+  "nav.capture.setup": "Setting up external recording",
+  "docs.soon": "This article is being written."
 }

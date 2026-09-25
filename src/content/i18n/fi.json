@@ -1,6 +1,19 @@
 {
   "docs.name": "Dokumentaatio",
   "docs.site": "Tuotteen verkkosivusto",
-  "docs.map.title": "Mitä dokumentaatio kattaa",
-  "docs.map.lead": "Ohjeita kirjoitetaan parhaillaan. Jokaisesta alla olevasta aiheesta tulee oma lukunsa — kaikilla kolmellakymmenellä kielellä, joita puhelin puhuu."
+  "docs.home.title": "AI Softphonen dokumentaatio",
+  "docs.home.lead": "Näin yhdistät AI Softphonen puhelinvaihteeseen, määrität äänen ja puheluiden tallennuksen sekä tallennat kokouksia muissa sovelluksissa.",
+  "docs.start": "Ennen kuin aloitat",
+  "docs.sections": "Osiot",
+  "docs.sec.sip.desc": "Yhdistä puhelin IP-vaihteeseen tai VoIP-palveluntarjoajaan ja määritä sitten ääni, koodekit, BLF ja puheluiden tallennus.",
+  "docs.sec.capture.desc": "Tallenna kokouksia Zoomissa, Teamsissa, Meetissä tai missä tahansa muussa sovelluksessa suoraan tietokoneelta.",
+  "nav.sip": "SIP-tilit",
+  "nav.sip.setup": "SIP-tilin määrittäminen",
+  "nav.sip.advanced": "SIP-tilin lisäasetukset",
+  "nav.sip.devices": "Laitteet",
+  "nav.sip.codecs": "Koodekit",
+  "nav.sip.recording": "Puheluiden tallennus",
+  "nav.capture": "Ulkoinen tallennus",
+  "nav.capture.setup": "Ulkoisen tallennuksen määrittäminen",
+  "docs.soon": "Tätä artikkelia kirjoitetaan parhaillaan."
 }

@@ -1,6 +1,19 @@
 {
   "docs.name": "Documentație",
   "docs.site": "Site-ul produsului",
-  "docs.map.title": "Ce acoperă documentația",
-  "docs.map.lead": "Ghidurile sunt scrise chiar acum. Fiecare subiect de mai jos va deveni un capitol separat — în toate cele treizeci de limbi pe care le vorbește telefonul."
+  "docs.home.title": "Documentația AI Softphone",
+  "docs.home.lead": "Cum conectați AI Softphone la centrala telefonică, cum configurați sunetul și înregistrarea convorbirilor și cum înregistrați întâlnirile din alte aplicații.",
+  "docs.start": "Înainte de a începe",
+  "docs.sections": "Secțiuni",
+  "docs.sec.sip.desc": "Conectarea telefonului la centrala IP sau la furnizorul VoIP, apoi configurarea sunetului, a codecurilor, a BLF și a înregistrării convorbirilor.",
+  "docs.sec.capture.desc": "Înregistrați întâlniri din Zoom, Teams, Meet sau orice altă aplicație direct de pe computer.",
+  "nav.sip": "Conturi SIP",
+  "nav.sip.setup": "Configurarea unui cont SIP",
+  "nav.sip.advanced": "Setări avansate ale contului SIP",
+  "nav.sip.devices": "Dispozitive",
+  "nav.sip.codecs": "Codecuri",
+  "nav.sip.recording": "Înregistrarea convorbirilor",
+  "nav.capture": "Înregistrare externă",
+  "nav.capture.setup": "Configurarea înregistrării externe",
+  "docs.soon": "Acest articol este în curs de redactare."
 }

@@ -1,9 +1,10 @@
 ---
-/* The body of the home page, in every language. Its words are the
-   product site's own (src/data/site/<lang>.json) plus the handful the
-   documentation needs for itself (src/content/i18n/<lang>.json). */
-import { Card, CardGrid, LinkCard, Badge } from '@astrojs/starlight/components';
-import { languages } from '../i18n/languages.mjs';
+/* The body of the home page, in every language: what the documentation
+   covers and where to start. The words are the documentation's own
+   (src/content/i18n/<lang>.json) and the product site's
+   (src/data/site/<lang>.json). Links are relative, so they work under
+   any language prefix and any base path. */
+import { LinkCard, CardGrid, LinkButton } from '@astrojs/starlight/components';
 import { siteText, siteUrl, plain } from '../i18n/site';
 
 interface Props {
@@ -12,210 +13,25 @@ interface Props {
 const { lang } = Astro.props;
 const s = siteText(lang);
 const t = Astro.locals.t;
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-
-const facts = [1, 2, 3, 4].map((n) => ({ n: s(`hero.fact${n}n`), text: s(`hero.fact${n}`) }));
-const steps = [1, 2, 3, 4].map((n) => ({ h: s(`how.s${n}.h`), p: s(`how.s${n}.p`) }));
-
-/* The chapters the documentation will have, in the order a new user
-   meets them: where conversations come from, what becomes of them,
-   the AI behind that, then the phone itself and what surrounds it. */
-const chapters = [
-  { key: 'f13', icon: 'comment' },
-  { key: 'f1', icon: 'phone' },
-  { key: 'f11', icon: 'laptop' },
-  { key: 'f3', icon: 'document' },
-  { key: 'f4', icon: 'magnifier' },
-  { key: 'f5', icon: 'pencil' },
-  { key: 'f6', icon: 'rocket' },
-  { key: 'f9', icon: 'puzzle' },
-  { key: 'f10', icon: 'padlock' },
-  { key: 'f8', icon: 'list-format' },
-  { key: 'f7', icon: 'window' },
-  { key: 'f2', icon: 'setting' },
-  { key: 'f12', icon: 'star' },
-] as const;
 ---
 
-<ul class="facts">
-  {
-    facts.map((f) => (
-      <li>
-        <strong>{f.n}</strong>
-        <span>{f.text}</span>
-      </li>
-    ))
-  }
-</ul>
+<p class="lead">{plain(s('footer.tagline').replace(/&nbsp;/g, ' '))} {t('docs.home.lead')}</p>
 
-<section>
-  <p class="kicker">{s('how.kicker')}</p>
-  <h2>{s('how.title')}</h2>
-  <p class="lead">{s('how.lead')}</p>
-  <ol class="flow">
-    {
-      steps.map((step) => (
-        <li>
-          <h3>{step.h}</h3>
-          <p>{step.p}</p>
-        </li>
-      ))
-    }
-  </ol>
-</section>
+<h2>{t('docs.sections')}</h2>
+<CardGrid>
+  <LinkCard title={t('nav.sip')} description={t('docs.sec.sip.desc')} href="sip-accounts/setup/" />
+  <LinkCard title={t('nav.capture')} description={t('docs.sec.capture.desc')} href="external-recording/setup/" />
+</CardGrid>
 
-<section>
-  <p class="kicker">{t('docs.name')}</p>
-  <h2>{t('docs.map.title')}</h2>
-  <p class="lead">{t('docs.map.lead')}</p>
-  <CardGrid>
-    {
-      chapters.map((c) => (
-        <Card title={s(`feat.${c.key}.h`)} icon={c.icon}>
-          <p>{plain(s(`feat.${c.key}.p`))}</p>
-          <Badge text={s('dl.soon')} variant="note" />
-        </Card>
-      ))
-    }
-  </CardGrid>
-</section>
-
-<section>
-  <CardGrid>
-    <LinkCard
-      title={s('int.home.title')}
-      description={plain(s('int.home.lead'))}
-      href={siteUrl(lang, 'integration.html')}
-    />
-    <LinkCard
-      title={s('ps.home.title')}
-      description={plain(s('ps.home.lead'))}
-      href={siteUrl(lang, 'prompt-studio.html')}
-    />
-  </CardGrid>
-</section>
-
-<section>
-  <h2>{s('lang.title')}</h2>
-  <p class="lead">{s('lang.lead')}</p>
-  <ul class="langs">
-    {
-      languages.map((l) => (
-        <li>
-          <a
-            href={`${base}/${l.dir === 'root' ? '' : `${l.dir}/`}`}
-            lang={l.code}
-            aria-current={l.code === lang ? 'page' : undefined}
-          >
-            {l.name}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
-</section>
+<h2>{t('docs.start')}</h2>
+<p>{plain(s('dl.foot'))}</p>
+<LinkButton href={siteUrl(lang, '', '#download')} icon="download" iconPlacement="start">
+  {s('nav.download')}
+</LinkButton>
 
 <style>
-  section {
-    margin-top: 3.5rem;
-  }
-  .kicker {
-    color: var(--sl-color-text-accent);
-    font-size: var(--sl-text-sm);
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  h2 {
-    margin-top: 0.25rem;
-  }
   .lead {
-    color: var(--sl-color-gray-2);
     font-size: var(--sl-text-lg);
-    max-width: 48rem;
-  }
-
-  .facts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1rem;
-    padding: 0;
-    list-style: none;
-  }
-  .facts li {
-    margin: 0;
-    padding: 1rem 1.25rem;
-    border: 1px solid var(--sl-color-gray-5);
-    border-radius: 0.75rem;
-    background: var(--sl-color-bg-nav);
-  }
-  .facts strong {
-    display: block;
-    color: var(--sl-color-white);
-    font-size: var(--sl-text-xl);
-  }
-  .facts span {
     color: var(--sl-color-gray-2);
-    font-size: var(--sl-text-sm);
-  }
-
-  .flow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    gap: 1rem;
-    padding: 0;
-    list-style: none;
-    counter-reset: step;
-  }
-  .flow li {
-    margin: 0;
-    padding: 1.25rem;
-    border: 1px solid var(--sl-color-gray-5);
-    border-radius: 0.75rem;
-    counter-increment: step;
-  }
-  .flow li::before {
-    content: counter(step);
-    display: inline-grid;
-    place-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: var(--sl-color-accent);
-    color: var(--sl-color-black);
-    font-weight: 700;
-  }
-  .flow h3 {
-    margin-top: 0.75rem;
-    font-size: var(--sl-text-lg);
-  }
-  .flow p {
-    color: var(--sl-color-gray-2);
-    font-size: var(--sl-text-sm);
-  }
-
-  .langs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 0;
-    list-style: none;
-  }
-  .langs li {
-    margin: 0;
-  }
-  .langs a {
-    display: inline-block;
-    padding: 0.35rem 0.85rem;
-    border: 1px solid var(--sl-color-gray-5);
-    border-radius: 999px;
-    color: var(--sl-color-gray-2);
-    font-size: var(--sl-text-sm);
-    text-decoration: none;
-  }
-  .langs a:hover,
-  .langs a[aria-current='page'] {
-    border-color: var(--sl-color-accent);
-    color: var(--sl-color-white);
   }
 </style>

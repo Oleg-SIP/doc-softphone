@@ -1,6 +1,19 @@
 {
   "docs.name": "Dokumentace",
   "docs.site": "Web produktu",
-  "docs.map.title": "Co dokumentace pokrývá",
-  "docs.map.lead": "Návody právě vznikají. Každé téma níže se stane samostatnou kapitolou — ve všech třiceti jazycích, kterými telefon mluví."
+  "docs.home.title": "Dokumentace AI Softphone",
+  "docs.home.lead": "Jak připojit AI Softphone k vaší ústředně, nastavit zvuk a nahrávání hovorů a nahrávat schůzky v jiných aplikacích.",
+  "docs.start": "Než začnete",
+  "docs.sections": "Oddíly",
+  "docs.sec.sip.desc": "Připojení telefonu k IP ústředně nebo poskytovateli VoIP, nastavení zvuku, kodeků, BLF a nahrávání hovorů.",
+  "docs.sec.capture.desc": "Nahrávání schůzek v Zoomu, Teams, Meetu nebo jakékoli jiné aplikaci přímo z počítače.",
+  "nav.sip": "SIP účty",
+  "nav.sip.setup": "Nastavení SIP účtu",
+  "nav.sip.advanced": "Pokročilá nastavení SIP účtu",
+  "nav.sip.devices": "Zařízení",
+  "nav.sip.codecs": "Kodeky",
+  "nav.sip.recording": "Nahrávání hovorů",
+  "nav.capture": "Externí nahrávání",
+  "nav.capture.setup": "Nastavení externího nahrávání",
+  "docs.soon": "Článek se připravuje."
 }

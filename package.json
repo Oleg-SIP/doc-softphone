@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "i18n:import": "node scripts/import-site-i18n.mjs",
-    "gen:home": "node scripts/gen-home.mjs"
+    "gen:pages": "node scripts/gen-pages.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.42.4",

@@ -42,6 +42,19 @@
   "pagefind.searching": "Ieškoma [SEARCH_TERM]…",
   "docs.name": "Dokumentacija",
   "docs.site": "Produkto svetainė",
-  "docs.map.title": "Ką apima dokumentacija",
-  "docs.map.lead": "Vadovai rašomi dabar. Kiekviena toliau pateikta tema taps atskiru skyriumi — visomis trisdešimčia kalbų, kuriomis kalba telefonas."
+  "docs.home.title": "AI Softphone dokumentacija",
+  "docs.home.lead": "Kaip prijungti AI Softphone prie jūsų telefonų stoties, nustatyti garsą ir pokalbių įrašymą bei įrašyti susitikimus kitose programose.",
+  "docs.start": "Prieš pradėdami",
+  "docs.sections": "Skyriai",
+  "docs.sec.sip.desc": "Telefono prijungimas prie IP stoties arba VoIP paslaugų teikėjo, garso, kodekų, BLF ir pokalbių įrašymo nustatymas.",
+  "docs.sec.capture.desc": "Įrašykite susitikimus Zoom, Teams, Meet ar bet kurioje kitoje programoje tiesiai iš kompiuterio.",
+  "nav.sip": "SIP paskyros",
+  "nav.sip.setup": "SIP paskyros nustatymas",
+  "nav.sip.advanced": "Išplėstiniai SIP paskyros nustatymai",
+  "nav.sip.devices": "Įrenginiai",
+  "nav.sip.codecs": "Kodekai",
+  "nav.sip.recording": "Pokalbių įrašymas",
+  "nav.capture": "Išorinis įrašymas",
+  "nav.capture.setup": "Išorinio įrašymo nustatymas",
+  "docs.soon": "Šis straipsnis rengiamas."
 }

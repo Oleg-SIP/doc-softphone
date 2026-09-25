@@ -1,6 +1,19 @@
 {
   "docs.name": "Dokumentation",
   "docs.site": "Produktets websted",
-  "docs.map.title": "Hvad dokumentationen dækker",
-  "docs.map.lead": "Vejledningerne bliver skrevet lige nu. Hvert emne nedenfor bliver sit eget kapitel — på alle tredive sprog, telefonen taler."
+  "docs.home.title": "AI Softphone-dokumentation",
+  "docs.home.lead": "Sådan forbinder du AI Softphone med din telefoncentral, konfigurerer lyd og optagelse af samtaler og optager møder i andre programmer.",
+  "docs.start": "Før du begynder",
+  "docs.sections": "Afsnit",
+  "docs.sec.sip.desc": "Forbind telefonen med din IP-telefoncentral eller VoIP-udbyder, og konfigurer derefter lyd, codecs, BLF og optagelse af samtaler.",
+  "docs.sec.capture.desc": "Optag møder i Zoom, Teams, Meet eller ethvert andet program direkte fra computeren.",
+  "nav.sip": "SIP-konti",
+  "nav.sip.setup": "Opsætning af en SIP-konto",
+  "nav.sip.advanced": "Avancerede indstillinger for SIP-konto",
+  "nav.sip.devices": "Enheder",
+  "nav.sip.codecs": "Codecs",
+  "nav.sip.recording": "Optagelse af samtaler",
+  "nav.capture": "Ekstern optagelse",
+  "nav.capture.setup": "Opsætning af ekstern optagelse",
+  "docs.soon": "Denne artikel er under udarbejdelse."
 }

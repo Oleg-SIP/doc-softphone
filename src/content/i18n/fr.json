@@ -1,6 +1,19 @@
 {
   "docs.name": "Documentation",
   "docs.site": "Site du produit",
-  "docs.map.title": "Ce que couvre la documentation",
-  "docs.map.lead": "Les guides sont en cours de rédaction. Chaque thème ci-dessous deviendra un chapitre à part entière, dans les trente langues que parle le téléphone."
+  "docs.home.title": "Documentation d'AI Softphone",
+  "docs.home.lead": "Comment connecter AI Softphone à votre standard, régler le son et l'enregistrement des appels, et enregistrer des réunions tenues dans d'autres applications.",
+  "docs.start": "Avant de commencer",
+  "docs.sections": "Rubriques",
+  "docs.sec.sip.desc": "Connecter le téléphone à votre standard IP ou à votre opérateur VoIP, puis régler le son, les codecs, le BLF et l'enregistrement des appels.",
+  "docs.sec.capture.desc": "Enregistrer des réunions Zoom, Teams, Meet ou de toute autre application directement depuis l'ordinateur.",
+  "nav.sip": "Comptes SIP",
+  "nav.sip.setup": "Configurer un compte SIP",
+  "nav.sip.advanced": "Paramètres avancés du compte SIP",
+  "nav.sip.devices": "Périphériques",
+  "nav.sip.codecs": "Codecs",
+  "nav.sip.recording": "Enregistrement des appels",
+  "nav.capture": "Enregistrement externe",
+  "nav.capture.setup": "Configurer l'enregistrement externe",
+  "docs.soon": "Cet article est en cours de rédaction."
 }

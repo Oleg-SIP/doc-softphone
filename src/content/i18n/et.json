@@ -42,6 +42,19 @@
   "pagefind.searching": "Otsin: [SEARCH_TERM]…",
   "docs.name": "Dokumentatsioon",
   "docs.site": "Toote veebisait",
-  "docs.map.title": "Mida dokumentatsioon hõlmab",
-  "docs.map.lead": "Juhendeid kirjutatakse praegu. Igast allolevast teemast saab omaette peatükk — kõigis kolmekümnes keeles, mida telefon räägib."
+  "docs.home.title": "AI Softphone'i dokumentatsioon",
+  "docs.home.lead": "Kuidas ühendada AI Softphone oma telefonikeskjaamaga, seadistada heli ja kõnede salvestamine ning salvestada koosolekuid teistes rakendustes.",
+  "docs.start": "Enne alustamist",
+  "docs.sections": "Jaotised",
+  "docs.sec.sip.desc": "Ühenda telefon IP-keskjaama või VoIP-teenusepakkujaga ning seadista seejärel heli, koodekid, BLF ja kõnede salvestamine.",
+  "docs.sec.capture.desc": "Salvesta koosolekuid Zoomis, Teamsis, Meetis või mis tahes muus rakenduses otse arvutist.",
+  "nav.sip": "SIP-kontod",
+  "nav.sip.setup": "SIP-konto seadistamine",
+  "nav.sip.advanced": "SIP-konto täpsemad seaded",
+  "nav.sip.devices": "Seadmed",
+  "nav.sip.codecs": "Koodekid",
+  "nav.sip.recording": "Kõnede salvestamine",
+  "nav.capture": "Väline salvestamine",
+  "nav.capture.setup": "Välise salvestamise seadistamine",
+  "docs.soon": "Seda artiklit alles kirjutatakse."
 }

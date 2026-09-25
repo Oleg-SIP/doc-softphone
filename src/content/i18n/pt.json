@@ -1,6 +1,19 @@
 {
   "docs.name": "Documentação",
   "docs.site": "Site do produto",
-  "docs.map.title": "O que a documentação abrange",
-  "docs.map.lead": "Os guias estão a ser escritos agora. Cada tema abaixo vai tornar-se um capítulo próprio — nas trinta línguas que o telefone fala."
+  "docs.home.title": "Documentação do AI Softphone",
+  "docs.home.lead": "Como ligar o AI Softphone à sua central, configurar o som e a gravação de chamadas e gravar reuniões de outras aplicações.",
+  "docs.start": "Antes de começar",
+  "docs.sections": "Secções",
+  "docs.sec.sip.desc": "Ligar o telefone à sua central IP ou operador VoIP e depois configurar o som, os codecs, o BLF e a gravação de chamadas.",
+  "docs.sec.capture.desc": "Gravar reuniões no Zoom, Teams, Meet ou em qualquer outra aplicação diretamente a partir do computador.",
+  "nav.sip": "Contas SIP",
+  "nav.sip.setup": "Configurar uma conta SIP",
+  "nav.sip.advanced": "Definições avançadas da conta SIP",
+  "nav.sip.devices": "Dispositivos",
+  "nav.sip.codecs": "Codecs",
+  "nav.sip.recording": "Gravação de chamadas",
+  "nav.capture": "Gravação externa",
+  "nav.capture.setup": "Configurar a gravação externa",
+  "docs.soon": "Este artigo está em preparação."
 }

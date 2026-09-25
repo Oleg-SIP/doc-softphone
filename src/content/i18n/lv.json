@@ -1,6 +1,19 @@
 {
   "docs.name": "Dokumentācija",
   "docs.site": "Produkta vietne",
-  "docs.map.title": "Ko aptver dokumentācija",
-  "docs.map.lead": "Rokasgrāmatas top tieši tagad. Katra tēma zemāk kļūs par atsevišķu nodaļu — visās trīsdesmit valodās, kurās runā tālrunis."
+  "docs.home.title": "AI Softphone dokumentācija",
+  "docs.home.lead": "Kā savienot AI Softphone ar jūsu telefonu centrāli, iestatīt skaņu un sarunu ierakstīšanu un ierakstīt sapulces citās lietotnēs.",
+  "docs.start": "Pirms sākat",
+  "docs.sections": "Sadaļas",
+  "docs.sec.sip.desc": "Tālruņa savienošana ar IP centrāli vai VoIP pakalpojumu sniedzēju, skaņas, kodeku, BLF un sarunu ierakstīšanas iestatīšana.",
+  "docs.sec.capture.desc": "Ierakstiet sapulces Zoom, Teams, Meet vai jebkurā citā lietotnē tieši no datora.",
+  "nav.sip": "SIP konti",
+  "nav.sip.setup": "SIP konta iestatīšana",
+  "nav.sip.advanced": "SIP konta papildu iestatījumi",
+  "nav.sip.devices": "Ierīces",
+  "nav.sip.codecs": "Kodeki",
+  "nav.sip.recording": "Sarunu ierakstīšana",
+  "nav.capture": "Ārējā ierakstīšana",
+  "nav.capture.setup": "Ārējās ierakstīšanas iestatīšana",
+  "docs.soon": "Šis raksts tiek gatavots."
 }

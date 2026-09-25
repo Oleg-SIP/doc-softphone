@@ -1,6 +1,19 @@
 {
   "docs.name": "Documentazione",
   "docs.site": "Sito del prodotto",
-  "docs.map.title": "Cosa copre la documentazione",
-  "docs.map.lead": "Le guide sono in fase di scrittura. Ogni argomento qui sotto diventerà un capitolo a sé, in tutte le trenta lingue che il telefono parla."
+  "docs.home.title": "Documentazione di AI Softphone",
+  "docs.home.lead": "Come collegare AI Softphone al centralino, configurare l'audio e la registrazione delle chiamate e registrare le riunioni in altre applicazioni.",
+  "docs.start": "Prima di iniziare",
+  "docs.sections": "Sezioni",
+  "docs.sec.sip.desc": "Collegare il telefono al centralino IP o al provider VoIP, quindi configurare audio, codec, BLF e registrazione delle chiamate.",
+  "docs.sec.capture.desc": "Registrare le riunioni in Zoom, Teams, Meet o qualsiasi altra applicazione direttamente dal computer.",
+  "nav.sip": "Account SIP",
+  "nav.sip.setup": "Configurare un account SIP",
+  "nav.sip.advanced": "Impostazioni avanzate dell'account SIP",
+  "nav.sip.devices": "Dispositivi",
+  "nav.sip.codecs": "Codec",
+  "nav.sip.recording": "Registrazione delle chiamate",
+  "nav.capture": "Registrazione esterna",
+  "nav.capture.setup": "Configurare la registrazione esterna",
+  "docs.soon": "Questo articolo è in preparazione."
 }

@@ -1,6 +1,19 @@
 {
   "docs.name": "Dokumentation",
   "docs.site": "Produktwebsite",
-  "docs.map.title": "Was die Dokumentation abdeckt",
-  "docs.map.lead": "Die Anleitungen entstehen gerade. Jedes Thema unten wird ein eigenes Kapitel — in allen dreißig Sprachen, die das Telefon spricht."
+  "docs.home.title": "AI Softphone Dokumentation",
+  "docs.home.lead": "Wie Sie AI Softphone mit Ihrer Telefonanlage verbinden, Ton und Gesprächsaufzeichnung einrichten und Besprechungen in anderen Anwendungen aufzeichnen.",
+  "docs.start": "Bevor Sie beginnen",
+  "docs.sections": "Bereiche",
+  "docs.sec.sip.desc": "Das Telefon mit Ihrer IP-Telefonanlage oder Ihrem VoIP-Anbieter verbinden, dann Ton, Codecs, BLF und Gesprächsaufzeichnung einrichten.",
+  "docs.sec.capture.desc": "Besprechungen in Zoom, Teams, Meet oder jeder anderen Anwendung direkt am Computer aufzeichnen.",
+  "nav.sip": "SIP-Konten",
+  "nav.sip.setup": "SIP-Konto einrichten",
+  "nav.sip.advanced": "Erweiterte Einstellungen des SIP-Kontos",
+  "nav.sip.devices": "Geräte",
+  "nav.sip.codecs": "Codecs",
+  "nav.sip.recording": "Gesprächsaufzeichnung",
+  "nav.capture": "Externe Aufzeichnung",
+  "nav.capture.setup": "Externe Aufzeichnung einrichten",
+  "docs.soon": "Dieser Artikel wird gerade geschrieben."
 }

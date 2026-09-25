@@ -1,6 +1,19 @@
 {
   "docs.name": "Dokumentasi",
   "docs.site": "Situs web produk",
-  "docs.map.title": "Apa saja yang dibahas dokumentasi",
-  "docs.map.lead": "Panduan sedang ditulis saat ini. Setiap topik di bawah akan menjadi bab tersendiri — dalam ketiga puluh bahasa yang digunakan telepon ini."
+  "docs.home.title": "Dokumentasi AI Softphone",
+  "docs.home.lead": "Cara menghubungkan AI Softphone ke PBX Anda, mengatur suara dan perekaman panggilan, serta merekam rapat di aplikasi lain.",
+  "docs.start": "Sebelum memulai",
+  "docs.sections": "Bagian",
+  "docs.sec.sip.desc": "Hubungkan telepon ke PBX IP atau penyedia VoIP Anda, lalu atur suara, codec, BLF, dan perekaman panggilan.",
+  "docs.sec.capture.desc": "Rekam rapat di Zoom, Teams, Meet, atau aplikasi lain langsung dari komputer.",
+  "nav.sip": "Akun SIP",
+  "nav.sip.setup": "Menyiapkan akun SIP",
+  "nav.sip.advanced": "Pengaturan lanjutan akun SIP",
+  "nav.sip.devices": "Perangkat",
+  "nav.sip.codecs": "Codec",
+  "nav.sip.recording": "Perekaman panggilan",
+  "nav.capture": "Perekaman eksternal",
+  "nav.capture.setup": "Menyiapkan perekaman eksternal",
+  "docs.soon": "Artikel ini sedang ditulis."
 }

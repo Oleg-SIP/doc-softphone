@@ -1,6 +1,19 @@
 {
   "docs.name": "Documentatie",
   "docs.site": "Productwebsite",
-  "docs.map.title": "Wat de documentatie behandelt",
-  "docs.map.lead": "De handleidingen worden nu geschreven. Elk onderwerp hieronder wordt een eigen hoofdstuk — in alle dertig talen die de telefoon spreekt."
+  "docs.home.title": "AI Softphone-documentatie",
+  "docs.home.lead": "Hoe u AI Softphone met uw telefooncentrale verbindt, geluid en gespreksopname instelt en vergaderingen in andere toepassingen opneemt.",
+  "docs.start": "Voordat u begint",
+  "docs.sections": "Onderdelen",
+  "docs.sec.sip.desc": "Verbind de telefoon met uw IP-centrale of VoIP-provider en stel daarna geluid, codecs, BLF en gespreksopname in.",
+  "docs.sec.capture.desc": "Neem vergaderingen in Zoom, Teams, Meet of elke andere toepassing rechtstreeks vanaf de computer op.",
+  "nav.sip": "SIP-accounts",
+  "nav.sip.setup": "Een SIP-account instellen",
+  "nav.sip.advanced": "Geavanceerde instellingen van een SIP-account",
+  "nav.sip.devices": "Apparaten",
+  "nav.sip.codecs": "Codecs",
+  "nav.sip.recording": "Gespreksopname",
+  "nav.capture": "Externe opname",
+  "nav.capture.setup": "Externe opname instellen",
+  "docs.soon": "Dit artikel wordt nog geschreven."
 }

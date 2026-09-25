@@ -1,0 +1,121 @@
+---
+title: Setting up a SIP account
+description: Connect AI Softphone to your IP PBX or VoIP provider — the three details you need, where they go, and how to tell that the line works.
+---
+
+import { Steps, Aside, LinkCard } from '@astrojs/starlight/components';
+import Screenshot from '../../../components/Screenshot.astro';
+
+AI Softphone connects to your phone system the way a desk phone does: it registers
+on an IP PBX, or with a VoIP provider, as a SIP account. Once the account is
+registered, the phone places and takes calls on that line.
+
+## What you need
+
+Ask your PBX administrator or your VoIP provider for a SIP account — usually an
+extension. Three details of it are enough:
+
+| Detail | What it is | Example |
+| --- | --- | --- |
+| **Username** | The extension number or login of the account | `204` |
+| **Password** | The SIP password of that account — not the password of the PBX's web interface | |
+| **Server address** | The domain name or IP address of the PBX or the provider | `pbx.example.com` |
+
+<Aside>
+If you were also given an authentication name, a port, a transport (UDP, TCP or
+TLS) or an outbound proxy, enter the three details above first, and the rest under
+**Server settings** — see [Advanced SIP account settings](../advanced/).
+</Aside>
+
+## Adding an account
+
+<Steps>
+
+1. Open **Settings** — at the bottom of the main window — and choose **Accounts**.
+
+2. Add a new account below the list of accounts.
+
+3. Fill in the form:
+
+   - **Name (optional)** — what the line is called in the account list and at the
+     bottom of the main window, for example your company's name or "Support desk".
+   - **Username**, **Password** and **Server address** — the three details from the
+     table above.
+
+4. Click **Save**.
+
+</Steps>
+
+<Screenshot
+  name="accounts.png"
+  alt="Settings, Accounts: an account's form with the Name, Username, Password and Server address fields"
+/>
+
+The password is never written to a file: it is kept in your operating system's
+keyring, the secure password store the system itself uses.
+
+## Checking that the line works
+
+After you save, the phone registers on the server. A registered account has a
+**green dot** beside its name — in the account list, and at the bottom of the main
+window, where all your lines are shown.
+
+<Screenshot
+  name="dialer.png"
+  alt="The main window: the keypad, and the registered lines with green dots at the bottom"
+/>
+
+To be sure, call another extension: type its number and press the green button.
+
+## Managing accounts
+
+You can add as many accounts as you have, each with its own settings. In the
+account list:
+
+- **The checkbox** beside an account switches the line on or off without deleting
+  it. A switched-off account has a grey dot and says **Not used**.
+- **Disconnect** unregisters the line from the server.
+- **▲** and **▼** move the account up or down the list.
+- **Delete**, in the account's form, removes the account altogether.
+- **Answer automatically**, under **Answering**, makes the line pick up incoming
+  calls by itself — for example where the PBX expects the phone to answer on its
+  own.
+
+When several lines are registered, all of them are shown at the bottom of the main
+window: choose the one the next call should go out on.
+
+## If the dot does not turn green
+
+<Steps>
+
+1. Check the username, the password and the server address. A typo or the wrong
+   password is the most common cause.
+
+2. Open **Settings → Diagnostics** and the **SIP** tab. It shows every message
+   between the phone and the server as it happens. Find the last `REGISTER` and
+   the answer the server gave to it:
+
+   | Answer | What it means |
+   | --- | --- |
+   | `200 OK` | The account is registered. |
+   | `403 Forbidden`, or `401 Unauthorized` over and over | The server does not accept the username or the password. |
+   | `404 Not Found` | The server does not know this username. |
+   | No answer at all | The server cannot be reached at this address. Check the address, then the port and the transport under **Server settings**. A firewall or a VPN may also be in the way. |
+
+3. If that does not settle it, show the **SIP** tab to your PBX administrator: it
+   is the record they will ask for.
+
+</Steps>
+
+<Screenshot
+  name="diagnostics.png"
+  alt="Diagnostics, SIP tab: a REGISTER request and the 200 OK the server answered with"
+/>
+
+## Next
+
+<LinkCard
+  title="Advanced SIP account settings"
+  description="Authentication name, port, transport, outbound proxy and encryption."
+  href="../advanced/"
+/>

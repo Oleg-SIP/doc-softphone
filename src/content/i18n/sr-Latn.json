@@ -42,6 +42,19 @@
   "pagefind.searching": "Pretraga za [SEARCH_TERM]…",
   "docs.name": "Dokumentacija",
   "docs.site": "Sajt proizvoda",
-  "docs.map.title": "Šta obuhvata dokumentacija",
-  "docs.map.lead": "Uputstva se upravo pišu. Svaka tema ispod postaće zasebno poglavlje — na svih trideset jezika kojima telefon govori."
+  "docs.home.title": "Dokumentacija za AI Softphone",
+  "docs.home.lead": "Kako da povežete AI Softphone sa vašom telefonskom centralom, podesite zvuk i snimanje razgovora i snimate sastanke u drugim aplikacijama.",
+  "docs.start": "Pre nego što počnete",
+  "docs.sections": "Odeljci",
+  "docs.sec.sip.desc": "Povezivanje telefona sa IP centralom ili VoIP provajderom, podešavanje zvuka, kodeka, BLF-a i snimanja razgovora.",
+  "docs.sec.capture.desc": "Snimanje sastanaka u Zoom-u, Teams-u, Meet-u ili bilo kojoj drugoj aplikaciji direktno sa računara.",
+  "nav.sip": "SIP nalozi",
+  "nav.sip.setup": "Podešavanje SIP naloga",
+  "nav.sip.advanced": "Napredna podešavanja SIP naloga",
+  "nav.sip.devices": "Uređaji",
+  "nav.sip.codecs": "Kodeci",
+  "nav.sip.recording": "Snimanje razgovora",
+  "nav.capture": "Spoljno snimanje",
+  "nav.capture.setup": "Podešavanje spoljnog snimanja",
+  "docs.soon": "Članak je u pripremi."
 }

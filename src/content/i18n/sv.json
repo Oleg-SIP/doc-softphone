@@ -1,6 +1,19 @@
 {
   "docs.name": "Dokumentation",
   "docs.site": "Produktens webbplats",
-  "docs.map.title": "Vad dokumentationen omfattar",
-  "docs.map.lead": "Guiderna skrivs just nu. Varje ämne nedan blir ett eget kapitel — på alla trettio språk som telefonen talar."
+  "docs.home.title": "Dokumentation för AI Softphone",
+  "docs.home.lead": "Så ansluter du AI Softphone till din växel, ställer in ljud och samtalsinspelning och spelar in möten i andra program.",
+  "docs.start": "Innan du börjar",
+  "docs.sections": "Avsnitt",
+  "docs.sec.sip.desc": "Anslut telefonen till din IP-växel eller VoIP-leverantör och ställ sedan in ljud, codecs, BLF och samtalsinspelning.",
+  "docs.sec.capture.desc": "Spela in möten i Zoom, Teams, Meet eller vilket annat program som helst direkt från datorn.",
+  "nav.sip": "SIP-konton",
+  "nav.sip.setup": "Konfigurera ett SIP-konto",
+  "nav.sip.advanced": "Avancerade inställningar för SIP-konto",
+  "nav.sip.devices": "Enheter",
+  "nav.sip.codecs": "Codecs",
+  "nav.sip.recording": "Samtalsinspelning",
+  "nav.capture": "Extern inspelning",
+  "nav.capture.setup": "Konfigurera extern inspelning",
+  "docs.soon": "Den här artikeln håller på att skrivas."
 }

@@ -24,20 +24,12 @@ const OUT = new URL('../src/data/site/', import.meta.url);
    key under it. */
 const WANTED = [
   'meta.description',
-  'hero.', 'how.', 'lang.title', 'lang.lead',
-  'nav.download', 'nav.integration', 'nav.studio',
-  'feat.kicker', 'feat.title', 'feat.lead',
-  'ps.home.kicker', 'ps.home.title', 'ps.home.lead',
-  'int.home.kicker', 'int.home.title', 'int.home.lead', 'int.home.link',
-  'dl.soon', 'dl.title',
-  'req.title',
-  'footer.tagline', 'footer.legal',
+  'nav.download',
+  'dl.foot',
+  'footer.tagline',
 ];
-// feature headings and paragraphs, without the bullet lists
-const FEATURE = /^feat\.f\d+\.(h|p)$/;
 
 function wanted(key) {
-  if (FEATURE.test(key)) return true;
   return WANTED.some((w) => (w.endsWith('.') ? key.startsWith(w) : key === w));
 }
 
