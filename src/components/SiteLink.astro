@@ -1,0 +1,29 @@
+---
+/* The header's right-hand corner: a way back to the product site,
+   in the language being read, beside Starlight's own icons. */
+import Default from '@astrojs/starlight/components/SocialIcons.astro';
+import { siteUrl } from '../i18n/site';
+
+const { lang } = Astro.locals.starlightRoute;
+---
+
+<a class="site-link" href={siteUrl(lang)}>{Astro.locals.t('docs.site')}</a>
+<Default />
+
+<style>
+  .site-link {
+    font-size: var(--sl-text-sm);
+    font-weight: 600;
+    color: var(--sl-color-text-accent);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .site-link:hover {
+    color: var(--sl-color-white);
+  }
+  @media (max-width: 50rem) {
+    .site-link {
+      display: none;
+    }
+  }
+</style>

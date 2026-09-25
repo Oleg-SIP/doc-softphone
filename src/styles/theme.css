@@ -1,0 +1,46 @@
+/* The product site's colours (ai-softphone.com, assets/css/style.css):
+   the application icon's teal as the accent, on the same cool greys. */
+:root {
+  --sl-font: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+
+  --sl-color-accent-low: #06332e;
+  --sl-color-accent: #26a69a;
+  --sl-color-accent-high: #a8efe3;
+
+  --sl-color-white: #eaeefb;
+  --sl-color-gray-1: #d6dcec;
+  --sl-color-gray-2: #b6c0d8;
+  --sl-color-gray-3: #8994ae;
+  --sl-color-gray-4: #4b556e;
+  --sl-color-gray-5: #232c42;
+  --sl-color-gray-6: #111726;
+  --sl-color-black: #080b14;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #c8ece7;
+  --sl-color-accent: #00796b;
+  --sl-color-accent-high: #0a2e36;
+
+  --sl-color-white: #0e1424;
+  --sl-color-gray-1: #1c2438;
+  --sl-color-gray-2: #4b556e;
+  --sl-color-gray-3: #6f7a94;
+  --sl-color-gray-4: #9aa3ba;
+  --sl-color-gray-5: #dfe4f0;
+  --sl-color-gray-6: #eef1f8;
+  --sl-color-gray-7: #f6f7fb;
+  --sl-color-black: #ffffff;
+}
+
+/* the hero: the site's glow behind the icon, and a title that wraps well */
+.hero {
+  padding-block: clamp(2rem, 6vw, 5rem);
+}
+.hero h1 {
+  text-wrap: balance;
+}
+.hero img {
+  filter: drop-shadow(0 18px 40px rgba(0, 121, 107, 0.35));
+}
