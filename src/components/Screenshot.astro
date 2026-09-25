@@ -1,11 +1,16 @@
 ---
-/* A window of the program, photographed by the product itself in the
-   reader's language and theme. The pictures are the ones ai-softphone.com
-   shows (screenshots/<platform>/<language>/<theme>/<file>), taken for
-   every language the phone speaks; a language without a set falls back to
-   English. On disk Serbian in Latin letters is spelled the Qt way,
-   `sr_Latn`. */
-import { languages } from '../i18n/languages.mjs';
+/* A window of the program in the reader's language and theme.
+
+   Two sources, looked up in this order:
+   1. public/screenshots/<platform>/<language>/<theme>/<file> in this
+      repository — windows the product site does not show, taken for the
+      documentation (see tasks/screenshots-macos.md);
+   2. the screenshots ai-softphone.com publishes, taken by the product
+      itself for every language it speaks.
+   A language without its own picture falls back to English, a theme
+   without its own to light. Folders spell Serbian in Latin letters the
+   Qt way, `sr_Latn`. */
+import { existsSync } from 'node:fs';
 import { SITE } from '../i18n/site';
 
 interface Props {
@@ -16,8 +21,20 @@ interface Props {
 }
 const { name, alt, platform = 'windows' } = Astro.props;
 const { lang } = Astro.locals.starlightRoute;
-const folder = (languages.some((l) => l.code === lang) ? lang : 'en').replace('-', '_');
-const src = (theme: string) => `${SITE}/screenshots/${platform}/${folder}/${theme}/${name}`;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const folder = (code: string) => code.replace('-', '_');
+
+function local(theme: string) {
+  for (const code of [lang, 'en']) {
+    for (const t of [theme, 'light']) {
+      const path = `screenshots/${platform}/${folder(code)}/${t}/${name}`;
+      if (existsSync(new URL(`../../public/${path}`, import.meta.url))) return `${base}/${path}`;
+    }
+  }
+  return null;
+}
+const src = (theme: string) =>
+  local(theme) ?? `${SITE}/screenshots/${platform}/${folder(lang)}/${theme}/${name}`;
 ---
 
 <figure class="shot">
