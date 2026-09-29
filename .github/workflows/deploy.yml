@@ -1,8 +1,7 @@
 name: Deploy to GitHub Pages
 
 # Every push is built, so a broken build shows on its own branch; only the
-# repository's default branch (and the branch below, while the site is being
-# set up) is published.
+# repository's default branch is published.
 on:
   push:
   workflow_dispatch:
@@ -42,7 +41,7 @@ jobs:
 
   deploy:
     needs: build
-    if: github.ref_name == github.event.repository.default_branch || github.ref_name == 'claude/exciting-wright-t7pu7t'
+    if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     environment:
       name: github-pages
