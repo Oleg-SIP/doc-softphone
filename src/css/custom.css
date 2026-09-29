@@ -1,0 +1,21 @@
+/* The product site's colours (ai-softphone.com): the application icon's teal. */
+:root {
+  --ifm-color-primary: #00796b;
+  --ifm-color-primary-dark: #006d60;
+  --ifm-color-primary-darker: #006759;
+  --ifm-color-primary-darkest: #005449;
+  --ifm-color-primary-light: #008576;
+  --ifm-color-primary-lighter: #008b7c;
+  --ifm-color-primary-lightest: #00a08d;
+  --ifm-code-font-size: 95%;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #26a69a;
+  --ifm-color-primary-dark: #22958a;
+  --ifm-color-primary-darker: #208e83;
+  --ifm-color-primary-darkest: #1a756c;
+  --ifm-color-primary-light: #2db7aa;
+  --ifm-color-primary-lighter: #38bdb0;
+  --ifm-color-primary-lightest: #56c9be;
+}
