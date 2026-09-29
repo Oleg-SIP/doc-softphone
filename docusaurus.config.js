@@ -36,6 +36,8 @@ const config = {
   },
 
   headTags: [
+    { tagName: 'link', attributes: { rel: 'icon', href: `${baseUrl}img/favicon.svg`, type: 'image/svg+xml' } },
+    { tagName: 'link', attributes: { rel: 'icon', href: `${baseUrl}img/icon-192.png`, type: 'image/png', sizes: '192x192' } },
     { tagName: 'link', attributes: { rel: 'apple-touch-icon', href: `${baseUrl}img/apple-touch-icon.png` } },
     { tagName: 'meta', attributes: { name: 'theme-color', content: '#00796B' } },
   ],
