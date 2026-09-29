@@ -1,6 +1,0 @@
-{
-  "meta.description": "Un seul endroit où chaque conversation devient du texte et un compte rendu écrit : les appels passés par n’importe quel IPBX, les réunions tenues dans Zoom, Teams ou Meet, et les enregistrements que vous avez déjà et qu’il suffit de déposer. Windows, macOS et Linux. Vos enregistrements et votre modèle peuvent rester sur votre machine. Logiciel libre sous GPL v2.",
-  "nav.download": "Télécharger",
-  "dl.foot": "Il vous faudra un compte SIP — de votre opérateur, ou du central que vous tenez vous-même. L’enregistrement marche dès l’installation ; la transcription et le compte rendu demandent soit un service de votre choix, soit un modèle sur votre propre machine.",
-  "footer.tagline": "Un téléphone de bureau pour Windows, macOS et Linux qui enregistre, transcrit et rédige chaque appel. Logiciel libre sous GPL&nbsp;v2."
-}

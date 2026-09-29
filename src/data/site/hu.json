@@ -1,6 +1,0 @@
-{
-  "meta.description": "Egyetlen hely, ahol minden beszélgetésből szöveg és kész összefoglaló lesz: hívások bármelyik IP-alközponton keresztül, értekezletek Zoomban, Teamsben vagy Meetben, és felvételek, amelyek már megvannak, és csak be kell tenni őket. Windows, macOS és Linux. A felvételek és a modell maradhat a saját gépén. Szabad szoftver GPL v2 alatt.",
-  "nav.download": "Letöltés",
-  "dl.foot": "Szükség lesz egy SIP-fiókra — a szolgáltatójától vagy a saját üzemeltetésű alközpontjából. A rögzítés a telepítés után azonnal működik; a leirathoz és az összegzéshez vagy egy ön által választott szolgáltatás, vagy egy saját gépén futó modell kell.",
-  "footer.tagline": "Asztali telefon Windowsra, macOS-re és Linuxra, amely minden hívást rögzít, leír és összefoglal. Szabad szoftver GPL&nbsp;v2 alatt."
-}

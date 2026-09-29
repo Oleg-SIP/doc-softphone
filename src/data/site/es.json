@@ -1,6 +1,0 @@
-{
-  "meta.description": "Un único lugar donde cada conversación se convierte en texto y en un resumen escrito: llamadas hechas a través de cualquier centralita IP, reuniones en Zoom, Teams o Meet, y grabaciones que ya tiene y solo hay que soltar aquí. Windows, macOS y Linux. Sus grabaciones y su modelo pueden quedarse en su propia máquina. Software libre bajo GPL v2.",
-  "nav.download": "Descargar",
-  "dl.foot": "Necesitará una cuenta SIP, de su operador o de la centralita que lleve usted mismo. La grabación funciona en cuanto se instala; la transcripción y el resumen necesitan o bien un servicio de su elección o bien un modelo en su propia máquina.",
-  "footer.tagline": "Un teléfono de escritorio para Windows, macOS y Linux que graba, transcribe y redacta cada llamada. Software libre bajo GPL&nbsp;v2."
-}
