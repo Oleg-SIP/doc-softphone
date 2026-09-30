@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Interface": {
+    "message": "Интерфейс",
+    "description": "The label for category 'Interface' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Phone and accounts": {
+    "message": "Телефон и учётные записи",
+    "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recordings": {
+    "message": "Записи",
+    "description": "The label for category 'Recordings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI processing": {
+    "message": "Обработка ИИ",
+    "description": "The label for category 'AI processing' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.External recording": {
+    "message": "Внешняя запись",
+    "description": "The label for category 'External recording' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integration": {
+    "message": "Интеграция",
+    "description": "The label for category 'Integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Troubleshooting": {
+    "message": "Диагностика и неполадки",
+    "description": "The label for category 'Troubleshooting' in sidebar 'docs'"
+  }
+}
