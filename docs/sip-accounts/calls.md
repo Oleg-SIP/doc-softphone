@@ -49,5 +49,5 @@ When a call cannot get through, its card offers to keep dialling until it does. 
 
 A call log is evidence, so nothing is removed from it unless you say so here.
 
-- **Storage period** chooses how long [the call log](../interface/contacts-history.md#history) keeps a call. The default is **Always**.
+- **Storage period** chooses how long [the call log](/interface/contacts-history#history) keeps a call. The default is **Always**.
 - **Clear the call history** deletes every call at once, whatever the period says. It cannot be undone.

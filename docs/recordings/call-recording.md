@@ -4,7 +4,7 @@ sidebar_position: 2
 description: Which calls are recorded, what the other party is told, how conferences are saved and how long the files are kept.
 ---
 
-**Settings → Recording** decides which calls become recordings, and for how long the files stay. A recorded call appears in the [Recordings window](recordings-window.md).
+**Settings → Recording** decides which calls become recordings, and for how long the files stay. A recorded call appears in the [Recordings window](/recordings/recordings-window).
 
 <Shot name="09_settings_recording" alt="Settings → Recording" />
 
@@ -39,6 +39,6 @@ In many places — most of Europe, and several American states — recording a c
 
 A recording you have pinned is never deleted by any of these, and it still counts towards the limit. An hour of conversation takes about 30 MB.
 
-The part of the program that records calls, and tells the other party about it, can be switched off in [Modules](../program/modules.md).
+The part of the program that records calls, and tells the other party about it, can be switched off in [Modules](/program/modules).
 
-To record a meeting held in another application, see [Setting up external recording](../external-recording/setup.md).
+To record a meeting held in another application, see [Setting up external recording](/external-recording/setup).

@@ -33,7 +33,7 @@ The tab lists what the usage report contains.
 | | What is sent |
 | --- | --- |
 | **Always sent** | That the application was launched, its version and the interface language; the operating system version, locale, country and time zone. |
-| **Sent as well, in Extended mode** | The counters of calls and of captured conversations; the vendor and the version of the connected softswitch, never its address; how many steps of the [Overview](../interface/settings-overview.md) are done, and the chosen layout. |
+| **Sent as well, in Extended mode** | The counters of calls and of captured conversations; the vendor and the version of the connected softswitch, never its address; how many steps of the [Overview](/interface/settings-overview) are done, and the chosen layout. |
 | **Never sent, in any mode** | The numbers you dialled or were called from; accounts, passwords, or anything from the keychain; contacts, conversations, transcripts or recordings; anything you typed, and any private data on the computer. |
 
 Each installation makes one random identifier for itself, so that reports from the same copy of the program can be recognised as one. It is not derived from anything about you or your computer, and it names nobody — but because it lasts, the reports it carries can be linked to each other. That makes them pseudonymous rather than anonymous.
@@ -58,7 +58,7 @@ A form that writes to the developers without leaving the program.
 | --- | --- |
 | **Subject** and **Message** | What you want to say. |
 | **Your name** and **Address for a reply** | Both are optional. Without an address there is no way to answer. |
-| **Attach the log** | Adds the end of the log, about 512 kB. See [Diagnostics](../troubleshooting/diagnostics.md). |
+| **Attach the log** | Adds the end of the log, about 512 kB. See [Diagnostics](/troubleshooting/diagnostics). |
 
 **Send** stays grey until there is something to send.
 

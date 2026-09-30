@@ -4,7 +4,7 @@ sidebar_position: 4
 description: One-touch buttons that dial a number and show whether the line is free, ringing or busy.
 ---
 
-A button dials its number with one press. A button that watches its line also shows a lamp. They stand under the account chips in the [main window](../interface/main-window.md), and **Settings → Buttons** is where you make them.
+A button dials its number with one press. A button that watches its line also shows a lamp. They stand under the account chips in the [main window](/interface/main-window), and **Settings → Buttons** is where you make them.
 
 <Shot name="08_settings_buttons" alt="Settings → Buttons: two buttons" />
 
@@ -36,4 +36,4 @@ Press **Add**; a form opens under the list.
 
 **Save** stays grey until the form is filled in. **Cancel** drops the form.
 
-The part of the program that shows the buttons can be switched off in [Modules](../program/modules.md).
+The part of the program that shows the buttons can be switched off in [Modules](/program/modules).

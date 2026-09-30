@@ -16,17 +16,17 @@ Each module has a check box, a name, a line saying what it does, and at the righ
 | --- | --- |
 | **Application** | The main window, the settings, the icons and so on. |
 | **Local database** | The database used as the local storage. |
-| **Browser interface** | Some features in a local browser: the pages of the [REST API](../integration/rest-api.md). |
-| **Buttons** | The [buttons](../sip-accounts/buttons.md) beside the dialler, and the lamps on them. |
-| **Capture** | [Recording a conversation](../external-recording/setup.md) happening in another application. |
-| **Diagnostics** | The SIP trace, the media statistics and the counters: [Diagnostics](../troubleshooting/diagnostics.md). |
-| **Dictionaries** | Categories, tags and red flags — the codes everything else points at: [Dictionaries](../ai-processing/dictionaries.md). |
-| **Directory** | The address book: [Contacts](../interface/contacts-history.md). |
-| **Integration** | The local API, and webhooks: [Integration](../integration/rest-api.md). |
-| **Mediastorage** | The library of conversations and how long they are kept: [Recordings](../recordings/recordings-window.md). |
-| **Processing** | Prompts and the rules that fire them: [Processing](../ai-processing/processing.md). |
-| **Recording** | Recording calls, and telling the other party about it: [Recording calls](../recordings/call-recording.md). |
+| **Browser interface** | Some features in a local browser: the pages of the [REST API](/integration/rest-api). |
+| **Buttons** | The [buttons](/sip-accounts/buttons) beside the dialler, and the lamps on them. |
+| **Capture** | [Recording a conversation](/external-recording/setup) happening in another application. |
+| **Diagnostics** | The SIP trace, the media statistics and the counters: [Diagnostics](/troubleshooting/diagnostics). |
+| **Dictionaries** | Categories, tags and red flags — the codes everything else points at: [Dictionaries](/ai-processing/dictionaries). |
+| **Directory** | The address book: [Contacts](/interface/contacts-history). |
+| **Integration** | The local API, and webhooks: [Integration](/integration/rest-api). |
+| **Mediastorage** | The library of conversations and how long they are kept: [Recordings](/recordings/recordings-window). |
+| **Processing** | Prompts and the rules that fire them: [Processing](/ai-processing/processing). |
+| **Recording** | Recording calls, and telling the other party about it: [Recording calls](/recordings/call-recording). |
 | **Telephony** | SIP, accounts, calls, the dialler and the call history. |
-| **Transcription** | Recognisers, the queue that drives them, and the transcripts they produce: [Transcription](../ai-processing/transcription.md). |
+| **Transcription** | Recognisers, the queue that drives them, and the transcripts they produce: [Transcription](/ai-processing/transcription). |
 
 Switch off a module you have no use for — for example **Integration** on a computer where nothing else talks to the phone.
