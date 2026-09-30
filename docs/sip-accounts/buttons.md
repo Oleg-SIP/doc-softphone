@@ -1,10 +1,14 @@
 ---
 title: Buttons
 sidebar_position: 4
-description: One-touch buttons that dial a number and show whether the line is free, ringing or busy.
+description: "BLF buttons: one-touch buttons that dial an extension on your IP PBX and show whether it is free, ringing or busy."
 ---
 
-A button dials its number with one press. A button that watches its line also shows a lamp. They stand under the account chips in the [main window](/interface/main-window), and **Settings → Buttons** is where you make them.
+Buttons are the softphone's **BLF** (Busy Lamp Field) keys, the same function a desk phone on an IP PBX has. A button dials an extension with one press. A button that watches its line also shows a lamp: the phone asks the PBX about that extension and shows whether it is free, ringing or busy, as a receptionist's console or the programmable keys of a desk phone do.
+
+BLF needs support on the PBX side: the PBX has to report the state of the extension to the phone. Most IP PBXs do. If yours does not, the lamp stays grey and the button still dials.
+
+The buttons stand under the account chips in the [main window](/interface/main-window), and **Settings → Buttons** is where you make them.
 
 <Shot name="08_settings_buttons" alt="Settings → Buttons: two buttons" />
 
