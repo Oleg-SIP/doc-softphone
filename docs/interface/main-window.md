@@ -67,8 +67,14 @@ What happens when somebody rings while you are already on a call is set in [Call
 
 Calls that have been joined show as one **Conference** card on the account's line. Each participant is listed with the time in the call and their own **Hang up** button. The buttons below record, mute and end the conference for everybody; the wide button at the bottom splits the conference back into separate calls.
 
-## Capture of other applications
+## Capture
 
-When [capture](../capture/capture.md) is allowed, the bottom of the window also shows its state, for example **Capture · ready**, with a **Record** button that starts it by hand.
+When [capture of other applications](../capture/capture.md) is allowed in **Settings → Capture**, a strip appears between the account chips and the buttons.
+
+<Shot name="10_settings_capture" full alt="The Capture strip at the foot of the phone: Capture · ready, Record and two level bars" />
+
+- **Capture · ready** says that the program is listening for a conversation in another application.
+- **Record** starts a capture by hand.
+- The two thin bars under it show the level of the sound: the upper one is you, the lower one is what the computer plays. How they are drawn is set under **Picture in the line at the foot of the phone**.
 
 The program can also live in the tray (the menu bar on macOS) and be brought up with a [hotkey](../program/shortcuts.md).

@@ -31,18 +31,41 @@ Everything the computer plays is recorded, not only the conversation. This phone
 
 The part of the program that does this is the **Capture** module, *recording a conversation happening in another application*. It can be switched off in [Modules](../program/modules.md).
 
+## Starting a capture
+
+Once capture is allowed, the bottom of the [main window](../interface/main-window.md#capture) shows its state — **Capture · ready** — with a **Record** button at the right. Press **Record** to start by hand.
+
+### Automatic start
+
+**Automatic start** decides what happens when the program hears a conversation in another application. The default is **Never**: a capture starts only when you press **Record**. The other choices let the program start on its own or ask you first.
+
+*Asking loses nothing: the seconds before you answer are already kept.*
+
+### Before the start
+
+The slider **Before the start** is how many seconds of sound are kept from before a recording starts, **15 seconds** by default. It is there so that nothing is lost while the conversation is being noticed: a recording that starts when you press **Record**, or when you answer the question, still begins with the words that came before.
+
 ## Capturing a conversation
 
-Once capture is allowed, the bottom of the [main window](../interface/main-window.md) shows its state, for example **Capture · ready**, with a **Record** button at the right.
-
-- Recording can start **automatically** when a conversation is detected, or by hand with **Record**.
-- While it records, the main window shows a red dot, the name of the recording (for example **Meeting in Zoom**), the time that has passed and the two channels as waveforms.
+While it records, the main window shows a red dot, the name of the recording (for example **Meeting in Zoom**), the time that has passed and the two channels as waveforms.
 
 <Shot src="https://ai-softphone.com/screenshots/macos/en/light/capture.png" alt="Recording a meeting" />
 
 - **Stop recording** ends it.
+- The window stays visible while it records, and reminds you to tell the participants that the meeting is being recorded.
 
-The window stays visible while it records, and reminds you to tell the participants that the meeting is being recorded.
+### What the picture shows
+
+Two more settings choose how the level of the sound is drawn:
+
+| Setting | Default | Where |
+| --- | --- | --- |
+| **Picture in the main window** | Wave | The two channels while a capture is going on. |
+| **Picture in the line at the foot of the phone** | Two levels | The two thin bars under **Capture · ready**. |
+
+### Testing it
+
+Under **Test** the tab has two bars: **You** and **The other side**. *The upper bar moves when you speak, the lower when something plays.* Before an important meeting, say a word and play any sound to see that the program hears both sides.
 
 ## Giving it a name
 
