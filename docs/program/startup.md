@@ -1,7 +1,7 @@
 ---
 title: Startup
 sidebar_position: 2
-description: Start the phone with the computer, keep it running when its window is closed, and open tel:, callto: and sip: links.
+description: "Start the phone with the computer, keep it running when its window is closed, and open tel:, callto: and sip: links."
 ---
 
 **Settings → Startup** decides how the program starts, what closing its window does, and what happens when you click a phone number in another program.
