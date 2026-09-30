@@ -53,15 +53,28 @@
   color: var(--ifm-color-emphasis-700);
 }
 
+/* The enlarged screenshot fills the screen; a click anywhere closes it.
+   The close button is fixed to the corner of the screen, so it never depends
+   on where the picture ends. */
 .dialog {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
   max-width: none;
   max-height: none;
-  width: auto;
+  margin: 0;
   padding: 0;
   border: 0;
   background: transparent;
-  overflow: visible;
+  overflow: hidden;
   cursor: zoom-out;
+}
+
+.dialog[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dialog::backdrop {
@@ -71,30 +84,31 @@
 .dialog img {
   display: block;
   max-width: 96vw;
-  max-height: 94vh;
+  max-height: 92vh;
   width: auto;
   height: auto;
   border-radius: 6px;
 }
 
 .close {
-  position: absolute;
-  top: -14px;
-  right: -14px;
-  width: 32px;
-  height: 32px;
-  border: 0;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid rgba(0, 0, 0, 0.35);
   border-radius: 50%;
   background: #fff;
   color: #000;
-  font-size: 22px;
-  line-height: 32px;
+  font-size: 26px;
+  line-height: 1;
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 996px) {
-  .close {
-    top: 6px;
-    right: 6px;
-  }
+.close:hover,
+.close:focus-visible {
+  background: var(--ifm-color-primary-lightest);
+  outline: 2px solid #fff;
 }
