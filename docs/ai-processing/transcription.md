@@ -6,7 +6,7 @@ description: Choose the recogniser that turns audio into text, on your own machi
 
 **Settings → Transcription** sets how audio becomes text.
 
-![Settings → Transcription](https://ai-softphone.com/screenshots/macos/en/light/transcription.png)
+<Shot name="11_settings_transcription" alt="Settings → Transcription" />
 
 A conversation is transcribed when you ask for it in the [Recordings window](../recordings/recordings-window.md), or by itself if you have turned automatic processing on under [Processing](processing.md). A recogniser on your own machine costs nothing to run; one in the cloud charges by the minute of audio.
 
@@ -16,9 +16,11 @@ A conversation is transcribed when you ask for it in the [Recordings window](../
 
 ## Recognisers
 
-Press **Add** to add a recogniser. Each is listed with its name, the model and the address of its service, for example:
+Press **Add** to add a recogniser. Each is listed with its name and, under it, the model and the address of its service, for example:
 
-- **Deepgram** — `nova-3 · https://api.deepgram.com/v1` (in the cloud);
-- **Whisper on our own server** — `Systran/faster-whisper-large-v3 · http://127.0.0.1:8000/v1` (on this machine).
+- **Local ASR** — `whisper-large-v3 · http://asr.local:8080/v1`, a server in your own network;
+- **Xiaomi** — `mimo-v2.5-asr · https://api.xiaomimimo.com/v1`, a service in the cloud.
 
-The recogniser marked **default** is the one used when you do not choose another. With a recogniser on your own machine the audio never leaves the building.
+The recogniser marked **default** at the right of its row is the one used when you do not choose another. With a recogniser on your own machine the audio never leaves the building.
+
+The first step of the [rules](processing.md#rules) is **Transcribe every conversation**; it is what uses the recogniser when processing is automatic.

@@ -30,5 +30,9 @@
   "sidebar.docs.category.Troubleshooting": {
     "message": "Диагностика и неполадки",
     "description": "The label for category 'Troubleshooting' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Program settings": {
+    "message": "Настройки программы",
+    "description": "The label for category 'Program settings' in sidebar 'docs'"
   }
 }

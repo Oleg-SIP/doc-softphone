@@ -10,19 +10,22 @@ Webhooks tell another system about calls as they happen — for example, so that
 
 In **Settings → Integration**, under **Webhooks**:
 
-1. Enter the **endpoint URL** that should receive the events.
-2. Choose the method, **POST** or **GET**.
-3. Choose which events to send.
-4. Optionally set a custom header — a name and a value — that your receiver can check. The value is kept in the operating system's keychain.
-5. Press **Send a test event** to see that it arrives.
+<Shot name="17_settings_integration" alt="Settings → Integration: webhooks" />
+
+1. Turn on **Tell another system about calls**. A request is sent for each event you tick below.
+2. Enter the **Address** that should receive the events, for example `http://crm.local/calls`.
+3. Choose the **Method**, **POST** (the default) or **GET**.
+4. Under **Events** tick what to send: **A new call**, **A call ending**, **A call changing state**.
+5. Optionally, under **Authorization**, set a header — a **Header name** (`Authorization` is suggested) and a **Header value** — that your receiver can check. The value is kept in the computer's keyring, never in a settings file.
+6. Press **Send a test event** to see that it arrives. It sends one event for a call that never happened.
 
 ## Events
 
-| Event | Sent when |
-| --- | --- |
-| `call-started` | An incoming call starts ringing or an outgoing call is placed. |
-| `call-state-changed` | The call's `state` changes: it is answered, put on hold or resumed. |
-| `call-ended` | The call has ended. |
+| Event | Ticked as | Sent when |
+| --- | --- | --- |
+| `call-started` | **A new call** | An incoming call starts ringing or an outgoing call is placed. |
+| `call-state-changed` | **A call changing state** | The call's `state` changes: it is answered, put on hold or resumed. |
+| `call-ended` | **A call ending** | The call has ended. |
 
 ## What is sent
 

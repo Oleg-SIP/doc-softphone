@@ -6,26 +6,28 @@ description: Let other programs on this computer drive the phone — place calls
 
 AI Softphone has a REST API for CTI integration: a program on the same computer can control the phone, read contacts and call history, manage accounts and watch active calls. No cloud intermediary and no SDK are needed.
 
-The API is **off by default**; nothing listens until you turn it on. When it is on, it listens on the loopback interface only, so it cannot be reached from the network.
+The API listens on the loopback interface only, so it cannot be reached from the network: *a small web interface that answers only to this computer*.
 
 ## Turning it on
 
-Open **Settings → Integration** and, under **Local control (REST API)**:
+Open **Settings → Integration** and go to **Local control**.
+
+<Shot name="17b_settings_integration_scrolled" alt="Settings → Integration: local control" />
 
 1. Turn on **Let other programs on this computer drive the phone**.
-2. Keep the default port, `8377`, unless it is already in use.
-3. Optionally set an **API token**.
-4. Choose the access groups to open: **Contacts**, **History**, **Calls**, **Accounts**, **Settings**, **Metrics**.
+2. Keep the default **Port**, `8377`, unless it is already in use.
+3. Optionally set a **Token**.
+4. Under **Access**, choose the groups to open: **Contacts**, **Call history**, **Calls, and control of them**, **Accounts**, **Settings**, **Counters**. All six are ticked by default.
 
-No separate service is installed and no restart is needed.
+No separate service is installed and no restart is needed. The part of the program that does this can be switched off in [Modules](../program/modules.md) (**Integration**).
 
-The base address is `http://127.0.0.1:8377`. A group that is not enabled answers every request to it with `404 {"error":"no such endpoint"}`.
+The base address is `http://127.0.0.1:8377`. **Open the API's own page** opens the address in a browser: it answers with a list of everything it serves, in English, with links you can follow. A group that is not enabled answers every request to it with `404 {"error":"no such endpoint"}`.
 
 ## Authentication
 
-- The token is kept in the operating system's keychain, not in the settings file.
+- The token is kept in the computer's keyring, not in the settings file.
 - Write requests must carry it in the `Authorization` header.
-- Without a token, any program on the computer can read the enabled groups and control active calls (answer, hang up, hold, transfer, DTMF). Set a token to keep other programs from doing it.
+- Without a token, any program on the computer may read the enabled groups and control calls: anything that can run a program there can pick up your telephone (answer, hang up, hold, transfer, DTMF). With a token, a program can also change what is stored. Set a token to keep other programs from doing it.
 
 ## Endpoints
 
@@ -44,7 +46,7 @@ The base address is `http://127.0.0.1:8377`. A group that is not enabled answers
 | GET | `/contacts/{id}` | A single contact. |
 | GET | `/history` | The call log, newest first. Accepts `?limit=`, `?missed=true` and `?declined=true`. |
 | GET | `/settings` | The whole configuration, without secrets. |
-| GET | `/metrics` | Counters in Prometheus format. |
+| GET | `/metrics` | Counters in Prometheus format (the **Counters** group). |
 | GET | `/taxonomy` | Categories, tags and red flags with their codes. |
 | GET | `/ui` | The list of recordings as an HTML page. |
 | GET | `/ui/recordings/{id}` | A recording with its transcript as an HTML page. |

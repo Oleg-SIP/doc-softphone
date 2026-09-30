@@ -4,9 +4,9 @@ sidebar_position: 2
 description: Choose the microphone, the speakers, the ringtone and the volume of every sound in Settings → Devices.
 ---
 
-**Settings → Devices** sets the sound devices by function, so the ringtone can ring somewhere other than where you talk. You can switch a device in the middle of a call.
+**Settings → Devices** sets the sound devices by function, so the ringtone can ring somewhere other than where you talk. Changes take effect straight away, in a call as well as out of one.
 
-![Settings → Devices](https://ai-softphone.com/screenshots/macos/en/light/devices.png)
+<Shot name="06_settings_devices" alt="Settings → Devices" />
 
 ## Microphone
 
@@ -29,4 +29,8 @@ description: Choose the microphone, the speakers, the ringtone and the volume of
 
 ## Other sounds
 
-**Volume** of the program's other sounds — the ones that are not a ringtone or a voice.
+**Volume** of the program's other sounds — the ones that are not a ringtone or a voice: the tones for a busy number, for a call that has ended, and for a call answered for you.
+
+## Restore defaults
+
+**Restore defaults**, at the bottom of the tab, puts the devices and the volumes back as they were when the program was installed.
