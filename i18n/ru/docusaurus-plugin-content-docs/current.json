@@ -19,10 +19,6 @@
     "message": "Обработка ИИ",
     "description": "The label for category 'AI processing' in sidebar 'docs'"
   },
-  "sidebar.docs.category.External recording": {
-    "message": "Внешняя запись",
-    "description": "The label for category 'External recording' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Integration": {
     "message": "Интеграция",
     "description": "The label for category 'Integration' in sidebar 'docs'"
@@ -34,5 +30,9 @@
   "sidebar.docs.category.Program settings": {
     "message": "Настройки программы",
     "description": "The label for category 'Program settings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Capturing other applications": {
+    "message": "Перехват других приложений",
+    "description": "The label for category 'Capturing other applications' in sidebar 'docs'"
   }
 }

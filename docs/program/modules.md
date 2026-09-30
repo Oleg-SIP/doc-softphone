@@ -18,7 +18,7 @@ Each module has a check box, a name, a line saying what it does, and at the righ
 | **Local database** | The database used as the local storage. |
 | **Browser interface** | Some features in a local browser: the pages of the [REST API](/integration/rest-api). |
 | **Buttons** | The [buttons](/sip-accounts/buttons) beside the dialler, and the lamps on them. |
-| **Capture** | [Recording a conversation](/external-recording/setup) happening in another application. |
+| **Capture** | [Recording a conversation](/capture/capture) happening in another application. |
 | **Diagnostics** | The SIP trace, the media statistics and the counters: [Diagnostics](/troubleshooting/diagnostics). |
 | **Dictionaries** | Categories, tags and red flags — the codes everything else points at: [Dictionaries](/ai-processing/dictionaries). |
 | **Directory** | The address book: [Contacts](/interface/contacts-history). |

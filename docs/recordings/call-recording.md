@@ -41,4 +41,4 @@ A recording you have pinned is never deleted by any of these, and it still count
 
 The part of the program that records calls, and tells the other party about it, can be switched off in [Modules](/program/modules).
 
-To record a meeting held in another application, see [Setting up external recording](/external-recording/setup).
+To record a meeting held in another application, see [Capture](/capture/capture).

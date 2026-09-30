@@ -67,8 +67,8 @@ What happens when somebody rings while you are already on a call is set in [Call
 
 Calls that have been joined show as one **Conference** card on the account's line. Each participant is listed with the time in the call and their own **Hang up** button. The buttons below record, mute and end the conference for everybody; the wide button at the bottom splits the conference back into separate calls.
 
-## External recording
+## Capture of other applications
 
-When [capture of other applications](../external-recording/setup.md) is allowed, the bottom of the window also shows its state, for example **Capture · ready**, with a **Record** button that starts it by hand.
+When [capture](../capture/capture.md) is allowed, the bottom of the window also shows its state, for example **Capture · ready**, with a **Record** button that starts it by hand.
 
 The program can also live in the tray (the menu bar on macOS) and be brought up with a [hotkey](../program/shortcuts.md).

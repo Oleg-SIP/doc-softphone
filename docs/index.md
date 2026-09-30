@@ -51,7 +51,7 @@ The screenshots in this documentation are taken on macOS and shown small: click 
 | Decide which calls are recorded, and for how long | [Recording calls](recordings/call-recording.md) |
 | Listen to, search and read your conversations | [Recordings window](recordings/recordings-window.md) |
 | Decide which AI writes up your conversations and what it may cost | [Processing](ai-processing/processing.md) |
-| Record a meeting held in another application | [Setting up external recording](external-recording/setup.md) |
+| Record a meeting held in another application | [Capture](capture/capture.md) |
 | Change the layout, the theme, the start-up and the hotkeys | [Appearance](program/appearance.md), [Startup](program/startup.md) and [Shortcuts](program/shortcuts.md) |
 | Connect a CRM or another program | [Local REST API](integration/rest-api.md) and [Webhooks](integration/webhooks.md) |
 | See what the phone and the PBX are saying to each other | [Diagnostics](troubleshooting/diagnostics.md) |

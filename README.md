@@ -20,7 +20,7 @@ npm run serve      # serve build/
 | Path | What it is |
 | --- | --- |
 | `languages.json` | The thirty languages (same as ai-softphone.com) and their own names. English is the root (`/`), the others are `/<code>/` (`/sr-Latn/` for Serbian in Latin letters). |
-| `docs/` | Pages in English: the overview, `interface/`, `sip-accounts/`, `recordings/`, `ai-processing/`, `external-recording/`, `integration/`, `troubleshooting/`. Screenshots are the product site's own (`https://ai-softphone.com/screenshots/macos/<lang>/<theme>/`), so they always match it. |
+| `docs/` | Pages in English: the overview, `interface/`, `sip-accounts/`, `recordings/`, `ai-processing/`, `capture/`, `integration/`, `troubleshooting/`. Screenshots are the product site's own (`https://ai-softphone.com/screenshots/macos/<lang>/<theme>/`), so they always match it. |
 | `tasks/` | Briefs for work that needs the program itself — see `tasks/macos-interface-notes.md`. |
 | `i18n/<code>/docusaurus-plugin-content-docs/current/` | Pages in another language, same file names as in `docs/`. A page that is not translated yet shows the English one. |
 | `sidebars.js` | The menu on the left — built from the folders in `docs/`; order with `sidebar_position` in a page's front matter. |

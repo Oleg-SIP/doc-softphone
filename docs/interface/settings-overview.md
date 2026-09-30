@@ -37,7 +37,7 @@ The steps are a guide, not a duty: a step you have no use for can stay red.
 | | **Calls** | [Codecs, call waiting, autodial and the call log](../sip-accounts/calls.md) |
 | | **Buttons** | [Buttons that dial, and watch, other extensions](../sip-accounts/buttons.md) |
 | | **Recording** | [Recording of calls: consent, conferences and how long files are kept](../recordings/call-recording.md) |
-| | **Capture** | [External recording](../external-recording/setup.md) of meetings held in other applications |
+| | **Capture** | [Capturing the sound of other applications](../capture/capture.md): meetings in Zoom, Teams, Meet and the like |
 | AI | **Transcription** | [Recognisers](../ai-processing/transcription.md) |
 | | **Processing** | [Automatic processing, spending limits, language models, prompts and rules](../ai-processing/processing.md) |
 | | **Dictionaries** | [Categories, tags and red flags](../ai-processing/dictionaries.md) |

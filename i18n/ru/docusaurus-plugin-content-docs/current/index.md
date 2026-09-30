@@ -39,7 +39,7 @@ description: Что такое AI Softphone, на чём он работает �
 | Выбрать микрофон, динамики и мелодию звонка | [Устройства](sip-accounts/devices.md) |
 | Слушать, искать и читать свои разговоры | [Окно «Записи»](recordings/recordings-window.md) |
 | Решить, какой ИИ пишет сводки и сколько это может стоить | [Обработка](ai-processing/processing.md) |
-| Записать встречу в другом приложении | [Настройка внешней записи](external-recording/setup.md) |
+| Записать встречу в другом приложении | [Настройка внешней записи](capture/capture.md) |
 | Подключить CRM или другую программу | [Локальный REST API](integration/rest-api.md) и [Вебхуки](integration/webhooks.md) |
 | Увидеть, что говорят друг другу телефон и АТС | [Диагностика](troubleshooting/diagnostics.md) |
 
