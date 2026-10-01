@@ -1,6 +1,6 @@
 ---
 title: Recordings window
-sidebar_position: 1
+sidebar_position: 2
 description: The library of conversations — filter, play, read the transcript and the write-up.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Prompt Studio
-sidebar_position: 4
+sidebar_position: 3
 description: The prompts that write up your conversations, and how to change them.
 ---
 

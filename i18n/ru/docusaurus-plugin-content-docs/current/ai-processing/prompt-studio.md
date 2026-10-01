@@ -1,6 +1,6 @@
 ---
 title: Prompt Studio
-sidebar_position: 4
+sidebar_position: 3
 description: Промпты, которые пишут сводки ваших разговоров, и как их изменить.
 ---
 

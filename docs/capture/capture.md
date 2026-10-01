@@ -29,7 +29,7 @@ Capture is off until you allow it. Open **Settings → Capture**.
 Everything the computer plays is recorded, not only the conversation. This phone cannot announce a recording into somebody else's meeting, so saying so is yours to do.
 :::
 
-The part of the program that does this is the **Capture** module, *recording a conversation happening in another application*. It can be switched off in [Modules](../program/modules.md).
+The part of the program that does this is the **Capture** module, *recording a conversation happening in another application*. It can be switched off in [Modules](../application/modules.md).
 
 ## Starting a capture
 

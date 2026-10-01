@@ -1,6 +1,6 @@
 ---
 title: Webhooks
-sidebar_position: 2
+sidebar_position: 1
 description: Have the phone notify your CRM or another system when a call starts, changes or ends.
 ---
 

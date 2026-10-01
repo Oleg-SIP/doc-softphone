@@ -54,8 +54,8 @@ Under the list, **Open** shows the log and **Clear** empties it. Clear the log j
 
 1. Set **Log detail** to the most detailed level.
 2. Press **Clear**, then reproduce the problem.
-3. Send the log file, or open **Settings → About**, write to us there and tick **Attach the log** — see [About](../program/about.md#feedback).
+3. Send the log file, or open **Settings → About**, write to us there and tick **Attach the log** — see [About](../application/about.md#feedback).
 
 For a problem with registration or a call, also send the lines of the failed attempt from the **SIP** tab.
 
-The part of the program behind all this — the SIP trace, the media statistics and the counters — can be switched off in [Modules](../program/modules.md) (**Diagnostics**).
+The part of the program behind all this — the SIP trace, the media statistics and the counters — can be switched off in [Modules](../application/modules.md) (**Diagnostics**).

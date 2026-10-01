@@ -1,6 +1,6 @@
 ---
 title: About
-sidebar_position: 5
+sidebar_position: 2
 description: The version, updates, your country, the licence, what the usage report contains, the feedback form and what the program is built with.
 ---
 

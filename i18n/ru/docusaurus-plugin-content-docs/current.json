@@ -34,5 +34,9 @@
   "sidebar.docs.category.Capturing other applications": {
     "message": "Перехват других приложений",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Modules and About": {
+    "message": "Модули и «О программе»",
+    "description": "The label for category 'Modules and About' in sidebar 'docs'"
   }
 }

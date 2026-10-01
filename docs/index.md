@@ -50,16 +50,22 @@ The screenshots in this documentation are taken on macOS and shown small: click 
 | Put colleagues on one-touch buttons | [Buttons](sip-accounts/buttons.md) |
 | Decide which calls are recorded, and for how long | [Recording calls](recordings/call-recording.md) |
 | Listen to, search and read your conversations | [Recordings window](recordings/recordings-window.md) |
-| Decide which AI writes up your conversations and what it may cost | [Processing](ai-processing/processing.md) |
 | Record a meeting held in another application | [Capture](capture/capture.md) |
+| Choose the recogniser that turns speech into text | [Transcription](ai-processing/transcription.md) |
+| Decide which AI writes up your conversations and what it may cost | [Processing](ai-processing/processing.md) |
+| Change the categories, tags and red flags | [Dictionaries](ai-processing/dictionaries.md) |
 | Change the layout, the theme, the start-up and the hotkeys | [Appearance](program/appearance.md), [Startup](program/startup.md) and [Shortcuts](program/shortcuts.md) |
-| Connect a CRM or another program | [Local REST API](integration/rest-api.md) and [Webhooks](integration/webhooks.md) |
+| Connect a CRM or another program | [Webhooks](integration/webhooks.md) and [Local REST API](integration/rest-api.md) |
 | See what the phone and the PBX are saying to each other | [Diagnostics](troubleshooting/diagnostics.md) |
-| Check the version, updates and what the usage report contains | [About](program/about.md) |
+| Find the cause of a problem | [Common problems](troubleshooting/common-problems.md) |
+| Switch parts of the program off | [Modules](application/modules.md) |
+| Check the version, updates and what the usage report contains | [About](application/about.md) |
+
+The pages follow the order of the tabs in **Settings**.
 
 ## Privacy
 
 - Everything stays on your computer by default: recordings, transcripts and history.
 - Account passwords, the webhook header value and the API token are kept in the computer's keyring, never in a settings file.
 - The program looks for updates once a day; it asks a server for one small file, and nothing is downloaded or installed without your say.
-- The program sends a short usage report, and you choose how much goes in it: **Basic** or **Extended**. It never contains numbers, accounts, passwords, contacts, conversations, transcripts or recordings. The full list is in [About](program/about.md#telemetry).
+- The program sends a short usage report, and you choose how much goes in it: **Basic** or **Extended**. It never contains numbers, accounts, passwords, contacts, conversations, transcripts or recordings. The full list is in [About](application/about.md#telemetry).

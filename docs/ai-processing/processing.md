@@ -1,6 +1,6 @@
 ---
 title: Processing
-sidebar_position: 1
+sidebar_position: 2
 description: Automatic processing of conversations, the monthly spending limits, language models, prompts and the rules that run them.
 ---
 

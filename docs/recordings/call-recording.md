@@ -1,6 +1,6 @@
 ---
 title: Recording calls
-sidebar_position: 2
+sidebar_position: 1
 description: Which calls are recorded, what the other party is told, how conferences are saved and how long the files are kept.
 ---
 
@@ -39,6 +39,6 @@ In many places — most of Europe, and several American states — recording a c
 
 A recording you have pinned is never deleted by any of these, and it still counts towards the limit. An hour of conversation takes about 30 MB.
 
-The part of the program that records calls, and tells the other party about it, can be switched off in [Modules](/program/modules).
+The part of the program that records calls, and tells the other party about it, can be switched off in [Modules](/application/modules).
 
 To record a meeting held in another application, see [Capture](/capture/).

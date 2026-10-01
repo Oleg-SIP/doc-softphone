@@ -1,6 +1,6 @@
 ---
 title: Local REST API
-sidebar_position: 1
+sidebar_position: 2
 description: Let other programs on this computer drive the phone — place calls, read history and contacts.
 ---
 
@@ -19,7 +19,7 @@ Open **Settings → Integration** and go to **Local control**.
 3. Optionally set a **Token**.
 4. Under **Access**, choose the groups to open: **Contacts**, **Call history**, **Calls, and control of them**, **Accounts**, **Settings**, **Counters**. All six are ticked by default.
 
-No separate service is installed and no restart is needed. The part of the program that does this can be switched off in [Modules](../program/modules.md) (**Integration**).
+No separate service is installed and no restart is needed. The part of the program that does this can be switched off in [Modules](../application/modules.md) (**Integration**).
 
 The base address is `http://127.0.0.1:8377`. **Open the API's own page** opens the address in a browser: it answers with a list of everything it serves, in English, with links you can follow. A group that is not enabled answers every request to it with `404 {"error":"no such endpoint"}`.
 

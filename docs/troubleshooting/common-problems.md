@@ -36,7 +36,7 @@ What happens when somebody rings while you are on a call is set under [Call wait
 
 - **Settings → Recording**, the first drop-down, decides which calls are recorded; see [Recording calls](/recordings/call-recording).
 - Recording starts when the call is answered, so a call that was not answered has no file.
-- The **Recording** module must be on in [Modules](/program/modules).
+- The **Recording** module must be on in [Modules](/application/modules).
 - Recordings are removed by the limits under **Retention**; a pinned recording is never removed.
 
 ## A meeting in another application was not captured
@@ -46,7 +46,7 @@ See [Capture](/capture/).
 - **Allow sound capture** in **Settings → Capture** must be on.
 - **Automatic start** is **Never** by default: press **Record** yourself.
 - Use **Test** on the same tab: the upper bar must move when you speak, the lower when something plays.
-- The **Capture** module must be on in [Modules](/program/modules).
+- The **Capture** module must be on in [Modules](/application/modules).
 
 ## There is a recording, but no transcript or summary
 
@@ -69,7 +69,7 @@ The PBX does not say whether the extension is free. The button still dials. See 
 
 ## The REST API does not answer
 
-- **Let other programs on this computer drive the phone** must be on in [Settings → Integration](/integration/rest-api), and the **Integration** module in [Modules](/program/modules).
+- **Let other programs on this computer drive the phone** must be on in [Settings → Integration](/integration/rest-api), and the **Integration** module in [Modules](/application/modules).
 - The address is `http://127.0.0.1:8377` unless you changed the **Port**.
 - A group you did not open under **Access** answers every request with `404`.
 - If you set a **Token**, requests that change something must carry it in the `Authorization` header.

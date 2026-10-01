@@ -1,6 +1,6 @@
 ---
 title: Transcription
-sidebar_position: 2
+sidebar_position: 1
 description: Choose the recogniser that turns audio into text, on your own machine or in the cloud.
 ---
 

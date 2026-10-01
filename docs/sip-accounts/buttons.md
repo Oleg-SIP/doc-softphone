@@ -40,4 +40,4 @@ Press **Add**; a form opens under the list.
 
 **Save** stays grey until the form is filled in. **Cancel** drops the form.
 
-The part of the program that shows the buttons can be switched off in [Modules](/program/modules).
+The part of the program that shows the buttons can be switched off in [Modules](/application/modules).

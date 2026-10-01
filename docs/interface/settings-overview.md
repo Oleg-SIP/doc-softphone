@@ -46,5 +46,5 @@ The steps are a guide, not a duty: a step you have no use for can stay red.
 | | **Shortcuts** | [Hotkeys](../program/shortcuts.md) |
 | | **Integration** | [Webhooks](../integration/webhooks.md) and the [local REST API](../integration/rest-api.md) |
 | | **Diagnostics** | [The diagnostics window, the log and the files](../troubleshooting/diagnostics.md) |
-| | **Modules** | [The parts of the program, switched on and off](../program/modules.md) |
-| | **About** | [Version, updates, licence, usage report and feedback](../program/about.md) |
+| | **Modules** | [The parts of the program, switched on and off](../application/modules.md) |
+| | **About** | [Version, updates, licence, usage report and feedback](../application/about.md) |
