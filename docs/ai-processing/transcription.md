@@ -12,7 +12,7 @@ A conversation is transcribed when you ask for it in the [Recordings window](../
 
 ## Language
 
-**Language** is a two-letter language code as in ISO 639-1 (`en`, `de`, `ru`…). Leave it empty and the recogniser decides — that is right unless your calls are in a language it keeps mishearing.
+**Language** is a two-letter language code as in ISO 639-1 (`en`, `de`, `es`, `fr`, `sr`…). Leave it empty and the recogniser decides — that is right unless your calls are in a language it keeps mishearing.
 
 ## Recognisers
 
