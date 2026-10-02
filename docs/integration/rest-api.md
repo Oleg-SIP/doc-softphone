@@ -21,7 +21,11 @@ Open **Settings → Integration** and go to **Local control**.
 
 No separate service is installed and no restart is needed. The part of the program that does this can be switched off in [Modules](../application/modules.md) (**Integration**).
 
-The base address is `http://127.0.0.1:8377`. **Open the API's own page** opens the address in a browser: it answers with a list of everything it serves, in English, with links you can follow. A group that is not enabled answers every request to it with `404 {"error":"no such endpoint"}`.
+The base address is `http://127.0.0.1:8377`. **Open the API's own page** opens the address in a browser: it answers with a list of everything it serves, in English, with links you can follow.
+
+<Shot name="23_api_page" alt="The API's own page, http://127.0.0.1:8377/, open in a browser" />
+
+The page lists what the phone can be told to do from this machine, with the method, the address and a line on each; the addresses that read something are links you can open. Without a token the list shows what may be read and what controls calls; the endpoints that change what is stored are not listed until you send the token in the `Authorization` header. A group that is not enabled answers every request to it with `404 {"error":"no such endpoint"}`.
 
 ## Authentication
 
