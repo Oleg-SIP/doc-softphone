@@ -76,7 +76,28 @@ Each entry of `/taxonomy` has a constant `code`, a `title` and a `description` i
 
 `calls_incoming_total`, `calls_outgoing_total`, `calls_answered_total`, `calls_missed_total`, `calls_declined_total`, `webhooks_delivered_total`, `webhooks_failed_total`, `webhooks_dropped_total`, `api_requests_total`, `api_requests_refused_total`.
 
-## Example: click to call
+## Example: placing a call
+
+`POST /calls` places an outgoing call. The body is JSON with the `number` to dial and, optionally, the `account_id` of the account to call from:
+
+```bash
+curl --location 'http://127.0.0.1:8377/calls' \
+--header 'Content-Type: application/json' \
+--data '{
+    "number": "1020",
+    "account_id": "0d7a4c52-6f2e-4a51-8f46-7d9a3e1b2c90"
+}'
+```
+
+- `number` is the number to dial, as you would type it in the dialler.
+- `account_id` is the identifier of the account the call goes out on. Take it from `GET /accounts`. It is optional: without it the call goes out on the account selected in the main window.
+- If you set a **Token**, add `--header 'Authorization: <your token>'` to the request.
+
+The phone places the call at once. The answer carries the `id` of the new call, which the other `/calls/{id}/…` endpoints take: `hangup`, `hold`, `resume`, `dtmf` and `transfer`.
+
+While the call goes on, a receiver of [Webhooks](/integration/webhooks) gets its events, starting with [`call-started`](/integration/webhooks#an-outgoing-call-event-by-event).
+
+## Example: click to call from a web page
 
 ```javascript
 async function dial(number) {
