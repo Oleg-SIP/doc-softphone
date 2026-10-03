@@ -131,6 +131,128 @@ Four seconds of conversation later:
 
 `state` is `ended`, `duration_s` is the length of the conversation, and `reason` says who ended it: `local-hangup` here, because the person at this phone hung up.
 
+## An outgoing call, event by event
+
+The same extension is called from the account `1002`: the person dials `1020`, the phone rings, the other side answers, talks for seven seconds and hangs up. The receiver gets four requests, one more than for an incoming call, because an outgoing call has a state of its own while it is ringing at the other end.
+
+### 1. It is dialled: `call-started`
+
+```json
+{
+  "account": "1002@pbx.example.com",
+  "account_id": "0d7a4c52-6f2e-4a51-8f46-7d9a3e1b2c90",
+  "answered_by": "no",
+  "callstart_ts": "1791023883072",
+  "callstate_ts": "1791023883072",
+  "dialed": "1020",
+  "direction": "out",
+  "duration_s": "0",
+  "event": "call-started",
+  "event_ts": "1791023883072",
+  "id": "9a3e5c71-2d48-4b6f-8e10-3c5f7a1b9d24",
+  "name": "",
+  "number": "1020",
+  "reason": "none",
+  "seance_id": "c47d2e90-6b13-4f85-a2d7-18e9b0f35a6c",
+  "state": "dialing",
+  "uri": "sip:1020@pbx.example.com:5060"
+}
+```
+
+`direction` is `out`, `state` is `dialing`, and `dialed` holds the number as it was dialled. The phone does not know the name of the other party yet, so `name` is empty.
+
+### 2. It rings at the other end: `call-state-changed`
+
+Half a second later:
+
+```json
+{
+  "account": "1002@pbx.example.com",
+  "account_id": "0d7a4c52-6f2e-4a51-8f46-7d9a3e1b2c90",
+  "answered_by": "no",
+  "callstart_ts": "1791023883072",
+  "callstate_ts": "1791023883591",
+  "dialed": "1020",
+  "direction": "out",
+  "duration_s": "0",
+  "event": "call-state-changed",
+  "event_ts": "1791023883591",
+  "id": "9a3e5c71-2d48-4b6f-8e10-3c5f7a1b9d24",
+  "name": "",
+  "number": "1020",
+  "reason": "none",
+  "seance_id": "c47d2e90-6b13-4f85-a2d7-18e9b0f35a6c",
+  "state": "ringing-out",
+  "uri": "sip:1020@pbx.example.com:5060"
+}
+```
+
+`state` is `ringing-out`.
+
+### 3. The other side answers: `call-state-changed`
+
+Four seconds after that:
+
+```json
+{
+  "account": "1002@pbx.example.com",
+  "account_id": "0d7a4c52-6f2e-4a51-8f46-7d9a3e1b2c90",
+  "answered_by": "no",
+  "callstart_ts": "1791023883072",
+  "callstate_ts": "1791023887072",
+  "dialed": "1020",
+  "direction": "out",
+  "duration_s": "0",
+  "event": "call-state-changed",
+  "event_ts": "1791023887076",
+  "id": "9a3e5c71-2d48-4b6f-8e10-3c5f7a1b9d24",
+  "name": "Jack Russel",
+  "number": "1020",
+  "reason": "none",
+  "seance_id": "c47d2e90-6b13-4f85-a2d7-18e9b0f35a6c",
+  "state": "active",
+  "uri": "sip:1020@pbx.example.com"
+}
+```
+
+`state` is `active`. The `name` is now filled in, and the `uri` is the address of the party as the answer reported it. `duration_s` is still `0`: it counts from this moment.
+
+### 4. It ends: `call-ended`
+
+Seven seconds later the other side hangs up:
+
+```json
+{
+  "account": "1002@pbx.example.com",
+  "account_id": "0d7a4c52-6f2e-4a51-8f46-7d9a3e1b2c90",
+  "answered_by": "no",
+  "callstart_ts": "1791023883072",
+  "callstate_ts": "1791023894781",
+  "dialed": "1020",
+  "direction": "out",
+  "duration_s": "7",
+  "event": "call-ended",
+  "event_ts": "1791023894789",
+  "id": "9a3e5c71-2d48-4b6f-8e10-3c5f7a1b9d24",
+  "name": "Jack Russel",
+  "number": "1020",
+  "reason": "remote-hangup",
+  "seance_id": "c47d2e90-6b13-4f85-a2d7-18e9b0f35a6c",
+  "state": "ended",
+  "uri": "sip:1020@pbx.example.com"
+}
+```
+
+`duration_s` is `7`, and `reason` is `remote-hangup`, because the other side ended the call. When you hang up yourself, it is `local-hangup`, as in the incoming call above.
+
+### The states, side by side
+
+| | Incoming call | Outgoing call |
+| --- | --- | --- |
+| `call-started` | `ringing-in` | `dialing` |
+| `call-state-changed` | `active` | `ringing-out`, then `active` |
+| `call-ended` | `ended` | `ended` |
+
 ## The fields
 
 **Every value is a string**, numbers and timestamps included. The names follow one convention: `_id` is an identifier, `_ts` is Unix time in milliseconds (UTC), `_s` is a length in seconds.
@@ -142,15 +264,15 @@ Four seconds of conversation later:
 | `seance_id` | The conversation the call belongs to. |
 | `direction` | `in` or `out`. |
 | `state` | `dialing`, `ringing-out`, `ringing-in`, `active`, `hold`, `onhold`, `conference` or `ended`. |
-| `number`, `name`, `uri` | The other party: the number, the name from [Contacts](/interface/contacts-history) if the number is known, and the SIP address. |
-| `dialed` | Empty for an incoming call. |
+| `number`, `name`, `uri` | The other party: the number, the name and the SIP address. The `name` can be empty at first and be filled in later in the call, as in the outgoing call above. |
+| `dialed` | The number as it was dialled, for an outgoing call; empty for an incoming call. |
 | `account`, `account_id` | The account the call is on: `username@server`, and the identifier of the account. |
 | `event_ts` | When this event was sent. |
 | `callstart_ts` | When the call started. |
 | `callstate_ts` | When the call last changed its `state`. |
 | `duration_s` | The length of the conversation, counted from the moment the call is answered; `0` until then. |
 | `reason` | `none` while the call goes on; when it ends, why: `local-hangup`, `remote-hangup`, `busy`, `no-answer` or `cancelled`. |
-| `answered_by` | `no` when nobody answered the call for you. The calls above were answered by hand. |
+| `answered_by` | `no` when nobody answered the call for you. The calls on this page were answered by hand. |
 
 ## Receiving the events
 
