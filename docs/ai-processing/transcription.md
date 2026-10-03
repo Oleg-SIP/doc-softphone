@@ -60,10 +60,39 @@ Things worth knowing before you choose:
 
 The list of a service's models changes often. If a model you want is missing here, the service's own documentation has the current list — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text) — the **Model** is the name exactly as the service gives it.
 
-## On your own machine
+## Your own models
 
-A recogniser on your own machine keeps the audio inside the building and costs nothing to run. A Whisper server in your network that offers an OpenAI-compatible `/v1` interface will do; give its address, such as `http://asr.local:8080/v1`, and its model, such as `whisper-large-v3`.
+A recogniser does not have to be a cloud service. The phone can use **any model that is served through the OpenAI-compatible API** — the `POST /v1/audio/transcriptions` interface — whether it runs locally on your computer or on a server of your own. The audio never leaves your premises, nothing is charged by the minute, and there is no limit on volume.
 
-## Rules
+To add one, press **Add** and give:
 
-The first step of the [rules](/ai-processing/processing#rules) is **Transcribe every conversation**; it is what uses the recogniser when processing is automatic.
+- the **address** of the server, up to and including `/v1`, for example `http://localhost:8000/v1` for the computer itself or `http://asr.local:8080/v1` for a server in your network;
+- the **model** name exactly as the server lists it, for example `openai/whisper-large-v3-turbo`.
+
+### What can be used
+
+The usual choice is **Whisper**, OpenAI's open speech recognition model. It is free to use, understands about a hundred languages, and comes in several sizes: a small model runs on an ordinary computer, the large ones are noticeably more accurate and are best given a graphics card.
+
+| Model | Notes |
+| --- | --- |
+| `whisper-large-v3` | The most accurate Whisper. For a server with a GPU. |
+| `openai/whisper-large-v3-turbo` | A faster version of `large-v3` with a small loss of accuracy. |
+| `Systran/faster-whisper-large-v3` | `large-v3` converted for the faster-whisper engine; quicker, and lighter on memory. |
+| `medium`, `small`, `base` | Smaller Whisper models, for a computer without a graphics card. |
+
+Whisper is the model that these servers are built around. Some of them can also serve other speech recognition models, such as NVIDIA Parakeet.
+
+### Servers that offer the OpenAI-compatible API
+
+The model has to be run by a server that offers the OpenAI-compatible `/v1/audio/transcriptions` endpoint. These do:
+
+| Server | What it is |
+| --- | --- |
+| [vLLM](https://docs.vllm.ai/en/latest/serving/online_serving/speech_to_text/) | A high-performance model server. Serves Whisper at `http://localhost:8000/v1` once started. |
+| [Speaches](https://github.com/speaches-ai/speaches) | A server for speech models, "Ollama for speech", built on faster-whisper. Loads a model when it is first asked for. |
+| [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Runs Whisper efficiently on a CPU, including Apple silicon. Its `whisper-server` is started with `--inference-path /v1/audio/transcriptions`. |
+| [LocalAI](https://localai.io/) | A drop-in OpenAI replacement that runs models locally. |
+
+Any other server that offers the same endpoint works in the same way. If a server needs a key, enter it as for a cloud service.
+
+Before you rely on a server, make a test recording and look at the transcript in the [Recordings window](/recordings/recordings-window): a conversation in a language the model knows poorly shows it at once.
