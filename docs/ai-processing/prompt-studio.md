@@ -1,10 +1,12 @@
 ---
-title: Prompt Studio
+title: Personal Prompt Studio
 sidebar_position: 3
-description: The prompts that write up your conversations, and how to change them.
+description: The prompts that write up your conversations, the rules that run them, and how to make them yours.
 ---
 
-The write-up of a conversation is made by prompts. The program comes with eleven, and you can change them in plain language, duplicate them and add your own. They are listed under **Prompts** in [Settings → Processing](processing.md#prompts).
+**Personal Prompt Studio** is the part of AI Softphone that writes up your conversations your way. The write-up is made by prompts: the program comes with eleven, ready to use once transcription and a language model are connected, and you can change them in plain language, duplicate them and add your own. They are listed under **Prompts** in [Settings → Processing](processing.md#prompts).
+
+Your LLM, your key, your control: connect the model you prefer with your own key, through a supported service or a compatible API — or a model deployed inside your organisation. With [transcription](transcription.md#your-own-models) on your own hardware too, both the audio and the transcripts stay inside your environment.
 
 <Shot name="12b_settings_processing_prompts" alt="The list of prompts in Settings → Processing" />
 
@@ -28,9 +30,13 @@ The second column is what the list shows under the name of the prompt: what it w
 
 The forms are fixed shapes of an answer, which is what lets the program keep it and search it later: **Labels** are codes from one of your lists, **Flags** are codes with a severity, **Rubric** is a score with a reason and a score for each criterion, **Answer** is a reply with the words it rests on. The instructions that tell a model the shape are kept in [Dictionaries](dictionaries.md#answer-shapes-and-language).
 
+Calls made in AI Softphone, meetings [captured](/capture/) from the computer and imported recordings all go through the same prompts once they have a transcript.
+
+Action items record what was agreed — they do not send messages, book visits or create tickets for you.
+
 ## Making it yours
 
-- Change what a prompt asks, in plain language.
+- Change what a prompt asks, in plain language: what it looks for, the answer format and the language it answers in.
 - Duplicate a prompt to try a variant.
 - Choose the model for each prompt — on your own machine or in the cloud.
 - Set the order in which prompts run, switch them on and off, and make them conditional — that is done with the [rules](processing.md#rules): for example, a sales review runs only on calls filed as **Sales**.

@@ -64,4 +64,12 @@ The four icons at the right of the drop-down:
 
 You can export a transcript as plain text or as subtitles.
 
-The write-up is made by the [prompts](../ai-processing/prompt-studio.md) and models you set up in [Processing](../ai-processing/processing.md), by [rules](../ai-processing/processing.md#rules) that run by themselves or when you ask. How long recordings are kept is set in [Recording calls](call-recording.md#retention).
+The write-up is made by the [prompts](/ai-processing/prompt-studio) and models you set up in [Processing](../ai-processing/processing.md), by [rules](../ai-processing/processing.md#rules) that run by themselves or when you ask. How long recordings are kept is set in [Recording calls](call-recording.md#retention).
+
+## A recording you already have
+
+A recording made somewhere else — on a mobile phone, a dictaphone or another system — can be dropped into the program. It is filed exactly like a dialled call: transcribed, written up and found by the same search.
+
+## Deleting a recording
+
+When a recording is deleted, everything made from it goes with it: the transcript and the write-up.

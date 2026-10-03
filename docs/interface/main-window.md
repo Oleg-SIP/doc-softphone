@@ -51,13 +51,15 @@ While a call is going on, the number field moves to the top with a keypad icon i
 - a row of buttons: record (circle), mute (microphone), hold (pause) and the red **hang up** button;
 - a second row: transfer (handset with an arrow) and the keypad.
 
+A call can be transferred straight through, or after you have spoken to the person first.
+
 If the number is known in **Contacts**, its name is shown instead of the number. The same actions have [hotkeys](../program/shortcuts.md): answer, hang up, hold and mute.
 
 ## Several calls at once
 
 <Shot src="https://ai-softphone.com/screenshots/macos/en/light/calls.png" alt="Several calls" />
 
-A new incoming call appears on its own card above the list, with a green, a yellow and a red button and a line saying who you are talking to now (**On a call with Maria Ellis**). The list below shows every call with its state — **On hold**, **On a call**, **Incoming call** — and the account it is on. A pause icon marks a call on hold and a speaker icon marks the one you are talking on.
+An incoming call is announced by a banner wherever you are working, even when the phone is hidden. A new incoming call appears on its own card above the list, with a green, a yellow and a red button and a line saying who you are talking to now (**On a call with Maria Ellis**). The list below shows every call with its state — **On hold**, **On a call**, **Incoming call** — and the account it is on. A pause icon marks a call on hold and a speaker icon marks the one you are talking on.
 
 What happens when somebody rings while you are already on a call is set in [Calls settings](../sip-accounts/calls.md#call-waiting).
 

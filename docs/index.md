@@ -18,15 +18,21 @@ Recordings, transcripts and history are kept in a file you own. No account or su
 1. A conversation arrives: a call, a meeting or a file.
 2. It is recorded on two channels, so what you said and what the other side said stay apart.
 3. It is transcribed, speaker by speaker, in step with the audio.
-4. The language model you chose writes it up: summary, tasks, category, tags and red flags.
+4. The language model you chose writes it up: summary, tasks, category, tags and red flags — and you can ask the conversation a question.
 
-## System requirements
+## Download and system requirements
+
+The program is free to download from [ai-softphone.com](https://ai-softphone.com/#download): an installer (`.exe`) for Windows, a disk image (`.dmg`) for macOS, and an AppImage or a `.deb` for Linux. Nothing else has to be installed first — Qt, OpenSSL and the C++ runtime travel inside the package. You will need a SIP account, from your provider or from the PBX you run yourself. Recording works the moment the program is installed; the transcript and the write-up need a service you choose or a model on your own machine.
 
 | System | Requirements |
 | --- | --- |
-| macOS | macOS 14.4 or newer; Apple silicon only (Intel Macs are not supported); Metal graphics; 160 MB of disk space |
-| Windows | Windows 10 (build 17763) or newer, including Windows 11; 64-bit Intel/AMD processor; Direct3D 11 or OpenGL 2.1; 250 MB of disk space |
-| Linux | Ubuntu 22.04 LTS or newer, Debian 12+, Fedora 36+, openSUSE Leap 15.5+; 64-bit Intel/AMD processor; OpenGL 2.1 / ES 2.0; 200 MB of disk space |
+| macOS | macOS 14.4 or newer; Apple silicon only — an Intel Mac cannot open it, not even through Rosetta; Metal graphics; 160 MB of disk space, plus the recordings. The system asks once for the microphone. |
+| Windows | Windows 10 version 1809 (build 17763) or newer, and Windows 11; 64-bit Intel or AMD processor; Direct3D 11 or OpenGL 2.1; 250 MB of disk space, plus the recordings. |
+| Linux | Ubuntu 22.04 LTS or newer, Debian 12 or newer, and anything of that age — Fedora 36+, openSUSE Leap 15.5+, Mint 21+, Arch; GNU C library 2.35 or newer; 64-bit Intel or AMD processor; OpenGL 2.1 or OpenGL ES 2.0, on X11 or Wayland; PipeWire or PulseAudio (ALSA where there is neither); 200 MB of disk space, plus the recordings. The tray icon needs a desktop with a status-notifier area. |
+
+On Linux the AppImage runs on any distribution of that age: make it executable and start it. The `.deb` also needs the system's own C++ runtime from GCC 13, which Ubuntu 24.04 and Debian 13 have and Ubuntu 22.04 has not; on anything older, take the AppImage.
+
+The interface is available in thirty languages, chosen in [Appearance](/program/appearance) and changed without a restart.
 
 The screenshots in this documentation are taken on macOS and shown small: click one to see it full size. The program looks and works the same on the other systems.
 
@@ -65,7 +71,8 @@ The pages follow the order of the tabs in **Settings**.
 
 ## Privacy
 
-- Everything stays on your computer by default: recordings, transcripts and history.
-- Account passwords, the webhook header value and the API token are kept in the computer's keyring, never in a settings file.
-- The program looks for updates once a day; it asks a server for one small file, and nothing is downloaded or installed without your say.
-- The program sends a short usage report, and you choose how much goes in it: **Basic** or **Extended**. It never contains numbers, accounts, passwords, contacts, conversations, transcripts or recordings. The full list is in [About](application/about.md#telemetry).
+- Everything stays on your computer by default: recordings, transcripts and history live in a file you own. Nothing about a conversation — not a number, not a name, not a word of what was said — goes anywhere you did not send it yourself.
+- Account passwords, the webhook header value and the API token are kept in the operating system's keyring, never in a settings file.
+- A new version announces itself when it appears — never during a call — and installs only when you say so.
+- The program sends one small usage report a day. You are shown what is in it before the first one goes, and you choose how much it carries: **Basic** or **Extended**. It never contains numbers, contacts, the address of your PBX or anything said in a conversation. The full list is in [About](/application/about#telemetry).
+- The program is free software under GPL v2.

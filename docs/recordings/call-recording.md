@@ -16,7 +16,7 @@ Recording starts when the call is answered and never before, so ringing and the 
 
 ## Consent
 
-The drop-down chooses what the other party is told about the recording. The default is **Nothing at all**.
+The drop-down chooses how the other party is told about the recording: by a spoken announcement, by a tone, by your own confirmation — or not at all. The default is **Nothing at all**.
 
 :::caution
 In many places — most of Europe, and several American states — recording a conversation without telling the other party is against the law. This is your decision to make, and the program says so under the drop-down.

@@ -72,11 +72,12 @@ The PBX does not say whether the extension is free. The button still dials. See 
 - **Let other programs on this computer drive the phone** must be on in [Settings → Integration](/integration/rest-api), and the **Integration** module in [Modules](/application/modules).
 - The address is `http://127.0.0.1:8377` unless you changed the **Port**.
 - A group you did not open under **Access** answers every request with `404`.
-- If you set a **Token**, requests that change something must carry it in the `Authorization` header.
+- If you set a **Token**, requests that change stored data must carry it in the `Authorization` header.
+- More symptoms are in [When it does not work](/integration/rest-api#when-it-does-not-work).
 
 ## Webhooks do not arrive
 
-Press **Send a test event** in [Settings → Integration](/integration/webhooks). The counters `webhooks_failed_total` and `webhooks_dropped_total` of the REST API show how delivery is going.
+Press **Send a test event** in [Settings → Integration](/integration/webhooks). The counters `webhooks_failed_total` and `webhooks_dropped_total` of the REST API show how delivery is going; [When nothing arrives](/integration/webhooks#when-nothing-arrives) lists what each of them means.
 
 ## A hotkey does nothing
 

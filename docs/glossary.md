@@ -18,7 +18,7 @@ description: The terms of IP telephony and of AI Softphone used in this document
 | **Extension** | The internal number of a person or a device on a PBX. |
 | **IP PBX** | The telephone exchange of an office, running on a network; also called a softswitch. |
 | **Language model** | The AI that reads a transcript and writes about it. See [Processing](/ai-processing/processing). |
-| **Prompt** | What a language model is asked. See [Prompt Studio](/ai-processing/prompt-studio). |
+| **Prompt** | What a language model is asked. See [Personal Prompt Studio](/ai-processing/prompt-studio). |
 | **Recogniser** | The service that turns audio into text (speech recognition). See [Transcription](/ai-processing/transcription). |
 | **Red flag** | A thing in a conversation that needs attention, with the evidence and the time. See [Dictionaries](/ai-processing/dictionaries#red-flags). |
 | **Registration** | The phone telling the PBX where it is, so that calls reach it. A green dot on the account means it is registered. |

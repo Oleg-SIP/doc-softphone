@@ -29,4 +29,4 @@ Each module has a check box, a name, a line saying what it does, and at the righ
 | **Telephony** | SIP, accounts, calls, the dialler and the call history. |
 | **Transcription** | Recognisers, the queue that drives them, and the transcripts they produce: [Transcription](/ai-processing/transcription). |
 
-Switch off a module you have no use for — for example **Integration** on a computer where nothing else talks to the phone.
+Turn a module off and it is gone: no settings for it, no menu entry, nothing of it running. Switch off a module you have no use for — for example **Integration** on a computer where nothing else talks to the phone — or keep a phone that is only a phone, where that is all a desk needs. The package is the same either way: there is nothing to buy and nothing to unlock.

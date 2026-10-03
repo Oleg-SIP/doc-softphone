@@ -16,7 +16,7 @@ A conversation is transcribed when you ask for it in the [Recordings window](/re
 
 ## Recognisers
 
-A recogniser is a speech-to-text service the phone sends audio to. Press **Add** to add one. Each is listed with its name and, under it, the model and the address of its service. In the picture there are four:
+A recogniser is a speech-to-text service the phone sends audio to. Press **Add** to add one; the **Test** button of the form checks that the service really answers. Each is listed with its name and, under it, the model and the address of its service. In the picture there are four:
 
 | Name | Model | Address |
 | --- | --- | --- |

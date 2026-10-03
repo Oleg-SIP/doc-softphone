@@ -26,7 +26,7 @@ There are two limits because a month can be counted in two things. Both are empt
 
 ## Language models
 
-The models that read a transcript and write about it. Press **Add** to add one. Each is listed with its name and, under it, the model identifier and the address of its service, for example `qwen3-32b · http://llm.local:8000/v1`. The one marked **default** is the one used by default.
+The models that read a transcript and write about it. Press **Add** to add one. Each is listed with its name and, under it, the model identifier and the address of its service, for example `qwen3-32b · http://llm.local:8000/v1`. The one marked **default** is the one used by default. A button in the form of a model checks that the service really answers before you rely on it.
 
 - A model **on your own machine** keeps every conversation in the building and costs nothing to run.
 - A model in the cloud — OpenAI, Claude, Mistral, DeepSeek, Groq and others — is charged per use. The program shows the price of each call in tokens and in money.
@@ -35,7 +35,7 @@ The models that read a transcript and write about it. Press **Add** to add one. 
 
 <Shot name="12b_settings_processing_prompts" alt="Settings → Processing: the prompts" />
 
-*What the models are asked.* Every prompt came with the program and every one is yours to change — and to put back. Each is listed with its name and, under it, what it writes and in which form. The form — **Answer**, **Items**, **Labels**, **JSON**, **Prose**, **Flags** or **Rubric** — decides how the answer is kept and shown. The prompts are described in [Prompt Studio](prompt-studio.md). **Add** makes a prompt of your own.
+*What the models are asked.* Every prompt came with the program and every one is yours to change — and to put back. Each is listed with its name and, under it, what it writes and in which form. The form — **Answer**, **Items**, **Labels**, **JSON**, **Prose**, **Flags** or **Rubric** — decides how the answer is kept and shown. The prompts are described in [Personal Prompt Studio](prompt-studio.md). **Add** makes a prompt of your own.
 
 ## Rules
 

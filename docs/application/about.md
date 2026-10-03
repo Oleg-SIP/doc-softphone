@@ -28,7 +28,7 @@ The program is free software under the GPL-2.0-or-later. It comes with no warran
 
 <Shot name="20b_settings_about_telemetry" alt="Settings → About: what the usage report contains" />
 
-The tab lists what the usage report contains.
+The program sends one small usage report a day. You are shown what is in it before the first one goes, and the tab lists it:
 
 | | What is sent |
 | --- | --- |

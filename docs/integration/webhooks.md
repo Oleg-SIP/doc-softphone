@@ -1,12 +1,12 @@
 ---
 title: Webhooks
 sidebar_position: 1
-description: "Have the phone send your CRM or another system a request when a call starts, changes or ends, with the exact requests of an incoming call."
+description: "Have the phone send your CRM or another system a request when a call starts, changes or ends — with the exact requests of an incoming and an outgoing call."
 ---
 
-A webhook is a request the phone sends to an address of your choice every time something happens to a call. It is how a CRM can open the customer's card before the second ring, log a call when it ends, or light a lamp on a wallboard. A webhook needs no inbound firewall rules: the phone calls out to you.
+A webhook is a request the phone sends to an address of your choice every time something happens to a call. It is how a CRM can open the customer's card before the second ring, log a call when it ends, or light a lamp on a wallboard. A webhook needs no inbound firewall rules: the phone calls out to you. Because the requests are sent from the workstation, the address only has to be reachable from that computer — an internal `http://crm.local/calls` works as well as a public HTTPS address.
 
-Webhooks are **off** until you turn them on.
+Webhooks are **off** after installation, until you turn them on. They work alongside the [local REST API](/integration/rest-api): an event says that something changed, the API gives the current details.
 
 ## Turning them on
 
@@ -19,7 +19,7 @@ Open **Settings → Integration**. **Webhooks** is the first section of the tab.
 3. Choose the **Method**: **POST** (the default) or **GET**.
 4. Under **Events** tick what to send: **A new call**, **A call ending**, **A call changing state**.
 5. Optionally, under **Authorization**, set a header that your receiver can check: a **Header name** (`Authorization` is suggested) and a **Header value**. The value is kept in the computer's keyring, never in a settings file; once saved, the field shows *Saved — type to replace it*.
-6. Press **Send a test event** to see that it arrives. It sends one event for a call that never happened.
+6. Press **Send a test event** to see that it arrives. It sends one event for a call that never happened, with the same headers as a real one. Log the raw request and build your receiver against what your version actually sends.
 
 The part of the program that sends the requests is the **Integration** module; it can be switched off in [Modules](/application/modules).
 
@@ -28,8 +28,10 @@ The part of the program that sends the requests is the **Integration** module; i
 | Ticked as | Event | Sent when |
 | --- | --- | --- |
 | **A new call** | `call-started` | An incoming call starts ringing or an outgoing call is placed. |
-| **A call changing state** | `call-state-changed` | The call's `state` changes: it is answered, put on hold or resumed. |
+| **A call changing state** | `call-state-changed` | The call's `state` changes: it is answered, put on hold or resumed by either side, or joins or leaves a conference. Muting does not send it. |
 | **A call ending** | `call-ended` | The call has ended. |
+
+Each event can be ticked on its own. A screen pop needs only the first; a call log only the last. `call-started` is sent first and should be handled quickly.
 
 ## What the request looks like
 
@@ -255,44 +257,97 @@ Seven seconds later the other side hangs up:
 
 ## The fields
 
-**Every value is a string**, numbers and timestamps included. The names follow one convention: `_id` is an identifier, `_ts` is Unix time in milliseconds (UTC), `_s` is a length in seconds.
+**Every value is a string**, numbers and timestamps included: `"duration_s": "42"`. A moment that is not known is an empty string. The names follow one convention: `_id` is an identifier, `_ts` is Unix time in milliseconds (UTC), `_s` is a length in seconds — the same as in the REST API, where the values are JSON numbers.
 
 | Field | Meaning |
 | --- | --- |
 | `event` | `call-started`, `call-state-changed` or `call-ended`. |
-| `id` | The call. The same in every event of the call. |
-| `seance_id` | The conversation the call belongs to. |
+| `id` | The call: the same UUID as in `GET /calls` and `/calls/{id}/…`, and the same in every event of the call. |
+| `seance_id` | The conversation the call belongs to; see [below](#one-conversation-across-transfers). |
 | `direction` | `in` or `out`. |
-| `state` | `dialing`, `ringing-out`, `ringing-in`, `active`, `hold`, `onhold`, `conference` or `ended`. |
-| `number`, `name`, `uri` | The other party: the number, the name and the SIP address. The `name` can be empty at first and be filled in later in the call, as in the outgoing call above. |
-| `dialed` | The number as it was dialled, for an outgoing call; empty for an incoming call. |
-| `account`, `account_id` | The account the call is on: `username@server`, and the identifier of the account. |
-| `event_ts` | When this event was sent. |
-| `callstart_ts` | When the call started. |
-| `callstate_ts` | When the call last changed its `state`. |
-| `duration_s` | The length of the conversation, counted from the moment the call is answered; `0` until then. |
-| `reason` | `none` while the call goes on; when it ends, why: `local-hangup`, `remote-hangup`, `busy`, `no-answer` or `cancelled`. |
-| `answered_by` | `no` when nobody answered the call for you. The calls on this page were answered by hand. |
+| `state` | The same values as in `GET /calls`: `dialing`, `ringing-out`, `ringing-in`, `active`, `hold` (held by this phone), `onhold` (held by the other party), `conference` or `ended`. |
+| `number` | The other party's number. Match your CRM records on this field. |
+| `name` | The other party's name, from Contacts; it may be empty, and may be filled in later in the call, as in the outgoing call above. |
+| `uri` | The other party's SIP address. |
+| `dialed` | The digits dialled, for an outgoing call; empty for an incoming call. |
+| `account`, `account_id` | The line the call is on: `username@server`, and the identifier from `GET /accounts`. |
+| `event_ts` | When the event happened. |
+| `callstart_ts` | When the phone first learned of the call. |
+| `callstate_ts` | When the call entered its current `state`. |
+| `duration_s` | Talk time in seconds, from answer to hang-up. Set on `call-ended` for an answered call; `0` otherwise. |
+| `reason` | How the call ended: `local-hangup`, `remote-hangup`, `busy`, `no-answer`, `cancelled`…; `none` until then. |
+| `answered_by` | `no` if a person answered the call; otherwise what answered it. |
+
+## One conversation across transfers
+
+`seance_id` groups the calls that make up one conversation. A call placed or received from scratch starts a new one. A call created by a transfer, a call that replaces another, a consultation about a call and every call joined into a conference keep the `seance_id` of the call they came from.
+
+Between phones it travels in the SIP header `X-Seance-Id`: when a call is transferred to a colleague who also uses AI Softphone, and the PBX passes the header on, both workstations report the same `seance_id`.
+
+## GET instead of POST
+
+**GET** is for receivers that cannot take a request body, such as an older CRM or a script bridge. The same fields are then sent as query parameters.
+
+With **GET** the address can be a template: each `[field]` is replaced by the value of that field, percent-encoded. For example:
+
+```text
+https://crm.local/pop?phone=[number]&call=[id]
+```
+
+The placeholders use the field names above. Templates saved with the earlier names (`[accountId]`, `[at]`, `[duration]`, `[answeredBy]`, `[seanceId]`) keep working.
+
+## How the events are delivered
+
+| Behaviour | What it means for you |
+| --- | --- |
+| Events are queued, not sent from the call itself | A slow receiver never delays ringing, calls or transfers. |
+| A full queue drops events | If your receiver stops answering, events are lost but the telephone keeps working. Watch `webhooks_dropped_total`. |
+| Refused and unreachable deliveries are counted | `webhooks_failed_total` rising while `webhooks_delivered_total` stands still points at the receiver. |
+| Events arrive in order | Call started, then the state changes, then call ended. To order events you have stored, use `callstate_ts`, not the time they arrived. |
+| At least once | The same event can come twice. `id`, `event` and `callstate_ts` together identify an event: make your handler skip one it has seen. |
 
 ## Receiving the events
 
-A receiver reads the JSON body and acts on `event`. For example, in Node.js with Express:
+The one rule for a receiver: **answer `200` at once, and do the work afterwards.** A slow receiver does not slow the phone down, but it fills the queue, and a full queue drops events.
+
+For example, in Node.js with Express:
 
 ```javascript
-app.post('/calls', express.json(), (req, res) => {
-  const call = req.body;               // every value is a string
-  if (call.event === 'call-started' && call.direction === 'in') {
-    openCustomerCard(call.number, call.name);
-  }
-  if (call.event === 'call-ended') {
-    logCall(call.id, Number(call.duration_s), call.reason);
-  }
-  res.sendStatus(200);
+const express = require("express");
+const app = express();
+app.use(express.json());
+
+const SECRET = process.env.SOFTPHONE_SECRET;   // the Header value from Settings
+
+app.all("/calls", (req, res) => {
+  if (req.get("Authorization") !== SECRET) return res.sendStatus(401);
+
+  // POST sends a JSON body, GET sends query parameters
+  const call = Object.keys(req.body || {}).length ? req.body : req.query;
+  res.sendStatus(200);                          // answer first
+
+  setImmediate(() => {                          // then do the work
+    if (call.event === "call-started" && call.direction === "in") {
+      openCustomerCard(call.number, call.name); // your code
+    }
+    if (call.event === "call-ended") {
+      logCall(call.id, Number(call.duration_s), call.reason); // your code
+    }
+  });
 });
+
+app.listen(8080);
 ```
 
-Check the header you set under **Authorization** before you trust a request.
+To log the outcome of a call — answered, missed, declined — take the entry with the same `seance_id` and `number` from `GET /history?limit=20` of the [REST API](/integration/rest-api#call-history-get-history). When your service starts again after a pause, read `GET /history?limit=200` and store what you missed: webhooks for real time, the history to fill the gaps.
 
 To see the requests before the CRM is ready, point **Address** at an online request inspector and press **Send a test event**.
 
-The counters `webhooks_delivered_total`, `webhooks_failed_total` and `webhooks_dropped_total` of the [REST API](/integration/rest-api#metrics) show how delivery is going.
+## When nothing arrives
+
+| Symptom | What to check |
+| --- | --- |
+| No webhooks at all | Press **Send a test event**. If it arrives, the events you need are not ticked; if not, the address is wrong or not reachable from the workstation. |
+| `webhooks_failed_total` keeps rising | The receiver refuses the requests or cannot be reached. Check its log, and whether it answers a simple request from the workstation. |
+| `webhooks_dropped_total` is above zero | The receiver was too slow for too long and the queue filled up. Answer `200` first, then process. |
+| The same event twice | Expected with at-least-once delivery. Treat events with the same `id`, `event` and `callstate_ts` as one. |
