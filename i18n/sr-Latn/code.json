@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Ova stranica može da broji posete preko Google Analytics-a: koji se odeljci čitaju i otprilike odakle. Za to je potreban kolačić, pa brojanje čeka vaš odgovor."
+  },
+  "consent.yes": {
+    "message": "Dozvoli"
+  },
+  "consent.no": {
+    "message": "Ne, hvala"
+  },
+  "consent.manage": {
+    "message": "Kolačići"
+  }
+}

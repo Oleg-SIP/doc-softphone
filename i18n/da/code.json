@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Denne side kan tælle besøg med Google Analytics: hvilke afsnit der læses, og cirka hvorfra. Det kræver en cookie, så tællingen venter på dit svar."
+  },
+  "consent.yes": {
+    "message": "Tillad"
+  },
+  "consent.no": {
+    "message": "Nej tak"
+  },
+  "consent.manage": {
+    "message": "Cookies"
+  }
+}

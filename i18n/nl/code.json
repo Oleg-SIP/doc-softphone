@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Deze pagina kan bezoeken tellen met Google Analytics: welke onderdelen worden gelezen en ongeveer waarvandaan. Daar is een cookie voor nodig, dus het tellen wacht op je antwoord."
+  },
+  "consent.yes": {
+    "message": "Toestaan"
+  },
+  "consent.no": {
+    "message": "Nee, bedankt"
+  },
+  "consent.manage": {
+    "message": "Cookies"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "See leht võib lugeda külastusi Google Analyticsiga: milliseid jaotisi loetakse ja umbes kust. Selleks on vaja küpsist, nii et lugemine ootab sinu vastust."
+  },
+  "consent.yes": {
+    "message": "Luba"
+  },
+  "consent.no": {
+    "message": "Tänan, ei"
+  },
+  "consent.manage": {
+    "message": "Küpsised"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Ta strona może liczyć odwiedziny przez Google Analytics: które sekcje są czytane i mniej więcej skąd. Potrzebne jest do tego ciasteczko, więc liczenie czeka na twoją odpowiedź."
+  },
+  "consent.yes": {
+    "message": "Zezwól"
+  },
+  "consent.no": {
+    "message": "Nie, dziękuję"
+  },
+  "consent.manage": {
+    "message": "Ciasteczka"
+  }
+}

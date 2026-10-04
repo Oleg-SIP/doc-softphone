@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Bu sayfa ziyaretleri Google Analytics ile sayabilir: hangi bölümlerin okunduğunu ve aşağı yukarı nereden gelindiğini. Bunun için çerez gerekiyor, bu yüzden sayım yanıtınızı bekliyor."
+  },
+  "consent.yes": {
+    "message": "İzin ver"
+  },
+  "consent.no": {
+    "message": "Hayır, teşekkürler"
+  },
+  "consent.manage": {
+    "message": "Çerezler"
+  }
+}

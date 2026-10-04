@@ -10,6 +10,30 @@ const languages = JSON.parse(readFileSync('./languages.json', 'utf8'));
 const url = (process.env.SITE_URL || 'https://docs.ai-softphone.com').replace(/^http:/, 'https:');
 const baseUrl = process.env.BASE_URL || '/';
 
+/* Google Analytics, the same property as ai-softphone.com. Consent is
+   decided before the tag is fetched: everything is denied until the
+   visitor answers the banner (src/theme/Root.js), and the answer given
+   last time is applied in the same breath. The answer lives in
+   localStorage, not in a cookie. */
+const GA_ID = 'G-1VFVTQ2765';
+const gaConsent = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted'
+  });
+  try {
+    if (window.localStorage.getItem('analytics') === 'granted') {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+  } catch (e) { /* private mode: the answer is asked for again */ }
+`;
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'AI Softphone',
@@ -36,11 +60,17 @@ const config = {
   },
 
   headTags: [
+    { tagName: 'script', attributes: {}, innerHTML: gaConsent },
+    { tagName: 'script', attributes: { async: 'true', src: `https://www.googletagmanager.com/gtag/js?id=${GA_ID}` } },
+    { tagName: 'script', attributes: {}, innerHTML: `gtag('js', new Date()); gtag('config', '${GA_ID}');` },
     { tagName: 'link', attributes: { rel: 'icon', href: `${baseUrl}img/favicon.svg`, type: 'image/svg+xml' } },
     { tagName: 'link', attributes: { rel: 'icon', href: `${baseUrl}img/icon-192.png`, type: 'image/png', sizes: '192x192' } },
     { tagName: 'link', attributes: { rel: 'apple-touch-icon', href: `${baseUrl}img/apple-touch-icon.png` } },
     { tagName: 'meta', attributes: { name: 'theme-color', content: '#00796B' } },
   ],
+
+  // a page_view for every page opened inside the site, not only the first
+  clientModules: ['./src/clientModules/gtag.js'],
 
   presets: [
     [
@@ -75,7 +105,9 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `© ${new Date().getFullYear()} AI Softphone`,
+        // the link brings the cookie question back; src/theme/Root.js
+        // answers it and puts the word in the page's language
+        copyright: `© ${new Date().getFullYear()} AI Softphone · <a href="#" class="consent-link">Cookies</a>`,
       },
       prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
     }),

@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Šī lapa var skaitīt apmeklējumus ar Google Analytics: kuras sadaļas lasa un aptuveni no kurienes. Tam vajadzīga sīkdatne, tāpēc skaitīšana gaida jūsu atbildi."
+  },
+  "consent.yes": {
+    "message": "Atļaut"
+  },
+  "consent.no": {
+    "message": "Nē, paldies"
+  },
+  "consent.manage": {
+    "message": "Sīkdatnes"
+  }
+}

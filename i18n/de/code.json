@@ -7,5 +7,17 @@
   },
   "shot.close": {
     "message": "Schließen"
+  },
+  "consent.text": {
+    "message": "Diese Seite kann Besuche mit Google Analytics zählen — welche Abschnitte gelesen werden und ungefähr woher. Dafür braucht es ein Cookie, also wartet die Zählung auf Ihre Antwort."
+  },
+  "consent.yes": {
+    "message": "Erlauben"
+  },
+  "consent.no": {
+    "message": "Nein danke"
+  },
+  "consent.manage": {
+    "message": "Cookies"
   }
 }

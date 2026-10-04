@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Ez az oldal megszámolhatja a látogatásokat a Google Analytics segítségével: mely szakaszokat olvassák, és nagyjából honnan. Ehhez süti kell, ezért a számlálás megvárja a válaszát."
+  },
+  "consent.yes": {
+    "message": "Engedélyezem"
+  },
+  "consent.no": {
+    "message": "Köszönöm, nem"
+  },
+  "consent.manage": {
+    "message": "Sütik"
+  }
+}

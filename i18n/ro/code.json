@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Această pagină poate număra vizitele cu Google Analytics: ce secțiuni sunt citite și cam de unde. Pentru asta e nevoie de un cookie, așa că numărătoarea vă așteaptă răspunsul."
+  },
+  "consent.yes": {
+    "message": "Permiteți"
+  },
+  "consent.no": {
+    "message": "Nu, mulțumesc"
+  },
+  "consent.manage": {
+    "message": "Cookie-uri"
+  }
+}

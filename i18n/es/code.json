@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Esta página puede contar visitas con Google Analytics: qué secciones se leen y aproximadamente desde dónde. Para eso hace falta una cookie, así que el recuento espera su respuesta."
+  },
+  "consent.yes": {
+    "message": "Permitir"
+  },
+  "consent.no": {
+    "message": "No, gracias"
+  },
+  "consent.manage": {
+    "message": "Cookies"
+  }
+}

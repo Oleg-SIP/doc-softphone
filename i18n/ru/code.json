@@ -7,5 +7,17 @@
   },
   "shot.close": {
     "message": "Закрыть"
+  },
+  "consent.text": {
+    "message": "Сайт может собирать статистику посещений через Google Analytics — какие разделы читают и из каких регионов. Для этого нужны файлы cookie, поэтому статистика включается только с вашего согласия."
+  },
+  "consent.yes": {
+    "message": "Разрешить"
+  },
+  "consent.no": {
+    "message": "Отклонить"
+  },
+  "consent.manage": {
+    "message": "Файлы cookie"
   }
 }

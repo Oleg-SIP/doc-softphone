@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Trang này có thể đếm lượt truy cập bằng Google Analytics: mục nào được đọc và đại khái từ đâu. Việc đó cần một cookie, nên phần đếm chờ câu trả lời của bạn."
+  },
+  "consent.yes": {
+    "message": "Cho phép"
+  },
+  "consent.no": {
+    "message": "Không, cảm ơn"
+  },
+  "consent.manage": {
+    "message": "Cookie"
+  }
+}

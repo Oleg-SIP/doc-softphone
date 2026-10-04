@@ -7,5 +7,17 @@
   },
   "shot.close": {
     "message": "Zavřít"
+  },
+  "consent.text": {
+    "message": "Tato stránka může počítat návštěvy pomocí Google Analytics: které části se čtou a přibližně odkud. Je k tomu potřeba cookie, takže počítání čeká na vaši odpověď."
+  },
+  "consent.yes": {
+    "message": "Povolit"
+  },
+  "consent.no": {
+    "message": "Ne, děkuji"
+  },
+  "consent.manage": {
+    "message": "Cookies"
   }
 }

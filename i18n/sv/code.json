@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Den här sidan kan räkna besök med Google Analytics: vilka avsnitt som läses och ungefär varifrån. Det kräver en kaka, så räkningen väntar på ditt svar."
+  },
+  "consent.yes": {
+    "message": "Tillåt"
+  },
+  "consent.no": {
+    "message": "Nej tack"
+  },
+  "consent.manage": {
+    "message": "Kakor"
+  }
+}

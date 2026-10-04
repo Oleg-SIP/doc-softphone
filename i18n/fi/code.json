@@ -1,0 +1,14 @@
+{
+  "consent.text": {
+    "message": "Tämä sivu voi laskea käyntejä Google Analyticsilla: mitä osioita luetaan ja suunnilleen mistä. Siihen tarvitaan eväste, joten laskenta odottaa vastaustasi."
+  },
+  "consent.yes": {
+    "message": "Salli"
+  },
+  "consent.no": {
+    "message": "Ei kiitos"
+  },
+  "consent.manage": {
+    "message": "Evästeet"
+  }
+}
