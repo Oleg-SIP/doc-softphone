@@ -48,6 +48,10 @@ const config = {
   favicon: 'img/favicon.ico',
   url,
   baseUrl,
+  // GitHub Pages serves every page as <path>/index.html and redirects
+  // <path> to <path>/; links, canonical URLs and the sitemap say so too,
+  // so a search engine is never handed an address that redirects
+  trailingSlash: true,
   organizationName: 'Oleg-SIP',
   projectName: 'doc-softphone',
   onBrokenLinks: 'throw',

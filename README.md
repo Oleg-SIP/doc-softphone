@@ -25,6 +25,7 @@ npm run serve      # serve build/
 | `i18n/<code>/docusaurus-plugin-content-docs/current/` | Pages in another language, same file names as in `docs/`. A page that is not translated yet shows the English one. |
 | `sidebars.js` | The menu on the left — built from the folders in `docs/`; order with `sidebar_position` in a page's front matter. |
 | `static/admin/index.html` | The editor (Decap CMS). `static/admin/config.yml` next to it is **generated** from `languages.json` by `npm run cms:config` (runs before `start` and `build`). |
+| `scripts/merge-sitemaps.mjs` | Runs after the build: puts every page of every language, with its hreflang versions, into `/sitemap.xml`, and writes `/robots.txt`. |
 | `.github/workflows/deploy.yml` | Builds every push, publishes to GitHub Pages. |
 
 ## The editor (Decap CMS)
