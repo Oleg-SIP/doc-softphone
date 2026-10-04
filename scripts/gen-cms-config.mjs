@@ -14,7 +14,7 @@ const languages = JSON.parse(readFileSync(new URL('../languages.json', import.me
 const repo = process.env.CMS_REPO || 'Oleg-SIP/doc-softphone';
 const branch = process.env.CMS_BRANCH || 'main';
 const authBase = process.env.CMS_AUTH || '';
-const site = process.env.SITE_URL || 'https://doc.ai-softphone.com';
+const site = (process.env.SITE_URL || 'https://docs.ai-softphone.com').replace(/^http:/, 'https:');
 const base = (process.env.BASE_URL || '/').replace(/\/$/, '');
 
 const [defaultLanguage] = languages;

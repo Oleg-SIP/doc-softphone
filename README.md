@@ -54,12 +54,11 @@ OAuth proxy (GitHub has no way to do it from a static page):
 3. Give the people who will edit write access to the repository.
 
 Images uploaded in the editor go to `static/img/docs/` and are referenced as
-`/img/docs/...`, which is right on the final domain (base path `/`) but not on
-the `github.io/doc-softphone/` test address.
+`/img/docs/...`, which is right on `docs.ai-softphone.com` (base path `/`).
 
 ## Publishing
 
-`SITE_URL` and `BASE_URL` default to the final address, `https://doc.ai-softphone.com/`;
-the workflow takes them from the GitHub Pages settings, so the same build works
-at `https://oleg-sip.github.io/doc-softphone/` and, once the custom domain is set
-in *Settings → Pages*, at the final one.
+`SITE_URL` and `BASE_URL` default to the final address, `https://docs.ai-softphone.com/`;
+the workflow takes them from the GitHub Pages settings (custom domain
+`docs.ai-softphone.com` in *Settings → Pages*), so the build always matches
+the address the site is served from.

@@ -4,10 +4,10 @@ import { readFileSync } from 'node:fs';
 
 const languages = JSON.parse(readFileSync('./languages.json', 'utf8'));
 
-/* Where the site is published. The defaults are the final address; a test
-   deployment overrides them, e.g. for GitHub Pages:
-       SITE_URL=https://oleg-sip.github.io BASE_URL=/doc-softphone/ */
-const url = process.env.SITE_URL || 'https://doc.ai-softphone.com';
+/* Where the site is published: https://docs.ai-softphone.com/. The deploy
+   workflow passes the origin from the GitHub Pages settings, which says
+   http:// until HTTPS is enforced there; the site is served over https. */
+const url = (process.env.SITE_URL || 'https://docs.ai-softphone.com').replace(/^http:/, 'https:');
 const baseUrl = process.env.BASE_URL || '/';
 
 /** @type {import('@docusaurus/types').Config} */
