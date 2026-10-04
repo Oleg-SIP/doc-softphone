@@ -10,12 +10,19 @@ const languages = JSON.parse(readFileSync('./languages.json', 'utf8'));
 const url = (process.env.SITE_URL || 'https://docs.ai-softphone.com').replace(/^http:/, 'https:');
 const baseUrl = process.env.BASE_URL || '/';
 
+/* The product site in the page's language, as its own hreflang links
+   spell it: English at the root, every other language as ?lang=<code>.
+   Docusaurus sets the locale before it loads this file for each one. */
+const locale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'en';
+const productSite = locale === 'en' ? 'https://ai-softphone.com/' : `https://ai-softphone.com/?lang=${locale}`;
+
 /* Google Analytics, the same property as ai-softphone.com. Consent is
    decided before the tag is fetched: everything is denied until the
    visitor answers the banner (src/theme/Root.js), and the answer given
    last time is applied in the same breath. The answer lives in
    localStorage, not in a cookie. */
 const GA_ID = 'G-1VFVTQ2765';
+
 const gaConsent = `
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -100,7 +107,7 @@ const config = {
         items: [
           { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'Documentation' },
           { type: 'localeDropdown', position: 'right' },
-          { href: 'https://ai-softphone.com/', label: 'ai-softphone.com', position: 'right' },
+          { href: productSite, label: 'ai-softphone.com', position: 'right' },
         ],
       },
       footer: {
