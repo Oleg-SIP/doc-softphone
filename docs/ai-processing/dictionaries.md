@@ -62,4 +62,4 @@ Further down the tab are the instructions the prompts are assembled from. They a
 
 ## Defaults
 
-**Restore defaults** puts every dictionary back as it came with the program. What your conversations are already filed under is left alone.
+**Restore defaults** puts every dictionary back as it came with the program, in the current interface language. What your conversations are already filed under is left alone.

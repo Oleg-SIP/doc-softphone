@@ -1,0 +1,11 @@
+{
+  "shot.enlarge": {
+    "message": "Zvětšit"
+  },
+  "shot.enlargeLabel": {
+    "message": "Zvětšit snímek obrazovky: {alt}"
+  },
+  "shot.close": {
+    "message": "Zavřít"
+  }
+}

@@ -21,11 +21,13 @@ Six arrangements, each drawn as a small picture; the selected one has a frame.
 | **Edge bar** | The phone as a bar along the edge of the screen, with a window under it. |
 | **Tray only** | No window until you call it from the tray, or with the [hotkey](/program/shortcuts). |
 
-Every arrangement holds the same windows; what differs is where they stand. **The phone closes and opens again to change it.**
+Every arrangement holds the same windows; what differs is where they stand. **The phone closes and opens again to change it** — with the **Apply and restart the phone** button.
 
 ## Language
 
 The drop-down chooses the language of the interface; **Same as this computer** is the default. It is the interface only. What language is spoken on a call is a separate setting, and it arrives with the transcripts — see [Transcription](/ai-processing/transcription#language).
+
+The prompts, rules and dictionaries that came with the program stay in their language when you switch. **Restore defaults** in [Processing](/ai-processing/processing#defaults) and in [Dictionaries](/ai-processing/dictionaries#defaults) brings them into the new one.
 
 ## Theme
 

@@ -37,7 +37,15 @@ Once capture is allowed, the bottom of the [main window](../interface/main-windo
 
 ### Automatic start
 
-**Automatic start** decides what happens when the program hears a conversation in another application. The default is **Never**: a capture starts only when you press **Record**. The other choices let the program start on its own or ask you first.
+**Automatic start** decides what happens when the program hears a conversation in another application:
+
+| Choice | What happens |
+| --- | --- |
+| **Never** | A capture starts only when you press **Record**. |
+| **Ask me** | The program asks whether to record it. The default. |
+| **Always** | The program starts recording on its own. |
+
+Under **Applications that answer differently** an application can be given an answer of its own — for example *Always record this application* from the question the program asks.
 
 *Asking loses nothing: the seconds before you answer are already kept.*
 

@@ -18,10 +18,10 @@ The list of codecs the phone offers to the other end. The codecs are *offered in
 
 | Codec | Sampling rate | On by default |
 | --- | --- | --- |
+| **opus** | 48 kHz, stereo, wideband | yes |
 | **G722** | 16 kHz, wideband | yes |
 | **PCMU** | 8 kHz | yes |
 | **PCMA** | 8 kHz | yes |
-| **opus** | 48 kHz, stereo, wideband | yes |
 | **speex** | 16 kHz, wideband | no |
 | **speex** | 8 kHz | no |
 | **speex** | 32 kHz, wideband | no |
@@ -29,6 +29,8 @@ The list of codecs the phone offers to the other end. The codecs are *offered in
 | **GSM** | 8 kHz | no |
 | **L16** | 44 kHz, stereo, wideband | no |
 | **L16** | 44 kHz, wideband | no |
+
+The table is in the order the program comes with.
 
 The codecs are agreed when a call starts, so a change applies from your next call. If a call sounds poor, leave on only the codecs your PBX uses.
 

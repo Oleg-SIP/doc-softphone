@@ -10,13 +10,28 @@ description: Which calls are recorded, what the other party is told, how confere
 
 ## Recording
 
-The drop-down chooses which calls are recorded; the default is **Every call**.
+The drop-down chooses which calls are recorded:
+
+| Choice | Records |
+| --- | --- |
+| **Manually** | Only when you press record on the call card. The default. |
+| **Ask each call** | The phone asks on every call whether to record it. |
+| **Every call** | Every answered call, by itself. Chosen in the picture. |
+| **Selected lines** | The calls on the accounts you tick in the list that appears. |
 
 Recording starts when the call is answered and never before, so ringing and the numbers you dial are not in the file. A call is one stereo file: you on one channel and everybody else on the other.
 
 ## Consent
 
-The drop-down chooses how the other party is told about the recording: by a spoken announcement, by a tone, by your own confirmation — or not at all. The default is **Nothing at all**.
+The drop-down chooses how the other party is told about the recording:
+
+| Choice | What the other party hears |
+| --- | --- |
+| **An announcement** | A short message when recording starts. The default. **Choose…** picks a sound file of your own; *with nothing chosen the phone plays a short chime*. |
+| **A tone every few seconds** | A beep at an interval you set with the slider. |
+| **Nothing at all** | Nothing. Chosen in the picture. |
+
+**Keep the notice in the recording** — the announcement and the tone are played to the people on the call; turn this on and they are in the file as well.
 
 :::caution
 In many places — most of Europe, and several American states — recording a conversation without telling the other party is against the law. This is your decision to make, and the program says so under the drop-down.

@@ -35,7 +35,7 @@ Press **Add**; a form opens under the list.
 | --- | --- |
 | **Number** | The number to dial. |
 | **Line** | The account the call is placed on. Choose it first: to show the lamp, the phone asks that line's switch about this number, so it has to know which one. |
-| **Label** | The text on the button, for example the person's name. |
+| **Label** | The text on the button, for example the person's name. The button has room for a short label only; a longer one is cut off. |
 | **Show whether this line is busy** | A switch. On, the button has a lamp. Off, it only dials. |
 
 **Save** stays grey until the form is filled in. **Cancel** drops the form.

@@ -20,7 +20,7 @@ The bar at the top has four filters, a search field and a menu:
 | **Mark** | the marks it carries |
 | **Search** | what was said in it — the search goes through the transcripts of everything you have recorded |
 
-The **⋮** button at the right of the bar opens more actions for the list.
+The **⋮** button at the right of the bar opens more actions for the list: **Import from file(s)**, **Export to CSV** and **Open in a browser**.
 
 ## The list
 
@@ -68,7 +68,7 @@ The write-up is made by the [prompts](/ai-processing/prompt-studio) and models y
 
 ## A recording you already have
 
-A recording made somewhere else — on a mobile phone, a dictaphone or another system — can be dropped into the program. It is filed exactly like a dialled call: transcribed, written up and found by the same search.
+A recording made somewhere else — on a mobile phone, a dictaphone or another system — can be added with **⋮ → Import from file(s)**. It is filed exactly like a dialled call: transcribed, written up and found by the same search.
 
 ## Deleting a recording
 

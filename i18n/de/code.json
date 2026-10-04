@@ -1,0 +1,11 @@
+{
+  "shot.enlarge": {
+    "message": "Vergrößern"
+  },
+  "shot.enlargeLabel": {
+    "message": "Bildschirmfoto vergrößern: {alt}"
+  },
+  "shot.close": {
+    "message": "Schließen"
+  }
+}

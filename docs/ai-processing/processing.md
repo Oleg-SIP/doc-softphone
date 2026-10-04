@@ -58,4 +58,6 @@ The order matters: the last two rules need the category that the rule before the
 
 ## Defaults
 
-**Restore defaults** puts the prompts and the rules back as they came with the program. Your language models are left alone.
+**Restore defaults** puts the prompts and the rules back as they came with the program, in the current interface language. Your language models are left alone.
+
+The prompts and rules that came with the program stay in the language they were in when you switch the interface language; **Restore defaults** brings them into the new one. Each prompt is then marked *changed* at the right.
