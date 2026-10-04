@@ -1,5 +1,6 @@
 ---
 title: Capture
+sidebar_label: Capturing other applications
 sidebar_position: 1
 description: "Capture records a conversation held in another application — Zoom, Teams, Meet or any other — straight from the computer."
 ---

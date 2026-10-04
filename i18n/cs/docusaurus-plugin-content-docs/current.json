@@ -38,9 +38,5 @@
   "sidebar.docs.category.Modules and About": {
     "message": "Moduly a O programu",
     "description": "The label for category 'Modules and About' in sidebar 'docs'"
-  },
-  "sidebar.docs.doc.Capturing other applications": {
-    "message": "Zachytávání z jiných aplikací",
-    "description": "The label for the doc item 'Capturing other applications' in sidebar 'docs', linking to the doc capture/capture"
   }
 }

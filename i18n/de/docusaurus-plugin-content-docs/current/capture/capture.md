@@ -1,5 +1,6 @@
 ---
 title: Mitschnitt
+sidebar_label: Mitschnitt aus anderen Anwendungen
 sidebar_position: 1
 description: "Der Mitschnitt nimmt ein Gespräch in einer anderen Anwendung auf — Zoom, Teams, Meet oder jeder anderen — direkt vom Computer."
 ---

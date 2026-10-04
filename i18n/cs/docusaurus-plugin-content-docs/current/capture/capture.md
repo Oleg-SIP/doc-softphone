@@ -1,5 +1,6 @@
 ---
 title: Zachytávání
+sidebar_label: Zachytávání z jiných aplikací
 sidebar_position: 1
 description: "Zachytávání nahraje rozhovor vedený v jiné aplikaci — Zoomu, Teams, Meetu nebo jakékoli jiné — přímo z počítače."
 ---

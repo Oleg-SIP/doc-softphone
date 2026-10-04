@@ -38,9 +38,5 @@
   "sidebar.docs.category.Modules and About": {
     "message": "Module und Über",
     "description": "The label for category 'Modules and About' in sidebar 'docs'"
-  },
-  "sidebar.docs.doc.Capturing other applications": {
-    "message": "Mitschnitt aus anderen Anwendungen",
-    "description": "The label for the doc item 'Capturing other applications' in sidebar 'docs', linking to the doc capture/capture"
   }
 }
