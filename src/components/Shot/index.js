@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 /* The languages the screenshots have been taken in. A page in any other
    language shows the English ones. */
-const SHOT_LOCALES = ['en', 'cs', 'de'];
+const SHOT_LOCALES = ['en', 'cs', 'de', 'ru'];
 
 /* A screenshot shown small, enlarged on click.
  *

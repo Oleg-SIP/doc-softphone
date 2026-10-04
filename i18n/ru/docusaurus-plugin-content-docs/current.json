@@ -32,7 +32,7 @@
     "description": "The label for category 'Program settings' in sidebar 'docs'"
   },
   "sidebar.docs.category.Capturing other applications": {
-    "message": "Перехват других приложений",
+    "message": "Перехват из других приложений",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"
   },
   "sidebar.docs.category.Modules and About": {

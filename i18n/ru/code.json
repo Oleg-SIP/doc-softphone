@@ -1,0 +1,11 @@
+{
+  "shot.enlarge": {
+    "message": "Увеличить"
+  },
+  "shot.enlargeLabel": {
+    "message": "Увеличить скриншот: {alt}"
+  },
+  "shot.close": {
+    "message": "Закрыть"
+  }
+}
