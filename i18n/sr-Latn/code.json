@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Uvećaj"
+  },
+  "shot.enlargeLabel": {
+    "message": "Uvećaj snimak ekrana: {alt}"
+  },
+  "shot.close": {
+    "message": "Zatvori"
+  },
   "consent.text": {
     "message": "Ova stranica može da broji posete preko Google Analytics-a: koji se odeljci čitaju i otprilike odakle. Za to je potreban kolačić, pa brojanje čeka vaš odgovor."
   },
