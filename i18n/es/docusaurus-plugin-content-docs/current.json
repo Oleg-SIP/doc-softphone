@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Interface": {
+    "message": "Interfaz",
+    "description": "The label for category 'Interface' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Phone and accounts": {
+    "message": "Teléfono y cuentas",
+    "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recordings": {
+    "message": "Grabaciones",
+    "description": "The label for category 'Recordings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Capturing other applications": {
+    "message": "Captura de otras aplicaciones",
+    "description": "The label for category 'Capturing other applications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI processing": {
+    "message": "Procesamiento con IA",
+    "description": "The label for category 'AI processing' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Program settings": {
+    "message": "Ajustes del programa",
+    "description": "The label for category 'Program settings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integration": {
+    "message": "Integración",
+    "description": "The label for category 'Integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Troubleshooting": {
+    "message": "Solución de problemas",
+    "description": "The label for category 'Troubleshooting' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Modules and About": {
+    "message": "Módulos y Acerca de",
+    "description": "The label for category 'Modules and About' in sidebar 'docs'"
+  }
+}
