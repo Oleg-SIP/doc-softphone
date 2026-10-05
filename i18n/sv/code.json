@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Förstora"
+  },
+  "shot.enlargeLabel": {
+    "message": "Förstora skärmbilden: {alt}"
+  },
+  "shot.close": {
+    "message": "Stäng"
+  },
   "consent.text": {
     "message": "Den här sidan kan räkna besök med Google Analytics: vilka avsnitt som läses och ungefär varifrån. Det kräver en kaka, så räkningen väntar på ditt svar."
   },
