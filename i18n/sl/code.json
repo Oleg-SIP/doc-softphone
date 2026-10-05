@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Povečaj"
+  },
+  "shot.enlargeLabel": {
+    "message": "Povečaj posnetek zaslona: {alt}"
+  },
+  "shot.close": {
+    "message": "Zapri"
+  },
   "consent.text": {
     "message": "Ta stran lahko šteje obiske z Google Analytics: kateri razdelki se berejo in približno od kod. Za to je potreben piškotek, zato štetje čaka na vaš odgovor."
   },
