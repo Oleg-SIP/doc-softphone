@@ -1,4 +1,5 @@
-// Writes static/admin/config.yml — the Decap CMS configuration — from
+// Writes static/admin/config.yml — the configuration of the editor, Sveltia
+// CMS (a drop-in successor of Decap CMS) — from
 // languages.json, so the editor and the site always know the same languages.
 //
 // Docusaurus keeps the default language's pages in docs/ and every other
@@ -7,7 +8,8 @@
 //
 //   CMS_REPO    owner/name of the repository       (Oleg-SIP/doc-softphone)
 //   CMS_BRANCH  branch the editor commits to       (main)
-//   CMS_AUTH    base URL of the GitHub OAuth proxy (https://api.netlify.com; see README)
+//   CMS_AUTH    base URL of a GitHub OAuth proxy, for the Sign In with GitHub
+//               button (see README); without it, sign in with a token
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 
 const languages = JSON.parse(readFileSync(new URL('../languages.json', import.meta.url), 'utf8'));
@@ -48,14 +50,10 @@ backend:
   repo: ${repo}
   branch: ${branch}${authBase ? `\n  base_url: ${authBase}` : ''}
 
-# Run \`npm run cms:local\` next to \`npm start\` to edit the files on this computer
-# without signing in to GitHub.
-local_backend: true
-
-locale: ru
 site_url: ${site}${base}/
 display_url: ${site}${base}/
-logo_url: ${site}${base}/img/logo.svg
+logo:
+  src: ${site}${base}/img/logo.svg
 
 media_folder: static/img/docs
 public_folder: /img/docs

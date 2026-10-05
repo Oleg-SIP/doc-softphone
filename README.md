@@ -2,7 +2,7 @@
 
 The documentation site for [AI Softphone](https://ai-softphone.com/), in the
 same thirty languages as the product's website. Built with
-[Docusaurus](https://docusaurus.io/), edited with [Decap CMS](https://decapcms.org/)
+[Docusaurus](https://docusaurus.io/), edited with [Sveltia CMS](https://sveltiacms.app/)
 at `/admin/`.
 
 ## Working on it
@@ -24,35 +24,41 @@ npm run serve      # serve build/
 | `tasks/` | Briefs for work that needs the program itself — see `tasks/macos-interface-notes.md`. |
 | `i18n/<code>/docusaurus-plugin-content-docs/current/` | Pages in another language, same file names as in `docs/`. A page that is not translated yet shows the English one. |
 | `sidebars.js` | The menu on the left — built from the folders in `docs/`; order with `sidebar_position` in a page's front matter. |
-| `static/admin/index.html` | The editor (Decap CMS). `static/admin/config.yml` next to it is **generated** from `languages.json` by `npm run cms:config` (runs before `start` and `build`). |
+| `static/admin/index.html` | The editor (Sveltia CMS). `static/admin/config.yml` next to it is **generated** from `languages.json` by `npm run cms:config` (runs before `start` and `build`). |
 | `scripts/merge-sitemaps.mjs` | Runs after the build: puts every page of every language, with its hreflang versions, into `/sitemap.xml`, and writes `/robots.txt`. |
 | `.github/workflows/deploy.yml` | Builds every push, publishes to GitHub Pages. |
 
-## The editor (Decap CMS)
+## The editor (Sveltia CMS)
 
-`<site>/admin/` has one collection per language; each edits the files above
-(folders become sections of the menu). Every save is a commit to the
-repository's default branch.
+`<site>/admin/` is the editor: [Sveltia CMS](https://sveltiacms.app/), the
+successor of Decap CMS, reading the same `config.yml`. It has one collection
+per language; each edits the files above (folders become sections of the
+menu). Every save is a commit to the repository's default branch.
 
-**On your computer**, without signing in:
+**On the published site**, sign in with a GitHub token — no server needed:
 
-```sh
-npm start
-npm run cms:local  # in a second terminal
-# open http://localhost:3000/admin/
-```
+1. Create a [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new)
+   for the repository `Oleg-SIP/doc-softphone` with **Contents: Read and
+   write** (and **Pull requests: Read and write** if the editorial workflow is
+   ever turned on). A classic token needs the `repo` scope.
+2. Open `<site>/admin/`, press **Sign In Using Access Token** and paste it. The token
+   stays in that browser.
 
-**On the published site**, Decap signs in with GitHub, which needs a small
-OAuth proxy (GitHub has no way to do it from a static page):
+Only people with write access to the repository can save.
 
-1. Deploy an OAuth proxy — e.g. [sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth)
-   or [decap-proxy](https://github.com/i40west/netlify-cms-cloudflare-pages)
-   as a Cloudflare Worker — and register a GitHub OAuth App whose callback URL
-   is the proxy's `/callback`.
-2. Put the proxy's address in the workflow (`CMS_AUTH` next to `CMS_BRANCH` in
-   `.github/workflows/deploy.yml`), which becomes `backend.base_url` in
+**Sign In with GitHub** (the button, without a token) needs a small OAuth
+proxy, since GitHub has no way to do it from a static page:
+
+1. Deploy [Sveltia CMS Authenticator](https://github.com/sveltia/sveltia-cms-auth)
+   as a Cloudflare Worker and register a GitHub OAuth App whose callback URL
+   is the worker's `/callback`.
+2. Put the worker's address in the workflow (`CMS_AUTH` next to `CMS_BRANCH`
+   in `.github/workflows/deploy.yml`); it becomes `backend.base_url` in
    `config.yml`.
-3. Give the people who will edit write access to the repository.
+
+**On your computer**, open `http://localhost:3000/admin/` after `npm start`
+in Chrome or Edge and choose **Work with Local Repository**: Sveltia edits the
+files of the clone directly, without signing in and without a proxy.
 
 Images uploaded in the editor go to `static/img/docs/` and are referenced as
 `/img/docs/...`, which is right on `docs.ai-softphone.com` (base path `/`).

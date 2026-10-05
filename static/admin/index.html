@@ -8,6 +8,9 @@
     <link href="config.yml" type="text/yaml" rel="cms-config-url" />
   </head>
   <body>
-    <script src="https://unpkg.com/decap-cms@3.16.3/dist/decap-cms.js"></script>
+    <!-- Sveltia CMS reads the same config.yml as Decap CMS did, and can sign in
+         to GitHub with a personal access token, which a site on GitHub Pages
+         needs no server for. -->
+    <script src="https://unpkg.com/@sveltia/cms@0.228.0/dist/sveltia-cms.js"></script>
   </body>
 </html>
