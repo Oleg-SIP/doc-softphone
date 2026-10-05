@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Interface": {
+    "message": "Grensesnitt",
+    "description": "The label for category 'Interface' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Phone and accounts": {
+    "message": "Telefon og kontoer",
+    "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recordings": {
+    "message": "Opptak",
+    "description": "The label for category 'Recordings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Capturing other applications": {
+    "message": "Opptak fra andre programmer",
+    "description": "The label for category 'Capturing other applications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI processing": {
+    "message": "AI-behandling",
+    "description": "The label for category 'AI processing' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Program settings": {
+    "message": "Programinnstillinger",
+    "description": "The label for category 'Program settings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integration": {
+    "message": "Integrasjon",
+    "description": "The label for category 'Integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Troubleshooting": {
+    "message": "Feilsøking",
+    "description": "The label for category 'Troubleshooting' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Modules and About": {
+    "message": "Moduler og Om",
+    "description": "The label for category 'Modules and About' in sidebar 'docs'"
+  }
+}

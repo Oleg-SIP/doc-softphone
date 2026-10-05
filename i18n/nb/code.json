@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Forstørr"
+  },
+  "shot.enlargeLabel": {
+    "message": "Forstørr skjermbildet: {alt}"
+  },
+  "shot.close": {
+    "message": "Lukk"
+  },
   "consent.text": {
     "message": "Denne siden kan telle besøk med Google Analytics: hvilke deler som leses, og omtrent hvorfra. Det krever en informasjonskapsel, så tellingen venter på svaret ditt."
   },
