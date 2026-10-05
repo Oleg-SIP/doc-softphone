@@ -17,7 +17,9 @@ import styles from './styles.module.css';
  * thumbs/ (the right-hand side of the window, where the settings are);
  * `full` uses the whole window instead, for pages about the phone on the
  * left. Click opens the full-size screenshot over the page.
- * `src` shows any other picture, such as one on ai-softphone.com. */
+ * `src` shows any other picture, such as one on ai-softphone.com; a picture
+ * from the main site's English set is swapped for the same one in the
+ * language of the page (the main site names Serbian Latin `sr_Latn`). */
 export default function Shot({ name, src, alt, full = false, children }) {
   const { siteConfig, i18n } = useDocusaurusContext();
   const locale = i18n.currentLocale;
@@ -27,8 +29,11 @@ export default function Shot({ name, src, alt, full = false, children }) {
     ? siteConfig.baseUrl.slice(0, -suffix.length)
     : siteConfig.baseUrl;
   const dir = `${root}screenshots/macos/${locale}`;
-  const small = name ? `${dir}/thumbs/${name}${full ? '-full' : ''}.jpg` : src;
-  const large = name ? `${dir}/${name}.png` : src;
+  const other = src && locale !== i18n.defaultLocale
+    ? src.replace('ai-softphone.com/screenshots/macos/en/', `ai-softphone.com/screenshots/macos/${locale.replace('-', '_')}/`)
+    : src;
+  const small = name ? `${dir}/thumbs/${name}${full ? '-full' : ''}.jpg` : other;
+  const large = name ? `${dir}/${name}.png` : other;
   const [open, setOpen] = useState(false);
   const dialog = useRef(null);
 
