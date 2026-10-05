@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Ampliar"
+  },
+  "shot.enlargeLabel": {
+    "message": "Ampliar a captura de ecrã: {alt}"
+  },
+  "shot.close": {
+    "message": "Fechar"
+  },
   "consent.text": {
     "message": "Esta página pode contar visitas com o Google Analytics: que secções são lidas e mais ou menos de onde. Para isso é preciso um cookie, por isso a contagem espera pela sua resposta."
   },
