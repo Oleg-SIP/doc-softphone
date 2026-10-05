@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Palielināt"
+  },
+  "shot.enlargeLabel": {
+    "message": "Palielināt ekrānuzņēmumu: {alt}"
+  },
+  "shot.close": {
+    "message": "Aizvērt"
+  },
   "consent.text": {
     "message": "Šī lapa var skaitīt apmeklējumus ar Google Analytics: kuras sadaļas lasa un aptuveni no kurienes. Tam vajadzīga sīkdatne, tāpēc skaitīšana gaida jūsu atbildi."
   },
