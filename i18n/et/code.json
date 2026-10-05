@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Suurenda"
+  },
+  "shot.enlargeLabel": {
+    "message": "Suurenda ekraanipilti: {alt}"
+  },
+  "shot.close": {
+    "message": "Sulge"
+  },
   "consent.text": {
     "message": "See leht võib lugeda külastusi Google Analyticsiga: milliseid jaotisi loetakse ja umbes kust. Selleks on vaja küpsist, nii et lugemine ootab sinu vastust."
   },

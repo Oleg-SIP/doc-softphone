@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Interface": {
+    "message": "Kasutajaliides",
+    "description": "The label for category 'Interface' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Phone and accounts": {
+    "message": "Telefon ja kontod",
+    "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recordings": {
+    "message": "Salvestised",
+    "description": "The label for category 'Recordings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Capturing other applications": {
+    "message": "Hõive teistest rakendustest",
+    "description": "The label for category 'Capturing other applications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI processing": {
+    "message": "Tehisintellekti töötlus",
+    "description": "The label for category 'AI processing' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Program settings": {
+    "message": "Programmi seaded",
+    "description": "The label for category 'Program settings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integration": {
+    "message": "Sidumine",
+    "description": "The label for category 'Integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Troubleshooting": {
+    "message": "Tõrkeotsing",
+    "description": "The label for category 'Troubleshooting' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Modules and About": {
+    "message": "Moodulid ja Teave",
+    "description": "The label for category 'Modules and About' in sidebar 'docs'"
+  }
+}
