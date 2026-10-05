@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Padidinti"
+  },
+  "shot.enlargeLabel": {
+    "message": "Padidinti ekrano kopiją: {alt}"
+  },
+  "shot.close": {
+    "message": "Užverti"
+  },
   "consent.text": {
     "message": "Šis puslapis gali skaičiuoti apsilankymus su „Google Analytics“: kurios skiltys skaitomos ir maždaug iš kur. Tam reikia slapuko, tad skaičiavimas laukia jūsų atsakymo."
   },
