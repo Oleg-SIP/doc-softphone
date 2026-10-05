@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { translate } from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
-/* The languages the screenshots have been taken in. A page in any other
-   language shows the English ones. */
-const SHOT_LOCALES = ['en', 'cs', 'de', 'ru'];
+/* The screenshots live once, at the root of the site: Docusaurus copies
+   static/ into the build of every language, so the build step
+   (scripts/merge-sitemaps.mjs) keeps only the root copy and every language
+   links there. Each language has its own set, taken in that language. */
 
 /* A screenshot shown small, enlarged on click.
  *
@@ -19,11 +19,16 @@ const SHOT_LOCALES = ['en', 'cs', 'de', 'ru'];
  * left. Click opens the full-size screenshot over the page.
  * `src` shows any other picture, such as one on ai-softphone.com. */
 export default function Shot({ name, src, alt, full = false, children }) {
-  const { i18n } = useDocusaurusContext();
-  const locale = SHOT_LOCALES.includes(i18n.currentLocale) ? i18n.currentLocale : 'en';
-  const dir = `/screenshots/macos/${locale}`;
-  const small = useBaseUrl(name ? `${dir}/thumbs/${name}${full ? '-full' : ''}.jpg` : src);
-  const large = useBaseUrl(name ? `${dir}/${name}.png` : src);
+  const { siteConfig, i18n } = useDocusaurusContext();
+  const locale = i18n.currentLocale;
+  // the site's own base, without the /<locale>/ a translated build adds
+  const suffix = `${locale}/`;
+  const root = locale !== i18n.defaultLocale && siteConfig.baseUrl.endsWith(suffix)
+    ? siteConfig.baseUrl.slice(0, -suffix.length)
+    : siteConfig.baseUrl;
+  const dir = `${root}screenshots/macos/${locale}`;
+  const small = name ? `${dir}/thumbs/${name}${full ? '-full' : ''}.jpg` : src;
+  const large = name ? `${dir}/${name}.png` : src;
   const [open, setOpen] = useState(false);
   const dialog = useRef(null);
 

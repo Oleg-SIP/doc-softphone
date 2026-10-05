@@ -5,14 +5,21 @@
 // language into build/sitemap.xml, each with its versions in the other
 // languages (hreflang, x-default being English), the way Google asks for a
 // site in many languages. The per-language sitemaps stay where they are.
-// It also writes build/robots.txt, which points at the sitemap.
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+// It also writes build/robots.txt, which points at the sitemap, and drops
+// the copy of static/screenshots that Docusaurus puts into the build of
+// every language: the Shot component links to the root copy, and thirty
+// copies would not fit the 1 GB GitHub Pages allows.
+import { readFileSync, writeFileSync, existsSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 
 const build = 'build';
 const languages = JSON.parse(readFileSync('languages.json', 'utf8')).map((l) => l.code);
 
 const escape = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+for (const code of languages) {
+  if (code !== 'en') rmSync(join(build, code, 'screenshots'), { recursive: true, force: true });
+}
+
 const unescape = (s) => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 
 // page path without the language prefix -> { code: url }
