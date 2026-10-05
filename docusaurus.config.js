@@ -118,7 +118,7 @@ const config = {
         style: 'dark',
         // the link brings the cookie question back; src/theme/Root.js
         // answers it and puts the word in the page's language
-        copyright: `© ${new Date().getFullYear()} AI Softphone · <a href="#" class="consent-link">Cookies</a>`,
+        copyright: `<a href="https://ai-softphone.com/" target="_blank" rel="noopener">AI Softphone</a> · <a href="#" class="consent-link">Cookies</a>`,
       },
       prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
     }),
