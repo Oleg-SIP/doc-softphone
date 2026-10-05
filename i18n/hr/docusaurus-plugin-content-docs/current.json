@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Interface": {
+    "message": "Sučelje",
+    "description": "The label for category 'Interface' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Phone and accounts": {
+    "message": "Telefon i računi",
+    "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recordings": {
+    "message": "Snimke",
+    "description": "The label for category 'Recordings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Capturing other applications": {
+    "message": "Hvatanje iz drugih aplikacija",
+    "description": "The label for category 'Capturing other applications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI processing": {
+    "message": "Obrada umjetnom inteligencijom",
+    "description": "The label for category 'AI processing' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Program settings": {
+    "message": "Postavke programa",
+    "description": "The label for category 'Program settings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integration": {
+    "message": "Integracija",
+    "description": "The label for category 'Integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Troubleshooting": {
+    "message": "Rješavanje problema",
+    "description": "The label for category 'Troubleshooting' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Modules and About": {
+    "message": "Moduli i O programu",
+    "description": "The label for category 'Modules and About' in sidebar 'docs'"
+  }
+}
