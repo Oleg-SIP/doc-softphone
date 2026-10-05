@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Zväčšiť"
+  },
+  "shot.enlargeLabel": {
+    "message": "Zväčšiť snímku obrazovky: {alt}"
+  },
+  "shot.close": {
+    "message": "Zavrieť"
+  },
   "consent.text": {
     "message": "Táto stránka môže počítať návštevy cez Google Analytics: ktoré časti sa čítajú a približne odkiaľ. Je na to potrebná cookie, takže počítanie čaká na vašu odpoveď."
   },
