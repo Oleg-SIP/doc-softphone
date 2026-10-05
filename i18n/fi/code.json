@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Suurenna"
+  },
+  "shot.enlargeLabel": {
+    "message": "Suurenna kuvakaappaus: {alt}"
+  },
+  "shot.close": {
+    "message": "Sulje"
+  },
   "consent.text": {
     "message": "Tämä sivu voi laskea käyntejä Google Analyticsilla: mitä osioita luetaan ja suunnilleen mistä. Siihen tarvitaan eväste, joten laskenta odottaa vastaustasi."
   },
