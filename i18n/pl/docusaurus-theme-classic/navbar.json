@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "AI Softphone",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "AI Softphone",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Documentation": {
+    "message": "Dokumentacja",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.ai-softphone.com": {
+    "message": "ai-softphone.com",
+    "description": "Navbar item with label ai-softphone.com"
+  }
+}
