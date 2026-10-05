@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Vergroten"
+  },
+  "shot.enlargeLabel": {
+    "message": "Schermafbeelding vergroten: {alt}"
+  },
+  "shot.close": {
+    "message": "Sluiten"
+  },
   "consent.text": {
     "message": "Deze pagina kan bezoeken tellen met Google Analytics: welke onderdelen worden gelezen en ongeveer waarvandaan. Daar is een cookie voor nodig, dus het tellen wacht op je antwoord."
   },
