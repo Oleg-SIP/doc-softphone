@@ -16,8 +16,5 @@
   },
   "consent.no": {
     "message": "Отклонить"
-  },
-  "consent.manage": {
-    "message": "Файлы cookie"
   }
 }

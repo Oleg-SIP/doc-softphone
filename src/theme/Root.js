@@ -4,7 +4,7 @@ import { translate } from '@docusaurus/Translate';
 /* The cookie question of ai-softphone.com, asked on the documentation too:
    once, remembered in localStorage (asking for permission to set a cookie
    by setting one would be a poor joke), and brought back by the Cookies
-   link in the footer. Two buttons of the same size, because a refusal that
+   link in the footer, which says Cookies in every language. Two buttons of the same size, because a refusal that
    is harder to press than an acceptance is not a question. The head has
    already denied everything and applied the last answer; this only asks
    and writes the answer down. */
@@ -14,7 +14,6 @@ function remembered() {
 
 function ConsentBanner() {
   const [open, setOpen] = useState(false);
-  const manage = translate({ id: 'consent.manage', message: 'Cookies' });
 
   useEffect(() => {
     if (!remembered()) setOpen(true);
@@ -27,11 +26,6 @@ function ConsentBanner() {
     document.addEventListener('click', onClick);
     return () => document.removeEventListener('click', onClick);
   }, []);
-
-  // the footer link is plain HTML from the config; give it this language's word
-  useEffect(() => {
-    document.querySelectorAll('.consent-link').forEach((a) => { a.textContent = manage; });
-  });
 
   const answer = (what) => {
     try { window.localStorage.setItem('analytics', what); } catch (e) { /* private mode */ }
