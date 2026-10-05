@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Forstør"
+  },
+  "shot.enlargeLabel": {
+    "message": "Forstør skærmbilledet: {alt}"
+  },
+  "shot.close": {
+    "message": "Luk"
+  },
   "consent.text": {
     "message": "Denne side kan tælle besøg med Google Analytics: hvilke afsnit der læses, og cirka hvorfra. Det kræver en cookie, så tællingen venter på dit svar."
   },
