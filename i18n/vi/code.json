@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Phóng to"
+  },
+  "shot.enlargeLabel": {
+    "message": "Phóng to ảnh chụp màn hình: {alt}"
+  },
+  "shot.close": {
+    "message": "Đóng"
+  },
   "consent.text": {
     "message": "Trang này có thể đếm lượt truy cập bằng Google Analytics: mục nào được đọc và đại khái từ đâu. Việc đó cần một cookie, nên phần đếm chờ câu trả lời của bạn."
   },
