@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Perbesar"
+  },
+  "shot.enlargeLabel": {
+    "message": "Perbesar tangkapan layar: {alt}"
+  },
+  "shot.close": {
+    "message": "Tutup"
+  },
   "consent.text": {
     "message": "Halaman ini dapat menghitung kunjungan dengan Google Analytics: bagian mana yang dibaca dan kira-kira dari mana. Itu memerlukan kuki, jadi penghitungan menunggu jawaban Anda."
   },
