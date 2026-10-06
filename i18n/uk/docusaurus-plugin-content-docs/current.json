@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Interface": {
+    "message": "Інтерфейс",
+    "description": "The label for category 'Interface' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Phone and accounts": {
+    "message": "Телефон і облікові записи",
+    "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Recordings": {
+    "message": "Записи",
+    "description": "The label for category 'Recordings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Capturing other applications": {
+    "message": "Перехоплення з інших програм",
+    "description": "The label for category 'Capturing other applications' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.AI processing": {
+    "message": "Обробка за допомогою ШІ",
+    "description": "The label for category 'AI processing' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Program settings": {
+    "message": "Налаштування програми",
+    "description": "The label for category 'Program settings' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integration": {
+    "message": "Інтеграція",
+    "description": "The label for category 'Integration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Troubleshooting": {
+    "message": "Усунення проблем",
+    "description": "The label for category 'Troubleshooting' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Modules and About": {
+    "message": "Модулі та Про програму",
+    "description": "The label for category 'Modules and About' in sidebar 'docs'"
+  }
+}
