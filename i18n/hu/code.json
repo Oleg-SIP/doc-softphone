@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Nagyítás"
+  },
+  "shot.enlargeLabel": {
+    "message": "Képernyőkép nagyítása: {alt}"
+  },
+  "shot.close": {
+    "message": "Bezárás"
+  },
   "consent.text": {
     "message": "Ez az oldal megszámolhatja a látogatásokat a Google Analytics segítségével: mely szakaszokat olvassák, és nagyjából honnan. Ehhez süti kell, ezért a számlálás megvárja a válaszát."
   },
