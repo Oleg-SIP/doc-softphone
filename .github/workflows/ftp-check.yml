@@ -26,12 +26,12 @@ jobs:
           done
           echo "FTP_DIR=[$FTP_DIR]"
           sudo apt-get install -y lftp >/dev/null
-          lftp -u "$FTP_USER" "ftp://$FTP_HOST:21" <<LFTP
+          lftp -u "$FTP_USER,$LFTP_PASSWORD" "ftp://$FTP_HOST:21" <<LFTP
           set ftp:ssl-allow yes
           set ssl:verify-certificate no
           set net:max-retries 2
           set net:timeout 20
-          debug 3
+          debug 2
           pwd
           ls /
           ls "$FTP_DIR"

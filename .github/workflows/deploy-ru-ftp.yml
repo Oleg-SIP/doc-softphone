@@ -85,7 +85,7 @@ jobs:
           # mirror -R: local -> server; --delete removes pages that no longer exist.
           # TLS is used if the server offers it; the host's certificate is
           # not checked, as it is a shared hosting one.
-          lftp -u "$FTP_USER" "ftp://$FTP_HOST:21" <<LFTP
+          lftp -u "$FTP_USER,$LFTP_PASSWORD" "ftp://$FTP_HOST:21" <<LFTP
           set ftp:ssl-allow yes
           set ssl:verify-certificate no
           set net:max-retries 3
