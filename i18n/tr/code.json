@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Büyüt"
+  },
+  "shot.enlargeLabel": {
+    "message": "Ekran görüntüsünü büyüt: {alt}"
+  },
+  "shot.close": {
+    "message": "Kapat"
+  },
   "consent.text": {
     "message": "Bu sayfa ziyaretleri Google Analytics ile sayabilir: hangi bölümlerin okunduğunu ve aşağı yukarı nereden gelindiğini. Bunun için çerez gerekiyor, bu yüzden sayım yanıtınızı bekliyor."
   },
