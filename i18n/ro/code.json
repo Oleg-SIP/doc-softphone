@@ -1,4 +1,13 @@
 {
+  "shot.enlarge": {
+    "message": "Mărește"
+  },
+  "shot.enlargeLabel": {
+    "message": "Mărește captura de ecran: {alt}"
+  },
+  "shot.close": {
+    "message": "Închide"
+  },
   "consent.text": {
     "message": "Această pagină poate număra vizitele cu Google Analytics: ce secțiuni sunt citite și cam de unde. Pentru asta e nevoie de un cookie, așa că numărătoarea vă așteaptă răspunsul."
   },
