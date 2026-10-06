@@ -95,9 +95,6 @@ const config = {
         docs: {
           routeBasePath: '/', // documentation is the whole site
           sidebarPath: './sidebars.js',
-          // "Edit this page" opens the editor (Decap CMS) on the page's language
-          editUrl: ({ locale }) =>
-            `${url}${baseUrl}admin/#/collections/docs_${locale.replace('-', '_')}`,
         },
         blog: false,
         theme: { customCss: './src/css/custom.css' },
