@@ -10,7 +10,7 @@ description: Različica, posodobitve, vaša država, licenca, kaj vsebuje poroč
 
 ## Različica in država {#version-and-country}
 
-Na vrhu so ime, **Različica** (na sliki 1.0.0) in povezava na spletno stran [ai-softphone.com](https://ai-softphone.com/).
+Na vrhu so ime, **Različica** (na sliki 1.0.1) in povezava na spletno stran [ai-softphone.com](https://ai-softphone.com/).
 
 **Država** programu pove, kje ste. Pomaga izbrati najboljši strežnik za posodobitve in odpre pot do jezikovnih in govornih storitev, gostovanih v vaši državi. **Zaznaj samodejno** jo izpolni.
 

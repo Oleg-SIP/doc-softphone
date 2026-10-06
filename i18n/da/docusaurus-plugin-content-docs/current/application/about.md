@@ -10,7 +10,7 @@ description: Versionen, opdateringer, dit land, licensen, hvad brugsrapporten in
 
 ## Version og land {#version-and-country}
 
-Øverst står navnet, **Version** (på billedet 1.0.0) og et link til hjemmesiden, [ai-softphone.com](https://ai-softphone.com/).
+Øverst står navnet, **Version** (på billedet 1.0.1) og et link til hjemmesiden, [ai-softphone.com](https://ai-softphone.com/).
 
 **Land** fortæller programmet, hvor du er. Det hjælper med at vælge den bedste opdateringsserver og åbner for sprog- og taletjenester, der hostes i dit land. **Find det automatisk** udfylder det.
 

@@ -10,7 +10,7 @@ description: Verzia, aktualizácie, vaša krajina, licencia, obsah hlásenia o p
 
 ## Verzia a krajina {#version-and-country}
 
-Navrchu je názov, **Verzia** (na obrázku 1.0.0) a odkaz na webovú stránku [ai-softphone.com](https://ai-softphone.com/).
+Navrchu je názov, **Verzia** (na obrázku 1.0.1) a odkaz na webovú stránku [ai-softphone.com](https://ai-softphone.com/).
 
 **Krajina** hovorí programu, kde ste. Pomáha vybrať najlepší server aktualizácií a otvára cestu k jazykovým a rečovým službám hosťovaným vo vašej krajine. **Zistiť automaticky** ju vyplní.
 

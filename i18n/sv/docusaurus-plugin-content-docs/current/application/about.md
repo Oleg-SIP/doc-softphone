@@ -10,7 +10,7 @@ description: Versionen, uppdateringar, ditt land, licensen, vad användningsrapp
 
 ## Version och land {#version-and-country}
 
-Överst finns namnet, **Version** (på bilden 1.0.0) och en länk till webbplatsen, [ai-softphone.com](https://ai-softphone.com/).
+Överst finns namnet, **Version** (på bilden 1.0.1) och en länk till webbplatsen, [ai-softphone.com](https://ai-softphone.com/).
 
 **Land** talar om för programmet var du är. Det hjälper till att välja den bästa uppdateringsservern och öppnar för språk- och taltjänster som drivs i ditt land. **Ta reda på det automatiskt** fyller i det.
 

@@ -10,7 +10,7 @@ description: Wersja, aktualizacje, twój kraj, licencja, zawartość raportu uż
 
 ## Wersja i kraj {#version-and-country}
 
-U góry jest nazwa, **Wersja** (na obrazku 1.0.0) i odnośnik do strony [ai-softphone.com](https://ai-softphone.com/).
+U góry jest nazwa, **Wersja** (na obrazku 1.0.1) i odnośnik do strony [ai-softphone.com](https://ai-softphone.com/).
 
 **Kraj** mówi programowi, gdzie jesteś. Pomaga wybrać najlepszy serwer aktualizacji i otwiera drogę do usług językowych i mowy hostowanych w twoim kraju. **Wykryj automatycznie** go wypełnia.
 

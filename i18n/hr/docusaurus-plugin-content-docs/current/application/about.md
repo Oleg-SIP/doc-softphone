@@ -10,7 +10,7 @@ description: Inačica, ažuriranja, vaša država, licenca, sadržaj izvješća 
 
 ## Inačica i država {#version-and-country}
 
-Na vrhu su naziv, **Inačica** (na slici 1.0.0) i poveznica na web-stranicu [ai-softphone.com](https://ai-softphone.com/).
+Na vrhu su naziv, **Inačica** (na slici 1.0.1) i poveznica na web-stranicu [ai-softphone.com](https://ai-softphone.com/).
 
 **Država** govori programu gdje ste. Pomaže odabrati najbolji poslužitelj za ažuriranja i otvara put jezičnim i govornim uslugama smještenima u vašoj državi. **Otkrij automatski** je ispunjava.
 

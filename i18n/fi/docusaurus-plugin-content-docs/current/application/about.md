@@ -10,7 +10,7 @@ description: Versio, päivitykset, maasi, lisenssi, käyttöraportin sisältö, 
 
 ## Versio ja maa {#version-and-country}
 
-Yläreunassa ovat nimi, **Versio** (kuvassa 1.0.0) ja linkki verkkosivustolle, [ai-softphone.com](https://ai-softphone.com/).
+Yläreunassa ovat nimi, **Versio** (kuvassa 1.0.1) ja linkki verkkosivustolle, [ai-softphone.com](https://ai-softphone.com/).
 
 **Maa** kertoo ohjelmalle, missä olet. Se auttaa valitsemaan parhaan päivityspalvelimen ja avaa tien maassasi isännöityihin kieli- ja puhepalveluihin. **Tunnista automaattisesti** täyttää sen.
 

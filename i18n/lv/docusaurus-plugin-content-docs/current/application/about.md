@@ -10,7 +10,7 @@ description: Versija, atjauninājumi, jūsu valsts, licence, lietošanas atskait
 
 ## Versija un valsts {#version-and-country}
 
-Augšā ir nosaukums, **Versija** (attēlā 1.0.0) un saite uz tīmekļa vietni [ai-softphone.com](https://ai-softphone.com/).
+Augšā ir nosaukums, **Versija** (attēlā 1.0.1) un saite uz tīmekļa vietni [ai-softphone.com](https://ai-softphone.com/).
 
 **Valsts** pasaka programmai, kur jūs atrodaties. Tas palīdz izvēlēties labāko atjauninājumu serveri un paver ceļu valodas un runas pakalpojumiem, kas mitināti jūsu valstī. **Noteikt automātiski** to aizpilda.
 

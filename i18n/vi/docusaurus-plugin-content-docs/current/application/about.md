@@ -10,7 +10,7 @@ description: Phiên bản, cập nhật, quốc gia của bạn, giấy phép, n
 
 ## Phiên bản và quốc gia {#version-and-country}
 
-Ở trên cùng là tên, **Phiên bản** (trong hình là 1.0.0) và liên kết tới trang web, [ai-softphone.com](https://ai-softphone.com/).
+Ở trên cùng là tên, **Phiên bản** (trong hình là 1.0.1) và liên kết tới trang web, [ai-softphone.com](https://ai-softphone.com/).
 
 **Quốc gia** cho chương trình biết bạn đang ở đâu. Nó giúp chọn máy chủ cập nhật tốt nhất, và mở đường tới các dịch vụ ngôn ngữ và giọng nói đặt tại quốc gia của bạn. **Tự động nhận biết** sẽ điền giá trị này.
 

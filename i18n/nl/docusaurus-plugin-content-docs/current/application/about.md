@@ -10,7 +10,7 @@ description: De versie, updates, uw land, de licentie, wat het gebruiksrapport b
 
 ## Versie en land {#version-and-country}
 
-Bovenaan staan de naam, de **Versie** (op de afbeelding 1.0.0) en een koppeling naar de website, [ai-softphone.com](https://ai-softphone.com/).
+Bovenaan staan de naam, de **Versie** (op de afbeelding 1.0.1) en een koppeling naar de website, [ai-softphone.com](https://ai-softphone.com/).
 
 **Land** vertelt het programma waar u bent. Dat helpt bij het kiezen van de beste updateserver en opent de weg naar taal- en spraakdiensten die in uw land worden gehost. **Automatisch bepalen** vult het in.
 

@@ -10,7 +10,7 @@ description: "La versione, gli aggiornamenti, il suo paese, la licenza, che cosa
 
 ## Versione e paese {#version-and-country}
 
-In alto ci sono il nome, la **Versione** (nell'immagine 1.0.0) e un collegamento al sito web, [ai-softphone.com](https://ai-softphone.com/).
+In alto ci sono il nome, la **Versione** (nell'immagine 1.0.1) e un collegamento al sito web, [ai-softphone.com](https://ai-softphone.com/).
 
 **Paese** dice al programma dove si trova lei. Aiuta a scegliere il server di aggiornamento migliore e apre la strada ai servizi linguistici e vocali ospitati nel suo paese. **Rileva automaticamente** lo compila.
 

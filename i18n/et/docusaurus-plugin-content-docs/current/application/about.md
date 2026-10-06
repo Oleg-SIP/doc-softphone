@@ -10,7 +10,7 @@ description: Versioon, uuendused, teie riik, litsents, kasutusaruande sisu, taga
 
 ## Versioon ja riik {#version-and-country}
 
-Ülal on nimi, **Versioon** (pildil 1.0.0) ja link veebisaidile [ai-softphone.com](https://ai-softphone.com/).
+Ülal on nimi, **Versioon** (pildil 1.0.1) ja link veebisaidile [ai-softphone.com](https://ai-softphone.com/).
 
 **Riik** ütleb programmile, kus te olete. See aitab valida parima uuendusserveri ja avab tee teie riigis majutatud keele- ja kõneteenustele. **Tuvasta automaatselt** täidab selle.
 

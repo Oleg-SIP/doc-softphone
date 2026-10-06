@@ -10,7 +10,7 @@ description: Verzija, ažuriranja, vaša država, licenca, sadržaj izveštaja o
 
 ## Verzija i država {#version-and-country}
 
-Na vrhu su naziv, **Verzija** (na slici 1.0.0) i veza ka veb-sajtu [ai-softphone.com](https://ai-softphone.com/).
+Na vrhu su naziv, **Verzija** (na slici 1.0.1) i veza ka veb-sajtu [ai-softphone.com](https://ai-softphone.com/).
 
 **Država** govori programu gde ste. Pomaže da se izabere najbolji server za ažuriranja i otvara put ka jezičkim i govornim uslugama smeštenim u vašoj državi. **Otkrij samostalno** je popunjava.
 

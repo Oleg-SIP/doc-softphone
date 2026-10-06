@@ -10,7 +10,7 @@ description: Versi, pembaruan, negara Anda, lisensi, isi laporan penggunaan, for
 
 ## Versi dan negara {#version-and-country}
 
-Di bagian atas terdapat nama, **Versi** (pada gambar 1.0.0), dan tautan ke situs web, [ai-softphone.com](https://ai-softphone.com/).
+Di bagian atas terdapat nama, **Versi** (pada gambar 1.0.1), dan tautan ke situs web, [ai-softphone.com](https://ai-softphone.com/).
 
 **Negara** memberi tahu program di mana Anda berada. Ini membantu memilih server pembaruan terbaik, dan membuka jalan ke layanan bahasa dan ucapan yang dihosting di negara Anda. **Deteksi otomatis** mengisinya.
 
