@@ -40,7 +40,7 @@ Co program smí, závisí na tom, zda mění uložená data, ne na tom, zda čte
 Token se ukládá do klíčenky počítače, ne do souboru s nastavením, a `/settings` ho nikdy nevrací.
 
 :::caution
-Bez tokenu může telefon ovládat jakýkoli program běžící v tomto počítači, včetně přijímání hovorů. Na osobní pracovní stanici je to obvykle přijatelné. Na sdíleném nebo spravovaném počítači token nastavte a zacházejte s ním jako s každým jiným heslem.
+Bez tokenu může telefon ovládat jakýkoli program běžící v tomto počítači, včetně přijímání hovorů. Na osobní pracovní stanici je to obvykle přijatelné. Na sdíleném nebo spravovaném počítači token nastavte a zacházejte s ním jako s každým jiným heslem. Token chrání jen požadavky, které mění uložená data, nikoli hovory: chcete-li ostatní programy k hovorům nepustit, vypněte **Hovory a jejich ovládání** v části **Přístup**.
 :::
 
 ## Koncové body {#endpoints}

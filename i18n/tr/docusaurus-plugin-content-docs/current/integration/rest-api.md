@@ -40,7 +40,7 @@ Bir programın neler yapabileceği, okuyup okumamasına değil, saklanan veriler
 Belirteç ayar dosyasında değil, bilgisayarın anahtarlığında saklanır ve `/settings` tarafından asla döndürülmez.
 
 :::caution
-Belirteç olmadan, bu bilgisayarda çalışan herhangi bir program telefonu yönetebilir, çağrıları yanıtlamak dahil. Kişisel bir iş istasyonunda bu genellikle kabul edilebilir. Paylaşılan ya da yönetilen bir makinede bir belirteç belirleyin ve ona diğer parolalar gibi davranın.
+Belirteç olmadan, bu bilgisayarda çalışan herhangi bir program telefonu yönetebilir, çağrıları yanıtlamak dahil. Kişisel bir iş istasyonunda bu genellikle kabul edilebilir. Paylaşılan ya da yönetilen bir makinede bir belirteç belirleyin ve ona diğer parolalar gibi davranın. Belirteç yalnızca kayıtlı verileri değiştiren istekleri korur, çağrıları değil: diğer programları çağrılardan uzak tutmak için **Erişim** altında **Çağrılar ve onların yönetimi** grubunu kapatın.
 :::
 
 ## Uç noktalar {#endpoints}

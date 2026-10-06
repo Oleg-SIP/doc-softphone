@@ -40,7 +40,7 @@ Một chương trình được làm gì phụ thuộc vào việc nó có thay �
 Token được giữ trong kho khoá của máy tính, không nằm trong tệp cài đặt, và không bao giờ được `/settings` trả về.
 
 :::caution
-Không có token, bất kỳ chương trình nào đang chạy trên máy tính này đều có thể điều khiển điện thoại, kể cả trả lời cuộc gọi. Trên máy trạm cá nhân, điều đó thường chấp nhận được. Trên máy dùng chung hoặc máy được quản lý tập trung, hãy đặt token và bảo vệ nó như mọi mật khẩu khác.
+Không có token, bất kỳ chương trình nào đang chạy trên máy tính này đều có thể điều khiển điện thoại, kể cả trả lời cuộc gọi. Trên máy trạm cá nhân, điều đó thường chấp nhận được. Trên máy dùng chung hoặc máy được quản lý tập trung, hãy đặt token và bảo vệ nó như mọi mật khẩu khác. Token chỉ bảo vệ các yêu cầu làm thay đổi dữ liệu đã lưu, không bảo vệ cuộc gọi: để chặn chương trình khác điều khiển cuộc gọi, hãy tắt **Cuộc gọi và việc điều khiển chúng** trong mục **Truy cập**.
 :::
 
 ## Các endpoint {#endpoints}

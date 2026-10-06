@@ -22,7 +22,7 @@ Aufnahmen, Transkripte und der Verlauf liegen in einer Datei, die Ihnen gehört.
 
 ## Download und Systemvoraussetzungen {#download-and-system-requirements}
 
-Das Programm ist kostenlos auf [ai-softphone.com](https://ai-softphone.com/?lang=de#download) erhältlich: ein Installer (`.exe`) für Windows, ein Disk-Image (`.dmg`) für macOS und ein AppImage oder ein `.deb` für Linux. Vorher muss nichts installiert werden — Qt, OpenSSL und die C++-Laufzeit sind im Paket enthalten. Sie benötigen ein SIP-Konto von Ihrem Anbieter oder von der Telefonanlage, die Sie selbst betreiben. Die Aufnahme funktioniert sofort nach der Installation; Transkript und Auswertung brauchen einen Dienst Ihrer Wahl oder ein Modell auf Ihrem eigenen Rechner.
+Das Programm ist kostenlos auf [ai-softphone.com](https://ai-softphone.com/?lang=de#download) erhältlich: ein Installer (`.exe`) für Windows, ein Disk-Image (`.dmg`) für macOS und ein AppImage oder ein `.deb` für Linux. Installer, Disk-Image und AppImage setzen keine vorherige Installation voraus — Qt, OpenSSL und die C++-Laufzeit sind darin enthalten. Die Ausnahme ist das `.deb`: Es nutzt die C++-Laufzeit des Systems, siehe unten. Sie benötigen ein SIP-Konto von Ihrem Anbieter oder von der Telefonanlage, die Sie selbst betreiben. Die Aufnahme funktioniert sofort nach der Installation; Transkript und Auswertung brauchen einen Dienst Ihrer Wahl oder ein Modell auf Ihrem eigenen Rechner.
 
 | System | Voraussetzungen |
 | --- | --- |

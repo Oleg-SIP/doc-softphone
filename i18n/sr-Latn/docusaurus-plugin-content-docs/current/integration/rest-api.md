@@ -40,7 +40,7 @@ Ne instalira se zasebna usluga i nije potrebno ponovno pokretanje. Deo programa 
 Žeton se čuva u skladištu ključeva računara, ne u datoteci podešavanja, i `/settings` ga nikada ne vraća.
 
 :::caution
-Bez žetona bilo koji program koji radi na ovom računaru može da upravlja telefonom, uključujući javljanje na pozive. Na ličnoj radnoj stanici to je obično prihvatljivo. Na zajedničkom ili upravljanom računaru podesite žeton i postupajte sa njim kao sa bilo kojom drugom lozinkom.
+Bez žetona bilo koji program koji radi na ovom računaru može da upravlja telefonom, uključujući javljanje na pozive. Na ličnoj radnoj stanici to je obično prihvatljivo. Na zajedničkom ili upravljanom računaru podesite žeton i postupajte sa njim kao sa bilo kojom drugom lozinkom. Žeton štiti samo zahteve koji menjaju sačuvane podatke, a ne pozive: ako želite da druge programe držite dalje od poziva, isključite **Pozivi i upravljanje njima** pod **Pristup**.
 :::
 
 ## Krajnje tačke {#endpoints}

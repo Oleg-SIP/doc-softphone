@@ -40,7 +40,7 @@ Che cosa può fare un programma dipende da se cambia dati salvati, non da se leg
 Il token è conservato nel portachiavi del computer, non nel file di impostazioni, e non viene mai restituito da `/settings`.
 
 :::caution
-Senza token, qualsiasi programma in esecuzione su questo computer può controllare il telefono, compreso rispondere alle chiamate. Su una postazione personale di solito è accettabile. Su una macchina condivisa o gestita, imposti un token e lo tratti come qualsiasi altra password.
+Senza token, qualsiasi programma in esecuzione su questo computer può controllare il telefono, compreso rispondere alle chiamate. Su una postazione personale di solito è accettabile. Su una macchina condivisa o gestita, imposti un token e lo tratti come qualsiasi altra password. Il token protegge solo le richieste che modificano i dati salvati, non le chiamate: per tenere gli altri programmi lontani dalle chiamate, spenga **Le chiamate e il loro controllo** in **Accesso**.
 :::
 
 ## Endpoint {#endpoints}

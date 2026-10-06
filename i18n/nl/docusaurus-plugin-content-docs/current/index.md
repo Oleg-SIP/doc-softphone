@@ -22,7 +22,7 @@ Opnames, transcripten en geschiedenis worden bewaard in een bestand dat van u is
 
 ## Downloaden en systeemvereisten {#download-and-system-requirements}
 
-Het programma is gratis te downloaden van [ai-softphone.com](https://ai-softphone.com/#download): een installatieprogramma (`.exe`) voor Windows, een schijfkopie (`.dmg`) voor macOS, en een AppImage of een `.deb` voor Linux. Er hoeft vooraf niets anders geïnstalleerd te worden — Qt, OpenSSL en de C++-runtime zitten in het pakket. U hebt een SIP-account nodig, van uw provider of van de centrale die u zelf beheert. Opnemen werkt zodra het programma geïnstalleerd is; het transcript en de uitwerking vragen een dienst die u kiest of een model op uw eigen machine.
+Het programma is gratis te downloaden van [ai-softphone.com](https://ai-softphone.com/#download): een installatieprogramma (`.exe`) voor Windows, een schijfkopie (`.dmg`) voor macOS, en een AppImage of een `.deb` voor Linux. Het installatieprogramma, de schijfkopie en de AppImage hebben vooraf niets anders nodig — Qt, OpenSSL en de C++-runtime zitten erin. De uitzondering is het `.deb`-pakket: dat gebruikt de C++-runtime van het systeem zelf, zie hieronder. U hebt een SIP-account nodig, van uw provider of van de centrale die u zelf beheert. Opnemen werkt zodra het programma geïnstalleerd is; het transcript en de uitwerking vragen een dienst die u kiest of een model op uw eigen machine.
 
 | Systeem | Vereisten |
 | --- | --- |

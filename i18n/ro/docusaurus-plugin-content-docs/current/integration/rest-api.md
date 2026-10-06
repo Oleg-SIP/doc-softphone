@@ -40,7 +40,7 @@ Ce poate face un program depinde de faptul că modifică sau nu datele stocate, 
 Tokenul este păstrat în depozitul de chei al calculatorului, nu în fișierul de setări, și nu este returnat niciodată de `/settings`.
 
 :::caution
-Fără token, orice program care rulează pe acest calculator poate controla telefonul, inclusiv să răspundă la apeluri. Pe o stație de lucru personală, acest lucru este de obicei acceptabil. Pe un calculator partajat sau administrat, setați un token și tratați-l ca pe orice altă parolă.
+Fără token, orice program care rulează pe acest calculator poate controla telefonul, inclusiv să răspundă la apeluri. Pe o stație de lucru personală, acest lucru este de obicei acceptabil. Pe un calculator partajat sau administrat, setați un token și tratați-l ca pe orice altă parolă. Tokenul protejează doar cererile care modifică datele salvate, nu și apelurile: ca să țineți alte programe departe de apeluri, opriți **Apelurile și comanda lor** la **Acces**.
 :::
 
 ## Puncte finale {#endpoints}

@@ -16,6 +16,10 @@ const baseUrl = process.env.BASE_URL || '/';
 const locale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'en';
 const productSite = locale === 'en' ? 'https://ai-softphone.com/' : `https://ai-softphone.com/?lang=${locale}`;
 
+/* The footer link that brings the cookie question back, in the page's
+   language (languages.json). */
+const cookiesLabel = (languages.find((l) => l.code === locale) || languages[0]).cookies;
+
 /* Google Analytics, the same property as ai-softphone.com. Consent is
    decided before the tag is fetched: everything is denied until the
    visitor answers the banner (src/theme/Root.js), and the answer given
@@ -117,8 +121,8 @@ const config = {
       footer: {
         style: 'dark',
         // the link brings the cookie question back; src/theme/Root.js
-        // answers it and puts the word in the page's language
-        copyright: `<a href="https://ai-softphone.com/" target="_blank" rel="noopener">AI Softphone</a> · <a href="#" class="consent-link">Cookies</a>`,
+        // answers it
+        copyright: `<a href="https://ai-softphone.com/" target="_blank" rel="noopener">AI Softphone</a> · <a href="#" class="consent-link">${cookiesLabel}</a>`,
       },
       prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
     }),

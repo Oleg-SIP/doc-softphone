@@ -22,7 +22,7 @@ Rekaman, transkrip, dan riwayat disimpan dalam berkas milik Anda sendiri. Tidak 
 
 ## Unduhan dan persyaratan sistem {#download-and-system-requirements}
 
-Program ini dapat diunduh gratis dari [ai-softphone.com](https://ai-softphone.com/#download): penginstal (`.exe`) untuk Windows, image disk (`.dmg`) untuk macOS, serta AppImage atau `.deb` untuk Linux. Tidak ada yang perlu dipasang terlebih dahulu — Qt, OpenSSL, dan pustaka runtime C++ sudah disertakan dalam paket. Anda memerlukan akun SIP, dari penyedia Anda atau dari PBX yang Anda kelola sendiri. Perekaman langsung berfungsi begitu program terpasang; transkrip dan hasil olahan memerlukan layanan pilihan Anda atau model di komputer Anda sendiri.
+Program ini dapat diunduh gratis dari [ai-softphone.com](https://ai-softphone.com/#download): penginstal (`.exe`) untuk Windows, image disk (`.dmg`) untuk macOS, serta AppImage atau `.deb` untuk Linux. Penginstal, image disk, dan AppImage tidak memerlukan apa pun yang dipasang terlebih dahulu — Qt, OpenSSL, dan pustaka runtime C++ sudah disertakan di dalamnya. Pengecualiannya adalah `.deb`: paket ini memakai pustaka runtime C++ milik sistem, lihat di bawah. Anda memerlukan akun SIP, dari penyedia Anda atau dari PBX yang Anda kelola sendiri. Perekaman langsung berfungsi begitu program terpasang; transkrip dan hasil olahan memerlukan layanan pilihan Anda atau model di komputer Anda sendiri.
 
 | Sistem | Persyaratan |
 | --- | --- |

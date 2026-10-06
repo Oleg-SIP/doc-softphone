@@ -40,7 +40,7 @@ Hogy egy program mit tehet, az attól függ, hogy módosít-e tárolt adatokat, 
 A tokent a számítógép kulcstartója őrzi, nem a beállításfájl, és a `/settings` soha nem adja vissza.
 
 :::caution
-Token nélkül a számítógépen futó bármely program vezérelheti a telefont, a hívások fogadását is beleértve. Egy személyes munkaállomáson ez általában elfogadható. Egy közös vagy központilag felügyelt gépen állítson be tokent, és kezelje úgy, mint bármely más jelszót.
+Token nélkül a számítógépen futó bármely program vezérelheti a telefont, a hívások fogadását is beleértve. Egy személyes munkaállomáson ez általában elfogadható. Egy közös vagy központilag felügyelt gépen állítson be tokent, és kezelje úgy, mint bármely más jelszót. A token csak a tárolt adatokat módosító kéréseket védi, a hívásokat nem: ha más programokat távol szeretne tartani a hívásoktól, kapcsolja ki a(z) **Hívások és azok kezelése** csoportot a **Hozzáférés** alatt.
 :::
 
 ## Végpontok {#endpoints}

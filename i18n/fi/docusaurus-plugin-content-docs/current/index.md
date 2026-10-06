@@ -22,7 +22,7 @@ Tallenteet, litteroinnit ja historia säilytetään tiedostossa, jonka omistat. 
 
 ## Lataus ja järjestelmävaatimukset {#download-and-system-requirements}
 
-Ohjelman voi ladata maksutta osoitteesta [ai-softphone.com](https://ai-softphone.com/#download): asennusohjelma (`.exe`) Windowsille, levykuva (`.dmg`) macOS:lle sekä AppImage tai `.deb` Linuxille. Mitään muuta ei tarvitse asentaa ensin — Qt, OpenSSL ja C++-ajonaikainen ympäristö kulkevat paketin mukana. Tarvitset SIP-tilin palveluntarjoajaltasi tai itse ylläpitämästäsi vaihteesta. Tallennus toimii heti, kun ohjelma on asennettu; litterointi ja yhteenveto vaativat valitsemasi palvelun tai mallin omalla koneellasi.
+Ohjelman voi ladata maksutta osoitteesta [ai-softphone.com](https://ai-softphone.com/#download): asennusohjelma (`.exe`) Windowsille, levykuva (`.dmg`) macOS:lle sekä AppImage tai `.deb` Linuxille. Asennusohjelma, levykuva ja AppImage eivät vaadi mitään muuta asennettavaksi ensin — Qt, OpenSSL ja C++-ajonaikainen ympäristö kulkevat niiden mukana. Poikkeus on `.deb`: se käyttää järjestelmän omaa C++-ajonaikaista ympäristöä, katso alempaa. Tarvitset SIP-tilin palveluntarjoajaltasi tai itse ylläpitämästäsi vaihteesta. Tallennus toimii heti, kun ohjelma on asennettu; litterointi ja yhteenveto vaativat valitsemasi palvelun tai mallin omalla koneellasi.
 
 | Järjestelmä | Vaatimukset |
 | --- | --- |

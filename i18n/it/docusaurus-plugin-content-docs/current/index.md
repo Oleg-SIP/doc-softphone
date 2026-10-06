@@ -22,7 +22,7 @@ Registrazioni, trascrizioni e cronologia sono conservate in un file che le appar
 
 ## Download e requisiti di sistema {#download-and-system-requirements}
 
-Il programma si scarica gratuitamente da [ai-softphone.com](https://ai-softphone.com/#download): un programma di installazione (`.exe`) per Windows, un'immagine disco (`.dmg`) per macOS, e un'AppImage o un `.deb` per Linux. Non bisogna installare nient'altro prima — Qt, OpenSSL e il runtime C++ viaggiano dentro il pacchetto. Le servirà un account SIP, dal suo provider o dal centralino che gestisce lei stesso. La registrazione funziona appena il programma è installato; la trascrizione e il resoconto richiedono un servizio a sua scelta o un modello sulla sua macchina.
+Il programma si scarica gratuitamente da [ai-softphone.com](https://ai-softphone.com/#download): un programma di installazione (`.exe`) per Windows, un'immagine disco (`.dmg`) per macOS, e un'AppImage o un `.deb` per Linux. Il programma di installazione, l'immagine disco e l'AppImage non richiedono nient'altro installato prima — Qt, OpenSSL e il runtime C++ viaggiano al loro interno. Fa eccezione il `.deb`: usa il runtime C++ del sistema, vedere più sotto. Le servirà un account SIP, dal suo provider o dal centralino che gestisce lei stesso. La registrazione funziona appena il programma è installato; la trascrizione e il resoconto richiedono un servizio a sua scelta o un modello sulla sua macchina.
 
 | Sistema | Requisiti |
 | --- | --- |

@@ -40,7 +40,7 @@ Hvad et program må, afhænger af, om det ændrer gemte data, ikke af, om det l�
 Nøglen gemmes i computerens nøglering, ikke i indstillingsfilen, og returneres aldrig af `/settings`.
 
 :::caution
-Uden en nøgle kan ethvert program, der kører på denne computer, styre telefonen, også besvare opkald. På en personlig arbejdsstation er det som regel acceptabelt. På en delt eller administreret maskine bør du sætte en nøgle og behandle den som enhver anden adgangskode.
+Uden en nøgle kan ethvert program, der kører på denne computer, styre telefonen, også besvare opkald. På en personlig arbejdsstation er det som regel acceptabelt. På en delt eller administreret maskine bør du sætte en nøgle og behandle den som enhver anden adgangskode. Nøglen beskytter kun de forespørgsler, der ændrer gemte data, ikke opkaldene: vil du holde andre programmer væk fra opkaldene, så slå **Opkald, og styringen af dem** fra under **Adgang**.
 :::
 
 ## Endepunkter {#endpoints}

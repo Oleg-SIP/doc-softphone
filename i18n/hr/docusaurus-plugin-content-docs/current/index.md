@@ -22,7 +22,7 @@ Snimke, prijepisi i povijest čuvaju se u datoteci koja je vaša. Ne trebate ni 
 
 ## Preuzimanje i zahtjevi sustava {#download-and-system-requirements}
 
-Program se besplatno preuzima s [ai-softphone.com](https://ai-softphone.com/#download): instalacijski program (`.exe`) za Windows, slika diska (`.dmg`) za macOS te AppImage ili `.deb` za Linux. Ništa drugo ne treba prethodno instalirati — Qt, OpenSSL i C++ knjižnice nalaze se u paketu. Trebat će vam SIP račun kod vašeg operatera ili na centrali koju sami vodite. Snimanje radi čim se program instalira; za prijepis i obradu potrebna je usluga koju odaberete ili model na vlastitom računalu.
+Program se besplatno preuzima s [ai-softphone.com](https://ai-softphone.com/#download): instalacijski program (`.exe`) za Windows, slika diska (`.dmg`) za macOS te AppImage ili `.deb` za Linux. Instalacijski program, slika diska i AppImage ne traže ništa prethodno instalirano — Qt, OpenSSL i C++ knjižnice nalaze se u njima. Iznimka je `.deb`: on koristi C++ knjižnice samog sustava, pogledajte niže. Trebat će vam SIP račun kod vašeg operatera ili na centrali koju sami vodite. Snimanje radi čim se program instalira; za prijepis i obradu potrebna je usluga koju odaberete ili model na vlastitom računalu.
 
 | Sustav | Zahtjevi |
 | --- | --- |

@@ -22,7 +22,7 @@ description: Ce este AI Softphone, pe ce sisteme rulează și unde este descris�
 
 ## Descărcare și cerințe de sistem {#download-and-system-requirements}
 
-Programul se descarcă gratuit de pe [ai-softphone.com](https://ai-softphone.com/#download): un program de instalare (`.exe`) pentru Windows, o imagine de disc (`.dmg`) pentru macOS și un AppImage sau un `.deb` pentru Linux. Nu trebuie instalat nimic altceva înainte — Qt, OpenSSL și bibliotecile C++ sunt incluse în pachet. Veți avea nevoie de un cont SIP, de la furnizorul dumneavoastră sau de pe centrala pe care o administrați chiar dumneavoastră. Înregistrarea funcționează imediat după instalarea programului; pentru transcriere și prelucrare este nevoie de un serviciu ales de dumneavoastră sau de un model pe propriul calculator.
+Programul se descarcă gratuit de pe [ai-softphone.com](https://ai-softphone.com/#download): un program de instalare (`.exe`) pentru Windows, o imagine de disc (`.dmg`) pentru macOS și un AppImage sau un `.deb` pentru Linux. Programul de instalare, imaginea de disc și AppImage nu cer nimic altceva instalat înainte — Qt, OpenSSL și bibliotecile C++ sunt incluse în ele. Excepția este `.deb`: acesta folosește bibliotecile C++ ale sistemului, vedeți mai jos. Veți avea nevoie de un cont SIP, de la furnizorul dumneavoastră sau de pe centrala pe care o administrați chiar dumneavoastră. Înregistrarea funcționează imediat după instalarea programului; pentru transcriere și prelucrare este nevoie de un serviciu ales de dumneavoastră sau de un model pe propriul calculator.
 
 | Sistem | Cerințe |
 | --- | --- |

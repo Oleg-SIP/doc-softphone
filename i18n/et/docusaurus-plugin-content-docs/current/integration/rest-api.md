@@ -40,7 +40,7 @@ See, mida programm teha tohib, sõltub sellest, kas see muudab talletatud andmei
 Märgist hoitakse arvuti võtmehoidjas, mitte seadete failis, ja `/settings` ei tagasta seda kunagi.
 
 :::caution
-Ilma märgiseta saab iga selles arvutis töötav programm telefoni juhtida, sealhulgas kõnedele vastata. Isiklikus tööjaamas on see tavaliselt vastuvõetav. Jagatud või hallatud masinas määrake märgis ja käsitlege seda nagu iga teist parooli.
+Ilma märgiseta saab iga selles arvutis töötav programm telefoni juhtida, sealhulgas kõnedele vastata. Isiklikus tööjaamas on see tavaliselt vastuvõetav. Jagatud või hallatud masinas määrake märgis ja käsitlege seda nagu iga teist parooli. Märgis kaitseb ainult päringuid, mis muudavad salvestatud andmeid, mitte kõnesid: kui soovite teisi programme kõnedest eemal hoida, lülitage jaotises **Juurdepääs** välja **Kõned ja nende juhtimine**.
 :::
 
 ## Lõpp-punktid {#endpoints}

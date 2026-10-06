@@ -40,7 +40,7 @@ Lo que puede hacer un programa depende de si cambia datos guardados, no de si le
 El token se guarda en el llavero del ordenador, no en el archivo de ajustes, y `/settings` nunca lo devuelve.
 
 :::caution
-Sin token, cualquier programa que se ejecute en este ordenador puede controlar el teléfono, incluido contestar llamadas. En un puesto personal eso suele ser aceptable. En una máquina compartida o gestionada, ponga un token y trátelo como cualquier otra contraseña.
+Sin token, cualquier programa que se ejecute en este ordenador puede controlar el teléfono, incluido contestar llamadas. En un puesto personal eso suele ser aceptable. En una máquina compartida o gestionada, ponga un token y trátelo como cualquier otra contraseña. El token solo protege las peticiones que cambian datos guardados, no las llamadas: para que otros programas no puedan tocarlas, apague **Las llamadas y su control** en **Acceso**.
 :::
 
 ## Puntos de acceso {#endpoints}

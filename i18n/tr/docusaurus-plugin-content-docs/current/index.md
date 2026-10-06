@@ -22,7 +22,7 @@ Kayıtlar, dökümler ve geçmiş, size ait bir dosyada saklanır. Hesap ya da a
 
 ## İndirme ve sistem gereksinimleri {#download-and-system-requirements}
 
-Program [ai-softphone.com](https://ai-softphone.com/#download) adresinden ücretsiz indirilir: Windows için bir kurulum programı (`.exe`), macOS için bir disk görüntüsü (`.dmg`), Linux için bir AppImage ya da bir `.deb`. Önceden başka hiçbir şey kurmanız gerekmez — Qt, OpenSSL ve C++ çalışma zamanı paketin içinde gelir. Sağlayıcınızdan ya da kendi yönettiğiniz santralden bir SIP hesabına ihtiyacınız olacak. Kayıt, program kurulduğu anda çalışır; döküm ve işleme için seçtiğiniz bir hizmet ya da kendi makinenizde bir model gerekir.
+Program [ai-softphone.com](https://ai-softphone.com/#download) adresinden ücretsiz indirilir: Windows için bir kurulum programı (`.exe`), macOS için bir disk görüntüsü (`.dmg`), Linux için bir AppImage ya da bir `.deb`. Kurulum programı, disk görüntüsü ve AppImage için önceden başka hiçbir şey kurmanız gerekmez — Qt, OpenSSL ve C++ çalışma zamanı bunların içinde gelir. İstisna `.deb` paketidir: sistemin kendi C++ çalışma zamanını kullanır, aşağıya bakın. Sağlayıcınızdan ya da kendi yönettiğiniz santralden bir SIP hesabına ihtiyacınız olacak. Kayıt, program kurulduğu anda çalışır; döküm ve işleme için seçtiğiniz bir hizmet ya da kendi makinenizde bir model gerekir.
 
 | Sistem | Gereksinimler |
 | --- | --- |

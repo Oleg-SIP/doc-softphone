@@ -40,7 +40,7 @@ To, co program może robić, zależy od tego, czy zmienia zapisane dane, a nie o
 Token jest przechowywany w pęku kluczy komputera, nie w pliku ustawień, i nigdy nie jest zwracany przez `/settings`.
 
 :::caution
-Bez tokenu każdy program działający na tym komputerze może sterować telefonem, łącznie z odbieraniem połączeń. Na osobistym stanowisku zwykle jest to do przyjęcia. Na współdzielonej lub zarządzanej maszynie ustaw token i traktuj go jak każde inne hasło.
+Bez tokenu każdy program działający na tym komputerze może sterować telefonem, łącznie z odbieraniem połączeń. Na osobistym stanowisku zwykle jest to do przyjęcia. Na współdzielonej lub zarządzanej maszynie ustaw token i traktuj go jak każde inne hasło. Token chroni tylko żądania, które zmieniają zapisane dane, a nie połączenia: aby inne programy nie miały dostępu do połączeń, wyłącz **Połączenia i ich obsługa** w sekcji **Dostęp**.
 :::
 
 ## Punkty końcowe {#endpoints}

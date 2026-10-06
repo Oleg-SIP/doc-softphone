@@ -40,7 +40,7 @@ What a program may do depends on whether it changes stored data, not on whether 
 The token is kept in the computer's keyring, not in the settings file, and is never returned by `/settings`.
 
 :::caution
-Without a token, any program running on this computer can control the phone, answering calls included. On a personal workstation that is usually acceptable. On a shared or managed machine, set a token and handle it like any other password.
+Without a token, any program running on this computer can control the phone, answering calls included. On a personal workstation that is usually acceptable. On a shared or managed machine, set a token and handle it like any other password. A token protects only the requests that change stored data, not the calls: to keep other programs away from calls, turn off **Calls, and control of them** under **Access**.
 :::
 
 ## Endpoints

@@ -40,7 +40,7 @@ Ką programa gali daryti, priklauso nuo to, ar ji keičia išsaugotus duomenis, 
 Prieigos raktas laikomas kompiuterio raktų pakete, o ne nustatymų faile, ir `/settings` jo niekada negrąžina.
 
 :::caution
-Be prieigos rakto bet kuri šiame kompiuteryje veikianti programa gali valdyti telefoną, įskaitant atsiliepimą į skambučius. Asmeniniame darbo vietos kompiuteryje tai paprastai priimtina. Bendrai naudojamame ar administruojamame kompiuteryje nustatykite prieigos raktą ir elkitės su juo kaip su bet kuriuo kitu slaptažodžiu.
+Be prieigos rakto bet kuri šiame kompiuteryje veikianti programa gali valdyti telefoną, įskaitant atsiliepimą į skambučius. Asmeniniame darbo vietos kompiuteryje tai paprastai priimtina. Bendrai naudojamame ar administruojamame kompiuteryje nustatykite prieigos raktą ir elkitės su juo kaip su bet kuriuo kitu slaptažodžiu. Prieigos raktas saugo tik užklausas, kurios keičia saugomus duomenis, bet ne skambučius: jei norite, kad kitos programos negalėtų valdyti skambučių, skiltyje **Prieiga** išjunkite **Skambučiai ir jų valdymas**.
 :::
 
 ## Galiniai taškai {#endpoints}

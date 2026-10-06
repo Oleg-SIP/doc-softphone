@@ -40,7 +40,7 @@ Kaj program sme, je odvisno od tega, ali spreminja shranjene podatke, ne od tega
 Žeton se hrani v shrambi ključev računalnika, ne v datoteki z nastavitvami, in ga `/settings` nikoli ne vrne.
 
 :::caution
-Brez žetona lahko kateri koli program, ki teče na tem računalniku, upravlja telefon, vključno s sprejemanjem klicev. Na osebni delovni postaji je to običajno sprejemljivo. Na skupnem ali upravljanem računalniku nastavite žeton in z njim ravnajte kot s katerim koli drugim geslom.
+Brez žetona lahko kateri koli program, ki teče na tem računalniku, upravlja telefon, vključno s sprejemanjem klicev. Na osebni delovni postaji je to običajno sprejemljivo. Na skupnem ali upravljanem računalniku nastavite žeton in z njim ravnajte kot s katerim koli drugim geslom. Žeton ščiti samo zahteve, ki spreminjajo shranjene podatke, ne pa klicev: če želite druge programe držati stran od klicev, pod **Dostop** izklopite **Klici in njihovo upravljanje**.
 :::
 
 ## Končne točke {#endpoints}

@@ -22,7 +22,7 @@ Bản ghi, bản chép lời và lịch sử được lưu trong một tệp thu
 
 ## Tải về và yêu cầu hệ thống {#download-and-system-requirements}
 
-Chương trình được tải về miễn phí từ [ai-softphone.com](https://ai-softphone.com/#download): bộ cài đặt (`.exe`) cho Windows, ảnh đĩa (`.dmg`) cho macOS, và AppImage hoặc `.deb` cho Linux. Không cần cài thêm gì trước — Qt, OpenSSL và thư viện chạy C++ đã nằm sẵn trong gói. Bạn sẽ cần một tài khoản SIP, từ nhà cung cấp của bạn hoặc từ tổng đài do chính bạn vận hành. Việc ghi âm hoạt động ngay khi chương trình được cài đặt; bản chép lời và kết quả xử lý cần một dịch vụ bạn chọn hoặc một mô hình trên chính máy của bạn.
+Chương trình được tải về miễn phí từ [ai-softphone.com](https://ai-softphone.com/#download): bộ cài đặt (`.exe`) cho Windows, ảnh đĩa (`.dmg`) cho macOS, và AppImage hoặc `.deb` cho Linux. Bộ cài đặt, ảnh đĩa và AppImage không cần cài thêm gì trước — Qt, OpenSSL và thư viện chạy C++ đã nằm sẵn bên trong. Ngoại lệ là gói `.deb`: gói này dùng thư viện chạy C++ của chính hệ thống, xem bên dưới. Bạn sẽ cần một tài khoản SIP, từ nhà cung cấp của bạn hoặc từ tổng đài do chính bạn vận hành. Việc ghi âm hoạt động ngay khi chương trình được cài đặt; bản chép lời và kết quả xử lý cần một dịch vụ bạn chọn hoặc một mô hình trên chính máy của bạn.
 
 | Hệ thống | Yêu cầu |
 | --- | --- |

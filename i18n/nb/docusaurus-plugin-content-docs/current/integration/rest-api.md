@@ -40,7 +40,7 @@ Hva et program får gjøre, avhenger av om det endrer lagrede data, ikke av om d
 Nøkkelen lagres i maskinens nøkkelring, ikke i innstillingsfilen, og returneres aldri av `/settings`.
 
 :::caution
-Uten nøkkel kan ethvert program som kjører på denne maskinen, styre telefonen, også svare på samtaler. På en personlig arbeidsstasjon er det som regel greit. På en delt eller administrert maskin bør du sette en nøkkel og behandle den som et hvilket som helst annet passord.
+Uten nøkkel kan ethvert program som kjører på denne maskinen, styre telefonen, også svare på samtaler. På en personlig arbeidsstasjon er det som regel greit. På en delt eller administrert maskin bør du sette en nøkkel og behandle den som et hvilket som helst annet passord. Nøkkelen beskytter bare forespørslene som endrer lagrede data, ikke samtalene: vil du holde andre programmer unna samtalene, slår du av **Samtaler, og styringen av dem** under **Tilgang**.
 :::
 
 ## Endepunkter {#endpoints}

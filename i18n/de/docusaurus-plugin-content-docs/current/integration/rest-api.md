@@ -40,7 +40,7 @@ Was ein Programm darf, hängt davon ab, ob es gespeicherte Daten ändert, nicht 
 Das Token liegt im Schlüsselbund des Rechners, nicht in der Einstellungsdatei, und wird von `/settings` nie zurückgegeben.
 
 :::caution
-Ohne Token kann jedes Programm, das auf diesem Rechner läuft, das Telefon steuern, auch Anrufe annehmen. Auf einem persönlichen Arbeitsplatz ist das meist vertretbar. Auf einem geteilten oder verwalteten Rechner setzen Sie ein Token und behandeln es wie jedes andere Passwort.
+Ohne Token kann jedes Programm, das auf diesem Rechner läuft, das Telefon steuern, auch Anrufe annehmen. Auf einem persönlichen Arbeitsplatz ist das meist vertretbar. Auf einem geteilten oder verwalteten Rechner setzen Sie ein Token und behandeln es wie jedes andere Passwort. Ein Token schützt nur die Anfragen, die gespeicherte Daten ändern, nicht die Anrufe: Um andere Programme von den Anrufen fernzuhalten, schalten Sie unter **Zugang** die Gruppe **Anrufe und ihre Steuerung** aus.
 :::
 
 ## Endpunkte {#endpoints}

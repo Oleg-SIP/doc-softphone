@@ -22,7 +22,7 @@ As gravações, as transcrições e o histórico ficam guardados num ficheiro qu
 
 ## Transferência e requisitos do sistema {#download-and-system-requirements}
 
-O programa transfere-se gratuitamente em [ai-softphone.com](https://ai-softphone.com/#download): um instalador (`.exe`) para Windows, uma imagem de disco (`.dmg`) para macOS, e uma AppImage ou um `.deb` para Linux. Não é preciso instalar mais nada antes — o Qt, o OpenSSL e o runtime de C++ viajam dentro do pacote. Vai precisar de uma conta SIP, do seu fornecedor ou da central que gere. A gravação funciona assim que o programa está instalado; a transcrição e a redação precisam de um serviço à sua escolha ou de um modelo na sua própria máquina.
+O programa transfere-se gratuitamente em [ai-softphone.com](https://ai-softphone.com/#download): um instalador (`.exe`) para Windows, uma imagem de disco (`.dmg`) para macOS, e uma AppImage ou um `.deb` para Linux. O instalador, a imagem de disco e a AppImage não precisam de mais nada instalado antes — o Qt, o OpenSSL e o runtime de C++ viajam dentro deles. A exceção é o `.deb`: usa o runtime de C++ do próprio sistema, veja mais abaixo. Vai precisar de uma conta SIP, do seu fornecedor ou da central que gere. A gravação funciona assim que o programa está instalado; a transcrição e a redação precisam de um serviço à sua escolha ou de um modelo na sua própria máquina.
 
 | Sistema | Requisitos |
 | --- | --- |

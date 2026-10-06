@@ -40,7 +40,7 @@ Neinštaluje sa žiadna samostatná služba a nie je potrebný reštart. Časť 
 Token sa uchováva v kľúčenke počítača, nie v súbore nastavení, a `/settings` ho nikdy nevracia.
 
 :::caution
-Bez tokenu môže ktorýkoľvek program bežiaci v tomto počítači ovládať telefón, vrátane prijímania hovorov. Na osobnej pracovnej stanici je to zvyčajne prijateľné. Na zdieľanom alebo spravovanom počítači nastavte token a zaobchádzajte s ním ako s akýmkoľvek iným heslom.
+Bez tokenu môže ktorýkoľvek program bežiaci v tomto počítači ovládať telefón, vrátane prijímania hovorov. Na osobnej pracovnej stanici je to zvyčajne prijateľné. Na zdieľanom alebo spravovanom počítači nastavte token a zaobchádzajte s ním ako s akýmkoľvek iným heslom. Token chráni iba požiadavky, ktoré menia uložené údaje, nie hovory: ak chcete ostatné programy k hovorom nepustiť, vypnite **Hovory a ich ovládanie** v časti **Prístup**.
 :::
 
 ## Koncové body {#endpoints}

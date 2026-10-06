@@ -22,7 +22,7 @@ Salvestisi, ülestähendusi ja ajalugu hoitakse failis, mis kuulub teile. Kontot
 
 ## Allalaadimine ja süsteeminõuded {#download-and-system-requirements}
 
-Programmi saab tasuta alla laadida aadressilt [ai-softphone.com](https://ai-softphone.com/#download): paigaldaja (`.exe`) Windowsile, kettatõmmis (`.dmg`) macOS-ile ning AppImage või `.deb` Linuxile. Midagi muud ei ole vaja enne paigaldada — Qt, OpenSSL ja C++ käituskeskkond on paketis kaasas. Teil on vaja SIP-kontot oma teenusepakkujalt või ise hallatavast keskjaamast. Salvestamine töötab kohe pärast programmi paigaldamist; ülestähendus ja kokkuvõte vajavad teie valitud teenust või mudelit teie enda arvutis.
+Programmi saab tasuta alla laadida aadressilt [ai-softphone.com](https://ai-softphone.com/#download): paigaldaja (`.exe`) Windowsile, kettatõmmis (`.dmg`) macOS-ile ning AppImage või `.deb` Linuxile. Paigaldaja, kettatõmmis ja AppImage ei vaja midagi eelnevalt paigaldatut — Qt, OpenSSL ja C++ käituskeskkond on neis kaasas. Erand on `.deb`: see kasutab süsteemi enda C++ käituskeskkonda, vt allpool. Teil on vaja SIP-kontot oma teenusepakkujalt või ise hallatavast keskjaamast. Salvestamine töötab kohe pärast programmi paigaldamist; ülestähendus ja kokkuvõte vajavad teie valitud teenust või mudelit teie enda arvutis.
 
 | Süsteem | Nõuded |
 | --- | --- |

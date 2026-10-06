@@ -40,7 +40,7 @@ Se, mitä ohjelma saa tehdä, riippuu siitä, muuttaako se tallennettuja tietoja
 Tunnus säilytetään tietokoneen avainnipussa, ei asetustiedostossa, eikä `/settings` koskaan palauta sitä.
 
 :::caution
-Ilman tunnusta mikä tahansa tällä tietokoneella toimiva ohjelma voi hallita puhelinta, myös vastata puheluihin. Henkilökohtaisella työasemalla se on yleensä hyväksyttävää. Jaetulla tai hallitulla koneella aseta tunnus ja käsittele sitä kuten mitä tahansa muuta salasanaa.
+Ilman tunnusta mikä tahansa tällä tietokoneella toimiva ohjelma voi hallita puhelinta, myös vastata puheluihin. Henkilökohtaisella työasemalla se on yleensä hyväksyttävää. Jaetulla tai hallitulla koneella aseta tunnus ja käsittele sitä kuten mitä tahansa muuta salasanaa. Tunnus suojaa vain pyynnöt, jotka muuttavat tallennettuja tietoja, ei puheluita: jos haluat pitää muut ohjelmat erossa puheluista, poista kohdassa **Pääsy** käytöstä **Puhelut ja niiden hallinta**.
 :::
 
 ## Päätepisteet {#endpoints}

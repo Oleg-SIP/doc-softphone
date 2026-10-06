@@ -22,7 +22,7 @@ Inspelningar, utskrifter och historik sparas i en fil som du äger. Inget konto 
 
 ## Nedladdning och systemkrav {#download-and-system-requirements}
 
-Programmet kan laddas ner gratis från [ai-softphone.com](https://ai-softphone.com/#download): ett installationsprogram (`.exe`) för Windows, en skivavbild (`.dmg`) för macOS och en AppImage eller en `.deb` för Linux. Inget annat behöver installeras först — Qt, OpenSSL och C++-körtiden följer med i paketet. Du behöver ett SIP-konto, från din operatör eller från växeln du själv driver. Inspelning fungerar så snart programmet är installerat; utskriften och sammanfattningen kräver en tjänst du väljer eller en modell på din egen dator.
+Programmet kan laddas ner gratis från [ai-softphone.com](https://ai-softphone.com/#download): ett installationsprogram (`.exe`) för Windows, en skivavbild (`.dmg`) för macOS och en AppImage eller en `.deb` för Linux. Installationsprogrammet, skivavbilden och AppImage kräver inget annat installerat först — Qt, OpenSSL och C++-körtiden följer med i dem. Undantaget är `.deb`: den använder systemets egen C++-körtid, se nedan. Du behöver ett SIP-konto, från din operatör eller från växeln du själv driver. Inspelning fungerar så snart programmet är installerat; utskriften och sammanfattningen kräver en tjänst du väljer eller en modell på din egen dator.
 
 | System | Krav |
 | --- | --- |

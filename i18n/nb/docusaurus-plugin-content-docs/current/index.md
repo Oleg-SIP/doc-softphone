@@ -22,7 +22,7 @@ Opptak, utskrifter og historikk lagres i en fil som du eier. Det trengs ingen ko
 
 ## Nedlasting og systemkrav {#download-and-system-requirements}
 
-Programmet kan lastes ned gratis fra [ai-softphone.com](https://ai-softphone.com/#download): et installasjonsprogram (`.exe`) for Windows, et diskbilde (`.dmg`) for macOS og en AppImage eller en `.deb` for Linux. Ingenting annet må installeres først — Qt, OpenSSL og C++-kjøretiden følger med i pakken. Du trenger en SIP-konto, fra leverandøren din eller fra sentralen du selv drifter. Opptak virker så snart programmet er installert; utskriften og sammendraget krever en tjeneste du velger, eller en modell på din egen maskin.
+Programmet kan lastes ned gratis fra [ai-softphone.com](https://ai-softphone.com/#download): et installasjonsprogram (`.exe`) for Windows, et diskbilde (`.dmg`) for macOS og en AppImage eller en `.deb` for Linux. Installasjonsprogrammet, diskbildet og AppImage krever ikke at noe annet installeres først — Qt, OpenSSL og C++-kjøretiden følger med i dem. Unntaket er `.deb`: den bruker systemets egen C++-kjøretid, se nedenfor. Du trenger en SIP-konto, fra leverandøren din eller fra sentralen du selv drifter. Opptak virker så snart programmet er installert; utskriften og sammendraget krever en tjeneste du velger, eller en modell på din egen maskin.
 
 | System | Krav |
 | --- | --- |

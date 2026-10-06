@@ -40,7 +40,7 @@ Ce qu'un programme peut faire dépend de s'il modifie des données stockées, et
 Le jeton est conservé dans le trousseau de l'ordinateur, pas dans le fichier de réglages, et n'est jamais renvoyé par `/settings`.
 
 :::caution
-Sans jeton, n'importe quel programme qui tourne sur cet ordinateur peut contrôler le téléphone, y compris répondre aux appels. Sur un poste de travail personnel, c'est en général acceptable. Sur une machine partagée ou gérée, définissez un jeton et traitez-le comme n'importe quel autre mot de passe.
+Sans jeton, n'importe quel programme qui tourne sur cet ordinateur peut contrôler le téléphone, y compris répondre aux appels. Sur un poste de travail personnel, c'est en général acceptable. Sur une machine partagée ou gérée, définissez un jeton et traitez-le comme n'importe quel autre mot de passe. Le jeton ne protège que les requêtes qui modifient les données enregistrées, pas les appels : pour tenir les autres programmes à l'écart des appels, désactivez **Les appels, et leur commande** sous **Accès**.
 :::
 
 ## Points d'accès {#endpoints}

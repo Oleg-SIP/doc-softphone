@@ -40,7 +40,7 @@ Wat een programma mag, hangt ervan af of het opgeslagen gegevens wijzigt, niet o
 Het token wordt bewaard in de sleutelhanger van de computer, niet in het instellingenbestand, en wordt nooit teruggegeven door `/settings`.
 
 :::caution
-Zonder token kan elk programma dat op deze computer draait de telefoon besturen, inclusief gesprekken aannemen. Op een persoonlijke werkplek is dat meestal aanvaardbaar. Stel op een gedeelde of beheerde machine een token in en behandel het als elk ander wachtwoord.
+Zonder token kan elk programma dat op deze computer draait de telefoon besturen, inclusief gesprekken aannemen. Op een persoonlijke werkplek is dat meestal aanvaardbaar. Stel op een gedeelde of beheerde machine een token in en behandel het als elk ander wachtwoord. Een token beschermt alleen de verzoeken die opgeslagen gegevens wijzigen, niet de gesprekken: wilt u andere programma's van de gesprekken weghouden, zet dan **Gesprekken en de bediening ervan** uit onder **Toegang**.
 :::
 
 ## Eindpunten {#endpoints}

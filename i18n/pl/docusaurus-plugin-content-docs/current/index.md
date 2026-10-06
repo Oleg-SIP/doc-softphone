@@ -22,7 +22,7 @@ Nagrania, transkrypcje i historia są przechowywane w pliku, który należy do c
 
 ## Pobieranie i wymagania systemowe {#download-and-system-requirements}
 
-Program można pobrać bezpłatnie z [ai-softphone.com](https://ai-softphone.com/#download): instalator (`.exe`) dla Windows, obraz dysku (`.dmg`) dla macOS oraz AppImage lub `.deb` dla Linuksa. Nic innego nie trzeba wcześniej instalować — Qt, OpenSSL i środowisko uruchomieniowe C++ są w pakiecie. Potrzebujesz konta SIP od swojego operatora albo z centrali, którą prowadzisz sam. Nagrywanie działa od razu po instalacji programu; transkrypcja i opracowanie wymagają wybranej przez ciebie usługi albo modelu na twoim komputerze.
+Program można pobrać bezpłatnie z [ai-softphone.com](https://ai-softphone.com/#download): instalator (`.exe`) dla Windows, obraz dysku (`.dmg`) dla macOS oraz AppImage lub `.deb` dla Linuksa. Instalator, obraz dysku i AppImage nie wymagają wcześniejszej instalacji niczego innego — Qt, OpenSSL i środowisko uruchomieniowe C++ są w nich zawarte. Wyjątkiem jest `.deb`: korzysta ze środowiska uruchomieniowego C++ samego systemu, zob. niżej. Potrzebujesz konta SIP od swojego operatora albo z centrali, którą prowadzisz sam. Nagrywanie działa od razu po instalacji programu; transkrypcja i opracowanie wymagają wybranej przez ciebie usługi albo modelu na twoim komputerze.
 
 | System | Wymagania |
 | --- | --- |

@@ -3,8 +3,8 @@ import { translate } from '@docusaurus/Translate';
 
 /* The cookie question of ai-softphone.com, asked on the documentation too:
    once, remembered in localStorage (asking for permission to set a cookie
-   by setting one would be a poor joke), and brought back by the Cookies
-   link in the footer, which says Cookies in every language. Two buttons of the same size, because a refusal that
+   by setting one would be a poor joke), and brought back by the cookie
+   link in the footer. Two buttons of the same size, because a refusal that
    is harder to press than an acceptance is not a question. The head has
    already denied everything and applied the last answer; this only asks
    and writes the answer down. */

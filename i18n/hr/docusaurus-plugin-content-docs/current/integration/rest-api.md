@@ -40,7 +40,7 @@ Ne instalira se zasebna usluga i nije potrebno ponovno pokretanje. Dio programa 
 Token se čuva u spremniku ključeva računala, ne u datoteci postavki, i `/settings` ga nikada ne vraća.
 
 :::caution
-Bez tokena bilo koji program koji radi na ovom računalu može upravljati telefonom, uključujući javljanje na pozive. Na osobnoj radnoj stanici to je obično prihvatljivo. Na zajedničkom ili upravljanom računalu postavite token i postupajte s njim kao s bilo kojom drugom lozinkom.
+Bez tokena bilo koji program koji radi na ovom računalu može upravljati telefonom, uključujući javljanje na pozive. Na osobnoj radnoj stanici to je obično prihvatljivo. Na zajedničkom ili upravljanom računalu postavite token i postupajte s njim kao s bilo kojom drugom lozinkom. Token štiti samo zahtjeve koji mijenjaju spremljene podatke, a ne pozive: ako druge programe želite držati podalje od poziva, isključite **Pozivi i upravljanje njima** pod **Pristup**.
 :::
 
 ## Krajnje točke {#endpoints}

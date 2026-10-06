@@ -22,7 +22,7 @@ Les enregistrements, les transcriptions et le journal sont conservés dans un fi
 
 ## Téléchargement et configuration requise {#download-and-system-requirements}
 
-Le programme se télécharge gratuitement sur [ai-softphone.com](https://ai-softphone.com/#download) : un programme d'installation (`.exe`) pour Windows, une image disque (`.dmg`) pour macOS, et une AppImage ou un `.deb` pour Linux. Rien d'autre n'est à installer au préalable — Qt, OpenSSL et l'environnement d'exécution C++ voyagent dans le paquet. Il vous faut un compte SIP, chez votre opérateur ou sur l'IPBX que vous gérez vous-même. L'enregistrement fonctionne dès que le programme est installé ; la transcription et le compte rendu demandent un service de votre choix ou un modèle sur votre propre machine.
+Le programme se télécharge gratuitement sur [ai-softphone.com](https://ai-softphone.com/#download) : un programme d'installation (`.exe`) pour Windows, une image disque (`.dmg`) pour macOS, et une AppImage ou un `.deb` pour Linux. Le programme d'installation, l'image disque et l'AppImage n'exigent rien d'autre au préalable — Qt, OpenSSL et l'environnement d'exécution C++ voyagent avec eux. Le `.deb` fait exception : il utilise l'environnement d'exécution C++ du système, voir plus bas. Il vous faut un compte SIP, chez votre opérateur ou sur l'IPBX que vous gérez vous-même. L'enregistrement fonctionne dès que le programme est installé ; la transcription et le compte rendu demandent un service de votre choix ou un modèle sur votre propre machine.
 
 | Système | Configuration requise |
 | --- | --- |

@@ -40,7 +40,7 @@ Tas, ko programma drīkst darīt, ir atkarīgs no tā, vai tā maina saglabātos
 Pilnvara tiek glabāta datora atslēgu saišķī, nevis iestatījumu failā, un `/settings` to nekad neatgriež.
 
 :::caution
-Bez pilnvaras jebkura šajā datorā darbojoša programma var vadīt tālruni, ieskaitot atbildēšanu uz zvaniem. Personiskā darbstacijā tas parasti ir pieņemami. Koplietojamā vai pārvaldītā datorā iestatiet pilnvaru un apejieties ar to kā ar jebkuru citu paroli.
+Bez pilnvaras jebkura šajā datorā darbojoša programma var vadīt tālruni, ieskaitot atbildēšanu uz zvaniem. Personiskā darbstacijā tas parasti ir pieņemami. Koplietojamā vai pārvaldītā datorā iestatiet pilnvaru un apejieties ar to kā ar jebkuru citu paroli. Pilnvara aizsargā tikai pieprasījumus, kas maina saglabātos datus, nevis zvanus: lai citas programmas nevarētu piekļūt zvaniem, sadaļā **Piekļuve** izslēdziet **Zvani un to vadība**.
 :::
 
 ## Galapunkti {#endpoints}

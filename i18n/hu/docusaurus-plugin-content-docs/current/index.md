@@ -22,7 +22,7 @@ A felvételek, a leiratok és az előzmények egy olyan fájlban vannak, amely a
 
 ## Letöltés és rendszerkövetelmények {#download-and-system-requirements}
 
-A program ingyenesen letölthető az [ai-softphone.com](https://ai-softphone.com/#download) oldalról: telepítő (`.exe`) Windowsra, lemezkép (`.dmg`) macOS-re, valamint AppImage vagy `.deb` Linuxra. Előtte semmi mást nem kell telepíteni — a Qt, az OpenSSL és a C++ futtatókörnyezet a csomagban van. Szüksége lesz egy SIP-fiókra a szolgáltatójától vagy a saját maga által üzemeltetett alközponttól. A felvétel a telepítés pillanatától működik; a leirathoz és a feldolgozáshoz egy Ön által választott szolgáltatás vagy egy saját gépen futó modell kell.
+A program ingyenesen letölthető az [ai-softphone.com](https://ai-softphone.com/#download) oldalról: telepítő (`.exe`) Windowsra, lemezkép (`.dmg`) macOS-re, valamint AppImage vagy `.deb` Linuxra. A telepítő, a lemezkép és az AppImage mellé előtte semmi mást nem kell telepíteni — a Qt, az OpenSSL és a C++ futtatókörnyezet bennük van. Kivétel a `.deb`: ez a rendszer saját C++ futtatókörnyezetét használja, lásd lent. Szüksége lesz egy SIP-fiókra a szolgáltatójától vagy a saját maga által üzemeltetett alközponttól. A felvétel a telepítés pillanatától működik; a leirathoz és a feldolgozáshoz egy Ön által választott szolgáltatás vagy egy saját gépen futó modell kell.
 
 | Rendszer | Követelmények |
 | --- | --- |

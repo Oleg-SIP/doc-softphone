@@ -40,7 +40,7 @@ O que um programa pode fazer depende de mudar dados guardados ou não, e não de
 O código é guardado no porta-chaves do computador, não no ficheiro de definições, e nunca é devolvido por `/settings`.
 
 :::caution
-Sem código, qualquer programa a correr neste computador pode controlar o telefone, incluindo atender chamadas. Num posto pessoal isso costuma ser aceitável. Numa máquina partilhada ou gerida, defina um código e trate-o como qualquer outra palavra-passe.
+Sem código, qualquer programa a correr neste computador pode controlar o telefone, incluindo atender chamadas. Num posto pessoal isso costuma ser aceitável. Numa máquina partilhada ou gerida, defina um código e trate-o como qualquer outra palavra-passe. O código protege só os pedidos que alteram dados guardados, não as chamadas: para manter outros programas longe das chamadas, desligue **As chamadas e o seu controlo** em **Acesso**.
 :::
 
 ## Pontos de acesso {#endpoints}

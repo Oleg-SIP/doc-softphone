@@ -22,7 +22,7 @@ Optagelser, udskrifter og historik gemmes i en fil, som du ejer. Der kræves ing
 
 ## Download og systemkrav {#download-and-system-requirements}
 
-Programmet kan hentes gratis fra [ai-softphone.com](https://ai-softphone.com/#download): et installationsprogram (`.exe`) til Windows, et diskbillede (`.dmg`) til macOS og en AppImage eller en `.deb` til Linux. Intet andet skal installeres først — Qt, OpenSSL og C++-runtime følger med i pakken. Du skal bruge en SIP-konto, fra din udbyder eller fra det omstillingsanlæg, du selv driver. Optagelse virker, så snart programmet er installeret; udskriften og opsummeringen kræver en tjeneste, du vælger, eller en model på din egen maskine.
+Programmet kan hentes gratis fra [ai-softphone.com](https://ai-softphone.com/#download): et installationsprogram (`.exe`) til Windows, et diskbillede (`.dmg`) til macOS og en AppImage eller en `.deb` til Linux. Installationsprogrammet, diskbilledet og AppImage kræver ikke, at noget andet installeres først — Qt, OpenSSL og C++-runtime følger med i dem. Undtagelsen er `.deb`: den bruger systemets egen C++-runtime, se nedenfor. Du skal bruge en SIP-konto, fra din udbyder eller fra det omstillingsanlæg, du selv driver. Optagelse virker, så snart programmet er installeret; udskriften og opsummeringen kræver en tjeneste, du vælger, eller en model på din egen maskine.
 
 | System | Krav |
 | --- | --- |

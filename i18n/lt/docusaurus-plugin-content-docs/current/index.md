@@ -22,7 +22,7 @@ description: Kas yra AI Softphone, kuo jis veikia ir kur aprašyta kiekviena pro
 
 ## Atsisiuntimas ir sistemos reikalavimai {#download-and-system-requirements}
 
-Programą nemokamai galima atsisiųsti iš [ai-softphone.com](https://ai-softphone.com/#download): diegimo programa (`.exe`) Windows, disko atvaizdas (`.dmg`) macOS ir AppImage arba `.deb` Linux. Iš anksto nieko kito diegti nereikia — Qt, OpenSSL ir C++ vykdymo aplinka keliauja pakete. Jums reikės SIP paskyros iš savo paslaugų teikėjo arba iš paties valdomos stotelės. Įrašymas veikia iškart, kai programa įdiegta; iššifravimui ir apibendrinimui reikia jūsų pasirinktos paslaugos ar modelio jūsų kompiuteryje.
+Programą nemokamai galima atsisiųsti iš [ai-softphone.com](https://ai-softphone.com/#download): diegimo programa (`.exe`) Windows, disko atvaizdas (`.dmg`) macOS ir AppImage arba `.deb` Linux. Diegimo programai, disko atvaizdui ir AppImage iš anksto nieko kito diegti nereikia — Qt, OpenSSL ir C++ vykdymo aplinka keliauja juose. Išimtis yra `.deb`: jis naudoja pačios sistemos C++ vykdymo aplinką, žr. toliau. Jums reikės SIP paskyros iš savo paslaugų teikėjo arba iš paties valdomos stotelės. Įrašymas veikia iškart, kai programa įdiegta; iššifravimui ir apibendrinimui reikia jūsų pasirinktos paslaugos ar modelio jūsų kompiuteryje.
 
 | Sistema | Reikalavimai |
 | --- | --- |

@@ -40,7 +40,7 @@ Apa yang boleh dilakukan sebuah program bergantung pada apakah ia mengubah data 
 Token disimpan di gantungan kunci komputer, bukan di berkas pengaturan, dan tidak pernah dikembalikan oleh `/settings`.
 
 :::caution
-Tanpa token, program apa pun yang berjalan di komputer ini dapat mengendalikan telepon, termasuk menjawab panggilan. Di komputer kerja pribadi, hal itu biasanya dapat diterima. Di komputer bersama atau yang dikelola, atur token dan perlakukan seperti kata sandi lainnya.
+Tanpa token, program apa pun yang berjalan di komputer ini dapat mengendalikan telepon, termasuk menjawab panggilan. Di komputer kerja pribadi, hal itu biasanya dapat diterima. Di komputer bersama atau yang dikelola, atur token dan perlakukan seperti kata sandi lainnya. Token hanya melindungi permintaan yang mengubah data tersimpan, bukan panggilan: agar program lain tidak dapat menyentuh panggilan, matikan **Panggilan, dan kendalinya** di bawah **Akses**.
 :::
 
 ## Endpoint {#endpoints}

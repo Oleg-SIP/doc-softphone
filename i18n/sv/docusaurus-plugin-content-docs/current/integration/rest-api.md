@@ -40,7 +40,7 @@ Vad ett program får göra beror på om det ändrar sparade data, inte på om de
 Nyckeln sparas i datorns nyckelring, inte i inställningsfilen, och returneras aldrig av `/settings`.
 
 :::caution
-Utan nyckel kan vilket program som helst som körs på den här datorn styra telefonen, även svara på samtal. På en personlig arbetsstation är det oftast godtagbart. På en delad eller hanterad dator bör du ange en nyckel och behandla den som vilket annat lösenord som helst.
+Utan nyckel kan vilket program som helst som körs på den här datorn styra telefonen, även svara på samtal. På en personlig arbetsstation är det oftast godtagbart. På en delad eller hanterad dator bör du ange en nyckel och behandla den som vilket annat lösenord som helst. Nyckeln skyddar bara de anrop som ändrar sparade data, inte samtalen: vill du hålla andra program borta från samtalen stänger du av **Samtal, och styrningen av dem** under **Åtkomst**.
 :::
 
 ## Slutpunkter {#endpoints}

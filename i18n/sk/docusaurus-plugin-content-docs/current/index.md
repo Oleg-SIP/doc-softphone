@@ -22,7 +22,7 @@ Nahrávky, prepisy a história sa uchovávajú v súbore, ktorý patrí vám. Ne
 
 ## Stiahnutie a systémové požiadavky {#download-and-system-requirements}
 
-Program si môžete zadarmo stiahnuť z [ai-softphone.com](https://ai-softphone.com/#download): inštalátor (`.exe`) pre Windows, obraz disku (`.dmg`) pre macOS a AppImage alebo `.deb` pre Linux. Nič ďalšie netreba vopred inštalovať — Qt, OpenSSL a knižnice C++ sú súčasťou balíka. Budete potrebovať SIP účet od svojho operátora alebo z ústredne, ktorú prevádzkujete sami. Nahrávanie funguje hneď po inštalácii programu; prepis a spracovanie potrebujú službu, ktorú si vyberiete, alebo model na vlastnom počítači.
+Program si môžete zadarmo stiahnuť z [ai-softphone.com](https://ai-softphone.com/#download): inštalátor (`.exe`) pre Windows, obraz disku (`.dmg`) pre macOS a AppImage alebo `.deb` pre Linux. Inštalátor, obraz disku ani AppImage nepotrebujú vopred nič inštalovať — Qt, OpenSSL a knižnice C++ sú ich súčasťou. Výnimkou je `.deb`: používa knižnice C++ zo systému, pozri nižšie. Budete potrebovať SIP účet od svojho operátora alebo z ústredne, ktorú prevádzkujete sami. Nahrávanie funguje hneď po inštalácii programu; prepis a spracovanie potrebujú službu, ktorú si vyberiete, alebo model na vlastnom počítači.
 
 | Systém | Požiadavky |
 | --- | --- |

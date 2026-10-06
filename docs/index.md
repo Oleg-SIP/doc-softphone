@@ -22,7 +22,7 @@ Recordings, transcripts and history are kept in a file you own. No account or su
 
 ## Download and system requirements
 
-The program is free to download from [ai-softphone.com](https://ai-softphone.com/#download): an installer (`.exe`) for Windows, a disk image (`.dmg`) for macOS, and an AppImage or a `.deb` for Linux. Nothing else has to be installed first — Qt, OpenSSL and the C++ runtime travel inside the package. You will need a SIP account, from your provider or from the PBX you run yourself. Recording works the moment the program is installed; the transcript and the write-up need a service you choose or a model on your own machine.
+The program is free to download from [ai-softphone.com](https://ai-softphone.com/#download): an installer (`.exe`) for Windows, a disk image (`.dmg`) for macOS, and an AppImage or a `.deb` for Linux. The installer, the disk image and the AppImage need nothing installed first — Qt, OpenSSL and the C++ runtime travel inside them. The `.deb` is the exception: it uses the system's own C++ runtime, see below. You will need a SIP account, from your provider or from the PBX you run yourself. Recording works the moment the program is installed; the transcript and the write-up need a service you choose or a model on your own machine.
 
 | System | Requirements |
 | --- | --- |

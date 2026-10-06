@@ -22,7 +22,7 @@ Ieraksti, atšifrējumi un vēsture tiek glabāti failā, kas pieder jums. Nav v
 
 ## Lejupielāde un sistēmas prasības {#download-and-system-requirements}
 
-Programmu var bez maksas lejupielādēt no [ai-softphone.com](https://ai-softphone.com/#download): instalētājs (`.exe`) Windows, diska attēls (`.dmg`) macOS un AppImage vai `.deb` Linux. Nekas cits iepriekš nav jāinstalē — Qt, OpenSSL un C++ izpildlaika vide ir pakotnē. Jums būs vajadzīgs SIP konts no jūsu pakalpojumu sniedzēja vai no centrāles, ko pārvaldāt pats. Ierakstīšana darbojas, tiklīdz programma ir instalēta; atšifrējumam un apkopojumam vajadzīgs jūsu izvēlēts pakalpojums vai modelis jūsu datorā.
+Programmu var bez maksas lejupielādēt no [ai-softphone.com](https://ai-softphone.com/#download): instalētājs (`.exe`) Windows, diska attēls (`.dmg`) macOS un AppImage vai `.deb` Linux. Instalētājam, diska attēlam un AppImage nekas cits iepriekš nav jāinstalē — Qt, OpenSSL un C++ izpildlaika vide ir to iekšpusē. Izņēmums ir `.deb`: tas izmanto pašas sistēmas C++ izpildlaika vidi, skatiet tālāk. Jums būs vajadzīgs SIP konts no jūsu pakalpojumu sniedzēja vai no centrāles, ko pārvaldāt pats. Ierakstīšana darbojas, tiklīdz programma ir instalēta; atšifrējumam un apkopojumam vajadzīgs jūsu izvēlēts pakalpojums vai modelis jūsu datorā.
 
 | Sistēma | Prasības |
 | --- | --- |
