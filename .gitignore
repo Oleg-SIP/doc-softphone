@@ -3,3 +3,6 @@ build
 .docusaurus
 .cache
 static/admin/config.yml
+build-ru
+static-ru/screenshots/macos
+docs-ai-softphone-ru.zip

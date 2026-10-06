@@ -29,9 +29,14 @@ export default function Shot({ name, src, alt, full = false, children }) {
     ? siteConfig.baseUrl.slice(0, -suffix.length)
     : siteConfig.baseUrl;
   const dir = `${root}screenshots/macos/${locale}`;
-  const other = src && locale !== i18n.defaultLocale
+  let other = src && locale !== i18n.defaultLocale
     ? src.replace('ai-softphone.com/screenshots/macos/en/', `ai-softphone.com/screenshots/macos/${locale.replace('-', '_')}/`)
     : src;
+  // a site that carries its own copy of those pictures (static-ru/) does not
+  // depend on another host for them
+  if (other && siteConfig.customFields.localShots) {
+    other = other.replace(/^https:\/\/ai-softphone\.com\/screenshots\/macos\//, `${root}screenshots/`);
+  }
   const small = name ? `${dir}/thumbs/${name}${full ? '-full' : ''}.jpg` : other;
   const large = name ? `${dir}/${name}.png` : other;
   const [open, setOpen] = useState(false);

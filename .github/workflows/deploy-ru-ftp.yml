@@ -1,0 +1,95 @@
+name: Deploy Russian docs to docs.ai-softphone.ru (FTP)
+
+# The Russian-only site (docusaurus.config.ru.js), built and uploaded to the
+# hosting over FTP as soon as the repository's default branch changes
+# something that is in it — the same rule as deploy.yml, which publishes the
+# thirty-language site to GitHub Pages. Other branches are only built, so a
+# broken build shows on its own branch; Actions → this workflow → Run
+# workflow uploads on demand from the branch chosen there.
+#
+# Repository secrets (Settings → Secrets and variables → Actions):
+#   FTP_HOST      ftp.h742092.r01host.ru
+#   FTP_USER      the FTP account
+#   FTP_PASSWORD  its password
+#   FTP_DIR       the folder of docs.ai-softphone.ru on the server — "/" if
+#                 the account opens straight into it. Everything in it that
+#                 is not in the build is deleted, so it must be that folder
+#                 and no other; the job stops if it is not set.
+on:
+  push:
+    paths:
+      - 'docs/**'
+      - 'i18n/ru/**'
+      - 'static/screenshots/macos/ru/**'
+      - 'static-ru/**'
+      - 'src/**'
+      - 'scripts/**'
+      - 'docusaurus.config.js'
+      - 'docusaurus.config.ru.js'
+      - 'sidebars.js'
+      - 'languages.json'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy-ru-ftp.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ftp-ru
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build:ru
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-ru
+          path: build-ru
+          include-hidden-files: true
+          retention-days: 7
+
+  deploy:
+    needs: build
+    if: github.event_name == 'workflow_dispatch' || github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: build-ru
+          path: build-ru
+      - name: Upload build-ru/ over FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_DIR: ${{ secrets.FTP_DIR }}
+        run: |
+          for name in FTP_HOST FTP_USER LFTP_PASSWORD FTP_DIR; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Repository secret ${name/LFTP_PASSWORD/FTP_PASSWORD} is not set (see the top of this workflow)"
+              exit 1
+            fi
+          done
+          test -f build-ru/index.html
+          sudo apt-get install -y lftp
+          # mirror -R: local -> server; --delete removes pages that no longer exist.
+          # TLS is used if the server offers it; the host's certificate is
+          # not checked, as it is a shared hosting one.
+          lftp -u "$FTP_USER" "ftp://$FTP_HOST:21" <<LFTP
+          set ftp:ssl-allow yes
+          set ssl:verify-certificate no
+          set net:max-retries 3
+          set net:timeout 30
+          mirror -R --delete --parallel=4 --verbose build-ru "$FTP_DIR"
+          bye
+          LFTP

@@ -53,6 +53,9 @@ export default function docsDiscovery(context) {
         else if (src && locale !== i18n.defaultLocale) {
           src = src.replace('ai-softphone.com/screenshots/macos/en/', `ai-softphone.com/screenshots/macos/${locale.replace('-', '_')}/`);
         }
+        if (src && siteConfig.customFields.localShots) {
+          src = src.replace(/^https:\/\/ai-softphone\.com\/screenshots\/macos\//, `${siteRoot}screenshots/`);
+        }
         if (!src) throw new Error(`docs-discovery: screenshot without source: ${tag}`);
         const caption = tag.match(/>([\s\S]*?)<\/Shot>/)?.[1]?.trim();
         return `![${linkLabel(attribute('alt') || '')}](${src})${caption ? `\n\n${caption}` : ''}`;
@@ -81,12 +84,12 @@ export default function docsDiscovery(context) {
         '## Documentation', '',
         ...docs.map((doc) => `- [${linkLabel(doc.title)}](${markdownUrl(doc)}): ${oneLine(doc.description)}`),
       ];
-      if (locale === i18n.defaultLocale) {
+      if (locale === i18n.defaultLocale && i18n.locales.length > 1) {
         index.push('', '## Languages', '', ...languages.filter((language) => language.code !== locale)
           .map((language) => `- [${linkLabel(language.name)}](${new URL(`${language.code}/llms.txt`, siteRoot).href}): Documentation index (${language.code}).`));
       }
       index.push('', '## Optional', '',
-        '- [AI Softphone product website](https://ai-softphone.com/): Downloads and product information.',
+        `- [AI Softphone product website](${siteConfig.customFields.productUrl}): Downloads and product information.`,
         `- [Documentation website](${localeRoot}): The same documentation with navigation and screenshots.`, '');
       writeFileSync(path.join(outDir, 'llms.txt'), index.join('\n'));
       console.log(`docs-discovery: ${locale}: llms.txt and ${docs.length} Markdown pages written`);
