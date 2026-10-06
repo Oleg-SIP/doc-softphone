@@ -69,3 +69,28 @@ Images uploaded in the editor go to `static/img/docs/` and are referenced as
 the workflow takes them from the GitHub Pages settings (custom domain
 `docs.ai-softphone.com` in *Settings → Pages*), so the build always matches
 the address the site is served from.
+
+## Search engines and AI documentation indexes
+
+The build generates `/robots.txt` and a combined `/sitemap.xml` covering all
+languages. Public pages are crawlable; the CMS under `/admin/` and its locale
+copies are excluded from crawling.
+
+`scripts/docs-discovery.mjs` uses Docusaurus's resolved document metadata to
+generate `/llms.txt`, a separate `/<locale>/llms.txt` for each translation, and
+an `index.md` beside every documentation page. Internal Markdown links retain
+the page's language, screenshots have absolute URLs, and code examples are
+preserved. The root index links to all language indexes. This follows the
+[llms.txt proposal](https://llmstxt.org/).
+
+`src/theme/DocItem/index.js` adds discovery links and Schema.org JSON-LD for
+the documentation website, software application, page and technical article.
+Titles, descriptions, canonical URLs and language codes come from the same
+metadata as the HTML. The homepage is a CollectionPage. Docusaurus's existing
+BreadcrumbList is retained. React updates the metadata on in-site navigation,
+and static HTML includes it before JavaScript runs.
+
+`npm run build` validates each language index, Markdown links, discovery links
+and JSON-LD after merging the sitemaps. A validation failure stops deployment.
+To validate a locally built subset, run
+`node scripts/validate-discovery.mjs en ru sr-Latn`.

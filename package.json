@@ -9,7 +9,7 @@
     "start": "docusaurus start",
     "prebuild": "npm run cms:config",
     "build": "docusaurus build",
-    "postbuild": "node scripts/merge-sitemaps.mjs",
+    "postbuild": "node scripts/merge-sitemaps.mjs && node scripts/validate-discovery.mjs",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "write-translations": "docusaurus write-translations",

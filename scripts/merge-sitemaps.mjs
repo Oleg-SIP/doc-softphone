@@ -76,7 +76,11 @@ writeFileSync(
 
 writeFileSync(
   join(build, 'robots.txt'),
-  `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${origin}/sitemap.xml\n`,
+  // The CMS is copied into each locale build along with the other static files.
+  // Public documentation, Markdown exports and AI indexes remain crawlable.
+  `# AI Softphone documentation\nUser-agent: *\nAllow: /\n` +
+    ['Disallow: /admin/', ...languages.filter((code) => code !== 'en').map((code) => `Disallow: /${code}/admin/`)].join('\n') +
+    `\n\nSitemap: ${origin}/sitemap.xml\n`,
 );
 
 console.log(`merge-sitemaps: ${urls.length} pages in ${languages.length} languages into build/sitemap.xml; build/robots.txt written`);

@@ -87,6 +87,8 @@ const config = {
   // a page_view for every page opened inside the site, not only the first
   clientModules: ['./src/clientModules/gtag.js'],
 
+  plugins: ['./scripts/docs-discovery.mjs'],
+
   presets: [
     [
       'classic',
