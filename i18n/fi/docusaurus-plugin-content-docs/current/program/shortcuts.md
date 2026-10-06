@@ -8,7 +8,7 @@ description: Pikanäppäimet, jotka vastaavat, lopettavat, asettavat pitoon, myk
 
 <Shot name="16_settings_shortcuts" alt="Asetukset → Näppäimistön pikanäppäimet (macOS)">macOS</Shot>
 
-| Toiminto | Pikanäppäin Windowsissa | Pikanäppäin macOS:ssä | **Kaikkialla** |
+| Toiminto | Pikanäppäin Windowsissa | Pikanäppäin macOS:ssä | **Oletus** |
 | --- | --- | --- | --- |
 | **Vastaa puheluun** | Ctrl+Alt+A | ⌃⌥A | pois |
 | **Lopeta** | Ctrl+Alt+E | ⌃⌥E | pois |

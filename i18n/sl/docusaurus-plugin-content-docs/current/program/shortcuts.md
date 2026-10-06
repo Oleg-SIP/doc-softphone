@@ -8,7 +8,7 @@ description: Tipkovne bližnjice, ki sprejmejo, odložijo, zadržijo, utišajo t
 
 <Shot name="16_settings_shortcuts" alt="Nastavitve → Tipkovne bližnjice (macOS)">macOS</Shot>
 
-| Dejanje | Bližnjica v sistemu Windows | Bližnjica v macOS | **Povsod** |
+| Dejanje | Bližnjica v sistemu Windows | Bližnjica v macOS | **Privzeto** |
 | --- | --- | --- | --- |
 | **Sprejmi klic** | Ctrl+Alt+A | ⌃⌥A | izklopljeno |
 | **Odloži** | Ctrl+Alt+E | ⌃⌥E | izklopljeno |

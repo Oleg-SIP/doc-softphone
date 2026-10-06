@@ -8,7 +8,7 @@ description: Các phím tắt để trả lời, cúp máy, giữ máy, tắt ti
 
 <Shot name="16_settings_shortcuts" alt="Cài đặt → Phím tắt bàn phím (macOS)">macOS</Shot>
 
-| Thao tác | Phím tắt trên Windows | Phím tắt trên macOS | **Ở mọi nơi** |
+| Thao tác | Phím tắt trên Windows | Phím tắt trên macOS | **Mặc định** |
 | --- | --- | --- | --- |
 | **Trả lời cuộc gọi** | Ctrl+Alt+A | ⌃⌥A | tắt |
 | **Cúp máy** | Ctrl+Alt+E | ⌃⌥E | tắt |

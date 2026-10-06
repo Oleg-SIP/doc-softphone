@@ -8,7 +8,7 @@ description: Skróty klawiszowe, które odbierają, rozłączają, zawieszają, 
 
 <Shot name="16_settings_shortcuts" alt="Ustawienia → Skróty klawiszowe (macOS)">macOS</Shot>
 
-| Czynność | Skrót w Windows | Skrót w macOS | **Wszędzie** |
+| Czynność | Skrót w Windows | Skrót w macOS | **Domyślnie** |
 | --- | --- | --- | --- |
 | **Odbierz połączenie** | Ctrl+Alt+A | ⌃⌥A | wyłączone |
 | **Rozłącz** | Ctrl+Alt+E | ⌃⌥E | wyłączone |

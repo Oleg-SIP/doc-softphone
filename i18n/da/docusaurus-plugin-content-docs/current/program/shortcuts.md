@@ -8,7 +8,7 @@ description: Tastaturgenvejene, der besvarer, lægger på, parkerer, slår mikro
 
 <Shot name="16_settings_shortcuts" alt="Indstillinger → Tastaturgenveje (macOS)">macOS</Shot>
 
-| Handling | Genvej på Windows | Genvej på macOS | **Overalt** |
+| Handling | Genvej på Windows | Genvej på macOS | **Standard** |
 | --- | --- | --- | --- |
 | **Besvar et opkald** | Ctrl+Alt+A | ⌃⌥A | fra |
 | **Læg på** | Ctrl+Alt+E | ⌃⌥E | fra |

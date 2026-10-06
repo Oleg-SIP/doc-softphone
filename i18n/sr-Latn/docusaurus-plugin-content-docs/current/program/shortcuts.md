@@ -8,7 +8,7 @@ description: Prečice na tastaturi kojima se javljate, prekidate, stavljate na �
 
 <Shot name="16_settings_shortcuts" alt="Podešavanja → Prečice na tastaturi (macOS)">macOS</Shot>
 
-| Radnja | Prečica u Windowsu | Prečica na macOS-u | **Svuda** |
+| Radnja | Prečica u Windowsu | Prečica na macOS-u | **Podrazumevano** |
 | --- | --- | --- | --- |
 | **Javi se na poziv** | Ctrl+Alt+A | ⌃⌥A | isključeno |
 | **Prekini poziv** | Ctrl+Alt+E | ⌃⌥E | isključeno |

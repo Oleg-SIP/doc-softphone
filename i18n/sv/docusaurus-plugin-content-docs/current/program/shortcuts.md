@@ -8,7 +8,7 @@ description: Tangentgenvägarna som svarar, lägger på, parkerar, stänger av m
 
 <Shot name="16_settings_shortcuts" alt="Inställningar → Tangentgenvägar (macOS)">macOS</Shot>
 
-| Åtgärd | Kortkommando i Windows | Genväg på macOS | **Överallt** |
+| Åtgärd | Kortkommando i Windows | Genväg på macOS | **Standard** |
 | --- | --- | --- | --- |
 | **Svara på ett samtal** | Ctrl+Alt+A | ⌃⌥A | av |
 | **Lägg på** | Ctrl+Alt+E | ⌃⌥E | av |

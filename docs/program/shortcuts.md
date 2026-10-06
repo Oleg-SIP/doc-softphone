@@ -8,7 +8,7 @@ description: The hotkeys that answer, hang up, hold, mute and show or hide the p
 
 <Shot name="16_settings_shortcuts" alt="Settings → Keyboard shortcuts (macOS)">macOS</Shot>
 
-| Action | Shortcut on Windows | Shortcut on macOS | **Everywhere** |
+| Action | Shortcut on Windows | Shortcut on macOS | **Default** |
 | --- | --- | --- | --- |
 | **Answer a call** | Ctrl+Alt+A | ⌃⌥A | off |
 | **Hang up** | Ctrl+Alt+E | ⌃⌥E | off |

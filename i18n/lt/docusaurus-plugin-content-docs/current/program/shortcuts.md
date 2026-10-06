@@ -8,7 +8,7 @@ description: Spartieji klavišai, kurie atsiliepia, padeda ragelį, sulaiko, nut
 
 <Shot name="16_settings_shortcuts" alt="Nustatymai → Klaviatūros spartieji klavišai (macOS)">macOS</Shot>
 
-| Veiksmas | Spartusis klavišas sistemoje Windows | Spartusis klavišas macOS | **Visur** |
+| Veiksmas | Spartusis klavišas sistemoje Windows | Spartusis klavišas macOS | **Numatytoji reikšmė** |
 | --- | --- | --- | --- |
 | **Atsiliepti į skambutį** | Ctrl+Alt+A | ⌃⌥A | išjungta |
 | **Padėti ragelį** | Ctrl+Alt+E | ⌃⌥E | išjungta |

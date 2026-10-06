@@ -8,7 +8,7 @@ description: Les raccourcis clavier qui répondent, raccrochent, mettent en atte
 
 <Shot name="16_settings_shortcuts" alt="Réglages → Raccourcis clavier (macOS)">macOS</Shot>
 
-| Action | Raccourci sous Windows | Raccourci sous macOS | **Partout** |
+| Action | Raccourci sous Windows | Raccourci sous macOS | **Par défaut** |
 | --- | --- | --- | --- |
 | **Répondre à un appel** | Ctrl+Alt+A | ⌃⌥A | désactivé |
 | **Raccrocher** | Ctrl+Alt+E | ⌃⌥E | désactivé |

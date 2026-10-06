@@ -8,7 +8,7 @@ description: Klávesové zkratky, které přijmou, zavěsí, přidrží, ztlumí
 
 <Shot name="16_settings_shortcuts" alt="Nastavení → Klávesové zkratky (macOS)">macOS</Shot>
 
-| Akce | Zkratka ve Windows | Zkratka na macOS | **Všude** |
+| Akce | Zkratka ve Windows | Zkratka na macOS | **Výchozí** |
 | --- | --- | --- | --- |
 | **Přijmout hovor** | Ctrl+Alt+A | ⌃⌥A | vypnuto |
 | **Zavěsit** | Ctrl+Alt+E | ⌃⌥E | vypnuto |

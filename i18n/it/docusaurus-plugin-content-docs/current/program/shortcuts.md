@@ -8,7 +8,7 @@ description: Le scorciatoie da tastiera che rispondono, riagganciano, mettono in
 
 <Shot name="16_settings_shortcuts" alt="Impostazioni → Scorciatoie da tastiera (macOS)">macOS</Shot>
 
-| Azione | Scorciatoia su Windows | Scorciatoia su macOS | **Ovunque** |
+| Azione | Scorciatoia su Windows | Scorciatoia su macOS | **Predefinito** |
 | --- | --- | --- | --- |
 | **Rispondi a una chiamata** | Ctrl+Alt+A | ⌃⌥A | spento |
 | **Riaggancia** | Ctrl+Alt+E | ⌃⌥E | spento |

@@ -8,7 +8,7 @@ description: Tipkovni prečaci kojima se javljate, spuštate, stavljate na čeka
 
 <Shot name="16_settings_shortcuts" alt="Postavke → Tipkovni prečaci (macOS)">macOS</Shot>
 
-| Radnja | Prečac u Windowsu | Prečac na macOS-u | **Svugdje** |
+| Radnja | Prečac u Windowsu | Prečac na macOS-u | **Zadano** |
 | --- | --- | --- | --- |
 | **Javi se na poziv** | Ctrl+Alt+A | ⌃⌥A | isključeno |
 | **Spusti** | Ctrl+Alt+E | ⌃⌥E | isključeno |

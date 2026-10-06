@@ -8,7 +8,7 @@ description: Die Tastenkürzel, die annehmen, auflegen, halten, stummschalten un
 
 <Shot name="16_settings_shortcuts" alt="Einstellungen → Tastenkürzel (macOS)">macOS</Shot>
 
-| Aktion | Tastenkürzel unter Windows | Tastenkürzel unter macOS | **Überall** |
+| Aktion | Tastenkürzel unter Windows | Tastenkürzel unter macOS | **Standard** |
 | --- | --- | --- | --- |
 | **Einen Anruf annehmen** | Ctrl+Alt+A | ⌃⌥A | aus |
 | **Auflegen** | Ctrl+Alt+E | ⌃⌥E | aus |

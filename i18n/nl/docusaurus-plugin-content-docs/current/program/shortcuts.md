@@ -8,7 +8,7 @@ description: De sneltoetsen die opnemen, ophangen, in de wacht zetten, dempen en
 
 <Shot name="16_settings_shortcuts" alt="Instellingen → Sneltoetsen (macOS)">macOS</Shot>
 
-| Actie | Sneltoets op Windows | Sneltoets op macOS | **Overal** |
+| Actie | Sneltoets op Windows | Sneltoets op macOS | **Standaard** |
 | --- | --- | --- | --- |
 | **Een gesprek aannemen** | Ctrl+Alt+A | ⌃⌥A | uit |
 | **Ophangen** | Ctrl+Alt+E | ⌃⌥E | uit |

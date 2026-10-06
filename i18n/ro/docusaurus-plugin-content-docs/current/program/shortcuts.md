@@ -8,7 +8,7 @@ description: Scurtăturile care răspund, închid, pun în așteptare, opresc mi
 
 <Shot name="16_settings_shortcuts" alt="Setări → Scurtături de tastatură (macOS)">macOS</Shot>
 
-| Acțiune | Comandă rapidă în Windows | Scurtătură pe macOS | **Peste tot** |
+| Acțiune | Comandă rapidă în Windows | Scurtătură pe macOS | **Implicit** |
 | --- | --- | --- | --- |
 | **Răspunde la un apel** | Ctrl+Alt+A | ⌃⌥A | oprit |
 | **Închide apelul** | Ctrl+Alt+E | ⌃⌥E | oprit |

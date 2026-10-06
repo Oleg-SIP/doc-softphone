@@ -8,7 +8,7 @@ description: Tombol pintas untuk menjawab, menutup panggilan, menahan, membisuka
 
 <Shot name="16_settings_shortcuts" alt="Pengaturan → Pintasan papan tik (macOS)">macOS</Shot>
 
-| Tindakan | Pintasan di Windows | Pintasan di macOS | **Di mana saja** |
+| Tindakan | Pintasan di Windows | Pintasan di macOS | **Bawaan** |
 | --- | --- | --- | --- |
 | **Jawab panggilan** | Ctrl+Alt+A | ⌃⌥A | mati |
 | **Tutup panggilan** | Ctrl+Alt+E | ⌃⌥E | mati |

@@ -8,7 +8,7 @@ A **Beállítások → Gyorsbillentyűk** felsorolja a telefon billentyűparancs
 
 <Shot name="16_settings_shortcuts" alt="Beállítások → Billentyűparancsok (macOS)">macOS</Shot>
 
-| Művelet | Billentyűparancs Windows alatt | Billentyűparancs macOS-en | **Mindenhol** |
+| Művelet | Billentyűparancs Windows alatt | Billentyűparancs macOS-en | **Alapérték** |
 | --- | --- | --- | --- |
 | **Hívás fogadása** | Ctrl+Alt+A | ⌃⌥A | ki |
 | **Bontás** | Ctrl+Alt+E | ⌃⌥E | ki |

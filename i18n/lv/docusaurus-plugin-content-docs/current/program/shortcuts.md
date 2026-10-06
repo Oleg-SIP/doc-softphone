@@ -8,7 +8,7 @@ description: Tastatūras saīsnes, kas atbild, noliek klausuli, aiztur, apklusin
 
 <Shot name="16_settings_shortcuts" alt="Iestatījumi → Tastatūras saīsnes (macOS)">macOS</Shot>
 
-| Darbība | Īsinājumtaustiņš sistēmā Windows | Saīsne macOS | **Visur** |
+| Darbība | Īsinājumtaustiņš sistēmā Windows | Saīsne macOS | **Noklusējums** |
 | --- | --- | --- | --- |
 | **Atbildēt uz zvanu** | Ctrl+Alt+A | ⌃⌥A | izslēgts |
 | **Nolikt klausuli** | Ctrl+Alt+E | ⌃⌥E | izslēgts |

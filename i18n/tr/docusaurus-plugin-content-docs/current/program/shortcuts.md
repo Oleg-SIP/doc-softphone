@@ -8,7 +8,7 @@ description: Yanıtlayan, kapatan, bekleten, sesi kapatan ve telefonu gösterip 
 
 <Shot name="16_settings_shortcuts" alt="Ayarlar → Klavye kısayolları (macOS)">macOS</Shot>
 
-| Eylem | Windows kısayolu | macOS'ta kısayol | **Her yerde** |
+| Eylem | Windows kısayolu | macOS'ta kısayol | **Öntanımlı** |
 | --- | --- | --- | --- |
 | **Çağrıyı yanıtla** | Ctrl+Alt+A | ⌃⌥A | kapalı |
 | **Çağrıyı kapat** | Ctrl+Alt+E | ⌃⌥E | kapalı |

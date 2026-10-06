@@ -8,7 +8,7 @@ description: Os atalhos de teclado que atendem, desligam, põem em espera, silen
 
 <Shot name="16_settings_shortcuts" alt="Definições → Atalhos de teclado (macOS)">macOS</Shot>
 
-| Ação | Atalho no Windows | Atalho no macOS | **Em todo o lado** |
+| Ação | Atalho no Windows | Atalho no macOS | **Por omissão** |
 | --- | --- | --- | --- |
 | **Atender uma chamada** | Ctrl+Alt+A | ⌃⌥A | desligado |
 | **Desligar** | Ctrl+Alt+E | ⌃⌥E | desligado |

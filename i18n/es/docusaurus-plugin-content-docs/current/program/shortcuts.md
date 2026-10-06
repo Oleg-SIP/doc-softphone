@@ -8,7 +8,7 @@ description: Los atajos de teclado que contestan, cuelgan, ponen en espera, sile
 
 <Shot name="16_settings_shortcuts" alt="Ajustes → Atajos de teclado (macOS)">macOS</Shot>
 
-| Acción | Atajo en Windows | Atajo en macOS | **En todas partes** |
+| Acción | Atajo en Windows | Atajo en macOS | **Por defecto** |
 | --- | --- | --- | --- |
 | **Contestar una llamada** | Ctrl+Alt+A | ⌃⌥A | apagado |
 | **Colgar** | Ctrl+Alt+E | ⌃⌥E | apagado |

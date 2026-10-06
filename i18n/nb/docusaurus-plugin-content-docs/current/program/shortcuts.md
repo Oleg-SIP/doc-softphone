@@ -8,7 +8,7 @@ description: Tastatursnarveiene som svarer, legger på, setter på vent, slår a
 
 <Shot name="16_settings_shortcuts" alt="Innstillinger → Tastatursnarveier (macOS)">macOS</Shot>
 
-| Handling | Snarvei på Windows | Snarvei på macOS | **Overalt** |
+| Handling | Snarvei på Windows | Snarvei på macOS | **Standard** |
 | --- | --- | --- | --- |
 | **Svare på en samtale** | Ctrl+Alt+A | ⌃⌥A | av |
 | **Legg på** | Ctrl+Alt+E | ⌃⌥E | av |
