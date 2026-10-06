@@ -6,15 +6,15 @@ description: Yanıtlayan, kapatan, bekleten, sesi kapatan ve telefonu gösterip 
 
 **Ayarlar → Kısayollar**, telefonun klavye kısayollarını listeler.
 
-<Shot name="16_settings_shortcuts" alt="Ayarlar → Klavye kısayolları" />
+<Shot name="16_settings_shortcuts" alt="Ayarlar → Klavye kısayolları (macOS)">macOS</Shot>
 
-| Eylem | macOS'ta kısayol | **Her yerde** |
-| --- | --- | --- |
-| **Çağrıyı yanıtla** | ⌃⌥A | kapalı |
-| **Çağrıyı kapat** | ⌃⌥E | kapalı |
-| **Beklet ya da sürdür** | ⌃⌥H | kapalı |
-| **Mikrofonu kapat** | ⌃⌥M | kapalı |
-| **Telefonu göster ya da gizle** | ⌃⌥S | açık |
+| Eylem | Windows kısayolu | macOS'ta kısayol | **Her yerde** |
+| --- | --- | --- | --- |
+| **Çağrıyı yanıtla** | Ctrl+Alt+A | ⌃⌥A | kapalı |
+| **Çağrıyı kapat** | Ctrl+Alt+E | ⌃⌥E | kapalı |
+| **Beklet ya da sürdür** | Ctrl+Alt+H | ⌃⌥H | kapalı |
+| **Mikrofonu kapat** | Ctrl+Alt+M | ⌃⌥M | kapalı |
+| **Telefonu göster ya da gizle** | Ctrl+Alt+S | ⌃⌥S | açık |
 
 (⌃ Control, ⌥ ise Option tuşudur.)
 

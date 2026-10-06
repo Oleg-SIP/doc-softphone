@@ -6,15 +6,15 @@ description: Tangentgenvägarna som svarar, lägger på, parkerar, stänger av m
 
 **Inställningar → Genvägar** visar telefonens tangentgenvägar.
 
-<Shot name="16_settings_shortcuts" alt="Inställningar → Tangentgenvägar" />
+<Shot name="16_settings_shortcuts" alt="Inställningar → Tangentgenvägar (macOS)">macOS</Shot>
 
-| Åtgärd | Genväg på macOS | **Överallt** |
-| --- | --- | --- |
-| **Svara på ett samtal** | ⌃⌥A | av |
-| **Lägg på** | ⌃⌥E | av |
-| **Parkera eller återuppta** | ⌃⌥H | av |
-| **Stäng av mikrofonen** | ⌃⌥M | av |
-| **Visa eller dölj telefonen** | ⌃⌥S | på |
+| Åtgärd | Kortkommando i Windows | Genväg på macOS | **Överallt** |
+| --- | --- | --- | --- |
+| **Svara på ett samtal** | Ctrl+Alt+A | ⌃⌥A | av |
+| **Lägg på** | Ctrl+Alt+E | ⌃⌥E | av |
+| **Parkera eller återuppta** | Ctrl+Alt+H | ⌃⌥H | av |
+| **Stäng av mikrofonen** | Ctrl+Alt+M | ⌃⌥M | av |
+| **Visa eller dölj telefonen** | Ctrl+Alt+S | ⌃⌥S | på |
 
 (⌃ är Kontroll och ⌥ är Alternativ.)
 

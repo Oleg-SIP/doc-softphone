@@ -6,15 +6,15 @@ description: Os atalhos de teclado que atendem, desligam, põem em espera, silen
 
 **Definições → Atalhos** lista os atalhos de teclado do telefone.
 
-<Shot name="16_settings_shortcuts" alt="Definições → Atalhos de teclado" />
+<Shot name="16_settings_shortcuts" alt="Definições → Atalhos de teclado (macOS)">macOS</Shot>
 
-| Ação | Atalho no macOS | **Em todo o lado** |
-| --- | --- | --- |
-| **Atender uma chamada** | ⌃⌥A | desligado |
-| **Desligar** | ⌃⌥E | desligado |
-| **Pôr em espera ou retomar** | ⌃⌥H | desligado |
-| **Silenciar o microfone** | ⌃⌥M | desligado |
-| **Mostrar ou esconder o telefone** | ⌃⌥S | ligado |
+| Ação | Atalho no Windows | Atalho no macOS | **Em todo o lado** |
+| --- | --- | --- | --- |
+| **Atender uma chamada** | Ctrl+Alt+A | ⌃⌥A | desligado |
+| **Desligar** | Ctrl+Alt+E | ⌃⌥E | desligado |
+| **Pôr em espera ou retomar** | Ctrl+Alt+H | ⌃⌥H | desligado |
+| **Silenciar o microfone** | Ctrl+Alt+M | ⌃⌥M | desligado |
+| **Mostrar ou esconder o telefone** | Ctrl+Alt+S | ⌃⌥S | ligado |
 
 (⌃ é Control e ⌥ é Option.)
 

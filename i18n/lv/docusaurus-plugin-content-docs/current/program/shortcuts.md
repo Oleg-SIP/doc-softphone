@@ -6,15 +6,15 @@ description: Tastatūras saīsnes, kas atbild, noliek klausuli, aiztur, apklusin
 
 **Iestatījumi → Saīsnes** uzskaita tālruņa tastatūras saīsnes.
 
-<Shot name="16_settings_shortcuts" alt="Iestatījumi → Tastatūras saīsnes" />
+<Shot name="16_settings_shortcuts" alt="Iestatījumi → Tastatūras saīsnes (macOS)">macOS</Shot>
 
-| Darbība | Saīsne macOS | **Visur** |
-| --- | --- | --- |
-| **Atbildēt uz zvanu** | ⌃⌥A | izslēgts |
-| **Nolikt klausuli** | ⌃⌥E | izslēgts |
-| **Aizturēt vai turpināt** | ⌃⌥H | izslēgts |
-| **Apklusināt mikrofonu** | ⌃⌥M | izslēgts |
-| **Parādīt vai paslēpt telefonu** | ⌃⌥S | ieslēgts |
+| Darbība | Īsinājumtaustiņš sistēmā Windows | Saīsne macOS | **Visur** |
+| --- | --- | --- | --- |
+| **Atbildēt uz zvanu** | Ctrl+Alt+A | ⌃⌥A | izslēgts |
+| **Nolikt klausuli** | Ctrl+Alt+E | ⌃⌥E | izslēgts |
+| **Aizturēt vai turpināt** | Ctrl+Alt+H | ⌃⌥H | izslēgts |
+| **Apklusināt mikrofonu** | Ctrl+Alt+M | ⌃⌥M | izslēgts |
+| **Parādīt vai paslēpt telefonu** | Ctrl+Alt+S | ⌃⌥S | ieslēgts |
 
 (⌃ ir Control, ⌥ ir Option.)
 

@@ -6,15 +6,15 @@ description: Tombol pintas untuk menjawab, menutup panggilan, menahan, membisuka
 
 **Pengaturan → Pintasan** mencantumkan pintasan papan tik telepon.
 
-<Shot name="16_settings_shortcuts" alt="Pengaturan → Pintasan papan tik" />
+<Shot name="16_settings_shortcuts" alt="Pengaturan → Pintasan papan tik (macOS)">macOS</Shot>
 
-| Tindakan | Pintasan di macOS | **Di mana saja** |
-| --- | --- | --- |
-| **Jawab panggilan** | ⌃⌥A | mati |
-| **Tutup panggilan** | ⌃⌥E | mati |
-| **Tahan atau lanjutkan** | ⌃⌥H | mati |
-| **Bisukan mikrofon** | ⌃⌥M | mati |
-| **Tampilkan atau sembunyikan telepon** | ⌃⌥S | menyala |
+| Tindakan | Pintasan di Windows | Pintasan di macOS | **Di mana saja** |
+| --- | --- | --- | --- |
+| **Jawab panggilan** | Ctrl+Alt+A | ⌃⌥A | mati |
+| **Tutup panggilan** | Ctrl+Alt+E | ⌃⌥E | mati |
+| **Tahan atau lanjutkan** | Ctrl+Alt+H | ⌃⌥H | mati |
+| **Bisukan mikrofon** | Ctrl+Alt+M | ⌃⌥M | mati |
+| **Tampilkan atau sembunyikan telepon** | Ctrl+Alt+S | ⌃⌥S | menyala |
 
 (⌃ adalah Control dan ⌥ adalah Option.)
 

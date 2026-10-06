@@ -6,15 +6,15 @@ description: Le scorciatoie da tastiera che rispondono, riagganciano, mettono in
 
 **Impostazioni → Scorciatoie** elenca le scorciatoie da tastiera del telefono.
 
-<Shot name="16_settings_shortcuts" alt="Impostazioni → Scorciatoie da tastiera" />
+<Shot name="16_settings_shortcuts" alt="Impostazioni → Scorciatoie da tastiera (macOS)">macOS</Shot>
 
-| Azione | Scorciatoia su macOS | **Ovunque** |
-| --- | --- | --- |
-| **Rispondi a una chiamata** | ⌃⌥A | spento |
-| **Riaggancia** | ⌃⌥E | spento |
-| **Metti in attesa o riprendi** | ⌃⌥H | spento |
-| **Silenzia il microfono** | ⌃⌥M | spento |
-| **Mostra o nascondi il telefono** | ⌃⌥S | acceso |
+| Azione | Scorciatoia su Windows | Scorciatoia su macOS | **Ovunque** |
+| --- | --- | --- | --- |
+| **Rispondi a una chiamata** | Ctrl+Alt+A | ⌃⌥A | spento |
+| **Riaggancia** | Ctrl+Alt+E | ⌃⌥E | spento |
+| **Metti in attesa o riprendi** | Ctrl+Alt+H | ⌃⌥H | spento |
+| **Silenzia il microfono** | Ctrl+Alt+M | ⌃⌥M | spento |
+| **Mostra o nascondi il telefono** | Ctrl+Alt+S | ⌃⌥S | acceso |
 
 (⌃ è Ctrl e ⌥ è Opzione.)
 

@@ -6,15 +6,15 @@ description: Les raccourcis clavier qui répondent, raccrochent, mettent en atte
 
 **Réglages → Raccourcis** liste les raccourcis clavier du téléphone.
 
-<Shot name="16_settings_shortcuts" alt="Réglages → Raccourcis clavier" />
+<Shot name="16_settings_shortcuts" alt="Réglages → Raccourcis clavier (macOS)">macOS</Shot>
 
-| Action | Raccourci sous macOS | **Partout** |
-| --- | --- | --- |
-| **Répondre à un appel** | ⌃⌥A | désactivé |
-| **Raccrocher** | ⌃⌥E | désactivé |
-| **Mettre en attente ou reprendre** | ⌃⌥H | désactivé |
-| **Couper le micro** | ⌃⌥M | désactivé |
-| **Afficher ou masquer le téléphone** | ⌃⌥S | activé |
+| Action | Raccourci sous Windows | Raccourci sous macOS | **Partout** |
+| --- | --- | --- | --- |
+| **Répondre à un appel** | Ctrl+Alt+A | ⌃⌥A | désactivé |
+| **Raccrocher** | Ctrl+Alt+E | ⌃⌥E | désactivé |
+| **Mettre en attente ou reprendre** | Ctrl+Alt+H | ⌃⌥H | désactivé |
+| **Couper le micro** | Ctrl+Alt+M | ⌃⌥M | désactivé |
+| **Afficher ou masquer le téléphone** | Ctrl+Alt+S | ⌃⌥S | activé |
 
 (⌃ est Contrôle et ⌥ est Option.)
 

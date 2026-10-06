@@ -6,15 +6,15 @@ description: Klahviotseteed, mis vastavad, lõpetavad, panevad ootele, vaigistav
 
 **Seaded → Otseteed** loetleb telefoni klahviotseteed.
 
-<Shot name="16_settings_shortcuts" alt="Seaded → Klahvi otseteed" />
+<Shot name="16_settings_shortcuts" alt="Seaded → Klahvi otseteed (macOS)">macOS</Shot>
 
-| Toiming | Otsetee macOS-is | **Kõikjal** |
-| --- | --- | --- |
-| **Vasta kõnele** | ⌃⌥A | väljas |
-| **Lõpeta** | ⌃⌥E | väljas |
-| **Pane ootele või jätka** | ⌃⌥H | väljas |
-| **Vaigista mikrofon** | ⌃⌥M | väljas |
-| **Näita või peida telefon** | ⌃⌥S | sees |
+| Toiming | Otsetee Windowsis | Otsetee macOS-is | **Kõikjal** |
+| --- | --- | --- | --- |
+| **Vasta kõnele** | Ctrl+Alt+A | ⌃⌥A | väljas |
+| **Lõpeta** | Ctrl+Alt+E | ⌃⌥E | väljas |
+| **Pane ootele või jätka** | Ctrl+Alt+H | ⌃⌥H | väljas |
+| **Vaigista mikrofon** | Ctrl+Alt+M | ⌃⌥M | väljas |
+| **Näita või peida telefon** | Ctrl+Alt+S | ⌃⌥S | sees |
 
 (⌃ on Control ja ⌥ on Option.)
 

@@ -6,15 +6,15 @@ description: Pikanäppäimet, jotka vastaavat, lopettavat, asettavat pitoon, myk
 
 **Asetukset → Pikanäppäimet** luettelee puhelimen näppäimistön pikanäppäimet.
 
-<Shot name="16_settings_shortcuts" alt="Asetukset → Näppäimistön pikanäppäimet" />
+<Shot name="16_settings_shortcuts" alt="Asetukset → Näppäimistön pikanäppäimet (macOS)">macOS</Shot>
 
-| Toiminto | Pikanäppäin macOS:ssä | **Kaikkialla** |
-| --- | --- | --- |
-| **Vastaa puheluun** | ⌃⌥A | pois |
-| **Lopeta** | ⌃⌥E | pois |
-| **Aseta pitoon tai jatka** | ⌃⌥H | pois |
-| **Mykistä mikrofoni** | ⌃⌥M | pois |
-| **Näytä tai piilota puhelin** | ⌃⌥S | päällä |
+| Toiminto | Pikanäppäin Windowsissa | Pikanäppäin macOS:ssä | **Kaikkialla** |
+| --- | --- | --- | --- |
+| **Vastaa puheluun** | Ctrl+Alt+A | ⌃⌥A | pois |
+| **Lopeta** | Ctrl+Alt+E | ⌃⌥E | pois |
+| **Aseta pitoon tai jatka** | Ctrl+Alt+H | ⌃⌥H | pois |
+| **Mykistä mikrofoni** | Ctrl+Alt+M | ⌃⌥M | pois |
+| **Näytä tai piilota puhelin** | Ctrl+Alt+S | ⌃⌥S | päällä |
 
 (⌃ on Control ja ⌥ on Option.)
 

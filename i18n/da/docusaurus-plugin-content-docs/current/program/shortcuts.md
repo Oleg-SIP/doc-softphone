@@ -6,15 +6,15 @@ description: Tastaturgenvejene, der besvarer, lægger på, parkerer, slår mikro
 
 **Indstillinger → Genveje** viser telefonens tastaturgenveje.
 
-<Shot name="16_settings_shortcuts" alt="Indstillinger → Tastaturgenveje" />
+<Shot name="16_settings_shortcuts" alt="Indstillinger → Tastaturgenveje (macOS)">macOS</Shot>
 
-| Handling | Genvej på macOS | **Overalt** |
-| --- | --- | --- |
-| **Besvar et opkald** | ⌃⌥A | fra |
-| **Læg på** | ⌃⌥E | fra |
-| **Parkér eller genoptag** | ⌃⌥H | fra |
-| **Slå mikrofonen fra** | ⌃⌥M | fra |
-| **Vis eller skjul telefonen** | ⌃⌥S | til |
+| Handling | Genvej på Windows | Genvej på macOS | **Overalt** |
+| --- | --- | --- | --- |
+| **Besvar et opkald** | Ctrl+Alt+A | ⌃⌥A | fra |
+| **Læg på** | Ctrl+Alt+E | ⌃⌥E | fra |
+| **Parkér eller genoptag** | Ctrl+Alt+H | ⌃⌥H | fra |
+| **Slå mikrofonen fra** | Ctrl+Alt+M | ⌃⌥M | fra |
+| **Vis eller skjul telefonen** | Ctrl+Alt+S | ⌃⌥S | til |
 
 (⌃ er Control, og ⌥ er Option.)
 

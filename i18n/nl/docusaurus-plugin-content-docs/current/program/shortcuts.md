@@ -6,15 +6,15 @@ description: De sneltoetsen die opnemen, ophangen, in de wacht zetten, dempen en
 
 **Instellingen → Sneltoetsen** toont de sneltoetsen van de telefoon.
 
-<Shot name="16_settings_shortcuts" alt="Instellingen → Sneltoetsen" />
+<Shot name="16_settings_shortcuts" alt="Instellingen → Sneltoetsen (macOS)">macOS</Shot>
 
-| Actie | Sneltoets op macOS | **Overal** |
-| --- | --- | --- |
-| **Een gesprek aannemen** | ⌃⌥A | uit |
-| **Ophangen** | ⌃⌥E | uit |
-| **In de wacht zetten of hervatten** | ⌃⌥H | uit |
-| **De microfoon dempen** | ⌃⌥M | uit |
-| **De telefoon tonen of verbergen** | ⌃⌥S | aan |
+| Actie | Sneltoets op Windows | Sneltoets op macOS | **Overal** |
+| --- | --- | --- | --- |
+| **Een gesprek aannemen** | Ctrl+Alt+A | ⌃⌥A | uit |
+| **Ophangen** | Ctrl+Alt+E | ⌃⌥E | uit |
+| **In de wacht zetten of hervatten** | Ctrl+Alt+H | ⌃⌥H | uit |
+| **De microfoon dempen** | Ctrl+Alt+M | ⌃⌥M | uit |
+| **De telefoon tonen of verbergen** | Ctrl+Alt+S | ⌃⌥S | aan |
 
 (⌃ is Control en ⌥ is Option.)
 

@@ -6,15 +6,15 @@ description: Die Tastenkürzel, die annehmen, auflegen, halten, stummschalten un
 
 **Einstellungen → Tastenkürzel** listet die Tastenkürzel des Telefons auf.
 
-<Shot name="16_settings_shortcuts" alt="Einstellungen → Tastenkürzel" />
+<Shot name="16_settings_shortcuts" alt="Einstellungen → Tastenkürzel (macOS)">macOS</Shot>
 
-| Aktion | Tastenkürzel unter macOS | **Überall** |
-| --- | --- | --- |
-| **Einen Anruf annehmen** | ⌃⌥A | aus |
-| **Auflegen** | ⌃⌥E | aus |
-| **Halten oder fortsetzen** | ⌃⌥H | aus |
-| **Das Mikrofon stummschalten** | ⌃⌥M | aus |
-| **Das Telefon zeigen oder ausblenden** | ⌃⌥S | an |
+| Aktion | Tastenkürzel unter Windows | Tastenkürzel unter macOS | **Überall** |
+| --- | --- | --- | --- |
+| **Einen Anruf annehmen** | Ctrl+Alt+A | ⌃⌥A | aus |
+| **Auflegen** | Ctrl+Alt+E | ⌃⌥E | aus |
+| **Halten oder fortsetzen** | Ctrl+Alt+H | ⌃⌥H | aus |
+| **Das Mikrofon stummschalten** | Ctrl+Alt+M | ⌃⌥M | aus |
+| **Das Telefon zeigen oder ausblenden** | Ctrl+Alt+S | ⌃⌥S | an |
 
 (⌃ ist Control und ⌥ ist Option.)
 

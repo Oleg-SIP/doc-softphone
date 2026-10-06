@@ -6,15 +6,15 @@ description: The hotkeys that answer, hang up, hold, mute and show or hide the p
 
 **Settings → Shortcuts** lists the keyboard shortcuts of the phone.
 
-<Shot name="16_settings_shortcuts" alt="Settings → Keyboard shortcuts" />
+<Shot name="16_settings_shortcuts" alt="Settings → Keyboard shortcuts (macOS)">macOS</Shot>
 
-| Action | Shortcut on macOS | **Everywhere** |
-| --- | --- | --- |
-| **Answer a call** | ⌃⌥A | off |
-| **Hang up** | ⌃⌥E | off |
-| **Hold or resume** | ⌃⌥H | off |
-| **Mute the microphone** | ⌃⌥M | off |
-| **Show or hide the phone** | ⌃⌥S | on |
+| Action | Shortcut on Windows | Shortcut on macOS | **Everywhere** |
+| --- | --- | --- | --- |
+| **Answer a call** | Ctrl+Alt+A | ⌃⌥A | off |
+| **Hang up** | Ctrl+Alt+E | ⌃⌥E | off |
+| **Hold or resume** | Ctrl+Alt+H | ⌃⌥H | off |
+| **Mute the microphone** | Ctrl+Alt+M | ⌃⌥M | off |
+| **Show or hide the phone** | Ctrl+Alt+S | ⌃⌥S | on |
 
 (⌃ is Control and ⌥ is Option.)
 

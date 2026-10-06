@@ -6,15 +6,15 @@ description: Tipkovne bližnjice, ki sprejmejo, odložijo, zadržijo, utišajo t
 
 **Nastavitve → Bližnjice** navaja tipkovne bližnjice telefona.
 
-<Shot name="16_settings_shortcuts" alt="Nastavitve → Tipkovne bližnjice" />
+<Shot name="16_settings_shortcuts" alt="Nastavitve → Tipkovne bližnjice (macOS)">macOS</Shot>
 
-| Dejanje | Bližnjica v macOS | **Povsod** |
-| --- | --- | --- |
-| **Sprejmi klic** | ⌃⌥A | izklopljeno |
-| **Odloži** | ⌃⌥E | izklopljeno |
-| **Zadrži ali nadaljuj** | ⌃⌥H | izklopljeno |
-| **Utišaj mikrofon** | ⌃⌥M | izklopljeno |
-| **Pokaži ali skrij telefon** | ⌃⌥S | vklopljeno |
+| Dejanje | Bližnjica v sistemu Windows | Bližnjica v macOS | **Povsod** |
+| --- | --- | --- | --- |
+| **Sprejmi klic** | Ctrl+Alt+A | ⌃⌥A | izklopljeno |
+| **Odloži** | Ctrl+Alt+E | ⌃⌥E | izklopljeno |
+| **Zadrži ali nadaljuj** | Ctrl+Alt+H | ⌃⌥H | izklopljeno |
+| **Utišaj mikrofon** | Ctrl+Alt+M | ⌃⌥M | izklopljeno |
+| **Pokaži ali skrij telefon** | Ctrl+Alt+S | ⌃⌥S | vklopljeno |
 
 (⌃ je Control, ⌥ pa Option.)
 

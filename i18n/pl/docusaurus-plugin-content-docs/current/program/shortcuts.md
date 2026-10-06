@@ -6,15 +6,15 @@ description: Skróty klawiszowe, które odbierają, rozłączają, zawieszają, 
 
 **Ustawienia → Skróty** wymienia skróty klawiszowe telefonu.
 
-<Shot name="16_settings_shortcuts" alt="Ustawienia → Skróty klawiszowe" />
+<Shot name="16_settings_shortcuts" alt="Ustawienia → Skróty klawiszowe (macOS)">macOS</Shot>
 
-| Czynność | Skrót w macOS | **Wszędzie** |
-| --- | --- | --- |
-| **Odbierz połączenie** | ⌃⌥A | wyłączone |
-| **Rozłącz** | ⌃⌥E | wyłączone |
-| **Zawieś lub wznów** | ⌃⌥H | wyłączone |
-| **Wycisz mikrofon** | ⌃⌥M | wyłączone |
-| **Pokaż lub ukryj telefon** | ⌃⌥S | włączone |
+| Czynność | Skrót w Windows | Skrót w macOS | **Wszędzie** |
+| --- | --- | --- | --- |
+| **Odbierz połączenie** | Ctrl+Alt+A | ⌃⌥A | wyłączone |
+| **Rozłącz** | Ctrl+Alt+E | ⌃⌥E | wyłączone |
+| **Zawieś lub wznów** | Ctrl+Alt+H | ⌃⌥H | wyłączone |
+| **Wycisz mikrofon** | Ctrl+Alt+M | ⌃⌥M | wyłączone |
+| **Pokaż lub ukryj telefon** | Ctrl+Alt+S | ⌃⌥S | włączone |
 
 (⌃ to Control, a ⌥ to Option.)
 

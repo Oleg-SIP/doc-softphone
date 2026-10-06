@@ -6,15 +6,15 @@ description: Los atajos de teclado que contestan, cuelgan, ponen en espera, sile
 
 **Ajustes → Atajos** lista los atajos de teclado del teléfono.
 
-<Shot name="16_settings_shortcuts" alt="Ajustes → Atajos de teclado" />
+<Shot name="16_settings_shortcuts" alt="Ajustes → Atajos de teclado (macOS)">macOS</Shot>
 
-| Acción | Atajo en macOS | **En todas partes** |
-| --- | --- | --- |
-| **Contestar una llamada** | ⌃⌥A | apagado |
-| **Colgar** | ⌃⌥E | apagado |
-| **Poner en espera o reanudar** | ⌃⌥H | apagado |
-| **Silenciar el micrófono** | ⌃⌥M | apagado |
-| **Mostrar u ocultar el teléfono** | ⌃⌥S | encendido |
+| Acción | Atajo en Windows | Atajo en macOS | **En todas partes** |
+| --- | --- | --- | --- |
+| **Contestar una llamada** | Ctrl+Alt+A | ⌃⌥A | apagado |
+| **Colgar** | Ctrl+Alt+E | ⌃⌥E | apagado |
+| **Poner en espera o reanudar** | Ctrl+Alt+H | ⌃⌥H | apagado |
+| **Silenciar el micrófono** | Ctrl+Alt+M | ⌃⌥M | apagado |
+| **Mostrar u ocultar el teléfono** | Ctrl+Alt+S | ⌃⌥S | encendido |
 
 (⌃ es Control y ⌥ es Opción.)
 

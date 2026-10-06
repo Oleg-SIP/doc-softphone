@@ -6,15 +6,15 @@ description: Các phím tắt để trả lời, cúp máy, giữ máy, tắt ti
 
 **Cài đặt → Phím tắt** liệt kê các phím tắt bàn phím của điện thoại.
 
-<Shot name="16_settings_shortcuts" alt="Cài đặt → Phím tắt bàn phím" />
+<Shot name="16_settings_shortcuts" alt="Cài đặt → Phím tắt bàn phím (macOS)">macOS</Shot>
 
-| Thao tác | Phím tắt trên macOS | **Ở mọi nơi** |
-| --- | --- | --- |
-| **Trả lời cuộc gọi** | ⌃⌥A | tắt |
-| **Cúp máy** | ⌃⌥E | tắt |
-| **Giữ máy hoặc tiếp tục** | ⌃⌥H | tắt |
-| **Tắt tiếng micrô** | ⌃⌥M | tắt |
-| **Hiện hoặc ẩn điện thoại** | ⌃⌥S | bật |
+| Thao tác | Phím tắt trên Windows | Phím tắt trên macOS | **Ở mọi nơi** |
+| --- | --- | --- | --- |
+| **Trả lời cuộc gọi** | Ctrl+Alt+A | ⌃⌥A | tắt |
+| **Cúp máy** | Ctrl+Alt+E | ⌃⌥E | tắt |
+| **Giữ máy hoặc tiếp tục** | Ctrl+Alt+H | ⌃⌥H | tắt |
+| **Tắt tiếng micrô** | Ctrl+Alt+M | ⌃⌥M | tắt |
+| **Hiện hoặc ẩn điện thoại** | Ctrl+Alt+S | ⌃⌥S | bật |
 
 (⌃ là Control và ⌥ là Option.)
 

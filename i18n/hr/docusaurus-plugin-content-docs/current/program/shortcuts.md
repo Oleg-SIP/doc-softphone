@@ -6,15 +6,15 @@ description: Tipkovni prečaci kojima se javljate, spuštate, stavljate na čeka
 
 **Postavke → Prečaci** navodi tipkovne prečace telefona.
 
-<Shot name="16_settings_shortcuts" alt="Postavke → Tipkovni prečaci" />
+<Shot name="16_settings_shortcuts" alt="Postavke → Tipkovni prečaci (macOS)">macOS</Shot>
 
-| Radnja | Prečac na macOS-u | **Svugdje** |
-| --- | --- | --- |
-| **Javi se na poziv** | ⌃⌥A | isključeno |
-| **Spusti** | ⌃⌥E | isključeno |
-| **Stavi na čekanje ili nastavi** | ⌃⌥H | isključeno |
-| **Utišaj mikrofon** | ⌃⌥M | isključeno |
-| **Prikaži ili sakrij telefon** | ⌃⌥S | uključeno |
+| Radnja | Prečac u Windowsu | Prečac na macOS-u | **Svugdje** |
+| --- | --- | --- | --- |
+| **Javi se na poziv** | Ctrl+Alt+A | ⌃⌥A | isključeno |
+| **Spusti** | Ctrl+Alt+E | ⌃⌥E | isključeno |
+| **Stavi na čekanje ili nastavi** | Ctrl+Alt+H | ⌃⌥H | isključeno |
+| **Utišaj mikrofon** | Ctrl+Alt+M | ⌃⌥M | isključeno |
+| **Prikaži ili sakrij telefon** | Ctrl+Alt+S | ⌃⌥S | uključeno |
 
 (⌃ je Control, a ⌥ je Option.)
 

@@ -6,15 +6,15 @@ description: Klávesové zkratky, které přijmou, zavěsí, přidrží, ztlumí
 
 **Nastavení → Zkratky** uvádí klávesové zkratky telefonu.
 
-<Shot name="16_settings_shortcuts" alt="Nastavení → Klávesové zkratky" />
+<Shot name="16_settings_shortcuts" alt="Nastavení → Klávesové zkratky (macOS)">macOS</Shot>
 
-| Akce | Zkratka na macOS | **Všude** |
-| --- | --- | --- |
-| **Přijmout hovor** | ⌃⌥A | vypnuto |
-| **Zavěsit** | ⌃⌥E | vypnuto |
-| **Přidržet nebo pokračovat** | ⌃⌥H | vypnuto |
-| **Ztlumit mikrofon** | ⌃⌥M | vypnuto |
-| **Zobrazit nebo skrýt telefon** | ⌃⌥S | zapnuto |
+| Akce | Zkratka ve Windows | Zkratka na macOS | **Všude** |
+| --- | --- | --- | --- |
+| **Přijmout hovor** | Ctrl+Alt+A | ⌃⌥A | vypnuto |
+| **Zavěsit** | Ctrl+Alt+E | ⌃⌥E | vypnuto |
+| **Přidržet nebo pokračovat** | Ctrl+Alt+H | ⌃⌥H | vypnuto |
+| **Ztlumit mikrofon** | Ctrl+Alt+M | ⌃⌥M | vypnuto |
+| **Zobrazit nebo skrýt telefon** | Ctrl+Alt+S | ⌃⌥S | zapnuto |
 
 (⌃ je Control a ⌥ je Option.)
 

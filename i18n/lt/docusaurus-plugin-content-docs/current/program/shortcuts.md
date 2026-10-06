@@ -6,15 +6,15 @@ description: Spartieji klavišai, kurie atsiliepia, padeda ragelį, sulaiko, nut
 
 **Nustatymai → Spartieji klavišai** pateikia telefono klaviatūros sparčiuosius klavišus.
 
-<Shot name="16_settings_shortcuts" alt="Nustatymai → Klaviatūros spartieji klavišai" />
+<Shot name="16_settings_shortcuts" alt="Nustatymai → Klaviatūros spartieji klavišai (macOS)">macOS</Shot>
 
-| Veiksmas | Spartusis klavišas macOS | **Visur** |
-| --- | --- | --- |
-| **Atsiliepti į skambutį** | ⌃⌥A | išjungta |
-| **Padėti ragelį** | ⌃⌥E | išjungta |
-| **Sulaikyti arba tęsti** | ⌃⌥H | išjungta |
-| **Nutildyti mikrofoną** | ⌃⌥M | išjungta |
-| **Rodyti arba slėpti telefoną** | ⌃⌥S | įjungta |
+| Veiksmas | Spartusis klavišas sistemoje Windows | Spartusis klavišas macOS | **Visur** |
+| --- | --- | --- | --- |
+| **Atsiliepti į skambutį** | Ctrl+Alt+A | ⌃⌥A | išjungta |
+| **Padėti ragelį** | Ctrl+Alt+E | ⌃⌥E | išjungta |
+| **Sulaikyti arba tęsti** | Ctrl+Alt+H | ⌃⌥H | išjungta |
+| **Nutildyti mikrofoną** | Ctrl+Alt+M | ⌃⌥M | išjungta |
+| **Rodyti arba slėpti telefoną** | Ctrl+Alt+S | ⌃⌥S | įjungta |
 
 (⌃ yra Control, ⌥ yra Option.)
 

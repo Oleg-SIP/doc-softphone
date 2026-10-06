@@ -6,15 +6,15 @@ description: Scurtăturile care răspund, închid, pun în așteptare, opresc mi
 
 **Setări → Scurtături** listează scurtăturile de tastatură ale telefonului.
 
-<Shot name="16_settings_shortcuts" alt="Setări → Scurtături de tastatură" />
+<Shot name="16_settings_shortcuts" alt="Setări → Scurtături de tastatură (macOS)">macOS</Shot>
 
-| Acțiune | Scurtătură pe macOS | **Peste tot** |
-| --- | --- | --- |
-| **Răspunde la un apel** | ⌃⌥A | oprit |
-| **Închide apelul** | ⌃⌥E | oprit |
-| **Pune în așteptare sau reia** | ⌃⌥H | oprit |
-| **Oprește microfonul** | ⌃⌥M | oprit |
-| **Arată sau ascunde telefonul** | ⌃⌥S | pornit |
+| Acțiune | Comandă rapidă în Windows | Scurtătură pe macOS | **Peste tot** |
+| --- | --- | --- | --- |
+| **Răspunde la un apel** | Ctrl+Alt+A | ⌃⌥A | oprit |
+| **Închide apelul** | Ctrl+Alt+E | ⌃⌥E | oprit |
+| **Pune în așteptare sau reia** | Ctrl+Alt+H | ⌃⌥H | oprit |
+| **Oprește microfonul** | Ctrl+Alt+M | ⌃⌥M | oprit |
+| **Arată sau ascunde telefonul** | Ctrl+Alt+S | ⌃⌥S | pornit |
 
 (⌃ este Control, iar ⌥ este Option.)
 

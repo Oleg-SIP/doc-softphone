@@ -6,15 +6,15 @@ description: A gyorsbillentyűk, amelyekkel fogadhat, bonthat, tartásba tehet, 
 
 A **Beállítások → Gyorsbillentyűk** felsorolja a telefon billentyűparancsait.
 
-<Shot name="16_settings_shortcuts" alt="Beállítások → Billentyűparancsok" />
+<Shot name="16_settings_shortcuts" alt="Beállítások → Billentyűparancsok (macOS)">macOS</Shot>
 
-| Művelet | Billentyűparancs macOS-en | **Mindenhol** |
-| --- | --- | --- |
-| **Hívás fogadása** | ⌃⌥A | ki |
-| **Bontás** | ⌃⌥E | ki |
-| **Tartásba tétel vagy folytatás** | ⌃⌥H | ki |
-| **Mikrofon némítása** | ⌃⌥M | ki |
-| **A telefon megjelenítése vagy elrejtése** | ⌃⌥S | be |
+| Művelet | Billentyűparancs Windows alatt | Billentyűparancs macOS-en | **Mindenhol** |
+| --- | --- | --- | --- |
+| **Hívás fogadása** | Ctrl+Alt+A | ⌃⌥A | ki |
+| **Bontás** | Ctrl+Alt+E | ⌃⌥E | ki |
+| **Tartásba tétel vagy folytatás** | Ctrl+Alt+H | ⌃⌥H | ki |
+| **Mikrofon némítása** | Ctrl+Alt+M | ⌃⌥M | ki |
+| **A telefon megjelenítése vagy elrejtése** | Ctrl+Alt+S | ⌃⌥S | be |
 
 (A ⌃ a Control, a ⌥ az Option billentyű.)
 

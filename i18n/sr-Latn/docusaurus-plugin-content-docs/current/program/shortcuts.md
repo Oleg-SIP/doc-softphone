@@ -6,15 +6,15 @@ description: Prečice na tastaturi kojima se javljate, prekidate, stavljate na �
 
 **Podešavanja → Prečice** navodi prečice na tastaturi za telefon.
 
-<Shot name="16_settings_shortcuts" alt="Podešavanja → Prečice na tastaturi" />
+<Shot name="16_settings_shortcuts" alt="Podešavanja → Prečice na tastaturi (macOS)">macOS</Shot>
 
-| Radnja | Prečica na macOS-u | **Svuda** |
-| --- | --- | --- |
-| **Javi se na poziv** | ⌃⌥A | isključeno |
-| **Prekini poziv** | ⌃⌥E | isključeno |
-| **Stavi na čekanje ili nastavi** | ⌃⌥H | isključeno |
-| **Isključi mikrofon** | ⌃⌥M | isključeno |
-| **Prikaži ili sakrij telefon** | ⌃⌥S | uključeno |
+| Radnja | Prečica u Windowsu | Prečica na macOS-u | **Svuda** |
+| --- | --- | --- | --- |
+| **Javi se na poziv** | Ctrl+Alt+A | ⌃⌥A | isključeno |
+| **Prekini poziv** | Ctrl+Alt+E | ⌃⌥E | isključeno |
+| **Stavi na čekanje ili nastavi** | Ctrl+Alt+H | ⌃⌥H | isključeno |
+| **Isključi mikrofon** | Ctrl+Alt+M | ⌃⌥M | isključeno |
+| **Prikaži ili sakrij telefon** | Ctrl+Alt+S | ⌃⌥S | uključeno |
 
 (⌃ je Control, a ⌥ je Option.)
 

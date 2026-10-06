@@ -6,15 +6,15 @@ description: Tastatursnarveiene som svarer, legger på, setter på vent, slår a
 
 **Innstillinger → Snarveier** viser telefonens tastatursnarveier.
 
-<Shot name="16_settings_shortcuts" alt="Innstillinger → Tastatursnarveier" />
+<Shot name="16_settings_shortcuts" alt="Innstillinger → Tastatursnarveier (macOS)">macOS</Shot>
 
-| Handling | Snarvei på macOS | **Overalt** |
-| --- | --- | --- |
-| **Svare på en samtale** | ⌃⌥A | av |
-| **Legg på** | ⌃⌥E | av |
-| **Sette på vent eller gjenoppta** | ⌃⌥H | av |
-| **Slå av mikrofonen** | ⌃⌥M | av |
-| **Vise eller skjule telefonen** | ⌃⌥S | på |
+| Handling | Snarvei på Windows | Snarvei på macOS | **Overalt** |
+| --- | --- | --- | --- |
+| **Svare på en samtale** | Ctrl+Alt+A | ⌃⌥A | av |
+| **Legg på** | Ctrl+Alt+E | ⌃⌥E | av |
+| **Sette på vent eller gjenoppta** | Ctrl+Alt+H | ⌃⌥H | av |
+| **Slå av mikrofonen** | Ctrl+Alt+M | ⌃⌥M | av |
+| **Vise eller skjule telefonen** | Ctrl+Alt+S | ⌃⌥S | på |
 
 (⌃ er Control, og ⌥ er Option.)
 
