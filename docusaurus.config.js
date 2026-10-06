@@ -87,6 +87,10 @@ const config = {
   // a page_view for every page opened inside the site, not only the first
   clientModules: ['./src/clientModules/gtag.js'],
 
+  // The product site the documentation belongs to; the structured data and
+  // the llms.txt index point at it (docusaurus.config.ru.js sets its own)
+  customFields: { productUrl: 'https://ai-softphone.com/' },
+
   plugins: ['./scripts/docs-discovery.mjs'],
 
   presets: [

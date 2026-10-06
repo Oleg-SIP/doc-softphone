@@ -1,0 +1,131 @@
+/* The Russian documentation (docusaurus.config.ru.js) in the look of
+   ai-softphone.ru: Inter, a red accent, a light grey page with white
+   cards, 16–24 px corners. The values are the ones in that site's
+   style.css (--primary #E6372D, text #0E212C, muted #4A5A6A, page #F3F4F8,
+   border #E6E6E6). */
+:root {
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-family-monospace: Consolas, Menlo, monospace;
+  --ifm-heading-font-weight: 800;
+  --ifm-font-weight-bold: 700;
+  --ifm-font-color-base: #0E212C;
+  --ifm-heading-color: #0E212C;
+  --ifm-background-color: #F3F4F8;
+  --ifm-background-surface-color: #FFFFFF;
+  --ifm-color-primary: #E6372D;
+  --ifm-color-primary-dark: #D12A20;
+  --ifm-color-primary-darker: #C31919;
+  --ifm-color-primary-darkest: #A01414;
+  --ifm-color-primary-light: #E9514A;
+  --ifm-color-primary-lighter: #EC6660;
+  --ifm-color-primary-lightest: #F28A85;
+  --ifm-link-color: #E6372D;
+  --ifm-link-hover-color: #C31919;
+  --ifm-color-emphasis-300: #E6E6E6;
+  --ifm-color-content-secondary: #4A5A6A;
+  --ifm-global-radius: 12px;
+  --ifm-code-font-size: 92%;
+  --ifm-navbar-height: 4.4rem;
+  --ifm-navbar-background-color: rgba(255, 255, 255, .95);
+  --ifm-navbar-shadow: none;
+  --ifm-toc-border-color: #E6E6E6;
+  --ifm-menu-color-background-active: rgba(230, 55, 45, .08);
+  --ifm-menu-color-background-hover: rgba(230, 55, 45, .05);
+  --ifm-table-stripe-background: #F7F8FB;
+  --ifm-table-border-color: #E6E6E6;
+  --ifm-code-background: rgba(14, 33, 44, .06);
+  --shadow-glow: 4px 4px 30px rgba(0, 0, 0, .06);
+}
+
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+
+/* ---- the top bar: white, thin border, logo "AI-softphone" ---- */
+.navbar {
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid #E6E6E6;
+  padding: .6rem 1rem;
+}
+.navbar__title {
+  /* the translated title is drawn from pieces below, so it is the same on
+     every build: black "AI-", red "softphone", as on ai-softphone.ru */
+  font-size: 0; line-height: 1;
+}
+.navbar__title::before, .navbar__title::after {
+  font-weight: 800; font-size: 1.55rem; letter-spacing: -.5px;
+}
+.navbar__title::before { content: 'AI-'; color: #0E212C; }
+.navbar__title::after { content: 'softphone'; color: #E6372D; }
+.navbar__brand:hover { text-decoration: none; }
+.navbar__link { color: #4A5A6A; font-weight: 500; font-size: .95rem; transition: color .2s; }
+.navbar__link:hover, .navbar__link--active { color: #E6372D; }
+/* the link to the main site is the button of ai-softphone.ru */
+.navbar .navbar-main-site {
+  color: #fff !important; font-weight: 600; font-size: .9rem;
+  background: linear-gradient(118.97deg, #E6372D .19%, #C31919 99.81%);
+  padding: 8px 20px; margin-left: .4rem; border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(230, 55, 45, .3);
+  transition: transform .2s, box-shadow .2s;
+}
+.navbar .navbar-main-site:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(230, 55, 45, .4); }
+
+/* ---- sidebar ---- */
+.theme-doc-sidebar-container { border-right: 1px solid #E6E6E6 !important; background: #fff; }
+.menu__link { border-radius: 10px; font-weight: 500; color: #2D3A4A; }
+.menu__link--active:not(.menu__link--sublist) { color: #E6372D; font-weight: 600; }
+.menu__list-item-collapsible:hover { background: rgba(230, 55, 45, .05); }
+
+/* ---- the page itself: a white card on the grey ---- */
+article { line-height: 1.75; }
+.markdown > h1:first-child { font-size: 2.6rem; letter-spacing: -.03em; line-height: 1.12; margin-bottom: 1.4rem; }
+.markdown h2 { font-size: 1.75rem; letter-spacing: -.02em; margin-top: 2.6rem; padding-top: 1.4rem; border-top: 1px solid #E6E6E6; }
+.markdown h3 { font-size: 1.3rem; letter-spacing: -.01em; }
+.markdown li { margin-bottom: .3rem; }
+.markdown a:not(.hash-link) { text-decoration: none; border-bottom: 1px solid rgba(230, 55, 45, .35); }
+.markdown a:not(.hash-link):hover { border-bottom-color: #C31919; }
+.hash-link { border: 0; }
+@media (max-width: 768px) { .markdown > h1:first-child { font-size: 2rem; } }
+
+.markdown table { display: table; width: 100%; background: #fff; border-radius: 16px; overflow: hidden; border: 1px solid #E6E6E6; border-collapse: separate; border-spacing: 0; box-shadow: var(--shadow-glow); }
+.markdown table th { background: #F3F4F8; font-weight: 700; color: #0E212C; border: 0; border-bottom: 1px solid #E6E6E6; }
+.markdown table td { border: 0; border-top: 1px solid #EEF0F4; }
+.markdown table tr { background: transparent; border: 0; }
+.markdown table tr:nth-child(2n) { background: #FAFBFD; }
+@media (max-width: 768px) { .markdown table { display: block; overflow-x: auto; } }
+
+code { border: 0; border-radius: 6px; padding: .12em .4em; color: #0E212C; }
+pre code { padding: 0; }
+.prism-code, div[class*='codeBlockContainer'] { border-radius: 16px; box-shadow: var(--shadow-glow); }
+
+/* admonitions as cards of the main site */
+.alert { border-radius: 16px; border: 1px solid #E6E6E6; border-left-width: 5px; box-shadow: var(--shadow-glow); background: #fff; }
+kbd { border-radius: 6px; border: 1px solid #D8DCE3; background: #fff; box-shadow: 0 1px 0 #D8DCE3; color: #0E212C; }
+
+.table-of-contents__link--active { color: #E6372D; font-weight: 600; }
+.pagination-nav__link { border-radius: 16px; border: 1px solid #E6E6E6; background: #fff; box-shadow: var(--shadow-glow); transition: transform .25s, box-shadow .25s, border-color .2s; }
+.pagination-nav__link:hover { border-color: #E6372D; transform: translateY(-3px); box-shadow: 4px 4px 30px rgba(0, 0, 0, .12); }
+.pagination-nav__sublabel { color: #4A5A6A; }
+.breadcrumbs__link { border-radius: 8px; background: transparent; }
+.breadcrumbs__item--active .breadcrumbs__link { background: rgba(230, 55, 45, .1); color: #E6372D; font-weight: 600; }
+.theme-back-to-top-button::after { background-color: #E6372D; }
+
+/* ---- the foot: white, two columns, as ai-softphone.ru ---- */
+.footer.footer--light { background: #fff; border-top: 1px solid #E6E6E6; padding: 2.4rem 0; color: #4A5A6A; }
+.footer--light .footer__copyright { text-align: left; }
+.site-footer, .site-footer__left, .site-footer__right { text-align: left; align-items: flex-start; }
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; font-size: 1rem; }
+.site-footer__left, .site-footer__right { display: flex; flex-direction: column; gap: 6px; color: #4A5A6A; }
+.site-footer__right { max-width: 520px; gap: 12px; }
+.site-footer__company { font-weight: 500; color: #0E212C; }
+.site-footer a { color: #4A5A6A; }
+.site-footer a:hover { color: #E6372D; text-decoration: none; }
+.site-footer__right a { color: #E6372D; }
+.site-footer__right a:hover { text-decoration: underline; }
+.site-footer__main {
+  align-self: flex-start; font-weight: 600; color: #E6372D;
+  border: 2px solid #E6372D; border-radius: 12px; padding: 8px 18px;
+  transition: background .2s, color .2s;
+}
+.site-footer .site-footer__main:hover { background: #E6372D; color: #fff; text-decoration: none; }
+@media (max-width: 768px) { .site-footer { flex-direction: column; } }

@@ -28,6 +28,25 @@ npm run serve      # serve build/
 | `scripts/merge-sitemaps.mjs` | Runs after the build: puts every page of every language, with its hreflang versions, into `/sitemap.xml`, and writes `/robots.txt`. |
 | `.github/workflows/deploy.yml` | Builds every push, publishes to GitHub Pages. |
 
+## The Russian-only site (docs.ai-softphone.ru)
+
+`docusaurus.config.ru.js` builds the Russian pages alone — root of the site,
+no language switcher, the look of ai-softphone.ru, a link to ai-softphone.ru
+at the top and at the bottom, no analytics:
+
+```sh
+npm run build:ru   # static site in build-ru/ (about 32 MB)
+npm run start:ru   # http://localhost:3000 with live reload
+```
+
+Its static files are in `static-ru/` (icons of ai-softphone.ru, a few
+screenshots); the Russian screenshots are copied there from
+`static/screenshots/macos/ru` by `scripts/prepare-ru.mjs` before each build.
+The look is `src/css/ru.css`. To publish, upload the *contents* of `build-ru/`
+to the site's folder on the hosting over FTP, or run the workflow
+`.github/workflows/deploy-ru-ftp.yml` (secrets `FTP_HOST`, `FTP_USER`,
+`FTP_PASSWORD`, optionally `FTP_DIR`).
+
 ## The editor (Sveltia CMS)
 
 `<site>/admin/` is the editor: [Sveltia CMS](https://sveltiacms.app/), the

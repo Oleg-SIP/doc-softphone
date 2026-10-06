@@ -14,7 +14,8 @@ export default function DocItem(props) {
   const url = new URL(`${metadata.permalink.replace(/\/$/, '')}/`, siteConfig.url).href;
   const pageId = `${url}#webpage`;
   const websiteId = `${root}#website`;
-  const softwareId = 'https://ai-softphone.com/#software';
+  const productUrl = siteConfig.customFields.productUrl;
+  const softwareId = `${productUrl}#software`;
   const isHome = metadata.slug === '/';
   const graph = [
     {
@@ -24,7 +25,7 @@ export default function DocItem(props) {
     },
     {
       '@type': 'SoftwareApplication', '@id': softwareId,
-      name: 'AI Softphone', url: 'https://ai-softphone.com/',
+      name: 'AI Softphone', url: productUrl,
       applicationCategory: 'CommunicationApplication',
       operatingSystem: ['Windows', 'macOS', 'Linux'],
       license: 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html',

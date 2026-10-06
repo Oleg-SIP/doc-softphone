@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { translate } from '@docusaurus/Translate';
 
 /* The cookie question of ai-softphone.com, asked on the documentation too:
@@ -58,10 +59,12 @@ function ConsentBanner() {
 }
 
 export default function Root({ children }) {
+  // the Russian site (docusaurus.config.ru.js) has no analytics to ask about
+  const { siteConfig } = useDocusaurusContext();
   return (
     <>
       {children}
-      <ConsentBanner />
+      {siteConfig.customFields.cookieBanner !== false && <ConsentBanner />}
     </>
   );
 }

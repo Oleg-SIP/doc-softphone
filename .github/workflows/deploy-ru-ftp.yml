@@ -1,0 +1,43 @@
+name: Deploy Russian docs to docs.ai-softphone.ru (FTP)
+
+# The Russian-only site (docusaurus.config.ru.js), built and uploaded to the
+# hosting over FTP. Started by hand: Actions → this workflow → Run workflow.
+# Needs repository secrets FTP_HOST, FTP_USER, FTP_PASSWORD and, if the
+# site is not in the FTP root, FTP_DIR (for example /docs.ai-softphone.ru/www).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ftp-ru
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build:ru
+      - name: Upload build-ru/ over FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_DIR: ${{ secrets.FTP_DIR }}
+        run: |
+          sudo apt-get install -y lftp
+          # mirror -R: local -> server; --delete removes pages that no longer exist
+          lftp -u "$FTP_USER","$FTP_PASSWORD" "$FTP_HOST" <<LFTP
+          set ftp:ssl-allow yes
+          set ssl:verify-certificate no
+          set net:max-retries 3
+          mirror -R --delete --parallel=4 --verbose build-ru "${FTP_DIR:-/}"
+          bye
+          LFTP
