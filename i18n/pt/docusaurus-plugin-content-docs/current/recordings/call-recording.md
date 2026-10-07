@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Que chamadas são gravadas, o que é dito ao interlocutor, como são guardadas as conferências e durante quanto tempo se mantêm os ficheiros.
 ---
 
-**Definições → Gravação** decide que chamadas se tornam gravações e durante quanto tempo ficam os ficheiros. Uma chamada gravada aparece na [janela de gravações](/recordings/recordings-window).
+**Definições → Gravação** decide que chamadas se tornam gravações e durante quanto tempo ficam os ficheiros. Uma chamada gravada aparece na [janela de gravações](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Definições → Gravação" />
 

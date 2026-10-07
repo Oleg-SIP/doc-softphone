@@ -82,7 +82,7 @@ Pensil di samping nama rekaman memungkinkan Anda mengganti namanya selagi rekama
 
 ## Ke mana rekaman disimpan {#where-the-recording-goes}
 
-Percakapan yang ditangkap muncul di [jendela Rekaman](../recordings/recordings-window.md) seperti percakapan lainnya, dengan ikonnya sendiri, jendela sebagai ganti gagang telepon, dan dengan judul yang Anda berikan atau **Aplikasi lain**.
+Percakapan yang ditangkap muncul di [jendela Rekaman](../interface/recordings.md) seperti percakapan lainnya, dengan ikonnya sendiri, jendela sebagai ganti gagang telepon, dan dengan judul yang Anda berikan atau **Aplikasi lain**.
 
 <Shot name="01_recordings" alt="Rapat yang ditangkap di tab Rekaman, ditandai dengan ikon jendela" />
 

@@ -23,7 +23,7 @@ Svaki modul ima polje za potvrdu, naziv, red o tome šta radi, a desno svoje sta
 | **Rečnici** | Kategorije, oznake i upozorenja — kodovi na koje pokazuje sve ostalo: [Rečnici](/ai-processing/dictionaries). |
 | **Imenik** | Adresar: [Kontakti](/interface/contacts-history). |
 | **Povezivanje** | Lokalni API i veb-kuke: [Povezivanje](/integration/rest-api). |
-| **Skladište zapisa** | Biblioteka razgovora i koliko se dugo čuvaju: [Snimci](/recordings/recordings-window). |
+| **Skladište zapisa** | Biblioteka razgovora i koliko se dugo čuvaju: [Snimci](/interface/recordings). |
 | **Obrada** | Uputstva i pravila koja ih okidaju: [Obrada](/ai-processing/processing). |
 | **Snimanje** | Snimanje poziva i obaveštavanje druge strane o tome: [Snimanje poziva](/recordings/call-recording). |
 | **Telefonija** | SIP, nalozi, pozivi, polje za biranje i istorija poziva. |

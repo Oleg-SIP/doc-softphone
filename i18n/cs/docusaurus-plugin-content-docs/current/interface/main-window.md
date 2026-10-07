@@ -38,7 +38,7 @@ Pod štítky jsou [tlačítka](../sip-accounts/buttons.md), která jste vytvoři
 
 ### Nahrávky, Kontakty, Historie, Nastavení {#recordings-contacts-history-settings}
 
-Tyto čtyři položky dole otevírají kartu vpravo, jednu vedle druhé: [Nahrávky](../recordings/recordings-window.md), [Kontakty a Historie](contacts-history.md) a [Nastavení](settings-overview.md). Otevřené karty zůstávají v řadě nahoře na pravé straně.
+Tyto čtyři položky dole otevírají kartu vpravo, jednu vedle druhé: [Nahrávky](../interface/recordings.md), [Kontakty a Historie](contacts-history.md) a [Nastavení](settings-overview.md). Otevřené karty zůstávají v řadě nahoře na pravé straně.
 
 ## Probíhající hovor {#a-call-in-progress}
 

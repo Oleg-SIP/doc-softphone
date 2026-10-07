@@ -8,7 +8,7 @@ description: "\"Velg gjenkjenneren som gjør lyd om til tekst: adressen, modelle
 
 <Shot name="25_transcription" alt="Innstillinger → Transkripsjon: språket og fire gjenkjennere" />
 
-En samtale skrives ut når du ber om det i [vinduet Opptak](/recordings/recordings-window), eller av seg selv hvis **Behandle samtaler automatisk** er på under [Behandling](/ai-processing/processing). En gjenkjenner på din egen maskin koster ingenting å kjøre; en i skyen tar betalt per minutt lyd.
+En samtale skrives ut når du ber om det i [vinduet Opptak](/interface/recordings), eller av seg selv hvis **Behandle samtaler automatisk** er på under [Behandling](/ai-processing/processing). En gjenkjenner på din egen maskin koster ingenting å kjøre; en i skyen tar betalt per minutt lyd.
 
 ## Språk {#language}
 
@@ -25,7 +25,7 @@ En gjenkjenner er en tale-til-tekst-tjeneste som telefonen sender lyd til. Trykk
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Den som er merket **standard** til høyre på raden (**X.ai** på bildet), brukes når du ikke velger en annen. Du kan beholde flere. Nedtrekkslisten over en utskrift i [vinduet Opptak](/recordings/recordings-window#the-transcript-and-the-write-up) viser utskriftene hver gjenkjenner har laget.
+Den som er merket **standard** til høyre på raden (**X.ai** på bildet), brukes når du ikke velger en annen. Du kan beholde flere. Nedtrekkslisten over en utskrift i [vinduet Opptak](/interface/recordings#the-transcript-and-the-write-up) viser utskriftene hver gjenkjenner har laget.
 
 Modellen kan stå tom. Tjenesten bruker da sin egen standard.
 
@@ -95,4 +95,4 @@ Modellen må kjøres av en server som tilbyr det OpenAI-kompatible endepunktet `
 
 Enhver annen server som tilbyr det samme endepunktet, virker på samme måte. Krever en server en nøkkel, skriver du den inn som for en skytjeneste.
 
-Før du stoler på en server, lager du et testopptak og ser på utskriften i [vinduet Opptak](/recordings/recordings-window): en samtale på et språk modellen kan dårlig, avslører det med én gang.
+Før du stoler på en server, lager du et testopptak og ser på utskriften i [vinduet Opptak](/interface/recordings): en samtale på et språk modellen kan dårlig, avslører det med én gang.

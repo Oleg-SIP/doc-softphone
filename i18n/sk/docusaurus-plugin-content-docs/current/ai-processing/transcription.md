@@ -8,7 +8,7 @@ description: "\"Vyberte rozpoznávač, ktorý premieňa zvuk na text: jeho adres
 
 <Shot name="25_transcription" alt="Nastavenia → Prepis: jazyk a štyri rozpoznávače" />
 
-Rozhovor sa prepíše, keď o to požiadate v [okne Nahrávky](/recordings/recordings-window), alebo sám, ak je v [Spracovaní](/ai-processing/processing) zapnuté **Spracovávať hovory automaticky**. Rozpoznávač na vlastnom počítači nestojí nič; ten v cloude účtuje za minútu zvuku.
+Rozhovor sa prepíše, keď o to požiadate v [okne Nahrávky](/interface/recordings), alebo sám, ak je v [Spracovaní](/ai-processing/processing) zapnuté **Spracovávať hovory automaticky**. Rozpoznávač na vlastnom počítači nestojí nič; ten v cloude účtuje za minútu zvuku.
 
 ## Jazyk {#language}
 
@@ -25,7 +25,7 @@ Rozpoznávač je služba prevodu reči na text, ktorej telefón posiela zvuk. St
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Ten, ktorý je vpravo vo svojom riadku označený ako **Predvolený** (na obrázku **X.ai**), sa použije, keď nevyberiete iný. Môžete ich mať niekoľko. Rozbaľovací zoznam nad prepisom v [okne Nahrávky](/recordings/recordings-window#the-transcript-and-the-write-up) uvádza prepisy vytvorené každým rozpoznávačom.
+Ten, ktorý je vpravo vo svojom riadku označený ako **Predvolený** (na obrázku **X.ai**), sa použije, keď nevyberiete iný. Môžete ich mať niekoľko. Rozbaľovací zoznam nad prepisom v [okne Nahrávky](/interface/recordings#the-transcript-and-the-write-up) uvádza prepisy vytvorené každým rozpoznávačom.
 
 Model môže zostať prázdny. Služba potom použije svoj predvolený.
 
@@ -95,4 +95,4 @@ Model musí prevádzkovať server, ktorý ponúka koncový bod `/v1/audio/transc
 
 Rovnako funguje akýkoľvek iný server, ktorý ponúka ten istý koncový bod. Ak server potrebuje kľúč, zadajte ho ako pri cloudovej službe.
 
-Skôr než sa na server spoľahnete, urobte skúšobnú nahrávku a pozrite si prepis v [okne Nahrávky](/recordings/recordings-window): rozhovor v jazyku, ktorý model pozná slabo, to ukáže okamžite.
+Skôr než sa na server spoľahnete, urobte skúšobnú nahrávku a pozrite si prepis v [okne Nahrávky](/interface/recordings): rozhovor v jazyku, ktorý model pozná slabo, to ukáže okamžite.

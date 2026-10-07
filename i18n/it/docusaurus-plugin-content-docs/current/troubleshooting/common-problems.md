@@ -50,7 +50,7 @@ Veda [Cattura](/capture/).
 
 ## C'è una registrazione, ma nessuna trascrizione o riassunto {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Una conversazione viene trascritta e riassunta da sola solo se **Elabora le conversazioni automaticamente** è attivo in [Impostazioni → Elaborazione](/ai-processing/processing). Altrimenti lo chieda nella [finestra delle registrazioni](/recordings/recordings-window).
+- Una conversazione viene trascritta e riassunta da sola solo se **Elabora le conversazioni automaticamente** è attivo in [Impostazioni → Elaborazione](/ai-processing/processing). Altrimenti lo chieda nella [finestra delle registrazioni](/interface/recordings).
 - Ci devono essere un [riconoscitore](/ai-processing/transcription) e un [modello linguistico](/ai-processing/processing#language-models), e ciascuno deve rispondere al suo indirizzo.
 - Quando viene raggiunto il **Limite di spesa** o il **Limite di token** mensile, le regole automatiche si fermano fino al mese successivo. Ciò che chiede lei stesso non viene mai fermato.
 - I passi di [Impostazioni → Panoramica](/interface/settings-overview) mostrano che cosa resta da configurare.

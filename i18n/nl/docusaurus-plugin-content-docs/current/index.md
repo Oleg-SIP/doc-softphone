@@ -55,7 +55,7 @@ De schermafbeeldingen in deze documentatie zijn op macOS gemaakt en klein weerge
 | De codecs, het wisselgesprek en de gesprekgeschiedenis instellen | [Gespreksinstellingen](sip-accounts/calls.md) |
 | Collega's op knoppen met één druk zetten | [Knoppen](sip-accounts/buttons.md) |
 | Bepalen welke gesprekken worden opgenomen, en hoelang | [Gesprekken opnemen](recordings/call-recording.md) |
-| Uw gesprekken beluisteren, doorzoeken en lezen | [Venster Opnames](recordings/recordings-window.md) |
+| Uw gesprekken beluisteren, doorzoeken en lezen | [Venster Opnames](interface/recordings.md) |
 | Een vergadering in een andere toepassing opnemen | [Vastleggen](capture/capture.md) |
 | De herkenner kiezen die spraak in tekst omzet | [Transcriptie](ai-processing/transcription.md) |
 | Bepalen welke AI uw gesprekken uitwerkt en wat dat mag kosten | [Verwerking](ai-processing/processing.md) |

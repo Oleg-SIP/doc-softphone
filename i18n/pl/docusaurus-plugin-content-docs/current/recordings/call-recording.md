@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Które połączenia są nagrywane, co słyszy druga strona, jak zapisywane są konferencje i jak długo przechowywane są pliki.
 ---
 
-**Ustawienia → Nagrywanie** decyduje, które połączenia stają się nagraniami i jak długo pliki są przechowywane. Nagrane połączenie pojawia się w [oknie nagrań](/recordings/recordings-window).
+**Ustawienia → Nagrywanie** decyduje, które połączenia stają się nagraniami i jak długo pliki są przechowywane. Nagrane połączenie pojawia się w [oknie nagrań](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Ustawienia → Nagrywanie" />
 

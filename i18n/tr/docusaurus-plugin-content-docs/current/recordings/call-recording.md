@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Hangi çağrıların kaydedildiği, karşı tarafa ne söylendiği, konferansların nasıl kaydedildiği ve dosyaların ne kadar süre saklandığı.
 ---
 
-**Ayarlar → Kayıt**, hangi çağrıların kayda dönüşeceğine ve dosyaların ne kadar süre kalacağına karar verir. Kaydedilen bir çağrı [Kayıtlar penceresinde](/recordings/recordings-window) görünür.
+**Ayarlar → Kayıt**, hangi çağrıların kayda dönüşeceğine ve dosyaların ne kadar süre kalacağına karar verir. Kaydedilen bir çağrı [Kayıtlar penceresinde](/interface/recordings) görünür.
 
 <Shot name="09_settings_recording" alt="Ayarlar → Kayıt" />
 

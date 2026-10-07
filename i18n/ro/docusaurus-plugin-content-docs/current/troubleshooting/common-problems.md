@@ -50,7 +50,7 @@ Consultați [Captare](/capture/).
 
 ## Există o înregistrare, dar nu și o transcriere sau un rezumat {#there-is-a-recording-but-no-transcript-or-summary}
 
-- O conversație este transcrisă și prelucrată de la sine doar dacă **Prelucrează conversațiile automat** este pornit în [Setări → Prelucrare](/ai-processing/processing). Altfel, cereți acest lucru în [fereastra Înregistrări](/recordings/recordings-window).
+- O conversație este transcrisă și prelucrată de la sine doar dacă **Prelucrează conversațiile automat** este pornit în [Setări → Prelucrare](/ai-processing/processing). Altfel, cereți acest lucru în [fereastra Înregistrări](/interface/recordings).
 - Trebuie să existe un [recunoscător](/ai-processing/transcription) și un [model de limbă](/ai-processing/processing#language-models), iar fiecare trebuie să răspundă la adresa lui.
 - Când este atinsă **Limită de bani, lunar** sau **Limită de tokenuri, lunar**, regulile automate se opresc până la începutul lunii următoare. Ceea ce cereți chiar dumneavoastră nu este oprit niciodată.
 - Pașii din [Setări → Prezentare generală](/interface/settings-overview) arată ce mai rămâne de configurat.

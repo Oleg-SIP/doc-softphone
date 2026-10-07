@@ -82,7 +82,7 @@ Salvestise nime kõrval olev pliiats laseb seda salvestamise ajal ümber nimetad
 
 ## Kuhu salvestis läheb {#where-the-recording-goes}
 
-Hõivatud vestlus ilmub [salvestiste aknasse](../recordings/recordings-window.md) nagu iga teinegi, oma ikooniga — aken toru asemel — ja teie antud pealkirjaga või nimega **Teine rakendus**.
+Hõivatud vestlus ilmub [salvestiste aknasse](../interface/recordings.md) nagu iga teinegi, oma ikooniga — aken toru asemel — ja teie antud pealkirjaga või nimega **Teine rakendus**.
 
 <Shot name="01_recordings" alt="Hõivatud koosolekud vahekaardil Salvestised, tähistatud akna ikooniga" />
 

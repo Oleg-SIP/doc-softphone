@@ -38,7 +38,7 @@ Markeringen die *allemaal tegelijk op hetzelfde gesprek van toepassing kunnen zi
 
 ## Signalen {#red-flags}
 
-Dingen die aandacht vragen, gevonden in het gesprek met het bewijs en het tijdstip — bijvoorbeeld *Boze klant* of *Opzegrisico*. Signalen worden rood getekend in het [venster Opnames](../recordings/recordings-window.md), en elk heeft een ernst: laag, middel of hoog.
+Dingen die aandacht vragen, gevonden in het gesprek met het bewijs en het tijdstip — bijvoorbeeld *Boze klant* of *Opzegrisico*. Signalen worden rood getekend in het [venster Opnames](../interface/recordings.md), en elk heeft een ernst: laag, middel of hoog.
 
 ## Antwoordvormen en taal {#answer-shapes-and-language}
 

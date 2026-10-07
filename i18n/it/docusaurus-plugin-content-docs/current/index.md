@@ -55,7 +55,7 @@ Le schermate di questa documentazione sono fatte su macOS e mostrate in piccolo:
 | Impostare i codec, l'avviso di chiamata e il registro chiamate | [Impostazioni delle chiamate](sip-accounts/calls.md) |
 | Mettere i colleghi su pulsanti a un tocco | [Pulsanti](sip-accounts/buttons.md) |
 | Decidere quali chiamate vengono registrate, e per quanto tempo | [Registrare le chiamate](recordings/call-recording.md) |
-| Ascoltare, cercare e leggere le sue conversazioni | [Finestra delle registrazioni](recordings/recordings-window.md) |
+| Ascoltare, cercare e leggere le sue conversazioni | [Finestra delle registrazioni](interface/recordings.md) |
 | Registrare una riunione tenuta in un'altra applicazione | [Cattura](capture/capture.md) |
 | Scegliere il riconoscitore che trasforma la voce in testo | [Trascrizione](ai-processing/transcription.md) |
 | Decidere quale IA scrive i resoconti delle sue conversazioni e quanto può costare | [Elaborazione](ai-processing/processing.md) |

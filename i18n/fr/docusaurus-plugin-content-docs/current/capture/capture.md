@@ -82,7 +82,7 @@ Le crayon à côté du nom de l'enregistrement permet de le renommer pendant qu'
 
 ## Où va l'enregistrement {#where-the-recording-goes}
 
-Une conversation capturée apparaît dans la [fenêtre des enregistrements](../recordings/recordings-window.md) comme n'importe quelle autre, avec sa propre icône, une fenêtre au lieu d'un combiné, et avec le titre que vous lui avez donné ou **Une autre application**.
+Une conversation capturée apparaît dans la [fenêtre des enregistrements](../interface/recordings.md) comme n'importe quelle autre, avec sa propre icône, une fenêtre au lieu d'un combiné, et avec le titre que vous lui avez donné ou **Une autre application**.
 
 <Shot name="01_recordings" alt="Des réunions capturées dans l'onglet Enregistrements, marquées d'une icône de fenêtre" />
 

@@ -1,6 +1,6 @@
 ---
 title: Overzicht van de instellingen
-sidebar_position: 3
+sidebar_position: 4
 description: De controlelijst Overzicht en de tabbladen van het venster Instellingen, en waar elk ervan beschreven staat.
 ---
 

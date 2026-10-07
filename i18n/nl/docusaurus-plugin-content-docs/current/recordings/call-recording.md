@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Welke gesprekken worden opgenomen, wat de andere partij te horen krijgt, hoe vergaderingen worden opgeslagen en hoelang de bestanden bewaard blijven.
 ---
 
-**Instellingen → Opname** bepaalt welke gesprekken opnames worden, en hoelang de bestanden blijven. Een opgenomen gesprek verschijnt in het [venster Opnames](/recordings/recordings-window).
+**Instellingen → Opname** bepaalt welke gesprekken opnames worden, en hoelang de bestanden blijven. Een opgenomen gesprek verschijnt in het [venster Opnames](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Instellingen → Opname" />
 

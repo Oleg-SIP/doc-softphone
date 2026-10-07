@@ -8,7 +8,7 @@ description: "\"Izberite razpoznavalnik, ki zvok spremeni v besedilo: njegov nas
 
 <Shot name="25_transcription" alt="Nastavitve → Prepis: jezik in štirje razpoznavalniki" />
 
-Pogovor se prepiše, ko to zahtevate v [oknu Posnetki](/recordings/recordings-window), ali sam, če je v [Obdelavi](/ai-processing/processing) vklopljeno **Obdeluj pogovore samodejno**. Razpoznavalnik na lastnem računalniku ne stane nič; tisti v oblaku zaračuna po minuti zvoka.
+Pogovor se prepiše, ko to zahtevate v [oknu Posnetki](/interface/recordings), ali sam, če je v [Obdelavi](/ai-processing/processing) vklopljeno **Obdeluj pogovore samodejno**. Razpoznavalnik na lastnem računalniku ne stane nič; tisti v oblaku zaračuna po minuti zvoka.
 
 ## Jezik {#language}
 
@@ -25,7 +25,7 @@ Razpoznavalnik je storitev za pretvorbo govora v besedilo, ki ji telefon pošilj
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Tisti, ki je desno v svoji vrstici označen kot **Privzeto** (na sliki **X.ai**), se uporabi, ko ne izberete drugega. Imate jih lahko več. Spustni seznam nad prepisom v [oknu Posnetki](/recordings/recordings-window#the-transcript-and-the-write-up) navaja prepise, ki jih je naredil vsak razpoznavalnik.
+Tisti, ki je desno v svoji vrstici označen kot **Privzeto** (na sliki **X.ai**), se uporabi, ko ne izberete drugega. Imate jih lahko več. Spustni seznam nad prepisom v [oknu Posnetki](/interface/recordings#the-transcript-and-the-write-up) navaja prepise, ki jih je naredil vsak razpoznavalnik.
 
 Model lahko ostane prazen. Storitev nato uporabi svojega privzetega.
 
@@ -95,4 +95,4 @@ Model mora poganjati strežnik, ki ponuja končno točko `/v1/audio/transcriptio
 
 Enako deluje kateri koli drug strežnik, ki ponuja isto končno točko. Če strežnik potrebuje ključ, ga vpišite kot pri storitvi v oblaku.
 
-Preden se zanesete na strežnik, naredite preizkusni posnetek in poglejte prepis v [oknu Posnetki](/recordings/recordings-window): pogovor v jeziku, ki ga model slabo pozna, to pokaže takoj.
+Preden se zanesete na strežnik, naredite preizkusni posnetek in poglejte prepis v [oknu Posnetki](/interface/recordings): pogovor v jeziku, ki ga model slabo pozna, to pokaže takoj.

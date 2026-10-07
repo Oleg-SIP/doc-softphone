@@ -55,7 +55,7 @@ Die Bildschirmfotos in dieser Dokumentation stammen von macOS und werden verklei
 | Codecs, Anklopfen und Anrufliste einstellen möchten | [Anrufeinstellungen](sip-accounts/calls.md) |
 | Kollegen auf Tasten legen möchten | [Tasten](sip-accounts/buttons.md) |
 | festlegen möchten, welche Anrufe aufgenommen werden und wie lange | [Anrufe aufnehmen](recordings/call-recording.md) |
-| Ihre Gespräche anhören, durchsuchen und lesen möchten | [Aufnahmefenster](recordings/recordings-window.md) |
+| Ihre Gespräche anhören, durchsuchen und lesen möchten | [Aufnahmefenster](interface/recordings.md) |
 | eine Besprechung in einer anderen Anwendung aufnehmen möchten | [Mitschnitt](capture/capture.md) |
 | den Spracherkenner wählen möchten, der Sprache in Text verwandelt | [Transkription](ai-processing/transcription.md) |
 | festlegen möchten, welche KI Ihre Gespräche auswertet und was das kosten darf | [Verarbeitung](ai-processing/processing.md) |

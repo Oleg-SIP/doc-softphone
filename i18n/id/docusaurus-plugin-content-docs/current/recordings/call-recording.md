@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Panggilan mana yang direkam, apa yang diberitahukan kepada pihak lain, bagaimana konferensi disimpan, dan berapa lama berkas disimpan.
 ---
 
-**Pengaturan → Perekaman** menentukan panggilan mana yang menjadi rekaman, dan berapa lama berkasnya disimpan. Panggilan yang direkam muncul di [jendela Rekaman](/recordings/recordings-window).
+**Pengaturan → Perekaman** menentukan panggilan mana yang menjadi rekaman, dan berapa lama berkasnya disimpan. Panggilan yang direkam muncul di [jendela Rekaman](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Pengaturan → Perekaman" />
 

@@ -1,6 +1,6 @@
 ---
 title: Übersicht der Einstellungen
-sidebar_position: 3
+sidebar_position: 4
 description: Die Checkliste Übersicht und die Reiter des Einstellungsfensters, und wo jeder beschrieben ist.
 ---
 

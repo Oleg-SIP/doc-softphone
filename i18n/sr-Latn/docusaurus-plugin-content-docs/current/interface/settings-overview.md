@@ -1,6 +1,6 @@
 ---
 title: Pregled podešavanja
-sidebar_position: 3
+sidebar_position: 4
 description: Kontrolni spisak Pregled i kartice prozora Podešavanja, i gde je svaka opisana.
 ---
 

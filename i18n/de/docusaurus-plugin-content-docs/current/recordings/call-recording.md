@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Welche Anrufe aufgenommen werden, was die Gegenseite erfährt, wie Konferenzen gespeichert werden und wie lange die Dateien aufbewahrt werden.
 ---
 
-**Einstellungen → Aufnahme** legt fest, welche Anrufe zu Aufnahmen werden und wie lange die Dateien bleiben. Ein aufgenommener Anruf erscheint im [Aufnahmefenster](/recordings/recordings-window).
+**Einstellungen → Aufnahme** legt fest, welche Anrufe zu Aufnahmen werden und wie lange die Dateien bleiben. Ein aufgenommener Anruf erscheint im [Aufnahmefenster](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Einstellungen → Aufnahme" />
 

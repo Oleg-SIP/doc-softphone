@@ -55,7 +55,7 @@ Les captures d'écran de cette documentation sont prises sous macOS et affichée
 | Régler les codecs, l'appel en attente et le journal des appels | [Réglages des appels](sip-accounts/calls.md) |
 | Mettre vos collègues sur des boutons à une touche | [Boutons](sip-accounts/buttons.md) |
 | Décider quels appels sont enregistrés, et pour combien de temps | [Enregistrer les appels](recordings/call-recording.md) |
-| Écouter, rechercher et lire vos conversations | [Fenêtre des enregistrements](recordings/recordings-window.md) |
+| Écouter, rechercher et lire vos conversations | [Fenêtre des enregistrements](interface/recordings.md) |
 | Enregistrer une réunion tenue dans une autre application | [Capture](capture/capture.md) |
 | Choisir la reconnaissance qui transforme la parole en texte | [Transcription](ai-processing/transcription.md) |
 | Décider quelle IA rédige vos conversations et ce qu'elle peut coûter | [Traitement](ai-processing/processing.md) |

@@ -50,7 +50,7 @@ Skatiet [Tveršana](/capture/).
 
 ## Ieraksts ir, bet nav atšifrējuma vai kopsavilkuma {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Saruna tiek atšifrēta un apkopota pati tikai tad, ja sadaļā [Iestatījumi → Apstrāde](/ai-processing/processing) ir ieslēgts **Apstrādāt sarunas automātiski**. Citādi pieprasiet to [ierakstu logā](/recordings/recordings-window).
+- Saruna tiek atšifrēta un apkopota pati tikai tad, ja sadaļā [Iestatījumi → Apstrāde](/ai-processing/processing) ir ieslēgts **Apstrādāt sarunas automātiski**. Citādi pieprasiet to [ierakstu logā](/interface/recordings).
 - Jābūt [atpazinējam](/ai-processing/transcription) un [valodas modelim](/ai-processing/processing#language-models), un katram jāatbild savā adresē.
 - Kad ikmēneša **Naudas robeža** vai **Marķieru robeža** ir sasniegta, automātiskās kārtulas apstājas līdz mēneša maiņai. Tas, ko pieprasāt paši, nekad netiek apturēts.
 - Sadaļas [Iestatījumi → Pārskats](/interface/settings-overview) soļi rāda, kas vēl jāiestata.

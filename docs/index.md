@@ -55,7 +55,7 @@ The screenshots in this documentation are taken on macOS and shown small: click 
 | Set the codecs, call waiting and the call log | [Calls settings](sip-accounts/calls.md) |
 | Put colleagues on one-touch buttons | [Buttons](sip-accounts/buttons.md) |
 | Decide which calls are recorded, and for how long | [Recording calls](recordings/call-recording.md) |
-| Listen to, search and read your conversations | [Recordings window](recordings/recordings-window.md) |
+| Listen to, search and read your conversations | [Recordings window](interface/recordings.md) |
 | Record a meeting held in another application | [Capture](capture/capture.md) |
 | Choose the recogniser that turns speech into text | [Transcription](ai-processing/transcription.md) |
 | Decide which AI writes up your conversations and what it may cost | [Processing](ai-processing/processing.md) |

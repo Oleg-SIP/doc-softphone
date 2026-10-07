@@ -1,6 +1,6 @@
 ---
 title: Contatti e cronologia
-sidebar_position: 2
+sidebar_position: 3
 description: La rubrica e il registro chiamate, accanto al telefono.
 ---
 

@@ -38,7 +38,7 @@ Etikete koje *sve mogu da važe za isti razgovor*. Pritisnite **Dodaj** da dodat
 
 ## Upozorenja {#red-flags}
 
-Stvari koje traže pažnju, pronađene u razgovoru sa dokazom i vremenom — na primer *Ljutit kupac* ili *Opasnost od odlaska*. Upozorenja su nacrtana crveno u [prozoru Snimci](../recordings/recordings-window.md) i svako nosi ozbiljnost: nisku, srednju ili visoku.
+Stvari koje traže pažnju, pronađene u razgovoru sa dokazom i vremenom — na primer *Ljutit kupac* ili *Opasnost od odlaska*. Upozorenja su nacrtana crveno u [prozoru Snimci](../interface/recordings.md) i svako nosi ozbiljnost: nisku, srednju ili visoku.
 
 ## Oblici odgovora i jezik {#answer-shapes-and-language}
 

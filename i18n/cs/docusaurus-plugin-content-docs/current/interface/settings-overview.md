@@ -1,6 +1,6 @@
 ---
 title: Přehled nastavení
-sidebar_position: 3
+sidebar_position: 4
 description: Kontrolní seznam Přehled a karty okna Nastavení a kde je která popsána.
 ---
 

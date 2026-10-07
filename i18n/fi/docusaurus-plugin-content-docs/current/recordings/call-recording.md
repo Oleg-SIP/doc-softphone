@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Mitkä puhelut tallennetaan, mitä toiselle osapuolelle kerrotaan, miten neuvottelut tallennetaan ja kuinka kauan tiedostot säilytetään.
 ---
 
-**Asetukset → Tallennus** päättää, mistä puheluista tulee tallenteita ja kuinka kauan tiedostot säilyvät. Tallennettu puhelu ilmestyy [Tallenteet-ikkunaan](/recordings/recordings-window).
+**Asetukset → Tallennus** päättää, mistä puheluista tulee tallenteita ja kuinka kauan tiedostot säilyvät. Tallennettu puhelu ilmestyy [Tallenteet-ikkunaan](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Asetukset → Tallennus" />
 

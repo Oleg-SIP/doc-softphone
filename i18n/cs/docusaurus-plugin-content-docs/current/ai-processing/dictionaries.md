@@ -40,7 +40,7 @@ Značky, *které mohou o tomtéž hovoru platit všechny*. Nový přidáte tlač
 
 ## Varovné signály {#red-flags}
 
-Věci, které vyžadují pozornost, nalezené v rozhovoru s důkazem a časem — například *Rozzlobený zákazník* nebo *Riziko odchodu*. Varovné signály jsou v [okně nahrávek](../recordings/recordings-window.md) červeně a každý má závažnost: nízkou, střední nebo vysokou.
+Věci, které vyžadují pozornost, nalezené v rozhovoru s důkazem a časem — například *Rozzlobený zákazník* nebo *Riziko odchodu*. Varovné signály jsou v [okně nahrávek](../interface/recordings.md) červeně a každý má závažnost: nízkou, střední nebo vysokou.
 
 ## Tvary odpovědí a jazyk {#answer-shapes-and-language}
 

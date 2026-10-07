@@ -82,7 +82,7 @@ Bút chì cạnh tên bản ghi cho phép bạn đổi tên nó ngay trong lúc 
 
 ## Bản ghi đi đâu {#where-the-recording-goes}
 
-Cuộc trò chuyện đã thu xuất hiện trong [cửa sổ Bản ghi](../recordings/recordings-window.md) như mọi cuộc khác, với biểu tượng riêng — một cửa sổ thay cho ống nghe — và với tiêu đề bạn đã đặt hoặc **Ứng dụng khác**.
+Cuộc trò chuyện đã thu xuất hiện trong [cửa sổ Bản ghi](../interface/recordings.md) như mọi cuộc khác, với biểu tượng riêng — một cửa sổ thay cho ống nghe — và với tiêu đề bạn đã đặt hoặc **Ứng dụng khác**.
 
 <Shot name="01_recordings" alt="Các cuộc họp đã thu trong thẻ Bản ghi, được đánh dấu bằng biểu tượng cửa sổ" />
 

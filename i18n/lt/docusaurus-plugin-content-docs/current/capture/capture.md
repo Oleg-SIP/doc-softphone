@@ -82,7 +82,7 @@ Pieštukas šalia įrašo pavadinimo leidžia jį pervadinti įrašymo metu. Įr
 
 ## Kur patenka įrašas {#where-the-recording-goes}
 
-Perimtas pokalbis atsiranda [įrašų lange](../recordings/recordings-window.md) kaip ir bet kuris kitas, su savo piktograma — langu vietoje ragelio — ir su jūsų suteiktu pavadinimu arba **Kita programa**.
+Perimtas pokalbis atsiranda [įrašų lange](../interface/recordings.md) kaip ir bet kuris kitas, su savo piktograma — langu vietoje ragelio — ir su jūsų suteiktu pavadinimu arba **Kita programa**.
 
 <Shot name="01_recordings" alt="Perimti susitikimai skirtuke Įrašai, pažymėti lango piktograma" />
 

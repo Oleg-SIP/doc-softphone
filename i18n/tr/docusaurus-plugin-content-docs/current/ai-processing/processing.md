@@ -10,7 +10,7 @@ description: Görüşmelerin otomatik işlenmesi, aylık harcama sınırları, d
 
 ## Görüşmeleri kendiliğinden işle {#process-conversations-automatically}
 
-- **Kapalı:** [Kayıtlar penceresinde](../recordings/recordings-window.md) siz isteyene kadar hiçbir şey olmaz.
+- **Kapalı:** [Kayıtlar penceresinde](../interface/recordings.md) siz isteyene kadar hiçbir şey olmaz.
 - **Açık:** aşağıdaki [kurallar](#rules) kendi kendine çalışır. Bir görüşmeyi, kimse bir şeye basmadan bir özete, bir kategoriye ve geri kalan her şeye dönüştüren budur. Buluttaki bir model bu adımların her biri için ücret alır.
 
 Onay kutusunun altında program bu ay ne kadar harcandığını ve kaç istek üzerinden harcandığını gösterir, örneğin *Bu ay: 40.492 belirteç, 84 istek üzerinden, ücretsiz.*

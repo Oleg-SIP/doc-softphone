@@ -23,7 +23,7 @@ Fiecare modul are o casetă de bifat, un nume, un rând care spune ce face și, 
 | **Dicționare** | Categorii, etichete și semnale de alarmă — codurile la care trimite tot restul: [Dicționare](/ai-processing/dictionaries). |
 | **Agendă** | Agenda de adrese: [Contacte](/interface/contacts-history). |
 | **Integrare** | API-ul local și webhookurile: [Integrare](/integration/rest-api). |
-| **Depozit media** | Biblioteca de conversații și cât timp sunt păstrate: [Înregistrări](/recordings/recordings-window). |
+| **Depozit media** | Biblioteca de conversații și cât timp sunt păstrate: [Înregistrări](/interface/recordings). |
 | **Prelucrare** | Instrucțiunile și regulile care le declanșează: [Prelucrare](/ai-processing/processing). |
 | **Înregistrare** | Înregistrarea apelurilor și anunțarea celeilalte părți despre aceasta: [Înregistrarea apelurilor](/recordings/call-recording). |
 | **Telefonie** | SIP, conturile, apelurile, tastatura de apelare și istoricul apelurilor. |

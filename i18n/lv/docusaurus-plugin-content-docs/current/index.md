@@ -55,7 +55,7 @@ Saskarne pieejama trīsdesmit valodās; valodu izvēlas sadaļā [Izskats](/prog
 | Iestatīt kodekus, zvana gaidīšanu un zvanu vēsturi | [Zvanu iestatījumi](sip-accounts/calls.md) |
 | Novietot kolēģus uz vienas pieskāriena pogām | [Pogas](sip-accounts/buttons.md) |
 | Izlemt, kurus zvanus ierakstīt un cik ilgi tos glabāt | [Zvanu ierakstīšana](recordings/call-recording.md) |
-| Klausīties, meklēt un lasīt savas sarunas | [Ierakstu logs](recordings/recordings-window.md) |
+| Klausīties, meklēt un lasīt savas sarunas | [Ierakstu logs](interface/recordings.md) |
 | Ierakstīt citā lietotnē notiekošu sapulci | [Tveršana](capture/capture.md) |
 | Izvēlēties atpazinēju, kas runu pārvērš tekstā | [Pieraksts](ai-processing/transcription.md) |
 | Izlemt, kurš mākslīgais intelekts apkopo jūsu sarunas un cik tas drīkst maksāt | [Apstrāde](ai-processing/processing.md) |

@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Koji se pozivi snimaju, što se kaže drugoj strani, kako se spremaju konferencije i koliko se dugo datoteke čuvaju.
 ---
 
-**Postavke → Snimanje** odlučuje koji pozivi postaju snimke i koliko dugo datoteke ostaju. Snimljeni poziv pojavljuje se u [prozoru Snimke](/recordings/recordings-window).
+**Postavke → Snimanje** odlučuje koji pozivi postaju snimke i koliko dugo datoteke ostaju. Snimljeni poziv pojavljuje se u [prozoru Snimke](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Postavke → Snimanje" />
 

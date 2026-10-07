@@ -38,7 +38,7 @@ Under brikkene står [knappene](../sip-accounts/buttons.md) du har laget for kol
 
 ### Opptak, Kontakter, Historikk, Innstillinger {#recordings-contacts-history-settings}
 
-Disse fire punktene nederst åpner hver sin fane til høyre, side om side: [Opptak](../recordings/recordings-window.md), [Kontakter og historikk](contacts-history.md) og [Innstillinger](settings-overview.md). Faner du har åpnet, blir stående i raden øverst på høyre side.
+Disse fire punktene nederst åpner hver sin fane til høyre, side om side: [Opptak](../interface/recordings.md), [Kontakter og historikk](contacts-history.md) og [Innstillinger](settings-overview.md). Faner du har åpnet, blir stående i raden øverst på høyre side.
 
 ## En pågående samtale {#a-call-in-progress}
 

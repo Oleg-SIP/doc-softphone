@@ -55,7 +55,7 @@ Tämän dokumentaation kuvakaappaukset on otettu macOS:ssä ja näytetään pien
 | Asettaa koodekit, koputuksen ja puheluhistorian | [Puheluasetukset](sip-accounts/calls.md) |
 | Laittaa kollegat yhden painalluksen painikkeisiin | [Painikkeet](sip-accounts/buttons.md) |
 | Päättää, mitkä puhelut tallennetaan ja kuinka pitkäksi aikaa | [Puheluiden tallentaminen](recordings/call-recording.md) |
-| Kuunnella, hakea ja lukea keskustelujasi | [Tallenteet-ikkuna](recordings/recordings-window.md) |
+| Kuunnella, hakea ja lukea keskustelujasi | [Tallenteet-ikkuna](interface/recordings.md) |
 | Tallentaa toisessa sovelluksessa pidetyn kokouksen | [Kaappaus](capture/capture.md) |
 | Valita tunnistimen, joka muuttaa puheen tekstiksi | [Litterointi](ai-processing/transcription.md) |
 | Päättää, mikä tekoäly kirjoittaa keskustelujesi yhteenvedot ja mitä se saa maksaa | [Käsittely](ai-processing/processing.md) |

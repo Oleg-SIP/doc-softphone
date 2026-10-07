@@ -50,7 +50,7 @@ Se [Opfangning](/capture/).
 
 ## Der er en optagelse, men ingen udskrift eller resumé {#there-is-a-recording-but-no-transcript-or-summary}
 
-- En samtale skrives kun ud og opsummeres af sig selv, hvis **Behandl samtaler automatisk** er slået til under [Indstillinger → Behandling](/ai-processing/processing). Ellers skal du bede om det i [vinduet Optagelser](/recordings/recordings-window).
+- En samtale skrives kun ud og opsummeres af sig selv, hvis **Behandl samtaler automatisk** er slået til under [Indstillinger → Behandling](/ai-processing/processing). Ellers skal du bede om det i [vinduet Optagelser](/interface/recordings).
 - Der skal være en [genkender](/ai-processing/transcription) og en [sprogmodel](/ai-processing/processing#language-models), og hver skal svare på sin adresse.
 - Når den månedlige **Pengegrænse** eller **Tokengrænse** er nået, stopper de automatiske regler, indtil måneden skifter. Det, du selv beder om, stoppes aldrig.
 - Trinene i [Indstillinger → Oversigt](/interface/settings-overview) viser, hvad der stadig mangler at blive sat op.

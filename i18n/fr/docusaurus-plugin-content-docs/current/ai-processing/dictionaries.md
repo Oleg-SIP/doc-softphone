@@ -38,7 +38,7 @@ Des marques qui *peuvent toutes être vraies de la même conversation*. Appuyez 
 
 ## Signaux {#red-flags}
 
-Des points qui demandent de l'attention, trouvés dans la conversation avec la preuve et le moment — par exemple *Client en colère* ou *Risque de départ*. Les signaux sont dessinés en rouge dans la [fenêtre des enregistrements](../recordings/recordings-window.md), et chacun porte une gravité : faible, moyenne ou élevée.
+Des points qui demandent de l'attention, trouvés dans la conversation avec la preuve et le moment — par exemple *Client en colère* ou *Risque de départ*. Les signaux sont dessinés en rouge dans la [fenêtre des enregistrements](../interface/recordings.md), et chacun porte une gravité : faible, moyenne ou élevée.
 
 ## Formes de réponse et langue {#answer-shapes-and-language}
 

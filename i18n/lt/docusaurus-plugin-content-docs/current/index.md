@@ -55,7 +55,7 @@ Sąsaja pasiekiama trisdešimčia kalbų; kalba pasirenkama skiltyje [Išvaizda]
 | Nustatyti kodekus, skambučio laukimą ir skambučių istoriją | [Skambučių nustatymai](sip-accounts/calls.md) |
 | Priskirti kolegas vieno paspaudimo mygtukams | [Mygtukai](sip-accounts/buttons.md) |
 | Nuspręsti, kurie skambučiai įrašomi ir kiek laiko laikomi | [Skambučių įrašymas](recordings/call-recording.md) |
-| Klausytis, ieškoti ir skaityti savo pokalbius | [Įrašų langas](recordings/recordings-window.md) |
+| Klausytis, ieškoti ir skaityti savo pokalbius | [Įrašų langas](interface/recordings.md) |
 | Įrašyti kitoje programoje vykstantį susitikimą | [Fiksavimas](capture/capture.md) |
 | Pasirinkti atpažintuvą, kuris kalbą paverčia tekstu | [Užrašas](ai-processing/transcription.md) |
 | Nuspręsti, kuris dirbtinis intelektas apibendrina jūsų pokalbius ir kiek tai gali kainuoti | [Apdorojimas](ai-processing/processing.md) |

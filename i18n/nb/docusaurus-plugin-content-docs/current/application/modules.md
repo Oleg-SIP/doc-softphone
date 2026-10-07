@@ -23,7 +23,7 @@ Hver modul har en avkrysningsboks, et navn, en linje om hva den gjør, og til h�
 | **Ordlister** | Kategorier, etiketter og signaler — kodene alt annet peker på: [Ordlister](/ai-processing/dictionaries). |
 | **Katalog** | Adresseboken: [Kontakter](/interface/contacts-history). |
 | **Integrasjon** | Det lokale API-et og webhooker: [Integrasjon](/integration/rest-api). |
-| **Medielager** | Biblioteket med samtaler og hvor lenge de beholdes: [Opptak](/recordings/recordings-window). |
+| **Medielager** | Biblioteket med samtaler og hvor lenge de beholdes: [Opptak](/interface/recordings). |
 | **Behandling** | Prompter og reglene som utløser dem: [Behandling](/ai-processing/processing). |
 | **Opptak** | Opptak av samtaler, og å si fra til den andre parten om det: [Ta opp samtaler](/recordings/call-recording). |
 | **Telefoni** | SIP, kontoer, samtaler, nummerfeltet og samtalehistorikken. |

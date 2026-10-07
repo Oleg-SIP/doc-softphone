@@ -23,7 +23,7 @@ Mỗi mô-đun có một ô đánh dấu, một tên, một dòng mô tả việ
 | **Từ điển** | Hạng mục, nhãn và dấu hiệu cảnh báo — các mã mà mọi thứ khác trỏ tới: [Từ điển](/ai-processing/dictionaries). |
 | **Danh bạ** | Sổ địa chỉ: [Danh bạ](/interface/contacts-history). |
 | **Tích hợp** | API cục bộ và webhook: [Tích hợp](/integration/rest-api). |
-| **Kho media** | Thư viện các cuộc trò chuyện và thời gian giữ chúng: [Bản ghi](/recordings/recordings-window). |
+| **Kho media** | Thư viện các cuộc trò chuyện và thời gian giữ chúng: [Bản ghi](/interface/recordings). |
 | **Xử lý** | Các chỉ dẫn và quy tắc kích hoạt chúng: [Xử lý](/ai-processing/processing). |
 | **Ghi âm** | Ghi âm cuộc gọi, và báo cho bên kia biết về việc đó: [Ghi âm cuộc gọi](/recordings/call-recording). |
 | **Điện thoại** | SIP, tài khoản, cuộc gọi, bàn quay số và lịch sử cuộc gọi. |

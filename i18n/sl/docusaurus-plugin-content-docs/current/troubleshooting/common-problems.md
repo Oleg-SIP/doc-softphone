@@ -50,7 +50,7 @@ Glejte [Zajemanje](/capture/).
 
 ## Posnetek je, prepisa ali povzetka pa ni {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Pogovor se prepiše in obdela sam le, če je v [Nastavitve → Obdelava](/ai-processing/processing) vklopljeno **Obdeluj pogovore samodejno**. Drugače ga zahtevajte v [oknu Posnetki](/recordings/recordings-window).
+- Pogovor se prepiše in obdela sam le, če je v [Nastavitve → Obdelava](/ai-processing/processing) vklopljeno **Obdeluj pogovore samodejno**. Drugače ga zahtevajte v [oknu Posnetki](/interface/recordings).
 - Obstajati morata [razpoznavalnik](/ai-processing/transcription) in [jezikovni model](/ai-processing/processing#language-models), vsak pa mora odgovarjati na svojem naslovu.
 - Ko je dosežena mesečna **Denarna meja** ali **Meja žetonov**, se samodejna pravila ustavijo do konca meseca. Kar zahtevate sami, se nikoli ne ustavi.
 - Koraki v [Nastavitve → Pregled](/interface/settings-overview) kažejo, kaj je še treba nastaviti.

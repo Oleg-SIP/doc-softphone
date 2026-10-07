@@ -8,7 +8,7 @@ description: "\"Vælg den genkender, der gør lyd til tekst: dens adresse, dens 
 
 <Shot name="25_transcription" alt="Indstillinger → Transskription: sproget og fire genkendere" />
 
-En samtale skrives ud, når du beder om det i [vinduet Optagelser](/recordings/recordings-window), eller af sig selv, hvis **Behandl samtaler automatisk** er slået til under [Behandling](/ai-processing/processing). En genkender på din egen maskine koster intet at køre; en i skyen tager betaling per minut lyd.
+En samtale skrives ud, når du beder om det i [vinduet Optagelser](/interface/recordings), eller af sig selv, hvis **Behandl samtaler automatisk** er slået til under [Behandling](/ai-processing/processing). En genkender på din egen maskine koster intet at køre; en i skyen tager betaling per minut lyd.
 
 ## Sprog {#language}
 
@@ -25,7 +25,7 @@ En genkender er en tale-til-tekst-tjeneste, som telefonen sender lyd til. Tryk p
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Den, der er markeret **standard** til højre på sin række (**X.ai** på billedet), bruges, når du ikke vælger en anden. Du kan beholde flere. Rullelisten over en udskrift i [vinduet Optagelser](/recordings/recordings-window#the-transcript-and-the-write-up) viser de udskrifter, hver genkender har lavet.
+Den, der er markeret **standard** til højre på sin række (**X.ai** på billedet), bruges, når du ikke vælger en anden. Du kan beholde flere. Rullelisten over en udskrift i [vinduet Optagelser](/interface/recordings#the-transcript-and-the-write-up) viser de udskrifter, hver genkender har lavet.
 
 Modellen må gerne være tom. Tjenesten bruger så sin egen standard.
 
@@ -95,4 +95,4 @@ Modellen skal køres af en server, der tilbyder det OpenAI-kompatible endepunkt 
 
 Enhver anden server, der tilbyder det samme endepunkt, virker på samme måde. Kræver en server en nøgle, så indtast den som for en skytjeneste.
 
-Før du stoler på en server, så lav en testoptagelse og se på udskriften i [vinduet Optagelser](/recordings/recordings-window): en samtale på et sprog, modellen kender dårligt, afslører det med det samme.
+Før du stoler på en server, så lav en testoptagelse og se på udskriften i [vinduet Optagelser](/interface/recordings): en samtale på et sprog, modellen kender dårligt, afslører det med det samme.

@@ -50,7 +50,7 @@ Se [Fångst](/capture/).
 
 ## Det finns en inspelning men ingen utskrift eller sammanfattning {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Ett samtal skrivs bara ut och sammanfattas av sig självt om **Bearbeta samtal automatiskt** är på under [Inställningar → Bearbetning](/ai-processing/processing). Annars ber du om det i [fönstret Inspelningar](/recordings/recordings-window).
+- Ett samtal skrivs bara ut och sammanfattas av sig självt om **Bearbeta samtal automatiskt** är på under [Inställningar → Bearbetning](/ai-processing/processing). Annars ber du om det i [fönstret Inspelningar](/interface/recordings).
 - Det måste finnas en [igenkännare](/ai-processing/transcription) och en [språkmodell](/ai-processing/processing#language-models), och var och en måste svara på sin adress.
 - När den månatliga **Pengagräns** eller **Tokengräns** har nåtts stannar de automatiska reglerna tills månaden byts. Det du själv ber om stoppas aldrig.
 - Stegen i [Inställningar → Översikt](/interface/settings-overview) visar vad som återstår att konfigurera.

@@ -38,7 +38,7 @@ Pod plakietkami są [przyciski](../sip-accounts/buttons.md), które utworzyłeś
 
 ### Nagrania, Kontakty, Historia, Ustawienia {#recordings-contacts-history-settings}
 
-Te cztery pozycje na dole otwierają każda zakładkę po prawej, jedną obok drugiej: [Nagrania](../recordings/recordings-window.md), [Kontakty i historia](contacts-history.md) oraz [Ustawienia](settings-overview.md). Otwarte zakładki pozostają w rzędzie u góry prawej strony.
+Te cztery pozycje na dole otwierają każda zakładkę po prawej, jedną obok drugiej: [Nagrania](../interface/recordings.md), [Kontakty i historia](contacts-history.md) oraz [Ustawienia](settings-overview.md). Otwarte zakładki pozostają w rzędzie u góry prawej strony.
 
 ## Trwająca rozmowa {#a-call-in-progress}
 

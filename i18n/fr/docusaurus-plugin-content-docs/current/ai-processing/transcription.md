@@ -8,7 +8,7 @@ description: "\"Choisir la reconnaissance qui transforme l'audio en texte : son 
 
 <Shot name="25_transcription" alt="Réglages → Transcription : la langue et quatre reconnaissances" />
 
-Une conversation est transcrite quand vous le demandez dans la [fenêtre des enregistrements](/recordings/recordings-window), ou d'elle-même si **Traiter les conversations automatiquement** est activé dans [Traitement](/ai-processing/processing). Une reconnaissance sur votre propre machine ne coûte rien à faire tourner ; une reconnaissance dans le cloud facture à la minute d'audio.
+Une conversation est transcrite quand vous le demandez dans la [fenêtre des enregistrements](/interface/recordings), ou d'elle-même si **Traiter les conversations automatiquement** est activé dans [Traitement](/ai-processing/processing). Une reconnaissance sur votre propre machine ne coûte rien à faire tourner ; une reconnaissance dans le cloud facture à la minute d'audio.
 
 ## Langue {#language}
 
@@ -25,7 +25,7 @@ Une reconnaissance est un service de transcription de la parole auquel le télé
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Celle qui est marquée **par défaut** à droite de sa ligne (**X.ai** sur l'image) est celle qui est utilisée quand vous n'en choisissez pas une autre. Vous pouvez en garder plusieurs. La liste déroulante au-dessus d'une transcription dans la [fenêtre des enregistrements](/recordings/recordings-window#the-transcript-and-the-write-up) liste les transcriptions faites par chaque reconnaissance.
+Celle qui est marquée **par défaut** à droite de sa ligne (**X.ai** sur l'image) est celle qui est utilisée quand vous n'en choisissez pas une autre. Vous pouvez en garder plusieurs. La liste déroulante au-dessus d'une transcription dans la [fenêtre des enregistrements](/interface/recordings#the-transcript-and-the-write-up) liste les transcriptions faites par chaque reconnaissance.
 
 Le modèle peut rester vide. Le service utilise alors son propre modèle par défaut.
 
@@ -95,4 +95,4 @@ Le modèle doit être exécuté par un serveur qui propose le point d'accès `/v
 
 Tout autre serveur qui propose le même point d'accès fonctionne de la même façon. Si un serveur demande une clé, saisissez-la comme pour un service cloud.
 
-Avant de compter sur un serveur, faites un enregistrement de test et regardez la transcription dans la [fenêtre des enregistrements](/recordings/recordings-window) : une conversation dans une langue que le modèle connaît mal le montre aussitôt.
+Avant de compter sur un serveur, faites un enregistrement de test et regardez la transcription dans la [fenêtre des enregistrements](/interface/recordings) : une conversation dans une langue que le modèle connaît mal le montre aussitôt.

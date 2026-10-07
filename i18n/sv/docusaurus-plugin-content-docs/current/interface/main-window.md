@@ -38,7 +38,7 @@ Under brickorna står [knapparna](../sip-accounts/buttons.md) du har skapat för
 
 ### Inspelningar, Kontakter, Historik, Inställningar {#recordings-contacts-history-settings}
 
-De här fyra posterna längst ned öppnar var sin flik till höger, bredvid varandra: [Inspelningar](../recordings/recordings-window.md), [Kontakter och historik](contacts-history.md) och [Inställningar](settings-overview.md). Flikar du har öppnat ligger kvar i raden överst på höger sida.
+De här fyra posterna längst ned öppnar var sin flik till höger, bredvid varandra: [Inspelningar](../interface/recordings.md), [Kontakter och historik](contacts-history.md) och [Inställningar](settings-overview.md). Flikar du har öppnat ligger kvar i raden överst på höger sida.
 
 ## Ett pågående samtal {#a-call-in-progress}
 

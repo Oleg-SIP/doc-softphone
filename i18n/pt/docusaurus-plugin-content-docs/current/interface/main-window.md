@@ -38,7 +38,7 @@ Por baixo das fichas estão os [botões](../sip-accounts/buttons.md) que criou p
 
 ### Gravações, Contactos, Histórico, Definições {#recordings-contacts-history-settings}
 
-Estas quatro entradas em baixo abrem um separador à direita, lado a lado: [Gravações](../recordings/recordings-window.md), [Contactos e histórico](contacts-history.md) e [Definições](settings-overview.md). Os separadores que abriu ficam na fila do topo do lado direito.
+Estas quatro entradas em baixo abrem um separador à direita, lado a lado: [Gravações](../interface/recordings.md), [Contactos e histórico](contacts-history.md) e [Definições](settings-overview.md). Os separadores que abriu ficam na fila do topo do lado direito.
 
 ## Uma chamada em curso {#a-call-in-progress}
 

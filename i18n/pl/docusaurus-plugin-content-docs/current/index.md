@@ -55,7 +55,7 @@ Zrzuty ekranu w tej dokumentacji wykonano w macOS i pokazano w małym rozmiarze:
 | Ustawić kodeki, połączenie oczekujące i historię połączeń | [Ustawienia połączeń](sip-accounts/calls.md) |
 | Umieścić współpracowników na przyciskach jednego dotknięcia | [Przyciski](sip-accounts/buttons.md) |
 | Zdecydować, które połączenia są nagrywane i jak długo | [Nagrywanie połączeń](recordings/call-recording.md) |
-| Słuchać, przeszukiwać i czytać swoje rozmowy | [Okno nagrań](recordings/recordings-window.md) |
+| Słuchać, przeszukiwać i czytać swoje rozmowy | [Okno nagrań](interface/recordings.md) |
 | Nagrać spotkanie odbywające się w innej aplikacji | [Przechwytywanie](capture/capture.md) |
 | Wybrać rozpoznawacz, który zamienia mowę w tekst | [Transkrypcja](ai-processing/transcription.md) |
 | Zdecydować, która SI opracowuje twoje rozmowy i ile to może kosztować | [Przetwarzanie](ai-processing/processing.md) |

@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Ktoré hovory sa nahrávajú, čo sa povie druhej strane, ako sa ukladajú konferencie a ako dlho sa súbory uchovávajú.
 ---
 
-**Nastavenia → Nahrávanie** rozhoduje, z ktorých hovorov sa stanú nahrávky a ako dlho súbory zostanú. Nahraný hovor sa objaví v [okne Nahrávky](/recordings/recordings-window).
+**Nastavenia → Nahrávanie** rozhoduje, z ktorých hovorov sa stanú nahrávky a ako dlho súbory zostanú. Nahraný hovor sa objaví v [okne Nahrávky](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Nastavenia → Nahrávanie" />
 

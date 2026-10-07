@@ -8,7 +8,7 @@ description: "Vyberte rozpoznávač, který mění zvuk v text: jeho adresu, mod
 
 <Shot name="25_transcription" alt="Nastavení → Přepis: jazyk a čtyři rozpoznávače" />
 
-Rozhovor se přepíše, když o to požádáte v [okně nahrávek](/recordings/recordings-window), nebo sám, pokud je ve [Zpracování](/ai-processing/processing) zapnuto **Zpracovávat hovory automaticky**. Rozpoznávač na vlastním počítači nestojí nic; ten v cloudu účtuje za minutu zvuku.
+Rozhovor se přepíše, když o to požádáte v [okně nahrávek](/interface/recordings), nebo sám, pokud je ve [Zpracování](/ai-processing/processing) zapnuto **Zpracovávat hovory automaticky**. Rozpoznávač na vlastním počítači nestojí nic; ten v cloudu účtuje za minutu zvuku.
 
 ## Jazyk {#language}
 
@@ -25,7 +25,7 @@ Rozpoznávač je služba převodu řeči na text, které telefon posílá zvuk. 
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Ten, který má vpravo v řádku označení **výchozí** (na obrázku **X.ai**), se použije, když nevyberete jiný. Můžete jich mít několik. Rozbalovací seznam nad přepisem v [okně nahrávek](/recordings/recordings-window#the-transcript-and-the-write-up) uvádí přepisy od jednotlivých rozpoznávačů.
+Ten, který má vpravo v řádku označení **výchozí** (na obrázku **X.ai**), se použije, když nevyberete jiný. Můžete jich mít několik. Rozbalovací seznam nad přepisem v [okně nahrávek](/interface/recordings#the-transcript-and-the-write-up) uvádí přepisy od jednotlivých rozpoznávačů.
 
 Model může zůstat prázdný. Služba pak použije svůj výchozí.
 
@@ -95,4 +95,4 @@ Model musí provozovat server, který nabízí koncový bod `/v1/audio/transcrip
 
 Stejně funguje každý jiný server, který nabízí stejný koncový bod. Pokud server vyžaduje klíč, zadejte ho jako u cloudové služby.
 
-Než se na server spolehnete, pořiďte zkušební nahrávku a podívejte se na přepis v [okně nahrávek](/recordings/recordings-window): rozhovor v jazyce, který model zná špatně, to prozradí hned.
+Než se na server spolehnete, pořiďte zkušební nahrávku a podívejte se na přepis v [okně nahrávek](/interface/recordings): rozhovor v jazyce, který model zná špatně, to prozradí hned.

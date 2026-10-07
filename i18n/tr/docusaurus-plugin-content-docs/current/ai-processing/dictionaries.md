@@ -38,7 +38,7 @@ Kendi kategorinizi eklemek için **Ekle** düğmesine basın.
 
 ## Uyarı işaretleri {#red-flags}
 
-Görüşmede kanıtı ve zamanıyla bulunan, dikkat gerektiren şeyler — örneğin *Öfkeli müşteri* ya da *Ayrılma tehlikesi*. Uyarı işaretleri [Kayıtlar penceresinde](../recordings/recordings-window.md) kırmızıyla çizilir ve her birinin bir önem derecesi vardır: düşük, orta ya da yüksek.
+Görüşmede kanıtı ve zamanıyla bulunan, dikkat gerektiren şeyler — örneğin *Öfkeli müşteri* ya da *Ayrılma tehlikesi*. Uyarı işaretleri [Kayıtlar penceresinde](../interface/recordings.md) kırmızıyla çizilir ve her birinin bir önem derecesi vardır: düşük, orta ya da yüksek.
 
 ## Yanıt kalıpları ve dil {#answer-shapes-and-language}
 

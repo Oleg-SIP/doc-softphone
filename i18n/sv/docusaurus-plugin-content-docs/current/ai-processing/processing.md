@@ -10,7 +10,7 @@ description: Automatisk bearbetning av samtal, de månatliga kostnadsgränserna,
 
 ## Bearbeta samtal automatiskt {#process-conversations-automatically}
 
-- **Av:** ingenting händer förrän du ber om det i [fönstret Inspelningar](../recordings/recordings-window.md).
+- **Av:** ingenting händer förrän du ber om det i [fönstret Inspelningar](../interface/recordings.md).
 - **På:** [reglerna](#rules) nedan körs av sig själva. Det är detta som gör ett samtal till en sammanfattning, en kategori och allt annat utan att någon trycker på något. En modell i molnet tar betalt för vart och ett av de här stegen.
 
 Under kryssrutan visar programmet vad som har förbrukats den här månaden och på hur många begäranden, till exempel *Den här månaden: 40.492 token, över 84 begäranden, utan kostnad.*

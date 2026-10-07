@@ -50,7 +50,7 @@ Siehe [Mitschnitt](/capture/).
 
 ## Es gibt eine Aufnahme, aber kein Transkript und keine Zusammenfassung {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Ein Gespräch wird nur dann von selbst transkribiert und ausgewertet, wenn unter [Einstellungen → Verarbeitung](/ai-processing/processing) **Gespräche automatisch verarbeiten** eingeschaltet ist. Sonst fordern Sie es im [Aufnahmefenster](/recordings/recordings-window) an.
+- Ein Gespräch wird nur dann von selbst transkribiert und ausgewertet, wenn unter [Einstellungen → Verarbeitung](/ai-processing/processing) **Gespräche automatisch verarbeiten** eingeschaltet ist. Sonst fordern Sie es im [Aufnahmefenster](/interface/recordings) an.
 - Es muss einen [Spracherkenner](/ai-processing/transcription) und ein [Sprachmodell](/ai-processing/processing#language-models) geben, und jedes muss unter seiner Adresse antworten.
 - Ist die monatliche **Geldgrenze** oder **Token-Grenze** erreicht, halten die automatischen Regeln bis zum Monatswechsel an. Selbst anzufordern wird nie angehalten.
 - Die Schritte unter [Einstellungen → Übersicht](/interface/settings-overview) zeigen, was noch einzurichten ist.

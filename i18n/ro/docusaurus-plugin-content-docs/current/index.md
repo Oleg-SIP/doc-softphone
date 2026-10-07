@@ -55,7 +55,7 @@ Capturile de ecran din această documentație sunt făcute pe macOS și afișate
 | Configurați codecurile, apelul în așteptare și istoricul apelurilor | [Setările apelurilor](sip-accounts/calls.md) |
 | Puneți colegii pe butoane de apel dintr-o singură apăsare | [Butoane](sip-accounts/buttons.md) |
 | Hotărâți ce apeluri se înregistrează și cât timp se păstrează | [Înregistrarea apelurilor](recordings/call-recording.md) |
-| Ascultați, căutați și citiți conversațiile | [Fereastra Înregistrări](recordings/recordings-window.md) |
+| Ascultați, căutați și citiți conversațiile | [Fereastra Înregistrări](interface/recordings.md) |
 | Înregistrați o ședință ținută în altă aplicație | [Captare](capture/capture.md) |
 | Alegeți recunoscătorul care transformă vorbirea în text | [Transcriere](ai-processing/transcription.md) |
 | Hotărâți ce inteligență artificială vă prelucrează conversațiile și cât poate costa | [Prelucrare](ai-processing/processing.md) |

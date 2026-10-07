@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Hvilke samtaler som tas opp, hva den andre parten får høre, hvordan konferanser lagres og hvor lenge filene beholdes.
 ---
 
-**Innstillinger → Opptak** bestemmer hvilke samtaler som blir opptak, og hvor lenge filene blir liggende. En samtale som er tatt opp, dukker opp i [vinduet Opptak](/recordings/recordings-window).
+**Innstillinger → Opptak** bestemmer hvilke samtaler som blir opptak, og hvor lenge filene blir liggende. En samtale som er tatt opp, dukker opp i [vinduet Opptak](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Innstillinger → Opptak" />
 

@@ -82,7 +82,7 @@ La matita accanto al nome della registrazione permette di rinominarla mentre è 
 
 ## Dove va la registrazione {#where-the-recording-goes}
 
-Una conversazione catturata compare nella [finestra delle registrazioni](../recordings/recordings-window.md) come qualsiasi altra, con la sua icona, una finestra invece di una cornetta, e con il titolo che le ha dato o **Un'altra applicazione**.
+Una conversazione catturata compare nella [finestra delle registrazioni](../interface/recordings.md) come qualsiasi altra, con la sua icona, una finestra invece di una cornetta, e con il titolo che le ha dato o **Un'altra applicazione**.
 
 <Shot name="01_recordings" alt="Riunioni catturate nella scheda Registrazioni, contrassegnate da un'icona a forma di finestra" />
 

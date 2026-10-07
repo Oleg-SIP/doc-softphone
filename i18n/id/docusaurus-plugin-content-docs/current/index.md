@@ -55,7 +55,7 @@ Tangkapan layar dalam dokumentasi ini dibuat di macOS dan ditampilkan dalam ukur
 | Mengatur codec, panggilan menunggu, dan log panggilan | [Pengaturan panggilan](sip-accounts/calls.md) |
 | Menempatkan rekan kerja pada tombol sekali sentuh | [Tombol](sip-accounts/buttons.md) |
 | Menentukan panggilan mana yang direkam, dan berapa lama disimpan | [Merekam panggilan](recordings/call-recording.md) |
-| Mendengarkan, mencari, dan membaca percakapan Anda | [Jendela rekaman](recordings/recordings-window.md) |
+| Mendengarkan, mencari, dan membaca percakapan Anda | [Jendela rekaman](interface/recordings.md) |
 | Merekam rapat yang berlangsung di aplikasi lain | [Penangkapan](capture/capture.md) |
 | Memilih pengenal suara yang mengubah ucapan menjadi teks | [Transkripsi](ai-processing/transcription.md) |
 | Menentukan AI mana yang mengolah percakapan Anda dan berapa biaya yang boleh dikeluarkan | [Pemrosesan](ai-processing/processing.md) |

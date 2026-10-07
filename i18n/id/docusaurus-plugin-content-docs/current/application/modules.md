@@ -23,7 +23,7 @@ Setiap modul memiliki kotak centang, nama, sebaris keterangan tentang fungsinya,
 | **Kamus** | Kategori, label, dan tanda peringatan — kode-kode yang dirujuk oleh semua bagian lain: [Kamus](/ai-processing/dictionaries). |
 | **Direktori** | Buku alamat: [Kontak](/interface/contacts-history). |
 | **Integrasi** | API lokal, dan webhook: [Integrasi](/integration/rest-api). |
-| **Penyimpanan media** | Pustaka percakapan dan berapa lama percakapan disimpan: [Rekaman](/recordings/recordings-window). |
+| **Penyimpanan media** | Pustaka percakapan dan berapa lama percakapan disimpan: [Rekaman](/interface/recordings). |
 | **Pemrosesan** | Petunjuk dan aturan yang menjalankannya: [Pemrosesan](/ai-processing/processing). |
 | **Perekaman** | Merekam panggilan, dan memberi tahu pihak lain tentang hal itu: [Merekam panggilan](/recordings/call-recording). |
 | **Telefoni** | SIP, akun, panggilan, papan panggil, dan riwayat panggilan. |

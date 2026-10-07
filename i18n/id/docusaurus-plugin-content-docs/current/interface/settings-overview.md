@@ -1,6 +1,6 @@
 ---
 title: Ikhtisar pengaturan
-sidebar_position: 3
+sidebar_position: 4
 description: Daftar periksa Ikhtisar dan tab-tab jendela Pengaturan, serta di mana masing-masing dijelaskan.
 ---
 

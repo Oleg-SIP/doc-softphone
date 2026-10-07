@@ -10,7 +10,7 @@ description: Sarunu automātiska apstrāde, ikmēneša izdevumu robežas, valoda
 
 ## Apstrādāt sarunas automātiski {#process-conversations-automatically}
 
-- **Izslēgts:** nekas nenotiek, līdz to pieprasāt [ierakstu logā](../recordings/recordings-window.md).
+- **Izslēgts:** nekas nenotiek, līdz to pieprasāt [ierakstu logā](../interface/recordings.md).
 - **Ieslēgts:** zemāk esošās [kārtulas](#rules) darbojas pašas. Tas pārvērš sarunu kopsavilkumā, kategorijā un visā pārējā, nevienam neko nespiežot. Mākonī esošs modelis ņem maksu par katru no šiem soļiem.
 
 Zem izvēles rūtiņas programma rāda, cik šomēnes iztērēts un cik pieprasījumos, piemēram, *Šomēnes: 40.492 marķieru, 84 pieprasījumos, bez maksas.*

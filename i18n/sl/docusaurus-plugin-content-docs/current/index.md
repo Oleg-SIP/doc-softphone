@@ -55,7 +55,7 @@ Posnetki zaslona v tej dokumentaciji so narejeni v macOS in prikazani pomanjšan
 | Nastaviti kodeke, čakajoči klic in dnevnik klicev | [Nastavitve klicev](sip-accounts/calls.md) |
 | Postaviti sodelavce na gumbe za en dotik | [Gumbi](sip-accounts/buttons.md) |
 | Odločiti, kateri klici se snemajo in kako dolgo | [Snemanje klicev](recordings/call-recording.md) |
-| Poslušati, iskati in brati svoje pogovore | [Okno posnetkov](recordings/recordings-window.md) |
+| Poslušati, iskati in brati svoje pogovore | [Okno posnetkov](interface/recordings.md) |
 | Posneti sestanek v drugem programu | [Zajemanje](capture/capture.md) |
 | Izbrati razpoznavalnik, ki govor spremeni v besedilo | [Prepis](ai-processing/transcription.md) |
 | Odločiti, katera umetna inteligenca obdeluje vaše pogovore in koliko sme to stati | [Obdelava](ai-processing/processing.md) |

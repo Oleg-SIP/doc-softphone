@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Vilka samtal som spelas in, vad den andra parten får veta, hur konferenser sparas och hur länge filerna behålls.
 ---
 
-**Inställningar → Inspelning** bestämmer vilka samtal som blir inspelningar och hur länge filerna ligger kvar. Ett inspelat samtal visas i [fönstret Inspelningar](/recordings/recordings-window).
+**Inställningar → Inspelning** bestämmer vilka samtal som blir inspelningar och hur länge filerna ligger kvar. Ett inspelat samtal visas i [fönstret Inspelningar](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Inställningar → Inspelning" />
 

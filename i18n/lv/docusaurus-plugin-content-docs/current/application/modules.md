@@ -23,7 +23,7 @@ Katram modulim ir izvēles rūtiņa, nosaukums, rinda par to, ko tas dara, un la
 | **Vārdnīcas** | Kategorijas, birkas un brīdinājuma signāli — kodi, uz kuriem norāda viss pārējais: [Vārdnīcas](/ai-processing/dictionaries). |
 | **Katalogs** | Adrešu grāmata: [Kontakti](/interface/contacts-history). |
 | **Integrācija** | Vietējais API un tīmekļa āķi: [Integrācija](/integration/rest-api). |
-| **Mediju krātuve** | Sarunu bibliotēka un to glabāšanas ilgums: [Ieraksti](/recordings/recordings-window). |
+| **Mediju krātuve** | Sarunu bibliotēka un to glabāšanas ilgums: [Ieraksti](/interface/recordings). |
 | **Apstrāde** | Norādījumi un kārtulas, kas tos palaiž: [Apstrāde](/ai-processing/processing). |
 | **Ierakstīšana** | Zvanu ierakstīšana un paziņošana par to otrai pusei: [Zvanu ierakstīšana](/recordings/call-recording). |
 | **Telefonija** | SIP, konti, zvani, numura sastādītājs un zvanu vēsture. |

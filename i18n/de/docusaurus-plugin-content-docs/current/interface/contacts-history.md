@@ -1,6 +1,6 @@
 ---
 title: Kontakte und Verlauf
-sidebar_position: 2
+sidebar_position: 3
 description: Das Adressbuch und die Anrufliste, neben dem Telefon.
 ---
 

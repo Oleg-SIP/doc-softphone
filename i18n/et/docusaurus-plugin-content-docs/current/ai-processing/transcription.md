@@ -8,7 +8,7 @@ description: "\"Valige tuvastaja, mis muudab heli tekstiks: selle aadress, mudel
 
 <Shot name="25_transcription" alt="Seaded → Ülestähendus: keel ja neli tuvastajat" />
 
-Vestlus kirjutatakse üles, kui te seda [salvestiste aknas](/recordings/recordings-window) palute, või iseenesest, kui jaotises [Töötlemine](/ai-processing/processing) on sisse lülitatud **Töötle vestlusi automaatselt**. Teie enda arvutis olev tuvastaja ei maksa midagi; pilves olev võtab tasu heliminutite eest.
+Vestlus kirjutatakse üles, kui te seda [salvestiste aknas](/interface/recordings) palute, või iseenesest, kui jaotises [Töötlemine](/ai-processing/processing) on sisse lülitatud **Töötle vestlusi automaatselt**. Teie enda arvutis olev tuvastaja ei maksa midagi; pilves olev võtab tasu heliminutite eest.
 
 ## Keel {#language}
 
@@ -25,7 +25,7 @@ Tuvastaja on kõnest tekstiks teenus, millele telefon heli saadab. Vajutage **Li
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Tuvastaja, mis on oma rea paremas servas tähistatud kui **vaikimisi** (pildil **X.ai**), on see, mida kasutatakse, kui te ei vali teist. Võite hoida mitut. [Salvestiste aknas](/recordings/recordings-window#the-transcript-and-the-write-up) ülestähenduse kohal olev ripploend loetleb iga tuvastaja tehtud ülestähendused.
+Tuvastaja, mis on oma rea paremas servas tähistatud kui **vaikimisi** (pildil **X.ai**), on see, mida kasutatakse, kui te ei vali teist. Võite hoida mitut. [Salvestiste aknas](/interface/recordings#the-transcript-and-the-write-up) ülestähenduse kohal olev ripploend loetleb iga tuvastaja tehtud ülestähendused.
 
 Mudeli võib jätta tühjaks. Siis kasutab teenus oma vaikeväärtust.
 
@@ -95,4 +95,4 @@ Mudelit peab käitama server, mis pakub OpenAI-ga ühilduvat lõpp-punkti `/v1/a
 
 Iga teine server, mis pakub sama lõpp-punkti, töötab samamoodi. Kui server vajab võtit, sisestage see nagu pilveteenuse puhul.
 
-Enne serverile toetumist tehke proovisalvestis ja vaadake ülestähendust [salvestiste aknas](/recordings/recordings-window): vestlus keeles, mida mudel halvasti tunneb, näitab seda kohe.
+Enne serverile toetumist tehke proovisalvestis ja vaadake ülestähendust [salvestiste aknas](/interface/recordings): vestlus keeles, mida mudel halvasti tunneb, näitab seda kohe.

@@ -38,7 +38,7 @@ Marcas que *pueden ser todas ciertas de la misma conversación*. Pulse **Añadir
 
 ## Señales {#red-flags}
 
-Cosas que requieren atención, encontradas en la conversación con la prueba y el momento — por ejemplo *Cliente enfadado* o *Riesgo de fuga*. Las señales se dibujan en rojo en la [ventana de grabaciones](../recordings/recordings-window.md), y cada una tiene una gravedad: baja, media o alta.
+Cosas que requieren atención, encontradas en la conversación con la prueba y el momento — por ejemplo *Cliente enfadado* o *Riesgo de fuga*. Las señales se dibujan en rojo en la [ventana de grabaciones](../interface/recordings.md), y cada una tiene una gravedad: baja, media o alta.
 
 ## Formas de respuesta e idioma {#answer-shapes-and-language}
 

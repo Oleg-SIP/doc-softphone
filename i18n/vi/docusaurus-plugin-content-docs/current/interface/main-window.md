@@ -38,7 +38,7 @@ Dưới các ô tài khoản là các [nút bấm](../sip-accounts/buttons.md) b
 
 ### Bản ghi, Danh bạ, Lịch sử, Cài đặt {#recordings-contacts-history-settings}
 
-Bốn mục ở dưới cùng này mở một thẻ ở bên phải, cạnh nhau: [Bản ghi](../recordings/recordings-window.md), [Danh bạ và Lịch sử](contacts-history.md) và [Cài đặt](settings-overview.md). Các thẻ bạn đã mở ở lại trên hàng phía trên cùng của nửa bên phải.
+Bốn mục ở dưới cùng này mở một thẻ ở bên phải, cạnh nhau: [Bản ghi](../interface/recordings.md), [Danh bạ và Lịch sử](contacts-history.md) và [Cài đặt](settings-overview.md). Các thẻ bạn đã mở ở lại trên hàng phía trên cùng của nửa bên phải.
 
 ## Cuộc gọi đang diễn ra {#a-call-in-progress}
 

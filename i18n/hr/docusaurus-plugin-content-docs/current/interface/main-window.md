@@ -38,7 +38,7 @@ Ispod znački su [gumbi](../sip-accounts/buttons.md) koje ste napravili za koleg
 
 ### Snimke, Kontakti, Povijest, Postavke {#recordings-contacts-history-settings}
 
-Ove četiri stavke na dnu otvaraju karticu desno, jednu pokraj druge: [Snimke](../recordings/recordings-window.md), [Kontakti i Povijest](contacts-history.md) te [Postavke](settings-overview.md). Kartice koje ste otvorili ostaju u retku na vrhu desne strane.
+Ove četiri stavke na dnu otvaraju karticu desno, jednu pokraj druge: [Snimke](../interface/recordings.md), [Kontakti i Povijest](contacts-history.md) te [Postavke](settings-overview.md). Kartice koje ste otvorili ostaju u retku na vrhu desne strane.
 
 ## Poziv u tijeku {#a-call-in-progress}
 

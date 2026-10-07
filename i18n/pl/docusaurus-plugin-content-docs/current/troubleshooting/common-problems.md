@@ -50,7 +50,7 @@ Zobacz [Przechwytywanie](/capture/).
 
 ## Jest nagranie, ale nie ma transkrypcji ani podsumowania {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Rozmowa jest spisywana i opracowywana sama tylko wtedy, gdy w [Ustawienia → Przetwarzanie](/ai-processing/processing) włączone jest **Przetwarzaj rozmowy automatycznie**. W przeciwnym razie poproś o to w [oknie nagrań](/recordings/recordings-window).
+- Rozmowa jest spisywana i opracowywana sama tylko wtedy, gdy w [Ustawienia → Przetwarzanie](/ai-processing/processing) włączone jest **Przetwarzaj rozmowy automatycznie**. W przeciwnym razie poproś o to w [oknie nagrań](/interface/recordings).
 - Musi być [rozpoznawacz](/ai-processing/transcription) i [model językowy](/ai-processing/processing#language-models), a każdy musi odpowiadać pod swoim adresem.
 - Gdy miesięczna **Granica pieniędzy** lub **Granica tokenów** zostanie osiągnięta, reguły automatyczne zatrzymują się do końca miesiąca. To, o co prosisz sam, nigdy nie jest zatrzymywane.
 - Kroki w [Ustawienia → Przegląd](/interface/settings-overview) pokazują, co jeszcze trzeba skonfigurować.

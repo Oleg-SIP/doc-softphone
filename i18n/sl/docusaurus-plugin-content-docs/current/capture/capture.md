@@ -82,7 +82,7 @@ Svinčnik poleg imena posnetka omogoča, da ga preimenujete, medtem ko teče. Po
 
 ## Kam gre posnetek {#where-the-recording-goes}
 
-Zajet pogovor se pojavi v [oknu Posnetki](../recordings/recordings-window.md) kot vsak drug, s svojo ikono, oknom namesto slušalke, in z naslovom, ki ste mu ga dali, ali **Drug program**.
+Zajet pogovor se pojavi v [oknu Posnetki](../interface/recordings.md) kot vsak drug, s svojo ikono, oknom namesto slušalke, in z naslovom, ki ste mu ga dali, ali **Drug program**.
 
 <Shot name="01_recordings" alt="Zajeti sestanki v zavihku Posnetki, označeni z ikono okna" />
 

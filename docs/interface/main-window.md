@@ -38,7 +38,7 @@ Below the chips there are the [buttons](../sip-accounts/buttons.md) you made for
 
 ### Recordings, Contacts, History, Settings
 
-These four entries at the bottom open a tab on the right, next to each other: [Recordings](../recordings/recordings-window.md), [Contacts and History](contacts-history.md) and [Settings](settings-overview.md). Tabs you have opened stay in the row at the top of the right-hand side.
+These four entries at the bottom open a tab on the right, next to each other: [Recordings](../interface/recordings.md), [Contacts and History](contacts-history.md) and [Settings](settings-overview.md). Tabs you have opened stay in the row at the top of the right-hand side.
 
 ## A call in progress
 

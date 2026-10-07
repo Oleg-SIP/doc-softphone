@@ -55,7 +55,7 @@ Skärmbilderna i den här dokumentationen är tagna på macOS och visas små: kl
 | Ställa in kodekar, samtal väntar och samtalshistoriken | [Samtalsinställningar](sip-accounts/calls.md) |
 | Lägga kolleger på knappar med ett tryck | [Knappar](sip-accounts/buttons.md) |
 | Bestämma vilka samtal som spelas in och hur länge | [Spela in samtal](recordings/call-recording.md) |
-| Lyssna på, söka i och läsa dina samtal | [Fönstret Inspelningar](recordings/recordings-window.md) |
+| Lyssna på, söka i och läsa dina samtal | [Fönstret Inspelningar](interface/recordings.md) |
 | Spela in ett möte som hålls i ett annat program | [Fångst](capture/capture.md) |
 | Välja igenkännaren som gör tal till text | [Transkription](ai-processing/transcription.md) |
 | Bestämma vilken AI som sammanfattar dina samtal och vad det får kosta | [Bearbetning](ai-processing/processing.md) |

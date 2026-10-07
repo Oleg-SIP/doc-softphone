@@ -10,7 +10,7 @@ description: Automatisk behandling af samtaler, de månedlige udgiftsgrænser, s
 
 ## Behandl samtaler automatisk {#process-conversations-automatically}
 
-- **Fra:** intet sker, før du beder om det i [vinduet Optagelser](../recordings/recordings-window.md).
+- **Fra:** intet sker, før du beder om det i [vinduet Optagelser](../interface/recordings.md).
 - **Til:** [reglerne](#rules) nedenfor kører af sig selv. Det er det, der gør en samtale til et resumé, en kategori og alt det andet, uden at nogen trykker på noget. En model i skyen tager betaling for hvert af disse trin.
 
 Under afkrydsningsfeltet viser programmet, hvad der er brugt i denne måned og på hvor mange forespørgsler, for eksempel *Denne måned: 40.492 tokens, over 84 forespørgsler, uden beregning.*

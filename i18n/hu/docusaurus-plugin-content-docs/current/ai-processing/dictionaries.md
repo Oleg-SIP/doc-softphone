@@ -38,7 +38,7 @@ Jelölések, amelyek *mind igazak lehetnek ugyanarra a beszélgetésre*. Új cí
 
 ## Figyelmeztető jelek {#red-flags}
 
-Figyelmet igénylő dolgok, amelyeket a beszélgetésben a bizonyítékkal és az időponttal együtt talál meg a modell — például *Dühös ügyfél* vagy *Lemorzsolódás veszélye*. A figyelmeztető jelek pirossal jelennek meg a [Felvételek ablakban](../recordings/recordings-window.md), és mindegyiknek van súlyossága: alacsony, közepes vagy magas.
+Figyelmet igénylő dolgok, amelyeket a beszélgetésben a bizonyítékkal és az időponttal együtt talál meg a modell — például *Dühös ügyfél* vagy *Lemorzsolódás veszélye*. A figyelmeztető jelek pirossal jelennek meg a [Felvételek ablakban](../interface/recordings.md), és mindegyiknek van súlyossága: alacsony, közepes vagy magas.
 
 ## A válaszok alakja és nyelve {#answer-shapes-and-language}
 

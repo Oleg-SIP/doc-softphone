@@ -10,7 +10,7 @@ description: "L'elaborazione automatica delle conversazioni, i limiti di spesa m
 
 ## Elabora le conversazioni automaticamente {#process-conversations-automatically}
 
-- **Spento:** non succede nulla finché non lo chiede nella [finestra delle registrazioni](../recordings/recordings-window.md).
+- **Spento:** non succede nulla finché non lo chiede nella [finestra delle registrazioni](../interface/recordings.md).
 - **Acceso:** le [regole](#rules) qui sotto girano da sole. È questo che trasforma una conversazione in un riassunto, una categoria e tutto il resto senza che nessuno prema nulla. Un modello nel cloud fa pagare ciascuno di questi passi.
 
 Sotto la casella il programma mostra quanto è stato speso questo mese e su quante richieste, per esempio *Questo mese: 40.492 token, su 84 richieste, senza costi.*

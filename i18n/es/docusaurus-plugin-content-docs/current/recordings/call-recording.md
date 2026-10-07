@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Qué llamadas se graban, qué se le dice al interlocutor, cómo se guardan las conferencias y cuánto tiempo se conservan los archivos.
 ---
 
-**Ajustes → Grabación** decide qué llamadas se convierten en grabaciones y cuánto tiempo se quedan los archivos. Una llamada grabada aparece en la [ventana de grabaciones](/recordings/recordings-window).
+**Ajustes → Grabación** decide qué llamadas se convierten en grabaciones y cuánto tiempo se quedan los archivos. Una llamada grabada aparece en la [ventana de grabaciones](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Ajustes → Grabación" />
 

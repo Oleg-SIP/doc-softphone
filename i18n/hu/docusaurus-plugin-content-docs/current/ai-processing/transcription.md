@@ -8,7 +8,7 @@ A **Beállítások → Átirat** határozza meg, hogyan lesz a hangból szöveg:
 
 <Shot name="25_transcription" alt="Beállítások → Átirat: a nyelv és négy felismerő" />
 
-Egy beszélgetésről akkor készül leirat, amikor kéri a [Felvételek ablakban](/recordings/recordings-window), vagy magától, ha a [Feldolgozás](/ai-processing/processing) lapon be van kapcsolva **A beszélgetések automatikus feldolgozása**. A saját gépen futó felismerő használata semmibe sem kerül; a felhőben futó a hang perce szerint számol fel díjat.
+Egy beszélgetésről akkor készül leirat, amikor kéri a [Felvételek ablakban](/interface/recordings), vagy magától, ha a [Feldolgozás](/ai-processing/processing) lapon be van kapcsolva **A beszélgetések automatikus feldolgozása**. A saját gépen futó felismerő használata semmibe sem kerül; a felhőben futó a hang perce szerint számol fel díjat.
 
 ## Nyelv {#language}
 
@@ -25,7 +25,7 @@ A felismerő egy beszéd–szöveg szolgáltatás, amelynek a telefon elküldi a
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-A sora jobb szélén **Alapértelmezett** jelöléssel ellátott felismerő (a képen az **X.ai**) az, amelyet a program akkor használ, ha nem választ másikat. Többet is megtarthat. A [Felvételek ablakban](/recordings/recordings-window#the-transcript-and-the-write-up) a leirat fölötti legördülő lista felsorolja az egyes felismerők által készített leiratokat.
+A sora jobb szélén **Alapértelmezett** jelöléssel ellátott felismerő (a képen az **X.ai**) az, amelyet a program akkor használ, ha nem választ másikat. Többet is megtarthat. A [Felvételek ablakban](/interface/recordings#the-transcript-and-the-write-up) a leirat fölötti legördülő lista felsorolja az egyes felismerők által készített leiratokat.
 
 A modell üresen is hagyható. Ilyenkor a szolgáltatás a saját alapértelmezését használja.
 
@@ -95,4 +95,4 @@ A modellt olyan kiszolgálónak kell futtatnia, amely OpenAI-kompatibilis `/v1/a
 
 Bármely más kiszolgáló, amely ugyanezt a végpontot kínálja, ugyanígy működik. Ha egy kiszolgáló kulcsot kér, adja meg ugyanúgy, mint egy felhőszolgáltatásnál.
 
-Mielőtt egy kiszolgálóra hagyatkozna, készítsen próbafelvételt, és nézze meg a leiratot a [Felvételek ablakban](/recordings/recordings-window): egy olyan nyelvű beszélgetés, amelyet a modell gyengén ismer, ezt azonnal megmutatja.
+Mielőtt egy kiszolgálóra hagyatkozna, készítsen próbafelvételt, és nézze meg a leiratot a [Felvételek ablakban](/interface/recordings): egy olyan nyelvű beszélgetés, amelyet a modell gyengén ismer, ezt azonnal megmutatja.

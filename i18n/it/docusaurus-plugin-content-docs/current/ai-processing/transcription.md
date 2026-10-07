@@ -8,7 +8,7 @@ description: "\"Scegliere il riconoscitore che trasforma l'audio in testo: il su
 
 <Shot name="25_transcription" alt="Impostazioni → Trascrizione: la lingua e quattro riconoscitori" />
 
-Una conversazione viene trascritta quando lo chiede nella [finestra delle registrazioni](/recordings/recordings-window), o da sola se **Elabora le conversazioni automaticamente** è attivo in [Elaborazione](/ai-processing/processing). Un riconoscitore sulla sua macchina non costa nulla; uno nel cloud fa pagare al minuto di audio.
+Una conversazione viene trascritta quando lo chiede nella [finestra delle registrazioni](/interface/recordings), o da sola se **Elabora le conversazioni automaticamente** è attivo in [Elaborazione](/ai-processing/processing). Un riconoscitore sulla sua macchina non costa nulla; uno nel cloud fa pagare al minuto di audio.
 
 ## Lingua {#language}
 
@@ -25,7 +25,7 @@ Un riconoscitore è un servizio di riconoscimento vocale a cui il telefono invia
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Quello indicato come **predefinito** a destra della sua riga (**X.ai** nell'immagine) è quello usato quando non ne sceglie un altro. Può tenerne diversi. Il menu a discesa sopra una trascrizione nella [finestra delle registrazioni](/recordings/recordings-window#the-transcript-and-the-write-up) elenca le trascrizioni fatte da ciascun riconoscitore.
+Quello indicato come **predefinito** a destra della sua riga (**X.ai** nell'immagine) è quello usato quando non ne sceglie un altro. Può tenerne diversi. Il menu a discesa sopra una trascrizione nella [finestra delle registrazioni](/interface/recordings#the-transcript-and-the-write-up) elenca le trascrizioni fatte da ciascun riconoscitore.
 
 Il modello si può lasciare vuoto. Il servizio usa allora il proprio modello predefinito.
 
@@ -95,4 +95,4 @@ Il modello deve essere eseguito da un server che offra l'endpoint `/v1/audio/tra
 
 Qualsiasi altro server che offra lo stesso endpoint funziona allo stesso modo. Se un server richiede una chiave, la inserisca come per un servizio cloud.
 
-Prima di affidarsi a un server, faccia una registrazione di prova e guardi la trascrizione nella [finestra delle registrazioni](/recordings/recordings-window): una conversazione in una lingua che il modello conosce poco lo mostra subito.
+Prima di affidarsi a un server, faccia una registrazione di prova e guardi la trascrizione nella [finestra delle registrazioni](/interface/recordings): una conversazione in una lingua che il modello conosce poco lo mostra subito.

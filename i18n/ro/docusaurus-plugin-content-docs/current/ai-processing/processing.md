@@ -10,7 +10,7 @@ description: Prelucrarea automată a conversațiilor, limitele lunare de cheltui
 
 ## Prelucrează conversațiile automat {#process-conversations-automatically}
 
-- **Oprit:** nu se întâmplă nimic până nu cereți în [fereastra Înregistrări](../recordings/recordings-window.md).
+- **Oprit:** nu se întâmplă nimic până nu cereți în [fereastra Înregistrări](../interface/recordings.md).
 - **Pornit:** [regulile](#rules) de mai jos rulează de la sine. Acesta este lucrul care transformă o conversație într-un rezumat, o categorie și tot restul fără ca cineva să apese ceva. Un model în cloud taxează fiecare dintre acești pași.
 
 Sub caseta de bifat, programul arată cât s-a cheltuit luna aceasta și pentru câte cereri, de exemplu *Luna aceasta: 40.492 tokenuri, în 84 de cereri, fără costuri.*

@@ -50,7 +50,7 @@ Zie [Vastleggen](/capture/).
 
 ## Er is een opname, maar geen transcript of samenvatting {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Een gesprek wordt alleen vanzelf uitgeschreven en uitgewerkt als **Gesprekken automatisch verwerken** aan staat bij [Instellingen → Verwerking](/ai-processing/processing). Vraag er anders om in het [venster Opnames](/recordings/recordings-window).
+- Een gesprek wordt alleen vanzelf uitgeschreven en uitgewerkt als **Gesprekken automatisch verwerken** aan staat bij [Instellingen → Verwerking](/ai-processing/processing). Vraag er anders om in het [venster Opnames](/interface/recordings).
 - Er moeten een [herkenner](/ai-processing/transcription) en een [taalmodel](/ai-processing/processing#language-models) zijn, en elk moet op zijn adres antwoorden.
 - Als de maandelijkse **Geldgrens** of **Tokengrens** is bereikt, stoppen de automatische regels tot de volgende maand. Wat u zelf vraagt, wordt nooit gestopt.
 - De stappen van [Instellingen → Overzicht](/interface/settings-overview) laten zien wat er nog moet worden ingesteld.

@@ -23,7 +23,7 @@ Jedes Modul hat ein Kontrollkästchen, einen Namen, eine Zeile, was es tut, und 
 | **Verzeichnisse** | Kategorien, Label und Auffälligkeiten — die Codes, auf die alles andere verweist: [Verzeichnisse](/ai-processing/dictionaries). |
 | **Verzeichnis** | Das Adressbuch: [Kontakte](/interface/contacts-history). |
 | **Integration** | Die lokale API und Webhooks: [Integration](/integration/rest-api). |
-| **Medienspeicher** | Die Bibliothek der Gespräche und wie lange sie aufbewahrt werden: [Aufnahmen](/recordings/recordings-window). |
+| **Medienspeicher** | Die Bibliothek der Gespräche und wie lange sie aufbewahrt werden: [Aufnahmen](/interface/recordings). |
 | **Verarbeitung** | Prompts und die Regeln, die sie ausführen: [Verarbeitung](/ai-processing/processing). |
 | **Aufnahme** | Anrufe aufnehmen und es der Gegenseite mitteilen: [Anrufe aufnehmen](/recordings/call-recording). |
 | **Telefon** | SIP, Konten, Anrufe, die Wählhilfe und die Anrufliste. |

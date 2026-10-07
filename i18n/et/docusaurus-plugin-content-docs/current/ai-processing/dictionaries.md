@@ -38,7 +38,7 @@ Märgistused, mis *võivad kõik samale vestlusele sobida*. Vajutage **Lisa**, e
 
 ## Hoiatussignaalid {#red-flags}
 
-Asjad, mis vajavad tähelepanu, leitud vestlusest koos tõendi ja ajaga — näiteks *Vihane klient* või *Lahkumise oht*. Hoiatussignaalid joonistatakse [salvestiste aknas](../recordings/recordings-window.md) punasega ja igaühel on tõsidus: madal, keskmine või kõrge.
+Asjad, mis vajavad tähelepanu, leitud vestlusest koos tõendi ja ajaga — näiteks *Vihane klient* või *Lahkumise oht*. Hoiatussignaalid joonistatakse [salvestiste aknas](../interface/recordings.md) punasega ja igaühel on tõsidus: madal, keskmine või kõrge.
 
 ## Vastuse kujud ja keel {#answer-shapes-and-language}
 

@@ -23,7 +23,7 @@ Varje modul har en kryssruta, ett namn, en rad om vad den gör och till höger d
 | **Ordlistor** | Kategorier, etiketter och signaler — koderna som allt annat pekar på: [Ordlistor](/ai-processing/dictionaries). |
 | **Katalog** | Adressboken: [Kontakter](/interface/contacts-history). |
 | **Integration** | Det lokala API:et och webhookar: [Integration](/integration/rest-api). |
-| **Medielagring** | Biblioteket med samtal och hur länge de sparas: [Inspelningar](/recordings/recordings-window). |
+| **Medielagring** | Biblioteket med samtal och hur länge de sparas: [Inspelningar](/interface/recordings). |
 | **Bearbetning** | Prompter och reglerna som utlöser dem: [Bearbetning](/ai-processing/processing). |
 | **Inspelning** | Inspelning av samtal, och att tala om det för den andra parten: [Spela in samtal](/recordings/call-recording). |
 | **Telefoni** | SIP, konton, samtal, nummerfältet och samtalshistoriken. |

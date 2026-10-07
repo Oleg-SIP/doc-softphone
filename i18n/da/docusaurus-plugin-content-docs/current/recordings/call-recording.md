@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Hvilke opkald der optages, hvad den anden part får at vide, hvordan konferencer gemmes, og hvor længe filerne opbevares.
 ---
 
-**Indstillinger → Optagelse** bestemmer, hvilke opkald der bliver til optagelser, og hvor længe filerne bliver liggende. Et optaget opkald dukker op i [vinduet Optagelser](/recordings/recordings-window).
+**Indstillinger → Optagelse** bestemmer, hvilke opkald der bliver til optagelser, og hvor længe filerne bliver liggende. Et optaget opkald dukker op i [vinduet Optagelser](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Indstillinger → Optagelse" />
 

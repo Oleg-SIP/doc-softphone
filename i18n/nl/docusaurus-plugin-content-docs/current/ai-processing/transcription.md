@@ -8,7 +8,7 @@ description: "\"De herkenner kiezen die audio in tekst omzet: zijn adres, zijn m
 
 <Shot name="25_transcription" alt="Instellingen → Transcriptie: de taal en vier herkenners" />
 
-Een gesprek wordt uitgeschreven als u erom vraagt in het [venster Opnames](/recordings/recordings-window), of vanzelf als **Gesprekken automatisch verwerken** aan staat bij [Verwerking](/ai-processing/processing). Een herkenner op uw eigen machine kost niets; een in de cloud rekent per minuut audio.
+Een gesprek wordt uitgeschreven als u erom vraagt in het [venster Opnames](/interface/recordings), of vanzelf als **Gesprekken automatisch verwerken** aan staat bij [Verwerking](/ai-processing/processing). Een herkenner op uw eigen machine kost niets; een in de cloud rekent per minuut audio.
 
 ## Taal {#language}
 
@@ -25,7 +25,7 @@ Een herkenner is een spraak-naar-tekstdienst waarnaar de telefoon audio stuurt. 
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-De herkenner die rechts op zijn regel als **standaard** is gemarkeerd (**X.ai** op de afbeelding) wordt gebruikt als u geen andere kiest. U kunt er meerdere houden. De keuzelijst boven een transcript in het [venster Opnames](/recordings/recordings-window#the-transcript-and-the-write-up) toont de transcripten van elke herkenner.
+De herkenner die rechts op zijn regel als **standaard** is gemarkeerd (**X.ai** op de afbeelding) wordt gebruikt als u geen andere kiest. U kunt er meerdere houden. De keuzelijst boven een transcript in het [venster Opnames](/interface/recordings#the-transcript-and-the-write-up) toont de transcripten van elke herkenner.
 
 Het model mag leeg blijven. De dienst gebruikt dan zijn eigen standaard.
 
@@ -95,4 +95,4 @@ Het model moet worden gedraaid door een server die het OpenAI-compatibele eindpu
 
 Elke andere server die hetzelfde eindpunt aanbiedt, werkt op dezelfde manier. Als een server een sleutel vraagt, voer die dan in zoals bij een clouddienst.
 
-Maak voordat u op een server vertrouwt een testopname en bekijk het transcript in het [venster Opnames](/recordings/recordings-window): een gesprek in een taal die het model slecht kent, verraadt dat meteen.
+Maak voordat u op een server vertrouwt een testopname en bekijk het transcript in het [venster Opnames](/interface/recordings): een gesprek in een taal die het model slecht kent, verraadt dat meteen.

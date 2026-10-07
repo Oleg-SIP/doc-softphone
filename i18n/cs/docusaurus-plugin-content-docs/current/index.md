@@ -55,7 +55,7 @@ Snímky obrazovky v této dokumentaci jsou pořízeny na macOS a zobrazují se z
 | Nastavit kodeky, čekání hovoru a historii hovorů | [Nastavení hovorů](sip-accounts/calls.md) |
 | Dát kolegy na tlačítka jedním stiskem | [Tlačítka](sip-accounts/buttons.md) |
 | Rozhodnout, které hovory se nahrávají a jak dlouho | [Nahrávání hovorů](recordings/call-recording.md) |
-| Poslouchat, prohledávat a číst své rozhovory | [Okno nahrávek](recordings/recordings-window.md) |
+| Poslouchat, prohledávat a číst své rozhovory | [Okno nahrávek](interface/recordings.md) |
 | Nahrát schůzku v jiné aplikaci | [Zachytávání](capture/capture.md) |
 | Vybrat rozpoznávač, který mění řeč v text | [Přepis](ai-processing/transcription.md) |
 | Rozhodnout, která AI dělá zápisy a kolik smí stát | [Zpracování](ai-processing/processing.md) |

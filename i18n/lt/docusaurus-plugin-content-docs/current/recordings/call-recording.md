@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Kurie skambučiai įrašomi, kas pasakoma kitai pusei, kaip išsaugomos konferencijos ir kiek laiko laikomi failai.
 ---
 
-**Nustatymai → Įrašymas** nusprendžia, kurie skambučiai tampa įrašais ir kiek laiko failai lieka. Įrašytas skambutis atsiranda [įrašų lange](/recordings/recordings-window).
+**Nustatymai → Įrašymas** nusprendžia, kurie skambučiai tampa įrašais ir kiek laiko failai lieka. Įrašytas skambutis atsiranda [įrašų lange](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Nustatymai → Įrašymas" />
 

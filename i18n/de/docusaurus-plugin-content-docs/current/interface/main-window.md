@@ -38,7 +38,7 @@ Unter den Chips stehen die [Tasten](../sip-accounts/buttons.md), die Sie für Ko
 
 ### Aufnahmen, Kontakte, Verlauf, Einstellungen {#recordings-contacts-history-settings}
 
-Diese vier Einträge unten öffnen rechts einen Reiter, nebeneinander: [Aufnahmen](../recordings/recordings-window.md), [Kontakte und Verlauf](contacts-history.md) und [Einstellungen](settings-overview.md). Geöffnete Reiter bleiben in der Reihe oben auf der rechten Seite.
+Diese vier Einträge unten öffnen rechts einen Reiter, nebeneinander: [Aufnahmen](../interface/recordings.md), [Kontakte und Verlauf](contacts-history.md) und [Einstellungen](settings-overview.md). Geöffnete Reiter bleiben in der Reihe oben auf der rechten Seite.
 
 ## Ein laufendes Gespräch {#a-call-in-progress}
 

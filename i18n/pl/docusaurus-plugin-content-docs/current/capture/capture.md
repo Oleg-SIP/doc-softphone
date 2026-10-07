@@ -82,7 +82,7 @@ Ołówek obok nazwy nagrania pozwala zmienić ją w trakcie nagrywania. Nagranie
 
 ## Gdzie trafia nagranie {#where-the-recording-goes}
 
-Przechwycona rozmowa pojawia się w [oknie nagrań](../recordings/recordings-window.md) jak każda inna, z własną ikoną — oknem zamiast słuchawki — i z tytułem, który nadałeś, albo **Inna aplikacja**.
+Przechwycona rozmowa pojawia się w [oknie nagrań](../interface/recordings.md) jak każda inna, z własną ikoną — oknem zamiast słuchawki — i z tytułem, który nadałeś, albo **Inna aplikacja**.
 
 <Shot name="01_recordings" alt="Przechwycone spotkania w zakładce Nagrania, oznaczone ikoną okna" />
 

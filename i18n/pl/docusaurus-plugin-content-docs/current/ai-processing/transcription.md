@@ -8,7 +8,7 @@ description: "\"Wybierz rozpoznawacz, który zamienia dźwięk w tekst: jego adr
 
 <Shot name="25_transcription" alt="Ustawienia → Transkrypcja: język i cztery rozpoznawacze" />
 
-Rozmowa jest spisywana, gdy poprosisz o to w [oknie nagrań](/recordings/recordings-window), albo sama, jeśli w [Przetwarzaniu](/ai-processing/processing) włączone jest **Przetwarzaj rozmowy automatycznie**. Rozpoznawacz na twoim komputerze nic nie kosztuje; ten w chmurze nalicza opłaty za minuty dźwięku.
+Rozmowa jest spisywana, gdy poprosisz o to w [oknie nagrań](/interface/recordings), albo sama, jeśli w [Przetwarzaniu](/ai-processing/processing) włączone jest **Przetwarzaj rozmowy automatycznie**. Rozpoznawacz na twoim komputerze nic nie kosztuje; ten w chmurze nalicza opłaty za minuty dźwięku.
 
 ## Język {#language}
 
@@ -25,7 +25,7 @@ Rozpoznawacz to usługa zamiany mowy na tekst, do której telefon wysyła dźwi�
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Ten oznaczony jako **domyślny** po prawej stronie swojego wiersza (na obrazku **X.ai**) jest używany, gdy nie wybierzesz innego. Możesz mieć kilka. Lista rozwijana nad transkrypcją w [oknie nagrań](/recordings/recordings-window#the-transcript-and-the-write-up) pokazuje transkrypcje wykonane przez każdy rozpoznawacz.
+Ten oznaczony jako **domyślny** po prawej stronie swojego wiersza (na obrazku **X.ai**) jest używany, gdy nie wybierzesz innego. Możesz mieć kilka. Lista rozwijana nad transkrypcją w [oknie nagrań](/interface/recordings#the-transcript-and-the-write-up) pokazuje transkrypcje wykonane przez każdy rozpoznawacz.
 
 Model może pozostać pusty. Usługa używa wtedy własnego modelu domyślnego.
 
@@ -95,4 +95,4 @@ Model musi uruchamiać serwer, który udostępnia zgodny z OpenAI punkt końcowy
 
 Każdy inny serwer udostępniający ten sam punkt końcowy działa tak samo. Jeśli serwer wymaga klucza, wpisz go tak jak dla usługi w chmurze.
 
-Zanim zaczniesz polegać na serwerze, zrób nagranie testowe i obejrzyj transkrypcję w [oknie nagrań](/recordings/recordings-window): rozmowa w języku, który model słabo zna, od razu to pokaże.
+Zanim zaczniesz polegać na serwerze, zrób nagranie testowe i obejrzyj transkrypcję w [oknie nagrań](/interface/recordings): rozmowa w języku, który model słabo zna, od razu to pokaże.

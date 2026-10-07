@@ -1,6 +1,6 @@
 ---
 title: Przegląd ustawień
-sidebar_position: 3
+sidebar_position: 4
 description: Lista kontrolna Przegląd i zakładki okna Ustawienia oraz to, gdzie każdą z nich opisano.
 ---
 

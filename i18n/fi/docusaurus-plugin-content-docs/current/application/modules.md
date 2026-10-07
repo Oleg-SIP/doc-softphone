@@ -23,7 +23,7 @@ Jokaisella moduulilla on valintaruutu, nimi, rivi siitä, mitä se tekee, ja oik
 | **Sanastot** | Luokat, tunnisteet ja merkit — koodit, joihin kaikki muu viittaa: [Sanastot](/ai-processing/dictionaries). |
 | **Hakemisto** | Osoitekirja: [Yhteystiedot](/interface/contacts-history). |
 | **Integraatio** | Paikallinen API ja webhookit: [Integraatio](/integration/rest-api). |
-| **Mediavarasto** | Keskustelujen kirjasto ja niiden säilytysaika: [Tallenteet](/recordings/recordings-window). |
+| **Mediavarasto** | Keskustelujen kirjasto ja niiden säilytysaika: [Tallenteet](/interface/recordings). |
 | **Käsittely** | Kehotteet ja niitä laukaisevat säännöt: [Käsittely](/ai-processing/processing). |
 | **Tallennus** | Puheluiden tallentaminen ja siitä kertominen toiselle osapuolelle: [Puheluiden tallentaminen](/recordings/call-recording). |
 | **Puhelinliikenne** | SIP, tilit, puhelut, numeronvalitsin ja puheluhistoria. |

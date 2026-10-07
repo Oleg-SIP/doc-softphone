@@ -82,7 +82,7 @@ A felvétel neve melletti ceruzával a felvételt menet közben átnevezheti. Az
 
 ## Hová kerül a felvétel {#where-the-recording-goes}
 
-A rögzített beszélgetés ugyanúgy megjelenik a [Felvételek ablakban](../recordings/recordings-window.md), mint bármely más, saját ikonnal — kagyló helyett ablakkal —, és az Ön által adott címmel vagy a **Másik alkalmazás** felirattal.
+A rögzített beszélgetés ugyanúgy megjelenik a [Felvételek ablakban](../interface/recordings.md), mint bármely más, saját ikonnal — kagyló helyett ablakkal —, és az Ön által adott címmel vagy a **Másik alkalmazás** felirattal.
 
 <Shot name="01_recordings" alt="Rögzített megbeszélések a Felvételek lapon, ablak ikonnal jelölve" />
 

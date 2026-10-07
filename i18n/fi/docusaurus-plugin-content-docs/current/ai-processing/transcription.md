@@ -8,7 +8,7 @@ description: "\"Valitse tunnistin, joka muuttaa äänen tekstiksi: sen osoite, s
 
 <Shot name="25_transcription" alt="Asetukset → Litterointi: kieli ja neljä tunnistinta" />
 
-Keskustelu litteroidaan, kun pyydät sitä [Tallenteet-ikkunassa](/recordings/recordings-window), tai itsestään, jos **Käsittele keskustelut automaattisesti** on käytössä kohdassa [Käsittely](/ai-processing/processing). Omalla koneellasi oleva tunnistin ei maksa mitään; pilvessä oleva laskuttaa äänen minuuttien mukaan.
+Keskustelu litteroidaan, kun pyydät sitä [Tallenteet-ikkunassa](/interface/recordings), tai itsestään, jos **Käsittele keskustelut automaattisesti** on käytössä kohdassa [Käsittely](/ai-processing/processing). Omalla koneellasi oleva tunnistin ei maksa mitään; pilvessä oleva laskuttaa äänen minuuttien mukaan.
 
 ## Kieli {#language}
 
@@ -25,7 +25,7 @@ Tunnistin on puheesta tekstiksi -palvelu, jolle puhelin lähettää äänen. Pai
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Rivinsä oikealla puolella merkinnällä **oletus** varustettu (kuvassa **X.ai**) on se, jota käytetään, kun et valitse muuta. Voit pitää useita. [Tallenteet-ikkunassa](/recordings/recordings-window#the-transcript-and-the-write-up) litteroinnin yläpuolella oleva pudotusvalikko luettelee kunkin tunnistimen tekemät litteroinnit.
+Rivinsä oikealla puolella merkinnällä **oletus** varustettu (kuvassa **X.ai**) on se, jota käytetään, kun et valitse muuta. Voit pitää useita. [Tallenteet-ikkunassa](/interface/recordings#the-transcript-and-the-write-up) litteroinnin yläpuolella oleva pudotusvalikko luettelee kunkin tunnistimen tekemät litteroinnit.
 
 Mallin voi jättää tyhjäksi. Palvelu käyttää silloin omaa oletustaan.
 
@@ -95,4 +95,4 @@ Mallia on ajettava palvelimella, joka tarjoaa OpenAI-yhteensopivan `/v1/audio/tr
 
 Mikä tahansa muu saman päätepisteen tarjoava palvelin toimii samalla tavalla. Jos palvelin vaatii avaimen, syötä se kuten pilvipalvelulle.
 
-Ennen kuin luotat palvelimeen, tee testitallenne ja katso litterointia [Tallenteet-ikkunassa](/recordings/recordings-window): keskustelu kielellä, jota malli osaa huonosti, paljastaa sen heti.
+Ennen kuin luotat palvelimeen, tee testitallenne ja katso litterointia [Tallenteet-ikkunassa](/interface/recordings): keskustelu kielellä, jota malli osaa huonosti, paljastaa sen heti.

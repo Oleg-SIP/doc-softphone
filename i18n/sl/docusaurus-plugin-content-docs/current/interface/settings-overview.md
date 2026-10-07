@@ -1,6 +1,6 @@
 ---
 title: Pregled nastavitev
-sidebar_position: 3
+sidebar_position: 4
 description: Kontrolni seznam Pregled in zavihki okna Nastavitve ter kje je vsak opisan.
 ---
 

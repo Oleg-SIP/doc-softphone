@@ -1,6 +1,6 @@
 ---
 title: Asetusten yleiskatsaus
-sidebar_position: 3
+sidebar_position: 4
 description: Yleiskatsaus-tarkistuslista ja Asetukset-ikkunan välilehdet sekä se, missä kukin on kuvattu.
 ---
 

@@ -38,7 +38,7 @@ A jelvények alatt azok a [gombok](../sip-accounts/buttons.md) vannak, amelyeket
 
 ### Felvételek, Névjegyek, Előzmények, Beállítások {#recordings-contacts-history-settings}
 
-Ez a négy alsó elem egy-egy lapot nyit jobbra, egymás mellett: [Felvételek](../recordings/recordings-window.md), [Névjegyek és Előzmények](contacts-history.md), valamint [Beállítások](settings-overview.md). A megnyitott lapok a jobb oldal tetején lévő sorban maradnak.
+Ez a négy alsó elem egy-egy lapot nyit jobbra, egymás mellett: [Felvételek](../interface/recordings.md), [Névjegyek és Előzmények](contacts-history.md), valamint [Beállítások](settings-overview.md). A megnyitott lapok a jobb oldal tetején lévő sorban maradnak.
 
 ## Folyamatban lévő hívás {#a-call-in-progress}
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Kateri klici se snemajo, kaj se pove drugi strani, kako se shranijo konference in kako dolgo se datoteke hranijo.
 ---
 
-**Nastavitve → Snemanje** odloča, kateri klici postanejo posnetki in kako dolgo datoteke ostanejo. Posnet klic se pojavi v [oknu Posnetki](/recordings/recordings-window).
+**Nastavitve → Snemanje** odloča, kateri klici postanejo posnetki in kako dolgo datoteke ostanejo. Posnet klic se pojavi v [oknu Posnetki](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Nastavitve → Snemanje" />
 

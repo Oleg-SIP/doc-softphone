@@ -50,7 +50,7 @@ See [Capture](/capture/).
 
 ## There is a recording, but no transcript or summary
 
-- A conversation is transcribed and written up by itself only if **Process conversations automatically** is on in [Settings → Processing](/ai-processing/processing). Otherwise ask for it in the [Recordings window](/recordings/recordings-window).
+- A conversation is transcribed and written up by itself only if **Process conversations automatically** is on in [Settings → Processing](/ai-processing/processing). Otherwise ask for it in the [Recordings window](/interface/recordings).
 - There has to be a [recogniser](/ai-processing/transcription) and a [language model](/ai-processing/processing#language-models), and each has to answer at its address.
 - When the monthly **Money limit** or **Token limit** is reached, the automatic rules stop until the month turns. Asking for something yourself is never stopped.
 - The steps of [Settings → Overview](/interface/settings-overview) show what is still to set up.

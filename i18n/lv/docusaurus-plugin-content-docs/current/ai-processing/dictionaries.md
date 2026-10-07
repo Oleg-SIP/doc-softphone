@@ -38,7 +38,7 @@ Atzīmes, kas *visas var attiekties uz vienu un to pašu sarunu*. Nospiediet **P
 
 ## Brīdinājuma signāli {#red-flags}
 
-Lietas, kam vajadzīga uzmanība, atrastas sarunā ar pierādījumu un laiku — piemēram, *Dusmīgs klients* vai *Aiziešanas risks*. Brīdinājuma signāli [ierakstu logā](../recordings/recordings-window.md) tiek zīmēti sarkanā krāsā, un katram ir nopietnība: zema, vidēja vai augsta.
+Lietas, kam vajadzīga uzmanība, atrastas sarunā ar pierādījumu un laiku — piemēram, *Dusmīgs klients* vai *Aiziešanas risks*. Brīdinājuma signāli [ierakstu logā](../interface/recordings.md) tiek zīmēti sarkanā krāsā, un katram ir nopietnība: zema, vidēja vai augsta.
 
 ## Atbilžu formas un valoda {#answer-shapes-and-language}
 

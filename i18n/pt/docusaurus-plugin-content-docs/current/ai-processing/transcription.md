@@ -8,7 +8,7 @@ description: "\"Escolher o reconhecedor que transforma o áudio em texto: o seu 
 
 <Shot name="25_transcription" alt="Definições → Transcrição: a língua e quatro reconhecedores" />
 
-Uma conversa é transcrita quando o pede na [janela de gravações](/recordings/recordings-window), ou sozinha se **Processar as conversas automaticamente** estiver ligado em [Processamento](/ai-processing/processing). Um reconhecedor na sua própria máquina não custa nada; um na nuvem cobra por minuto de áudio.
+Uma conversa é transcrita quando o pede na [janela de gravações](/interface/recordings), ou sozinha se **Processar as conversas automaticamente** estiver ligado em [Processamento](/ai-processing/processing). Um reconhecedor na sua própria máquina não custa nada; um na nuvem cobra por minuto de áudio.
 
 ## Língua {#language}
 
@@ -25,7 +25,7 @@ Um reconhecedor é um serviço de voz para texto a que o telefone envia o áudio
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-O marcado como **por omissão** à direita da sua linha (**X.ai** na imagem) é o usado quando não escolhe outro. Pode ter vários. A lista pendente por cima de uma transcrição na [janela de gravações](/recordings/recordings-window#the-transcript-and-the-write-up) lista as transcrições feitas por cada reconhecedor.
+O marcado como **por omissão** à direita da sua linha (**X.ai** na imagem) é o usado quando não escolhe outro. Pode ter vários. A lista pendente por cima de uma transcrição na [janela de gravações](/interface/recordings#the-transcript-and-the-write-up) lista as transcrições feitas por cada reconhecedor.
 
 O modelo pode ficar vazio. Nesse caso o serviço usa o seu próprio modelo por omissão.
 
@@ -95,4 +95,4 @@ O modelo tem de ser executado por um servidor que ofereça o ponto de acesso `/v
 
 Qualquer outro servidor que ofereça o mesmo ponto de acesso funciona da mesma maneira. Se um servidor precisar de uma chave, introduza-a como para um serviço na nuvem.
 
-Antes de confiar num servidor, faça uma gravação de teste e veja a transcrição na [janela de gravações](/recordings/recordings-window): uma conversa numa língua que o modelo conhece mal mostra-o logo.
+Antes de confiar num servidor, faça uma gravação de teste e veja a transcrição na [janela de gravações](/interface/recordings): uma conversa numa língua que o modelo conhece mal mostra-o logo.

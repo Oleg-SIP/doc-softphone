@@ -50,7 +50,7 @@ Pogledajte [Hvatanje](/capture/).
 
 ## Snimka postoji, ali nema prijepisa ni sažetka {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Razgovor se prepisuje i obrađuje sam samo ako je u [Postavke → Obrada](/ai-processing/processing) uključeno **Obrađuj razgovore automatski**. Inače to zatražite u [prozoru Snimke](/recordings/recordings-window).
+- Razgovor se prepisuje i obrađuje sam samo ako je u [Postavke → Obrada](/ai-processing/processing) uključeno **Obrađuj razgovore automatski**. Inače to zatražite u [prozoru Snimke](/interface/recordings).
 - Mora postojati [prepoznavač](/ai-processing/transcription) i [jezični model](/ai-processing/processing#language-models), a svaki mora odgovarati na svojoj adresi.
 - Kad se dosegne mjesečna **Novčana granica** ili **Granica tokena**, automatska pravila staju do kraja mjeseca. Ono što zatražite sami nikada se ne zaustavlja.
 - Koraci u [Postavke → Pregled](/interface/settings-overview) pokazuju što još treba postaviti.

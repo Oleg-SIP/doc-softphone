@@ -55,7 +55,7 @@ A **Beállítások → Áttekintés** vezeti Ön helyett ezt a listát: a zöld 
 | Beállítani a kodekeket, a hívásvárakoztatást és a hívásnaplót | [Hívásbeállítások](sip-accounts/calls.md) |
 | Egyérintéses gombokra tenni a kollégákat | [Gombok](sip-accounts/buttons.md) |
 | Eldönteni, mely hívásokról és mennyi ideig maradjon felvétel | [Hívások rögzítése](recordings/call-recording.md) |
-| Meghallgatni, keresni és elolvasni a beszélgetéseit | [A Felvételek ablak](recordings/recordings-window.md) |
+| Meghallgatni, keresni és elolvasni a beszélgetéseit | [A Felvételek ablak](interface/recordings.md) |
 | Rögzíteni egy másik alkalmazásban tartott megbeszélést | [Rögzítés](capture/capture.md) |
 | Kiválasztani a beszédet szöveggé alakító felismerőt | [Átirat](ai-processing/transcription.md) |
 | Eldönteni, melyik MI dolgozza fel a beszélgetéseit, és mennyibe kerülhet | [Feldolgozás](ai-processing/processing.md) |

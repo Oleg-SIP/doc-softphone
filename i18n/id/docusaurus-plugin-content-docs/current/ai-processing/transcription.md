@@ -8,7 +8,7 @@ description: "\"Pilih pengenal suara yang mengubah audio menjadi teks: alamatnya
 
 <Shot name="25_transcription" alt="Pengaturan → Transkripsi: bahasa dan empat pengenal suara" />
 
-Percakapan ditranskripsikan ketika Anda memintanya di [jendela Rekaman](/recordings/recordings-window), atau dengan sendirinya jika **Proses percakapan otomatis** menyala di [Pemrosesan](/ai-processing/processing). Pengenal suara di komputer Anda sendiri tidak memakan biaya untuk dijalankan; pengenal suara di cloud mengenakan biaya per menit audio.
+Percakapan ditranskripsikan ketika Anda memintanya di [jendela Rekaman](/interface/recordings), atau dengan sendirinya jika **Proses percakapan otomatis** menyala di [Pemrosesan](/ai-processing/processing). Pengenal suara di komputer Anda sendiri tidak memakan biaya untuk dijalankan; pengenal suara di cloud mengenakan biaya per menit audio.
 
 ## Bahasa {#language}
 
@@ -25,7 +25,7 @@ Pengenal suara adalah layanan ucapan-ke-teks yang menerima audio dari telepon. T
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Yang ditandai **Bawaan** di sebelah kanan barisnya (**X.ai** pada gambar) adalah yang digunakan ketika Anda tidak memilih yang lain. Anda dapat menyimpan beberapa. Daftar tarik-turun di atas transkrip di [jendela Rekaman](/recordings/recordings-window#the-transcript-and-the-write-up) mencantumkan transkrip yang dibuat oleh setiap pengenal suara.
+Yang ditandai **Bawaan** di sebelah kanan barisnya (**X.ai** pada gambar) adalah yang digunakan ketika Anda tidak memilih yang lain. Anda dapat menyimpan beberapa. Daftar tarik-turun di atas transkrip di [jendela Rekaman](/interface/recordings#the-transcript-and-the-write-up) mencantumkan transkrip yang dibuat oleh setiap pengenal suara.
 
 Model boleh dibiarkan kosong. Layanan kemudian menggunakan bawaannya sendiri.
 
@@ -95,4 +95,4 @@ Model harus dijalankan oleh server yang menawarkan endpoint `/v1/audio/transcrip
 
 Server lain apa pun yang menawarkan endpoint yang sama bekerja dengan cara yang sama. Jika server memerlukan kunci, masukkan kunci itu seperti untuk layanan cloud.
 
-Sebelum mengandalkan sebuah server, buat rekaman uji dan lihat transkripnya di [jendela Rekaman](/recordings/recordings-window): percakapan dalam bahasa yang kurang dikuasai model akan langsung menunjukkannya.
+Sebelum mengandalkan sebuah server, buat rekaman uji dan lihat transkripnya di [jendela Rekaman](/interface/recordings): percakapan dalam bahasa yang kurang dikuasai model akan langsung menunjukkannya.

@@ -82,7 +82,7 @@ Pennan bredvid inspelningens namn låter dig byta namn på den medan den pågår
 
 ## Var inspelningen hamnar {#where-the-recording-goes}
 
-Ett fångat samtal visas i [fönstret Inspelningar](../recordings/recordings-window.md) som vilket annat som helst, med en egen ikon — ett fönster i stället för en lur — och med titeln du gav det eller **Ett annat program**.
+Ett fångat samtal visas i [fönstret Inspelningar](../interface/recordings.md) som vilket annat som helst, med en egen ikon — ett fönster i stället för en lur — och med titeln du gav det eller **Ett annat program**.
 
 <Shot name="01_recordings" alt="Fångade möten på fliken Inspelningar, markerade med en fönsterikon" />
 

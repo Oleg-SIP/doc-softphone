@@ -55,7 +55,7 @@ Selle dokumentatsiooni ekraanipildid on tehtud macOS-is ja näidatud väikestena
 | Seadistada koodekid, kõne ootel ja kõnede ajaloo | [Kõnede seaded](sip-accounts/calls.md) |
 | Panna kolleegid ühe vajutusega nuppudele | [Nupud](sip-accounts/buttons.md) |
 | Otsustada, milliseid kõnesid ja kui kaua salvestatakse | [Kõnede salvestamine](recordings/call-recording.md) |
-| Kuulata, otsida ja lugeda oma vestlusi | [Salvestiste aken](recordings/recordings-window.md) |
+| Kuulata, otsida ja lugeda oma vestlusi | [Salvestiste aken](interface/recordings.md) |
 | Salvestada teises rakenduses peetud koosolekut | [Hõivamine](capture/capture.md) |
 | Valida tuvastaja, mis muudab kõne tekstiks | [Ülestähendus](ai-processing/transcription.md) |
 | Otsustada, milline tehisintellekt teeb teie vestlustest kokkuvõtteid ja kui palju see võib maksta | [Töötlemine](ai-processing/processing.md) |

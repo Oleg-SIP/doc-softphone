@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Quels appels sont enregistrés, ce qui est dit au correspondant, comment les conférences sont sauvegardées et combien de temps les fichiers sont conservés.
 ---
 
-**Réglages → Enregistrement** décide quels appels deviennent des enregistrements, et combien de temps les fichiers restent. Un appel enregistré apparaît dans la [fenêtre des enregistrements](/recordings/recordings-window).
+**Réglages → Enregistrement** décide quels appels deviennent des enregistrements, et combien de temps les fichiers restent. Un appel enregistré apparaît dans la [fenêtre des enregistrements](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Réglages → Enregistrement" />
 

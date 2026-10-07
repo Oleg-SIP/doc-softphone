@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Kuri zvani tiek ierakstīti, ko pasaka otrai pusei, kā saglabā konferences un cik ilgi glabā failus.
 ---
 
-**Iestatījumi → Ierakstīšana** izlemj, kuri zvani kļūst par ierakstiem un cik ilgi faili paliek. Ierakstīts zvans parādās [ierakstu logā](/recordings/recordings-window).
+**Iestatījumi → Ierakstīšana** izlemj, kuri zvani kļūst par ierakstiem un cik ilgi faili paliek. Ierakstīts zvans parādās [ierakstu logā](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Iestatījumi → Ierakstīšana" />
 

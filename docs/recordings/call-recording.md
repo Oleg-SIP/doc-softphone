@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Which calls are recorded, what the other party is told, how conferences are saved and how long the files are kept.
 ---
 
-**Settings → Recording** decides which calls become recordings, and for how long the files stay. A recorded call appears in the [Recordings window](/recordings/recordings-window).
+**Settings → Recording** decides which calls become recordings, and for how long the files stay. A recorded call appears in the [Recordings window](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Settings → Recording" />
 

@@ -1,6 +1,6 @@
 ---
 title: Контакти та історія
-sidebar_position: 2
+sidebar_position: 3
 description: Адресна книга і журнал викликів поруч із телефоном.
 ---
 

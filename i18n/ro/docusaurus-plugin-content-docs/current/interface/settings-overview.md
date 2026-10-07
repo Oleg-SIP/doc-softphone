@@ -1,6 +1,6 @@
 ---
 title: Prezentarea setărilor
-sidebar_position: 3
+sidebar_position: 4
 description: Lista de verificare Prezentare generală și filele ferestrei Setări, cu locul în care este descrisă fiecare.
 ---
 

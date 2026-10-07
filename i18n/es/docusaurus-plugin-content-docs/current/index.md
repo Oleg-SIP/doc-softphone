@@ -55,7 +55,7 @@ Las capturas de pantalla de esta documentación están hechas en macOS y se mues
 | Ajustar los códecs, la llamada en espera y el historial de llamadas | [Ajustes de llamadas](sip-accounts/calls.md) |
 | Poner a sus compañeros en botones de una sola pulsación | [Botones](sip-accounts/buttons.md) |
 | Decidir qué llamadas se graban y durante cuánto tiempo | [Grabar llamadas](recordings/call-recording.md) |
-| Escuchar, buscar y leer sus conversaciones | [Ventana de grabaciones](recordings/recordings-window.md) |
+| Escuchar, buscar y leer sus conversaciones | [Ventana de grabaciones](interface/recordings.md) |
 | Grabar una reunión celebrada en otra aplicación | [Captura](capture/capture.md) |
 | Elegir el reconocedor que convierte la voz en texto | [Transcripción](ai-processing/transcription.md) |
 | Decidir qué IA redacta sus conversaciones y cuánto puede costar | [Procesamiento](ai-processing/processing.md) |

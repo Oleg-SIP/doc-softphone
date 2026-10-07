@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Ce apeluri se înregistrează, ce i se spune celeilalte părți, cum se salvează conferințele și cât timp se păstrează fișierele.
 ---
 
-**Setări → Înregistrare** hotărăște ce apeluri devin înregistrări și cât timp rămân fișierele. Un apel înregistrat apare în [fereastra Înregistrări](/recordings/recordings-window).
+**Setări → Înregistrare** hotărăște ce apeluri devin înregistrări și cât timp rămân fișierele. Un apel înregistrat apare în [fereastra Înregistrări](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Setări → Înregistrare" />
 

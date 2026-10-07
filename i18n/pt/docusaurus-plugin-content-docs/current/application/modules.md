@@ -23,7 +23,7 @@ Cada módulo tem uma caixa, um nome, uma linha que diz o que faz e, à direita, 
 | **Dicionários** | Categorias, etiquetas e sinais — os códigos para os quais tudo o resto aponta: [Dicionários](/ai-processing/dictionaries). |
 | **Diretório** | A lista de contactos: [Contactos](/interface/contacts-history). |
 | **Integração** | A API local e os webhooks: [Integração](/integration/rest-api). |
-| **Arquivo de média** | A biblioteca de conversas e durante quanto tempo são guardadas: [Gravações](/recordings/recordings-window). |
+| **Arquivo de média** | A biblioteca de conversas e durante quanto tempo são guardadas: [Gravações](/interface/recordings). |
 | **Processamento** | As instruções e as regras que as disparam: [Processamento](/ai-processing/processing). |
 | **Gravação** | Gravar chamadas, e avisar o interlocutor disso: [Gravar chamadas](/recordings/call-recording). |
 | **Telefonia** | SIP, contas, chamadas, o marcador e o registo de chamadas. |

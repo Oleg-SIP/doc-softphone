@@ -10,7 +10,7 @@ A **Beállítások → Feldolgozás** dönti el, mi történjen egy beszélgeté
 
 ## A beszélgetések automatikus feldolgozása {#process-conversations-automatically}
 
-- **Ki:** semmi sem történik, amíg nem kéri a [Felvételek ablakban](../recordings/recordings-window.md).
+- **Ki:** semmi sem történik, amíg nem kéri a [Felvételek ablakban](../interface/recordings.md).
 - **Be:** az alábbi [szabályok](#rules) maguktól lefutnak. Ez alakítja a beszélgetést összefoglalóvá, kategóriává és minden mássá anélkül, hogy bárki bármit megnyomna. A felhőben futó modell ezen lépések mindegyikéért díjat számol fel.
 
 A jelölőnégyzet alatt a program megmutatja, mennyit költött ebben a hónapban és hány kérésre, például *Ebben a hónapban: 40 492 token, 84 kérésben, díjmentesen.*

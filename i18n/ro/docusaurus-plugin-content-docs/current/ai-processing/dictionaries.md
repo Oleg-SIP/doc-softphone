@@ -38,7 +38,7 @@ Mărci care *pot fi toate valabile pentru aceeași conversație*. Apăsați **Ad
 
 ## Semnale de alarmă {#red-flags}
 
-Lucruri care cer atenție, găsite în conversație împreună cu dovada și momentul — de exemplu *Client furios* sau *Risc de plecare*. Semnalele de alarmă sunt desenate cu roșu în [fereastra Înregistrări](../recordings/recordings-window.md) și fiecare are o gravitate: scăzută, medie sau ridicată.
+Lucruri care cer atenție, găsite în conversație împreună cu dovada și momentul — de exemplu *Client furios* sau *Risc de plecare*. Semnalele de alarmă sunt desenate cu roșu în [fereastra Înregistrări](../interface/recordings.md) și fiecare are o gravitate: scăzută, medie sau ridicată.
 
 ## Structurile răspunsurilor și limba {#answer-shapes-and-language}
 

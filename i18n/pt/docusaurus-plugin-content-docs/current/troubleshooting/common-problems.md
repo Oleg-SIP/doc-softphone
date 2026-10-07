@@ -50,7 +50,7 @@ Veja [Captura](/capture/).
 
 ## Há uma gravação, mas não há transcrição nem resumo {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Uma conversa só é transcrita e redigida sozinha se **Processar as conversas automaticamente** estiver ligado em [Definições → Processamento](/ai-processing/processing). Caso contrário, peça-o na [janela de gravações](/recordings/recordings-window).
+- Uma conversa só é transcrita e redigida sozinha se **Processar as conversas automaticamente** estiver ligado em [Definições → Processamento](/ai-processing/processing). Caso contrário, peça-o na [janela de gravações](/interface/recordings).
 - Tem de haver um [reconhecedor](/ai-processing/transcription) e um [modelo de língua](/ai-processing/processing#language-models), e cada um tem de responder no seu endereço.
 - Quando o **Limite de dinheiro** ou o **Limite de tokens** mensal é atingido, as regras automáticas param até o mês mudar. O que pede você mesmo nunca é parado.
 - Os passos de [Definições → Visão geral](/interface/settings-overview) mostram o que ainda falta configurar.

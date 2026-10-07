@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Những cuộc gọi nào được ghi âm, bên kia được báo như thế nào, hội thoại nhóm được lưu ra sao và các tệp được giữ trong bao lâu.
 ---
 
-**Cài đặt → Ghi âm** quyết định cuộc gọi nào trở thành bản ghi, và các tệp được giữ trong bao lâu. Cuộc gọi đã ghi âm xuất hiện trong [cửa sổ Bản ghi](/recordings/recordings-window).
+**Cài đặt → Ghi âm** quyết định cuộc gọi nào trở thành bản ghi, và các tệp được giữ trong bao lâu. Cuộc gọi đã ghi âm xuất hiện trong [cửa sổ Bản ghi](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Cài đặt → Ghi âm" />
 

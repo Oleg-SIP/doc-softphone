@@ -4,7 +4,7 @@ sidebar_position: 1
 description: "Quali chiamate vengono registrate, che cosa viene detto all'interlocutore, come si salvano le conferenze e per quanto tempo si conservano i file."
 ---
 
-**Impostazioni → Registrazione** decide quali chiamate diventano registrazioni, e per quanto tempo restano i file. Una chiamata registrata compare nella [finestra delle registrazioni](/recordings/recordings-window).
+**Impostazioni → Registrazione** decide quali chiamate diventano registrazioni, e per quanto tempo restano i file. Una chiamata registrata compare nella [finestra delle registrazioni](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Impostazioni → Registrazione" />
 

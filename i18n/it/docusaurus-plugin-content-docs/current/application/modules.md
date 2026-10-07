@@ -23,7 +23,7 @@ Ogni modulo ha una casella, un nome, una riga che dice che cosa fa e, a destra, 
 | **Dizionari** | Categorie, etichette e segnali — i codici a cui rimanda tutto il resto: [Dizionari](/ai-processing/dictionaries). |
 | **Rubrica** | La rubrica: [Contatti](/interface/contacts-history). |
 | **Integrazione** | L'API locale e i webhook: [Integrazione](/integration/rest-api). |
-| **Archivio media** | La libreria delle conversazioni e per quanto tempo si conservano: [Registrazioni](/recordings/recordings-window). |
+| **Archivio media** | La libreria delle conversazioni e per quanto tempo si conservano: [Registrazioni](/interface/recordings). |
 | **Elaborazione** | I prompt e le regole che li fanno scattare: [Elaborazione](/ai-processing/processing). |
 | **Registrazione** | Registrare le chiamate, e avvisarne l'interlocutore: [Registrare le chiamate](/recordings/call-recording). |
 | **Telefonia** | SIP, account, chiamate, il compositore e il registro chiamate. |

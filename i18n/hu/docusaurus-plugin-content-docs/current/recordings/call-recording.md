@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Mely hívásokról készül felvétel, mit tud meg erről a másik fél, hogyan mentődnek a konferenciák, és meddig maradnak meg a fájlok.
 ---
 
-A **Beállítások → Felvétel** dönti el, mely hívásokból lesz felvétel, és meddig maradnak meg a fájlok. A rögzített hívás a [Felvételek ablakban](/recordings/recordings-window) jelenik meg.
+A **Beállítások → Felvétel** dönti el, mely hívásokból lesz felvétel, és meddig maradnak meg a fájlok. A rögzített hívás a [Felvételek ablakban](/interface/recordings) jelenik meg.
 
 <Shot name="09_settings_recording" alt="Beállítások → Felvétel" />
 

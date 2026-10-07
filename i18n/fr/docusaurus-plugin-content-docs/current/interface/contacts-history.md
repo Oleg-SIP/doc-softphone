@@ -1,6 +1,6 @@
 ---
 title: Contacts et journal
-sidebar_position: 2
+sidebar_position: 3
 description: "Le carnet d'adresses et le journal des appels, à côté du téléphone."
 ---
 

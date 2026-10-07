@@ -50,7 +50,7 @@ Voir [Capture](/capture/).
 
 ## Il y a un enregistrement, mais pas de transcription ni de résumé {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Une conversation n'est transcrite et rédigée d'elle-même que si **Traiter les conversations automatiquement** est activé dans [Réglages → Traitement](/ai-processing/processing). Sinon, demandez-le dans la [fenêtre des enregistrements](/recordings/recordings-window).
+- Une conversation n'est transcrite et rédigée d'elle-même que si **Traiter les conversations automatiquement** est activé dans [Réglages → Traitement](/ai-processing/processing). Sinon, demandez-le dans la [fenêtre des enregistrements](/interface/recordings).
 - Il faut une [reconnaissance](/ai-processing/transcription) et un [modèle de langue](/ai-processing/processing#language-models), et chacun doit répondre à son adresse.
 - Quand la **Limite d'argent** ou la **Limite de jetons** mensuelle est atteinte, les règles automatiques s'arrêtent jusqu'au mois suivant. Ce que vous demandez vous-même n'est jamais bloqué.
 - Les étapes de [Réglages → Vue d’ensemble](/interface/settings-overview) montrent ce qui reste à configurer.

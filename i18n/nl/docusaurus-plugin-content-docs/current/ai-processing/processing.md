@@ -10,7 +10,7 @@ description: Automatische verwerking van gesprekken, de maandelijkse bestedingsg
 
 ## Gesprekken automatisch verwerken {#process-conversations-automatically}
 
-- **Uit:** er gebeurt niets tot u erom vraagt in het [venster Opnames](../recordings/recordings-window.md).
+- **Uit:** er gebeurt niets tot u erom vraagt in het [venster Opnames](../interface/recordings.md).
 - **Aan:** de [regels](#rules) hieronder lopen vanzelf. Dit is wat een gesprek omzet in een samenvatting, een categorie en al het andere zonder dat iemand ergens op drukt. Een model in de cloud rekent voor elk van die stappen.
 
 Onder het vakje toont het programma wat er deze maand is uitgegeven en over hoeveel verzoeken, bijvoorbeeld *Deze maand: 40.492 tokens, over 84 verzoeken, kosteloos.*

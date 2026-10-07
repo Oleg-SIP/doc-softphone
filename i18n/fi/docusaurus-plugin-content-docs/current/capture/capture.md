@@ -82,7 +82,7 @@ Tallenteen nimen vieressä olevalla kynällä voit nimetä sen uudelleen sen oll
 
 ## Minne tallenne menee {#where-the-recording-goes}
 
-Kaapattu keskustelu ilmestyy [Tallenteet-ikkunaan](../recordings/recordings-window.md) kuten mikä tahansa muu, omalla kuvakkeellaan — ikkuna luurin sijaan — ja antamallasi otsikolla tai nimellä **Toinen sovellus**.
+Kaapattu keskustelu ilmestyy [Tallenteet-ikkunaan](../interface/recordings.md) kuten mikä tahansa muu, omalla kuvakkeellaan — ikkuna luurin sijaan — ja antamallasi otsikolla tai nimellä **Toinen sovellus**.
 
 <Shot name="01_recordings" alt="Kaapatut kokoukset Tallenteet-välilehdellä ikkunakuvakkeella merkittyinä" />
 

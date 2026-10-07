@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Milliseid kõnesid salvestatakse, mida teisele osapoolele öeldakse, kuidas konverentse salvestatakse ja kui kaua faile säilitatakse.
 ---
 
-**Seaded → Salvestamine** otsustab, millistest kõnedest saavad salvestised ja kui kaua failid alles jäävad. Salvestatud kõne ilmub [salvestiste aknasse](/recordings/recordings-window).
+**Seaded → Salvestamine** otsustab, millistest kõnedest saavad salvestised ja kui kaua failid alles jäävad. Salvestatud kõne ilmub [salvestiste aknasse](/interface/recordings).
 
 <Shot name="09_settings_recording" alt="Seaded → Salvestamine" />
 

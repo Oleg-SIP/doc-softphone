@@ -1,6 +1,6 @@
 ---
 title: Settings overview
-sidebar_position: 3
+sidebar_position: 4
 description: The Overview checklist and the tabs of the Settings window, and where each one is described.
 ---
 

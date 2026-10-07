@@ -50,7 +50,7 @@ Lihat [Penangkapan](/capture/).
 
 ## Ada rekaman, tetapi tidak ada transkrip atau ringkasan {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Percakapan ditranskripsikan dan diolah dengan sendirinya hanya jika **Proses percakapan otomatis** menyala di [Pengaturan → Pemrosesan](/ai-processing/processing). Jika tidak, mintalah di [jendela Rekaman](/recordings/recordings-window).
+- Percakapan ditranskripsikan dan diolah dengan sendirinya hanya jika **Proses percakapan otomatis** menyala di [Pengaturan → Pemrosesan](/ai-processing/processing). Jika tidak, mintalah di [jendela Rekaman](/interface/recordings).
 - Harus ada [pengenal suara](/ai-processing/transcription) dan [model bahasa](/ai-processing/processing#language-models), dan masing-masing harus menjawab di alamatnya.
 - Ketika **Batas uang, per bulan** atau **Batas token, per bulan** tercapai, aturan otomatis berhenti sampai bulan berganti. Permintaan yang Anda ajukan sendiri tidak pernah dihentikan.
 - Langkah-langkah di [Pengaturan → Ikhtisar](/interface/settings-overview) menunjukkan apa yang masih perlu disiapkan.

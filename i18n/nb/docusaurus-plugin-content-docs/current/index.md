@@ -55,7 +55,7 @@ Skjermbildene i denne dokumentasjonen er tatt på macOS og vises små: klikk på
 | Stille inn kodeker, samtale venter og samtalehistorikken | [Samtaleinnstillinger](sip-accounts/calls.md) |
 | Legge kolleger på knapper med ett trykk | [Knapper](sip-accounts/buttons.md) |
 | Bestemme hvilke samtaler som tas opp, og hvor lenge | [Ta opp samtaler](recordings/call-recording.md) |
-| Lytte til, søke i og lese samtalene dine | [Vinduet Opptak](recordings/recordings-window.md) |
+| Lytte til, søke i og lese samtalene dine | [Vinduet Opptak](interface/recordings.md) |
 | Ta opp et møde som holdes i et annet program | [Fanging](capture/capture.md) |
 | Velge gjenkjenneren som gjør tale om til tekst | [Transkripsjon](ai-processing/transcription.md) |
 | Bestemme hvilken AI som oppsummerer samtalene dine, og hva det kan koste | [Behandling](ai-processing/processing.md) |

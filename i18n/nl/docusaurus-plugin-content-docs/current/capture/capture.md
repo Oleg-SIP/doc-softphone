@@ -82,7 +82,7 @@ Met het potlood naast de naam van de opname kunt u haar hernoemen terwijl ze loo
 
 ## Waar de opname terechtkomt {#where-the-recording-goes}
 
-Een vastgelegd gesprek verschijnt in het [venster Opnames](../recordings/recordings-window.md) zoals elk ander, met een eigen pictogram — een venster in plaats van een hoorn — en met de titel die u gaf of **Een andere toepassing**.
+Een vastgelegd gesprek verschijnt in het [venster Opnames](../interface/recordings.md) zoals elk ander, met een eigen pictogram — een venster in plaats van een hoorn — en met de titel die u gaf of **Een andere toepassing**.
 
 <Shot name="01_recordings" alt="Vastgelegde vergaderingen op het tabblad Opnames, gemarkeerd met een vensterpictogram" />
 

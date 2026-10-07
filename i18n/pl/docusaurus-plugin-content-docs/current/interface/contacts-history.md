@@ -1,6 +1,6 @@
 ---
 title: Kontakty i historia
-sidebar_position: 2
+sidebar_position: 3
 description: Książka adresowa i historia połączeń obok telefonu.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Contacts and history
-sidebar_position: 2
+sidebar_position: 3
 description: The address book and the call log, beside the phone.
 ---
 

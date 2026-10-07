@@ -50,7 +50,7 @@ Bkz. [Yakalama](/capture/).
 
 ## Bir kayıt var, ama döküm ya da özet yok {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Bir görüşme yalnızca [Ayarlar → İşleme](/ai-processing/processing) içinde **Görüşmeleri kendiliğinden işle** açıksa kendiliğinden yazıya dökülür ve işlenir. Aksi hâlde bunu [Kayıtlar penceresinde](/recordings/recordings-window) isteyin.
+- Bir görüşme yalnızca [Ayarlar → İşleme](/ai-processing/processing) içinde **Görüşmeleri kendiliğinden işle** açıksa kendiliğinden yazıya dökülür ve işlenir. Aksi hâlde bunu [Kayıtlar penceresinde](/interface/recordings) isteyin.
 - Bir [tanıyıcı](/ai-processing/transcription) ve bir [dil modeli](/ai-processing/processing#language-models) bulunmalı ve her biri kendi adresinde yanıt vermelidir.
 - Aylık **Para sınırı** ya da **Belirteç sınırı** dolduğunda otomatik kurallar ay dönene kadar durur. Bir şeyi kendiniz istemeniz hiçbir zaman durdurulmaz.
 - [Ayarlar → Genel bakış](/interface/settings-overview) adımları neyin hâlâ kurulması gerektiğini gösterir.

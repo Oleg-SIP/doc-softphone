@@ -38,7 +38,7 @@ Pažymėjimai, kurie *visi gali tikti tam pačiam pokalbiui*. Paspauskite **Prid
 
 ## Įspėjamieji signalai {#red-flags}
 
-Dalykai, kuriems reikia dėmesio, rasti pokalbyje su įrodymu ir laiku — pavyzdžiui, *Supykęs klientas* ar *Pasitraukimo rizika*. Įspėjamieji signalai [įrašų lange](../recordings/recordings-window.md) piešiami raudonai, ir kiekvienas turi rimtumą: žemą, vidutinį ar aukštą.
+Dalykai, kuriems reikia dėmesio, rasti pokalbyje su įrodymu ir laiku — pavyzdžiui, *Supykęs klientas* ar *Pasitraukimo rizika*. Įspėjamieji signalai [įrašų lange](../interface/recordings.md) piešiami raudonai, ir kiekvienas turi rimtumą: žemą, vidutinį ar aukštą.
 
 ## Atsakymų formos ir kalba {#answer-shapes-and-language}
 

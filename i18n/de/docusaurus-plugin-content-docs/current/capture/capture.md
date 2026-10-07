@@ -82,7 +82,7 @@ Mit dem Stift neben dem Namen der Aufnahme benennen Sie sie um, während sie noc
 
 ## Wohin die Aufnahme geht {#where-the-recording-goes}
 
-Ein mitgeschnittenes Gespräch erscheint im [Aufnahmefenster](../recordings/recordings-window.md) wie jedes andere, mit eigenem Symbol — einem Fenster statt eines Hörers — und mit dem Titel, den Sie ihm gegeben haben, oder **Eine andere Anwendung**.
+Ein mitgeschnittenes Gespräch erscheint im [Aufnahmefenster](../interface/recordings.md) wie jedes andere, mit eigenem Symbol — einem Fenster statt eines Hörers — und mit dem Titel, den Sie ihm gegeben haben, oder **Eine andere Anwendung**.
 
 <Shot name="01_recordings" alt="Mitgeschnittene Besprechungen im Reiter Aufnahmen, mit einem Fenstersymbol markiert" />
 

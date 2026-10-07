@@ -55,7 +55,7 @@ Skærmbillederne i denne dokumentation er taget på macOS og vises små: klik p�
 | Indstille codecs, banke på og opkaldshistorikken | [Opkaldsindstillinger](sip-accounts/calls.md) |
 | Lægge kolleger på knapper med ét tryk | [Knapper](sip-accounts/buttons.md) |
 | Bestemme, hvilke opkald der optages, og hvor længe | [Optagelse af opkald](recordings/call-recording.md) |
-| Lytte til, søge i og læse dine samtaler | [Vinduet Optagelser](recordings/recordings-window.md) |
+| Lytte til, søge i og læse dine samtaler | [Vinduet Optagelser](interface/recordings.md) |
 | Optage et møde, der holdes i et andet program | [Opfangning](capture/capture.md) |
 | Vælge den genkender, der gør tale til tekst | [Transskription](ai-processing/transcription.md) |
 | Bestemme, hvilken AI der opsummerer dine samtaler, og hvad det må koste | [Behandling](ai-processing/processing.md) |

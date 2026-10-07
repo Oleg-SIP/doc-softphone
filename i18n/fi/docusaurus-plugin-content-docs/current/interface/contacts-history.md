@@ -1,6 +1,6 @@
 ---
 title: Yhteystiedot ja historia
-sidebar_position: 2
+sidebar_position: 3
 description: Osoitekirja ja puheluhistoria puhelimen vieressä.
 ---
 

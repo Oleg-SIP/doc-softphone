@@ -38,7 +38,7 @@ Naljepnice koje *sve mogu vrijediti za isti razgovor*. Pritisnite **Dodaj** da d
 
 ## Upozoravajući signali {#red-flags}
 
-Stvari koje traže pozornost, pronađene u razgovoru s dokazom i vremenom — primjerice *Ljutit kupac* ili *Opasnost od odlaska*. Upozoravajući signali nacrtani su crveno u [prozoru Snimke](../recordings/recordings-window.md) i svaki nosi ozbiljnost: nisku, srednju ili visoku.
+Stvari koje traže pozornost, pronađene u razgovoru s dokazom i vremenom — primjerice *Ljutit kupac* ili *Opasnost od odlaska*. Upozoravajući signali nacrtani su crveno u [prozoru Snimke](../interface/recordings.md) i svaki nosi ozbiljnost: nisku, srednju ili visoku.
 
 ## Oblici odgovora i jezik {#answer-shapes-and-language}
 

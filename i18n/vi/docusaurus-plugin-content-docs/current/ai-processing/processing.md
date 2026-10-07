@@ -10,7 +10,7 @@ description: Xử lý tự động các cuộc trò chuyện, hạn mức chi ti
 
 ## Xử lý các cuộc trò chuyện tự động {#process-conversations-automatically}
 
-- **Tắt:** không có gì xảy ra cho tới khi bạn yêu cầu trong [cửa sổ Bản ghi](../recordings/recordings-window.md).
+- **Tắt:** không có gì xảy ra cho tới khi bạn yêu cầu trong [cửa sổ Bản ghi](../interface/recordings.md).
 - **Bật:** các [quy tắc](#rules) bên dưới tự chạy. Đó là điều biến một cuộc trò chuyện thành bản tóm tắt, hạng mục và mọi thứ khác mà không ai phải nhấn gì. Mô hình trên đám mây tính phí cho từng bước như vậy.
 
 Dưới ô đánh dấu, chương trình hiển thị số đã chi trong tháng này và cho bao nhiêu yêu cầu, ví dụ *Tháng này: 40.492 token, qua 84 yêu cầu, không tính phí.*

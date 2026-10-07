@@ -23,7 +23,7 @@ Każdy moduł ma pole wyboru, nazwę, wiersz o tym, co robi, a po prawej swój s
 | **Słowniki** | Kategorie, etykiety i sygnały ostrzegawcze — kody, na które wskazuje wszystko inne: [Słowniki](/ai-processing/dictionaries). |
 | **Katalog** | Książka adresowa: [Kontakty](/interface/contacts-history). |
 | **Integracja** | Lokalne API i webhooki: [Integracja](/integration/rest-api). |
-| **Magazyn mediów** | Biblioteka rozmów i jak długo są przechowywane: [Nagrania](/recordings/recordings-window). |
+| **Magazyn mediów** | Biblioteka rozmów i jak długo są przechowywane: [Nagrania](/interface/recordings). |
 | **Przetwarzanie** | Polecenia i reguły, które je uruchamiają: [Przetwarzanie](/ai-processing/processing). |
 | **Nagrywanie** | Nagrywanie połączeń i informowanie o tym drugiej strony: [Nagrywanie połączeń](/recordings/call-recording). |
 | **Telefonia** | SIP, konta, połączenia, pole wybierania i historia połączeń. |

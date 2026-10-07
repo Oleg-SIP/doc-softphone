@@ -1,6 +1,6 @@
 ---
 title: "Vue d'ensemble des réglages"
-sidebar_position: 3
+sidebar_position: 4
 description: "La liste de contrôle Vue d'ensemble et les onglets de la fenêtre Réglages, et où chacun est décrit."
 ---
 

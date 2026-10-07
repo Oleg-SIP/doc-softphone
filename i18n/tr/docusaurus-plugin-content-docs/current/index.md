@@ -55,7 +55,7 @@ Bu belgelerdeki ekran görüntüleri macOS'ta alınmıştır ve küçük göster
 | Kodekleri, çağrı bekletmeyi ve çağrı geçmişini ayarlamak | [Çağrı ayarları](sip-accounts/calls.md) |
 | İş arkadaşlarını tek dokunuşlu düğmelere koymak | [Düğmeler](sip-accounts/buttons.md) |
 | Hangi çağrıların ne kadar süreyle kaydedileceğine karar vermek | [Çağrıları kaydetme](recordings/call-recording.md) |
-| Görüşmelerinizi dinlemek, aramak ve okumak | [Kayıtlar penceresi](recordings/recordings-window.md) |
+| Görüşmelerinizi dinlemek, aramak ve okumak | [Kayıtlar penceresi](interface/recordings.md) |
 | Başka bir uygulamada yapılan bir toplantıyı kaydetmek | [Yakalama](capture/capture.md) |
 | Konuşmayı metne çeviren tanıyıcıyı seçmek | [Yazıya döküm](ai-processing/transcription.md) |
 | Görüşmelerinizi hangi yapay zekânın işleyeceğine ve bunun neye mal olabileceğine karar vermek | [İşleme](ai-processing/processing.md) |

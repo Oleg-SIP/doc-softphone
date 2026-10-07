@@ -55,7 +55,7 @@ Snimke zaslona u ovoj dokumentaciji napravljene su na macOS-u i prikazane umanje
 | Postaviti kodeke, poziv na čekanju i zapisnik poziva | [Postavke poziva](sip-accounts/calls.md) |
 | Staviti kolege na gumbe za jedan dodir | [Gumbi](sip-accounts/buttons.md) |
 | Odlučiti koji se pozivi snimaju i koliko dugo | [Snimanje poziva](recordings/call-recording.md) |
-| Slušati, pretraživati i čitati svoje razgovore | [Prozor snimki](recordings/recordings-window.md) |
+| Slušati, pretraživati i čitati svoje razgovore | [Prozor snimki](interface/recordings.md) |
 | Snimiti sastanak održan u drugoj aplikaciji | [Hvatanje](capture/capture.md) |
 | Odabrati prepoznavač koji govor pretvara u tekst | [Prijepis](ai-processing/transcription.md) |
 | Odlučiti koja umjetna inteligencija obrađuje vaše razgovore i koliko to smije stajati | [Obrada](ai-processing/processing.md) |

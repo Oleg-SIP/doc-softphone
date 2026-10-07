@@ -82,7 +82,7 @@ Zīmulis blakus ieraksta nosaukumam ļauj to pārdēvēt ierakstīšanas laikā.
 
 ## Kur nonāk ieraksts {#where-the-recording-goes}
 
-Notverta saruna parādās [ierakstu logā](../recordings/recordings-window.md) tāpat kā jebkura cita, ar savu ikonu — logu klausules vietā — un ar jūsu piešķirto virsrakstu vai **Cita lietotne**.
+Notverta saruna parādās [ierakstu logā](../interface/recordings.md) tāpat kā jebkura cita, ar savu ikonu — logu klausules vietā — un ar jūsu piešķirto virsrakstu vai **Cita lietotne**.
 
 <Shot name="01_recordings" alt="Notvertas sapulces cilnē Ieraksti, apzīmētas ar loga ikonu" />
 

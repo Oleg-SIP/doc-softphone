@@ -50,7 +50,7 @@ Pozrite [Zachytávanie](/capture/).
 
 ## Nahrávka je, ale prepis ani zhrnutie nie {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Rozhovor sa prepíše a spracuje sám iba vtedy, keď je v [Nastavenia → Spracovanie](/ai-processing/processing) zapnuté **Spracovávať hovory automaticky**. Inak o to požiadajte v [okne Nahrávky](/recordings/recordings-window).
+- Rozhovor sa prepíše a spracuje sám iba vtedy, keď je v [Nastavenia → Spracovanie](/ai-processing/processing) zapnuté **Spracovávať hovory automaticky**. Inak o to požiadajte v [okne Nahrávky](/interface/recordings).
 - Musí existovať [rozpoznávač](/ai-processing/transcription) a [jazykový model](/ai-processing/processing#language-models) a každý musí odpovedať na svojej adrese.
 - Keď sa dosiahne mesačná **Hranica peňazí** alebo **Hranica tokenov**, automatické pravidlá sa zastavia do konca mesiaca. To, o čo požiadate sami, sa nikdy nezastaví.
 - Kroky v [Nastavenia → Prehľad](/interface/settings-overview) ukazujú, čo ešte treba nastaviť.
