@@ -40,7 +40,7 @@ The screenshots in this documentation are taken on macOS and shown small: click 
 
 1. [Add an account](sip-accounts/setup.md) for your PBX or SIP provider.
 2. [Choose the microphone and the speakers](sip-accounts/devices.md) and make a test call.
-3. Decide [which calls are recorded](recordings/call-recording.md).
+3. Decide [which calls are recorded](recordings.md).
 4. Add a [recogniser](ai-processing/transcription.md) and a [language model](ai-processing/processing.md) if you want transcripts and write-ups.
 
 **Settings → Overview** keeps this list for you: a green dot marks a step that is done, a red one a step still to go. See [Settings overview](interface/settings-overview.md).
@@ -54,7 +54,7 @@ The screenshots in this documentation are taken on macOS and shown small: click 
 | Choose a microphone, speakers and ringtone | [Devices](sip-accounts/devices.md) |
 | Set the codecs, call waiting and the call log | [Calls settings](sip-accounts/calls.md) |
 | Put colleagues on one-touch buttons | [Buttons](sip-accounts/buttons.md) |
-| Decide which calls are recorded, and for how long | [Recording calls](recordings/call-recording.md) |
+| Decide which calls are recorded, and for how long | [Recordings](recordings.md) |
 | Listen to, search and read your conversations | [Recordings window](interface/recordings.md) |
 | Record a meeting held in another application | [Capture](capture/capture.md) |
 | Choose the recogniser that turns speech into text | [Transcription](ai-processing/transcription.md) |

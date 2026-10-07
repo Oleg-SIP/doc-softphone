@@ -34,7 +34,7 @@ Apa yang terjadi ketika seseorang menelepon saat Anda sedang dalam panggilan dia
 
 ## Panggilan tidak terekam {#a-call-was-not-recorded}
 
-- **Pengaturan → Perekaman**, daftar tarik-turun pertama, menentukan panggilan mana yang direkam; bawaannya, **Manual**, hanya merekam ketika Anda menekan rekam di kartu panggilan. Lihat [Merekam panggilan](/recordings/call-recording).
+- **Pengaturan → Perekaman**, daftar tarik-turun pertama, menentukan panggilan mana yang direkam; bawaannya, **Manual**, hanya merekam ketika Anda menekan rekam di kartu panggilan. Lihat [Rekaman](/recordings).
 - Perekaman dimulai saat panggilan dijawab, jadi panggilan yang tidak dijawab tidak memiliki berkas.
 - Modul **Perekaman** harus menyala di [Modul](/application/modules).
 - Rekaman dihapus oleh batas-batas di bawah **Penyimpanan**; rekaman yang disematkan tidak pernah dihapus.

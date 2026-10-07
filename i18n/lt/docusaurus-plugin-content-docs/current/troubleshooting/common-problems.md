@@ -34,7 +34,7 @@ Kas nutinka, kai kas nors skambina, kol kalbate, nustatoma skiltyje [Skambučio 
 
 ## Skambutis nebuvo įrašytas {#a-call-was-not-recorded}
 
-- **Nustatymai → Įrašymas**, pirmasis išskleidžiamasis sąrašas, nusprendžia, kurie skambučiai įrašomi; numatytoji reikšmė **Rankomis** įrašo tik kai skambučio kortelėje paspaudžiate įrašymo mygtuką. Žr. [Skambučių įrašymas](/recordings/call-recording).
+- **Nustatymai → Įrašymas**, pirmasis išskleidžiamasis sąrašas, nusprendžia, kurie skambučiai įrašomi; numatytoji reikšmė **Rankomis** įrašo tik kai skambučio kortelėje paspaudžiate įrašymo mygtuką. Žr. [Įrašai](/recordings).
 - Įrašymas prasideda, kai atsiliepiama į skambutį, todėl neatsilieptas skambutis failo neturi.
 - Modulis **Įrašymas** turi būti įjungtas skiltyje [Moduliai](/application/modules).
 - Įrašai šalinami pagal ribas skiltyje **Laikymas**; prisegtas įrašas niekada nešalinamas.

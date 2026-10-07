@@ -40,7 +40,7 @@ Skærmbillederne i denne dokumentation er taget på macOS og vises små: klik p�
 
 1. [Tilføj en konto](sip-accounts/setup.md) til dit omstillingsanlæg eller din SIP-udbyder.
 2. [Vælg mikrofon og højttalere](sip-accounts/devices.md), og foretag et testopkald.
-3. Bestem, [hvilke opkald der optages](recordings/call-recording.md).
+3. Bestem, [hvilke opkald der optages](recordings.md).
 4. Tilføj en [genkender](ai-processing/transcription.md) og en [sprogmodel](ai-processing/processing.md), hvis du vil have udskrifter og opsummeringer.
 
 **Indstillinger → Oversigt** holder styr på denne liste for dig: en grøn prik markerer et trin, der er klaret, en rød et trin, der mangler. Se [Oversigt over indstillingerne](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Skærmbillederne i denne dokumentation er taget på macOS og vises små: klik p�
 | Vælge mikrofon, højttalere og ringetone | [Enheder](sip-accounts/devices.md) |
 | Indstille codecs, banke på og opkaldshistorikken | [Opkaldsindstillinger](sip-accounts/calls.md) |
 | Lægge kolleger på knapper med ét tryk | [Knapper](sip-accounts/buttons.md) |
-| Bestemme, hvilke opkald der optages, og hvor længe | [Optagelse af opkald](recordings/call-recording.md) |
+| Bestemme, hvilke opkald der optages, og hvor længe | [Optagelser](recordings.md) |
 | Lytte til, søge i og læse dine samtaler | [Vinduet Optagelser](interface/recordings.md) |
 | Optage et møde, der holdes i et andet program | [Opfangning](capture/capture.md) |
 | Vælge den genkender, der gør tale til tekst | [Transskription](ai-processing/transcription.md) |

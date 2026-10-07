@@ -25,7 +25,7 @@ Igal moodulil on märkeruut, nimi, rida selle kohta, mida see teeb, ja paremal s
 | **Sidumine** | Kohalik API ja veebikonksud: [Sidumine](/integration/rest-api). |
 | **Meediahoidla** | Vestluste teek ja nende säilitamise aeg: [Salvestised](/interface/recordings). |
 | **Töötlemine** | Juhised ja neid käivitavad reeglid: [Töötlemine](/ai-processing/processing). |
-| **Salvestamine** | Kõnede salvestamine ja sellest teisele osapoolele teatamine: [Kõnede salvestamine](/recordings/call-recording). |
+| **Salvestamine** | Kõnede salvestamine ja sellest teisele osapoolele teatamine: [Salvestised](/recordings). |
 | **Telefonia** | SIP, kontod, kõned, valija ja kõnede ajalugu. |
 | **Ülestähendus** | Tuvastajad, neid käitav järjekord ja nende tehtud ülestähendused: [Ülestähendus](/ai-processing/transcription). |
 

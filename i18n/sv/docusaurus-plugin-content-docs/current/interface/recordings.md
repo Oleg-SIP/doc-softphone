@@ -64,7 +64,7 @@ De fyra ikonerna till höger om listrutan:
 
 Du kan exportera en utskrift som vanlig text eller som undertexter.
 
-Sammanfattningen görs av de [prompter](/ai-processing/prompt-studio) och modeller du har konfigurerat under [Bearbetning](../ai-processing/processing.md), genom [regler](../ai-processing/processing.md#rules) som körs av sig själva eller när du ber om det. Hur länge inspelningar sparas ställs in under [Spela in samtal](../recordings/call-recording.md#retention).
+Sammanfattningen görs av de [prompter](/ai-processing/prompt-studio) och modeller du har konfigurerat under [Bearbetning](../ai-processing/processing.md), genom [regler](../ai-processing/processing.md#rules) som körs av sig själva eller när du ber om det. Hur länge inspelningar sparas ställs in under [Inspelningar](../recordings.md#retention).
 
 ## En inspelning du redan har {#a-recording-you-already-have}
 

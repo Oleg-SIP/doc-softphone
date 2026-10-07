@@ -34,7 +34,7 @@ Siz bir çağrıdayken biri aradığında ne olacağı [Çağrı bekletme](/sip-
 
 ## Bir çağrı kaydedilmedi {#a-call-was-not-recorded}
 
-- **Ayarlar → Kayıt** içindeki ilk açılır liste hangi çağrıların kaydedileceğine karar verir; öntanımlı değer olan **Elle**, yalnızca çağrı kartında kayıt düğmesine bastığınızda kaydeder. Bkz. [Çağrıları kaydetme](/recordings/call-recording).
+- **Ayarlar → Kayıt** içindeki ilk açılır liste hangi çağrıların kaydedileceğine karar verir; öntanımlı değer olan **Elle**, yalnızca çağrı kartında kayıt düğmesine bastığınızda kaydeder. Bkz. [Kayıtlar](/recordings).
 - Kayıt, çağrı yanıtlandığında başlar; bu yüzden yanıtlanmayan bir çağrının dosyası olmaz.
 - [Modüller](/application/modules) içinde **Kayıt** modülü açık olmalıdır.
 - Kayıtlar **Saklama** altındaki sınırlar nedeniyle kaldırılır; sabitlenmiş bir kayıt asla kaldırılmaz.

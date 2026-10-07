@@ -64,7 +64,7 @@ De vier pictogrammen rechts van de keuzelijst:
 
 U kunt een transcript exporteren als platte tekst of als ondertitels.
 
-De uitwerking wordt gemaakt door de [prompts](/ai-processing/prompt-studio) en modellen die u bij [Verwerking](../ai-processing/processing.md) hebt ingesteld, via [regels](../ai-processing/processing.md#rules) die vanzelf lopen of wanneer u erom vraagt. Hoelang opnames bewaard blijven stelt u in bij [Gesprekken opnemen](../recordings/call-recording.md#retention).
+De uitwerking wordt gemaakt door de [prompts](/ai-processing/prompt-studio) en modellen die u bij [Verwerking](../ai-processing/processing.md) hebt ingesteld, via [regels](../ai-processing/processing.md#rules) die vanzelf lopen of wanneer u erom vraagt. Hoelang opnames bewaard blijven stelt u in bij [Opnames](../recordings.md#retention).
 
 ## Een opname die u al hebt {#a-recording-you-already-have}
 

@@ -34,7 +34,7 @@ Lo que ocurre cuando alguien llama mientras usted está en una llamada se ajusta
 
 ## Una llamada no se grabó {#a-call-was-not-recorded}
 
-- **Ajustes → Grabación**, el primer desplegable, decide qué llamadas se graban; el valor por defecto, **A mano**, solo graba cuando pulsa grabar en la tarjeta de la llamada. Consulte [Grabar llamadas](/recordings/call-recording).
+- **Ajustes → Grabación**, el primer desplegable, decide qué llamadas se graban; el valor por defecto, **A mano**, solo graba cuando pulsa grabar en la tarjeta de la llamada. Consulte [Grabaciones](/recordings).
 - La grabación empieza cuando se contesta la llamada, así que una llamada no contestada no tiene archivo.
 - El módulo **Grabación** debe estar encendido en [Módulos](/application/modules).
 - Las grabaciones se borran según los límites de **Retención**; una grabación fijada nunca se borra.

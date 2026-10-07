@@ -34,7 +34,7 @@ What happens when somebody rings while you are on a call is set under [Call wait
 
 ## A call was not recorded
 
-- **Settings → Recording**, the first drop-down, decides which calls are recorded; the default, **Manually**, records only when you press record on the call card. See [Recording calls](/recordings/call-recording).
+- **Settings → Recording**, the first drop-down, decides which calls are recorded; the default, **Manually**, records only when you press record on the call card. See [Recordings](/recordings).
 - Recording starts when the call is answered, so a call that was not answered has no file.
 - The **Recording** module must be on in [Modules](/application/modules).
 - Recordings are removed by the limits under **Retention**; a pinned recording is never removed.

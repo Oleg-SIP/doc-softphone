@@ -34,7 +34,7 @@ Ce qui se passe quand quelqu'un appelle alors que vous êtes en communication se
 
 ## Un appel n'a pas été enregistré {#a-call-was-not-recorded}
 
-- **Réglages → Enregistrement**, la première liste déroulante, décide quels appels sont enregistrés ; la valeur par défaut, **À la main**, n'enregistre que lorsque vous appuyez sur enregistrer sur la carte de l'appel. Voir [Enregistrer les appels](/recordings/call-recording).
+- **Réglages → Enregistrement**, la première liste déroulante, décide quels appels sont enregistrés ; la valeur par défaut, **À la main**, n'enregistre que lorsque vous appuyez sur enregistrer sur la carte de l'appel. Voir [Enregistrements](/recordings).
 - L'enregistrement commence quand l'appel est décroché ; un appel qui n'a pas été pris n'a donc pas de fichier.
 - Le module **Enregistrement** doit être activé dans [Modules](/application/modules).
 - Les enregistrements sont supprimés par les limites sous **Conservation** ; un enregistrement épinglé n'est jamais supprimé.

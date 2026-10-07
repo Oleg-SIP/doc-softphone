@@ -64,7 +64,7 @@ Spustni seznam nad prepisom izbere, kaj prikazati — prepis, ki ga je naredil e
 
 Prepis lahko izvozite kot navadno besedilo ali kot podnapise.
 
-Obdelavo naredijo [navodila](/ai-processing/prompt-studio) in modeli, ki jih nastavite v [Obdelavi](../ai-processing/processing.md), prek [pravil](../ai-processing/processing.md#rules), ki tečejo sama ali ko to zahtevate. Kako dolgo se posnetki hranijo, se nastavi v [Snemanju klicev](../recordings/call-recording.md#retention).
+Obdelavo naredijo [navodila](/ai-processing/prompt-studio) in modeli, ki jih nastavite v [Obdelavi](../ai-processing/processing.md), prek [pravil](../ai-processing/processing.md#rules), ki tečejo sama ali ko to zahtevate. Kako dolgo se posnetki hranijo, se nastavi v [Snemanju klicev](../recordings.md#retention).
 
 ## Posnetek, ki ga že imate {#a-recording-you-already-have}
 

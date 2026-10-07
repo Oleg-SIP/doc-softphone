@@ -40,7 +40,7 @@ Sąsaja pasiekiama trisdešimčia kalbų; kalba pasirenkama skiltyje [Išvaizda]
 
 1. [Pridėkite paskyrą](sip-accounts/setup.md) savo stotelei ar SIP paslaugų teikėjui.
 2. [Pasirinkite mikrofoną ir garsiakalbius](sip-accounts/devices.md) ir atlikite bandomąjį skambutį.
-3. Nuspręskite, [kurie skambučiai įrašomi](recordings/call-recording.md).
+3. Nuspręskite, [kurie skambučiai įrašomi](recordings.md).
 4. Pridėkite [atpažintuvą](ai-processing/transcription.md) ir [kalbos modelį](ai-processing/processing.md), jei norite iššifruotų tekstų ir apibendrinimų.
 
 **Nustatymai → Apžvalga** tvarko šį sąrašą už jus: žalias taškas žymi atliktą žingsnį, raudonas — dar likusį. Žr. [Nustatymų apžvalga](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Sąsaja pasiekiama trisdešimčia kalbų; kalba pasirenkama skiltyje [Išvaizda]
 | Pasirinkti mikrofoną, garsiakalbius ir skambėjimą | [Įrenginiai](sip-accounts/devices.md) |
 | Nustatyti kodekus, skambučio laukimą ir skambučių istoriją | [Skambučių nustatymai](sip-accounts/calls.md) |
 | Priskirti kolegas vieno paspaudimo mygtukams | [Mygtukai](sip-accounts/buttons.md) |
-| Nuspręsti, kurie skambučiai įrašomi ir kiek laiko laikomi | [Skambučių įrašymas](recordings/call-recording.md) |
+| Nuspręsti, kurie skambučiai įrašomi ir kiek laiko laikomi | [Įrašai](recordings.md) |
 | Klausytis, ieškoti ir skaityti savo pokalbius | [Įrašų langas](interface/recordings.md) |
 | Įrašyti kitoje programoje vykstantį susitikimą | [Fiksavimas](capture/capture.md) |
 | Pasirinkti atpažintuvą, kuris kalbą paverčia tekstu | [Užrašas](ai-processing/transcription.md) |

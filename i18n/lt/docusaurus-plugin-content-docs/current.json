@@ -11,10 +11,6 @@
     "message": "Telefonas ir paskyros",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Įrašai",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Perėmimas iš kitų programų",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

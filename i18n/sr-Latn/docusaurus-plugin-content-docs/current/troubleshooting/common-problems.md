@@ -34,7 +34,7 @@ Kodeci se nude redosledom spiska u [Podešavanja → Pozivi](/sip-accounts/calls
 
 ## Poziv nije snimljen {#a-call-was-not-recorded}
 
-- **Podešavanja → Snimanje**, prvi padajući meni, odlučuje koji se pozivi snimaju; podrazumevano **Ručno** snima samo kada pritisnete snimanje na kartici poziva. Pogledajte [Snimanje poziva](/recordings/call-recording).
+- **Podešavanja → Snimanje**, prvi padajući meni, odlučuje koji se pozivi snimaju; podrazumevano **Ručno** snima samo kada pritisnete snimanje na kartici poziva. Pogledajte [Snimci](/recordings).
 - Snimanje počinje kada se neko javi na poziv, pa poziv na koji se niko nije javio nema datoteku.
 - Modul **Snimanje** mora biti uključen u [Modulima](/application/modules).
 - Snimci se uklanjaju prema granicama pod **Čuvanje**; zakačen snimak se nikada ne uklanja.

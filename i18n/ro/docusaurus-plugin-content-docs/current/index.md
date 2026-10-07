@@ -40,7 +40,7 @@ Capturile de ecran din această documentație sunt făcute pe macOS și afișate
 
 1. [Adăugați un cont](sip-accounts/setup.md) pentru centrala sau furnizorul SIP.
 2. [Alegeți microfonul și difuzoarele](sip-accounts/devices.md) și dați un apel de probă.
-3. Hotărâți [ce apeluri se înregistrează](recordings/call-recording.md).
+3. Hotărâți [ce apeluri se înregistrează](recordings.md).
 4. Adăugați un [recunoscător](ai-processing/transcription.md) și un [model de limbă](ai-processing/processing.md) dacă doriți transcrieri și prelucrări.
 
 **Setări → Prezentare generală** ține această listă în locul dumneavoastră: un punct verde marchează un pas făcut, unul roșu un pas care a rămas. Consultați [Prezentarea setărilor](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Capturile de ecran din această documentație sunt făcute pe macOS și afișate
 | Alegeți microfonul, difuzoarele și soneria | [Dispozitive](sip-accounts/devices.md) |
 | Configurați codecurile, apelul în așteptare și istoricul apelurilor | [Setările apelurilor](sip-accounts/calls.md) |
 | Puneți colegii pe butoane de apel dintr-o singură apăsare | [Butoane](sip-accounts/buttons.md) |
-| Hotărâți ce apeluri se înregistrează și cât timp se păstrează | [Înregistrarea apelurilor](recordings/call-recording.md) |
+| Hotărâți ce apeluri se înregistrează și cât timp se păstrează | [Înregistrări](recordings.md) |
 | Ascultați, căutați și citiți conversațiile | [Fereastra Înregistrări](interface/recordings.md) |
 | Înregistrați o ședință ținută în altă aplicație | [Captare](capture/capture.md) |
 | Alegeți recunoscătorul care transformă vorbirea în text | [Transcriere](ai-processing/transcription.md) |

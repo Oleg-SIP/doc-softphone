@@ -40,7 +40,7 @@ Le schermate di questa documentazione sono fatte su macOS e mostrate in piccolo:
 
 1. [Aggiunga un account](sip-accounts/setup.md) per il suo centralino o provider SIP.
 2. [Scelga il microfono e gli altoparlanti](sip-accounts/devices.md) e faccia una chiamata di prova.
-3. Decida [quali chiamate vengono registrate](recordings/call-recording.md).
+3. Decida [quali chiamate vengono registrate](recordings.md).
 4. Aggiunga un [riconoscitore](ai-processing/transcription.md) e un [modello linguistico](ai-processing/processing.md) se vuole trascrizioni e resoconti.
 
 **Impostazioni → Panoramica** tiene questa lista per lei: un punto verde indica un passo fatto, uno rosso un passo che manca. Veda [Panoramica delle impostazioni](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Le schermate di questa documentazione sono fatte su macOS e mostrate in piccolo:
 | Scegliere microfono, altoparlanti e suoneria | [Dispositivi](sip-accounts/devices.md) |
 | Impostare i codec, l'avviso di chiamata e il registro chiamate | [Impostazioni delle chiamate](sip-accounts/calls.md) |
 | Mettere i colleghi su pulsanti a un tocco | [Pulsanti](sip-accounts/buttons.md) |
-| Decidere quali chiamate vengono registrate, e per quanto tempo | [Registrare le chiamate](recordings/call-recording.md) |
+| Decidere quali chiamate vengono registrate, e per quanto tempo | [Registrazioni](recordings.md) |
 | Ascoltare, cercare e leggere le sue conversazioni | [Finestra delle registrazioni](interface/recordings.md) |
 | Registrare una riunione tenuta in un'altra applicazione | [Cattura](capture/capture.md) |
 | Scegliere il riconoscitore che trasforma la voce in testo | [Trascrizione](ai-processing/transcription.md) |

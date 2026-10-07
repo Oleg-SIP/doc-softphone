@@ -36,7 +36,7 @@ Kroki są wskazówką, nie obowiązkiem: krok, który nie jest ci potrzebny, mo�
 | | **Urządzenia** | [Mikrofon, głośniki, dzwonek i inne dźwięki](../sip-accounts/devices.md) |
 | | **Połączenia** | [Kodeki, połączenie oczekujące, automatyczne ponawianie i historia połączeń](../sip-accounts/calls.md) |
 | | **Przyciski** | [Przyciski, które wybierają i obserwują inne numery wewnętrzne](../sip-accounts/buttons.md) |
-| | **Nagrywanie** | [Nagrywanie połączeń: zgoda, konferencje i jak długo przechowuje się pliki](../recordings/call-recording.md) |
+| | **Nagrywanie** | [Nagrywanie połączeń: zgoda, konferencje i jak długo przechowuje się pliki](../recordings.md) |
 | | **Przechwytywanie** | [Przechwytywanie dźwięku innych aplikacji](../capture/capture.md): spotkania w Zoomie, Teams, Meet i podobnych |
 | SI | **Transkrypcja** | [Rozpoznawacze](../ai-processing/transcription.md) |
 | | **Przetwarzanie** | [Automatyczne przetwarzanie, granice wydatków, modele językowe, polecenia i reguły](../ai-processing/processing.md) |

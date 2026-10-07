@@ -34,7 +34,7 @@ Hogy mi történjen, ha valaki akkor hívja, amikor Ön hívásban van, azt a [H
 
 ## Egy hívásról nem készült felvétel {#a-call-was-not-recorded}
 
-- A **Beállítások → Felvétel** első legördülő listája dönti el, mely hívásokról készül felvétel; az alapérték, a **Kézzel**, csak akkor rögzít, ha megnyomja a felvétel gombot a hívás kártyáján. Lásd: [Hívások rögzítése](/recordings/call-recording).
+- A **Beállítások → Felvétel** első legördülő listája dönti el, mely hívásokról készül felvétel; az alapérték, a **Kézzel**, csak akkor rögzít, ha megnyomja a felvétel gombot a hívás kártyáján. Lásd: [Felvételek](/recordings).
 - A felvétel a hívás fogadásakor kezdődik, így a nem fogadott hívásnak nincs fájlja.
 - A **Felvétel** modulnak bekapcsolva kell lennie a [Modulok](/application/modules) között.
 - A felvételeket a **Megőrzés** alatti korlátok törlik; a kitűzött felvétel soha nem törlődik.

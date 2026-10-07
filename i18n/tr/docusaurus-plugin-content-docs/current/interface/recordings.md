@@ -64,7 +64,7 @@ Açılır listenin sağındaki dört simge:
 
 Bir dökümü düz metin ya da altyazı olarak dışa aktarabilirsiniz.
 
-İşleme sonucu, [İşleme](../ai-processing/processing.md) bölümünde kurduğunuz [yönergeler](/ai-processing/prompt-studio) ve modeller tarafından, kendi kendine ya da siz istediğinizde çalışan [kurallar](../ai-processing/processing.md#rules) aracılığıyla oluşturulur. Kayıtların ne kadar süre saklanacağı [Çağrıları kaydetme](../recordings/call-recording.md#retention) bölümünde belirlenir.
+İşleme sonucu, [İşleme](../ai-processing/processing.md) bölümünde kurduğunuz [yönergeler](/ai-processing/prompt-studio) ve modeller tarafından, kendi kendine ya da siz istediğinizde çalışan [kurallar](../ai-processing/processing.md#rules) aracılığıyla oluşturulur. Kayıtların ne kadar süre saklanacağı [Kayıtlar](../recordings.md#retention) bölümünde belirlenir.
 
 ## Elinizdeki bir kayıt {#a-recording-you-already-have}
 

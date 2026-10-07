@@ -64,7 +64,7 @@ Los cuatro iconos a la derecha del desplegable:
 
 Puede exportar una transcripción como texto sin formato o como subtítulos.
 
-La redacción la hacen las [instrucciones](/ai-processing/prompt-studio) y los modelos que haya configurado en [Procesamiento](../ai-processing/processing.md), mediante [reglas](../ai-processing/processing.md#rules) que se ejecutan solas o cuando usted lo pide. Cuánto tiempo se conservan las grabaciones se ajusta en [Grabar llamadas](../recordings/call-recording.md#retention).
+La redacción la hacen las [instrucciones](/ai-processing/prompt-studio) y los modelos que haya configurado en [Procesamiento](../ai-processing/processing.md), mediante [reglas](../ai-processing/processing.md#rules) que se ejecutan solas o cuando usted lo pide. Cuánto tiempo se conservan las grabaciones se ajusta en [Grabaciones](../recordings.md#retention).
 
 ## Una grabación que ya tiene {#a-recording-you-already-have}
 

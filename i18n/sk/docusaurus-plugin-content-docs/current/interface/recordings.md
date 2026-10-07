@@ -64,7 +64,7 @@ Rozbaľovací zoznam nad prepisom vyberá, čo zobraziť — prepis vytvorený j
 
 Prepis môžete exportovať ako obyčajný text alebo ako titulky.
 
-Spracovanie robia [pokyny](/ai-processing/prompt-studio) a modely, ktoré nastavíte v [Spracovaní](../ai-processing/processing.md), cez [pravidlá](../ai-processing/processing.md#rules), ktoré bežia samy alebo keď o to požiadate. Ako dlho sa nahrávky uchovávajú, sa nastavuje v [Nahrávaní hovorov](../recordings/call-recording.md#retention).
+Spracovanie robia [pokyny](/ai-processing/prompt-studio) a modely, ktoré nastavíte v [Spracovaní](../ai-processing/processing.md), cez [pravidlá](../ai-processing/processing.md#rules), ktoré bežia samy alebo keď o to požiadate. Ako dlho sa nahrávky uchovávajú, sa nastavuje v [Nahrávaní hovorov](../recordings.md#retention).
 
 ## Nahrávka, ktorú už máte {#a-recording-you-already-have}
 

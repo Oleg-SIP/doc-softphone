@@ -64,7 +64,7 @@ De fire ikonene til høyre for nedtrekkslisten:
 
 Du kan eksportere en utskrift som ren tekst eller som undertekster.
 
-Sammendraget lages av [promptene](/ai-processing/prompt-studio) og modellene du har satt opp under [Behandling](../ai-processing/processing.md), gjennom [regler](../ai-processing/processing.md#rules) som kjører av seg selv eller når du ber om det. Hvor lenge opptak beholdes, stilles inn under [Ta opp samtaler](../recordings/call-recording.md#retention).
+Sammendraget lages av [promptene](/ai-processing/prompt-studio) og modellene du har satt opp under [Behandling](../ai-processing/processing.md), gjennom [regler](../ai-processing/processing.md#rules) som kjører av seg selv eller når du ber om det. Hvor lenge opptak beholdes, stilles inn under [Opptak](../recordings.md#retention).
 
 ## Et opptak du allerede har {#a-recording-you-already-have}
 

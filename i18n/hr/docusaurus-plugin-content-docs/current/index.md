@@ -40,7 +40,7 @@ Snimke zaslona u ovoj dokumentaciji napravljene su na macOS-u i prikazane umanje
 
 1. [Dodajte račun](sip-accounts/setup.md) za svoju centralu ili SIP operatera.
 2. [Odaberite mikrofon i zvučnike](sip-accounts/devices.md) i obavite probni poziv.
-3. Odlučite [koji se pozivi snimaju](recordings/call-recording.md).
+3. Odlučite [koji se pozivi snimaju](recordings.md).
 4. Dodajte [prepoznavač](ai-processing/transcription.md) i [jezični model](ai-processing/processing.md) ako želite prijepise i obrade.
 
 **Postavke → Pregled** vodi ovaj popis umjesto vas: zelena točka označava obavljen korak, crvena korak koji još preostaje. Pogledajte [Pregled postavki](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Snimke zaslona u ovoj dokumentaciji napravljene su na macOS-u i prikazane umanje
 | Odabrati mikrofon, zvučnike i zvonjavu | [Uređaji](sip-accounts/devices.md) |
 | Postaviti kodeke, poziv na čekanju i zapisnik poziva | [Postavke poziva](sip-accounts/calls.md) |
 | Staviti kolege na gumbe za jedan dodir | [Gumbi](sip-accounts/buttons.md) |
-| Odlučiti koji se pozivi snimaju i koliko dugo | [Snimanje poziva](recordings/call-recording.md) |
+| Odlučiti koji se pozivi snimaju i koliko dugo | [Snimke](recordings.md) |
 | Slušati, pretraživati i čitati svoje razgovore | [Prozor snimki](interface/recordings.md) |
 | Snimiti sastanak održan u drugoj aplikaciji | [Hvatanje](capture/capture.md) |
 | Odabrati prepoznavač koji govor pretvara u tekst | [Prijepis](ai-processing/transcription.md) |

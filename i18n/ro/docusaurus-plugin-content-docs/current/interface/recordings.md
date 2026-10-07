@@ -64,7 +64,7 @@ Cele patru pictograme din dreapta listei derulante:
 
 Puteți exporta o transcriere ca text simplu sau ca subtitrări.
 
-Prelucrarea este făcută de [instrucțiunile](/ai-processing/prompt-studio) și modelele pe care le configurați în [Prelucrare](../ai-processing/processing.md), prin [reguli](../ai-processing/processing.md#rules) care rulează de la sine sau atunci când cereți. Cât timp se păstrează înregistrările se stabilește în [Înregistrarea apelurilor](../recordings/call-recording.md#retention).
+Prelucrarea este făcută de [instrucțiunile](/ai-processing/prompt-studio) și modelele pe care le configurați în [Prelucrare](../ai-processing/processing.md), prin [reguli](../ai-processing/processing.md#rules) care rulează de la sine sau atunci când cereți. Cât timp se păstrează înregistrările se stabilește în [Înregistrări](../recordings.md#retention).
 
 ## O înregistrare pe care o aveți deja {#a-recording-you-already-have}
 

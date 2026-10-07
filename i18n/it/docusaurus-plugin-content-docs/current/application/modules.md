@@ -25,7 +25,7 @@ Ogni modulo ha una casella, un nome, una riga che dice che cosa fa e, a destra, 
 | **Integrazione** | L'API locale e i webhook: [Integrazione](/integration/rest-api). |
 | **Archivio media** | La libreria delle conversazioni e per quanto tempo si conservano: [Registrazioni](/interface/recordings). |
 | **Elaborazione** | I prompt e le regole che li fanno scattare: [Elaborazione](/ai-processing/processing). |
-| **Registrazione** | Registrare le chiamate, e avvisarne l'interlocutore: [Registrare le chiamate](/recordings/call-recording). |
+| **Registrazione** | Registrare le chiamate, e avvisarne l'interlocutore: [Registrazioni](/recordings). |
 | **Telefonia** | SIP, account, chiamate, il compositore e il registro chiamate. |
 | **Trascrizione** | I riconoscitori, la coda che li alimenta e le trascrizioni che producono: [Trascrizione](/ai-processing/transcription). |
 

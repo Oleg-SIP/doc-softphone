@@ -64,7 +64,7 @@ Rozbalovací seznam nad přepisem vybírá, co se zobrazí — přepis od někte
 
 Přepis lze vyexportovat jako prostý text nebo jako titulky.
 
-Zápis vytvářejí [pokyny](/ai-processing/prompt-studio) a modely, které nastavíte ve [Zpracování](../ai-processing/processing.md), podle [pravidel](../ai-processing/processing.md#rules), která běží sama nebo na požádání. Jak dlouho se nahrávky uchovávají, se nastavuje v [Nahrávání hovorů](../recordings/call-recording.md#retention).
+Zápis vytvářejí [pokyny](/ai-processing/prompt-studio) a modely, které nastavíte ve [Zpracování](../ai-processing/processing.md), podle [pravidel](../ai-processing/processing.md#rules), která běží sama nebo na požádání. Jak dlouho se nahrávky uchovávají, se nastavuje v [Nahrávky](../recordings.md#retention).
 
 ## Nahrávka, kterou už máte {#a-recording-you-already-have}
 

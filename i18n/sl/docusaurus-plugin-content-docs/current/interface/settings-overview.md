@@ -36,7 +36,7 @@ Koraki so vodilo, ne dolžnost: korak, ki ga ne potrebujete, lahko ostane rdeč.
 | | **Naprave** | [Mikrofon, zvočniki, zvonjenje in drugi zvoki](../sip-accounts/devices.md) |
 | | **Klici** | [Kodeki, čakajoči klic, samodejno klicanje in dnevnik klicev](../sip-accounts/calls.md) |
 | | **Gumbi** | [Gumbi, ki kličejo in spremljajo druge interne številke](../sip-accounts/buttons.md) |
-| | **Snemanje** | [Snemanje klicev: privolitev, konference in kako dolgo se datoteke hranijo](../recordings/call-recording.md) |
+| | **Snemanje** | [Snemanje klicev: privolitev, konference in kako dolgo se datoteke hranijo](../recordings.md) |
 | | **Zajemanje** | [Zajemanje zvoka drugih programov](../capture/capture.md): sestanki v Zoomu, Teams, Meetu in podobnih |
 | Umetna inteligenca | **Prepis** | [Razpoznavalniki](../ai-processing/transcription.md) |
 | | **Obdelava** | [Samodejna obdelava, meje porabe, jezikovni modeli, navodila in pravila](../ai-processing/processing.md) |

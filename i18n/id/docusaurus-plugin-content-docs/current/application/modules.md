@@ -25,7 +25,7 @@ Setiap modul memiliki kotak centang, nama, sebaris keterangan tentang fungsinya,
 | **Integrasi** | API lokal, dan webhook: [Integrasi](/integration/rest-api). |
 | **Penyimpanan media** | Pustaka percakapan dan berapa lama percakapan disimpan: [Rekaman](/interface/recordings). |
 | **Pemrosesan** | Petunjuk dan aturan yang menjalankannya: [Pemrosesan](/ai-processing/processing). |
-| **Perekaman** | Merekam panggilan, dan memberi tahu pihak lain tentang hal itu: [Merekam panggilan](/recordings/call-recording). |
+| **Perekaman** | Merekam panggilan, dan memberi tahu pihak lain tentang hal itu: [Rekaman](/recordings). |
 | **Telefoni** | SIP, akun, panggilan, papan panggil, dan riwayat panggilan. |
 | **Transkripsi** | Pengenal suara, antrean yang menggerakkannya, dan transkrip yang dihasilkannya: [Transkripsi](/ai-processing/transcription). |
 

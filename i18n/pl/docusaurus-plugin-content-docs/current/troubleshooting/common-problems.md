@@ -34,7 +34,7 @@ To, co się dzieje, gdy ktoś dzwoni, kiedy rozmawiasz, ustawia się w [Połącz
 
 ## Połączenie nie zostało nagrane {#a-call-was-not-recorded}
 
-- **Ustawienia → Nagrywanie**, pierwsza lista rozwijana, decyduje, które połączenia są nagrywane; domyślne **Ręcznie** nagrywa tylko wtedy, gdy naciśniesz nagrywanie na karcie połączenia. Zobacz [Nagrywanie połączeń](/recordings/call-recording).
+- **Ustawienia → Nagrywanie**, pierwsza lista rozwijana, decyduje, które połączenia są nagrywane; domyślne **Ręcznie** nagrywa tylko wtedy, gdy naciśniesz nagrywanie na karcie połączenia. Zobacz [Nagrania](/recordings).
 - Nagrywanie zaczyna się, gdy połączenie zostanie odebrane, więc nieodebrane połączenie nie ma pliku.
 - Moduł **Nagrywanie** musi być włączony w [Modułach](/application/modules).
 - Nagrania są usuwane według granic w sekcji **Przechowywanie**; przypięte nagranie nigdy nie jest usuwane.

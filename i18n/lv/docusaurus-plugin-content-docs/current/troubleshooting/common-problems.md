@@ -34,7 +34,7 @@ Tas, kas notiek, kad kāds zvana, kamēr jūs runājat, tiek iestatīts sadaļā
 
 ## Zvans netika ierakstīts {#a-call-was-not-recorded}
 
-- **Iestatījumi → Ierakstīšana**, pirmais nolaižamais saraksts, izlemj, kurus zvanus ierakstīt; noklusējums **Ar roku** ieraksta tikai tad, kad nospiežat ierakstīšanas pogu zvana kartītē. Skatiet [Zvanu ierakstīšana](/recordings/call-recording).
+- **Iestatījumi → Ierakstīšana**, pirmais nolaižamais saraksts, izlemj, kurus zvanus ierakstīt; noklusējums **Ar roku** ieraksta tikai tad, kad nospiežat ierakstīšanas pogu zvana kartītē. Skatiet [Ieraksti](/recordings).
 - Ierakstīšana sākas, kad uz zvanu atbild, tāpēc neatbildētam zvanam faila nav.
 - Modulim **Ierakstīšana** jābūt ieslēgtam sadaļā [Moduļi](/application/modules).
 - Ierakstus noņem atbilstoši robežām sadaļā **Glabāšana**; piesprausts ieraksts nekad netiek noņemts.

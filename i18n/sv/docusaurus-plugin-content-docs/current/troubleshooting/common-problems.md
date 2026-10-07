@@ -34,7 +34,7 @@ Vad som händer när någon ringer medan du är i ett samtal ställs in under [S
 
 ## Ett samtal spelades inte in {#a-call-was-not-recorded}
 
-- **Inställningar → Inspelning**, den första listrutan, bestämmer vilka samtal som spelas in; standardvärdet, **För hand**, spelar bara in när du trycker på spela in på samtalskortet. Se [Spela in samtal](/recordings/call-recording).
+- **Inställningar → Inspelning**, den första listrutan, bestämmer vilka samtal som spelas in; standardvärdet, **För hand**, spelar bara in när du trycker på spela in på samtalskortet. Se [Inspelningar](/recordings).
 - Inspelningen börjar när samtalet besvaras, så ett samtal som inte besvarades har ingen fil.
 - Modulen **Inspelning** måste vara på under [Moduler](/application/modules).
 - Inspelningar tas bort av gränserna under **Gallring**; en fäst inspelning tas aldrig bort.

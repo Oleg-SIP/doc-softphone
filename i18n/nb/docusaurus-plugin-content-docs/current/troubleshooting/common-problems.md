@@ -34,7 +34,7 @@ Hva som skjer når noen ringer mens du er i en samtale, stilles inn under [Samta
 
 ## En samtale ble ikke tatt opp {#a-call-was-not-recorded}
 
-- **Innstillinger → Opptak**, den første nedtrekkslisten, bestemmer hvilke samtaler som tas opp; standarden, **For hånd**, tar bare opp når du trykker på ta opp på samtalekortet. Se [Ta opp samtaler](/recordings/call-recording).
+- **Innstillinger → Opptak**, den første nedtrekkslisten, bestemmer hvilke samtaler som tas opp; standarden, **For hånd**, tar bare opp når du trykker på ta opp på samtalekortet. Se [Opptak](/recordings).
 - Opptaket starter når samtalen besvares, så en samtale som ikke ble besvart, har ingen fil.
 - Modulen **Opptak** må være på under [Moduler](/application/modules).
 - Opptak fjernes av grensene under **Oppbevaring**; et festet opptak fjernes aldri.

@@ -64,7 +64,7 @@ description: Библиотеката с разговори — филтрира
 
 Можете да експортирате стенограмата като обикновен текст или като субтитри.
 
-Обработката се прави от [указанията](/ai-processing/prompt-studio) и моделите, които сте настроили в [Обработка](../ai-processing/processing.md), чрез [правила](../ai-processing/processing.md#rules), които се изпълняват сами или когато поискате. Колко дълго се пазят записите, се настройва в [Записване на обаждания](../recordings/call-recording.md#retention).
+Обработката се прави от [указанията](/ai-processing/prompt-studio) и моделите, които сте настроили в [Обработка](../ai-processing/processing.md), чрез [правила](../ai-processing/processing.md#rules), които се изпълняват сами или когато поискате. Колко дълго се пазят записите, се настройва в [Записи](../recordings.md#retention).
 
 ## Запис, който вече имате {#a-recording-you-already-have}
 

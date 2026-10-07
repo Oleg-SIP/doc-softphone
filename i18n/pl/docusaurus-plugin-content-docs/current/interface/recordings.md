@@ -64,7 +64,7 @@ Cztery ikony po prawej stronie listy rozwijanej:
 
 Transkrypcję możesz wyeksportować jako zwykły tekst albo jako napisy.
 
-Opracowanie tworzą [polecenia](/ai-processing/prompt-studio) i modele skonfigurowane w [Przetwarzaniu](../ai-processing/processing.md), za pomocą [reguł](../ai-processing/processing.md#rules), które działają same albo na twoje żądanie. Jak długo przechowywane są nagrania, ustawia się w [Nagrywaniu połączeń](../recordings/call-recording.md#retention).
+Opracowanie tworzą [polecenia](/ai-processing/prompt-studio) i modele skonfigurowane w [Przetwarzaniu](../ai-processing/processing.md), za pomocą [reguł](../ai-processing/processing.md#rules), które działają same albo na twoje żądanie. Jak długo przechowywane są nagrania, ustawia się w [Nagrywaniu połączeń](../recordings.md#retention).
 
 ## Nagranie, które już masz {#a-recording-you-already-have}
 

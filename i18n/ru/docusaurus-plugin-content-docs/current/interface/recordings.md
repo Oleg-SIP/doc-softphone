@@ -66,7 +66,7 @@ description: Библиотека разговоров — фильтры, пр�
 
 Расшифровку можно выгрузить обычным текстом или субтитрами.
 
-Разбор делают [промпты](/ai-processing/prompt-studio) и модели, которые вы настроили в [Обработке](../ai-processing/processing.md), по [правилам](../ai-processing/processing.md#rules) — сами или когда вы попросите. Сколько хранятся записи, задаётся в разделе [Запись звонков](../recordings/call-recording.md#retention).
+Разбор делают [промпты](/ai-processing/prompt-studio) и модели, которые вы настроили в [Обработке](../ai-processing/processing.md), по [правилам](../ai-processing/processing.md#rules) — сами или когда вы попросите. Сколько хранятся записи, задаётся в разделе [Записи](../recordings.md#retention).
 
 ## Запись, которая у вас уже есть {#a-recording-you-already-have}
 

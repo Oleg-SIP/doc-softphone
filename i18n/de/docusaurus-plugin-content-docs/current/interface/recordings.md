@@ -64,7 +64,7 @@ Die vier Symbole rechts neben der Auswahlliste:
 
 Ein Transkript lässt sich als reiner Text oder als Untertitel exportieren.
 
-Die Auswertung entsteht durch die [Prompts](/ai-processing/prompt-studio) und Modelle, die Sie unter [Verarbeitung](../ai-processing/processing.md) einrichten, nach [Regeln](../ai-processing/processing.md#rules), die von selbst oder auf Anfrage laufen. Wie lange Aufnahmen aufbewahrt werden, wird unter [Anrufe aufnehmen](../recordings/call-recording.md#retention) eingestellt.
+Die Auswertung entsteht durch die [Prompts](/ai-processing/prompt-studio) und Modelle, die Sie unter [Verarbeitung](../ai-processing/processing.md) einrichten, nach [Regeln](../ai-processing/processing.md#rules), die von selbst oder auf Anfrage laufen. Wie lange Aufnahmen aufbewahrt werden, wird unter [Aufnahmen](../recordings.md#retention) eingestellt.
 
 ## Eine Aufnahme, die Sie bereits haben {#a-recording-you-already-have}
 

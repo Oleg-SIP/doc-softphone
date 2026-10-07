@@ -11,10 +11,6 @@
     "message": "Telefon og kontoer",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Opptak",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Opptak fra andre programmer",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

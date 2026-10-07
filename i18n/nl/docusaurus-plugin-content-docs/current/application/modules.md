@@ -25,7 +25,7 @@ Elke module heeft een vakje, een naam, een regel die zegt wat ze doet, en rechts
 | **Integratie** | De lokale API en webhooks: [Integratie](/integration/rest-api). |
 | **Media-opslag** | De bibliotheek met gesprekken en hoelang ze bewaard blijven: [Opnames](/interface/recordings). |
 | **Verwerking** | Prompts en de regels die ze laten vuren: [Verwerking](/ai-processing/processing). |
-| **Opname** | Gesprekken opnemen, en de andere partij daarover inlichten: [Gesprekken opnemen](/recordings/call-recording). |
+| **Opname** | Gesprekken opnemen, en de andere partij daarover inlichten: [Opnames](/recordings). |
 | **Telefonie** | SIP, accounts, gesprekken, de kiezer en de gesprekgeschiedenis. |
 | **Transcriptie** | Herkenners, de wachtrij die ze aanstuurt, en de transcripten die ze maken: [Transcriptie](/ai-processing/transcription). |
 

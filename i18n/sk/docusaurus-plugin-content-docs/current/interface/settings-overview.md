@@ -36,7 +36,7 @@ Kroky sú návod, nie povinnosť: krok, ktorý nepotrebujete, môže zostať če
 | | **Zariadenia** | [Mikrofón, reproduktory, zvonenie a ďalšie zvuky](../sip-accounts/devices.md) |
 | | **Hovory** | [Kodeky, čakajúci hovor, automatické vytáčanie a záznam hovorov](../sip-accounts/calls.md) |
 | | **Tlačidlá** | [Tlačidlá, ktoré vytáčajú a sledujú iné klapky](../sip-accounts/buttons.md) |
-| | **Nahrávanie** | [Nahrávanie hovorov: súhlas, konferencie a ako dlho sa súbory uchovávajú](../recordings/call-recording.md) |
+| | **Nahrávanie** | [Nahrávanie hovorov: súhlas, konferencie a ako dlho sa súbory uchovávajú](../recordings.md) |
 | | **Zachytávanie** | [Zachytávanie zvuku iných aplikácií](../capture/capture.md): stretnutia v Zoome, Teams, Meet a podobne |
 | AI | **Prepis** | [Rozpoznávače](../ai-processing/transcription.md) |
 | | **Spracovanie** | [Automatické spracovanie, hranice výdavkov, jazykové modely, pokyny a pravidlá](../ai-processing/processing.md) |

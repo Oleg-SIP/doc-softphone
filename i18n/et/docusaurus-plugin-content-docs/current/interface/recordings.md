@@ -64,7 +64,7 @@ Ripploendist paremal olevad neli ikooni:
 
 Ülestähenduse saab eksportida lihttekstina või subtiitritena.
 
-Kokkuvõtte teevad [juhised](/ai-processing/prompt-studio) ja mudelid, mille olete seadistanud jaotises [Töötlemine](../ai-processing/processing.md), [reeglite](../ai-processing/processing.md#rules) abil, mis töötavad iseenesest või teie palvel. Salvestiste säilitamise aeg seadistatakse jaotises [Kõnede salvestamine](../recordings/call-recording.md#retention).
+Kokkuvõtte teevad [juhised](/ai-processing/prompt-studio) ja mudelid, mille olete seadistanud jaotises [Töötlemine](../ai-processing/processing.md), [reeglite](../ai-processing/processing.md#rules) abil, mis töötavad iseenesest või teie palvel. Salvestiste säilitamise aeg seadistatakse jaotises [Salvestised](../recordings.md#retention).
 
 ## Salvestis, mis teil juba on {#a-recording-you-already-have}
 

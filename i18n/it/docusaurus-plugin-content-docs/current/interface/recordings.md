@@ -64,7 +64,7 @@ Le quattro icone a destra del menu a discesa:
 
 Può esportare una trascrizione come testo semplice o come sottotitoli.
 
-Il resoconto è scritto dai [prompt](/ai-processing/prompt-studio) e dai modelli che ha impostato in [Elaborazione](../ai-processing/processing.md), tramite [regole](../ai-processing/processing.md#rules) che girano da sé o quando lo chiede lei. Per quanto tempo si conservano le registrazioni si imposta in [Registrare le chiamate](../recordings/call-recording.md#retention).
+Il resoconto è scritto dai [prompt](/ai-processing/prompt-studio) e dai modelli che ha impostato in [Elaborazione](../ai-processing/processing.md), tramite [regole](../ai-processing/processing.md#rules) che girano da sé o quando lo chiede lei. Per quanto tempo si conservano le registrazioni si imposta in [Registrazioni](../recordings.md#retention).
 
 ## Una registrazione che ha già {#a-recording-you-already-have}
 

@@ -34,7 +34,7 @@ Co se stane, když vám někdo volá, zatímco telefonujete, se nastavuje v [Če
 
 ## Hovor se nenahrál {#a-call-was-not-recorded}
 
-- **Nastavení → Nahrávání**, první rozbalovací seznam, rozhoduje, které hovory se nahrávají; výchozí **Ručně** nahrává jen tehdy, když stisknete nahrávání na kartě hovoru. Viz [Nahrávání hovorů](/recordings/call-recording).
+- **Nastavení → Nahrávání**, první rozbalovací seznam, rozhoduje, které hovory se nahrávají; výchozí **Ručně** nahrává jen tehdy, když stisknete nahrávání na kartě hovoru. Viz [Nahrávky](/recordings).
 - Nahrávání začíná, když je hovor přijat, takže nepřijatý hovor nemá soubor.
 - Modul **Nahrávání** musí být zapnutý v [Modulech](/application/modules).
 - Nahrávky odstraňují limity v části **Uchovávání**; připnutá nahrávka se nikdy neodstraní.

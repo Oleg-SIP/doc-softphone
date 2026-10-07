@@ -11,10 +11,6 @@
     "message": "Puhelin ja tilit",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Tallenteet",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Kaappaus muista sovelluksista",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

@@ -34,7 +34,7 @@ Mis juhtub, kui keegi helistab ajal, mil olete kõnes, seadistatakse jaotises [K
 
 ## Kõnet ei salvestatud {#a-call-was-not-recorded}
 
-- **Seaded → Salvestamine**, esimene ripploend, otsustab, milliseid kõnesid salvestatakse; vaikimisi valik **Käsitsi** salvestab ainult siis, kui vajutate kõnekaardil salvestamisnuppu. Vaadake [Kõnede salvestamine](/recordings/call-recording).
+- **Seaded → Salvestamine**, esimene ripploend, otsustab, milliseid kõnesid salvestatakse; vaikimisi valik **Käsitsi** salvestab ainult siis, kui vajutate kõnekaardil salvestamisnuppu. Vaadake [Salvestised](/recordings).
 - Salvestamine algab kõnele vastamisel, nii et vastamata kõnel faili ei ole.
 - Moodul **Salvestamine** peab olema jaotises [Moodulid](/application/modules) sisse lülitatud.
 - Salvestisi eemaldatakse jaotise **Säilitamine** piiride järgi; kinnitatud salvestist ei eemaldata kunagi.

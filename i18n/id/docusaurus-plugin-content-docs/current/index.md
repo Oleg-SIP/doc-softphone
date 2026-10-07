@@ -40,7 +40,7 @@ Tangkapan layar dalam dokumentasi ini dibuat di macOS dan ditampilkan dalam ukur
 
 1. [Tambahkan akun](sip-accounts/setup.md) untuk PBX atau penyedia SIP Anda.
 2. [Pilih mikrofon dan pengeras suara](sip-accounts/devices.md), lalu lakukan panggilan uji.
-3. Tentukan [panggilan mana yang direkam](recordings/call-recording.md).
+3. Tentukan [panggilan mana yang direkam](recordings.md).
 4. Tambahkan [pengenal suara](ai-processing/transcription.md) dan [model bahasa](ai-processing/processing.md) jika Anda menginginkan transkrip dan hasil olahan.
 
 **Pengaturan → Ikhtisar** menyimpan daftar ini untuk Anda: titik hijau menandai langkah yang sudah selesai, titik merah langkah yang masih harus dikerjakan. Lihat [Ikhtisar pengaturan](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Tangkapan layar dalam dokumentasi ini dibuat di macOS dan ditampilkan dalam ukur
 | Memilih mikrofon, pengeras suara, dan nada dering | [Perangkat](sip-accounts/devices.md) |
 | Mengatur codec, panggilan menunggu, dan log panggilan | [Pengaturan panggilan](sip-accounts/calls.md) |
 | Menempatkan rekan kerja pada tombol sekali sentuh | [Tombol](sip-accounts/buttons.md) |
-| Menentukan panggilan mana yang direkam, dan berapa lama disimpan | [Merekam panggilan](recordings/call-recording.md) |
+| Menentukan panggilan mana yang direkam, dan berapa lama disimpan | [Rekaman](recordings.md) |
 | Mendengarkan, mencari, dan membaca percakapan Anda | [Jendela rekaman](interface/recordings.md) |
 | Merekam rapat yang berlangsung di aplikasi lain | [Penangkapan](capture/capture.md) |
 | Memilih pengenal suara yang mengubah ucapan menjadi teks | [Transkripsi](ai-processing/transcription.md) |

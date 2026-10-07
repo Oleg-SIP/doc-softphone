@@ -40,7 +40,7 @@ Tämän dokumentaation kuvakaappaukset on otettu macOS:ssä ja näytetään pien
 
 1. [Lisää tili](sip-accounts/setup.md) vaihdettasi tai SIP-palveluntarjoajaasi varten.
 2. [Valitse mikrofoni ja kaiuttimet](sip-accounts/devices.md) ja soita testipuhelu.
-3. Päätä, [mitkä puhelut tallennetaan](recordings/call-recording.md).
+3. Päätä, [mitkä puhelut tallennetaan](recordings.md).
 4. Lisää [tunnistin](ai-processing/transcription.md) ja [kielimalli](ai-processing/processing.md), jos haluat litterointeja ja yhteenvetoja.
 
 **Asetukset → Yleiskatsaus** pitää tätä luetteloa puolestasi: vihreä piste merkitsee tehtyä askelta, punainen vielä jäljellä olevaa. Katso [Asetusten yleiskatsaus](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Tämän dokumentaation kuvakaappaukset on otettu macOS:ssä ja näytetään pien
 | Valita mikrofonin, kaiuttimet ja soittoäänen | [Laitteet](sip-accounts/devices.md) |
 | Asettaa koodekit, koputuksen ja puheluhistorian | [Puheluasetukset](sip-accounts/calls.md) |
 | Laittaa kollegat yhden painalluksen painikkeisiin | [Painikkeet](sip-accounts/buttons.md) |
-| Päättää, mitkä puhelut tallennetaan ja kuinka pitkäksi aikaa | [Puheluiden tallentaminen](recordings/call-recording.md) |
+| Päättää, mitkä puhelut tallennetaan ja kuinka pitkäksi aikaa | [Tallenteet](recordings.md) |
 | Kuunnella, hakea ja lukea keskustelujasi | [Tallenteet-ikkuna](interface/recordings.md) |
 | Tallentaa toisessa sovelluksessa pidetyn kokouksen | [Kaappaus](capture/capture.md) |
 | Valita tunnistimen, joka muuttaa puheen tekstiksi | [Litterointi](ai-processing/transcription.md) |

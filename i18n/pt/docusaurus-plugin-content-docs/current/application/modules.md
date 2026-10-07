@@ -25,7 +25,7 @@ Cada módulo tem uma caixa, um nome, uma linha que diz o que faz e, à direita, 
 | **Integração** | A API local e os webhooks: [Integração](/integration/rest-api). |
 | **Arquivo de média** | A biblioteca de conversas e durante quanto tempo são guardadas: [Gravações](/interface/recordings). |
 | **Processamento** | As instruções e as regras que as disparam: [Processamento](/ai-processing/processing). |
-| **Gravação** | Gravar chamadas, e avisar o interlocutor disso: [Gravar chamadas](/recordings/call-recording). |
+| **Gravação** | Gravar chamadas, e avisar o interlocutor disso: [Gravações](/recordings). |
 | **Telefonia** | SIP, contas, chamadas, o marcador e o registo de chamadas. |
 | **Transcrição** | Os reconhecedores, a fila que os alimenta e as transcrições que produzem: [Transcrição](/ai-processing/transcription). |
 

@@ -34,7 +34,7 @@ Che cosa succede quando qualcuno chiama mentre lei è in conversazione si impost
 
 ## Una chiamata non è stata registrata {#a-call-was-not-recorded}
 
-- **Impostazioni → Registrazione**, il primo menu a discesa, decide quali chiamate vengono registrate; il valore predefinito, **A mano**, registra solo quando preme registra sulla scheda della chiamata. Veda [Registrare le chiamate](/recordings/call-recording).
+- **Impostazioni → Registrazione**, il primo menu a discesa, decide quali chiamate vengono registrate; il valore predefinito, **A mano**, registra solo quando preme registra sulla scheda della chiamata. Veda [Registrazioni](/recordings).
 - La registrazione inizia quando si risponde alla chiamata, perciò una chiamata senza risposta non ha un file.
 - Il modulo **Registrazione** deve essere attivo in [Moduli](/application/modules).
 - Le registrazioni vengono rimosse dai limiti in **Conservazione**; una registrazione fissata non viene mai rimossa.

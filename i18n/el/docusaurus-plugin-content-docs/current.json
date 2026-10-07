@@ -11,10 +11,6 @@
     "message": "Τηλέφωνο και λογαριασμοί",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Εγγραφές",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Σύλληψη από άλλες εφαρμογές",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

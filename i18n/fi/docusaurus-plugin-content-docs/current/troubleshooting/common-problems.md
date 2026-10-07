@@ -34,7 +34,7 @@ Se, mitä tapahtuu, kun joku soittaa, kun olet puhelussa, asetetaan kohdassa [Ko
 
 ## Puhelua ei tallennettu {#a-call-was-not-recorded}
 
-- **Asetukset → Tallennus**, ensimmäinen pudotusvalikko, päättää, mitkä puhelut tallennetaan; oletus, **Käsin**, tallentaa vain, kun painat puhelukortin tallennuspainiketta. Katso [Puheluiden tallentaminen](/recordings/call-recording).
+- **Asetukset → Tallennus**, ensimmäinen pudotusvalikko, päättää, mitkä puhelut tallennetaan; oletus, **Käsin**, tallentaa vain, kun painat puhelukortin tallennuspainiketta. Katso [Tallenteet](/recordings).
 - Tallennus alkaa, kun puheluun vastataan, joten puhelulla, johon ei vastattu, ei ole tiedostoa.
 - **Tallennus**-moduulin on oltava käytössä kohdassa [Moduulit](/application/modules).
 - Tallenteet poistetaan kohdan **Säilytys** rajojen mukaan; kiinnitettyä tallennetta ei koskaan poisteta.

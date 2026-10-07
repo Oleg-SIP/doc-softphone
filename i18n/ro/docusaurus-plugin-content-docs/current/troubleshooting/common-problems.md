@@ -34,7 +34,7 @@ Ce se întâmplă când vă sună cineva în timp ce sunteți într-o convorbire
 
 ## Un apel nu a fost înregistrat {#a-call-was-not-recorded}
 
-- **Setări → Înregistrare**, prima listă derulantă, hotărăște ce apeluri se înregistrează; valoarea implicită, **Manual**, înregistrează doar când apăsați butonul de înregistrare de pe cardul apelului. Consultați [Înregistrarea apelurilor](/recordings/call-recording).
+- **Setări → Înregistrare**, prima listă derulantă, hotărăște ce apeluri se înregistrează; valoarea implicită, **Manual**, înregistrează doar când apăsați butonul de înregistrare de pe cardul apelului. Consultați [Înregistrări](/recordings).
 - Înregistrarea începe când se răspunde la apel, așa că un apel la care nu s-a răspuns nu are fișier.
 - Modulul **Înregistrare** trebuie să fie pornit în [Module](/application/modules).
 - Înregistrările sunt eliminate de limitele din **Păstrare**; o înregistrare fixată nu este eliminată niciodată.

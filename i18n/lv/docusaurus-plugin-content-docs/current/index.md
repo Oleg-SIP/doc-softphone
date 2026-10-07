@@ -40,7 +40,7 @@ Saskarne pieejama trīsdesmit valodās; valodu izvēlas sadaļā [Izskats](/prog
 
 1. [Pievienojiet kontu](sip-accounts/setup.md) savai centrālei vai SIP pakalpojumu sniedzējam.
 2. [Izvēlieties mikrofonu un skaļruņus](sip-accounts/devices.md) un veiciet pārbaudes zvanu.
-3. Izlemiet, [kurus zvanus ierakstīt](recordings/call-recording.md).
+3. Izlemiet, [kurus zvanus ierakstīt](recordings.md).
 4. Pievienojiet [atpazinēju](ai-processing/transcription.md) un [valodas modeli](ai-processing/processing.md), ja vēlaties atšifrējumus un apkopojumus.
 
 **Iestatījumi → Pārskats** uztur šo sarakstu jūsu vietā: zaļš punkts apzīmē paveiktu soli, sarkans — vēl atlikušu. Skatiet [Iestatījumu pārskats](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Saskarne pieejama trīsdesmit valodās; valodu izvēlas sadaļā [Izskats](/prog
 | Izvēlēties mikrofonu, skaļruņus un zvana signālu | [Ierīces](sip-accounts/devices.md) |
 | Iestatīt kodekus, zvana gaidīšanu un zvanu vēsturi | [Zvanu iestatījumi](sip-accounts/calls.md) |
 | Novietot kolēģus uz vienas pieskāriena pogām | [Pogas](sip-accounts/buttons.md) |
-| Izlemt, kurus zvanus ierakstīt un cik ilgi tos glabāt | [Zvanu ierakstīšana](recordings/call-recording.md) |
+| Izlemt, kurus zvanus ierakstīt un cik ilgi tos glabāt | [Ieraksti](recordings.md) |
 | Klausīties, meklēt un lasīt savas sarunas | [Ierakstu logs](interface/recordings.md) |
 | Ierakstīt citā lietotnē notiekošu sapulci | [Tveršana](capture/capture.md) |
 | Izvēlēties atpazinēju, kas runu pārvērš tekstā | [Pieraksts](ai-processing/transcription.md) |

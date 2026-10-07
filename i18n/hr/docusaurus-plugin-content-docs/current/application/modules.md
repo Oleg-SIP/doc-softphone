@@ -25,7 +25,7 @@ Svaki modul ima potvrdni okvir, naziv, redak o tome što radi, a desno svoje sta
 | **Integracija** | Lokalni API i webhookovi: [Integracija](/integration/rest-api). |
 | **Medijsko spremište** | Knjižnica razgovora i koliko se dugo čuvaju: [Snimke](/interface/recordings). |
 | **Obrada** | Upute i pravila koja ih okidaju: [Obrada](/ai-processing/processing). |
-| **Snimanje** | Snimanje poziva i obavještavanje druge strane o tome: [Snimanje poziva](/recordings/call-recording). |
+| **Snimanje** | Snimanje poziva i obavještavanje druge strane o tome: [Snimke](/recordings). |
 | **Telefonija** | SIP, računi, pozivi, polje za biranje i povijest poziva. |
 | **Prijepis** | Prepoznavači, red koji ih pokreće i prijepisi koje stvaraju: [Prijepis](/ai-processing/transcription). |
 

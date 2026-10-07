@@ -64,7 +64,7 @@ description: Бібліотека розмов — фільтруйте, від�
 
 Розшифровку можна експортувати як звичайний текст або як субтитри.
 
-Обробку виконують [вказівки](/ai-processing/prompt-studio) і моделі, які ви налаштували в розділі [Обробка](../ai-processing/processing.md), за допомогою [правил](../ai-processing/processing.md#rules), що спрацьовують самі або коли ви попросите. Як довго зберігаються записи, налаштовують у розділі [Запис викликів](../recordings/call-recording.md#retention).
+Обробку виконують [вказівки](/ai-processing/prompt-studio) і моделі, які ви налаштували в розділі [Обробка](../ai-processing/processing.md), за допомогою [правил](../ai-processing/processing.md#rules), що спрацьовують самі або коли ви попросите. Як довго зберігаються записи, налаштовують у розділі [Записи](../recordings.md#retention).
 
 ## Запис, який у вас уже є {#a-recording-you-already-have}
 

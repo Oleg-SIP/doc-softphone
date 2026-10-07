@@ -64,7 +64,7 @@ Nolaižamais saraksts virs atšifrējuma izvēlas, ko rādīt — kāda jūsu [a
 
 Atšifrējumu var eksportēt kā vienkāršu tekstu vai kā subtitrus.
 
-Apkopojumu veido [norādījumi](/ai-processing/prompt-studio) un modeļi, ko esat iestatījuši sadaļā [Apstrāde](../ai-processing/processing.md), ar [kārtulām](../ai-processing/processing.md#rules), kas darbojas pašas vai pēc jūsu pieprasījuma. Cik ilgi glabā ierakstus, iestata sadaļā [Zvanu ierakstīšana](../recordings/call-recording.md#retention).
+Apkopojumu veido [norādījumi](/ai-processing/prompt-studio) un modeļi, ko esat iestatījuši sadaļā [Apstrāde](../ai-processing/processing.md), ar [kārtulām](../ai-processing/processing.md#rules), kas darbojas pašas vai pēc jūsu pieprasījuma. Cik ilgi glabā ierakstus, iestata sadaļā [Ieraksti](../recordings.md#retention).
 
 ## Ieraksts, kas jums jau ir {#a-recording-you-already-have}
 

@@ -25,7 +25,7 @@ Chaque module a une case, un nom, une ligne qui dit ce qu'il fait, et à droite 
 | **Intégration** | L'API locale, et les webhooks : [Intégration](/integration/rest-api). |
 | **Stockage média** | La bibliothèque des conversations et leur durée de conservation : [Enregistrements](/interface/recordings). |
 | **Traitement** | Les invites et les règles qui les déclenchent : [Traitement](/ai-processing/processing). |
-| **Enregistrement** | L'enregistrement des appels, et l'information du correspondant : [Enregistrer les appels](/recordings/call-recording). |
+| **Enregistrement** | L'enregistrement des appels, et l'information du correspondant : [Enregistrements](/recordings). |
 | **Téléphonie** | SIP, comptes, appels, numéroteur et journal des appels. |
 | **Transcription** | Les reconnaissances, la file qui les alimente et les transcriptions qu'elles produisent : [Transcription](/ai-processing/transcription). |
 

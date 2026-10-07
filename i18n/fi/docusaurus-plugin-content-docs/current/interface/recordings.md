@@ -64,7 +64,7 @@ Pudotusvalikon oikealla puolella olevat neljä kuvaketta:
 
 Voit viedä litteroinnin pelkkänä tekstinä tai tekstityksenä.
 
-Yhteenvedon tekevät [kehotteet](/ai-processing/prompt-studio) ja mallit, jotka olet määrittänyt kohdassa [Käsittely](../ai-processing/processing.md), [säännöillä](../ai-processing/processing.md#rules), jotka suoritetaan itsestään tai pyynnöstäsi. Tallenteiden säilytysaika asetetaan kohdassa [Puheluiden tallentaminen](../recordings/call-recording.md#retention).
+Yhteenvedon tekevät [kehotteet](/ai-processing/prompt-studio) ja mallit, jotka olet määrittänyt kohdassa [Käsittely](../ai-processing/processing.md), [säännöillä](../ai-processing/processing.md#rules), jotka suoritetaan itsestään tai pyynnöstäsi. Tallenteiden säilytysaika asetetaan kohdassa [Tallenteet](../recordings.md#retention).
 
 ## Tallenne, joka sinulla jo on {#a-recording-you-already-have}
 

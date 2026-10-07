@@ -64,7 +64,7 @@ Os quatro ícones à direita da lista pendente:
 
 Pode exportar uma transcrição como texto simples ou como legendas.
 
-A redação é feita pelas [instruções](/ai-processing/prompt-studio) e pelos modelos que configurou em [Processamento](../ai-processing/processing.md), através de [regras](../ai-processing/processing.md#rules) que correm sozinhas ou quando pede. Durante quanto tempo se guardam as gravações define-se em [Gravar chamadas](../recordings/call-recording.md#retention).
+A redação é feita pelas [instruções](/ai-processing/prompt-studio) e pelos modelos que configurou em [Processamento](../ai-processing/processing.md), através de [regras](../ai-processing/processing.md#rules) que correm sozinhas ou quando pede. Durante quanto tempo se guardam as gravações define-se em [Gravações](../recordings.md#retention).
 
 ## Uma gravação que já tem {#a-recording-you-already-have}
 

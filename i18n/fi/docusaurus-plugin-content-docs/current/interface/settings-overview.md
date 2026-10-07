@@ -36,7 +36,7 @@ Askeleet ovat opas, eivät velvollisuus: askel, jota et tarvitse, voi jäädä p
 | | **Laitteet** | [Mikrofoni, kaiuttimet, soittoääni ja muut äänet](../sip-accounts/devices.md) |
 | | **Puhelut** | [Koodekit, koputus, automaattinen uudelleenvalinta ja puheluhistoria](../sip-accounts/calls.md) |
 | | **Painikkeet** | [Painikkeet, jotka soittavat muihin alanumeroihin ja seuraavat niitä](../sip-accounts/buttons.md) |
-| | **Tallennus** | [Puheluiden tallennus: suostumus, neuvottelut ja tiedostojen säilytysaika](../recordings/call-recording.md) |
+| | **Tallennus** | [Puheluiden tallennus: suostumus, neuvottelut ja tiedostojen säilytysaika](../recordings.md) |
 | | **Kaappaus** | [Muiden sovellusten äänen kaappaus](../capture/capture.md): kokoukset Zoomissa, Teamsissa, Meetissä ja vastaavissa |
 | Tekoäly | **Litterointi** | [Tunnistimet](../ai-processing/transcription.md) |
 | | **Käsittely** | [Automaattinen käsittely, kulurajat, kielimallit, kehotteet ja säännöt](../ai-processing/processing.md) |

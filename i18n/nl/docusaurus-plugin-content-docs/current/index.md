@@ -40,7 +40,7 @@ De schermafbeeldingen in deze documentatie zijn op macOS gemaakt en klein weerge
 
 1. [Voeg een account toe](sip-accounts/setup.md) voor uw centrale of SIP-provider.
 2. [Kies de microfoon en de luidsprekers](sip-accounts/devices.md) en voer een testgesprek.
-3. Bepaal [welke gesprekken worden opgenomen](recordings/call-recording.md).
+3. Bepaal [welke gesprekken worden opgenomen](recordings.md).
 4. Voeg een [herkenner](ai-processing/transcription.md) en een [taalmodel](ai-processing/processing.md) toe als u transcripten en uitwerkingen wilt.
 
 **Instellingen → Overzicht** houdt deze lijst voor u bij: een groene stip markeert een gedane stap, een rode een stap die nog moet. Zie [Overzicht van de instellingen](interface/settings-overview.md).
@@ -54,7 +54,7 @@ De schermafbeeldingen in deze documentatie zijn op macOS gemaakt en klein weerge
 | Een microfoon, luidsprekers en beltoon kiezen | [Apparaten](sip-accounts/devices.md) |
 | De codecs, het wisselgesprek en de gesprekgeschiedenis instellen | [Gespreksinstellingen](sip-accounts/calls.md) |
 | Collega's op knoppen met één druk zetten | [Knoppen](sip-accounts/buttons.md) |
-| Bepalen welke gesprekken worden opgenomen, en hoelang | [Gesprekken opnemen](recordings/call-recording.md) |
+| Bepalen welke gesprekken worden opgenomen, en hoelang | [Opnames](recordings.md) |
 | Uw gesprekken beluisteren, doorzoeken en lezen | [Venster Opnames](interface/recordings.md) |
 | Een vergadering in een andere toepassing opnemen | [Vastleggen](capture/capture.md) |
 | De herkenner kiezen die spraak in tekst omzet | [Transcriptie](ai-processing/transcription.md) |

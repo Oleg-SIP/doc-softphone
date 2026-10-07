@@ -36,7 +36,7 @@ Stegen är en vägledning, inte en plikt: ett steg du inte har användning för 
 | | **Enheter** | [Mikrofon, högtalare, ringsignal och andra ljud](../sip-accounts/devices.md) |
 | | **Samtal** | [Kodekar, samtal väntar, automatisk återuppringning och samtalshistoriken](../sip-accounts/calls.md) |
 | | **Knappar** | [Knappar som ringer och bevakar andra anknytningar](../sip-accounts/buttons.md) |
-| | **Inspelning** | [Inspelning av samtal: samtycke, konferenser och hur länge filer sparas](../recordings/call-recording.md) |
+| | **Inspelning** | [Inspelning av samtal: samtycke, konferenser och hur länge filer sparas](../recordings.md) |
 | | **Fångst** | [Fångst av ljudet från andra program](../capture/capture.md): möten i Zoom, Teams, Meet och liknande |
 | AI | **Transkription** | [Igenkännare](../ai-processing/transcription.md) |
 | | **Bearbetning** | [Automatisk bearbetning, kostnadsgränser, språkmodeller, prompter och regler](../ai-processing/processing.md) |

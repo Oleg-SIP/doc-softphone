@@ -25,7 +25,7 @@ Vsak modul ima potrditveno polje, ime, vrstico o tem, kaj počne, na desni pa sv
 | **Integracija** | Krajevni API in webhooki: [Integracija](/integration/rest-api). |
 | **Medijska shramba** | Knjižnica pogovorov in kako dolgo se hranijo: [Posnetki](/interface/recordings). |
 | **Obdelava** | Navodila in pravila, ki jih sprožijo: [Obdelava](/ai-processing/processing). |
-| **Snemanje** | Snemanje klicev in obveščanje druge strani o tem: [Snemanje klicev](/recordings/call-recording). |
+| **Snemanje** | Snemanje klicev in obveščanje druge strani o tem: [Posnetki](/recordings). |
 | **Telefonija** | SIP, računi, klici, polje za klicanje in zgodovina klicev. |
 | **Prepis** | Razpoznavalniki, vrsta, ki jih poganja, in prepisi, ki jih ustvarijo: [Prepis](/ai-processing/transcription). |
 

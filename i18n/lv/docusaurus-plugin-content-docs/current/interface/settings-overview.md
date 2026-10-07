@@ -36,7 +36,7 @@ Soļi ir ceļvedis, nevis pienākums: solis, kas jums nav vajadzīgs, var palikt
 | | **Ierīces** | [Mikrofons, skaļruņi, zvana signāls un citas skaņas](../sip-accounts/devices.md) |
 | | **Zvani** | [Kodeki, zvana gaidīšana, automātiska atkārtota zvanīšana un zvanu vēsture](../sip-accounts/calls.md) |
 | | **Pogas** | [Pogas, kas zvana uz citiem iekšējiem numuriem un tos uzrauga](../sip-accounts/buttons.md) |
-| | **Ierakstīšana** | [Zvanu ierakstīšana: piekrišana, konferences un failu glabāšanas ilgums](../recordings/call-recording.md) |
+| | **Ierakstīšana** | [Zvanu ierakstīšana: piekrišana, konferences un failu glabāšanas ilgums](../recordings.md) |
 | | **Tveršana** | [Citu lietotņu skaņas tveršana](../capture/capture.md): sapulces Zoom, Teams, Meet un līdzīgās |
 | Mākslīgais intelekts | **Pieraksts** | [Atpazinēji](../ai-processing/transcription.md) |
 | | **Apstrāde** | [Automātiska apstrāde, izdevumu robežas, valodas modeļi, norādījumi un kārtulas](../ai-processing/processing.md) |

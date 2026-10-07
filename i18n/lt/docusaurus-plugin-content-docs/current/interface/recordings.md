@@ -64,7 +64,7 @@ Keturios piktogramos dešinėje nuo išskleidžiamojo sąrašo:
 
 Iššifruotą tekstą galite eksportuoti kaip paprastą tekstą arba kaip subtitrus.
 
-Apibendrinimą kuria [nurodymai](/ai-processing/prompt-studio) ir modeliai, kuriuos nustatėte skiltyje [Apdorojimas](../ai-processing/processing.md), per [taisykles](../ai-processing/processing.md#rules), kurios vykdomos savaime arba jums paprašius. Kiek laiko laikomi įrašai, nustatoma skiltyje [Skambučių įrašymas](../recordings/call-recording.md#retention).
+Apibendrinimą kuria [nurodymai](/ai-processing/prompt-studio) ir modeliai, kuriuos nustatėte skiltyje [Apdorojimas](../ai-processing/processing.md), per [taisykles](../ai-processing/processing.md#rules), kurios vykdomos savaime arba jums paprašius. Kiek laiko laikomi įrašai, nustatoma skiltyje [Įrašai](../recordings.md#retention).
 
 ## Įrašas, kurį jau turite {#a-recording-you-already-have}
 

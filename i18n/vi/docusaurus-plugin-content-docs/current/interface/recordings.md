@@ -64,7 +64,7 @@ Bốn biểu tượng ở bên phải danh sách thả xuống:
 
 Bạn có thể xuất bản chép lời dưới dạng văn bản thuần hoặc phụ đề.
 
-Kết quả xử lý được tạo bởi các [chỉ dẫn](/ai-processing/prompt-studio) và mô hình bạn thiết lập trong [Xử lý](../ai-processing/processing.md), bởi các [quy tắc](../ai-processing/processing.md#rules) tự chạy hoặc chạy khi bạn yêu cầu. Thời gian giữ bản ghi được thiết lập trong [Ghi âm cuộc gọi](../recordings/call-recording.md#retention).
+Kết quả xử lý được tạo bởi các [chỉ dẫn](/ai-processing/prompt-studio) và mô hình bạn thiết lập trong [Xử lý](../ai-processing/processing.md), bởi các [quy tắc](../ai-processing/processing.md#rules) tự chạy hoặc chạy khi bạn yêu cầu. Thời gian giữ bản ghi được thiết lập trong [Bản ghi](../recordings.md#retention).
 
 ## Bản ghi bạn đã có sẵn {#a-recording-you-already-have}
 

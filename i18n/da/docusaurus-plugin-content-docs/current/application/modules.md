@@ -25,7 +25,7 @@ Hvert modul har et afkrydsningsfelt, et navn, en linje om, hvad det gør, og til
 | **Integration** | Det lokale API og webhooks: [Integration](/integration/rest-api). |
 | **Medielager** | Biblioteket med samtaler og hvor længe de gemmes: [Optagelser](/interface/recordings). |
 | **Behandling** | Prompter og de regler, der udløser dem: [Behandling](/ai-processing/processing). |
-| **Optagelse** | Optagelse af opkald og besked til den anden part om det: [Optagelse af opkald](/recordings/call-recording). |
+| **Optagelse** | Optagelse af opkald og besked til den anden part om det: [Optagelser](/recordings). |
 | **Telefoni** | SIP, konti, opkald, opkaldsfeltet og opkaldshistorikken. |
 | **Transskription** | Genkendere, den kø, der driver dem, og de udskrifter, de laver: [Transskription](/ai-processing/transcription). |
 

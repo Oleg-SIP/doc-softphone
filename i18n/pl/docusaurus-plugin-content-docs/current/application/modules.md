@@ -25,7 +25,7 @@ Każdy moduł ma pole wyboru, nazwę, wiersz o tym, co robi, a po prawej swój s
 | **Integracja** | Lokalne API i webhooki: [Integracja](/integration/rest-api). |
 | **Magazyn mediów** | Biblioteka rozmów i jak długo są przechowywane: [Nagrania](/interface/recordings). |
 | **Przetwarzanie** | Polecenia i reguły, które je uruchamiają: [Przetwarzanie](/ai-processing/processing). |
-| **Nagrywanie** | Nagrywanie połączeń i informowanie o tym drugiej strony: [Nagrywanie połączeń](/recordings/call-recording). |
+| **Nagrywanie** | Nagrywanie połączeń i informowanie o tym drugiej strony: [Nagrania](/recordings). |
 | **Telefonia** | SIP, konta, połączenia, pole wybierania i historia połączeń. |
 | **Transkrypcja** | Rozpoznawacze, kolejka, która je napędza, i transkrypcje, które tworzą: [Transkrypcja](/ai-processing/transcription). |
 

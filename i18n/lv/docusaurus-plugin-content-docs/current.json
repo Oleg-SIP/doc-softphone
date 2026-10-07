@@ -11,10 +11,6 @@
     "message": "Tālrunis un konti",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Ieraksti",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Tveršana no citām lietotnēm",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

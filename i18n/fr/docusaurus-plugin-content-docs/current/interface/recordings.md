@@ -64,7 +64,7 @@ Les quatre icônes à droite de la liste déroulante :
 
 Vous pouvez exporter une transcription en texte brut ou en sous-titres.
 
-Le compte rendu est produit par les [invites](/ai-processing/prompt-studio) et les modèles que vous avez configurés dans [Traitement](../ai-processing/processing.md), par des [règles](../ai-processing/processing.md#rules) qui s'exécutent d'elles-mêmes ou à votre demande. La durée de conservation des enregistrements se règle dans [Enregistrer les appels](../recordings/call-recording.md#retention).
+Le compte rendu est produit par les [invites](/ai-processing/prompt-studio) et les modèles que vous avez configurés dans [Traitement](../ai-processing/processing.md), par des [règles](../ai-processing/processing.md#rules) qui s'exécutent d'elles-mêmes ou à votre demande. La durée de conservation des enregistrements se règle dans [Enregistrements](../recordings.md#retention).
 
 ## Un enregistrement que vous avez déjà {#a-recording-you-already-have}
 

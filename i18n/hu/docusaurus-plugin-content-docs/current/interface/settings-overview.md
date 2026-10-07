@@ -36,7 +36,7 @@ A lépések útmutatók, nem kötelezettségek: az a lépés, amelyre nincs szü
 | | **Eszközök** | [Mikrofon, hangszórók, csengőhang és egyéb hangok](../sip-accounts/devices.md) |
 | | **Hívások** | [Kodekek, hívásvárakoztatás, automatikus újrahívás és hívásnapló](../sip-accounts/calls.md) |
 | | **Gombok** | [Más melléket tárcsázó és figyelő gombok](../sip-accounts/buttons.md) |
-| | **Felvétel** | [Hívások rögzítése: hozzájárulás, konferenciák és a fájlok megőrzési ideje](../recordings/call-recording.md) |
+| | **Felvétel** | [Hívások rögzítése: hozzájárulás, konferenciák és a fájlok megőrzési ideje](../recordings.md) |
 | | **Rögzítés** | [Más alkalmazások hangjának rögzítése](../capture/capture.md): megbeszélések a Zoomban, a Teamsben, a Meetben és hasonlókban |
 | MI | **Átirat** | [Felismerők](../ai-processing/transcription.md) |
 | | **Feldolgozás** | [Automatikus feldolgozás, költségkorlátok, nyelvi modellek, utasítások és szabályok](../ai-processing/processing.md) |

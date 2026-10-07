@@ -34,7 +34,7 @@ O que acontece quando alguém liga enquanto está numa chamada define-se em [Cha
 
 ## Uma chamada não foi gravada {#a-call-was-not-recorded}
 
-- **Definições → Gravação**, a primeira lista pendente, decide que chamadas são gravadas; o valor por omissão, **À mão**, só grava quando carrega em gravar no cartão da chamada. Veja [Gravar chamadas](/recordings/call-recording).
+- **Definições → Gravação**, a primeira lista pendente, decide que chamadas são gravadas; o valor por omissão, **À mão**, só grava quando carrega em gravar no cartão da chamada. Veja [Gravações](/recordings).
 - A gravação começa quando a chamada é atendida, por isso uma chamada não atendida não tem ficheiro.
 - O módulo **Gravação** tem de estar ligado em [Módulos](/application/modules).
 - As gravações são removidas pelos limites em **Retenção**; uma gravação fixada nunca é removida.

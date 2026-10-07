@@ -64,7 +64,7 @@ Padajući meni iznad prepisa bira šta da se prikaže — prepis koji je napravi
 
 Prepis možete da izvezete kao običan tekst ili kao titlove.
 
-Obradu rade [uputstva](/ai-processing/prompt-studio) i modeli koje podesite u [Obradi](../ai-processing/processing.md), preko [pravila](../ai-processing/processing.md#rules) koja se izvode sama ili kada to zatražite. Koliko se dugo snimci čuvaju podešava se u [Snimanju poziva](../recordings/call-recording.md#retention).
+Obradu rade [uputstva](/ai-processing/prompt-studio) i modeli koje podesite u [Obradi](../ai-processing/processing.md), preko [pravila](../ai-processing/processing.md#rules) koja se izvode sama ili kada to zatražite. Koliko se dugo snimci čuvaju podešava se u [Snimanju poziva](../recordings.md#retention).
 
 ## Snimak koji već imate {#a-recording-you-already-have}
 

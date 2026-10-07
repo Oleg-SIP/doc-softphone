@@ -64,7 +64,7 @@ A legördülő lista jobb oldalán lévő négy ikon:
 
 A leiratot exportálhatja egyszerű szövegként vagy feliratként.
 
-A feldolgozást azok az [utasítások](/ai-processing/prompt-studio) és modellek készítik, amelyeket a [Feldolgozás](../ai-processing/processing.md) lapon beállított, olyan [szabályok](../ai-processing/processing.md#rules) szerint, amelyek maguktól vagy az Ön kérésére futnak le. Hogy meddig maradnak meg a felvételek, azt a [Hívások rögzítése](../recordings/call-recording.md#retention) oldalon leírtak szerint lehet beállítani.
+A feldolgozást azok az [utasítások](/ai-processing/prompt-studio) és modellek készítik, amelyeket a [Feldolgozás](../ai-processing/processing.md) lapon beállított, olyan [szabályok](../ai-processing/processing.md#rules) szerint, amelyek maguktól vagy az Ön kérésére futnak le. Hogy meddig maradnak meg a felvételek, azt a [Felvételek](../recordings.md#retention) oldalon leírtak szerint lehet beállítani.
 
 ## Meglévő felvétel {#a-recording-you-already-have}
 

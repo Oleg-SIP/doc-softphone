@@ -34,7 +34,7 @@ Kodeky sa ponúkajú v poradí zoznamu v [Nastavenia → Hovory](/sip-accounts/c
 
 ## Hovor sa nenahral {#a-call-was-not-recorded}
 
-- **Nastavenia → Nahrávanie**, prvý rozbaľovací zoznam, rozhoduje, ktoré hovory sa nahrávajú; predvolené **Ručne** nahráva iba vtedy, keď stlačíte nahrávanie na karte hovoru. Pozrite [Nahrávanie hovorov](/recordings/call-recording).
+- **Nastavenia → Nahrávanie**, prvý rozbaľovací zoznam, rozhoduje, ktoré hovory sa nahrávajú; predvolené **Ručne** nahráva iba vtedy, keď stlačíte nahrávanie na karte hovoru. Pozrite [Nahrávky](/recordings).
 - Nahrávanie sa začne, keď je hovor prijatý, takže neprijatý hovor nemá súbor.
 - Modul **Nahrávanie** musí byť zapnutý v [Moduloch](/application/modules).
 - Nahrávky sa odstraňujú podľa hraníc v časti **Uchovávanie**; pripnutá nahrávka sa nikdy neodstráni.

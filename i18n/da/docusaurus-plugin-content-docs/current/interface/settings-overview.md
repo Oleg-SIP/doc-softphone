@@ -36,7 +36,7 @@ Trinene er en vejledning, ikke en pligt: et trin, du ikke har brug for, må gern
 | | **Enheder** | [Mikrofon, højttalere, ringetone og andre lyde](../sip-accounts/devices.md) |
 | | **Opkald** | [Codecs, banke på, automatisk genopkald og opkaldshistorikken](../sip-accounts/calls.md) |
 | | **Knapper** | [Knapper, der ringer til og overvåger andre lokalnumre](../sip-accounts/buttons.md) |
-| | **Optagelse** | [Optagelse af opkald: samtykke, konferencer og hvor længe filer gemmes](../recordings/call-recording.md) |
+| | **Optagelse** | [Optagelse af opkald: samtykke, konferencer og hvor længe filer gemmes](../recordings.md) |
 | | **Opfangning** | [Opfangning af lyden fra andre programmer](../capture/capture.md): møder i Zoom, Teams, Meet og lignende |
 | AI | **Transskription** | [Genkendere](../ai-processing/transcription.md) |
 | | **Behandling** | [Automatisk behandling, udgiftsgrænser, sprogmodeller, prompter og regler](../ai-processing/processing.md) |

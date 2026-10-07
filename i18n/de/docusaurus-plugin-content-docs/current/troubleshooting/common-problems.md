@@ -34,7 +34,7 @@ Was passiert, wenn jemand anruft, während Sie telefonieren, wird unter [Anklopf
 
 ## Ein Anruf wurde nicht aufgenommen {#a-call-was-not-recorded}
 
-- **Einstellungen → Aufnahme**, die erste Auswahlliste, legt fest, welche Anrufe aufgenommen werden; der Standard **Von Hand** nimmt nur auf, wenn Sie auf der Gesprächskarte die Aufnahme drücken. Siehe [Anrufe aufnehmen](/recordings/call-recording).
+- **Einstellungen → Aufnahme**, die erste Auswahlliste, legt fest, welche Anrufe aufgenommen werden; der Standard **Von Hand** nimmt nur auf, wenn Sie auf der Gesprächskarte die Aufnahme drücken. Siehe [Aufnahmen](/recordings).
 - Die Aufnahme beginnt, wenn der Anruf angenommen wird, ein nicht angenommener Anruf hat also keine Datei.
 - Das Modul **Aufnahme** muss unter [Module](/application/modules) eingeschaltet sein.
 - Aufnahmen werden durch die Grenzen unter **Aufbewahrung** entfernt; eine angeheftete Aufnahme wird nie entfernt.

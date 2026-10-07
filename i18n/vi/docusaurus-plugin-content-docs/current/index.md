@@ -40,7 +40,7 @@ Giao diện có sẵn bằng ba mươi ngôn ngữ, được chọn trong [Giao 
 
 1. [Thêm tài khoản](sip-accounts/setup.md) cho tổng đài hoặc nhà cung cấp SIP của bạn.
 2. [Chọn micrô và loa](sip-accounts/devices.md) rồi gọi thử một cuộc.
-3. Quyết định [những cuộc gọi nào được ghi âm](recordings/call-recording.md).
+3. Quyết định [những cuộc gọi nào được ghi âm](recordings.md).
 4. Thêm một [bộ nhận dạng](ai-processing/transcription.md) và một [mô hình ngôn ngữ](ai-processing/processing.md) nếu bạn muốn có bản chép lời và kết quả xử lý.
 
 **Cài đặt → Tổng quan** theo dõi danh sách này giúp bạn: chấm xanh đánh dấu bước đã xong, chấm đỏ là bước còn phải làm. Xem [Tổng quan cài đặt](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Giao diện có sẵn bằng ba mươi ngôn ngữ, được chọn trong [Giao 
 | Chọn micrô, loa và nhạc chuông | [Thiết bị](sip-accounts/devices.md) |
 | Thiết lập codec, chờ cuộc gọi và nhật ký cuộc gọi | [Cài đặt cuộc gọi](sip-accounts/calls.md) |
 | Đặt đồng nghiệp lên các nút gọi một chạm | [Nút bấm](sip-accounts/buttons.md) |
-| Quyết định cuộc gọi nào được ghi âm, và lưu trong bao lâu | [Ghi âm cuộc gọi](recordings/call-recording.md) |
+| Quyết định cuộc gọi nào được ghi âm, và lưu trong bao lâu | [Bản ghi](recordings.md) |
 | Nghe, tìm kiếm và đọc các cuộc trò chuyện của bạn | [Cửa sổ Bản ghi](interface/recordings.md) |
 | Ghi một cuộc họp diễn ra trong ứng dụng khác | [Thu âm ngoài](capture/capture.md) |
 | Chọn bộ nhận dạng chuyển lời nói thành văn bản | [Gỡ băng](ai-processing/transcription.md) |

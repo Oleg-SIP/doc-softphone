@@ -11,10 +11,6 @@
     "message": "Telefon och konton",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Inspelningar",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Inspelning från andra program",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

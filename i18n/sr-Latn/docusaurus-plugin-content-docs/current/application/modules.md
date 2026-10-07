@@ -25,7 +25,7 @@ Svaki modul ima polje za potvrdu, naziv, red o tome šta radi, a desno svoje sta
 | **Povezivanje** | Lokalni API i veb-kuke: [Povezivanje](/integration/rest-api). |
 | **Skladište zapisa** | Biblioteka razgovora i koliko se dugo čuvaju: [Snimci](/interface/recordings). |
 | **Obrada** | Uputstva i pravila koja ih okidaju: [Obrada](/ai-processing/processing). |
-| **Snimanje** | Snimanje poziva i obaveštavanje druge strane o tome: [Snimanje poziva](/recordings/call-recording). |
+| **Snimanje** | Snimanje poziva i obaveštavanje druge strane o tome: [Snimci](/recordings). |
 | **Telefonija** | SIP, nalozi, pozivi, polje za biranje i istorija poziva. |
 | **Prepisivanje** | Prepoznavači, red koji ih pokreće i prepisi koje prave: [Prepisivanje](/ai-processing/transcription). |
 

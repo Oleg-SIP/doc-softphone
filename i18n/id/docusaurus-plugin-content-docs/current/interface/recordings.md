@@ -64,7 +64,7 @@ Empat ikon di sebelah kanan daftar tarik-turun:
 
 Anda dapat mengekspor transkrip sebagai teks biasa atau sebagai subtitel.
 
-Hasil olahan dibuat oleh [petunjuk](/ai-processing/prompt-studio) dan model yang Anda siapkan di [Pemrosesan](../ai-processing/processing.md), oleh [aturan](../ai-processing/processing.md#rules) yang berjalan sendiri atau saat Anda memintanya. Berapa lama rekaman disimpan diatur di [Merekam panggilan](../recordings/call-recording.md#retention).
+Hasil olahan dibuat oleh [petunjuk](/ai-processing/prompt-studio) dan model yang Anda siapkan di [Pemrosesan](../ai-processing/processing.md), oleh [aturan](../ai-processing/processing.md#rules) yang berjalan sendiri atau saat Anda memintanya. Berapa lama rekaman disimpan diatur di [Rekaman](../recordings.md#retention).
 
 ## Rekaman yang sudah Anda miliki {#a-recording-you-already-have}
 

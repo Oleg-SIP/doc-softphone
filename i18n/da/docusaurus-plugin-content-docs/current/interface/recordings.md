@@ -64,7 +64,7 @@ De fire ikoner til højre for rullelisten:
 
 Du kan eksportere en udskrift som ren tekst eller som undertekster.
 
-Opsummeringen laves af de [prompter](/ai-processing/prompt-studio) og modeller, du har sat op under [Behandling](../ai-processing/processing.md), gennem [regler](../ai-processing/processing.md#rules), der kører af sig selv eller når du beder om det. Hvor længe optagelser gemmes, indstilles under [Optagelse af opkald](../recordings/call-recording.md#retention).
+Opsummeringen laves af de [prompter](/ai-processing/prompt-studio) og modeller, du har sat op under [Behandling](../ai-processing/processing.md), gennem [regler](../ai-processing/processing.md#rules), der kører af sig selv eller når du beder om det. Hvor længe optagelser gemmes, indstilles under [Optagelser](../recordings.md#retention).
 
 ## En optagelse, du allerede har {#a-recording-you-already-have}
 

@@ -34,7 +34,7 @@ Kaj se zgodi, ko vas kdo kliče, medtem ko ste v pogovoru, se nastavi pod [Čaka
 
 ## Klic ni bil posnet {#a-call-was-not-recorded}
 
-- **Nastavitve → Snemanje**, prvi spustni seznam, odloča, kateri klici se snemajo; privzeto **Ročno** snema le, ko pritisnete snemanje na kartici klica. Glejte [Snemanje klicev](/recordings/call-recording).
+- **Nastavitve → Snemanje**, prvi spustni seznam, odloča, kateri klici se snemajo; privzeto **Ročno** snema le, ko pritisnete snemanje na kartici klica. Glejte [Posnetki](/recordings).
 - Snemanje se začne, ko je klic sprejet, zato nesprejet klic nima datoteke.
 - Modul **Snemanje** mora biti vklopljen v [Modulih](/application/modules).
 - Posnetki se odstranjujejo po mejah pod **Hramba**; pripet posnetek se nikoli ne odstrani.

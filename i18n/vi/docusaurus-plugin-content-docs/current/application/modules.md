@@ -25,7 +25,7 @@ Mỗi mô-đun có một ô đánh dấu, một tên, một dòng mô tả việ
 | **Tích hợp** | API cục bộ và webhook: [Tích hợp](/integration/rest-api). |
 | **Kho media** | Thư viện các cuộc trò chuyện và thời gian giữ chúng: [Bản ghi](/interface/recordings). |
 | **Xử lý** | Các chỉ dẫn và quy tắc kích hoạt chúng: [Xử lý](/ai-processing/processing). |
-| **Ghi âm** | Ghi âm cuộc gọi, và báo cho bên kia biết về việc đó: [Ghi âm cuộc gọi](/recordings/call-recording). |
+| **Ghi âm** | Ghi âm cuộc gọi, và báo cho bên kia biết về việc đó: [Bản ghi](/recordings). |
 | **Điện thoại** | SIP, tài khoản, cuộc gọi, bàn quay số và lịch sử cuộc gọi. |
 | **Gỡ băng** | Các bộ nhận dạng, hàng đợi điều khiển chúng, và các bản chép lời chúng tạo ra: [Gỡ băng](/ai-processing/transcription). |
 

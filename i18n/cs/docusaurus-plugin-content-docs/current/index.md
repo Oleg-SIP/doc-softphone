@@ -40,7 +40,7 @@ Snímky obrazovky v této dokumentaci jsou pořízeny na macOS a zobrazují se z
 
 1. [Přidejte účet](sip-accounts/setup.md) pro svou ústřednu nebo SIP operátora.
 2. [Vyberte mikrofon a reproduktory](sip-accounts/devices.md) a zkuste zkušební hovor.
-3. Rozhodněte, [které hovory se nahrávají](recordings/call-recording.md).
+3. Rozhodněte, [které hovory se nahrávají](recordings.md).
 4. Pokud chcete přepisy a zápisy, přidejte [rozpoznávač](ai-processing/transcription.md) a [jazykový model](ai-processing/processing.md).
 
 **Nastavení → Přehled** tento seznam vede za vás: zelená tečka označuje hotový krok, červená krok, který zbývá. Viz [Přehled nastavení](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Snímky obrazovky v této dokumentaci jsou pořízeny na macOS a zobrazují se z
 | Vybrat mikrofon, reproduktory a vyzvánění | [Zařízení](sip-accounts/devices.md) |
 | Nastavit kodeky, čekání hovoru a historii hovorů | [Nastavení hovorů](sip-accounts/calls.md) |
 | Dát kolegy na tlačítka jedním stiskem | [Tlačítka](sip-accounts/buttons.md) |
-| Rozhodnout, které hovory se nahrávají a jak dlouho | [Nahrávání hovorů](recordings/call-recording.md) |
+| Rozhodnout, které hovory se nahrávají a jak dlouho | [Nahrávky](recordings.md) |
 | Poslouchat, prohledávat a číst své rozhovory | [Okno nahrávek](interface/recordings.md) |
 | Nahrát schůzku v jiné aplikaci | [Zachytávání](capture/capture.md) |
 | Vybrat rozpoznávač, který mění řeč v text | [Přepis](ai-processing/transcription.md) |

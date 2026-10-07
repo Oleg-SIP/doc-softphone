@@ -14,7 +14,7 @@ The icon at the left of a row says how the conversation arrived.
 
 | Icon | Conversation | Its name in the list | How it gets here |
 | --- | --- | --- | --- |
-| Handset with an arrow | A call made or taken in this phone. The arrow points in for an incoming call and out for an outgoing one. | The contact's name, or the number | Recorded as set in [Recording calls](../recordings/call-recording.md) |
+| Handset with an arrow | A call made or taken in this phone. The arrow points in for an incoming call and out for an outgoing one. | The contact's name, or the number | Recorded as set in [Recordings](../recordings.md) |
 | Arrow into a bar | A file imported from elsewhere: a mobile phone, a dictaphone or another system | The name of the file | **⋮ → Import from file(s)**; see [below](#a-recording-you-already-have) |
 | Window | A meeting held in another application | The name you gave it, or **Other application** | [Capture](../capture/capture.md) |
 
@@ -59,7 +59,7 @@ Point at a row to show three buttons at its right:
 
 | Button | Does |
 | --- | --- |
-| Pin | **Keep this one**: a kept recording is never deleted by the limits of [Retention](../recordings/call-recording.md#retention). Press it again to stop keeping it. |
+| Pin | **Keep this one**: a kept recording is never deleted by the limits of [Retention](../recordings.md#retention). Press it again to stop keeping it. |
 | Pencil | **Rename**: gives the conversation a name of your own. A call keeps the party's name beside it; a meeting or a file is otherwise named after the application or the file it came from. |
 | Bin | **Delete this recording**, after asking. The audio goes as well, and it cannot be undone. |
 
@@ -186,4 +186,4 @@ A recording made somewhere else — on a mobile phone, a dictaphone or another s
 
 ## Deleting a recording
 
-When a recording is deleted, everything made from it goes with it: the transcripts and the write-ups. How long recordings are kept by themselves is set in [Recording calls](../recordings/call-recording.md#retention).
+When a recording is deleted, everything made from it goes with it: the transcripts and the write-ups. How long recordings are kept by themselves is set in [Recordings](../recordings.md#retention).

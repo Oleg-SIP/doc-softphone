@@ -34,7 +34,7 @@ Các codec được đề nghị theo thứ tự của danh sách trong [Cài đ
 
 ## Cuộc gọi không được ghi âm {#a-call-was-not-recorded}
 
-- **Cài đặt → Ghi âm**, danh sách thả xuống đầu tiên, quyết định những cuộc gọi nào được ghi âm; mặc định là **Thủ công**, chỉ ghi âm khi bạn nhấn nút ghi âm trên khung cuộc gọi. Xem [Ghi âm cuộc gọi](/recordings/call-recording).
+- **Cài đặt → Ghi âm**, danh sách thả xuống đầu tiên, quyết định những cuộc gọi nào được ghi âm; mặc định là **Thủ công**, chỉ ghi âm khi bạn nhấn nút ghi âm trên khung cuộc gọi. Xem [Bản ghi](/recordings).
 - Việc ghi âm bắt đầu khi cuộc gọi được trả lời, nên cuộc gọi không được trả lời thì không có tệp.
 - Mô-đun **Ghi âm** phải được bật trong [Mô-đun](/application/modules).
 - Bản ghi bị xoá bởi các giới hạn ở mục **Lưu giữ**; bản ghi đã ghim không bao giờ bị xoá.

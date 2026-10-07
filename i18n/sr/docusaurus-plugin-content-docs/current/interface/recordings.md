@@ -64,7 +64,7 @@ description: Библиотека разговора — филтрирање, �
 
 Препис можете да извезете као обичан текст или као титлове.
 
-Обраду раде [упутства](/ai-processing/prompt-studio) и модели које подесите у [Обради](../ai-processing/processing.md), преко [правила](../ai-processing/processing.md#rules) која се изводе сама или када то затражите. Колико се дуго снимци чувају подешава се у [Снимању позива](../recordings/call-recording.md#retention).
+Обраду раде [упутства](/ai-processing/prompt-studio) и модели које подесите у [Обради](../ai-processing/processing.md), преко [правила](../ai-processing/processing.md#rules) која се изводе сама или када то затражите. Колико се дуго снимци чувају подешава се у [Снимању позива](../recordings.md#retention).
 
 ## Снимак који већ имате {#a-recording-you-already-have}
 

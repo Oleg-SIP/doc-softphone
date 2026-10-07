@@ -40,7 +40,7 @@ Las capturas de pantalla de esta documentación están hechas en macOS y se mues
 
 1. [Añada una cuenta](sip-accounts/setup.md) para su centralita o proveedor SIP.
 2. [Elija el micrófono y los altavoces](sip-accounts/devices.md) y haga una llamada de prueba.
-3. Decida [qué llamadas se graban](recordings/call-recording.md).
+3. Decida [qué llamadas se graban](recordings.md).
 4. Añada un [reconocedor](ai-processing/transcription.md) y un [modelo de lenguaje](ai-processing/processing.md) si quiere transcripciones y redacciones.
 
 **Ajustes → Resumen general** le lleva esta lista: un punto verde marca un paso hecho, uno rojo un paso pendiente. Consulte [Resumen de los ajustes](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Las capturas de pantalla de esta documentación están hechas en macOS y se mues
 | Elegir micrófono, altavoces y tono de llamada | [Dispositivos](sip-accounts/devices.md) |
 | Ajustar los códecs, la llamada en espera y el historial de llamadas | [Ajustes de llamadas](sip-accounts/calls.md) |
 | Poner a sus compañeros en botones de una sola pulsación | [Botones](sip-accounts/buttons.md) |
-| Decidir qué llamadas se graban y durante cuánto tiempo | [Grabar llamadas](recordings/call-recording.md) |
+| Decidir qué llamadas se graban y durante cuánto tiempo | [Grabaciones](recordings.md) |
 | Escuchar, buscar y leer sus conversaciones | [Ventana de grabaciones](interface/recordings.md) |
 | Grabar una reunión celebrada en otra aplicación | [Captura](capture/capture.md) |
 | Elegir el reconocedor que convierte la voz en texto | [Transcripción](ai-processing/transcription.md) |

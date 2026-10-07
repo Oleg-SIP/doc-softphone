@@ -40,7 +40,7 @@ Les captures d'écran de cette documentation sont prises sous macOS et affichée
 
 1. [Ajoutez un compte](sip-accounts/setup.md) pour votre IPBX ou votre opérateur SIP.
 2. [Choisissez le microphone et les haut-parleurs](sip-accounts/devices.md) et passez un appel de test.
-3. Décidez [quels appels sont enregistrés](recordings/call-recording.md).
+3. Décidez [quels appels sont enregistrés](recordings.md).
 4. Ajoutez une [reconnaissance](ai-processing/transcription.md) et un [modèle de langue](ai-processing/processing.md) si vous voulez des transcriptions et des comptes rendus.
 
 **Réglages → Vue d’ensemble** tient cette liste à jour pour vous : un point vert marque une étape faite, un point rouge une étape restante. Voir [Vue d'ensemble des réglages](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Les captures d'écran de cette documentation sont prises sous macOS et affichée
 | Choisir un microphone, des haut-parleurs et une sonnerie | [Appareils](sip-accounts/devices.md) |
 | Régler les codecs, l'appel en attente et le journal des appels | [Réglages des appels](sip-accounts/calls.md) |
 | Mettre vos collègues sur des boutons à une touche | [Boutons](sip-accounts/buttons.md) |
-| Décider quels appels sont enregistrés, et pour combien de temps | [Enregistrer les appels](recordings/call-recording.md) |
+| Décider quels appels sont enregistrés, et pour combien de temps | [Enregistrements](recordings.md) |
 | Écouter, rechercher et lire vos conversations | [Fenêtre des enregistrements](interface/recordings.md) |
 | Enregistrer une réunion tenue dans une autre application | [Capture](capture/capture.md) |
 | Choisir la reconnaissance qui transforme la parole en texte | [Transcription](ai-processing/transcription.md) |

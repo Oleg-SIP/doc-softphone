@@ -36,7 +36,7 @@ Les étapes sont un guide, pas une obligation : une étape dont vous n'avez pas 
 | | **Appareils** | [Microphone, haut-parleurs, sonnerie et autres sons](../sip-accounts/devices.md) |
 | | **Appels** | [Codecs, appel en attente, rappel automatique et journal des appels](../sip-accounts/calls.md) |
 | | **Boutons** | [Des boutons qui composent, et surveillent, d'autres postes](../sip-accounts/buttons.md) |
-| | **Enregistrement** | [L'enregistrement des appels : consentement, conférences et durée de conservation des fichiers](../recordings/call-recording.md) |
+| | **Enregistrement** | [L'enregistrement des appels : consentement, conférences et durée de conservation des fichiers](../recordings.md) |
 | | **Capture** | [La capture du son des autres applications](../capture/capture.md) : réunions dans Zoom, Teams, Meet et autres |
 | IA | **Transcription** | [Reconnaissances](../ai-processing/transcription.md) |
 | | **Traitement** | [Traitement automatique, limites de dépenses, modèles de langue, invites et règles](../ai-processing/processing.md) |

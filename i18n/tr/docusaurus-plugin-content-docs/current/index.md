@@ -40,7 +40,7 @@ Bu belgelerdeki ekran görüntüleri macOS'ta alınmıştır ve küçük göster
 
 1. Santraliniz ya da SIP sağlayıcınız için [bir hesap ekleyin](sip-accounts/setup.md).
 2. [Mikrofonu ve hoparlörleri seçin](sip-accounts/devices.md) ve bir deneme araması yapın.
-3. [Hangi çağrıların kaydedileceğine](recordings/call-recording.md) karar verin.
+3. [Hangi çağrıların kaydedileceğine](recordings.md) karar verin.
 4. Döküm ve işleme istiyorsanız bir [tanıyıcı](ai-processing/transcription.md) ve bir [dil modeli](ai-processing/processing.md) ekleyin.
 
 **Ayarlar → Genel bakış** bu listeyi sizin için tutar: yeşil nokta tamamlanmış bir adımı, kırmızı nokta hâlâ kalan bir adımı gösterir. Bkz. [Ayarlara genel bakış](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Bu belgelerdeki ekran görüntüleri macOS'ta alınmıştır ve küçük göster
 | Mikrofon, hoparlör ve zil sesi seçmek | [Aygıtlar](sip-accounts/devices.md) |
 | Kodekleri, çağrı bekletmeyi ve çağrı geçmişini ayarlamak | [Çağrı ayarları](sip-accounts/calls.md) |
 | İş arkadaşlarını tek dokunuşlu düğmelere koymak | [Düğmeler](sip-accounts/buttons.md) |
-| Hangi çağrıların ne kadar süreyle kaydedileceğine karar vermek | [Çağrıları kaydetme](recordings/call-recording.md) |
+| Hangi çağrıların ne kadar süreyle kaydedileceğine karar vermek | [Kayıtlar](recordings.md) |
 | Görüşmelerinizi dinlemek, aramak ve okumak | [Kayıtlar penceresi](interface/recordings.md) |
 | Başka bir uygulamada yapılan bir toplantıyı kaydetmek | [Yakalama](capture/capture.md) |
 | Konuşmayı metne çeviren tanıyıcıyı seçmek | [Yazıya döküm](ai-processing/transcription.md) |

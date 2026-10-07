@@ -40,7 +40,7 @@ Skärmbilderna i den här dokumentationen är tagna på macOS och visas små: kl
 
 1. [Lägg till ett konto](sip-accounts/setup.md) för din växel eller SIP-operatör.
 2. [Välj mikrofon och högtalare](sip-accounts/devices.md) och ring ett testsamtal.
-3. Bestäm [vilka samtal som spelas in](recordings/call-recording.md).
+3. Bestäm [vilka samtal som spelas in](recordings.md).
 4. Lägg till en [igenkännare](ai-processing/transcription.md) och en [språkmodell](ai-processing/processing.md) om du vill ha utskrifter och sammanfattningar.
 
 **Inställningar → Översikt** håller den här listan åt dig: en grön prick markerar ett steg som är klart, en röd ett steg som återstår. Se [Översikt över inställningarna](interface/settings-overview.md).
@@ -54,7 +54,7 @@ Skärmbilderna i den här dokumentationen är tagna på macOS och visas små: kl
 | Välja mikrofon, högtalare och ringsignal | [Enheter](sip-accounts/devices.md) |
 | Ställa in kodekar, samtal väntar och samtalshistoriken | [Samtalsinställningar](sip-accounts/calls.md) |
 | Lägga kolleger på knappar med ett tryck | [Knappar](sip-accounts/buttons.md) |
-| Bestämma vilka samtal som spelas in och hur länge | [Spela in samtal](recordings/call-recording.md) |
+| Bestämma vilka samtal som spelas in och hur länge | [Inspelningar](recordings.md) |
 | Lyssna på, söka i och läsa dina samtal | [Fönstret Inspelningar](interface/recordings.md) |
 | Spela in ett möte som hålls i ett annat program | [Fångst](capture/capture.md) |
 | Välja igenkännaren som gör tal till text | [Transkription](ai-processing/transcription.md) |

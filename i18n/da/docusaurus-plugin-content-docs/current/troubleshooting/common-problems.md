@@ -34,7 +34,7 @@ Hvad der sker, når nogen ringer, mens du er i et opkald, indstilles under [Bank
 
 ## Et opkald blev ikke optaget {#a-call-was-not-recorded}
 
-- **Indstillinger → Optagelse**, den første rulleliste, bestemmer, hvilke opkald der optages; standarden, **I hånden**, optager kun, når du trykker på optag på opkaldskortet. Se [Optagelse af opkald](/recordings/call-recording).
+- **Indstillinger → Optagelse**, den første rulleliste, bestemmer, hvilke opkald der optages; standarden, **I hånden**, optager kun, når du trykker på optag på opkaldskortet. Se [Optagelser](/recordings).
 - Optagelsen starter, når opkaldet besvares, så et opkald, der ikke blev besvaret, har ingen fil.
 - Modulet **Optagelse** skal være slået til under [Moduler](/application/modules).
 - Optagelser fjernes af grænserne under **Opbevaring**; en fastgjort optagelse fjernes aldrig.

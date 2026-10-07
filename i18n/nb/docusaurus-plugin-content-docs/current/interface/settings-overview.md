@@ -36,7 +36,7 @@ Trinnene er en veiledning, ikke en plikt: et trinn du ikke har bruk for, kan få
 | | **Enheter** | [Mikrofon, høyttalere, ringetone og andre lyder](../sip-accounts/devices.md) |
 | | **Samtaler** | [Kodeker, samtale venter, automatisk ny oppringing og samtalehistorikken](../sip-accounts/calls.md) |
 | | **Knapper** | [Knapper som ringer og følger med på andre internnumre](../sip-accounts/buttons.md) |
-| | **Opptak** | [Opptak av samtaler: samtykke, konferanser og hvor lenge filer lagres](../recordings/call-recording.md) |
+| | **Opptak** | [Opptak av samtaler: samtykke, konferanser og hvor lenge filer lagres](../recordings.md) |
 | | **Fanging** | [Fanging av lyden fra andre programmer](../capture/capture.md): møter i Zoom, Teams, Meet og lignende |
 | AI | **Transkripsjon** | [Gjenkjennere](../ai-processing/transcription.md) |
 | | **Behandling** | [Automatisk behandling, utgiftsgrenser, språkmodeller, prompter og regler](../ai-processing/processing.md) |
