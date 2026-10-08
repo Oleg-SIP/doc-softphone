@@ -25,7 +25,7 @@ Un recunoscător este un serviciu de transformare a vorbirii în text, căruia t
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Cel marcat **Implicit** în dreapta rândului său (**X.ai** în imagine) este cel folosit când nu alegeți altul. Puteți păstra mai multe. Lista derulantă de deasupra unei transcrieri din [fereastra Înregistrări](/interface/recordings#the-transcript-and-the-write-up) arată transcrierile făcute de fiecare recunoscător.
+Cel marcat **Implicit** în dreapta rândului său (**X.ai** în imagine) este cel folosit când nu alegeți altul. Puteți păstra mai multe. Lista derulantă de deasupra unei transcrieri din [fereastra Înregistrări](/interface/recordings#transcript-or-write-up-the-drop-down) arată transcrierile făcute de fiecare recunoscător.
 
 Modelul poate rămâne gol. În acest caz, serviciul folosește propriul model implicit.
 

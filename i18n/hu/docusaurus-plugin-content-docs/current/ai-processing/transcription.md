@@ -25,7 +25,7 @@ A felismerő egy beszéd–szöveg szolgáltatás, amelynek a telefon elküldi a
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-A sora jobb szélén **Alapértelmezett** jelöléssel ellátott felismerő (a képen az **X.ai**) az, amelyet a program akkor használ, ha nem választ másikat. Többet is megtarthat. A [Felvételek ablakban](/interface/recordings#the-transcript-and-the-write-up) a leirat fölötti legördülő lista felsorolja az egyes felismerők által készített leiratokat.
+A sora jobb szélén **Alapértelmezett** jelöléssel ellátott felismerő (a képen az **X.ai**) az, amelyet a program akkor használ, ha nem választ másikat. Többet is megtarthat. A [Felvételek ablakban](/interface/recordings#transcript-or-write-up-the-drop-down) a leirat fölötti legördülő lista felsorolja az egyes felismerők által készített leiratokat.
 
 A modell üresen is hagyható. Ilyenkor a szolgáltatás a saját alapértelmezését használja.
 

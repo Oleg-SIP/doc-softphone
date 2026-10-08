@@ -25,7 +25,7 @@ Pengenal suara adalah layanan ucapan-ke-teks yang menerima audio dari telepon. T
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Yang ditandai **Bawaan** di sebelah kanan barisnya (**X.ai** pada gambar) adalah yang digunakan ketika Anda tidak memilih yang lain. Anda dapat menyimpan beberapa. Daftar tarik-turun di atas transkrip di [jendela Rekaman](/interface/recordings#the-transcript-and-the-write-up) mencantumkan transkrip yang dibuat oleh setiap pengenal suara.
+Yang ditandai **Bawaan** di sebelah kanan barisnya (**X.ai** pada gambar) adalah yang digunakan ketika Anda tidak memilih yang lain. Anda dapat menyimpan beberapa. Daftar tarik-turun di atas transkrip di [jendela Rekaman](/interface/recordings#transcript-or-write-up-the-drop-down) mencantumkan transkrip yang dibuat oleh setiap pengenal suara.
 
 Model boleh dibiarkan kosong. Layanan kemudian menggunakan bawaannya sendiri.
 

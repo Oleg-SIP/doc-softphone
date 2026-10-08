@@ -25,7 +25,7 @@ Un riconoscitore è un servizio di riconoscimento vocale a cui il telefono invia
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Quello indicato come **predefinito** a destra della sua riga (**X.ai** nell'immagine) è quello usato quando non ne sceglie un altro. Può tenerne diversi. Il menu a discesa sopra una trascrizione nella [finestra delle registrazioni](/interface/recordings#the-transcript-and-the-write-up) elenca le trascrizioni fatte da ciascun riconoscitore.
+Quello indicato come **predefinito** a destra della sua riga (**X.ai** nell'immagine) è quello usato quando non ne sceglie un altro. Può tenerne diversi. Il menu a discesa sopra una trascrizione nella [finestra delle registrazioni](/interface/recordings#transcript-or-write-up-the-drop-down) elenca le trascrizioni fatte da ciascun riconoscitore.
 
 Il modello si può lasciare vuoto. Il servizio usa allora il proprio modello predefinito.
 

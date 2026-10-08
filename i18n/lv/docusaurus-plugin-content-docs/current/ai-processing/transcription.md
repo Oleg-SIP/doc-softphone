@@ -25,7 +25,7 @@ Atpazinējs ir runas pārvēršanas tekstā pakalpojums, kam tālrunis nosūta s
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Tas, kas savas rindas labajā pusē atzīmēts kā **noklusējums** (attēlā **X.ai**), tiek izmantots, kad neizvēlaties citu. Jūs varat paturēt vairākus. Nolaižamais saraksts virs atšifrējuma [ierakstu logā](/interface/recordings#the-transcript-and-the-write-up) uzskaita katra atpazinēja veiktos atšifrējumus.
+Tas, kas savas rindas labajā pusē atzīmēts kā **noklusējums** (attēlā **X.ai**), tiek izmantots, kad neizvēlaties citu. Jūs varat paturēt vairākus. Nolaižamais saraksts virs atšifrējuma [ierakstu logā](/interface/recordings#transcript-or-write-up-the-drop-down) uzskaita katra atpazinēja veiktos atšifrējumus.
 
 Modeli var atstāt tukšu. Tad pakalpojums izmanto savu noklusējumu.
 

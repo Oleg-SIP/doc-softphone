@@ -25,7 +25,7 @@ En genkender er en tale-til-tekst-tjeneste, som telefonen sender lyd til. Tryk p
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Den, der er markeret **standard** til højre på sin række (**X.ai** på billedet), bruges, når du ikke vælger en anden. Du kan beholde flere. Rullelisten over en udskrift i [vinduet Optagelser](/interface/recordings#the-transcript-and-the-write-up) viser de udskrifter, hver genkender har lavet.
+Den, der er markeret **standard** til højre på sin række (**X.ai** på billedet), bruges, når du ikke vælger en anden. Du kan beholde flere. Rullelisten over en udskrift i [vinduet Optagelser](/interface/recordings#transcript-or-write-up-the-drop-down) viser de udskrifter, hver genkender har lavet.
 
 Modellen må gerne være tom. Tjenesten bruger så sin egen standard.
 

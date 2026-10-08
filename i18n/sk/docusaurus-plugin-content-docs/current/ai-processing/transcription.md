@@ -25,7 +25,7 @@ Rozpoznávač je služba prevodu reči na text, ktorej telefón posiela zvuk. St
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Ten, ktorý je vpravo vo svojom riadku označený ako **Predvolený** (na obrázku **X.ai**), sa použije, keď nevyberiete iný. Môžete ich mať niekoľko. Rozbaľovací zoznam nad prepisom v [okne Nahrávky](/interface/recordings#the-transcript-and-the-write-up) uvádza prepisy vytvorené každým rozpoznávačom.
+Ten, ktorý je vpravo vo svojom riadku označený ako **Predvolený** (na obrázku **X.ai**), sa použije, keď nevyberiete iný. Môžete ich mať niekoľko. Rozbaľovací zoznam nad prepisom v [okne Nahrávky](/interface/recordings#transcript-or-write-up-the-drop-down) uvádza prepisy vytvorené každým rozpoznávačom.
 
 Model môže zostať prázdny. Služba potom použije svoj predvolený.
 

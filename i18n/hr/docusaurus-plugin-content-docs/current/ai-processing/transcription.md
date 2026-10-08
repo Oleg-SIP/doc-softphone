@@ -25,7 +25,7 @@ Prepoznavač je usluga pretvaranja govora u tekst kojoj telefon šalje zvuk. Pri
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Onaj označen kao **Zadano** desno u svom retku (na slici **X.ai**) koristi se kad ne odaberete drugi. Možete ih imati nekoliko. Padajući izbornik iznad prijepisa u [prozoru Snimke](/interface/recordings#the-transcript-and-the-write-up) navodi prijepise koje je napravio svaki prepoznavač.
+Onaj označen kao **Zadano** desno u svom retku (na slici **X.ai**) koristi se kad ne odaberete drugi. Možete ih imati nekoliko. Padajući izbornik iznad prijepisa u [prozoru Snimke](/interface/recordings#transcript-or-write-up-the-drop-down) navodi prijepise koje je napravio svaki prepoznavač.
 
 Model može ostati prazan. Usluga tada koristi svoj zadani.
 

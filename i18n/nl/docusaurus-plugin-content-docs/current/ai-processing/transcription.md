@@ -25,7 +25,7 @@ Een herkenner is een spraak-naar-tekstdienst waarnaar de telefoon audio stuurt. 
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-De herkenner die rechts op zijn regel als **standaard** is gemarkeerd (**X.ai** op de afbeelding) wordt gebruikt als u geen andere kiest. U kunt er meerdere houden. De keuzelijst boven een transcript in het [venster Opnames](/interface/recordings#the-transcript-and-the-write-up) toont de transcripten van elke herkenner.
+De herkenner die rechts op zijn regel als **standaard** is gemarkeerd (**X.ai** op de afbeelding) wordt gebruikt als u geen andere kiest. U kunt er meerdere houden. De keuzelijst boven een transcript in het [venster Opnames](/interface/recordings#transcript-or-write-up-the-drop-down) toont de transcripten van elke herkenner.
 
 Het model mag leeg blijven. De dienst gebruikt dan zijn eigen standaard.
 

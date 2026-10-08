@@ -25,7 +25,7 @@ Tunnistin on puheesta tekstiksi -palvelu, jolle puhelin lähettää äänen. Pai
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Rivinsä oikealla puolella merkinnällä **oletus** varustettu (kuvassa **X.ai**) on se, jota käytetään, kun et valitse muuta. Voit pitää useita. [Tallenteet-ikkunassa](/interface/recordings#the-transcript-and-the-write-up) litteroinnin yläpuolella oleva pudotusvalikko luettelee kunkin tunnistimen tekemät litteroinnit.
+Rivinsä oikealla puolella merkinnällä **oletus** varustettu (kuvassa **X.ai**) on se, jota käytetään, kun et valitse muuta. Voit pitää useita. [Tallenteet-ikkunassa](/interface/recordings#transcript-or-write-up-the-drop-down) litteroinnin yläpuolella oleva pudotusvalikko luettelee kunkin tunnistimen tekemät litteroinnit.
 
 Mallin voi jättää tyhjäksi. Palvelu käyttää silloin omaa oletustaan.
 

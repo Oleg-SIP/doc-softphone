@@ -25,7 +25,7 @@ En igenkännare är en tal-till-text-tjänst som telefonen skickar ljud till. Tr
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Den som är markerad **standard** till höger på sin rad (**X.ai** på bilden) är den som används när du inte väljer en annan. Du kan behålla flera. Listrutan ovanför en utskrift i [fönstret Inspelningar](/interface/recordings#the-transcript-and-the-write-up) visar utskrifterna som varje igenkännare har gjort.
+Den som är markerad **standard** till höger på sin rad (**X.ai** på bilden) är den som används när du inte väljer en annan. Du kan behålla flera. Listrutan ovanför en utskrift i [fönstret Inspelningar](/interface/recordings#transcript-or-write-up-the-drop-down) visar utskrifterna som varje igenkännare har gjort.
 
 Modellen får vara tom. Tjänsten använder då sin egen standard.
 

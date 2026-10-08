@@ -25,7 +25,7 @@ Ein Spracherkenner ist ein Sprache-zu-Text-Dienst, an den das Telefon Ton sendet
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Der mit **Vorgabe** rechts in seiner Zeile markierte (im Bild **X.ai**) wird verwendet, wenn Sie keinen anderen wählen. Sie können mehrere behalten. Die Auswahlliste über einem Transkript im [Aufnahmefenster](/interface/recordings#the-transcript-and-the-write-up) führt die Transkripte der einzelnen Spracherkenner auf.
+Der mit **Vorgabe** rechts in seiner Zeile markierte (im Bild **X.ai**) wird verwendet, wenn Sie keinen anderen wählen. Sie können mehrere behalten. Die Auswahlliste über einem Transkript im [Aufnahmefenster](/interface/recordings#transcript-or-write-up-the-drop-down) führt die Transkripte der einzelnen Spracherkenner auf.
 
 Das Modell darf leer bleiben. Der Dienst verwendet dann sein eigenes Standardmodell.
 

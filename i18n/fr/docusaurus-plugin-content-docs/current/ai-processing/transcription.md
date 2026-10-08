@@ -25,7 +25,7 @@ Une reconnaissance est un service de transcription de la parole auquel le télé
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Celle qui est marquée **par défaut** à droite de sa ligne (**X.ai** sur l'image) est celle qui est utilisée quand vous n'en choisissez pas une autre. Vous pouvez en garder plusieurs. La liste déroulante au-dessus d'une transcription dans la [fenêtre des enregistrements](/interface/recordings#the-transcript-and-the-write-up) liste les transcriptions faites par chaque reconnaissance.
+Celle qui est marquée **par défaut** à droite de sa ligne (**X.ai** sur l'image) est celle qui est utilisée quand vous n'en choisissez pas une autre. Vous pouvez en garder plusieurs. La liste déroulante au-dessus d'une transcription dans la [fenêtre des enregistrements](/interface/recordings#transcript-or-write-up-the-drop-down) liste les transcriptions faites par chaque reconnaissance.
 
 Le modèle peut rester vide. Le service utilise alors son propre modèle par défaut.
 

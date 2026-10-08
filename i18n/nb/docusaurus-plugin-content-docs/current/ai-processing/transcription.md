@@ -25,7 +25,7 @@ En gjenkjenner er en tale-til-tekst-tjeneste som telefonen sender lyd til. Trykk
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Den som er merket **standard** til høyre på raden (**X.ai** på bildet), brukes når du ikke velger en annen. Du kan beholde flere. Nedtrekkslisten over en utskrift i [vinduet Opptak](/interface/recordings#the-transcript-and-the-write-up) viser utskriftene hver gjenkjenner har laget.
+Den som er merket **standard** til høyre på raden (**X.ai** på bildet), brukes når du ikke velger en annen. Du kan beholde flere. Nedtrekkslisten over en utskrift i [vinduet Opptak](/interface/recordings#transcript-or-write-up-the-drop-down) viser utskriftene hver gjenkjenner har laget.
 
 Modellen kan stå tom. Tjenesten bruker da sin egen standard.
 

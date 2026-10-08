@@ -25,7 +25,7 @@ Un reconocedor es un servicio de voz a texto al que el teléfono envía el audio
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-El marcado como **por defecto** a la derecha de su fila (**X.ai** en la imagen) es el que se usa cuando no elige otro. Puede tener varios. El desplegable sobre una transcripción en la [ventana de grabaciones](/interface/recordings#the-transcript-and-the-write-up) lista las transcripciones hechas por cada reconocedor.
+El marcado como **por defecto** a la derecha de su fila (**X.ai** en la imagen) es el que se usa cuando no elige otro. Puede tener varios. El desplegable sobre una transcripción en la [ventana de grabaciones](/interface/recordings#transcript-or-write-up-the-drop-down) lista las transcripciones hechas por cada reconocedor.
 
 El modelo puede dejarse vacío. Entonces el servicio usa su propio modelo por defecto.
 

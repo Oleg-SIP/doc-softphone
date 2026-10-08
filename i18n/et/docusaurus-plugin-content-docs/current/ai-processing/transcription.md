@@ -25,7 +25,7 @@ Tuvastaja on kõnest tekstiks teenus, millele telefon heli saadab. Vajutage **Li
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Tuvastaja, mis on oma rea paremas servas tähistatud kui **vaikimisi** (pildil **X.ai**), on see, mida kasutatakse, kui te ei vali teist. Võite hoida mitut. [Salvestiste aknas](/interface/recordings#the-transcript-and-the-write-up) ülestähenduse kohal olev ripploend loetleb iga tuvastaja tehtud ülestähendused.
+Tuvastaja, mis on oma rea paremas servas tähistatud kui **vaikimisi** (pildil **X.ai**), on see, mida kasutatakse, kui te ei vali teist. Võite hoida mitut. [Salvestiste aknas](/interface/recordings#transcript-or-write-up-the-drop-down) ülestähenduse kohal olev ripploend loetleb iga tuvastaja tehtud ülestähendused.
 
 Mudeli võib jätta tühjaks. Siis kasutab teenus oma vaikeväärtust.
 

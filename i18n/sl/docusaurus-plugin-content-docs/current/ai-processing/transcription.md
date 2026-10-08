@@ -25,7 +25,7 @@ Razpoznavalnik je storitev za pretvorbo govora v besedilo, ki ji telefon pošilj
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Tisti, ki je desno v svoji vrstici označen kot **Privzeto** (na sliki **X.ai**), se uporabi, ko ne izberete drugega. Imate jih lahko več. Spustni seznam nad prepisom v [oknu Posnetki](/interface/recordings#the-transcript-and-the-write-up) navaja prepise, ki jih je naredil vsak razpoznavalnik.
+Tisti, ki je desno v svoji vrstici označen kot **Privzeto** (na sliki **X.ai**), se uporabi, ko ne izberete drugega. Imate jih lahko več. Spustni seznam nad prepisom v [oknu Posnetki](/interface/recordings#transcript-or-write-up-the-drop-down) navaja prepise, ki jih je naredil vsak razpoznavalnik.
 
 Model lahko ostane prazen. Storitev nato uporabi svojega privzetega.
 

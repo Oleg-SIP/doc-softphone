@@ -25,7 +25,7 @@ Tanıyıcı, telefonun ses gönderdiği bir konuşmadan metne hizmetidir. Bir ta
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Satırının sağında **Öntanımlı** olarak işaretlenen (resimde **X.ai**), siz başka birini seçmediğinizde kullanılandır. Birkaç tane tutabilirsiniz. [Kayıtlar penceresinde](/interface/recordings#the-transcript-and-the-write-up) bir dökümün üstündeki açılır liste, her tanıyıcının oluşturduğu dökümleri listeler.
+Satırının sağında **Öntanımlı** olarak işaretlenen (resimde **X.ai**), siz başka birini seçmediğinizde kullanılandır. Birkaç tane tutabilirsiniz. [Kayıtlar penceresinde](/interface/recordings#transcript-or-write-up-the-drop-down) bir dökümün üstündeki açılır liste, her tanıyıcının oluşturduğu dökümleri listeler.
 
 Model boş bırakılabilir. Bu durumda hizmet kendi öntanımlısını kullanır.
 

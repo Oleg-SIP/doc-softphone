@@ -25,7 +25,7 @@ Rozpoznawacz to usługa zamiany mowy na tekst, do której telefon wysyła dźwi�
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Ten oznaczony jako **domyślny** po prawej stronie swojego wiersza (na obrazku **X.ai**) jest używany, gdy nie wybierzesz innego. Możesz mieć kilka. Lista rozwijana nad transkrypcją w [oknie nagrań](/interface/recordings#the-transcript-and-the-write-up) pokazuje transkrypcje wykonane przez każdy rozpoznawacz.
+Ten oznaczony jako **domyślny** po prawej stronie swojego wiersza (na obrazku **X.ai**) jest używany, gdy nie wybierzesz innego. Możesz mieć kilka. Lista rozwijana nad transkrypcją w [oknie nagrań](/interface/recordings#transcript-or-write-up-the-drop-down) pokazuje transkrypcje wykonane przez każdy rozpoznawacz.
 
 Model może pozostać pusty. Usługa używa wtedy własnego modelu domyślnego.
 

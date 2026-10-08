@@ -25,7 +25,7 @@ Bộ nhận dạng là dịch vụ chuyển giọng nói thành văn bản mà �
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Bộ được đánh dấu **Mặc định** ở bên phải hàng của nó (**X.ai** trong hình) là bộ được dùng khi bạn không chọn bộ khác. Bạn có thể giữ nhiều bộ. Danh sách thả xuống phía trên bản chép lời trong [cửa sổ Bản ghi](/interface/recordings#the-transcript-and-the-write-up) liệt kê các bản chép lời do từng bộ nhận dạng tạo ra.
+Bộ được đánh dấu **Mặc định** ở bên phải hàng của nó (**X.ai** trong hình) là bộ được dùng khi bạn không chọn bộ khác. Bạn có thể giữ nhiều bộ. Danh sách thả xuống phía trên bản chép lời trong [cửa sổ Bản ghi](/interface/recordings#transcript-or-write-up-the-drop-down) liệt kê các bản chép lời do từng bộ nhận dạng tạo ra.
 
 Có thể để trống mô hình. Khi đó dịch vụ dùng mô hình mặc định của chính nó.
 

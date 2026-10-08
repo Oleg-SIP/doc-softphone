@@ -25,7 +25,7 @@ Atpažintuvas — tai kalbos pavertimo tekstu paslauga, kuriai telefonas siunči
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Tas, kuris savo eilutės dešinėje pažymėtas kaip **numatytasis** (paveikslėlyje **X.ai**), naudojamas, kai nepasirenkate kito. Galite turėti kelis. Išskleidžiamasis sąrašas virš iššifruoto teksto [įrašų lange](/interface/recordings#the-transcript-and-the-write-up) pateikia kiekvieno atpažintuvo iššifruotus tekstus.
+Tas, kuris savo eilutės dešinėje pažymėtas kaip **numatytasis** (paveikslėlyje **X.ai**), naudojamas, kai nepasirenkate kito. Galite turėti kelis. Išskleidžiamasis sąrašas virš iššifruoto teksto [įrašų lange](/interface/recordings#transcript-or-write-up-the-drop-down) pateikia kiekvieno atpažintuvo iššifruotus tekstus.
 
 Modelį galima palikti tuščią. Tada paslauga naudoja savo numatytąjį.
 
