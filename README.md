@@ -25,7 +25,7 @@ npm run serve  # посмотреть собранное
 | `docusaurus.config.ru.js`, `src/css/ru.css` | Настройки и оформление под ai-softphone.ru. |
 | `languages.json` | Один язык — `ru`. |
 | `scripts/finish-ru.mjs` | После сборки пишет `robots.txt` и проверяет страницы и ссылки. |
-| `.github/workflows/deploy-ru-ftp.yml` | Сборка и загрузка по FTP (секреты `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_DIR`). Загрузка идёт с основной ветки репозитория или вручную: Actions → Run workflow. |
+| `.github/workflows/build-ru.yml` | Собирает сайт при каждом пуше и сохраняет сборку как артефакт (Actions → запуск → `build-ru`). На FTP ничего не загружает — содержимое `build-ru/` выгружается вручную. |
 
 ## Обновить русский текст и скриншоты из основной ветки
 

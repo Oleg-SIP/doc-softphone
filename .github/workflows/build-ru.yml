@@ -1,0 +1,45 @@
+name: Build Russian docs
+
+# Builds the Russian-only site (docusaurus.config.ru.js) on every relevant
+# push, so a broken build shows on its own branch, and keeps it as an
+# artifact: Actions → the run → build-ru (a zip with the contents of
+# build-ru/, ready to upload to docs.ai-softphone.ru by hand). Nothing is
+# uploaded by the workflow.
+on:
+  push:
+    paths:
+      - 'docs/**'
+      - 'i18n/ru/**'
+      - 'static/screenshots/macos/ru/**'
+      - 'static-ru/**'
+      - 'src/**'
+      - 'scripts/**'
+      - 'docusaurus.config.js'
+      - 'docusaurus.config.ru.js'
+      - 'sidebars.js'
+      - 'languages.json'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/build-ru.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build:ru
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-ru
+          path: build-ru
+          include-hidden-files: true
+          retention-days: 7
