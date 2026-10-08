@@ -10,7 +10,7 @@ description: Automatyczne przetwarzanie rozmów, miesięczne granice wydatków, 
 
 ## Przetwarzaj rozmowy automatycznie {#process-conversations-automatically}
 
-- **Wyłączone:** nic się nie dzieje, dopóki nie poprosisz o to w [oknie nagrań](../recordings/recordings-window.md).
+- **Wyłączone:** nic się nie dzieje, dopóki nie poprosisz o to w [oknie nagrań](../interface/recordings.md).
 - **Włączone:** poniższe [reguły](#rules) działają same. To właśnie zamienia rozmowę w podsumowanie, kategorię i całą resztę bez naciskania czegokolwiek. Model w chmurze nalicza opłatę za każdy z tych kroków.
 
 Pod polem wyboru program pokazuje, ile wydano w tym miesiącu i w ilu żądaniach, na przykład *W tym miesiącu: 40.492 tokenów, w 84 żądaniach, bez opłat.*

@@ -1,6 +1,6 @@
 ---
 title: Přehled nastavení
-sidebar_position: 3
+sidebar_position: 4
 description: Kontrolní seznam Přehled a karty okna Nastavení a kde je která popsána.
 ---
 
@@ -36,7 +36,7 @@ Kroky jsou vodítko, ne povinnost: krok, který nepotřebujete, může zůstat �
 | | **Zařízení** | [Mikrofon, reproduktory, vyzvánění a další zvuky](../sip-accounts/devices.md) |
 | | **Hovory** | [Kodeky, čekání hovoru, automatické opakování a historie hovorů](../sip-accounts/calls.md) |
 | | **Tlačítka** | [Tlačítka, která vytáčejí a sledují jiné linky](../sip-accounts/buttons.md) |
-| | **Nahrávání** | [Nahrávání hovorů: souhlas, konference a jak dlouho se soubory uchovávají](../recordings/call-recording.md) |
+| | **Nahrávání** | [Nahrávání hovorů: souhlas, konference a jak dlouho se soubory uchovávají](../recordings.md) |
 | | **Zachytávání** | [Zachytávání zvuku jiných aplikací](../capture/capture.md): schůzky v Zoomu, Teams, Meetu a podobně |
 | AI | **Přepis** | [Rozpoznávače](../ai-processing/transcription.md) |
 | | **Zpracování** | [Automatické zpracování, limity výdajů, jazykové modely, pokyny a pravidla](../ai-processing/processing.md) |

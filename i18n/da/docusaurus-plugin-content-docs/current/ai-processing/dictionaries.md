@@ -38,7 +38,7 @@ Mærker, der *alle kan passe på den samme samtale*. Tryk på **Tilføj** for at
 
 ## Signaler {#red-flags}
 
-Ting, der kræver opmærksomhed, fundet i samtalen med beviset og tidspunktet — for eksempel *Vred kunde* eller *Risiko for opsigelse*. Signaler tegnes med rødt i [vinduet Optagelser](../recordings/recordings-window.md), og hvert har en alvorsgrad: lav, middel eller høj.
+Ting, der kræver opmærksomhed, fundet i samtalen med beviset og tidspunktet — for eksempel *Vred kunde* eller *Risiko for opsigelse*. Signaler tegnes med rødt i [vinduet Optagelser](../interface/recordings.md), og hvert har en alvorsgrad: lav, middel eller høj.
 
 ## Svarformer og sprog {#answer-shapes-and-language}
 

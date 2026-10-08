@@ -1,6 +1,6 @@
 ---
 title: Tổng quan cài đặt
-sidebar_position: 3
+sidebar_position: 4
 description: Danh sách kiểm tra Tổng quan và các thẻ của cửa sổ Cài đặt, cùng nơi mô tả từng thẻ.
 ---
 
@@ -36,7 +36,7 @@ Các bước là hướng dẫn, không phải nghĩa vụ: bước nào bạn k
 | | **Thiết bị** | [Micrô, loa, nhạc chuông và các âm thanh khác](../sip-accounts/devices.md) |
 | | **Cuộc gọi** | [Codec, chờ cuộc gọi, tự quay lại và nhật ký cuộc gọi](../sip-accounts/calls.md) |
 | | **Nút bấm** | [Nút bấm gọi và theo dõi các số máy lẻ khác](../sip-accounts/buttons.md) |
-| | **Ghi âm** | [Ghi âm cuộc gọi: sự đồng ý, hội thoại nhóm và thời gian lưu tệp](../recordings/call-recording.md) |
+| | **Ghi âm** | [Ghi âm cuộc gọi: sự đồng ý, hội thoại nhóm và thời gian lưu tệp](../recordings.md) |
 | | **Thu âm ngoài** | [Thu âm thanh của ứng dụng khác](../capture/capture.md): cuộc họp trong Zoom, Teams, Meet và tương tự |
 | AI | **Gỡ băng** | [Bộ nhận dạng](../ai-processing/transcription.md) |
 | | **Xử lý** | [Xử lý tự động, hạn mức chi tiêu, mô hình ngôn ngữ, chỉ dẫn và quy tắc](../ai-processing/processing.md) |

@@ -38,7 +38,7 @@ Nalepke, ki *lahko vse hkrati veljajo za isti pogovor*. Pritisnite **Dodaj**, da
 
 ## Opozorilni znaki {#red-flags}
 
-Stvari, ki zahtevajo pozornost, najdene v pogovoru z dokazom in časom — na primer *Jezna stranka* ali *Tveganje odhoda*. Opozorilni znaki so v [oknu Posnetki](../recordings/recordings-window.md) narisani rdeče in vsak nosi resnost: nizko, srednjo ali visoko.
+Stvari, ki zahtevajo pozornost, najdene v pogovoru z dokazom in časom — na primer *Jezna stranka* ali *Tveganje odhoda*. Opozorilni znaki so v [oknu Posnetki](../interface/recordings.md) narisani rdeče in vsak nosi resnost: nizko, srednjo ali visoko.
 
 ## Oblike odgovorov in jezik {#answer-shapes-and-language}
 

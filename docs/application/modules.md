@@ -23,9 +23,9 @@ Each module has a check box, a name, a line saying what it does, and at the righ
 | **Dictionaries** | Categories, tags and red flags — the codes everything else points at: [Dictionaries](/ai-processing/dictionaries). |
 | **Directory** | The address book: [Contacts](/interface/contacts-history). |
 | **Integration** | The local API, and webhooks: [Integration](/integration/rest-api). |
-| **Mediastorage** | The library of conversations and how long they are kept: [Recordings](/recordings/recordings-window). |
+| **Mediastorage** | The library of conversations and how long they are kept: [Recordings](/interface/recordings). |
 | **Processing** | Prompts and the rules that fire them: [Processing](/ai-processing/processing). |
-| **Recording** | Recording calls, and telling the other party about it: [Recording calls](/recordings/call-recording). |
+| **Recording** | Recording calls, and telling the other party about it: [Recordings](/recordings). |
 | **Telephony** | SIP, accounts, calls, the dialler and the call history. |
 | **Transcription** | Recognisers, the queue that drives them, and the transcripts they produce: [Transcription](/ai-processing/transcription). |
 

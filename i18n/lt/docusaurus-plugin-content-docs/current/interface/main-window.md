@@ -38,7 +38,7 @@ Po ženkliukais yra [mygtukai](../sip-accounts/buttons.md), kuriuos sukūrėte k
 
 ### Įrašai, Kontaktai, Istorija, Nustatymai {#recordings-contacts-history-settings}
 
-Šie keturi įrašai apačioje kiekvienas atveria skirtuką dešinėje, vieną šalia kito: [Įrašai](../recordings/recordings-window.md), [Kontaktai ir istorija](contacts-history.md) ir [Nustatymai](settings-overview.md). Atverti skirtukai lieka eilutėje dešinės pusės viršuje.
+Šie keturi įrašai apačioje kiekvienas atveria skirtuką dešinėje, vieną šalia kito: [Įrašai](../interface/recordings.md), [Kontaktai ir istorija](contacts-history.md) ir [Nustatymai](settings-overview.md). Atverti skirtukai lieka eilutėje dešinės pusės viršuje.
 
 ## Vykstantis skambutis {#a-call-in-progress}
 

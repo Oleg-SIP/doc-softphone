@@ -10,7 +10,7 @@ description: Automatic processing of conversations, the monthly spending limits,
 
 ## Process conversations automatically
 
-- **Off:** nothing happens until you ask for it in the [Recordings window](../recordings/recordings-window.md).
+- **Off:** nothing happens until you ask for it in the [Recordings window](../interface/recordings.md).
 - **On:** the [rules](#rules) below run by themselves. This is what turns a conversation into a summary, a category and everything else without anybody pressing anything. A model in the cloud charges for each of those steps.
 
 Under the check box the program shows what has been spent this month and on how many requests, for example *This month: 40.492 tokens, over 84 request(s), at no charge.*

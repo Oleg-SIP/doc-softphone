@@ -11,10 +11,6 @@
     "message": "Telefon und Konten",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Aufnahmen",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Mitschnitt aus anderen Anwendungen",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

@@ -34,7 +34,7 @@ Mis juhtub, kui keegi helistab ajal, mil olete kõnes, seadistatakse jaotises [K
 
 ## Kõnet ei salvestatud {#a-call-was-not-recorded}
 
-- **Seaded → Salvestamine**, esimene ripploend, otsustab, milliseid kõnesid salvestatakse; vaikimisi valik **Käsitsi** salvestab ainult siis, kui vajutate kõnekaardil salvestamisnuppu. Vaadake [Kõnede salvestamine](/recordings/call-recording).
+- **Seaded → Salvestamine**, esimene ripploend, otsustab, milliseid kõnesid salvestatakse; vaikimisi valik **Käsitsi** salvestab ainult siis, kui vajutate kõnekaardil salvestamisnuppu. Vaadake [Salvestised](/recordings).
 - Salvestamine algab kõnele vastamisel, nii et vastamata kõnel faili ei ole.
 - Moodul **Salvestamine** peab olema jaotises [Moodulid](/application/modules) sisse lülitatud.
 - Salvestisi eemaldatakse jaotise **Säilitamine** piiride järgi; kinnitatud salvestist ei eemaldata kunagi.
@@ -50,7 +50,7 @@ Vaadake [Hõivamine](/capture/).
 
 ## Salvestis on olemas, kuid ülestähendust või kokkuvõtet pole {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Vestlus kirjutatakse üles ja võetakse kokku iseenesest ainult siis, kui jaotises [Seaded → Töötlemine](/ai-processing/processing) on sisse lülitatud **Töötle vestlusi automaatselt**. Muul juhul paluge seda [salvestiste aknas](/recordings/recordings-window).
+- Vestlus kirjutatakse üles ja võetakse kokku iseenesest ainult siis, kui jaotises [Seaded → Töötlemine](/ai-processing/processing) on sisse lülitatud **Töötle vestlusi automaatselt**. Muul juhul paluge seda [salvestiste aknas](/interface/recordings).
 - Peab olema [tuvastaja](/ai-processing/transcription) ja [keelemudel](/ai-processing/processing#language-models) ning kumbki peab oma aadressil vastama.
 - Kui igakuine **Rahapiir** või **Märkide piir** on saavutatud, peatuvad automaatsed reeglid kuni kuu vahetumiseni. Seda, mida te ise palute, ei peatata kunagi.
 - Jaotise [Seaded → Ülevaade](/interface/settings-overview) sammud näitavad, mis on veel seadistamata.

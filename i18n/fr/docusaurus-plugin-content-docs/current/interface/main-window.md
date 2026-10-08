@@ -38,7 +38,7 @@ Sous les pastilles se trouvent les [boutons](../sip-accounts/buttons.md) que vou
 
 ### Enregistrements, Contacts, Journal, Réglages {#recordings-contacts-history-settings}
 
-Ces quatre entrées en bas ouvrent chacune un onglet à droite, côte à côte : [Enregistrements](../recordings/recordings-window.md), [Contacts et journal](contacts-history.md) et [Réglages](settings-overview.md). Les onglets ouverts restent dans la rangée en haut de la partie droite.
+Ces quatre entrées en bas ouvrent chacune un onglet à droite, côte à côte : [Enregistrements](../interface/recordings.md), [Contacts et journal](contacts-history.md) et [Réglages](settings-overview.md). Les onglets ouverts restent dans la rangée en haut de la partie droite.
 
 ## Un appel en cours {#a-call-in-progress}
 

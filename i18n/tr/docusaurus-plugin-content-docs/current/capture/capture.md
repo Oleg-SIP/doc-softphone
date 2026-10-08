@@ -82,7 +82,7 @@ Kaydın adının yanındaki kalem, kayıt sürerken onu yeniden adlandırmanız�
 
 ## Kayıt nereye gider {#where-the-recording-goes}
 
-Yakalanan bir görüşme, [Kayıtlar penceresinde](../recordings/recordings-window.md) diğerleri gibi görünür; ahize yerine pencere olan kendi simgesiyle ve verdiğiniz başlıkla ya da **Başka bir uygulama** başlığıyla.
+Yakalanan bir görüşme, [Kayıtlar penceresinde](../interface/recordings.md) diğerleri gibi görünür; ahize yerine pencere olan kendi simgesiyle ve verdiğiniz başlıkla ya da **Başka bir uygulama** başlığıyla.
 
 <Shot name="01_recordings" alt="Kayıtlar sekmesinde pencere simgesiyle işaretlenmiş yakalanan toplantılar" />
 

@@ -8,7 +8,7 @@ description: "\"Sesi metne dönüştüren tanıyıcıyı seçin: adresi, modeli 
 
 <Shot name="25_transcription" alt="Ayarlar → Yazıya döküm: dil ve dört tanıyıcı" />
 
-Bir görüşme, [Kayıtlar penceresinde](/recordings/recordings-window) istediğinizde ya da [İşleme](/ai-processing/processing) bölümünde **Görüşmeleri kendiliğinden işle** açıksa kendiliğinden yazıya dökülür. Kendi makinenizdeki bir tanıyıcıyı çalıştırmak hiçbir şeye mal olmaz; buluttaki bir tanıyıcı ses dakikası başına ücret alır.
+Bir görüşme, [Kayıtlar penceresinde](/interface/recordings) istediğinizde ya da [İşleme](/ai-processing/processing) bölümünde **Görüşmeleri kendiliğinden işle** açıksa kendiliğinden yazıya dökülür. Kendi makinenizdeki bir tanıyıcıyı çalıştırmak hiçbir şeye mal olmaz; buluttaki bir tanıyıcı ses dakikası başına ücret alır.
 
 ## Dil {#language}
 
@@ -25,7 +25,7 @@ Tanıyıcı, telefonun ses gönderdiği bir konuşmadan metne hizmetidir. Bir ta
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Satırının sağında **Öntanımlı** olarak işaretlenen (resimde **X.ai**), siz başka birini seçmediğinizde kullanılandır. Birkaç tane tutabilirsiniz. [Kayıtlar penceresinde](/recordings/recordings-window#the-transcript-and-the-write-up) bir dökümün üstündeki açılır liste, her tanıyıcının oluşturduğu dökümleri listeler.
+Satırının sağında **Öntanımlı** olarak işaretlenen (resimde **X.ai**), siz başka birini seçmediğinizde kullanılandır. Birkaç tane tutabilirsiniz. [Kayıtlar penceresinde](/interface/recordings#transcript-or-write-up-the-drop-down) bir dökümün üstündeki açılır liste, her tanıyıcının oluşturduğu dökümleri listeler.
 
 Model boş bırakılabilir. Bu durumda hizmet kendi öntanımlısını kullanır.
 
@@ -95,4 +95,4 @@ Model, OpenAI uyumlu `/v1/audio/transcriptions` uç noktasını sunan bir sunucu
 
 Aynı uç noktayı sunan başka her sunucu da aynı şekilde çalışır. Bir sunucu anahtar istiyorsa onu bir bulut hizmetindeki gibi girin.
 
-Bir sunucuya güvenmeden önce bir deneme kaydı yapın ve dökümüne [Kayıtlar penceresinde](/recordings/recordings-window) bakın: modelin iyi bilmediği bir dildeki görüşme bunu hemen belli eder.
+Bir sunucuya güvenmeden önce bir deneme kaydı yapın ve dökümüne [Kayıtlar penceresinde](/interface/recordings) bakın: modelin iyi bilmediği bir dildeki görüşme bunu hemen belli eder.

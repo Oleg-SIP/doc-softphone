@@ -38,7 +38,7 @@ Onder de chips staan de [knoppen](../sip-accounts/buttons.md) die u voor collega
 
 ### Opnames, Contacten, Geschiedenis, Instellingen {#recordings-contacts-history-settings}
 
-Deze vier items onderaan openen elk een tabblad rechts, naast elkaar: [Opnames](../recordings/recordings-window.md), [Contacten en geschiedenis](contacts-history.md) en [Instellingen](settings-overview.md). Tabbladen die u hebt geopend blijven in de rij bovenaan de rechterkant staan.
+Deze vier items onderaan openen elk een tabblad rechts, naast elkaar: [Opnames](../interface/recordings.md), [Contacten en geschiedenis](contacts-history.md) en [Instellingen](settings-overview.md). Tabbladen die u hebt geopend blijven in de rij bovenaan de rechterkant staan.
 
 ## Een lopend gesprek {#a-call-in-progress}
 

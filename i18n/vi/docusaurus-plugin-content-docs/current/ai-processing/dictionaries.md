@@ -38,7 +38,7 @@ Các nhãn *có thể cùng đúng với một cuộc trò chuyện*. Nhấn **T
 
 ## Dấu hiệu cảnh báo {#red-flags}
 
-Những điều cần chú ý, được tìm thấy trong cuộc trò chuyện kèm bằng chứng và thời điểm — ví dụ *Khách giận dữ* hoặc *Nguy cơ rời bỏ*. Dấu hiệu cảnh báo được vẽ màu đỏ trong [cửa sổ Bản ghi](../recordings/recordings-window.md), và mỗi dấu hiệu mang một mức độ nghiêm trọng: thấp, trung bình hoặc cao.
+Những điều cần chú ý, được tìm thấy trong cuộc trò chuyện kèm bằng chứng và thời điểm — ví dụ *Khách giận dữ* hoặc *Nguy cơ rời bỏ*. Dấu hiệu cảnh báo được vẽ màu đỏ trong [cửa sổ Bản ghi](../interface/recordings.md), và mỗi dấu hiệu mang một mức độ nghiêm trọng: thấp, trung bình hoặc cao.
 
 ## Khuôn câu trả lời và ngôn ngữ {#answer-shapes-and-language}
 

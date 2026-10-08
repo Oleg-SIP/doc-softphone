@@ -38,7 +38,7 @@ Zem žetoniem ir [pogas](../sip-accounts/buttons.md), ko esat izveidojuši kolē
 
 ### Ieraksti, Kontakti, Vēsture, Iestatījumi {#recordings-contacts-history-settings}
 
-Šie četri ieraksti apakšā katrs atver cilni labajā pusē, blakus viena otrai: [Ieraksti](../recordings/recordings-window.md), [Kontakti un vēsture](contacts-history.md) un [Iestatījumi](settings-overview.md). Atvērtās cilnes paliek rindā labās puses augšā.
+Šie četri ieraksti apakšā katrs atver cilni labajā pusē, blakus viena otrai: [Ieraksti](../interface/recordings.md), [Kontakti un vēsture](contacts-history.md) un [Iestatījumi](settings-overview.md). Atvērtās cilnes paliek rindā labās puses augšā.
 
 ## Notiekošs zvans {#a-call-in-progress}
 

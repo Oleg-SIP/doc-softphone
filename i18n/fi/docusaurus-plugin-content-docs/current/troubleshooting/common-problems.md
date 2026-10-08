@@ -34,7 +34,7 @@ Se, mitä tapahtuu, kun joku soittaa, kun olet puhelussa, asetetaan kohdassa [Ko
 
 ## Puhelua ei tallennettu {#a-call-was-not-recorded}
 
-- **Asetukset → Tallennus**, ensimmäinen pudotusvalikko, päättää, mitkä puhelut tallennetaan; oletus, **Käsin**, tallentaa vain, kun painat puhelukortin tallennuspainiketta. Katso [Puheluiden tallentaminen](/recordings/call-recording).
+- **Asetukset → Tallennus**, ensimmäinen pudotusvalikko, päättää, mitkä puhelut tallennetaan; oletus, **Käsin**, tallentaa vain, kun painat puhelukortin tallennuspainiketta. Katso [Tallenteet](/recordings).
 - Tallennus alkaa, kun puheluun vastataan, joten puhelulla, johon ei vastattu, ei ole tiedostoa.
 - **Tallennus**-moduulin on oltava käytössä kohdassa [Moduulit](/application/modules).
 - Tallenteet poistetaan kohdan **Säilytys** rajojen mukaan; kiinnitettyä tallennetta ei koskaan poisteta.
@@ -50,7 +50,7 @@ Katso [Kaappaus](/capture/).
 
 ## Tallenne on, mutta litterointia tai tiivistelmää ei {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Keskustelu litteroidaan ja siitä tehdään yhteenveto itsestään vain, jos **Käsittele keskustelut automaattisesti** on käytössä kohdassa [Asetukset → Käsittely](/ai-processing/processing). Muuten pyydä sitä [Tallenteet-ikkunassa](/recordings/recordings-window).
+- Keskustelu litteroidaan ja siitä tehdään yhteenveto itsestään vain, jos **Käsittele keskustelut automaattisesti** on käytössä kohdassa [Asetukset → Käsittely](/ai-processing/processing). Muuten pyydä sitä [Tallenteet-ikkunassa](/interface/recordings).
 - On oltava [tunnistin](/ai-processing/transcription) ja [kielimalli](/ai-processing/processing#language-models), ja kummankin on vastattava osoitteessaan.
 - Kun kuukauden **Raharaja** tai **Tokenraja** saavutetaan, automaattiset säännöt pysähtyvät kuukauden vaihtumiseen asti. Itse pyytämääsi ei koskaan pysäytetä.
 - Kohdan [Asetukset → Yleiskatsaus](/interface/settings-overview) askeleet näyttävät, mitä on vielä määrittämättä.

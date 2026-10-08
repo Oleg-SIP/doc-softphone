@@ -8,7 +8,7 @@ description: "\"Välj igenkännaren som gör ljud till text: dess adress, dess m
 
 <Shot name="25_transcription" alt="Inställningar → Transkription: språket och fyra igenkännare" />
 
-Ett samtal skrivs ut när du ber om det i [fönstret Inspelningar](/recordings/recordings-window), eller av sig självt om **Bearbeta samtal automatiskt** är på under [Bearbetning](/ai-processing/processing). En igenkännare på din egen dator kostar ingenting att köra; en i molnet tar betalt per ljudminut.
+Ett samtal skrivs ut när du ber om det i [fönstret Inspelningar](/interface/recordings), eller av sig självt om **Bearbeta samtal automatiskt** är på under [Bearbetning](/ai-processing/processing). En igenkännare på din egen dator kostar ingenting att köra; en i molnet tar betalt per ljudminut.
 
 ## Språk {#language}
 
@@ -25,7 +25,7 @@ En igenkännare är en tal-till-text-tjänst som telefonen skickar ljud till. Tr
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Den som är markerad **standard** till höger på sin rad (**X.ai** på bilden) är den som används när du inte väljer en annan. Du kan behålla flera. Listrutan ovanför en utskrift i [fönstret Inspelningar](/recordings/recordings-window#the-transcript-and-the-write-up) visar utskrifterna som varje igenkännare har gjort.
+Den som är markerad **standard** till höger på sin rad (**X.ai** på bilden) är den som används när du inte väljer en annan. Du kan behålla flera. Listrutan ovanför en utskrift i [fönstret Inspelningar](/interface/recordings#transcript-or-write-up-the-drop-down) visar utskrifterna som varje igenkännare har gjort.
 
 Modellen får vara tom. Tjänsten använder då sin egen standard.
 
@@ -95,4 +95,4 @@ Modellen måste köras av en server som erbjuder den OpenAI-kompatibla slutpunkt
 
 Varje annan server som erbjuder samma slutpunkt fungerar på samma sätt. Om en server kräver en nyckel anger du den som för en molntjänst.
 
-Innan du förlitar dig på en server gör du en testinspelning och tittar på utskriften i [fönstret Inspelningar](/recordings/recordings-window): ett samtal på ett språk som modellen kan dåligt avslöjar det direkt.
+Innan du förlitar dig på en server gör du en testinspelning och tittar på utskriften i [fönstret Inspelningar](/interface/recordings): ett samtal på ett språk som modellen kan dåligt avslöjar det direkt.

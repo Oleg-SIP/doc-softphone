@@ -82,7 +82,7 @@ Ceruzka vedľa názvu nahrávky umožňuje premenovať ju, kým prebieha. Nahrá
 
 ## Kam ide nahrávka {#where-the-recording-goes}
 
-Zachytený rozhovor sa objaví v [okne Nahrávky](../recordings/recordings-window.md) ako každý iný, s vlastnou ikonou, oknom namiesto slúchadla, a s názvom, ktorý ste mu dali, alebo **Iná aplikácia**.
+Zachytený rozhovor sa objaví v [okne Nahrávky](../interface/recordings.md) ako každý iný, s vlastnou ikonou, oknom namiesto slúchadla, a s názvom, ktorý ste mu dali, alebo **Iná aplikácia**.
 
 <Shot name="01_recordings" alt="Zachytené stretnutia na karte Nahrávky, označené ikonou okna" />
 

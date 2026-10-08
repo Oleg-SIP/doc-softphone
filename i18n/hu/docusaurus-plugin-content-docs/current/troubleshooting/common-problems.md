@@ -34,7 +34,7 @@ Hogy mi történjen, ha valaki akkor hívja, amikor Ön hívásban van, azt a [H
 
 ## Egy hívásról nem készült felvétel {#a-call-was-not-recorded}
 
-- A **Beállítások → Felvétel** első legördülő listája dönti el, mely hívásokról készül felvétel; az alapérték, a **Kézzel**, csak akkor rögzít, ha megnyomja a felvétel gombot a hívás kártyáján. Lásd: [Hívások rögzítése](/recordings/call-recording).
+- A **Beállítások → Felvétel** első legördülő listája dönti el, mely hívásokról készül felvétel; az alapérték, a **Kézzel**, csak akkor rögzít, ha megnyomja a felvétel gombot a hívás kártyáján. Lásd: [Felvételek](/recordings).
 - A felvétel a hívás fogadásakor kezdődik, így a nem fogadott hívásnak nincs fájlja.
 - A **Felvétel** modulnak bekapcsolva kell lennie a [Modulok](/application/modules) között.
 - A felvételeket a **Megőrzés** alatti korlátok törlik; a kitűzött felvétel soha nem törlődik.
@@ -50,7 +50,7 @@ Lásd: [Rögzítés](/capture/).
 
 ## Van felvétel, de nincs leirat vagy összefoglaló {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Egy beszélgetésről csak akkor készül magától leirat és feldolgozás, ha a [Beállítások → Feldolgozás](/ai-processing/processing) lapon be van kapcsolva **A beszélgetések automatikus feldolgozása**. Ellenkező esetben kérje a [Felvételek ablakban](/recordings/recordings-window).
+- Egy beszélgetésről csak akkor készül magától leirat és feldolgozás, ha a [Beállítások → Feldolgozás](/ai-processing/processing) lapon be van kapcsolva **A beszélgetések automatikus feldolgozása**. Ellenkező esetben kérje a [Felvételek ablakban](/interface/recordings).
 - Szükség van egy [felismerőre](/ai-processing/transcription) és egy [nyelvi modellre](/ai-processing/processing#language-models), és mindkettőnek válaszolnia kell a címén.
 - Ha eléri a havi **Pénzkorlát** vagy **Tokenkorlát** értékét, az automatikus szabályok a hónap fordulójáig leállnak. Amit Ön maga kér, az soha nem áll le.
 - A [Beállítások → Áttekintés](/interface/settings-overview) lépései megmutatják, mit kell még beállítani.

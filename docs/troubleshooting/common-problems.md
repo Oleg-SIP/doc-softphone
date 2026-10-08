@@ -34,7 +34,7 @@ What happens when somebody rings while you are on a call is set under [Call wait
 
 ## A call was not recorded
 
-- **Settings → Recording**, the first drop-down, decides which calls are recorded; the default, **Manually**, records only when you press record on the call card. See [Recording calls](/recordings/call-recording).
+- **Settings → Recording**, the first drop-down, decides which calls are recorded; the default, **Manually**, records only when you press record on the call card. See [Recordings](/recordings).
 - Recording starts when the call is answered, so a call that was not answered has no file.
 - The **Recording** module must be on in [Modules](/application/modules).
 - Recordings are removed by the limits under **Retention**; a pinned recording is never removed.
@@ -50,7 +50,7 @@ See [Capture](/capture/).
 
 ## There is a recording, but no transcript or summary
 
-- A conversation is transcribed and written up by itself only if **Process conversations automatically** is on in [Settings → Processing](/ai-processing/processing). Otherwise ask for it in the [Recordings window](/recordings/recordings-window).
+- A conversation is transcribed and written up by itself only if **Process conversations automatically** is on in [Settings → Processing](/ai-processing/processing). Otherwise ask for it in the [Recordings window](/interface/recordings).
 - There has to be a [recogniser](/ai-processing/transcription) and a [language model](/ai-processing/processing#language-models), and each has to answer at its address.
 - When the monthly **Money limit** or **Token limit** is reached, the automatic rules stop until the month turns. Asking for something yourself is never stopped.
 - The steps of [Settings → Overview](/interface/settings-overview) show what is still to set up.

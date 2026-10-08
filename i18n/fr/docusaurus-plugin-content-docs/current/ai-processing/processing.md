@@ -10,7 +10,7 @@ description: Le traitement automatique des conversations, les limites de dépens
 
 ## Traiter les conversations automatiquement {#process-conversations-automatically}
 
-- **Désactivé :** rien ne se passe tant que vous ne le demandez pas dans la [fenêtre des enregistrements](../recordings/recordings-window.md).
+- **Désactivé :** rien ne se passe tant que vous ne le demandez pas dans la [fenêtre des enregistrements](../interface/recordings.md).
 - **Activé :** les [règles](#rules) ci-dessous s'exécutent d'elles-mêmes. C'est ce qui transforme une conversation en résumé, en catégorie et tout le reste sans que personne n'appuie sur rien. Un modèle dans le cloud facture chacune de ces étapes.
 
 Sous la case, le programme affiche ce qui a été dépensé ce mois-ci et sur combien de requêtes, par exemple *Ce mois-ci : 40.492 jetons, sur 84 requêtes, sans frais.*

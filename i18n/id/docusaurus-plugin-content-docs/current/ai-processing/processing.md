@@ -10,7 +10,7 @@ description: Pemrosesan otomatis percakapan, batas pengeluaran bulanan, model ba
 
 ## Proses percakapan otomatis {#process-conversations-automatically}
 
-- **Mati:** tidak terjadi apa-apa sampai Anda memintanya di [jendela Rekaman](../recordings/recordings-window.md).
+- **Mati:** tidak terjadi apa-apa sampai Anda memintanya di [jendela Rekaman](../interface/recordings.md).
 - **Menyala:** [aturan](#rules) di bawah berjalan dengan sendirinya. Inilah yang mengubah percakapan menjadi ringkasan, kategori, dan semua yang lain tanpa ada yang menekan apa pun. Model di cloud mengenakan biaya untuk setiap langkah tersebut.
 
 Di bawah kotak centang, program menampilkan berapa yang telah dihabiskan bulan ini dan untuk berapa permintaan, misalnya *Bulan ini: 40.492 token, dari 84 permintaan, tanpa biaya.*

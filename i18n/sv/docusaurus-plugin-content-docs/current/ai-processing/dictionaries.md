@@ -38,7 +38,7 @@ Märkningar som *alla kan stämma in på samma samtal*. Tryck på **Lägg till**
 
 ## Signaler {#red-flags}
 
-Saker som kräver uppmärksamhet, hittade i samtalet med beviset och tidpunkten — till exempel *Arg kund* eller *Avhopprisk*. Signaler ritas i rött i [fönstret Inspelningar](../recordings/recordings-window.md), och var och en har en allvarlighetsgrad: låg, medel eller hög.
+Saker som kräver uppmärksamhet, hittade i samtalet med beviset och tidpunkten — till exempel *Arg kund* eller *Avhopprisk*. Signaler ritas i rött i [fönstret Inspelningar](../interface/recordings.md), och var och en har en allvarlighetsgrad: låg, medel eller hög.
 
 ## Svarsformer och språk {#answer-shapes-and-language}
 

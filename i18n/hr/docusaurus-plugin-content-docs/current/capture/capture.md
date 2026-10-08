@@ -82,7 +82,7 @@ Olovka pokraj naziva snimke omogućuje da je preimenujete dok traje. Snimka kojo
 
 ## Kamo ide snimka {#where-the-recording-goes}
 
-Uhvaćeni razgovor pojavljuje se u [prozoru Snimke](../recordings/recordings-window.md) kao i svaki drugi, s vlastitom ikonom, prozorom umjesto slušalice, i s naslovom koji ste mu dali ili **Druga aplikacija**.
+Uhvaćeni razgovor pojavljuje se u [prozoru Snimke](../interface/recordings.md) kao i svaki drugi, s vlastitom ikonom, prozorom umjesto slušalice, i s naslovom koji ste mu dali ili **Druga aplikacija**.
 
 <Shot name="01_recordings" alt="Uhvaćeni sastanci na kartici Snimke, označeni ikonom prozora" />
 

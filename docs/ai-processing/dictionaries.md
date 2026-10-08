@@ -38,7 +38,7 @@ Labels that *may all be true of the same conversation*. Press **Add** to add one
 
 ## Red flags
 
-Things that need attention, found in the conversation with the evidence and the time — for example *Angry customer* or *Churn risk*. Red flags are drawn in red in the [Recordings window](../recordings/recordings-window.md), and each carries a severity: low, medium or high.
+Things that need attention, found in the conversation with the evidence and the time — for example *Angry customer* or *Churn risk*. Red flags are drawn in red in the [Recordings window](../interface/recordings.md), and each carries a severity: low, medium or high.
 
 ## Answer shapes and language
 

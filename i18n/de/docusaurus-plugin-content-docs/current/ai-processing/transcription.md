@@ -8,7 +8,7 @@ description: "Den Spracherkenner wählen, der Ton in Text verwandelt: seine Adre
 
 <Shot name="25_transcription" alt="Einstellungen → Transkription: die Sprache und vier Spracherkenner" />
 
-Ein Gespräch wird transkribiert, wenn Sie es im [Aufnahmefenster](/recordings/recordings-window) verlangen, oder von selbst, wenn unter [Verarbeitung](/ai-processing/processing) **Gespräche automatisch verarbeiten** eingeschaltet ist. Ein Spracherkenner auf Ihrem eigenen Rechner kostet im Betrieb nichts; einer in der Cloud berechnet jede Minute Ton.
+Ein Gespräch wird transkribiert, wenn Sie es im [Aufnahmefenster](/interface/recordings) verlangen, oder von selbst, wenn unter [Verarbeitung](/ai-processing/processing) **Gespräche automatisch verarbeiten** eingeschaltet ist. Ein Spracherkenner auf Ihrem eigenen Rechner kostet im Betrieb nichts; einer in der Cloud berechnet jede Minute Ton.
 
 ## Sprache {#language}
 
@@ -25,7 +25,7 @@ Ein Spracherkenner ist ein Sprache-zu-Text-Dienst, an den das Telefon Ton sendet
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Der mit **Vorgabe** rechts in seiner Zeile markierte (im Bild **X.ai**) wird verwendet, wenn Sie keinen anderen wählen. Sie können mehrere behalten. Die Auswahlliste über einem Transkript im [Aufnahmefenster](/recordings/recordings-window#the-transcript-and-the-write-up) führt die Transkripte der einzelnen Spracherkenner auf.
+Der mit **Vorgabe** rechts in seiner Zeile markierte (im Bild **X.ai**) wird verwendet, wenn Sie keinen anderen wählen. Sie können mehrere behalten. Die Auswahlliste über einem Transkript im [Aufnahmefenster](/interface/recordings#transcript-or-write-up-the-drop-down) führt die Transkripte der einzelnen Spracherkenner auf.
 
 Das Modell darf leer bleiben. Der Dienst verwendet dann sein eigenes Standardmodell.
 
@@ -95,4 +95,4 @@ Das Modell muss von einem Server betrieben werden, der den OpenAI-kompatiblen En
 
 Jeder andere Server mit demselben Endpunkt funktioniert genauso. Braucht ein Server einen Schlüssel, geben Sie ihn wie bei einem Cloud-Dienst ein.
 
-Bevor Sie sich auf einen Server verlassen, machen Sie eine Testaufnahme und sehen Sie sich das Transkript im [Aufnahmefenster](/recordings/recordings-window) an: Ein Gespräch in einer Sprache, die das Modell schlecht kennt, zeigt es sofort.
+Bevor Sie sich auf einen Server verlassen, machen Sie eine Testaufnahme und sehen Sie sich das Transkript im [Aufnahmefenster](/interface/recordings) an: Ein Gespräch in einer Sprache, die das Modell schlecht kennt, zeigt es sofort.

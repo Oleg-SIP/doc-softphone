@@ -82,7 +82,7 @@ The pencil next to the name of the recording lets you rename it while it is goin
 
 ## Where the recording goes
 
-A captured conversation appears in the [Recordings window](../recordings/recordings-window.md) like any other, with its own icon, a window instead of a handset, and with the title you gave it or **Other application**.
+A captured conversation appears in the [Recordings window](../interface/recordings.md) like any other, with its own icon, a window instead of a handset, and with the title you gave it or **Other application**.
 
 <Shot name="01_recordings" alt="Captured meetings in the Recordings tab, marked with a window icon" />
 

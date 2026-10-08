@@ -10,7 +10,7 @@ description: Automatinis pokalbių apdorojimas, mėnesio išlaidų ribos, kalbos
 
 ## Apdoroti pokalbius automatiškai {#process-conversations-automatically}
 
-- **Išjungta:** nieko nevyksta, kol to nepaprašote [įrašų lange](../recordings/recordings-window.md).
+- **Išjungta:** nieko nevyksta, kol to nepaprašote [įrašų lange](../interface/recordings.md).
 - **Įjungta:** toliau nurodytos [taisyklės](#rules) vykdomos savaime. Tai paverčia pokalbį santrauka, kategorija ir visa kita, niekam nieko nespaudžiant. Debesyje esantis modelis ima mokestį už kiekvieną šių žingsnių.
 
 Po žymimuoju langeliu programa rodo, kiek išleista šį mėnesį ir per kiek užklausų, pavyzdžiui, *Šį mėnesį: 40.492 žetonų, per 84 užklausas, be mokesčio.*

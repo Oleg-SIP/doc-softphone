@@ -1,6 +1,6 @@
 ---
 title: Ayarlara genel bakış
-sidebar_position: 3
+sidebar_position: 4
 description: Genel bakış denetim listesi ve Ayarlar penceresinin sekmeleri; her birinin nerede anlatıldığı.
 ---
 
@@ -36,7 +36,7 @@ Adımlar bir zorunluluk değil, bir kılavuzdur: işinize yaramayan bir adım k�
 | | **Aygıtlar** | [Mikrofon, hoparlörler, zil sesi ve diğer sesler](../sip-accounts/devices.md) |
 | | **Çağrılar** | [Kodekler, çağrı bekletme, otomatik arama ve çağrı geçmişi](../sip-accounts/calls.md) |
 | | **Düğmeler** | [Diğer dahilileri arayan ve izleyen düğmeler](../sip-accounts/buttons.md) |
-| | **Kayıt** | [Çağrıların kaydı: onay, konferanslar ve dosyaların ne kadar süre saklandığı](../recordings/call-recording.md) |
+| | **Kayıt** | [Çağrıların kaydı: onay, konferanslar ve dosyaların ne kadar süre saklandığı](../recordings.md) |
 | | **Yakalama** | [Diğer uygulamaların sesini yakalama](../capture/capture.md): Zoom, Teams, Meet ve benzerlerindeki toplantılar |
 | Yapay zekâ | **Yazıya döküm** | [Tanıyıcılar](../ai-processing/transcription.md) |
 | | **İşleme** | [Otomatik işleme, harcama sınırları, dil modelleri, yönergeler ve kurallar](../ai-processing/processing.md) |

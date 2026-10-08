@@ -10,7 +10,7 @@ description: Automatska obrada razgovora, mesečne granice potrošnje, jezički 
 
 ## Obrađuj razgovore samostalno {#process-conversations-automatically}
 
-- **Isključen:** ništa se ne dešava dok to ne zatražite u [prozoru Snimci](../recordings/recordings-window.md).
+- **Isključen:** ništa se ne dešava dok to ne zatražite u [prozoru Snimci](../interface/recordings.md).
 - **Uključen:** [pravila](#rules) u nastavku izvode se sama. Upravo to pretvara razgovor u sažetak, kategoriju i sve ostalo a da niko ništa ne pritisne. Model u oblaku naplaćuje svaki od tih koraka.
 
 Ispod polja za potvrdu program prikazuje koliko je potrošeno ovog meseca i na koliko zahteva, na primer *Ovog meseca: 40.492 žetona, kroz 84 zahteva, bez naplate.*

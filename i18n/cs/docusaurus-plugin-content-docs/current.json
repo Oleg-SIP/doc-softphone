@@ -11,10 +11,6 @@
     "message": "Telefon a účty",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Nahrávky",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Zachytávání z jiných aplikací",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

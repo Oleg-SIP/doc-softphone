@@ -1,6 +1,6 @@
 ---
 title: Ikhtisar pengaturan
-sidebar_position: 3
+sidebar_position: 4
 description: Daftar periksa Ikhtisar dan tab-tab jendela Pengaturan, serta di mana masing-masing dijelaskan.
 ---
 
@@ -36,7 +36,7 @@ Langkah-langkah ini adalah panduan, bukan kewajiban: langkah yang tidak Anda per
 | | **Perangkat** | [Mikrofon, pengeras suara, nada dering, dan suara lain](../sip-accounts/devices.md) |
 | | **Panggilan** | [Codec, panggilan menunggu, panggil ulang otomatis, dan log panggilan](../sip-accounts/calls.md) |
 | | **Tombol** | [Tombol yang memanggil dan memantau ekstensi lain](../sip-accounts/buttons.md) |
-| | **Perekaman** | [Perekaman panggilan: persetujuan, konferensi, dan berapa lama berkas disimpan](../recordings/call-recording.md) |
+| | **Perekaman** | [Perekaman panggilan: persetujuan, konferensi, dan berapa lama berkas disimpan](../recordings.md) |
 | | **Penangkapan** | [Menangkap suara dari aplikasi lain](../capture/capture.md): rapat di Zoom, Teams, Meet, dan sejenisnya |
 | AI | **Transkripsi** | [Pengenal suara](../ai-processing/transcription.md) |
 | | **Pemrosesan** | [Pemrosesan otomatis, batas pengeluaran, model bahasa, petunjuk, dan aturan](../ai-processing/processing.md) |

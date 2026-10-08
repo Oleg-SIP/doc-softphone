@@ -34,7 +34,7 @@ Vad som händer när någon ringer medan du är i ett samtal ställs in under [S
 
 ## Ett samtal spelades inte in {#a-call-was-not-recorded}
 
-- **Inställningar → Inspelning**, den första listrutan, bestämmer vilka samtal som spelas in; standardvärdet, **För hand**, spelar bara in när du trycker på spela in på samtalskortet. Se [Spela in samtal](/recordings/call-recording).
+- **Inställningar → Inspelning**, den första listrutan, bestämmer vilka samtal som spelas in; standardvärdet, **För hand**, spelar bara in när du trycker på spela in på samtalskortet. Se [Inspelningar](/recordings).
 - Inspelningen börjar när samtalet besvaras, så ett samtal som inte besvarades har ingen fil.
 - Modulen **Inspelning** måste vara på under [Moduler](/application/modules).
 - Inspelningar tas bort av gränserna under **Gallring**; en fäst inspelning tas aldrig bort.
@@ -50,7 +50,7 @@ Se [Fångst](/capture/).
 
 ## Det finns en inspelning men ingen utskrift eller sammanfattning {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Ett samtal skrivs bara ut och sammanfattas av sig självt om **Bearbeta samtal automatiskt** är på under [Inställningar → Bearbetning](/ai-processing/processing). Annars ber du om det i [fönstret Inspelningar](/recordings/recordings-window).
+- Ett samtal skrivs bara ut och sammanfattas av sig självt om **Bearbeta samtal automatiskt** är på under [Inställningar → Bearbetning](/ai-processing/processing). Annars ber du om det i [fönstret Inspelningar](/interface/recordings).
 - Det måste finnas en [igenkännare](/ai-processing/transcription) och en [språkmodell](/ai-processing/processing#language-models), och var och en måste svara på sin adress.
 - När den månatliga **Pengagräns** eller **Tokengräns** har nåtts stannar de automatiska reglerna tills månaden byts. Det du själv ber om stoppas aldrig.
 - Stegen i [Inställningar → Översikt](/interface/settings-overview) visar vad som återstår att konfigurera.

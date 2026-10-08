@@ -11,10 +11,6 @@
     "message": "Điện thoại và tài khoản",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Bản ghi",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Thu từ ứng dụng khác",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

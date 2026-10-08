@@ -40,7 +40,7 @@ As capturas de ecrã desta documentação foram feitas em macOS e são mostradas
 
 1. [Adicione uma conta](sip-accounts/setup.md) para a sua central ou fornecedor SIP.
 2. [Escolha o microfone e os altifalantes](sip-accounts/devices.md) e faça uma chamada de teste.
-3. Decida [que chamadas são gravadas](recordings/call-recording.md).
+3. Decida [que chamadas são gravadas](recordings.md).
 4. Adicione um [reconhecedor](ai-processing/transcription.md) e um [modelo de língua](ai-processing/processing.md) se quiser transcrições e redações.
 
 **Definições → Visão geral** mantém esta lista por si: um ponto verde marca um passo feito, um vermelho um passo que falta. Veja [Visão geral das definições](interface/settings-overview.md).
@@ -54,8 +54,8 @@ As capturas de ecrã desta documentação foram feitas em macOS e são mostradas
 | Escolher microfone, altifalantes e toque | [Dispositivos](sip-accounts/devices.md) |
 | Definir os codecs, a chamada em espera e o registo de chamadas | [Definições de chamadas](sip-accounts/calls.md) |
 | Pôr colegas em botões de um só toque | [Botões](sip-accounts/buttons.md) |
-| Decidir que chamadas são gravadas, e durante quanto tempo | [Gravar chamadas](recordings/call-recording.md) |
-| Ouvir, procurar e ler as suas conversas | [Janela de gravações](recordings/recordings-window.md) |
+| Decidir que chamadas são gravadas, e durante quanto tempo | [Gravações](recordings.md) |
+| Ouvir, procurar e ler as suas conversas | [Janela de gravações](interface/recordings.md) |
 | Gravar uma reunião feita noutra aplicação | [Captura](capture/capture.md) |
 | Escolher o reconhecedor que transforma a voz em texto | [Transcrição](ai-processing/transcription.md) |
 | Decidir que IA redige as suas conversas e quanto pode custar | [Processamento](ai-processing/processing.md) |

@@ -1,6 +1,6 @@
 ---
 title: Pregled postavki
-sidebar_position: 3
+sidebar_position: 4
 description: Kontrolni popis Pregled i kartice prozora Postavke te gdje je svaka opisana.
 ---
 
@@ -36,7 +36,7 @@ Koraci su vodič, a ne obveza: korak koji vam ne treba može ostati crven.
 | | **Uređaji** | [Mikrofon, zvučnici, zvonjava i drugi zvukovi](../sip-accounts/devices.md) |
 | | **Pozivi** | [Kodeci, poziv na čekanju, automatsko biranje i zapisnik poziva](../sip-accounts/calls.md) |
 | | **Gumbi** | [Gumbi koji biraju i prate druge interne brojeve](../sip-accounts/buttons.md) |
-| | **Snimanje** | [Snimanje poziva: pristanak, konferencije i koliko se dugo datoteke čuvaju](../recordings/call-recording.md) |
+| | **Snimanje** | [Snimanje poziva: pristanak, konferencije i koliko se dugo datoteke čuvaju](../recordings.md) |
 | | **Hvatanje** | [Hvatanje zvuka drugih aplikacija](../capture/capture.md): sastanci u Zoomu, Teamsu, Meetu i sličnima |
 | Umjetna inteligencija | **Prijepis** | [Prepoznavači](../ai-processing/transcription.md) |
 | | **Obrada** | [Automatska obrada, granice potrošnje, jezični modeli, upute i pravila](../ai-processing/processing.md) |

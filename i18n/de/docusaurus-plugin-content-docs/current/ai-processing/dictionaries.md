@@ -40,7 +40,7 @@ Kennzeichen, *die alle zugleich auf dasselbe Gespräch zutreffen dürfen*. Mit *
 
 ## Auffälligkeiten {#red-flags}
 
-Dinge, die Aufmerksamkeit brauchen, im Gespräch gefunden, mit Beleg und Zeitpunkt — zum Beispiel *Verärgerter Kunde* oder *Abwanderungsgefahr*. Auffälligkeiten sind im [Aufnahmefenster](../recordings/recordings-window.md) rot gezeichnet, und jede trägt einen Schweregrad: niedrig, mittel oder hoch.
+Dinge, die Aufmerksamkeit brauchen, im Gespräch gefunden, mit Beleg und Zeitpunkt — zum Beispiel *Verärgerter Kunde* oder *Abwanderungsgefahr*. Auffälligkeiten sind im [Aufnahmefenster](../interface/recordings.md) rot gezeichnet, und jede trägt einen Schweregrad: niedrig, mittel oder hoch.
 
 ## Antwortformen und Sprache {#answer-shapes-and-language}
 

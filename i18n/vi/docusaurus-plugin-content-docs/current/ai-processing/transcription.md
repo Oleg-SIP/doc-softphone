@@ -8,7 +8,7 @@ description: Chọn bộ nhận dạng chuyển âm thanh thành văn bản — 
 
 <Shot name="25_transcription" alt="Cài đặt → Gỡ băng: ngôn ngữ và bốn bộ nhận dạng" />
 
-Một cuộc trò chuyện được chép lời khi bạn yêu cầu trong [cửa sổ Bản ghi](/recordings/recordings-window), hoặc tự động nếu **Xử lý các cuộc trò chuyện tự động** được bật trong [Xử lý](/ai-processing/processing). Bộ nhận dạng chạy trên máy của bạn không tốn phí; bộ nhận dạng trên đám mây tính phí theo phút âm thanh.
+Một cuộc trò chuyện được chép lời khi bạn yêu cầu trong [cửa sổ Bản ghi](/interface/recordings), hoặc tự động nếu **Xử lý các cuộc trò chuyện tự động** được bật trong [Xử lý](/ai-processing/processing). Bộ nhận dạng chạy trên máy của bạn không tốn phí; bộ nhận dạng trên đám mây tính phí theo phút âm thanh.
 
 ## Ngôn ngữ {#language}
 
@@ -25,7 +25,7 @@ Bộ nhận dạng là dịch vụ chuyển giọng nói thành văn bản mà �
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Bộ được đánh dấu **Mặc định** ở bên phải hàng của nó (**X.ai** trong hình) là bộ được dùng khi bạn không chọn bộ khác. Bạn có thể giữ nhiều bộ. Danh sách thả xuống phía trên bản chép lời trong [cửa sổ Bản ghi](/recordings/recordings-window#the-transcript-and-the-write-up) liệt kê các bản chép lời do từng bộ nhận dạng tạo ra.
+Bộ được đánh dấu **Mặc định** ở bên phải hàng của nó (**X.ai** trong hình) là bộ được dùng khi bạn không chọn bộ khác. Bạn có thể giữ nhiều bộ. Danh sách thả xuống phía trên bản chép lời trong [cửa sổ Bản ghi](/interface/recordings#transcript-or-write-up-the-drop-down) liệt kê các bản chép lời do từng bộ nhận dạng tạo ra.
 
 Có thể để trống mô hình. Khi đó dịch vụ dùng mô hình mặc định của chính nó.
 
@@ -95,4 +95,4 @@ Mô hình phải được chạy bởi một máy chủ cung cấp endpoint `/v1
 
 Bất kỳ máy chủ nào khác cung cấp cùng endpoint đều hoạt động theo cách tương tự. Nếu máy chủ cần khoá, hãy nhập nó như với dịch vụ đám mây.
 
-Trước khi dựa vào một máy chủ, hãy ghi thử một bản và xem bản chép lời trong [cửa sổ Bản ghi](/recordings/recordings-window): một cuộc trò chuyện bằng ngôn ngữ mà mô hình biết kém sẽ cho thấy ngay điều đó.
+Trước khi dựa vào một máy chủ, hãy ghi thử một bản và xem bản chép lời trong [cửa sổ Bản ghi](/interface/recordings): một cuộc trò chuyện bằng ngôn ngữ mà mô hình biết kém sẽ cho thấy ngay điều đó.

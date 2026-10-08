@@ -8,7 +8,7 @@ description: "\"Elegir el reconocedor que convierte el audio en texto: su direcc
 
 <Shot name="25_transcription" alt="Ajustes → Transcripción: el idioma y cuatro reconocedores" />
 
-Una conversación se transcribe cuando usted lo pide en la [ventana de grabaciones](/recordings/recordings-window), o sola si **Procesar las conversaciones automáticamente** está encendido en [Procesamiento](/ai-processing/processing). Un reconocedor en su propia máquina no cuesta nada; uno en la nube cobra por minuto de audio.
+Una conversación se transcribe cuando usted lo pide en la [ventana de grabaciones](/interface/recordings), o sola si **Procesar las conversaciones automáticamente** está encendido en [Procesamiento](/ai-processing/processing). Un reconocedor en su propia máquina no cuesta nada; uno en la nube cobra por minuto de audio.
 
 ## Idioma {#language}
 
@@ -25,7 +25,7 @@ Un reconocedor es un servicio de voz a texto al que el teléfono envía el audio
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-El marcado como **por defecto** a la derecha de su fila (**X.ai** en la imagen) es el que se usa cuando no elige otro. Puede tener varios. El desplegable sobre una transcripción en la [ventana de grabaciones](/recordings/recordings-window#the-transcript-and-the-write-up) lista las transcripciones hechas por cada reconocedor.
+El marcado como **por defecto** a la derecha de su fila (**X.ai** en la imagen) es el que se usa cuando no elige otro. Puede tener varios. El desplegable sobre una transcripción en la [ventana de grabaciones](/interface/recordings#transcript-or-write-up-the-drop-down) lista las transcripciones hechas por cada reconocedor.
 
 El modelo puede dejarse vacío. Entonces el servicio usa su propio modelo por defecto.
 
@@ -95,4 +95,4 @@ El modelo tiene que ejecutarlo un servidor que ofrezca el punto de acceso `/v1/a
 
 Cualquier otro servidor que ofrezca el mismo punto de acceso funciona igual. Si un servidor necesita una clave, introdúzcala como para un servicio en la nube.
 
-Antes de confiar en un servidor, haga una grabación de prueba y mire la transcripción en la [ventana de grabaciones](/recordings/recordings-window): una conversación en un idioma que el modelo conoce mal lo delata enseguida.
+Antes de confiar en un servidor, haga una grabación de prueba y mire la transcripción en la [ventana de grabaciones](/interface/recordings): una conversación en un idioma que el modelo conoce mal lo delata enseguida.

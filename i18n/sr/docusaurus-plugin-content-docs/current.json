@@ -11,10 +11,6 @@
     "message": "Телефон и налози",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Снимци",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Хватање из других апликација",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

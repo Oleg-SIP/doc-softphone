@@ -23,9 +23,9 @@ Minden modulnak van egy jelölőnégyzete, egy neve, egy sora arról, mit csiná
 | **Szótárak** | Kategóriák, címkék és figyelmeztető jelek — a kódok, amelyekre minden más hivatkozik: [Szótárak](/ai-processing/dictionaries). |
 | **Címjegyzék** | A címjegyzék: [Névjegyek](/interface/contacts-history). |
 | **Integráció** | A helyi API és a webhookok: [Integráció](/integration/rest-api). |
-| **Médiatár** | A beszélgetések könyvtára és az, hogy meddig maradnak meg: [Felvételek](/recordings/recordings-window). |
+| **Médiatár** | A beszélgetések könyvtára és az, hogy meddig maradnak meg: [Felvételek](/interface/recordings). |
 | **Feldolgozás** | Az utasítások és az őket elindító szabályok: [Feldolgozás](/ai-processing/processing). |
-| **Felvétel** | A hívások rögzítése és a másik fél tájékoztatása erről: [Hívások rögzítése](/recordings/call-recording). |
+| **Felvétel** | A hívások rögzítése és a másik fél tájékoztatása erről: [Felvételek](/recordings). |
 | **Telefónia** | SIP, fiókok, hívások, a tárcsázó és a hívásnapló. |
 | **Átirat** | A felismerők, az őket hajtó várólista és az általuk készített leiratok: [Átirat](/ai-processing/transcription). |
 

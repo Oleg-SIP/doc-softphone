@@ -34,7 +34,7 @@ Apa yang terjadi ketika seseorang menelepon saat Anda sedang dalam panggilan dia
 
 ## Panggilan tidak terekam {#a-call-was-not-recorded}
 
-- **Pengaturan → Perekaman**, daftar tarik-turun pertama, menentukan panggilan mana yang direkam; bawaannya, **Manual**, hanya merekam ketika Anda menekan rekam di kartu panggilan. Lihat [Merekam panggilan](/recordings/call-recording).
+- **Pengaturan → Perekaman**, daftar tarik-turun pertama, menentukan panggilan mana yang direkam; bawaannya, **Manual**, hanya merekam ketika Anda menekan rekam di kartu panggilan. Lihat [Rekaman](/recordings).
 - Perekaman dimulai saat panggilan dijawab, jadi panggilan yang tidak dijawab tidak memiliki berkas.
 - Modul **Perekaman** harus menyala di [Modul](/application/modules).
 - Rekaman dihapus oleh batas-batas di bawah **Penyimpanan**; rekaman yang disematkan tidak pernah dihapus.
@@ -50,7 +50,7 @@ Lihat [Penangkapan](/capture/).
 
 ## Ada rekaman, tetapi tidak ada transkrip atau ringkasan {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Percakapan ditranskripsikan dan diolah dengan sendirinya hanya jika **Proses percakapan otomatis** menyala di [Pengaturan → Pemrosesan](/ai-processing/processing). Jika tidak, mintalah di [jendela Rekaman](/recordings/recordings-window).
+- Percakapan ditranskripsikan dan diolah dengan sendirinya hanya jika **Proses percakapan otomatis** menyala di [Pengaturan → Pemrosesan](/ai-processing/processing). Jika tidak, mintalah di [jendela Rekaman](/interface/recordings).
 - Harus ada [pengenal suara](/ai-processing/transcription) dan [model bahasa](/ai-processing/processing#language-models), dan masing-masing harus menjawab di alamatnya.
 - Ketika **Batas uang, per bulan** atau **Batas token, per bulan** tercapai, aturan otomatis berhenti sampai bulan berganti. Permintaan yang Anda ajukan sendiri tidak pernah dihentikan.
 - Langkah-langkah di [Pengaturan → Ikhtisar](/interface/settings-overview) menunjukkan apa yang masih perlu disiapkan.

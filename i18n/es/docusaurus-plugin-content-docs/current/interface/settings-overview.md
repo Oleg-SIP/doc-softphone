@@ -1,6 +1,6 @@
 ---
 title: Resumen de los ajustes
-sidebar_position: 3
+sidebar_position: 4
 description: La lista de comprobación Resumen general y las pestañas de la ventana Ajustes, y dónde se describe cada una.
 ---
 
@@ -36,7 +36,7 @@ Los pasos son una guía, no una obligación: un paso que no le sirva puede queda
 | | **Dispositivos** | [Micrófono, altavoces, tono de llamada y otros sonidos](../sip-accounts/devices.md) |
 | | **Llamadas** | [Códecs, llamada en espera, rellamada automática e historial de llamadas](../sip-accounts/calls.md) |
 | | **Botones** | [Botones que marcan, y vigilan, otras extensiones](../sip-accounts/buttons.md) |
-| | **Grabación** | [Grabación de llamadas: consentimiento, conferencias y cuánto tiempo se guardan los archivos](../recordings/call-recording.md) |
+| | **Grabación** | [Grabación de llamadas: consentimiento, conferencias y cuánto tiempo se guardan los archivos](../recordings.md) |
 | | **Captura** | [Capturar el sonido de otras aplicaciones](../capture/capture.md): reuniones en Zoom, Teams, Meet y similares |
 | IA | **Transcripción** | [Reconocedores](../ai-processing/transcription.md) |
 | | **Procesamiento** | [Procesamiento automático, límites de gasto, modelos de lenguaje, instrucciones y reglas](../ai-processing/processing.md) |

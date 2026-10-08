@@ -1,6 +1,6 @@
 ---
 title: Seadete ülevaade
-sidebar_position: 3
+sidebar_position: 4
 description: Kontrollnimekiri Ülevaade ja akna Seaded vahekaardid ning see, kus igaüht kirjeldatakse.
 ---
 
@@ -36,7 +36,7 @@ Sammud on juhend, mitte kohustus: samm, mida te ei vaja, võib jääda punaseks.
 | | **Seadmed** | [Mikrofon, kõlarid, helin ja muud helid](../sip-accounts/devices.md) |
 | | **Kõned** | [Koodekid, kõne ootel, automaatne kordusvalimine ja kõnede ajalugu](../sip-accounts/calls.md) |
 | | **Nupud** | [Nupud, mis helistavad teistele sisenumbritele ja jälgivad neid](../sip-accounts/buttons.md) |
-| | **Salvestamine** | [Kõnede salvestamine: nõusolek, konverentsid ja failide säilitamise aeg](../recordings/call-recording.md) |
+| | **Salvestamine** | [Kõnede salvestamine: nõusolek, konverentsid ja failide säilitamise aeg](../recordings.md) |
 | | **Hõivamine** | [Teiste rakenduste heli hõivamine](../capture/capture.md): koosolekud Zoomis, Teamsis, Meetis ja muus sarnases |
 | Tehisintellekt | **Ülestähendus** | [Tuvastajad](../ai-processing/transcription.md) |
 | | **Töötlemine** | [Automaatne töötlemine, kulupiirid, keelemudelid, juhised ja reeglid](../ai-processing/processing.md) |

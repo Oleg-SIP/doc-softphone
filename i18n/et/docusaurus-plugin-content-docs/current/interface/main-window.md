@@ -38,7 +38,7 @@ Märkide all on [nupud](../sip-accounts/buttons.md), mille olete teinud kolleegi
 
 ### Salvestised, Kontaktid, Ajalugu, Seaded {#recordings-contacts-history-settings}
 
-Need neli kirjet allosas avavad igaüks vahekaardi paremal, kõrvuti: [Salvestised](../recordings/recordings-window.md), [Kontaktid ja ajalugu](contacts-history.md) ning [Seaded](settings-overview.md). Avatud vahekaardid jäävad paremal pool ülemisse ritta.
+Need neli kirjet allosas avavad igaüks vahekaardi paremal, kõrvuti: [Salvestised](../interface/recordings.md), [Kontaktid ja ajalugu](contacts-history.md) ning [Seaded](settings-overview.md). Avatud vahekaardid jäävad paremal pool ülemisse ritta.
 
 ## Pooleliolev kõne {#a-call-in-progress}
 

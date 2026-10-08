@@ -1,6 +1,6 @@
 ---
 title: Visão geral das definições
-sidebar_position: 3
+sidebar_position: 4
 description: A lista de verificação Visão geral e os separadores da janela Definições, e onde cada um está descrito.
 ---
 
@@ -36,7 +36,7 @@ Os passos são um guia, não uma obrigação: um passo que não lhe interessa po
 | | **Dispositivos** | [Microfone, altifalantes, toque e outros sons](../sip-accounts/devices.md) |
 | | **Chamadas** | [Codecs, chamada em espera, remarcação automática e registo de chamadas](../sip-accounts/calls.md) |
 | | **Botões** | [Botões que ligam para outras extensões e as acompanham](../sip-accounts/buttons.md) |
-| | **Gravação** | [Gravação de chamadas: consentimento, conferências e durante quanto tempo se guardam os ficheiros](../recordings/call-recording.md) |
+| | **Gravação** | [Gravação de chamadas: consentimento, conferências e durante quanto tempo se guardam os ficheiros](../recordings.md) |
 | | **Captura** | [Capturar o som de outras aplicações](../capture/capture.md): reuniões no Zoom, Teams, Meet e semelhantes |
 | IA | **Transcrição** | [Reconhecedores](../ai-processing/transcription.md) |
 | | **Processamento** | [Processamento automático, limites de gastos, modelos de língua, instruções e regras](../ai-processing/processing.md) |

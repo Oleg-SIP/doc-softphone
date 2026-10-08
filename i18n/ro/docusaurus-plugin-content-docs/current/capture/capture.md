@@ -82,7 +82,7 @@ Creionul de lângă numele înregistrării vă permite să o redenumiți în tim
 
 ## Unde ajunge înregistrarea {#where-the-recording-goes}
 
-O conversație captată apare în [fereastra Înregistrări](../recordings/recordings-window.md) ca oricare alta, cu pictograma ei proprie, o fereastră în loc de receptor, și cu titlul pe care i l-ați dat sau **Altă aplicație**.
+O conversație captată apare în [fereastra Înregistrări](../interface/recordings.md) ca oricare alta, cu pictograma ei proprie, o fereastră în loc de receptor, și cu titlul pe care i l-ați dat sau **Altă aplicație**.
 
 <Shot name="01_recordings" alt="Ședințe captate în fila Înregistrări, marcate cu o pictogramă de fereastră" />
 

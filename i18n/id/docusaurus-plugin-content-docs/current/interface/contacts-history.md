@@ -1,6 +1,6 @@
 ---
 title: Kontak dan riwayat
-sidebar_position: 2
+sidebar_position: 3
 description: Buku alamat dan log panggilan, di samping telepon.
 ---
 

@@ -38,7 +38,7 @@ Marcas que *podem ser todas verdadeiras para a mesma conversa*. Carregue em **Ad
 
 ## Sinais {#red-flags}
 
-Coisas que merecem atenção, encontradas na conversa com a prova e o momento — por exemplo *Cliente irritado* ou *Risco de perda*. Os sinais são desenhados a vermelho na [janela de gravações](../recordings/recordings-window.md), e cada um tem uma gravidade: baixa, média ou alta.
+Coisas que merecem atenção, encontradas na conversa com a prova e o momento — por exemplo *Cliente irritado* ou *Risco de perda*. Os sinais são desenhados a vermelho na [janela de gravações](../interface/recordings.md), e cada um tem uma gravidade: baixa, média ou alta.
 
 ## Formas de resposta e língua {#answer-shapes-and-language}
 

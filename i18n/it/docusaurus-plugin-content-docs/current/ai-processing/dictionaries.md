@@ -38,7 +38,7 @@ Contrassegni che *possono valere tutti per la stessa conversazione*. Prema **Agg
 
 ## Segnali {#red-flags}
 
-Cose che richiedono attenzione, trovate nella conversazione con la prova e il momento — per esempio *Cliente arrabbiato* o *Rischio di abbandono*. I segnali sono disegnati in rosso nella [finestra delle registrazioni](../recordings/recordings-window.md), e ognuno ha una gravità: bassa, media o alta.
+Cose che richiedono attenzione, trovate nella conversazione con la prova e il momento — per esempio *Cliente arrabbiato* o *Rischio di abbandono*. I segnali sono disegnati in rosso nella [finestra delle registrazioni](../interface/recordings.md), e ognuno ha una gravità: bassa, media o alta.
 
 ## Forme di risposta e lingua {#answer-shapes-and-language}
 

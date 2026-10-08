@@ -10,7 +10,7 @@ description: O processamento automático das conversas, os limites de gastos men
 
 ## Processar as conversas automaticamente {#process-conversations-automatically}
 
-- **Desligado:** nada acontece até o pedir na [janela de gravações](../recordings/recordings-window.md).
+- **Desligado:** nada acontece até o pedir na [janela de gravações](../interface/recordings.md).
 - **Ligado:** as [regras](#rules) abaixo correm sozinhas. É isto que transforma uma conversa num resumo, numa categoria e em tudo o resto sem que ninguém carregue em nada. Um modelo na nuvem cobra cada um desses passos.
 
 Por baixo da caixa, o programa mostra o que foi gasto este mês e em quantos pedidos, por exemplo *Este mês: 40.492 tokens, em 84 pedidos, sem custo.*

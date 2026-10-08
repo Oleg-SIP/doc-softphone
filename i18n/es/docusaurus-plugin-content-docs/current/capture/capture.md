@@ -82,7 +82,7 @@ El lápiz junto al nombre de la grabación le permite cambiárselo mientras est�
 
 ## Adónde va la grabación {#where-the-recording-goes}
 
-Una conversación capturada aparece en la [ventana de grabaciones](../recordings/recordings-window.md) como cualquier otra, con su propio icono, una ventana en lugar de un auricular, y con el título que le dio u **Otra aplicación**.
+Una conversación capturada aparece en la [ventana de grabaciones](../interface/recordings.md) como cualquier otra, con su propio icono, una ventana en lugar de un auricular, y con el título que le dio u **Otra aplicación**.
 
 <Shot name="01_recordings" alt="Reuniones capturadas en la pestaña Grabaciones, marcadas con un icono de ventana" />
 

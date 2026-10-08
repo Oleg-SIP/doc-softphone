@@ -1,6 +1,6 @@
 ---
 title: Nustatymų apžvalga
-sidebar_position: 3
+sidebar_position: 4
 description: Kontrolinis sąrašas Apžvalga ir lango Nustatymai skirtukai, taip pat kur kiekvienas aprašytas.
 ---
 
@@ -36,7 +36,7 @@ description: Kontrolinis sąrašas Apžvalga ir lango Nustatymai skirtukai, taip
 | | **Įrenginiai** | [Mikrofonas, garsiakalbiai, skambėjimas ir kiti garsai](../sip-accounts/devices.md) |
 | | **Skambučiai** | [Kodekai, skambučio laukimas, automatinis perrinkimas ir skambučių istorija](../sip-accounts/calls.md) |
 | | **Mygtukai** | [Mygtukai, kurie skambina kitiems vidiniams numeriams ir juos stebi](../sip-accounts/buttons.md) |
-| | **Įrašymas** | [Skambučių įrašymas: sutikimas, konferencijos ir kiek laiko laikomi failai](../recordings/call-recording.md) |
+| | **Įrašymas** | [Skambučių įrašymas: sutikimas, konferencijos ir kiek laiko laikomi failai](../recordings.md) |
 | | **Fiksavimas** | [Kitų programų garso fiksavimas](../capture/capture.md): susitikimai Zoom, Teams, Meet ir panašiose |
 | Dirbtinis intelektas | **Užrašas** | [Atpažintuvai](../ai-processing/transcription.md) |
 | | **Apdorojimas** | [Automatinis apdorojimas, išlaidų ribos, kalbos modeliai, nurodymai ir taisyklės](../ai-processing/processing.md) |

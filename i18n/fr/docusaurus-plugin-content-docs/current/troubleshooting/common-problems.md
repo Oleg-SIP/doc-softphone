@@ -34,7 +34,7 @@ Ce qui se passe quand quelqu'un appelle alors que vous êtes en communication se
 
 ## Un appel n'a pas été enregistré {#a-call-was-not-recorded}
 
-- **Réglages → Enregistrement**, la première liste déroulante, décide quels appels sont enregistrés ; la valeur par défaut, **À la main**, n'enregistre que lorsque vous appuyez sur enregistrer sur la carte de l'appel. Voir [Enregistrer les appels](/recordings/call-recording).
+- **Réglages → Enregistrement**, la première liste déroulante, décide quels appels sont enregistrés ; la valeur par défaut, **À la main**, n'enregistre que lorsque vous appuyez sur enregistrer sur la carte de l'appel. Voir [Enregistrements](/recordings).
 - L'enregistrement commence quand l'appel est décroché ; un appel qui n'a pas été pris n'a donc pas de fichier.
 - Le module **Enregistrement** doit être activé dans [Modules](/application/modules).
 - Les enregistrements sont supprimés par les limites sous **Conservation** ; un enregistrement épinglé n'est jamais supprimé.
@@ -50,7 +50,7 @@ Voir [Capture](/capture/).
 
 ## Il y a un enregistrement, mais pas de transcription ni de résumé {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Une conversation n'est transcrite et rédigée d'elle-même que si **Traiter les conversations automatiquement** est activé dans [Réglages → Traitement](/ai-processing/processing). Sinon, demandez-le dans la [fenêtre des enregistrements](/recordings/recordings-window).
+- Une conversation n'est transcrite et rédigée d'elle-même que si **Traiter les conversations automatiquement** est activé dans [Réglages → Traitement](/ai-processing/processing). Sinon, demandez-le dans la [fenêtre des enregistrements](/interface/recordings).
 - Il faut une [reconnaissance](/ai-processing/transcription) et un [modèle de langue](/ai-processing/processing#language-models), et chacun doit répondre à son adresse.
 - Quand la **Limite d'argent** ou la **Limite de jetons** mensuelle est atteinte, les règles automatiques s'arrêtent jusqu'au mois suivant. Ce que vous demandez vous-même n'est jamais bloqué.
 - Les étapes de [Réglages → Vue d’ensemble](/interface/settings-overview) montrent ce qui reste à configurer.

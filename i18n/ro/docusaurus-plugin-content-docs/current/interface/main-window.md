@@ -38,7 +38,7 @@ Sub insigne se află [butoanele](../sip-accounts/buttons.md) pe care le-ați cre
 
 ### Înregistrări, Contacte, Istoric, Setări {#recordings-contacts-history-settings}
 
-Aceste patru intrări din partea de jos deschid câte o filă în dreapta, una lângă alta: [Înregistrări](../recordings/recordings-window.md), [Contacte și Istoric](contacts-history.md) și [Setări](settings-overview.md). Filele pe care le-ați deschis rămân în rândul din partea de sus a laturii din dreapta.
+Aceste patru intrări din partea de jos deschid câte o filă în dreapta, una lângă alta: [Înregistrări](../interface/recordings.md), [Contacte și Istoric](contacts-history.md) și [Setări](settings-overview.md). Filele pe care le-ați deschis rămân în rândul din partea de sus a laturii din dreapta.
 
 ## Un apel în curs {#a-call-in-progress}
 

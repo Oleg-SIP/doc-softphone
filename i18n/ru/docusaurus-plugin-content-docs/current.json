@@ -11,10 +11,6 @@
     "message": "Телефон и учётные записи",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Записи",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.AI processing": {
     "message": "Обработка ИИ",
     "description": "The label for category 'AI processing' in sidebar 'docs'"

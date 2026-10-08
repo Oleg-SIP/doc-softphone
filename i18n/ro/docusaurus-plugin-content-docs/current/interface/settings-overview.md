@@ -1,6 +1,6 @@
 ---
 title: Prezentarea setărilor
-sidebar_position: 3
+sidebar_position: 4
 description: Lista de verificare Prezentare generală și filele ferestrei Setări, cu locul în care este descrisă fiecare.
 ---
 
@@ -36,7 +36,7 @@ Pașii sunt un ghid, nu o obligație: un pas de care nu aveți nevoie poate răm
 | | **Dispozitive** | [Microfon, difuzoare, sonerie și alte sunete](../sip-accounts/devices.md) |
 | | **Apeluri** | [Codecuri, apel în așteptare, reapelare automată și istoricul apelurilor](../sip-accounts/calls.md) |
 | | **Butoane** | [Butoane care formează și urmăresc alte interioare](../sip-accounts/buttons.md) |
-| | **Înregistrare** | [Înregistrarea apelurilor: consimțământ, conferințe și cât timp se păstrează fișierele](../recordings/call-recording.md) |
+| | **Înregistrare** | [Înregistrarea apelurilor: consimțământ, conferințe și cât timp se păstrează fișierele](../recordings.md) |
 | | **Captare** | [Captarea sunetului altor aplicații](../capture/capture.md): ședințe în Zoom, Teams, Meet și altele asemenea |
 | Inteligență artificială | **Transcriere** | [Recunoscătoare](../ai-processing/transcription.md) |
 | | **Prelucrare** | [Prelucrare automată, limite de cheltuieli, modele de limbă, instrucțiuni și reguli](../ai-processing/processing.md) |

@@ -1,6 +1,6 @@
 ---
 title: Contactos e histórico
-sidebar_position: 2
+sidebar_position: 3
 description: A lista de contactos e o registo de chamadas, ao lado do telefone.
 ---
 

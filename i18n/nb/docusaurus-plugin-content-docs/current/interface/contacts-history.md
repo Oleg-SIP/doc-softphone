@@ -1,6 +1,6 @@
 ---
 title: Kontakter og historikk
-sidebar_position: 2
+sidebar_position: 3
 description: Adresseboken og samtalehistorikken, ved siden av telefonen.
 ---
 

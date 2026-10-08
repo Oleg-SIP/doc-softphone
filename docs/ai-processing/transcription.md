@@ -8,7 +8,7 @@ description: "Choose the recogniser that turns audio into text: its address, its
 
 <Shot name="25_transcription" alt="Settings → Transcription: the language and four recognisers" />
 
-A conversation is transcribed when you ask for it in the [Recordings window](/recordings/recordings-window), or by itself if **Process conversations automatically** is on in [Processing](/ai-processing/processing). A recogniser on your own machine costs nothing to run; one in the cloud charges by the minute of audio.
+A conversation is transcribed when you ask for it in the [Recordings window](/interface/recordings), or by itself if **Process conversations automatically** is on in [Processing](/ai-processing/processing). A recogniser on your own machine costs nothing to run; one in the cloud charges by the minute of audio.
 
 ## Language
 
@@ -25,7 +25,7 @@ A recogniser is a speech-to-text service the phone sends audio to. Press **Add**
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-The one marked **default** at the right of its row (**X.ai** in the picture) is the one used when you do not choose another. You can keep several. The drop-down above a transcript in the [Recordings window](/recordings/recordings-window#the-transcript-and-the-write-up) lists the transcripts made by each recogniser.
+The one marked **default** at the right of its row (**X.ai** in the picture) is the one used when you do not choose another. You can keep several. The drop-down above a transcript in the [Recordings window](/interface/recordings#transcript-or-write-up-the-drop-down) lists the transcripts made by each recogniser.
 
 The model may be left empty. The service then uses its own default.
 
@@ -95,4 +95,4 @@ The model has to be run by a server that offers the OpenAI-compatible `/v1/audio
 
 Any other server that offers the same endpoint works in the same way. If a server needs a key, enter it as for a cloud service.
 
-Before you rely on a server, make a test recording and look at the transcript in the [Recordings window](/recordings/recordings-window): a conversation in a language the model knows poorly shows it at once.
+Before you rely on a server, make a test recording and look at the transcript in the [Recordings window](/interface/recordings): a conversation in a language the model knows poorly shows it at once.

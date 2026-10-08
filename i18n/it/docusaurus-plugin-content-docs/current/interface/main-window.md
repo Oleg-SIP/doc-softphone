@@ -38,7 +38,7 @@ Sotto i bollini ci sono i [pulsanti](../sip-accounts/buttons.md) che ha creato p
 
 ### Registrazioni, Contatti, Cronologia, Impostazioni {#recordings-contacts-history-settings}
 
-Queste quattro voci in basso aprono una scheda a destra, una accanto all'altra: [Registrazioni](../recordings/recordings-window.md), [Contatti e cronologia](contacts-history.md) e [Impostazioni](settings-overview.md). Le schede aperte restano nella fila in alto della parte destra.
+Queste quattro voci in basso aprono una scheda a destra, una accanto all'altra: [Registrazioni](../interface/recordings.md), [Contatti e cronologia](contacts-history.md) e [Impostazioni](settings-overview.md). Le schede aperte restano nella fila in alto della parte destra.
 
 ## Una chiamata in corso {#a-call-in-progress}
 

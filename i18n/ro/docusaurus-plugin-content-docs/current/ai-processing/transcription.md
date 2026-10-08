@@ -8,7 +8,7 @@ description: Alegeți recunoscătorul care transformă sunetul în text — adre
 
 <Shot name="25_transcription" alt="Setări → Transcriere: limba și patru recunoscătoare" />
 
-O conversație este transcrisă când cereți acest lucru în [fereastra Înregistrări](/recordings/recordings-window) sau de la sine, dacă **Prelucrează conversațiile automat** este pornit în [Prelucrare](/ai-processing/processing). Un recunoscător pe propriul calculator nu costă nimic; unul în cloud taxează la minut de sunet.
+O conversație este transcrisă când cereți acest lucru în [fereastra Înregistrări](/interface/recordings) sau de la sine, dacă **Prelucrează conversațiile automat** este pornit în [Prelucrare](/ai-processing/processing). Un recunoscător pe propriul calculator nu costă nimic; unul în cloud taxează la minut de sunet.
 
 ## Limbă {#language}
 
@@ -25,7 +25,7 @@ Un recunoscător este un serviciu de transformare a vorbirii în text, căruia t
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Cel marcat **Implicit** în dreapta rândului său (**X.ai** în imagine) este cel folosit când nu alegeți altul. Puteți păstra mai multe. Lista derulantă de deasupra unei transcrieri din [fereastra Înregistrări](/recordings/recordings-window#the-transcript-and-the-write-up) arată transcrierile făcute de fiecare recunoscător.
+Cel marcat **Implicit** în dreapta rândului său (**X.ai** în imagine) este cel folosit când nu alegeți altul. Puteți păstra mai multe. Lista derulantă de deasupra unei transcrieri din [fereastra Înregistrări](/interface/recordings#transcript-or-write-up-the-drop-down) arată transcrierile făcute de fiecare recunoscător.
 
 Modelul poate rămâne gol. În acest caz, serviciul folosește propriul model implicit.
 
@@ -95,4 +95,4 @@ Modelul trebuie rulat de un server care oferă punctul final `/v1/audio/transcri
 
 Orice alt server care oferă același punct final funcționează la fel. Dacă un server cere o cheie, introduceți-o ca pentru un serviciu în cloud.
 
-Înainte să vă bazați pe un server, faceți o înregistrare de probă și uitați-vă la transcriere în [fereastra Înregistrări](/recordings/recordings-window): o conversație într-o limbă pe care modelul o cunoaște slab se vede imediat.
+Înainte să vă bazați pe un server, faceți o înregistrare de probă și uitați-vă la transcriere în [fereastra Înregistrări](/interface/recordings): o conversație într-o limbă pe care modelul o cunoaște slab se vede imediat.

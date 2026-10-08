@@ -38,7 +38,7 @@ Merkkien alla ovat [painikkeet](../sip-accounts/buttons.md), jotka olet tehnyt k
 
 ### Tallenteet, Yhteystiedot, Historia, Asetukset {#recordings-contacts-history-settings}
 
-Nämä neljä alareunan kohtaa avaavat kukin välilehden oikealle, rinnakkain: [Tallenteet](../recordings/recordings-window.md), [Yhteystiedot ja historia](contacts-history.md) ja [Asetukset](settings-overview.md). Avaamasi välilehdet pysyvät oikean puolen yläreunan rivissä.
+Nämä neljä alareunan kohtaa avaavat kukin välilehden oikealle, rinnakkain: [Tallenteet](../interface/recordings.md), [Yhteystiedot ja historia](contacts-history.md) ja [Asetukset](settings-overview.md). Avaamasi välilehdet pysyvät oikean puolen yläreunan rivissä.
 
 ## Käynnissä oleva puhelu {#a-call-in-progress}
 

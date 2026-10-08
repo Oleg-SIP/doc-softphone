@@ -38,7 +38,7 @@ Oznaczenia, które *wszystkie mogą pasować do tej samej rozmowy*. Naciśnij **
 
 ## Sygnały ostrzegawcze {#red-flags}
 
-Rzeczy wymagające uwagi, znalezione w rozmowie wraz z dowodem i momentem — na przykład *Rozgniewany klient* albo *Ryzyko odejścia*. Sygnały ostrzegawcze są rysowane na czerwono w [oknie nagrań](../recordings/recordings-window.md), a każdy ma wagę: niską, średnią lub wysoką.
+Rzeczy wymagające uwagi, znalezione w rozmowie wraz z dowodem i momentem — na przykład *Rozgniewany klient* albo *Ryzyko odejścia*. Sygnały ostrzegawcze są rysowane na czerwono w [oknie nagrań](../interface/recordings.md), a każdy ma wagę: niską, średnią lub wysoką.
 
 ## Kształty odpowiedzi i język {#answer-shapes-and-language}
 

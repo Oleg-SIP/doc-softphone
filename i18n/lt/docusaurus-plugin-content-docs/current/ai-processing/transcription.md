@@ -8,7 +8,7 @@ description: "\"Pasirinkite atpažintuvą, kuris garsą paverčia tekstu: jo adr
 
 <Shot name="25_transcription" alt="Nustatymai → Užrašas: kalba ir keturi atpažintuvai" />
 
-Pokalbis iššifruojamas, kai to paprašote [įrašų lange](/recordings/recordings-window), arba savaime, jei skiltyje [Apdorojimas](/ai-processing/processing) įjungta **Apdoroti pokalbius automatiškai**. Atpažintuvas jūsų kompiuteryje nieko nekainuoja; debesyje esantis ima mokestį už garso minutes.
+Pokalbis iššifruojamas, kai to paprašote [įrašų lange](/interface/recordings), arba savaime, jei skiltyje [Apdorojimas](/ai-processing/processing) įjungta **Apdoroti pokalbius automatiškai**. Atpažintuvas jūsų kompiuteryje nieko nekainuoja; debesyje esantis ima mokestį už garso minutes.
 
 ## Kalba {#language}
 
@@ -25,7 +25,7 @@ Atpažintuvas — tai kalbos pavertimo tekstu paslauga, kuriai telefonas siunči
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Tas, kuris savo eilutės dešinėje pažymėtas kaip **numatytasis** (paveikslėlyje **X.ai**), naudojamas, kai nepasirenkate kito. Galite turėti kelis. Išskleidžiamasis sąrašas virš iššifruoto teksto [įrašų lange](/recordings/recordings-window#the-transcript-and-the-write-up) pateikia kiekvieno atpažintuvo iššifruotus tekstus.
+Tas, kuris savo eilutės dešinėje pažymėtas kaip **numatytasis** (paveikslėlyje **X.ai**), naudojamas, kai nepasirenkate kito. Galite turėti kelis. Išskleidžiamasis sąrašas virš iššifruoto teksto [įrašų lange](/interface/recordings#transcript-or-write-up-the-drop-down) pateikia kiekvieno atpažintuvo iššifruotus tekstus.
 
 Modelį galima palikti tuščią. Tada paslauga naudoja savo numatytąjį.
 
@@ -95,4 +95,4 @@ Modelį turi vykdyti serveris, teikiantis su OpenAI suderinamą galinį tašką 
 
 Bet kuris kitas serveris, teikiantis tą patį galinį tašką, veikia taip pat. Jei serveriui reikia rakto, įveskite jį kaip debesijos paslaugai.
 
-Prieš pasikliaudami serveriu, padarykite bandomąjį įrašą ir peržiūrėkite iššifruotą tekstą [įrašų lange](/recordings/recordings-window): pokalbis kalba, kurią modelis menkai išmano, tai iškart parodo.
+Prieš pasikliaudami serveriu, padarykite bandomąjį įrašą ir peržiūrėkite iššifruotą tekstą [įrašų lange](/interface/recordings): pokalbis kalba, kurią modelis menkai išmano, tai iškart parodo.

@@ -10,7 +10,7 @@ description: El procesamiento automático de las conversaciones, los límites de
 
 ## Procesar las conversaciones automáticamente {#process-conversations-automatically}
 
-- **Apagado:** no ocurre nada hasta que lo pida en la [ventana de grabaciones](../recordings/recordings-window.md).
+- **Apagado:** no ocurre nada hasta que lo pida en la [ventana de grabaciones](../interface/recordings.md).
 - **Encendido:** las [reglas](#rules) de abajo se ejecutan solas. Esto es lo que convierte una conversación en un resumen, una categoría y todo lo demás sin que nadie pulse nada. Un modelo en la nube cobra por cada uno de esos pasos.
 
 Bajo la casilla, el programa muestra lo gastado este mes y en cuántas peticiones, por ejemplo *Este mes: 40.492 tokens, en 84 peticiones, sin coste.*

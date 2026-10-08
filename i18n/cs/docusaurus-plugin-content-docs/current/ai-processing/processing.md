@@ -10,7 +10,7 @@ description: Automatické zpracování rozhovorů, měsíční limity výdajů, 
 
 ## Zpracovávat hovory automaticky {#process-conversations-automatically}
 
-- **Vypnuto:** nic se neděje, dokud o to nepožádáte v [okně nahrávek](../recordings/recordings-window.md).
+- **Vypnuto:** nic se neděje, dokud o to nepožádáte v [okně nahrávek](../interface/recordings.md).
 - **Zapnuto:** [pravidla](#rules) níže běží sama. To je to, co z rozhovoru udělá shrnutí, kategorii a vše ostatní, aniž by kdokoli cokoli stiskl. Model v cloudu si za každý z těchto kroků účtuje.
 
 Pod políčkem program ukazuje, kolik se tento měsíc utratilo a za kolik požadavků, například *Tento měsíc: 40 492 tokenů, v 84 požadavcích, bez poplatku.* Dokud se nic nezpracovalo, zní věta *Tento měsíc se nic nezpracovalo.*

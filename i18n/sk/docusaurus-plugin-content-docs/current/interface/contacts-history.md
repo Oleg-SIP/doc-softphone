@@ -1,6 +1,6 @@
 ---
 title: Kontakty a história
-sidebar_position: 2
+sidebar_position: 3
 description: Adresár a záznam hovorov vedľa telefónu.
 ---
 

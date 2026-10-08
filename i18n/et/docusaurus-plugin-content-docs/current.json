@@ -11,10 +11,6 @@
     "message": "Telefon ja kontod",
     "description": "The label for category 'Phone and accounts' in sidebar 'docs'"
   },
-  "sidebar.docs.category.Recordings": {
-    "message": "Salvestised",
-    "description": "The label for category 'Recordings' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Capturing other applications": {
     "message": "Hõive teistest rakendustest",
     "description": "The label for category 'Capturing other applications' in sidebar 'docs'"

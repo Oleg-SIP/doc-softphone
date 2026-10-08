@@ -38,7 +38,7 @@ Rozetlerin altında, iş arkadaşlarınız ve hatlar için oluşturduğunuz [dü
 
 ### Kayıtlar, Kişiler, Geçmiş, Ayarlar {#recordings-contacts-history-settings}
 
-Alttaki bu dört girdi sağda yan yana birer sekme açar: [Kayıtlar](../recordings/recordings-window.md), [Kişiler ve Geçmiş](contacts-history.md) ve [Ayarlar](settings-overview.md). Açtığınız sekmeler sağ tarafın üstündeki sırada kalır.
+Alttaki bu dört girdi sağda yan yana birer sekme açar: [Kayıtlar](../interface/recordings.md), [Kişiler ve Geçmiş](contacts-history.md) ve [Ayarlar](settings-overview.md). Açtığınız sekmeler sağ tarafın üstündeki sırada kalır.
 
 ## Süren bir çağrı {#a-call-in-progress}
 

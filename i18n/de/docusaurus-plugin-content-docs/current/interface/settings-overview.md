@@ -1,6 +1,6 @@
 ---
 title: Übersicht der Einstellungen
-sidebar_position: 3
+sidebar_position: 4
 description: Die Checkliste Übersicht und die Reiter des Einstellungsfensters, und wo jeder beschrieben ist.
 ---
 
@@ -36,7 +36,7 @@ Die Schritte sind ein Leitfaden, keine Pflicht: Ein Schritt, den Sie nicht brauc
 | | **Geräte** | [Mikrofon, Lautsprecher, Klingelton und andere Klänge](../sip-accounts/devices.md) |
 | | **Anrufe** | [Codecs, Anklopfen, Wahlwiederholung und Anrufliste](../sip-accounts/calls.md) |
 | | **Tasten** | [Tasten, die andere Nebenstellen wählen und beobachten](../sip-accounts/buttons.md) |
-| | **Aufnahme** | [Aufnahme von Anrufen: Zustimmung, Konferenzen und wie lange Dateien aufbewahrt werden](../recordings/call-recording.md) |
+| | **Aufnahme** | [Aufnahme von Anrufen: Zustimmung, Konferenzen und wie lange Dateien aufbewahrt werden](../recordings.md) |
 | | **Mitschnitt** | [Den Ton anderer Anwendungen mitschneiden](../capture/capture.md): Besprechungen in Zoom, Teams, Meet und Ähnlichem |
 | KI | **Transkription** | [Spracherkenner](../ai-processing/transcription.md) |
 | | **Verarbeitung** | [Automatische Verarbeitung, Ausgabengrenzen, Sprachmodelle, Prompts und Regeln](../ai-processing/processing.md) |

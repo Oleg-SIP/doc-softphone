@@ -82,7 +82,7 @@ Tužka vedle názvu nahrávky ji umožní přejmenovat, ještě než skončí. N
 
 ## Kam nahrávka jde {#where-the-recording-goes}
 
-Zachycený rozhovor se objeví v [okně nahrávek](../recordings/recordings-window.md) jako každý jiný, s vlastní ikonou — oknem místo sluchátka — a s názvem, který jste mu dali, nebo **Jiná aplikace**.
+Zachycený rozhovor se objeví v [okně nahrávek](../interface/recordings.md) jako každý jiný, s vlastní ikonou — oknem místo sluchátka — a s názvem, který jste mu dali, nebo **Jiná aplikace**.
 
 <Shot name="01_recordings" alt="Zachycené schůzky na kartě Nahrávky, označené ikonou okna" />
 

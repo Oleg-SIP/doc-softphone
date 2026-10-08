@@ -1,6 +1,6 @@
 ---
 title: Kişiler ve geçmiş
-sidebar_position: 2
+sidebar_position: 3
 description: Telefonun yanında adres defteri ve çağrı geçmişi.
 ---
 

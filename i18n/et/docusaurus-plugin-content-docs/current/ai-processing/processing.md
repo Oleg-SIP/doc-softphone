@@ -10,7 +10,7 @@ description: Vestluste automaatne töötlemine, igakuised kulupiirid, keelemudel
 
 ## Töötle vestlusi automaatselt {#process-conversations-automatically}
 
-- **Väljas:** midagi ei juhtu, kuni te seda [salvestiste aknas](../recordings/recordings-window.md) palute.
+- **Väljas:** midagi ei juhtu, kuni te seda [salvestiste aknas](../interface/recordings.md) palute.
 - **Sees:** allpool olevad [reeglid](#rules) töötavad iseenesest. See muudab vestluse kokkuvõtteks, kategooriaks ja kõigeks muuks, ilma et keegi midagi vajutaks. Pilves olev mudel võtab tasu iga sellise sammu eest.
 
 Märkeruudu all näitab programm, kui palju on sel kuul kulutatud ja kui mitme päringuga, näiteks *Sel kuul: 40.492 märki, 84 päringus, tasuta.*

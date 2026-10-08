@@ -38,7 +38,7 @@ Pod značkami so [gumbi](../sip-accounts/buttons.md), ki ste jih naredili za sod
 
 ### Posnetki, Stiki, Zgodovina, Nastavitve {#recordings-contacts-history-settings}
 
-Ti štirje vnosi spodaj odprejo zavihek na desni, drug ob drugem: [Posnetki](../recordings/recordings-window.md), [Stiki in Zgodovina](contacts-history.md) ter [Nastavitve](settings-overview.md). Zavihki, ki ste jih odprli, ostanejo v vrsti na vrhu desne strani.
+Ti štirje vnosi spodaj odprejo zavihek na desni, drug ob drugem: [Posnetki](../interface/recordings.md), [Stiki in Zgodovina](contacts-history.md) ter [Nastavitve](settings-overview.md). Zavihki, ki ste jih odprli, ostanejo v vrsti na vrhu desne strani.
 
 ## Klic v teku {#a-call-in-progress}
 

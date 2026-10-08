@@ -38,7 +38,7 @@ Debajo de las fichas están los [botones](../sip-accounts/buttons.md) que ha cre
 
 ### Grabaciones, Contactos, Historial, Ajustes {#recordings-contacts-history-settings}
 
-Estas cuatro entradas de abajo abren una pestaña a la derecha, una junto a otra: [Grabaciones](../recordings/recordings-window.md), [Contactos e historial](contacts-history.md) y [Ajustes](settings-overview.md). Las pestañas que ha abierto se quedan en la fila de arriba de la parte derecha.
+Estas cuatro entradas de abajo abren una pestaña a la derecha, una junto a otra: [Grabaciones](../interface/recordings.md), [Contactos e historial](contacts-history.md) y [Ajustes](settings-overview.md). Las pestañas que ha abierto se quedan en la fila de arriba de la parte derecha.
 
 ## Una llamada en curso {#a-call-in-progress}
 

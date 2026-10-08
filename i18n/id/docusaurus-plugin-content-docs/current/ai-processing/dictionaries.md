@@ -38,7 +38,7 @@ Penanda yang *semuanya dapat berlaku untuk percakapan yang sama*. Tekan **Tambah
 
 ## Tanda peringatan {#red-flags}
 
-Hal-hal yang perlu diperhatikan, ditemukan dalam percakapan beserta bukti dan waktunya — misalnya *Pelanggan marah* atau *Risiko berhenti*. Tanda peringatan digambar merah di [jendela Rekaman](../recordings/recordings-window.md), dan masing-masing memiliki tingkat keparahan: rendah, sedang, atau tinggi.
+Hal-hal yang perlu diperhatikan, ditemukan dalam percakapan beserta bukti dan waktunya — misalnya *Pelanggan marah* atau *Risiko berhenti*. Tanda peringatan digambar merah di [jendela Rekaman](../interface/recordings.md), dan masing-masing memiliki tingkat keparahan: rendah, sedang, atau tinggi.
 
 ## Format jawaban dan bahasa {#answer-shapes-and-language}
 

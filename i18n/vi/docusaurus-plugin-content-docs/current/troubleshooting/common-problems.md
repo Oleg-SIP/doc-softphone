@@ -34,7 +34,7 @@ Các codec được đề nghị theo thứ tự của danh sách trong [Cài đ
 
 ## Cuộc gọi không được ghi âm {#a-call-was-not-recorded}
 
-- **Cài đặt → Ghi âm**, danh sách thả xuống đầu tiên, quyết định những cuộc gọi nào được ghi âm; mặc định là **Thủ công**, chỉ ghi âm khi bạn nhấn nút ghi âm trên khung cuộc gọi. Xem [Ghi âm cuộc gọi](/recordings/call-recording).
+- **Cài đặt → Ghi âm**, danh sách thả xuống đầu tiên, quyết định những cuộc gọi nào được ghi âm; mặc định là **Thủ công**, chỉ ghi âm khi bạn nhấn nút ghi âm trên khung cuộc gọi. Xem [Bản ghi](/recordings).
 - Việc ghi âm bắt đầu khi cuộc gọi được trả lời, nên cuộc gọi không được trả lời thì không có tệp.
 - Mô-đun **Ghi âm** phải được bật trong [Mô-đun](/application/modules).
 - Bản ghi bị xoá bởi các giới hạn ở mục **Lưu giữ**; bản ghi đã ghim không bao giờ bị xoá.
@@ -50,7 +50,7 @@ Xem [Thu âm ngoài](/capture/).
 
 ## Có bản ghi nhưng không có bản chép lời hay bản tóm tắt {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Cuộc trò chuyện chỉ tự được chép lời và xử lý nếu **Xử lý các cuộc trò chuyện tự động** được bật trong [Cài đặt → Xử lý](/ai-processing/processing). Nếu không, hãy yêu cầu trong [cửa sổ Bản ghi](/recordings/recordings-window).
+- Cuộc trò chuyện chỉ tự được chép lời và xử lý nếu **Xử lý các cuộc trò chuyện tự động** được bật trong [Cài đặt → Xử lý](/ai-processing/processing). Nếu không, hãy yêu cầu trong [cửa sổ Bản ghi](/interface/recordings).
 - Phải có một [bộ nhận dạng](/ai-processing/transcription) và một [mô hình ngôn ngữ](/ai-processing/processing#language-models), và mỗi thứ phải trả lời tại địa chỉ của nó.
 - Khi chạm tới **Hạn mức tiền** hoặc **Hạn mức token** hằng tháng, các quy tắc tự động dừng lại cho tới khi sang tháng mới. Những gì chính bạn yêu cầu thì không bao giờ bị dừng.
 - Các bước trong [Cài đặt → Tổng quan](/interface/settings-overview) cho thấy những gì còn phải thiết lập.

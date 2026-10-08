@@ -82,7 +82,7 @@ Blyanten ved siden av navnet på opptaket lar deg gi det nytt navn mens det påg
 
 ## Hvor opptaket havner {#where-the-recording-goes}
 
-En fanget samtale dukker opp i [vinduet Opptak](../recordings/recordings-window.md) som alle andre, med sitt eget ikon — et vindu i stedet for et rør — og med tittelen du ga den, eller **Et annet program**.
+En fanget samtale dukker opp i [vinduet Opptak](../interface/recordings.md) som alle andre, med sitt eget ikon — et vindu i stedet for et rør — og med tittelen du ga den, eller **Et annet program**.
 
 <Shot name="01_recordings" alt="Fangede møter på fanen Opptak, markert med et vindusikon" />
 

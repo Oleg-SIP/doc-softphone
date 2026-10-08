@@ -40,7 +40,7 @@ Selle dokumentatsiooni ekraanipildid on tehtud macOS-is ja näidatud väikestena
 
 1. [Lisage konto](sip-accounts/setup.md) oma keskjaama või SIP-teenusepakkuja jaoks.
 2. [Valige mikrofon ja kõlarid](sip-accounts/devices.md) ning tehke proovikõne.
-3. Otsustage, [milliseid kõnesid salvestatakse](recordings/call-recording.md).
+3. Otsustage, [milliseid kõnesid salvestatakse](recordings.md).
 4. Lisage [tuvastaja](ai-processing/transcription.md) ja [keelemudel](ai-processing/processing.md), kui soovite ülestähendusi ja kokkuvõtteid.
 
 **Seaded → Ülevaade** hoiab seda nimekirja teie eest: roheline täpp tähistab tehtud sammu, punane veel tegemata sammu. Vaadake [Seadete ülevaade](interface/settings-overview.md).
@@ -54,8 +54,8 @@ Selle dokumentatsiooni ekraanipildid on tehtud macOS-is ja näidatud väikestena
 | Valida mikrofoni, kõlarid ja helina | [Seadmed](sip-accounts/devices.md) |
 | Seadistada koodekid, kõne ootel ja kõnede ajaloo | [Kõnede seaded](sip-accounts/calls.md) |
 | Panna kolleegid ühe vajutusega nuppudele | [Nupud](sip-accounts/buttons.md) |
-| Otsustada, milliseid kõnesid ja kui kaua salvestatakse | [Kõnede salvestamine](recordings/call-recording.md) |
-| Kuulata, otsida ja lugeda oma vestlusi | [Salvestiste aken](recordings/recordings-window.md) |
+| Otsustada, milliseid kõnesid ja kui kaua salvestatakse | [Salvestised](recordings.md) |
+| Kuulata, otsida ja lugeda oma vestlusi | [Salvestiste aken](interface/recordings.md) |
 | Salvestada teises rakenduses peetud koosolekut | [Hõivamine](capture/capture.md) |
 | Valida tuvastaja, mis muudab kõne tekstiks | [Ülestähendus](ai-processing/transcription.md) |
 | Otsustada, milline tehisintellekt teeb teie vestlustest kokkuvõtteid ja kui palju see võib maksta | [Töötlemine](ai-processing/processing.md) |

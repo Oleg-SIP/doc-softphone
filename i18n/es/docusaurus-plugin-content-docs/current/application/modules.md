@@ -23,9 +23,9 @@ Cada módulo tiene una casilla, un nombre, una línea que dice lo que hace y, a 
 | **Diccionarios** | Categorías, etiquetas y señales — los códigos a los que apunta todo lo demás: [Diccionarios](/ai-processing/dictionaries). |
 | **Directorio** | La agenda: [Contactos](/interface/contacts-history). |
 | **Integración** | La API local y los webhooks: [Integración](/integration/rest-api). |
-| **Almacén de medios** | La biblioteca de conversaciones y cuánto tiempo se conservan: [Grabaciones](/recordings/recordings-window). |
+| **Almacén de medios** | La biblioteca de conversaciones y cuánto tiempo se conservan: [Grabaciones](/interface/recordings). |
 | **Procesamiento** | Las instrucciones y las reglas que las disparan: [Procesamiento](/ai-processing/processing). |
-| **Grabación** | Grabar llamadas, y avisar de ello al interlocutor: [Grabar llamadas](/recordings/call-recording). |
+| **Grabación** | Grabar llamadas, y avisar de ello al interlocutor: [Grabaciones](/recordings). |
 | **Telefonía** | SIP, cuentas, llamadas, el marcador y el historial de llamadas. |
 | **Transcripción** | Los reconocedores, la cola que los alimenta y las transcripciones que producen: [Transcripción](/ai-processing/transcription). |
 

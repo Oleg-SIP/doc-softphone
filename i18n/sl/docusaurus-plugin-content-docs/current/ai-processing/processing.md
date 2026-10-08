@@ -10,7 +10,7 @@ description: Samodejna obdelava pogovorov, mesečne meje porabe, jezikovni model
 
 ## Obdeluj pogovore samodejno {#process-conversations-automatically}
 
-- **Izklopljeno:** nič se ne zgodi, dokler tega ne zahtevate v [oknu Posnetki](../recordings/recordings-window.md).
+- **Izklopljeno:** nič se ne zgodi, dokler tega ne zahtevate v [oknu Posnetki](../interface/recordings.md).
 - **Vklopljeno:** spodnja [pravila](#rules) tečejo sama. Prav to pogovor spremeni v povzetek, kategorijo in vse drugo, ne da bi kdor koli kar koli pritisnil. Model v oblaku zaračuna vsakega od teh korakov.
 
 Pod potrditvenim poljem program pokaže, koliko je bilo porabljeno ta mesec in na koliko zahtevah, na primer *Ta mesec: 40.492 žetonov, v 84 zahtevah, brez stroškov.*

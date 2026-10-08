@@ -10,7 +10,7 @@ description: Automatische Verarbeitung der Gespräche, die monatlichen Ausgabeng
 
 ## Gespräche automatisch verarbeiten {#process-conversations-automatically}
 
-- **Aus:** Nichts geschieht, bis Sie es im [Aufnahmefenster](../recordings/recordings-window.md) verlangen.
+- **Aus:** Nichts geschieht, bis Sie es im [Aufnahmefenster](../interface/recordings.md) verlangen.
 - **An:** Die [Regeln](#rules) unten laufen von selbst. Das ist es, was aus einem Gespräch eine Zusammenfassung, eine Kategorie und alles Weitere macht, ohne dass jemand etwas drückt. Ein Modell in der Cloud berechnet jeden dieser Schritte.
 
 Unter dem Kästchen zeigt das Programm, was in diesem Monat ausgegeben wurde und für wie viele Anfragen, zum Beispiel *Diesen Monat: 40.492 Token, über 84 Anfragen, kostenlos.* Solange nichts verarbeitet wurde, steht dort *In diesem Monat wurde nichts verarbeitet.*

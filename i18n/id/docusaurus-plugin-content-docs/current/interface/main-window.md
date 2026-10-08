@@ -38,7 +38,7 @@ Di bawah cip terdapat [tombol](../sip-accounts/buttons.md) yang Anda buat untuk 
 
 ### Rekaman, Kontak, Riwayat, Pengaturan {#recordings-contacts-history-settings}
 
-Keempat entri di bagian bawah ini membuka tab di kanan, bersebelahan: [Rekaman](../recordings/recordings-window.md), [Kontak dan Riwayat](contacts-history.md), serta [Pengaturan](settings-overview.md). Tab yang sudah Anda buka tetap berada di baris paling atas sisi kanan.
+Keempat entri di bagian bawah ini membuka tab di kanan, bersebelahan: [Rekaman](../interface/recordings.md), [Kontak dan Riwayat](contacts-history.md), serta [Pengaturan](settings-overview.md). Tab yang sudah Anda buka tetap berada di baris paling atas sisi kanan.
 
 ## Panggilan yang sedang berlangsung {#a-call-in-progress}
 

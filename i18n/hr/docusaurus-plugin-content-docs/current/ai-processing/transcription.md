@@ -8,7 +8,7 @@ description: "\"Odaberite prepoznavač koji zvuk pretvara u tekst: njegovu adres
 
 <Shot name="25_transcription" alt="Postavke → Prijepis: jezik i četiri prepoznavača" />
 
-Razgovor se prepisuje kad to zatražite u [prozoru Snimke](/recordings/recordings-window), ili sam ako je u [Obradi](/ai-processing/processing) uključeno **Obrađuj razgovore automatski**. Prepoznavač na vlastitom računalu ne košta ništa; onaj u oblaku naplaćuje po minuti zvuka.
+Razgovor se prepisuje kad to zatražite u [prozoru Snimke](/interface/recordings), ili sam ako je u [Obradi](/ai-processing/processing) uključeno **Obrađuj razgovore automatski**. Prepoznavač na vlastitom računalu ne košta ništa; onaj u oblaku naplaćuje po minuti zvuka.
 
 ## Jezik {#language}
 
@@ -25,7 +25,7 @@ Prepoznavač je usluga pretvaranja govora u tekst kojoj telefon šalje zvuk. Pri
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Onaj označen kao **Zadano** desno u svom retku (na slici **X.ai**) koristi se kad ne odaberete drugi. Možete ih imati nekoliko. Padajući izbornik iznad prijepisa u [prozoru Snimke](/recordings/recordings-window#the-transcript-and-the-write-up) navodi prijepise koje je napravio svaki prepoznavač.
+Onaj označen kao **Zadano** desno u svom retku (na slici **X.ai**) koristi se kad ne odaberete drugi. Možete ih imati nekoliko. Padajući izbornik iznad prijepisa u [prozoru Snimke](/interface/recordings#transcript-or-write-up-the-drop-down) navodi prijepise koje je napravio svaki prepoznavač.
 
 Model može ostati prazan. Usluga tada koristi svoj zadani.
 
@@ -95,4 +95,4 @@ Model mora pokretati poslužitelj koji nudi krajnju točku `/v1/audio/transcript
 
 Svaki drugi poslužitelj koji nudi istu krajnju točku radi na isti način. Ako poslužitelj traži ključ, upišite ga kao za uslugu u oblaku.
 
-Prije nego što se oslonite na poslužitelj, napravite probnu snimku i pogledajte prijepis u [prozoru Snimke](/recordings/recordings-window): razgovor na jeziku koji model slabo poznaje to odmah pokazuje.
+Prije nego što se oslonite na poslužitelj, napravite probnu snimku i pogledajte prijepis u [prozoru Snimke](/interface/recordings): razgovor na jeziku koji model slabo poznaje to odmah pokazuje.

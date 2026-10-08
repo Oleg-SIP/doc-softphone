@@ -38,7 +38,7 @@ Under chipsene står de [knapper](../sip-accounts/buttons.md), du har lavet til 
 
 ### Optagelser, Kontakter, Historik, Indstillinger {#recordings-contacts-history-settings}
 
-Disse fire punkter nederst åbner hver en fane til højre, side om side: [Optagelser](../recordings/recordings-window.md), [Kontakter og historik](contacts-history.md) og [Indstillinger](settings-overview.md). Faner, du har åbnet, bliver stående i rækken øverst i højre side.
+Disse fire punkter nederst åbner hver en fane til højre, side om side: [Optagelser](../interface/recordings.md), [Kontakter og historik](contacts-history.md) og [Indstillinger](settings-overview.md). Faner, du har åbnet, bliver stående i rækken øverst i højre side.
 
 ## Et igangværende opkald {#a-call-in-progress}
 

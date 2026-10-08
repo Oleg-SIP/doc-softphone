@@ -1,6 +1,6 @@
 ---
 title: Overzicht van de instellingen
-sidebar_position: 3
+sidebar_position: 4
 description: De controlelijst Overzicht en de tabbladen van het venster Instellingen, en waar elk ervan beschreven staat.
 ---
 
@@ -36,7 +36,7 @@ De stappen zijn een leidraad, geen plicht: een stap waar u niets aan hebt, mag r
 | | **Apparaten** | [Microfoon, luidsprekers, beltoon en andere geluiden](../sip-accounts/devices.md) |
 | | **Gesprekken** | [Codecs, wisselgesprek, automatisch herhalen en de gesprekgeschiedenis](../sip-accounts/calls.md) |
 | | **Knoppen** | [Knoppen die andere toestellen bellen en volgen](../sip-accounts/buttons.md) |
-| | **Opname** | [Het opnemen van gesprekken: toestemming, vergaderingen en hoelang bestanden bewaard blijven](../recordings/call-recording.md) |
+| | **Opname** | [Het opnemen van gesprekken: toestemming, vergaderingen en hoelang bestanden bewaard blijven](../recordings.md) |
 | | **Vastleggen** | [Het geluid van andere toepassingen vastleggen](../capture/capture.md): vergaderingen in Zoom, Teams, Meet en dergelijke |
 | AI | **Transcriptie** | [Herkenners](../ai-processing/transcription.md) |
 | | **Verwerking** | [Automatische verwerking, bestedingsgrenzen, taalmodellen, prompts en regels](../ai-processing/processing.md) |

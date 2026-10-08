@@ -34,7 +34,7 @@ Lo que ocurre cuando alguien llama mientras usted está en una llamada se ajusta
 
 ## Una llamada no se grabó {#a-call-was-not-recorded}
 
-- **Ajustes → Grabación**, el primer desplegable, decide qué llamadas se graban; el valor por defecto, **A mano**, solo graba cuando pulsa grabar en la tarjeta de la llamada. Consulte [Grabar llamadas](/recordings/call-recording).
+- **Ajustes → Grabación**, el primer desplegable, decide qué llamadas se graban; el valor por defecto, **A mano**, solo graba cuando pulsa grabar en la tarjeta de la llamada. Consulte [Grabaciones](/recordings).
 - La grabación empieza cuando se contesta la llamada, así que una llamada no contestada no tiene archivo.
 - El módulo **Grabación** debe estar encendido en [Módulos](/application/modules).
 - Las grabaciones se borran según los límites de **Retención**; una grabación fijada nunca se borra.
@@ -50,7 +50,7 @@ Consulte [Captura](/capture/).
 
 ## Hay una grabación, pero no hay transcripción ni resumen {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Una conversación se transcribe y se redacta sola solo si **Procesar las conversaciones automáticamente** está encendido en [Ajustes → Procesamiento](/ai-processing/processing). Si no, pídalo en la [ventana de grabaciones](/recordings/recordings-window).
+- Una conversación se transcribe y se redacta sola solo si **Procesar las conversaciones automáticamente** está encendido en [Ajustes → Procesamiento](/ai-processing/processing). Si no, pídalo en la [ventana de grabaciones](/interface/recordings).
 - Tiene que haber un [reconocedor](/ai-processing/transcription) y un [modelo de lenguaje](/ai-processing/processing#language-models), y cada uno tiene que responder en su dirección.
 - Cuando se alcanza el **Límite de dinero** o el **Límite de tokens** mensual, las reglas automáticas se detienen hasta que cambia el mes. Lo que pide usted mismo nunca se detiene.
 - Los pasos de [Ajustes → Resumen general](/interface/settings-overview) muestran lo que falta por configurar.

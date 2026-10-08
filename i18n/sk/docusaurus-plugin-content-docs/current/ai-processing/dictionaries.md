@@ -38,7 +38,7 @@ Označenia, ktoré *môžu na ten istý rozhovor platiť všetky naraz*. Stlače
 
 ## Varovné signály {#red-flags}
 
-Veci, ktoré si vyžadujú pozornosť, nájdené v rozhovore s dôkazom a časom — napríklad *Nahnevaný zákazník* alebo *Riziko odchodu*. Varovné signály sú v [okne Nahrávky](../recordings/recordings-window.md) nakreslené červenou a každý nesie závažnosť: nízku, strednú alebo vysokú.
+Veci, ktoré si vyžadujú pozornosť, nájdené v rozhovore s dôkazom a časom — napríklad *Nahnevaný zákazník* alebo *Riziko odchodu*. Varovné signály sú v [okne Nahrávky](../interface/recordings.md) nakreslené červenou a každý nesie závažnosť: nízku, strednú alebo vysokú.
 
 ## Tvary odpovedí a jazyk {#answer-shapes-and-language}
 

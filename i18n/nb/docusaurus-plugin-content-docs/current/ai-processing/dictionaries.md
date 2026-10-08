@@ -38,7 +38,7 @@ Merker som *alle kan passe på den samme samtalen*. Trykk på **Legg til** for �
 
 ## Signaler {#red-flags}
 
-Ting som krever oppmerksomhet, funnet i samtalen med beviset og tidspunktet — for eksempel *Sint kunde* eller *Fare for oppsigelse*. Signaler tegnes i rødt i [vinduet Opptak](../recordings/recordings-window.md), og hvert har en alvorlighetsgrad: lav, middels eller høy.
+Ting som krever oppmerksomhet, funnet i samtalen med beviset og tidspunktet — for eksempel *Sint kunde* eller *Fare for oppsigelse*. Signaler tegnes i rødt i [vinduet Opptak](../interface/recordings.md), og hvert har en alvorlighetsgrad: lav, middels eller høy.
 
 ## Svarformer og språk {#answer-shapes-and-language}
 

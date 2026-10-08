@@ -34,7 +34,7 @@ Che cosa succede quando qualcuno chiama mentre lei è in conversazione si impost
 
 ## Una chiamata non è stata registrata {#a-call-was-not-recorded}
 
-- **Impostazioni → Registrazione**, il primo menu a discesa, decide quali chiamate vengono registrate; il valore predefinito, **A mano**, registra solo quando preme registra sulla scheda della chiamata. Veda [Registrare le chiamate](/recordings/call-recording).
+- **Impostazioni → Registrazione**, il primo menu a discesa, decide quali chiamate vengono registrate; il valore predefinito, **A mano**, registra solo quando preme registra sulla scheda della chiamata. Veda [Registrazioni](/recordings).
 - La registrazione inizia quando si risponde alla chiamata, perciò una chiamata senza risposta non ha un file.
 - Il modulo **Registrazione** deve essere attivo in [Moduli](/application/modules).
 - Le registrazioni vengono rimosse dai limiti in **Conservazione**; una registrazione fissata non viene mai rimossa.
@@ -50,7 +50,7 @@ Veda [Cattura](/capture/).
 
 ## C'è una registrazione, ma nessuna trascrizione o riassunto {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Una conversazione viene trascritta e riassunta da sola solo se **Elabora le conversazioni automaticamente** è attivo in [Impostazioni → Elaborazione](/ai-processing/processing). Altrimenti lo chieda nella [finestra delle registrazioni](/recordings/recordings-window).
+- Una conversazione viene trascritta e riassunta da sola solo se **Elabora le conversazioni automaticamente** è attivo in [Impostazioni → Elaborazione](/ai-processing/processing). Altrimenti lo chieda nella [finestra delle registrazioni](/interface/recordings).
 - Ci devono essere un [riconoscitore](/ai-processing/transcription) e un [modello linguistico](/ai-processing/processing#language-models), e ciascuno deve rispondere al suo indirizzo.
 - Quando viene raggiunto il **Limite di spesa** o il **Limite di token** mensile, le regole automatiche si fermano fino al mese successivo. Ciò che chiede lei stesso non viene mai fermato.
 - I passi di [Impostazioni → Panoramica](/interface/settings-overview) mostrano che cosa resta da configurare.

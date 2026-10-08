@@ -34,7 +34,7 @@ Co se stane, když vám někdo volá, zatímco telefonujete, se nastavuje v [Če
 
 ## Hovor se nenahrál {#a-call-was-not-recorded}
 
-- **Nastavení → Nahrávání**, první rozbalovací seznam, rozhoduje, které hovory se nahrávají; výchozí **Ručně** nahrává jen tehdy, když stisknete nahrávání na kartě hovoru. Viz [Nahrávání hovorů](/recordings/call-recording).
+- **Nastavení → Nahrávání**, první rozbalovací seznam, rozhoduje, které hovory se nahrávají; výchozí **Ručně** nahrává jen tehdy, když stisknete nahrávání na kartě hovoru. Viz [Nahrávky](/recordings).
 - Nahrávání začíná, když je hovor přijat, takže nepřijatý hovor nemá soubor.
 - Modul **Nahrávání** musí být zapnutý v [Modulech](/application/modules).
 - Nahrávky odstraňují limity v části **Uchovávání**; připnutá nahrávka se nikdy neodstraní.
@@ -50,7 +50,7 @@ Viz [Zachytávání](/capture/).
 
 ## Je nahrávka, ale chybí přepis nebo shrnutí {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Rozhovor se sám přepíše a zpracuje, jen pokud je v [Nastavení → Zpracování](/ai-processing/processing) zapnuto **Zpracovávat hovory automaticky**. Jinak o to požádejte v [okně nahrávek](/recordings/recordings-window).
+- Rozhovor se sám přepíše a zpracuje, jen pokud je v [Nastavení → Zpracování](/ai-processing/processing) zapnuto **Zpracovávat hovory automaticky**. Jinak o to požádejte v [okně nahrávek](/interface/recordings).
 - Musí existovat [rozpoznávač](/ai-processing/transcription) a [jazykový model](/ai-processing/processing#language-models) a každý musí na své adrese odpovídat.
 - Když se dosáhne měsíční **Mez peněz** nebo **Mez tokenů**, automatická pravidla se zastaví až do začátku dalšího měsíce. Když o něco požádáte sami, nezastaví se to nikdy.
 - Kroky v [Nastavení → Přehled](/interface/settings-overview) ukazují, co ještě zbývá nastavit.

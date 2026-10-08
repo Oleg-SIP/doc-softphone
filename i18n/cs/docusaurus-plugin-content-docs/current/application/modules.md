@@ -23,9 +23,9 @@ Každý modul má zaškrtávací políčko, název, řádek o tom, co dělá, a 
 | **Slovníky** | Kategorie, štítky a varovné signály — kódy, na které ukazuje vše ostatní: [Slovníky](/ai-processing/dictionaries). |
 | **Adresář** | Kniha adres: [Kontakty](/interface/contacts-history). |
 | **Integrace** | Místní API a webhooky: [Integrace](/integration/rest-api). |
-| **Úložiště médií** | Knihovna rozhovorů a jak dlouho se uchovávají: [Nahrávky](/recordings/recordings-window). |
+| **Úložiště médií** | Knihovna rozhovorů a jak dlouho se uchovávají: [Nahrávky](/interface/recordings). |
 | **Zpracování** | Pokyny a pravidla, která je spouštějí: [Zpracování](/ai-processing/processing). |
-| **Nahrávání** | Nahrávání hovorů a oznámení druhé straně: [Nahrávání hovorů](/recordings/call-recording). |
+| **Nahrávání** | Nahrávání hovorů a oznámení druhé straně: [Nahrávky](/recordings). |
 | **Telefon** | SIP, účty, hovory, klávesnice a historie hovorů. |
 | **Přepis** | Rozpoznávače, fronta, která je pohání, a přepisy, které vytvářejí: [Přepis](/ai-processing/transcription). |
 

@@ -34,7 +34,7 @@ To, co się dzieje, gdy ktoś dzwoni, kiedy rozmawiasz, ustawia się w [Połącz
 
 ## Połączenie nie zostało nagrane {#a-call-was-not-recorded}
 
-- **Ustawienia → Nagrywanie**, pierwsza lista rozwijana, decyduje, które połączenia są nagrywane; domyślne **Ręcznie** nagrywa tylko wtedy, gdy naciśniesz nagrywanie na karcie połączenia. Zobacz [Nagrywanie połączeń](/recordings/call-recording).
+- **Ustawienia → Nagrywanie**, pierwsza lista rozwijana, decyduje, które połączenia są nagrywane; domyślne **Ręcznie** nagrywa tylko wtedy, gdy naciśniesz nagrywanie na karcie połączenia. Zobacz [Nagrania](/recordings).
 - Nagrywanie zaczyna się, gdy połączenie zostanie odebrane, więc nieodebrane połączenie nie ma pliku.
 - Moduł **Nagrywanie** musi być włączony w [Modułach](/application/modules).
 - Nagrania są usuwane według granic w sekcji **Przechowywanie**; przypięte nagranie nigdy nie jest usuwane.
@@ -50,7 +50,7 @@ Zobacz [Przechwytywanie](/capture/).
 
 ## Jest nagranie, ale nie ma transkrypcji ani podsumowania {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Rozmowa jest spisywana i opracowywana sama tylko wtedy, gdy w [Ustawienia → Przetwarzanie](/ai-processing/processing) włączone jest **Przetwarzaj rozmowy automatycznie**. W przeciwnym razie poproś o to w [oknie nagrań](/recordings/recordings-window).
+- Rozmowa jest spisywana i opracowywana sama tylko wtedy, gdy w [Ustawienia → Przetwarzanie](/ai-processing/processing) włączone jest **Przetwarzaj rozmowy automatycznie**. W przeciwnym razie poproś o to w [oknie nagrań](/interface/recordings).
 - Musi być [rozpoznawacz](/ai-processing/transcription) i [model językowy](/ai-processing/processing#language-models), a każdy musi odpowiadać pod swoim adresem.
 - Gdy miesięczna **Granica pieniędzy** lub **Granica tokenów** zostanie osiągnięta, reguły automatyczne zatrzymują się do końca miesiąca. To, o co prosisz sam, nigdy nie jest zatrzymywane.
 - Kroki w [Ustawienia → Przegląd](/interface/settings-overview) pokazują, co jeszcze trzeba skonfigurować.

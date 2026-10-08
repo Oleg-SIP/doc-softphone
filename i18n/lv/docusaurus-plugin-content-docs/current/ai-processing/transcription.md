@@ -8,7 +8,7 @@ description: "\"Izvēlieties atpazinēju, kas skaņu pārvērš tekstā: tā adr
 
 <Shot name="25_transcription" alt="Iestatījumi → Pieraksts: valoda un četri atpazinēji" />
 
-Saruna tiek atšifrēta, kad to pieprasāt [ierakstu logā](/recordings/recordings-window), vai pati, ja sadaļā [Apstrāde](/ai-processing/processing) ir ieslēgts **Apstrādāt sarunas automātiski**. Atpazinējs jūsu datorā neko nemaksā; mākonī esošs ņem maksu par skaņas minūtēm.
+Saruna tiek atšifrēta, kad to pieprasāt [ierakstu logā](/interface/recordings), vai pati, ja sadaļā [Apstrāde](/ai-processing/processing) ir ieslēgts **Apstrādāt sarunas automātiski**. Atpazinējs jūsu datorā neko nemaksā; mākonī esošs ņem maksu par skaņas minūtēm.
 
 ## Valoda {#language}
 
@@ -25,7 +25,7 @@ Atpazinējs ir runas pārvēršanas tekstā pakalpojums, kam tālrunis nosūta s
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
 
-Tas, kas savas rindas labajā pusē atzīmēts kā **noklusējums** (attēlā **X.ai**), tiek izmantots, kad neizvēlaties citu. Jūs varat paturēt vairākus. Nolaižamais saraksts virs atšifrējuma [ierakstu logā](/recordings/recordings-window#the-transcript-and-the-write-up) uzskaita katra atpazinēja veiktos atšifrējumus.
+Tas, kas savas rindas labajā pusē atzīmēts kā **noklusējums** (attēlā **X.ai**), tiek izmantots, kad neizvēlaties citu. Jūs varat paturēt vairākus. Nolaižamais saraksts virs atšifrējuma [ierakstu logā](/interface/recordings#transcript-or-write-up-the-drop-down) uzskaita katra atpazinēja veiktos atšifrējumus.
 
 Modeli var atstāt tukšu. Tad pakalpojums izmanto savu noklusējumu.
 
@@ -95,4 +95,4 @@ Modeli jādarbina serverim, kas piedāvā ar OpenAI saderīgu galapunktu `/v1/au
 
 Jebkurš cits serveris, kas piedāvā to pašu galapunktu, darbojas tāpat. Ja serverim vajadzīga atslēga, ievadiet to tāpat kā mākoņpakalpojumam.
 
-Pirms paļaujaties uz serveri, veiciet pārbaudes ierakstu un apskatiet atšifrējumu [ierakstu logā](/recordings/recordings-window): saruna valodā, ko modelis pārzina vāji, to uzreiz parāda.
+Pirms paļaujaties uz serveri, veiciet pārbaudes ierakstu un apskatiet atšifrējumu [ierakstu logā](/interface/recordings): saruna valodā, ko modelis pārzina vāji, to uzreiz parāda.

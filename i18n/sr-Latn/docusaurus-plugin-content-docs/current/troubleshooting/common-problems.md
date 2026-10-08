@@ -34,7 +34,7 @@ Kodeci se nude redosledom spiska u [Podešavanja → Pozivi](/sip-accounts/calls
 
 ## Poziv nije snimljen {#a-call-was-not-recorded}
 
-- **Podešavanja → Snimanje**, prvi padajući meni, odlučuje koji se pozivi snimaju; podrazumevano **Ručno** snima samo kada pritisnete snimanje na kartici poziva. Pogledajte [Snimanje poziva](/recordings/call-recording).
+- **Podešavanja → Snimanje**, prvi padajući meni, odlučuje koji se pozivi snimaju; podrazumevano **Ručno** snima samo kada pritisnete snimanje na kartici poziva. Pogledajte [Snimci](/recordings).
 - Snimanje počinje kada se neko javi na poziv, pa poziv na koji se niko nije javio nema datoteku.
 - Modul **Snimanje** mora biti uključen u [Modulima](/application/modules).
 - Snimci se uklanjaju prema granicama pod **Čuvanje**; zakačen snimak se nikada ne uklanja.
@@ -50,7 +50,7 @@ Pogledajte [Hvatanje](/capture/).
 
 ## Snimak postoji, ali nema prepisa ni sažetka {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Razgovor se prepisuje i obrađuje sam samo ako je u [Podešavanja → Obrada](/ai-processing/processing) uključeno **Obrađuj razgovore samostalno**. Inače to zatražite u [prozoru Snimci](/recordings/recordings-window).
+- Razgovor se prepisuje i obrađuje sam samo ako je u [Podešavanja → Obrada](/ai-processing/processing) uključeno **Obrađuj razgovore samostalno**. Inače to zatražite u [prozoru Snimci](/interface/recordings).
 - Mora da postoje [prepoznavač](/ai-processing/transcription) i [jezički model](/ai-processing/processing#language-models), a svaki mora da odgovara na svojoj adresi.
 - Kada se dostigne mesečna **Novčana granica** ili **Granica žetona**, automatska pravila staju do kraja meseca. Ono što zatražite sami nikada se ne zaustavlja.
 - Koraci u [Podešavanja → Pregled](/interface/settings-overview) pokazuju šta još treba podesiti.

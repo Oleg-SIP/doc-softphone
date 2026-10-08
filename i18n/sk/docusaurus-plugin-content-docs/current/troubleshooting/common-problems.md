@@ -34,7 +34,7 @@ Kodeky sa ponúkajú v poradí zoznamu v [Nastavenia → Hovory](/sip-accounts/c
 
 ## Hovor sa nenahral {#a-call-was-not-recorded}
 
-- **Nastavenia → Nahrávanie**, prvý rozbaľovací zoznam, rozhoduje, ktoré hovory sa nahrávajú; predvolené **Ručne** nahráva iba vtedy, keď stlačíte nahrávanie na karte hovoru. Pozrite [Nahrávanie hovorov](/recordings/call-recording).
+- **Nastavenia → Nahrávanie**, prvý rozbaľovací zoznam, rozhoduje, ktoré hovory sa nahrávajú; predvolené **Ručne** nahráva iba vtedy, keď stlačíte nahrávanie na karte hovoru. Pozrite [Nahrávky](/recordings).
 - Nahrávanie sa začne, keď je hovor prijatý, takže neprijatý hovor nemá súbor.
 - Modul **Nahrávanie** musí byť zapnutý v [Moduloch](/application/modules).
 - Nahrávky sa odstraňujú podľa hraníc v časti **Uchovávanie**; pripnutá nahrávka sa nikdy neodstráni.
@@ -50,7 +50,7 @@ Pozrite [Zachytávanie](/capture/).
 
 ## Nahrávka je, ale prepis ani zhrnutie nie {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Rozhovor sa prepíše a spracuje sám iba vtedy, keď je v [Nastavenia → Spracovanie](/ai-processing/processing) zapnuté **Spracovávať hovory automaticky**. Inak o to požiadajte v [okne Nahrávky](/recordings/recordings-window).
+- Rozhovor sa prepíše a spracuje sám iba vtedy, keď je v [Nastavenia → Spracovanie](/ai-processing/processing) zapnuté **Spracovávať hovory automaticky**. Inak o to požiadajte v [okne Nahrávky](/interface/recordings).
 - Musí existovať [rozpoznávač](/ai-processing/transcription) a [jazykový model](/ai-processing/processing#language-models) a každý musí odpovedať na svojej adrese.
 - Keď sa dosiahne mesačná **Hranica peňazí** alebo **Hranica tokenov**, automatické pravidlá sa zastavia do konca mesiaca. To, o čo požiadate sami, sa nikdy nezastaví.
 - Kroky v [Nastavenia → Prehľad](/interface/settings-overview) ukazujú, čo ešte treba nastaviť.

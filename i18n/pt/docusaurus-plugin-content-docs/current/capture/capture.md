@@ -82,7 +82,7 @@ O lápis ao lado do nome da gravação permite mudar-lhe o nome enquanto decorre
 
 ## Para onde vai a gravação {#where-the-recording-goes}
 
-Uma conversa capturada aparece na [janela de gravações](../recordings/recordings-window.md) como qualquer outra, com o seu próprio ícone, uma janela em vez de um auscultador, e com o título que lhe deu ou **Outra aplicação**.
+Uma conversa capturada aparece na [janela de gravações](../interface/recordings.md) como qualquer outra, com o seu próprio ícone, uma janela em vez de um auscultador, e com o título que lhe deu ou **Outra aplicação**.
 
 <Shot name="01_recordings" alt="Reuniões capturadas no separador Gravações, marcadas com um ícone de janela" />
 

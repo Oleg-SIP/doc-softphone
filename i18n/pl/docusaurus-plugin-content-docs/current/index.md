@@ -40,7 +40,7 @@ Zrzuty ekranu w tej dokumentacji wykonano w macOS i pokazano w małym rozmiarze:
 
 1. [Dodaj konto](sip-accounts/setup.md) dla swojej centrali lub operatora SIP.
 2. [Wybierz mikrofon i głośniki](sip-accounts/devices.md) i wykonaj połączenie testowe.
-3. Zdecyduj, [które połączenia są nagrywane](recordings/call-recording.md).
+3. Zdecyduj, [które połączenia są nagrywane](recordings.md).
 4. Dodaj [rozpoznawacz](ai-processing/transcription.md) i [model językowy](ai-processing/processing.md), jeśli chcesz mieć transkrypcje i opracowania.
 
 **Ustawienia → Przegląd** prowadzi tę listę za ciebie: zielona kropka oznacza krok zrobiony, czerwona — krok, który został. Zobacz [Przegląd ustawień](interface/settings-overview.md).
@@ -54,8 +54,8 @@ Zrzuty ekranu w tej dokumentacji wykonano w macOS i pokazano w małym rozmiarze:
 | Wybrać mikrofon, głośniki i dzwonek | [Urządzenia](sip-accounts/devices.md) |
 | Ustawić kodeki, połączenie oczekujące i historię połączeń | [Ustawienia połączeń](sip-accounts/calls.md) |
 | Umieścić współpracowników na przyciskach jednego dotknięcia | [Przyciski](sip-accounts/buttons.md) |
-| Zdecydować, które połączenia są nagrywane i jak długo | [Nagrywanie połączeń](recordings/call-recording.md) |
-| Słuchać, przeszukiwać i czytać swoje rozmowy | [Okno nagrań](recordings/recordings-window.md) |
+| Zdecydować, które połączenia są nagrywane i jak długo | [Nagrania](recordings.md) |
+| Słuchać, przeszukiwać i czytać swoje rozmowy | [Okno nagrań](interface/recordings.md) |
 | Nagrać spotkanie odbywające się w innej aplikacji | [Przechwytywanie](capture/capture.md) |
 | Wybrać rozpoznawacz, który zamienia mowę w tekst | [Transkrypcja](ai-processing/transcription.md) |
 | Zdecydować, która SI opracowuje twoje rozmowy i ile to może kosztować | [Przetwarzanie](ai-processing/processing.md) |

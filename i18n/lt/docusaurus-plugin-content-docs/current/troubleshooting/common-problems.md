@@ -34,7 +34,7 @@ Kas nutinka, kai kas nors skambina, kol kalbate, nustatoma skiltyje [Skambučio 
 
 ## Skambutis nebuvo įrašytas {#a-call-was-not-recorded}
 
-- **Nustatymai → Įrašymas**, pirmasis išskleidžiamasis sąrašas, nusprendžia, kurie skambučiai įrašomi; numatytoji reikšmė **Rankomis** įrašo tik kai skambučio kortelėje paspaudžiate įrašymo mygtuką. Žr. [Skambučių įrašymas](/recordings/call-recording).
+- **Nustatymai → Įrašymas**, pirmasis išskleidžiamasis sąrašas, nusprendžia, kurie skambučiai įrašomi; numatytoji reikšmė **Rankomis** įrašo tik kai skambučio kortelėje paspaudžiate įrašymo mygtuką. Žr. [Įrašai](/recordings).
 - Įrašymas prasideda, kai atsiliepiama į skambutį, todėl neatsilieptas skambutis failo neturi.
 - Modulis **Įrašymas** turi būti įjungtas skiltyje [Moduliai](/application/modules).
 - Įrašai šalinami pagal ribas skiltyje **Laikymas**; prisegtas įrašas niekada nešalinamas.
@@ -50,7 +50,7 @@ Kas nutinka, kai kas nors skambina, kol kalbate, nustatoma skiltyje [Skambučio 
 
 ## Įrašas yra, bet nėra iššifruoto teksto ar santraukos {#there-is-a-recording-but-no-transcript-or-summary}
 
-- Pokalbis iššifruojamas ir apibendrinamas savaime tik tada, jei skiltyje [Nustatymai → Apdorojimas](/ai-processing/processing) įjungta **Apdoroti pokalbius automatiškai**. Kitaip paprašykite to [įrašų lange](/recordings/recordings-window).
+- Pokalbis iššifruojamas ir apibendrinamas savaime tik tada, jei skiltyje [Nustatymai → Apdorojimas](/ai-processing/processing) įjungta **Apdoroti pokalbius automatiškai**. Kitaip paprašykite to [įrašų lange](/interface/recordings).
 - Turi būti [atpažintuvas](/ai-processing/transcription) ir [kalbos modelis](/ai-processing/processing#language-models), ir kiekvienas turi atsakyti savo adresu.
 - Pasiekus mėnesio **Pinigų riba** ar **Žetonų riba**, automatinės taisyklės sustoja iki mėnesio pabaigos. Tai, ko prašote patys, niekada nesustabdoma.
 - Skilties [Nustatymai → Apžvalga](/interface/settings-overview) žingsniai rodo, ką dar reikia nustatyti.

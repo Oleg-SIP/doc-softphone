@@ -1,6 +1,6 @@
 ---
 title: Pregled podešavanja
-sidebar_position: 3
+sidebar_position: 4
 description: Kontrolni spisak Pregled i kartice prozora Podešavanja, i gde je svaka opisana.
 ---
 
@@ -36,7 +36,7 @@ Koraci su vodič, a ne obaveza: korak koji vam ne treba može da ostane crven.
 | | **Uređaji** | [Mikrofon, zvučnici, zvono i drugi zvuci](../sip-accounts/devices.md) |
 | | **Pozivi** | [Kodeci, poziv na čekanju, automatsko biranje i dnevnik poziva](../sip-accounts/calls.md) |
 | | **Dugmad** | [Dugmad koja biraju i prate druge interne brojeve](../sip-accounts/buttons.md) |
-| | **Snimanje** | [Snimanje poziva: pristanak, konferencije i koliko se dugo datoteke čuvaju](../recordings/call-recording.md) |
+| | **Snimanje** | [Snimanje poziva: pristanak, konferencije i koliko se dugo datoteke čuvaju](../recordings.md) |
 | | **Hvatanje** | [Hvatanje zvuka drugih aplikacija](../capture/capture.md): sastanci u Zoomu, Teamsu, Meetu i sličnim |
 | Veštačka inteligencija | **Prepisivanje** | [Prepoznavači](../ai-processing/transcription.md) |
 | | **Obrada** | [Automatska obrada, granice potrošnje, jezički modeli, uputstva i pravila](../ai-processing/processing.md) |

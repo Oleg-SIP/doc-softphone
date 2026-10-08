@@ -40,7 +40,7 @@ A dokumentáció képernyőképei macOS-en készültek, és kicsinyítve jelenne
 
 1. [Adjon hozzá egy fiókot](sip-accounts/setup.md) az alközpontjához vagy a SIP-szolgáltatójához.
 2. [Válassza ki a mikrofont és a hangszórókat](sip-accounts/devices.md), és indítson egy próbahívást.
-3. Döntse el, [mely hívásokról készüljön felvétel](recordings/call-recording.md).
+3. Döntse el, [mely hívásokról készüljön felvétel](recordings.md).
 4. Adjon hozzá egy [felismerőt](ai-processing/transcription.md) és egy [nyelvi modellt](ai-processing/processing.md), ha leiratokat és feldolgozásokat szeretne.
 
 A **Beállítások → Áttekintés** vezeti Ön helyett ezt a listát: a zöld pont a már elvégzett lépést jelöli, a piros a még hátralévőt. Lásd: [A beállítások áttekintése](interface/settings-overview.md).
@@ -54,8 +54,8 @@ A **Beállítások → Áttekintés** vezeti Ön helyett ezt a listát: a zöld 
 | Kiválasztani a mikrofont, a hangszórókat és a csengőhangot | [Eszközök](sip-accounts/devices.md) |
 | Beállítani a kodekeket, a hívásvárakoztatást és a hívásnaplót | [Hívásbeállítások](sip-accounts/calls.md) |
 | Egyérintéses gombokra tenni a kollégákat | [Gombok](sip-accounts/buttons.md) |
-| Eldönteni, mely hívásokról és mennyi ideig maradjon felvétel | [Hívások rögzítése](recordings/call-recording.md) |
-| Meghallgatni, keresni és elolvasni a beszélgetéseit | [A Felvételek ablak](recordings/recordings-window.md) |
+| Eldönteni, mely hívásokról és mennyi ideig maradjon felvétel | [Felvételek](recordings.md) |
+| Meghallgatni, keresni és elolvasni a beszélgetéseit | [A Felvételek ablak](interface/recordings.md) |
 | Rögzíteni egy másik alkalmazásban tartott megbeszélést | [Rögzítés](capture/capture.md) |
 | Kiválasztani a beszédet szöveggé alakító felismerőt | [Átirat](ai-processing/transcription.md) |
 | Eldönteni, melyik MI dolgozza fel a beszélgetéseit, és mennyibe kerülhet | [Feldolgozás](ai-processing/processing.md) |

@@ -10,7 +10,7 @@ description: Keskustelujen automaattinen käsittely, kuukausittaiset kulurajat, 
 
 ## Käsittele keskustelut automaattisesti {#process-conversations-automatically}
 
-- **Pois:** mitään ei tapahdu, ennen kuin pyydät sitä [Tallenteet-ikkunassa](../recordings/recordings-window.md).
+- **Pois:** mitään ei tapahdu, ennen kuin pyydät sitä [Tallenteet-ikkunassa](../interface/recordings.md).
 - **Päällä:** alla olevat [säännöt](#rules) suoritetaan itsestään. Tämä muuttaa keskustelun tiivistelmäksi, luokaksi ja kaikeksi muuksi ilman, että kenenkään tarvitsee painaa mitään. Pilvessä oleva malli laskuttaa jokaisesta näistä askelista.
 
 Valintaruudun alla ohjelma näyttää, mitä tässä kuussa on käytetty ja kuinka monella pyynnöllä, esimerkiksi *Tässä kuussa: 40.492 tokenia, 84 pyynnöllä, maksutta.*

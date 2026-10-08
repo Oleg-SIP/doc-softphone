@@ -1,6 +1,6 @@
 ---
 title: Contactos e historial
-sidebar_position: 2
+sidebar_position: 3
 description: La agenda y el historial de llamadas, junto al teléfono.
 ---
 

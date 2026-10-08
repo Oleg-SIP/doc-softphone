@@ -1,6 +1,6 @@
 ---
 title: Panoramica delle impostazioni
-sidebar_position: 3
+sidebar_position: 4
 description: La lista di controllo Panoramica e le schede della finestra Impostazioni, e dove è descritta ciascuna.
 ---
 
@@ -36,7 +36,7 @@ I passi sono una guida, non un obbligo: un passo che non le serve può restare r
 | | **Dispositivi** | [Microfono, altoparlanti, suoneria e altri suoni](../sip-accounts/devices.md) |
 | | **Chiamate** | [Codec, avviso di chiamata, richiamata automatica e registro chiamate](../sip-accounts/calls.md) |
 | | **Pulsanti** | [Pulsanti che chiamano, e seguono, altri interni](../sip-accounts/buttons.md) |
-| | **Registrazione** | [Registrazione delle chiamate: consenso, conferenze e per quanto tempo si conservano i file](../recordings/call-recording.md) |
+| | **Registrazione** | [Registrazione delle chiamate: consenso, conferenze e per quanto tempo si conservano i file](../recordings.md) |
 | | **Cattura** | [Catturare il suono di altre applicazioni](../capture/capture.md): riunioni in Zoom, Teams, Meet e simili |
 | IA | **Trascrizione** | [Riconoscitori](../ai-processing/transcription.md) |
 | | **Elaborazione** | [Elaborazione automatica, limiti di spesa, modelli linguistici, prompt e regole](../ai-processing/processing.md) |

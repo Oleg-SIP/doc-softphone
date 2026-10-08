@@ -34,7 +34,7 @@ Hva som skjer når noen ringer mens du er i en samtale, stilles inn under [Samta
 
 ## En samtale ble ikke tatt opp {#a-call-was-not-recorded}
 
-- **Innstillinger → Opptak**, den første nedtrekkslisten, bestemmer hvilke samtaler som tas opp; standarden, **For hånd**, tar bare opp når du trykker på ta opp på samtalekortet. Se [Ta opp samtaler](/recordings/call-recording).
+- **Innstillinger → Opptak**, den første nedtrekkslisten, bestemmer hvilke samtaler som tas opp; standarden, **For hånd**, tar bare opp når du trykker på ta opp på samtalekortet. Se [Opptak](/recordings).
 - Opptaket starter når samtalen besvares, så en samtale som ikke ble besvart, har ingen fil.
 - Modulen **Opptak** må være på under [Moduler](/application/modules).
 - Opptak fjernes av grensene under **Oppbevaring**; et festet opptak fjernes aldri.
@@ -50,7 +50,7 @@ Se [Fanging](/capture/).
 
 ## Det finnes et opptak, men ingen utskrift eller sammendrag {#there-is-a-recording-but-no-transcript-or-summary}
 
-- En samtale skrives bare ut og oppsummeres av seg selv hvis **Behandle samtaler automatisk** er på under [Innstillinger → Behandling](/ai-processing/processing). Ellers ber du om det i [vinduet Opptak](/recordings/recordings-window).
+- En samtale skrives bare ut og oppsummeres av seg selv hvis **Behandle samtaler automatisk** er på under [Innstillinger → Behandling](/ai-processing/processing). Ellers ber du om det i [vinduet Opptak](/interface/recordings).
 - Det må finnes en [gjenkjenner](/ai-processing/transcription) og en [språkmodell](/ai-processing/processing#language-models), og hver må svare på sin adresse.
 - Når den månedlige **Pengegrense** eller **Tokengrense** er nådd, stopper de automatiske reglene til måneden skifter. Det du selv ber om, stoppes aldri.
 - Trinnene i [Innstillinger → Oversikt](/interface/settings-overview) viser hva som fortsatt gjenstår å sette opp.

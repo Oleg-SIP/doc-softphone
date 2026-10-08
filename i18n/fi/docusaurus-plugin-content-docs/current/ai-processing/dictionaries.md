@@ -38,7 +38,7 @@ Merkinnät, jotka *voivat kaikki pitää paikkansa samassa keskustelussa*. Paina
 
 ## Merkit {#red-flags}
 
-Asiat, jotka vaativat huomiota, löydettyinä keskustelusta todisteen ja ajankohdan kera — esimerkiksi *Vihainen asiakas* tai *Lähtemisen riski*. Merkit piirretään punaisella [Tallenteet-ikkunassa](../recordings/recordings-window.md), ja jokaisella on vakavuus: matala, keskitaso tai korkea.
+Asiat, jotka vaativat huomiota, löydettyinä keskustelusta todisteen ja ajankohdan kera — esimerkiksi *Vihainen asiakas* tai *Lähtemisen riski*. Merkit piirretään punaisella [Tallenteet-ikkunassa](../interface/recordings.md), ja jokaisella on vakavuus: matala, keskitaso tai korkea.
 
 ## Vastausmuodot ja kieli {#answer-shapes-and-language}
 

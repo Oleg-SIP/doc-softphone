@@ -40,7 +40,7 @@ Die Bildschirmfotos in dieser Dokumentation stammen von macOS und werden verklei
 
 1. [Fügen Sie ein Konto hinzu](sip-accounts/setup.md) für Ihre Telefonanlage oder Ihren SIP-Anbieter.
 2. [Wählen Sie Mikrofon und Lautsprecher](sip-accounts/devices.md) und führen Sie einen Testanruf.
-3. Legen Sie fest, [welche Anrufe aufgenommen werden](recordings/call-recording.md).
+3. Legen Sie fest, [welche Anrufe aufgenommen werden](recordings.md).
 4. Fügen Sie einen [Spracherkenner](ai-processing/transcription.md) und ein [Sprachmodell](ai-processing/processing.md) hinzu, wenn Sie Transkripte und Auswertungen möchten.
 
 **Einstellungen → Übersicht** führt diese Liste für Sie: Ein grüner Punkt markiert einen erledigten Schritt, ein roter einen, der noch fehlt. Siehe [Übersicht der Einstellungen](interface/settings-overview.md).
@@ -54,8 +54,8 @@ Die Bildschirmfotos in dieser Dokumentation stammen von macOS und werden verklei
 | Mikrofon, Lautsprecher und Klingelton wählen möchten | [Geräte](sip-accounts/devices.md) |
 | Codecs, Anklopfen und Anrufliste einstellen möchten | [Anrufeinstellungen](sip-accounts/calls.md) |
 | Kollegen auf Tasten legen möchten | [Tasten](sip-accounts/buttons.md) |
-| festlegen möchten, welche Anrufe aufgenommen werden und wie lange | [Anrufe aufnehmen](recordings/call-recording.md) |
-| Ihre Gespräche anhören, durchsuchen und lesen möchten | [Aufnahmefenster](recordings/recordings-window.md) |
+| festlegen möchten, welche Anrufe aufgenommen werden und wie lange | [Aufnahmen](recordings.md) |
+| Ihre Gespräche anhören, durchsuchen und lesen möchten | [Aufnahmefenster](interface/recordings.md) |
 | eine Besprechung in einer anderen Anwendung aufnehmen möchten | [Mitschnitt](capture/capture.md) |
 | den Spracherkenner wählen möchten, der Sprache in Text verwandelt | [Transkription](ai-processing/transcription.md) |
 | festlegen möchten, welche KI Ihre Gespräche auswertet und was das kosten darf | [Verarbeitung](ai-processing/processing.md) |

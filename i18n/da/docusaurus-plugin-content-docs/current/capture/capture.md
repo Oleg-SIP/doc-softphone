@@ -82,7 +82,7 @@ Blyanten ved siden af optagelsens navn lader dig omdøbe den, mens den står på
 
 ## Hvor optagelsen havner {#where-the-recording-goes}
 
-En opfanget samtale dukker op i [vinduet Optagelser](../recordings/recordings-window.md) som enhver anden, med sit eget ikon — et vindue i stedet for et rør — og med den titel, du gav den, eller **Et andet program**.
+En opfanget samtale dukker op i [vinduet Optagelser](../interface/recordings.md) som enhver anden, med sit eget ikon — et vindue i stedet for et rør — og med den titel, du gav den, eller **Et andet program**.
 
 <Shot name="01_recordings" alt="Opfangede møder på fanen Optagelser, markeret med et vinduesikon" />
 

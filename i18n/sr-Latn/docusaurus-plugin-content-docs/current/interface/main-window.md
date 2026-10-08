@@ -38,7 +38,7 @@ Ispod znački su [dugmad](../sip-accounts/buttons.md) koju ste napravili za kole
 
 ### Snimci, Kontakti, Istorija, Podešavanja {#recordings-contacts-history-settings}
 
-Ove četiri stavke na dnu otvaraju karticu desno, jednu pored druge: [Snimci](../recordings/recordings-window.md), [Kontakti i Istorija](contacts-history.md) i [Podešavanja](settings-overview.md). Kartice koje ste otvorili ostaju u redu na vrhu desne strane.
+Ove četiri stavke na dnu otvaraju karticu desno, jednu pored druge: [Snimci](../interface/recordings.md), [Kontakti i Istorija](contacts-history.md) i [Podešavanja](settings-overview.md). Kartice koje ste otvorili ostaju u redu na vrhu desne strane.
 
 ## Poziv u toku {#a-call-in-progress}
 

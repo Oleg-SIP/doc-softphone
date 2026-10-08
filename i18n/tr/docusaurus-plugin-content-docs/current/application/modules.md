@@ -23,9 +23,9 @@ Her modülün bir onay kutusu, bir adı, ne yaptığını söyleyen bir satırı
 | **Sözlükler** | Kategoriler, etiketler ve uyarı işaretleri — diğer her şeyin başvurduğu kodlar: [Sözlükler](/ai-processing/dictionaries). |
 | **Rehber** | Adres defteri: [Kişiler](/interface/contacts-history). |
 | **Bütünleştirme** | Yerel API ve web kancaları: [Bütünleştirme](/integration/rest-api). |
-| **Ortam deposu** | Görüşmelerin kitaplığı ve ne kadar süre saklandıkları: [Kayıtlar](/recordings/recordings-window). |
+| **Ortam deposu** | Görüşmelerin kitaplığı ve ne kadar süre saklandıkları: [Kayıtlar](/interface/recordings). |
 | **İşleme** | Yönergeler ve onları ateşleyen kurallar: [İşleme](/ai-processing/processing). |
-| **Kayıt** | Çağrıları kaydetme ve bunu karşı tarafa bildirme: [Çağrıları kaydetme](/recordings/call-recording). |
+| **Kayıt** | Çağrıları kaydetme ve bunu karşı tarafa bildirme: [Kayıtlar](/recordings). |
 | **Telefon** | SIP, hesaplar, çağrılar, çevirici ve çağrı geçmişi. |
 | **Yazıya döküm** | Tanıyıcılar, onları yöneten kuyruk ve ürettikleri dökümler: [Yazıya döküm](/ai-processing/transcription). |
 
