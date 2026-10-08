@@ -1,5 +1,5 @@
 // @ts-check
-/* The Russian-only documentation for http://docs.ai-softphone.ru/ — the
+/* The Russian-only documentation for https://docs.ai-softphone.ru/ — the
    same pages as i18n/ru, built on their own (npm run build:ru), in the
    look of ai-softphone.ru: no language switcher, a link to the main site at
    the top and at the bottom, and no Google Analytics (the main site counts
@@ -9,9 +9,8 @@ import base from './docusaurus.config.js';
 
 const productUrl = 'https://ai-softphone.ru/';
 
-// The site speaks http:// until the host has a certificate for the
-// subdomain; set SITE_URL=https://docs.ai-softphone.ru then.
-const url = process.env.SITE_URL || 'http://docs.ai-softphone.ru';
+// The site is served over HTTPS; SITE_URL overrides the address (a test host).
+const url = process.env.SITE_URL || 'https://docs.ai-softphone.ru';
 
 const year = new Date().getFullYear();
 
