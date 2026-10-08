@@ -13,7 +13,7 @@ const baseUrl = process.env.BASE_URL || '/';
 /* The product site in the page's language, as its own hreflang links
    spell it: English at the root, every other language as ?lang=<code>.
    Docusaurus sets the locale before it loads this file for each one. */
-const locale = process.env.DOCUSAURUS_CURRENT_LOCALE || 'en';
+const locale = process.env.DOCUSAURUS_CURRENT_LOCALE || languages[0].code;
 const productSite = locale === 'en' ? 'https://ai-softphone.com/' : `https://ai-softphone.com/?lang=${locale}`;
 
 /* The footer link that brings the cookie question back, in the page's
@@ -64,10 +64,10 @@ const config = {
     hooks: { onBrokenMarkdownLinks: 'warn' },
   },
 
-  // The thirty languages of ai-softphone.com. English is the root (/),
-  // the others live at /<code>/. Missing translations fall back to English.
+  // Russian only (languages.json). A page without a Russian file falls
+  // back to the English one in docs/.
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: languages[0].code,
     locales: languages.map((l) => l.code),
     localeConfigs: Object.fromEntries(
       languages.map((l) => [l.code, { label: l.name, htmlLang: l.code }]),
