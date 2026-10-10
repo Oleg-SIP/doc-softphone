@@ -25,7 +25,7 @@ Hver oppstilling har de samme vinduene; forskjellen er hvor de står. **Telefone
 
 ## Språk {#language}
 
-Nedtrekkslisten velger språket i grensesnittet; **Som denne maskinen** er standard. Det gjelder bare grensesnittet. Hvilket språk som snakkes i en samtale, er en egen innstilling, og det følger med utskriftene — se [Transkripsjon](/ai-processing/transcription#language).
+Nedtrekkslisten velger språket i grensesnittet; **Som denne maskinen** er standard. Det gjelder bare grensesnittet. Hvilket språk som snakkes i en samtale, er en egen innstilling, og det følger med utskriftene — se [Transkripsjon](/ai-processing/transcription#the-recognisers-card).
 
 Promptene, reglene og ordlistene som fulgte med programmet, blir værende på sitt språk når du bytter. **Gjenopprett standardverdier** under [Behandling](/ai-processing/processing#defaults) og under [Ordlister](/ai-processing/dictionaries#defaults) tar dem over til det nye.
 

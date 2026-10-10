@@ -25,7 +25,7 @@ Kiekviename išdėstyme yra tie patys langai; skiriasi tik jų vieta. **Telefona
 
 ## Kalba {#language}
 
-Išskleidžiamasis sąrašas pasirenka sąsajos kalbą; numatytoji reikšmė — **Kaip šis kompiuteris**. Tai liečia tik sąsają. Kalba, kuria kalbama skambutyje, yra atskiras nustatymas, ir ji ateina su iššifruotais tekstais — žr. [Užrašas](/ai-processing/transcription#language).
+Išskleidžiamasis sąrašas pasirenka sąsajos kalbą; numatytoji reikšmė — **Kaip šis kompiuteris**. Tai liečia tik sąsają. Kalba, kuria kalbama skambutyje, yra atskiras nustatymas, ir ji ateina su iššifruotais tekstais — žr. [Užrašas](/ai-processing/transcription#the-recognisers-card).
 
 Su programa atėję nurodymai, taisyklės ir žodynai lieka savo kalba, kai keičiate kalbą. **Atkurti numatytuosius** skiltyse [Apdorojimas](/ai-processing/processing#defaults) ir [Žodynai](/ai-processing/dictionaries#defaults) perkelia juos į naująją.
 

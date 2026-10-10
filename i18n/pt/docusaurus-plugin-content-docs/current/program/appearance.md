@@ -25,7 +25,7 @@ Todas as disposições têm as mesmas janelas; o que muda é onde ficam. **O tel
 
 ## Língua {#language}
 
-A lista pendente escolhe a língua da interface; **Como este computador** é o valor por omissão. É só a interface. A língua falada numa chamada é uma definição à parte, e chega com as transcrições — veja [Transcrição](/ai-processing/transcription#language).
+A lista pendente escolhe a língua da interface; **Como este computador** é o valor por omissão. É só a interface. A língua falada numa chamada é uma definição à parte, e chega com as transcrições — veja [Transcrição](/ai-processing/transcription#the-recognisers-card).
 
 As instruções, as regras e os dicionários que vieram com o programa ficam na sua língua quando muda. **Repor os valores por omissão** em [Processamento](/ai-processing/processing#defaults) e em [Dicionários](/ai-processing/dictionaries#defaults) passa-os para a nova.
 

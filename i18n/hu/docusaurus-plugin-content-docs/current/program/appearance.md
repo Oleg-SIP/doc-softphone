@@ -25,7 +25,7 @@ Minden elrendezés ugyanazokat az ablakokat tartalmazza; csak az különbözik, 
 
 ## Nyelv {#language}
 
-A legördülő lista választja ki a felület nyelvét; az alapérték a **Mint ez a számítógép**. Ez csak a felületre vonatkozik. Hogy egy hívásban milyen nyelven beszélnek, az külön beállítás, és a leiratokkal együtt érkezik — lásd: [Átirat](/ai-processing/transcription#language).
+A legördülő lista választja ki a felület nyelvét; az alapérték a **Mint ez a számítógép**. Ez csak a felületre vonatkozik. Hogy egy hívásban milyen nyelven beszélnek, az külön beállítás, és a leiratokkal együtt érkezik — lásd: [Átirat](/ai-processing/transcription#the-recognisers-card).
 
 A programmal érkezett utasítások, szabályok és szótárak váltáskor a saját nyelvükön maradnak. A [Feldolgozás](/ai-processing/processing#defaults) és a [Szótárak](/ai-processing/dictionaries#defaults) lapon lévő **Alapértékek visszaállítása** hozza át őket az új nyelvre.
 

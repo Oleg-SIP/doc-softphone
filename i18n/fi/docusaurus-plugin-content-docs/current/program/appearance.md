@@ -25,7 +25,7 @@ Jokaisessa asettelussa on samat ikkunat; ero on siinä, missä ne ovat. **Puheli
 
 ## Kieli {#language}
 
-Pudotusvalikko valitsee käyttöliittymän kielen; oletus on **Kuten tämä tietokone**. Se koskee vain käyttöliittymää. Puhelussa puhuttu kieli on erillinen asetus, ja se tulee litterointien mukana — katso [Litterointi](/ai-processing/transcription#language).
+Pudotusvalikko valitsee käyttöliittymän kielen; oletus on **Kuten tämä tietokone**. Se koskee vain käyttöliittymää. Puhelussa puhuttu kieli on erillinen asetus, ja se tulee litterointien mukana — katso [Litterointi](/ai-processing/transcription#the-recognisers-card).
 
 Ohjelman mukana tulleet kehotteet, säännöt ja sanastot pysyvät omalla kielellään, kun vaihdat kieltä. **Palauta oletusarvot** kohdissa [Käsittely](/ai-processing/processing#defaults) ja [Sanastot](/ai-processing/dictionaries#defaults) tuo ne uudelle kielelle.
 

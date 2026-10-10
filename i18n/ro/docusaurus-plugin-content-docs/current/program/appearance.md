@@ -25,7 +25,7 @@ Fiecare aranjament conține aceleași ferestre; diferă doar locul în care stau
 
 ## Limbă {#language}
 
-Lista derulantă alege limba interfeței; implicit este **Ca acest calculator**. Este vorba doar de interfață. Limba vorbită într-un apel este o setare separată și vine odată cu transcrierile — consultați [Transcriere](/ai-processing/transcription#language).
+Lista derulantă alege limba interfeței; implicit este **Ca acest calculator**. Este vorba doar de interfață. Limba vorbită într-un apel este o setare separată și vine odată cu transcrierile — consultați [Transcriere](/ai-processing/transcription#the-recognisers-card).
 
 Instrucțiunile, regulile și dicționarele venite cu programul rămân în limba lor atunci când o schimbați. **Restabilește valorile implicite** din [Prelucrare](/ai-processing/processing#defaults) și din [Dicționare](/ai-processing/dictionaries#defaults) le aduce în limba nouă.
 

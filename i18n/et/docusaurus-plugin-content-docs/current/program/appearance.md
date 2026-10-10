@@ -25,7 +25,7 @@ Igas paigutuses on samad aknad; erinev on ainult nende asukoht. **Telefon sulgub
 
 ## Keel {#language}
 
-Ripploend valib kasutajaliidese keele; vaikimisi on **Nagu see arvuti**. See puudutab ainult kasutajaliidest. Keel, milles kõnes räägitakse, on eraldi seade ja see tuleb koos ülestähendustega — vaadake [Ülestähendus](/ai-processing/transcription#language).
+Ripploend valib kasutajaliidese keele; vaikimisi on **Nagu see arvuti**. See puudutab ainult kasutajaliidest. Keel, milles kõnes räägitakse, on eraldi seade ja see tuleb koos ülestähendustega — vaadake [Ülestähendus](/ai-processing/transcription#the-recognisers-card).
 
 Programmiga kaasa tulnud juhised, reeglid ja sõnastikud jäävad keele vahetamisel oma keelde. **Taasta vaikeväärtused** jaotistes [Töötlemine](/ai-processing/processing#defaults) ja [Sõnastikud](/ai-processing/dictionaries#defaults) toob need uude keelde.
 

@@ -25,7 +25,7 @@ Her düzen aynı pencereleri içerir; değişen, nerede durduklarıdır. **Bunu 
 
 ## Dil {#language}
 
-Açılır liste arayüzün dilini seçer; öntanımlı değer **Bu bilgisayardaki gibi** seçeneğidir. Bu yalnızca arayüzle ilgilidir. Bir çağrıda hangi dilin konuşulduğu ayrı bir ayardır ve dökümlerle birlikte gelir — bkz. [Yazıya döküm](/ai-processing/transcription#language).
+Açılır liste arayüzün dilini seçer; öntanımlı değer **Bu bilgisayardaki gibi** seçeneğidir. Bu yalnızca arayüzle ilgilidir. Bir çağrıda hangi dilin konuşulduğu ayrı bir ayardır ve dökümlerle birlikte gelir — bkz. [Yazıya döküm](/ai-processing/transcription#the-recognisers-card).
 
 Programla gelen yönergeler, kurallar ve sözlükler, dili değiştirdiğinizde kendi dillerinde kalır. [İşleme](/ai-processing/processing#defaults) ve [Sözlükler](/ai-processing/dictionaries#defaults) içindeki **Öntanımlılara dön** onları yeni dile getirir.
 

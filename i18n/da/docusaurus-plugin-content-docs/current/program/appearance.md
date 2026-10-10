@@ -25,7 +25,7 @@ Hver opstilling rummer de samme vinduer; forskellen er, hvor de står. **Telefon
 
 ## Sprog {#language}
 
-Rullelisten vælger brugerfladens sprog; **Som denne computer** er standard. Det gælder kun brugerfladen. Hvilket sprog der tales i et opkald, er en separat indstilling, og det følger med udskrifterne — se [Transskription](/ai-processing/transcription#language).
+Rullelisten vælger brugerfladens sprog; **Som denne computer** er standard. Det gælder kun brugerfladen. Hvilket sprog der tales i et opkald, er en separat indstilling, og det følger med udskrifterne — se [Transskription](/ai-processing/transcription#the-recognisers-card).
 
 De prompter, regler og ordlister, der fulgte med programmet, forbliver på deres sprog, når du skifter. **Gendan standardværdier** under [Behandling](/ai-processing/processing#defaults) og under [Ordlister](/ai-processing/dictionaries#defaults) bringer dem over på det nye.
 

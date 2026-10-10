@@ -25,7 +25,7 @@ Vsaka postavitev vsebuje ista okna; razlikuje se le, kje stojijo. **Telefon se z
 
 ## Jezik {#language}
 
-Spustni seznam izbere jezik vmesnika; privzeto **Kot ta računalnik**. To velja le za vmesnik. Jezik, ki se govori v klicu, je ločena nastavitev in pride skupaj s prepisi — glejte [Prepis](/ai-processing/transcription#language).
+Spustni seznam izbere jezik vmesnika; privzeto **Kot ta računalnik**. To velja le za vmesnik. Jezik, ki se govori v klicu, je ločena nastavitev in pride skupaj s prepisi — glejte [Prepis](/ai-processing/transcription#the-recognisers-card).
 
 Navodila, pravila in slovarji, ki so prišli s programom, ob zamenjavi ostanejo v svojem jeziku. **Obnovi privzeto** v [Obdelavi](/ai-processing/processing#defaults) in v [Slovarjih](/ai-processing/dictionaries#defaults) jih prenese v novega.
 

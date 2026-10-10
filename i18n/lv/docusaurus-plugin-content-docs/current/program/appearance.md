@@ -25,7 +25,7 @@ Katrā izkārtojumā ir tie paši logi; atšķiras tikai to atrašanās vieta. *
 
 ## Valoda {#language}
 
-Nolaižamais saraksts izvēlas saskarnes valodu; noklusējums ir **Kā šis dators**. Tā attiecas tikai uz saskarni. Valoda, kurā runā zvanā, ir atsevišķs iestatījums, un tā nāk kopā ar atšifrējumiem — skatiet [Pieraksts](/ai-processing/transcription#language).
+Nolaižamais saraksts izvēlas saskarnes valodu; noklusējums ir **Kā šis dators**. Tā attiecas tikai uz saskarni. Valoda, kurā runā zvanā, ir atsevišķs iestatījums, un tā nāk kopā ar atšifrējumiem — skatiet [Pieraksts](/ai-processing/transcription#the-recognisers-card).
 
 Kopā ar programmu nākušie norādījumi, kārtulas un vārdnīcas paliek savā valodā, kad maināt valodu. **Atjaunot noklusējumus** sadaļās [Apstrāde](/ai-processing/processing#defaults) un [Vārdnīcas](/ai-processing/dictionaries#defaults) tos pārnes jaunajā valodā.
 

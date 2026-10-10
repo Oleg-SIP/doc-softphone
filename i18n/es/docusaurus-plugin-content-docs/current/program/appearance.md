@@ -25,7 +25,7 @@ Todas las disposiciones contienen las mismas ventanas; lo que cambia es dónde s
 
 ## Idioma {#language}
 
-El desplegable elige el idioma de la interfaz; **Como este ordenador** es el valor por defecto. Es solo la interfaz. El idioma en que se habla en una llamada es un ajuste aparte, y llega con las transcripciones — consulte [Transcripción](/ai-processing/transcription#language).
+El desplegable elige el idioma de la interfaz; **Como este ordenador** es el valor por defecto. Es solo la interfaz. El idioma en que se habla en una llamada es un ajuste aparte, y llega con las transcripciones — consulte [Transcripción](/ai-processing/transcription#the-recognisers-card).
 
 Las instrucciones, las reglas y los diccionarios que vienen con el programa se quedan en su idioma cuando cambia. **Restaurar los valores por defecto** en [Procesamiento](/ai-processing/processing#defaults) y en [Diccionarios](/ai-processing/dictionaries#defaults) los pasa al nuevo.
 

@@ -25,7 +25,7 @@ Každé rozloženie obsahuje tie isté okná; líši sa len to, kde stoja. **Tel
 
 ## Jazyk {#language}
 
-Rozbaľovací zoznam vyberá jazyk rozhrania; predvolene **Ako tento počítač**. Týka sa to iba rozhrania. Jazyk, ktorým sa hovorí v hovore, je samostatné nastavenie a prichádza spolu s prepismi — pozrite [Prepis](/ai-processing/transcription#language).
+Rozbaľovací zoznam vyberá jazyk rozhrania; predvolene **Ako tento počítač**. Týka sa to iba rozhrania. Jazyk, ktorým sa hovorí v hovore, je samostatné nastavenie a prichádza spolu s prepismi — pozrite [Prepis](/ai-processing/transcription#the-recognisers-card).
 
 Pokyny, pravidlá a slovníky, ktoré prišli s programom, zostanú pri zmene vo svojom jazyku. **Obnoviť predvolené** v [Spracovaní](/ai-processing/processing#defaults) a v [Slovníkoch](/ai-processing/dictionaries#defaults) ich prenesie do nového.
 

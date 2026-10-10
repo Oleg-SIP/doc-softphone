@@ -25,7 +25,7 @@ Mọi cách sắp xếp đều chứa cùng các cửa sổ; chỉ khác ở v�
 
 ## Ngôn ngữ {#language}
 
-Danh sách thả xuống chọn ngôn ngữ giao diện; mặc định là **Giống máy tính này**. Đây chỉ là giao diện. Ngôn ngữ được nói trong cuộc gọi là một cài đặt riêng, và nó đi cùng bản chép lời — xem [Gỡ băng](/ai-processing/transcription#language).
+Danh sách thả xuống chọn ngôn ngữ giao diện; mặc định là **Giống máy tính này**. Đây chỉ là giao diện. Ngôn ngữ được nói trong cuộc gọi là một cài đặt riêng, và nó đi cùng bản chép lời — xem [Gỡ băng](/ai-processing/transcription#the-recognisers-card).
 
 Các chỉ dẫn, quy tắc và từ điển đi kèm chương trình vẫn giữ ngôn ngữ của chúng khi bạn đổi. **Khôi phục mặc định** trong [Xử lý](/ai-processing/processing#defaults) và trong [Từ điển](/ai-processing/dictionaries#defaults) đưa chúng sang ngôn ngữ mới.
 

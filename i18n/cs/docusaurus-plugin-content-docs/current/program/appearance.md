@@ -25,7 +25,7 @@ Každé uspořádání obsahuje stejná okna; liší se jen tím, kde stojí. **
 
 ## Jazyk {#language}
 
-Rozbalovací seznam vybírá jazyk rozhraní; výchozí je **Jako tento počítač**. Týká se jen rozhraní. V jakém jazyce se mluví v hovoru, je samostatné nastavení a přichází s přepisy — viz [Přepis](/ai-processing/transcription#language).
+Rozbalovací seznam vybírá jazyk rozhraní; výchozí je **Jako tento počítač**. Týká se jen rozhraní. V jakém jazyce se mluví v hovoru, je samostatné nastavení a přichází s přepisy — viz [Přepis](/ai-processing/transcription#the-recognisers-card).
 
 Pokyny, pravidla a slovníky, které přišly s programem, zůstanou po přepnutí v původním jazyce. Do nového jazyka je převedete tlačítkem **Obnovit výchozí** ve [Zpracování](/ai-processing/processing#defaults) a ve [Slovnících](/ai-processing/dictionaries#defaults).
 

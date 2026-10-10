@@ -25,7 +25,7 @@ Svaki raspored sadrži iste prozore; razlikuje se samo gdje stoje. **Telefon se 
 
 ## Jezik {#language}
 
-Padajući izbornik odabire jezik sučelja; zadano je **Kao ovo računalo**. To se odnosi samo na sučelje. Jezik kojim se govori u pozivu zasebna je postavka i dolazi s prijepisima — pogledajte [Prijepis](/ai-processing/transcription#language).
+Padajući izbornik odabire jezik sučelja; zadano je **Kao ovo računalo**. To se odnosi samo na sučelje. Jezik kojim se govori u pozivu zasebna je postavka i dolazi s prijepisima — pogledajte [Prijepis](/ai-processing/transcription#the-recognisers-card).
 
 Upute, pravila i rječnici koji su došli s programom ostaju na svom jeziku kad ga promijenite. **Vrati zadano** u [Obradi](/ai-processing/processing#defaults) i u [Rječnicima](/ai-processing/dictionaries#defaults) prenosi ih na novi.
 

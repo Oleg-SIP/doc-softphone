@@ -1,64 +1,118 @@
 ---
 title: Ülestähendus
 sidebar_position: 1
-description: "\"Valige tuvastaja, mis muudab heli tekstiks: selle aadress, mudel ja tabel mudelitest, mida iga teenus pakub.\""
+description: "Valige tuvastaja, mis muudab heli tekstiks: selle aadress, selle mudel ja tabel igat liiki teenuste mudelitest."
 ---
 
-**Seaded → Ülestähendus** määrab, kuidas helist saab tekst: millises keeles ja millise tuvastajaga.
+**Seaded → Ülestähendus** loetleb tuvastajad: teenused, mis muudavad heli tekstiks, lõppenud vestluste jaoks ja [etteütleja](../interface/prompter.md) jaoks vestluse ajal.
 
-<Shot name="25_transcription" alt="Seaded → Ülestähendus: keel ja neli tuvastajat" />
+<Shot name="25_transcription" alt="Seaded → Ülestähendus: viis tuvastajat" />
 
-Vestlus kirjutatakse üles, kui te seda [salvestiste aknas](/interface/recordings) palute, või iseenesest, kui jaotises [Töötlemine](/ai-processing/processing) on sisse lülitatud **Töötle vestlusi automaatselt**. Teie enda arvutis olev tuvastaja ei maksa midagi; pilves olev võtab tasu heliminutite eest.
-
-## Keel {#language}
-
-**Keel** on ISO 639-1 järgi kahetäheline keelekood (`en`, `de`, `es`, `fr`, `sr`…). Jätke see tühjaks ja tuvastaja otsustab ise — see on õige, välja arvatud juhul, kui teie kõned on keeles, mida see pidevalt valesti kuuleb.
+Vestlus tähendatakse üles, kui te seda [Salvestiste aknas](/interface/recordings) palute, või iseenesest, kui jaotises [Töötlemine](/ai-processing/processing) on sisse lülitatud **Töötle vestlusi automaatselt**. Teie enda masinas töötav tuvastaja ei maksa midagi; pilves töötav võtab tasu heliminuti eest.
 
 ## Tuvastajad {#recognisers}
-
-Tuvastaja on kõnest tekstiks teenus, millele telefon heli saadab. Vajutage **Lisa**, et lisada; vormi nupp **Kontrolli** kontrollib, kas teenus tõesti vastab. Igaüks on loendis oma nimega ja selle all on mudel ning teenuse aadress. Pildil on neid neli:
+Tuvastaja on kõnetuvastusteenus, millele telefon heli saadab. **Lisa** lisab uue; selle kaardi nupp **Kontrolli** kontrollib, kas teenus tõesti vastab. Igaüks on loendis oma nimega ja selle all on teenuse mudel ja aadress. Pildil on neid viis:
 
 | Nimi | Mudel | Aadress |
 | --- | --- | --- |
-| **X.ai** | *(tühi: teenuse vaikeväärtus)* | `https://api.x.ai/v1` |
+| **X.ai** | *(tühi: teenuse vaikemudel)* | `https://api.x.ai/v1` |
 | **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
+| **Vosk** | *(puudub)* | `ws://localhost:2700`, server selles arvutis |
 
-Tuvastaja, mis on oma rea paremas servas tähistatud kui **vaikimisi** (pildil **X.ai**), on see, mida kasutatakse, kui te ei vali teist. Võite hoida mitut. [Salvestiste aknas](/interface/recordings#transcript-or-write-up-the-drop-down) ülestähenduse kohal olev ripploend loetleb iga tuvastaja tehtud ülestähendused.
+Kaks märki rea paremas servas näitavad, mille jaoks tuvastaja on vaikimisi valitud. Kell põleb vaikimisi tuvastajal **ülestähenduste jaoks** — pildil **X.ai** —, mida kasutatakse, kui te muud ei vali. Välk põleb vaikimisi tuvastajal **etteütleja jaoks** — pildil **Vosk**. Tuvastajaid võib olla mitu; ülestähenduse kohal olev ripploend [Salvestiste aknas](/interface/recordings#transcript-or-write-up-the-drop-down) näitab igaühe tehtud ülestähendusi.
 
-Mudeli võib jätta tühjaks. Siis kasutab teenus oma vaikeväärtust.
+## Tuvastaja kaart {#the-recognisers-card}
+Tuvastajale vajutamine avab selle kaardi.
+
+<Shot name="43_recogniser_card" alt="Tuvastaja X.ai kaart: liik, kaks aadressi, võti, Kontrolli ja vaikevalikud" />
+
+| Väli | Mis see on |
+| --- | --- |
+| **Nimi** | Nimi loendites. |
+| **Liik** | Teenuse liik, mis otsustab, kuidas telefon sellega räägib: **OpenAI-ga ühilduv (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ja kolm, mis töötavad teie enda masinas — **Vosk**, **WhisperLive** ja **NVIDIA Riva**. **Yandex SpeechKit** pakutakse siis, kui jaotises [Teave](../application/about.md) on riigiks Venemaa või mõni selle naaberriik. |
+| **Aadress ülestähenduste jaoks** | Kuhu lõppenud vestlused saadetakse. |
+| **Aadress etteütleja jaoks** | Kuhu otseheli vestluse ajal läheb. *Tühi tuletatakse kõrvalolevast aadressist*, nagu pildil `wss://api.x.ai`. |
+| **Võti** | Teenuse võti. *See on selle arvuti võtmehoidjas, mitte kunagi seadistusfailis.* |
+| **Kontrolli** | Küsib teenuselt ja ütleb, mida see vastas, näiteks *Vastas ja pakub 3 mudelit*. |
+| **Mudel ülestähenduste jaoks** ja **Mudel etteütleja jaoks** | Mudel täpselt nii, nagu teenus seda nimetab. *Tühjana ei saadeta mudeli nime*, ja teenus kasutab oma vaikemudelit; kui pakkuja selle avaldab, nimetab kaart selle. Liigi puhul, millel valikut pole, välja ei näidata. |
+| **Vaikimisi ülestähenduste jaoks** | Teeb sellest tuvastaja, mida kasutatakse, kui te muud ei vali. |
+| **Vaikimisi etteütleja jaoks** | Teeb sellest tuvastaja, millega etteütleja uus abiline kuulab. |
+| **Sees** | Väljalülitatuna jääb tuvastaja loendisse, kuid seda ei kasutata. |
+
+**Täpsemad seaded** avab ülejäänud kaardi. Kõige olulisemad väärtused:
+
+<Shot name="43b_recogniser_advanced" alt="Tuvastaja täpsemad seaded: piirid, kuidas vastused tükeldatakse, keel" />
+
+| Väli | Mida see teeb |
+| --- | --- |
+| **Piirkond** | Teenuse piirkond, kui neid on mitu. |
+| **Saada mõlemad pooled eraldi** | Kõne salvestatakse nii, et kaks inimest on kahel kanalil, ja just sellest teab tuvastaja, kes mida ütles. Lülitage see välja serveril, mis väidab, et oskab seda, kuid ei oska. |
+| **Küsi, kes räägib** | Eristab inimesi ühe kanali sees, kui seal räägib mitu inimest. |
+| **Kirjuta arvud numbritega** | Summad, kuupäevad ja telefoninumbrid tulevad tagasi nii, nagu neid kirjutatakse, mitte sõnadega välja kirjutatuna. |
+| **Üleslaadimise piir**, **Pikkuse piir** | Suurim fail baitides ja pikim salvestis sekundites, mille see telefon saadab. |
+| **Päringuid korraga** | Mitu päringut võib korraga pooleli olla. |
+| **Lõpeta vastus pärast**, **Liida lühikesed vastused vahega kuni**, **Paus repliikide vahel** | Etteütleja jaoks: kui kaua ilma uute sõnadeta lõpetab vastuse, kui kaua lühike vastus ootab järgmist, et sellega liituda, ja kui pikk vaikus lõpetab repliigi, kui tuvastaja seda ise ei märgi. Millisekundites. |
+| **Keel** | Kahetäheline keelekood ISO 639-1 järgi (`en`, `de`, `es`, `fr`, `sr`…). Jätke see tühjaks ja tuvastaja otsustab ise — see on õige, kui teie kõned pole keeles, mida see pidevalt valesti kuuleb. |
+| **Lisad** | Üks `name = value` rea kohta, edastatakse teenusele muutmata kujul. Jätke tühjaks, kui server midagi ei dokumenteeri. |
+| **Ootamine, minutid** | Kui kaua ülestähendust oodata. Tühi arvutab selle salvestise pikkuse järgi. |
+| **Hind minuti eest** | Mida maksab minut otseheli teenuse hinnakirja järgi. Etteütleja näitab, mida seanss on maksnud, ja peatub oma [kuulimiidi](prompter.md#spending) juures. |
+
+## Otsetuvastus etteütleja jaoks {#live-recognition-for-the-prompter}
+[Etteütleja](../interface/prompter.md) vajab tuvastajat, mis kuulab, kui keegi räägib, voona, mitte valmis failina. Seda oskavad need liigid: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-ga ühilduv** (OpenAI reaalajas ülestähendusega), **AssemblyAI**, **Soniox** ja **Speechmatics** pilves, **Yandex SpeechKit** seal, kus seda pakutakse, ning **Vosk**, **WhisperLive** ja **NVIDIA Riva** teie enda masinas. Teie enda masinas töötav tuvastaja hoiab teise poole hääle majas ega maksa midagi.
+
+Nii kasutate üht: avage selle kaart, kontrollige välja **Aadress etteütleja jaoks** (või laske see tuletada), valige **Mudel etteütleja jaoks**, kui teenus pakub mitut — otsemudelid erinevad sageli failide omadest, näiteks ElevenLabsi `scribe_v2_realtime` —, ja vajutage **Kontrolli**. Märkige **Vaikimisi etteütleja jaoks**, et uued abilised kuulaksid sellega.
 
 ## Millise mudeli valida {#which-model-to-choose}
+Tabel loetleb loendi **Liik** iga liigi kõnetuvastusmudelid. **Paksus** kirjas mudelid on pildil seadistatud; tuvastaja X.ai mudel on tühi, seega kasutatakse teenuse vaikemudelit **`grok-voice-transcribe-2.0`**. **Milleks** ütleb, milleks mudel on tehtud: valmis salvestiste jaoks (*ülestähendused*), [etteütleja](#live-recognition-for-the-prompter) otsekõne jaoks (*etteütleja*) või *mõlemaks*.
 
-Tabel loetleb pildil oleva nelja teenuse kõnest tekstiks mudelid. **Paksus kirjas** mudelid on pildil seadistatud. X.ai tuvastaja mudel on tühi, nii et kasutatakse teenuse vaikemudelit **`grok-voice-transcribe-2.0`**.
+| Liik ja aadress | Mudel | Milleks | Mille jaoks see on |
+| --- | --- | --- | --- |
+| **OpenAI-ga ühilduv (Whisper, OpenAI)**<br />`https://api.openai.com/v1` | `gpt-transcribe` | ülestähendused | Mudel, mida OpenAI soovitab salvestatud kõne jaoks selle algkeeles. |
+| | **`gpt-4o-transcribe`** | mõlemaks | Üldotstarbeline ülestähendus. Selle liigi uus tuvastaja saab selle. |
+| | `gpt-4o-mini-transcribe` | mõlemaks | Eelmise kergem ja odavam variant. |
+| | `gpt-4o-transcribe-diarize` | ülestähendused | Märgib, kes millal räägib. Kasutage seda ainult siis, kui seda vajate. |
+| | `whisper-1` | ülestähendused | Vanem Whisperi mudel, mis on alles erijuhtudeks nagu sõnapõhised ajatemplid ja subtiitrid. |
+| | `gpt-live-transcribe` | etteütleja | OpenAI otsemudel: sõnad tulevad, kui neid öeldakse. Telefon pakub seda etteütlejale. |
+| **Deepgram**<br />`https://api.deepgram.com/v1` | `nova-3` | mõlemaks | Deepgrami parim üldotstarbeline mudel koosolekute, mürarikka ja mitmekeelse heli jaoks. Selle liigi uus tuvastaja saab selle. |
+| | **`nova-2`** | mõlemaks | Eelmine põlvkond; hoidke see keelte jaoks, mida `nova-3` veel ei toeta. |
+| | `nova-2-phonecall` | mõlemaks | `nova-2`, häälestatud telefoniliini kitsale helile. Inglise keel. |
+| | `flux-general-en` | etteütleja | Tehtud vestluseks: kuuleb, kui keegi on rääkimise lõpetanud. Inglise keel. |
+| | `flux-general-multi` | etteütleja | Sama kümnes keeles, ja vestlus võib nende vahel vahetuda. |
+| | `enhanced`, `base` | ülestähendused | Vanemad tasemed; `base` on suurte mahtude jaoks. |
+| | `whisper` | ülestähendused | Whisper Deepgrami käitatuna. |
+| **ElevenLabs (Scribe)**<br />`https://api.elevenlabs.io/v1` | **`scribe_v2`** | ülestähendused | Üldotstarbeline ülestähendus enam kui 90 keeles, kõnelejate eristamisega. |
+| | `scribe_v2_realtime` | etteütleja | `scribe_v2` otseversioon. Telefon pakub seda etteütlejale. |
+| | `scribe_v2_medical` | ülestähendused | `scribe_v2`, häälestatud kliinilisele helile. |
+| | `scribe_v1` | ülestähendused | Esimene põlvkond; aegunud, kasutage `scribe_v2`. |
+| **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | mõlemaks | Kõige täpsem, ühes keeles peetud vestluse jaoks. Selle liigi uus tuvastaja saab selle. |
+| | `standard` | mõlemaks | Kiirem ja odavam, veidi vähem täpne. |
+| | `melia-1` | ülestähendused | Mitmekeelne vestlus, mis vahetab keelt keset lauset, tuleb tagasi ühe ülestähendusena. Ainult salvestised, EL-i ja USA piirkonnas; oma sõnastikku ja kõnelejate märgiseid veel pole. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | mõlemaks | Vaikemudel; 25 keelt. |
+| | `grok-voice-transcribe-1.0` | ülestähendused | Aegunud: teenus suunab selle ümber `2.0` peale. |
+| **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | ülestähendused | Üle 60 keele, kõnelejate eristamisega. |
+| | `stt-rt-v5` | etteütleja | Otse, samas enam kui 60 keeles, ja kuuleb, kus repliik lõpeb. Telefon pakub seda etteütlejale. |
+| **AssemblyAI**<br />`https://api.assemblyai.com` | `universal-3-5-pro` | mõlemaks | Kõige täpsem mudel salvestiste jaoks; 18 keelt, ja vestlus võib nende vahel vahetuda. |
+| | `universal-2` | ülestähendused | 99 keelt, odavam; AssemblyAI kasutab seda keele puhul, mida `universal-3-5-pro` ei oska. |
+| | `universal-3-6-pro` | etteütleja | AssemblyAI uusim otsemudel, 32 keelt; teenus kasutab seda, kui mudel on tühi. |
+| | `universal-streaming-multilingual` | etteütleja | Odavam otsetuvastus inglise, hispaania, saksa, prantsuse, portugali ja itaalia keeles. |
+| | `universal-streaming-english` | etteütleja | Odavam otsetuvastus, ainult inglise keeles. |
+| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | mõlemaks | Põhimudel, tugev vene keeles, ka telefonis. Pakutakse, kui riik on Venemaa või mõni selle naaberriik. |
+| | `general:rc` | mõlemaks | Mudeli järgmine versioon enne väljaandmist. |
+| | `deferred-general` | ülestähendused | Edasilükatud tuvastus: ülestähendus tuleb hiljem, väiksema raha eest. |
+| **Vosk (teie enda masinas)**<br />`ws://localhost:2700` | *(seatakse serveris)* | mõlemaks | Tasuta ja kerge; töötab ilma graafikakaardita. Mudel on see, millega server käivitati, üks keele kohta, näiteks `vosk-model-en-us-0.22` või väike `vosk-model-small-en-us-0.15`. |
+| **WhisperLive (teie enda masinas)**<br />`ws://localhost:9090` | `small` | mõlemaks | Whisper otsevoona. Suurus valitakse kaardil: `tiny`, `base`, `small` (mida telefon pakub), `medium`, `large-v3`; mida suurem, seda täpsem ja seda rohkem vajab see graafikakaarti. |
+| **NVIDIA Riva (teie enda masinas)**<br />`localhost:50051` | *(seatakse serveris)* | mõlemaks | NVIDIA kõneserver arvutile, millel on NVIDIA graafikakaart. See pakub mudeleid nagu Parakeet ja Canary. |
 
-| Teenus ja aadress | Mudel | Milleks see on |
-| --- | --- | --- |
-| **OpenAI**<br />`https://api.openai.com/v1` | `gpt-transcribe` | Mudel, mida OpenAI soovitab salvestatud kõne jaoks selle algkeeles. |
-| | **`gpt-4o-transcribe`** | Üldotstarbeline ülestähendus. |
-| | `gpt-4o-mini-transcribe` | Eelmise kergem ja odavam variant. |
-| | `gpt-4o-transcribe-diarize` | Märgib, kes millal räägib. Kasutage seda ainult siis, kui seda vajate. |
-| | `whisper-1` | Vanem Whisperi mudel, mida hoitakse eriotstarbeks, näiteks sõnade ajatemplite ja subtiitrite jaoks. |
-| **ElevenLabs**<br />`https://api.elevenlabs.io/v1` | **`scribe_v2`** | Üldotstarbeline ülestähendus enam kui 90 keeles, kõnelejate eristamisega. |
-| | `scribe_v2_medical` | Sama, kohandatud kliinilisele helile. |
-| | `scribe_v1` | Esimene põlvkond; aegunud, kasutage `scribe_v2`. |
-| **Deepgram**<br />`https://api.deepgram.com/v1` | `nova-3` | Deepgrami parim üldotstarbeline mudel koosolekute, mürarikka ja mitmekeelse heli jaoks. |
-| | **`nova-2`** | Eelmine põlvkond; hoidke seda keelte jaoks, mida `nova-3` veel ei toeta. |
-| | `enhanced` | Vanem tase, mille veamäär on madalam kui `base` tasemel. |
-| | `base` | Vanim tase suurte mahtude jaoks. |
-| | `whisper` | Whisper Deepgrami käitatuna. |
-| **X.ai**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | Vaikimisi; 25 keelt. |
-| | `grok-voice-transcribe-1.0` | Aegunud: teenus suunab selle versioonile `2.0`. |
+Mida enne valimist teada:
 
-Enne valimist tasub teada:
-
+- **Ülestähendused või etteütleja.** Otsekõne jaoks tehtud mudel ei võta vastu valmis faili ja enamik failimudeleid ei oska otse kuulata. Seepärast on kaardil kaks välja: **Mudel ülestähenduste jaoks** ja **Mudel etteütleja jaoks**.
 - **Faili suurus.** OpenAI võtab vastu kuni 25 MB faile, X.ai kuni 500 MB. Pikk vestlus võib olla suurem, kui pilveteenus vastu võtab.
-- **Hind.** Pilveteenused võtavad tasu heliminutite eest ja hinnad erinevad mudeliti ning muutuvad; lugege neid enne vahetamist teenuse enda lehelt.
-- **Keeled.** Igal teenusel on oma loend; kontrollige enda oma ja määrake [Keel](#language), kui tuvastaja arvab valesti.
-- **Reaalajamudelid**, näiteks `scribe_v2_realtime` või Deepgrami `flux`, on mõeldud otseülekannete jaoks ja neid tabelis pole: telefon kirjutab üles valmis salvestisi.
+- **Hind.** Pilveteenused võtavad tasu heliminuti eest ja hinnad sõltuvad mudelist ning muutuvad; lugege neid enne vahetamist teenuse enda lehelt. Teie enda masinas töötav tuvastaja ei maksa midagi.
+- **Keeled.** Igal teenusel on oma loend; kontrollige enda oma ja seadke kood väljale **Keel** tuvastaja täpsemates seadetes, kui see arvab valesti.
 
-Teenuse mudelite loend muutub sageli. Kui soovitud mudel siit puudub, on teenuse enda dokumentatsioonis ajakohane loend — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text) —; **Mudel** on nimi täpselt sellisel kujul, nagu teenus selle annab.
+Teenuse mudelite loend muutub sageli. Kui soovitud mudel siit puudub, on ajakohane loend teenuse enda dokumentatsioonis — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — ja **Mudel** on nimi täpselt nii, nagu teenus selle annab.
 
 ## Teie enda mudelid {#your-own-models}
 

@@ -25,7 +25,7 @@ Chaque agencement contient les mêmes fenêtres ; ce qui change, c'est leur empl
 
 ## Langue {#language}
 
-La liste déroulante choisit la langue de l'interface ; **Comme cet ordinateur** est la valeur par défaut. Cela ne concerne que l'interface. La langue parlée lors d'un appel est un réglage distinct, et elle arrive avec les transcriptions — voir [Transcription](/ai-processing/transcription#language).
+La liste déroulante choisit la langue de l'interface ; **Comme cet ordinateur** est la valeur par défaut. Cela ne concerne que l'interface. La langue parlée lors d'un appel est un réglage distinct, et elle arrive avec les transcriptions — voir [Transcription](/ai-processing/transcription#the-recognisers-card).
 
 Les invites, les règles et les dictionnaires livrés avec le programme restent dans leur langue quand vous en changez. **Rétablir les valeurs par défaut** dans [Traitement](/ai-processing/processing#defaults) et dans [Dictionnaires](/ai-processing/dictionaries#defaults) les fait passer dans la nouvelle.
 

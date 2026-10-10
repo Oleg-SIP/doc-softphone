@@ -25,7 +25,7 @@ Jede Anordnung enthält dieselben Fenster; anders ist nur, wo sie stehen. **Für
 
 ## Sprache {#language}
 
-Die Auswahlliste wählt die Sprache der Oberfläche; Standard ist **Wie dieser Rechner**. Es geht nur um die Oberfläche. In welcher Sprache in einem Gespräch gesprochen wird, ist eine eigene Einstellung und kommt mit den Transkripten — siehe [Transkription](/ai-processing/transcription#language).
+Die Auswahlliste wählt die Sprache der Oberfläche; Standard ist **Wie dieser Rechner**. Es geht nur um die Oberfläche. In welcher Sprache in einem Gespräch gesprochen wird, ist eine eigene Einstellung und kommt mit den Transkripten — siehe [Transkription](/ai-processing/transcription#the-recognisers-card).
 
 Die mitgelieferten Prompts, Regeln und Verzeichnisse bleiben nach dem Wechsel in der bisherigen Sprache. In die neue Sprache bringen Sie sie mit **Voreinstellungen wiederherstellen** unter [Verarbeitung](/ai-processing/processing#defaults) und unter [Verzeichnisse](/ai-processing/dictionaries#defaults).
 

@@ -25,7 +25,7 @@ Setiap susunan memuat jendela yang sama; yang berbeda hanyalah letaknya. **Telep
 
 ## Bahasa {#language}
 
-Daftar tarik-turun memilih bahasa antarmuka; bawaannya **Sama seperti komputer ini**. Ini hanya untuk antarmuka. Bahasa yang digunakan dalam panggilan adalah pengaturan tersendiri, dan berkaitan dengan transkrip — lihat [Transkripsi](/ai-processing/transcription#language).
+Daftar tarik-turun memilih bahasa antarmuka; bawaannya **Sama seperti komputer ini**. Ini hanya untuk antarmuka. Bahasa yang digunakan dalam panggilan adalah pengaturan tersendiri, dan berkaitan dengan transkrip — lihat [Transkripsi](/ai-processing/transcription#the-recognisers-card).
 
 Petunjuk, aturan, dan kamus yang datang bersama program tetap dalam bahasanya ketika Anda beralih. **Kembalikan bawaan** di [Pemrosesan](/ai-processing/processing#defaults) dan di [Kamus](/ai-processing/dictionaries#defaults) membawanya ke bahasa yang baru.
 

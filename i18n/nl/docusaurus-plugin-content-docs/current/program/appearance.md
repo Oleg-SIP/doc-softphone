@@ -25,7 +25,7 @@ Elke indeling bevat dezelfde vensters; alleen hun plaats verschilt. **De telefoo
 
 ## Taal {#language}
 
-De keuzelijst kiest de taal van de interface; standaard is **Zoals deze computer**. Het gaat alleen om de interface. In welke taal er in een gesprek wordt gesproken, is een aparte instelling die met de transcripten meekomt — zie [Transcriptie](/ai-processing/transcription#language).
+De keuzelijst kiest de taal van de interface; standaard is **Zoals deze computer**. Het gaat alleen om de interface. In welke taal er in een gesprek wordt gesproken, is een aparte instelling die met de transcripten meekomt — zie [Transcriptie](/ai-processing/transcription#the-recognisers-card).
 
 De prompts, regels en woordenlijsten die met het programma kwamen, blijven in hun taal als u wisselt. **Standaardwaarden herstellen** bij [Verwerking](/ai-processing/processing#defaults) en bij [Woordenlijsten](/ai-processing/dictionaries#defaults) zet ze in de nieuwe.
 

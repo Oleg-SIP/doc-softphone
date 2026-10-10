@@ -25,7 +25,7 @@ Każdy układ zawiera te same okna; różni się tylko to, gdzie stoją. **Telef
 
 ## Język {#language}
 
-Lista rozwijana wybiera język interfejsu; domyślnie **Jak ten komputer**. Dotyczy to tylko interfejsu. Język, w którym mówi się w rozmowie, to osobne ustawienie i przychodzi razem z transkrypcjami — zobacz [Transkrypcja](/ai-processing/transcription#language).
+Lista rozwijana wybiera język interfejsu; domyślnie **Jak ten komputer**. Dotyczy to tylko interfejsu. Język, w którym mówi się w rozmowie, to osobne ustawienie i przychodzi razem z transkrypcjami — zobacz [Transkrypcja](/ai-processing/transcription#the-recognisers-card).
 
 Polecenia, reguły i słowniki dostarczone z programem zostają w swoim języku, gdy go zmieniasz. **Przywróć domyślne** w [Przetwarzaniu](/ai-processing/processing#defaults) i w [Słownikach](/ai-processing/dictionaries#defaults) przenosi je do nowego.
 

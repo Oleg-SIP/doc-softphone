@@ -25,7 +25,7 @@ Ogni disposizione contiene le stesse finestre; cambia solo dove stanno. **Il tel
 
 ## Lingua {#language}
 
-Il menu a discesa sceglie la lingua dell'interfaccia; **Come questo computer** è il valore predefinito. Riguarda solo l'interfaccia. La lingua parlata in una chiamata è un'impostazione a parte, e arriva con le trascrizioni — veda [Trascrizione](/ai-processing/transcription#language).
+Il menu a discesa sceglie la lingua dell'interfaccia; **Come questo computer** è il valore predefinito. Riguarda solo l'interfaccia. La lingua parlata in una chiamata è un'impostazione a parte, e arriva con le trascrizioni — veda [Trascrizione](/ai-processing/transcription#the-recognisers-card).
 
 I prompt, le regole e i dizionari forniti con il programma restano nella loro lingua quando la cambia. **Ripristina i valori predefiniti** in [Elaborazione](/ai-processing/processing#defaults) e in [Dizionari](/ai-processing/dictionaries#defaults) li porta nella nuova.
 

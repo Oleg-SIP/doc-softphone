@@ -25,7 +25,7 @@ Varje uppställning innehåller samma fönster; skillnaden är var de står. **T
 
 ## Språk {#language}
 
-Listrutan väljer gränssnittets språk; **Som den här datorn** är standard. Det gäller bara gränssnittet. Vilket språk som talas i ett samtal är en separat inställning, och det följer med utskrifterna — se [Transkription](/ai-processing/transcription#language).
+Listrutan väljer gränssnittets språk; **Som den här datorn** är standard. Det gäller bara gränssnittet. Vilket språk som talas i ett samtal är en separat inställning, och det följer med utskrifterna — se [Transkription](/ai-processing/transcription#the-recognisers-card).
 
 Prompterna, reglerna och ordlistorna som följde med programmet stannar på sitt språk när du byter. **Återställ standardvärden** under [Bearbetning](/ai-processing/processing#defaults) och under [Ordlistor](/ai-processing/dictionaries#defaults) för över dem till det nya.
 
