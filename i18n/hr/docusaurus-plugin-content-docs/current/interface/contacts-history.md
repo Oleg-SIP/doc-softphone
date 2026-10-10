@@ -1,6 +1,6 @@
 ---
 title: Kontakti i povijest
-sidebar_position: 3
+sidebar_position: 4
 description: Imenik i zapisnik poziva, pokraj telefona.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Iestatījumu pārskats
-sidebar_position: 4
+sidebar_position: 5
 description: Pārbaudes saraksts Pārskats un loga Iestatījumi cilnes, kā arī tas, kur katra aprakstīta.
 ---
 

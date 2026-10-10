@@ -1,6 +1,6 @@
 ---
 title: Contacten en geschiedenis
-sidebar_position: 3
+sidebar_position: 4
 description: Het adresboek en de gesprekgeschiedenis, naast de telefoon.
 ---
 

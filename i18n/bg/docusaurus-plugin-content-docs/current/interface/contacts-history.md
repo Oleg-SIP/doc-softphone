@@ -1,6 +1,6 @@
 ---
 title: Контакти и история
-sidebar_position: 3
+sidebar_position: 4
 description: Указателят и дневникът на обажданията, до телефона.
 ---
 

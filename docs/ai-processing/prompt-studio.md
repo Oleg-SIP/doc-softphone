@@ -30,7 +30,7 @@ The second column is what the list shows under the name of the prompt: what it w
 
 The forms are fixed shapes of an answer, which is what lets the program keep it and search it later: **Labels** are codes from one of your lists, **Flags** are codes with a severity, **Rubric** is a score with a reason and a score for each criterion, **Answer** is a reply with the words it rests on. The instructions that tell a model the shape are kept in [Dictionaries](dictionaries.md#instructions).
 
-The [prompter](prompter.md)'s assistants are prompts too, run on each reply while a call is happening rather than on a finished conversation. They are kept in a list of their own, under **Assistants** in **Settings → Prompter**.
+The [prompter](../interface/prompter.md)'s assistants are prompts too, run on each reply while a call is happening rather than on a finished conversation. They are kept in a list of their own, under [Assistants](prompter.md#assistants) in **Settings → Prompter**.
 
 Calls made in AI Softphone, meetings [captured](/capture/) from the computer and imported recordings all go through the same prompts once they have a transcript.
 

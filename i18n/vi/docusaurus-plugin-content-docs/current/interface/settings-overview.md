@@ -1,6 +1,6 @@
 ---
 title: Tổng quan cài đặt
-sidebar_position: 4
+sidebar_position: 5
 description: Danh sách kiểm tra Tổng quan và các thẻ của cửa sổ Cài đặt, cùng nơi mô tả từng thẻ.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Névjegyek és előzmények
-sidebar_position: 3
+sidebar_position: 4
 description: A címjegyzék és a hívásnapló a telefon mellett.
 ---
 

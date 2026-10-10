@@ -1,6 +1,6 @@
 ---
 title: Danh bạ và lịch sử
-sidebar_position: 3
+sidebar_position: 4
 description: Sổ địa chỉ và nhật ký cuộc gọi, ngay cạnh điện thoại.
 ---
 

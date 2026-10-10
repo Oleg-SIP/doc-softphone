@@ -1,6 +1,6 @@
 ---
 title: Nustatymų apžvalga
-sidebar_position: 4
+sidebar_position: 5
 description: Kontrolinis sąrašas Apžvalga ir lango Nustatymai skirtukai, taip pat kur kiekvienas aprašytas.
 ---
 

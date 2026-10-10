@@ -1,6 +1,6 @@
 ---
 title: Contacte și istoric
-sidebar_position: 3
+sidebar_position: 4
 description: Agenda și istoricul apelurilor, alături de telefon.
 ---
 

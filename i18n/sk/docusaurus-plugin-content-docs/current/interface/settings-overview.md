@@ -1,6 +1,6 @@
 ---
 title: Prehľad nastavení
-sidebar_position: 4
+sidebar_position: 5
 description: Kontrolný zoznam Prehľad a karty okna Nastavenia, a kde je každá opísaná.
 ---
 

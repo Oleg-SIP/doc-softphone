@@ -20,7 +20,7 @@ Recordings, transcripts and history are kept in a file you own. No account or su
 3. It is transcribed, speaker by speaker, in step with the audio.
 4. The language model you chose writes it up: summary, tasks, category, tags and red flags — and you can ask the conversation a question.
 
-During a call the [Prompter](ai-processing/prompter.md) can go further: it shows what is being said as it is said, and suggests what to answer.
+During a call the [Prompter](interface/prompter.md) can go further: it shows what is being said as it is said, and suggests what to answer.
 
 ## Download and system requirements
 
@@ -62,7 +62,7 @@ The screenshots in this documentation are taken on macOS and shown small: click 
 | Choose the recogniser that turns speech into text | [Transcription](ai-processing/transcription.md) |
 | Decide which AI writes up your conversations and what it may cost | [Processing](ai-processing/processing.md) |
 | Change the categories, tags and red flags | [Dictionaries](ai-processing/dictionaries.md) |
-| See what is said during a call, and get suggestions for what to answer | [Prompter](ai-processing/prompter.md) |
+| See what is said during a call, and get suggestions for what to answer | [Prompter window](interface/prompter.md) |
 | Change the layout, the theme, the start-up and the hotkeys | [Appearance](program/appearance.md), [Startup](program/startup.md) and [Shortcuts](program/shortcuts.md) |
 | Connect a CRM or another program | [Webhooks](integration/webhooks.md) and [Local REST API](integration/rest-api.md) |
 | See what the phone and the PBX are saying to each other | [Diagnostics](troubleshooting/diagnostics.md) |

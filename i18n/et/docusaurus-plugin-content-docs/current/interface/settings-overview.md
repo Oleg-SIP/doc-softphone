@@ -1,6 +1,6 @@
 ---
 title: Seadete ülevaade
-sidebar_position: 4
+sidebar_position: 5
 description: Kontrollnimekiri Ülevaade ja akna Seaded vahekaardid ning see, kus igaüht kirjeldatakse.
 ---
 

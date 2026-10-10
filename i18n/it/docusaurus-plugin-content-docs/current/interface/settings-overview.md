@@ -1,6 +1,6 @@
 ---
 title: Panoramica delle impostazioni
-sidebar_position: 4
+sidebar_position: 5
 description: La lista di controllo Panoramica e le schede della finestra Impostazioni, e dove è descritta ciascuna.
 ---
 

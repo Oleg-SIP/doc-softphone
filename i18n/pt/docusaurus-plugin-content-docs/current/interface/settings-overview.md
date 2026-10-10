@@ -1,6 +1,6 @@
 ---
 title: Visão geral das definições
-sidebar_position: 4
+sidebar_position: 5
 description: A lista de verificação Visão geral e os separadores da janela Definições, e onde cada um está descrito.
 ---
 

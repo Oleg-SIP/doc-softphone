@@ -1,6 +1,6 @@
 ---
 title: Stiki in zgodovina
-sidebar_position: 3
+sidebar_position: 4
 description: Imenik in dnevnik klicev, poleg telefona.
 ---
 

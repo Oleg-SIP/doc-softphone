@@ -1,6 +1,6 @@
 ---
 title: Ayarlara genel bakış
-sidebar_position: 4
+sidebar_position: 5
 description: Genel bakış denetim listesi ve Ayarlar penceresinin sekmeleri; her birinin nerede anlatıldığı.
 ---
 

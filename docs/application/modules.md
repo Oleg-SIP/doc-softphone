@@ -25,7 +25,7 @@ Each module has a check box, a name, a line saying what it does, and at the righ
 | **Integration** | The local API, and webhooks: [Integration](/integration/rest-api). |
 | **Mediastorage** | The library of conversations and how long they are kept: [Recordings](/interface/recordings). |
 | **Processing** | Prompts and the rules that fire them: [Processing](/ai-processing/processing). |
-| **Prompter** | Listening to a conversation in progress, and suggesting: [Prompter](/ai-processing/prompter). |
+| **Prompter** | Listening to a conversation in progress, and suggesting: [Prompter window](/interface/prompter). |
 | **Recording** | Recording calls, and telling the other party about it: [Recordings](/recordings). |
 | **Telephone** | SIP, accounts, calls, the dialler and the call history. |
 | **Transcription** | Recognisers, the queue that drives them, and the transcripts they produce: [Transcription](/ai-processing/transcription). |

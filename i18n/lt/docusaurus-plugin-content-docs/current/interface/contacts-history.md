@@ -1,6 +1,6 @@
 ---
 title: Kontaktai ir istorija
-sidebar_position: 3
+sidebar_position: 4
 description: Adresų knyga ir skambučių istorija šalia telefono.
 ---
 

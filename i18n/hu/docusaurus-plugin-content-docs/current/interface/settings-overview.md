@@ -1,6 +1,6 @@
 ---
 title: A beállítások áttekintése
-sidebar_position: 4
+sidebar_position: 5
 description: Az Áttekintés ellenőrzőlistája és a Beállítások ablak lapjai, valamint hogy melyiket hol írjuk le.
 ---
 

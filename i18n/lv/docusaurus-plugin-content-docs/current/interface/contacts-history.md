@@ -1,6 +1,6 @@
 ---
 title: Kontakti un vēsture
-sidebar_position: 3
+sidebar_position: 4
 description: Adrešu grāmata un zvanu vēsture blakus tālrunim.
 ---
 

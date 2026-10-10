@@ -1,6 +1,6 @@
 ---
 title: Pregled postavki
-sidebar_position: 4
+sidebar_position: 5
 description: Kontrolni popis Pregled i kartice prozora Postavke te gdje je svaka opisana.
 ---
 

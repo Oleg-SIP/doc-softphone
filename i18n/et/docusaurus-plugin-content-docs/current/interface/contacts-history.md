@@ -1,6 +1,6 @@
 ---
 title: Kontaktid ja ajalugu
-sidebar_position: 3
+sidebar_position: 4
 description: Aadressiraamat ja kõnede ajalugu telefoni kõrval.
 ---
 

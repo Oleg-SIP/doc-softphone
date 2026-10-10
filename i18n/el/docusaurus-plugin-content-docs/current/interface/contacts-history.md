@@ -1,6 +1,6 @@
 ---
 title: Επαφές και ιστορικό
-sidebar_position: 3
+sidebar_position: 4
 description: Ο κατάλογος διευθύνσεων και το αρχείο κλήσεων, δίπλα στο τηλέφωνο.
 ---
 

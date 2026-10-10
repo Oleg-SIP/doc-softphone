@@ -1,6 +1,6 @@
 ---
 title: Översikt över inställningarna
-sidebar_position: 4
+sidebar_position: 5
 description: Checklistan Översikt och flikarna i fönstret Inställningar, och var var och en beskrivs.
 ---
 

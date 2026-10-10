@@ -4,7 +4,7 @@ sidebar_position: 1
 description: "Choose the recogniser that turns audio into text: its address, its model, and a table of the models each service offers."
 ---
 
-**Settings → Transcription** lists the recognisers: the services that turn audio into text, for finished conversations and, for the [Prompter](prompter.md), while a conversation is happening.
+**Settings → Transcription** lists the recognisers: the services that turn audio into text, for finished conversations and, for the [Prompter](../interface/prompter.md), while a conversation is happening.
 
 <Shot name="25_transcription" alt="Settings → Transcription: five recognisers" />
 
@@ -63,7 +63,7 @@ Pressing a recogniser opens its card.
 
 ## Live recognition for the prompter
 
-The [Prompter](prompter.md) needs a recogniser that listens while somebody is talking, over a stream rather than with a finished file. These kinds can: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-compatible** (with OpenAI's realtime transcription), **AssemblyAI**, **Soniox** and **Speechmatics** in the cloud, and **Vosk**, **WhisperLive** and **NVIDIA Riva** on your own machine. A recogniser on your own machine keeps the other party's voice in the building and charges nothing.
+The [Prompter](../interface/prompter.md) needs a recogniser that listens while somebody is talking, over a stream rather than with a finished file. These kinds can: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-compatible** (with OpenAI's realtime transcription), **AssemblyAI**, **Soniox** and **Speechmatics** in the cloud, and **Vosk**, **WhisperLive** and **NVIDIA Riva** on your own machine. A recogniser on your own machine keeps the other party's voice in the building and charges nothing.
 
 To use one: open its card, check the **Address for the prompter** (or let it be worked out), choose the **Model for the prompter** where the service offers several — the live models are often different from the ones for files, such as ElevenLabs' `scribe_v2_realtime` — and press **Test**. Tick **Default for the prompter** to make it the one new assistants listen with.
 

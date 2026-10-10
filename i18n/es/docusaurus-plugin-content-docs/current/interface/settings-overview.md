@@ -1,6 +1,6 @@
 ---
 title: Resumen de los ajustes
-sidebar_position: 4
+sidebar_position: 5
 description: La lista de comprobación Resumen general y las pestañas de la ventana Ajustes, y dónde se describe cada una.
 ---
 

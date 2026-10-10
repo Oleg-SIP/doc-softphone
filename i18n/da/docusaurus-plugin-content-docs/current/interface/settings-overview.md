@@ -1,6 +1,6 @@
 ---
 title: Oversigt over indstillingerne
-sidebar_position: 4
+sidebar_position: 5
 description: Tjeklisten Oversigt og fanerne i vinduet Indstillinger, og hvor hver af dem er beskrevet.
 ---
 
