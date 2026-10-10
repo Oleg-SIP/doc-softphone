@@ -10,7 +10,7 @@ description: The version, updates, your country, the licence, what the usage rep
 
 ## Version and country
 
-At the top are the name, the **Version** (in the picture 1.0.0) and a link to the website, [ai-softphone.com](https://ai-softphone.com/).
+At the top are the name, the **Version** (in the picture 1.1.3), a link to the website, [ai-softphone.com](https://ai-softphone.com/), and one to this documentation.
 
 **Country** tells the program where you are. It helps pick the best update server, and opens the way to language and speech services hosted in your country. **Detect automatically** fills it in.
 

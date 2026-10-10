@@ -39,8 +39,27 @@ export default function Shot({ name, src, alt, full = false, children }) {
   }
   const small = name ? `${dir}/thumbs/${name}${full ? '-full' : ''}.jpg` : other;
   const large = name ? `${dir}/${name}.png` : other;
+  // a picture this language has not been given yet (a page still only in
+  // English) falls back to the English set rather than a broken image
+  const english = `${root}screenshots/macos/${i18n.defaultLocale}`;
+  const fallback = (event, file) => {
+    const img = event.currentTarget;
+    if (name && locale !== i18n.defaultLocale && !img.dataset.fallback) {
+      img.dataset.fallback = '1';
+      img.src = `${english}/${file}`;
+    }
+  };
   const [open, setOpen] = useState(false);
   const dialog = useRef(null);
+  const thumb = useRef(null);
+
+  // an error that came before the page was hydrated has no handler to hear it
+  useEffect(() => {
+    const img = thumb.current;
+    if (img && img.complete && img.naturalWidth === 0) {
+      fallback({ currentTarget: img }, `thumbs/${name}${full ? '-full' : ''}.jpg`);
+    }
+  }, []);
 
   useEffect(() => {
     if (open && dialog.current && !dialog.current.open) dialog.current.showModal();
@@ -61,7 +80,8 @@ export default function Shot({ name, src, alt, full = false, children }) {
         onClick={() => setOpen(true)}
         aria-label={enlargeLabel}
       >
-        <img src={small} alt={alt} loading="lazy" />
+        <img ref={thumb} src={small} alt={alt} loading="lazy"
+          onError={(e) => fallback(e, `thumbs/${name}${full ? '-full' : ''}.jpg`)} />
         <span className={styles.badge} aria-hidden="true">{enlarge}</span>
       </button>
       {children ? <figcaption>{children}</figcaption> : null}
@@ -72,7 +92,7 @@ export default function Shot({ name, src, alt, full = false, children }) {
           onClose={() => setOpen(false)}
           onClick={() => setOpen(false)}
         >
-          <img src={large} alt={alt} />
+          <img src={large} alt={alt} onError={(e) => fallback(e, `${name}.png`)} />
           <button type="button" className={styles.close} aria-label={close}>×</button>
         </dialog>
       ) : null}

@@ -28,7 +28,9 @@ The second column is what the list shows under the name of the prompt: what it w
 | **Sales quality** | Rubric | Reviews the conversation against sales criteria you can edit. |
 | **Support quality** | Rubric | Judges how well the problem was understood and handled. |
 
-The forms are fixed shapes of an answer, which is what lets the program keep it and search it later: **Labels** are codes from one of your lists, **Flags** are codes with a severity, **Rubric** is a score with a reason and a score for each criterion, **Answer** is a reply with the words it rests on. The instructions that tell a model the shape are kept in [Dictionaries](dictionaries.md#answer-shapes-and-language).
+The forms are fixed shapes of an answer, which is what lets the program keep it and search it later: **Labels** are codes from one of your lists, **Flags** are codes with a severity, **Rubric** is a score with a reason and a score for each criterion, **Answer** is a reply with the words it rests on. The instructions that tell a model the shape are kept in [Dictionaries](dictionaries.md#instructions).
+
+The [prompter](prompter.md)'s assistants are prompts too, run on each reply while a call is happening rather than on a finished conversation. They are kept in a list of their own, under **Assistants** in **Settings → Prompter**.
 
 Calls made in AI Softphone, meetings [captured](/capture/) from the computer and imported recordings all go through the same prompts once they have a transcript.
 
@@ -41,6 +43,6 @@ Action items record what was agreed — they do not send messages, book visits o
 - Choose the model for each prompt — on your own machine or in the cloud.
 - Set the order in which prompts run, switch them on and off, and make them conditional — that is done with the [rules](processing.md#rules): for example, a sales review runs only on calls filed as **Sales**.
 - Keep your own categories, tags and red flags in [Dictionaries](dictionaries.md).
-- Cap the cost with the [monthly limits](processing.md#limits).
+- Cap the cost with the [monthly limits](processing.md#spending).
 
 The original prompts and rules can be restored with **Restore defaults** under **Defaults** in [Settings → Processing](processing.md#defaults).

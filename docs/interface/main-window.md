@@ -16,7 +16,7 @@ From top to bottom, the left side holds:
 - the keypad and the call key;
 - the account chips;
 - the buttons that watch other extensions;
-- the four places to go: **Recordings**, **Contacts**, **History** and **Settings**.
+- the places to go: **Recordings**, **Contacts**, **History**, **Prompter** and **Settings**.
 
 ### The dialler
 
@@ -36,9 +36,9 @@ Under the keypad there is one chip for every [account](../sip-accounts/setup.md)
 
 Below the chips there are the [buttons](../sip-accounts/buttons.md) you made for colleagues and lines, each with a lamp — **E Clarke** and **Reception** in the pictures. Press one to dial its number.
 
-### Recordings, Contacts, History, Settings
+### Recordings, Contacts, History, Prompter, Settings
 
-These four entries at the bottom open a tab on the right, next to each other: [Recordings](../interface/recordings.md), [Contacts and History](contacts-history.md) and [Settings](settings-overview.md). Tabs you have opened stay in the row at the top of the right-hand side.
+These entries at the bottom open a tab on the right, next to each other: [Recordings](../interface/recordings.md), [Contacts and History](contacts-history.md), the [Prompter](../ai-processing/prompter.md) and [Settings](settings-overview.md). **Prompter** is there only once the prompter is allowed and has a recogniser to listen with. Tabs you have opened stay in the row at the top of the right-hand side.
 
 ## A call in progress
 
@@ -73,10 +73,10 @@ Calls that have been joined show as one **Conference** card on the account's lin
 
 When [capture of other applications](../capture/capture.md) is allowed in **Settings → Capture**, a strip appears between the account chips and the buttons.
 
-<Shot name="10_settings_capture" full alt="The Capture strip at the foot of the phone: Capture · ready, Record and two level bars" />
+<Shot name="10_settings_capture" full alt="The Capture strip at the foot of the phone: Capture · waiting for a conversation, the record button and two level bars" />
 
-- **Capture · ready** says that the program is listening for a conversation in another application.
-- **Record** starts a capture by hand.
-- The two thin bars under it show the level of the sound: the upper one is you, the lower one is what the computer plays. How they are drawn is set under **Picture in the line at the foot of the phone**.
+- **Capture · waiting for a conversation** says that the program is listening for a conversation in another application.
+- The round button at the right starts a capture by hand.
+- The two thin bars under it show the level of the sound: the upper one is you, the lower one is what the computer plays. How they are drawn is set under **Picture at the foot**.
 
 The program can also live in the tray (the menu bar on macOS) and be brought up with a [hotkey](../program/shortcuts.md).

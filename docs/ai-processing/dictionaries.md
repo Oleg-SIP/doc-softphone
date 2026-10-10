@@ -40,14 +40,16 @@ Labels that *may all be true of the same conversation*. Press **Add** to add one
 
 Things that need attention, found in the conversation with the evidence and the time — for example *Angry customer* or *Churn risk*. Red flags are drawn in red in the [Recordings window](../interface/recordings.md), and each carries a severity: low, medium or high.
 
-## Answer shapes and language
+## Instructions
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Settings → Dictionaries: answer shapes and language instructions" />
 
-Further down the tab are the instructions the prompts are assembled from. They are kept here so that every prompt can use the same wording, and you can change them like any other entry.
+*What is added to every prompt about the shape of the answer and the language to write it in.* They are kept here so that every prompt can use the same wording, and you can change them like any other entry — or write your own, such as *answer briefly* or *never quote a price*, and tick it under **Also send** on any prompt.
 
 | Name | Code | What it tells the model |
 | --- | --- | --- |
+| **Prose** | `shape-plain` | Answer in plain prose, without JSON, lists or headings. |
+| **Items** | `shape-list` | Answer with a list of things to do, each with who and when. |
 | **Labels** | `shape-labels` | Answer in JSON with a list of codes and how sure it is of each, using only codes from the list it was given. |
 | **Score** | `shape-score` | Answer with a score, the reason for it and the words it is based on. |
 | **Rubric** | `shape-rubric` | Answer with an overall score and a score for each criterion. |
@@ -58,7 +60,7 @@ Further down the tab are the instructions the prompts are assembled from. They a
 | **As spoken, named** | `language-as-spoken-named` | The same, naming the language. |
 | **A named language** | `language-named` | Write in the language you name. |
 
-**Add** at the end of the list adds an entry.
+**Add** at the top of the list adds an entry.
 
 ## Defaults
 

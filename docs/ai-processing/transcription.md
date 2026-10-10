@@ -4,19 +4,15 @@ sidebar_position: 1
 description: "Choose the recogniser that turns audio into text: its address, its model, and a table of the models each service offers."
 ---
 
-**Settings → Transcription** sets how audio becomes text: in which language, and by which recogniser.
+**Settings → Transcription** lists the recognisers: the services that turn audio into text, for finished conversations and, for the [Prompter](prompter.md), while a conversation is happening.
 
-<Shot name="25_transcription" alt="Settings → Transcription: the language and four recognisers" />
+<Shot name="25_transcription" alt="Settings → Transcription: five recognisers" />
 
 A conversation is transcribed when you ask for it in the [Recordings window](/interface/recordings), or by itself if **Process conversations automatically** is on in [Processing](/ai-processing/processing). A recogniser on your own machine costs nothing to run; one in the cloud charges by the minute of audio.
 
-## Language
-
-**Language** is a two-letter language code as in ISO 639-1 (`en`, `de`, `es`, `fr`, `sr`…). Leave it empty and the recogniser decides — that is right unless your calls are in a language it keeps mishearing.
-
 ## Recognisers
 
-A recogniser is a speech-to-text service the phone sends audio to. Press **Add** to add one; the **Test** button of the form checks that the service really answers. Each is listed with its name and, under it, the model and the address of its service. In the picture there are four:
+A recogniser is a speech-to-text service the phone sends audio to. Press **Add** to add one; the **Test** button of its card checks that the service really answers. Each is listed with its name and, under it, the model and the address of its service. In the picture there are five:
 
 | Name | Model | Address |
 | --- | --- | --- |
@@ -24,10 +20,52 @@ A recogniser is a speech-to-text service the phone sends audio to. Press **Add**
 | **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
 | **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
 | **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
+| **Vosk** | *(none)* | `ws://localhost:2700`, a server on this computer |
 
-The one marked **default** at the right of its row (**X.ai** in the picture) is the one used when you do not choose another. You can keep several. The drop-down above a transcript in the [Recordings window](/interface/recordings#transcript-or-write-up-the-drop-down) lists the transcripts made by each recogniser.
+The two marks at the right of a row say what the recogniser is the default for. The clock is lit on the default **for transcripts** — **X.ai** in the picture — which is used when you do not choose another. The lightning is lit on the default **for the prompter** — **Vosk** in the picture. You can keep several recognisers; the drop-down above a transcript in the [Recordings window](/interface/recordings#transcript-or-write-up-the-drop-down) lists the transcripts made by each one.
 
-The model may be left empty. The service then uses its own default.
+## The recogniser's card
+
+Pressing a recogniser opens its card.
+
+<Shot name="43_recogniser_card" alt="The card of the X.ai recogniser: kind, the two addresses, key, Test and the defaults" />
+
+| Field | What it is |
+| --- | --- |
+| **Name** | The name in the lists. |
+| **Kind** | The kind of service, which decides how the phone talks to it: **OpenAI-compatible (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, and three that run on your own machine — **Vosk**, **WhisperLive** and **NVIDIA Riva**. **Yandex SpeechKit** is offered where the country in [About](../application/about.md) is Russia or one of its neighbours. |
+| **Address for transcripts** | Where finished conversations are sent. |
+| **Address for the prompter** | Where live audio is sent while a conversation is happening. *Empty is worked out from the address beside it*, as `wss://api.x.ai` in the picture. |
+| **Key** | The service's key. *It is kept in this computer's keyring, never in a settings file.* |
+| **Test** | Asks the service and says what it answered, for example *Answered, and offers 3 model(s)*. |
+| **Model for transcripts** and **Model for the prompter** | The model, exactly as the service names it. *Empty sends no model name*, and the service uses its own default; where the vendor publishes one, the card names it. A field is not shown for a kind that has no choice. |
+| **Default for transcripts** | Makes this the recogniser used when you do not choose another. |
+| **Default for the prompter** | Makes this the recogniser a new assistant of the prompter listens with. |
+| **Enabled** | Off, the recogniser stays in the list and is not used. |
+
+**Advanced settings** opens the rest of the card. The values that matter most:
+
+<Shot name="43b_recogniser_advanced" alt="The advanced settings of a recogniser: limits, how replies are cut, the language" />
+
+| Field | What it does |
+| --- | --- |
+| **Region** | The region of the service, for one that has several. |
+| **Send the two sides separately** | A call is recorded with the two people on two channels, which is what tells the recogniser who said what. Turn it off for a server that says it can do this and cannot. |
+| **Ask who is speaking** | Names the people inside one channel, where several speak on it. |
+| **Write numbers as figures** | Sums, dates and phone numbers come back as they are written rather than spelt out. |
+| **Upload limit**, **Length limit** | The largest file, in bytes, and the longest recording, in seconds, this phone will send. |
+| **Requests at once** | How many requests may be in flight at the same time. |
+| **End a reply after**, **Join short replies within**, **Turn gap** | For the prompter: how long without new words ends a reply, how long a short reply waits for the next one to be joined to it, and how long a silence ends a turn where the recogniser marks none. In milliseconds. |
+| **Language** | A two-letter language code as in ISO 639-1 (`en`, `de`, `es`, `fr`, `sr`…). Leave it empty and the recogniser decides — that is right unless your calls are in a language it keeps mishearing. |
+| **Extras** | One `name = value` a line, passed to the service as it is. Leave it empty unless the server documents something. |
+| **Wait, minutes** | How long to wait for a transcript. Empty works it out from the length of the recording. |
+| **Price a minute** | What a minute of live audio costs, from the service's price list. The prompter shows what a session has cost and stops at its [monthly ceiling](prompter.md#spending). |
+
+## Live recognition for the prompter
+
+The [Prompter](prompter.md) needs a recogniser that listens while somebody is talking, over a stream rather than with a finished file. These kinds can: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-compatible** (with OpenAI's realtime transcription), **AssemblyAI**, **Soniox** and **Speechmatics** in the cloud, and **Vosk**, **WhisperLive** and **NVIDIA Riva** on your own machine. A recogniser on your own machine keeps the other party's voice in the building and charges nothing.
+
+To use one: open its card, check the **Address for the prompter** (or let it be worked out), choose the **Model for the prompter** where the service offers several — the live models are often different from the ones for files, such as ElevenLabs' `scribe_v2_realtime` — and press **Test**. Tick **Default for the prompter** to make it the one new assistants listen with.
 
 ## Which model to choose
 
@@ -55,8 +93,8 @@ Things worth knowing before you choose:
 
 - **File size.** OpenAI takes files up to 25 MB; X.ai up to 500 MB. A long conversation can be larger than a cloud service accepts.
 - **Price.** Cloud services charge by the minute of audio, and the rates differ by model and change; read them on the service's own page before you switch.
-- **Languages.** Every service has its own list; check yours, and set the [Language](#language) code if the recogniser guesses wrongly.
-- **Real-time models** such as `scribe_v2_realtime` or Deepgram's `flux` are made for live streams and are not in the table: the phone transcribes finished recordings.
+- **Languages.** Every service has its own list; check yours, and set the **Language** code under the recogniser's advanced settings if it guesses wrongly.
+- **Real-time models** such as `scribe_v2_realtime` or Deepgram's `flux` are made for live streams. They are not in the table, which is about finished recordings; they are what the [prompter](#live-recognition-for-the-prompter) uses.
 
 The list of a service's models changes often. If a model you want is missing here, the service's own documentation has the current list — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text) — the **Model** is the name exactly as the service gives it.
 

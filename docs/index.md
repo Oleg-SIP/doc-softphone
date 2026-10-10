@@ -20,6 +20,8 @@ Recordings, transcripts and history are kept in a file you own. No account or su
 3. It is transcribed, speaker by speaker, in step with the audio.
 4. The language model you chose writes it up: summary, tasks, category, tags and red flags — and you can ask the conversation a question.
 
+During a call the [Prompter](ai-processing/prompter.md) can go further: it shows what is being said as it is said, and suggests what to answer.
+
 ## Download and system requirements
 
 The program is free to download from [ai-softphone.com](https://ai-softphone.com/#download): an installer (`.exe`) for Windows, a disk image (`.dmg`) for macOS, and an AppImage or a `.deb` for Linux. The installer, the disk image and the AppImage need nothing installed first — Qt, OpenSSL and the C++ runtime travel inside them. The `.deb` is the exception: it uses the system's own C++ runtime, see below. You will need a SIP account, from your provider or from the PBX you run yourself. Recording works the moment the program is installed; the transcript and the write-up need a service you choose or a model on your own machine.
@@ -60,6 +62,7 @@ The screenshots in this documentation are taken on macOS and shown small: click 
 | Choose the recogniser that turns speech into text | [Transcription](ai-processing/transcription.md) |
 | Decide which AI writes up your conversations and what it may cost | [Processing](ai-processing/processing.md) |
 | Change the categories, tags and red flags | [Dictionaries](ai-processing/dictionaries.md) |
+| See what is said during a call, and get suggestions for what to answer | [Prompter](ai-processing/prompter.md) |
 | Change the layout, the theme, the start-up and the hotkeys | [Appearance](program/appearance.md), [Startup](program/startup.md) and [Shortcuts](program/shortcuts.md) |
 | Connect a CRM or another program | [Webhooks](integration/webhooks.md) and [Local REST API](integration/rest-api.md) |
 | See what the phone and the PBX are saying to each other | [Diagnostics](troubleshooting/diagnostics.md) |

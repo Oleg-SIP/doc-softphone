@@ -16,13 +16,13 @@ The icon at the left of a row says how the conversation arrived.
 | --- | --- | --- | --- |
 | Handset with an arrow | A call made or taken in this phone. The arrow points in for an incoming call and out for an outgoing one. | The contact's name, or the number | Recorded as set in [Recordings](../recordings.md) |
 | Arrow into a bar | A file imported from elsewhere: a mobile phone, a dictaphone or another system | The name of the file | **⋮ → Import from file(s)**; see [below](#a-recording-you-already-have) |
-| Window | A meeting held in another application | The name you gave it, or **Other application** | [Capture](../capture/capture.md) |
+| Window | A meeting held in another application | The name you gave it, or **Another application** | [Capture](../capture/capture.md) |
 
 In the picture the top three rows are one of each: a Zoom meeting, an imported file of a bank's support call and a call taken on the **305 Support** line. Whatever their source, they are transcribed, written up and searched alike.
 
 ## Finding a conversation
 
-The bar at the top has five filters, a search field and a menu:
+The bar at the top has four filters, a search field and a menu:
 
 | Control | Narrows the list by |
 | --- | --- |
@@ -30,7 +30,6 @@ The bar at the top has five filters, a search field and a menu:
 | **Period** | the date: **Today**, **Yesterday**, **Last 7 days**, or **Choose dates…** |
 | **Category** | the category it was filed under — see [Dictionaries](../ai-processing/dictionaries.md) |
 | **Mark** | the tags and red flags it carries |
-| **Recogniser** | the [recogniser](../ai-processing/transcription.md) that made its transcript |
 | **Search** | what was said in it — the search goes through the transcripts of everything you have recorded |
 
 <Shot name="39_more_menu" alt="The ⋮ menu of the list: Import from file(s), Export to CSV, Open in a browser" />

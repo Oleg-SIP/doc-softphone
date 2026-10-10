@@ -10,7 +10,9 @@ description: The Overview checklist and the tabs of the Settings window, and whe
 
 <Shot name="04_settings_overview" alt="Settings → Overview: the checklist of what has been set up" />
 
-**Overview** is a checklist of what it takes to get the most from the program. At the top it counts the steps — in the picture *10 done* with a green dot and *8 to go* with a red one — and a bar shows the share done. Every step is a line with a dot: green for a step that is done, red for one still to go.
+Above it, **Documentation** links to this site.
+
+**Overview** is a checklist of what it takes to get the most from the program. At the top it counts the steps — in the picture *14 done* with a green dot and *6 to go* with a red one — and a bar shows the share done. Every step is a line with a dot: green for a step that is done, red for one still to go.
 
 *Press a line to read what it is for and to open where it is set.* The arrow at the right end of the line expands it.
 
@@ -20,6 +22,7 @@ description: The Overview checklist and the tabs of the Settings window, and whe
 | **Capturing other applications** | Turn capturing on; Capture a conversation; Give one a name |
 | **Transcription** | Add a recogniser; Transcribe a conversation |
 | **Processing** | Add a model; Process a transcript |
+| **Prompter** | Allow prompting; Start prompting |
 | **Recordings** | Search what was said; Export a recording; Export a summary |
 | **Application** | Start with the computer; Keep it up to date |
 | **Feedback** | Send the extended report; Tell us what you think |
@@ -41,6 +44,7 @@ The steps are a guide, not a duty: a step you have no use for can stay red.
 | AI | **Transcription** | [Recognisers](../ai-processing/transcription.md) |
 | | **Processing** | [Automatic processing, spending limits, language models, prompts and rules](../ai-processing/processing.md) |
 | | **Dictionaries** | [Categories, tags and red flags](../ai-processing/dictionaries.md) |
+| | **Prompter** | [The live prompter: the switch, the text size, the assistants and what they may spend](../ai-processing/prompter.md) |
 | Program | **Appearance** | [Layout, language, theme and icons](../program/appearance.md) |
 | | **Startup** | [How the program starts, closes and opens call links](../program/startup.md) |
 | | **Shortcuts** | [Hotkeys](../program/shortcuts.md) |

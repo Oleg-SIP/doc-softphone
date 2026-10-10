@@ -25,8 +25,9 @@ Each module has a check box, a name, a line saying what it does, and at the righ
 | **Integration** | The local API, and webhooks: [Integration](/integration/rest-api). |
 | **Mediastorage** | The library of conversations and how long they are kept: [Recordings](/interface/recordings). |
 | **Processing** | Prompts and the rules that fire them: [Processing](/ai-processing/processing). |
+| **Prompter** | Listening to a conversation in progress, and suggesting: [Prompter](/ai-processing/prompter). |
 | **Recording** | Recording calls, and telling the other party about it: [Recordings](/recordings). |
-| **Telephony** | SIP, accounts, calls, the dialler and the call history. |
+| **Telephone** | SIP, accounts, calls, the dialler and the call history. |
 | **Transcription** | Recognisers, the queue that drives them, and the transcripts they produce: [Transcription](/ai-processing/transcription). |
 
 Turn a module off and it is gone: no settings for it, no menu entry, nothing of it running. Switch off a module you have no use for — for example **Integration** on a computer where nothing else talks to the phone — or keep a phone that is only a phone, where that is all a desk needs. The package is the same either way: there is nothing to buy and nothing to unlock.
