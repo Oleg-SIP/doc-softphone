@@ -10,15 +10,15 @@ The **Prompter** listens to a conversation while it is happening. In a window of
 
 In the picture the **Objections on a call** assistant is listening to a sales call. The left column is what was said, each line with its time and its side; the right one is what the model suggested about each reply of the customer; the newest suggestion is repeated in large type above the two.
 
-The [Overview](../interface/settings-overview.md) of the settings lists the prompter under **Prompter** in two steps: **Allow prompting** and **Start prompting**.
+The [Overview](/interface/settings-overview) of the settings lists the prompter under **Prompter** in two steps: **Allow prompting** and **Start prompting**.
 
 ## What it needs
 
-- **A recogniser that can listen while a conversation happens.** It is added in [Settings → Transcription](transcription.md#live-recognition-for-the-prompter), like any other recogniser, and needs an **Address for the prompter** and a successful **Test**.
-- **A language model**, for the assistants that suggest something. It is the one set on the assistant, or the default model of [Settings → Processing](processing.md#language-models). Subtitles need no model at all.
+- **A recogniser that can listen while a conversation happens.** It is added in [Settings → Transcription](/ai-processing/transcription#live-recognition-for-the-prompter), like any other recogniser, and needs an **Address for the prompter** and a successful **Test**.
+- **A language model**, for the assistants that suggest something. It is the one set on the assistant, or the default model of [Settings → Processing](/ai-processing/processing#language-models). Subtitles need no model at all.
 - **The tick Allow the prompter to be used**, in **Settings → Prompter**.
 
-Once all three are there, **Prompter** appears in the list at the foot of the phone, between **History** and **Settings**, and opens the [prompter window](#the-prompter-window). The part of the program that does this is the **Prompter** module, *listening to a conversation in progress, and suggesting*; it can be switched off in [Modules](../application/modules.md).
+Once all three are there, **Prompter** appears in the list at the foot of the phone, between **History** and **Settings**, and opens the [prompter window](#the-prompter-window). The part of the program that does this is the **Prompter** module, *listening to a conversation in progress, and suggesting*; it can be switched off in [Modules](/application/modules).
 
 ## Settings → Prompter
 
@@ -34,7 +34,7 @@ Once all three are there, **Prompter** appears in the list at the foot of the ph
 | **The repeated line** | 20 pixels | How large the band's text is. Shown while the band is on. |
 
 :::caution
-The other party's voice is sent to a recogniser as it is spoken, which is no less than recording them. Where [Settings → Recording](../recordings.md) asks for them to be told first, a prompter starts only after they have been.
+The other party's voice is sent to a recogniser as it is spoken, which is no less than recording them. Where [Settings → Recording](/recordings) asks for them to be told first, a prompter starts only after they have been.
 :::
 
 The prompter is read while you are talking, often from further away than the rest of the phone, so the two sizes are yours to choose: pick ones you can take in without leaning towards the screen. Drag the divider under the band to make it taller.
@@ -52,11 +52,11 @@ An assistant is what a prompter is asked to be. *Each one listens to a conversat
 | **Objections on a call** | For someone selling on the telephone: when the customer raises an objection, the objection in one line and one line that answers it. | yes |
 | **Interview help** | For someone being interviewed: the answer to the question just asked, in a few short lines, or what to cover in the next reply. | yes |
 
-**▲** and **▼** change the order, which is the order of the drop-down in the prompter window. **Add** makes an assistant of your own. **Restore defaults** puts the prompts and the rules back as they came with the program, here and under [Processing](processing.md#defaults) alike; your language models are left alone.
+**▲** and **▼** change the order, which is the order of the drop-down in the prompter window. **Add** makes an assistant of your own. **Restore defaults** puts the prompts and the rules back as they came with the program, here and under [Processing](/ai-processing/processing#defaults) alike; your language models are left alone.
 
 ### An assistant's card
 
-Pressing an assistant opens its card. It is the same card as a [prompt](prompt-studio.md) under Processing, with a few controls of its own.
+Pressing an assistant opens its card. It is the same card as a [prompt](/ai-processing/prompt-studio) under Processing, with a few controls of its own.
 
 <Shot name="42_prompter_assistant" alt="The card of the Objections on a call assistant: the recogniser, when a reply has ended, the role and the prompt" />
 
@@ -70,7 +70,7 @@ Pressing an assistant opens its card. It is the same card as a [prompt](prompt-s
 | **Role — what the model is** | Sent to the model before the prompt, for example *You help somebody selling on the telephone…* |
 | **The prompt** | What the model is asked about each reply. `{{reply}}` is the reply that has just ended and `{{conversation}}` is everything said before it. *Leave it empty and nothing is asked of a model — the words are shown as they arrive, and the only thing being paid for is the recogniser*: that is what **Subtitles** is. |
 | **Answer in** | The language of the suggestion: **Whatever was spoken**, **The language of this program**, or **One language, always**, with its code. |
-| **Model** | **Default** or one of your [language models](processing.md#language-models). |
+| **Model** | **Default** or one of your [language models](/ai-processing/processing#language-models). |
 
 ### Spending
 
@@ -81,7 +81,7 @@ Pressing an assistant opens its card. It is the same card as a [prompt](prompt-s
 | **Recognisers, a month** | A running prompter stops at the end of the reply it is on — never mid-word. |
 | **Models, a month** | The prompting stops and the subtitles carry on. |
 
-Empty is no ceiling. What a minute of live audio costs is the recogniser's **Price a minute**, set on its card in [Transcription](transcription.md#the-recognisers-card); without it the prompter says that the figure it shows is an estimate.
+Empty is no ceiling. What a minute of live audio costs is the recogniser's **Price a minute**, set on its card in [Transcription](/ai-processing/transcription#the-recognisers-card); without it the prompter says that the figure it shows is an estimate.
 
 ## The prompter window
 
@@ -108,7 +108,7 @@ Where the window is narrow the two columns stand one above the other. A column f
 
 ## Rehearsing on a recording
 
-An assistant can be tried out without anybody on the telephone. **Rehearse…** lists the conversations in the [library](../interface/recordings.md), newest first, and **A file on this computer…** for an `.mp3` or `.wav` file.
+An assistant can be tried out without anybody on the telephone. **Rehearse…** lists the conversations in the [library](/interface/recordings), newest first, and **A file on this computer…** for an `.mp3` or `.wav` file.
 
 <Shot name="45_prompter_rehearse" alt="Rehearse…: the conversations of the library and a file on this computer" />
 
@@ -120,7 +120,7 @@ A recording on one channel, such as an imported file, is heard as one room: *the
 
 - The recogniser is charged by the minute of live audio, and **Recognise my side too** doubles that. A model is charged for each suggestion. Both are counted against the [monthly ceilings](#spending), not against the limits of Processing.
 - The other party's voice leaves the computer as it is spoken, to the recogniser you chose. A recogniser on your own machine — **Vosk**, **WhisperLive** or **NVIDIA Riva** — keeps it in the building.
-- What the prompter shows is not a recording. To keep it, press **Export…**; to have the conversation itself, [record the call](../recordings.md) as well.
+- What the prompter shows is not a recording. To keep it, press **Export…**; to have the conversation itself, [record the call](/recordings) as well.
 
 ## When it does not start
 
