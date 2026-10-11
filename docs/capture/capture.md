@@ -34,7 +34,7 @@ The part of the program that does this is the **Capture** module, *recording a c
 
 ## Starting a capture
 
-Once capture is allowed, the bottom of the [main window](../interface/main-window.md#capture) shows its state — **Capture · ready** — with a **Record** button at the right. Press **Record** to start by hand.
+Once capture is allowed, the bottom of the [main window](../interface/main-window.md#capture) shows its state — **Capture · waiting for a conversation** — with a round record button at the right, *Record this conversation*. Press it to start by hand.
 
 ### Automatic start
 
@@ -42,7 +42,7 @@ Once capture is allowed, the bottom of the [main window](../interface/main-windo
 
 | Choice | What happens |
 | --- | --- |
-| **Never** | A capture starts only when you press **Record**. |
+| **Never** | A capture starts only when you press the record button. |
 | **Ask me** | The program asks whether to record it. The default. |
 | **Always** | The program starts recording on its own. |
 
@@ -52,7 +52,7 @@ Under **Applications that answer differently** an application can be given an an
 
 ### Before the start
 
-The slider **Before the start** is how many seconds of sound are kept from before a recording starts, **15 seconds** by default. It is there so that nothing is lost while the conversation is being noticed: a recording that starts when you press **Record**, or when you answer the question, still begins with the words that came before.
+The slider **Before the start** is how many seconds of sound are kept from before a recording starts, **15 seconds** by default. It is there so that nothing is lost while the conversation is being noticed: a recording that starts when you press the record button, or when you answer the question, still begins with the words that came before.
 
 ## Capturing a conversation
 
@@ -69,8 +69,8 @@ Two more settings choose how the level of the sound is drawn:
 
 | Setting | Default | Where |
 | --- | --- | --- |
-| **Picture in the main window** | Wave | The two channels while a capture is going on. |
-| **Picture in the line at the foot of the phone** | Two levels | The two thin bars under **Capture · ready**. |
+| **Picture in the window** | Wave | The two channels while a capture is going on. |
+| **Picture at the foot** | Two levels | The two thin bars under **Capture · waiting for a conversation**. |
 
 ### Testing it
 
@@ -78,12 +78,12 @@ Under **Test** the tab has two bars: **You** and **The other side**. *The upper 
 
 ## Giving it a name
 
-The pencil next to the name of the recording lets you rename it while it is going on. A recording you did not name is listed as **Other application**.
+The pencil next to the name of the recording lets you rename it while it is going on. A recording you did not name is listed as **Another application**.
 
 ## Where the recording goes
 
-A captured conversation appears in the [Recordings window](../interface/recordings.md) like any other, with its own icon, a window instead of a handset, and with the title you gave it or **Other application**.
+A captured conversation appears in the [Recordings window](../interface/recordings.md) like any other, with its own icon, a window instead of a handset, and with the title you gave it or **Another application**.
 
 <Shot name="01_recordings" alt="Captured meetings in the Recordings tab, marked with a window icon" />
 
-It is transcribed, summed up, filed under a category and tagged by the same [rules](../ai-processing/processing.md#rules) as a call. In the transcript of a captured meeting the speaker is shown as **Other application** where a call would show the other party's name; the **Search** of the library finds what was said in it too.
+It is transcribed, summed up, filed under a category and tagged by the same [rules](../ai-processing/processing.md#rules) as a call. In the transcript of a captured meeting the speaker is shown as the name of the recording where a call would show the other party's name; the **Search** of the library finds what was said in it too.

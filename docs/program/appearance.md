@@ -25,7 +25,7 @@ Every arrangement holds the same windows; what differs is where they stand. **Th
 
 ## Language
 
-The drop-down chooses the language of the interface; **Same as this computer** is the default. It is the interface only. What language is spoken on a call is a separate setting, and it arrives with the transcripts — see [Transcription](/ai-processing/transcription#language).
+The drop-down chooses the language of the interface; **Same as this computer** is the default. It is the interface only. What language is spoken on a call is a separate setting, and it arrives with the transcripts — see the **Language** of a recogniser in [Transcription](/ai-processing/transcription#the-recognisers-card).
 
 The prompts, rules and dictionaries that came with the program stay in their language when you switch. **Restore defaults** in [Processing](/ai-processing/processing#defaults) and in [Dictionaries](/ai-processing/dictionaries#defaults) brings them into the new one.
 

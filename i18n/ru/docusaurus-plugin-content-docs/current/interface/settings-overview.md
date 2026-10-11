@@ -1,6 +1,6 @@
 ---
 title: Обзор настроек
-sidebar_position: 4
+sidebar_position: 5
 description: Чек-лист «Сводка» и вкладки окна «Настройки» — и где описана каждая из них.
 ---
 

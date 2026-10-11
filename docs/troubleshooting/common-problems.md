@@ -44,7 +44,7 @@ What happens when somebody rings while you are on a call is set under [Call wait
 See [Capture](/capture/).
 
 - **Allow sound capture** in **Settings → Capture** must be on.
-- With **Automatic start** set to **Ask me** (the default), answer the question when it appears; with **Never**, press **Record** yourself.
+- With **Automatic start** set to **Ask me** (the default), answer the question when it appears; with **Never**, press the record button yourself.
 - Use **Test** on the same tab: the upper bar must move when you speak, the lower when something plays.
 - The **Capture** module must be on in [Modules](/application/modules).
 
