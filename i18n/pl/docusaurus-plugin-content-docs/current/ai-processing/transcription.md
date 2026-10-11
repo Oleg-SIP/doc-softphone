@@ -11,15 +11,20 @@ description: "Wybór rozpoznawacza, który zamienia dźwięk na tekst: jego adre
 Rozmowa jest transkrybowana, gdy poprosisz o to w [oknie nagrań](/interface/recordings), albo sama, jeśli w [Przetwarzaniu](/ai-processing/processing) włączone jest **Przetwarzaj rozmowy automatycznie**. Rozpoznawacz na Twojej własnej maszynie nic nie kosztuje; ten w chmurze pobiera opłatę za minutę dźwięku.
 
 ## Rozpoznawacze {#recognisers}
-Rozpoznawacz to usługa rozpoznawania mowy, do której telefon wysyła dźwięk. **Dodaj** dodaje nowy; przycisk **Sprawdź** na jego karcie sprawdza, czy usługa naprawdę odpowiada. Każdy jest na liście ze swoją nazwą, a pod nią z modelem i adresem swojej usługi. Na obrazku jest ich pięć:
+Rozpoznawacz to usługa rozpoznawania mowy, do której telefon wysyła dźwięk. **Dodaj** dodaje nowy; przycisk **Sprawdź** na jego karcie sprawdza, czy usługa naprawdę odpowiada. Każdy jest na liście ze swoją nazwą, a pod nią z modelem i adresem swojej usługi. Tabela wymienia każdy rodzaj usługi obsługiwany przez telefon, tak jak oferuje je **Rodzaj** na karcie, z adresem i modelami, które dostaje nowy rozpoznawacz tego rodzaju; ostatnia kolumna pokazuje pięć ustawionych na obrazku:
 
-| Nazwa | Model | Adres |
-| --- | --- | --- |
-| **X.ai** | *(puste: domyślny model usługi)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(brak)* | `ws://localhost:2700`, serwer na tym komputerze |
+| Rodzaj | Adres | Model | Na obrazku |
+| --- | --- | --- | --- |
+| **Zgodny z OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, na żywo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, na żywo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(puste: domyślny model usługi)*, na żywo `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(puste: domyślny model usługi)*, na żywo `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(puste: domyślny model usługi)* | — |
+| **Vosk (na twojej własnej maszynie)** | Twój serwer, na przykład `ws://localhost:2700` | *(ustawiany na serwerze)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (na twojej własnej maszynie)** | Twój serwer, na przykład `ws://localhost:9090` | na żywo `small` | — |
+| **NVIDIA Riva (na twojej własnej maszynie)** | Twój serwer, na przykład `localhost:50051` | *(ustawiany na serwerze)* | — |
 
 Dwa znaki po prawej stronie wiersza mówią, do czego rozpoznawacz jest domyślny. Zegar świeci przy domyślnym **dla transkrypcji** — na obrazku **X.ai** — używanym, gdy nie wybierzesz innego. Błyskawica świeci przy domyślnym **dla suflera** — na obrazku **Vosk**. Możesz mieć kilka rozpoznawaczy; lista rozwijana nad transkrypcją w [oknie nagrań](/interface/recordings#transcript-or-write-up-the-drop-down) pokazuje transkrypcje zrobione przez każdy z nich.
 
@@ -31,7 +36,7 @@ Kliknięcie rozpoznawacza otwiera jego kartę.
 | Pole | Co to jest |
 | --- | --- |
 | **Nazwa** | Nazwa na listach. |
-| **Rodzaj** | Rodzaj usługi, od którego zależy, jak telefon z nią rozmawia: **Zgodny z OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** i trzy działające na Twojej własnej maszynie — **Vosk**, **WhisperLive** i **NVIDIA Riva**. **Yandex SpeechKit** jest oferowany, gdy krajem wybranym w [O programie](../application/about.md) jest Rosja lub jeden z jej sąsiadów. |
+| **Rodzaj** | Rodzaj usługi, od którego zależy, jak telefon z nią rozmawia: **Zgodny z OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** i trzy działające na Twojej własnej maszynie — **Vosk**, **WhisperLive** i **NVIDIA Riva**. |
 | **Adres dla transkrypcji** | Dokąd wysyłane są zakończone rozmowy. |
 | **Adres dla suflera** | Dokąd płynie dźwięk na żywo w trakcie rozmowy. *Puste jest wyliczane z adresu obok*, jak `wss://api.x.ai` na obrazku. |
 | **Klucz** | Klucz usługi. *Leży w pęku kluczy tego komputera, nigdy w pliku ustawień.* |
@@ -60,7 +65,7 @@ Kliknięcie rozpoznawacza otwiera jego kartę.
 | **Cena za minutę** | Ile kosztuje minuta dźwięku na żywo według cennika usługi. Sufler pokazuje, ile kosztowała sesja, i zatrzymuje się na swoim [miesięcznym limicie](prompter.md#spending). |
 
 ## Rozpoznawanie na żywo dla suflera {#live-recognition-for-the-prompter}
-[Sufler](../interface/prompter.md) potrzebuje rozpoznawacza, który słucha, gdy ktoś mówi — strumieniem, a nie gotowym plikiem. Potrafią to te rodzaje: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Zgodny z OpenAI** (z transkrypcją OpenAI w czasie rzeczywistym), **AssemblyAI**, **Soniox** i **Speechmatics** w chmurze, **Yandex SpeechKit** tam, gdzie jest oferowany, oraz **Vosk**, **WhisperLive** i **NVIDIA Riva** na Twojej własnej maszynie. Rozpoznawacz na Twojej własnej maszynie zatrzymuje głos rozmówcy w firmie i nic nie kosztuje.
+[Sufler](../interface/prompter.md) potrzebuje rozpoznawacza, który słucha, gdy ktoś mówi — strumieniem, a nie gotowym plikiem. Potrafią to te rodzaje: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Zgodny z OpenAI** (z transkrypcją OpenAI w czasie rzeczywistym), **AssemblyAI**, **Soniox** i **Speechmatics** w chmurze oraz **Vosk**, **WhisperLive** i **NVIDIA Riva** na Twojej własnej maszynie. Rozpoznawacz na Twojej własnej maszynie zatrzymuje głos rozmówcy w firmie i nic nie kosztuje.
 
 Jak go użyć: otwórz jego kartę, sprawdź **Adres dla suflera** (lub pozwól go wyliczyć), wybierz **Model dla suflera**, jeśli usługa oferuje kilka — modele na żywo często różnią się od tych dla plików, jak `scribe_v2_realtime` w ElevenLabs — i naciśnij **Sprawdź**. Zaznacz **Domyślny dla suflera**, aby nowi pomocnicy słuchali właśnie nim.
 
@@ -98,9 +103,6 @@ Tabela wymienia modele rozpoznawania mowy każdego rodzaju z listy **Rodzaj**. *
 | | `universal-3-6-pro` | sufler | Najnowszy model AssemblyAI na żywo, 32 języki; usługa używa go, gdy model jest pusty. |
 | | `universal-streaming-multilingual` | sufler | Tańsze rozpoznawanie na żywo po angielsku, hiszpańsku, niemiecku, francusku, portugalsku i włosku. |
 | | `universal-streaming-english` | sufler | Tańsze rozpoznawanie na żywo, tylko po angielsku. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | oba | Główny model, mocny w języku rosyjskim, także przez telefon. Oferowany, gdy krajem jest Rosja lub jeden z jej sąsiadów. |
-| | `general:rc` | oba | Następna wersja modelu przed wydaniem. |
-| | `deferred-general` | transkrypcje | Rozpoznawanie odroczone: transkrypcja przychodzi później, za mniejsze pieniądze. |
 | **Vosk (na twojej własnej maszynie)**<br />`ws://localhost:2700` | *(ustawiany na serwerze)* | oba | Darmowy i lekki; działa bez karty graficznej. Model to ten, z którym uruchomiono serwer, jeden na język, na przykład `vosk-model-small-pl-0.22` lub `vosk-model-en-us-0.22`. |
 | **WhisperLive (na twojej własnej maszynie)**<br />`ws://localhost:9090` | `small` | oba | Whisper w strumieniu na żywo. Rozmiar wybiera się na karcie: `tiny`, `base`, `small` (proponowany przez telefon), `medium`, `large-v3`; im większy, tym dokładniejszy i tym bardziej potrzebuje karty graficznej. |
 | **NVIDIA Riva (na twojej własnej maszynie)**<br />`localhost:50051` | *(ustawiany na serwerze)* | oba | Serwer mowy NVIDIA, dla komputera z kartą graficzną NVIDIA. Udostępnia modele takie jak Parakeet i Canary. |
@@ -112,7 +114,7 @@ Co warto wiedzieć przed wyborem:
 - **Cena.** Usługi w chmurze pobierają opłatę za minutę dźwięku, a stawki zależą od modelu i się zmieniają; sprawdź je na stronie usługi, zanim się przełączysz. Rozpoznawacz na Twojej własnej maszynie nic nie kosztuje.
 - **Języki.** Każda usługa ma własną listę; sprawdź swoją i ustaw kod w polu **Język** w ustawieniach zaawansowanych rozpoznawacza, jeśli zgaduje źle.
 
-Lista modeli usługi często się zmienia. Jeśli brakuje tu modelu, którego chcesz, aktualna lista jest w dokumentacji samej usługi — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — a **Model** to nazwa dokładnie taka, jaką podaje usługa.
+Lista modeli usługi często się zmienia. Jeśli brakuje tu modelu, którego chcesz, aktualna lista jest w dokumentacji samej usługi — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — a **Model** to nazwa dokładnie taka, jaką podaje usługa.
 
 ## Twoje własne modele {#your-own-models}
 

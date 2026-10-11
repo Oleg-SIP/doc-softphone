@@ -11,15 +11,20 @@ description: "Memilih pengenal suara yang mengubah suara menjadi teks: alamatnya
 Sebuah percakapan ditranskripsi saat Anda memintanya di [jendela Rekaman](/interface/recordings), atau dengan sendirinya jika **Proses percakapan otomatis** aktif di [Pemrosesan](/ai-processing/processing). Pengenal suara di mesin Anda sendiri tidak memakan biaya; yang di cloud menagih per menit suara.
 
 ## Pengenal suara {#recognisers}
-Pengenal suara adalah layanan pengenalan ucapan yang menerima suara dari telepon. **Tambah** menambahkan yang baru; tombol **Uji** di kartunya memeriksa bahwa layanan benar-benar menjawab. Masing-masing tercantum dengan namanya dan, di bawahnya, model serta alamat layanannya. Di gambar ada lima:
+Pengenal suara adalah layanan pengenalan ucapan yang menerima suara dari telepon. **Tambah** menambahkan yang baru; tombol **Uji** di kartunya memeriksa bahwa layanan benar-benar menjawab. Masing-masing tercantum dengan namanya dan, di bawahnya, model serta alamat layanannya. Tabel ini mencantumkan setiap jenis layanan yang didukung telepon, sebagaimana ditawarkan **Jenis** di kartu, beserta alamat dan model yang diberikan kepada pengenal suara baru dari jenis itu; kolom terakhir menunjukkan lima yang diatur di gambar:
 
-| Nama | Model | Alamat |
-| --- | --- | --- |
-| **X.ai** | *(kosong: model bawaan layanan)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(tidak ada)* | `ws://localhost:2700`, server di komputer ini |
+| Jenis | Alamat | Model | Di gambar |
+| --- | --- | --- | --- |
+| **Sesuai OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, langsung `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, langsung `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(kosong: model bawaan layanan)*, langsung `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(kosong: model bawaan layanan)*, langsung `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(kosong: model bawaan layanan)* | — |
+| **Vosk (di mesin Anda sendiri)** | server Anda, misalnya `ws://localhost:2700` | *(diatur di server)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (di mesin Anda sendiri)** | server Anda, misalnya `ws://localhost:9090` | langsung `small` | — |
+| **NVIDIA Riva (di mesin Anda sendiri)** | server Anda, misalnya `localhost:50051` | *(diatur di server)* | — |
 
 Dua tanda di kanan baris menunjukkan pengenal suara itu menjadi bawaan untuk apa. Jam menyala pada bawaan **untuk transkripsi** — **X.ai** di gambar —, yang dipakai bila Anda tidak memilih yang lain. Petir menyala pada bawaan **untuk pembisik** — **Vosk** di gambar. Anda dapat menyimpan beberapa pengenal suara; daftar tarik-turun di atas transkrip di [jendela Rekaman](/interface/recordings#transcript-or-write-up-the-drop-down) menampilkan transkrip yang dibuat oleh masing-masing.
 
@@ -31,7 +36,7 @@ Menekan sebuah pengenal suara membuka kartunya.
 | Kolom | Apa itu |
 | --- | --- |
 | **Nama** | Nama di daftar. |
-| **Jenis** | Jenis layanan, yang menentukan cara telepon berbicara dengannya: **Sesuai OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, dan tiga yang berjalan di mesin Anda sendiri — **Vosk**, **WhisperLive**, dan **NVIDIA Riva**. **Yandex SpeechKit** ditawarkan bila negara di [Tentang](../application/about.md) adalah Rusia atau salah satu tetangganya. |
+| **Jenis** | Jenis layanan, yang menentukan cara telepon berbicara dengannya: **Sesuai OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, dan tiga yang berjalan di mesin Anda sendiri — **Vosk**, **WhisperLive**, dan **NVIDIA Riva**. |
 | **Alamat untuk transkripsi** | Ke mana percakapan yang sudah selesai dikirim. |
 | **Alamat untuk pembisik** | Ke mana suara langsung dikirim selagi percakapan berlangsung. *Kosong diturunkan dari alamat di sebelahnya*, seperti `wss://api.x.ai` di gambar. |
 | **Kunci** | Kunci layanan. *Disimpan di gantungan kunci komputer ini, tidak pernah di berkas pengaturan.* |
@@ -60,7 +65,7 @@ Menekan sebuah pengenal suara membuka kartunya.
 | **Harga per menit** | Biaya satu menit suara langsung, dari daftar harga layanan. Pembisik menunjukkan biaya sebuah sesi dan berhenti pada [batas bulanannya](prompter.md#spending). |
 
 ## Pengenalan langsung untuk pembisik {#live-recognition-for-the-prompter}
-[Pembisik](../interface/prompter.md) membutuhkan pengenal suara yang mendengarkan selagi seseorang berbicara, lewat aliran, bukan dengan berkas yang sudah jadi. Jenis-jenis ini bisa: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Sesuai OpenAI** (dengan transkripsi waktu nyata OpenAI), **AssemblyAI**, **Soniox**, dan **Speechmatics** di cloud, **Yandex SpeechKit** di tempat ia ditawarkan, serta **Vosk**, **WhisperLive**, dan **NVIDIA Riva** di mesin Anda sendiri. Pengenal suara di mesin Anda sendiri menjaga suara lawan bicara tetap di dalam gedung dan tidak memungut biaya.
+[Pembisik](../interface/prompter.md) membutuhkan pengenal suara yang mendengarkan selagi seseorang berbicara, lewat aliran, bukan dengan berkas yang sudah jadi. Jenis-jenis ini bisa: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Sesuai OpenAI** (dengan transkripsi waktu nyata OpenAI), **AssemblyAI**, **Soniox**, dan **Speechmatics** di cloud serta **Vosk**, **WhisperLive**, dan **NVIDIA Riva** di mesin Anda sendiri. Pengenal suara di mesin Anda sendiri menjaga suara lawan bicara tetap di dalam gedung dan tidak memungut biaya.
 
 Untuk memakainya: buka kartunya, periksa **Alamat untuk pembisik** (atau biarkan diturunkan), pilih **Model untuk pembisik** bila layanan menawarkan beberapa — model langsung sering berbeda dari model untuk berkas, seperti `scribe_v2_realtime` milik ElevenLabs — lalu tekan **Uji**. Centang **Bawaan untuk pembisik** agar asisten baru mendengarkan dengannya.
 
@@ -98,9 +103,6 @@ Tabel ini mencantumkan model pengenalan ucapan dari setiap jenis di daftar **Jen
 | | `universal-3-6-pro` | pembisik | Model langsung terbaru AssemblyAI, 32 bahasa; layanan memakainya bila model kosong. |
 | | `universal-streaming-multilingual` | pembisik | Pengenalan langsung yang lebih murah dalam bahasa Inggris, Spanyol, Jerman, Prancis, Portugis, dan Italia. |
 | | `universal-streaming-english` | pembisik | Pengenalan langsung yang lebih murah, hanya bahasa Inggris. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | keduanya | Model utama, kuat untuk bahasa Rusia, juga lewat telepon. Ditawarkan bila negaranya Rusia atau salah satu tetangganya. |
-| | `general:rc` | keduanya | Versi model berikutnya sebelum dirilis. |
-| | `deferred-general` | transkripsi | Pengenalan tertunda: transkrip datang belakangan, dengan biaya lebih rendah. |
 | **Vosk (di mesin Anda sendiri)**<br />`ws://localhost:2700` | *(diatur di server)* | keduanya | Gratis dan ringan; berjalan tanpa kartu grafis. Modelnya adalah model yang dipakai saat server dijalankan, satu per bahasa, misalnya `vosk-model-en-us-0.22` atau yang kecil `vosk-model-small-en-us-0.15`. |
 | **WhisperLive (di mesin Anda sendiri)**<br />`ws://localhost:9090` | `small` | keduanya | Whisper lewat aliran langsung. Ukurannya dipilih di kartu: `tiny`, `base`, `small` (yang ditawarkan telepon), `medium`, `large-v3`; makin besar, makin akurat, dan makin butuh kartu grafis. |
 | **NVIDIA Riva (di mesin Anda sendiri)**<br />`localhost:50051` | *(diatur di server)* | keduanya | Server ucapan NVIDIA, untuk komputer dengan kartu grafis NVIDIA. Menyediakan model seperti Parakeet dan Canary. |
@@ -112,7 +114,7 @@ Hal yang perlu diketahui sebelum memilih:
 - **Harga.** Layanan cloud menagih per menit suara, dan tarifnya berbeda per model dan berubah; bacalah di halaman layanan itu sendiri sebelum beralih. Pengenal suara di mesin Anda sendiri tidak memakan biaya.
 - **Bahasa.** Setiap layanan punya daftarnya sendiri; periksa daftar Anda, dan isi kode di **Bahasa** pada pengaturan lanjutan pengenal suara jika tebakannya salah.
 
-Daftar model sebuah layanan sering berubah. Jika model yang Anda inginkan tidak ada di sini, dokumentasi layanan itu sendiri memuat daftar terbaru — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — dan **Model** adalah nama persis seperti yang diberikan layanan.
+Daftar model sebuah layanan sering berubah. Jika model yang Anda inginkan tidak ada di sini, dokumentasi layanan itu sendiri memuat daftar terbaru — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — dan **Model** adalah nama persis seperti yang diberikan layanan.
 
 ## Model Anda sendiri {#your-own-models}
 

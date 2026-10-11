@@ -11,15 +11,20 @@ description: "De herkenner kiezen die geluid in tekst omzet: zijn adres, zijn mo
 Een gesprek wordt getranscribeerd als u daarom vraagt in het [venster Opnames](/interface/recordings), of vanzelf als **Gesprekken automatisch verwerken** aan staat onder [Verwerking](/ai-processing/processing). Een herkenner op uw eigen machine kost niets om te draaien; een in de cloud rekent per minuut geluid.
 
 ## Herkenners {#recognisers}
-Een herkenner is een spraakherkenningsdienst waar de telefoon het geluid naartoe stuurt. Met **Toevoegen** voegt u er een toe; de knop **Testen** op zijn kaart controleert of de dienst echt antwoordt. Elke herkenner staat in de lijst met zijn naam en daaronder het model en het adres van zijn dienst. Op de afbeelding zijn het er vijf:
+Een herkenner is een spraakherkenningsdienst waar de telefoon het geluid naartoe stuurt. Met **Toevoegen** voegt u er een toe; de knop **Testen** op zijn kaart controleert of de dienst echt antwoordt. Elke herkenner staat in de lijst met zijn naam en daaronder het model en het adres van zijn dienst. De tabel toont elke soort dienst die de telefoon ondersteunt, zoals **Soort** op de kaart ze aanbiedt, met het adres en de modellen die een nieuwe herkenner van die soort krijgt; de laatste kolom toont de vijf die op de afbeelding zijn ingesteld:
 
-| Naam | Model | Adres |
-| --- | --- | --- |
-| **X.ai** | *(leeg: de standaard van de dienst)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(geen)* | `ws://localhost:2700`, een server op deze computer |
+| Soort | Adres | Model | Op de afbeelding |
+| --- | --- | --- | --- |
+| **OpenAI-compatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, live `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, live `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(leeg: de standaard van de dienst)*, live `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(leeg: de standaard van de dienst)*, live `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(leeg: de standaard van de dienst)* | — |
+| **Vosk (op uw eigen machine)** | uw server, bijvoorbeeld `ws://localhost:2700` | *(op de server ingesteld)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (op uw eigen machine)** | uw server, bijvoorbeeld `ws://localhost:9090` | live `small` | — |
+| **NVIDIA Riva (op uw eigen machine)** | uw server, bijvoorbeeld `localhost:50051` | *(op de server ingesteld)* | — |
 
 De twee tekens rechts in een rij zeggen waarvoor de herkenner de standaard is. De klok brandt bij de standaard **voor transcripties** — **X.ai** op de afbeelding —, die gebruikt wordt als u geen andere kiest. De bliksem brandt bij de standaard **voor de souffleur** — **Vosk** op de afbeelding. U kunt meerdere herkenners houden; de keuzelijst boven een transcriptie in het [venster Opnames](/interface/recordings#transcript-or-write-up-the-drop-down) toont de transcripties die elk ervan gemaakt heeft.
 
@@ -31,7 +36,7 @@ Een klik op een herkenner opent zijn kaart.
 | Veld | Wat het is |
 | --- | --- |
 | **Naam** | De naam in de lijsten. |
-| **Soort** | De soort dienst, die bepaalt hoe de telefoon ermee praat: **OpenAI-compatibel (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, en drie die op uw eigen machine draaien — **Vosk**, **WhisperLive** en **NVIDIA Riva**. **Yandex SpeechKit** wordt aangeboden waar het land onder [Over](../application/about.md) Rusland of een van zijn buurlanden is. |
+| **Soort** | De soort dienst, die bepaalt hoe de telefoon ermee praat: **OpenAI-compatibel (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, en drie die op uw eigen machine draaien — **Vosk**, **WhisperLive** en **NVIDIA Riva**. |
 | **Adres voor transcripties** | Waar afgelopen gesprekken naartoe gaan. |
 | **Adres voor de souffleur** | Waar het live geluid naartoe gaat terwijl een gesprek bezig is. *Leeg wordt afgeleid uit het adres ernaast*, zoals `wss://api.x.ai` op de afbeelding. |
 | **Sleutel** | De sleutel van de dienst. *Het staat in de sleutelbos van deze computer, nooit in een instellingenbestand.* |
@@ -60,7 +65,7 @@ Een klik op een herkenner opent zijn kaart.
 | **Prijs per minuut** | Wat een minuut live geluid kost, volgens de prijslijst van de dienst. De souffleur toont wat een sessie heeft gekost en stopt bij zijn [maandplafond](prompter.md#spending). |
 
 ## Live herkenning voor de souffleur {#live-recognition-for-the-prompter}
-De [souffleur](../interface/prompter.md) heeft een herkenner nodig die luistert terwijl iemand praat, via een stroom in plaats van met een afgerond bestand. Deze soorten kunnen dat: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-compatibel** (met de realtime transcriptie van OpenAI), **AssemblyAI**, **Soniox** en **Speechmatics** in de cloud, **Yandex SpeechKit** waar het wordt aangeboden, en **Vosk**, **WhisperLive** en **NVIDIA Riva** op uw eigen machine. Een herkenner op uw eigen machine houdt de stem van de andere partij binnen de deur en rekent niets.
+De [souffleur](../interface/prompter.md) heeft een herkenner nodig die luistert terwijl iemand praat, via een stroom in plaats van met een afgerond bestand. Deze soorten kunnen dat: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-compatibel** (met de realtime transcriptie van OpenAI), **AssemblyAI**, **Soniox** en **Speechmatics** in de cloud en **Vosk**, **WhisperLive** en **NVIDIA Riva** op uw eigen machine. Een herkenner op uw eigen machine houdt de stem van de andere partij binnen de deur en rekent niets.
 
 Zo gebruikt u er een: open zijn kaart, controleer het **Adres voor de souffleur** (of laat het afleiden), kies het **Model voor de souffleur** waar de dienst er meerdere aanbiedt — de live modellen zijn vaak andere dan die voor bestanden, zoals `scribe_v2_realtime` van ElevenLabs — en druk op **Testen**. Vink **Standaard voor de souffleur** aan om nieuwe assistenten ermee te laten luisteren.
 
@@ -98,9 +103,6 @@ De tabel toont de spraakherkenningsmodellen van elke soort in de lijst **Soort**
 | | `universal-3-6-pro` | souffleur | Het nieuwste live model van AssemblyAI, 32 talen; de dienst neemt het als het model leeg is. |
 | | `universal-streaming-multilingual` | souffleur | Goedkopere live herkenning in het Engels, Spaans, Duits, Frans, Portugees en Italiaans. |
 | | `universal-streaming-english` | souffleur | Goedkopere live herkenning, alleen Engels. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | allebei | Het hoofdmodel, sterk in Russisch, ook aan de telefoon. Wordt aangeboden waar het land Rusland of een van zijn buurlanden is. |
-| | `general:rc` | allebei | De volgende versie van het model vóór de release. |
-| | `deferred-general` | transcripties | Uitgestelde herkenning: de transcriptie komt later, voor minder geld. |
 | **Vosk (op uw eigen machine)**<br />`ws://localhost:2700` | *(op de server ingesteld)* | allebei | Gratis en licht; draait zonder grafische kaart. Het model is dat waarmee de server gestart is, één per taal, bijvoorbeeld `vosk-model-nl-spraakherkenning-0.6` of het kleine `vosk-model-small-nl-0.22`. |
 | **WhisperLive (op uw eigen machine)**<br />`ws://localhost:9090` | `small` | allebei | Whisper via een live stroom. De grootte kiest u op de kaart: `tiny`, `base`, `small` (wat de telefoon aanbiedt), `medium`, `large-v3`; hoe groter, hoe nauwkeuriger, en hoe meer het een grafische kaart wil. |
 | **NVIDIA Riva (op uw eigen machine)**<br />`localhost:50051` | *(op de server ingesteld)* | allebei | De spraakserver van NVIDIA, voor een computer met een grafische kaart van NVIDIA. Hij levert modellen zoals Parakeet en Canary. |
@@ -112,7 +114,7 @@ Goed om te weten voordat u kiest:
 - **Prijs.** Clouddiensten rekenen per minuut geluid, en de tarieven verschillen per model en veranderen; lees ze op de pagina van de dienst zelf voordat u overstapt. Een herkenner op uw eigen machine kost niets om te draaien.
 - **Talen.** Elke dienst heeft zijn eigen lijst; controleer de uwe en vul de code in bij **Taal** in de geavanceerde instellingen van de herkenner als hij verkeerd gokt.
 
-De lijst met modellen van een dienst verandert vaak. Ontbreekt hier een model dat u wilt, dan staat de actuele lijst in de documentatie van de dienst zelf — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — en het **Model** is de naam precies zoals de dienst die geeft.
+De lijst met modellen van een dienst verandert vaak. Ontbreekt hier een model dat u wilt, dan staat de actuele lijst in de documentatie van de dienst zelf — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — en het **Model** is de naam precies zoals de dienst die geeft.
 
 ## Uw eigen modellen {#your-own-models}
 

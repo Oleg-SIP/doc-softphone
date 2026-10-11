@@ -11,15 +11,20 @@ description: "Alegerea recunoscătorului care transformă sunetul în text: adre
 O conversație este transcrisă când cereți acest lucru în [fereastra Înregistrări](/interface/recordings), sau de la sine, dacă în [Prelucrare](/ai-processing/processing) este pornit **Prelucrează conversațiile automat**. Un recunoscător pe propria dumneavoastră mașină nu costă nimic; unul în cloud taxează minutul de sunet.
 
 ## Recunoscătoare {#recognisers}
-Un recunoscător este un serviciu de recunoaștere a vorbirii căruia telefonul îi trimite sunetul. **Adaugă** adaugă unul nou; butonul **Verifică** de pe fișa lui verifică dacă serviciul chiar răspunde. Fiecare apare în listă cu numele său și, dedesubt, cu modelul și adresa serviciului său. În imagine sunt cinci:
+Un recunoscător este un serviciu de recunoaștere a vorbirii căruia telefonul îi trimite sunetul. **Adaugă** adaugă unul nou; butonul **Verifică** de pe fișa lui verifică dacă serviciul chiar răspunde. Fiecare apare în listă cu numele său și, dedesubt, cu modelul și adresa serviciului său. Tabelul enumeră fiecare fel de serviciu pe care îl suportă telefonul, așa cum le oferă **Fel** pe fișă, cu adresa și modelele pe care le primește un recunoscător nou de acest fel; ultima coloană arată cele cinci configurate în imagine:
 
-| Nume | Model | Adresă |
-| --- | --- | --- |
-| **X.ai** | *(gol: modelul implicit al serviciului)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(niciunul)* | `ws://localhost:2700`, un server pe acest calculator |
+| Fel | Adresă | Model | În imagine |
+| --- | --- | --- | --- |
+| **Compatibil OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, în direct `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, în direct `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(gol: modelul implicit al serviciului)*, în direct `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(gol: modelul implicit al serviciului)*, în direct `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(gol: modelul implicit al serviciului)* | — |
+| **Vosk (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `ws://localhost:2700` | *(se setează pe server)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `ws://localhost:9090` | în direct `small` | — |
+| **NVIDIA Riva (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `localhost:50051` | *(se setează pe server)* | — |
 
 Cele două semne din dreapta unui rând spun pentru ce este recunoscătorul implicit. Ceasul se aprinde la cel implicit **pentru transcrieri** — **X.ai** în imagine —, folosit când nu alegeți altul. Fulgerul se aprinde la cel implicit **pentru sufleur** — **Vosk** în imagine. Puteți păstra mai multe recunoscătoare; lista derulantă de deasupra unei transcrieri din [fereastra Înregistrări](/interface/recordings#transcript-or-write-up-the-drop-down) arată transcrierile făcute de fiecare dintre ele.
 
@@ -31,7 +36,7 @@ Un clic pe un recunoscător îi deschide fișa.
 | Câmp | Ce este |
 | --- | --- |
 | **Nume** | Numele din liste. |
-| **Fel** | Felul serviciului, care hotărăște cum vorbește telefonul cu el: **Compatibil OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** și trei care rulează pe propria dumneavoastră mașină — **Vosk**, **WhisperLive** și **NVIDIA Riva**. **Yandex SpeechKit** este oferit când țara aleasă în [Despre](../application/about.md) este Rusia sau una dintre vecinele ei. |
+| **Fel** | Felul serviciului, care hotărăște cum vorbește telefonul cu el: **Compatibil OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** și trei care rulează pe propria dumneavoastră mașină — **Vosk**, **WhisperLive** și **NVIDIA Riva**. |
 | **Adresă pentru transcrieri** | Unde sunt trimise conversațiile încheiate. |
 | **Adresă pentru sufleur** | Unde merge sunetul în direct în timpul unei conversații. *Gol se deduce din adresa alăturată*, ca `wss://api.x.ai` în imagine. |
 | **Cheie** | Cheia serviciului. *Stă în portcheiul acestui calculator, niciodată într-un fișier de setări.* |
@@ -60,7 +65,7 @@ Un clic pe un recunoscător îi deschide fișa.
 | **Preț pe minut** | Cât costă un minut de sunet în direct, după lista de prețuri a serviciului. Sufleurul arată cât a costat o sesiune și se oprește la [plafonul lunar](prompter.md#spending). |
 
 ## Recunoaștere în direct pentru sufleur {#live-recognition-for-the-prompter}
-[Sufleurul](../interface/prompter.md) are nevoie de un recunoscător care ascultă în timp ce cineva vorbește, printr-un flux, nu cu un fișier încheiat. Aceste feluri pot: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Compatibil OpenAI** (cu transcrierea în timp real a OpenAI), **AssemblyAI**, **Soniox** și **Speechmatics** în cloud, **Yandex SpeechKit** acolo unde este oferit, și **Vosk**, **WhisperLive** și **NVIDIA Riva** pe propria dumneavoastră mașină. Un recunoscător pe propria mașină păstrează vocea interlocutorului în casă și nu costă nimic.
+[Sufleurul](../interface/prompter.md) are nevoie de un recunoscător care ascultă în timp ce cineva vorbește, printr-un flux, nu cu un fișier încheiat. Aceste feluri pot: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Compatibil OpenAI** (cu transcrierea în timp real a OpenAI), **AssemblyAI**, **Soniox** și **Speechmatics** în cloud și **Vosk**, **WhisperLive** și **NVIDIA Riva** pe propria dumneavoastră mașină. Un recunoscător pe propria mașină păstrează vocea interlocutorului în casă și nu costă nimic.
 
 Ca să folosiți unul: deschideți-i fișa, verificați **Adresă pentru sufleur** (sau lăsați-o să se deducă), alegeți **Model pentru sufleur** acolo unde serviciul oferă mai multe — modelele în direct diferă adesea de cele pentru fișiere, cum e `scribe_v2_realtime` la ElevenLabs — și apăsați **Verifică**. Bifați **Implicit pentru sufleur** ca asistenții noi să asculte cu el.
 
@@ -98,9 +103,6 @@ Tabelul enumeră modelele de recunoaștere a vorbirii ale fiecărui fel din list
 | | `universal-3-6-pro` | sufleur | Cel mai nou model în direct al AssemblyAI, 32 de limbi; serviciul îl folosește când modelul este gol. |
 | | `universal-streaming-multilingual` | sufleur | Recunoaștere în direct mai ieftină în engleză, spaniolă, germană, franceză, portugheză și italiană. |
 | | `universal-streaming-english` | sufleur | Recunoaștere în direct mai ieftină, doar în engleză. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | amândouă | Modelul principal, puternic în rusă, inclusiv la telefon. Oferit când țara este Rusia sau una dintre vecinele ei. |
-| | `general:rc` | amândouă | Următoarea versiune a modelului înainte de lansare. |
-| | `deferred-general` | transcrieri | Recunoaștere amânată: transcrierea vine mai târziu, pe bani mai puțini. |
 | **Vosk (pe propria dumneavoastră mașină)**<br />`ws://localhost:2700` | *(se setează pe server)* | amândouă | Gratuit și ușor; rulează fără placă video. Modelul este cel cu care a fost pornit serverul, câte unul pe limbă, de exemplu `vosk-model-en-us-0.22` sau micul `vosk-model-small-en-us-0.15`. |
 | **WhisperLive (pe propria dumneavoastră mașină)**<br />`ws://localhost:9090` | `small` | amândouă | Whisper pe un flux în direct. Mărimea se alege pe fișă: `tiny`, `base`, `small` (cea oferită de telefon), `medium`, `large-v3`; cu cât e mai mare, cu atât e mai precis și cu atât îi trebuie mai mult o placă video. |
 | **NVIDIA Riva (pe propria dumneavoastră mașină)**<br />`localhost:50051` | *(se setează pe server)* | amândouă | Serverul de vorbire NVIDIA, pentru un calculator cu placă video NVIDIA. Servește modele ca Parakeet și Canary. |
@@ -112,7 +114,7 @@ Ce e bine de știut înainte de a alege:
 - **Preț.** Serviciile în cloud taxează minutul de sunet, iar tarifele diferă după model și se schimbă; citiți-le pe pagina serviciului înainte să treceți la altul. Un recunoscător pe propria mașină nu costă nimic.
 - **Limbi.** Fiecare serviciu are propria listă; verificați-o pe a dumneavoastră și setați codul în **Limbă**, în setările avansate ale recunoscătorului, dacă ghicește greșit.
 
-Lista de modele a unui serviciu se schimbă des. Dacă lipsește aici un model pe care îl doriți, documentația serviciului are lista la zi — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — iar **Model** este numele exact cum îl dă serviciul.
+Lista de modele a unui serviciu se schimbă des. Dacă lipsește aici un model pe care îl doriți, documentația serviciului are lista la zi — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — iar **Model** este numele exact cum îl dă serviciul.
 
 ## Propriile modele {#your-own-models}
 

@@ -11,15 +11,20 @@ description: "Sesi metne çeviren tanıyıcıyı seçmek: adresi, modeli ve her 
 Bir görüşme, [Kayıtlar penceresinde](/interface/recordings) istediğinizde ya da [İşleme](/ai-processing/processing) bölümünde **Görüşmeleri kendiliğinden işle** açıksa kendiliğinden yazıya dökülür. Kendi makinenizdeki bir tanıyıcının çalışması hiçbir şeye mal olmaz; buluttaki bir tanıyıcı ses dakikası başına ücret alır.
 
 ## Tanıyıcılar {#recognisers}
-Tanıyıcı, telefonun sesi gönderdiği bir konuşma tanıma hizmetidir. **Ekle** yeni bir tane ekler; kartındaki **Sına** düğmesi hizmetin gerçekten yanıt verip vermediğini denetler. Her biri listede adıyla, altında da hizmetinin modeli ve adresiyle görünür. Resimde beş tane var:
+Tanıyıcı, telefonun sesi gönderdiği bir konuşma tanıma hizmetidir. **Ekle** yeni bir tane ekler; kartındaki **Sına** düğmesi hizmetin gerçekten yanıt verip vermediğini denetler. Her biri listede adıyla, altında da hizmetinin modeli ve adresiyle görünür. Tablo, telefonun desteklediği her hizmet türünü, karttaki **Tür** alanının sunduğu biçimde, o türden yeni bir tanıyıcının aldığı adres ve modellerle birlikte listeler; son sütun resimde ayarlı beş tanıyıcıyı gösterir:
 
-| Ad | Model | Adres |
-| --- | --- | --- |
-| **X.ai** | *(boş: hizmetin öntanımlı modeli)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(yok)* | `ws://localhost:2700`, bu bilgisayardaki bir sunucu |
+| Tür | Adres | Model | Resimde |
+| --- | --- | --- | --- |
+| **OpenAI uyumlu (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, canlı `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, canlı `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(boş: hizmetin öntanımlı modeli)*, canlı `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(boş: hizmetin öntanımlı modeli)*, canlı `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(boş: hizmetin öntanımlı modeli)* | — |
+| **Vosk (kendi makinenizde)** | kendi sunucunuz, örneğin `ws://localhost:2700` | *(sunucuda ayarlanır)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (kendi makinenizde)** | kendi sunucunuz, örneğin `ws://localhost:9090` | canlı `small` | — |
+| **NVIDIA Riva (kendi makinenizde)** | kendi sunucunuz, örneğin `localhost:50051` | *(sunucuda ayarlanır)* | — |
 
 Satırın sağındaki iki işaret, tanıyıcının neyin öntanımlısı olduğunu söyler. Saat, **yazıya dökümler için** öntanımlı olanda yanar — resimde **X.ai** —; başka birini seçmediğinizde o kullanılır. Şimşek, **suflör için** öntanımlı olanda yanar — resimde **Vosk**. Birden çok tanıyıcı tutabilirsiniz; [Kayıtlar penceresinde](/interface/recordings#transcript-or-write-up-the-drop-down) bir yazıya dökümün üstündeki açılır liste her birinin yaptığı dökümleri gösterir.
 
@@ -31,7 +36,7 @@ Bir tanıyıcıya basmak kartını açar.
 | Alan | Nedir |
 | --- | --- |
 | **Ad** | Listelerdeki ad. |
-| **Tür** | Telefonun hizmetle nasıl konuşacağını belirleyen hizmet türü: **OpenAI uyumlu (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ve kendi makinenizde çalışan üç tür — **Vosk**, **WhisperLive** ve **NVIDIA Riva**. **Yandex SpeechKit**, [Hakkında](../application/about.md) bölümünde seçilen ülke Rusya ya da komşularından biri olduğunda sunulur. |
+| **Tür** | Telefonun hizmetle nasıl konuşacağını belirleyen hizmet türü: **OpenAI uyumlu (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ve kendi makinenizde çalışan üç tür — **Vosk**, **WhisperLive** ve **NVIDIA Riva**. |
 | **Yazıya dökümler için adres** | Biten görüşmelerin gönderildiği yer. |
 | **Suflör için adres** | Görüşme sürerken canlı sesin gittiği yer. *Boşsa yanındaki adresten çıkarılır*, resimdeki `wss://api.x.ai` gibi. |
 | **Anahtar** | Hizmetin anahtarı. *Bu bilgisayarın anahtarlığında tutulur, hiçbir zaman bir ayar dosyasında değil.* |
@@ -60,7 +65,7 @@ Bir tanıyıcıya basmak kartını açar.
 | **Dakika başına fiyat** | Canlı sesin bir dakikasının, hizmetin fiyat listesine göre maliyeti. Suflör bir oturumun neye mal olduğunu gösterir ve [aylık tavanında](prompter.md#spending) durur. |
 
 ## Suflör için canlı tanıma {#live-recognition-for-the-prompter}
-[Suflörün](../interface/prompter.md), biri konuşurken dinleyen bir tanıyıcıya ihtiyacı vardır — bitmiş bir dosyayla değil, bir akışla. Bu türler bunu yapabilir: bulutta **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI uyumlu** (OpenAI'nin gerçek zamanlı yazıya dökümüyle), **AssemblyAI**, **Soniox** ve **Speechmatics**, sunulduğu yerde **Yandex SpeechKit**, kendi makinenizde de **Vosk**, **WhisperLive** ve **NVIDIA Riva**. Kendi makinenizdeki bir tanıyıcı karşı tarafın sesini binanın içinde tutar ve hiçbir ücret almaz.
+[Suflörün](../interface/prompter.md), biri konuşurken dinleyen bir tanıyıcıya ihtiyacı vardır — bitmiş bir dosyayla değil, bir akışla. Bu türler bunu yapabilir: bulutta **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI uyumlu** (OpenAI'nin gerçek zamanlı yazıya dökümüyle), **AssemblyAI**, **Soniox** ve **Speechmatics**, kendi makinenizde de **Vosk**, **WhisperLive** ve **NVIDIA Riva**. Kendi makinenizdeki bir tanıyıcı karşı tarafın sesini binanın içinde tutar ve hiçbir ücret almaz.
 
 Birini kullanmak için: kartını açın, **Suflör için adres** alanını denetleyin (ya da çıkarılmasına izin verin), hizmet birkaç tane sunuyorsa **Suflör için model** seçin — canlı modeller çoğu zaman dosyalar içinkilerden farklıdır, ElevenLabs'in `scribe_v2_realtime` modeli gibi — ve **Sına**'ya basın. Yeni yardımcıların onunla dinlemesi için **Suflör için öntanımlı** kutusunu işaretleyin.
 
@@ -98,9 +103,6 @@ Tablo, **Tür** listesindeki her türün konuşma tanıma modellerini listeler. 
 | | `universal-3-6-pro` | suflör | AssemblyAI'nin en yeni canlı modeli, 32 dil; model boşsa hizmet bunu kullanır. |
 | | `universal-streaming-multilingual` | suflör | İngilizce, İspanyolca, Almanca, Fransızca, Portekizce ve İtalyanca için daha ucuz canlı tanıma. |
 | | `universal-streaming-english` | suflör | Yalnızca İngilizce, daha ucuz canlı tanıma. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | her ikisi | Ana model; telefonda da Rusçada güçlü. Ülke Rusya ya da komşularından biri olduğunda sunulur. |
-| | `general:rc` | her ikisi | Modelin yayımdan önceki sonraki sürümü. |
-| | `deferred-general` | yazıya dökümler | Ertelenmiş tanıma: yazıya döküm daha geç, daha az parayla gelir. |
 | **Vosk (kendi makinenizde)**<br />`ws://localhost:2700` | *(sunucuda ayarlanır)* | her ikisi | Ücretsiz ve hafif; ekran kartı olmadan çalışır. Model, sunucunun başlatıldığı modeldir, her dil için bir tane; örneğin `vosk-model-small-tr-0.3` ya da `vosk-model-en-us-0.22`. |
 | **WhisperLive (kendi makinenizde)**<br />`ws://localhost:9090` | `small` | her ikisi | Canlı akış üzerinden Whisper. Boyut kartta seçilir: `tiny`, `base`, `small` (telefonun önerdiği), `medium`, `large-v3`; büyüdükçe daha doğru olur ve ekran kartına daha çok ihtiyaç duyar. |
 | **NVIDIA Riva (kendi makinenizde)**<br />`localhost:50051` | *(sunucuda ayarlanır)* | her ikisi | NVIDIA ekran kartlı bir bilgisayar için NVIDIA'nın konuşma sunucusu. Parakeet ve Canary gibi modeller sunar. |
@@ -112,7 +114,7 @@ Seçmeden önce bilmeye değer:
 - **Fiyat.** Bulut hizmetleri ses dakikası başına ücret alır; ücretler modele göre değişir ve güncellenir, geçmeden önce hizmetin kendi sayfasında okuyun. Kendi makinenizdeki bir tanıyıcının çalışması hiçbir şeye mal olmaz.
 - **Diller.** Her hizmetin kendi listesi vardır; sizinkini denetleyin, tanıyıcı yanlış tahmin ediyorsa gelişmiş ayarlarındaki **Dil** alanına kodu girin.
 
-Bir hizmetin model listesi sık değişir. İstediğiniz model burada yoksa güncel liste hizmetin kendi belgelerindedir — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — ve **Model**, hizmetin verdiği adın tam kendisidir.
+Bir hizmetin model listesi sık değişir. İstediğiniz model burada yoksa güncel liste hizmetin kendi belgelerindedir — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — ve **Model**, hizmetin verdiği adın tam kendisidir.
 
 ## Kendi modelleriniz {#your-own-models}
 

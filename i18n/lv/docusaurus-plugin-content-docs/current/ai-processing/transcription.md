@@ -11,15 +11,20 @@ description: "Izvēlieties atpazinēju, kas pārvērš skaņu tekstā: tā adres
 Saruna tiek pierakstīta, kad to palūdzat [ierakstu logā](/interface/recordings), vai pati no sevis, ja sadaļā [Apstrāde](/ai-processing/processing) ir ieslēgts **Apstrādāt sarunas automātiski**. Atpazinējs jūsu pašu datorā neko nemaksā; mākonī esošais ņem maksu par skaņas minūti.
 
 ## Atpazinēji {#recognisers}
-Atpazinējs ir runas atpazīšanas pakalpojums, kam tālrunis sūta skaņu. **Pievienot** pievieno jaunu; tā kartītes poga **Pārbaudīt** pārbauda, vai pakalpojums tiešām atbild. Katrs sarakstā redzams ar savu nosaukumu, un zem tā — sava pakalpojuma modelis un adrese. Attēlā tie ir pieci:
+Atpazinējs ir runas atpazīšanas pakalpojums, kam tālrunis sūta skaņu. **Pievienot** pievieno jaunu; tā kartītes poga **Pārbaudīt** pārbauda, vai pakalpojums tiešām atbild. Katrs sarakstā redzams ar savu nosaukumu, un zem tā — sava pakalpojuma modelis un adrese. Tabulā uzskaitīti visi tālruņa atbalstītie pakalpojumu veidi tā, kā tos piedāvā kartītes **Veids**, ar adresi un modeļiem, ko saņem jauns šī veida atpazinējs; pēdējā kolonna rāda piecus attēlā iestatītos:
 
-| Nosaukums | Modelis | Adrese |
-| --- | --- | --- |
-| **X.ai** | *(tukšs: pakalpojuma noklusējums)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(nav)* | `ws://localhost:2700`, serveris šajā datorā |
+| Veids | Adrese | Modelis | Attēlā |
+| --- | --- | --- | --- |
+| **Saderīgs ar OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, tieši `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, tieši `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(tukšs: pakalpojuma noklusējums)*, tieši `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(tukšs: pakalpojuma noklusējums)*, tieši `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(tukšs: pakalpojuma noklusējums)* | — |
+| **Vosk (jūsu pašu datorā)** | jūsu serveris, piemēram `ws://localhost:2700` | *(iestata serverī)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (jūsu pašu datorā)** | jūsu serveris, piemēram `ws://localhost:9090` | tieši `small` | — |
+| **NVIDIA Riva (jūsu pašu datorā)** | jūsu serveris, piemēram `localhost:50051` | *(iestata serverī)* | — |
 
 Divas zīmes rindas labajā pusē rāda, kam atpazinējs ir noklusējums. Pulkstenis deg pie noklusējuma **pierakstiem** — attēlā **X.ai** —, ko izmanto, ja neizvēlaties citu. Zibens deg pie noklusējuma **suflierim** — attēlā **Vosk**. Varat turēt vairākus atpazinējus; nolaižamais saraksts virs pieraksta [ierakstu logā](/interface/recordings#transcript-or-write-up-the-drop-down) rāda katra no tiem izveidotos pierakstus.
 
@@ -31,7 +36,7 @@ Nospiežot atpazinēju, atveras tā kartīte.
 | Lauks | Kas tas ir |
 | --- | --- |
 | **Nosaukums** | Nosaukums sarakstos. |
-| **Veids** | Pakalpojuma veids, no kura atkarīgs, kā tālrunis ar to runā: **Saderīgs ar OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** un trīs, kas darbojas jūsu pašu datorā, — **Vosk**, **WhisperLive** un **NVIDIA Riva**. **Yandex SpeechKit** tiek piedāvāts, ja sadaļā [Par programmu](../application/about.md) izvēlētā valsts ir Krievija vai kāda no tās kaimiņvalstīm. |
+| **Veids** | Pakalpojuma veids, no kura atkarīgs, kā tālrunis ar to runā: **Saderīgs ar OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** un trīs, kas darbojas jūsu pašu datorā, — **Vosk**, **WhisperLive** un **NVIDIA Riva**. |
 | **Adrese pierakstiem** | Kur tiek sūtītas pabeigtās sarunas. |
 | **Adrese suflierim** | Kur sarunas laikā plūst tiešā skaņa. *Tukšs tiek iegūts no blakus esošās adreses*, kā `wss://api.x.ai` attēlā. |
 | **Atslēga** | Pakalpojuma atslēga. *Tas glabājas šī datora atslēgu saišķī, nekad iestatījumu failā.* |
@@ -60,7 +65,7 @@ Nospiežot atpazinēju, atveras tā kartīte.
 | **Cena par minūti** | Cik maksā tiešās skaņas minūte pēc pakalpojuma cenrāža. Suflieris rāda, cik izmaksāja sesija, un apstājas pie saviem [mēneša griestiem](prompter.md#spending). |
 
 ## Tiešā atpazīšana suflierim {#live-recognition-for-the-prompter}
-[Suflierim](../interface/prompter.md) vajag atpazinēju, kas klausās, kamēr kāds runā, — straumē, nevis ar pabeigtu failu. To prot šie veidi: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Saderīgs ar OpenAI** (ar OpenAI reāllaika pierakstīšanu), **AssemblyAI**, **Soniox** un **Speechmatics** mākonī, **Yandex SpeechKit** tur, kur tas tiek piedāvāts, un **Vosk**, **WhisperLive** un **NVIDIA Riva** jūsu pašu datorā. Atpazinējs jūsu pašu datorā patur sarunbiedra balsi jūsu telpās un neko nemaksā.
+[Suflierim](../interface/prompter.md) vajag atpazinēju, kas klausās, kamēr kāds runā, — straumē, nevis ar pabeigtu failu. To prot šie veidi: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Saderīgs ar OpenAI** (ar OpenAI reāllaika pierakstīšanu), **AssemblyAI**, **Soniox** un **Speechmatics** mākonī un **Vosk**, **WhisperLive** un **NVIDIA Riva** jūsu pašu datorā. Atpazinējs jūsu pašu datorā patur sarunbiedra balsi jūsu telpās un neko nemaksā.
 
 Kā to izmantot: atveriet tā kartīti, pārbaudiet **Adrese suflierim** (vai ļaujiet to iegūt), izvēlieties **Modelis suflierim**, ja pakalpojums piedāvā vairākus, — tiešie modeļi bieži atšķiras no failu modeļiem, piemēram, ElevenLabs `scribe_v2_realtime`, — un nospiediet **Pārbaudīt**. Atzīmējiet **Noklusējums suflierim**, lai jaunie palīgi klausītos ar to.
 
@@ -98,9 +103,6 @@ Tabulā uzskaitīti katra saraksta **Veids** veida runas atpazīšanas modeļi. 
 | | `universal-3-6-pro` | suflieris | Jaunākais AssemblyAI tiešais modelis, 32 valodas; pakalpojums to izmanto, ja modelis ir tukšs. |
 | | `universal-streaming-multilingual` | suflieris | Lētāka tiešā atpazīšana angļu, spāņu, vācu, franču, portugāļu un itāļu valodā. |
 | | `universal-streaming-english` | suflieris | Lētāka tiešā atpazīšana, tikai angļu valodā. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | abiem | Galvenais modelis, spēcīgs krievu valodā, arī pa tālruni. Tiek piedāvāts, ja valsts ir Krievija vai kāda no tās kaimiņvalstīm. |
-| | `general:rc` | abiem | Nākamā modeļa versija pirms izlaišanas. |
-| | `deferred-general` | pieraksti | Atlikta atpazīšana: pieraksts nāk vēlāk, par mazāku maksu. |
 | **Vosk (jūsu pašu datorā)**<br />`ws://localhost:2700` | *(iestata serverī)* | abiem | Bezmaksas un viegls; darbojas bez videokartes. Modelis ir tas, ar kuru palaists serveris, pa vienam katrai valodai, piemēram, `vosk-model-en-us-0.22` vai mazais `vosk-model-small-en-us-0.15`. |
 | **WhisperLive (jūsu pašu datorā)**<br />`ws://localhost:9090` | `small` | abiem | Whisper tiešā straumē. Izmēru izvēlas kartītē: `tiny`, `base`, `small` (to piedāvā tālrunis), `medium`, `large-v3`; jo lielāks, jo precīzāks un jo vairāk tam vajag videokarti. |
 | **NVIDIA Riva (jūsu pašu datorā)**<br />`localhost:50051` | *(iestata serverī)* | abiem | NVIDIA runas serveris datoram ar NVIDIA videokarti. Tas nodrošina tādus modeļus kā Parakeet un Canary. |
@@ -112,7 +114,7 @@ Kas jāzina pirms izvēles:
 - **Cena.** Mākoņpakalpojumi ņem maksu par skaņas minūti, un tarifi atšķiras pēc modeļa un mainās; pirms maiņas apskatiet tos paša pakalpojuma lapā. Atpazinējs jūsu pašu datorā neko nemaksā.
 - **Valodas.** Katram pakalpojumam ir savs saraksts; pārbaudiet savējo un iestatiet kodu laukā **Valoda** atpazinēja paplašinātajos iestatījumos, ja tas min nepareizi.
 
-Pakalpojuma modeļu saraksts bieži mainās. Ja vēlamā modeļa šeit nav, aktuālais saraksts ir paša pakalpojuma dokumentācijā — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html), — un **Modelis** ir nosaukums tieši tāds, kādu to dod pakalpojums.
+Pakalpojuma modeļu saraksts bieži mainās. Ja vēlamā modeļa šeit nav, aktuālais saraksts ir paša pakalpojuma dokumentācijā — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html), — un **Modelis** ir nosaukums tieši tāds, kādu to dod pakalpojums.
 
 ## Jūsu pašu modeļi {#your-own-models}
 

@@ -11,15 +11,20 @@ description: "Chọn bộ nhận dạng biến âm thanh thành văn bản: đ�
 Một cuộc trò chuyện được gỡ băng khi bạn yêu cầu trong [cửa sổ Bản ghi](/interface/recordings), hoặc tự động nếu **Xử lý các cuộc trò chuyện tự động** đang bật trong [Xử lý](/ai-processing/processing). Bộ nhận dạng trên máy của chính bạn không tốn gì để chạy; bộ nhận dạng trên đám mây tính phí theo phút âm thanh.
 
 ## Bộ nhận dạng {#recognisers}
-Bộ nhận dạng là dịch vụ nhận dạng giọng nói mà điện thoại gửi âm thanh tới. **Thêm** thêm một bộ mới; nút **Thử** trên thẻ của nó kiểm tra xem dịch vụ có thật sự trả lời không. Mỗi bộ hiện trong danh sách với tên của nó, bên dưới là mô hình và địa chỉ dịch vụ. Trong hình có năm bộ:
+Bộ nhận dạng là dịch vụ nhận dạng giọng nói mà điện thoại gửi âm thanh tới. **Thêm** thêm một bộ mới; nút **Thử** trên thẻ của nó kiểm tra xem dịch vụ có thật sự trả lời không. Mỗi bộ hiện trong danh sách với tên của nó, bên dưới là mô hình và địa chỉ dịch vụ. Bảng liệt kê mọi loại dịch vụ mà điện thoại hỗ trợ, đúng như trường **Loại** trên thẻ đưa ra, cùng địa chỉ và các mô hình mà một bộ nhận dạng mới thuộc loại đó được gán; cột cuối cho thấy năm bộ được thiết lập trong hình:
 
-| Tên | Mô hình | Địa chỉ |
-| --- | --- | --- |
-| **X.ai** | *(trống: mô hình mặc định của dịch vụ)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(không có)* | `ws://localhost:2700`, một máy chủ trên máy tính này |
+| Loại | Địa chỉ | Mô hình | Trong hình |
+| --- | --- | --- | --- |
+| **Tương thích OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, trực tiếp `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, trực tiếp `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(trống: mô hình mặc định của dịch vụ)*, trực tiếp `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(trống: mô hình mặc định của dịch vụ)*, trực tiếp `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(trống: mô hình mặc định của dịch vụ)* | — |
+| **Vosk (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `ws://localhost:2700` | *(đặt trên máy chủ)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `ws://localhost:9090` | trực tiếp `small` | — |
+| **NVIDIA Riva (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `localhost:50051` | *(đặt trên máy chủ)* | — |
 
 Hai dấu ở bên phải một dòng cho biết bộ nhận dạng là mặc định cho việc gì. Đồng hồ sáng ở bộ mặc định **cho các bản gỡ băng** — **X.ai** trong hình —, được dùng khi bạn không chọn bộ khác. Tia chớp sáng ở bộ mặc định **cho người nhắc** — **Vosk** trong hình. Bạn có thể giữ nhiều bộ nhận dạng; danh sách thả xuống phía trên một bản gỡ băng trong [cửa sổ Bản ghi](/interface/recordings#transcript-or-write-up-the-drop-down) liệt kê các bản gỡ băng do từng bộ tạo ra.
 
@@ -31,7 +36,7 @@ Nhấn vào một bộ nhận dạng sẽ mở thẻ của nó.
 | Trường | Là gì |
 | --- | --- |
 | **Tên** | Tên trong các danh sách. |
-| **Loại** | Loại dịch vụ, quyết định cách điện thoại nói chuyện với nó: **Tương thích OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, và ba loại chạy trên máy của chính bạn — **Vosk**, **WhisperLive** và **NVIDIA Riva**. **Yandex SpeechKit** được đưa ra khi quốc gia trong [Giới thiệu](../application/about.md) là Nga hoặc một nước láng giềng của Nga. |
+| **Loại** | Loại dịch vụ, quyết định cách điện thoại nói chuyện với nó: **Tương thích OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, và ba loại chạy trên máy của chính bạn — **Vosk**, **WhisperLive** và **NVIDIA Riva**. |
 | **Địa chỉ cho bản gỡ băng** | Nơi các cuộc trò chuyện đã kết thúc được gửi tới. |
 | **Địa chỉ cho người nhắc** | Nơi âm thanh trực tiếp được gửi tới trong lúc cuộc trò chuyện diễn ra. *Để trống thì suy ra từ địa chỉ bên cạnh*, như `wss://api.x.ai` trong hình. |
 | **Khoá** | Khoá của dịch vụ. *Được giữ trong kho khoá của máy tính này, không bao giờ trong tệp cài đặt.* |
@@ -60,7 +65,7 @@ Nhấn vào một bộ nhận dạng sẽ mở thẻ của nó.
 | **Giá mỗi phút** | Một phút âm thanh trực tiếp tốn bao nhiêu, theo bảng giá của dịch vụ. Người nhắc cho thấy một phiên đã tốn bao nhiêu và dừng ở [hạn mức hằng tháng](prompter.md#spending) của nó. |
 
 ## Nhận dạng trực tiếp cho người nhắc {#live-recognition-for-the-prompter}
-[Người nhắc](../interface/prompter.md) cần một bộ nhận dạng nghe trong lúc ai đó đang nói, qua một luồng chứ không phải một tệp đã xong. Những loại sau làm được: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Tương thích OpenAI** (với tính năng gỡ băng thời gian thực của OpenAI), **AssemblyAI**, **Soniox** và **Speechmatics** trên đám mây, **Yandex SpeechKit** ở nơi được cung cấp, và **Vosk**, **WhisperLive**, **NVIDIA Riva** trên máy của chính bạn. Bộ nhận dạng trên máy của chính bạn giữ giọng của người bên kia trong nội bộ và không tốn phí.
+[Người nhắc](../interface/prompter.md) cần một bộ nhận dạng nghe trong lúc ai đó đang nói, qua một luồng chứ không phải một tệp đã xong. Những loại sau làm được: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Tương thích OpenAI** (với tính năng gỡ băng thời gian thực của OpenAI), **AssemblyAI**, **Soniox** và **Speechmatics** trên đám mây và **Vosk**, **WhisperLive**, **NVIDIA Riva** trên máy của chính bạn. Bộ nhận dạng trên máy của chính bạn giữ giọng của người bên kia trong nội bộ và không tốn phí.
 
 Để dùng một bộ: mở thẻ của nó, kiểm tra **Địa chỉ cho người nhắc** (hoặc để nó tự suy ra), chọn **Mô hình cho người nhắc** nếu dịch vụ có nhiều mô hình — các mô hình trực tiếp thường khác với mô hình cho tệp, như `scribe_v2_realtime` của ElevenLabs — rồi nhấn **Thử**. Đánh dấu **Mặc định cho người nhắc** để các trợ lý mới nghe bằng bộ đó.
 
@@ -98,9 +103,6 @@ Bảng liệt kê các mô hình nhận dạng giọng nói của mọi loại t
 | | `universal-3-6-pro` | người nhắc | Mô hình trực tiếp mới nhất của AssemblyAI, 32 ngôn ngữ; dịch vụ dùng nó khi mô hình để trống. |
 | | `universal-streaming-multilingual` | người nhắc | Nhận dạng trực tiếp rẻ hơn cho tiếng Anh, Tây Ban Nha, Đức, Pháp, Bồ Đào Nha và Ý. |
 | | `universal-streaming-english` | người nhắc | Nhận dạng trực tiếp rẻ hơn, chỉ tiếng Anh. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | cả hai | Mô hình chính, mạnh về tiếng Nga, cả qua điện thoại. Được đưa ra khi quốc gia là Nga hoặc một nước láng giềng của Nga. |
-| | `general:rc` | cả hai | Phiên bản kế tiếp của mô hình trước khi phát hành. |
-| | `deferred-general` | gỡ băng | Nhận dạng hoãn lại: bản gỡ băng đến muộn hơn, với giá thấp hơn. |
 | **Vosk (trên máy của chính bạn)**<br />`ws://localhost:2700` | *(đặt trên máy chủ)* | cả hai | Miễn phí và nhẹ; chạy không cần card đồ hoạ. Mô hình là mô hình máy chủ đã được khởi động cùng, mỗi ngôn ngữ một mô hình, ví dụ `vosk-model-vn-0.4` hoặc `vosk-model-en-us-0.22`. |
 | **WhisperLive (trên máy của chính bạn)**<br />`ws://localhost:9090` | `small` | cả hai | Whisper qua một luồng trực tiếp. Kích cỡ được chọn trên thẻ: `tiny`, `base`, `small` (cỡ mà điện thoại đề xuất), `medium`, `large-v3`; càng lớn càng chính xác và càng cần card đồ hoạ. |
 | **NVIDIA Riva (trên máy của chính bạn)**<br />`localhost:50051` | *(đặt trên máy chủ)* | cả hai | Máy chủ giọng nói của NVIDIA, cho máy tính có card đồ hoạ NVIDIA. Nó cung cấp các mô hình như Parakeet và Canary. |
@@ -112,7 +114,7 @@ Những điều nên biết trước khi chọn:
 - **Giá.** Dịch vụ đám mây tính phí theo phút âm thanh, và mức phí khác nhau theo mô hình và thay đổi theo thời gian; hãy xem trên trang của chính dịch vụ trước khi chuyển. Bộ nhận dạng trên máy của chính bạn không tốn gì để chạy.
 - **Ngôn ngữ.** Mỗi dịch vụ có danh sách riêng; hãy kiểm tra danh sách của bạn, và đặt mã trong **Ngôn ngữ** ở phần cài đặt nâng cao của bộ nhận dạng nếu nó đoán sai.
 
-Danh sách mô hình của một dịch vụ thay đổi thường xuyên. Nếu ở đây thiếu mô hình bạn muốn, tài liệu của chính dịch vụ có danh sách hiện hành — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — và **Mô hình** là tên đúng như dịch vụ đưa ra.
+Danh sách mô hình của một dịch vụ thay đổi thường xuyên. Nếu ở đây thiếu mô hình bạn muốn, tài liệu của chính dịch vụ có danh sách hiện hành — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — và **Mô hình** là tên đúng như dịch vụ đưa ra.
 
 ## Mô hình của riêng bạn {#your-own-models}
 

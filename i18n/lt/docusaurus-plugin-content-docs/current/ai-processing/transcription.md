@@ -11,15 +11,20 @@ description: "Pasirinkite atpažintuvą, kuris garsą paverčia tekstu: jo adres
 Pokalbis užrašomas, kai to paprašote [įrašų lange](/interface/recordings), arba savaime, jei skiltyje [Apdorojimas](/ai-processing/processing) įjungta **Apdoroti pokalbius automatiškai**. Atpažintuvas jūsų pačių kompiuteryje nieko nekainuoja; debesyje veikiantis ima mokestį už garso minutę.
 
 ## Atpažintuvai {#recognisers}
-Atpažintuvas — tai kalbos atpažinimo paslauga, kuriai telefonas siunčia garsą. **Pridėti** prideda naują; jo kortelės mygtukas **Patikrinti** patikrina, ar paslauga tikrai atsako. Kiekvienas sąraše rodomas su pavadinimu, o po juo — jo paslaugos modelis ir adresas. Paveikslėlyje jų yra penki:
+Atpažintuvas — tai kalbos atpažinimo paslauga, kuriai telefonas siunčia garsą. **Pridėti** prideda naują; jo kortelės mygtukas **Patikrinti** patikrina, ar paslauga tikrai atsako. Kiekvienas sąraše rodomas su pavadinimu, o po juo — jo paslaugos modelis ir adresas. Lentelėje išvardytos visos telefono palaikomos paslaugų rūšys, kaip jas siūlo kortelės **Rūšis**, su adresu ir modeliais, kuriuos gauna naujas tos rūšies atpažintuvas; paskutinis stulpelis rodo penkis paveikslėlyje nustatytus:
 
-| Pavadinimas | Modelis | Adresas |
-| --- | --- | --- |
-| **X.ai** | *(tuščia: paslaugos numatytasis)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(nėra)* | `ws://localhost:2700`, serveris šiame kompiuteryje |
+| Rūšis | Adresas | Modelis | Paveikslėlyje |
+| --- | --- | --- | --- |
+| **Suderinama su OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, gyvai `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, gyvai `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(tuščia: paslaugos numatytasis)*, gyvai `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(tuščia: paslaugos numatytasis)*, gyvai `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(tuščia: paslaugos numatytasis)* | — |
+| **Vosk (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `ws://localhost:2700` | *(nustatomas serveryje)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `ws://localhost:9090` | gyvai `small` | — |
+| **NVIDIA Riva (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `localhost:50051` | *(nustatomas serveryje)* | — |
 
 Du ženklai eilutės dešinėje rodo, kam atpažintuvas yra numatytasis. Laikrodis šviečia prie numatytojo **užrašams** — paveikslėlyje **X.ai** —, kuris naudojamas, kai nepasirenkate kito. Žaibas šviečia prie numatytojo **sufleriui** — paveikslėlyje **Vosk**. Galite laikyti kelis atpažintuvus; išskleidžiamasis sąrašas virš užrašo [įrašų lange](/interface/recordings#transcript-or-write-up-the-drop-down) rodo kiekvieno iš jų padarytus užrašus.
 
@@ -31,7 +36,7 @@ Paspaudus atpažintuvą atsiveria jo kortelė.
 | Laukas | Kas tai |
 | --- | --- |
 | **Pavadinimas** | Pavadinimas sąrašuose. |
-| **Rūšis** | Paslaugos rūšis, nuo kurios priklauso, kaip telefonas su ja kalbasi: **Suderinama su OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ir trys, veikiančios jūsų pačių kompiuteryje, — **Vosk**, **WhisperLive** ir **NVIDIA Riva**. **Yandex SpeechKit** siūloma, kai skiltyje [Apie programą](../application/about.md) pasirinkta šalis yra Rusija arba viena iš jos kaimynių. |
+| **Rūšis** | Paslaugos rūšis, nuo kurios priklauso, kaip telefonas su ja kalbasi: **Suderinama su OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ir trys, veikiančios jūsų pačių kompiuteryje, — **Vosk**, **WhisperLive** ir **NVIDIA Riva**. |
 | **Adresas užrašams** | Kur siunčiami baigti pokalbiai. |
 | **Adresas sufleriui** | Kur keliauja gyvas garsas pokalbio metu. *Tuščia nustatoma pagal šalia esantį adresą*, kaip `wss://api.x.ai` paveikslėlyje. |
 | **Raktas** | Paslaugos raktas. *Tai laikoma šio kompiuterio raktinėje, niekada nustatymų faile.* |
@@ -60,7 +65,7 @@ Paspaudus atpažintuvą atsiveria jo kortelė.
 | **Kaina už minutę** | Kiek kainuoja gyvo garso minutė pagal paslaugos kainoraštį. Suflerius rodo, kiek kainavo seansas, ir sustoja ties savo [mėnesio lubomis](prompter.md#spending). |
 
 ## Gyvas atpažinimas sufleriui {#live-recognition-for-the-prompter}
-[Sufleriui](../interface/prompter.md) reikia atpažintuvo, kuris klausosi, kol kas nors kalba, srautu, o ne baigtu failu. Tai gali šios rūšys: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Suderinama su OpenAI** (su OpenAI realiojo laiko užrašymu), **AssemblyAI**, **Soniox** ir **Speechmatics** debesyje, **Yandex SpeechKit** ten, kur ji siūloma, ir **Vosk**, **WhisperLive** bei **NVIDIA Riva** jūsų pačių kompiuteryje. Atpažintuvas jūsų pačių kompiuteryje išlaiko pašnekovo balsą jūsų patalpose ir nieko nekainuoja.
+[Sufleriui](../interface/prompter.md) reikia atpažintuvo, kuris klausosi, kol kas nors kalba, srautu, o ne baigtu failu. Tai gali šios rūšys: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Suderinama su OpenAI** (su OpenAI realiojo laiko užrašymu), **AssemblyAI**, **Soniox** ir **Speechmatics** debesyje ir **Vosk**, **WhisperLive** bei **NVIDIA Riva** jūsų pačių kompiuteryje. Atpažintuvas jūsų pačių kompiuteryje išlaiko pašnekovo balsą jūsų patalpose ir nieko nekainuoja.
 
 Kaip jį naudoti: atverkite jo kortelę, patikrinkite **Adresas sufleriui** (arba leiskite jį nustatyti), pasirinkite **Modelis sufleriui**, jei paslauga siūlo kelis, — gyvi modeliai dažnai skiriasi nuo failų modelių, pavyzdžiui, ElevenLabs `scribe_v2_realtime`, — ir paspauskite **Patikrinti**. Pažymėkite **Numatytasis sufleriui**, kad nauji pagalbininkai klausytųsi juo.
 
@@ -98,9 +103,6 @@ Lentelėje išvardyti kiekvienos sąrašo **Rūšis** rūšies kalbos atpažinim
 | | `universal-3-6-pro` | suflerius | Naujausias AssemblyAI gyvas modelis, 32 kalbos; paslauga jį naudoja, kai modelis tuščias. |
 | | `universal-streaming-multilingual` | suflerius | Pigesnis gyvas atpažinimas anglų, ispanų, vokiečių, prancūzų, portugalų ir italų kalbomis. |
 | | `universal-streaming-english` | suflerius | Pigesnis gyvas atpažinimas, tik anglų kalba. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | abiem | Pagrindinis modelis, stiprus rusų kalba, taip pat telefonu. Siūlomas, kai šalis yra Rusija arba viena iš jos kaimynių. |
-| | `general:rc` | abiem | Kita modelio versija prieš išleidimą. |
-| | `deferred-general` | užrašai | Atidėtas atpažinimas: užrašas ateina vėliau, už mažesnę kainą. |
 | **Vosk (jūsų pačių kompiuteryje)**<br />`ws://localhost:2700` | *(nustatomas serveryje)* | abiem | Nemokamas ir lengvas; veikia be vaizdo plokštės. Modelis yra tas, su kuriuo paleistas serveris, po vieną kiekvienai kalbai, pavyzdžiui, `vosk-model-en-us-0.22` arba mažasis `vosk-model-small-en-us-0.15`. |
 | **WhisperLive (jūsų pačių kompiuteryje)**<br />`ws://localhost:9090` | `small` | abiem | Whisper gyvu srautu. Dydis pasirenkamas kortelėje: `tiny`, `base`, `small` (jį siūlo telefonas), `medium`, `large-v3`; kuo didesnis, tuo tikslesnis ir tuo labiau jam reikia vaizdo plokštės. |
 | **NVIDIA Riva (jūsų pačių kompiuteryje)**<br />`localhost:50051` | *(nustatomas serveryje)* | abiem | NVIDIA kalbos serveris kompiuteriui su NVIDIA vaizdo plokšte. Jis teikia tokius modelius kaip Parakeet ir Canary. |
@@ -112,7 +114,7 @@ Ką verta žinoti prieš renkantis:
 - **Kaina.** Debesijos paslaugos ima mokestį už garso minutę, o tarifai priklauso nuo modelio ir keičiasi; prieš keisdami pasižiūrėkite juos pačios paslaugos puslapyje. Atpažintuvas jūsų pačių kompiuteryje nieko nekainuoja.
 - **Kalbos.** Kiekviena paslauga turi savo sąrašą; patikrinkite savąjį ir nustatykite kodą lauke **Kalba** atpažintuvo išplėstiniuose nustatymuose, jei jis spėja neteisingai.
 
-Paslaugos modelių sąrašas dažnai keičiasi. Jei norimo modelio čia nėra, dabartinis sąrašas yra pačios paslaugos dokumentacijoje — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html), — o **Modelis** yra pavadinimas tiksliai toks, kokį pateikia paslauga.
+Paslaugos modelių sąrašas dažnai keičiasi. Jei norimo modelio čia nėra, dabartinis sąrašas yra pačios paslaugos dokumentacijoje — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html), — o **Modelis** yra pavadinimas tiksliai toks, kokį pateikia paslauga.
 
 ## Jūsų pačių modeliai {#your-own-models}
 

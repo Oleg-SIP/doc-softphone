@@ -11,15 +11,20 @@ description: "Izbor prepoznavača koji pretvara zvuk u tekst: njegova adresa, nj
 Razgovor se prepisuje kada to zatražite u [prozoru Snimci](/interface/recordings), ili sam od sebe ako je u odeljku [Obrada](/ai-processing/processing) uključeno **Obrađuj razgovore samostalno**. Prepoznavač na vašoj sopstvenoj mašini ne košta ništa; onaj u oblaku naplaćuje minut zvuka.
 
 ## Prepoznavači {#recognisers}
-Prepoznavač je usluga za prepoznavanje govora kojoj telefon šalje zvuk. **Dodaj** dodaje novi; dugme **Isprobaj** na njegovoj kartici proverava da li usluga zaista odgovara. Svaki je na spisku sa svojim nazivom, a ispod njega sa modelom i adresom svoje usluge. Na slici ih je pet:
+Prepoznavač je usluga za prepoznavanje govora kojoj telefon šalje zvuk. **Dodaj** dodaje novi; dugme **Isprobaj** na njegovoj kartici proverava da li usluga zaista odgovara. Svaki je na spisku sa svojim nazivom, a ispod njega sa modelom i adresom svoje usluge. Tabela navodi svaku vrstu usluge koju telefon podržava, onako kako ih nudi **Vrsta** na kartici, sa adresom i modelima koje dobija novi prepoznavač te vrste; poslednja kolona prikazuje pet podešenih na slici:
 
-| Naziv | Model | Adresa |
-| --- | --- | --- |
-| **X.ai** | *(prazno: podrazumevani model usluge)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(nema)* | `ws://localhost:2700`, server na ovom računaru |
+| Врста | Adresa | Model | Na slici |
+| --- | --- | --- | --- |
+| **Saglasno sa OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, uživo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, uživo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(prazno: podrazumevani model usluge)*, uživo `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(prazno: podrazumevani model usluge)*, uživo `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(prazno: podrazumevani model usluge)* | — |
+| **Vosk (na vašoj sopstvenoj mašini)** | vaš server, na primer `ws://localhost:2700` | *(podešava se na serveru)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (na vašoj sopstvenoj mašini)** | vaš server, na primer `ws://localhost:9090` | uživo `small` | — |
+| **NVIDIA Riva (na vašoj sopstvenoj mašini)** | vaš server, na primer `localhost:50051` | *(podešava se na serveru)* | — |
 
 Dve oznake desno u redu govore za šta je prepoznavač podrazumevan. Sat svetli kod podrazumevanog **za prepise** — na slici **X.ai** —, koji se koristi kada ne izaberete drugi. Munja svetli kod podrazumevanog **za šaptača** — na slici **Vosk**. Možete imati više prepoznavača; padajući spisak iznad prepisa u [prozoru Snimci](/interface/recordings#transcript-or-write-up-the-drop-down) prikazuje prepise koje je napravio svaki od njih.
 
@@ -31,7 +36,7 @@ Pritisak na prepoznavač otvara njegovu karticu.
 | Polje | Šta je |
 | --- | --- |
 | **Naziv** | Naziv na spiskovima. |
-| **Vrsta** | Vrsta usluge, od koje zavisi kako telefon razgovara s njom: **Saglasno sa OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** i tri koje rade na vašoj sopstvenoj mašini — **Vosk**, **WhisperLive** i **NVIDIA Riva**. **Yandex SpeechKit** se nudi kada je u odeljku [O programu](../application/about.md) izabrana zemlja Rusija ili neka od njenih suseda. |
+| **Vrsta** | Vrsta usluge, od koje zavisi kako telefon razgovara s njom: **Saglasno sa OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** i tri koje rade na vašoj sopstvenoj mašini — **Vosk**, **WhisperLive** i **NVIDIA Riva**. |
 | **Adresa za prepise** | Kuda se šalju završeni razgovori. |
 | **Adresa za šaptača** | Kuda ide zvuk uživo dok razgovor traje. *Prazno se izvodi iz susedne adrese*, kao `wss://api.x.ai` na slici. |
 | **Ključ** | Ključ usluge. *Čuva se u privesku ovog računara, nikada u datoteci s podešavanjima.* |
@@ -60,7 +65,7 @@ Pritisak na prepoznavač otvara njegovu karticu.
 | **Cena po minutu** | Koliko košta minut zvuka uživo prema cenovniku usluge. Šaptač pokazuje koliko je sesija koštala i zaustavlja se na svom [mesečnom ograničenju](prompter.md#spending). |
 
 ## Prepoznavanje uživo za šaptača {#live-recognition-for-the-prompter}
-[Šaptaču](../interface/prompter.md) treba prepoznavač koji sluša dok neko govori — tokom, a ne gotovom datotekom. To mogu ove vrste: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Saglasno sa OpenAI** (sa prepisivanjem OpenAI u realnom vremenu), **AssemblyAI**, **Soniox** i **Speechmatics** u oblaku, **Yandex SpeechKit** tamo gde se nudi, i **Vosk**, **WhisperLive** i **NVIDIA Riva** na vašoj sopstvenoj mašini. Prepoznavač na vašoj sopstvenoj mašini zadržava glas sagovornika u kući i ne košta ništa.
+[Šaptaču](../interface/prompter.md) treba prepoznavač koji sluša dok neko govori — tokom, a ne gotovom datotekom. To mogu ove vrste: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Saglasno sa OpenAI** (sa prepisivanjem OpenAI u realnom vremenu), **AssemblyAI**, **Soniox** i **Speechmatics** u oblaku i **Vosk**, **WhisperLive** i **NVIDIA Riva** na vašoj sopstvenoj mašini. Prepoznavač na vašoj sopstvenoj mašini zadržava glas sagovornika u kući i ne košta ništa.
 
 Kako da ga koristite: otvorite njegovu karticu, proverite **Adresa za šaptača** (ili je pustite da se izvede), izaberite **Model za šaptača** gde usluga nudi više njih — modeli uživo se često razlikuju od onih za datoteke, poput ElevenLabs `scribe_v2_realtime` — i pritisnite **Isprobaj**. Označite **Podrazumevano za šaptača** da bi novi pomoćnici slušali njime.
 
@@ -98,9 +103,6 @@ Tabela navodi modele za prepoznavanje govora svake vrste sa spiska **Vrsta**. **
 | | `universal-3-6-pro` | šaptač | Najnoviji AssemblyAI model uživo, 32 jezika; usluga ga koristi kada je model prazan. |
 | | `universal-streaming-multilingual` | šaptač | Jeftinije prepoznavanje uživo na engleskom, španskom, nemačkom, francuskom, portugalskom i italijanskom. |
 | | `universal-streaming-english` | šaptač | Jeftinije prepoznavanje uživo, samo na engleskom. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | oboje | Glavni model, jak na ruskom, i telefonom. Nudi se kada je zemlja Rusija ili neka od njenih suseda. |
-| | `general:rc` | oboje | Sledeća verzija modela pre izdavanja. |
-| | `deferred-general` | prepisi | Odloženo prepoznavanje: prepis stiže kasnije, za manje novca. |
 | **Vosk (na vašoj sopstvenoj mašini)**<br />`ws://localhost:2700` | *(podešava se na serveru)* | oboje | Besplatan i lagan; radi bez grafičke kartice. Model je onaj sa kojim je server pokrenut, po jedan za svaki jezik, na primer `vosk-model-en-us-0.22` ili mali `vosk-model-small-en-us-0.15`. |
 | **WhisperLive (na vašoj sopstvenoj mašini)**<br />`ws://localhost:9090` | `small` | oboje | Whisper u toku uživo. Veličina se bira na kartici: `tiny`, `base`, `small` (nju nudi telefon), `medium`, `large-v3`; što je veći, to je tačniji i to više traži grafičku karticu. |
 | **NVIDIA Riva (na vašoj sopstvenoj mašini)**<br />`localhost:50051` | *(podešava se na serveru)* | oboje | Govorni server NVIDIA za računar sa NVIDIA grafičkom karticom. Nudi modele poput Parakeet i Canary. |
@@ -112,7 +114,7 @@ Tabela navodi modele za prepoznavanje govora svake vrste sa spiska **Vrsta**. **
 - **Cena.** Usluge u oblaku naplaćuju minut zvuka, a cene se razlikuju po modelu i menjaju; pročitajte ih na stranici same usluge pre prelaska. Prepoznavač na vašoj sopstvenoj mašini ne košta ništa.
 - **Jezici.** Svaka usluga ima svoj spisak; proverite svoj i podesite kod u polju **Jezik** u naprednim podešavanjima prepoznavača ako pogađa pogrešno.
 
-Spisak modela usluge se često menja. Ako ovde nedostaje model koji želite, aktuelni spisak je u dokumentaciji same usluge — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — a **Model** je naziv tačno onakav kakav ga daje usluga.
+Spisak modela usluge se često menja. Ako ovde nedostaje model koji želite, aktuelni spisak je u dokumentaciji same usluge — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — a **Model** je naziv tačno onakav kakav ga daje usluga.
 
 ## Sopstveni modeli {#your-own-models}
 

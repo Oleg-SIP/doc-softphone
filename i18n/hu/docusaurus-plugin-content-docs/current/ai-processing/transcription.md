@@ -11,15 +11,20 @@ A **Beállítások → Átirat** a felismerőket sorolja fel: azokat a szolgált
 Egy beszélgetés akkor kerül átiratba, amikor kéri a [Felvételek ablakban](/interface/recordings), vagy magától, ha a [Feldolgozás](/ai-processing/processing) részben be van kapcsolva **A beszélgetések automatikus feldolgozása**. A saját gépén futó felismerő semmibe sem kerül; a felhőben futó a hang perceiért számláz.
 
 ## Felismerők {#recognisers}
-A felismerő olyan beszédfelismerő szolgáltatás, amelynek a telefon a hangot küldi. A **Hozzáadás** újat ad hozzá; a kártyáján lévő **Próba** gomb ellenőrzi, hogy a szolgáltatás tényleg válaszol-e. Mindegyik a nevével szerepel a listában, alatta a szolgáltatása modelljével és címével. A képen öt van:
+A felismerő olyan beszédfelismerő szolgáltatás, amelynek a telefon a hangot küldi. A **Hozzáadás** újat ad hozzá; a kártyáján lévő **Próba** gomb ellenőrzi, hogy a szolgáltatás tényleg válaszol-e. Mindegyik a nevével szerepel a listában, alatta a szolgáltatása modelljével és címével. A táblázat felsorolja a telefon által támogatott összes szolgáltatásfajtát, ahogy a kártya **Fajta** mezője kínálja őket, a címmel és a modellekkel, amelyeket egy ilyen fajtájú új felismerő kap; az utolsó oszlop a képen beállított ötöt mutatja:
 
-| Név | Modell | Cím |
-| --- | --- | --- |
-| **X.ai** | *(üres: a szolgáltatás alapértelmezése)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(nincs)* | `ws://localhost:2700`, szerver ezen a számítógépen |
+| Fajta | Cím | Modell | A képen |
+| --- | --- | --- | --- |
+| **OpenAI-kompatibilis (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, élő `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, élő `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(üres: a szolgáltatás alapértelmezése)*, élő `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(üres: a szolgáltatás alapértelmezése)*, élő `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(üres: a szolgáltatás alapértelmezése)* | — |
+| **Vosk (a saját gépén)** | a saját szervere, például `ws://localhost:2700` | *(a szerveren állítható be)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (a saját gépén)** | a saját szervere, például `ws://localhost:9090` | élő `small` | — |
+| **NVIDIA Riva (a saját gépén)** | a saját szervere, például `localhost:50051` | *(a szerveren állítható be)* | — |
 
 A sor jobb szélén lévő két jel azt mutatja, mire alapértelmezett a felismerő. Az óra az alapértelmezettnél világít **az átiratokhoz** — a képen **X.ai** —, ezt használja a telefon, ha nem választ mást. A villám az alapértelmezettnél világít **a súgóhoz** — a képen **Vosk**. Több felismerőt is tarthat; az átirat feletti legördülő lista a [Felvételek ablakban](/interface/recordings#transcript-or-write-up-the-drop-down) az egyes felismerők által készített átiratokat mutatja.
 
@@ -31,7 +36,7 @@ Egy felismerőre kattintva megnyílik a kártyája.
 | Mező | Mi ez |
 | --- | --- |
 | **Név** | A név a listákban. |
-| **Fajta** | A szolgáltatás fajtája, amely eldönti, hogyan beszél vele a telefon: **OpenAI-kompatibilis (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, valamint három, amely a saját gépén fut — **Vosk**, **WhisperLive** és **NVIDIA Riva**. A **Yandex SpeechKit** akkor jelenik meg, ha a [Névjegy](../application/about.md) részben választott ország Oroszország vagy valamelyik szomszédja. |
+| **Fajta** | A szolgáltatás fajtája, amely eldönti, hogyan beszél vele a telefon: **OpenAI-kompatibilis (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, valamint három, amely a saját gépén fut — **Vosk**, **WhisperLive** és **NVIDIA Riva**. |
 | **Cím az átiratokhoz** | Ahová a befejezett beszélgetések mennek. |
 | **Cím a súgóhoz** | Ahová az élő hang megy beszélgetés közben. *Üresen a melletti címből adódik*, mint a képen a `wss://api.x.ai`. |
 | **Kulcs** | A szolgáltatás kulcsa. *Ennek a gépnek a kulcstartójában van, soha nem beállításfájlban.* |
@@ -60,7 +65,7 @@ A **Speciális beállítások** megnyitja a kártya többi részét. A legfontos
 | **Ár percenként** | Mennyibe kerül egy perc élő hang a szolgáltatás árlistája szerint. A súgó mutatja, mennyibe került egy munkamenet, és megáll a [havi plafonjánál](prompter.md#spending). |
 
 ## Élő felismerés a súgóhoz {#live-recognition-for-the-prompter}
-A [súgónak](../interface/prompter.md) olyan felismerő kell, amely hallgat, miközben valaki beszél — folyamként, nem kész fájllal. Ezek a fajták képesek erre: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-kompatibilis** (az OpenAI valós idejű átiratával), **AssemblyAI**, **Soniox** és **Speechmatics** a felhőben, **Yandex SpeechKit** ott, ahol elérhető, valamint **Vosk**, **WhisperLive** és **NVIDIA Riva** a saját gépén. A saját gépén futó felismerő a házon belül tartja a másik fél hangját, és semmibe sem kerül.
+A [súgónak](../interface/prompter.md) olyan felismerő kell, amely hallgat, miközben valaki beszél — folyamként, nem kész fájllal. Ezek a fajták képesek erre: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-kompatibilis** (az OpenAI valós idejű átiratával), **AssemblyAI**, **Soniox** és **Speechmatics** a felhőben valamint **Vosk**, **WhisperLive** és **NVIDIA Riva** a saját gépén. A saját gépén futó felismerő a házon belül tartja a másik fél hangját, és semmibe sem kerül.
 
 Így használja: nyissa meg a kártyáját, ellenőrizze a **Cím a súgóhoz** mezőt (vagy hagyja, hogy adódjon), válassza ki a **Modell a súgóhoz** mezőt, ha a szolgáltatás többet kínál — az élő modellek gyakran mások, mint a fájlokhoz valók, például az ElevenLabs `scribe_v2_realtime` modellje —, és nyomja meg a **Próba** gombot. Jelölje be az **Alapértelmezett a súgóhoz** mezőt, hogy az új segítők ezzel hallgassanak.
 
@@ -98,9 +103,6 @@ A táblázat a **Fajta** lista minden fajtájának beszédfelismerő modelljeit 
 | | `universal-3-6-pro` | súgó | Az AssemblyAI legújabb élő modellje, 32 nyelv; a szolgáltatás ezt használja, ha a modell üres. |
 | | `universal-streaming-multilingual` | súgó | Olcsóbb élő felismerés angolul, spanyolul, németül, franciául, portugálul és olaszul. |
 | | `universal-streaming-english` | súgó | Olcsóbb élő felismerés, csak angolul. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | mindkettő | A fő modell, erős orosz nyelven, telefonon is. Akkor érhető el, ha az ország Oroszország vagy valamelyik szomszédja. |
-| | `general:rc` | mindkettő | A modell következő változata a kiadás előtt. |
-| | `deferred-general` | átiratok | Halasztott felismerés: az átirat később érkezik, kevesebb pénzért. |
 | **Vosk (a saját gépén)**<br />`ws://localhost:2700` | *(a szerveren állítható be)* | mindkettő | Ingyenes és könnyű; videokártya nélkül is fut. A modell az, amellyel a szervert elindították, nyelvenként egy, például `vosk-model-en-us-0.22` vagy a kicsi `vosk-model-small-en-us-0.15`. |
 | **WhisperLive (a saját gépén)**<br />`ws://localhost:9090` | `small` | mindkettő | Whisper élő folyamon. A méretet a kártyán választja: `tiny`, `base`, `small` (ezt kínálja a telefon), `medium`, `large-v3`; minél nagyobb, annál pontosabb, és annál inkább kell hozzá videokártya. |
 | **NVIDIA Riva (a saját gépén)**<br />`localhost:50051` | *(a szerveren állítható be)* | mindkettő | Az NVIDIA beszédszervere NVIDIA videokártyás számítógéphez. Olyan modelleket szolgál ki, mint a Parakeet és a Canary. |
@@ -112,7 +114,7 @@ Amit érdemes tudni a választás előtt:
 - **Ár.** A felhőszolgáltatások a hang perceiért számláznak, a díjak modellenként eltérnek és változnak; váltás előtt nézze meg őket a szolgáltatás saját oldalán. A saját gépén futó felismerő semmibe sem kerül.
 - **Nyelvek.** Minden szolgáltatásnak saját listája van; ellenőrizze a magáét, és adja meg a kódot a **Nyelv** mezőben a felismerő speciális beállításai között, ha rosszul találgat.
 
-Egy szolgáltatás modelllistája gyakran változik. Ha egy kívánt modell hiányzik innen, az aktuális lista a szolgáltatás saját dokumentációjában van — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) —, a **Modell** pedig a név pontosan úgy, ahogy a szolgáltatás megadja.
+Egy szolgáltatás modelllistája gyakran változik. Ha egy kívánt modell hiányzik innen, az aktuális lista a szolgáltatás saját dokumentációjában van — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) —, a **Modell** pedig a név pontosan úgy, ahogy a szolgáltatás megadja.
 
 ## Saját modellek {#your-own-models}
 

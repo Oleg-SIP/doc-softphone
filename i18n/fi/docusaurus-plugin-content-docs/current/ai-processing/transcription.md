@@ -11,15 +11,20 @@ description: "Valitse tunnistin, joka muuttaa äänen tekstiksi: sen osoite, sen
 Keskustelu litteroidaan, kun pyydät sitä [Tallenteet-ikkunassa](/interface/recordings), tai itsestään, jos **Käsittele keskustelut automaattisesti** on päällä kohdassa [Käsittely](/ai-processing/processing). Omalla koneellasi toimiva tunnistin ei maksa mitään; pilvessä toimiva laskuttaa äänen minuuteista.
 
 ## Tunnistimet {#recognisers}
-Tunnistin on puheentunnistuspalvelu, jolle puhelin lähettää äänen. **Lisää** lisää uuden; sen kortin **Kokeile**-painike tarkistaa, että palvelu todella vastaa. Jokainen näkyy luettelossa nimellään ja sen alla palvelunsa malli ja osoite. Kuvassa niitä on viisi:
+Tunnistin on puheentunnistuspalvelu, jolle puhelin lähettää äänen. **Lisää** lisää uuden; sen kortin **Kokeile**-painike tarkistaa, että palvelu todella vastaa. Jokainen näkyy luettelossa nimellään ja sen alla palvelunsa malli ja osoite. Taulukko luettelee jokaisen puhelimen tukeman palvelulajin sellaisina kuin kortin **Laji** niitä tarjoaa, sekä osoitteen ja mallit, jotka tämän lajin uusi tunnistin saa; viimeinen sarake näyttää kuvassa asetetut viisi:
 
-| Nimi | Malli | Osoite |
-| --- | --- | --- |
-| **X.ai** | *(tyhjä: palvelun oletus)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(ei mitään)* | `ws://localhost:2700`, palvelin tällä tietokoneella |
+| Laji | Osoite | Malli | Kuvassa |
+| --- | --- | --- | --- |
+| **OpenAI-yhteensopiva (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, suora `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, suora `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(tyhjä: palvelun oletus)*, suora `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(tyhjä: palvelun oletus)*, suora `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(tyhjä: palvelun oletus)* | — |
+| **Vosk (omalla koneellasi)** | oma palvelimesi, esimerkiksi `ws://localhost:2700` | *(asetetaan palvelimella)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (omalla koneellasi)** | oma palvelimesi, esimerkiksi `ws://localhost:9090` | suora `small` | — |
+| **NVIDIA Riva (omalla koneellasi)** | oma palvelimesi, esimerkiksi `localhost:50051` | *(asetetaan palvelimella)* | — |
 
 Rivin oikean reunan kaksi merkkiä kertovat, minkä oletus tunnistin on. Kello palaa oletuksella **litterointeja varten** — kuvassa **X.ai** —, jota käytetään, kun et valitse muuta. Salama palaa oletuksella **kuiskaajaa varten** — kuvassa **Vosk**. Voit pitää useita tunnistimia; litteroinnin yläpuolella oleva pudotusvalikko [Tallenteet-ikkunassa](/interface/recordings#transcript-or-write-up-the-drop-down) luettelee kunkin niistä tekemät litteroinnit.
 
@@ -31,7 +36,7 @@ Tunnistimen painaminen avaa sen kortin.
 | Kenttä | Mikä se on |
 | --- | --- |
 | **Nimi** | Nimi luetteloissa. |
-| **Laji** | Palvelun laji, joka ratkaisee, miten puhelin keskustelee sen kanssa: **OpenAI-yhteensopiva (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ja kolme omalla koneellasi toimivaa — **Vosk**, **WhisperLive** ja **NVIDIA Riva**. **Yandex SpeechKit** on tarjolla, kun [Tietoja](../application/about.md)-kohdan maa on Venäjä tai jokin sen naapurimaista. |
+| **Laji** | Palvelun laji, joka ratkaisee, miten puhelin keskustelee sen kanssa: **OpenAI-yhteensopiva (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ja kolme omalla koneellasi toimivaa — **Vosk**, **WhisperLive** ja **NVIDIA Riva**. |
 | **Osoite litterointeja varten** | Minne päättyneet keskustelut lähetetään. |
 | **Osoite kuiskaajaa varten** | Minne suora ääni menee keskustelun aikana. *Tyhjä päätellään viereisestä osoitteesta*, kuten `wss://api.x.ai` kuvassa. |
 | **Avain** | Palvelun avain. *Se säilytetään tämän tietokoneen avainnipussa, ei koskaan asetustiedostossa.* |
@@ -60,7 +65,7 @@ Tunnistimen painaminen avaa sen kortin.
 | **Hinta minuutilta** | Mitä minuutti suoraa ääntä maksaa palvelun hinnaston mukaan. Kuiskaaja näyttää, mitä istunto on maksanut, ja pysähtyy [kuukausikattoonsa](prompter.md#spending). |
 
 ## Suora tunnistus kuiskaajalle {#live-recognition-for-the-prompter}
-[Kuiskaaja](../interface/prompter.md) tarvitsee tunnistimen, joka kuuntelee jonkun puhuessa, virtana eikä valmiina tiedostona. Nämä lajit osaavat sen: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-yhteensopiva** (OpenAI:n reaaliaikaisella litteroinnilla), **AssemblyAI**, **Soniox** ja **Speechmatics** pilvessä, **Yandex SpeechKit** siellä, missä se on tarjolla, sekä **Vosk**, **WhisperLive** ja **NVIDIA Riva** omalla koneellasi. Omalla koneella toimiva tunnistin pitää toisen osapuolen äänen talon sisällä eikä maksa mitään.
+[Kuiskaaja](../interface/prompter.md) tarvitsee tunnistimen, joka kuuntelee jonkun puhuessa, virtana eikä valmiina tiedostona. Nämä lajit osaavat sen: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-yhteensopiva** (OpenAI:n reaaliaikaisella litteroinnilla), **AssemblyAI**, **Soniox** ja **Speechmatics** pilvessä sekä **Vosk**, **WhisperLive** ja **NVIDIA Riva** omalla koneellasi. Omalla koneella toimiva tunnistin pitää toisen osapuolen äänen talon sisällä eikä maksa mitään.
 
 Näin otat sellaisen käyttöön: avaa sen kortti, tarkista **Osoite kuiskaajaa varten** (tai anna sen päätellä itsensä), valitse **Malli kuiskaajaa varten**, jos palvelu tarjoaa useita — suorat mallit ovat usein eri kuin tiedostojen mallit, kuten ElevenLabsin `scribe_v2_realtime` — ja paina **Kokeile**. Rastita **Oletus kuiskaajaa varten**, niin uudet avustajat kuuntelevat sillä.
 
@@ -98,9 +103,6 @@ Taulukko luettelee **Laji**-luettelon jokaisen lajin puheentunnistusmallit. **Li
 | | `universal-3-6-pro` | kuiskaaja | AssemblyAI:n uusin suora malli, 32 kieltä; palvelu käyttää sitä, kun malli on tyhjä. |
 | | `universal-streaming-multilingual` | kuiskaaja | Halvempi suora tunnistus englanniksi, espanjaksi, saksaksi, ranskaksi, portugaliksi ja italiaksi. |
 | | `universal-streaming-english` | kuiskaaja | Halvempi suora tunnistus, vain englanniksi. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | molemmat | Päämalli, vahva venäjässä, myös puhelimessa. Tarjolla, kun maa on Venäjä tai jokin sen naapurimaista. |
-| | `general:rc` | molemmat | Mallin seuraava versio ennen julkaisua. |
-| | `deferred-general` | litteroinnit | Viivästetty tunnistus: litterointi tulee myöhemmin, halvemmalla. |
 | **Vosk (omalla koneellasi)**<br />`ws://localhost:2700` | *(asetetaan palvelimella)* | molemmat | Ilmainen ja kevyt; toimii ilman näytönohjainta. Malli on se, jolla palvelin käynnistettiin, yksi kieltä kohden, esimerkiksi `vosk-model-en-us-0.22` tai pieni `vosk-model-small-en-us-0.15`. |
 | **WhisperLive (omalla koneellasi)**<br />`ws://localhost:9090` | `small` | molemmat | Whisper suorana virtana. Koko valitaan kortilla: `tiny`, `base`, `small` (jota puhelin tarjoaa), `medium`, `large-v3`; mitä suurempi, sitä tarkempi ja sitä enemmän se kaipaa näytönohjainta. |
 | **NVIDIA Riva (omalla koneellasi)**<br />`localhost:50051` | *(asetetaan palvelimella)* | molemmat | NVIDIAn puhepalvelin tietokoneelle, jossa on NVIDIAn näytönohjain. Se tarjoaa malleja kuten Parakeet ja Canary. |
@@ -112,7 +114,7 @@ Hyvä tietää ennen valintaa:
 - **Hinta.** Pilvipalvelut laskuttavat äänen minuuteista, ja hinnat vaihtelevat mallin mukaan ja muuttuvat; lue ne palvelun omalta sivulta ennen vaihtamista. Omalla koneellasi toimiva tunnistin ei maksa mitään.
 - **Kielet.** Jokaisella palvelulla on oma luettelonsa; tarkista omasi ja aseta koodi kohtaan **Kieli** tunnistimen lisäasetuksissa, jos se arvaa väärin.
 
-Palvelun malliluettelo muuttuu usein. Jos haluamasi malli puuttuu tästä, palvelun oma dokumentaatio sisältää ajantasaisen luettelon — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — ja **Malli** on nimi täsmälleen niin kuin palvelu sen antaa.
+Palvelun malliluettelo muuttuu usein. Jos haluamasi malli puuttuu tästä, palvelun oma dokumentaatio sisältää ajantasaisen luettelon — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — ja **Malli** on nimi täsmälleen niin kuin palvelu sen antaa.
 
 ## Omat mallisi {#your-own-models}
 

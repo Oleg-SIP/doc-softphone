@@ -11,15 +11,20 @@ description: "Изборът на разпознавача, който прев�
 Разговорът се превръща в стенограма, когато поискате това в [прозореца Записи](/interface/recordings), или сам, ако в [Обработка](/ai-processing/processing) е включено **Обработвай разговорите автоматично**. Разпознавач на вашата собствена машина не струва нищо; облачният таксува минутата звук.
 
 ## Разпознавачи {#recognisers}
-Разпознавачът е услуга за разпознаване на реч, на която телефонът изпраща звука. **Добави** добавя нов; бутонът **Провери** в картата му проверява дали услугата наистина отговаря. Всеки е в списъка с името си, а под него — с модела и адреса на услугата си. На картинката са пет:
+Разпознавачът е услуга за разпознаване на реч, на която телефонът изпраща звука. **Добави** добавя нов; бутонът **Провери** в картата му проверява дали услугата наистина отговаря. Всеки е в списъка с името си, а под него — с модела и адреса на услугата си. Таблицата изброява всеки вид услуга, която телефонът поддържа, както ги предлага **Вид** в картата, с адреса и моделите, които получава нов разпознавач от този вид; последната колона показва петте, настроени на картинката:
 
-| Име | Модел | Адрес |
-| --- | --- | --- |
-| **X.ai** | *(празно: моделът по подразбиране на услугата)* | `https://api.x.ai/v1` |
-| **ElevenLabs** | `scribe_v2` | `https://api.elevenlabs.io/v1` |
-| **Deepgram** | `nova-2` | `https://api.deepgram.com/v1` |
-| **OpenAI** | `gpt-4o-transcribe` | `https://api.openai.com/v1/` |
-| **Vosk** | *(няма)* | `ws://localhost:2700`, сървър на този компютър |
+| Вид | Адрес | Модел | На картинката |
+| --- | --- | --- | --- |
+| **Съвместим с OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, на живо `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, на живо `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | *(празно: моделът по подразбиране на услугата)*, на живо `grok-voice-transcribe-2.0` | **X.ai** |
+| **Soniox** | `https://api.soniox.com` | *(празно: моделът по подразбиране на услугата)*, на живо `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | *(празно: моделът по подразбиране на услугата)* | — |
+| **Vosk (на вашата собствена машина)** | вашият сървър, например `ws://localhost:2700` | *(задава се на сървъра)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (на вашата собствена машина)** | вашият сървър, например `ws://localhost:9090` | на живо `small` | — |
+| **NVIDIA Riva (на вашата собствена машина)** | вашият сървър, например `localhost:50051` | *(задава се на сървъра)* | — |
 
 Двата знака вдясно на реда показват за какво разпознавачът е по подразбиране. Часовникът свети при този по подразбиране **за стенограми** — на картинката **X.ai** —, който се използва, когато не изберете друг. Светкавицата свети при този по подразбиране **за суфльора** — на картинката **Vosk**. Можете да държите няколко разпознавача; падащият списък над стенограмата в [прозореца Записи](/interface/recordings#transcript-or-write-up-the-drop-down) показва стенограмите, направени от всеки от тях.
 
@@ -31,7 +36,7 @@ description: "Изборът на разпознавача, който прев�
 | Поле | Какво е |
 | --- | --- |
 | **Име** | Името в списъците. |
-| **Вид** | Видът на услугата, от който зависи как телефонът говори с нея: **Съвместим с OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** и три, които работят на вашата собствена машина — **Vosk**, **WhisperLive** и **NVIDIA Riva**. **Yandex SpeechKit** се предлага, когато държавата, избрана в [Относно](../application/about.md), е Русия или някоя от съседките ѝ. |
+| **Вид** | Видът на услугата, от който зависи как телефонът говори с нея: **Съвместим с OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** и три, които работят на вашата собствена машина — **Vosk**, **WhisperLive** и **NVIDIA Riva**. |
 | **Адрес за стенограми** | Къде се изпращат приключилите разговори. |
 | **Адрес за суфльора** | Къде отива звукът на живо, докато разговорът тече. *Празно се извлича от адреса до него*, като `wss://api.x.ai` на картинката. |
 | **Ключ** | Ключът на услугата. *Стои в ключодържателя на този компютър, никога във файл с настройки.* |
@@ -60,7 +65,7 @@ description: "Изборът на разпознавача, който прев�
 | **Цена на минута** | Колко струва минута звук на живо според ценоразписа на услугата. Суфльорът показва колко е струвала сесията и спира при своя [месечен таван](prompter.md#spending). |
 
 ## Разпознаване на живо за суфльора {#live-recognition-for-the-prompter}
-[Суфльорът](../interface/prompter.md) се нуждае от разпознавач, който слуша, докато някой говори — с поток, а не с готов файл. Това могат тези видове: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Съвместим с OpenAI** (с транскрипцията на OpenAI в реално време), **AssemblyAI**, **Soniox** и **Speechmatics** в облака, **Yandex SpeechKit** там, където се предлага, и **Vosk**, **WhisperLive** и **NVIDIA Riva** на вашата собствена машина. Разпознавач на вашата собствена машина държи гласа на събеседника в сградата и не струва нищо.
+[Суфльорът](../interface/prompter.md) се нуждае от разпознавач, който слуша, докато някой говори — с поток, а не с готов файл. Това могат тези видове: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Съвместим с OpenAI** (с транскрипцията на OpenAI в реално време), **AssemblyAI**, **Soniox** и **Speechmatics** в облака и **Vosk**, **WhisperLive** и **NVIDIA Riva** на вашата собствена машина. Разпознавач на вашата собствена машина държи гласа на събеседника в сградата и не струва нищо.
 
 Как да го използвате: отворете картата му, проверете **Адрес за суфльора** (или го оставете да се извлече), изберете **Модел за суфльора**, ако услугата предлага няколко — моделите на живо често се различават от тези за файлове, като `scribe_v2_realtime` на ElevenLabs — и натиснете **Провери**. Отметнете **По подразбиране за суфльора**, за да слушат новите помощници с него.
 
@@ -98,9 +103,6 @@ description: "Изборът на разпознавача, който прев�
 | | `universal-3-6-pro` | суфльор | Най-новият модел на живо на AssemblyAI, 32 езика; услугата го използва, когато моделът е празен. |
 | | `universal-streaming-multilingual` | суфльор | По-евтино разпознаване на живо на английски, испански, немски, френски, португалски и италиански. |
 | | `universal-streaming-english` | суфльор | По-евтино разпознаване на живо, само на английски. |
-| **Yandex SpeechKit**<br />`https://stt.api.cloud.yandex.net` | `general` | двете | Основният модел, силен на руски, и по телефона. Предлага се, когато държавата е Русия или някоя от съседките ѝ. |
-| | `general:rc` | двете | Следващата версия на модела преди издаването ѝ. |
-| | `deferred-general` | стенограми | Отложено разпознаване: стенограмата идва по-късно, срещу по-малко пари. |
 | **Vosk (на вашата собствена машина)**<br />`ws://localhost:2700` | *(задава се на сървъра)* | двете | Безплатен и лек; работи без видеокарта. Моделът е онзи, с който е пуснат сървърът, по един за всеки език, например `vosk-model-en-us-0.22` или малкият `vosk-model-small-en-us-0.15`. |
 | **WhisperLive (на вашата собствена машина)**<br />`ws://localhost:9090` | `small` | двете | Whisper в поток на живо. Размерът се избира в картата: `tiny`, `base`, `small` (него предлага телефонът), `medium`, `large-v3`; колкото по-голям, толкова по-точен и толкова повече иска видеокарта. |
 | **NVIDIA Riva (на вашата собствена машина)**<br />`localhost:50051` | *(задава се на сървъра)* | двете | Речевият сървър на NVIDIA за компютър с видеокарта NVIDIA. Предлага модели като Parakeet и Canary. |
@@ -112,7 +114,7 @@ description: "Изборът на разпознавача, който прев�
 - **Цена.** Облачните услуги таксуват минутата звук, а тарифите зависят от модела и се променят; прочетете ги на страницата на самата услуга, преди да смените. Разпознавач на вашата собствена машина не струва нищо.
 - **Езици.** Всяка услуга има свой списък; проверете своя и задайте кода в **Език** в разширените настройки на разпознавача, ако той познава грешно.
 
-Списъкът с модели на услугата се променя често. Ако тук липсва модел, който искате, актуалният списък е в документацията на самата услуга — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Yandex SpeechKit](https://yandex.cloud/en/docs/speechkit/stt/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — а **Модел** е името точно така, както го дава услугата.
+Списъкът с модели на услугата се променя често. Ако тук липсва модел, който искате, актуалният списък е в документацията на самата услуга — [OpenAI](https://developers.openai.com/api/docs/guides/speech-to-text), [Deepgram](https://developers.deepgram.com/docs/models-languages-overview), [ElevenLabs](https://elevenlabs.io/docs/capabilities/speech-to-text), [Speechmatics](https://docs.speechmatics.com/speech-to-text/models), [X.ai](https://docs.x.ai/developers/model-capabilities/audio/speech-to-text), [Soniox](https://soniox.com/docs/stt/models), [AssemblyAI](https://www.assemblyai.com/docs/getting-started/models), [Vosk](https://alphacephei.com/vosk/models), [WhisperLive](https://github.com/collabora/WhisperLive), [NVIDIA Riva](https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html) — а **Модел** е името точно така, както го дава услугата.
 
 ## Вашите собствени модели {#your-own-models}
 
