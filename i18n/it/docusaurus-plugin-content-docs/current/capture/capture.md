@@ -2,7 +2,7 @@
 title: Cattura
 sidebar_label: Cattura da altre applicazioni
 sidebar_position: 1
-description: "\"La cattura registra una conversazione tenuta in un'altra applicazione — Zoom, Teams, Meet o qualsiasi altra — direttamente dal computer.\""
+description: "La cattura registra una conversazione tenuta in un'altra applicazione — Zoom, Teams, Meet o qualsiasi altra — direttamente dal computer."
 ---
 
 La **Cattura** è il modo in cui AI Softphone registra una conversazione che si svolge in un altro programma, come una riunione in Zoom, Teams o Meet. Registra dal computer stesso, tenendo l'altra parte e lei su canali separati, e alla fine la aspettano la stessa trascrizione e lo stesso resoconto di una chiamata.
@@ -34,7 +34,7 @@ La parte del programma che fa questo è il modulo **Cattura**, *Registrare una c
 
 ## Avviare una cattura {#starting-a-capture}
 
-Una volta consentita la cattura, la parte bassa della [finestra principale](../interface/main-window.md#capture) ne mostra lo stato — **Cattura · pronta** — con un pulsante **Registra** a destra. Prema **Registra** per avviarla a mano.
+Una volta consentita la cattura, la parte bassa della [finestra principale](../interface/main-window.md#capture) ne mostra lo stato — **Cattura · in attesa di una conversazione** — con un pulsante rotondo di registrazione a destra, *Registra questa conversazione*. Lo prema per avviarla a mano.
 
 ### Avvio automatico {#automatic-start}
 
@@ -42,7 +42,7 @@ Una volta consentita la cattura, la parte bassa della [finestra principale](../i
 
 | Scelta | Che cosa succede |
 | --- | --- |
-| **Mai** | Una cattura parte solo quando preme **Registra**. |
+| **Mai** | Una cattura parte solo quando preme il pulsante di registrazione. |
 | **Chiedimelo** | Il programma chiede se registrarla. Il valore predefinito. |
 | **Sempre** | Il programma inizia a registrare da solo. |
 
@@ -52,7 +52,7 @@ In **Applicazioni con una risposta propria** si può dare a un'applicazione una 
 
 ### Prima dell'inizio {#before-the-start}
 
-Il cursore **Prima dell'inizio** indica quanti secondi di suono vengono conservati da prima che inizi una registrazione, **15 secondi** per impostazione predefinita. Serve perché non si perda nulla mentre la conversazione viene notata: una registrazione che parte quando preme **Registra**, o quando risponde alla domanda, comincia comunque con le parole venute prima.
+Il cursore **Prima dell'inizio** indica quanti secondi di suono vengono conservati da prima che inizi una registrazione, **15 secondi** per impostazione predefinita. Serve perché non si perda nulla mentre la conversazione viene notata: una registrazione che parte quando preme il pulsante di registrazione, o quando risponde alla domanda, comincia comunque con le parole venute prima.
 
 ## Catturare una conversazione {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Altre due impostazioni scelgono come viene disegnato il livello del suono:
 
 | Impostazione | Predefinito | Dove |
 | --- | --- | --- |
-| **Immagine nella finestra principale** | Onda | I due canali mentre è in corso una cattura. |
-| **Immagine nella barra ai piedi del telefono** | Due livelli | Le due barre sottili sotto **Cattura · pronta**. |
+| **Disegno nella finestra** | Onda | I due canali mentre è in corso una cattura. |
+| **Disegno nella barra in basso** | Due livelli | Le due barre sottili sotto **Cattura · in attesa di una conversazione**. |
 
 ### Provarla {#testing-it}
 
@@ -86,4 +86,4 @@ Una conversazione catturata compare nella [finestra delle registrazioni](../inte
 
 <Shot name="01_recordings" alt="Riunioni catturate nella scheda Registrazioni, contrassegnate da un'icona a forma di finestra" />
 
-Viene trascritta, riassunta, classificata in una categoria ed etichettata dalle stesse [regole](../ai-processing/processing.md#rules) di una chiamata. Nella trascrizione di una riunione catturata chi parla è mostrato come **Un'altra applicazione** dove una chiamata mostrerebbe il nome dell'interlocutore; anche la **Ricerca** della libreria trova ciò che vi è stato detto.
+Viene trascritta, riassunta, classificata in una categoria ed etichettata dalle stesse [regole](../ai-processing/processing.md#rules) di una chiamata. Nella trascrizione di una riunione catturata chi parla è mostrato con il nome della registrazione dove una chiamata mostrerebbe il nome dell'interlocutore; anche la **Ricerca** della libreria trova ciò che vi è stato detto.

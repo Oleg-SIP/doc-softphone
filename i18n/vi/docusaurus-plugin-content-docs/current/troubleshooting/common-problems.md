@@ -44,7 +44,7 @@ Các codec được đề nghị theo thứ tự của danh sách trong [Cài đ
 Xem [Thu âm ngoài](/capture/).
 
 - **Cho phép thu âm thanh** trong **Cài đặt → Thu âm ngoài** phải được bật.
-- Khi **Bắt đầu tự động** đặt là **Hỏi tôi** (mặc định), hãy trả lời câu hỏi khi nó hiện ra; với **Không bao giờ**, hãy tự nhấn **Ghi**.
+- Khi **Bắt đầu tự động** đặt là **Hỏi tôi** (mặc định), hãy trả lời câu hỏi khi nó hiện ra; với **Không bao giờ**, hãy tự nhấn nút ghi.
 - Dùng **Thử** trên cùng thẻ: thanh trên phải chuyển động khi bạn nói, thanh dưới khi có gì đó đang phát.
 - Mô-đun **Thu âm ngoài** phải được bật trong [Mô-đun](/application/modules).
 

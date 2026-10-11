@@ -7,6 +7,7 @@ description: Các thuật ngữ về điện thoại IP và về AI Softphone đ
 | Thuật ngữ | Ý nghĩa |
 | --- | --- |
 | **Tài khoản** | Một đường dây: tên đăng nhập SIP trên tổng đài hoặc ở nhà cung cấp. Bạn có thể đăng nhập nhiều tài khoản cùng lúc. Xem [Thiết lập tài khoản SIP](/sip-accounts/setup). |
+| **Trợ lý** | Vai trò của người nhắc khi đang nghe: phụ đề, bản dịch hoặc gợi ý nên nói gì. Xem [Cài đặt người nhắc](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Nút bấm gọi một số máy lẻ và cho biết bằng đèn rằng số đó đang rảnh, đang đổ chuông hay đang bận. Xem [Nút bấm](/sip-accounts/buttons). |
 | **Chờ cuộc gọi** | Điều điện thoại làm khi có người gọi đến trong lúc bạn đang trong một cuộc gọi khác. Xem [Cài đặt cuộc gọi](/sip-accounts/calls#call-waiting). |
 | **Thu âm ngoài** | Ghi lại cuộc trò chuyện diễn ra trong ứng dụng khác, như Zoom, Teams hay Meet. Xem [Thu âm ngoài](/capture/). |
@@ -19,8 +20,10 @@ description: Các thuật ngữ về điện thoại IP và về AI Softphone đ
 | **Tổng đài IP** | Tổng đài điện thoại của văn phòng, chạy trên mạng; còn gọi là softswitch. |
 | **Mô hình ngôn ngữ** | AI đọc bản chép lời và viết về nó. Xem [Xử lý](/ai-processing/processing). |
 | **Chỉ dẫn** | Điều được yêu cầu ở mô hình ngôn ngữ. Xem [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Người nhắc** | Một cửa sổ hiển thị những gì được nói trong cuộc gọi ngay khi được nói, cùng gợi ý nên trả lời gì. Xem [Cửa sổ người nhắc](/interface/prompter). |
 | **Bộ nhận dạng** | Dịch vụ chuyển âm thanh thành văn bản (nhận dạng giọng nói). Xem [Gỡ băng](/ai-processing/transcription). |
 | **Dấu hiệu cảnh báo** | Điều gì đó trong cuộc trò chuyện cần được chú ý, kèm bằng chứng và thời điểm. Xem [Từ điển](/ai-processing/dictionaries#red-flags). |
+| **Diễn tập** | Phát một cuộc trò chuyện đã ghi vào người nhắc thay cho cuộc gọi, để thử một trợ lý. Xem [Cửa sổ người nhắc](/interface/prompter#rehearsing-on-a-recording). |
 | **Đăng ký** | Điện thoại báo cho tổng đài biết nó đang ở đâu, để cuộc gọi đến được với nó. Chấm xanh bên tài khoản nghĩa là tài khoản đã đăng ký. |
 | **Quy tắc** | Một bước tự chạy, theo thứ tự, trên mọi cuộc trò chuyện. Xem [Xử lý](/ai-processing/processing#rules). |
 | **SIP** | Giao thức mà điện thoại và tổng đài dùng để thiết lập cuộc gọi. |

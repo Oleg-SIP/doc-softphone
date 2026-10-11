@@ -16,13 +16,13 @@ A sor bal szélén lévő ikon mutatja, hogyan érkezett a beszélgetés.
 | --- | --- | --- | --- |
 | Kagyló nyíllal | Ebben a telefonban indított vagy fogadott hívás. A nyíl bejövő hívásnál befelé, kimenőnél kifelé mutat. | A névjegy neve, vagy a szám | A [Felvételek](../recordings.md) beállítása szerint rögzítve |
 | Nyíl egy sávba | Máshonnan importált fájl: mobiltelefonról, diktafonról vagy egy másik rendszerből | A fájl neve | **⋮ → Importálás fájlokból**; lásd [lent](#a-recording-you-already-have) |
-| Ablak | Egy másik alkalmazásban zajlott megbeszélés | Az Ön által adott név, vagy **Másik alkalmazás** | [Rögzítés](../capture/capture.md) |
+| Ablak | Egy másik alkalmazásban zajlott megbeszélés | Az Ön által adott név, vagy **Egy másik alkalmazás** | [Rögzítés](../capture/capture.md) |
 
 A képen a felső három sor mindegyik fajtából egy-egy: egy Zoom-megbeszélés, egy bank ügyfélszolgálati hívásának importált fájlja és egy hívás, amelyet a **305 Ügyfélszolgálat** vonalán fogadtak. Bármi is a forrásuk, ugyanúgy kapnak leiratot és feldolgozást, és ugyanúgy kereshetők.
 
 ## Beszélgetés keresése {#finding-a-conversation}
 
-A felső sávon öt szűrő, egy keresőmező és egy menü található:
+A felső sávon négy szűrő, egy keresőmező és egy menü található:
 
 | Vezérlő | Mi szerint szűkíti a listát |
 | --- | --- |
@@ -30,7 +30,6 @@ A felső sávon öt szűrő, egy keresőmező és egy menü található:
 | **Időszak** | a dátum: **Ma**, **Tegnap**, **Utolsó 7 nap**, vagy **Dátumok választása…** |
 | **Kategória** | a kategória, amelybe besorolták — lásd: [Szótárak](../ai-processing/dictionaries.md) |
 | **Jelölés** | a rajta lévő címkék és figyelmeztető jelek |
-| **Felismerő** | a [felismerő](../ai-processing/transcription.md), amely a leiratát készítette |
 | **Keresés** | ami elhangzott benne — a keresés mindannak a leiratán végigmegy, amit valaha rögzített |
 
 <Shot name="39_more_menu" alt="A lista ⋮ menüje: Importálás fájlokból, Exportálás CSV-be, Megnyitás böngészőben" />

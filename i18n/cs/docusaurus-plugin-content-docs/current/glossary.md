@@ -7,6 +7,7 @@ description: Pojmy IP telefonie a AI Softphone používané v této dokumentaci 
 | Pojem | Význam |
 | --- | --- |
 | **Účet** | Linka: SIP uživatelské jméno na ústředně nebo u operátora. Můžete být přihlášeni k několika. Viz [Nastavení SIP účtu](/sip-accounts/setup). |
+| **Pomocník** | To, čím má našeptávač být, když poslouchá: titulky, překlad nebo návrhy, co říct. Viz [Nastavení našeptávače](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Tlačítko, které vytočí linku a kontrolkou ukazuje, zda je volná, zvoní, nebo je obsazená. Viz [Tlačítka](/sip-accounts/buttons). |
 | **Čekání hovoru** | Co telefon udělá, když vám někdo volá, zatímco už telefonujete. Viz [Nastavení hovorů](/sip-accounts/calls#call-waiting). |
 | **Zachytávání** | Nahrávání rozhovoru vedeného v jiné aplikaci, například v Zoomu, Teams nebo Meetu. Viz [Zachytávání](/capture/). |
@@ -19,8 +20,10 @@ description: Pojmy IP telefonie a AI Softphone používané v této dokumentaci 
 | **IP ústředna** | Telefonní ústředna firmy běžící v síti; jinak též softswitch. |
 | **Jazykový model** | AI, která čte přepis a píše o něm. Viz [Zpracování](/ai-processing/processing). |
 | **Pokyn (prompt)** | To, na co se jazykový model ptá. Viz [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Našeptávač** | Okno, které během hovoru ukazuje, co se říká, právě když se to říká, a návrhy, co odpovědět. Viz [Okno našeptávače](/interface/prompter). |
 | **Rozpoznávač** | Služba, která mění zvuk v text (rozpoznávání řeči). Viz [Přepis](/ai-processing/transcription). |
 | **Varovný signál** | Něco v rozhovoru, co vyžaduje pozornost, s důkazem a časem. Viz [Slovníky](/ai-processing/dictionaries#red-flags). |
+| **Zkouška** | Přehrání nahraného rozhovoru našeptávači místo hovoru, abyste vyzkoušeli pomocníka. Viz [Okno našeptávače](/interface/prompter#rehearsing-on-a-recording). |
 | **Registrace** | Telefon sděluje ústředně, kde je, aby se k němu hovory dostaly. Zelená tečka u účtu znamená, že je registrován. |
 | **Pravidlo** | Krok, který běží sám, v pořadí, u každého rozhovoru. Viz [Zpracování](/ai-processing/processing#rules). |
 | **SIP** | Protokol, kterým telefony a ústředny sestavují hovory. |

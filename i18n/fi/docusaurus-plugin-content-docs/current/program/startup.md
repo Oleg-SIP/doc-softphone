@@ -1,7 +1,7 @@
 ---
 title: Käynnistys
 sidebar_position: 2
-description: "\"Käynnistä puhelin tietokoneen mukana, pidä se käynnissä ikkunan ollessa suljettuna ja avaa tel:-, callto:- ja sip:-linkit.\""
+description: "Käynnistä puhelin tietokoneen mukana, pidä se käynnissä ikkunan ollessa suljettuna ja avaa tel:-, callto:- ja sip:-linkit."
 ---
 
 **Asetukset → Käynnistys** päättää, miten ohjelma käynnistyy, mitä ikkunan sulkeminen tekee ja mitä tapahtuu, kun napsautat puhelinnumeroa toisessa ohjelmassa.

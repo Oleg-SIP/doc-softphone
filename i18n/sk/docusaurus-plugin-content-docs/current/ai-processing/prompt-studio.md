@@ -28,7 +28,9 @@ Druhý stĺpec je to, čo zoznam ukazuje pod názvom pokynu: čo píše a v akej
 | **Kvalita predaja** | Kritériá | Posúdi rozhovor podľa kritérií predaja, ktoré môžete upraviť. |
 | **Kvalita podpory** | Kritériá | Posúdi, ako dobre bol problém pochopený a vyriešený. |
 
-Formy sú pevné tvary odpovede, a práve to umožňuje programu odpoveď uchovať a neskôr v nej hľadať: **Štítky** sú kódy z jedného z vašich zoznamov, **Signály** sú kódy so závažnosťou, **Kritériá** sú hodnotenie s dôvodom a hodnotením každého kritéria, **Odpoveď** je odpoveď so slovami, o ktoré sa opiera. Pokyny, ktoré modelu hovoria tvar, sa uchovávajú v [Slovníkoch](dictionaries.md#answer-shapes-and-language).
+Formy sú pevné tvary odpovede, a práve to umožňuje programu odpoveď uchovať a neskôr v nej hľadať: **Štítky** sú kódy z jedného z vašich zoznamov, **Signály** sú kódy so závažnosťou, **Kritériá** sú hodnotenie s dôvodom a hodnotením každého kritéria, **Odpoveď** je odpoveď so slovami, o ktoré sa opiera. Pokyny, ktoré modelu hovoria tvar, sa uchovávajú v [Slovníkoch](dictionaries.md#instructions).
+
+Aj pomocníci [našepkávača](../interface/prompter.md) sú pokyny, spúšťané na každú repliku počas hovoru, nie na ukončený rozhovor. Uchovávajú sa vo vlastnom zozname, v časti [Pomocníci](prompter.md#assistants) v **Nastavenia → Našepkávač**.
 
 Hovory uskutočnené v AI Softphone, stretnutia [zachytené](/capture/) z počítača a importované nahrávky prechádzajú rovnakými pokynmi, hneď ako majú prepis.
 
@@ -41,6 +43,6 @@ Hovory uskutočnené v AI Softphone, stretnutia [zachytené](/capture/) z počí
 - Vyberte model pre každý pokyn — na vlastnom počítači alebo v cloude.
 - Nastavte poradie, v akom pokyny bežia, zapínajte a vypínajte ich a robte ich podmienenými — to sa robí [pravidlami](processing.md#rules): napríklad posúdenie predaja beží iba pri hovoroch zaradených ako **Predaj**.
 - Udržiavajte vlastné kategórie, štítky a varovné signály v [Slovníkoch](dictionaries.md).
-- Obmedzte náklady [mesačnými hranicami](processing.md#limits).
+- Obmedzte náklady [mesačnými hranicami](processing.md#spending).
 
 Pôvodné pokyny a pravidlá sa dajú obnoviť tlačidlom **Obnoviť predvolené** v časti **Predvolené** v [Nastavenia → Spracovanie](processing.md#defaults).

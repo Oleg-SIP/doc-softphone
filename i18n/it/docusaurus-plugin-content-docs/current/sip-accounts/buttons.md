@@ -1,7 +1,7 @@
 ---
 title: Pulsanti
 sidebar_position: 4
-description: "\"Pulsanti BLF: pulsanti a un tocco che chiamano un interno del suo centralino IP e mostrano se è libero, se squilla o se è occupato.\""
+description: "Pulsanti BLF: pulsanti a un tocco che chiamano un interno del suo centralino IP e mostrano se è libero, se squilla o se è occupato."
 ---
 
 I pulsanti sono i tasti **BLF** (Busy Lamp Field) del softphone, la stessa funzione che ha un telefono da scrivania su un centralino IP. Un pulsante chiama un interno con un solo tocco. Un pulsante che segue la sua linea mostra anche una spia: il telefono chiede al centralino di quell'interno e mostra se è libero, se squilla o se è occupato, come fanno una console da centralinista o i tasti programmabili di un telefono da scrivania.

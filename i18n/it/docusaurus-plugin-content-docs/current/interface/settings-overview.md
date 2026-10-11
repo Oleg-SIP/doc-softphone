@@ -10,7 +10,9 @@ description: La lista di controllo Panoramica e le schede della finestra Imposta
 
 <Shot name="04_settings_overview" alt="Impostazioni → Panoramica: la lista di controllo di ciò che è configurato" />
 
-La **Panoramica** è una lista di controllo di ciò che serve per ottenere il massimo dal programma. In alto conta i passi — nell'immagine *10 passi fatti* con un punto verde e *mancano 8 passi* con uno rosso — e una barra mostra la parte fatta. Ogni passo è una riga con un punto: verde per un passo fatto, rosso per uno che manca.
+In cima alla scheda, **Documentazione** apre questo sito.
+
+La **Panoramica** è una lista di controllo di ciò che serve per ottenere il massimo dal programma. In alto conta i passi — nell'immagine *14 passi fatti* con un punto verde e *mancano 6 passi* con uno rosso — e una barra mostra la parte fatta. Ogni passo è una riga con un punto: verde per un passo fatto, rosso per uno che manca.
 
 *Prema una riga per leggere a che cosa serve e aprire dove si imposta.* La freccia all'estremità destra della riga la espande.
 
@@ -20,6 +22,7 @@ La **Panoramica** è una lista di controllo di ciò che serve per ottenere il ma
 | **Cattura da altre applicazioni** | Attiva la cattura; Cattura una conversazione; Dai un nome a una cattura |
 | **Trascrizione** | Aggiungi un riconoscitore; Trascrivi una conversazione |
 | **Elaborazione** | Aggiungi un modello; Elabora una trascrizione |
+| **Suggeritore** | Consentire il suggeritore; Avviare il suggeritore |
 | **Registrazioni** | Cerca in ciò che è stato detto; Esporta una registrazione; Esporta un riassunto |
 | **Applicazione** | Avvia con il computer; Tienilo aggiornato |
 | **Riscontro** | Invia il rapporto esteso; Ci dica cosa ne pensa |
@@ -39,8 +42,9 @@ I passi sono una guida, non un obbligo: un passo che non le serve può restare r
 | | **Registrazione** | [Registrazione delle chiamate: consenso, conferenze e per quanto tempo si conservano i file](../recordings.md) |
 | | **Cattura** | [Catturare il suono di altre applicazioni](../capture/capture.md): riunioni in Zoom, Teams, Meet e simili |
 | IA | **Trascrizione** | [Riconoscitori](../ai-processing/transcription.md) |
-| | **Elaborazione** | [Elaborazione automatica, limiti di spesa, modelli linguistici, prompt e regole](../ai-processing/processing.md) |
+| | **Elaborazione** | [Elaborazione automatica, modelli linguistici, prompt, regole e limiti di spesa](../ai-processing/processing.md) |
 | | **Dizionari** | [Categorie, etichette e segnali](../ai-processing/dictionaries.md) |
+| | **Suggeritore** | [Il suggeritore dal vivo: l'interruttore, la dimensione del testo, gli assistenti e quanto possono spendere](../ai-processing/prompter.md) |
 | Programma | **Aspetto** | [Disposizione, lingua, tema e icone](../program/appearance.md) |
 | | **Avvio** | [Come il programma si avvia, si chiude e apre i collegamenti di chiamata](../program/startup.md) |
 | | **Scorciatoie** | [Scorciatoie da tastiera](../program/shortcuts.md) |

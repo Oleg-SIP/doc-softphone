@@ -1,7 +1,7 @@
 ---
 title: Salvestiste aken
 sidebar_position: 2
-description: "\"Kõigi vestluste teek — kõne, imporditud fail või Zoomist, Teamsist või Meetist hõivatud koosolek: filtrid, mängija, ülestähendus, mida saab esitada igalt realt, ja kokkuvõtted.\""
+description: "Kõigi vestluste teek — kõne, imporditud fail või Zoomist, Teamsist või Meetist hõivatud koosolek: filtrid, mängija, ülestähendus, mida saab esitada igalt realt, ja kokkuvõtted."
 ---
 
 **Salvestised** on koht, kus on iga vestlus, ükskõik kuidas see saabus: telefonis tehtud või vastu võetud kõne, imporditud helifail või koosolek, mis hõivati Zoomist, Teamsist, Meetist või mõnest muust rakendusest. Kõik asuvad ühes loendis ja igaüks avaneb samamoodi: mängija, ülestähendus ja kõik, mida keelemudel sellest kirjutas. Selle avamiseks vajutage [peaakna](main-window.md) all vasakul nuppu **Salvestised**.
@@ -16,13 +16,13 @@ Rea vasakul olev ikoon näitab, kuidas vestlus saabus.
 | --- | --- | --- | --- |
 | Toru koos noolega | Selles telefonis tehtud või vastu võetud kõne. Nool osutab sissetuleva kõne puhul sissepoole ja väljaminevalt väljapoole. | Kontakti nimi või number | Salvestatakse nii, nagu on seadistatud jaotises [Salvestised](../recordings.md) |
 | Nool ribasse | Mujalt imporditud fail: mobiiltelefonist, diktofonist või muust süsteemist | Faili nimi | **⋮ → Impordi failidest**; vt [allpool](#a-recording-you-already-have) |
-| Aken | Teises rakenduses peetud koosolek | Nimi, mille te andsite, või **Muu rakendus** | [Hõive](../capture/capture.md) |
+| Aken | Teises rakenduses peetud koosolek | Nimi, mille te andsite, või **Teine rakendus** | [Hõive](../capture/capture.md) |
 
 Pildil on kolm ülemist rida igaüks ühte liiki: Zoomi koosolek, imporditud fail panga klienditoe kõnest ja liinil **305 Tugi** vastu võetud kõne. Olenemata allikast kirjutatakse need kõik üles, võetakse kokku ja otsitakse ühtmoodi.
 
 ## Vestluse leidmine {#finding-a-conversation}
 
-Ülemisel ribal on viis filtrit, otsinguväli ja menüü:
+Ülemisel ribal on neli filtrit, otsinguväli ja menüü:
 
 | Juhtelement | Kitsendab loendit |
 | --- | --- |
@@ -30,7 +30,6 @@ Pildil on kolm ülemist rida igaüks ühte liiki: Zoomi koosolek, imporditud fai
 | **Ajavahemik** | kuupäeva järgi: **Täna**, **Eile**, **Viimased 7 päeva** või **Vali kuupäevad…** |
 | **Kategooria** | kategooria järgi, millesse see on liigitatud — vaadake [Sõnastikud](../ai-processing/dictionaries.md) |
 | **Märgistus** | sellel olevate siltide ja hoiatussignaalide järgi |
-| **Tuvastaja** | [tuvastaja](../ai-processing/transcription.md) järgi, kes tegi selle ülestähenduse |
 | **Otsi** | selles öeldu järgi — otsing käib läbi kõigi teie salvestatu ülestähendused |
 
 <Shot name="39_more_menu" alt="Loendi menüü ⋮: Impordi failidest, Ekspordi CSV-sse, Ava brauseris" />

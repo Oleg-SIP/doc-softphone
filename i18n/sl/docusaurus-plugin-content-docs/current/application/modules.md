@@ -25,8 +25,9 @@ Vsak modul ima potrditveno polje, ime, vrstico o tem, kaj počne, na desni pa sv
 | **Integracija** | Krajevni API in webhooki: [Integracija](/integration/rest-api). |
 | **Medijska shramba** | Knjižnica pogovorov in kako dolgo se hranijo: [Posnetki](/interface/recordings). |
 | **Obdelava** | Navodila in pravila, ki jih sprožijo: [Obdelava](/ai-processing/processing). |
+| **Šepetalec** | Posluša pogovor med potekom in predlaga: [Okno šepetalca](/interface/prompter). |
 | **Snemanje** | Snemanje klicev in obveščanje druge strani o tem: [Posnetki](/recordings). |
-| **Telefonija** | SIP, računi, klici, polje za klicanje in zgodovina klicev. |
+| **Telefon** | SIP, računi, klici, polje za klicanje in zgodovina klicev. |
 | **Prepis** | Razpoznavalniki, vrsta, ki jih poganja, in prepisi, ki jih ustvarijo: [Prepis](/ai-processing/transcription). |
 
 Izklopite modul in ga ni več: nobenih nastavitev zanj, nobenega vnosa v meniju, nič od njega ne teče. Izklopite modul, ki ga ne potrebujete — na primer **Integracija** na računalniku, kjer s telefonom nič drugega ne govori —, ali obdržite telefon, ki je samo telefon, če je to vse, kar delovno mesto potrebuje. Paket je v obeh primerih enak: ničesar ni treba kupiti ali odkleniti.

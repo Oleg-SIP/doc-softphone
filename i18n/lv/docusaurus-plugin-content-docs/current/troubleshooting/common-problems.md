@@ -1,7 +1,7 @@
 ---
 title: Biežākās problēmas
 sidebar_position: 2
-description: "\"Ko pārbaudīt, ja konts nereģistrējas, nav skaņas, zvans vai sapulce netiek ierakstīta, nav atšifrējuma vai saite, saīsne vai API neko nedara.\""
+description: "Ko pārbaudīt, ja konts nereģistrējas, nav skaņas, zvans vai sapulce netiek ierakstīta, nav atšifrējuma vai saite, saīsne vai API neko nedara."
 ---
 
 Katrs punkts norāda uz iestatījumu, kas par to lemj. Ja atbildes šeit nav, atveriet [Diagnostika](/troubleshooting/diagnostics): tā rāda, ko tālrunis un centrāle saka viens otram.
@@ -44,7 +44,7 @@ Tas, kas notiek, kad kāds zvana, kamēr jūs runājat, tiek iestatīts sadaļā
 Skatiet [Tveršana](/capture/).
 
 - **Atļaut skaņas tveršanu** sadaļā **Iestatījumi → Tveršana** jābūt ieslēgtam.
-- Ja **Automātiska sākšana** ir iestatīta uz **Vaicāt man** (noklusējums), atbildiet uz jautājumu, kad tas parādās; ar **Nekad** nospiediet **Ierakstīt** paši.
+- Ja **Automātiska sākšana** ir iestatīta uz **Vaicāt man** (noklusējums), atbildiet uz jautājumu, kad tas parādās; ar **Nekad** nospiediet ierakstīšanas pogu paši.
 - Izmantojiet **Pārbaudīt** tajā pašā cilnē: augšējai joslai jākustas, kad runājat, apakšējai — kad kaut kas skan.
 - Modulim **Tveršana** jābūt ieslēgtam sadaļā [Moduļi](/application/modules).
 

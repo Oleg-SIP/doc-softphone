@@ -20,6 +20,8 @@ Nagrania, transkrypcje i historia są przechowywane w pliku, który należy do c
 3. Jest spisywana, mówca po mówcy, zsynchronizowana z dźwiękiem.
 4. Wybrany przez ciebie model językowy ją opracowuje: podsumowanie, zadania, kategoria, etykiety i sygnały ostrzegawcze — a rozmowie możesz zadać pytanie.
 
+Podczas połączenia [Sufler](interface/prompter.md) może pójść dalej: pokazuje to, co się mówi, w chwili gdy się to mówi, i podpowiada, co odpowiedzieć.
+
 ## Pobieranie i wymagania systemowe {#download-and-system-requirements}
 
 Program można pobrać bezpłatnie z [ai-softphone.com](https://ai-softphone.com/#download): instalator (`.exe`) dla Windows, obraz dysku (`.dmg`) dla macOS oraz AppImage lub `.deb` dla Linuksa. Instalator, obraz dysku i AppImage nie wymagają wcześniejszej instalacji niczego innego — Qt, OpenSSL i środowisko uruchomieniowe C++ są w nich zawarte. Wyjątkiem jest `.deb`: korzysta ze środowiska uruchomieniowego C++ samego systemu, zob. niżej. Potrzebujesz konta SIP od swojego operatora albo z centrali, którą prowadzisz sam. Nagrywanie działa od razu po instalacji programu; transkrypcja i opracowanie wymagają wybranej przez ciebie usługi albo modelu na twoim komputerze.
@@ -60,6 +62,7 @@ Zrzuty ekranu w tej dokumentacji wykonano w macOS i pokazano w małym rozmiarze:
 | Wybrać rozpoznawacz, który zamienia mowę w tekst | [Transkrypcja](ai-processing/transcription.md) |
 | Zdecydować, która SI opracowuje twoje rozmowy i ile to może kosztować | [Przetwarzanie](ai-processing/processing.md) |
 | Zmienić kategorie, etykiety i sygnały ostrzegawcze | [Słowniki](ai-processing/dictionaries.md) |
+| Widzieć, co się mówi podczas połączenia, i dostawać podpowiedzi, co odpowiedzieć | [Okno suflera](interface/prompter.md) |
 | Zmienić układ, motyw, uruchamianie i skróty | [Wygląd](program/appearance.md), [Uruchamianie](program/startup.md) i [Skróty](program/shortcuts.md) |
 | Podłączyć CRM lub inny program | [Webhooki](integration/webhooks.md) i [Lokalne REST API](integration/rest-api.md) |
 | Zobaczyć, co telefon i centrala mówią sobie nawzajem | [Diagnostyka](troubleshooting/diagnostics.md) |

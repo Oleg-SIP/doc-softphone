@@ -40,14 +40,16 @@ Merker som *alle kan passe på den samme samtalen*. Trykk på **Legg til** for �
 
 Ting som krever oppmerksomhet, funnet i samtalen med beviset og tidspunktet — for eksempel *Sint kunde* eller *Fare for oppsigelse*. Signaler tegnes i rødt i [vinduet Opptak](../interface/recordings.md), og hvert har en alvorlighetsgrad: lav, middels eller høy.
 
-## Svarformer og språk {#answer-shapes-and-language}
+## Anvisninger {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Innstillinger → Ordlister: svarformer og språkinstruksjoner" />
 
-Lenger ned på fanen står instruksjonene promptene settes sammen av. De lagres her slik at hver prompt kan bruke samme ordlyd, og du kan endre dem som enhver annen oppføring.
+*Det som legges til hver prompt om svarets form og språket å skrive det på.* De lagres her slik at hver prompt kan bruke samme ordlyd, og du kan endre dem som enhver annen oppføring — eller skrive dine egne, for eksempel *svar kort* eller *nevn aldri en pris*, og krysse dem av under **Send også** på hvilken som helst prompt.
 
 | Navn | Kode | Hva den forteller modellen |
 | --- | --- | --- |
+| **Løpende tekst** | `shape-plain` | Svar i vanlig løpende tekst, uten JSON, lister eller overskrifter. |
+| **Punkter** | `shape-list` | Svar med en liste over ting som skal gjøres, hver med hvem og når. |
 | **Etiketter** | `shape-labels` | Svar i JSON med en liste over koder og hvor sikker den er på hver, bare med koder fra listen den har fått. |
 | **Karakter** | `shape-score` | Svar med en karakter, begrunnelsen for den og ordene den bygger på. |
 | **Kriterier** | `shape-rubric` | Svar med en samlet karakter og en karakter for hvert kriterium. |
@@ -58,7 +60,7 @@ Lenger ned på fanen står instruksjonene promptene settes sammen av. De lagres 
 | **Som snakket, navngitt** | `language-as-spoken-named` | Det samme, med navnet på språket. |
 | **Et navngitt språk** | `language-named` | Skriv på språket du oppgir. |
 
-**Legg til** nederst i listen legger til en oppføring.
+**Legg til** øverst i listen legger til en oppføring.
 
 ## Standardverdier {#defaults}
 

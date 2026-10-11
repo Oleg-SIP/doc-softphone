@@ -1,7 +1,7 @@
 ---
 title: Pokretanje
 sidebar_position: 2
-description: "\"Pokrenite telefon s računalom, neka radi kad se prozor zatvori i otvarajte poveznice tel:, callto: i sip:.\""
+description: "Pokrenite telefon s računalom, neka radi kad se prozor zatvori i otvarajte poveznice tel:, callto: i sip:."
 ---
 
 **Postavke → Pokretanje** odlučuje kako se program pokreće, što radi zatvaranje njegova prozora i što se događa kad kliknete telefonski broj u drugom programu.

@@ -16,7 +16,7 @@ Từ trên xuống dưới, phía bên trái gồm:
 - bàn phím và phím gọi;
 - các ô tài khoản;
 - các nút bấm theo dõi những số máy lẻ khác;
-- bốn mục để chuyển đến: **Bản ghi**, **Danh bạ**, **Lịch sử** và **Cài đặt**.
+- các mục để chuyển đến: **Bản ghi**, **Danh bạ**, **Lịch sử**, **Người nhắc** và **Cài đặt**.
 
 ### Bàn quay số {#the-dialler}
 
@@ -36,9 +36,9 @@ Dưới bàn phím có một ô cho mỗi [tài khoản](../sip-accounts/setup.m
 
 Dưới các ô tài khoản là các [nút bấm](../sip-accounts/buttons.md) bạn đã tạo cho đồng nghiệp và các đường dây, mỗi nút có một đèn — trong hình là **Nguyễn** và **Kho hàng**. Nhấn một nút để gọi số của nó.
 
-### Bản ghi, Danh bạ, Lịch sử, Cài đặt {#recordings-contacts-history-settings}
+### Bản ghi, Danh bạ, Lịch sử, Người nhắc, Cài đặt {#recordings-contacts-history-prompter-settings}
 
-Bốn mục ở dưới cùng này mở một thẻ ở bên phải, cạnh nhau: [Bản ghi](../interface/recordings.md), [Danh bạ và Lịch sử](contacts-history.md) và [Cài đặt](settings-overview.md). Các thẻ bạn đã mở ở lại trên hàng phía trên cùng của nửa bên phải.
+Các mục ở dưới cùng này mở một thẻ ở bên phải, cạnh nhau: [Bản ghi](../interface/recordings.md), [Danh bạ và Lịch sử](contacts-history.md), [Người nhắc](prompter.md) và [Cài đặt](settings-overview.md). **Người nhắc** chỉ xuất hiện khi người nhắc được cho phép và có bộ nhận dạng để nghe. Các thẻ bạn đã mở ở lại trên hàng phía trên cùng của nửa bên phải.
 
 ## Cuộc gọi đang diễn ra {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Các cuộc gọi đã được gộp hiển thị thành một khung **Hội th
 
 Khi [thu từ ứng dụng khác](../capture/capture.md) được cho phép trong **Cài đặt → Thu âm ngoài**, một dải xuất hiện giữa các ô tài khoản và các nút bấm.
 
-<Shot name="10_settings_capture" full alt="Dải Thu âm ngoài ở chân điện thoại: Thu âm ngoài · sẵn sàng, Ghi và hai thanh mức âm" />
+<Shot name="10_settings_capture" full alt="Dải Thu âm ngoài ở chân điện thoại: Thu âm ngoài · đang chờ cuộc trò chuyện, nút ghi và hai thanh mức âm" />
 
-- **Thu âm ngoài · sẵn sàng** cho biết chương trình đang chờ nghe một cuộc trò chuyện trong ứng dụng khác.
-- **Ghi** bắt đầu thu bằng tay.
-- Hai thanh mảnh bên dưới cho biết mức âm thanh: thanh trên là bạn, thanh dưới là những gì máy tính phát ra. Cách vẽ chúng được thiết lập ở **Hình trên dải ở chân điện thoại**.
+- **Thu âm ngoài · đang chờ cuộc trò chuyện** cho biết chương trình đang chờ nghe một cuộc trò chuyện trong ứng dụng khác.
+- Nút tròn ở bên phải bắt đầu thu bằng tay.
+- Hai thanh mảnh bên dưới cho biết mức âm thanh: thanh trên là bạn, thanh dưới là những gì máy tính phát ra. Cách vẽ chúng được thiết lập ở **Hình vẽ ở thanh dưới cùng**.
 
 Chương trình cũng có thể nằm trong khay hệ thống (thanh menu trên macOS) và được gọi lên bằng [phím tắt](../program/shortcuts.md).

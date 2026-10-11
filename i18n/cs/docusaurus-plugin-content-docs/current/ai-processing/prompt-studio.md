@@ -28,7 +28,9 @@ Druhý sloupec je to, co seznam ukazuje pod názvem pokynu: co píše a v jakém
 | **Kvalita prodeje** | Kritéria | Posoudí rozhovor podle prodejních kritérií, která můžete upravit. |
 | **Kvalita podpory** | Kritéria | Posoudí, jak dobře byl problém pochopen a vyřešen. |
 
-Tvary jsou pevné podoby odpovědi, díky kterým ji program může uložit a později prohledávat: **Štítky** jsou kódy z jednoho z vašich seznamů, **Signály** jsou kódy se závažností, **Kritéria** jsou skóre se zdůvodněním a skórem pro každé kritérium, **Odpověď** je odpověď se slovy, o která se opírá. Instrukce, které modelu tvar popisují, jsou uloženy ve [Slovnících](dictionaries.md#answer-shapes-and-language).
+Tvary jsou pevné podoby odpovědi, díky kterým ji program může uložit a později prohledávat: **Štítky** jsou kódy z jednoho z vašich seznamů, **Signály** jsou kódy se závažností, **Kritéria** jsou skóre se zdůvodněním a skórem pro každé kritérium, **Odpověď** je odpověď se slovy, o která se opírá. Instrukce, které modelu tvar popisují, jsou uloženy ve [Slovnících](dictionaries.md#instructions).
+
+I pomocníci [našeptávače](../interface/prompter.md) jsou pokyny, spouštěné na každou repliku během hovoru, ne na skončený rozhovor. Jsou ve vlastním seznamu, v části [Pomocníci](prompter.md#assistants) v **Nastavení → Našeptávač**.
 
 Hovory uskutečněné v AI Softphone, schůzky [zachycené](/capture/) z počítače i importované nahrávky procházejí stejnými pokyny, jakmile mají přepis.
 
@@ -41,6 +43,6 @@ Hovory uskutečněné v AI Softphone, schůzky [zachycené](/capture/) z počít
 - Vyberte model pro každý pokyn — na vlastním počítači nebo v cloudu.
 - Nastavte pořadí, ve kterém pokyny běží, zapínejte je a vypínejte a podmiňujte — to se dělá [pravidly](processing.md#rules): například hodnocení prodeje běží jen u hovorů zařazených jako **Prodej**.
 - Vlastní kategorie, štítky a varovné signály držte ve [Slovnících](dictionaries.md).
-- Omezte náklady [měsíčními limity](processing.md#limits).
+- Omezte náklady [měsíčními limity](processing.md#spending).
 
 Původní pokyny a pravidla obnovíte tlačítkem **Obnovit výchozí** v části **Výchozí** v [Nastavení → Zpracování](processing.md#defaults).

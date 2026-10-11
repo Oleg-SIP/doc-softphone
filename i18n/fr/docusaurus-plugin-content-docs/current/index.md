@@ -20,6 +20,8 @@ Les enregistrements, les transcriptions et le journal sont conservés dans un fi
 3. Elle est transcrite, interlocuteur par interlocuteur, en phase avec l'audio.
 4. Le modèle de langue que vous avez choisi en fait le compte rendu : résumé, tâches, catégorie, étiquettes et signaux — et vous pouvez poser une question à la conversation.
 
+Pendant un appel, le [Souffleur](interface/prompter.md) peut aller plus loin : il montre ce qui se dit au moment où cela se dit, et suggère quoi répondre.
+
 ## Téléchargement et configuration requise {#download-and-system-requirements}
 
 Le programme se télécharge gratuitement sur [ai-softphone.com](https://ai-softphone.com/#download) : un programme d'installation (`.exe`) pour Windows, une image disque (`.dmg`) pour macOS, et une AppImage ou un `.deb` pour Linux. Le programme d'installation, l'image disque et l'AppImage n'exigent rien d'autre au préalable — Qt, OpenSSL et l'environnement d'exécution C++ voyagent avec eux. Le `.deb` fait exception : il utilise l'environnement d'exécution C++ du système, voir plus bas. Il vous faut un compte SIP, chez votre opérateur ou sur l'IPBX que vous gérez vous-même. L'enregistrement fonctionne dès que le programme est installé ; la transcription et le compte rendu demandent un service de votre choix ou un modèle sur votre propre machine.
@@ -60,6 +62,7 @@ Les captures d'écran de cette documentation sont prises sous macOS et affichée
 | Choisir la reconnaissance qui transforme la parole en texte | [Transcription](ai-processing/transcription.md) |
 | Décider quelle IA rédige vos conversations et ce qu'elle peut coûter | [Traitement](ai-processing/processing.md) |
 | Modifier les catégories, les étiquettes et les signaux | [Dictionnaires](ai-processing/dictionaries.md) |
+| Voir ce qui se dit pendant un appel, et recevoir des suggestions de réponse | [Fenêtre du souffleur](interface/prompter.md) |
 | Changer la disposition, le thème, le démarrage et les raccourcis | [Apparence](program/appearance.md), [Démarrage](program/startup.md) et [Raccourcis](program/shortcuts.md) |
 | Relier un CRM ou un autre programme | [Webhooks](integration/webhooks.md) et [API REST locale](integration/rest-api.md) |
 | Voir ce que le téléphone et l'IPBX se disent | [Diagnostic](troubleshooting/diagnostics.md) |

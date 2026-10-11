@@ -10,7 +10,9 @@ description: Lista kontrolna Przegląd i zakładki okna Ustawienia oraz to, gdzi
 
 <Shot name="04_settings_overview" alt="Ustawienia → Przegląd: lista kontrolna tego, co skonfigurowano" />
 
-**Przegląd** to lista kontrolna tego, czego trzeba, aby w pełni korzystać z programu. U góry liczy kroki — na obrazku *10 kroków zrobionych* z zieloną kropką i *zostało 8 kroków* z czerwoną — a pasek pokazuje zrobioną część. Każdy krok to wiersz z kropką: zieloną dla kroku zrobionego, czerwoną dla tego, który został.
+U góry zakładki **Dokumentacja** otwiera tę stronę.
+
+**Przegląd** to lista kontrolna tego, czego trzeba, aby w pełni korzystać z programu. U góry liczy kroki — na obrazku *14 kroków zrobionych* z zieloną kropką i *zostało 6 kroków* z czerwoną — a pasek pokazuje zrobioną część. Każdy krok to wiersz z kropką: zieloną dla kroku zrobionego, czerwoną dla tego, który został.
 
 *Naciśnij wiersz, żeby przeczytać, po co jest, i otworzyć miejsce, gdzie się to ustawia.* Strzałka na prawym końcu wiersza go rozwija.
 
@@ -20,6 +22,7 @@ description: Lista kontrolna Przegląd i zakładki okna Ustawienia oraz to, gdzi
 | **Przechwytywanie z innych aplikacji** | Włącz przechwytywanie; Przechwyć rozmowę; Nadaj jej nazwę |
 | **Transkrypcja** | Dodaj rozpoznawanie mowy; Spisz rozmowę |
 | **Przetwarzanie** | Dodaj model; Przetwórz transkrypcję |
+| **Sufler** | Zezwól na suflera; Uruchom suflera |
 | **Nagrania** | Szukaj w tym, co powiedziano; Wyeksportuj nagranie; Wyeksportuj podsumowanie |
 | **Aplikacja** | Uruchamiaj razem z komputerem; Utrzymuj aktualność |
 | **Opinia** | Wysyłaj rozszerzony raport; Powiedz nam, co sądzisz |
@@ -39,8 +42,9 @@ Kroki są wskazówką, nie obowiązkiem: krok, który nie jest ci potrzebny, mo�
 | | **Nagrywanie** | [Nagrywanie połączeń: zgoda, konferencje i jak długo przechowuje się pliki](../recordings.md) |
 | | **Przechwytywanie** | [Przechwytywanie dźwięku innych aplikacji](../capture/capture.md): spotkania w Zoomie, Teams, Meet i podobnych |
 | SI | **Transkrypcja** | [Rozpoznawacze](../ai-processing/transcription.md) |
-| | **Przetwarzanie** | [Automatyczne przetwarzanie, granice wydatków, modele językowe, polecenia i reguły](../ai-processing/processing.md) |
+| | **Przetwarzanie** | [Automatyczne przetwarzanie, modele językowe, polecenia, reguły i granice wydatków](../ai-processing/processing.md) |
 | | **Słowniki** | [Kategorie, etykiety i sygnały ostrzegawcze](../ai-processing/dictionaries.md) |
+| | **Sufler** | [Sufler na żywo: przełącznik, wielkość tekstu, pomocnicy i to, ile mogą wydać](../ai-processing/prompter.md) |
 | Program | **Wygląd** | [Układ, język, motyw i ikony](../program/appearance.md) |
 | | **Uruchamianie** | [Jak program się uruchamia, zamyka i otwiera odnośniki do połączeń](../program/startup.md) |
 | | **Skróty** | [Skróty klawiszowe](../program/shortcuts.md) |

@@ -25,8 +25,9 @@ Kiekvienas modulis turi žymimąjį langelį, pavadinimą, eilutę apie tai, ką
 | **Integracija** | Vietinis API ir žiniatinklio kabliai: [Integracija](/integration/rest-api). |
 | **Medijos saugykla** | Pokalbių biblioteka ir kiek laiko jie laikomi: [Įrašai](/interface/recordings). |
 | **Apdorojimas** | Nurodymai ir juos paleidžiančios taisyklės: [Apdorojimas](/ai-processing/processing). |
+| **Suflerius** | Klausosi pokalbio jam vykstant ir pasiūlo: [Suflerio langas](/interface/prompter). |
 | **Įrašymas** | Skambučių įrašymas ir pranešimas apie tai kitai pusei: [Įrašai](/recordings). |
-| **Telefonija** | SIP, paskyros, skambučiai, numerio rinkiklis ir skambučių istorija. |
+| **Telefonas** | SIP, paskyros, skambučiai, numerio rinkiklis ir skambučių istorija. |
 | **Užrašas** | Atpažintuvai, juos varanti eilė ir jų kuriami iššifruoti tekstai: [Užrašas](/ai-processing/transcription). |
 
 Išjunkite modulį, ir jo nebėra: nėra jo nustatymų, meniu punkto, niekas iš jo neveikia. Išjunkite modulį, kurio jums nereikia — pavyzdžiui, **Integracija** kompiuteryje, kuriame niekas kitas su telefonu nebendrauja —, arba palikite telefoną, kuris yra tik telefonas, jei darbo vietai daugiau nieko nereikia. Paketas abiem atvejais tas pats: nėra ko pirkti ir nėra ko atrakinti.

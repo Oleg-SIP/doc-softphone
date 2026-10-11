@@ -16,7 +16,7 @@ Dari atas ke bawah, sisi kiri berisi:
 - papan tombol dan tombol panggil;
 - cip akun;
 - tombol-tombol yang memantau ekstensi lain;
-- empat tempat tujuan: **Rekaman**, **Kontak**, **Riwayat**, dan **Pengaturan**.
+- tempat-tempat tujuan: **Rekaman**, **Kontak**, **Riwayat**, **Pembisik**, dan **Pengaturan**.
 
 ### Papan panggil {#the-dialler}
 
@@ -36,9 +36,9 @@ Di bawah papan tombol ada satu cip untuk setiap [akun](../sip-accounts/setup.md)
 
 Di bawah cip terdapat [tombol](../sip-accounts/buttons.md) yang Anda buat untuk rekan kerja dan saluran, masing-masing dengan lampu — **Santoso** dan **Gudang** pada gambar. Tekan salah satunya untuk memanggil nomornya.
 
-### Rekaman, Kontak, Riwayat, Pengaturan {#recordings-contacts-history-settings}
+### Rekaman, Kontak, Riwayat, Pembisik, Pengaturan {#recordings-contacts-history-prompter-settings}
 
-Keempat entri di bagian bawah ini membuka tab di kanan, bersebelahan: [Rekaman](../interface/recordings.md), [Kontak dan Riwayat](contacts-history.md), serta [Pengaturan](settings-overview.md). Tab yang sudah Anda buka tetap berada di baris paling atas sisi kanan.
+Entri di bagian bawah ini membuka tab di kanan, bersebelahan: [Rekaman](../interface/recordings.md), [Kontak dan Riwayat](contacts-history.md), [Pembisik](prompter.md), serta [Pengaturan](settings-overview.md). **Pembisik** baru muncul setelah pembisik diizinkan dan memiliki pengenal suara untuk mendengarkan. Tab yang sudah Anda buka tetap berada di baris paling atas sisi kanan.
 
 ## Panggilan yang sedang berlangsung {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Panggilan yang telah digabung ditampilkan sebagai satu kartu **Konferensi** pada
 
 Ketika [penangkapan dari aplikasi lain](../capture/capture.md) diizinkan di **Pengaturan → Penangkapan**, sebuah strip muncul di antara cip akun dan tombol.
 
-<Shot name="10_settings_capture" full alt="Strip Penangkapan di kaki telepon: Penangkapan · siap, Rekam, dan dua bilah level" />
+<Shot name="10_settings_capture" full alt="Strip Penangkapan di kaki telepon: Penangkapan · menunggu percakapan, tombol rekam, dan dua bilah level" />
 
-- **Penangkapan · siap** menyatakan bahwa program sedang mendengarkan percakapan di aplikasi lain.
-- **Rekam** memulai penangkapan secara manual.
-- Dua bilah tipis di bawahnya menunjukkan level suara: yang atas adalah Anda, yang bawah adalah apa yang diputar komputer. Cara keduanya digambar diatur di bawah **Gambar di baris di kaki telepon**.
+- **Penangkapan · menunggu percakapan** menyatakan bahwa program sedang mendengarkan percakapan di aplikasi lain.
+- Tombol bundar di sebelah kanan memulai penangkapan secara manual.
+- Dua bilah tipis di bawahnya menunjukkan level suara: yang atas adalah Anda, yang bawah adalah apa yang diputar komputer. Cara keduanya digambar diatur di bawah **Gambar di bilah bawah**.
 
 Program juga dapat tinggal di baki (bilah menu di macOS) dan dipanggil dengan [tombol pintas](../program/shortcuts.md).

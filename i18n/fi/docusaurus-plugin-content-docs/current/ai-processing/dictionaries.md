@@ -40,14 +40,16 @@ Merkinnät, jotka *voivat kaikki pitää paikkansa samassa keskustelussa*. Paina
 
 Asiat, jotka vaativat huomiota, löydettyinä keskustelusta todisteen ja ajankohdan kera — esimerkiksi *Vihainen asiakas* tai *Lähtemisen riski*. Merkit piirretään punaisella [Tallenteet-ikkunassa](../interface/recordings.md), ja jokaisella on vakavuus: matala, keskitaso tai korkea.
 
-## Vastausmuodot ja kieli {#answer-shapes-and-language}
+## Ohjeet {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Asetukset → Sanastot: vastausmuodot ja kieliohjeet" />
 
-Välilehdellä alempana ovat ohjeet, joista kehotteet kootaan. Ne säilytetään täällä, jotta jokainen kehote voi käyttää samaa muotoilua, ja voit muuttaa niitä kuten mitä tahansa muuta merkintää.
+*Se, mitä jokaiseen kehotteeseen lisätään vastauksen muodosta ja kielestä, jolla se kirjoitetaan.* Ne säilytetään täällä, jotta jokainen kehote voi käyttää samaa muotoilua, ja voit muuttaa niitä kuten mitä tahansa muuta merkintää — tai kirjoittaa omia, kuten *vastaa lyhyesti* tai *älä koskaan mainitse hintaa*, ja rastittaa ne kohdassa **Lähetä myös** missä tahansa kehotteessa.
 
 | Nimi | Koodi | Mitä se kertoo mallille |
 | --- | --- | --- |
+| **Proosa** | `shape-plain` | Vastaa tavallisena proosana, ilman JSONia, luetteloita tai otsikoita. |
+| **Kohdat** | `shape-list` | Vastaa luettelolla tehtävistä asioista, kukin kenen ja milloin. |
 | **Tunnisteet** | `shape-labels` | Vastaa JSON-muodossa koodiluettelolla ja varmuudella kustakin, käyttäen vain saamasi luettelon koodeja. |
 | **Arvosana** | `shape-score` | Vastaa arvosanalla, sen perustelulla ja sanoilla, joihin se perustuu. |
 | **Kriteerit** | `shape-rubric` | Vastaa kokonaisarvosanalla ja arvosanalla kullekin kriteerille. |
@@ -58,7 +60,7 @@ Välilehdellä alempana ovat ohjeet, joista kehotteet kootaan. Ne säilytetään
 | **Kuten puhuttiin, nimettynä** | `language-as-spoken-named` | Sama, kieli nimeten. |
 | **Nimetty kieli** | `language-named` | Kirjoita nimeämälläsi kielellä. |
 
-Luettelon lopussa oleva **Lisää** lisää merkinnän.
+Luettelon alussa oleva **Lisää** lisää merkinnän.
 
 ## Oletusarvot {#defaults}
 

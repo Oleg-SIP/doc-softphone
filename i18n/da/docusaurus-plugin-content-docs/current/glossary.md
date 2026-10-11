@@ -7,6 +7,7 @@ description: Begreberne fra IP-telefoni og AI Softphone, som bruges i denne doku
 | Begreb | Betydning |
 | --- | --- |
 | **Konto** | En linje: et SIP-brugernavn på et omstillingsanlæg eller hos en udbyder. Du kan være logget ind på flere. Se [Opsætning af en SIP-konto](/sip-accounts/setup). |
+| **Hjælper** | Det, suffløren skal være, mens den lytter: undertekster, en oversættelse eller forslag til, hvad du kan sige. Se [Indstillinger for suffløren](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | En knap, der ringer til et lokalnummer og med en lampe viser, om det er ledigt, ringer eller er optaget. Se [Knapper](/sip-accounts/buttons). |
 | **Banke på** | Hvad telefonen gør, når nogen ringer, mens du allerede er i et opkald. Se [Opkaldsindstillinger](/sip-accounts/calls#call-waiting). |
 | **Opfangning** | Optagelse af en samtale, der foregår i et andet program, som Zoom, Teams eller Meet. Se [Opfangning](/capture/). |
@@ -19,8 +20,10 @@ description: Begreberne fra IP-telefoni og AI Softphone, som bruges i denne doku
 | **IP-omstillingsanlæg** | Et kontors telefoncentral, der kører på et netværk; kaldes også en softswitch. |
 | **Sprogmodel** | Den AI, der læser en udskrift og skriver om den. Se [Behandling](/ai-processing/processing). |
 | **Prompt** | Det, en sprogmodel bliver bedt om. Se [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Sufflør** | Et vindue, der viser, hvad der bliver sagt under et opkald, mens det bliver sagt, og forslag til, hvad du kan svare. Se [Sufflørens vindue](/interface/prompter). |
 | **Genkender** | Den tjeneste, der gør lyd til tekst (talegenkendelse). Se [Transskription](/ai-processing/transcription). |
 | **Signal** | Noget i en samtale, der kræver opmærksomhed, med beviset og tidspunktet. Se [Ordlister](/ai-processing/dictionaries#red-flags). |
+| **Prøve** | At afspille en optaget samtale for suffløren i stedet for et opkald for at afprøve en hjælper. Se [Sufflørens vindue](/interface/prompter#rehearsing-on-a-recording). |
 | **Registrering** | Telefonen fortæller omstillingsanlægget, hvor den er, så opkald kan nå den. En grøn prik ved kontoen betyder, at den er registreret. |
 | **Regel** | Et trin, der kører af sig selv, i rækkefølge, på hver samtale. Se [Behandling](/ai-processing/processing#rules). |
 | **SIP** | Den protokol, telefoner og omstillingsanlæg bruger til at oprette opkald. |

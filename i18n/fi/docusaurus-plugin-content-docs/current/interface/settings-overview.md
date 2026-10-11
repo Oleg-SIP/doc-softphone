@@ -10,7 +10,9 @@ description: Yleiskatsaus-tarkistuslista ja Asetukset-ikkunan välilehdet sekä 
 
 <Shot name="04_settings_overview" alt="Asetukset → Yleiskatsaus: tarkistuslista siitä, mitä on määritetty" />
 
-**Yleiskatsaus** on tarkistuslista siitä, mitä tarvitaan, jotta ohjelmasta saa kaiken irti. Yläreunassa se laskee askeleet — kuvassa *10 askelta tehty* vihreän pisteen kera ja *8 askelta jäljellä* punaisen kera — ja palkki näyttää tehdyn osuuden. Jokainen askel on rivi, jossa on piste: vihreä tehdylle askeleelle, punainen vielä jäljellä olevalle.
+Välilehden yläreunassa **Dokumentaatio** avaa tämän sivuston.
+
+**Yleiskatsaus** on tarkistuslista siitä, mitä tarvitaan, jotta ohjelmasta saa kaiken irti. Yläreunassa se laskee askeleet — kuvassa *14 askelta tehty* vihreän pisteen kera ja *6 askelta jäljellä* punaisen kera — ja palkki näyttää tehdyn osuuden. Jokainen askel on rivi, jossa on piste: vihreä tehdylle askeleelle, punainen vielä jäljellä olevalle.
 
 *Paina riviä lukeaksesi, mihin se on, ja avataksesi paikan, jossa se asetetaan.* Rivin oikeassa päässä oleva nuoli laajentaa sen.
 
@@ -20,6 +22,7 @@ description: Yleiskatsaus-tarkistuslista ja Asetukset-ikkunan välilehdet sekä 
 | **Kaappaus muista sovelluksista** | Ota kaappaus käyttöön; Kaappaa keskustelu; Anna sille nimi |
 | **Litterointi** | Lisää tunnistin; Litteroi keskustelu |
 | **Käsittely** | Lisää malli; Käsittele litterointi |
+| **Kuiskaaja** | Salli kuiskaaja; Käynnistä kuiskaaja |
 | **Tallenteet** | Hae siitä, mitä sanottiin; Vie tallenne; Vie tiivistelmä |
 | **Sovellus** | Käynnisty tietokoneen mukana; Pidä ajan tasalla |
 | **Palaute** | Lähetä laajennettu raportti; Kerro, mitä mieltä olet |
@@ -39,8 +42,9 @@ Askeleet ovat opas, eivät velvollisuus: askel, jota et tarvitse, voi jäädä p
 | | **Tallennus** | [Puheluiden tallennus: suostumus, neuvottelut ja tiedostojen säilytysaika](../recordings.md) |
 | | **Kaappaus** | [Muiden sovellusten äänen kaappaus](../capture/capture.md): kokoukset Zoomissa, Teamsissa, Meetissä ja vastaavissa |
 | Tekoäly | **Litterointi** | [Tunnistimet](../ai-processing/transcription.md) |
-| | **Käsittely** | [Automaattinen käsittely, kulurajat, kielimallit, kehotteet ja säännöt](../ai-processing/processing.md) |
+| | **Käsittely** | [Automaattinen käsittely, kielimallit, kehotteet, säännöt ja kulurajat](../ai-processing/processing.md) |
 | | **Sanastot** | [Luokat, tunnisteet ja merkit](../ai-processing/dictionaries.md) |
+| | **Kuiskaaja** | [Reaaliaikainen kuiskaaja: kytkin, tekstin koko, avustajat ja mitä ne saavat kuluttaa](../ai-processing/prompter.md) |
 | Ohjelma | **Ulkoasu** | [Asettelu, kieli, teema ja kuvakkeet](../program/appearance.md) |
 | | **Käynnistys** | [Miten ohjelma käynnistyy, sulkeutuu ja avaa soittolinkit](../program/startup.md) |
 | | **Pikanäppäimet** | [Pikanäppäimet](../program/shortcuts.md) |

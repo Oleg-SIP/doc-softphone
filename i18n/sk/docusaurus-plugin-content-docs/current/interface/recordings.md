@@ -1,7 +1,7 @@
 ---
 title: Okno nahrávok
 sidebar_position: 2
-description: "\"Knižnica všetkých rozhovorov — hovoru, importovaného súboru alebo stretnutia zachyteného zo Zoomu, Teams či Meet: filtre, prehrávač, prepis, ktorý môžete prehrať od ktoréhokoľvek riadku, a spracovania.\""
+description: "Knižnica všetkých rozhovorov — hovoru, importovaného súboru alebo stretnutia zachyteného zo Zoomu, Teams či Meet: filtre, prehrávač, prepis, ktorý môžete prehrať od ktoréhokoľvek riadku, a spracovania."
 ---
 
 **Nahrávky** sú miesto, kde žije každý rozhovor, nech prišiel akokoľvek: hovor uskutočnený alebo prijatý v telefóne, importovaný zvukový súbor alebo stretnutie zachytené zo Zoomu, Teams, Meet či akejkoľvek inej aplikácie. Všetky sú v jednom zozname a každý sa otvára rovnako: prehrávač, prepis a všetko, čo o ňom napísal jazykový model. Otvoríte ich tlačidlom **Nahrávky** vľavo dole v [hlavnom okne](main-window.md).
@@ -22,7 +22,7 @@ Na obrázku sú horné tri riadky po jednom z každého druhu: stretnutie v Zoom
 
 ## Hľadanie rozhovoru {#finding-a-conversation}
 
-Pruh navrchu má päť filtrov, vyhľadávacie pole a ponuku:
+Pruh navrchu má štyri filtre, vyhľadávacie pole a ponuku:
 
 | Ovládací prvok | Zúži zoznam podľa |
 | --- | --- |
@@ -30,7 +30,6 @@ Pruh navrchu má päť filtrov, vyhľadávacie pole a ponuku:
 | **Obdobie** | dátumu: **Dnes**, **Včera**, **Posledných 7 dní** alebo **Vybrať dátumy…** |
 | **Kategória** | kategórie, do ktorej bol zaradený — pozrite [Slovníky](../ai-processing/dictionaries.md) |
 | **Značka** | štítkov a varovných signálov, ktoré nesie |
-| **Rozpoznávač** | [rozpoznávača](../ai-processing/transcription.md), ktorý vytvoril jeho prepis |
 | **Hľadať** | toho, čo v ňom zaznelo — hľadanie prechádza prepismi všetkého, čo ste nahrali |
 
 <Shot name="39_more_menu" alt="Ponuka ⋮ zoznamu: Importovať zo súborov, Exportovať do CSV, Otvoriť v prehliadači" />

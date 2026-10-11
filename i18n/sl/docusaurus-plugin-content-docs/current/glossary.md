@@ -7,6 +7,7 @@ description: Izrazi IP-telefonije in AI Softphone, uporabljeni v tej dokumentaci
 | Izraz | Pomen |
 | --- | --- |
 | **Račun** | Linija: uporabniško ime SIP na centrali ali pri ponudniku. Prijavljeni ste lahko na več. Glejte [Nastavitev računa SIP](/sip-accounts/setup). |
+| **Pomočnik** | To, kar naj bo šepetalec, medtem ko posluša: podnapisi, prevod ali predlogi, kaj reči. Glejte [Nastavitve šepetalca](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Gumb, ki pokliče interno številko in z lučko pokaže, ali je prosta, zvoni ali je zasedena. Glejte [Gumbi](/sip-accounts/buttons). |
 | **Čakajoči klic** | Kaj telefon naredi, ko vas kdo kliče, medtem ko ste že v pogovoru. Glejte [Nastavitve klicev](/sip-accounts/calls#call-waiting). |
 | **Zajemanje** | Snemanje pogovora v drugem programu, na primer v Zoomu, Teams ali Meetu. Glejte [Zajemanje](/capture/). |
@@ -19,8 +20,10 @@ description: Izrazi IP-telefonije in AI Softphone, uporabljeni v tej dokumentaci
 | **IP-centrala** | Telefonska centrala pisarne, ki deluje v omrežju; imenovana tudi softswitch. |
 | **Jezikovni model** | Umetna inteligenca, ki prebere prepis in piše o njem. Glejte [Obdelava](/ai-processing/processing). |
 | **Navodilo** | Kar se od jezikovnega modela zahteva. Glejte [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Šepetalec** | Okno, ki med klicem kaže, kar je rečeno, ko je rečeno, in predloge, kaj odgovoriti. Glejte [Okno šepetalca](/interface/prompter). |
 | **Razpoznavalnik** | Storitev, ki zvok spremeni v besedilo (razpoznavanje govora). Glejte [Prepis](/ai-processing/transcription). |
 | **Opozorilni znak** | Nekaj v pogovoru, kar zahteva pozornost, z dokazom in časom. Glejte [Slovarji](/ai-processing/dictionaries#red-flags). |
+| **Vaja** | Predvajanje posnetega pogovora šepetalcu namesto klica, da preizkusite pomočnika. Glejte [Okno šepetalca](/interface/prompter#rehearsing-on-a-recording). |
 | **Registracija** | Telefon sporoči centrali, kje je, da klici pridejo do njega. Zelena pika ob računu pomeni, da je registriran. |
 | **Pravilo** | Korak, ki teče sam, po vrsti, pri vsakem pogovoru. Glejte [Obdelava](/ai-processing/processing#rules). |
 | **SIP** | Protokol, s katerim telefoni in centrale vzpostavljajo klice. |

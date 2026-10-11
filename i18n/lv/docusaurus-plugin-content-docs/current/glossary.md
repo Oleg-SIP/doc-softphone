@@ -7,6 +7,7 @@ description: Šajā dokumentācijā lietotie IP telefonijas un AI Softphone term
 | Termins | Nozīme |
 | --- | --- |
 | **Konts** | Līnija: SIP lietotājvārds centrālē vai pie pakalpojumu sniedzēja. Jūs varat būt pieteicies vairākos. Skatiet [SIP konta iestatīšana](/sip-accounts/setup). |
+| **Palīgs** | Tas, kam suflierim jābūt, kamēr tas klausās: subtitri, tulkojums vai ieteikumi, ko teikt. Skatiet [Sufliera iestatījumi](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Poga, kas zvana uz iekšējo numuru un ar lampiņu rāda, vai tas ir brīvs, zvana vai aizņemts. Skatiet [Pogas](/sip-accounts/buttons). |
 | **Zvana gaidīšana** | Tas, ko tālrunis dara, kad kāds zvana, kamēr jūs jau runājat. Skatiet [Zvanu iestatījumi](/sip-accounts/calls#call-waiting). |
 | **Tveršana** | Citā lietotnē, piemēram, Zoom, Teams vai Meet, notiekošas sarunas ierakstīšana. Skatiet [Tveršana](/capture/). |
@@ -19,8 +20,10 @@ description: Šajā dokumentācijā lietotie IP telefonijas un AI Softphone term
 | **IP centrāle** | Biroja telefona centrāle, kas darbojas tīklā; to sauc arī par programmatūras komutatoru (softswitch). |
 | **Valodas modelis** | Mākslīgais intelekts, kas lasa atšifrējumu un raksta par to. Skatiet [Apstrāde](/ai-processing/processing). |
 | **Norādījums** | Tas, ko prasa valodas modelim (angļu val. prompt). Skatiet [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Suflieris** | Logs, kas zvana laikā rāda teikto tieši tad, kad tas tiek teikts, un ieteikumus, ko atbildēt. Skatiet [Sufliera logs](/interface/prompter). |
 | **Atpazinējs** | Pakalpojums, kas skaņu pārvērš tekstā (runas atpazīšana). Skatiet [Pieraksts](/ai-processing/transcription). |
 | **Brīdinājuma signāls** | Kaut kas sarunā, kam vajadzīga uzmanība, ar pierādījumu un laiku. Skatiet [Vārdnīcas](/ai-processing/dictionaries#red-flags). |
+| **Mēģinājums** | Ierakstītas sarunas atskaņošana suflierim zvana vietā, lai izmēģinātu palīgu. Skatiet [Sufliera logs](/interface/prompter#rehearsing-on-a-recording). |
 | **Reģistrācija** | Tālrunis paziņo centrālei, kur tas atrodas, lai zvani to sasniegtu. Zaļš punkts pie konta nozīmē, ka tas ir reģistrēts. |
 | **Kārtula** | Solis, kas darbojas pats, secīgi, katrā sarunā. Skatiet [Apstrāde](/ai-processing/processing#rules). |
 | **SIP** | Protokols, ko tālruņi un centrāles izmanto zvanu izveidei. |

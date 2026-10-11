@@ -1,7 +1,7 @@
 ---
 title: Gombok
 sidebar_position: 4
-description: "\"BLF-gombok: egyérintéses gombok, amelyek felhívnak egy melléket az IP alközponton, és megmutatják, hogy szabad, csörög vagy foglalt.\""
+description: "BLF-gombok: egyérintéses gombok, amelyek felhívnak egy melléket az IP alközponton, és megmutatják, hogy szabad, csörög vagy foglalt."
 ---
 
 A gombok a szoftveres telefon **BLF** (Busy Lamp Field) billentyűi, ugyanaz a funkció, amely egy IP alközponthoz kötött asztali telefonon is megvan. Egy gomb egyetlen nyomással felhív egy melléket. Az a gomb, amely figyeli a vonalát, egy lámpát is mutat: a telefon megkérdezi az alközponttól az adott mellék állapotát, és megmutatja, hogy szabad, csörög vagy foglalt, ahogyan egy recepciós konzol vagy egy asztali telefon programozható billentyűi teszik.

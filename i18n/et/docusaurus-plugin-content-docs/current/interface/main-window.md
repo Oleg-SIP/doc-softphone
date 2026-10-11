@@ -16,7 +16,7 @@ Peaaken on telefon ise. Vaikimisi paigutuse **Üks aken** puhul on telefon vasak
 - klahvistik ja helistamisklahv;
 - kontode märgid;
 - nupud, mis jälgivad teisi sisenumbreid;
-- neli sihtkohta: **Salvestised**, **Kontaktid**, **Ajalugu** ja **Seaded**.
+- sihtkohad: **Salvestised**, **Kontaktid**, **Ajalugu**, **Etteütleja** ja **Seaded**.
 
 ### Valija {#the-dialler}
 
@@ -36,9 +36,9 @@ Klahvistiku all on iga [konto](../sip-accounts/setup.md) jaoks üks märk. Rohel
 
 Märkide all on [nupud](../sip-accounts/buttons.md), mille olete teinud kolleegide ja liinide jaoks, igaühel oma tuli — piltidel **Tamm** ja **Ladu**. Vajutage nuppu, et selle numbrile helistada.
 
-### Salvestised, Kontaktid, Ajalugu, Seaded {#recordings-contacts-history-settings}
+### Salvestised, Kontaktid, Ajalugu, Etteütleja, Seaded {#recordings-contacts-history-prompter-settings}
 
-Need neli kirjet allosas avavad igaüks vahekaardi paremal, kõrvuti: [Salvestised](../interface/recordings.md), [Kontaktid ja ajalugu](contacts-history.md) ning [Seaded](settings-overview.md). Avatud vahekaardid jäävad paremal pool ülemisse ritta.
+Need kirjed allosas avavad igaüks vahekaardi paremal, kõrvuti: [Salvestised](../interface/recordings.md), [Kontaktid ja ajalugu](contacts-history.md), [Etteütleja](prompter.md) ja [Seaded](settings-overview.md). **Etteütleja** on seal alles siis, kui etteütleja on lubatud ja tal on tuvastaja, millega kuulata. Avatud vahekaardid jäävad paremal pool ülemisse ritta.
 
 ## Pooleliolev kõne {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Mis juhtub, kui keegi helistab ajal, mil olete juba kõnes, seadistatakse jaotis
 
 Kui [hõive teistest rakendustest](../capture/capture.md) on lubatud jaotises **Seaded → Hõivamine**, ilmub kontode märkide ja nuppude vahele riba.
 
-<Shot name="10_settings_capture" full alt="Hõivamise riba telefoni allosas: Hõivamine · valmis, Salvesta ja kaks taseme tulpa" />
+<Shot name="10_settings_capture" full alt="Hõivamise riba telefoni allosas: Hõivamine · ootan vestlust, salvestusnupp ja kaks taseme tulpa" />
 
-- **Hõivamine · valmis** ütleb, et programm kuulab, kas teises rakenduses toimub vestlus.
-- **Salvesta** alustab hõivamist käsitsi.
-- Selle all olevad kaks peenikest tulpa näitavad helitaset: ülemine olete teie, alumine on see, mida arvuti mängib. Nende joonistamise viis seadistatakse jaotises **Pilt telefoni jalamil oleval ribal**.
+- **Hõivamine · ootan vestlust** ütleb, et programm kuulab, kas teises rakenduses toimub vestlus.
+- Ümmargune nupp paremal alustab hõivamist käsitsi.
+- Selle all olevad kaks peenikest tulpa näitavad helitaset: ülemine olete teie, alumine on see, mida arvuti mängib. Nende joonistamise viis seadistatakse jaotises **Joonis alumisel ribal**.
 
 Programm võib olla ka salves (macOS-is menüüribal) ja seda saab esile tuua [otseteega](../program/shortcuts.md).

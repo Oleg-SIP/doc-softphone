@@ -10,7 +10,9 @@ description: De controlelijst Overzicht en de tabbladen van het venster Instelli
 
 <Shot name="04_settings_overview" alt="Instellingen → Overzicht: de controlelijst van wat er is ingesteld" />
 
-Het **Overzicht** is een controlelijst van wat er nodig is om het meeste uit het programma te halen. Bovenaan telt het de stappen — op de afbeelding *10 stappen gedaan* met een groene stip en *nog 8 stappen* met een rode — en een balk toont het gedane deel. Elke stap is een regel met een stip: groen voor een gedane stap, rood voor een stap die nog moet.
+Bovenaan het tabblad opent **Documentatie** deze site.
+
+Het **Overzicht** is een controlelijst van wat er nodig is om het meeste uit het programma te halen. Bovenaan telt het de stappen — op de afbeelding *14 stappen gedaan* met een groene stip en *nog 6 stappen* met een rode — en een balk toont het gedane deel. Elke stap is een regel met een stip: groen voor een gedane stap, rood voor een stap die nog moet.
 
 *Druk op een regel om te lezen waar die voor dient en te openen waar het wordt ingesteld.* Het pijltje aan het rechtereinde van de regel klapt hem uit.
 
@@ -20,6 +22,7 @@ Het **Overzicht** is een controlelijst van wat er nodig is om het meeste uit het
 | **Opnemen uit andere toepassingen** | Opnemen inschakelen; Een gesprek opnemen uit een toepassing; Er een naam aan geven |
 | **Transcriptie** | Een spraakherkenner toevoegen; Een gesprek uitschrijven |
 | **Verwerking** | Een model toevoegen; Een transcript verwerken |
+| **Souffleur** | De souffleur toestaan; De souffleur starten |
 | **Opnames** | Zoeken in wat er gezegd is; Een opname exporteren; Een samenvatting exporteren |
 | **Toepassing** | Starten met de computer; Up-to-date houden |
 | **Terugkoppeling** | Het uitgebreide rapport sturen; Vertel ons wat u ervan vindt |
@@ -39,8 +42,9 @@ De stappen zijn een leidraad, geen plicht: een stap waar u niets aan hebt, mag r
 | | **Opname** | [Het opnemen van gesprekken: toestemming, vergaderingen en hoelang bestanden bewaard blijven](../recordings.md) |
 | | **Vastleggen** | [Het geluid van andere toepassingen vastleggen](../capture/capture.md): vergaderingen in Zoom, Teams, Meet en dergelijke |
 | AI | **Transcriptie** | [Herkenners](../ai-processing/transcription.md) |
-| | **Verwerking** | [Automatische verwerking, bestedingsgrenzen, taalmodellen, prompts en regels](../ai-processing/processing.md) |
+| | **Verwerking** | [Automatische verwerking, taalmodellen, prompts, regels en bestedingsgrenzen](../ai-processing/processing.md) |
 | | **Woordenlijsten** | [Categorieën, labels en signalen](../ai-processing/dictionaries.md) |
+| | **Souffleur** | [De live souffleur: de schakelaar, de tekstgrootte, de assistenten en wat ze mogen uitgeven](../ai-processing/prompter.md) |
 | Programma | **Uiterlijk** | [Indeling, taal, thema en pictogrammen](../program/appearance.md) |
 | | **Opstarten** | [Hoe het programma start, sluit en belkoppelingen opent](../program/startup.md) |
 | | **Sneltoetsen** | [Sneltoetsen](../program/shortcuts.md) |

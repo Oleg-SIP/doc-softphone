@@ -44,7 +44,7 @@ Was passiert, wenn jemand anruft, während Sie telefonieren, wird unter [Anklopf
 Siehe [Mitschnitt](/capture/).
 
 - **Tonmitschnitt erlauben** unter **Einstellungen → Mitschnitt** muss eingeschaltet sein.
-- Steht **Automatischer Start** auf **Nachfragen** (Standard), beantworten Sie die Frage, wenn sie erscheint; bei **Nie** drücken Sie **Aufnehmen** selbst.
+- Steht **Automatischer Start** auf **Nachfragen** (Standard), beantworten Sie die Frage, wenn sie erscheint; bei **Nie** drücken Sie die Aufnahmetaste selbst.
 - Verwenden Sie **Prüfung** im selben Reiter: Der obere Balken muss sich bewegen, wenn Sie sprechen, der untere, wenn etwas abgespielt wird.
 - Das Modul **Mitschnitt** muss unter [Module](/application/modules) eingeschaltet sein.
 

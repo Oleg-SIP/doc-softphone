@@ -1,7 +1,7 @@
 ---
 title: Veelvoorkomende problemen
 sidebar_position: 2
-description: "\"Wat u controleert als een account niet registreert, er geen geluid is, een gesprek of vergadering niet wordt opgenomen, er geen transcript is, of een koppeling, een sneltoets of de API niets doet.\""
+description: "Wat u controleert als een account niet registreert, er geen geluid is, een gesprek of vergadering niet wordt opgenomen, er geen transcript is, of een koppeling, een sneltoets of de API niets doet."
 ---
 
 Elk punt verwijst naar de instelling die erover beslist. Staat het antwoord hier niet, open dan [Diagnose](/troubleshooting/diagnostics): het toont wat de telefoon en de centrale tegen elkaar zeggen.
@@ -44,7 +44,7 @@ Wat er gebeurt als iemand belt terwijl u in gesprek bent, stelt u in bij [Wissel
 Zie [Vastleggen](/capture/).
 
 - **Geluid vastleggen toestaan** bij **Instellingen → Vastleggen** moet aan staan.
-- Met **Automatisch starten** op **Het mij vragen** (de standaard) beantwoordt u de vraag als die verschijnt; met **Nooit** drukt u zelf op **Opnemen**.
+- Met **Automatisch starten** op **Het mij vragen** (de standaard) beantwoordt u de vraag als die verschijnt; met **Nooit** drukt u zelf op de opnameknop.
 - Gebruik **Testen** op hetzelfde tabblad: de bovenste balk moet bewegen als u spreekt, de onderste als er iets speelt.
 - De module **Vastleggen** moet aan staan bij [Modules](/application/modules).
 

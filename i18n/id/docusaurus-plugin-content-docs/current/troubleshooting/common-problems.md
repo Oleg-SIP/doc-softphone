@@ -1,7 +1,7 @@
 ---
 title: Masalah umum
 sidebar_position: 2
-description: "\"Apa yang perlu diperiksa ketika akun tidak mau terdaftar, tidak ada suara, panggilan atau rapat tidak terekam, tidak ada transkrip, atau tautan, tombol pintas, maupun API tidak berfungsi.\""
+description: "Apa yang perlu diperiksa ketika akun tidak mau terdaftar, tidak ada suara, panggilan atau rapat tidak terekam, tidak ada transkrip, atau tautan, tombol pintas, maupun API tidak berfungsi."
 ---
 
 Setiap entri merujuk ke pengaturan yang menentukannya. Jika jawabannya tidak ada di sini, buka [Diagnostik](/troubleshooting/diagnostics): jendela itu menampilkan apa yang dipertukarkan telepon dan PBX.
@@ -44,7 +44,7 @@ Apa yang terjadi ketika seseorang menelepon saat Anda sedang dalam panggilan dia
 Lihat [Penangkapan](/capture/).
 
 - **Izinkan penangkapan suara** di **Pengaturan → Penangkapan** harus menyala.
-- Bila **Mulai otomatis** diatur ke **Tanya saya** (bawaan), jawab pertanyaannya saat muncul; bila **Tidak pernah**, tekan **Rekam** sendiri.
+- Bila **Mulai otomatis** diatur ke **Tanya saya** (bawaan), jawab pertanyaannya saat muncul; bila **Tidak pernah**, tekan tombol rekam sendiri.
 - Gunakan **Uji** di tab yang sama: bilah atas harus bergerak saat Anda bicara, bilah bawah saat ada yang diputar.
 - Modul **Penangkapan** harus menyala di [Modul](/application/modules).
 

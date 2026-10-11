@@ -28,7 +28,9 @@ Den andra kolumnen är det listan visar under promptens namn: vad den skriver oc
 | **Säljkvalitet** | Kriterier | Granskar samtalet efter säljkriterier som du kan redigera. |
 | **Supportkvalitet** | Kriterier | Bedömer hur väl problemet förstods och hanterades. |
 
-Formerna är fasta mallar för ett svar, och det är det som låter programmet spara det och söka i det senare: **Etiketter** är koder från en av dina listor, **Signaler** är koder med en allvarlighetsgrad, **Kriterier** är ett betyg med en motivering och ett betyg för varje kriterium, **Svar** är ett svar med orden det bygger på. Instruktionerna som talar om formen för en modell sparas i [Ordlistor](dictionaries.md#answer-shapes-and-language).
+Formerna är fasta mallar för ett svar, och det är det som låter programmet spara det och söka i det senare: **Etiketter** är koder från en av dina listor, **Signaler** är koder med en allvarlighetsgrad, **Kriterier** är ett betyg med en motivering och ett betyg för varje kriterium, **Svar** är ett svar med orden det bygger på. Instruktionerna som talar om formen för en modell sparas i [Ordlistor](dictionaries.md#instructions).
+
+[Sufflörens](../interface/prompter.md) hjälpare är också prompter, som körs på varje replik medan ett samtal pågår i stället för på ett avslutat samtal. De finns i en egen lista, under [Hjälpare](prompter.md#assistants) i **Inställningar → Sufflör**.
 
 Samtal som rings i AI Softphone, möten [fångade](/capture/) från datorn och importerade inspelningar går alla genom samma prompter så snart de har en utskrift.
 
@@ -41,6 +43,6 @@ Att göra-posterna registrerar vad som avtalades — de skickar inga meddelanden
 - Välj modell för varje prompt — på din egen dator eller i molnet.
 - Bestäm ordningen prompterna körs i, slå på och stäng av dem och gör dem villkorade — det görs med [reglerna](processing.md#rules): till exempel körs en säljgranskning bara på samtal som sorterats som **Försäljning**.
 - Håll dina egna kategorier, etiketter och signaler i [Ordlistor](dictionaries.md).
-- Sätt tak för kostnaden med de [månatliga gränserna](processing.md#limits).
+- Sätt tak för kostnaden med de [månatliga gränserna](processing.md#spending).
 
 De ursprungliga prompterna och reglerna kan återställas med **Återställ standardvärden** under **Standardvärden** i [Inställningar → Bearbetning](processing.md#defaults).

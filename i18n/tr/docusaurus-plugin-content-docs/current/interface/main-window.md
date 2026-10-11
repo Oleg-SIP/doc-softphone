@@ -16,7 +16,7 @@ Yukarıdan aşağıya, sol tarafta şunlar bulunur:
 - tuş takımı ve arama tuşu;
 - hesap rozetleri;
 - diğer dahilileri izleyen düğmeler;
-- gidilecek dört yer: **Kayıtlar**, **Kişiler**, **Geçmiş** ve **Ayarlar**.
+- gidilecek yerler: **Kayıtlar**, **Kişiler**, **Geçmiş**, **Suflör** ve **Ayarlar**.
 
 ### Çevirici {#the-dialler}
 
@@ -36,9 +36,9 @@ Tuş takımının altında her [hesap](../sip-accounts/setup.md) için bir rozet
 
 Rozetlerin altında, iş arkadaşlarınız ve hatlar için oluşturduğunuz [düğmeler](../sip-accounts/buttons.md) bulunur; her birinin bir lambası vardır — resimlerde **Yılmaz** ve **Depo**. Numarasını aramak için birine basın.
 
-### Kayıtlar, Kişiler, Geçmiş, Ayarlar {#recordings-contacts-history-settings}
+### Kayıtlar, Kişiler, Geçmiş, Suflör, Ayarlar {#recordings-contacts-history-prompter-settings}
 
-Alttaki bu dört girdi sağda yan yana birer sekme açar: [Kayıtlar](../interface/recordings.md), [Kişiler ve Geçmiş](contacts-history.md) ve [Ayarlar](settings-overview.md). Açtığınız sekmeler sağ tarafın üstündeki sırada kalır.
+Alttaki bu girdiler sağda yan yana birer sekme açar: [Kayıtlar](../interface/recordings.md), [Kişiler ve Geçmiş](contacts-history.md), [Suflör](prompter.md) ve [Ayarlar](settings-overview.md). **Suflör** ancak suflöre izin verildiğinde ve dinleyeceği bir tanıyıcı olduğunda görünür. Açtığınız sekmeler sağ tarafın üstündeki sırada kalır.
 
 ## Süren bir çağrı {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Birleştirilen çağrılar, hesabın hattında tek bir **Konferans** kartı olar
 
 **Ayarlar → Yakalama** içinde [diğer uygulamalardan yakalamaya](../capture/capture.md) izin verildiğinde, hesap rozetleri ile düğmeler arasında bir şerit belirir.
 
-<Shot name="10_settings_capture" full alt="Telefonun altındaki Yakalama şeridi: Yakalama · hazır, Kaydet ve iki düzey çubuğu" />
+<Shot name="10_settings_capture" full alt="Telefonun altındaki Yakalama şeridi: Yakalama · görüşme bekleniyor, kayıt düğmesi ve iki düzey çubuğu" />
 
-- **Yakalama · hazır**, programın başka bir uygulamadaki bir görüşmeyi dinlediğini söyler.
-- **Kaydet** bir yakalamayı elle başlatır.
-- Altındaki iki ince çubuk ses düzeyini gösterir: üstteki sizsiniz, alttaki bilgisayarın çaldığı şeydir. Nasıl çizildikleri **Telefonun altındaki şeritteki resim** altında belirlenir.
+- **Yakalama · görüşme bekleniyor**, programın başka bir uygulamadaki bir görüşmeyi dinlediğini söyler.
+- Sağdaki yuvarlak düğme bir yakalamayı elle başlatır.
+- Altındaki iki ince çubuk ses düzeyini gösterir: üstteki sizsiniz, alttaki bilgisayarın çaldığı şeydir. Nasıl çizildikleri **Alttaki şeritteki çizim** altında belirlenir.
 
 Program ayrıca sistem tepsisinde (macOS'ta menü çubuğunda) yaşayabilir ve bir [kısayolla](../program/shortcuts.md) öne getirilebilir.

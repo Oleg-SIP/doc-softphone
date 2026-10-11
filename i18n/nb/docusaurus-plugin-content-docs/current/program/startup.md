@@ -1,7 +1,7 @@
 ---
 title: Oppstart
 sidebar_position: 2
-description: "\"Start telefonen sammen med maskinen, la den gå videre når vinduet er lukket, og åpne lenker med tel:, callto: og sip:.\""
+description: "Start telefonen sammen med maskinen, la den gå videre når vinduet er lukket, og åpne lenker med tel:, callto: og sip:."
 ---
 
 **Innstillinger → Oppstart** bestemmer hvordan programmet starter, hva det gjør å lukke vinduet, og hva som skjer når du klikker på et telefonnummer i et annet program.

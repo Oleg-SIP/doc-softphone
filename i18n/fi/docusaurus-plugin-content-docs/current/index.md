@@ -20,6 +20,8 @@ Tallenteet, litteroinnit ja historia säilytetään tiedostossa, jonka omistat. 
 3. Se litteroidaan puhuja kerrallaan, tahdissa äänen kanssa.
 4. Valitsemasi kielimalli kirjoittaa siitä yhteenvedon: tiivistelmän, tehtävät, luokan, tunnisteet ja merkit — ja voit esittää keskustelulle kysymyksen.
 
+Puhelun aikana [Kuiskaaja](interface/prompter.md) voi mennä pidemmälle: se näyttää, mitä sanotaan, sitä mukaa kuin sanotaan, ja ehdottaa, mitä vastata.
+
 ## Lataus ja järjestelmävaatimukset {#download-and-system-requirements}
 
 Ohjelman voi ladata maksutta osoitteesta [ai-softphone.com](https://ai-softphone.com/#download): asennusohjelma (`.exe`) Windowsille, levykuva (`.dmg`) macOS:lle sekä AppImage tai `.deb` Linuxille. Asennusohjelma, levykuva ja AppImage eivät vaadi mitään muuta asennettavaksi ensin — Qt, OpenSSL ja C++-ajonaikainen ympäristö kulkevat niiden mukana. Poikkeus on `.deb`: se käyttää järjestelmän omaa C++-ajonaikaista ympäristöä, katso alempaa. Tarvitset SIP-tilin palveluntarjoajaltasi tai itse ylläpitämästäsi vaihteesta. Tallennus toimii heti, kun ohjelma on asennettu; litterointi ja yhteenveto vaativat valitsemasi palvelun tai mallin omalla koneellasi.
@@ -60,6 +62,7 @@ Tämän dokumentaation kuvakaappaukset on otettu macOS:ssä ja näytetään pien
 | Valita tunnistimen, joka muuttaa puheen tekstiksi | [Litterointi](ai-processing/transcription.md) |
 | Päättää, mikä tekoäly kirjoittaa keskustelujesi yhteenvedot ja mitä se saa maksaa | [Käsittely](ai-processing/processing.md) |
 | Muuttaa luokkia, tunnisteita ja merkkejä | [Sanastot](ai-processing/dictionaries.md) |
+| Näe, mitä puhelun aikana sanotaan, ja saa ehdotuksia vastaukseksi | [Kuiskaajan ikkuna](interface/prompter.md) |
 | Muuttaa asettelua, teemaa, käynnistystä ja pikanäppäimiä | [Ulkoasu](program/appearance.md), [Käynnistys](program/startup.md) ja [Pikanäppäimet](program/shortcuts.md) |
 | Yhdistää CRM:n tai muun ohjelman | [Webhookit](integration/webhooks.md) ja [Paikallinen REST API](integration/rest-api.md) |
 | Nähdä, mitä puhelin ja vaihde sanovat toisilleen | [Diagnostiikka](troubleshooting/diagnostics.md) |

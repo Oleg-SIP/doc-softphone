@@ -2,7 +2,7 @@
 title: Tveršana
 sidebar_label: Tveršana no citām lietotnēm
 sidebar_position: 1
-description: "\"Tveršana ieraksta sarunu, kas notiek citā lietotnē — Zoom, Teams, Meet vai jebkurā citā —, tieši no datora.\""
+description: "Tveršana ieraksta sarunu, kas notiek citā lietotnē — Zoom, Teams, Meet vai jebkurā citā —, tieši no datora."
 ---
 
 **Tveršana** ir veids, kā AI Softphone ieraksta sarunu, kas notiek citā programmā, piemēram, sapulci Zoom, Teams vai Meet. Tā ieraksta tieši no datora, turot otru pusi un jūs atsevišķos kanālos, un beigās gaida tas pats atšifrējums un apkopojums kā zvanam.
@@ -34,7 +34,7 @@ Programmas daļa, kas to dara, ir modulis **Tveršana**, *Citā lietotnē notiek
 
 ## Tveršanas sākšana {#starting-a-capture}
 
-Kad tveršana ir atļauta, [galvenā loga](../interface/main-window.md#capture) apakšā redzams tās stāvoklis — **Tveršana · gatavs** — ar pogu **Ierakstīt** labajā pusē. Nospiediet **Ierakstīt**, lai sāktu manuāli.
+Kad tveršana ir atļauta, [galvenā loga](../interface/main-window.md#capture) apakšā redzams tās stāvoklis — **Tveršana · gaidu sarunu** — ar apaļu ierakstīšanas pogu labajā pusē, *Ierakstīt šo sarunu*. Nospiediet to, lai sāktu manuāli.
 
 ### Automātiska sākšana {#automatic-start}
 
@@ -42,7 +42,7 @@ Kad tveršana ir atļauta, [galvenā loga](../interface/main-window.md#capture) 
 
 | Izvēle | Kas notiek |
 | --- | --- |
-| **Nekad** | Tveršana sākas tikai tad, kad nospiežat **Ierakstīt**. |
+| **Nekad** | Tveršana sākas tikai tad, kad nospiežat ierakstīšanas pogu. |
 | **Vaicāt man** | Programma jautā, vai to ierakstīt. Noklusējums. |
 | **Vienmēr** | Programma sāk ierakstīt pati. |
 
@@ -52,7 +52,7 @@ Sadaļā **Lietotnes ar savu atbildi** lietotnei var piešķirt savu atbildi —
 
 ### Pirms sākuma {#before-the-start}
 
-Slīdnis **Pirms sākuma** nosaka, cik sekunžu skaņas pirms ieraksta sākuma tiek saglabāts, pēc noklusējuma **15 sekundes**. Tas ir paredzēts, lai nekas nepazustu, kamēr saruna tiek pamanīta: ieraksts, kas sākas, kad nospiežat **Ierakstīt** vai atbildat uz jautājumu, joprojām sākas ar vārdiem, kas skanēja pirms tam.
+Slīdnis **Pirms sākuma** nosaka, cik sekunžu skaņas pirms ieraksta sākuma tiek saglabāts, pēc noklusējuma **15 sekundes**. Tas ir paredzēts, lai nekas nepazustu, kamēr saruna tiek pamanīta: ieraksts, kas sākas, kad nospiežat ierakstīšanas pogu vai atbildat uz jautājumu, joprojām sākas ar vārdiem, kas skanēja pirms tam.
 
 ## Sarunas tveršana {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Vēl divi iestatījumi izvēlas, kā tiek zīmēts skaņas līmenis:
 
 | Iestatījums | Noklusējums | Kur |
 | --- | --- | --- |
-| **Attēls galvenajā logā** | Vilnis | Abi kanāli tveršanas laikā. |
-| **Attēls joslā telefona pakājē** | Divi līmeņi | Divas tievās joslas zem **Tveršana · gatavs**. |
+| **Zīmējums logā** | Vilnis | Abi kanāli tveršanas laikā. |
+| **Zīmējums joslā lejā** | Divi līmeņi | Divas tievās joslas zem **Tveršana · gaidu sarunu**. |
 
 ### Pārbaude {#testing-it}
 
@@ -86,4 +86,4 @@ Notverta saruna parādās [ierakstu logā](../interface/recordings.md) tāpat k�
 
 <Shot name="01_recordings" alt="Notvertas sapulces cilnē Ieraksti, apzīmētas ar loga ikonu" />
 
-Tā tiek atšifrēta, apkopota, iedalīta kategorijā un apzīmēta ar birkām pēc tām pašām [kārtulām](../ai-processing/processing.md#rules) kā zvans. Notvertas sapulces atšifrējumā runātājs redzams kā **Cita lietotne** tur, kur zvanā būtu otras puses vārds; bibliotēkas **Meklēt** atrod arī tajā teikto.
+Tā tiek atšifrēta, apkopota, iedalīta kategorijā un apzīmēta ar birkām pēc tām pašām [kārtulām](../ai-processing/processing.md#rules) kā zvans. Notvertas sapulces atšifrējumā runātājs redzams ar ieraksta nosaukumu tur, kur zvanā būtu otras puses vārds; bibliotēkas **Meklēt** atrod arī tajā teikto.

@@ -1,7 +1,7 @@
 ---
 title: Pogas
 sidebar_position: 4
-description: "\"BLF pogas: vienas pieskāriena pogas, kas zvana uz jūsu IP centrāles iekšējo numuru un rāda, vai tas ir brīvs, zvana vai aizņemts.\""
+description: "BLF pogas: vienas pieskāriena pogas, kas zvana uz jūsu IP centrāles iekšējo numuru un rāda, vai tas ir brīvs, zvana vai aizņemts."
 ---
 
 Pogas ir programmatūras tālruņa **BLF** (Busy Lamp Field) taustiņi — tā pati funkcija, kas ir galda tālrunim IP centrālē. Poga zvana uz iekšējo numuru ar vienu pieskārienu. Poga, kas uzrauga savu līniju, rāda arī lampiņu: tālrunis jautā centrālei par šo iekšējo numuru un rāda, vai tas ir brīvs, zvana vai aizņemts, kā to dara sekretāres pults vai galda tālruņa programmējamie taustiņi.

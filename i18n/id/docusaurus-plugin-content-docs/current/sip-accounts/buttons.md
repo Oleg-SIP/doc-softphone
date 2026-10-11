@@ -1,7 +1,7 @@
 ---
 title: Tombol
 sidebar_position: 4
-description: "\"Tombol BLF: tombol sekali sentuh yang memanggil ekstensi di IP PBX Anda dan menunjukkan apakah ekstensi itu bebas, berdering, atau sibuk.\""
+description: "Tombol BLF: tombol sekali sentuh yang memanggil ekstensi di IP PBX Anda dan menunjukkan apakah ekstensi itu bebas, berdering, atau sibuk."
 ---
 
 Tombol adalah tombol **BLF** (Busy Lamp Field) softphone, fungsi yang sama dengan yang dimiliki telepon meja pada IP PBX. Sebuah tombol memanggil ekstensi dengan sekali tekan. Tombol yang memantau salurannya juga menampilkan lampu: telepon menanyakan ekstensi itu kepada PBX dan menunjukkan apakah ekstensi itu bebas, berdering, atau sibuk, seperti konsol resepsionis atau tombol terprogram pada telepon meja.

@@ -1,7 +1,7 @@
 ---
 title: Ierakstu logs
 sidebar_position: 2
-description: "\"Katras sarunas bibliotēka — zvans, importēts fails vai sapulce, notverta no Zoom, Teams vai Meet: filtri, atskaņotājs, atšifrējums, ko var atskaņot no jebkuras rindas, un apkopojumi.\""
+description: "Katras sarunas bibliotēka — zvans, importēts fails vai sapulce, notverta no Zoom, Teams vai Meet: filtri, atskaņotājs, atšifrējums, ko var atskaņot no jebkuras rindas, un apkopojumi."
 ---
 
 **Ieraksti** ir vieta, kur atrodas katra saruna, lai kā tā būtu pienākusi: zvans, veikts vai saņemts tālrunī, importēts audio fails vai sapulce, notverta no Zoom, Teams, Meet vai jebkuras citas lietotnes. Visas tās ir vienā sarakstā, un katra atveras vienādi: atskaņotājs, atšifrējums un viss, ko valodas modelis par to uzrakstījis. Lai atvērtu **Ieraksti**, nospiediet to [galvenā loga](main-window.md) apakšējā kreisajā stūrī.
@@ -22,7 +22,7 @@ Attēlā trīs augšējās rindas ir pa vienai no katra veida: Zoom sapulce, imp
 
 ## Sarunas atrašana {#finding-a-conversation}
 
-Augšējā joslā ir pieci filtri, meklēšanas lauks un izvēlne:
+Augšējā joslā ir četri filtri, meklēšanas lauks un izvēlne:
 
 | Vadīkla | Sašaurina sarakstu pēc |
 | --- | --- |
@@ -30,7 +30,6 @@ Augšējā joslā ir pieci filtri, meklēšanas lauks un izvēlne:
 | **Periods** | datuma: **Šodien**, **Vakar**, **Pēdējās 7 dienas** vai **Izvēlēties datumus…** |
 | **Kategorija** | kategorijas, kurā tā iedalīta — skatiet [Vārdnīcas](../ai-processing/dictionaries.md) |
 | **Atzīme** | tai piešķirtajām birkām un brīdinājuma signāliem |
-| **Atpazinējs** | [atpazinēja](../ai-processing/transcription.md), kas izveidoja tās atšifrējumu |
 | **Meklēt** | tajā teiktā — meklēšana iet cauri visu jūsu ierakstu atšifrējumiem |
 
 <Shot name="39_more_menu" alt="Saraksta izvēlne ⋮: Importēt no failiem, Eksportēt uz CSV, Atvērt pārlūkā" />

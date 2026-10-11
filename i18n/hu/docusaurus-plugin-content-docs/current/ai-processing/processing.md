@@ -1,7 +1,7 @@
 ---
 title: Feldolgozás
 sidebar_position: 2
-description: A beszélgetések automatikus feldolgozása, a havi költségkorlátok, a nyelvi modellek, az utasítások és az őket futtató szabályok.
+description: A beszélgetések automatikus feldolgozása, a nyelvi modellek, az utasítások, az őket futtató szabályok és a havi költségkorlátok.
 ---
 
 A **Beállítások → Feldolgozás** dönti el, mi történjen egy beszélgetéssel a rögzítése után, melyik modell végzi a munkát, és mennyibe kerülhet.
@@ -13,20 +13,9 @@ A **Beállítások → Feldolgozás** dönti el, mi történjen egy beszélgeté
 - **Ki:** semmi sem történik, amíg nem kéri a [Felvételek ablakban](../interface/recordings.md).
 - **Be:** az alábbi [szabályok](#rules) maguktól lefutnak. Ez alakítja a beszélgetést összefoglalóvá, kategóriává és minden mássá anélkül, hogy bárki bármit megnyomna. A felhőben futó modell ezen lépések mindegyikéért díjat számol fel.
 
-A jelölőnégyzet alatt a program megmutatja, mennyit költött ebben a hónapban és hány kérésre, például *Ebben a hónapban: 40 492 token, 84 kérésben, díjmentesen.*
-
-## Korlátok {#limits}
-
-| Mező | Jelentés |
-| --- | --- |
-| **Pénzkorlát, havonta** | Legfeljebb mennyibe kerülhetnek a modellek egy hónapban. |
-| **Tokenkorlát, havonta** | Legfeljebb hány tokent használhatnak egy hónapban. |
-
-Két korlát van, mert egy hónapot kétféle egységben lehet mérni. Mindkettő üres, amíg ki nem tölti. Ha bármelyiket eléri, az automatikus szabályok a hónap fordulójáig leállnak. **Amit Ön maga kér, az soha nem áll le.**
-
 ## Nyelvi modellek {#language-models}
 
-Azok a modellek, amelyek elolvassák a leiratot, és írnak róla. Új modell felvételéhez nyomja meg a **Hozzáadás** gombot. Mindegyik a nevével szerepel, alatta pedig a modellazonosító és a szolgáltatás címe, például `qwen3-32b · http://llm.local:8000/v1`. Az **Alapértelmezett** jelölésű modellt használja a program alapértelmezés szerint. A modell űrlapján egy gomb ellenőrzi, hogy a szolgáltatás valóban válaszol-e, mielőtt rábízná magát.
+Azok a modellek, amelyek elolvassák a leiratot, és írnak róla. Új modell felvételéhez nyomja meg a **Hozzáadás** gombot. Mindegyik a nevével szerepel, alatta pedig a modellazonosító és a szolgáltatás címe, például `qwen3-32b · http://localhost:8000/v1`. Az **alapértelmezett** jelölésű modellt — a képen a **QWEN**, egy ezen a számítógépen futó modell — használja a program alapértelmezés szerint: az utasítások és a [súgó](prompter.md) azon segítői, amelyek nem neveznek meg saját modellt. A modell űrlapján a **Próba** ellenőrzi, hogy a szolgáltatás valóban válaszol-e, mielőtt rábízná magát.
 
 - A **saját gépen futó** modell minden beszélgetést az épületen belül tart, és használata semmibe sem kerül.
 - A felhőben futó modell — OpenAI, Claude, Mistral, DeepSeek, Groq és mások — használat alapján fizetős. A program minden hívás árát tokenben és pénzben is megmutatja.
@@ -35,7 +24,7 @@ Azok a modellek, amelyek elolvassák a leiratot, és írnak róla. Új modell fe
 
 <Shot name="12b_settings_processing_prompts" alt="Beállítások → Feldolgozás: az utasítások" />
 
-*Az, amit a modellektől kérünk.* Minden utasítás a programmal érkezett, és mindegyik az Öné, hogy megváltoztassa — és hogy visszaállítsa. Mindegyik a nevével szerepel, alatta pedig az, hogy mit ír és milyen formában. A forma — **Válasz**, **Tételek**, **Címkék**, **JSON**, **Próza**, **Jelzések** vagy **Szempontok** — határozza meg, hogyan tárolódik és jelenik meg a válasz. Az utasítások leírása a [Personal Prompt Studio](prompt-studio.md) oldalon található. A **Hozzáadás** saját utasítást hoz létre.
+*Az, amit a modellektől kérünk.* Minden utasítás a programmal érkezett, és mindegyik az Öné, hogy megváltoztassa — és hogy visszaállítsa. Mindegyik a nevével szerepel, alatta pedig az, hogy mit ír és milyen formában; a **▲** és a **▼** a lista sorrendjét változtatja meg. A forma — **Válasz**, **Tételek**, **Címkék**, **JSON**, **Próza**, **Jelzések** vagy **Szempontok** — határozza meg, hogyan tárolódik és jelenik meg a válasz. Az utasítások leírása a [Personal Prompt Studio](prompt-studio.md) oldalon található. A **Hozzáadás** saját utasítást hoz létre.
 
 ## Szabályok {#rules}
 
@@ -55,6 +44,19 @@ Azok a modellek, amelyek elolvassák a leiratot, és írnak róla. Új modell fe
 | **Értékelés, ha támogatás volt** | Megkérdez egy modellt: **Támogatás minősége**. | csak ha a kategória **Támogatás** |
 
 A sorrend számít: az utolsó két szabálynak szüksége van arra a kategóriára, amelyet az előttük lévő szabály állít be. A **Hozzáadás** saját szabályt hoz létre.
+
+## Kiadás {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Beállítások → Feldolgozás: a hónap kiadása és a két korlát" />
+
+A **Kiadás** alatt a program megmutatja, mennyit költött ebben a hónapban és hány kérésre — a képen *Ebben a hónapban semmi sem lett feldolgozva*, és például *Ebben a hónapban: 40 492 token, 84 kérésben, díjmentesen*, ha már történt feldolgozás.
+
+| Mező | Jelentés |
+| --- | --- |
+| **Pénzkorlát, havonta** | Legfeljebb mennyibe kerülhetnek a modellek egy hónapban. |
+| **Tokenkorlát, havonta** | Legfeljebb hány tokent használhatnak egy hónapban. |
+
+Két korlát van, mert egy hónapot kétféle egységben lehet mérni. Mindkettő üres, amíg ki nem tölti. Ha bármelyiket eléri, az automatikus szabályok a hónap fordulójáig leállnak. **Amit Ön maga kér, az soha nem áll le.** A [súgónak](prompter.md#spending) saját plafonjai vannak, hogy egy hónapnyi összefoglaló ne hallgattathassa el beszélgetés közben.
 
 ## Alapértékek {#defaults}
 

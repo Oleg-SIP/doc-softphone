@@ -28,7 +28,9 @@ Cột thứ hai là những gì danh sách hiển thị dưới tên của chỉ
 | **Chất lượng bán hàng** | Tiêu chí | Đánh giá cuộc trò chuyện theo các tiêu chí bán hàng mà bạn có thể sửa. |
 | **Chất lượng hỗ trợ** | Tiêu chí | Đánh giá vấn đề đã được hiểu và xử lý tốt đến đâu. |
 
-Các dạng là những khuôn câu trả lời cố định, nhờ đó chương trình lưu được và sau này tìm được: **Nhãn** là các mã lấy từ một trong các danh sách của bạn, **Dấu hiệu** là các mã kèm mức độ nghiêm trọng, **Tiêu chí** là một điểm số kèm lý do và điểm cho từng tiêu chí, **Câu trả lời** là lời đáp kèm những câu nói làm căn cứ. Các hướng dẫn cho mô hình biết khuôn câu trả lời được lưu trong [Từ điển](dictionaries.md#answer-shapes-and-language).
+Các dạng là những khuôn câu trả lời cố định, nhờ đó chương trình lưu được và sau này tìm được: **Nhãn** là các mã lấy từ một trong các danh sách của bạn, **Dấu hiệu** là các mã kèm mức độ nghiêm trọng, **Tiêu chí** là một điểm số kèm lý do và điểm cho từng tiêu chí, **Câu trả lời** là lời đáp kèm những câu nói làm căn cứ. Các hướng dẫn cho mô hình biết khuôn câu trả lời được lưu trong [Từ điển](dictionaries.md#instructions).
+
+Các trợ lý của [người nhắc](../interface/prompter.md) cũng là chỉ dẫn, chạy trên từng lượt nói trong khi cuộc gọi đang diễn ra thay vì trên một cuộc trò chuyện đã xong. Chúng được giữ trong một danh sách riêng, ở [Trợ lý](prompter.md#assistants) trong **Cài đặt → Người nhắc**.
 
 Cuộc gọi thực hiện trong AI Softphone, cuộc họp [thu](/capture/) từ máy tính và bản ghi được nhập vào đều đi qua cùng các chỉ dẫn này khi đã có bản chép lời.
 
@@ -41,6 +43,6 @@ Việc cần làm ghi lại những gì đã thống nhất — chúng không g�
 - Chọn mô hình cho từng chỉ dẫn — trên máy của bạn hoặc trên đám mây.
 - Đặt thứ tự chạy các chỉ dẫn, bật và tắt chúng, và đặt điều kiện cho chúng — việc này làm bằng các [quy tắc](processing.md#rules): ví dụ, đánh giá bán hàng chỉ chạy với các cuộc gọi được xếp vào **Bán hàng**.
 - Giữ các hạng mục, nhãn và dấu hiệu cảnh báo của riêng bạn trong [Từ điển](dictionaries.md).
-- Giới hạn chi phí bằng [hạn mức hằng tháng](processing.md#limits).
+- Giới hạn chi phí bằng [hạn mức hằng tháng](processing.md#spending).
 
 Các chỉ dẫn và quy tắc ban đầu có thể được khôi phục bằng **Khôi phục mặc định** ở mục **Mặc định** trong [Cài đặt → Xử lý](processing.md#defaults).

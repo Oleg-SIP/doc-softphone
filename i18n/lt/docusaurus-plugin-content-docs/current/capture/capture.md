@@ -2,7 +2,7 @@
 title: Fiksavimas
 sidebar_label: Perėmimas iš kitų programų
 sidebar_position: 1
-description: "\"Fiksavimas įrašo kitoje programoje — Zoom, Teams, Meet ar bet kurioje kitoje — vykstantį pokalbį tiesiai iš kompiuterio.\""
+description: "Fiksavimas įrašo kitoje programoje — Zoom, Teams, Meet ar bet kurioje kitoje — vykstantį pokalbį tiesiai iš kompiuterio."
 ---
 
 **Fiksavimas** — tai būdas, kuriuo AI Softphone įrašo kitoje programoje vykstantį pokalbį, pavyzdžiui, susitikimą Zoom, Teams ar Meet. Jis įrašo tiesiai iš kompiuterio, laikydamas kitą pusę ir jus atskiruose kanaluose, o pabaigoje laukia tas pats iššifruotas tekstas ir apibendrinimas kaip ir skambučio.
@@ -34,7 +34,7 @@ Programos dalis, kuri tai daro, yra modulis **Fiksavimas**, *Kitoje programoje v
 
 ## Fiksavimo pradžia {#starting-a-capture}
 
-Kai fiksavimas leidžiamas, [pagrindinio lango](../interface/main-window.md#capture) apačioje rodoma jo būsena — **Fiksavimas · pasiruošta** — su mygtuku **Įrašyti** dešinėje. Paspauskite **Įrašyti**, kad pradėtumėte rankomis.
+Kai fiksavimas leidžiamas, [pagrindinio lango](../interface/main-window.md#capture) apačioje rodoma jo būsena — **Fiksavimas · laukiu pokalbio** — su apvaliu įrašymo mygtuku dešinėje, *Įrašyti šį pokalbį*. Paspauskite jį, kad pradėtumėte rankomis.
 
 ### Automatinis paleidimas {#automatic-start}
 
@@ -42,7 +42,7 @@ Kai fiksavimas leidžiamas, [pagrindinio lango](../interface/main-window.md#capt
 
 | Pasirinkimas | Kas nutinka |
 | --- | --- |
-| **Niekada** | Fiksavimas prasideda tik paspaudus **Įrašyti**. |
+| **Niekada** | Fiksavimas prasideda tik paspaudus įrašymo mygtuką. |
 | **Paklausti manęs** | Programa klausia, ar jį įrašyti. Numatytoji reikšmė. |
 | **Visada** | Programa pradeda įrašyti pati. |
 
@@ -52,7 +52,7 @@ Skiltyje **Programos su savo atsakymu** programai galima suteikti savo atsakymą
 
 ### Prieš pradžią {#before-the-start}
 
-Slankiklis **Prieš pradžią** nurodo, kiek sekundžių garso iki įrašo pradžios išsaugoma, pagal numatymą **15 sekundžių**. Jis skirtas tam, kad niekas nepradingtų, kol pokalbis pastebimas: įrašas, kuris prasideda paspaudus **Įrašyti** arba atsakius į klausimą, vis tiek prasideda nuo žodžių, kurie buvo prieš tai.
+Slankiklis **Prieš pradžią** nurodo, kiek sekundžių garso iki įrašo pradžios išsaugoma, pagal numatymą **15 sekundžių**. Jis skirtas tam, kad niekas nepradingtų, kol pokalbis pastebimas: įrašas, kuris prasideda paspaudus įrašymo mygtuką arba atsakius į klausimą, vis tiek prasideda nuo žodžių, kurie buvo prieš tai.
 
 ## Pokalbio perėmimas {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Dar du nustatymai pasirenka, kaip piešiamas garso lygis:
 
 | Nustatymas | Numatytoji reikšmė | Kur |
 | --- | --- | --- |
-| **Vaizdas pagrindiniame lange** | Banga | Abu kanalai fiksavimo metu. |
-| **Vaizdas juostoje telefono papėdėje** | Du lygiai | Du ploni stulpeliai po **Fiksavimas · pasiruošta**. |
+| **Piešinys lange** | Banga | Abu kanalai fiksavimo metu. |
+| **Piešinys apatinėje juostoje** | Du lygiai | Du ploni stulpeliai po **Fiksavimas · laukiu pokalbio**. |
 
 ### Patikrinimas {#testing-it}
 
@@ -86,4 +86,4 @@ Perimtas pokalbis atsiranda [įrašų lange](../interface/recordings.md) kaip ir
 
 <Shot name="01_recordings" alt="Perimti susitikimai skirtuke Įrašai, pažymėti lango piktograma" />
 
-Jis iššifruojamas, apibendrinamas, priskiriamas kategorijai ir pažymimas žymomis pagal tas pačias [taisykles](../ai-processing/processing.md#rules) kaip skambutis. Perimto susitikimo iššifruotame tekste kalbėtojas rodomas kaip **Kita programa** ten, kur skambutyje būtų kitos pusės vardas; bibliotekos **Ieškoti** randa ir tai, kas jame pasakyta.
+Jis iššifruojamas, apibendrinamas, priskiriamas kategorijai ir pažymimas žymomis pagal tas pačias [taisykles](../ai-processing/processing.md#rules) kaip skambutis. Perimto susitikimo iššifruotame tekste kalbėtojas rodomas įrašo pavadinimu ten, kur skambutyje būtų kitos pusės vardas; bibliotekos **Ieškoti** randa ir tai, kas jame pasakyta.

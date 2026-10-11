@@ -1,7 +1,7 @@
 ---
 title: Başlangıç
 sidebar_position: 2
-description: "\"Telefonu bilgisayarla birlikte başlatın, penceresi kapatıldığında çalışmaya devam ettirin ve tel:, callto: ile sip: bağlantılarını açın.\""
+description: "Telefonu bilgisayarla birlikte başlatın, penceresi kapatıldığında çalışmaya devam ettirin ve tel:, callto: ile sip: bağlantılarını açın."
 ---
 
 **Ayarlar → Başlangıç**, programın nasıl başlayacağına, penceresini kapatmanın ne yapacağına ve başka bir programda bir telefon numarasına tıkladığınızda ne olacağına karar verir.

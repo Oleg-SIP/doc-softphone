@@ -7,6 +7,7 @@ description: De termen van IP-telefonie en van AI Softphone die in deze document
 | Term | Betekenis |
 | --- | --- |
 | **Account** | Een lijn: een SIP-gebruikersnaam op een centrale of bij een provider. U kunt op meerdere tegelijk aangemeld zijn. Zie [Een SIP-account instellen](/sip-accounts/setup). |
+| **Assistent** | Wat de souffleur moet zijn terwijl hij luistert: ondertitels, een vertaling of suggesties voor wat u kunt zeggen. Zie [Instellingen van de souffleur](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Een knop die een toestel belt en met een lampje laat zien of het vrij is, overgaat of in gesprek is. Zie [Knoppen](/sip-accounts/buttons). |
 | **Wisselgesprek** | Wat de telefoon doet als iemand belt terwijl u al in gesprek bent. Zie [Gespreksinstellingen](/sip-accounts/calls#call-waiting). |
 | **Vastleggen** | Een gesprek opnemen dat in een andere toepassing plaatsvindt, zoals Zoom, Teams of Meet. Zie [Vastleggen](/capture/). |
@@ -19,8 +20,10 @@ description: De termen van IP-telefonie en van AI Softphone die in deze document
 | **IP-centrale** | De telefooncentrale van een kantoor, draaiend op een netwerk; ook softswitch genoemd. |
 | **Taalmodel** | De AI die een transcript leest en erover schrijft. Zie [Verwerking](/ai-processing/processing). |
 | **Prompt** | Wat een taalmodel wordt gevraagd. Zie [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Souffleur** | Een venster dat tijdens een gesprek laat zien wat er gezegd wordt terwijl het gezegd wordt, met suggesties voor een antwoord. Zie [Souffleurvenster](/interface/prompter). |
 | **Herkenner** | De dienst die audio in tekst omzet (spraakherkenning). Zie [Transcriptie](/ai-processing/transcription). |
 | **Signaal** | Iets in een gesprek dat aandacht vraagt, met het bewijs en het tijdstip. Zie [Woordenlijsten](/ai-processing/dictionaries#red-flags). |
+| **Repetitie** | Een opgenomen gesprek in plaats van een telefoongesprek aan de souffleur voeren, om een assistent uit te proberen. Zie [Souffleurvenster](/interface/prompter#rehearsing-on-a-recording). |
 | **Registratie** | De telefoon die de centrale vertelt waar hij is, zodat gesprekken hem bereiken. Een groene stip bij het account betekent dat het geregistreerd is. |
 | **Regel** | Een stap die vanzelf loopt, op volgorde, bij elk gesprek. Zie [Verwerking](/ai-processing/processing#rules). |
 | **SIP** | Het protocol dat telefoons en centrales gebruiken om gesprekken op te zetten. |

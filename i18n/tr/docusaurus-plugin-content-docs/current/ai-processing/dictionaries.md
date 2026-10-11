@@ -40,14 +40,16 @@ Kendi kategorinizi eklemek için **Ekle** düğmesine basın.
 
 Görüşmede kanıtı ve zamanıyla bulunan, dikkat gerektiren şeyler — örneğin *Öfkeli müşteri* ya da *Ayrılma tehlikesi*. Uyarı işaretleri [Kayıtlar penceresinde](../interface/recordings.md) kırmızıyla çizilir ve her birinin bir önem derecesi vardır: düşük, orta ya da yüksek.
 
-## Yanıt kalıpları ve dil {#answer-shapes-and-language}
+## Yönergeler {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Ayarlar → Sözlükler: yanıt kalıpları ve dil talimatları" />
 
-Sekmenin daha aşağısında, yönergelerin bir araya getirildiği talimatlar bulunur. Her yönerge aynı ifadeyi kullanabilsin diye burada tutulurlar ve onları diğer girdiler gibi değiştirebilirsiniz.
+*Her yönergeye, yanıtın biçimi ve yazılacağı dil hakkında eklenenler.* Her yönerge aynı ifadeyi kullanabilsin diye burada tutulurlar ve onları diğer girdiler gibi değiştirebilirsiniz — ya da *kısaca yanıtla* veya *asla fiyat söyleme* gibi kendinizinkileri yazıp herhangi bir yönergede **Ayrıca gönder** altında işaretleyebilirsiniz.
 
 | Ad | Kod | Modele ne söyler |
 | --- | --- | --- |
+| **Düzyazı** | `shape-plain` | JSON, liste ya da başlık olmadan düz metinle yanıtla. |
+| **Maddeler** | `shape-list` | Yapılacak işlerin listesiyle yanıtla, her birinde kim ve ne zaman. |
 | **Etiketler** | `shape-labels` | Yalnızca kendisine verilen listedeki kodları kullanarak, bir kod listesi ve her birinden ne kadar emin olduğuyla JSON olarak yanıt ver. |
 | **Puan** | `shape-score` | Bir puan, gerekçesi ve dayandığı sözlerle yanıt ver. |
 | **Ölçütler** | `shape-rubric` | Genel bir puan ve her ölçüt için bir puanla yanıt ver. |
@@ -58,7 +60,7 @@ Sekmenin daha aşağısında, yönergelerin bir araya getirildiği talimatlar bu
 | **Konuşulduğu gibi, adıyla** | `language-as-spoken-named` | Aynısı, dilin adını belirterek. |
 | **Belirtilen dil** | `language-named` | Belirttiğiniz dilde yaz. |
 
-Listenin sonundaki **Ekle** bir girdi ekler.
+Listenin başındaki **Ekle** bir girdi ekler.
 
 ## Öntanımlılar {#defaults}
 

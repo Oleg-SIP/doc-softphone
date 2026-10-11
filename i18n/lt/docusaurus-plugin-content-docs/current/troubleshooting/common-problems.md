@@ -1,7 +1,7 @@
 ---
 title: Dažnos problemos
 sidebar_position: 2
-description: "\"Ką patikrinti, kai paskyra neužsiregistruoja, nėra garso, skambutis ar susitikimas neįrašomas, nėra iššifruoto teksto arba nuoroda, spartusis klavišas ar API nieko nedaro.\""
+description: "Ką patikrinti, kai paskyra neužsiregistruoja, nėra garso, skambutis ar susitikimas neįrašomas, nėra iššifruoto teksto arba nuoroda, spartusis klavišas ar API nieko nedaro."
 ---
 
 Kiekvienas punktas nurodo nustatymą, kuris tai lemia. Jei atsakymo čia nėra, atverkite [Diagnostika](/troubleshooting/diagnostics): ji rodo, ką telefonas ir stotelė sako vienas kitam.
@@ -44,7 +44,7 @@ Kas nutinka, kai kas nors skambina, kol kalbate, nustatoma skiltyje [Skambučio 
 Žr. [Fiksavimas](/capture/).
 
 - **Leisti fiksuoti garsą** skiltyje **Nustatymai → Fiksavimas** turi būti įjungta.
-- Kai **Automatinis paleidimas** nustatytas į **Paklausti manęs** (numatytoji reikšmė), atsakykite į klausimą, kai jis atsiras; su **Niekada** paspauskite **Įrašyti** patys.
+- Kai **Automatinis paleidimas** nustatytas į **Paklausti manęs** (numatytoji reikšmė), atsakykite į klausimą, kai jis atsiras; su **Niekada** paspauskite įrašymo mygtuką patys.
 - Naudokite **Patikrinti** tame pačiame skirtuke: viršutinis stulpelis turi judėti, kai kalbate, apatinis — kai kas nors groja.
 - Modulis **Fiksavimas** turi būti įjungtas skiltyje [Moduliai](/application/modules).
 

@@ -10,7 +10,9 @@ description: "La liste de contrôle Vue d'ensemble et les onglets de la fenêtre
 
 <Shot name="04_settings_overview" alt="Réglages → Vue d'ensemble : la liste de contrôle de ce qui est configuré" />
 
-La **Vue d’ensemble** est une liste de contrôle de ce qu'il faut pour tirer le meilleur du programme. En haut, elle compte les étapes — sur l'image *10 étapes faites* avec un point vert et *8 étapes restantes* avec un point rouge — et une barre montre la part accomplie. Chaque étape est une ligne avec un point : vert pour une étape faite, rouge pour une étape restante.
+En haut de l'onglet, **Documentation** ouvre ce site.
+
+La **Vue d’ensemble** est une liste de contrôle de ce qu'il faut pour tirer le meilleur du programme. En haut, elle compte les étapes — sur l'image *14 étapes faites* avec un point vert et *6 étapes restantes* avec un point rouge — et une barre montre la part accomplie. Chaque étape est une ligne avec un point : vert pour une étape faite, rouge pour une étape restante.
 
 *Appuyez sur une ligne pour lire à quoi elle sert et ouvrir l’endroit où cela se règle.* La flèche au bout de la ligne la déplie.
 
@@ -20,6 +22,7 @@ La **Vue d’ensemble** est une liste de contrôle de ce qu'il faut pour tirer l
 | **Capture des autres applications** | Activer la capture ; Capturer une conversation ; Donner un nom à une capture |
 | **Transcription** | Ajouter un moteur de reconnaissance ; Transcrire une conversation |
 | **Traitement** | Ajouter un modèle ; Traiter une transcription |
+| **Souffleur** | Autoriser le souffleur ; Démarrer le souffleur |
 | **Enregistrements** | Chercher dans ce qui a été dit ; Exporter un enregistrement ; Exporter un résumé |
 | **Application** | Démarrer avec l’ordinateur ; Le tenir à jour |
 | **Retour** | Envoyer le rapport étendu ; Dites-nous ce que vous en pensez |
@@ -39,8 +42,9 @@ Les étapes sont un guide, pas une obligation : une étape dont vous n'avez pas 
 | | **Enregistrement** | [L'enregistrement des appels : consentement, conférences et durée de conservation des fichiers](../recordings.md) |
 | | **Capture** | [La capture du son des autres applications](../capture/capture.md) : réunions dans Zoom, Teams, Meet et autres |
 | IA | **Transcription** | [Reconnaissances](../ai-processing/transcription.md) |
-| | **Traitement** | [Traitement automatique, limites de dépenses, modèles de langue, invites et règles](../ai-processing/processing.md) |
+| | **Traitement** | [Traitement automatique, modèles de langue, invites, règles et limites de dépenses](../ai-processing/processing.md) |
 | | **Dictionnaires** | [Catégories, étiquettes et signaux](../ai-processing/dictionaries.md) |
+| | **Souffleur** | [Le souffleur en direct : l'interrupteur, la taille du texte, les assistants et ce qu'ils peuvent dépenser](../ai-processing/prompter.md) |
 | Programme | **Apparence** | [Disposition, langue, thème et icônes](../program/appearance.md) |
 | | **Démarrage** | [Comment le programme démarre, se ferme et ouvre les liens d'appel](../program/startup.md) |
 | | **Raccourcis** | [Raccourcis clavier](../program/shortcuts.md) |

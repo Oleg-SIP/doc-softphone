@@ -2,7 +2,7 @@
 title: Capture
 sidebar_label: Capture des autres applications
 sidebar_position: 1
-description: "\"La capture enregistre une conversation tenue dans une autre application — Zoom, Teams, Meet ou toute autre — directement depuis l'ordinateur.\""
+description: "La capture enregistre une conversation tenue dans une autre application — Zoom, Teams, Meet ou toute autre — directement depuis l'ordinateur."
 ---
 
 La **Capture** est la façon dont AI Softphone enregistre une conversation qui se déroule dans un autre programme, comme une réunion dans Zoom, Teams ou Meet. Elle enregistre depuis l'ordinateur lui-même, en gardant l'autre côté et vous sur des canaux séparés, et la même transcription et le même compte rendu vous attendent à la fin, comme pour un appel.
@@ -34,7 +34,7 @@ La partie du programme qui s'en charge est le module **Capture**, *Enregistrer u
 
 ## Démarrer une capture {#starting-a-capture}
 
-Une fois la capture autorisée, le bas de la [fenêtre principale](../interface/main-window.md#capture) affiche son état — **Capture · prêt** — avec un bouton **Enregistrer** à droite. Appuyez sur **Enregistrer** pour démarrer à la main.
+Une fois la capture autorisée, le bas de la [fenêtre principale](../interface/main-window.md#capture) affiche son état — **Capture · en attente d'une conversation** — avec un bouton rond d'enregistrement à droite, *Enregistrer cette conversation*. Appuyez dessus pour démarrer à la main.
 
 ### Démarrage automatique {#automatic-start}
 
@@ -42,7 +42,7 @@ Une fois la capture autorisée, le bas de la [fenêtre principale](../interface/
 
 | Choix | Ce qui se passe |
 | --- | --- |
-| **Jamais** | Une capture ne démarre que lorsque vous appuyez sur **Enregistrer**. |
+| **Jamais** | Une capture ne démarre que lorsque vous appuyez sur le bouton d'enregistrement. |
 | **Me demander** | Le programme demande s'il faut l'enregistrer. Par défaut. |
 | **Toujours** | Le programme commence à enregistrer de lui-même. |
 
@@ -52,7 +52,7 @@ Sous **Applications ayant leur propre réponse**, une application peut recevoir 
 
 ### Avant le début {#before-the-start}
 
-Le curseur **Avant le début** indique combien de secondes de son sont conservées d'avant le démarrage d'un enregistrement, **15 secondes** par défaut. Il est là pour que rien ne se perde pendant que la conversation est remarquée : un enregistrement qui démarre quand vous appuyez sur **Enregistrer**, ou quand vous répondez à la question, commence quand même par les mots qui précédaient.
+Le curseur **Avant le début** indique combien de secondes de son sont conservées d'avant le démarrage d'un enregistrement, **15 secondes** par défaut. Il est là pour que rien ne se perde pendant que la conversation est remarquée : un enregistrement qui démarre quand vous appuyez sur le bouton d'enregistrement, ou quand vous répondez à la question, commence quand même par les mots qui précédaient.
 
 ## Capturer une conversation {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Deux autres réglages choisissent comment le niveau du son est dessiné :
 
 | Réglage | Par défaut | Où |
 | --- | --- | --- |
-| **Image dans la fenêtre principale** | Onde | Les deux canaux pendant une capture. |
-| **Image dans la barre au pied du téléphone** | Deux niveaux | Les deux fines barres sous **Capture · prêt**. |
+| **Dessin dans la fenêtre** | Onde | Les deux canaux pendant une capture. |
+| **Dessin dans la barre du bas** | Deux niveaux | Les deux fines barres sous **Capture · en attente d'une conversation**. |
 
 ### Tester {#testing-it}
 
@@ -86,4 +86,4 @@ Une conversation capturée apparaît dans la [fenêtre des enregistrements](../i
 
 <Shot name="01_recordings" alt="Des réunions capturées dans l'onglet Enregistrements, marquées d'une icône de fenêtre" />
 
-Elle est transcrite, résumée, classée dans une catégorie et étiquetée par les mêmes [règles](../ai-processing/processing.md#rules) qu'un appel. Dans la transcription d'une réunion capturée, l'interlocuteur apparaît comme **Une autre application** là où un appel afficherait le nom du correspondant ; la **Recherche** de la bibliothèque y retrouve aussi ce qui a été dit.
+Elle est transcrite, résumée, classée dans une catégorie et étiquetée par les mêmes [règles](../ai-processing/processing.md#rules) qu'un appel. Dans la transcription d'une réunion capturée, l'interlocuteur apparaît sous le nom de l'enregistrement là où un appel afficherait le nom du correspondant ; la **Recherche** de la bibliothèque y retrouve aussi ce qui a été dit.

@@ -1,7 +1,7 @@
 ---
 title: Typowe problemy
 sidebar_position: 2
-description: "\"Co sprawdzić, gdy konto nie chce się zarejestrować, nie ma dźwięku, połączenie lub spotkanie nie zostaje nagrane, nie ma transkrypcji albo odnośnik, skrót lub API nic nie robi.\""
+description: "Co sprawdzić, gdy konto nie chce się zarejestrować, nie ma dźwięku, połączenie lub spotkanie nie zostaje nagrane, nie ma transkrypcji albo odnośnik, skrót lub API nic nie robi."
 ---
 
 Każdy punkt wskazuje ustawienie, które o tym decyduje. Jeśli odpowiedzi tu nie ma, otwórz [Diagnostykę](/troubleshooting/diagnostics): pokazuje, co telefon i centrala mówią sobie nawzajem.
@@ -44,7 +44,7 @@ To, co się dzieje, gdy ktoś dzwoni, kiedy rozmawiasz, ustawia się w [Połącz
 Zobacz [Przechwytywanie](/capture/).
 
 - **Zezwól na przechwytywanie dźwięku** w **Ustawienia → Przechwytywanie** musi być włączone.
-- Gdy **Automatyczne uruchamianie** jest ustawione na **Pytaj mnie** (domyślnie), odpowiedz na pytanie, gdy się pojawi; przy **Nigdy** naciśnij **Nagraj** sam.
+- Gdy **Automatyczne uruchamianie** jest ustawione na **Pytaj mnie** (domyślnie), odpowiedz na pytanie, gdy się pojawi; przy **Nigdy** naciśnij przycisk nagrywania sam.
 - Użyj **Sprawdź** w tej samej zakładce: górny słupek musi się ruszać, gdy mówisz, dolny — gdy coś gra.
 - Moduł **Przechwytywanie** musi być włączony w [Modułach](/application/modules).
 

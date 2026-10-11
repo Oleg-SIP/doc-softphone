@@ -1,7 +1,7 @@
 ---
 title: Vinduet Opptak
 sidebar_position: 2
-description: "\"Biblioteket med alle samtaler — en telefonsamtale, en importert fil eller et møte fanget fra Zoom, Teams eller Meet: filtre, avspilleren, utskriften du kan spille av fra hvilken som helst linje, og sammendragene.\""
+description: "Biblioteket med alle samtaler — en telefonsamtale, en importert fil eller et møte fanget fra Zoom, Teams eller Meet: filtre, avspilleren, utskriften du kan spille av fra hvilken som helst linje, og sammendragene."
 ---
 
 **Opptak** er der hver samtale bor, uansett hvordan den kom inn: en samtale ringt eller mottatt i telefonen, en lydfil du har importert, eller et møte fanget fra Zoom, Teams, Meet eller et annet program. Alle står i én liste, og hver åpnes på samme måte: avspilleren, utskriften og alt språkmodellen har skrevet om den. Trykk på **Opptak** nederst til venstre i [hovedvinduet](main-window.md) for å åpne det.
@@ -22,7 +22,7 @@ På bildet er de tre øverste radene én av hver: et Zoom-møte, en importert fi
 
 ## Finne en samtale {#finding-a-conversation}
 
-Linjen øverst har fem filtre, et søkefelt og en meny:
+Linjen øverst har fire filtre, et søkefelt og en meny:
 
 | Kontroll | Snevrer listen inn etter |
 | --- | --- |
@@ -30,7 +30,6 @@ Linjen øverst har fem filtre, et søkefelt og en meny:
 | **Periode** | datoen: **I dag**, **I går**, **Siste 7 dager** eller **Velg datoer…** |
 | **Kategori** | kategorien den er sortert under — se [Ordlister](../ai-processing/dictionaries.md) |
 | **Merke** | etikettene og signalene den har |
-| **Gjenkjenner** | [gjenkjenneren](../ai-processing/transcription.md) som laget utskriften |
 | **Søk** | det som ble sagt i den — søket går gjennom utskriftene av alt du har tatt opp |
 
 <Shot name="39_more_menu" alt="Menyen ⋮ i listen: Importer fra filer, Eksporter til CSV, Åpne i en nettleser" />

@@ -2,7 +2,7 @@
 title: Rögzítés
 sidebar_label: Rögzítés más alkalmazásokból
 sidebar_position: 1
-description: "\"A Rögzítés egy másik alkalmazásban — Zoomban, Teamsben, Meetben vagy bármi másban — zajló beszélgetést vesz fel, közvetlenül a számítógépről.\""
+description: "A Rögzítés egy másik alkalmazásban — Zoomban, Teamsben, Meetben vagy bármi másban — zajló beszélgetést vesz fel, közvetlenül a számítógépről."
 ---
 
 A **Rögzítés** az, ahogyan az AI Softphone felvesz egy másik programban zajló beszélgetést, például egy Zoom-, Teams- vagy Meet-megbeszélést. Magáról a számítógépről rögzít, külön csatornán tartva a túloldalt és Önt, a végén pedig ugyanaz a leirat és feldolgozás várja, mint egy hívás esetén.
@@ -34,7 +34,7 @@ A program ezt végző része a **Rögzítés** modul (*Másik alkalmazásban zaj
 
 ## A rögzítés indítása {#starting-a-capture}
 
-Ha a rögzítés engedélyezve van, a [főablak](../interface/main-window.md#capture) alján megjelenik az állapota — **Rögzítés · kész** —, jobbra pedig egy **Felvétel** gomb. A kézi indításhoz nyomja meg a **Felvétel** gombot.
+Ha a rögzítés engedélyezve van, a [főablak](../interface/main-window.md#capture) alján megjelenik az állapota — **Rögzítés · várakozás beszélgetésre** —, jobbra pedig egy kerek felvételgomb, *A beszélgetés rögzítése*. A kézi indításhoz nyomja meg.
 
 ### Automatikus indítás {#automatic-start}
 
@@ -42,7 +42,7 @@ Az **Automatikus indítás** azt dönti el, mi történjen, ha a program beszél
 
 | Választás | Mi történik |
 | --- | --- |
-| **Soha** | A rögzítés csak akkor indul, ha megnyomja a **Felvétel** gombot. |
+| **Soha** | A rögzítés csak akkor indul, ha megnyomja a felvételgombot. |
 | **Kérdezzen rá** | A program megkérdezi, rögzítse-e. Ez az alapérték. |
 | **Mindig** | A program magától elkezdi a felvételt. |
 
@@ -52,7 +52,7 @@ A **Saját válasszal rendelkező alkalmazások** alatt egy alkalmazásnak sajá
 
 ### A kezdés előtt {#before-the-start}
 
-**A kezdés előtt** csúszka azt adja meg, hány másodpercnyi hang maradjon meg a felvétel kezdete előttről, alapértelmezés szerint **15 másodperc**. Arra szolgál, hogy semmi se vesszen el, amíg a program észreveszi a beszélgetést: az a felvétel, amely a **Felvétel** megnyomásakor vagy a kérdésre adott válaszkor indul, így is az azt megelőző szavakkal kezdődik.
+**A kezdés előtt** csúszka azt adja meg, hány másodpercnyi hang maradjon meg a felvétel kezdete előttről, alapértelmezés szerint **15 másodperc**. Arra szolgál, hogy semmi se vesszen el, amíg a program észreveszi a beszélgetést: az a felvétel, amely a felvételgomb megnyomásakor vagy a kérdésre adott válaszkor indul, így is az azt megelőző szavakkal kezdődik.
 
 ## Beszélgetés rögzítése {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Két további beállítás választja ki, hogyan jelenjen meg a hangszint:
 
 | Beállítás | Alapérték | Hol |
 | --- | --- | --- |
-| **Kép a főablakban** | Hullám | A két csatorna a rögzítés ideje alatt. |
-| **Kép a telefon alján lévő sávban** | Két szint | A két vékony sáv a **Rögzítés · kész** alatt. |
+| **Rajz az ablakban** | Hullám | A két csatorna a rögzítés ideje alatt. |
+| **Rajz az alsó sávban** | Két szint | A két vékony sáv a **Rögzítés · várakozás beszélgetésre** alatt. |
 
 ### Kipróbálás {#testing-it}
 
@@ -78,12 +78,12 @@ A **Próba** alatt a lapon két sáv van: **Ön** és **A másik oldal**. *A fel
 
 ## Elnevezés {#giving-it-a-name}
 
-A felvétel neve melletti ceruzával a felvételt menet közben átnevezheti. Az el nem nevezett felvétel **Másik alkalmazás** néven szerepel a listában.
+A felvétel neve melletti ceruzával a felvételt menet közben átnevezheti. Az el nem nevezett felvétel **Egy másik alkalmazás** néven szerepel a listában.
 
 ## Hová kerül a felvétel {#where-the-recording-goes}
 
-A rögzített beszélgetés ugyanúgy megjelenik a [Felvételek ablakban](../interface/recordings.md), mint bármely más, saját ikonnal — kagyló helyett ablakkal —, és az Ön által adott címmel vagy a **Másik alkalmazás** felirattal.
+A rögzített beszélgetés ugyanúgy megjelenik a [Felvételek ablakban](../interface/recordings.md), mint bármely más, saját ikonnal — kagyló helyett ablakkal —, és az Ön által adott címmel vagy az **Egy másik alkalmazás** felirattal.
 
 <Shot name="01_recordings" alt="Rögzített megbeszélések a Felvételek lapon, ablak ikonnal jelölve" />
 
-Ugyanazok a [szabályok](../ai-processing/processing.md#rules) készítenek róla leiratot, foglalják össze, sorolják kategóriába és címkézik, mint egy hívást. Egy rögzített megbeszélés leiratában a beszélő **Másik alkalmazás** néven jelenik meg ott, ahol egy hívásnál a másik fél neve állna; a könyvtár **Keresés** funkciója az ebben elhangzottakat is megtalálja.
+Ugyanazok a [szabályok](../ai-processing/processing.md#rules) készítenek róla leiratot, foglalják össze, sorolják kategóriába és címkézik, mint egy hívást. Egy rögzített megbeszélés leiratában a beszélő a felvétel nevén jelenik meg ott, ahol egy hívásnál a másik fél neve állna; a könyvtár **Keresés** funkciója az ebben elhangzottakat is megtalálja.

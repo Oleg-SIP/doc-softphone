@@ -7,6 +7,7 @@ description: Begreppen inom IP-telefoni och AI Softphone som används i den här
 | Begrepp | Betydelse |
 | --- | --- |
 | **Konto** | En linje: ett SIP-användarnamn på en växel eller hos en operatör. Du kan vara inloggad på flera. Se [Konfigurera ett SIP-konto](/sip-accounts/setup). |
+| **Hjälpare** | Det som sufflören ska vara medan den lyssnar: undertexter, en översättning eller förslag på vad du kan säga. Se [Inställningar för sufflören](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | En knapp som ringer ett anknytningsnummer och med en lampa visar om det är ledigt, ringer eller är upptaget. Se [Knappar](/sip-accounts/buttons). |
 | **Samtal väntar** | Vad telefonen gör när någon ringer medan du redan är i ett samtal. Se [Samtalsinställningar](/sip-accounts/calls#call-waiting). |
 | **Fångst** | Inspelning av ett samtal som hålls i ett annat program, som Zoom, Teams eller Meet. Se [Fångst](/capture/). |
@@ -19,8 +20,10 @@ description: Begreppen inom IP-telefoni och AI Softphone som används i den här
 | **IP-växel** | Ett kontors telefonväxel, som körs i ett nätverk; kallas också softswitch. |
 | **Språkmodell** | Den AI som läser en utskrift och skriver om den. Se [Bearbetning](/ai-processing/processing). |
 | **Prompt** | Det en språkmodell ombeds göra. Se [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Sufflör** | Ett fönster som visar vad som sägs under ett samtal medan det sägs, och förslag på vad du kan svara. Se [Sufflörens fönster](/interface/prompter). |
 | **Igenkännare** | Tjänsten som gör ljud till text (taligenkänning). Se [Transkription](/ai-processing/transcription). |
 | **Signal** | Något i ett samtal som kräver uppmärksamhet, med beviset och tidpunkten. Se [Ordlistor](/ai-processing/dictionaries#red-flags). |
+| **Repetition** | Att spela upp ett inspelat samtal för sufflören i stället för ett samtal, för att prova en hjälpare. Se [Sufflörens fönster](/interface/prompter#rehearsing-on-a-recording). |
 | **Registrering** | Att telefonen talar om för växeln var den finns, så att samtal når fram. En grön prick vid kontot betyder att det är registrerat. |
 | **Regel** | Ett steg som körs av sig självt, i ordning, på varje samtal. Se [Bearbetning](/ai-processing/processing#rules). |
 | **SIP** | Protokollet som telefoner och växlar använder för att koppla upp samtal. |

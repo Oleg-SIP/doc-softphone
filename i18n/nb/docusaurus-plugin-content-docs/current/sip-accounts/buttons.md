@@ -1,7 +1,7 @@
 ---
 title: Knapper
 sidebar_position: 4
-description: "\"BLF-knapper: knapper med ett trykk som ringer et internnummer på IP-sentralen din og viser om det er ledig, ringer eller er opptatt.\""
+description: "BLF-knapper: knapper med ett trykk som ringer et internnummer på IP-sentralen din og viser om det er ledig, ringer eller er opptatt."
 ---
 
 Knapper er softphonens **BLF**-taster (Busy Lamp Field), den samme funksjonen en bordtelefon på en IP-sentral har. En knapp ringer et internnummer med ett trykk. En knapp som følger med på linjen sin, viser også en lampe: telefonen spør sentralen om det internnummeret og viser om det er ledig, ringer eller er opptatt, slik en sentralbordkonsoll eller de programmerbare tastene på en bordtelefon gjør.

@@ -2,7 +2,7 @@
 title: Hõivamine
 sidebar_label: Hõive teistest rakendustest
 sidebar_position: 1
-description: "\"Hõivamine salvestab teises rakenduses — Zoomis, Teamsis, Meetis või mõnes muus — peetud vestluse otse arvutist.\""
+description: "Hõivamine salvestab teises rakenduses — Zoomis, Teamsis, Meetis või mõnes muus — peetud vestluse otse arvutist."
 ---
 
 **Hõivamine** on viis, kuidas AI Softphone salvestab vestluse, mis toimub mõnes teises programmis, näiteks koosoleku Zoomis, Teamsis või Meetis. See salvestab arvutist endast, hoides teise poole ja teid eraldi kanalitel, ning lõpus ootavad sama ülestähendus ja kokkuvõte nagu kõne puhul.
@@ -34,7 +34,7 @@ Seda tegev programmi osa on moodul **Hõivamine**, *Teises rakenduses toimuva ve
 
 ## Hõivamise alustamine {#starting-a-capture}
 
-Kui hõivamine on lubatud, näitab [peaakna](../interface/main-window.md#capture) allosa selle olekut — **Hõivamine · valmis** — ja paremal on nupp **Salvesta**. Vajutage **Salvesta**, et alustada käsitsi.
+Kui hõivamine on lubatud, näitab [peaakna](../interface/main-window.md#capture) allosa selle olekut — **Hõivamine · ootan vestlust** — ja paremal on ümmargune salvestusnupp, *Salvesta see vestlus*. Vajutage seda, et alustada käsitsi.
 
 ### Automaatne käivitamine {#automatic-start}
 
@@ -42,7 +42,7 @@ Kui hõivamine on lubatud, näitab [peaakna](../interface/main-window.md#capture
 
 | Valik | Mis juhtub |
 | --- | --- |
-| **Mitte kunagi** | Hõivamine algab ainult siis, kui vajutate **Salvesta**. |
+| **Mitte kunagi** | Hõivamine algab ainult siis, kui vajutate salvestusnuppu. |
 | **Küsi minult** | Programm küsib, kas seda salvestada. Vaikimisi. |
 | **Alati** | Programm hakkab ise salvestama. |
 
@@ -52,7 +52,7 @@ Jaotises **Oma vastusega rakendused** saab rakendusele anda oma vastuse — näi
 
 ### Enne algust {#before-the-start}
 
-Liugur **Enne algust** määrab, mitu sekundit heli enne salvestamise algust alles hoitakse, vaikimisi **15 sekundit**. See on olemas selleks, et vestluse märkamise ajal midagi ei kaoks: salvestis, mis algab, kui vajutate **Salvesta** või vastate küsimusele, algab ikkagi sõnadega, mis tulid enne.
+Liugur **Enne algust** määrab, mitu sekundit heli enne salvestamise algust alles hoitakse, vaikimisi **15 sekundit**. See on olemas selleks, et vestluse märkamise ajal midagi ei kaoks: salvestis, mis algab, kui vajutate salvestusnuppu või vastate küsimusele, algab ikkagi sõnadega, mis tulid enne.
 
 ## Vestluse hõivamine {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Kaks muud seadet valivad, kuidas helitaset joonistatakse:
 
 | Seade | Vaikimisi | Kus |
 | --- | --- | --- |
-| **Pilt peaaknas** | Laine | Kaks kanalit hõivamise ajal. |
-| **Pilt telefoni jalamil oleval ribal** | Kaks taset | Kaks peenikest tulpa oleku **Hõivamine · valmis** all. |
+| **Joonis aknas** | Laine | Kaks kanalit hõivamise ajal. |
+| **Joonis alumisel ribal** | Kaks taset | Kaks peenikest tulpa oleku **Hõivamine · ootan vestlust** all. |
 
 ### Proovimine {#testing-it}
 
@@ -86,4 +86,4 @@ Hõivatud vestlus ilmub [salvestiste aknasse](../interface/recordings.md) nagu i
 
 <Shot name="01_recordings" alt="Hõivatud koosolekud vahekaardil Salvestised, tähistatud akna ikooniga" />
 
-See kirjutatakse üles, võetakse kokku, liigitatakse kategooriasse ja märgistatakse samade [reeglitega](../ai-processing/processing.md#rules) nagu kõne. Hõivatud koosoleku ülestähenduses näidatakse kõnelejat nimega **Teine rakendus**, kus kõne puhul oleks teise osapoole nimi; ka teegi **Otsi** leiab selles öeldu.
+See kirjutatakse üles, võetakse kokku, liigitatakse kategooriasse ja märgistatakse samade [reeglitega](../ai-processing/processing.md#rules) nagu kõne. Hõivatud koosoleku ülestähenduses näidatakse kõnelejat salvestise nimega, kus kõne puhul oleks teise osapoole nimi; ka teegi **Otsi** leiab selles öeldu.

@@ -7,6 +7,7 @@ description: Šioje dokumentacijoje vartojami IP telefonijos ir AI Softphone ter
 | Terminas | Reikšmė |
 | --- | --- |
 | **Paskyra** | Linija: SIP naudotojo vardas stotelėje ar pas paslaugų teikėją. Galite būti prisijungę prie kelių. Žr. [SIP paskyros nustatymas](/sip-accounts/setup). |
+| **Pagalbininkas** | Tai, kuo suflerius turi būti, kol klausosi: subtitrai, vertimas ar pasiūlymai, ką sakyti. Žr. [Suflerio nustatymai](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Mygtukas, kuris skambina vidiniu numeriu ir lempute rodo, ar jis laisvas, skamba ar užimtas. Žr. [Mygtukai](/sip-accounts/buttons). |
 | **Skambučio laukimas** | Ką daro telefonas, kai kas nors skambina, kol jau kalbate. Žr. [Skambučių nustatymai](/sip-accounts/calls#call-waiting). |
 | **Fiksavimas** | Kitoje programoje, pvz., Zoom, Teams ar Meet, vykstančio pokalbio įrašymas. Žr. [Fiksavimas](/capture/). |
@@ -19,8 +20,10 @@ description: Šioje dokumentacijoje vartojami IP telefonijos ir AI Softphone ter
 | **IP stotelė** | Biuro telefono stotis, veikianti tinkle; dar vadinama programiniu komutatoriumi (softswitch). |
 | **Kalbos modelis** | Dirbtinis intelektas, kuris skaito iššifruotą tekstą ir rašo apie jį. Žr. [Apdorojimas](/ai-processing/processing). |
 | **Nurodymas** | Tai, ko prašoma kalbos modelio (angl. prompt). Žr. [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Suflerius** | Langas, kuris skambučio metu rodo, kas sakoma, tuo metu, kai sakoma, ir pasiūlymus, ką atsakyti. Žr. [Suflerio langas](/interface/prompter). |
 | **Atpažintuvas** | Paslauga, kuri garsą paverčia tekstu (kalbos atpažinimas). Žr. [Užrašas](/ai-processing/transcription). |
 | **Įspėjamasis signalas** | Kas nors pokalbyje, kam reikia dėmesio, su įrodymu ir laiku. Žr. [Žodynai](/ai-processing/dictionaries#red-flags). |
+| **Repeticija** | Įrašyto pokalbio grojimas sufleriui vietoje skambučio, norint išbandyti pagalbininką. Žr. [Suflerio langas](/interface/prompter#rehearsing-on-a-recording). |
 | **Registracija** | Telefonas praneša stotelei, kur jis yra, kad skambučiai jį pasiektų. Žalias taškas prie paskyros reiškia, kad ji užregistruota. |
 | **Taisyklė** | Žingsnis, kuris vykdomas savaime, eilės tvarka, kiekvienam pokalbiui. Žr. [Apdorojimas](/ai-processing/processing#rules). |
 | **SIP** | Protokolas, kurį telefonai ir stotelės naudoja skambučiams sudaryti. |

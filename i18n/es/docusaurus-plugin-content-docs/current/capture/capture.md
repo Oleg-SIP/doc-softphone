@@ -2,7 +2,7 @@
 title: Captura
 sidebar_label: Captura de otras aplicaciones
 sidebar_position: 1
-description: "\"La captura graba una conversación celebrada en otra aplicación — Zoom, Teams, Meet o cualquier otra — directamente desde el ordenador.\""
+description: "La captura graba una conversación celebrada en otra aplicación — Zoom, Teams, Meet o cualquier otra — directamente desde el ordenador."
 ---
 
 La **Captura** es la forma en que AI Softphone graba una conversación que tiene lugar en otro programa, como una reunión en Zoom, Teams o Meet. Graba desde el propio ordenador, manteniendo al otro lado y a usted en canales separados, y al final le esperan la misma transcripción y la misma redacción que en una llamada.
@@ -34,7 +34,7 @@ La parte del programa que hace esto es el módulo **Captura**, *Grabar una conve
 
 ## Iniciar una captura {#starting-a-capture}
 
-Una vez permitida la captura, la parte inferior de la [ventana principal](../interface/main-window.md#capture) muestra su estado — **Captura · listo** — con un botón **Grabar** a la derecha. Pulse **Grabar** para empezar a mano.
+Una vez permitida la captura, la parte inferior de la [ventana principal](../interface/main-window.md#capture) muestra su estado — **Captura · esperando una conversación** — con un botón redondo de grabar a la derecha, *Grabar esta conversación*. Púlselo para empezar a mano.
 
 ### Inicio automático {#automatic-start}
 
@@ -42,7 +42,7 @@ Una vez permitida la captura, la parte inferior de la [ventana principal](../int
 
 | Opción | Qué ocurre |
 | --- | --- |
-| **Nunca** | Una captura solo empieza cuando pulsa **Grabar**. |
+| **Nunca** | Una captura solo empieza cuando pulsa el botón de grabar. |
 | **Preguntarme** | El programa pregunta si debe grabarla. Por defecto. |
 | **Siempre** | El programa empieza a grabar por su cuenta. |
 
@@ -52,7 +52,7 @@ En **Aplicaciones con respuesta propia** se puede dar a una aplicación una resp
 
 ### Antes del inicio {#before-the-start}
 
-El deslizador **Antes del inicio** indica cuántos segundos de sonido se guardan de antes de que empiece una grabación, **15 segundos** por defecto. Está ahí para que no se pierda nada mientras se detecta la conversación: una grabación que empieza cuando pulsa **Grabar**, o cuando responde a la pregunta, sigue empezando con las palabras que vinieron antes.
+El deslizador **Antes del inicio** indica cuántos segundos de sonido se guardan de antes de que empiece una grabación, **15 segundos** por defecto. Está ahí para que no se pierda nada mientras se detecta la conversación: una grabación que empieza cuando pulsa el botón de grabar, o cuando responde a la pregunta, sigue empezando con las palabras que vinieron antes.
 
 ## Capturar una conversación {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Otros dos ajustes eligen cómo se dibuja el nivel del sonido:
 
 | Ajuste | Por defecto | Dónde |
 | --- | --- | --- |
-| **Imagen en la ventana principal** | Onda | Los dos canales mientras hay una captura en curso. |
-| **Imagen en la barra del pie del teléfono** | Dos niveles | Las dos barras finas bajo **Captura · listo**. |
+| **Dibujo en la ventana** | Onda | Los dos canales mientras hay una captura en curso. |
+| **Dibujo en la barra inferior** | Dos niveles | Las dos barras finas bajo **Captura · esperando una conversación**. |
 
 ### Probarlo {#testing-it}
 
@@ -86,4 +86,4 @@ Una conversación capturada aparece en la [ventana de grabaciones](../interface/
 
 <Shot name="01_recordings" alt="Reuniones capturadas en la pestaña Grabaciones, marcadas con un icono de ventana" />
 
-Se transcribe, se resume, se clasifica en una categoría y se etiqueta con las mismas [reglas](../ai-processing/processing.md#rules) que una llamada. En la transcripción de una reunión capturada, quien habla aparece como **Otra aplicación** donde una llamada mostraría el nombre del interlocutor; la **Búsqueda** de la biblioteca también encuentra lo que se dijo en ella.
+Se transcribe, se resume, se clasifica en una categoría y se etiqueta con las mismas [reglas](../ai-processing/processing.md#rules) que una llamada. En la transcripción de una reunión capturada, quien habla aparece con el nombre de la grabación donde una llamada mostraría el nombre del interlocutor; la **Búsqueda** de la biblioteca también encuentra lo que se dijo en ella.

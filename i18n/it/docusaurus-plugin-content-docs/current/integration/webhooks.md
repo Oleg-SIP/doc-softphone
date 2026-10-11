@@ -1,7 +1,7 @@
 ---
 title: Webhook
 sidebar_position: 1
-description: "\"Far inviare al telefono una richiesta al suo CRM o a un altro sistema quando una chiamata inizia, cambia o finisce — con le richieste esatte di una chiamata in arrivo e di una in uscita.\""
+description: "Far inviare al telefono una richiesta al suo CRM o a un altro sistema quando una chiamata inizia, cambia o finisce — con le richieste esatte di una chiamata in arrivo e di una in uscita."
 ---
 
 Un webhook è una richiesta che il telefono invia a un indirizzo a sua scelta ogni volta che a una chiamata succede qualcosa. È così che un CRM può aprire la scheda del cliente prima del secondo squillo, registrare una chiamata quando finisce o accendere una spia su un pannello a parete. Un webhook non richiede regole del firewall in ingresso: è il telefono a chiamare lei. Poiché le richieste partono dalla postazione di lavoro, l'indirizzo deve solo essere raggiungibile da quel computer — un indirizzo interno `http://crm.local/calls` funziona come un indirizzo HTTPS pubblico.

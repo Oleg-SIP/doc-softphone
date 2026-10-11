@@ -1,7 +1,7 @@
 ---
 title: Cửa sổ Bản ghi
 sidebar_position: 2
-description: "\"Thư viện mọi cuộc trò chuyện — cuộc gọi, tệp đã nhập hay cuộc họp thu từ Zoom, Teams, Meet: bộ lọc, trình phát, bản chép lời có thể phát từ bất kỳ dòng nào, và các kết quả xử lý.\""
+description: "Thư viện mọi cuộc trò chuyện — cuộc gọi, tệp đã nhập hay cuộc họp thu từ Zoom, Teams, Meet: bộ lọc, trình phát, bản chép lời có thể phát từ bất kỳ dòng nào, và các kết quả xử lý."
 ---
 
 **Bản ghi** là nơi lưu mọi cuộc trò chuyện, dù nó đến bằng cách nào: một cuộc gọi thực hiện hoặc nhận trong điện thoại, một tệp âm thanh bạn đã nhập, hay một cuộc họp thu từ Zoom, Teams, Meet hoặc bất kỳ ứng dụng nào khác. Tất cả nằm chung trong một danh sách, và mỗi cuộc trò chuyện đều mở ra theo cùng một cách: trình phát, bản chép lời và mọi thứ mà mô hình ngôn ngữ đã viết về nó. Nhấn **Bản ghi** ở phía dưới bên trái của [cửa sổ chính](main-window.md) để mở.
@@ -22,7 +22,7 @@ Trong hình, ba hàng trên cùng mỗi loại một hàng: một cuộc họp Z
 
 ## Tìm một cuộc trò chuyện {#finding-a-conversation}
 
-Thanh ở phía trên có năm bộ lọc, một ô tìm kiếm và một menu:
+Thanh ở phía trên có bốn bộ lọc, một ô tìm kiếm và một menu:
 
 | Điều khiển | Thu hẹp danh sách theo |
 | --- | --- |
@@ -30,7 +30,6 @@ Thanh ở phía trên có năm bộ lọc, một ô tìm kiếm và một menu:
 | **Khoảng thời gian** | ngày: **Hôm nay**, **Hôm qua**, **7 ngày qua**, hoặc **Chọn ngày…** |
 | **Hạng mục** | hạng mục mà cuộc trò chuyện được xếp vào — xem [Từ điển](../ai-processing/dictionaries.md) |
 | **Dấu** | các nhãn và dấu hiệu cảnh báo mà cuộc trò chuyện mang |
-| **Bộ nhận dạng** | [bộ nhận dạng](../ai-processing/transcription.md) đã tạo bản chép lời của nó |
 | **Tìm** | những gì đã được nói trong đó — việc tìm kiếm đi qua bản chép lời của mọi thứ bạn đã ghi |
 
 <Shot name="39_more_menu" alt="Menu ⋮ của danh sách: Nhập từ tệp, Xuất ra CSV, Mở trong trình duyệt" />

@@ -28,7 +28,9 @@ De tweede kolom is wat de lijst onder de naam van de prompt toont: wat hij schri
 | **Verkoopkwaliteit** | Criteria | Beoordeelt het gesprek aan de hand van verkoopcriteria die u kunt aanpassen. |
 | **Kwaliteit van de ondersteuning** | Criteria | Beoordeelt hoe goed het probleem werd begrepen en afgehandeld. |
 
-De vormen zijn vaste opbouwen van een antwoord, en daardoor kan het programma het bewaren en er later in zoeken: **Labels** zijn codes uit een van uw lijsten, **Signalen** zijn codes met een ernst, **Criteria** is een cijfer met een reden en een cijfer per criterium, **Antwoord** is een antwoord met de woorden waarop het rust. De instructies die een model de vorm vertellen, staan bij [Woordenlijsten](dictionaries.md#answer-shapes-and-language).
+De vormen zijn vaste opbouwen van een antwoord, en daardoor kan het programma het bewaren en er later in zoeken: **Labels** zijn codes uit een van uw lijsten, **Signalen** zijn codes met een ernst, **Criteria** is een cijfer met een reden en een cijfer per criterium, **Antwoord** is een antwoord met de woorden waarop het rust. De instructies die een model de vorm vertellen, staan bij [Woordenlijsten](dictionaries.md#instructions).
+
+Ook de assistenten van de [souffleur](../interface/prompter.md) zijn prompts, die op elk antwoord draaien terwijl een gesprek loopt in plaats van op een afgerond gesprek. Ze staan in een eigen lijst, onder [Assistenten](prompter.md#assistants) in **Instellingen → Souffleur**.
 
 Gesprekken gevoerd in AI Softphone, vergaderingen die vanaf de computer zijn [vastgelegd](/capture/) en geïmporteerde opnames gaan allemaal door dezelfde prompts zodra ze een transcript hebben.
 
@@ -41,6 +43,6 @@ Actiepunten leggen vast wat er is afgesproken — ze sturen geen berichten, plan
 - Kies het model voor elke prompt — op uw eigen machine of in de cloud.
 - Stel de volgorde in waarin prompts lopen, zet ze aan en uit en maak ze voorwaardelijk — dat doet u met de [regels](processing.md#rules): een verkoopbeoordeling loopt bijvoorbeeld alleen bij gesprekken die als **Verkoop** zijn geordend.
 - Houd uw eigen categorieën, labels en signalen bij in [Woordenlijsten](dictionaries.md).
-- Begrens de kosten met de [maandgrenzen](processing.md#limits).
+- Begrens de kosten met de [maandgrenzen](processing.md#spending).
 
 De oorspronkelijke prompts en regels zijn te herstellen met **Standaardwaarden herstellen** onder **Standaardwaarden** bij [Instellingen → Verwerking](processing.md#defaults).

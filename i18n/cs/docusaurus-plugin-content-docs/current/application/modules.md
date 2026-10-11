@@ -25,6 +25,7 @@ Každý modul má zaškrtávací políčko, název, řádek o tom, co dělá, a 
 | **Integrace** | Místní API a webhooky: [Integrace](/integration/rest-api). |
 | **Úložiště médií** | Knihovna rozhovorů a jak dlouho se uchovávají: [Nahrávky](/interface/recordings). |
 | **Zpracování** | Pokyny a pravidla, která je spouštějí: [Zpracování](/ai-processing/processing). |
+| **Našeptávač** | Poslouchá rozhovor v jeho průběhu a napovídá: [Okno našeptávače](/interface/prompter). |
 | **Nahrávání** | Nahrávání hovorů a oznámení druhé straně: [Nahrávky](/recordings). |
 | **Telefon** | SIP, účty, hovory, klávesnice a historie hovorů. |
 | **Přepis** | Rozpoznávače, fronta, která je pohání, a přepisy, které vytvářejí: [Přepis](/ai-processing/transcription). |

@@ -1,7 +1,7 @@
 ---
 title: Pemrosesan
 sidebar_position: 2
-description: Pemrosesan otomatis percakapan, batas pengeluaran bulanan, model bahasa, petunjuk, dan aturan yang menjalankannya.
+description: Pemrosesan otomatis percakapan, model bahasa, petunjuk, aturan yang menjalankannya, dan batas pengeluaran bulanan.
 ---
 
 **Pengaturan → Pemrosesan** menentukan apa yang terjadi pada percakapan setelah direkam, model mana yang mengerjakannya, dan berapa biaya yang boleh dikeluarkan.
@@ -13,20 +13,9 @@ description: Pemrosesan otomatis percakapan, batas pengeluaran bulanan, model ba
 - **Mati:** tidak terjadi apa-apa sampai Anda memintanya di [jendela Rekaman](../interface/recordings.md).
 - **Menyala:** [aturan](#rules) di bawah berjalan dengan sendirinya. Inilah yang mengubah percakapan menjadi ringkasan, kategori, dan semua yang lain tanpa ada yang menekan apa pun. Model di cloud mengenakan biaya untuk setiap langkah tersebut.
 
-Di bawah kotak centang, program menampilkan berapa yang telah dihabiskan bulan ini dan untuk berapa permintaan, misalnya *Bulan ini: 40.492 token, dari 84 permintaan, tanpa biaya.*
-
-## Batas {#limits}
-
-| Kolom | Arti |
-| --- | --- |
-| **Batas uang, per bulan** | Biaya maksimum model dalam sebulan. |
-| **Batas token, per bulan** | Jumlah token maksimum yang boleh dipakai model dalam sebulan. |
-
-Ada dua batas karena sebulan dapat dihitung dengan dua satuan. Keduanya kosong sampai Anda mengisinya. Ketika salah satunya tercapai, aturan otomatis berhenti sampai bulan berganti. **Permintaan yang Anda ajukan sendiri tidak pernah dihentikan.**
-
 ## Model bahasa {#language-models}
 
-Model yang membaca transkrip dan menulis tentangnya. Tekan **Tambah** untuk menambahkannya. Masing-masing dicantumkan dengan namanya dan, di bawahnya, pengenal model serta alamat layanannya, misalnya `qwen3-32b · http://llm.local:8000/v1`. Yang ditandai **Bawaan** adalah yang digunakan secara bawaan. Sebuah tombol pada formulir model memeriksa bahwa layanan benar-benar menjawab sebelum Anda mengandalkannya.
+Model yang membaca transkrip dan menulis tentangnya. Tekan **Tambah** untuk menambahkannya. Masing-masing dicantumkan dengan namanya dan, di bawahnya, pengenal model serta alamat layanannya, misalnya `qwen3-32b · http://localhost:8000/v1`. Yang ditandai **bawaan** — pada gambar **QWEN**, model di komputer ini — adalah yang digunakan secara bawaan, oleh petunjuk dan oleh asisten [pembisik](prompter.md) yang tidak menyebut model sendiri. **Uji** pada formulir model memeriksa bahwa layanan benar-benar menjawab sebelum Anda mengandalkannya.
 
 - Model **di komputer Anda sendiri** menjaga setiap percakapan tetap di dalam gedung dan tidak memakan biaya untuk dijalankan.
 - Model di cloud — OpenAI, Claude, Mistral, DeepSeek, Groq, dan lainnya — dikenai biaya per penggunaan. Program menampilkan harga setiap panggilan dalam token dan dalam uang.
@@ -35,7 +24,7 @@ Model yang membaca transkrip dan menulis tentangnya. Tekan **Tambah** untuk mena
 
 <Shot name="12b_settings_processing_prompts" alt="Pengaturan → Pemrosesan: petunjuk" />
 
-*Apa yang diminta dari model. Setiap petunjuk datang bersama program dan setiap petunjuk boleh Anda ubah — dan Anda kembalikan.* Masing-masing dicantumkan dengan namanya dan, di bawahnya, apa yang ditulisnya dan dalam bentuk apa. Bentuk — **Jawaban**, **Butir**, **Label**, **JSON**, **Prosa**, **Tanda**, atau **Kriteria** — menentukan bagaimana jawaban disimpan dan ditampilkan. Petunjuk dijelaskan di [Personal Prompt Studio](prompt-studio.md). **Tambah** membuat petunjuk Anda sendiri.
+*Apa yang diminta dari model. Setiap petunjuk datang bersama program dan setiap petunjuk boleh Anda ubah — dan Anda kembalikan.* Masing-masing dicantumkan dengan namanya dan, di bawahnya, apa yang ditulisnya dan dalam bentuk apa; **▲** dan **▼** mengubah urutan daftar. Bentuk — **Jawaban**, **Butir**, **Label**, **JSON**, **Prosa**, **Tanda**, atau **Kriteria** — menentukan bagaimana jawaban disimpan dan ditampilkan. Petunjuk dijelaskan di [Personal Prompt Studio](prompt-studio.md). **Tambah** membuat petunjuk Anda sendiri.
 
 ## Aturan {#rules}
 
@@ -55,6 +44,19 @@ Model yang membaca transkrip dan menulis tentangnya. Tekan **Tambah** untuk mena
 | **Nilai, bila itu dukungan** | Meminta model: **Kualitas dukungan**. | hanya jika kategorinya **Dukungan** |
 
 Urutan itu penting: dua aturan terakhir memerlukan kategori yang telah ditetapkan oleh aturan sebelumnya. **Tambah** membuat aturan Anda sendiri.
+
+## Pengeluaran {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Pengaturan → Pemrosesan: pengeluaran bulan ini dan kedua batas" />
+
+Di bawah **Pengeluaran** program menampilkan berapa yang telah dihabiskan bulan ini dan untuk berapa permintaan — pada gambar *Bulan ini belum ada yang diproses*, dan misalnya *Bulan ini: 40.492 token, dari 84 permintaan, tanpa biaya* setelah ada yang diproses.
+
+| Kolom | Arti |
+| --- | --- |
+| **Batas uang, per bulan** | Biaya maksimum model dalam sebulan. |
+| **Batas token, per bulan** | Jumlah token maksimum yang boleh dipakai model dalam sebulan. |
+
+Ada dua batas karena sebulan dapat dihitung dengan dua satuan. Keduanya kosong sampai Anda mengisinya. Ketika salah satunya tercapai, aturan otomatis berhenti sampai bulan berganti. **Permintaan yang Anda ajukan sendiri tidak pernah dihentikan.** [Pembisik](prompter.md#spending) punya plafon sendiri, agar ringkasan sebulan tidak bisa membungkamnya di tengah percakapan.
 
 ## Bawaan {#defaults}
 

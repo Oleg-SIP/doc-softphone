@@ -25,8 +25,9 @@ Igal moodulil on märkeruut, nimi, rida selle kohta, mida see teeb, ja paremal s
 | **Sidumine** | Kohalik API ja veebikonksud: [Sidumine](/integration/rest-api). |
 | **Meediahoidla** | Vestluste teek ja nende säilitamise aeg: [Salvestised](/interface/recordings). |
 | **Töötlemine** | Juhised ja neid käivitavad reeglid: [Töötlemine](/ai-processing/processing). |
+| **Etteütleja** | Kuulab vestlust selle toimumise ajal ja soovitab: [Etteütleja aken](/interface/prompter). |
 | **Salvestamine** | Kõnede salvestamine ja sellest teisele osapoolele teatamine: [Salvestised](/recordings). |
-| **Telefonia** | SIP, kontod, kõned, valija ja kõnede ajalugu. |
+| **Telefon** | SIP, kontod, kõned, valija ja kõnede ajalugu. |
 | **Ülestähendus** | Tuvastajad, neid käitav järjekord ja nende tehtud ülestähendused: [Ülestähendus](/ai-processing/transcription). |
 
 Lülitage moodul välja ja see on kadunud: pole selle seadeid, menüükirjet ega midagi sellest töötamas. Lülitage välja moodul, mida te ei vaja — näiteks **Sidumine** arvutis, kus miski muu telefoniga ei suhtle —, või jätke alles telefon, mis on ainult telefon, kui töökoht muud ei vaja. Pakett on mõlemal juhul sama: pole midagi osta ega midagi avada.

@@ -16,7 +16,7 @@ De haut en bas, la partie gauche contient :
 - le clavier et la touche d'appel ;
 - les pastilles des comptes ;
 - les boutons qui surveillent d'autres postes ;
-- les quatre destinations : **Enregistrements**, **Contacts**, **Journal** et **Réglages**.
+- les destinations : **Enregistrements**, **Contacts**, **Journal**, **Souffleur** et **Réglages**.
 
 ### Le numéroteur {#the-dialler}
 
@@ -36,9 +36,9 @@ Sous le clavier se trouve une pastille pour chaque [compte](../sip-accounts/setu
 
 Sous les pastilles se trouvent les [boutons](../sip-accounts/buttons.md) que vous avez créés pour des collègues et des lignes, chacun avec un voyant — **Dubois** et **Entrepôt** sur les images. Appuyez sur l'un d'eux pour composer son numéro.
 
-### Enregistrements, Contacts, Journal, Réglages {#recordings-contacts-history-settings}
+### Enregistrements, Contacts, Journal, Souffleur, Réglages {#recordings-contacts-history-prompter-settings}
 
-Ces quatre entrées en bas ouvrent chacune un onglet à droite, côte à côte : [Enregistrements](../interface/recordings.md), [Contacts et journal](contacts-history.md) et [Réglages](settings-overview.md). Les onglets ouverts restent dans la rangée en haut de la partie droite.
+Ces entrées en bas ouvrent chacune un onglet à droite, côte à côte : [Enregistrements](../interface/recordings.md), [Contacts et journal](contacts-history.md), le [Souffleur](prompter.md) et [Réglages](settings-overview.md). **Souffleur** n'apparaît qu'une fois le souffleur autorisé et doté d'une reconnaissance pour écouter. Les onglets ouverts restent dans la rangée en haut de la partie droite.
 
 ## Un appel en cours {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Les appels réunis s'affichent comme une seule carte **Conférence** sur la lign
 
 Quand la [capture des autres applications](../capture/capture.md) est autorisée dans **Réglages → Capture**, une bande apparaît entre les pastilles des comptes et les boutons.
 
-<Shot name="10_settings_capture" full alt="La bande Capture au pied du téléphone : Capture · prêt, Enregistrer et deux barres de niveau" />
+<Shot name="10_settings_capture" full alt="La bande Capture au pied du téléphone : Capture · en attente d'une conversation, le bouton d'enregistrement et deux barres de niveau" />
 
-- **Capture · prêt** indique que le programme guette une conversation dans une autre application.
-- **Enregistrer** lance une capture à la main.
-- Les deux fines barres en dessous montrent le niveau du son : celle du haut, c'est vous ; celle du bas, ce que joue l'ordinateur. Leur dessin se règle sous **Image dans la barre au pied du téléphone**.
+- **Capture · en attente d'une conversation** indique que le programme guette une conversation dans une autre application.
+- Le bouton rond à droite lance une capture à la main.
+- Les deux fines barres en dessous montrent le niveau du son : celle du haut, c'est vous ; celle du bas, ce que joue l'ordinateur. Leur dessin se règle sous **Dessin dans la barre du bas**.
 
 Le programme peut aussi vivre dans la zone de notification (la barre des menus sous macOS) et être appelé par un [raccourci](../program/shortcuts.md).

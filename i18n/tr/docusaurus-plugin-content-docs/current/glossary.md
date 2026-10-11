@@ -7,6 +7,7 @@ description: Bu belgelerde kullanılan IP telefonculuğu ve AI Softphone terimle
 | Terim | Anlamı |
 | --- | --- |
 | **Hesap** | Bir hat: bir santraldeki ya da bir sağlayıcıdaki SIP kullanıcı adı. Birden çoğunda oturum açmış olabilirsiniz. Bkz. [SIP hesabı kurma](/sip-accounts/setup). |
+| **Yardımcı** | Suflörün dinlerken ne olması istendiği: altyazı, çeviri ya da ne söyleneceğine dair öneriler. Bkz. [Suflör ayarları](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Bir dahiliyi arayan ve bir lambayla onun boş mu, çalıyor mu, meşgul mü olduğunu gösteren düğme. Bkz. [Düğmeler](/sip-accounts/buttons). |
 | **Çağrı bekletme** | Siz zaten bir çağrıdayken biri aradığında telefonun ne yaptığı. Bkz. [Çağrı ayarları](/sip-accounts/calls#call-waiting). |
 | **Yakalama** | Zoom, Teams ya da Meet gibi başka bir uygulamada yapılan bir görüşmeyi kaydetme. Bkz. [Yakalama](/capture/). |
@@ -19,8 +20,10 @@ description: Bu belgelerde kullanılan IP telefonculuğu ve AI Softphone terimle
 | **IP santrali** | Bir ofisin ağ üzerinde çalışan telefon santrali; softswitch olarak da adlandırılır. |
 | **Dil modeli** | Bir dökümü okuyup onun hakkında yazan yapay zekâ. Bkz. [İşleme](/ai-processing/processing). |
 | **Yönerge** | Bir dil modelinden istenen şey. Bkz. [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Suflör** | Bir çağrı sırasında söyleneni söylendiği anda ve neyin yanıtlanacağına dair önerileri gösteren pencere. Bkz. [Suflör penceresi](/interface/prompter). |
 | **Tanıyıcı** | Sesi metne dönüştüren hizmet (konuşma tanıma). Bkz. [Yazıya döküm](/ai-processing/transcription). |
 | **Uyarı işareti** | Bir görüşmede dikkat gerektiren bir şey; kanıtı ve zamanıyla birlikte. Bkz. [Sözlükler](/ai-processing/dictionaries#red-flags). |
+| **Prova** | Bir yardımcıyı denemek için suflöre çağrı yerine kaydedilmiş bir görüşmeyi dinletmek. Bkz. [Suflör penceresi](/interface/prompter#rehearsing-on-a-recording). |
 | **SIP kaydı** | Telefonun, çağrılar kendisine ulaşsın diye santrale nerede olduğunu bildirmesi. Hesabın yanındaki yeşil nokta kaydın yapıldığını gösterir. |
 | **Kural** | Her görüşmede sırayla, kendi kendine çalışan bir adım. Bkz. [İşleme](/ai-processing/processing#rules). |
 | **SIP** | Telefonların ve santrallerin çağrı kurmak için kullandığı protokol. |

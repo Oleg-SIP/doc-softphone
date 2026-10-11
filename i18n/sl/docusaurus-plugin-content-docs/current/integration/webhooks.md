@@ -1,7 +1,7 @@
 ---
 title: Webhooki
 sidebar_position: 1
-description: "\"Naj telefon vašemu CRM ali drugemu sistemu pošlje zahtevo, ko se klic začne, spremeni ali konča — z natančnimi zahtevami dohodnega in odhodnega klica.\""
+description: "Naj telefon vašemu CRM ali drugemu sistemu pošlje zahtevo, ko se klic začne, spremeni ali konča — z natančnimi zahtevami dohodnega in odhodnega klica."
 ---
 
 Webhook je zahteva, ki jo telefon pošlje na naslov po vaši izbiri vsakič, ko se s klicem kaj zgodi. Z njim lahko CRM odpre kartico stranke pred drugim zvonjenjem, zabeleži klic, ko se konča, ali prižge lučko na stenski plošči. Webhook ne potrebuje pravil požarnega zidu za dohodni promet: telefon se poveže z vami. Ker se zahteve pošiljajo z delovne postaje, mora biti naslov dosegljiv le s tega računalnika — notranji `http://crm.local/calls` deluje enako dobro kot javni naslov HTTPS.

@@ -22,7 +22,7 @@ Na slici su prva tri retka po jedan od svake vrste: Zoom sastanak, uvezena datot
 
 ## Pronalaženje razgovora {#finding-a-conversation}
 
-Traka na vrhu ima pet filtara, polje za pretraživanje i izbornik:
+Traka na vrhu ima četiri filtra, polje za pretraživanje i izbornik:
 
 | Kontrola | Sužava popis prema |
 | --- | --- |
@@ -30,7 +30,6 @@ Traka na vrhu ima pet filtara, polje za pretraživanje i izbornik:
 | **Razdoblje** | datumu: **Danas**, **Jučer**, **Zadnjih 7 dana** ili **Odaberi datume…** |
 | **Kategorija** | kategoriji u koju je svrstan — pogledajte [Rječnici](../ai-processing/dictionaries.md) |
 | **Biljeg** | oznakama i upozoravajućim signalima koje nosi |
-| **Prepoznavač** | [prepoznavaču](../ai-processing/transcription.md) koji je napravio njegov prijepis |
 | **Traži** | onome što je u njemu rečeno — pretraživanje prolazi kroz prijepise svega što ste snimili |
 
 <Shot name="39_more_menu" alt="Izbornik ⋮ popisa: Uvoz iz datoteka, Izvoz u CSV, Otvori u pregledniku" />

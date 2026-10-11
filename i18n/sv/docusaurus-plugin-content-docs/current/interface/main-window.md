@@ -16,7 +16,7 @@ Uppifrån och ned innehåller vänster sida:
 - knappsatsen och ringknappen;
 - kontobrickorna;
 - knapparna som bevakar andra anknytningar;
-- de fyra ställena att gå till: **Inspelningar**, **Kontakter**, **Historik** och **Inställningar**.
+- ställena att gå till: **Inspelningar**, **Kontakter**, **Historik**, **Sufflör** och **Inställningar**.
 
 ### Nummerfältet {#the-dialler}
 
@@ -36,9 +36,9 @@ Under knappsatsen finns en bricka för varje [konto](../sip-accounts/setup.md). 
 
 Under brickorna står [knapparna](../sip-accounts/buttons.md) du har skapat för kolleger och linjer, var och en med en lampa — **Lindberg** och **Lager** på bilderna. Tryck på en för att ringa numret.
 
-### Inspelningar, Kontakter, Historik, Inställningar {#recordings-contacts-history-settings}
+### Inspelningar, Kontakter, Historik, Sufflör, Inställningar {#recordings-contacts-history-prompter-settings}
 
-De här fyra posterna längst ned öppnar var sin flik till höger, bredvid varandra: [Inspelningar](../interface/recordings.md), [Kontakter och historik](contacts-history.md) och [Inställningar](settings-overview.md). Flikar du har öppnat ligger kvar i raden överst på höger sida.
+De här posterna längst ned öppnar var sin flik till höger, bredvid varandra: [Inspelningar](../interface/recordings.md), [Kontakter och historik](contacts-history.md), [Sufflören](prompter.md) och [Inställningar](settings-overview.md). **Sufflör** finns där först när sufflören är tillåten och har en igenkännare att lyssna med. Flikar du har öppnat ligger kvar i raden överst på höger sida.
 
 ## Ett pågående samtal {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Samtal som har kopplats samman visas som ett enda kort **Konferens** på kontots
 
 När [inspelning från andra program](../capture/capture.md) är tillåten under **Inställningar → Fångst** visas en remsa mellan kontobrickorna och knapparna.
 
-<Shot name="10_settings_capture" full alt="Fångstremsan längst ned på telefonen: Fångst · klar, Spela in och två nivåstaplar" />
+<Shot name="10_settings_capture" full alt="Fångstremsan längst ned på telefonen: Fångst · väntar på ett samtal, inspelningsknappen och två nivåstaplar" />
 
-- **Fångst · klar** säger att programmet lyssnar efter ett samtal i ett annat program.
-- **Spela in** startar en fångst för hand.
-- De två tunna staplarna nedanför visar ljudnivån: den övre är du, den nedre är det datorn spelar upp. Hur de ritas ställs in under **Bild i raden vid telefonens fot**.
+- **Fångst · väntar på ett samtal** säger att programmet lyssnar efter ett samtal i ett annat program.
+- Den runda knappen till höger startar en fångst för hand.
+- De två tunna staplarna nedanför visar ljudnivån: den övre är du, den nedre är det datorn spelar upp. Hur de ritas ställs in under **Bild i listen längst ned**.
 
 Programmet kan också ligga i statusfältet (menyraden på macOS) och tas fram med en [genväg](../program/shortcuts.md).

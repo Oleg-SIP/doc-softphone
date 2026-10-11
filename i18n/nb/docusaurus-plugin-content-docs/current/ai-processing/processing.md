@@ -1,7 +1,7 @@
 ---
 title: Behandling
 sidebar_position: 2
-description: Automatisk behandling av samtaler, de månedlige utgiftsgrensene, språkmodeller, prompter og reglene som kjører dem.
+description: Automatisk behandling av samtaler, språkmodeller, prompter, reglene som kjører dem, og de månedlige utgiftsgrensene.
 ---
 
 **Innstillinger → Behandling** bestemmer hva som skjer med en samtale etter at den er tatt opp, hvilken modell som gjør jobben, og hva det kan koste.
@@ -13,20 +13,9 @@ description: Automatisk behandling av samtaler, de månedlige utgiftsgrensene, s
 - **Av:** ingenting skjer før du ber om det i [vinduet Opptak](../interface/recordings.md).
 - **På:** [reglene](#rules) nedenfor kjører av seg selv. Det er dette som gjør en samtale om til et sammendrag, en kategori og alt det andre uten at noen trykker på noe. En modell i skyen tar betalt for hvert av disse trinnene.
 
-Under avkrysningsboksen viser programmet hva som er brukt denne måneden og på hvor mange forespørsler, for eksempel *Denne måneden: 40.492 tokener, over 84 forespørsler, uten kostnad.*
-
-## Grenser {#limits}
-
-| Felt | Betydning |
-| --- | --- |
-| **Pengegrense, per måned** | Det meste modellene kan koste i løpet av en måned. |
-| **Tokengrense, per måned** | Det høyeste antallet tokener de kan bruke i løpet av en måned. |
-
-Det er to grenser fordi en måned kan telles i to ting. Begge er tomme til du fyller dem ut. Når en av dem er nådd, stopper de automatiske reglene til måneden skifter. **Det du selv ber om, stoppes aldri.**
-
 ## Språkmodeller {#language-models}
 
-Modellene som leser en utskrift og skriver om den. Trykk på **Legg til** for å legge til en. Hver står oppført med navnet og under det modell-ID-en og adressen til tjenesten, for eksempel `qwen3-32b · http://llm.local:8000/v1`. Den som er merket **standard**, brukes som standard. En knapp i skjemaet for en modell sjekker at tjenesten faktisk svarer før du stoler på den.
+Modellene som leser en utskrift og skriver om den. Trykk på **Legg til** for å legge til en. Hver står oppført med navnet og under det modell-ID-en og adressen til tjenesten, for eksempel `qwen3-32b · http://localhost:8000/v1`. Den som er merket **standard** — **QWEN**, en modell på denne datamaskinen, på bildet — brukes som standard, av promptene og av hjelperne til [suffløren](prompter.md) som ikke angir en egen modell. **Prøv** i skjemaet for en modell sjekker at tjenesten faktisk svarer før du stoler på den.
 
 - En modell **på din egen maskin** holder hver samtale innenfor veggene og koster ingenting å kjøre.
 - En modell i skyen — OpenAI, Claude, Mistral, DeepSeek, Groq og andre — betales per bruk. Programmet viser prisen for hvert kall i tokener og i penger.
@@ -35,7 +24,7 @@ Modellene som leser en utskrift og skriver om den. Trykk på **Legg til** for å
 
 <Shot name="12b_settings_processing_prompts" alt="Innstillinger → Behandling: promptene" />
 
-*Det modellene blir bedt om.* Hver prompt kom med programmet, og hver er din å endre — og å legge tilbake. Hver står oppført med navnet og under det hva den skriver og i hvilken form. Formen — **Svar**, **Punkter**, **Etiketter**, **JSON**, **Løpende tekst**, **Signaler** eller **Kriterier** — bestemmer hvordan svaret lagres og vises. Promptene er beskrevet i [Personal Prompt Studio](prompt-studio.md). **Legg til** lager en egen prompt.
+*Det modellene blir bedt om.* Hver prompt kom med programmet, og hver er din å endre — og å legge tilbake. Hver står oppført med navnet og under det hva den skriver og i hvilken form; **▲** og **▼** endrer rekkefølgen i listen. Formen — **Svar**, **Punkter**, **Etiketter**, **JSON**, **Løpende tekst**, **Signaler** eller **Kriterier** — bestemmer hvordan svaret lagres og vises. Promptene er beskrevet i [Personal Prompt Studio](prompt-studio.md). **Legg til** lager en egen prompt.
 
 ## Regler {#rules}
 
@@ -55,6 +44,19 @@ Modellene som leser en utskrift og skriver om den. Trykk på **Legg til** for å
 | **Vurder den, om det var brukerstøtte** | Ber en modell om: **Kvalitet på brukerstøtten**. | bare hvis kategorien er **Brukerstøtte** |
 
 Rekkefølgen betyr noe: de to siste reglene trenger kategorien som regelen før dem har satt. **Legg til** lager en egen regel.
+
+## Forbruk {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Innstillinger → Behandling: månedens forbruk og de to grensene" />
+
+Under **Forbruk** viser programmet hva som er brukt denne måneden og på hvor mange forespørsler — *Ingenting er behandlet denne måneden* på bildet, og for eksempel *Denne måneden: 40.492 tokener, over 84 forespørsler, uten kostnad* når noe er behandlet.
+
+| Felt | Betydning |
+| --- | --- |
+| **Pengegrense, per måned** | Det meste modellene kan koste i løpet av en måned. |
+| **Tokengrense, per måned** | Det høyeste antallet tokener de kan bruke i løpet av en måned. |
+
+Det er to grenser fordi en måned kan telles i to ting. Begge er tomme til du fyller dem ut. Når en av dem er nådd, stopper de automatiske reglene til måneden skifter. **Det du selv ber om, stoppes aldri.** [Suffløren](prompter.md#spending) har egne tak, slik at en måned med sammendrag ikke kan få den til å tie midt i en samtale.
 
 ## Standardverdier {#defaults}
 

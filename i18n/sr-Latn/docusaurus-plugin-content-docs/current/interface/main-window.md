@@ -16,7 +16,7 @@ Odozgo nadole, leva strana sadrži:
 - tastaturu i taster za poziv;
 - značke naloga;
 - dugmad koja prate druge interne brojeve;
-- četiri mesta na koja idete: **Snimci**, **Kontakti**, **Istorija** i **Podešavanja**.
+- mesta na koja idete: **Snimci**, **Kontakti**, **Istorija**, **Šaptač** i **Podešavanja**.
 
 ### Biranje {#the-dialler}
 
@@ -36,9 +36,9 @@ Ispod tastature nalazi se po jedna značka za svaki [nalog](../sip-accounts/setu
 
 Ispod znački su [dugmad](../sip-accounts/buttons.md) koju ste napravili za kolege i linije, svako sa lampicom — na slikama **Petrović** i **Magacin**. Pritisnite dugme da pozovete njegov broj.
 
-### Snimci, Kontakti, Istorija, Podešavanja {#recordings-contacts-history-settings}
+### Snimci, Kontakti, Istorija, Šaptač, Podešavanja {#recordings-contacts-history-prompter-settings}
 
-Ove četiri stavke na dnu otvaraju karticu desno, jednu pored druge: [Snimci](../interface/recordings.md), [Kontakti i Istorija](contacts-history.md) i [Podešavanja](settings-overview.md). Kartice koje ste otvorili ostaju u redu na vrhu desne strane.
+Ove stavke na dnu otvaraju karticu desno, jednu pored druge: [Snimci](../interface/recordings.md), [Kontakti i Istorija](contacts-history.md), [Šaptač](prompter.md) i [Podešavanja](settings-overview.md). **Šaptač** se pojavljuje tek kada je šaptač dozvoljen i ima prepoznavač kojim sluša. Kartice koje ste otvorili ostaju u redu na vrhu desne strane.
 
 ## Poziv u toku {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Spojeni pozivi prikazuju se kao jedna kartica **Konferencija** na liniji naloga.
 
 Kada je [hvatanje drugih aplikacija](../capture/capture.md) dozvoljeno u **Podešavanja → Hvatanje**, između znački naloga i dugmadi pojavljuje se traka.
 
-<Shot name="10_settings_capture" full alt="Traka Hvatanje pri dnu telefona: Hvatanje · spremno, Snimi i dva merača nivoa" />
+<Shot name="10_settings_capture" full alt="Traka Hvatanje pri dnu telefona: Hvatanje · čekam razgovor, dugme za snimanje i dva merača nivoa" />
 
-- **Hvatanje · spremno** kaže da program osluškuje razgovor u drugoj aplikaciji.
-- **Snimi** ručno pokreće hvatanje.
-- Dve tanke trake ispod njega pokazuju nivo zvuka: gornja ste vi, donja ono što računar reprodukuje. Kako se crtaju, podešava se pod **Slika u traci pri dnu telefona**.
+- **Hvatanje · čekam razgovor** kaže da program osluškuje razgovor u drugoj aplikaciji.
+- Okruglo dugme desno ručno pokreće hvatanje.
+- Dve tanke trake ispod njega pokazuju nivo zvuka: gornja ste vi, donja ono što računar reprodukuje. Kako se crtaju, podešava se pod **Crtež u traci pri dnu**.
 
 Program može da živi i u traci (traci menija na macOS-u) i da se prizove [prečicom](../program/shortcuts.md).

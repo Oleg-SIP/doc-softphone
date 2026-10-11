@@ -10,7 +10,9 @@ description: Kontrolný zoznam Prehľad a karty okna Nastavenia, a kde je každ�
 
 <Shot name="04_settings_overview" alt="Nastavenia → Prehľad: kontrolný zoznam toho, čo je nastavené" />
 
-**Prehľad** je kontrolný zoznam toho, čo treba, aby ste z programu vyťažili čo najviac. Navrchu počíta kroky — na obrázku *10 krokov hotových* so zelenou bodkou a *zostáva 8 krokov* s červenou — a pruh ukazuje hotovú časť. Každý krok je riadok s bodkou: zelenou pre hotový krok, červenou pre ten, ktorý ešte zostáva.
+Navrchu karty otvára **Dokumentácia** túto stránku.
+
+**Prehľad** je kontrolný zoznam toho, čo treba, aby ste z programu vyťažili čo najviac. Navrchu počíta kroky — na obrázku *14 krokov hotových* so zelenou bodkou a *zostáva 6 krokov* s červenou — a pruh ukazuje hotovú časť. Každý krok je riadok s bodkou: zelenou pre hotový krok, červenou pre ten, ktorý ešte zostáva.
 
 *Kliknite na riadok, aby ste si prečítali, načo je, a otvorili miesto, kde sa to nastavuje.* Šípka na pravom konci riadku ho rozbalí.
 
@@ -20,6 +22,7 @@ description: Kontrolný zoznam Prehľad a karty okna Nastavenia, a kde je každ�
 | **Zachytávanie z iných aplikácií** | Zapnúť zachytávanie; Zachytiť rozhovor; Dať nahrávke meno |
 | **Prepis** | Pridať rozpoznávač; Prepísať rozhovor |
 | **Spracovanie** | Pridať model; Spracovať prepis |
+| **Našepkávač** | Povoliť našepkávanie; Spustiť našepkávanie |
 | **Nahrávky** | Hľadať v tom, čo sa povedalo; Vyexportovať nahrávku; Vyexportovať zhrnutie |
 | **Aplikácia** | Spúšťať s počítačom; Udržiavať aktuálny |
 | **Spätná väzba** | Posielať rozšírené hlásenie; Povedzte nám, čo si myslíte |
@@ -39,8 +42,9 @@ Kroky sú návod, nie povinnosť: krok, ktorý nepotrebujete, môže zostať če
 | | **Nahrávanie** | [Nahrávanie hovorov: súhlas, konferencie a ako dlho sa súbory uchovávajú](../recordings.md) |
 | | **Zachytávanie** | [Zachytávanie zvuku iných aplikácií](../capture/capture.md): stretnutia v Zoome, Teams, Meet a podobne |
 | AI | **Prepis** | [Rozpoznávače](../ai-processing/transcription.md) |
-| | **Spracovanie** | [Automatické spracovanie, hranice výdavkov, jazykové modely, pokyny a pravidlá](../ai-processing/processing.md) |
+| | **Spracovanie** | [Automatické spracovanie, jazykové modely, pokyny, pravidlá a hranice výdavkov](../ai-processing/processing.md) |
 | | **Slovníky** | [Kategórie, štítky a varovné signály](../ai-processing/dictionaries.md) |
+| | **Našepkávač** | [Našepkávač naživo: prepínač, veľkosť textu, pomocníci a to, koľko môžu minúť](../ai-processing/prompter.md) |
 | Program | **Vzhľad** | [Rozloženie, jazyk, motív a ikony](../program/appearance.md) |
 | | **Spustenie** | [Ako sa program spúšťa, zatvára a otvára odkazy na volanie](../program/startup.md) |
 | | **Skratky** | [Klávesové skratky](../program/shortcuts.md) |

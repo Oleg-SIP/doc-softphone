@@ -1,7 +1,7 @@
 ---
 title: Webhookar
 sidebar_position: 1
-description: "\"Låt telefonen skicka en begäran till ditt CRM eller ett annat system när ett samtal börjar, ändras eller slutar — med de exakta begärandena för ett inkommande och ett utgående samtal.\""
+description: "Låt telefonen skicka en begäran till ditt CRM eller ett annat system när ett samtal börjar, ändras eller slutar — med de exakta begärandena för ett inkommande och ett utgående samtal."
 ---
 
 En webhook är en begäran som telefonen skickar till en adress du väljer, varje gång något händer med ett samtal. Så kan ett CRM öppna kundkortet före andra signalen, logga ett samtal när det slutar eller tända en lampa på en väggtavla. En webhook kräver inga inkommande brandväggsregler: det är telefonen som ringer ut till dig. Eftersom begärandena skickas från arbetsstationen behöver adressen bara kunna nås från den datorn — en intern `http://crm.local/calls` fungerar lika bra som en offentlig HTTPS-adress.

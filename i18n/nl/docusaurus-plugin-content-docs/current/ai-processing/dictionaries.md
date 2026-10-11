@@ -40,14 +40,16 @@ Markeringen die *allemaal tegelijk op hetzelfde gesprek van toepassing kunnen zi
 
 Dingen die aandacht vragen, gevonden in het gesprek met het bewijs en het tijdstip — bijvoorbeeld *Boze klant* of *Opzegrisico*. Signalen worden rood getekend in het [venster Opnames](../interface/recordings.md), en elk heeft een ernst: laag, middel of hoog.
 
-## Antwoordvormen en taal {#answer-shapes-and-language}
+## Aanwijzingen {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Instellingen → Woordenlijsten: antwoordvormen en taalinstructies" />
 
-Verderop in het tabblad staan de instructies waaruit de prompts worden samengesteld. Ze staan hier zodat elke prompt dezelfde formulering kan gebruiken, en u kunt ze wijzigen zoals elk ander item.
+*Wat aan elke prompt wordt toegevoegd over de vorm van het antwoord en de taal om het in te schrijven.* Ze staan hier zodat elke prompt dezelfde formulering kan gebruiken, en u kunt ze wijzigen zoals elk ander item — of zelf iets schrijven, zoals *antwoord kort* of *noem nooit een prijs*, en dat bij elke prompt aanvinken onder **Ook verzenden**.
 
 | Naam | Code | Wat het het model vertelt |
 | --- | --- | --- |
+| **Lopende tekst** | `shape-plain` | Antwoord in gewone lopende tekst, zonder JSON, lijsten of kopjes. |
+| **Punten** | `shape-list` | Antwoord met een lijst van dingen om te doen, elk met wie en wanneer. |
 | **Labels** | `shape-labels` | Antwoord in JSON met een lijst codes en hoe zeker het van elk is, en gebruik alleen codes uit de gegeven lijst. |
 | **Cijfer** | `shape-score` | Antwoord met een cijfer, de reden ervoor en de woorden waarop het rust. |
 | **Criteria** | `shape-rubric` | Antwoord met een totaalcijfer en een cijfer per criterium. |
@@ -58,7 +60,7 @@ Verderop in het tabblad staan de instructies waaruit de prompts worden samengest
 | **Zoals gesproken, benoemd** | `language-as-spoken-named` | Hetzelfde, met de naam van de taal erbij. |
 | **Een benoemde taal** | `language-named` | Schrijf in de taal die u noemt. |
 
-**Toevoegen** aan het eind van de lijst voegt een item toe.
+**Toevoegen** bovenaan de lijst voegt een item toe.
 
 ## Standaardwaarden {#defaults}
 

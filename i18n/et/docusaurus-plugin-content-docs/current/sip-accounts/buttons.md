@@ -1,7 +1,7 @@
 ---
 title: Nupud
 sidebar_position: 4
-description: "\"BLF-nupud: ühe vajutusega nupud, mis helistavad teie IP-keskjaama sisenumbrile ja näitavad, kas see on vaba, heliseb või on hõivatud.\""
+description: "BLF-nupud: ühe vajutusega nupud, mis helistavad teie IP-keskjaama sisenumbrile ja näitavad, kas see on vaba, heliseb või on hõivatud."
 ---
 
 Nupud on tarkvaratelefoni **BLF**-klahvid (Busy Lamp Field), sama funktsioon, mis on IP-keskjaama lauatelefonil. Nupp helistab sisenumbrile ühe vajutusega. Oma liini jälgiv nupp näitab ka tuld: telefon küsib keskjaamalt selle sisenumbri kohta ja näitab, kas see on vaba, heliseb või on hõivatud, nagu teevad vastuvõtu konsool või lauatelefoni programmeeritavad klahvid.

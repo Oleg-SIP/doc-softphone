@@ -16,7 +16,7 @@ De cima para baixo, o lado esquerdo tem:
 - o teclado e a tecla de chamada;
 - as fichas das contas;
 - os botões que acompanham outras extensões;
-- os quatro destinos: **Gravações**, **Contactos**, **Histórico** e **Definições**.
+- os destinos: **Gravações**, **Contactos**, **Histórico**, **Ponto** e **Definições**.
 
 ### O marcador {#the-dialler}
 
@@ -36,9 +36,9 @@ Por baixo do teclado há uma ficha por cada [conta](../sip-accounts/setup.md). U
 
 Por baixo das fichas estão os [botões](../sip-accounts/buttons.md) que criou para colegas e linhas, cada um com uma luz — **Ferreira** e **Armazém** nas imagens. Carregue num para ligar para o seu número.
 
-### Gravações, Contactos, Histórico, Definições {#recordings-contacts-history-settings}
+### Gravações, Contactos, Histórico, Ponto, Definições {#recordings-contacts-history-prompter-settings}
 
-Estas quatro entradas em baixo abrem um separador à direita, lado a lado: [Gravações](../interface/recordings.md), [Contactos e histórico](contacts-history.md) e [Definições](settings-overview.md). Os separadores que abriu ficam na fila do topo do lado direito.
+Estas entradas em baixo abrem um separador à direita, lado a lado: [Gravações](../interface/recordings.md), [Contactos e histórico](contacts-history.md), o [Ponto](prompter.md) e [Definições](settings-overview.md). **Ponto** só aparece quando o ponto está permitido e tem um reconhecedor com que ouvir. Os separadores que abriu ficam na fila do topo do lado direito.
 
 ## Uma chamada em curso {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ As chamadas que foram juntas aparecem como um único cartão **Conferência** na
 
 Quando a [captura de outras aplicações](../capture/capture.md) está permitida em **Definições → Captura**, aparece uma faixa entre as fichas das contas e os botões.
 
-<Shot name="10_settings_capture" full alt="A faixa de captura ao pé do telefone: Captura · pronta, Gravar e duas barras de nível" />
+<Shot name="10_settings_capture" full alt="A faixa de captura ao pé do telefone: Captura · à espera de uma conversa, o botão de gravar e duas barras de nível" />
 
-- **Captura · pronta** diz que o programa está atento a uma conversa noutra aplicação.
-- **Gravar** inicia uma captura à mão.
-- As duas barras finas por baixo mostram o nível do som: a de cima é você, a de baixo é o que o computador toca. A forma como são desenhadas define-se em **Imagem na barra ao pé do telefone**.
+- **Captura · à espera de uma conversa** diz que o programa está atento a uma conversa noutra aplicação.
+- O botão redondo à direita inicia uma captura à mão.
+- As duas barras finas por baixo mostram o nível do som: a de cima é você, a de baixo é o que o computador toca. A forma como são desenhadas define-se em **Desenho na barra inferior**.
 
 O programa também pode viver na área de notificação (a barra de menus no macOS) e ser chamado com um [atalho](../program/shortcuts.md).

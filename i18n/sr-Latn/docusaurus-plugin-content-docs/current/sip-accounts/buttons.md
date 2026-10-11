@@ -1,7 +1,7 @@
 ---
 title: Dugmad
 sidebar_position: 4
-description: "\"BLF dugmad: dugmad za jedan dodir koja biraju interni broj na vašoj IP centrali i pokazuju da li je slobodan, zvoni ili je zauzet.\""
+description: "BLF dugmad: dugmad za jedan dodir koja biraju interni broj na vašoj IP centrali i pokazuju da li je slobodan, zvoni ili je zauzet."
 ---
 
 Dugmad su **BLF** (Busy Lamp Field) tasteri softverskog telefona, ista funkcija kakvu ima stoni telefon na IP centrali. Dugme bira interni broj jednim pritiskom. Dugme koje prati svoju liniju prikazuje i lampicu: telefon pita centralu o tom internom broju i pokazuje da li je slobodan, zvoni ili je zauzet, kao što to rade konzola recepcije ili programabilni tasteri stonog telefona.

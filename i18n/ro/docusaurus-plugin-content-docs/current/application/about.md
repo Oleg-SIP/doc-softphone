@@ -10,7 +10,7 @@ description: Versiunea, actualizările, țara dumneavoastră, licența, conținu
 
 ## Versiune și țară {#version-and-country}
 
-În partea de sus se află numele, **Versiunea** (în imagine 1.0.1) și un link către site, [ai-softphone.com](https://ai-softphone.com/).
+În partea de sus se află numele, **Versiunea** (în imagine 1.1.3), un link către site, [ai-softphone.com](https://ai-softphone.com/), și unul către această documentație.
 
 **Țară** îi spune programului unde vă aflați. Ajută la alegerea celui mai bun server de actualizări și deschide calea către serviciile de limbă și de vorbire găzduite în țara dumneavoastră. **Detectează automat** o completează.
 

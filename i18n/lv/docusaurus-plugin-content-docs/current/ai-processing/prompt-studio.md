@@ -28,7 +28,9 @@ Otrā kolonna ir tas, ko saraksts rāda zem norādījuma nosaukuma: ko tas rakst
 | **Pārdošanas kvalitāte** | Kritēriji | Izvērtē sarunu pēc pārdošanas kritērijiem, ko varat rediģēt. |
 | **Atbalsta kvalitāte** | Kritēriji | Novērtē, cik labi problēma tika saprasta un atrisināta. |
 
-Formas ir fiksētas atbildes struktūras, un tieši tas ļauj programmai atbildi glabāt un vēlāk tajā meklēt: **Birkas** ir kodi no kāda jūsu saraksta, **Signāli** ir kodi ar nopietnību, **Kritēriji** ir vērtējums ar pamatojumu un vērtējums katram kritērijam, **Atbilde** ir atbilde ar vārdiem, uz kuriem tā balstās. Instrukcijas, kas modelim nosaka formu, glabājas sadaļā [Vārdnīcas](dictionaries.md#answer-shapes-and-language).
+Formas ir fiksētas atbildes struktūras, un tieši tas ļauj programmai atbildi glabāt un vēlāk tajā meklēt: **Birkas** ir kodi no kāda jūsu saraksta, **Signāli** ir kodi ar nopietnību, **Kritēriji** ir vērtējums ar pamatojumu un vērtējums katram kritērijam, **Atbilde** ir atbilde ar vārdiem, uz kuriem tā balstās. Instrukcijas, kas modelim nosaka formu, glabājas sadaļā [Vārdnīcas](dictionaries.md#instructions).
+
+Arī [sufliera](../interface/prompter.md) palīgi ir norādījumi, ko palaiž katrai replikai zvana laikā, nevis pabeigtai sarunai. Tie glabājas atsevišķā sarakstā, sadaļā [Palīgi](prompter.md#assistants) lapā **Iestatījumi → Suflieris**.
 
 AI Softphone veiktie zvani, no datora [notvertās](/capture/) sapulces un importētie ieraksti visi iziet cauri tiem pašiem norādījumiem, tiklīdz tiem ir atšifrējums.
 
@@ -41,6 +43,6 @@ Uzdevumi fiksē, par ko vienojās — tie nesūta ziņas, nerezervē apmeklējum
 - Izvēlieties modeli katram norādījumam — jūsu datorā vai mākonī.
 - Iestatiet secību, kādā norādījumi darbojas, ieslēdziet un izslēdziet tos un padariet tos nosacītus — to dara ar [kārtulām](processing.md#rules): piemēram, pārdošanas izvērtējums darbojas tikai zvaniem, kas iedalīti kategorijā **Pārdošana**.
 - Uzturiet savas kategorijas, birkas un brīdinājuma signālus sadaļā [Vārdnīcas](dictionaries.md).
-- Ierobežojiet izmaksas ar [ikmēneša robežām](processing.md#limits).
+- Ierobežojiet izmaksas ar [ikmēneša robežām](processing.md#spending).
 
 Sākotnējos norādījumus un kārtulas var atjaunot ar **Atjaunot noklusējumus** sadaļā **Noklusējumi** lapā [Iestatījumi → Apstrāde](processing.md#defaults).

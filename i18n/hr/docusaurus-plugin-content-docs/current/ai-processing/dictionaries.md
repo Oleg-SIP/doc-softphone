@@ -40,14 +40,16 @@ Naljepnice koje *sve mogu vrijediti za isti razgovor*. Pritisnite **Dodaj** da d
 
 Stvari koje traže pozornost, pronađene u razgovoru s dokazom i vremenom — primjerice *Ljutit kupac* ili *Opasnost od odlaska*. Upozoravajući signali nacrtani su crveno u [prozoru Snimke](../interface/recordings.md) i svaki nosi ozbiljnost: nisku, srednju ili visoku.
 
-## Oblici odgovora i jezik {#answer-shapes-and-language}
+## Upute {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Postavke → Rječnici: oblici odgovora i jezične upute" />
 
-Niže na kartici nalaze se upute od kojih se slažu upute za modele. Čuvaju se ovdje kako bi svaka uputa mogla koristiti isti tekst, a možete ih mijenjati kao bilo koju drugu stavku.
+*Ono što se dodaje svakoj uputi o obliku odgovora i jeziku na kojem ga napisati.* Čuvaju se ovdje kako bi svaka uputa mogla koristiti isti tekst, a možete ih mijenjati kao bilo koju drugu stavku — ili napisati svoje, primjerice *odgovaraj kratko* ili *nikad ne spominji cijenu*, i označiti ih pod **Šalji i** na bilo kojoj uputi.
 
 | Naziv | Kod | Što kaže modelu |
 | --- | --- | --- |
+| **Proza** | `shape-plain` | Odgovaraj običnom prozom, bez JSON-a, popisa i naslova. |
+| **Stavke** | `shape-list` | Odgovaraj popisom stvari koje treba napraviti, uz svaku tko i kada. |
 | **Oznake** | `shape-labels` | Odgovori u JSON-u s popisom kodova i koliko je siguran u svaki, koristeći samo kodove s popisa koji je dobio. |
 | **Ocjena** | `shape-score` | Odgovori ocjenom, razlogom za nju i riječima na kojima se temelji. |
 | **Mjerila** | `shape-rubric` | Odgovori ukupnom ocjenom i ocjenom za svako mjerilo. |
@@ -58,7 +60,7 @@ Niže na kartici nalaze se upute od kojih se slažu upute za modele. Čuvaju se 
 | **Kako se govorilo, imenovano** | `language-as-spoken-named` | Isto, s imenovanjem jezika. |
 | **Zadani jezik** | `language-named` | Piši na jeziku koji navedete. |
 
-**Dodaj** na kraju popisa dodaje stavku.
+**Dodaj** na vrhu popisa dodaje stavku.
 
 ## Zadane vrijednosti {#defaults}
 

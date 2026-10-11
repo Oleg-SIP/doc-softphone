@@ -1,7 +1,7 @@
 ---
 title: Vanliga problem
 sidebar_position: 2
-description: "\"Vad du ska kontrollera när ett konto inte vill registrera sig, det inte hörs något, ett samtal eller ett möte inte spelas in, det inte finns någon utskrift, eller en länk, en genväg eller API:et inte gör något.\""
+description: "Vad du ska kontrollera när ett konto inte vill registrera sig, det inte hörs något, ett samtal eller ett möte inte spelas in, det inte finns någon utskrift, eller en länk, en genväg eller API:et inte gör något."
 ---
 
 Varje punkt pekar på inställningen som avgör saken. Finns svaret inte här öppnar du [Diagnostik](/troubleshooting/diagnostics): det visar vad telefonen och växeln säger till varandra.
@@ -44,7 +44,7 @@ Vad som händer när någon ringer medan du är i ett samtal ställs in under [S
 Se [Fångst](/capture/).
 
 - **Tillåt att ljud fångas** i **Inställningar → Fångst** måste vara på.
-- Med **Automatisk start** inställd på **Fråga mig** (standard) svarar du på frågan när den visas; med **Aldrig** trycker du själv på **Spela in**.
+- Med **Automatisk start** inställd på **Fråga mig** (standard) svarar du på frågan när den visas; med **Aldrig** trycker du själv på inspelningsknappen.
 - Använd **Prova** på samma flik: den övre stapeln måste röra sig när du talar, den nedre när något spelas.
 - Modulen **Fångst** måste vara på under [Moduler](/application/modules).
 

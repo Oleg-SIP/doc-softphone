@@ -28,7 +28,9 @@ A második oszlop azt mutatja, ami a listában az utasítás neve alatt áll: mi
 | **Értékesítés minősége** | Szempontok | Értékeli a beszélgetést szerkeszthető értékesítési szempontok szerint. |
 | **Támogatás minősége** | Szempontok | Megítéli, mennyire jól értették meg és kezelték a problémát. |
 
-A formák a válasz rögzített alakjai, és ez teszi lehetővé, hogy a program megőrizze és később kereshesse őket: a **Címkék** az egyik listájából származó kódok, a **Jelzések** súlyossággal ellátott kódok, a **Szempontok** egy pontszám indoklással és szempontonkénti pontszámmal, a **Válasz** pedig egy felelet azokkal a szavakkal, amelyeken alapul. Az utasítások, amelyek közlik a modellel az alakot, a [Szótárak](dictionaries.md#answer-shapes-and-language) között vannak.
+A formák a válasz rögzített alakjai, és ez teszi lehetővé, hogy a program megőrizze és később kereshesse őket: a **Címkék** az egyik listájából származó kódok, a **Jelzések** súlyossággal ellátott kódok, a **Szempontok** egy pontszám indoklással és szempontonkénti pontszámmal, a **Válasz** pedig egy felelet azokkal a szavakkal, amelyeken alapul. Az utasítások, amelyek közlik a modellel az alakot, a [Szótárak](dictionaries.md#instructions) között vannak.
+
+A [súgó](../interface/prompter.md) segítői is utasítások, amelyek hívás közben minden megszólalásra lefutnak, nem egy befejezett beszélgetésre. Saját listában vannak, a **Beállítások → Súgó** [Segítők](prompter.md#assistants) részében.
 
 Az AI Softphone-ban lebonyolított hívások, a számítógépről [rögzített](/capture/) megbeszélések és az importált felvételek mind ugyanazokon az utasításokon mennek át, amint van leiratuk.
 
@@ -41,6 +43,6 @@ A teendők azt rögzítik, amiben megállapodtak — nem küldenek üzeneteket, 
 - Válassza ki az egyes utasítások modelljét — a saját gépén vagy a felhőben.
 - Állítsa be, milyen sorrendben fussanak az utasítások, kapcsolja be és ki őket, és tegye őket feltételhez kötötté — ez a [szabályokkal](processing.md#rules) történik: például az értékesítési értékelés csak az **Értékesítés** kategóriába sorolt hívásokon fut le.
 - Tartsa saját kategóriáit, címkéit és figyelmeztető jeleit a [Szótárak](dictionaries.md) között.
-- Korlátozza a költséget a [havi korlátokkal](processing.md#limits).
+- Korlátozza a költséget a [havi korlátokkal](processing.md#spending).
 
 Az eredeti utasítások és szabályok az **Alapértékek visszaállítása** gombbal állíthatók vissza, a [Beállítások → Feldolgozás](processing.md#defaults) lap **Alapértékek** része alatt.

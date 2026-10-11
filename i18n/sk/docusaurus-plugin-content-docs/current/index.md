@@ -20,6 +20,8 @@ Nahrávky, prepisy a história sa uchovávajú v súbore, ktorý patrí vám. Ne
 3. Prepíše sa, hovoriaci po hovoriacom, synchronizovane so zvukom.
 4. Jazykový model, ktorý ste si vybrali, ho spracuje: zhrnutie, úlohy, kategória, štítky a varovné signály — a rozhovoru môžete položiť otázku.
 
+Počas hovoru môže [Našepkávač](interface/prompter.md) ísť ďalej: ukazuje, čo sa hovorí, práve keď sa to hovorí, a napovedá, čo odpovedať.
+
 ## Stiahnutie a systémové požiadavky {#download-and-system-requirements}
 
 Program si môžete zadarmo stiahnuť z [ai-softphone.com](https://ai-softphone.com/#download): inštalátor (`.exe`) pre Windows, obraz disku (`.dmg`) pre macOS a AppImage alebo `.deb` pre Linux. Inštalátor, obraz disku ani AppImage nepotrebujú vopred nič inštalovať — Qt, OpenSSL a knižnice C++ sú ich súčasťou. Výnimkou je `.deb`: používa knižnice C++ zo systému, pozri nižšie. Budete potrebovať SIP účet od svojho operátora alebo z ústredne, ktorú prevádzkujete sami. Nahrávanie funguje hneď po inštalácii programu; prepis a spracovanie potrebujú službu, ktorú si vyberiete, alebo model na vlastnom počítači.
@@ -60,6 +62,7 @@ Snímky obrazovky v tejto dokumentácii sú urobené v macOS a zobrazené zmenš
 | Vybrať rozpoznávač, ktorý premieňa reč na text | [Prepis](ai-processing/transcription.md) |
 | Rozhodnúť, ktorá AI spracúva vaše rozhovory a koľko to smie stáť | [Spracovanie](ai-processing/processing.md) |
 | Zmeniť kategórie, štítky a varovné signály | [Slovníky](ai-processing/dictionaries.md) |
+| Vidieť, čo sa hovorí počas hovoru, a dostávať návrhy, čo odpovedať | [Okno našepkávača](interface/prompter.md) |
 | Zmeniť rozloženie, motív, spúšťanie a klávesové skratky | [Vzhľad](program/appearance.md), [Spustenie](program/startup.md) a [Skratky](program/shortcuts.md) |
 | Pripojiť CRM alebo iný program | [Webhooky](integration/webhooks.md) a [Miestne REST API](integration/rest-api.md) |
 | Vidieť, čo si telefón a ústredňa hovoria | [Diagnostika](troubleshooting/diagnostics.md) |

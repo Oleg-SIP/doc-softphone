@@ -1,7 +1,7 @@
 ---
 title: Webhooki
 sidebar_position: 1
-description: "\"Niech telefon wysyła do twojego CRM lub innego systemu żądanie, gdy połączenie się zaczyna, zmienia lub kończy — z dokładnymi żądaniami połączenia przychodzącego i wychodzącego.\""
+description: "Niech telefon wysyła do twojego CRM lub innego systemu żądanie, gdy połączenie się zaczyna, zmienia lub kończy — z dokładnymi żądaniami połączenia przychodzącego i wychodzącego."
 ---
 
 Webhook to żądanie, które telefon wysyła pod wybrany przez ciebie adres za każdym razem, gdy coś dzieje się z połączeniem. Dzięki niemu CRM może otworzyć kartę klienta przed drugim dzwonkiem, zapisać połączenie, gdy się skończy, albo zapalić lampkę na tablicy. Webhook nie wymaga reguł zapory dla ruchu przychodzącego: to telefon łączy się z tobą. Ponieważ żądania są wysyłane ze stanowiska, adres musi być osiągalny tylko z tego komputera — wewnętrzny `http://crm.local/calls` działa tak samo dobrze jak publiczny adres HTTPS.

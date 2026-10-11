@@ -25,6 +25,7 @@ Her modülün bir onay kutusu, bir adı, ne yaptığını söyleyen bir satırı
 | **Bütünleştirme** | Yerel API ve web kancaları: [Bütünleştirme](/integration/rest-api). |
 | **Ortam deposu** | Görüşmelerin kitaplığı ve ne kadar süre saklandıkları: [Kayıtlar](/interface/recordings). |
 | **İşleme** | Yönergeler ve onları ateşleyen kurallar: [İşleme](/ai-processing/processing). |
+| **Suflör** | Görüşme sürerken dinler ve öneri verir: [Suflör penceresi](/interface/prompter). |
 | **Kayıt** | Çağrıları kaydetme ve bunu karşı tarafa bildirme: [Kayıtlar](/recordings). |
 | **Telefon** | SIP, hesaplar, çağrılar, çevirici ve çağrı geçmişi. |
 | **Yazıya döküm** | Tanıyıcılar, onları yöneten kuyruk ve ürettikleri dökümler: [Yazıya döküm](/ai-processing/transcription). |

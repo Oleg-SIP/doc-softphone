@@ -28,7 +28,9 @@ Den andre kolonnen er det listen viser under navnet på prompten: hva den skrive
 | **Salgskvalitet** | Kriterier | Går gjennom samtalen etter salgskriterier du kan redigere. |
 | **Kvalitet på brukerstøtten** | Kriterier | Vurderer hvor godt problemet ble forstått og håndtert. |
 
-Formene er faste maler for et svar, og det er det som gjør at programmet kan lagre det og søke i det senere: **Etiketter** er koder fra en av listene dine, **Signaler** er koder med en alvorlighetsgrad, **Kriterier** er en karakter med en begrunnelse og en karakter for hvert kriterium, **Svar** er et svar med ordene det bygger på. Instruksjonene som forteller en modell formen, lagres i [Ordlister](dictionaries.md#answer-shapes-and-language).
+Formene er faste maler for et svar, og det er det som gjør at programmet kan lagre det og søke i det senere: **Etiketter** er koder fra en av listene dine, **Signaler** er koder med en alvorlighetsgrad, **Kriterier** er en karakter med en begrunnelse og en karakter for hvert kriterium, **Svar** er et svar med ordene det bygger på. Instruksjonene som forteller en modell formen, lagres i [Ordlister](dictionaries.md#instructions).
+
+Hjelperne til [suffløren](../interface/prompter.md) er også prompter, som kjøres på hvert svar mens en samtale pågår, i stedet for på en avsluttet samtale. De står i en egen liste, under [Hjelpere](prompter.md#assistants) i **Innstillinger → Sufflør**.
 
 Samtaler ringt i AI Softphone, møter [fanget](/capture/) fra maskinen og importerte opptak går alle gjennom de samme promptene når de har en utskrift.
 
@@ -41,6 +43,6 @@ Oppgaver registrerer det som ble avtalt — de sender ikke meldinger, bestiller 
 - Velg modellen for hver prompt — på din egen maskin eller i skyen.
 - Bestem rekkefølgen promptene kjører i, slå dem på og av, og gjør dem betingede — det gjøres med [reglene](processing.md#rules): for eksempel kjører en salgsvurdering bare på samtaler som er sortert som **Salg**.
 - Hold dine egne kategorier, etiketter og signaler i [Ordlister](dictionaries.md).
-- Sett tak på kostnadene med de [månedlige grensene](processing.md#limits).
+- Sett tak på kostnadene med de [månedlige grensene](processing.md#spending).
 
 De opprinnelige promptene og reglene kan gjenopprettes med **Gjenopprett standardverdier** under **Standardverdier** i [Innstillinger → Behandling](processing.md#defaults).

@@ -16,7 +16,7 @@ Od zgoraj navzdol leva stran vsebuje:
 - tipkovnico in tipko za klic;
 - značke računov;
 - gumbe, ki spremljajo druge interne številke;
-- štiri mesta, kamor greste: **Posnetki**, **Stiki**, **Zgodovina** in **Nastavitve**.
+- mesta, kamor greste: **Posnetki**, **Stiki**, **Zgodovina**, **Šepetalec** in **Nastavitve**.
 
 ### Klicanje {#the-dialler}
 
@@ -36,9 +36,9 @@ Pod tipkovnico je ena značka za vsak [račun](../sip-accounts/setup.md). Zelena
 
 Pod značkami so [gumbi](../sip-accounts/buttons.md), ki ste jih naredili za sodelavce in linije, vsak z lučko — na slikah **Novak** in **Skladišče**. Pritisnite gumb, da pokličete njegovo številko.
 
-### Posnetki, Stiki, Zgodovina, Nastavitve {#recordings-contacts-history-settings}
+### Posnetki, Stiki, Zgodovina, Šepetalec, Nastavitve {#recordings-contacts-history-prompter-settings}
 
-Ti štirje vnosi spodaj odprejo zavihek na desni, drug ob drugem: [Posnetki](../interface/recordings.md), [Stiki in Zgodovina](contacts-history.md) ter [Nastavitve](settings-overview.md). Zavihki, ki ste jih odprli, ostanejo v vrsti na vrhu desne strani.
+Ti vnosi spodaj odprejo zavihek na desni, drug ob drugem: [Posnetki](../interface/recordings.md), [Stiki in Zgodovina](contacts-history.md), [Šepetalec](prompter.md) ter [Nastavitve](settings-overview.md). **Šepetalec** se pojavi šele, ko je šepetalec dovoljen in ima razpoznavalnik, s katerim posluša. Zavihki, ki ste jih odprli, ostanejo v vrsti na vrhu desne strani.
 
 ## Klic v teku {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Združeni klici se pokažejo kot ena kartica **Konferenca** na liniji računa. V
 
 Ko je [zajemanje drugih programov](../capture/capture.md) dovoljeno v **Nastavitve → Zajemanje**, se med značkami računov in gumbi pojavi pas.
 
-<Shot name="10_settings_capture" full alt="Pas Zajemanje ob vznožju telefona: Zajemanje · pripravljeno, Snemaj in dva merilnika ravni" />
+<Shot name="10_settings_capture" full alt="Pas Zajemanje ob vznožju telefona: Zajemanje · čakam pogovor, gumb za snemanje in dva merilnika ravni" />
 
-- **Zajemanje · pripravljeno** pove, da program prisluškuje pogovoru v drugem programu.
-- **Snemaj** ročno začne zajemanje.
-- Tanka pasova pod njim kažeta raven zvoka: zgornji ste vi, spodnji to, kar predvaja računalnik. Kako se rišeta, se nastavi pod **Slika v pasu ob vznožju telefona**.
+- **Zajemanje · čakam pogovor** pove, da program prisluškuje pogovoru v drugem programu.
+- Okrogli gumb na desni ročno začne zajemanje.
+- Tanka pasova pod njim kažeta raven zvoka: zgornji ste vi, spodnji to, kar predvaja računalnik. Kako se rišeta, se nastavi pod **Risba v vrstici na dnu**.
 
 Program lahko živi tudi v sistemski vrstici (v menijski vrstici v macOS) in ga prikličete z [bližnjico](../program/shortcuts.md).

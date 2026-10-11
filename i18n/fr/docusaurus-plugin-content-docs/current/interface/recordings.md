@@ -1,7 +1,7 @@
 ---
 title: Fenêtre des enregistrements
 sidebar_position: 2
-description: "\"La bibliothèque de toutes les conversations — un appel, un fichier importé ou une réunion capturée dans Zoom, Teams ou Meet : filtres, lecteur, transcription que l'on peut écouter à partir de n'importe quelle ligne, et comptes rendus.\""
+description: "La bibliothèque de toutes les conversations — un appel, un fichier importé ou une réunion capturée dans Zoom, Teams ou Meet : filtres, lecteur, transcription que l'on peut écouter à partir de n'importe quelle ligne, et comptes rendus."
 ---
 
 **Enregistrements** est l'endroit où vit chaque conversation, quelle que soit la façon dont elle est arrivée : un appel passé ou reçu dans le téléphone, un fichier audio que vous avez importé, ou une réunion capturée dans Zoom, Teams, Meet ou toute autre application. Toutes figurent dans une même liste, et chacune s'ouvre de la même façon : le lecteur, la transcription et tout ce que le modèle de langue a rédigé à son sujet. Appuyez sur **Enregistrements** en bas à gauche de la [fenêtre principale](main-window.md) pour l'ouvrir.
@@ -22,7 +22,7 @@ Sur l'image, les trois premières lignes sont une de chaque : une réunion Zoom,
 
 ## Trouver une conversation {#finding-a-conversation}
 
-La barre du haut contient cinq filtres, un champ de recherche et un menu :
+La barre du haut contient quatre filtres, un champ de recherche et un menu :
 
 | Commande | Restreint la liste selon |
 | --- | --- |
@@ -30,7 +30,6 @@ La barre du haut contient cinq filtres, un champ de recherche et un menu :
 | **Période** | la date : **Aujourd'hui**, **Hier**, **7 derniers jours** ou **Choisir des dates…** |
 | **Catégorie** | la catégorie dans laquelle elle a été classée — voir [Dictionnaires](../ai-processing/dictionaries.md) |
 | **Marque** | les étiquettes et les signaux qu'elle porte |
-| **Reconnaissance** | la [reconnaissance](../ai-processing/transcription.md) qui a produit sa transcription |
 | **Rechercher** | ce qui y a été dit — la recherche parcourt les transcriptions de tout ce que vous avez enregistré |
 
 <Shot name="39_more_menu" alt="Le menu ⋮ de la liste : Importer depuis un ou plusieurs fichiers, Exporter en CSV, Ouvrir dans un navigateur" />

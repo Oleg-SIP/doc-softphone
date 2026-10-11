@@ -25,8 +25,9 @@ Chaque module a une case, un nom, une ligne qui dit ce qu'il fait, et à droite 
 | **Intégration** | L'API locale, et les webhooks : [Intégration](/integration/rest-api). |
 | **Stockage média** | La bibliothèque des conversations et leur durée de conservation : [Enregistrements](/interface/recordings). |
 | **Traitement** | Les invites et les règles qui les déclenchent : [Traitement](/ai-processing/processing). |
+| **Souffleur** | Écoute une conversation en cours et propose : [Fenêtre du souffleur](/interface/prompter). |
 | **Enregistrement** | L'enregistrement des appels, et l'information du correspondant : [Enregistrements](/recordings). |
-| **Téléphonie** | SIP, comptes, appels, numéroteur et journal des appels. |
+| **Téléphone** | SIP, comptes, appels, numéroteur et journal des appels. |
 | **Transcription** | Les reconnaissances, la file qui les alimente et les transcriptions qu'elles produisent : [Transcription](/ai-processing/transcription). |
 
 Désactivez un module et il disparaît : plus de réglages pour lui, plus d'entrée de menu, plus rien de lui ne tourne. Désactivez un module dont vous n'avez pas l'usage — par exemple **Intégration** sur un ordinateur où rien d'autre ne parle au téléphone — ou gardez un téléphone qui n'est qu'un téléphone, quand c'est tout ce dont un poste de travail a besoin. Le paquet est le même dans tous les cas : il n'y a rien à acheter ni rien à débloquer.

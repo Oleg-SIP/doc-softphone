@@ -16,7 +16,7 @@ De sus în jos, partea stângă cuprinde:
 - tastatura și tasta de apel;
 - insignele conturilor;
 - butoanele care urmăresc alte interioare;
-- cele patru locuri în care puteți merge: **Înregistrări**, **Contacte**, **Istoric** și **Setări**.
+- locurile în care puteți merge: **Înregistrări**, **Contacte**, **Istoric**, **Sufleur** și **Setări**.
 
 ### Tastatura de apelare {#the-dialler}
 
@@ -36,9 +36,9 @@ Sub tastatură există câte o insignă pentru fiecare [cont](../sip-accounts/se
 
 Sub insigne se află [butoanele](../sip-accounts/buttons.md) pe care le-ați creat pentru colegi și linii, fiecare cu un indicator luminos — **Popescu** și **Depozit** în imagini. Apăsați pe unul ca să-i formați numărul.
 
-### Înregistrări, Contacte, Istoric, Setări {#recordings-contacts-history-settings}
+### Înregistrări, Contacte, Istoric, Sufleur, Setări {#recordings-contacts-history-prompter-settings}
 
-Aceste patru intrări din partea de jos deschid câte o filă în dreapta, una lângă alta: [Înregistrări](../interface/recordings.md), [Contacte și Istoric](contacts-history.md) și [Setări](settings-overview.md). Filele pe care le-ați deschis rămân în rândul din partea de sus a laturii din dreapta.
+Aceste intrări din partea de jos deschid câte o filă în dreapta, una lângă alta: [Înregistrări](../interface/recordings.md), [Contacte și Istoric](contacts-history.md), [Sufleurul](prompter.md) și [Setări](settings-overview.md). **Sufleur** apare doar după ce sufleurul este permis și are un recunoscător cu care să asculte. Filele pe care le-ați deschis rămân în rândul din partea de sus a laturii din dreapta.
 
 ## Un apel în curs {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Apelurile care au fost unite apar ca un singur card **Conferință** pe linia co
 
 Când [captarea altor aplicații](../capture/capture.md) este permisă în **Setări → Captare**, între insignele conturilor și butoane apare o bandă.
 
-<Shot name="10_settings_capture" full alt="Banda Captare la piciorul telefonului: Captare · gata, Înregistrează și două bare de nivel" />
+<Shot name="10_settings_capture" full alt="Banda Captare la piciorul telefonului: Captare · aștept o conversație, butonul de înregistrare și două bare de nivel" />
 
-- **Captare · gata** arată că programul ascultă dacă are loc o conversație în altă aplicație.
-- **Înregistrează** pornește manual o captare.
-- Cele două bare subțiri de sub el arată nivelul sunetului: cea de sus sunteți dumneavoastră, cea de jos este ceea ce redă calculatorul. Felul în care sunt desenate se configurează la **Imagine în bara de la piciorul telefonului**.
+- **Captare · aștept o conversație** arată că programul ascultă dacă are loc o conversație în altă aplicație.
+- Butonul rotund din dreapta pornește manual o captare.
+- Cele două bare subțiri de sub el arată nivelul sunetului: cea de sus sunteți dumneavoastră, cea de jos este ceea ce redă calculatorul. Felul în care sunt desenate se configurează la **Desen în bara de jos**.
 
 Programul poate sta și în bara de sistem (bara de meniu pe macOS) și poate fi adus în față cu o [scurtătură](../program/shortcuts.md).

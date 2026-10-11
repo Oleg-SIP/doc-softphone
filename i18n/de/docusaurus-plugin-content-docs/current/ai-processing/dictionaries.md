@@ -42,14 +42,16 @@ Kennzeichen, *die alle zugleich auf dasselbe Gespräch zutreffen dürfen*. Mit *
 
 Dinge, die Aufmerksamkeit brauchen, im Gespräch gefunden, mit Beleg und Zeitpunkt — zum Beispiel *Verärgerter Kunde* oder *Abwanderungsgefahr*. Auffälligkeiten sind im [Aufnahmefenster](../interface/recordings.md) rot gezeichnet, und jede trägt einen Schweregrad: niedrig, mittel oder hoch.
 
-## Antwortformen und Sprache {#answer-shapes-and-language}
+## Anweisungen {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Einstellungen → Verzeichnisse: Antwortformen und Sprachanweisungen" />
 
-Weiter unten im Reiter stehen die Anweisungen, aus denen die Prompts zusammengesetzt werden. Sie liegen hier, damit jeder Prompt denselben Wortlaut verwenden kann, und Sie können sie wie jeden anderen Eintrag ändern.
+*Was jedem Prompt über die Form der Antwort und die Sprache, in der sie zu schreiben ist, hinzugefügt wird.* Sie liegen hier, damit jeder Prompt denselben Wortlaut verwenden kann, und Sie können sie wie jeden anderen Eintrag ändern — oder eigene schreiben, etwa *antworte kurz* oder *nenne nie einen Preis*, und sie bei jedem Prompt unter **Ebenfalls senden** ankreuzen.
 
 | Name | Code | Was sie dem Modell sagt |
 | --- | --- | --- |
+| **Fließtext** | `shape-plain` | In schlichtem Fließtext antworten, ohne JSON, Listen oder Überschriften. |
+| **Punkte** | `shape-list` | Mit einer Liste der zu erledigenden Dinge antworten, jeweils mit wer und wann. |
 | **Label** | `shape-labels` | In JSON antworten, mit einer Liste von Codes und wie sicher es sich bei jedem ist, nur mit Codes aus der Liste, die es bekommen hat. |
 | **Bewertung** | `shape-score` | Mit einer Bewertung, ihrer Begründung und den Worten antworten, auf die sie sich stützt. |
 | **Kriterien** | `shape-rubric` | Mit einer Gesamtbewertung und einer Bewertung je Kriterium antworten. |
@@ -60,7 +62,7 @@ Weiter unten im Reiter stehen die Anweisungen, aus denen die Prompts zusammenges
 | **Wie gesprochen, benannt** | `language-as-spoken-named` | Dasselbe, mit Nennung der Sprache. |
 | **Eine benannte Sprache** | `language-named` | In der Sprache schreiben, die Sie nennen. |
 
-**Hinzufügen** am Ende der Liste fügt einen Eintrag hinzu.
+**Hinzufügen** am Anfang der Liste fügt einen Eintrag hinzu.
 
 ## Voreinstellungen {#defaults}
 

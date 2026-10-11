@@ -34,7 +34,7 @@ Partea programului care face acest lucru este modulul **Captare**, *înregistrar
 
 ## Pornirea unei captări {#starting-a-capture}
 
-După ce captarea este permisă, partea de jos a [ferestrei principale](../interface/main-window.md#capture) îi arată starea — **Captare · gata** — cu un buton **Înregistrează** în dreapta. Apăsați **Înregistrează** pentru a porni manual.
+După ce captarea este permisă, partea de jos a [ferestrei principale](../interface/main-window.md#capture) îi arată starea — **Captare · aștept o conversație** — cu un buton rotund de înregistrare în dreapta, *Înregistrează această conversație*. Apăsați-l pentru a porni manual.
 
 ### Pornire automată {#automatic-start}
 
@@ -42,7 +42,7 @@ După ce captarea este permisă, partea de jos a [ferestrei principale](../inter
 
 | Opțiune | Ce se întâmplă |
 | --- | --- |
-| **Niciodată** | O captare pornește doar când apăsați **Înregistrează**. |
+| **Niciodată** | O captare pornește doar când apăsați butonul de înregistrare. |
 | **Întreabă-mă** | Programul întreabă dacă să o înregistreze. Implicit. |
 | **Întotdeauna** | Programul începe să înregistreze singur. |
 
@@ -52,7 +52,7 @@ La **Aplicații cu răspuns propriu**, unei aplicații i se poate da un răspuns
 
 ### Înainte de început {#before-the-start}
 
-Glisorul **Înainte de început** stabilește câte secunde de sunet se păstrează dinaintea pornirii unei înregistrări, implicit **15 secunde**. Există pentru ca nimic să nu se piardă cât timp conversația este detectată: o înregistrare care pornește când apăsați **Înregistrează** sau când răspundeți la întrebare începe totuși cu cuvintele rostite înainte.
+Glisorul **Înainte de început** stabilește câte secunde de sunet se păstrează dinaintea pornirii unei înregistrări, implicit **15 secunde**. Există pentru ca nimic să nu se piardă cât timp conversația este detectată: o înregistrare care pornește când apăsați butonul de înregistrare sau când răspundeți la întrebare începe totuși cu cuvintele rostite înainte.
 
 ## Capturarea unei conversații {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Cât timp înregistrează, fereastra principală arată un punct roșu, numele �
 
 | Setare | Implicit | Unde |
 | --- | --- | --- |
-| **Imagine în fereastra principală** | Undă | Cele două canale cât timp are loc o captare. |
-| **Imagine în bara de la piciorul telefonului** | Două niveluri | Cele două bare subțiri de sub **Captare · gata**. |
+| **Desen în fereastră** | Undă | Cele două canale cât timp are loc o captare. |
+| **Desen în bara de jos** | Două niveluri | Cele două bare subțiri de sub **Captare · aștept o conversație**. |
 
 ### Verificarea {#testing-it}
 
@@ -78,12 +78,12 @@ La **Verifică**, fila are două bare: **Dumneavoastră** și **Cealaltă parte*
 
 ## Denumirea înregistrării {#giving-it-a-name}
 
-Creionul de lângă numele înregistrării vă permite să o redenumiți în timp ce se desfășoară. O înregistrare pe care nu ați denumit-o apare în listă ca **Altă aplicație**.
+Creionul de lângă numele înregistrării vă permite să o redenumiți în timp ce se desfășoară. O înregistrare pe care nu ați denumit-o apare în listă ca **O altă aplicație**.
 
 ## Unde ajunge înregistrarea {#where-the-recording-goes}
 
-O conversație captată apare în [fereastra Înregistrări](../interface/recordings.md) ca oricare alta, cu pictograma ei proprie, o fereastră în loc de receptor, și cu titlul pe care i l-ați dat sau **Altă aplicație**.
+O conversație captată apare în [fereastra Înregistrări](../interface/recordings.md) ca oricare alta, cu pictograma ei proprie, o fereastră în loc de receptor, și cu titlul pe care i l-ați dat sau **O altă aplicație**.
 
 <Shot name="01_recordings" alt="Ședințe captate în fila Înregistrări, marcate cu o pictogramă de fereastră" />
 
-Este transcrisă, rezumată, încadrată într-o categorie și etichetată prin aceleași [reguli](../ai-processing/processing.md#rules) ca un apel. În transcrierea unei ședințe captate, vorbitorul apare ca **Altă aplicație** acolo unde un apel ar arăta numele celeilalte părți; funcția **Caută** a bibliotecii găsește și ce s-a spus în ea.
+Este transcrisă, rezumată, încadrată într-o categorie și etichetată prin aceleași [reguli](../ai-processing/processing.md#rules) ca un apel. În transcrierea unei ședințe captate, vorbitorul apare cu numele înregistrării acolo unde un apel ar arăta numele celeilalte părți; funcția **Caută** a bibliotecii găsește și ce s-a spus în ea.

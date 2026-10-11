@@ -25,6 +25,7 @@ Jedes Modul hat ein Kontrollkästchen, einen Namen, eine Zeile, was es tut, und 
 | **Integration** | Die lokale API und Webhooks: [Integration](/integration/rest-api). |
 | **Medienspeicher** | Die Bibliothek der Gespräche und wie lange sie aufbewahrt werden: [Aufnahmen](/interface/recordings). |
 | **Verarbeitung** | Prompts und die Regeln, die sie ausführen: [Verarbeitung](/ai-processing/processing). |
+| **Souffleur** | Hört ein laufendes Gespräch mit und schlägt vor: [Souffleur-Fenster](/interface/prompter). |
 | **Aufnahme** | Anrufe aufnehmen und es der Gegenseite mitteilen: [Aufnahmen](/recordings). |
 | **Telefon** | SIP, Konten, Anrufe, die Wählhilfe und die Anrufliste. |
 | **Transkription** | Spracherkenner, die Warteschlange, die sie antreibt, und die Transkripte, die sie erzeugen: [Transkription](/ai-processing/transcription). |

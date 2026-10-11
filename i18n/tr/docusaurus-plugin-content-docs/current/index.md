@@ -20,6 +20,8 @@ Kayıtlar, dökümler ve geçmiş, size ait bir dosyada saklanır. Hesap ya da a
 3. Konuşmacı konuşmacı, sesle eşzamanlı olarak yazıya dökülür.
 4. Seçtiğiniz dil modeli onu işler: özet, görevler, kategori, etiketler ve uyarı işaretleri — ayrıca görüşmeye bir soru da sorabilirsiniz.
 
+Bir çağrı sırasında [Suflör](interface/prompter.md) daha da ileri gidebilir: söyleneni söylendiği anda gösterir ve ne yanıt verileceğini önerir.
+
 ## İndirme ve sistem gereksinimleri {#download-and-system-requirements}
 
 Program [ai-softphone.com](https://ai-softphone.com/#download) adresinden ücretsiz indirilir: Windows için bir kurulum programı (`.exe`), macOS için bir disk görüntüsü (`.dmg`), Linux için bir AppImage ya da bir `.deb`. Kurulum programı, disk görüntüsü ve AppImage için önceden başka hiçbir şey kurmanız gerekmez — Qt, OpenSSL ve C++ çalışma zamanı bunların içinde gelir. İstisna `.deb` paketidir: sistemin kendi C++ çalışma zamanını kullanır, aşağıya bakın. Sağlayıcınızdan ya da kendi yönettiğiniz santralden bir SIP hesabına ihtiyacınız olacak. Kayıt, program kurulduğu anda çalışır; döküm ve işleme için seçtiğiniz bir hizmet ya da kendi makinenizde bir model gerekir.
@@ -60,6 +62,7 @@ Bu belgelerdeki ekran görüntüleri macOS'ta alınmıştır ve küçük göster
 | Konuşmayı metne çeviren tanıyıcıyı seçmek | [Yazıya döküm](ai-processing/transcription.md) |
 | Görüşmelerinizi hangi yapay zekânın işleyeceğine ve bunun neye mal olabileceğine karar vermek | [İşleme](ai-processing/processing.md) |
 | Kategorileri, etiketleri ve uyarı işaretlerini değiştirmek | [Sözlükler](ai-processing/dictionaries.md) |
+| Bir çağrı sırasında söyleneni görmek ve yanıt önerileri almak | [Suflör penceresi](interface/prompter.md) |
 | Yerleşimi, temayı, başlangıcı ve kısayolları değiştirmek | [Görünüm](program/appearance.md), [Başlangıç](program/startup.md) ve [Kısayollar](program/shortcuts.md) |
 | Bir CRM'i ya da başka bir programı bağlamak | [Web kancaları](integration/webhooks.md) ve [Yerel REST API](integration/rest-api.md) |
 | Telefonun ve santralin birbirine ne söylediğini görmek | [Tanılama](troubleshooting/diagnostics.md) |

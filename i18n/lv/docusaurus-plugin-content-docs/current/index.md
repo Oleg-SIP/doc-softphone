@@ -20,6 +20,8 @@ Ieraksti, atšifrējumi un vēsture tiek glabāti failā, kas pieder jums. Nav v
 3. Tā tiek atšifrēta pa runātājiem, sinhroni ar skaņu.
 4. Jūsu izvēlētais valodas modelis to apkopo: kopsavilkums, uzdevumi, kategorija, birkas un brīdinājuma signāli — un jūs varat uzdot sarunai jautājumu.
 
+Zvana laikā [Suflieris](interface/prompter.md) var iet tālāk: tas rāda teikto tieši tad, kad tas tiek teikts, un iesaka, ko atbildēt.
+
 ## Lejupielāde un sistēmas prasības {#download-and-system-requirements}
 
 Programmu var bez maksas lejupielādēt no [ai-softphone.com](https://ai-softphone.com/#download): instalētājs (`.exe`) Windows, diska attēls (`.dmg`) macOS un AppImage vai `.deb` Linux. Instalētājam, diska attēlam un AppImage nekas cits iepriekš nav jāinstalē — Qt, OpenSSL un C++ izpildlaika vide ir to iekšpusē. Izņēmums ir `.deb`: tas izmanto pašas sistēmas C++ izpildlaika vidi, skatiet tālāk. Jums būs vajadzīgs SIP konts no jūsu pakalpojumu sniedzēja vai no centrāles, ko pārvaldāt pats. Ierakstīšana darbojas, tiklīdz programma ir instalēta; atšifrējumam un apkopojumam vajadzīgs jūsu izvēlēts pakalpojums vai modelis jūsu datorā.
@@ -60,6 +62,7 @@ Saskarne pieejama trīsdesmit valodās; valodu izvēlas sadaļā [Izskats](/prog
 | Izvēlēties atpazinēju, kas runu pārvērš tekstā | [Pieraksts](ai-processing/transcription.md) |
 | Izlemt, kurš mākslīgais intelekts apkopo jūsu sarunas un cik tas drīkst maksāt | [Apstrāde](ai-processing/processing.md) |
 | Mainīt kategorijas, birkas un brīdinājuma signālus | [Vārdnīcas](ai-processing/dictionaries.md) |
+| Redzēt zvana laikā teikto un saņemt ieteikumus, ko atbildēt | [Sufliera logs](interface/prompter.md) |
 | Mainīt izkārtojumu, motīvu, startēšanu un saīsnes | [Izskats](program/appearance.md), [Startēšana](program/startup.md) un [Saīsnes](program/shortcuts.md) |
 | Savienot CRM vai citu programmu | [Tīmekļa āķi](integration/webhooks.md) un [Vietējais REST API](integration/rest-api.md) |
 | Redzēt, ko tālrunis un centrāle saka viens otram | [Diagnostika](troubleshooting/diagnostics.md) |

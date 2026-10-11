@@ -25,8 +25,9 @@ Elke module heeft een vakje, een naam, een regel die zegt wat ze doet, en rechts
 | **Integratie** | De lokale API en webhooks: [Integratie](/integration/rest-api). |
 | **Media-opslag** | De bibliotheek met gesprekken en hoelang ze bewaard blijven: [Opnames](/interface/recordings). |
 | **Verwerking** | Prompts en de regels die ze laten vuren: [Verwerking](/ai-processing/processing). |
+| **Souffleur** | Luistert mee tijdens een gesprek en stelt voor: [Souffleurvenster](/interface/prompter). |
 | **Opname** | Gesprekken opnemen, en de andere partij daarover inlichten: [Opnames](/recordings). |
-| **Telefonie** | SIP, accounts, gesprekken, de kiezer en de gesprekgeschiedenis. |
+| **Telefoon** | SIP, accounts, gesprekken, de kiezer en de gesprekgeschiedenis. |
 | **Transcriptie** | Herkenners, de wachtrij die ze aanstuurt, en de transcripten die ze maken: [Transcriptie](/ai-processing/transcription). |
 
 Zet een module uit en ze is weg: geen instellingen meer, geen menu-item, niets ervan draait nog. Zet een module uit waar u niets aan hebt — bijvoorbeeld **Integratie** op een computer waar niets anders met de telefoon praat — of houd een telefoon die alleen een telefoon is, als dat alles is wat een werkplek nodig heeft. Het pakket is in beide gevallen hetzelfde: er valt niets te kopen en niets te ontgrendelen.

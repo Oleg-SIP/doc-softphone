@@ -20,6 +20,8 @@ Opptak, utskrifter og historikk lagres i en fil som du eier. Det trengs ingen ko
 3. Den skrives ut, taler for taler, i takt med lyden.
 4. Språkmodellen du har valgt, oppsummerer den: sammendrag, oppgaver, kategori, etiketter og signaler — og du kan stille samtalen et spørsmål.
 
+Under en samtale kan [Suffløren](interface/prompter.md) gå lenger: den viser hva som blir sagt mens det blir sagt, og foreslår hva du kan svare.
+
 ## Nedlasting og systemkrav {#download-and-system-requirements}
 
 Programmet kan lastes ned gratis fra [ai-softphone.com](https://ai-softphone.com/#download): et installasjonsprogram (`.exe`) for Windows, et diskbilde (`.dmg`) for macOS og en AppImage eller en `.deb` for Linux. Installasjonsprogrammet, diskbildet og AppImage krever ikke at noe annet installeres først — Qt, OpenSSL og C++-kjøretiden følger med i dem. Unntaket er `.deb`: den bruker systemets egen C++-kjøretid, se nedenfor. Du trenger en SIP-konto, fra leverandøren din eller fra sentralen du selv drifter. Opptak virker så snart programmet er installert; utskriften og sammendraget krever en tjeneste du velger, eller en modell på din egen maskin.
@@ -60,6 +62,7 @@ Skjermbildene i denne dokumentasjonen er tatt på macOS og vises små: klikk på
 | Velge gjenkjenneren som gjør tale om til tekst | [Transkripsjon](ai-processing/transcription.md) |
 | Bestemme hvilken AI som oppsummerer samtalene dine, og hva det kan koste | [Behandling](ai-processing/processing.md) |
 | Endre kategoriene, etikettene og signalene | [Ordlister](ai-processing/dictionaries.md) |
+| Se hva som blir sagt under en samtale, og få forslag til hva du kan svare | [Sufflørens vindu](interface/prompter.md) |
 | Endre oppsett, tema, oppstart og snarveier | [Utseende](program/appearance.md), [Oppstart](program/startup.md) og [Snarveier](program/shortcuts.md) |
 | Koble til et CRM eller et annet program | [Webhooker](integration/webhooks.md) og [Lokalt REST-API](integration/rest-api.md) |
 | Se hva telefonen og sentralen sier til hverandre | [Diagnostikk](troubleshooting/diagnostics.md) |

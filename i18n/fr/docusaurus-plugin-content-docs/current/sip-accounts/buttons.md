@@ -1,7 +1,7 @@
 ---
 title: Boutons
 sidebar_position: 4
-description: "\"Boutons BLF : des boutons à une touche qui composent un poste de votre IPBX et montrent s'il est libre, s'il sonne ou s'il est occupé.\""
+description: "Boutons BLF : des boutons à une touche qui composent un poste de votre IPBX et montrent s'il est libre, s'il sonne ou s'il est occupé."
 ---
 
 Les boutons sont les touches **BLF** (Busy Lamp Field) du softphone, la même fonction que sur un téléphone de bureau relié à un IPBX. Un bouton compose un poste d'une seule pression. Un bouton qui surveille sa ligne affiche aussi un voyant : le téléphone interroge l'IPBX sur ce poste et montre s'il est libre, s'il sonne ou s'il est occupé, comme le font un pupitre de standardiste ou les touches programmables d'un téléphone de bureau.

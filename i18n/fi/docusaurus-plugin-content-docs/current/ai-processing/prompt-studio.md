@@ -28,7 +28,9 @@ Toinen sarake on se, mitä luettelo näyttää kehotteen nimen alla: mitä se ki
 | **Myynnin laatu** | Kriteerit | Arvioi keskustelun muokattavien myyntikriteerien mukaan. |
 | **Tuen laatu** | Kriteerit | Arvioi, kuinka hyvin ongelma ymmärrettiin ja hoidettiin. |
 
-Muodot ovat vastauksen kiinteitä rakenteita, minkä ansiosta ohjelma voi säilyttää sen ja hakea siitä myöhemmin: **Tunnisteet** ovat koodeja jostakin luettelostasi, **Merkit** ovat koodeja vakavuuden kera, **Kriteerit** ovat arvosana perusteluineen ja arvosana kullekin kriteerille, **Vastaus** on vastaus niiden sanojen kera, joihin se perustuu. Ohjeet, jotka kertovat mallille muodon, säilytetään kohdassa [Sanastot](dictionaries.md#answer-shapes-and-language).
+Muodot ovat vastauksen kiinteitä rakenteita, minkä ansiosta ohjelma voi säilyttää sen ja hakea siitä myöhemmin: **Tunnisteet** ovat koodeja jostakin luettelostasi, **Merkit** ovat koodeja vakavuuden kera, **Kriteerit** ovat arvosana perusteluineen ja arvosana kullekin kriteerille, **Vastaus** on vastaus niiden sanojen kera, joihin se perustuu. Ohjeet, jotka kertovat mallille muodon, säilytetään kohdassa [Sanastot](dictionaries.md#instructions).
+
+Myös [kuiskaajan](../interface/prompter.md) avustajat ovat kehotteita, joita ajetaan jokaiseen repliikkiin puhelun aikana eikä valmiiseen keskusteluun. Ne ovat omassa luettelossaan, kohdassa [Avustajat](prompter.md#assistants) näkymässä **Asetukset → Kuiskaaja**.
 
 AI Softphonessa soitetut puhelut, tietokoneelta [kaapatut](/capture/) kokoukset ja tuodut tallenteet kulkevat kaikki samojen kehotteiden kautta, kun niillä on litterointi.
 
@@ -41,6 +43,6 @@ Tehtävät kirjaavat, mistä sovittiin — ne eivät lähetä viestejä, varaa k
 - Valitse malli kullekin kehotteelle — omalla koneellasi tai pilvessä.
 - Aseta järjestys, jossa kehotteet suoritetaan, ota niitä käyttöön ja pois käytöstä ja tee niistä ehdollisia — se tehdään [säännöillä](processing.md#rules): esimerkiksi myyntiarvio suoritetaan vain puheluille, jotka on lajiteltu luokkaan **Myynti**.
 - Pidä omat luokkasi, tunnisteesi ja merkkisi kohdassa [Sanastot](dictionaries.md).
-- Aseta kuluille katto [kuukausirajoilla](processing.md#limits).
+- Aseta kuluille katto [kuukausirajoilla](processing.md#spending).
 
 Alkuperäiset kehotteet ja säännöt voi palauttaa painikkeella **Palauta oletusarvot** kohdassa **Oletusarvot** sivulla [Asetukset → Käsittely](processing.md#defaults).

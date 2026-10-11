@@ -7,6 +7,7 @@ description: Los términos de la telefonía IP y de AI Softphone que se usan en 
 | Término | Significado |
 | --- | --- |
 | **Cuenta** | Una línea: un usuario SIP en una centralita o en un proveedor. Puede tener sesión iniciada en varias. Consulte [Configurar una cuenta SIP](/sip-accounts/setup). |
+| **Ayudante** | Lo que se le pide ser al apuntador mientras escucha: subtítulos, una traducción o sugerencias de qué decir. Véase [Ajustes del apuntador](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Un botón que marca una extensión y muestra con una luz si está libre, sonando u ocupada. Consulte [Botones](/sip-accounts/buttons). |
 | **Llamada en espera** | Lo que hace el teléfono cuando alguien llama mientras usted ya está en una llamada. Consulte [Ajustes de llamadas](/sip-accounts/calls#call-waiting). |
 | **Captura** | Grabar una conversación celebrada en otra aplicación, como Zoom, Teams o Meet. Consulte [Captura](/capture/). |
@@ -19,8 +20,10 @@ description: Los términos de la telefonía IP y de AI Softphone que se usan en 
 | **Centralita IP** | La central telefónica de una oficina, que funciona en una red; también se llama softswitch. |
 | **Modelo de lenguaje** | La IA que lee una transcripción y escribe sobre ella. Consulte [Procesamiento](/ai-processing/processing). |
 | **Instrucción** | Lo que se le pide a un modelo de lenguaje (en inglés, prompt). Consulte [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Apuntador** | Una ventana que muestra lo que se dice durante una llamada a medida que se dice, y sugerencias de qué responder. Véase [Ventana del apuntador](/interface/prompter). |
 | **Reconocedor** | El servicio que convierte el audio en texto (reconocimiento de voz). Consulte [Transcripción](/ai-processing/transcription). |
 | **Señal** | Algo de una conversación que requiere atención, con la prueba y el momento. Consulte [Diccionarios](/ai-processing/dictionaries#red-flags). |
+| **Ensayo** | Reproducir una conversación grabada en el apuntador en lugar de una llamada, para probar un ayudante. Véase [Ventana del apuntador](/interface/prompter#rehearsing-on-a-recording). |
 | **Registro** | El teléfono que le dice a la centralita dónde está, para que le lleguen las llamadas. Un punto verde en la cuenta significa que está registrada. |
 | **Regla** | Un paso que se ejecuta solo, en orden, en cada conversación. Consulte [Procesamiento](/ai-processing/processing#rules). |
 | **SIP** | El protocolo que usan los teléfonos y las centralitas para establecer llamadas. |

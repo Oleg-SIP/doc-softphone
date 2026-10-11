@@ -40,14 +40,16 @@ Marcas que *pueden ser todas ciertas de la misma conversación*. Pulse **Añadir
 
 Cosas que requieren atención, encontradas en la conversación con la prueba y el momento — por ejemplo *Cliente enfadado* o *Riesgo de fuga*. Las señales se dibujan en rojo en la [ventana de grabaciones](../interface/recordings.md), y cada una tiene una gravedad: baja, media o alta.
 
-## Formas de respuesta e idioma {#answer-shapes-and-language}
+## Consignas {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Ajustes → Diccionarios: formas de respuesta e instrucciones de idioma" />
 
-Más abajo en la pestaña están las instrucciones con las que se montan las instrucciones de los modelos. Se guardan aquí para que todas puedan usar la misma redacción, y puede cambiarlas como cualquier otra entrada.
+*Lo que se añade a cada instrucción sobre la forma de la respuesta y el idioma en que escribirla.* Se guardan aquí para que todas las instrucciones puedan usar la misma redacción, y puede cambiarlas como cualquier otra entrada — o escribir las suyas, como *responde brevemente* o *nunca cites un precio*, y marcarlas en **Enviar también** en cualquier instrucción.
 
 | Nombre | Código | Qué le dice al modelo |
 | --- | --- | --- |
+| **Prosa** | `shape-plain` | Responder en prosa sencilla, sin JSON, listas ni títulos. |
+| **Puntos** | `shape-list` | Responder con una lista de cosas que hacer, cada una con quién y cuándo. |
 | **Etiquetas** | `shape-labels` | Responder en JSON con una lista de códigos y su seguridad en cada uno, usando solo códigos de la lista que recibió. |
 | **Puntuación** | `shape-score` | Responder con una puntuación, su motivo y las palabras en que se basa. |
 | **Criterios** | `shape-rubric` | Responder con una puntuación global y una puntuación por cada criterio. |
@@ -58,7 +60,7 @@ Más abajo en la pestaña están las instrucciones con las que se montan las ins
 | **Como se habló, nombrado** | `language-as-spoken-named` | Lo mismo, nombrando el idioma. |
 | **Un idioma nombrado** | `language-named` | Escribir en el idioma que usted indique. |
 
-**Añadir**, al final de la lista, añade una entrada.
+**Añadir**, al principio de la lista, añade una entrada.
 
 ## Valores por defecto {#defaults}
 

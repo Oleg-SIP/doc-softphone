@@ -10,7 +10,9 @@ description: Die Checkliste Übersicht und die Reiter des Einstellungsfensters, 
 
 <Shot name="04_settings_overview" alt="Einstellungen → Übersicht: die Checkliste dessen, was eingerichtet ist" />
 
-Die **Übersicht** ist eine Checkliste dessen, was nötig ist, um das Beste aus dem Programm zu holen. Oben zählt sie die Schritte — im Bild *10 Schritte erledigt* mit einem grünen Punkt und *noch 8 Schritte* mit einem roten — und ein Balken zeigt den erledigten Anteil. Jeder Schritt ist eine Zeile mit einem Punkt: grün für einen erledigten Schritt, rot für einen, der noch fehlt.
+Oben im Reiter öffnet **Dokumentation** diese Website.
+
+Die **Übersicht** ist eine Checkliste dessen, was nötig ist, um das Beste aus dem Programm zu holen. Oben zählt sie die Schritte — im Bild *14 Schritte erledigt* mit einem grünen Punkt und *noch 6 Schritte* mit einem roten — und ein Balken zeigt den erledigten Anteil. Jeder Schritt ist eine Zeile mit einem Punkt: grün für einen erledigten Schritt, rot für einen, der noch fehlt.
 
 *Tippen Sie auf eine Zeile, um zu lesen, wozu sie dient, und dorthin zu gehen, wo sie eingestellt wird.* Der Pfeil am rechten Ende klappt die Zeile auf.
 
@@ -20,6 +22,7 @@ Die **Übersicht** ist eine Checkliste dessen, was nötig ist, um das Beste aus 
 | **Mitschnitt aus anderen Anwendungen** | Mitschnitt einschalten; Ein Gespräch mitschneiden; Einem Mitschnitt einen Namen geben |
 | **Transkription** | Spracherkennung hinzufügen; Ein Gespräch transkribieren |
 | **Verarbeitung** | Modell hinzufügen; Ein Transkript verarbeiten |
+| **Souffleur** | Souffleur erlauben; Souffleur starten |
 | **Aufnahmen** | Im Gesprochenen suchen; Aufnahme exportieren; Zusammenfassung exportieren |
 | **Anwendung** | Mit dem Computer starten; Aktuell halten |
 | **Rückmeldung** | Den erweiterten Bericht senden; Sagen Sie uns Ihre Meinung |
@@ -39,8 +42,9 @@ Die Schritte sind ein Leitfaden, keine Pflicht: Ein Schritt, den Sie nicht brauc
 | | **Aufnahme** | [Aufnahme von Anrufen: Zustimmung, Konferenzen und wie lange Dateien aufbewahrt werden](../recordings.md) |
 | | **Mitschnitt** | [Den Ton anderer Anwendungen mitschneiden](../capture/capture.md): Besprechungen in Zoom, Teams, Meet und Ähnlichem |
 | KI | **Transkription** | [Spracherkenner](../ai-processing/transcription.md) |
-| | **Verarbeitung** | [Automatische Verarbeitung, Ausgabengrenzen, Sprachmodelle, Prompts und Regeln](../ai-processing/processing.md) |
+| | **Verarbeitung** | [Automatische Verarbeitung, Sprachmodelle, Prompts, Regeln und Ausgabengrenzen](../ai-processing/processing.md) |
 | | **Verzeichnisse** | [Kategorien, Label und Auffälligkeiten](../ai-processing/dictionaries.md) |
+| | **Souffleur** | [Der Live-Souffleur: der Schalter, die Schriftgröße, die Helfer und was sie ausgeben dürfen](../ai-processing/prompter.md) |
 | Programm | **Erscheinungsbild** | [Anordnung, Sprache, Farbschema und Symbole](../program/appearance.md) |
 | | **Start** | [Wie das Programm startet, schließt und Anruf-Links öffnet](../program/startup.md) |
 | | **Tastenkürzel** | [Tastenkürzel](../program/shortcuts.md) |

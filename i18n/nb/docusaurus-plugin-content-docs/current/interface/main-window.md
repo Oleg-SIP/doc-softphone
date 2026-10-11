@@ -16,7 +16,7 @@ Fra topp til bunn inneholder venstre side:
 - tastaturet og ringetasten;
 - kontobrikkene;
 - knappene som følger med på andre internnumre;
-- de fire stedene å gå: **Opptak**, **Kontakter**, **Historikk** og **Innstillinger**.
+- stedene å gå: **Opptak**, **Kontakter**, **Historikk**, **Sufflør** og **Innstillinger**.
 
 ### Nummerfeltet {#the-dialler}
 
@@ -36,9 +36,9 @@ Under tastaturet er det én brikke for hver [konto](../sip-accounts/setup.md). E
 
 Under brikkene står [knappene](../sip-accounts/buttons.md) du har laget for kolleger og linjer, hver med en lampe — **Johansen** og **Lager** på bildene. Trykk på en for å ringe nummeret.
 
-### Opptak, Kontakter, Historikk, Innstillinger {#recordings-contacts-history-settings}
+### Opptak, Kontakter, Historikk, Sufflør, Innstillinger {#recordings-contacts-history-prompter-settings}
 
-Disse fire punktene nederst åpner hver sin fane til høyre, side om side: [Opptak](../interface/recordings.md), [Kontakter og historikk](contacts-history.md) og [Innstillinger](settings-overview.md). Faner du har åpnet, blir stående i raden øverst på høyre side.
+Disse punktene nederst åpner hver sin fane til høyre, side om side: [Opptak](../interface/recordings.md), [Kontakter og historikk](contacts-history.md), [Suffløren](prompter.md) og [Innstillinger](settings-overview.md). **Sufflør** er der først når suffløren er tillatt og har en gjenkjenner å lytte med. Faner du har åpnet, blir stående i raden øverst på høyre side.
 
 ## En pågående samtale {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Samtaler som er slått sammen, vises som ett kort **Konferanse** på kontoens li
 
 Når [opptak fra andre programmer](../capture/capture.md) er tillatt under **Innstillinger → Fanging**, dukker det opp en stripe mellom kontobrikkene og knappene.
 
-<Shot name="10_settings_capture" full alt="Fangingsstripen nederst på telefonen: Fanging · klar, Ta opp og to nivåstolper" />
+<Shot name="10_settings_capture" full alt="Fangingsstripen nederst på telefonen: Fanging · venter på en samtale, opptaksknappen og to nivåstolper" />
 
-- **Fanging · klar** sier at programmet lytter etter en samtale i et annet program.
-- **Ta opp** starter en fanging for hånd.
-- De to tynne stolpene under viser lydnivået: den øverste er deg, den nederste er det maskinen spiller av. Hvordan de tegnes, stilles inn under **Bilde i raden ved foten av telefonen**.
+- **Fanging · venter på en samtale** sier at programmet lytter etter en samtale i et annet program.
+- Den runde knappen til høyre starter en fanging for hånd.
+- De to tynne stolpene under viser lydnivået: den øverste er deg, den nederste er det maskinen spiller av. Hvordan de tegnes, stilles inn under **Tegning i linjen nederst**.
 
 Programmet kan også ligge i systemstatusfeltet (menylinjen på macOS) og hentes fram med en [snarvei](../program/shortcuts.md).

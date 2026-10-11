@@ -1,7 +1,7 @@
 ---
 title: Webhook
 sidebar_position: 1
-description: "\"Biarkan telepon mengirim permintaan ke CRM Anda atau sistem lain ketika panggilan dimulai, berubah, atau berakhir — dengan permintaan persis dari panggilan masuk dan panggilan keluar.\""
+description: "Biarkan telepon mengirim permintaan ke CRM Anda atau sistem lain ketika panggilan dimulai, berubah, atau berakhir — dengan permintaan persis dari panggilan masuk dan panggilan keluar."
 ---
 
 Webhook adalah permintaan yang dikirim telepon ke alamat pilihan Anda setiap kali sesuatu terjadi pada panggilan. Dengan cara inilah CRM dapat membuka kartu pelanggan sebelum dering kedua, mencatat panggilan ketika berakhir, atau menyalakan lampu di papan dinding. Webhook tidak memerlukan aturan firewall untuk lalu lintas masuk: teleponlah yang menghubungi Anda. Karena permintaan dikirim dari komputer kerja, alamatnya cukup dapat dijangkau dari komputer itu saja — alamat internal `http://crm.local/calls` berfungsi sama baiknya dengan alamat HTTPS publik.

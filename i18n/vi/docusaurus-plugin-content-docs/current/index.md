@@ -20,6 +20,8 @@ Bản ghi, bản chép lời và lịch sử được lưu trong một tệp thu
 3. Nó được chép lời, theo từng người nói, khớp với âm thanh.
 4. Mô hình ngôn ngữ bạn chọn sẽ xử lý nó: tóm tắt, việc cần làm, hạng mục, nhãn và dấu hiệu cảnh báo — và bạn có thể đặt câu hỏi cho cuộc trò chuyện.
 
+Trong cuộc gọi, [Người nhắc](interface/prompter.md) còn có thể làm hơn thế: nó hiển thị những gì được nói ngay khi được nói, và gợi ý nên trả lời gì.
+
 ## Tải về và yêu cầu hệ thống {#download-and-system-requirements}
 
 Chương trình được tải về miễn phí từ [ai-softphone.com](https://ai-softphone.com/#download): bộ cài đặt (`.exe`) cho Windows, ảnh đĩa (`.dmg`) cho macOS, và AppImage hoặc `.deb` cho Linux. Bộ cài đặt, ảnh đĩa và AppImage không cần cài thêm gì trước — Qt, OpenSSL và thư viện chạy C++ đã nằm sẵn bên trong. Ngoại lệ là gói `.deb`: gói này dùng thư viện chạy C++ của chính hệ thống, xem bên dưới. Bạn sẽ cần một tài khoản SIP, từ nhà cung cấp của bạn hoặc từ tổng đài do chính bạn vận hành. Việc ghi âm hoạt động ngay khi chương trình được cài đặt; bản chép lời và kết quả xử lý cần một dịch vụ bạn chọn hoặc một mô hình trên chính máy của bạn.
@@ -60,6 +62,7 @@ Giao diện có sẵn bằng ba mươi ngôn ngữ, được chọn trong [Giao 
 | Chọn bộ nhận dạng chuyển lời nói thành văn bản | [Gỡ băng](ai-processing/transcription.md) |
 | Quyết định AI nào xử lý các cuộc trò chuyện của bạn và được phép tốn bao nhiêu | [Xử lý](ai-processing/processing.md) |
 | Thay đổi hạng mục, nhãn và dấu hiệu cảnh báo | [Từ điển](ai-processing/dictionaries.md) |
+| Xem những gì được nói trong cuộc gọi và nhận gợi ý nên trả lời gì | [Cửa sổ người nhắc](interface/prompter.md) |
 | Thay đổi bố cục, chủ đề màu, cách khởi động và phím tắt | [Giao diện](program/appearance.md), [Khởi động](program/startup.md) và [Phím tắt](program/shortcuts.md) |
 | Kết nối CRM hoặc một chương trình khác | [Webhook](integration/webhooks.md) và [REST API cục bộ](integration/rest-api.md) |
 | Xem điện thoại và tổng đài nói gì với nhau | [Chẩn đoán](troubleshooting/diagnostics.md) |

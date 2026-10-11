@@ -28,7 +28,9 @@ La segunda columna es lo que muestra la lista bajo el nombre de la instrucción:
 | **Calidad comercial** | Criterios | Revisa la conversación según criterios de venta que puede editar. |
 | **Calidad del soporte** | Criterios | Juzga lo bien que se entendió y se resolvió el problema. |
 
-Las formas son estructuras fijas de respuesta, lo que permite al programa guardarla y buscar en ella más tarde: las **Etiquetas** son códigos de una de sus listas, las **Señales** son códigos con una gravedad, los **Criterios** son una puntuación con un motivo y una puntuación por cada criterio, la **Respuesta** es una contestación con las palabras en que se basa. Las instrucciones que indican la forma a un modelo se guardan en [Diccionarios](dictionaries.md#answer-shapes-and-language).
+Las formas son estructuras fijas de respuesta, lo que permite al programa guardarla y buscar en ella más tarde: las **Etiquetas** son códigos de una de sus listas, las **Señales** son códigos con una gravedad, los **Criterios** son una puntuación con un motivo y una puntuación por cada criterio, la **Respuesta** es una contestación con las palabras en que se basa. Las instrucciones que indican la forma a un modelo se guardan en [Diccionarios](dictionaries.md#instructions).
+
+Los ayudantes del [apuntador](../interface/prompter.md) también son instrucciones, que se ejecutan sobre cada respuesta mientras transcurre una llamada en lugar de sobre una conversación terminada. Se guardan en una lista propia, en [Ayudantes](prompter.md#assistants) de **Ajustes → Apuntador**.
 
 Las llamadas hechas en AI Softphone, las reuniones [capturadas](/capture/) desde el ordenador y las grabaciones importadas pasan todas por las mismas instrucciones en cuanto tienen transcripción.
 
@@ -41,6 +43,6 @@ Las tareas recogen lo acordado — no envían mensajes, ni reservan visitas, ni 
 - Elija el modelo de cada instrucción — en su propia máquina o en la nube.
 - Fije el orden en que se ejecutan las instrucciones, enciéndalas y apáguelas, y hágalas condicionales — eso se hace con las [reglas](processing.md#rules): por ejemplo, una revisión de ventas solo se ejecuta en las llamadas clasificadas como **Ventas**.
 - Mantenga sus propias categorías, etiquetas y señales en [Diccionarios](dictionaries.md).
-- Ponga tope al coste con los [límites mensuales](processing.md#limits).
+- Ponga tope al coste con los [límites mensuales](processing.md#spending).
 
 Las instrucciones y las reglas originales se pueden restaurar con **Restaurar los valores por defecto**, en **Valores por defecto** de [Ajustes → Procesamiento](processing.md#defaults).

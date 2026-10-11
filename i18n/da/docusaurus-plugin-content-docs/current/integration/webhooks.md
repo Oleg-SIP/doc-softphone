@@ -1,7 +1,7 @@
 ---
 title: Webhooks
 sidebar_position: 1
-description: "\"Lad telefonen sende dit CRM eller et andet system en forespørgsel, når et opkald starter, ændrer sig eller slutter — med de præcise forespørgsler for et indgående og et udgående opkald.\""
+description: "Lad telefonen sende dit CRM eller et andet system en forespørgsel, når et opkald starter, ændrer sig eller slutter — med de præcise forespørgsler for et indgående og et udgående opkald."
 ---
 
 En webhook er en forespørgsel, som telefonen sender til en adresse efter dit valg, hver gang der sker noget med et opkald. Sådan kan et CRM åbne kundekortet før andet ring, registrere et opkald, når det slutter, eller tænde en lampe på en vægtavle. En webhook kræver ingen indgående firewallregler: det er telefonen, der kalder ud til dig. Fordi forespørgslerne sendes fra arbejdsstationen, skal adressen kun kunne nås fra den computer — en intern `http://crm.local/calls` virker lige så godt som en offentlig HTTPS-adresse.

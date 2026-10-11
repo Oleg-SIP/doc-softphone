@@ -20,6 +20,8 @@ description: Что такое AI Softphone, на чём он работает �
 3. Он расшифровывается — по говорящим, синхронно со звуком.
 4. Выбранная вами языковая модель делает разбор: содержание, задачи, категорию, метки и красные флаги, — а разговору можно задать вопрос.
 
+Во время звонка [Суфлёр](interface/prompter.md) может больше: он показывает сказанное в тот момент, когда его говорят, и подсказывает, что ответить.
+
 Для России программа предлагает отечественные сервисы: распознавание речи **Yandex SpeechKit** и языковую модель **YandexGPT** из Yandex AI Studio. Они появляются, когда в [«О программе»](application/about.md#version-and-country) выбрана страна **Россия**; подробнее — в разделах [«Расшифровка»](ai-processing/transcription.md#yandex-speechkit) и [«Обработка»](ai-processing/processing.md#yandexgpt).
 
 ## Загрузка и системные требования {#download-and-system-requirements}
@@ -62,6 +64,7 @@ description: Что такое AI Softphone, на чём он работает �
 | Выбрать распознаватель, который превращает речь в текст, в том числе Yandex SpeechKit | [Расшифровка](ai-processing/transcription.md) |
 | Решить, какой ИИ разбирает разговоры (например, YandexGPT) и сколько это может стоить | [Обработка](ai-processing/processing.md) |
 | Изменить категории, метки и красные флаги | [Справочники](ai-processing/dictionaries.md) |
+| Видеть, что говорят во время звонка, и получать подсказки, что ответить | [Окно суфлёра](interface/prompter.md) |
 | Изменить раскладку, тему, запуск и горячие клавиши | [Оформление](program/appearance.md), [Запуск](program/startup.md) и [Горячие клавиши](program/shortcuts.md) |
 | Подключить CRM или другую программу | [Вебхуки](integration/webhooks.md) и [Локальный REST API](integration/rest-api.md) |
 | Увидеть, что говорят друг другу телефон и АТС | [Диагностика](troubleshooting/diagnostics.md) |

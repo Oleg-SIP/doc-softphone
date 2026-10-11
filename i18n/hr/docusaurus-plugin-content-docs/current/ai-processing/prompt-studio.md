@@ -28,7 +28,9 @@ Drugi stupac je ono što popis prikazuje ispod naziva upute: što piše i u koje
 | **Kvaliteta prodaje** | Mjerila | Pregledava razgovor prema prodajnim mjerilima koja možete uređivati. |
 | **Kvaliteta podrške** | Mjerila | Prosuđuje koliko je dobro problem shvaćen i riješen. |
 
-Oblici su stalni oblici odgovora, i upravo to programu omogućuje da ga sačuva i kasnije u njemu pretražuje: **Oznake** su kodovi s jednog od vaših popisa, **Signali** su kodovi s ozbiljnošću, **Mjerila** su ocjena s razlogom i ocjenom za svako mjerilo, **Odgovor** je odgovor s riječima na koje se oslanja. Upute koje modelu govore oblik čuvaju se u [Rječnicima](dictionaries.md#answer-shapes-and-language).
+Oblici su stalni oblici odgovora, i upravo to programu omogućuje da ga sačuva i kasnije u njemu pretražuje: **Oznake** su kodovi s jednog od vaših popisa, **Signali** su kodovi s ozbiljnošću, **Mjerila** su ocjena s razlogom i ocjenom za svako mjerilo, **Odgovor** je odgovor s riječima na koje se oslanja. Upute koje modelu govore oblik čuvaju se u [Rječnicima](dictionaries.md#instructions).
+
+I pomoćnici [šaptača](../interface/prompter.md) su upute, koje se izvode na svakoj replici dok poziv traje, a ne na završenom razgovoru. Čuvaju se na vlastitom popisu, pod [Pomoćnici](prompter.md#assistants) u **Postavke → Šaptač**.
 
 Pozivi upućeni u AI Softphoneu, sastanci [uhvaćeni](/capture/) s računala i uvezene snimke prolaze kroz iste upute čim imaju prijepis.
 
@@ -41,6 +43,6 @@ Zadaci bilježe što je dogovoreno — ne šalju poruke, ne rezerviraju posjete 
 - Odaberite model za svaku uputu — na vlastitom računalu ili u oblaku.
 - Postavite redoslijed kojim se upute izvode, uključujte ih i isključujte te ih učinite uvjetnima — to se radi [pravilima](processing.md#rules): primjerice, pregled prodaje izvodi se samo na pozivima svrstanima kao **Prodaja**.
 - Vodite vlastite kategorije, oznake i upozoravajuće signale u [Rječnicima](dictionaries.md).
-- Ograničite trošak [mjesečnim granicama](processing.md#limits).
+- Ograničite trošak [mjesečnim granicama](processing.md#spending).
 
 Izvorne upute i pravila mogu se vratiti s **Vrati zadano** pod **Zadane vrijednosti** u [Postavke → Obrada](processing.md#defaults).

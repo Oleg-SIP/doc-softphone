@@ -1,7 +1,7 @@
 ---
 title: Finestra delle registrazioni
 sidebar_position: 2
-description: "\"La libreria di ogni conversazione — una chiamata, un file importato o una riunione catturata da Zoom, Teams o Meet: filtri, lettore, trascrizione da cui riprodurre da qualsiasi riga e resoconti.\""
+description: "La libreria di ogni conversazione — una chiamata, un file importato o una riunione catturata da Zoom, Teams o Meet: filtri, lettore, trascrizione da cui riprodurre da qualsiasi riga e resoconti."
 ---
 
 **Registrazioni** è dove vive ogni conversazione, in qualunque modo sia arrivata: una chiamata fatta o ricevuta nel telefono, un file audio importato o una riunione catturata da Zoom, Teams, Meet o da qualsiasi altra applicazione. Stanno tutte in un unico elenco e ognuna si apre allo stesso modo: il lettore, la trascrizione e tutto ciò che il modello linguistico ne ha scritto. Prema **Registrazioni** in basso a sinistra nella [finestra principale](main-window.md) per aprirla.
@@ -22,7 +22,7 @@ Nell'immagine le prime tre righe sono una per tipo: una riunione Zoom, un file i
 
 ## Trovare una conversazione {#finding-a-conversation}
 
-La barra in alto ha cinque filtri, un campo di ricerca e un menu:
+La barra in alto ha quattro filtri, un campo di ricerca e un menu:
 
 | Controllo | Restringe l'elenco per |
 | --- | --- |
@@ -30,7 +30,6 @@ La barra in alto ha cinque filtri, un campo di ricerca e un menu:
 | **Periodo** | la data: **Oggi**, **Ieri**, **Ultimi 7 giorni** oppure **Scegli le date…** |
 | **Categoria** | la categoria in cui è stata classificata — veda [Dizionari](../ai-processing/dictionaries.md) |
 | **Contrassegno** | le etichette e i segnali che porta |
-| **Riconoscitore** | il [riconoscitore](../ai-processing/transcription.md) che ne ha fatto la trascrizione |
 | **Cerca** | ciò che vi è stato detto — la ricerca scorre le trascrizioni di tutto ciò che ha registrato |
 
 <Shot name="39_more_menu" alt="Il menu ⋮ dell'elenco: Importa da file, Esporta in CSV, Apri in un browser" />

@@ -1,7 +1,7 @@
 ---
 title: Gumbi
 sidebar_position: 4
-description: "\"Gumbi BLF: gumbi za en dotik, ki pokličejo interno številko na vaši IP-centrali in pokažejo, ali je prosta, zvoni ali je zasedena.\""
+description: "Gumbi BLF: gumbi za en dotik, ki pokličejo interno številko na vaši IP-centrali in pokažejo, ali je prosta, zvoni ali je zasedena."
 ---
 
 Gumbi so tipke **BLF** (Busy Lamp Field) programskega telefona, ista funkcija, kot jo ima namizni telefon na IP-centrali. Gumb pokliče interno številko z enim pritiskom. Gumb, ki spremlja svojo linijo, pokaže tudi lučko: telefon centralo vpraša o tej interni številki in pokaže, ali je prosta, zvoni ali je zasedena, kot to delata konzola recepcije ali programirljive tipke namiznega telefona.

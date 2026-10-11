@@ -1,7 +1,7 @@
 ---
 title: Awalan
 sidebar_position: 2
-description: "\"Jalankan telepon bersama komputer, biarkan tetap berjalan saat jendelanya ditutup, dan buka tautan tel:, callto:, dan sip:.\""
+description: "Jalankan telepon bersama komputer, biarkan tetap berjalan saat jendelanya ditutup, dan buka tautan tel:, callto:, dan sip:."
 ---
 
 **Pengaturan → Awalan** menentukan cara program dimulai, apa akibat menutup jendelanya, dan apa yang terjadi ketika Anda mengeklik nomor telepon di program lain.

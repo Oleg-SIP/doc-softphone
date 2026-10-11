@@ -1,7 +1,7 @@
 ---
 title: Knappar
 sidebar_position: 4
-description: "\"BLF-knappar: knappar med ett tryck som ringer en anknytning på din IP-växel och visar om den är ledig, ringer eller är upptagen.\""
+description: "BLF-knappar: knappar med ett tryck som ringer en anknytning på din IP-växel och visar om den är ledig, ringer eller är upptagen."
 ---
 
 Knappar är softphonens **BLF**-knappar (Busy Lamp Field), samma funktion som en bordstelefon på en IP-växel har. En knapp ringer en anknytning med ett tryck. En knapp som bevakar sin linje visar också en lampa: telefonen frågar växeln om den anknytningen och visar om den är ledig, ringer eller är upptagen, som en receptionskonsol eller de programmerbara knapparna på en bordstelefon gör.

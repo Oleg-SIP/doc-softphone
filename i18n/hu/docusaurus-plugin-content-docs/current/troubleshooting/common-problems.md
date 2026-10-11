@@ -1,7 +1,7 @@
 ---
 title: Gyakori problémák
 sidebar_position: 2
-description: "\"Mit ellenőrizzen, ha egy fiók nem regisztrál, nincs hang, egy hívásról vagy megbeszélésről nem készül felvétel, nincs leirat, vagy egy hivatkozás, egy gyorsbillentyű vagy az API nem csinál semmit.\""
+description: "Mit ellenőrizzen, ha egy fiók nem regisztrál, nincs hang, egy hívásról vagy megbeszélésről nem készül felvétel, nincs leirat, vagy egy hivatkozás, egy gyorsbillentyű vagy az API nem csinál semmit."
 ---
 
 Minden bejegyzés arra a beállításra mutat, amelyen az adott dolog múlik. Ha a válasz nincs itt, nyissa meg a [Diagnosztikát](/troubleshooting/diagnostics): megmutatja, mit mond egymásnak a telefon és az alközpont.
@@ -44,7 +44,7 @@ Hogy mi történjen, ha valaki akkor hívja, amikor Ön hívásban van, azt a [H
 Lásd: [Rögzítés](/capture/).
 
 - A **Beállítások → Rögzítés** lapon a **Hangrögzítés engedélyezése** legyen bekapcsolva.
-- Ha az **Automatikus indítás** értéke **Kérdezzen rá** (az alapérték), válaszoljon a kérdésre, amikor megjelenik; ha **Soha**, nyomja meg Ön a **Felvétel** gombot.
+- Ha az **Automatikus indítás** értéke **Kérdezzen rá** (az alapérték), válaszoljon a kérdésre, amikor megjelenik; ha **Soha**, nyomja meg Ön a felvételgombot.
 - Használja ugyanezen a lapon a **Próba** részt: a felső sávnak mozdulnia kell, amikor beszél, az alsónak, amikor valami szól.
 - A **Rögzítés** modulnak bekapcsolva kell lennie a [Modulok](/application/modules) között.
 

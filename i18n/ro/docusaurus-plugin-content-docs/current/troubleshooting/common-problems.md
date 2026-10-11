@@ -44,7 +44,7 @@ Ce se întâmplă când vă sună cineva în timp ce sunteți într-o convorbire
 Consultați [Captare](/capture/).
 
 - **Permite captarea sunetului** din **Setări → Captare** trebuie să fie pornit.
-- Cu **Pornire automată** setată la **Întreabă-mă** (implicit), răspundeți la întrebare când apare; cu **Niciodată**, apăsați chiar dumneavoastră **Înregistrează**.
+- Cu **Pornire automată** setată la **Întreabă-mă** (implicit), răspundeți la întrebare când apare; cu **Niciodată**, apăsați chiar dumneavoastră butonul de înregistrare.
 - Folosiți **Verifică** din aceeași filă: bara de sus trebuie să se miște când vorbiți, cea de jos când se redă ceva.
 - Modulul **Captare** trebuie să fie pornit în [Module](/application/modules).
 

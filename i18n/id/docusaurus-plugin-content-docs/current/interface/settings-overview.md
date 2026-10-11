@@ -10,7 +10,9 @@ description: Daftar periksa Ikhtisar dan tab-tab jendela Pengaturan, serta di ma
 
 <Shot name="04_settings_overview" alt="Pengaturan → Ikhtisar: daftar periksa hal-hal yang sudah disiapkan" />
 
-**Ikhtisar** adalah daftar periksa hal-hal yang diperlukan agar Anda mendapat manfaat sebesar-besarnya dari program. Di bagian atas, langkah-langkahnya dihitung — pada gambar *10 langkah selesai* dengan titik hijau dan *8 langkah lagi* dengan titik merah — dan sebuah bilah menunjukkan bagian yang sudah selesai. Setiap langkah adalah sebuah baris dengan titik: hijau untuk langkah yang sudah selesai, merah untuk yang masih harus dikerjakan.
+Di bagian atas tab, **Dokumentasi** membuka situs ini.
+
+**Ikhtisar** adalah daftar periksa hal-hal yang diperlukan agar Anda mendapat manfaat sebesar-besarnya dari program. Di bagian atas, langkah-langkahnya dihitung — pada gambar *14 langkah selesai* dengan titik hijau dan *6 langkah lagi* dengan titik merah — dan sebuah bilah menunjukkan bagian yang sudah selesai. Setiap langkah adalah sebuah baris dengan titik: hijau untuk langkah yang sudah selesai, merah untuk yang masih harus dikerjakan.
 
 *Tekan sebuah baris untuk membaca gunanya dan membuka tempat pengaturannya.* Panah di ujung kanan baris akan membukanya lebih lebar.
 
@@ -20,6 +22,7 @@ description: Daftar periksa Ikhtisar dan tab-tab jendela Pengaturan, serta di ma
 | **Perekaman dari aplikasi lain** | Aktifkan perekaman dari aplikasi; Rekam sebuah percakapan; Beri nama |
 | **Transkripsi** | Tambahkan pengenal ucapan; Transkripsikan percakapan |
 | **Pemrosesan** | Tambahkan model; Proses sebuah transkrip |
+| **Pembisik** | Izinkan pembisik; Jalankan pembisik |
 | **Rekaman** | Cari dalam apa yang diucapkan; Ekspor rekaman; Ekspor ringkasan |
 | **Aplikasi** | Mulai bersama komputer; Jaga tetap mutakhir |
 | **Masukan** | Kirim laporan diperluas; Katakan pendapat Anda |
@@ -39,8 +42,9 @@ Langkah-langkah ini adalah panduan, bukan kewajiban: langkah yang tidak Anda per
 | | **Perekaman** | [Perekaman panggilan: persetujuan, konferensi, dan berapa lama berkas disimpan](../recordings.md) |
 | | **Penangkapan** | [Menangkap suara dari aplikasi lain](../capture/capture.md): rapat di Zoom, Teams, Meet, dan sejenisnya |
 | AI | **Transkripsi** | [Pengenal suara](../ai-processing/transcription.md) |
-| | **Pemrosesan** | [Pemrosesan otomatis, batas pengeluaran, model bahasa, petunjuk, dan aturan](../ai-processing/processing.md) |
+| | **Pemrosesan** | [Pemrosesan otomatis, model bahasa, petunjuk, aturan, dan batas pengeluaran](../ai-processing/processing.md) |
 | | **Kamus** | [Kategori, label, dan tanda peringatan](../ai-processing/dictionaries.md) |
+| | **Pembisik** | [Pembisik langsung: sakelar, ukuran teks, asisten, dan berapa yang boleh mereka belanjakan](../ai-processing/prompter.md) |
 | Program | **Tampilan** | [Tata letak, bahasa, tema, dan ikon](../program/appearance.md) |
 | | **Awalan** | [Cara program dimulai, ditutup, dan membuka tautan panggilan](../program/startup.md) |
 | | **Pintasan** | [Tombol pintas](../program/shortcuts.md) |

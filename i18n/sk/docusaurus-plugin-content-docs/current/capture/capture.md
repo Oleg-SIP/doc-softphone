@@ -2,7 +2,7 @@
 title: Zachytávanie
 sidebar_label: Zachytávanie z iných aplikácií
 sidebar_position: 1
-description: "\"Zachytávanie nahrá rozhovor vedený v inej aplikácii — v Zoome, Teams, Meet alebo v akejkoľvek inej — priamo z počítača.\""
+description: "Zachytávanie nahrá rozhovor vedený v inej aplikácii — v Zoome, Teams, Meet alebo v akejkoľvek inej — priamo z počítača."
 ---
 
 **Zachytávanie** je spôsob, akým AI Softphone nahrá rozhovor, ktorý prebieha v inom programe, napríklad stretnutie v Zoome, Teams alebo Meet. Nahráva priamo z počítača, pričom druhú stranu a vás drží na oddelených kanáloch, a na konci čaká rovnaký prepis a spracovanie ako pri hovore.
@@ -34,7 +34,7 @@ Nahráva sa všetko, čo počítač prehráva, nielen rozhovor. Tento telefón n
 
 ## Spustenie zachytávania {#starting-a-capture}
 
-Keď je zachytávanie povolené, spodok [hlavného okna](../interface/main-window.md#capture) ukazuje jeho stav — **Zachytávanie · pripravené** — s tlačidlom **Nahrať** vpravo. Stlačením **Nahrať** ho spustíte ručne.
+Keď je zachytávanie povolené, spodok [hlavného okna](../interface/main-window.md#capture) ukazuje jeho stav — **Zachytávanie · čakám na hovor** — s okrúhlym tlačidlom nahrávania vpravo, *Nahrať tento hovor*. Stlačením ho spustíte ručne.
 
 ### Automatické spustenie {#automatic-start}
 
@@ -42,7 +42,7 @@ Keď je zachytávanie povolené, spodok [hlavného okna](../interface/main-windo
 
 | Voľba | Čo sa stane |
 | --- | --- |
-| **Nikdy** | Zachytávanie sa spustí, iba keď stlačíte **Nahrať**. |
+| **Nikdy** | Zachytávanie sa spustí, iba keď stlačíte tlačidlo nahrávania. |
 | **Spýtať sa ma** | Program sa spýta, či ho nahrať. Predvolené. |
 | **Vždy** | Program začne nahrávať sám. |
 
@@ -52,7 +52,7 @@ V časti **Aplikácie s vlastnou odpoveďou** môže aplikácia dostať vlastnú
 
 ### Pred začiatkom {#before-the-start}
 
-Posuvník **Pred začiatkom** určuje, koľko sekúnd zvuku sa uchová spred začiatku nahrávania, predvolene **15 sekúnd**. Je tam na to, aby sa nič nestratilo, kým sa rozhovor zbadá: nahrávka, ktorá sa začne, keď stlačíte **Nahrať** alebo keď odpoviete na otázku, aj tak začína slovami, ktoré zazneli predtým.
+Posuvník **Pred začiatkom** určuje, koľko sekúnd zvuku sa uchová spred začiatku nahrávania, predvolene **15 sekúnd**. Je tam na to, aby sa nič nestratilo, kým sa rozhovor zbadá: nahrávka, ktorá sa začne, keď stlačíte tlačidlo nahrávania alebo keď odpoviete na otázku, aj tak začína slovami, ktoré zazneli predtým.
 
 ## Zachytenie rozhovoru {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Počas nahrávania hlavné okno ukazuje červenú bodku, názov nahrávky (napr�
 
 | Nastavenie | Predvolene | Kde |
 | --- | --- | --- |
-| **Obraz v hlavnom okne** | Vlna | Dva kanály počas zachytávania. |
-| **Obraz v pruhu pri päte telefónu** | Dve úrovne | Dva tenké pruhy pod **Zachytávanie · pripravené**. |
+| **Kresba v okne** | Vlna | Dva kanály počas zachytávania. |
+| **Kresba v lište dole** | Dve úrovne | Dva tenké pruhy pod **Zachytávanie · čakám na hovor**. |
 
 ### Vyskúšanie {#testing-it}
 
@@ -86,4 +86,4 @@ Zachytený rozhovor sa objaví v [okne Nahrávky](../interface/recordings.md) ak
 
 <Shot name="01_recordings" alt="Zachytené stretnutia na karte Nahrávky, označené ikonou okna" />
 
-Prepíše sa, zhrnie, zaradí do kategórie a označí štítkami podľa rovnakých [pravidiel](../ai-processing/processing.md#rules) ako hovor. V prepise zachyteného stretnutia je hovoriaci uvedený ako **Iná aplikácia** tam, kde by hovor ukázal meno druhej strany; **Hľadať** v knižnici nájde aj to, čo v ňom zaznelo.
+Prepíše sa, zhrnie, zaradí do kategórie a označí štítkami podľa rovnakých [pravidiel](../ai-processing/processing.md#rules) ako hovor. V prepise zachyteného stretnutia je hovoriaci uvedený pod názvom nahrávky tam, kde by hovor ukázal meno druhej strany; **Hľadať** v knižnici nájde aj to, čo v ňom zaznelo.

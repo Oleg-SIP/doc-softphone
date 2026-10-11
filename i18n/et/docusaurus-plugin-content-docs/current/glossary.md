@@ -7,6 +7,7 @@ description: "Selles dokumentatsioonis kasutatud IP-telefonia ja AI Softphone'i 
 | Mõiste | Tähendus |
 | --- | --- |
 | **Konto** | Liin: SIP-kasutajanimi keskjaamas või teenusepakkuja juures. Võite olla sisse logitud mitmesse. Vaadake [SIP-konto seadistamine](/sip-accounts/setup). |
+| **Abiline** | See, mida etteütlejalt kuulamise ajal oodatakse: subtiitrid, tõlge või soovitused, mida öelda. Vt [Etteütleja seaded](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Nupp, mis helistab sisenumbrile ja näitab tulega, kas see on vaba, heliseb või on hõivatud. Vaadake [Nupud](/sip-accounts/buttons). |
 | **Kõne ootel** | See, mida telefon teeb, kui keegi helistab ajal, mil olete juba kõnes. Vaadake [Kõnede seaded](/sip-accounts/calls#call-waiting). |
 | **Hõivamine** | Teises rakenduses, näiteks Zoomis, Teamsis või Meetis peetud vestluse salvestamine. Vaadake [Hõivamine](/capture/). |
@@ -19,8 +20,10 @@ description: "Selles dokumentatsioonis kasutatud IP-telefonia ja AI Softphone'i 
 | **IP-keskjaam** | Kontori telefonikeskjaam, mis töötab võrgus; seda nimetatakse ka tarkvaralüliks (softswitch). |
 | **Keelemudel** | Tehisintellekt, mis loeb ülestähendust ja kirjutab selle kohta. Vaadake [Töötlemine](/ai-processing/processing). |
 | **Juhis** | See, mida keelemudelilt palutakse (ingl prompt). Vaadake [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Etteütleja** | Aken, mis näitab kõne ajal öeldut samal ajal, kui seda öeldakse, ja soovitusi, mida vastata. Vt [Etteütleja aken](/interface/prompter). |
 | **Tuvastaja** | Teenus, mis muudab heli tekstiks (kõnetuvastus). Vaadake [Ülestähendus](/ai-processing/transcription). |
 | **Hoiatussignaal** | Midagi vestluses, mis vajab tähelepanu, koos tõendi ja ajaga. Vaadake [Sõnastikud](/ai-processing/dictionaries#red-flags). |
+| **Proov** | Salvestatud vestluse mängimine etteütlejale kõne asemel, et abilist proovida. Vt [Etteütleja aken](/interface/prompter#rehearsing-on-a-recording). |
 | **Registreerimine** | Telefon ütleb keskjaamale, kus ta on, et kõned temani jõuaksid. Roheline täpp konto juures tähendab, et see on registreeritud. |
 | **Reegel** | Samm, mis töötab iseenesest, järjekorras, iga vestluse puhul. Vaadake [Töötlemine](/ai-processing/processing#rules). |
 | **SIP** | Protokoll, mida telefonid ja keskjaamad kõnede loomiseks kasutavad. |

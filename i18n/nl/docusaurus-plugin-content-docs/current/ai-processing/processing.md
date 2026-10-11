@@ -1,7 +1,7 @@
 ---
 title: Verwerking
 sidebar_position: 2
-description: Automatische verwerking van gesprekken, de maandelijkse bestedingsgrenzen, taalmodellen, prompts en de regels die ze uitvoeren.
+description: Automatische verwerking van gesprekken, taalmodellen, prompts, de regels die ze uitvoeren en de maandelijkse bestedingsgrenzen.
 ---
 
 **Instellingen → Verwerking** bepaalt wat er met een gesprek gebeurt nadat het is opgenomen, welk model het werk doet, en wat het mag kosten.
@@ -13,20 +13,9 @@ description: Automatische verwerking van gesprekken, de maandelijkse bestedingsg
 - **Uit:** er gebeurt niets tot u erom vraagt in het [venster Opnames](../interface/recordings.md).
 - **Aan:** de [regels](#rules) hieronder lopen vanzelf. Dit is wat een gesprek omzet in een samenvatting, een categorie en al het andere zonder dat iemand ergens op drukt. Een model in de cloud rekent voor elk van die stappen.
 
-Onder het vakje toont het programma wat er deze maand is uitgegeven en over hoeveel verzoeken, bijvoorbeeld *Deze maand: 40.492 tokens, over 84 verzoeken, kosteloos.*
-
-## Grenzen {#limits}
-
-| Veld | Betekenis |
-| --- | --- |
-| **Geldgrens, per maand** | Het meeste wat de modellen in een maand mogen kosten. |
-| **Tokengrens, per maand** | Het meeste aantal tokens dat ze in een maand mogen gebruiken. |
-
-Er zijn twee grenzen omdat een maand in twee dingen geteld kan worden. Beide zijn leeg tot u ze invult. Als een van beide is bereikt, stoppen de automatische regels tot de volgende maand. **Wat u zelf vraagt, wordt nooit gestopt.**
-
 ## Taalmodellen {#language-models}
 
-De modellen die een transcript lezen en erover schrijven. Druk op **Toevoegen** om er een toe te voegen. Elk staat in de lijst met zijn naam en daaronder de modelaanduiding en het adres van de dienst, bijvoorbeeld `qwen3-32b · http://llm.local:8000/v1`. Het als **standaard** gemarkeerde model wordt standaard gebruikt. Met een knop in het formulier van een model controleert u of de dienst echt antwoordt voordat u erop vertrouwt.
+De modellen die een transcript lezen en erover schrijven. Druk op **Toevoegen** om er een toe te voegen. Elk staat in de lijst met zijn naam en daaronder de modelaanduiding en het adres van de dienst, bijvoorbeeld `qwen3-32b · http://localhost:8000/v1`. Het als **standaard** gemarkeerde model — **QWEN**, een model op deze computer, op de afbeelding — wordt standaard gebruikt, door de prompts en door de assistenten van de [souffleur](prompter.md) die geen eigen model noemen. Met **Testen** in het formulier van een model controleert u of de dienst echt antwoordt voordat u erop vertrouwt.
 
 - Een model **op uw eigen machine** houdt elk gesprek binnen het gebouw en kost niets.
 - Een model in de cloud — OpenAI, Claude, Mistral, DeepSeek, Groq en andere — wordt per gebruik gerekend. Het programma toont de prijs van elke aanroep in tokens en in geld.
@@ -35,7 +24,7 @@ De modellen die een transcript lezen en erover schrijven. Druk op **Toevoegen** 
 
 <Shot name="12b_settings_processing_prompts" alt="Instellingen → Verwerking: de prompts" />
 
-*Wat de modellen wordt gevraagd.* Elke prompt kwam met het programma en elke is van u om te wijzigen — en om terug te zetten. Elke staat in de lijst met zijn naam en daaronder wat hij schrijft en in welke vorm. De vorm — **Antwoord**, **Punten**, **Labels**, **JSON**, **Lopende tekst**, **Signalen** of **Criteria** — bepaalt hoe het antwoord wordt bewaard en getoond. De prompts worden beschreven in [Personal Prompt Studio](prompt-studio.md). **Toevoegen** maakt een eigen prompt.
+*Wat de modellen wordt gevraagd.* Elke prompt kwam met het programma en elke is van u om te wijzigen — en om terug te zetten. Elke staat in de lijst met zijn naam en daaronder wat hij schrijft en in welke vorm; **▲** en **▼** veranderen de volgorde van de lijst. De vorm — **Antwoord**, **Punten**, **Labels**, **JSON**, **Lopende tekst**, **Signalen** of **Criteria** — bepaalt hoe het antwoord wordt bewaard en getoond. De prompts worden beschreven in [Personal Prompt Studio](prompt-studio.md). **Toevoegen** maakt een eigen prompt.
 
 ## Regels {#rules}
 
@@ -55,6 +44,19 @@ De modellen die een transcript lezen en erover schrijven. Druk op **Toevoegen** 
 | **Het beoordelen, als het ondersteuning was** | Vraagt een model: **Kwaliteit van de ondersteuning**. | alleen als de categorie **Ondersteuning** is |
 
 De volgorde doet ertoe: de laatste twee regels hebben de categorie nodig die de regel ervoor heeft gezet. **Toevoegen** maakt een eigen regel.
+
+## Uitgaven {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Instellingen → Verwerking: de uitgaven van de maand en de twee grenzen" />
+
+Onder **Uitgaven** toont het programma wat er deze maand is uitgegeven en over hoeveel verzoeken — *Deze maand is er niets verwerkt* op de afbeelding, en bijvoorbeeld *Deze maand: 40.492 tokens, over 84 verzoeken, kosteloos* zodra er iets verwerkt is.
+
+| Veld | Betekenis |
+| --- | --- |
+| **Geldgrens, per maand** | Het meeste wat de modellen in een maand mogen kosten. |
+| **Tokengrens, per maand** | Het meeste aantal tokens dat ze in een maand mogen gebruiken. |
+
+Er zijn twee grenzen omdat een maand in twee dingen geteld kan worden. Beide zijn leeg tot u ze invult. Als een van beide is bereikt, stoppen de automatische regels tot de volgende maand. **Wat u zelf vraagt, wordt nooit gestopt.** De [souffleur](prompter.md#spending) heeft eigen plafonds, zodat een maand vol samenvattingen hem niet midden in een gesprek het zwijgen kan opleggen.
 
 ## Standaardwaarden {#defaults}
 

@@ -28,7 +28,9 @@ Kolom kedua adalah apa yang ditampilkan daftar di bawah nama petunjuk: apa yang 
 | **Kualitas penjualan** | Kriteria | Meninjau percakapan berdasarkan kriteria penjualan yang dapat Anda sunting. |
 | **Kualitas dukungan** | Kriteria | Menilai seberapa baik masalah dipahami dan ditangani. |
 
-Bentuk adalah format jawaban yang tetap, dan itulah yang memungkinkan program menyimpan dan mencarinya nanti: **Label** adalah kode dari salah satu daftar Anda, **Tanda** adalah kode dengan tingkat keparahan, **Kriteria** adalah skor beserta alasannya dan skor untuk setiap kriteria, **Jawaban** adalah balasan beserta kata-kata yang menjadi dasarnya. Instruksi yang memberi tahu model format tersebut disimpan di [Kamus](dictionaries.md#answer-shapes-and-language).
+Bentuk adalah format jawaban yang tetap, dan itulah yang memungkinkan program menyimpan dan mencarinya nanti: **Label** adalah kode dari salah satu daftar Anda, **Tanda** adalah kode dengan tingkat keparahan, **Kriteria** adalah skor beserta alasannya dan skor untuk setiap kriteria, **Jawaban** adalah balasan beserta kata-kata yang menjadi dasarnya. Instruksi yang memberi tahu model format tersebut disimpan di [Kamus](dictionaries.md#instructions).
+
+Asisten [pembisik](../interface/prompter.md) juga petunjuk, yang dijalankan pada setiap balasan selama panggilan berlangsung, bukan pada percakapan yang sudah selesai. Mereka disimpan dalam daftar tersendiri, di [Asisten](prompter.md#assistants) pada **Pengaturan → Pembisik**.
 
 Panggilan yang dilakukan di AI Softphone, rapat yang [ditangkap](/capture/) dari komputer, dan rekaman yang diimpor semuanya melewati petunjuk yang sama begitu memiliki transkrip.
 
@@ -41,6 +43,6 @@ Daftar tindakan mencatat apa yang telah disepakati — daftar ini tidak mengirim
 - Pilih model untuk setiap petunjuk — di komputer Anda sendiri atau di cloud.
 - Atur urutan petunjuk dijalankan, nyalakan dan matikan, dan buat bersyarat — hal itu dilakukan dengan [aturan](processing.md#rules): misalnya, tinjauan penjualan hanya dijalankan pada panggilan yang dimasukkan sebagai **Penjualan**.
 - Kelola kategori, label, dan tanda peringatan Anda sendiri di [Kamus](dictionaries.md).
-- Batasi biaya dengan [batas bulanan](processing.md#limits).
+- Batasi biaya dengan [batas bulanan](processing.md#spending).
 
 Petunjuk dan aturan asli dapat dipulihkan dengan **Kembalikan bawaan** di bawah **Bawaan** di [Pengaturan → Pemrosesan](processing.md#defaults).

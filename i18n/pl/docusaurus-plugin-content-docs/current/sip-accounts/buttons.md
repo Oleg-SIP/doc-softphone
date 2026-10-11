@@ -1,7 +1,7 @@
 ---
 title: Przyciski
 sidebar_position: 4
-description: "\"Przyciski BLF: przyciski jednego dotknięcia, które wybierają numer wewnętrzny w centrali IP i pokazują, czy jest wolny, dzwoni, czy jest zajęty.\""
+description: "Przyciski BLF: przyciski jednego dotknięcia, które wybierają numer wewnętrzny w centrali IP i pokazują, czy jest wolny, dzwoni, czy jest zajęty."
 ---
 
 Przyciski to klawisze **BLF** (Busy Lamp Field) softphone'u — ta sama funkcja, którą ma telefon biurkowy w centrali IP. Przycisk wybiera numer wewnętrzny jednym naciśnięciem. Przycisk, który obserwuje swoją linię, pokazuje też lampkę: telefon pyta centralę o ten numer wewnętrzny i pokazuje, czy jest wolny, dzwoni, czy jest zajęty, tak jak robi to konsola recepcji albo programowalne klawisze telefonu biurkowego.

@@ -16,7 +16,7 @@ Zhora nadol obsahuje ľavá strana:
 - klávesnicu a tlačidlo volania;
 - štítky účtov;
 - tlačidlá, ktoré sledujú iné klapky;
-- štyri miesta, kam ísť: **Nahrávky**, **Kontakty**, **História** a **Nastavenia**.
+- miesta, kam ísť: **Nahrávky**, **Kontakty**, **História**, **Našepkávač** a **Nastavenia**.
 
 ### Vytáčanie {#the-dialler}
 
@@ -36,9 +36,9 @@ Pod klávesnicou je jeden štítok pre každý [účet](../sip-accounts/setup.md
 
 Pod štítkami sú [tlačidlá](../sip-accounts/buttons.md), ktoré ste vytvorili pre kolegov a linky, každé s kontrolkou — na obrázkoch **Horváth** a **Sklad**. Stlačením tlačidla vytočíte jeho číslo.
 
-### Nahrávky, Kontakty, História, Nastavenia {#recordings-contacts-history-settings}
+### Nahrávky, Kontakty, História, Našepkávač, Nastavenia {#recordings-contacts-history-prompter-settings}
 
-Tieto štyri položky dole otvárajú kartu vpravo, jednu vedľa druhej: [Nahrávky](../interface/recordings.md), [Kontakty a História](contacts-history.md) a [Nastavenia](settings-overview.md). Karty, ktoré ste otvorili, zostávajú v rade navrchu pravej strany.
+Tieto položky dole otvárajú kartu vpravo, jednu vedľa druhej: [Nahrávky](../interface/recordings.md), [Kontakty a História](contacts-history.md), [Našepkávač](prompter.md) a [Nastavenia](settings-overview.md). **Našepkávač** sa zobrazí až vtedy, keď je našepkávač povolený a má rozpoznávač, ktorým počúva. Karty, ktoré ste otvorili, zostávajú v rade navrchu pravej strany.
 
 ## Prebiehajúci hovor {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Spojené hovory sa zobrazia ako jedna karta **Konferencia** na linke účtu. Ka�
 
 Keď je [zachytávanie iných aplikácií](../capture/capture.md) povolené v **Nastavenia → Zachytávanie**, medzi štítkami účtov a tlačidlami sa objaví pruh.
 
-<Shot name="10_settings_capture" full alt="Pruh Zachytávanie pri päte telefónu: Zachytávanie · pripravené, Nahrať a dva ukazovatele úrovne" />
+<Shot name="10_settings_capture" full alt="Pruh Zachytávanie pri päte telefónu: Zachytávanie · čakám na hovor, tlačidlo nahrávania a dva ukazovatele úrovne" />
 
-- **Zachytávanie · pripravené** hovorí, že program čaká na rozhovor v inej aplikácii.
-- **Nahrať** spustí zachytávanie ručne.
-- Dva tenké pruhy pod ním ukazujú úroveň zvuku: horný ste vy, dolný to, čo počítač prehráva. Ako sa kreslia, sa nastavuje v **Obraz v pruhu pri päte telefónu**.
+- **Zachytávanie · čakám na hovor** hovorí, že program čaká na rozhovor v inej aplikácii.
+- Okrúhle tlačidlo vpravo spustí zachytávanie ručne.
+- Dva tenké pruhy pod ním ukazujú úroveň zvuku: horný ste vy, dolný to, čo počítač prehráva. Ako sa kreslia, sa nastavuje v **Kresba v lište dole**.
 
 Program môže žiť aj v oblasti oznámení (na paneli s ponukami v macOS) a dá sa privolať [klávesovou skratkou](../program/shortcuts.md).

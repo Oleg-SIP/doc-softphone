@@ -20,6 +20,8 @@ Inspelningar, utskrifter och historik sparas i en fil som du äger. Inget konto 
 3. Det skrivs ut, talare för talare, i takt med ljudet.
 4. Språkmodellen du har valt sammanfattar det: sammanfattning, uppgifter, kategori, etiketter och signaler — och du kan ställa en fråga till samtalet.
 
+Under ett samtal kan [Sufflören](interface/prompter.md) gå längre: den visar vad som sägs medan det sägs, och föreslår vad du kan svara.
+
 ## Nedladdning och systemkrav {#download-and-system-requirements}
 
 Programmet kan laddas ner gratis från [ai-softphone.com](https://ai-softphone.com/#download): ett installationsprogram (`.exe`) för Windows, en skivavbild (`.dmg`) för macOS och en AppImage eller en `.deb` för Linux. Installationsprogrammet, skivavbilden och AppImage kräver inget annat installerat först — Qt, OpenSSL och C++-körtiden följer med i dem. Undantaget är `.deb`: den använder systemets egen C++-körtid, se nedan. Du behöver ett SIP-konto, från din operatör eller från växeln du själv driver. Inspelning fungerar så snart programmet är installerat; utskriften och sammanfattningen kräver en tjänst du väljer eller en modell på din egen dator.
@@ -60,6 +62,7 @@ Skärmbilderna i den här dokumentationen är tagna på macOS och visas små: kl
 | Välja igenkännaren som gör tal till text | [Transkription](ai-processing/transcription.md) |
 | Bestämma vilken AI som sammanfattar dina samtal och vad det får kosta | [Bearbetning](ai-processing/processing.md) |
 | Ändra kategorierna, etiketterna och signalerna | [Ordlistor](ai-processing/dictionaries.md) |
+| Se vad som sägs under ett samtal och få förslag på vad du kan svara | [Sufflörens fönster](interface/prompter.md) |
 | Ändra layout, tema, uppstart och genvägar | [Utseende](program/appearance.md), [Uppstart](program/startup.md) och [Genvägar](program/shortcuts.md) |
 | Ansluta ett CRM eller ett annat program | [Webhookar](integration/webhooks.md) och [Lokalt REST-API](integration/rest-api.md) |
 | Se vad telefonen och växeln säger till varandra | [Diagnostik](troubleshooting/diagnostics.md) |

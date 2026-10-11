@@ -1,7 +1,7 @@
 ---
 title: Okno nagrań
 sidebar_position: 2
-description: "\"Biblioteka każdej rozmowy — połączenia, zaimportowanego pliku lub spotkania przechwyconego z Zooma, Teams czy Meet: filtry, odtwarzacz, transkrypcja, którą odtworzysz od dowolnego wiersza, i opracowania.\""
+description: "Biblioteka każdej rozmowy — połączenia, zaimportowanego pliku lub spotkania przechwyconego z Zooma, Teams czy Meet: filtry, odtwarzacz, transkrypcja, którą odtworzysz od dowolnego wiersza, i opracowania."
 ---
 
 **Nagrania** to miejsce, gdzie mieszka każda rozmowa, niezależnie od tego, jak trafiła: połączenie wykonane lub odebrane w telefonie, zaimportowany plik dźwiękowy albo spotkanie przechwycone z Zooma, Teams, Meet lub dowolnej innej aplikacji. Wszystkie są na jednej liście i każda otwiera się tak samo: odtwarzacz, transkrypcja i wszystko, co o niej napisał model językowy. Naciśnij **Nagrania** w lewym dolnym rogu [okna głównego](main-window.md), aby je otworzyć.
@@ -22,7 +22,7 @@ Na obrazku trzy górne wiersze to po jednym z każdego rodzaju: spotkanie w Zoom
 
 ## Szukanie rozmowy {#finding-a-conversation}
 
-Pasek u góry ma pięć filtrów, pole wyszukiwania i menu:
+Pasek u góry ma cztery filtry, pole wyszukiwania i menu:
 
 | Element | Zawęża listę według |
 | --- | --- |
@@ -30,7 +30,6 @@ Pasek u góry ma pięć filtrów, pole wyszukiwania i menu:
 | **Okres** | daty: **Dziś**, **Wczoraj**, **Ostatnie 7 dni** albo **Wybierz daty…** |
 | **Kategoria** | kategorii, do której ją przypisano — zobacz [Słowniki](../ai-processing/dictionaries.md) |
 | **Znak** | etykiet i sygnałów ostrzegawczych, które nosi |
-| **Rozpoznawacz** | [rozpoznawacza](../ai-processing/transcription.md), który wykonał jej transkrypcję |
 | **Szukaj** | tego, co w niej powiedziano — wyszukiwanie przechodzi przez transkrypcje wszystkiego, co nagrano |
 
 <Shot name="39_more_menu" alt="Menu ⋮ listy: Importuj z plików, Eksportuj do CSV, Otwórz w przeglądarce" />

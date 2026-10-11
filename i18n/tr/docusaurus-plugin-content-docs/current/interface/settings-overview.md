@@ -10,7 +10,9 @@ description: Genel bakış denetim listesi ve Ayarlar penceresinin sekmeleri; he
 
 <Shot name="04_settings_overview" alt="Ayarlar → Genel bakış: nelerin kurulduğunu gösteren denetim listesi" />
 
-**Genel bakış**, programdan en iyi şekilde yararlanmak için gerekenlerin bir denetim listesidir. En üstte adımları sayar — resimde yeşil noktayla *10 adım tamam* ve kırmızı noktayla *8 adım kaldı* — ve bir çubuk tamamlanan payı gösterir. Her adım noktalı bir satırdır: tamamlanan adım için yeşil, hâlâ kalan adım için kırmızı.
+Sekmenin üstündeki **Belgeler** bu siteyi açar.
+
+**Genel bakış**, programdan en iyi şekilde yararlanmak için gerekenlerin bir denetim listesidir. En üstte adımları sayar — resimde yeşil noktayla *14 adım tamam* ve kırmızı noktayla *6 adım kaldı* — ve bir çubuk tamamlanan payı gösterir. Her adım noktalı bir satırdır: tamamlanan adım için yeşil, hâlâ kalan adım için kırmızı.
 
 *Bir satıra basarak ne işe yaradığını okuyun ve ayarlandığı yeri açın.* Satırın sağ ucundaki ok onu genişletir.
 
@@ -20,6 +22,7 @@ description: Genel bakış denetim listesi ve Ayarlar penceresinin sekmeleri; he
 | **Diğer uygulamalardan yakalama** | Yakalamayı aç; Bir görüşmeyi yakala; Birine ad ver |
 | **Yazıya döküm** | Tanıyıcı ekle; Bir görüşmeyi yazıya dök |
 | **İşleme** | Model ekle; Bir dökümü işle |
+| **Suflör** | Suflöre izin ver; Suflörü başlat |
 | **Kayıtlar** | Söylenenlerde ara; Bir kaydı dışa aktar; Bir özeti dışa aktar |
 | **Uygulama** | Bilgisayarla birlikte başlat; Güncel tut |
 | **Geri bildirim** | Genişletilmiş raporu gönder; Ne düşündüğünüzü bize söyleyin |
@@ -39,8 +42,9 @@ Adımlar bir zorunluluk değil, bir kılavuzdur: işinize yaramayan bir adım k�
 | | **Kayıt** | [Çağrıların kaydı: onay, konferanslar ve dosyaların ne kadar süre saklandığı](../recordings.md) |
 | | **Yakalama** | [Diğer uygulamaların sesini yakalama](../capture/capture.md): Zoom, Teams, Meet ve benzerlerindeki toplantılar |
 | Yapay zekâ | **Yazıya döküm** | [Tanıyıcılar](../ai-processing/transcription.md) |
-| | **İşleme** | [Otomatik işleme, harcama sınırları, dil modelleri, yönergeler ve kurallar](../ai-processing/processing.md) |
+| | **İşleme** | [Otomatik işleme, dil modelleri, yönergeler, kurallar ve harcama sınırları](../ai-processing/processing.md) |
 | | **Sözlükler** | [Kategoriler, etiketler ve uyarı işaretleri](../ai-processing/dictionaries.md) |
+| | **Suflör** | [Canlı suflör: anahtar, metin boyutu, yardımcılar ve ne kadar harcayabilecekleri](../ai-processing/prompter.md) |
 | Program | **Görünüm** | [Yerleşim, dil, tema ve simgeler](../program/appearance.md) |
 | | **Başlangıç** | [Programın nasıl başladığı, kapandığı ve arama bağlantılarını nasıl açtığı](../program/startup.md) |
 | | **Kısayollar** | [Klavye kısayolları](../program/shortcuts.md) |

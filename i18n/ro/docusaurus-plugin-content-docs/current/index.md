@@ -20,6 +20,8 @@ description: Ce este AI Softphone, pe ce sisteme rulează și unde este descris�
 3. Este transcrisă, vorbitor cu vorbitor, sincronizat cu sunetul.
 4. Modelul de limbă ales de dumneavoastră o prelucrează: rezumat, sarcini, categorie, etichete și semnale de alarmă — iar conversației îi puteți pune și o întrebare.
 
+În timpul unui apel, [Sufleurul](interface/prompter.md) poate merge mai departe: arată ce se spune chiar în timp ce se spune și sugerează ce să răspundeți.
+
 ## Descărcare și cerințe de sistem {#download-and-system-requirements}
 
 Programul se descarcă gratuit de pe [ai-softphone.com](https://ai-softphone.com/#download): un program de instalare (`.exe`) pentru Windows, o imagine de disc (`.dmg`) pentru macOS și un AppImage sau un `.deb` pentru Linux. Programul de instalare, imaginea de disc și AppImage nu cer nimic altceva instalat înainte — Qt, OpenSSL și bibliotecile C++ sunt incluse în ele. Excepția este `.deb`: acesta folosește bibliotecile C++ ale sistemului, vedeți mai jos. Veți avea nevoie de un cont SIP, de la furnizorul dumneavoastră sau de pe centrala pe care o administrați chiar dumneavoastră. Înregistrarea funcționează imediat după instalarea programului; pentru transcriere și prelucrare este nevoie de un serviciu ales de dumneavoastră sau de un model pe propriul calculator.
@@ -60,6 +62,7 @@ Capturile de ecran din această documentație sunt făcute pe macOS și afișate
 | Alegeți recunoscătorul care transformă vorbirea în text | [Transcriere](ai-processing/transcription.md) |
 | Hotărâți ce inteligență artificială vă prelucrează conversațiile și cât poate costa | [Prelucrare](ai-processing/processing.md) |
 | Schimbați categoriile, etichetele și semnalele de alarmă | [Dicționare](ai-processing/dictionaries.md) |
+| Să vedeți ce se spune în timpul unui apel și să primiți sugestii despre ce să răspundeți | [Fereastra sufleurului](interface/prompter.md) |
 | Schimbați dispunerea, tema, pornirea și scurtăturile | [Aspect](program/appearance.md), [Pornire](program/startup.md) și [Scurtături](program/shortcuts.md) |
 | Conectați un CRM sau alt program | [Webhookuri](integration/webhooks.md) și [API REST local](integration/rest-api.md) |
 | Vedeți ce își spun telefonul și centrala | [Diagnostic](troubleshooting/diagnostics.md) |

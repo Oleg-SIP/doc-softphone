@@ -1,7 +1,7 @@
 ---
 title: Jendela rekaman
 sidebar_position: 2
-description: "\"Pustaka semua percakapan — panggilan, berkas yang diimpor, atau rapat yang ditangkap dari Zoom, Teams atau Meet: penyaring, pemutar, transkrip yang bisa diputar dari baris mana pun, dan hasil olahannya.\""
+description: "Pustaka semua percakapan — panggilan, berkas yang diimpor, atau rapat yang ditangkap dari Zoom, Teams atau Meet: penyaring, pemutar, transkrip yang bisa diputar dari baris mana pun, dan hasil olahannya."
 ---
 
 **Rekaman** adalah tempat setiap percakapan berada, bagaimanapun cara masuknya: panggilan yang dilakukan atau diterima di telepon, berkas audio yang Anda impor, atau rapat yang ditangkap dari Zoom, Teams, Meet, atau aplikasi lain apa pun. Semuanya berada dalam satu daftar, dan masing-masing dibuka dengan cara yang sama: pemutar, transkrip, dan semua yang ditulis model bahasa tentangnya. Tekan **Rekaman** di kiri bawah [jendela utama](main-window.md) untuk membukanya.
@@ -22,7 +22,7 @@ Pada gambar, tiga baris teratas masing-masing satu dari setiap jenis: rapat Zoom
 
 ## Menemukan percakapan {#finding-a-conversation}
 
-Bilah di bagian atas memiliki lima penyaring, kolom pencarian, dan sebuah menu:
+Bilah di bagian atas memiliki empat penyaring, kolom pencarian, dan sebuah menu:
 
 | Kontrol | Mempersempit daftar berdasarkan |
 | --- | --- |
@@ -30,7 +30,6 @@ Bilah di bagian atas memiliki lima penyaring, kolom pencarian, dan sebuah menu:
 | **Periode** | tanggal: **Hari ini**, **Kemarin**, **7 hari terakhir**, atau **Pilih tanggal…** |
 | **Kategori** | kategori tempat percakapan dimasukkan — lihat [Kamus](../ai-processing/dictionaries.md) |
 | **Tanda** | label dan tanda peringatan yang disandangnya |
-| **Pengenal suara** | [pengenal suara](../ai-processing/transcription.md) yang membuat transkripnya |
 | **Cari** | apa yang diucapkan di dalamnya — pencarian menelusuri transkrip semua yang telah Anda rekam |
 
 <Shot name="39_more_menu" alt="Menu ⋮ pada daftar: Impor dari berkas, Ekspor ke CSV, Buka di peramban" />

@@ -28,7 +28,9 @@ A segunda coluna é o que a lista mostra por baixo do nome da instrução: o que
 | **Qualidade comercial** | Critérios | Analisa a conversa segundo critérios de venda que pode editar. |
 | **Qualidade do apoio** | Critérios | Avalia até que ponto o problema foi compreendido e tratado. |
 
-As formas são estruturas fixas de resposta, o que permite ao programa guardá-la e pesquisá-la mais tarde: as **Etiquetas** são códigos de uma das suas listas, os **Sinais** são códigos com uma gravidade, os **Critérios** são uma pontuação com uma justificação e uma pontuação por critério, a **Resposta** é uma resposta com as palavras em que assenta. As instruções que indicam a forma a um modelo estão guardadas em [Dicionários](dictionaries.md#answer-shapes-and-language).
+As formas são estruturas fixas de resposta, o que permite ao programa guardá-la e pesquisá-la mais tarde: as **Etiquetas** são códigos de uma das suas listas, os **Sinais** são códigos com uma gravidade, os **Critérios** são uma pontuação com uma justificação e uma pontuação por critério, a **Resposta** é uma resposta com as palavras em que assenta. As instruções que indicam a forma a um modelo estão guardadas em [Dicionários](dictionaries.md#instructions).
+
+Os assistentes do [ponto](../interface/prompter.md) também são instruções, executadas sobre cada resposta enquanto decorre uma chamada, e não sobre uma conversa terminada. Estão guardados numa lista própria, em [Assistentes](prompter.md#assistants) de **Definições → Ponto**.
 
 As chamadas feitas no AI Softphone, as reuniões [capturadas](/capture/) a partir do computador e as gravações importadas passam todas pelas mesmas instruções assim que têm uma transcrição.
 
@@ -41,6 +43,6 @@ As tarefas registam o que foi combinado — não enviam mensagens, não marcam v
 - Escolha o modelo de cada instrução — na sua própria máquina ou na nuvem.
 - Defina a ordem por que as instruções correm, ligue-as e desligue-as e torne-as condicionais — isso faz-se com as [regras](processing.md#rules): por exemplo, uma análise comercial só corre nas chamadas arrumadas como **Vendas**.
 - Mantenha as suas próprias categorias, etiquetas e sinais em [Dicionários](dictionaries.md).
-- Ponha um teto ao custo com os [limites mensais](processing.md#limits).
+- Ponha um teto ao custo com os [limites mensais](processing.md#spending).
 
 As instruções e as regras originais podem ser repostas com **Repor os valores por omissão**, em **Valores por omissão** de [Definições → Processamento](processing.md#defaults).

@@ -40,14 +40,16 @@ Jelölések, amelyek *mind igazak lehetnek ugyanarra a beszélgetésre*. Új cí
 
 Figyelmet igénylő dolgok, amelyeket a beszélgetésben a bizonyítékkal és az időponttal együtt talál meg a modell — például *Dühös ügyfél* vagy *Lemorzsolódás veszélye*. A figyelmeztető jelek pirossal jelennek meg a [Felvételek ablakban](../interface/recordings.md), és mindegyiknek van súlyossága: alacsony, közepes vagy magas.
 
-## A válaszok alakja és nyelve {#answer-shapes-and-language}
+## Útmutatások {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Beállítások → Szótárak: a válaszok alakja és a nyelvi utasítások" />
 
-A lapon lejjebb azok az utasításrészek találhatók, amelyekből az utasítások összeállnak. Azért vannak itt, hogy minden utasítás ugyanazt a megfogalmazást használhassa, és bármely más bejegyzéshez hasonlóan módosíthatók.
+*Az, ami minden utasításhoz hozzáadódik a válasz alakjáról és a nyelvről, amelyen meg kell írni.* Azért vannak itt, hogy minden utasítás ugyanazt a megfogalmazást használhassa, és bármely más bejegyzéshez hasonlóan módosíthatók — vagy írhat sajátot is, például *válaszolj röviden* vagy *soha ne mondj árat*, és bármely utasításnál bejelölheti a **Küldje ezt is** alatt.
 
 | Név | Kód | Mit mond a modellnek |
 | --- | --- | --- |
+| **Próza** | `shape-plain` | Egyszerű prózában válaszolj, JSON, listák és címsorok nélkül. |
+| **Tételek** | `shape-list` | A teendők listájával válaszolj, mindegyiknél azzal, hogy ki és mikor. |
 | **Címkék** | `shape-labels` | Válaszoljon JSON-ban, a kódok listájával és azzal, hogy mennyire biztos mindegyikben, kizárólag a kapott lista kódjait használva. |
 | **Pontszám** | `shape-score` | Válaszoljon egy pontszámmal, annak indoklásával és azokkal a szavakkal, amelyeken alapul. |
 | **Szempontok** | `shape-rubric` | Válaszoljon egy összpontszámmal és szempontonkénti pontszámmal. |
@@ -58,7 +60,7 @@ A lapon lejjebb azok az utasításrészek találhatók, amelyekből az utasítá
 | **Ahogy elhangzott, megnevezve** | `language-as-spoken-named` | Ugyanez, a nyelv megnevezésével. |
 | **Megadott nyelv** | `language-named` | Az Ön által megadott nyelven írjon. |
 
-A lista végén lévő **Hozzáadás** új bejegyzést ad hozzá.
+A lista elején lévő **Hozzáadás** új bejegyzést ad hozzá.
 
 ## Alapértékek {#defaults}
 

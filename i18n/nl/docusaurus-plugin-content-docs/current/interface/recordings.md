@@ -22,7 +22,7 @@ Op de afbeelding zijn de bovenste drie regels er elk een van: een Zoom-vergaderi
 
 ## Een gesprek vinden {#finding-a-conversation}
 
-De balk bovenaan heeft vijf filters, een zoekveld en een menu:
+De balk bovenaan heeft vier filters, een zoekveld en een menu:
 
 | Bediening | Beperkt de lijst op |
 | --- | --- |
@@ -30,7 +30,6 @@ De balk bovenaan heeft vijf filters, een zoekveld en een menu:
 | **Periode** | de datum: **Vandaag**, **Gisteren**, **Laatste 7 dagen** of **Data kiezen…** |
 | **Categorie** | de categorie waaronder het is geordend — zie [Woordenlijsten](../ai-processing/dictionaries.md) |
 | **Markering** | de labels en signalen die het draagt |
-| **Herkenner** | de [herkenner](../ai-processing/transcription.md) die het transcript heeft gemaakt |
 | **Zoeken** | wat erin gezegd is — het zoeken gaat door de transcripten van alles wat u hebt opgenomen |
 
 <Shot name="39_more_menu" alt="Het menu ⋮ van de lijst: Importeren uit bestanden, Exporteren naar CSV, Openen in een browser" />

@@ -1,7 +1,7 @@
 ---
 title: Démarrage
 sidebar_position: 2
-description: "\"Démarrer le téléphone avec l'ordinateur, le laisser tourner quand sa fenêtre est fermée, et ouvrir les liens tel:, callto: et sip:.\""
+description: "Démarrer le téléphone avec l'ordinateur, le laisser tourner quand sa fenêtre est fermée, et ouvrir les liens tel:, callto: et sip:."
 ---
 
 **Réglages → Démarrage** décide comment le programme démarre, ce que fait la fermeture de sa fenêtre, et ce qui se passe quand vous cliquez sur un numéro de téléphone dans un autre programme.

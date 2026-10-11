@@ -1,7 +1,7 @@
 ---
 title: Prelucrare
 sidebar_position: 2
-description: Prelucrarea automată a conversațiilor, limitele lunare de cheltuieli, modelele de limbă, instrucțiunile și regulile care le rulează.
+description: Prelucrarea automată a conversațiilor, modelele de limbă, instrucțiunile, regulile care le rulează și limitele lunare de cheltuieli.
 ---
 
 **Setări → Prelucrare** hotărăște ce se întâmplă cu o conversație după ce a fost înregistrată, ce model face treaba și cât poate costa.
@@ -13,20 +13,9 @@ description: Prelucrarea automată a conversațiilor, limitele lunare de cheltui
 - **Oprit:** nu se întâmplă nimic până nu cereți în [fereastra Înregistrări](../interface/recordings.md).
 - **Pornit:** [regulile](#rules) de mai jos rulează de la sine. Acesta este lucrul care transformă o conversație într-un rezumat, o categorie și tot restul fără ca cineva să apese ceva. Un model în cloud taxează fiecare dintre acești pași.
 
-Sub caseta de bifat, programul arată cât s-a cheltuit luna aceasta și pentru câte cereri, de exemplu *Luna aceasta: 40.492 tokenuri, în 84 de cereri, fără costuri.*
-
-## Limite {#limits}
-
-| Câmp | Semnificație |
-| --- | --- |
-| **Limită de bani, lunar** | Cel mult cât pot costa modelele într-o lună. |
-| **Limită de tokenuri, lunar** | Cel mult câte tokenuri pot folosi într-o lună. |
-
-Există două limite pentru că o lună poate fi socotită în două feluri. Ambele sunt goale până le completați. Când oricare dintre ele este atinsă, regulile automate se opresc până la începutul lunii următoare. **Ceea ce cereți chiar dumneavoastră nu este oprit niciodată.**
-
 ## Modele de limbă {#language-models}
 
-Modelele care citesc o transcriere și scriu despre ea. Apăsați **Adaugă** ca să adăugați unul. Fiecare apare în listă cu numele și, sub el, identificatorul modelului și adresa serviciului, de exemplu `qwen3-32b · http://llm.local:8000/v1`. Cel marcat **Implicit** este cel folosit implicit. Un buton din formularul modelului verifică dacă serviciul răspunde cu adevărat înainte să vă bazați pe el.
+Modelele care citesc o transcriere și scriu despre ea. Apăsați **Adaugă** ca să adăugați unul. Fiecare apare în listă cu numele și, sub el, identificatorul modelului și adresa serviciului, de exemplu `qwen3-32b · http://localhost:8000/v1`. Cel marcat **implicit** — în imagine **QWEN**, un model de pe acest calculator — este cel folosit implicit, de instrucțiuni și de acei asistenți ai [sufleurului](prompter.md) care nu numesc un model propriu. **Verifică** din formularul modelului verifică dacă serviciul răspunde cu adevărat înainte să vă bazați pe el.
 
 - Un model **pe propriul calculator** păstrează fiecare conversație în clădire și nu costă nimic.
 - Un model în cloud — OpenAI, Claude, Mistral, DeepSeek, Groq și altele — se plătește per utilizare. Programul arată prețul fiecărei cereri în tokenuri și în bani.
@@ -35,7 +24,7 @@ Modelele care citesc o transcriere și scriu despre ea. Apăsați **Adaugă** ca
 
 <Shot name="12b_settings_processing_prompts" alt="Setări → Prelucrare: instrucțiunile" />
 
-*Ceea ce li se cere modelelor.* Fiecare instrucțiune a venit cu programul și fiecare este a dumneavoastră ca să o schimbați — și ca să o puneți la loc. Fiecare apare în listă cu numele și, sub el, ce scrie și în ce formă. Forma — **Răspuns**, **Elemente**, **Etichete**, **JSON**, **Proză**, **Semnale** sau **Criterii** — hotărăște cum este păstrat și afișat răspunsul. Instrucțiunile sunt descrise în [Personal Prompt Studio](prompt-studio.md). **Adaugă** creează o instrucțiune proprie.
+*Ceea ce li se cere modelelor.* Fiecare instrucțiune a venit cu programul și fiecare este a dumneavoastră ca să o schimbați — și ca să o puneți la loc. Fiecare apare în listă cu numele și, sub el, ce scrie și în ce formă; **▲** și **▼** schimbă ordinea listei. Forma — **Răspuns**, **Elemente**, **Etichete**, **JSON**, **Proză**, **Semnale** sau **Criterii** — hotărăște cum este păstrat și afișat răspunsul. Instrucțiunile sunt descrise în [Personal Prompt Studio](prompt-studio.md). **Adaugă** creează o instrucțiune proprie.
 
 ## Reguli {#rules}
 
@@ -55,6 +44,19 @@ Modelele care citesc o transcriere și scriu despre ea. Apăsați **Adaugă** ca
 | **Apreciaz-o, dacă a fost asistență** | Întreabă un model: **Calitatea asistenței**. | doar dacă categoria este **Asistență** |
 
 Ordinea contează: ultimele două reguli au nevoie de categoria stabilită de regula dinaintea lor. **Adaugă** creează o regulă proprie.
+
+## Cheltuieli {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Setări → Prelucrare: cheltuielile lunii și cele două limite" />
+
+La **Cheltuieli** programul arată cât s-a cheltuit luna aceasta și pentru câte cereri — în imagine *Luna aceasta nu s-a prelucrat nimic*, iar de exemplu *Luna aceasta: 40.492 tokenuri, în 84 de cereri, fără costuri* după ce s-a prelucrat ceva.
+
+| Câmp | Semnificație |
+| --- | --- |
+| **Limită de bani, lunar** | Cel mult cât pot costa modelele într-o lună. |
+| **Limită de tokenuri, lunar** | Cel mult câte tokenuri pot folosi într-o lună. |
+
+Există două limite pentru că o lună poate fi socotită în două feluri. Ambele sunt goale până le completați. Când oricare dintre ele este atinsă, regulile automate se opresc până la începutul lunii următoare. **Ceea ce cereți chiar dumneavoastră nu este oprit niciodată.** [Sufleurul](prompter.md#spending) are plafoanele lui, ca o lună de rezumate să nu-l poată reduce la tăcere în mijlocul unei conversații.
 
 ## Valori implicite {#defaults}
 

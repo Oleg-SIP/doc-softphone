@@ -1,7 +1,7 @@
 ---
 title: Vanlige problemer
 sidebar_position: 2
-description: "\"Hva du bør sjekke når en konto ikke vil registrere seg, det ikke er lyd, en samtale eller et møde ikke tas opp, det ikke er noen utskrift, eller en lenke, en snarvei eller API-et ikke gjør noe.\""
+description: "Hva du bør sjekke når en konto ikke vil registrere seg, det ikke er lyd, en samtale eller et møde ikke tas opp, det ikke er noen utskrift, eller en lenke, en snarvei eller API-et ikke gjør noe."
 ---
 
 Hvert punkt viser til innstillingen som avgjør det. Står ikke svaret her, åpner du [Diagnostikk](/troubleshooting/diagnostics): det viser hva telefonen og sentralen sier til hverandre.
@@ -44,7 +44,7 @@ Hva som skjer når noen ringer mens du er i en samtale, stilles inn under [Samta
 Se [Fanging](/capture/).
 
 - **Tillat at lyd fanges** i **Innstillinger → Fanging** må være på.
-- Med **Automatisk start** satt til **Spør meg** (standard) svarer du på spørsmålet når det dukker opp; med **Aldri** trykker du selv på **Ta opp**.
+- Med **Automatisk start** satt til **Spør meg** (standard) svarer du på spørsmålet når det dukker opp; med **Aldri** trykker du selv på opptaksknappen.
 - Bruk **Prøv** på samme fane: den øverste stolpen må bevege seg når du snakker, den nederste når noe spilles.
 - Modulen **Fanging** må være på under [Moduler](/application/modules).
 

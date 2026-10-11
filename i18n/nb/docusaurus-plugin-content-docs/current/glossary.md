@@ -7,6 +7,7 @@ description: Begrepene fra IP-telefoni og AI Softphone som brukes i denne dokume
 | Begrep | Betydning |
 | --- | --- |
 | **Konto** | En linje: et SIP-brukernavn på en sentral eller hos en leverandør. Du kan være logget inn på flere. Se [Sette opp en SIP-konto](/sip-accounts/setup). |
+| **Hjelper** | Det suffløren skal være mens den lytter: undertekster, en oversettelse eller forslag til hva du kan si. Se [Innstillinger for suffløren](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | En knapp som ringer et internnummer og med en lampe viser om det er ledig, ringer eller er opptatt. Se [Knapper](/sip-accounts/buttons). |
 | **Samtale venter** | Det telefonen gjør når noen ringer mens du allerede er i en samtale. Se [Samtaleinnstillinger](/sip-accounts/calls#call-waiting). |
 | **Fanging** | Opptak av en samtale som foregår i et annet program, som Zoom, Teams eller Meet. Se [Fanging](/capture/). |
@@ -19,8 +20,10 @@ description: Begrepene fra IP-telefoni og AI Softphone som brukes i denne dokume
 | **IP-sentral** | Telefonsentralen til et kontor, som kjører på et nettverk; kalles også en softswitch. |
 | **Språkmodell** | AI-en som leser en utskrift og skriver om den. Se [Behandling](/ai-processing/processing). |
 | **Prompt** | Det en språkmodell blir bedt om. Se [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Sufflør** | Et vindu som viser hva som blir sagt under en samtale mens det blir sagt, og forslag til hva du kan svare. Se [Sufflørens vindu](/interface/prompter). |
 | **Gjenkjenner** | Tjenesten som gjør lyd om til tekst (talegjenkjenning). Se [Transkripsjon](/ai-processing/transcription). |
 | **Signal** | Noe i en samtale som krever oppmerksomhet, med beviset og tidspunktet. Se [Ordlister](/ai-processing/dictionaries#red-flags). |
+| **Prøve** | Å spille en innspilt samtale inn i suffløren i stedet for en samtale, for å prøve ut en hjelper. Se [Sufflørens vindu](/interface/prompter#rehearsing-on-a-recording). |
 | **Registrering** | At telefonen forteller sentralen hvor den er, slik at samtaler når fram til den. En grønn prikk ved kontoen betyr at den er registrert. |
 | **Regel** | Et trinn som kjører av seg selv, i rekkefølge, på hver samtale. Se [Behandling](/ai-processing/processing#rules). |
 | **SIP** | Protokollen telefoner og sentraler bruker for å sette opp samtaler. |

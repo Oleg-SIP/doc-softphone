@@ -1,7 +1,7 @@
 ---
 title: Tīmekļa āķi
 sidebar_position: 1
-description: "\"Ļaujiet tālrunim nosūtīt pieprasījumu jūsu CRM vai citai sistēmai, kad zvans sākas, mainās vai beidzas — ar precīziem ienākoša un izejoša zvana pieprasījumiem.\""
+description: "Ļaujiet tālrunim nosūtīt pieprasījumu jūsu CRM vai citai sistēmai, kad zvans sākas, mainās vai beidzas — ar precīziem ienākoša un izejoša zvana pieprasījumiem."
 ---
 
 Tīmekļa āķis ir pieprasījums, ko tālrunis nosūta uz jūsu izvēlētu adresi ikreiz, kad ar zvanu kaut kas notiek. Tā CRM var atvērt klienta kartīti pirms otrā zvana signāla, reģistrēt zvanu, kad tas beidzas, vai iedegt lampiņu sienas panelī. Tīmekļa āķim nav vajadzīgas ienākošās ugunsmūra kārtulas: tālrunis pats sazinās ar jums. Tā kā pieprasījumi tiek sūtīti no darbstacijas, adresei jābūt sasniedzamai tikai no šī datora — iekšēja `http://crm.local/calls` darbojas tikpat labi kā publiska HTTPS adrese.

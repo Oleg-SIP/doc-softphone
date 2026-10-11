@@ -10,7 +10,7 @@ description: Sürüm, güncellemeler, ülkeniz, lisans, kullanım raporunun içe
 
 ## Sürüm ve ülke {#version-and-country}
 
-En üstte ad, **Sürüm** (resimde 1.0.1) ve web sitesine bir bağlantı, [ai-softphone.com](https://ai-softphone.com/), bulunur.
+En üstte ad, **Sürüm** (resimde 1.1.3), web sitesine bir bağlantı, [ai-softphone.com](https://ai-softphone.com/), ve bu belgelere bir bağlantı bulunur.
 
 **Ülke**, programa nerede olduğunuzu söyler. En iyi güncelleme sunucusunun seçilmesine yardım eder ve ülkenizde barındırılan dil ve konuşma hizmetlerinin yolunu açar. **Kendiliğinden bul** onu doldurur.
 

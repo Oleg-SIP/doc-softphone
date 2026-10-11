@@ -20,6 +20,8 @@ Registrazioni, trascrizioni e cronologia sono conservate in un file che le appar
 3. Viene trascritta, interlocutore per interlocutore, in sincronia con l'audio.
 4. Il modello linguistico che ha scelto ne scrive il resoconto: riassunto, compiti, categoria, etichette e segnali — e può fare una domanda alla conversazione.
 
+Durante una chiamata il [Suggeritore](interface/prompter.md) può andare oltre: mostra ciò che si dice mentre lo si dice e suggerisce cosa rispondere.
+
 ## Download e requisiti di sistema {#download-and-system-requirements}
 
 Il programma si scarica gratuitamente da [ai-softphone.com](https://ai-softphone.com/#download): un programma di installazione (`.exe`) per Windows, un'immagine disco (`.dmg`) per macOS, e un'AppImage o un `.deb` per Linux. Il programma di installazione, l'immagine disco e l'AppImage non richiedono nient'altro installato prima — Qt, OpenSSL e il runtime C++ viaggiano al loro interno. Fa eccezione il `.deb`: usa il runtime C++ del sistema, vedere più sotto. Le servirà un account SIP, dal suo provider o dal centralino che gestisce lei stesso. La registrazione funziona appena il programma è installato; la trascrizione e il resoconto richiedono un servizio a sua scelta o un modello sulla sua macchina.
@@ -60,6 +62,7 @@ Le schermate di questa documentazione sono fatte su macOS e mostrate in piccolo:
 | Scegliere il riconoscitore che trasforma la voce in testo | [Trascrizione](ai-processing/transcription.md) |
 | Decidere quale IA scrive i resoconti delle sue conversazioni e quanto può costare | [Elaborazione](ai-processing/processing.md) |
 | Cambiare le categorie, le etichette e i segnali | [Dizionari](ai-processing/dictionaries.md) |
+| Vedere ciò che si dice durante una chiamata e ricevere suggerimenti su cosa rispondere | [Finestra del suggeritore](interface/prompter.md) |
 | Cambiare la disposizione, il tema, l'avvio e le scorciatoie | [Aspetto](program/appearance.md), [Avvio](program/startup.md) e [Scorciatoie](program/shortcuts.md) |
 | Collegare un CRM o un altro programma | [Webhook](integration/webhooks.md) e [API REST locale](integration/rest-api.md) |
 | Vedere che cosa si dicono il telefono e il centralino | [Diagnostica](troubleshooting/diagnostics.md) |

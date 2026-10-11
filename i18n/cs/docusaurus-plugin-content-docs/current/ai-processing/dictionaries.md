@@ -42,14 +42,16 @@ Značky, *které mohou o tomtéž hovoru platit všechny*. Nový přidáte tlač
 
 Věci, které vyžadují pozornost, nalezené v rozhovoru s důkazem a časem — například *Rozzlobený zákazník* nebo *Riziko odchodu*. Varovné signály jsou v [okně nahrávek](../interface/recordings.md) červeně a každý má závažnost: nízkou, střední nebo vysokou.
 
-## Tvary odpovědí a jazyk {#answer-shapes-and-language}
+## Pokyny {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Nastavení → Slovníky: tvary odpovědí a jazykové instrukce" />
 
-Níže na kartě jsou instrukce, ze kterých se pokyny skládají. Jsou tady, aby každý pokyn mohl použít stejné znění, a můžete je měnit jako každou jinou položku.
+*To, co se přidává ke každému pokynu o tvaru odpovědi a jazyce, ve kterém ji psát.* Jsou tady, aby každý pokyn mohl použít stejné znění, a můžete je měnit jako každou jinou položku — nebo napsat vlastní, například *odpovídej stručně* či *nikdy neuváděj cenu*, a zaškrtnout je v **Poslat také** u kteréhokoli pokynu.
 
 | Název | Kód | Co modelu říká |
 | --- | --- | --- |
+| **Próza** | `shape-plain` | Odpovědět prostou prózou, bez JSONu, seznamů a nadpisů. |
+| **Položky** | `shape-list` | Odpovědět seznamem věcí k udělání, u každé kdo a kdy. |
 | **Štítky** | `shape-labels` | Odpovědět JSONem se seznamem kódů a jistotou u každého, jen s kódy ze seznamu, který dostal. |
 | **Hodnocení** | `shape-score` | Odpovědět skóre, jeho zdůvodněním a slovy, o která se opírá. |
 | **Kritéria** | `shape-rubric` | Odpovědět celkovým skóre a skóre pro každé kritérium. |
@@ -60,7 +62,7 @@ Níže na kartě jsou instrukce, ze kterých se pokyny skládají. Jsou tady, ab
 | **Jak se mluvilo, jmenovitě** | `language-as-spoken-named` | Totéž, s uvedením jazyka. |
 | **Určený jazyk** | `language-named` | Psát v jazyce, který určíte. |
 
-**Přidat** na konci seznamu přidá položku.
+**Přidat** na začátku seznamu přidá položku.
 
 ## Výchozí {#defaults}
 

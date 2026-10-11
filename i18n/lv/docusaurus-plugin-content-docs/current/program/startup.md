@@ -1,7 +1,7 @@
 ---
 title: Startēšana
 sidebar_position: 2
-description: "\"Startējiet tālruni kopā ar datoru, ļaujiet tam darboties, kad logs ir aizvērts, un atveriet saites tel:, callto: un sip:.\""
+description: "Startējiet tālruni kopā ar datoru, ļaujiet tam darboties, kad logs ir aizvērts, un atveriet saites tel:, callto: un sip:."
 ---
 
 **Iestatījumi → Startēšana** izlemj, kā programma startē, ko dara loga aizvēršana un kas notiek, kad citā programmā noklikšķināt uz tālruņa numura.

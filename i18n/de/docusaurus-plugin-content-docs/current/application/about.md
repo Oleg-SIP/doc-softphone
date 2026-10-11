@@ -10,7 +10,7 @@ description: Die Version, Updates, Ihr Land, die Lizenz, was der Nutzungsbericht
 
 ## Version und Land {#version-and-country}
 
-Oben stehen der Name, die **Version** (im Bild 1.0.1) und ein Link zur Website [ai-softphone.com](https://ai-softphone.com/?lang=de).
+Oben stehen der Name, die **Version** (im Bild 1.1.3), ein Link zur Website [ai-softphone.com](https://ai-softphone.com/?lang=de) und einer zu dieser Dokumentation.
 
 **Land** sagt dem Programm, wo Sie sind. Es hilft, den besten Update-Server zu wählen, und öffnet den Weg zu Sprach- und Spracherkennungsdiensten in Ihrem Land. **Automatisch erkennen** füllt es aus. Im Bild ist **Deutschland** gewählt.
 

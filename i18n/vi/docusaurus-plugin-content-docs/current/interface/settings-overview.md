@@ -10,7 +10,9 @@ description: Danh sách kiểm tra Tổng quan và các thẻ của cửa sổ C
 
 <Shot name="04_settings_overview" alt="Cài đặt → Tổng quan: danh sách kiểm tra những gì đã được thiết lập" />
 
-**Tổng quan** là danh sách kiểm tra những gì cần có để tận dụng tối đa chương trình. Ở trên cùng, nó đếm các bước — trong hình là *đã xong 10 bước* với chấm xanh và *còn 8 bước* với chấm đỏ — và một thanh cho thấy phần đã hoàn thành. Mỗi bước là một dòng có chấm: xanh cho bước đã xong, đỏ cho bước còn phải làm.
+Ở đầu thẻ, **Tài liệu** mở trang web này.
+
+**Tổng quan** là danh sách kiểm tra những gì cần có để tận dụng tối đa chương trình. Ở trên cùng, nó đếm các bước — trong hình là *đã xong 14 bước* với chấm xanh và *còn 6 bước* với chấm đỏ — và một thanh cho thấy phần đã hoàn thành. Mỗi bước là một dòng có chấm: xanh cho bước đã xong, đỏ cho bước còn phải làm.
 
 *Nhấn vào một dòng để đọc nó dùng để làm gì và mở nơi thiết lập.* Mũi tên ở đầu bên phải của dòng sẽ mở rộng dòng đó.
 
@@ -20,6 +22,7 @@ description: Danh sách kiểm tra Tổng quan và các thẻ của cửa sổ C
 | **Thu từ ứng dụng khác** | Bật thu từ ứng dụng; Thu một cuộc trò chuyện; Đặt tên cho nó |
 | **Gỡ băng** | Thêm bộ nhận dạng; Chép lời một cuộc trò chuyện |
 | **Xử lý** | Thêm mô hình; Xử lý một bản chép lời |
+| **Người nhắc** | Cho phép người nhắc; Chạy người nhắc |
 | **Bản ghi** | Tìm trong những gì đã nói; Xuất một bản ghi; Xuất một bản tóm tắt |
 | **Ứng dụng** | Khởi động cùng máy tính; Giữ luôn cập nhật |
 | **Góp ý** | Gửi báo cáo mở rộng; Cho chúng tôi biết bạn nghĩ gì |
@@ -39,8 +42,9 @@ Các bước là hướng dẫn, không phải nghĩa vụ: bước nào bạn k
 | | **Ghi âm** | [Ghi âm cuộc gọi: sự đồng ý, hội thoại nhóm và thời gian lưu tệp](../recordings.md) |
 | | **Thu âm ngoài** | [Thu âm thanh của ứng dụng khác](../capture/capture.md): cuộc họp trong Zoom, Teams, Meet và tương tự |
 | AI | **Gỡ băng** | [Bộ nhận dạng](../ai-processing/transcription.md) |
-| | **Xử lý** | [Xử lý tự động, hạn mức chi tiêu, mô hình ngôn ngữ, chỉ dẫn và quy tắc](../ai-processing/processing.md) |
+| | **Xử lý** | [Xử lý tự động, mô hình ngôn ngữ, chỉ dẫn, quy tắc và hạn mức chi tiêu](../ai-processing/processing.md) |
 | | **Từ điển** | [Hạng mục, nhãn và dấu hiệu cảnh báo](../ai-processing/dictionaries.md) |
+| | **Người nhắc** | [Người nhắc trực tiếp: công tắc, cỡ chữ, các trợ lý và số tiền chúng được tiêu](../ai-processing/prompter.md) |
 | Chương trình | **Giao diện** | [Bố cục, ngôn ngữ, chủ đề màu và biểu tượng](../program/appearance.md) |
 | | **Khởi động** | [Cách chương trình khởi động, đóng lại và mở liên kết gọi](../program/startup.md) |
 | | **Phím tắt** | [Phím tắt bàn phím](../program/shortcuts.md) |

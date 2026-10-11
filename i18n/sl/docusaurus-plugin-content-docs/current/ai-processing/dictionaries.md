@@ -40,14 +40,16 @@ Nalepke, ki *lahko vse hkrati veljajo za isti pogovor*. Pritisnite **Dodaj**, da
 
 Stvari, ki zahtevajo pozornost, najdene v pogovoru z dokazom in časom — na primer *Jezna stranka* ali *Tveganje odhoda*. Opozorilni znaki so v [oknu Posnetki](../interface/recordings.md) narisani rdeče in vsak nosi resnost: nizko, srednjo ali visoko.
 
-## Oblike odgovorov in jezik {#answer-shapes-and-language}
+## Navodila {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Nastavitve → Slovarji: oblike odgovorov in jezikovna navodila" />
 
-Nižje na zavihku so navodila, iz katerih se sestavijo navodila za modele. Hranijo se tukaj, da lahko vsako navodilo uporabi enako besedilo, spreminjate pa jih lahko kot kateri koli drug vnos.
+*To, kar se doda vsakemu navodilu o obliki odgovora in jeziku, v katerem naj bo napisan.* Hranijo se tukaj, da lahko vsako navodilo uporabi enako besedilo, spreminjate pa jih lahko kot kateri koli drug vnos — ali napišete svoja, na primer *odgovarjaj kratko* ali *nikoli ne omenjaj cene*, in jih pri katerem koli navodilu označite pod **Pošlji tudi**.
 
 | Ime | Koda | Kaj pove modelu |
 | --- | --- | --- |
+| **Proza** | `shape-plain` | Odgovori v navadni prozi, brez JSON, seznamov in naslovov. |
+| **Postavke** | `shape-list` | Odgovori s seznamom stvari, ki jih je treba narediti, pri vsaki kdo in kdaj. |
 | **Oznake** | `shape-labels` | Odgovori v JSON s seznamom kod in kako prepričan je o vsaki, z uporabo le kod s seznama, ki ga je dobil. |
 | **Ocena** | `shape-score` | Odgovori z oceno, razlogom zanjo in besedami, na katerih temelji. |
 | **Merila** | `shape-rubric` | Odgovori s skupno oceno in oceno za vsako merilo. |
@@ -58,7 +60,7 @@ Nižje na zavihku so navodila, iz katerih se sestavijo navodila za modele. Hrani
 | **Kot se je govorilo, imenovano** | `language-as-spoken-named` | Enako, z imenovanjem jezika. |
 | **Določen jezik** | `language-named` | Piši v jeziku, ki ga določite. |
 
-**Dodaj** na koncu seznama doda vnos.
+**Dodaj** na vrhu seznama doda vnos.
 
 ## Privzete vrednosti {#defaults}
 

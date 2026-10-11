@@ -28,7 +28,9 @@ La seconda colonna è ciò che l'elenco mostra sotto il nome del prompt: che cos
 | **Qualità commerciale** | Criteri | Esamina la conversazione secondo criteri di vendita che può modificare. |
 | **Qualità dell'assistenza** | Criteri | Giudica quanto bene il problema è stato capito e gestito. |
 
-Le forme sono strutture fisse di risposta, ed è questo che permette al programma di conservarla e di cercarvi in seguito: le **Etichette** sono codici da uno dei suoi elenchi, i **Segnali** sono codici con una gravità, i **Criteri** sono un voto con una motivazione e un voto per ogni criterio, la **Risposta** è una replica con le parole su cui si basa. Le istruzioni che indicano a un modello la forma sono conservate in [Dizionari](dictionaries.md#answer-shapes-and-language).
+Le forme sono strutture fisse di risposta, ed è questo che permette al programma di conservarla e di cercarvi in seguito: le **Etichette** sono codici da uno dei suoi elenchi, i **Segnali** sono codici con una gravità, i **Criteri** sono un voto con una motivazione e un voto per ogni criterio, la **Risposta** è una replica con le parole su cui si basa. Le istruzioni che indicano a un modello la forma sono conservate in [Dizionari](dictionaries.md#instructions).
+
+Anche gli assistenti del [suggeritore](../interface/prompter.md) sono prompt, eseguiti su ogni replica mentre una chiamata è in corso anziché su una conversazione finita. Sono conservati in un elenco a parte, sotto [Assistenti](prompter.md#assistants) in **Impostazioni → Suggeritore**.
 
 Le chiamate fatte in AI Softphone, le riunioni [catturate](/capture/) dal computer e le registrazioni importate passano tutte per gli stessi prompt una volta che hanno una trascrizione.
 
@@ -41,6 +43,6 @@ Le cose da fare registrano ciò che è stato concordato — non inviano messaggi
 - Scelga il modello per ogni prompt — sulla sua macchina o nel cloud.
 - Stabilisca l'ordine in cui girano i prompt, li attivi e li disattivi e li renda condizionali — lo si fa con le [regole](processing.md#rules): per esempio, una valutazione commerciale gira solo sulle chiamate classificate come **Vendite**.
 - Tenga le sue categorie, etichette e segnali in [Dizionari](dictionaries.md).
-- Metta un tetto ai costi con i [limiti mensili](processing.md#limits).
+- Metta un tetto ai costi con i [limiti mensili](processing.md#spending).
 
 I prompt e le regole originali si possono ripristinare con **Ripristina i valori predefiniti** in **Valori predefiniti** di [Impostazioni → Elaborazione](processing.md#defaults).

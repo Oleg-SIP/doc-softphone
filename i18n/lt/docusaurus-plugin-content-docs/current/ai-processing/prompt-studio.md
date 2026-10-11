@@ -28,7 +28,9 @@ Antrasis stulpelis yra tai, ką sąrašas rodo po nurodymo pavadinimu: ką jis r
 | **Pardavimo kokybė** | Kriterijai | Įvertina pokalbį pagal pardavimo kriterijus, kuriuos galite redaguoti. |
 | **Pagalbos kokybė** | Kriterijai | Įvertina, kaip gerai problema buvo suprasta ir išspręsta. |
 
-Formos yra fiksuotos atsakymo struktūros, ir būtent tai leidžia programai atsakymą laikyti ir vėliau jame ieškoti: **Žymos** yra kodai iš vieno jūsų sąrašų, **Signalai** — kodai su rimtumu, **Kriterijai** — įvertinimas su pagrindimu ir įvertinimas kiekvienam kriterijui, **Atsakymas** — atsakymas su žodžiais, kuriais jis remiasi. Instrukcijos, nurodančios modeliui formą, laikomos skiltyje [Žodynai](dictionaries.md#answer-shapes-and-language).
+Formos yra fiksuotos atsakymo struktūros, ir būtent tai leidžia programai atsakymą laikyti ir vėliau jame ieškoti: **Žymos** yra kodai iš vieno jūsų sąrašų, **Signalai** — kodai su rimtumu, **Kriterijai** — įvertinimas su pagrindimu ir įvertinimas kiekvienam kriterijui, **Atsakymas** — atsakymas su žodžiais, kuriais jis remiasi. Instrukcijos, nurodančios modeliui formą, laikomos skiltyje [Žodynai](dictionaries.md#instructions).
+
+[Suflerio](../interface/prompter.md) pagalbininkai taip pat yra nurodymai, vykdomi kiekvienai replikai skambučio metu, o ne baigtam pokalbiui. Jie laikomi atskirame sąraše, skiltyje [Pagalbininkai](prompter.md#assistants) puslapyje **Nustatymai → Suflerius**.
 
 AI Softphone atlikti skambučiai, iš kompiuterio [perimti](/capture/) susitikimai ir importuoti įrašai visi eina per tuos pačius nurodymus, kai tik turi iššifruotą tekstą.
 
@@ -41,6 +43,6 @@ Užduotys užfiksuoja, dėl ko susitarta — jos nesiunčia žinučių, nerezerv
 - Pasirinkite modelį kiekvienam nurodymui — savo kompiuteryje ar debesyje.
 - Nustatykite tvarką, kuria vykdomi nurodymai, įjunkite ir išjunkite juos ir padarykite sąlyginius — tai daroma su [taisyklėmis](processing.md#rules): pavyzdžiui, pardavimo įvertinimas vykdomas tik skambučiams, priskirtiems kategorijai **Pardavimai**.
 - Laikykite savo kategorijas, žymas ir įspėjamuosius signalus skiltyje [Žodynai](dictionaries.md).
-- Apribokite išlaidas [mėnesio ribomis](processing.md#limits).
+- Apribokite išlaidas [mėnesio ribomis](processing.md#spending).
 
 Pradinius nurodymus ir taisykles galima atkurti su **Atkurti numatytuosius** skiltyje **Numatytosios reikšmės** puslapyje [Nustatymai → Apdorojimas](processing.md#defaults).

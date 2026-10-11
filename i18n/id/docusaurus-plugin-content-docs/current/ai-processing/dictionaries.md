@@ -40,14 +40,16 @@ Penanda yang *semuanya dapat berlaku untuk percakapan yang sama*. Tekan **Tambah
 
 Hal-hal yang perlu diperhatikan, ditemukan dalam percakapan beserta bukti dan waktunya — misalnya *Pelanggan marah* atau *Risiko berhenti*. Tanda peringatan digambar merah di [jendela Rekaman](../interface/recordings.md), dan masing-masing memiliki tingkat keparahan: rendah, sedang, atau tinggi.
 
-## Format jawaban dan bahasa {#answer-shapes-and-language}
+## Petunjuk {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Pengaturan → Kamus: format jawaban dan instruksi bahasa" />
 
-Lebih ke bawah pada tab terdapat instruksi yang menjadi bahan penyusun petunjuk. Instruksi ini disimpan di sini agar setiap petunjuk dapat menggunakan kata-kata yang sama, dan Anda dapat mengubahnya seperti entri lainnya.
+*Yang ditambahkan ke tiap petunjuk tentang bentuk jawaban dan bahasa untuk menulisnya.* Instruksi ini disimpan di sini agar setiap petunjuk dapat menggunakan kata-kata yang sama, dan Anda dapat mengubahnya seperti entri lainnya — atau menulis milik Anda sendiri, misalnya *jawab singkat* atau *jangan pernah sebut harga*, lalu mencentangnya di **Kirim juga** pada petunjuk mana pun.
 
 | Nama | Kode | Yang diberitahukan kepada model |
 | --- | --- | --- |
+| **Prosa** | `shape-plain` | Jawab dengan prosa biasa, tanpa JSON, daftar, atau judul. |
+| **Butir** | `shape-list` | Jawab dengan daftar hal yang harus dikerjakan, masing-masing dengan siapa dan kapan. |
 | **Label** | `shape-labels` | Jawab dalam JSON dengan daftar kode dan seberapa yakin terhadap masing-masing, hanya menggunakan kode dari daftar yang diberikan. |
 | **Skor** | `shape-score` | Jawab dengan skor, alasannya, dan kata-kata yang menjadi dasarnya. |
 | **Kriteria** | `shape-rubric` | Jawab dengan skor keseluruhan dan skor untuk setiap kriteria. |
@@ -58,7 +60,7 @@ Lebih ke bawah pada tab terdapat instruksi yang menjadi bahan penyusun petunjuk.
 | **Sebagaimana diucapkan, disebut** | `language-as-spoken-named` | Sama, dengan menyebutkan nama bahasanya. |
 | **Bahasa yang ditentukan** | `language-named` | Tulis dalam bahasa yang Anda sebutkan. |
 
-**Tambah** di akhir daftar menambahkan entri.
+**Tambah** di awal daftar menambahkan entri.
 
 ## Bawaan {#defaults}
 

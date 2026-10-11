@@ -1,7 +1,7 @@
 ---
 title: Painikkeet
 sidebar_position: 4
-description: "\"BLF-painikkeet: yhden painalluksen painikkeet, jotka soittavat IP-vaihteesi alanumeroon ja näyttävät, onko se vapaa, soiko se vai onko se varattu.\""
+description: "BLF-painikkeet: yhden painalluksen painikkeet, jotka soittavat IP-vaihteesi alanumeroon ja näyttävät, onko se vapaa, soiko se vai onko se varattu."
 ---
 
 Painikkeet ovat ohjelmistopuhelimen **BLF**-näppäimiä (Busy Lamp Field), sama toiminto kuin IP-vaihteeseen liitetyssä pöytäpuhelimessa. Painike soittaa alanumeroon yhdellä painalluksella. Linjaansa seuraava painike näyttää myös merkkivalon: puhelin kysyy vaihteelta kyseisestä alanumerosta ja näyttää, onko se vapaa, soiko se vai onko se varattu, kuten vaihteenhoitajan konsoli tai pöytäpuhelimen ohjelmoitavat näppäimet tekevät.

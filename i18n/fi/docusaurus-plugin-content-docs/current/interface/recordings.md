@@ -1,7 +1,7 @@
 ---
 title: Tallenteet-ikkuna
 sidebar_position: 2
-description: "\"Kirjasto kaikista keskusteluista — puhelusta, tuodusta tiedostosta tai Zoomista, Teamsista tai Meetistä kaapatusta kokouksesta: suodattimet, soitin, litterointi, jota voi toistaa mistä tahansa riviltä, ja yhteenvedot.\""
+description: "Kirjasto kaikista keskusteluista — puhelusta, tuodusta tiedostosta tai Zoomista, Teamsista tai Meetistä kaapatusta kokouksesta: suodattimet, soitin, litterointi, jota voi toistaa mistä tahansa riviltä, ja yhteenvedot."
 ---
 
 **Tallenteet** on paikka, jossa jokainen keskustelu on, tulipa se miten tahansa: puhelimella soitettu tai vastaanotettu puhelu, tuotu äänitiedosto tai Zoomista, Teamsista, Meetistä tai mistä tahansa muusta sovelluksesta kaapattu kokous. Ne kaikki ovat samassa luettelossa, ja jokainen avautuu samalla tavalla: soitin, litterointi ja kaikki, mitä kielimalli on siitä kirjoittanut. Avaa **Tallenteet** painamalla sitä [pääikkunan](main-window.md) vasemmassa alareunassa.
@@ -22,7 +22,7 @@ Kuvassa kolme ylintä riviä ovat yksi kutakin: Zoom-kokous, tuotu tiedosto pank
 
 ## Keskustelun löytäminen {#finding-a-conversation}
 
-Yläreunan palkissa on viisi suodatinta, hakukenttä ja valikko:
+Yläreunan palkissa on neljä suodatinta, hakukenttä ja valikko:
 
 | Säädin | Rajaa luetteloa |
 | --- | --- |
@@ -30,7 +30,6 @@ Yläreunan palkissa on viisi suodatinta, hakukenttä ja valikko:
 | **Ajanjakso** | päivämäärän mukaan: **Tänään**, **Eilen**, **Viimeiset 7 päivää** tai **Valitse päivät…** |
 | **Luokka** | sen luokan mukaan, johon se on lajiteltu — katso [Sanastot](../ai-processing/dictionaries.md) |
 | **Merkintä** | sillä olevien tunnisteiden ja merkkien mukaan |
-| **Tunnistin** | sen [tunnistimen](../ai-processing/transcription.md) mukaan, joka teki litteroinnin |
 | **Etsi** | sen mukaan, mitä siinä sanottiin — haku käy läpi kaiken tallentamasi litteroinnit |
 
 <Shot name="39_more_menu" alt="Luettelon ⋮-valikko: Tuo tiedostoista, Vie CSV-muotoon, Avaa selaimessa" />

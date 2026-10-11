@@ -1,7 +1,7 @@
 ---
 title: Apdorojimas
 sidebar_position: 2
-description: Automatinis pokalbių apdorojimas, mėnesio išlaidų ribos, kalbos modeliai, nurodymai ir juos vykdančios taisyklės.
+description: Automatinis pokalbių apdorojimas, kalbos modeliai, nurodymai, juos vykdančios taisyklės ir mėnesio išlaidų ribos.
 ---
 
 **Nustatymai → Apdorojimas** nusprendžia, kas nutinka pokalbiui jį įrašius, kuris modelis atlieka darbą ir kiek tai gali kainuoti.
@@ -13,20 +13,9 @@ description: Automatinis pokalbių apdorojimas, mėnesio išlaidų ribos, kalbos
 - **Išjungta:** nieko nevyksta, kol to nepaprašote [įrašų lange](../interface/recordings.md).
 - **Įjungta:** toliau nurodytos [taisyklės](#rules) vykdomos savaime. Tai paverčia pokalbį santrauka, kategorija ir visa kita, niekam nieko nespaudžiant. Debesyje esantis modelis ima mokestį už kiekvieną šių žingsnių.
 
-Po žymimuoju langeliu programa rodo, kiek išleista šį mėnesį ir per kiek užklausų, pavyzdžiui, *Šį mėnesį: 40.492 žetonų, per 84 užklausas, be mokesčio.*
-
-## Ribos {#limits}
-
-| Laukas | Reikšmė |
-| --- | --- |
-| **Pinigų riba, per mėnesį** | Didžiausia suma, kurią modeliai gali kainuoti per mėnesį. |
-| **Žetonų riba, per mėnesį** | Didžiausias žetonų skaičius, kurį jie gali sunaudoti per mėnesį. |
-
-Ribų yra dvi, nes mėnesį galima matuoti dviem vienetais. Abi tuščios, kol jų neužpildote. Pasiekus bet kurią, automatinės taisyklės sustoja iki mėnesio pabaigos. **Tai, ko prašote patys, niekada nesustabdoma.**
-
 ## Kalbos modeliai {#language-models}
 
-Modeliai, kurie skaito iššifruotą tekstą ir rašo apie jį. Paspauskite **Pridėti**, kad pridėtumėte. Kiekvienas pateiktas su pavadinimu, o po juo — modelio identifikatorius ir paslaugos adresas, pavyzdžiui, `qwen3-32b · http://llm.local:8000/v1`. Pažymėtas kaip **numatytasis** naudojamas pagal numatymą. Mygtukas modelio formoje patikrina, ar paslauga tikrai atsako, prieš jums ja pasikliaujant.
+Modeliai, kurie skaito iššifruotą tekstą ir rašo apie jį. Paspauskite **Pridėti**, kad pridėtumėte. Kiekvienas pateiktas su pavadinimu, o po juo — modelio identifikatorius ir paslaugos adresas, pavyzdžiui, `qwen3-32b · http://localhost:8000/v1`. Pažymėtas kaip **numatytasis** — paveikslėlyje **QWEN**, modelis šiame kompiuteryje — naudojamas pagal numatymą: nurodymuose ir tuose [suflerio](prompter.md) pagalbininkuose, kurie nenurodo savo modelio. **Patikrinti** modelio formoje patikrina, ar paslauga tikrai atsako, prieš jums ja pasikliaujant.
 
 - Modelis **jūsų kompiuteryje** laiko kiekvieną pokalbį pastato viduje ir nieko nekainuoja.
 - Debesyje esantis modelis — OpenAI, Claude, Mistral, DeepSeek, Groq ir kiti — apmokestinamas pagal naudojimą. Programa rodo kiekvieno iškvietimo kainą žetonais ir pinigais.
@@ -35,7 +24,7 @@ Modeliai, kurie skaito iššifruotą tekstą ir rašo apie jį. Paspauskite **Pr
 
 <Shot name="12b_settings_processing_prompts" alt="Nustatymai → Apdorojimas: nurodymai" />
 
-*Tai, ko prašoma modelių.* Kiekvienas nurodymas atėjo su programa, ir kiekvienas yra jūsų, kad jį pakeistumėte — ir grąžintumėte. Kiekvienas pateiktas su pavadinimu, o po juo — ką jis rašo ir kokia forma. Forma — **Atsakymas**, **Punktai**, **Žymos**, **JSON**, **Proza**, **Signalai** ar **Kriterijai** — nusprendžia, kaip atsakymas laikomas ir rodomas. Nurodymai aprašyti puslapyje [Personal Prompt Studio](prompt-studio.md). **Pridėti** sukuria jūsų nurodymą.
+*Tai, ko prašoma modelių.* Kiekvienas nurodymas atėjo su programa, ir kiekvienas yra jūsų, kad jį pakeistumėte — ir grąžintumėte. Kiekvienas pateiktas su pavadinimu, o po juo — ką jis rašo ir kokia forma; **▲** ir **▼** keičia sąrašo tvarką. Forma — **Atsakymas**, **Punktai**, **Žymos**, **JSON**, **Proza**, **Signalai** ar **Kriterijai** — nusprendžia, kaip atsakymas laikomas ir rodomas. Nurodymai aprašyti puslapyje [Personal Prompt Studio](prompt-studio.md). **Pridėti** sukuria jūsų nurodymą.
 
 ## Taisyklės {#rules}
 
@@ -55,6 +44,19 @@ Modeliai, kurie skaito iššifruotą tekstą ir rašo apie jį. Paspauskite **Pr
 | **Įvertinti jį, jei buvo pagalba** | Prašo modelio: **Pagalbos kokybė**. | tik jei kategorija **Pagalba** |
 
 Tvarka svarbi: paskutinėms dviem taisyklėms reikia kategorijos, kurią nustatė prieš jas esanti taisyklė. **Pridėti** sukuria jūsų taisyklę.
+
+## Išlaidos {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Nustatymai → Apdorojimas: mėnesio išlaidos ir abi ribos" />
+
+Skiltyje **Išlaidos** programa rodo, kiek išleista šį mėnesį ir per kiek užklausų — paveikslėlyje *Šį mėnesį niekas nebuvo apdorota*, o, pavyzdžiui, *Šį mėnesį: 40.492 žetonų, per 84 užklausas, be mokesčio*, kai kas nors jau apdorota.
+
+| Laukas | Reikšmė |
+| --- | --- |
+| **Pinigų riba, per mėnesį** | Didžiausia suma, kurią modeliai gali kainuoti per mėnesį. |
+| **Žetonų riba, per mėnesį** | Didžiausias žetonų skaičius, kurį jie gali sunaudoti per mėnesį. |
+
+Ribų yra dvi, nes mėnesį galima matuoti dviem vienetais. Abi tuščios, kol jų neužpildote. Pasiekus bet kurią, automatinės taisyklės sustoja iki mėnesio pabaigos. **Tai, ko prašote patys, niekada nesustabdoma.** [Suflerius](prompter.md#spending) turi savo lubas, kad mėnesio santraukos negalėtų jo nutildyti pokalbio viduryje.
 
 ## Numatytosios reikšmės {#defaults}
 

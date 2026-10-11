@@ -1,7 +1,7 @@
 ---
 title: Okno posnetkov
 sidebar_position: 2
-description: "\"Knjižnica vseh pogovorov — klica, uvožene datoteke ali sestanka, zajetega iz Zooma, Teams ali Meeta: filtri, predvajalnik, prepis, ki ga lahko predvajate od katere koli vrstice, in obdelave.\""
+description: "Knjižnica vseh pogovorov — klica, uvožene datoteke ali sestanka, zajetega iz Zooma, Teams ali Meeta: filtri, predvajalnik, prepis, ki ga lahko predvajate od katere koli vrstice, in obdelave."
 ---
 
 **Posnetki** so mesto, kjer živi vsak pogovor, ne glede na to, kako je prišel: klic, opravljen ali sprejet v telefonu, uvožena zvočna datoteka ali sestanek, zajet iz Zooma, Teams, Meeta ali katerega koli drugega programa. Vsi so v enem seznamu in vsak se odpre na isti način: predvajalnik, prepis in vse, kar je o njem napisal jezikovni model. Za odpiranje pritisnite **Posnetki** spodaj levo v [glavnem oknu](main-window.md).
@@ -16,13 +16,13 @@ Ikona na levi strani vrstice pove, kako je pogovor prišel.
 | --- | --- | --- | --- |
 | Slušalka s puščico | Klic, opravljen ali sprejet v tem telefonu. Puščica kaže noter pri dohodnem klicu in ven pri odhodnem. | Ime stika ali številka | Posname se, kot je nastavljeno v [Posnetkih](../recordings.md) |
 | Puščica v črto | Datoteka, uvožena od drugod: z mobilnega telefona, diktafona ali iz drugega sistema | Ime datoteke | **⋮ → Uvozi iz datotek**; glejte [spodaj](#a-recording-you-already-have) |
-| Okno | Sestanek v drugem programu | Ime, ki ste mu ga dali, ali **Drug program** | [Zajemanje](../capture/capture.md) |
+| Okno | Sestanek v drugem programu | Ime, ki ste mu ga dali, ali **Druga aplikacija** | [Zajemanje](../capture/capture.md) |
 
 Na sliki so zgornje tri vrstice po ena od vsake vrste: sestanek v Zoomu, uvožena datoteka klica na bančno podporo in klic, sprejet na liniji **305 Podpora**. Ne glede na vir se vsi enako prepišejo, obdelajo in iščejo.
 
 ## Iskanje pogovora {#finding-a-conversation}
 
-Vrstica na vrhu ima pet filtrov, iskalno polje in meni:
+Vrstica na vrhu ima štiri filtre, iskalno polje in meni:
 
 | Kontrolnik | Zoži seznam po |
 | --- | --- |
@@ -30,7 +30,6 @@ Vrstica na vrhu ima pet filtrov, iskalno polje in meni:
 | **Obdobje** | datumu: **Danes**, **Včeraj**, **Zadnjih 7 dni** ali **Izberi datume…** |
 | **Kategorija** | kategoriji, v katero je bil uvrščen — glejte [Slovarji](../ai-processing/dictionaries.md) |
 | **Znamka** | oznakah in opozorilnih znakih, ki jih nosi |
-| **Razpoznavalnik** | [razpoznavalniku](../ai-processing/transcription.md), ki je naredil njegov prepis |
 | **Išči** | tem, kar je bilo v njem rečeno — iskanje gre skozi prepise vsega, kar ste posneli |
 
 <Shot name="39_more_menu" alt="Meni ⋮ seznama: Uvozi iz datotek, Izvozi v CSV, Odpri v brskalniku" />

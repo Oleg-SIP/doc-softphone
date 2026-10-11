@@ -2,7 +2,7 @@
 title: Yakalama
 sidebar_label: Diğer uygulamalardan yakalama
 sidebar_position: 1
-description: "\"Yakalama, başka bir uygulamada — Zoom, Teams, Meet ya da başka herhangi birinde — yapılan bir görüşmeyi doğrudan bilgisayardan kaydeder.\""
+description: "Yakalama, başka bir uygulamada — Zoom, Teams, Meet ya da başka herhangi birinde — yapılan bir görüşmeyi doğrudan bilgisayardan kaydeder."
 ---
 
 **Yakalama**, AI Softphone'un başka bir programda geçen bir görüşmeyi, örneğin Zoom, Teams ya da Meet'teki bir toplantıyı kaydetme yoludur. Doğrudan bilgisayardan kaydeder, karşı tarafı ve sizi ayrı kanallarda tutar; sonunda da bir çağrıda olduğu gibi aynı döküm ve işleme sonucu sizi bekler.
@@ -34,7 +34,7 @@ Programın bunu yapan bölümü **Yakalama** modülüdür: *Başka bir uygulamad
 
 ## Bir yakalamayı başlatma {#starting-a-capture}
 
-Yakalamaya izin verildiğinde [ana pencerenin](../interface/main-window.md#capture) alt kısmı onun durumunu — **Yakalama · hazır** — ve sağda bir **Kaydet** düğmesi gösterir. Elle başlatmak için **Kaydet** düğmesine basın.
+Yakalamaya izin verildiğinde [ana pencerenin](../interface/main-window.md#capture) alt kısmı onun durumunu — **Yakalama · görüşme bekleniyor** — ve sağda yuvarlak bir kayıt düğmesi, *Bu görüşmeyi kaydet*, gösterir. Elle başlatmak için ona basın.
 
 ### Otomatik başlatma {#automatic-start}
 
@@ -42,7 +42,7 @@ Yakalamaya izin verildiğinde [ana pencerenin](../interface/main-window.md#captu
 
 | Seçenek | Ne olur |
 | --- | --- |
-| **Asla** | Yakalama yalnızca **Kaydet** düğmesine bastığınızda başlar. |
+| **Asla** | Yakalama yalnızca kayıt düğmesine bastığınızda başlar. |
 | **Bana sor** | Program kaydedip kaydetmeyeceğini sorar. Öntanımlı. |
 | **Her zaman** | Program kaydı kendiliğinden başlatır. |
 
@@ -52,7 +52,7 @@ Yakalamaya izin verildiğinde [ana pencerenin](../interface/main-window.md#captu
 
 ### Başlangıçtan önce {#before-the-start}
 
-**Başlangıçtan önce** kaydırıcısı, bir kayıt başlamadan önceki sesten kaç saniyenin saklanacağını belirler; öntanımlı olarak **15 saniye**. Görüşme fark edilene kadar hiçbir şeyin kaybolmaması için vardır: **Kaydet** düğmesine bastığınızda ya da soruyu yanıtladığınızda başlayan bir kayıt, yine de daha önce söylenen sözlerle başlar.
+**Başlangıçtan önce** kaydırıcısı, bir kayıt başlamadan önceki sesten kaç saniyenin saklanacağını belirler; öntanımlı olarak **15 saniye**. Görüşme fark edilene kadar hiçbir şeyin kaybolmaması için vardır: kayıt düğmesine bastığınızda ya da soruyu yanıtladığınızda başlayan bir kayıt, yine de daha önce söylenen sözlerle başlar.
 
 ## Bir görüşmeyi yakalama {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Kayıt sürerken ana pencere kırmızı bir nokta, kaydın adını (örneğin **
 
 | Ayar | Öntanımlı | Nerede |
 | --- | --- | --- |
-| **Ana penceredeki resim** | Dalga | Bir yakalama sürerken iki kanal. |
-| **Telefonun altındaki şeritteki resim** | İki düzey | **Yakalama · hazır** altındaki iki ince çubuk. |
+| **Penceredeki çizim** | Dalga | Bir yakalama sürerken iki kanal. |
+| **Alttaki şeritteki çizim** | İki düzey | **Yakalama · görüşme bekleniyor** altındaki iki ince çubuk. |
 
 ### Sınama {#testing-it}
 
@@ -86,4 +86,4 @@ Yakalanan bir görüşme, [Kayıtlar penceresinde](../interface/recordings.md) d
 
 <Shot name="01_recordings" alt="Kayıtlar sekmesinde pencere simgesiyle işaretlenmiş yakalanan toplantılar" />
 
-Bir çağrıyla aynı [kurallar](../ai-processing/processing.md#rules) tarafından yazıya dökülür, özetlenir, bir kategoriye yerleştirilir ve etiketlenir. Yakalanan bir toplantının dökümünde, bir çağrının karşı tarafın adını göstereceği yerde konuşmacı **Başka bir uygulama** olarak gösterilir; kitaplığın **Ara** alanı içinde söylenenleri de bulur.
+Bir çağrıyla aynı [kurallar](../ai-processing/processing.md#rules) tarafından yazıya dökülür, özetlenir, bir kategoriye yerleştirilir ve etiketlenir. Yakalanan bir toplantının dökümünde, bir çağrının karşı tarafın adını göstereceği yerde konuşmacı kaydın adıyla gösterilir; kitaplığın **Ara** alanı içinde söylenenleri de bulur.

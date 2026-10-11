@@ -25,8 +25,9 @@ Minden modulnak van egy jelölőnégyzete, egy neve, egy sora arról, mit csiná
 | **Integráció** | A helyi API és a webhookok: [Integráció](/integration/rest-api). |
 | **Médiatár** | A beszélgetések könyvtára és az, hogy meddig maradnak meg: [Felvételek](/interface/recordings). |
 | **Feldolgozás** | Az utasítások és az őket elindító szabályok: [Feldolgozás](/ai-processing/processing). |
+| **Súgó** | Beszélgetés közben hallgat és javasol: [A súgó ablaka](/interface/prompter). |
 | **Felvétel** | A hívások rögzítése és a másik fél tájékoztatása erről: [Felvételek](/recordings). |
-| **Telefónia** | SIP, fiókok, hívások, a tárcsázó és a hívásnapló. |
+| **Telefon** | SIP, fiókok, hívások, a tárcsázó és a hívásnapló. |
 | **Átirat** | A felismerők, az őket hajtó várólista és az általuk készített leiratok: [Átirat](/ai-processing/transcription). |
 
 Ha kikapcsol egy modult, eltűnik: nincsenek hozzá beállítások, nincs menüpontja, semmi sem fut belőle. Kapcsolja ki azt a modult, amelyre nincs szüksége — például az **Integráció** modult egy olyan számítógépen, ahol semmi más nem kommunikál a telefonnal —, vagy tartson meg egy olyan telefont, amely csak telefon, ha egy asztalhoz csak ennyi kell. A csomag mindkét esetben ugyanaz: nincs mit megvenni és nincs mit feloldani.

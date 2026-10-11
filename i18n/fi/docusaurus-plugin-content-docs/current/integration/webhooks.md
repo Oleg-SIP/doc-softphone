@@ -1,7 +1,7 @@
 ---
 title: Webhookit
 sidebar_position: 1
-description: "\"Anna puhelimen lähettää pyyntö CRM:llesi tai muulle järjestelmälle, kun puhelu alkaa, muuttuu tai päättyy — saapuvan ja lähtevän puhelun tarkkojen pyyntöjen kera.\""
+description: "Anna puhelimen lähettää pyyntö CRM:llesi tai muulle järjestelmälle, kun puhelu alkaa, muuttuu tai päättyy — saapuvan ja lähtevän puhelun tarkkojen pyyntöjen kera."
 ---
 
 Webhook on pyyntö, jonka puhelin lähettää valitsemaasi osoitteeseen aina, kun puhelulle tapahtuu jotain. Näin CRM voi avata asiakaskortin ennen toista soittoa, kirjata puhelun sen päättyessä tai sytyttää valon seinätaululla. Webhook ei tarvitse saapuvia palomuurisääntöjä: puhelin ottaa yhteyttä sinuun. Koska pyynnöt lähetetään työasemalta, osoitteen tarvitsee olla tavoitettavissa vain siltä tietokoneelta — sisäinen `http://crm.local/calls` toimii yhtä hyvin kuin julkinen HTTPS-osoite.

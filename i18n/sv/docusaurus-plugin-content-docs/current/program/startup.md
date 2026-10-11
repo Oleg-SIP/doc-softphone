@@ -1,7 +1,7 @@
 ---
 title: Uppstart
 sidebar_position: 2
-description: "\"Starta telefonen med datorn, låt den gå vidare när fönstret är stängt och öppna länkar med tel:, callto: och sip:.\""
+description: "Starta telefonen med datorn, låt den gå vidare när fönstret är stängt och öppna länkar med tel:, callto: och sip:."
 ---
 
 **Inställningar → Uppstart** bestämmer hur programmet startar, vad det gör att stänga fönstret och vad som händer när du klickar på ett telefonnummer i ett annat program.

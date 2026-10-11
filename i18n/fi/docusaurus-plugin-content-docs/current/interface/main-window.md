@@ -16,7 +16,7 @@ Ylhäältä alas vasemmalla puolella on:
 - näppäimistö ja soittonäppäin;
 - tilien merkit;
 - painikkeet, jotka seuraavat muita alanumeroita;
-- neljä paikkaa, joihin mennä: **Tallenteet**, **Yhteystiedot**, **Historia** ja **Asetukset**.
+- paikat, joihin mennä: **Tallenteet**, **Yhteystiedot**, **Historia**, **Kuiskaaja** ja **Asetukset**.
 
 ### Numeronvalitsin {#the-dialler}
 
@@ -36,9 +36,9 @@ Näppäimistön alla on yksi merkki jokaista [tiliä](../sip-accounts/setup.md) 
 
 Merkkien alla ovat [painikkeet](../sip-accounts/buttons.md), jotka olet tehnyt kollegoita ja linjoja varten, kukin merkkivalon kera — kuvissa **Virtanen** ja **Varasto**. Paina yhtä soittaaksesi sen numeroon.
 
-### Tallenteet, Yhteystiedot, Historia, Asetukset {#recordings-contacts-history-settings}
+### Tallenteet, Yhteystiedot, Historia, Kuiskaaja, Asetukset {#recordings-contacts-history-prompter-settings}
 
-Nämä neljä alareunan kohtaa avaavat kukin välilehden oikealle, rinnakkain: [Tallenteet](../interface/recordings.md), [Yhteystiedot ja historia](contacts-history.md) ja [Asetukset](settings-overview.md). Avaamasi välilehdet pysyvät oikean puolen yläreunan rivissä.
+Nämä alareunan kohdat avaavat kukin välilehden oikealle, rinnakkain: [Tallenteet](../interface/recordings.md), [Yhteystiedot ja historia](contacts-history.md), [Kuiskaaja](prompter.md) ja [Asetukset](settings-overview.md). **Kuiskaaja** näkyy vasta, kun kuiskaaja on sallittu ja sillä on tunnistin, jolla kuunnella. Avaamasi välilehdet pysyvät oikean puolen yläreunan rivissä.
 
 ## Käynnissä oleva puhelu {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Yhdistetyt puhelut näkyvät yhtenä **Neuvottelu**-korttina tilin linjalla. Jok
 
 Kun [kaappaus muista sovelluksista](../capture/capture.md) on sallittu kohdassa **Asetukset → Kaappaus**, tilien merkkien ja painikkeiden väliin ilmestyy kaistale.
 
-<Shot name="10_settings_capture" full alt="Kaappauskaistale puhelimen alalaidassa: Kaappaus · valmis, Tallenna ja kaksi tasopalkkia" />
+<Shot name="10_settings_capture" full alt="Kaappauskaistale puhelimen alalaidassa: Kaappaus · odotetaan keskustelua, tallennuspainike ja kaksi tasopalkkia" />
 
-- **Kaappaus · valmis** kertoo, että ohjelma kuuntelee, onko toisessa sovelluksessa keskustelua.
-- **Tallenna** aloittaa kaappauksen käsin.
-- Sen alla olevat kaksi ohutta palkkia näyttävät äänen tason: ylempi olet sinä, alempi on se, mitä tietokone toistaa. Niiden piirtotapa asetetaan kohdassa **Kuva puhelimen alalaidan palkissa**.
+- **Kaappaus · odotetaan keskustelua** kertoo, että ohjelma kuuntelee, onko toisessa sovelluksessa keskustelua.
+- Oikealla oleva pyöreä painike aloittaa kaappauksen käsin.
+- Sen alla olevat kaksi ohutta palkkia näyttävät äänen tason: ylempi olet sinä, alempi on se, mitä tietokone toistaa. Niiden piirtotapa asetetaan kohdassa **Kuva alareunan palkissa**.
 
 Ohjelma voi myös olla ilmaisinalueella (macOS:ssä valikkorivillä) ja tulla esiin [pikanäppäimellä](../program/shortcuts.md).

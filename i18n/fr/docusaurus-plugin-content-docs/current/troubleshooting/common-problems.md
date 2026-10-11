@@ -1,7 +1,7 @@
 ---
 title: Problèmes courants
 sidebar_position: 2
-description: "\"Que vérifier quand un compte ne s'enregistre pas, qu'il n'y a pas de son, qu'un appel ou une réunion n'est pas enregistré, qu'il n'y a pas de transcription, ou qu'un lien, un raccourci ou l'API ne fait rien.\""
+description: "Que vérifier quand un compte ne s'enregistre pas, qu'il n'y a pas de son, qu'un appel ou une réunion n'est pas enregistré, qu'il n'y a pas de transcription, ou qu'un lien, un raccourci ou l'API ne fait rien."
 ---
 
 Chaque entrée renvoie au réglage qui en décide. Si la réponse n'est pas ici, ouvrez le [Diagnostic](/troubleshooting/diagnostics) : il montre ce que le téléphone et l'IPBX se disent.
@@ -44,7 +44,7 @@ Ce qui se passe quand quelqu'un appelle alors que vous êtes en communication se
 Voir [Capture](/capture/).
 
 - **Autoriser la capture du son** dans **Réglages → Capture** doit être activé.
-- Avec **Démarrage automatique** réglé sur **Me demander** (la valeur par défaut), répondez à la question quand elle apparaît ; avec **Jamais**, appuyez vous-même sur **Enregistrer**.
+- Avec **Démarrage automatique** réglé sur **Me demander** (la valeur par défaut), répondez à la question quand elle apparaît ; avec **Jamais**, appuyez vous-même sur le bouton d'enregistrement.
 - Utilisez **Tester** dans le même onglet : la barre du haut doit bouger quand vous parlez, celle du bas quand quelque chose joue.
 - Le module **Capture** doit être activé dans [Modules](/application/modules).
 

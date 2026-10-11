@@ -1,7 +1,7 @@
 ---
 title: Obrada
 sidebar_position: 2
-description: Automatska obrada razgovora, mjesečne granice potrošnje, jezični modeli, upute i pravila koja ih pokreću.
+description: Automatska obrada razgovora, jezični modeli, upute, pravila koja ih pokreću i mjesečne granice potrošnje.
 ---
 
 **Postavke → Obrada** odlučuje što se događa s razgovorom nakon što je snimljen, koji model obavlja posao i koliko to smije stajati.
@@ -13,20 +13,9 @@ description: Automatska obrada razgovora, mjesečne granice potrošnje, jezični
 - **Isključeno:** ništa se ne događa dok to ne zatražite u [prozoru Snimke](../interface/recordings.md).
 - **Uključeno:** [pravila](#rules) u nastavku izvode se sama. Upravo to pretvara razgovor u sažetak, kategoriju i sve ostalo bez da itko išta pritisne. Model u oblaku naplaćuje svaki od tih koraka.
 
-Ispod potvrdnog okvira program prikazuje koliko je potrošeno ovaj mjesec i na koliko zahtjeva, primjerice *Ovaj mjesec: 40.492 tokena, u 84 zahtjeva, bez naplate.*
-
-## Granice {#limits}
-
-| Polje | Značenje |
-| --- | --- |
-| **Novčana granica, mjesečno** | Najviše koliko modeli smiju stajati u mjesecu. |
-| **Granica tokena, mjesečno** | Najviše tokena koje smiju potrošiti u mjesecu. |
-
-Granice su dvije jer se mjesec može brojati u dvije stvari. Obje su prazne dok ih ne ispunite. Kad se dosegne bilo koja, automatska pravila staju do kraja mjeseca. **Ono što zatražite sami nikada se ne zaustavlja.**
-
 ## Jezični modeli {#language-models}
 
-Modeli koji čitaju prijepis i pišu o njemu. Pritisnite **Dodaj** da dodate jedan. Svaki je naveden sa svojim nazivom, a ispod njega s identifikatorom modela i adresom svoje usluge, primjerice `qwen3-32b · http://llm.local:8000/v1`. Onaj označen kao **Zadano** koristi se prema zadanim postavkama. Gumb u obrascu modela provjerava odgovara li usluga zaista prije nego što se na nju oslonite.
+Modeli koji čitaju prijepis i pišu o njemu. Pritisnite **Dodaj** da dodate jedan. Svaki je naveden sa svojim nazivom, a ispod njega s identifikatorom modela i adresom svoje usluge, primjerice `qwen3-32b · http://localhost:8000/v1`. Onaj označen kao **zadano** — na slici **QWEN**, model na ovom računalu — koristi se prema zadanim postavkama: u uputama i u onim pomoćnicima [šaptača](prompter.md) koji ne navode vlastiti model. **Provjeri** u obrascu modela provjerava odgovara li usluga zaista prije nego što se na nju oslonite.
 
 - Model **na vlastitom računalu** drži svaki razgovor u zgradi i ne košta ništa.
 - Model u oblaku — OpenAI, Claude, Mistral, DeepSeek, Groq i drugi — naplaćuje se po korištenju. Program prikazuje cijenu svakog poziva u tokenima i u novcu.
@@ -35,7 +24,7 @@ Modeli koji čitaju prijepis i pišu o njemu. Pritisnite **Dodaj** da dodate jed
 
 <Shot name="12b_settings_processing_prompts" alt="Postavke → Obrada: upute" />
 
-*Ono što se od modela traži.* Svaka je uputa došla s programom i svaka je vaša da je promijenite — i da je vratite. Svaka je navedena sa svojim nazivom, a ispod njega s onim što piše i u kojem obliku. Oblik — **Odgovor**, **Stavke**, **Oznake**, **JSON**, **Proza**, **Signali** ili **Mjerila** — odlučuje kako se odgovor čuva i prikazuje. Upute su opisane u [Personal Prompt Studio](prompt-studio.md). **Dodaj** stvara vlastitu uputu.
+*Ono što se od modela traži.* Svaka je uputa došla s programom i svaka je vaša da je promijenite — i da je vratite. Svaka je navedena sa svojim nazivom, a ispod njega s onim što piše i u kojem obliku; **▲** i **▼** mijenjaju redoslijed popisa. Oblik — **Odgovor**, **Stavke**, **Oznake**, **JSON**, **Proza**, **Signali** ili **Mjerila** — odlučuje kako se odgovor čuva i prikazuje. Upute su opisane u [Personal Prompt Studio](prompt-studio.md). **Dodaj** stvara vlastitu uputu.
 
 ## Pravila {#rules}
 
@@ -55,6 +44,19 @@ Modeli koji čitaju prijepis i pišu o njemu. Pritisnite **Dodaj** da dodate jed
 | **Prosudi ga, ako je bila podrška** | Pita model: **Kvaliteta podrške**. | samo ako je kategorija **Podrška** |
 
 Redoslijed je važan: zadnja dva pravila trebaju kategoriju koju je postavilo pravilo prije njih. **Dodaj** stvara vlastito pravilo.
+
+## Trošenje {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Postavke → Obrada: trošenje u mjesecu i dvije granice" />
+
+Pod **Trošenje** program prikazuje koliko je potrošeno ovaj mjesec i na koliko zahtjeva — na slici *Ovaj mjesec nije obrađeno ništa*, a primjerice *Ovaj mjesec: 40.492 tokena, u 84 zahtjeva, bez naplate* kad je nešto već obrađeno.
+
+| Polje | Značenje |
+| --- | --- |
+| **Novčana granica, mjesečno** | Najviše koliko modeli smiju stajati u mjesecu. |
+| **Granica tokena, mjesečno** | Najviše tokena koje smiju potrošiti u mjesecu. |
+
+Granice su dvije jer se mjesec može brojati u dvije stvari. Obje su prazne dok ih ne ispunite. Kad se dosegne bilo koja, automatska pravila staju do kraja mjeseca. **Ono što zatražite sami nikada se ne zaustavlja.** [Šaptač](prompter.md#spending) ima vlastite gornje granice, kako ga mjesec sažetaka ne bi mogao ušutkati usred razgovora.
 
 ## Zadane vrijednosti {#defaults}
 

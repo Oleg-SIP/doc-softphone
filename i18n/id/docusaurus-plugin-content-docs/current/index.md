@@ -20,6 +20,8 @@ Rekaman, transkrip, dan riwayat disimpan dalam berkas milik Anda sendiri. Tidak 
 3. Percakapan ditranskripsikan, pembicara demi pembicara, selaras dengan audionya.
 4. Model bahasa pilihan Anda mengolahnya: ringkasan, tugas, kategori, label, dan tanda peringatan — dan Anda dapat mengajukan pertanyaan tentang percakapan itu.
 
+Selama panggilan, [Pembisik](interface/prompter.md) dapat berbuat lebih jauh: ia menampilkan apa yang diucapkan saat diucapkan, dan menyarankan apa yang perlu dijawab.
+
 ## Unduhan dan persyaratan sistem {#download-and-system-requirements}
 
 Program ini dapat diunduh gratis dari [ai-softphone.com](https://ai-softphone.com/#download): penginstal (`.exe`) untuk Windows, image disk (`.dmg`) untuk macOS, serta AppImage atau `.deb` untuk Linux. Penginstal, image disk, dan AppImage tidak memerlukan apa pun yang dipasang terlebih dahulu — Qt, OpenSSL, dan pustaka runtime C++ sudah disertakan di dalamnya. Pengecualiannya adalah `.deb`: paket ini memakai pustaka runtime C++ milik sistem, lihat di bawah. Anda memerlukan akun SIP, dari penyedia Anda atau dari PBX yang Anda kelola sendiri. Perekaman langsung berfungsi begitu program terpasang; transkrip dan hasil olahan memerlukan layanan pilihan Anda atau model di komputer Anda sendiri.
@@ -60,6 +62,7 @@ Tangkapan layar dalam dokumentasi ini dibuat di macOS dan ditampilkan dalam ukur
 | Memilih pengenal suara yang mengubah ucapan menjadi teks | [Transkripsi](ai-processing/transcription.md) |
 | Menentukan AI mana yang mengolah percakapan Anda dan berapa biaya yang boleh dikeluarkan | [Pemrosesan](ai-processing/processing.md) |
 | Mengubah kategori, label, dan tanda peringatan | [Kamus](ai-processing/dictionaries.md) |
+| Melihat apa yang diucapkan selama panggilan, dan mendapat saran jawaban | [Jendela pembisik](interface/prompter.md) |
 | Mengubah tata letak, tema, cara mulai, dan tombol pintas | [Tampilan](program/appearance.md), [Awalan](program/startup.md), dan [Pintasan](program/shortcuts.md) |
 | Menghubungkan CRM atau program lain | [Webhook](integration/webhooks.md) dan [REST API lokal](integration/rest-api.md) |
 | Melihat apa yang dipertukarkan telepon dan PBX | [Diagnostik](troubleshooting/diagnostics.md) |

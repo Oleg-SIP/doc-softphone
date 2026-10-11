@@ -25,8 +25,9 @@ Každý modul má začiarkavacie políčko, názov, riadok o tom, čo robí, a v
 | **Integrácia** | Miestne API a webhooky: [Integrácia](/integration/rest-api). |
 | **Úložisko médií** | Knižnica rozhovorov a ako dlho sa uchovávajú: [Nahrávky](/interface/recordings). |
 | **Spracovanie** | Pokyny a pravidlá, ktoré ich spúšťajú: [Spracovanie](/ai-processing/processing). |
+| **Našepkávač** | Počúva rozhovor počas jeho priebehu a napovedá: [Okno našepkávača](/interface/prompter). |
 | **Nahrávanie** | Nahrávanie hovorov a upozornenie druhej strany: [Nahrávky](/recordings). |
-| **Telefónia** | SIP, účty, hovory, pole na vytáčanie a história hovorov. |
+| **Telefón** | SIP, účty, hovory, pole na vytáčanie a história hovorov. |
 | **Prepis** | Rozpoznávače, front, ktorý ich poháňa, a prepisy, ktoré vytvárajú: [Prepis](/ai-processing/transcription). |
 
 Vypnite modul a je preč: žiadne jeho nastavenia, žiadna položka v ponuke, nič z neho nebeží. Vypnite modul, ktorý nepotrebujete — napríklad **Integrácia** na počítači, kde s telefónom nič iné nekomunikuje — alebo si nechajte telefón, ktorý je len telefónom, ak je to všetko, čo pracovné miesto potrebuje. Balík je v oboch prípadoch rovnaký: nie je čo kupovať ani odomykať.

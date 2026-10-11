@@ -44,7 +44,7 @@ Co se stane, když vám někdo volá, zatímco telefonujete, se nastavuje v [Če
 Viz [Zachytávání](/capture/).
 
 - **Povolit zachytávání zvuku** v **Nastavení → Zachytávání** musí být zapnuté.
-- Když je **Automatické spuštění** nastaveno na **Zeptat se mě** (výchozí), odpovězte na otázku, když se objeví; s volbou **Nikdy** stiskněte **Nahrát** sami.
+- Když je **Automatické spuštění** nastaveno na **Zeptat se mě** (výchozí), odpovězte na otázku, když se objeví; s volbou **Nikdy** stiskněte tlačítko nahrávání sami.
 - Použijte **Kontrolu** na stejné kartě: horní pruh se musí hýbat, když mluvíte, dolní, když něco hraje.
 - Modul **Zachytávání** musí být zapnutý v [Modulech](/application/modules).
 

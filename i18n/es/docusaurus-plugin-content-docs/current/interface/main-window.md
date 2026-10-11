@@ -16,7 +16,7 @@ De arriba abajo, la parte izquierda contiene:
 - el teclado y la tecla de llamada;
 - las fichas de las cuentas;
 - los botones que vigilan otras extensiones;
-- los cuatro destinos: **Grabaciones**, **Contactos**, **Historial** y **Ajustes**.
+- los destinos: **Grabaciones**, **Contactos**, **Historial**, **Apuntador** y **Ajustes**.
 
 ### El marcador {#the-dialler}
 
@@ -36,9 +36,9 @@ Debajo del teclado hay una ficha por cada [cuenta](../sip-accounts/setup.md). Un
 
 Debajo de las fichas están los [botones](../sip-accounts/buttons.md) que ha creado para compañeros y líneas, cada uno con una luz — **García** y **Almacén** en las imágenes. Pulse uno para marcar su número.
 
-### Grabaciones, Contactos, Historial, Ajustes {#recordings-contacts-history-settings}
+### Grabaciones, Contactos, Historial, Apuntador, Ajustes {#recordings-contacts-history-prompter-settings}
 
-Estas cuatro entradas de abajo abren una pestaña a la derecha, una junto a otra: [Grabaciones](../interface/recordings.md), [Contactos e historial](contacts-history.md) y [Ajustes](settings-overview.md). Las pestañas que ha abierto se quedan en la fila de arriba de la parte derecha.
+Estas entradas de abajo abren una pestaña a la derecha, una junto a otra: [Grabaciones](../interface/recordings.md), [Contactos e historial](contacts-history.md), el [Apuntador](prompter.md) y [Ajustes](settings-overview.md). **Apuntador** solo aparece cuando el apuntador está permitido y tiene un reconocedor con el que escuchar. Las pestañas que ha abierto se quedan en la fila de arriba de la parte derecha.
 
 ## Una llamada en curso {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Las llamadas unidas se muestran como una sola tarjeta **Conferencia** en la lín
 
 Cuando la [captura de otras aplicaciones](../capture/capture.md) está permitida en **Ajustes → Captura**, aparece una franja entre las fichas de las cuentas y los botones.
 
-<Shot name="10_settings_capture" full alt="La franja de captura al pie del teléfono: Captura · listo, Grabar y dos barras de nivel" />
+<Shot name="10_settings_capture" full alt="La franja de captura al pie del teléfono: Captura · esperando una conversación, el botón de grabar y dos barras de nivel" />
 
-- **Captura · listo** indica que el programa está atento a una conversación en otra aplicación.
-- **Grabar** inicia una captura a mano.
-- Las dos barras finas de debajo muestran el nivel del sonido: la de arriba es usted, la de abajo lo que reproduce el ordenador. Cómo se dibujan se ajusta en **Imagen en la barra del pie del teléfono**.
+- **Captura · esperando una conversación** indica que el programa está atento a una conversación en otra aplicación.
+- El botón redondo de la derecha inicia una captura a mano.
+- Las dos barras finas de debajo muestran el nivel del sonido: la de arriba es usted, la de abajo lo que reproduce el ordenador. Cómo se dibujan se ajusta en **Dibujo en la barra inferior**.
 
 El programa también puede vivir en la bandeja (la barra de menús en macOS) y aparecer con un [atajo](../program/shortcuts.md).

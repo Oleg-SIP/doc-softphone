@@ -10,7 +10,9 @@ description: Kontrollnimekiri Ülevaade ja akna Seaded vahekaardid ning see, kus
 
 <Shot name="04_settings_overview" alt="Seaded → Ülevaade: kontrollnimekiri sellest, mis on seadistatud" />
 
-**Ülevaade** on kontrollnimekiri sellest, mida on vaja, et programmist kõik kätte saada. Ülal loendab see samme — pildil *10 sammu tehtud* rohelise täpiga ja *8 sammu jäänud* punasega — ja riba näitab tehtud osa. Iga samm on täpiga rida: roheline tehtud sammu, punane veel tegemata sammu puhul.
+Vahekaardi ülaosas avab **Dokumentatsioon** selle saidi.
+
+**Ülevaade** on kontrollnimekiri sellest, mida on vaja, et programmist kõik kätte saada. Ülal loendab see samme — pildil *14 sammu tehtud* rohelise täpiga ja *6 sammu jäänud* punasega — ja riba näitab tehtud osa. Iga samm on täpiga rida: roheline tehtud sammu, punane veel tegemata sammu puhul.
 
 *Vajuta reale, et lugeda, milleks see on, ja avada koht, kus seda seadistatakse.* Rea paremas otsas olev nool laiendab seda.
 
@@ -20,6 +22,7 @@ description: Kontrollnimekiri Ülevaade ja akna Seaded vahekaardid ning see, kus
 | **Hõive teistest rakendustest** | Lülita hõive sisse; Hõiva vestlus; Anna sellele nimi |
 | **Ülestähendus** | Lisa tuvastaja; Kirjuta vestlus ümber |
 | **Töötlemine** | Lisa mudel; Töötle ümberkirjutust |
+| **Etteütleja** | Luba etteütlemine; Käivita etteütleja |
 | **Salvestised** | Otsi öeldust; Ekspordi salvestus; Ekspordi kokkuvõte |
 | **Rakendus** | Käivita koos arvutiga; Hoia ajakohasena |
 | **Tagasiside** | Saada laiendatud aruanne; Ütle meile, mida arvad |
@@ -39,8 +42,9 @@ Sammud on juhend, mitte kohustus: samm, mida te ei vaja, võib jääda punaseks.
 | | **Salvestamine** | [Kõnede salvestamine: nõusolek, konverentsid ja failide säilitamise aeg](../recordings.md) |
 | | **Hõivamine** | [Teiste rakenduste heli hõivamine](../capture/capture.md): koosolekud Zoomis, Teamsis, Meetis ja muus sarnases |
 | Tehisintellekt | **Ülestähendus** | [Tuvastajad](../ai-processing/transcription.md) |
-| | **Töötlemine** | [Automaatne töötlemine, kulupiirid, keelemudelid, juhised ja reeglid](../ai-processing/processing.md) |
+| | **Töötlemine** | [Automaatne töötlemine, keelemudelid, juhised, reeglid ja kulupiirid](../ai-processing/processing.md) |
 | | **Sõnastikud** | [Kategooriad, sildid ja hoiatussignaalid](../ai-processing/dictionaries.md) |
+| | **Etteütleja** | [Reaalajas etteütleja: lüliti, teksti suurus, abilised ja see, mida nad tohivad kulutada](../ai-processing/prompter.md) |
 | Programm | **Välimus** | [Paigutus, keel, teema ja ikoonid](../program/appearance.md) |
 | | **Käivitumine** | [Kuidas programm käivitub, sulgub ja kõnelinke avab](../program/startup.md) |
 | | **Otseteed** | [Klahviotseteed](../program/shortcuts.md) |

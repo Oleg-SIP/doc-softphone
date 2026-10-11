@@ -16,7 +16,7 @@ Fentről lefelé a bal oldalon a következők találhatók:
 - a billentyűzet és a hívógomb;
 - a fiókjelvények;
 - a más melléket figyelő gombok;
-- a négy úti cél: **Felvételek**, **Névjegyek**, **Előzmények** és **Beállítások**.
+- az úti célok: **Felvételek**, **Névjegyek**, **Előzmények**, **Súgó** és **Beállítások**.
 
 ### A tárcsázó {#the-dialler}
 
@@ -36,9 +36,9 @@ A billentyűzet alatt minden [fióknak](../sip-accounts/setup.md) van egy jelvé
 
 A jelvények alatt azok a [gombok](../sip-accounts/buttons.md) vannak, amelyeket a kollégáinak és a vonalaknak hozott létre, mindegyik egy lámpával — a képeken **Kovács** és **Raktár**. Nyomjon meg egyet, hogy felhívja a számát.
 
-### Felvételek, Névjegyek, Előzmények, Beállítások {#recordings-contacts-history-settings}
+### Felvételek, Névjegyek, Előzmények, Súgó, Beállítások {#recordings-contacts-history-prompter-settings}
 
-Ez a négy alsó elem egy-egy lapot nyit jobbra, egymás mellett: [Felvételek](../interface/recordings.md), [Névjegyek és Előzmények](contacts-history.md), valamint [Beállítások](settings-overview.md). A megnyitott lapok a jobb oldal tetején lévő sorban maradnak.
+Ezek az alsó elemek egy-egy lapot nyitnak jobbra, egymás mellett: [Felvételek](../interface/recordings.md), [Névjegyek és Előzmények](contacts-history.md), a [Súgó](prompter.md), valamint [Beállítások](settings-overview.md). A **Súgó** csak akkor jelenik meg, ha a súgó engedélyezve van, és van felismerője, amellyel hallgathat. A megnyitott lapok a jobb oldal tetején lévő sorban maradnak.
 
 ## Folyamatban lévő hívás {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Az összekapcsolt hívások egyetlen **Konferencia** kártyaként jelennek meg a
 
 Amikor a [más alkalmazásokból történő rögzítés](../capture/capture.md) engedélyezve van a **Beállítások → Rögzítés** lapon, a fiókjelvények és a gombok között megjelenik egy sáv.
 
-<Shot name="10_settings_capture" full alt="A Rögzítés sáv a telefon alján: Rögzítés · kész, Felvétel és két szintjelző" />
+<Shot name="10_settings_capture" full alt="A Rögzítés sáv a telefon alján: Rögzítés · várakozás beszélgetésre, a felvételgomb és két szintjelző" />
 
-- A **Rögzítés · kész** azt jelzi, hogy a program figyeli, zajlik-e beszélgetés egy másik alkalmazásban.
-- A **Felvétel** kézzel indítja el a rögzítést.
-- Az alatta lévő két vékony sáv a hangszintet mutatja: a felső Ön, az alsó az, amit a számítógép lejátszik. Megjelenésüket a **Kép a telefon alján lévő sávban** beállításnál adhatja meg.
+- A **Rögzítés · várakozás beszélgetésre** azt jelzi, hogy a program figyeli, zajlik-e beszélgetés egy másik alkalmazásban.
+- A jobb oldali kerek gomb kézzel indítja el a rögzítést.
+- Az alatta lévő két vékony sáv a hangszintet mutatja: a felső Ön, az alsó az, amit a számítógép lejátszik. Megjelenésüket a **Rajz az alsó sávban** beállításnál adhatja meg.
 
 A program a tálcán (macOS-en a menüsorban) is elfér, és egy [gyorsbillentyűvel](../program/shortcuts.md) hívható elő.

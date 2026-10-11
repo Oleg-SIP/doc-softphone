@@ -40,14 +40,16 @@ Atzīmes, kas *visas var attiekties uz vienu un to pašu sarunu*. Nospiediet **P
 
 Lietas, kam vajadzīga uzmanība, atrastas sarunā ar pierādījumu un laiku — piemēram, *Dusmīgs klients* vai *Aiziešanas risks*. Brīdinājuma signāli [ierakstu logā](../interface/recordings.md) tiek zīmēti sarkanā krāsā, un katram ir nopietnība: zema, vidēja vai augsta.
 
-## Atbilžu formas un valoda {#answer-shapes-and-language}
+## Norādījumi {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Iestatījumi → Vārdnīcas: atbilžu formas un valodas instrukcijas" />
 
-Zemāk cilnē ir instrukcijas, no kurām tiek salikti norādījumi. Tās glabājas šeit, lai katrs norādījums varētu izmantot vienu un to pašu formulējumu, un jūs varat tās mainīt kā jebkuru citu ierakstu.
+*Tas, ko pievieno katram norādījumam par atbildes formu un valodu, kādā to rakstīt.* Tās glabājas šeit, lai katrs norādījums varētu izmantot vienu un to pašu formulējumu, un jūs varat tās mainīt kā jebkuru citu ierakstu — vai uzrakstīt savas, piemēram, *atbildi īsi* vai *nekad nenosauc cenu*, un atzīmēt tās jebkurā norādījumā sadaļā **Sūtīt arī**.
 
 | Nosaukums | Kods | Ko tas pasaka modelim |
 | --- | --- | --- |
+| **Proza** | `shape-plain` | Atbildēt vienkāršā prozā, bez JSON, sarakstiem un virsrakstiem. |
+| **Punkti** | `shape-list` | Atbildēt ar darāmo lietu sarakstu, katrai norādot, kas un kad. |
 | **Birkas** | `shape-labels` | Atbildēt JSON formātā ar kodu sarakstu un pārliecību par katru, izmantojot tikai kodus no saņemtā saraksta. |
 | **Vērtējums** | `shape-score` | Atbildēt ar vērtējumu, tā pamatojumu un vārdiem, uz kuriem tas balstās. |
 | **Kritēriji** | `shape-rubric` | Atbildēt ar kopējo vērtējumu un vērtējumu katram kritērijam. |
@@ -58,7 +60,7 @@ Zemāk cilnē ir instrukcijas, no kurām tiek salikti norādījumi. Tās glabāj
 | **Kā runāts, nosaukta** | `language-as-spoken-named` | Tas pats, nosaucot valodu. |
 | **Nosaukta valoda** | `language-named` | Rakstīt valodā, ko jūs nosaucat. |
 
-**Pievienot** saraksta beigās pievieno ierakstu.
+**Pievienot** saraksta augšā pievieno ierakstu.
 
 ## Noklusējumi {#defaults}
 

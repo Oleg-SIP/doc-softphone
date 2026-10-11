@@ -7,6 +7,7 @@ description: Termenii de telefonie IP și de AI Softphone folosiți în această
 | Termen | Semnificație |
 | --- | --- |
 | **Cont** | O linie: un nume de utilizator SIP pe o centrală sau la un furnizor. Puteți fi conectat la mai multe. Consultați [Configurarea unui cont SIP](/sip-accounts/setup). |
+| **Asistent** | Ceea ce i se cere sufleurului să fie cât ascultă: subtitrări, o traducere sau sugestii despre ce să spuneți. Vedeți [Setările sufleurului](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Un buton care formează un interior și arată printr-un indicator luminos dacă acesta este liber, sună sau este ocupat. Consultați [Butoane](/sip-accounts/buttons). |
 | **Apel în așteptare** | Ce face telefonul când vă sună cineva în timp ce sunteți deja într-o convorbire. Consultați [Setările apelurilor](/sip-accounts/calls#call-waiting). |
 | **Captare** | Înregistrarea unei conversații ținute în altă aplicație, cum ar fi Zoom, Teams sau Meet. Consultați [Captare](/capture/). |
@@ -19,8 +20,10 @@ description: Termenii de telefonie IP și de AI Softphone folosiți în această
 | **Centrală IP** | Centrala telefonică a unui birou, care funcționează în rețea; se mai numește și softswitch. |
 | **Model de limbă** | Inteligența artificială care citește o transcriere și scrie despre ea. Consultați [Prelucrare](/ai-processing/processing). |
 | **Instrucțiune** | Ceea ce i se cere unui model de limbă. Consultați [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Sufleur** | O fereastră care arată ce se spune într-un apel chiar în timp ce se spune, și sugestii despre ce să răspundeți. Vedeți [Fereastra sufleurului](/interface/prompter). |
 | **Recunoscător** | Serviciul care transformă sunetul în text (recunoașterea vorbirii). Consultați [Transcriere](/ai-processing/transcription). |
 | **Semnal de alarmă** | Ceva dintr-o conversație care cere atenție, cu dovada și momentul. Consultați [Dicționare](/ai-processing/dictionaries#red-flags). |
+| **Repetiție** | Redarea unei conversații înregistrate în sufleur în locul unui apel, pentru a încerca un asistent. Vedeți [Fereastra sufleurului](/interface/prompter#rehearsing-on-a-recording). |
 | **Înregistrare la centrală** | Telefonul îi comunică centralei unde se află, pentru ca apelurile să ajungă la el. Un punct verde lângă cont înseamnă că este înregistrat. |
 | **Regulă** | Un pas care rulează de la sine, în ordine, pe fiecare conversație. Consultați [Prelucrare](/ai-processing/processing#rules). |
 | **SIP** | Protocolul pe care telefoanele și centralele îl folosesc pentru a stabili apeluri. |

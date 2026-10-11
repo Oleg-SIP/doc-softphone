@@ -40,14 +40,16 @@ Märkningar som *alla kan stämma in på samma samtal*. Tryck på **Lägg till**
 
 Saker som kräver uppmärksamhet, hittade i samtalet med beviset och tidpunkten — till exempel *Arg kund* eller *Avhopprisk*. Signaler ritas i rött i [fönstret Inspelningar](../interface/recordings.md), och var och en har en allvarlighetsgrad: låg, medel eller hög.
 
-## Svarsformer och språk {#answer-shapes-and-language}
+## Anvisningar {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Inställningar → Ordlistor: svarsformer och språkinstruktioner" />
 
-Längre ned på fliken finns instruktionerna som prompterna sätts ihop av. De sparas här så att varje prompt kan använda samma formulering, och du kan ändra dem som vilken annan post som helst.
+*Det som läggs till varje prompt om svarets form och språket att skriva det på.* De sparas här så att varje prompt kan använda samma formulering, och du kan ändra dem som vilken annan post som helst — eller skriva egna, till exempel *svara kort* eller *nämn aldrig ett pris*, och kryssa i dem under **Skicka även** på vilken prompt som helst.
 
 | Namn | Kod | Vad den talar om för modellen |
 | --- | --- | --- |
+| **Löpande text** | `shape-plain` | Svara med vanlig löpande text, utan JSON, listor eller rubriker. |
+| **Punkter** | `shape-list` | Svara med en lista över saker att göra, var och en med vem och när. |
 | **Etiketter** | `shape-labels` | Svara i JSON med en lista över koder och hur säker den är på var och en, bara med koder från listan den har fått. |
 | **Betyg** | `shape-score` | Svara med ett betyg, motiveringen till det och orden det bygger på. |
 | **Kriterier** | `shape-rubric` | Svara med ett sammanlagt betyg och ett betyg för varje kriterium. |
@@ -58,7 +60,7 @@ Längre ned på fliken finns instruktionerna som prompterna sätts ihop av. De s
 | **Som det talades, namngivet** | `language-as-spoken-named` | Samma sak, med språkets namn. |
 | **Ett namngivet språk** | `language-named` | Skriv på det språk du anger. |
 
-**Lägg till** längst ned i listan lägger till en post.
+**Lägg till** överst i listan lägger till en post.
 
 ## Standardvärden {#defaults}
 

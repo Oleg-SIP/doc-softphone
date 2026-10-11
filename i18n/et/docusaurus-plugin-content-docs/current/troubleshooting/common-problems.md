@@ -1,7 +1,7 @@
 ---
 title: Levinud probleemid
 sidebar_position: 2
-description: "\"Mida kontrollida, kui konto ei registreeru, heli pole, kõnet või koosolekut ei salvestata, ülestähendust pole või link, otsetee või API ei tee midagi.\""
+description: "Mida kontrollida, kui konto ei registreeru, heli pole, kõnet või koosolekut ei salvestata, ülestähendust pole või link, otsetee või API ei tee midagi."
 ---
 
 Iga punkt viitab seadele, mis selle otsustab. Kui vastust siin pole, avage [Diagnostika](/troubleshooting/diagnostics): see näitab, mida telefon ja keskjaam teineteisele ütlevad.
@@ -44,7 +44,7 @@ Mis juhtub, kui keegi helistab ajal, mil olete kõnes, seadistatakse jaotises [K
 Vaadake [Hõivamine](/capture/).
 
 - **Luba heli hõivamine** jaotises **Seaded → Hõivamine** peab olema sisse lülitatud.
-- Kui **Automaatne käivitamine** on **Küsi minult** (vaikimisi), vastake küsimusele, kui see ilmub; valikuga **Mitte kunagi** vajutage ise **Salvesta**.
+- Kui **Automaatne käivitamine** on **Küsi minult** (vaikimisi), vastake küsimusele, kui see ilmub; valikuga **Mitte kunagi** vajutage ise salvestusnuppu.
 - Kasutage samal vahekaardil **Kontrolli**: ülemine tulp peab liikuma, kui räägite, alumine siis, kui midagi mängib.
 - Moodul **Hõivamine** peab olema jaotises [Moodulid](/application/modules) sisse lülitatud.
 

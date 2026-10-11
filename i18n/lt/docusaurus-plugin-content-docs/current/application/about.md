@@ -10,7 +10,7 @@ description: Versija, atnaujinimai, jūsų šalis, licencija, ką apima naudojim
 
 ## Versija ir šalis {#version-and-country}
 
-Viršuje yra pavadinimas, **Versija** (paveikslėlyje 1.0.1) ir nuoroda į svetainę [ai-softphone.com](https://ai-softphone.com/).
+Viršuje yra pavadinimas, **Versija** (paveikslėlyje 1.1.3), nuoroda į svetainę [ai-softphone.com](https://ai-softphone.com/) ir nuoroda į šią dokumentaciją.
 
 **Šalis** nurodo programai, kur esate. Tai padeda pasirinkti geriausią atnaujinimų serverį ir atveria kelią kalbos ir šnekos paslaugoms, talpinamoms jūsų šalyje. **Nustatyti automatiškai** ją užpildo.
 

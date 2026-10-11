@@ -28,7 +28,9 @@ Druga kolumna to to, co lista pokazuje pod nazwą polecenia: co pisze i w jakiej
 | **Jakość sprzedaży** | Kryteria | Ocenia rozmowę według kryteriów sprzedaży, które możesz edytować. |
 | **Jakość wsparcia** | Kryteria | Ocenia, jak dobrze problem został zrozumiany i rozwiązany. |
 
-Formy to stałe kształty odpowiedzi i właśnie dzięki temu program może ją przechowywać i później w niej wyszukiwać: **Etykiety** to kody z jednej z twoich list, **Sygnały** to kody z wagą, **Kryteria** to ocena z uzasadnieniem i oceną każdego kryterium, **Odpowiedź** to odpowiedź ze słowami, na których się opiera. Instrukcje, które podają modelowi kształt, są przechowywane w [Słownikach](dictionaries.md#answer-shapes-and-language).
+Formy to stałe kształty odpowiedzi i właśnie dzięki temu program może ją przechowywać i później w niej wyszukiwać: **Etykiety** to kody z jednej z twoich list, **Sygnały** to kody z wagą, **Kryteria** to ocena z uzasadnieniem i oceną każdego kryterium, **Odpowiedź** to odpowiedź ze słowami, na których się opiera. Instrukcje, które podają modelowi kształt, są przechowywane w [Słownikach](dictionaries.md#instructions).
+
+Pomocnicy [suflera](../interface/prompter.md) to także polecenia, uruchamiane na każdej wypowiedzi w trakcie połączenia, a nie na zakończonej rozmowie. Są przechowywani na osobnej liście, w sekcji [Pomocnicy](prompter.md#assistants) w **Ustawienia → Sufler**.
 
 Połączenia wykonane w AI Softphone, spotkania [przechwycone](/capture/) z komputera i zaimportowane nagrania przechodzą przez te same polecenia, gdy tylko mają transkrypcję.
 
@@ -41,6 +43,6 @@ Zadania zapisują to, co uzgodniono — nie wysyłają wiadomości, nie umawiaj�
 - Wybierz model dla każdego polecenia — na twoim komputerze lub w chmurze.
 - Ustal kolejność, w jakiej działają polecenia, włączaj je i wyłączaj, a także uzależniaj od warunków — służą do tego [reguły](processing.md#rules): na przykład ocena sprzedaży działa tylko dla połączeń przypisanych do kategorii **Sprzedaż**.
 - Trzymaj własne kategorie, etykiety i sygnały ostrzegawcze w [Słownikach](dictionaries.md).
-- Ogranicz koszty [miesięcznymi granicami](processing.md#limits).
+- Ogranicz koszty [miesięcznymi granicami](processing.md#spending).
 
 Oryginalne polecenia i reguły można przywrócić przyciskiem **Przywróć domyślne** w sekcji **Domyślne** w [Ustawienia → Przetwarzanie](processing.md#defaults).

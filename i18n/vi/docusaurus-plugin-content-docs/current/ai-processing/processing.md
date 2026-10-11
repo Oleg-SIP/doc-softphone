@@ -1,7 +1,7 @@
 ---
 title: Xử lý
 sidebar_position: 2
-description: Xử lý tự động các cuộc trò chuyện, hạn mức chi tiêu hằng tháng, mô hình ngôn ngữ, chỉ dẫn và các quy tắc chạy chúng.
+description: Xử lý tự động các cuộc trò chuyện, mô hình ngôn ngữ, chỉ dẫn, các quy tắc chạy chúng và hạn mức chi tiêu hằng tháng.
 ---
 
 **Cài đặt → Xử lý** quyết định điều gì xảy ra với một cuộc trò chuyện sau khi nó đã được ghi, mô hình nào làm việc, và được phép tốn bao nhiêu.
@@ -13,20 +13,9 @@ description: Xử lý tự động các cuộc trò chuyện, hạn mức chi ti
 - **Tắt:** không có gì xảy ra cho tới khi bạn yêu cầu trong [cửa sổ Bản ghi](../interface/recordings.md).
 - **Bật:** các [quy tắc](#rules) bên dưới tự chạy. Đó là điều biến một cuộc trò chuyện thành bản tóm tắt, hạng mục và mọi thứ khác mà không ai phải nhấn gì. Mô hình trên đám mây tính phí cho từng bước như vậy.
 
-Dưới ô đánh dấu, chương trình hiển thị số đã chi trong tháng này và cho bao nhiêu yêu cầu, ví dụ *Tháng này: 40.492 token, qua 84 yêu cầu, không tính phí.*
-
-## Hạn mức {#limits}
-
-| Trường | Ý nghĩa |
-| --- | --- |
-| **Hạn mức tiền, mỗi tháng** | Số tiền tối đa các mô hình được tốn trong một tháng. |
-| **Hạn mức token, mỗi tháng** | Số token tối đa chúng được dùng trong một tháng. |
-
-Có hai hạn mức vì một tháng có thể được tính bằng hai thứ. Cả hai đều để trống cho tới khi bạn điền. Khi chạm tới một trong hai, các quy tắc tự động dừng lại cho tới khi sang tháng mới. **Những gì chính bạn yêu cầu thì không bao giờ bị dừng.**
-
 ## Mô hình ngôn ngữ {#language-models}
 
-Các mô hình đọc bản chép lời và viết về nó. Nhấn **Thêm** để thêm một mô hình. Mỗi mô hình được liệt kê với tên và, bên dưới, mã định danh mô hình cùng địa chỉ dịch vụ của nó, ví dụ `qwen3-32b · http://llm.local:8000/v1`. Mô hình được đánh dấu **Mặc định** là mô hình dùng theo mặc định. Một nút trong biểu mẫu của mô hình kiểm tra xem dịch vụ có thực sự trả lời không trước khi bạn dựa vào nó.
+Các mô hình đọc bản chép lời và viết về nó. Nhấn **Thêm** để thêm một mô hình. Mỗi mô hình được liệt kê với tên và, bên dưới, mã định danh mô hình cùng địa chỉ dịch vụ của nó, ví dụ `qwen3-32b · http://localhost:8000/v1`. Mô hình được đánh dấu **mặc định** — trong hình là **QWEN**, một mô hình trên máy tính này — là mô hình dùng theo mặc định, cho các chỉ dẫn và cho những trợ lý của [người nhắc](prompter.md) không nêu mô hình riêng. **Thử** trong biểu mẫu của mô hình kiểm tra xem dịch vụ có thực sự trả lời không trước khi bạn dựa vào nó.
 
 - Mô hình **trên chính máy của bạn** giữ mọi cuộc trò chuyện trong nội bộ và không tốn phí chạy.
 - Mô hình trên đám mây — OpenAI, Claude, Mistral, DeepSeek, Groq và các dịch vụ khác — tính phí theo lượt dùng. Chương trình hiển thị giá của mỗi lượt gọi bằng token và bằng tiền.
@@ -35,7 +24,7 @@ Các mô hình đọc bản chép lời và viết về nó. Nhấn **Thêm** đ
 
 <Shot name="12b_settings_processing_prompts" alt="Cài đặt → Xử lý: các chỉ dẫn" />
 
-*Những gì được hỏi các mô hình.* Mỗi chỉ dẫn đều đi kèm chương trình và mỗi chỉ dẫn đều để bạn sửa — và để bạn đưa về như cũ. Mỗi chỉ dẫn được liệt kê với tên và, bên dưới, nội dung nó viết và ở dạng nào. Dạng — **Câu trả lời**, **Các mục**, **Nhãn**, **JSON**, **Văn xuôi**, **Dấu hiệu** hoặc **Tiêu chí** — quyết định câu trả lời được lưu và hiển thị như thế nào. Các chỉ dẫn được mô tả trong [Personal Prompt Studio](prompt-studio.md). **Thêm** tạo một chỉ dẫn của riêng bạn.
+*Những gì được hỏi các mô hình.* Mỗi chỉ dẫn đều đi kèm chương trình và mỗi chỉ dẫn đều để bạn sửa — và để bạn đưa về như cũ. Mỗi chỉ dẫn được liệt kê với tên và, bên dưới, nội dung nó viết và ở dạng nào; **▲** và **▼** đổi thứ tự danh sách. Dạng — **Câu trả lời**, **Các mục**, **Nhãn**, **JSON**, **Văn xuôi**, **Dấu hiệu** hoặc **Tiêu chí** — quyết định câu trả lời được lưu và hiển thị như thế nào. Các chỉ dẫn được mô tả trong [Personal Prompt Studio](prompt-studio.md). **Thêm** tạo một chỉ dẫn của riêng bạn.
 
 ## Quy tắc {#rules}
 
@@ -55,6 +44,19 @@ Các mô hình đọc bản chép lời và viết về nó. Nhấn **Thêm** đ
 | **Đánh giá nó, nếu là hỗ trợ** | Hỏi một mô hình: **Chất lượng hỗ trợ**. | chỉ khi hạng mục là **Hỗ trợ** |
 
 Thứ tự là quan trọng: hai quy tắc cuối cần hạng mục do quy tắc trước đó đặt. **Thêm** tạo một quy tắc của riêng bạn.
+
+## Chi tiêu {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Cài đặt → Xử lý: chi tiêu trong tháng và hai hạn mức" />
+
+Ở mục **Chi tiêu**, chương trình hiển thị số đã chi trong tháng này và cho bao nhiêu yêu cầu — trong hình là *Tháng này chưa có gì được xử lý*, còn khi đã có xử lý thì ví dụ *Tháng này: 40.492 token, qua 84 yêu cầu, không tính phí*.
+
+| Trường | Ý nghĩa |
+| --- | --- |
+| **Hạn mức tiền, mỗi tháng** | Số tiền tối đa các mô hình được tốn trong một tháng. |
+| **Hạn mức token, mỗi tháng** | Số token tối đa chúng được dùng trong một tháng. |
+
+Có hai hạn mức vì một tháng có thể được tính bằng hai thứ. Cả hai đều để trống cho tới khi bạn điền. Khi chạm tới một trong hai, các quy tắc tự động dừng lại cho tới khi sang tháng mới. **Những gì chính bạn yêu cầu thì không bao giờ bị dừng.** [Người nhắc](prompter.md#spending) có trần riêng, để một tháng tóm tắt không thể làm nó im lặng giữa cuộc trò chuyện.
 
 ## Mặc định {#defaults}
 

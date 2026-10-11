@@ -40,14 +40,16 @@ Des marques qui *peuvent toutes être vraies de la même conversation*. Appuyez 
 
 Des points qui demandent de l'attention, trouvés dans la conversation avec la preuve et le moment — par exemple *Client en colère* ou *Risque de départ*. Les signaux sont dessinés en rouge dans la [fenêtre des enregistrements](../interface/recordings.md), et chacun porte une gravité : faible, moyenne ou élevée.
 
-## Formes de réponse et langue {#answer-shapes-and-language}
+## Consignes {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Réglages → Dictionnaires : formes de réponse et instructions de langue" />
 
-Plus bas dans l'onglet se trouvent les instructions à partir desquelles les invites sont assemblées. Elles sont conservées ici pour que chaque invite puisse utiliser la même formulation, et vous pouvez les modifier comme n'importe quelle autre entrée.
+*Ce qui est ajouté à chaque invite sur la forme de la réponse et la langue dans laquelle l'écrire.* Elles sont conservées ici pour que chaque invite puisse utiliser la même formulation, et vous pouvez les modifier comme n'importe quelle autre entrée — ou écrire les vôtres, comme *réponds brièvement* ou *ne cite jamais de prix*, et les cocher sous **Envoyer aussi** dans n'importe quelle invite.
 
 | Nom | Code | Ce qu'elle dit au modèle |
 | --- | --- | --- |
+| **Texte suivi** | `shape-plain` | Répondre en texte suivi, sans JSON, listes ni titres. |
+| **Points** | `shape-list` | Répondre par une liste de choses à faire, chacune avec qui et quand. |
 | **Étiquettes** | `shape-labels` | Répondre en JSON avec une liste de codes et son degré de certitude pour chacun, en n'utilisant que des codes de la liste fournie. |
 | **Note** | `shape-score` | Répondre avec une note, sa justification et les mots sur lesquels elle repose. |
 | **Critères** | `shape-rubric` | Répondre avec une note globale et une note pour chaque critère. |
@@ -58,7 +60,7 @@ Plus bas dans l'onglet se trouvent les instructions à partir desquelles les inv
 | **Comme parlé, nommé** | `language-as-spoken-named` | La même chose, en nommant la langue. |
 | **Une langue nommée** | `language-named` | Écrire dans la langue que vous indiquez. |
 
-**Ajouter** en fin de liste ajoute une entrée.
+**Ajouter** en haut de la liste ajoute une entrée.
 
 ## Valeurs par défaut {#defaults}
 

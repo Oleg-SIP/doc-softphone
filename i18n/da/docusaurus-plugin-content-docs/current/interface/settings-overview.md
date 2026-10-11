@@ -10,7 +10,9 @@ description: Tjeklisten Oversigt og fanerne i vinduet Indstillinger, og hvor hve
 
 <Shot name="04_settings_overview" alt="Indstillinger → Oversigt: tjeklisten over det, der er sat op" />
 
-**Oversigt** er en tjekliste over det, der skal til for at få mest ud af programmet. Øverst tæller den trinene — på billedet *10 trin klaret* med en grøn prik og *8 trin tilbage* med en rød — og en bjælke viser den andel, der er klaret. Hvert trin er en linje med en prik: grøn for et klaret trin, rød for et, der mangler.
+Øverst på fanen åbner **Dokumentation** dette websted.
+
+**Oversigt** er en tjekliste over det, der skal til for at få mest ud af programmet. Øverst tæller den trinene — på billedet *14 trin klaret* med en grøn prik og *6 trin tilbage* med en rød — og en bjælke viser den andel, der er klaret. Hvert trin er en linje med en prik: grøn for et klaret trin, rød for et, der mangler.
 
 *Tryk på en linje for at læse, hvad den er til for, og åbne der, hvor den indstilles.* Pilen yderst til højre på linjen folder den ud.
 
@@ -20,6 +22,7 @@ description: Tjeklisten Oversigt og fanerne i vinduet Indstillinger, og hvor hve
 | **Optagelse fra andre programmer** | Slå optagelse fra programmer til; Optag en samtale fra et program; Giv en af dem et navn |
 | **Transskription** | Tilføj en talegenkendelse; Skriv en samtale ud |
 | **Behandling** | Tilføj en model; Behandl en udskrift |
+| **Sufflør** | Tillad souffleren; Start souffleren |
 | **Optagelser** | Søg i det, der blev sagt; Eksportér en optagelse; Eksportér et resumé |
 | **Program** | Start sammen med computeren; Hold den opdateret |
 | **Tilbagemelding** | Send den udvidede rapport; Fortæl os, hvad du synes |
@@ -39,8 +42,9 @@ Trinene er en vejledning, ikke en pligt: et trin, du ikke har brug for, må gern
 | | **Optagelse** | [Optagelse af opkald: samtykke, konferencer og hvor længe filer gemmes](../recordings.md) |
 | | **Opfangning** | [Opfangning af lyden fra andre programmer](../capture/capture.md): møder i Zoom, Teams, Meet og lignende |
 | AI | **Transskription** | [Genkendere](../ai-processing/transcription.md) |
-| | **Behandling** | [Automatisk behandling, udgiftsgrænser, sprogmodeller, prompter og regler](../ai-processing/processing.md) |
+| | **Behandling** | [Automatisk behandling, sprogmodeller, prompter, regler og udgiftsgrænser](../ai-processing/processing.md) |
 | | **Ordlister** | [Kategorier, etiketter og signaler](../ai-processing/dictionaries.md) |
+| | **Sufflør** | [Den levende sufflør: kontakten, tekststørrelsen, hjælperne og hvad de må bruge](../ai-processing/prompter.md) |
 | Program | **Udseende** | [Layout, sprog, tema og ikoner](../program/appearance.md) |
 | | **Opstart** | [Hvordan programmet starter, lukker og åbner opkaldslinks](../program/startup.md) |
 | | **Genveje** | [Tastaturgenveje](../program/shortcuts.md) |

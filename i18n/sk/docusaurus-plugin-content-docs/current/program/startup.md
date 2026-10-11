@@ -1,7 +1,7 @@
 ---
 title: Spustenie
 sidebar_position: 2
-description: "\"Spúšťajte telefón s počítačom, nechajte ho bežať po zatvorení okna a otvárajte odkazy tel:, callto: a sip:.\""
+description: "Spúšťajte telefón s počítačom, nechajte ho bežať po zatvorení okna a otvárajte odkazy tel:, callto: a sip:."
 ---
 
 **Nastavenia → Spustenie** rozhoduje, ako sa program spúšťa, čo urobí zatvorenie jeho okna a čo sa stane, keď v inom programe kliknete na telefónne číslo.

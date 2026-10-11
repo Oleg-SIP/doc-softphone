@@ -40,14 +40,16 @@ Marcas que *podem ser todas verdadeiras para a mesma conversa*. Carregue em **Ad
 
 Coisas que merecem atenção, encontradas na conversa com a prova e o momento — por exemplo *Cliente irritado* ou *Risco de perda*. Os sinais são desenhados a vermelho na [janela de gravações](../interface/recordings.md), e cada um tem uma gravidade: baixa, média ou alta.
 
-## Formas de resposta e língua {#answer-shapes-and-language}
+## Instruções {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Definições → Dicionários: formas de resposta e instruções de língua" />
 
-Mais abaixo no separador estão as instruções a partir das quais as instruções dos modelos são montadas. Estão guardadas aqui para que todas possam usar a mesma redação, e pode mudá-las como qualquer outra entrada.
+*O que é acrescentado a cada instrução sobre a forma da resposta e a língua em que a escrever.* Estão guardadas aqui para que todas as instruções possam usar a mesma redação, e pode mudá-las como qualquer outra entrada — ou escrever as suas, como *responde de forma breve* ou *nunca cites um preço*, e marcá-las em **Enviar também** em qualquer instrução.
 
 | Nome | Código | O que diz ao modelo |
 | --- | --- | --- |
+| **Prosa** | `shape-plain` | Responder em prosa simples, sem JSON, listas nem títulos. |
+| **Pontos** | `shape-list` | Responder com uma lista de coisas a fazer, cada uma com quem e quando. |
 | **Etiquetas** | `shape-labels` | Responder em JSON com uma lista de códigos e o grau de certeza de cada um, usando só códigos da lista recebida. |
 | **Pontuação** | `shape-score` | Responder com uma pontuação, a sua justificação e as palavras em que assenta. |
 | **Critérios** | `shape-rubric` | Responder com uma pontuação global e uma pontuação por cada critério. |
@@ -58,7 +60,7 @@ Mais abaixo no separador estão as instruções a partir das quais as instruçõ
 | **Como foi falado, nomeado** | `language-as-spoken-named` | O mesmo, nomeando a língua. |
 | **Uma língua nomeada** | `language-named` | Escrever na língua que indicar. |
 
-**Adicionar**, no fim da lista, acrescenta uma entrada.
+**Adicionar**, no topo da lista, acrescenta uma entrada.
 
 ## Valores por omissão {#defaults}
 

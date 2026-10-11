@@ -16,7 +16,7 @@ Van boven naar beneden bevat de linkerkant:
 - het toetsenblok en de beltoets;
 - de accountchips;
 - de knoppen die andere toestellen volgen;
-- de vier bestemmingen: **Opnames**, **Contacten**, **Geschiedenis** en **Instellingen**.
+- de bestemmingen: **Opnames**, **Contacten**, **Geschiedenis**, **Souffleur** en **Instellingen**.
 
 ### De kiezer {#the-dialler}
 
@@ -36,9 +36,9 @@ Onder het toetsenblok staat een chip voor elk [account](../sip-accounts/setup.md
 
 Onder de chips staan de [knoppen](../sip-accounts/buttons.md) die u voor collega's en lijnen hebt gemaakt, elk met een lampje — **De Vries** en **Magazijn** op de afbeeldingen. Druk op een knop om het nummer te bellen.
 
-### Opnames, Contacten, Geschiedenis, Instellingen {#recordings-contacts-history-settings}
+### Opnames, Contacten, Geschiedenis, Souffleur, Instellingen {#recordings-contacts-history-prompter-settings}
 
-Deze vier items onderaan openen elk een tabblad rechts, naast elkaar: [Opnames](../interface/recordings.md), [Contacten en geschiedenis](contacts-history.md) en [Instellingen](settings-overview.md). Tabbladen die u hebt geopend blijven in de rij bovenaan de rechterkant staan.
+Deze items onderaan openen elk een tabblad rechts, naast elkaar: [Opnames](../interface/recordings.md), [Contacten en geschiedenis](contacts-history.md), de [Souffleur](prompter.md) en [Instellingen](settings-overview.md). **Souffleur** staat er pas als de souffleur is toegestaan en een herkenner heeft om mee te luisteren. Tabbladen die u hebt geopend blijven in de rij bovenaan de rechterkant staan.
 
 ## Een lopend gesprek {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Samengevoegde gesprekken verschijnen als één kaart **Vergadering** op de lijn 
 
 Als het [opnemen uit andere toepassingen](../capture/capture.md) is toegestaan bij **Instellingen → Vastleggen**, verschijnt er een strook tussen de accountchips en de knoppen.
 
-<Shot name="10_settings_capture" full alt="De strook Vastleggen onderaan de telefoon: Vastleggen · klaar, Opnemen en twee niveaubalken" />
+<Shot name="10_settings_capture" full alt="De strook Vastleggen onderaan de telefoon: Vastleggen · wachten op een gesprek, de opnameknop en twee niveaubalken" />
 
-- **Vastleggen · klaar** zegt dat het programma luistert of er in een andere toepassing een gesprek is.
-- **Opnemen** start het vastleggen met de hand.
-- De twee dunne balken eronder tonen het geluidsniveau: de bovenste bent u, de onderste is wat de computer afspeelt. Hoe ze worden getekend stelt u in bij **Beeld in de balk aan de voet van de telefoon**.
+- **Vastleggen · wachten op een gesprek** zegt dat het programma luistert of er in een andere toepassing een gesprek is.
+- De ronde knop rechts start het vastleggen met de hand.
+- De twee dunne balken eronder tonen het geluidsniveau: de bovenste bent u, de onderste is wat de computer afspeelt. Hoe ze worden getekend stelt u in bij **Tekening in de balk onderaan**.
 
 Het programma kan ook in het systeemvak wonen (de menubalk op macOS) en met een [sneltoets](../program/shortcuts.md) tevoorschijn worden gehaald.

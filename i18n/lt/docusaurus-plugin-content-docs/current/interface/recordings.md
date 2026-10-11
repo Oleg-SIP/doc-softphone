@@ -1,7 +1,7 @@
 ---
 title: Įrašų langas
 sidebar_position: 2
-description: "\"Visų pokalbių biblioteka — skambučio, įkelto failo ar iš Zoom, Teams ar Meet perimto susitikimo: filtrai, grotuvas, iššifruotas tekstas, kurį galima groti nuo bet kurios eilutės, ir apibendrinimai.\""
+description: "Visų pokalbių biblioteka — skambučio, įkelto failo ar iš Zoom, Teams ar Meet perimto susitikimo: filtrai, grotuvas, iššifruotas tekstas, kurį galima groti nuo bet kurios eilutės, ir apibendrinimai."
 ---
 
 **Įrašai** — tai vieta, kur yra kiekvienas pokalbis, kad ir kaip jis atėjo: telefonu atliktas ar priimtas skambutis, įkeltas garso failas arba susitikimas, perimtas iš Zoom, Teams, Meet ar bet kurios kitos programos. Jie visi yra viename sąraše, ir kiekvienas atsiveria vienodai: grotuvas, iššifruotas tekstas ir viskas, ką apie jį parašė kalbos modelis. Paspauskite **Įrašai** apačioje kairėje [pagrindiniame lange](main-window.md), kad jį atvertumėte.
@@ -22,7 +22,7 @@ Paveikslėlyje viršutinės trys eilutės yra po vieną iš kiekvienos rūšies:
 
 ## Pokalbio paieška {#finding-a-conversation}
 
-Viršutinėje juostoje yra penki filtrai, paieškos laukas ir meniu:
+Viršutinėje juostoje yra keturi filtrai, paieškos laukas ir meniu:
 
 | Valdiklis | Susiaurina sąrašą pagal |
 | --- | --- |
@@ -30,7 +30,6 @@ Viršutinėje juostoje yra penki filtrai, paieškos laukas ir meniu:
 | **Laikotarpis** | datą: **Šiandien**, **Vakar**, **Paskutinės 7 dienos** arba **Pasirinkti datas…** |
 | **Kategorija** | kategoriją, kuriai jis priskirtas — žr. [Žodynai](../ai-processing/dictionaries.md) |
 | **Ženklas** | jam suteiktas žymas ir įspėjamuosius signalus |
-| **Atpažintuvas** | [atpažintuvą](../ai-processing/transcription.md), sukūrusį jo iššifruotą tekstą |
 | **Ieškoti** | tai, kas jame pasakyta — paieška eina per visų jūsų įrašų iššifruotus tekstus |
 
 <Shot name="39_more_menu" alt="Sąrašo meniu ⋮: Įkelti iš failų, Eksportuoti į CSV, Atverti naršyklėje" />

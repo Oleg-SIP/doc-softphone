@@ -7,6 +7,7 @@ description: "Les termes de la téléphonie IP et d'AI Softphone employés dans 
 | Terme | Signification |
 | --- | --- |
 | **Compte** | Une ligne : un identifiant SIP sur un IPBX ou chez un opérateur. Vous pouvez être connecté à plusieurs. Voir [Configurer un compte SIP](/sip-accounts/setup). |
+| **Assistant** | Ce que le souffleur doit être pendant qu'il écoute : des sous-titres, une traduction ou des suggestions de ce qu'il faut dire. Voir [Réglages du souffleur](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Un bouton qui compose un poste et montre par un voyant s'il est libre, s'il sonne ou s'il est occupé. Voir [Boutons](/sip-accounts/buttons). |
 | **Appel en attente** | Ce que fait le téléphone quand quelqu'un appelle alors que vous êtes déjà en communication. Voir [Réglages des appels](/sip-accounts/calls#call-waiting). |
 | **Capture** | L'enregistrement d'une conversation tenue dans une autre application, comme Zoom, Teams ou Meet. Voir [Capture](/capture/). |
@@ -19,8 +20,10 @@ description: "Les termes de la téléphonie IP et d'AI Softphone employés dans 
 | **IPBX** | Le standard téléphonique d'une entreprise, fonctionnant sur un réseau ; on parle aussi de softswitch. |
 | **Modèle de langue** | L'IA qui lit une transcription et écrit à son sujet. Voir [Traitement](/ai-processing/processing). |
 | **Invite** | Ce qui est demandé à un modèle de langue (en anglais, prompt). Voir [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Souffleur** | Une fenêtre qui montre ce qui se dit pendant un appel, au moment où cela se dit, et des suggestions de réponse. Voir [Fenêtre du souffleur](/interface/prompter). |
 | **Reconnaissance** | Le service qui transforme l'audio en texte (reconnaissance vocale). Voir [Transcription](/ai-processing/transcription). |
 | **Signal** | Un point d'une conversation qui demande de l'attention, avec la preuve et le moment. Voir [Dictionnaires](/ai-processing/dictionaries#red-flags). |
+| **Répétition** | Faire écouter au souffleur une conversation enregistrée au lieu d'un appel, pour essayer un assistant. Voir [Fenêtre du souffleur](/interface/prompter#rehearsing-on-a-recording). |
 | **Enregistrement SIP** | Le téléphone qui indique à l'IPBX où il se trouve, pour que les appels lui parviennent. Un point vert sur le compte signifie qu'il est enregistré. |
 | **Règle** | Une étape qui s'exécute toute seule, dans l'ordre, sur chaque conversation. Voir [Traitement](/ai-processing/processing#rules). |
 | **SIP** | Le protocole que les téléphones et les IPBX utilisent pour établir les appels. |

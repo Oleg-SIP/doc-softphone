@@ -10,7 +10,7 @@ description: The Overview checklist and the tabs of the Settings window, and whe
 
 <Shot name="04_settings_overview" alt="Settings → Overview: the checklist of what has been set up" />
 
-Above it, **Documentation** links to this site.
+At the top of the tab, **Documentation** opens this site.
 
 **Overview** is a checklist of what it takes to get the most from the program. At the top it counts the steps — in the picture *14 done* with a green dot and *6 to go* with a red one — and a bar shows the share done. Every step is a line with a dot: green for a step that is done, red for one still to go.
 
@@ -42,7 +42,7 @@ The steps are a guide, not a duty: a step you have no use for can stay red.
 | | **Recording** | [Recording of calls: consent, conferences and how long files are kept](../recordings.md) |
 | | **Capture** | [Capturing the sound of other applications](../capture/capture.md): meetings in Zoom, Teams, Meet and the like |
 | AI | **Transcription** | [Recognisers](../ai-processing/transcription.md) |
-| | **Processing** | [Automatic processing, spending limits, language models, prompts and rules](../ai-processing/processing.md) |
+| | **Processing** | [Automatic processing, language models, prompts, rules and spending limits](../ai-processing/processing.md) |
 | | **Dictionaries** | [Categories, tags and red flags](../ai-processing/dictionaries.md) |
 | | **Prompter** | [The live prompter: the switch, the text size, the assistants and what they may spend](../ai-processing/prompter.md) |
 | Program | **Appearance** | [Layout, language, theme and icons](../program/appearance.md) |

@@ -20,6 +20,8 @@ Posnetki, prepisi in zgodovina se hranijo v datoteki, ki je vaša. Ne potrebujet
 3. Prepiše se, govorec za govorcem, usklajeno z zvokom.
 4. Jezikovni model, ki ste ga izbrali, ga obdela: povzetek, naloge, kategorija, oznake in opozorilni znaki — pogovoru pa lahko zastavite tudi vprašanje.
 
+Med klicem lahko [Šepetalec](interface/prompter.md) gre še dlje: kaže, kar je rečeno, ko je rečeno, in predlaga, kaj odgovoriti.
+
 ## Prenos in sistemske zahteve {#download-and-system-requirements}
 
 Program lahko brezplačno prenesete s strani [ai-softphone.com](https://ai-softphone.com/#download): namestitveni program (`.exe`) za Windows, slika diska (`.dmg`) za macOS ter AppImage ali `.deb` za Linux. Namestitveni program, slika diska in AppImage ne potrebujejo ničesar vnaprej nameščenega — Qt, OpenSSL in knjižnice C++ so v njih. Izjema je `.deb`: uporablja knjižnice C++ samega sistema, glejte spodaj. Potrebovali boste račun SIP pri svojem ponudniku ali na centrali, ki jo upravljate sami. Snemanje deluje takoj po namestitvi programa; za prepis in obdelavo potrebujete storitev, ki jo izberete, ali model na lastnem računalniku.
@@ -60,6 +62,7 @@ Posnetki zaslona v tej dokumentaciji so narejeni v macOS in prikazani pomanjšan
 | Izbrati razpoznavalnik, ki govor spremeni v besedilo | [Prepis](ai-processing/transcription.md) |
 | Odločiti, katera umetna inteligenca obdeluje vaše pogovore in koliko sme to stati | [Obdelava](ai-processing/processing.md) |
 | Spremeniti kategorije, oznake in opozorilne znake | [Slovarji](ai-processing/dictionaries.md) |
+| Videti, kaj je rečeno med klicem, in dobiti predloge, kaj odgovoriti | [Okno šepetalca](interface/prompter.md) |
 | Spremeniti postavitev, temo, zagon in bližnjice | [Videz](program/appearance.md), [Zagon](program/startup.md) in [Bližnjice](program/shortcuts.md) |
 | Povezati CRM ali drug program | [Webhooki](integration/webhooks.md) in [Krajevni REST API](integration/rest-api.md) |
 | Videti, kaj si govorita telefon in centrala | [Diagnostika](troubleshooting/diagnostics.md) |

@@ -28,7 +28,9 @@ Drugi stolpec je to, kar seznam pokaže pod imenom navodila: kaj piše in v kate
 | **Kakovost prodaje** | Merila | Pregleda pogovor po prodajnih merilih, ki jih lahko urejate. |
 | **Kakovost podpore** | Merila | Presodi, kako dobro je bila težava razumljena in rešena. |
 
-Oblike so stalne podobe odgovora, in prav to programu omogoča, da ga shrani in pozneje po njem išče: **Oznake** so kode z enega od vaših seznamov, **Signali** so kode z resnostjo, **Merila** so ocena z razlogom in oceno za vsako merilo, **Odgovor** je odgovor z besedami, na katere se opira. Navodila, ki modelu povedo obliko, se hranijo v [Slovarjih](dictionaries.md#answer-shapes-and-language).
+Oblike so stalne podobe odgovora, in prav to programu omogoča, da ga shrani in pozneje po njem išče: **Oznake** so kode z enega od vaših seznamov, **Signali** so kode z resnostjo, **Merila** so ocena z razlogom in oceno za vsako merilo, **Odgovor** je odgovor z besedami, na katere se opira. Navodila, ki modelu povedo obliko, se hranijo v [Slovarjih](dictionaries.md#instructions).
+
+Tudi pomočniki [šepetalca](../interface/prompter.md) so navodila, ki se izvajajo na vsaki repliki med klicem namesto na končanem pogovoru. Hranijo se na lastnem seznamu, pod [Pomočniki](prompter.md#assistants) v **Nastavitve → Šepetalec**.
 
 Klici, opravljeni v AI Softphone, sestanki, [zajeti](/capture/) z računalnika, in uvoženi posnetki gredo skozi ista navodila, takoj ko imajo prepis.
 
@@ -41,6 +43,6 @@ Naloge beležijo, kaj je bilo dogovorjeno — namesto vas ne pošiljajo sporoči
 - Izberite model za vsako navodilo — na lastnem računalniku ali v oblaku.
 - Nastavite vrstni red, v katerem navodila tečejo, jih vklapljajte in izklapljajte ter jih naredite pogojna — to se naredi s [pravili](processing.md#rules): na primer pregled prodaje teče le pri klicih, uvrščenih kot **Prodaja**.
 - Vodite svoje kategorije, oznake in opozorilne znake v [Slovarjih](dictionaries.md).
-- Omejite stroške z [mesečnimi mejami](processing.md#limits).
+- Omejite stroške z [mesečnimi mejami](processing.md#spending).
 
 Izvirna navodila in pravila je mogoče obnoviti z **Obnovi privzeto** pod **Privzete vrednosti** v [Nastavitve → Obdelava](processing.md#defaults).

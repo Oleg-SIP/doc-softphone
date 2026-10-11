@@ -1,7 +1,7 @@
 ---
 title: Avvio
 sidebar_position: 2
-description: "\"Avviare il telefono con il computer, tenerlo in funzione quando la sua finestra è chiusa e aprire i collegamenti tel:, callto: e sip:.\""
+description: "Avviare il telefono con il computer, tenerlo in funzione quando la sua finestra è chiusa e aprire i collegamenti tel:, callto: e sip:."
 ---
 
 **Impostazioni → Avvio** decide come si avvia il programma, che cosa fa la chiusura della sua finestra e che cosa succede quando fa clic su un numero di telefono in un altro programma.

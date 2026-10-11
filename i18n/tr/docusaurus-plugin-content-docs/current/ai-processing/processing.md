@@ -1,7 +1,7 @@
 ---
 title: İşleme
 sidebar_position: 2
-description: Görüşmelerin otomatik işlenmesi, aylık harcama sınırları, dil modelleri, yönergeler ve onları çalıştıran kurallar.
+description: Görüşmelerin otomatik işlenmesi, dil modelleri, yönergeler, onları çalıştıran kurallar ve aylık harcama sınırları.
 ---
 
 **Ayarlar → İşleme**, bir görüşme kaydedildikten sonra ona ne olacağına, işi hangi modelin yapacağına ve bunun ne kadara mal olabileceğine karar verir.
@@ -13,20 +13,9 @@ description: Görüşmelerin otomatik işlenmesi, aylık harcama sınırları, d
 - **Kapalı:** [Kayıtlar penceresinde](../interface/recordings.md) siz isteyene kadar hiçbir şey olmaz.
 - **Açık:** aşağıdaki [kurallar](#rules) kendi kendine çalışır. Bir görüşmeyi, kimse bir şeye basmadan bir özete, bir kategoriye ve geri kalan her şeye dönüştüren budur. Buluttaki bir model bu adımların her biri için ücret alır.
 
-Onay kutusunun altında program bu ay ne kadar harcandığını ve kaç istek üzerinden harcandığını gösterir, örneğin *Bu ay: 40.492 belirteç, 84 istek üzerinden, ücretsiz.*
-
-## Sınırlar {#limits}
-
-| Alan | Anlamı |
-| --- | --- |
-| **Para sınırı, aylık** | Modellerin bir ayda en çok ne kadara mal olabileceği. |
-| **Belirteç sınırı, aylık** | Bir ayda en çok kaç belirteç kullanabilecekleri. |
-
-İki sınır vardır, çünkü bir ay iki şeyle sayılabilir. İkisi de siz doldurana kadar boştur. Herhangi birine ulaşıldığında otomatik kurallar ay dönene kadar durur. **Bir şeyi kendiniz istemeniz hiçbir zaman durdurulmaz.**
-
 ## Dil modelleri {#language-models}
 
-Bir dökümü okuyup onun hakkında yazan modeller. Bir tane eklemek için **Ekle** düğmesine basın. Her biri adıyla, altında da model tanımlayıcısı ve hizmetinin adresiyle listelenir, örneğin `qwen3-32b · http://llm.local:8000/v1`. **Öntanımlı** olarak işaretlenen, öntanımlı olarak kullanılandır. Bir modelin formundaki bir düğme, ona güvenmeden önce hizmetin gerçekten yanıt verdiğini denetler.
+Bir dökümü okuyup onun hakkında yazan modeller. Bir tane eklemek için **Ekle** düğmesine basın. Her biri adıyla, altında da model tanımlayıcısı ve hizmetinin adresiyle listelenir, örneğin `qwen3-32b · http://localhost:8000/v1`. **Öntanımlı** olarak işaretlenen — resimde bu bilgisayardaki bir model olan **QWEN** — öntanımlı olarak kullanılandır: yönergeler ve kendi modelini belirtmeyen [suflör](prompter.md) yardımcıları onu kullanır. Bir modelin formundaki **Sına**, ona güvenmeden önce hizmetin gerçekten yanıt verdiğini denetler.
 
 - **Kendi makinenizdeki** bir model her görüşmeyi binanın içinde tutar ve çalıştırılması hiçbir şeye mal olmaz.
 - Buluttaki bir model — OpenAI, Claude, Mistral, DeepSeek, Groq ve diğerleri — kullanım başına ücretlendirilir. Program her çağrının fiyatını belirteç ve para olarak gösterir.
@@ -35,7 +24,7 @@ Bir dökümü okuyup onun hakkında yazan modeller. Bir tane eklemek için **Ekl
 
 <Shot name="12b_settings_processing_prompts" alt="Ayarlar → İşleme: yönergeler" />
 
-*Modellerden istenenler.* Her yönerge programla birlikte geldi ve her birini değiştirmek — ve geri koymak — size kalmış. Her biri adıyla, altında da ne yazdığı ve hangi biçimde yazdığıyla listelenir. Biçim — **Yanıt**, **Maddeler**, **Etiketler**, **JSON**, **Düzyazı**, **İşaretler** ya da **Ölçütler** — yanıtın nasıl saklanacağına ve gösterileceğine karar verir. Yönergeler [Personal Prompt Studio](prompt-studio.md) sayfasında anlatılır. **Ekle** kendi yönergenizi oluşturur.
+*Modellerden istenenler.* Her yönerge programla birlikte geldi ve her birini değiştirmek — ve geri koymak — size kalmış. Her biri adıyla, altında da ne yazdığı ve hangi biçimde yazdığıyla listelenir; **▲** ve **▼** listenin sırasını değiştirir. Biçim — **Yanıt**, **Maddeler**, **Etiketler**, **JSON**, **Düzyazı**, **İşaretler** ya da **Ölçütler** — yanıtın nasıl saklanacağına ve gösterileceğine karar verir. Yönergeler [Personal Prompt Studio](prompt-studio.md) sayfasında anlatılır. **Ekle** kendi yönergenizi oluşturur.
 
 ## Kurallar {#rules}
 
@@ -55,6 +44,19 @@ Bir dökümü okuyup onun hakkında yazan modeller. Bir tane eklemek için **Ekl
 | **Destekse değerlendir** | Bir modele sorar: **Destek niteliği**. | yalnızca kategori **Destek** ise |
 
 Sıra önemlidir: son iki kural, kendilerinden önceki kuralın belirlediği kategoriye ihtiyaç duyar. **Ekle** kendi kuralınızı oluşturur.
+
+## Harcama {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Ayarlar → İşleme: ayın harcaması ve iki sınır" />
+
+**Harcama** altında program bu ay ne kadar harcandığını ve kaç istek üzerinden harcandığını gösterir — resimde *Bu ay hiçbir şey işlenmedi*, bir şey işlendiğinde ise örneğin *Bu ay: 40.492 belirteç, 84 istek üzerinden, ücretsiz*.
+
+| Alan | Anlamı |
+| --- | --- |
+| **Para sınırı, aylık** | Modellerin bir ayda en çok ne kadara mal olabileceği. |
+| **Belirteç sınırı, aylık** | Bir ayda en çok kaç belirteç kullanabilecekleri. |
+
+İki sınır vardır, çünkü bir ay iki şeyle sayılabilir. İkisi de siz doldurana kadar boştur. Herhangi birine ulaşıldığında otomatik kurallar ay dönene kadar durur. **Bir şeyi kendiniz istemeniz hiçbir zaman durdurulmaz.** [Suflörün](prompter.md#spending) kendi tavanları vardır; böylece bir aylık özetler onu görüşmenin ortasında susturamaz.
 
 ## Öntanımlılar {#defaults}
 

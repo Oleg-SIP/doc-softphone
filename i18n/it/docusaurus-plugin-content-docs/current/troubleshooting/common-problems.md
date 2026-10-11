@@ -1,7 +1,7 @@
 ---
 title: Problemi comuni
 sidebar_position: 2
-description: "\"Che cosa controllare quando un account non si registra, non c'è audio, una chiamata o una riunione non viene registrata, non c'è trascrizione, o un collegamento, una scorciatoia o l'API non fanno nulla.\""
+description: "Che cosa controllare quando un account non si registra, non c'è audio, una chiamata o una riunione non viene registrata, non c'è trascrizione, o un collegamento, una scorciatoia o l'API non fanno nulla."
 ---
 
 Ogni voce rimanda all'impostazione che ne decide. Se la risposta non è qui, apra la [Diagnostica](/troubleshooting/diagnostics): mostra che cosa si dicono il telefono e il centralino.
@@ -44,7 +44,7 @@ Che cosa succede quando qualcuno chiama mentre lei è in conversazione si impost
 Veda [Cattura](/capture/).
 
 - **Consenti la cattura del suono** in **Impostazioni → Cattura** deve essere attivo.
-- Con **Avvio automatico** su **Chiedimelo** (il valore predefinito), risponda alla domanda quando compare; con **Mai**, prema lei **Registra**.
+- Con **Avvio automatico** su **Chiedimelo** (il valore predefinito), risponda alla domanda quando compare; con **Mai**, prema lei il pulsante di registrazione.
 - Usi **Prova** nella stessa scheda: la barra in alto deve muoversi quando parla, quella in basso quando qualcosa viene riprodotto.
 - Il modulo **Cattura** deve essere attivo in [Moduli](/application/modules).
 

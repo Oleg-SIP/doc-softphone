@@ -16,7 +16,7 @@ Dall'alto in basso, la parte sinistra contiene:
 - il tastierino e il tasto di chiamata;
 - i bollini degli account;
 - i pulsanti che seguono altri interni;
-- le quattro destinazioni: **Registrazioni**, **Contatti**, **Cronologia** e **Impostazioni**.
+- le destinazioni: **Registrazioni**, **Contatti**, **Cronologia**, **Suggeritore** e **Impostazioni**.
 
 ### Il compositore {#the-dialler}
 
@@ -36,9 +36,9 @@ Sotto il tastierino c'è un bollino per ogni [account](../sip-accounts/setup.md)
 
 Sotto i bollini ci sono i [pulsanti](../sip-accounts/buttons.md) che ha creato per colleghi e linee, ciascuno con una spia — **Ferrari** e **Magazzino** nelle immagini. Ne prema uno per chiamarne il numero.
 
-### Registrazioni, Contatti, Cronologia, Impostazioni {#recordings-contacts-history-settings}
+### Registrazioni, Contatti, Cronologia, Suggeritore, Impostazioni {#recordings-contacts-history-prompter-settings}
 
-Queste quattro voci in basso aprono una scheda a destra, una accanto all'altra: [Registrazioni](../interface/recordings.md), [Contatti e cronologia](contacts-history.md) e [Impostazioni](settings-overview.md). Le schede aperte restano nella fila in alto della parte destra.
+Queste voci in basso aprono una scheda a destra, una accanto all'altra: [Registrazioni](../interface/recordings.md), [Contatti e cronologia](contacts-history.md), il [Suggeritore](prompter.md) e [Impostazioni](settings-overview.md). **Suggeritore** compare solo quando il suggeritore è consentito e ha un riconoscitore con cui ascoltare. Le schede aperte restano nella fila in alto della parte destra.
 
 ## Una chiamata in corso {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Le chiamate unite appaiono come un'unica scheda **Conferenza** sulla linea dell'
 
 Quando la [cattura da altre applicazioni](../capture/capture.md) è consentita in **Impostazioni → Cattura**, compare una striscia tra i bollini degli account e i pulsanti.
 
-<Shot name="10_settings_capture" full alt="La striscia della cattura ai piedi del telefono: Cattura · pronta, Registra e due barre di livello" />
+<Shot name="10_settings_capture" full alt="La striscia della cattura ai piedi del telefono: Cattura · in attesa di una conversazione, il pulsante di registrazione e due barre di livello" />
 
-- **Cattura · pronta** dice che il programma sta ascoltando se c'è una conversazione in un'altra applicazione.
-- **Registra** avvia una cattura a mano.
-- Le due barre sottili sotto mostrano il livello del suono: quella in alto è lei, quella in basso ciò che il computer riproduce. Come vengono disegnate si imposta in **Immagine nella barra ai piedi del telefono**.
+- **Cattura · in attesa di una conversazione** dice che il programma sta ascoltando se c'è una conversazione in un'altra applicazione.
+- Il pulsante rotondo a destra avvia una cattura a mano.
+- Le due barre sottili sotto mostrano il livello del suono: quella in alto è lei, quella in basso ciò che il computer riproduce. Come vengono disegnate si imposta in **Disegno nella barra in basso**.
 
 Il programma può anche vivere nell'area di notifica (la barra dei menu su macOS) ed essere richiamato con una [scorciatoia](../program/shortcuts.md).

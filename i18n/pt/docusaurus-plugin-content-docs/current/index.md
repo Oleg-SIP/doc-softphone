@@ -20,6 +20,8 @@ As gravações, as transcrições e o histórico ficam guardados num ficheiro qu
 3. É transcrita, interlocutor a interlocutor, sincronizada com o áudio.
 4. O modelo de língua que escolheu redige-a: resumo, tarefas, categoria, etiquetas e sinais — e pode fazer uma pergunta à conversa.
 
+Durante uma chamada, o [Ponto](interface/prompter.md) pode ir mais longe: mostra o que se diz à medida que é dito e sugere o que responder.
+
 ## Transferência e requisitos do sistema {#download-and-system-requirements}
 
 O programa transfere-se gratuitamente em [ai-softphone.com](https://ai-softphone.com/#download): um instalador (`.exe`) para Windows, uma imagem de disco (`.dmg`) para macOS, e uma AppImage ou um `.deb` para Linux. O instalador, a imagem de disco e a AppImage não precisam de mais nada instalado antes — o Qt, o OpenSSL e o runtime de C++ viajam dentro deles. A exceção é o `.deb`: usa o runtime de C++ do próprio sistema, veja mais abaixo. Vai precisar de uma conta SIP, do seu fornecedor ou da central que gere. A gravação funciona assim que o programa está instalado; a transcrição e a redação precisam de um serviço à sua escolha ou de um modelo na sua própria máquina.
@@ -60,6 +62,7 @@ As capturas de ecrã desta documentação foram feitas em macOS e são mostradas
 | Escolher o reconhecedor que transforma a voz em texto | [Transcrição](ai-processing/transcription.md) |
 | Decidir que IA redige as suas conversas e quanto pode custar | [Processamento](ai-processing/processing.md) |
 | Mudar as categorias, as etiquetas e os sinais | [Dicionários](ai-processing/dictionaries.md) |
+| Ver o que se diz durante uma chamada e receber sugestões do que responder | [Janela do ponto](interface/prompter.md) |
 | Mudar a disposição, o tema, o arranque e os atalhos | [Aspeto](program/appearance.md), [Arranque](program/startup.md) e [Atalhos](program/shortcuts.md) |
 | Ligar um CRM ou outro programa | [Webhooks](integration/webhooks.md) e [API REST local](integration/rest-api.md) |
 | Ver o que o telefone e a central dizem um ao outro | [Diagnóstico](troubleshooting/diagnostics.md) |

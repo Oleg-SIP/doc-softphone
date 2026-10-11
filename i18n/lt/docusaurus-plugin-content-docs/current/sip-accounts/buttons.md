@@ -1,7 +1,7 @@
 ---
 title: Mygtukai
 sidebar_position: 4
-description: "\"BLF mygtukai: vieno paspaudimo mygtukai, kurie skambina jūsų IP stotelės vidiniu numeriu ir rodo, ar jis laisvas, skamba ar užimtas.\""
+description: "BLF mygtukai: vieno paspaudimo mygtukai, kurie skambina jūsų IP stotelės vidiniu numeriu ir rodo, ar jis laisvas, skamba ar užimtas."
 ---
 
 Mygtukai yra programinio telefono **BLF** (Busy Lamp Field) klavišai — ta pati funkcija, kurią turi stalinis telefonas IP stotelėje. Mygtukas skambina vidiniu numeriu vienu paspaudimu. Mygtukas, stebintis savo liniją, taip pat rodo lemputę: telefonas klausia stotelės apie tą vidinį numerį ir rodo, ar jis laisvas, skamba ar užimtas, kaip tai daro sekretorės pultas ar stalinio telefono programuojami klavišai.

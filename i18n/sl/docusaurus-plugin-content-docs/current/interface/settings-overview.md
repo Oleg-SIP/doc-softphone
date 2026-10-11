@@ -10,7 +10,9 @@ description: Kontrolni seznam Pregled in zavihki okna Nastavitve ter kje je vsak
 
 <Shot name="04_settings_overview" alt="Nastavitve → Pregled: kontrolni seznam tega, kar je nastavljeno" />
 
-**Pregled** je kontrolni seznam tega, kar je potrebno, da iz programa dobite največ. Na vrhu šteje korake — na sliki *10 korakov opravljenih* z zeleno piko in *ostaja 8 korakov* z rdečo — vrstica pa kaže opravljeni delež. Vsak korak je vrstica s piko: zeleno za opravljen korak, rdečo za tistega, ki še ostaja.
+Na vrhu zavihka **Dokumentacija** odpre to spletno mesto.
+
+**Pregled** je kontrolni seznam tega, kar je potrebno, da iz programa dobite največ. Na vrhu šteje korake — na sliki *14 korakov opravljenih* z zeleno piko in *ostaja 6 korakov* z rdečo — vrstica pa kaže opravljeni delež. Vsak korak je vrstica s piko: zeleno za opravljen korak, rdečo za tistega, ki še ostaja.
 
 *Pritisnite vrstico, da preberete, čemu je namenjena, in odprete mesto, kjer se nastavi.* Puščica na desnem koncu vrstice jo razširi.
 
@@ -20,6 +22,7 @@ description: Kontrolni seznam Pregled in zavihki okna Nastavitve ter kje je vsak
 | **Zajem iz drugih programov** | Vklopite zajem; Zajemite pogovor; Dajte mu ime |
 | **Prepis** | Dodajte razpoznavalnik; Prepišite pogovor |
 | **Obdelava** | Dodajte model; Obdelajte prepis |
+| **Šepetalec** | Dovoli šepetalca; Zaženi šepetalca |
 | **Posnetki** | Iščite po izrečenem; Izvozite posnetek; Izvozite povzetek |
 | **Aplikacija** | Zaženi z računalnikom; Naj bo posodobljen |
 | **Odziv** | Pošiljaj razširjeno poročilo; Povejte nam, kaj mislite |
@@ -39,8 +42,9 @@ Koraki so vodilo, ne dolžnost: korak, ki ga ne potrebujete, lahko ostane rdeč.
 | | **Snemanje** | [Snemanje klicev: privolitev, konference in kako dolgo se datoteke hranijo](../recordings.md) |
 | | **Zajemanje** | [Zajemanje zvoka drugih programov](../capture/capture.md): sestanki v Zoomu, Teams, Meetu in podobnih |
 | Umetna inteligenca | **Prepis** | [Razpoznavalniki](../ai-processing/transcription.md) |
-| | **Obdelava** | [Samodejna obdelava, meje porabe, jezikovni modeli, navodila in pravila](../ai-processing/processing.md) |
+| | **Obdelava** | [Samodejna obdelava, jezikovni modeli, navodila, pravila in meje porabe](../ai-processing/processing.md) |
 | | **Slovarji** | [Kategorije, oznake in opozorilni znaki](../ai-processing/dictionaries.md) |
+| | **Šepetalec** | [Šepetalec v živo: stikalo, velikost besedila, pomočniki in koliko smejo porabiti](../ai-processing/prompter.md) |
 | Program | **Videz** | [Postavitev, jezik, tema in ikone](../program/appearance.md) |
 | | **Zagon** | [Kako se program zažene, zapre in odpira povezave za klic](../program/startup.md) |
 | | **Bližnjice** | [Tipkovne bližnjice](../program/shortcuts.md) |

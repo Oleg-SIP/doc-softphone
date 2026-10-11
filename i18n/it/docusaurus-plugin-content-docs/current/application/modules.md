@@ -25,8 +25,9 @@ Ogni modulo ha una casella, un nome, una riga che dice che cosa fa e, a destra, 
 | **Integrazione** | L'API locale e i webhook: [Integrazione](/integration/rest-api). |
 | **Archivio media** | La libreria delle conversazioni e per quanto tempo si conservano: [Registrazioni](/interface/recordings). |
 | **Elaborazione** | I prompt e le regole che li fanno scattare: [Elaborazione](/ai-processing/processing). |
+| **Suggeritore** | Ascolta una conversazione in corso e suggerisce: [Finestra del suggeritore](/interface/prompter). |
 | **Registrazione** | Registrare le chiamate, e avvisarne l'interlocutore: [Registrazioni](/recordings). |
-| **Telefonia** | SIP, account, chiamate, il compositore e il registro chiamate. |
+| **Telefono** | SIP, account, chiamate, il compositore e il registro chiamate. |
 | **Trascrizione** | I riconoscitori, la coda che li alimenta e le trascrizioni che producono: [Trascrizione](/ai-processing/transcription). |
 
 Disattivi un modulo e sparisce: niente impostazioni per lui, niente voce di menu, niente di suo in esecuzione. Disattivi un modulo che non le serve — per esempio **Integrazione** su un computer dove nient'altro parla con il telefono — oppure tenga un telefono che è solo un telefono, quando è tutto ciò che serve a una postazione. Il pacchetto è lo stesso in ogni caso: non c'è nulla da comprare né da sbloccare.

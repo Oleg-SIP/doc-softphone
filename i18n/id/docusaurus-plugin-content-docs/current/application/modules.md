@@ -25,8 +25,9 @@ Setiap modul memiliki kotak centang, nama, sebaris keterangan tentang fungsinya,
 | **Integrasi** | API lokal, dan webhook: [Integrasi](/integration/rest-api). |
 | **Penyimpanan media** | Pustaka percakapan dan berapa lama percakapan disimpan: [Rekaman](/interface/recordings). |
 | **Pemrosesan** | Petunjuk dan aturan yang menjalankannya: [Pemrosesan](/ai-processing/processing). |
+| **Pembisik** | Mendengarkan percakapan saat berlangsung dan memberi saran: [Jendela pembisik](/interface/prompter). |
 | **Perekaman** | Merekam panggilan, dan memberi tahu pihak lain tentang hal itu: [Rekaman](/recordings). |
-| **Telefoni** | SIP, akun, panggilan, papan panggil, dan riwayat panggilan. |
+| **Telepon** | SIP, akun, panggilan, papan panggil, dan riwayat panggilan. |
 | **Transkripsi** | Pengenal suara, antrean yang menggerakkannya, dan transkrip yang dihasilkannya: [Transkripsi](/ai-processing/transcription). |
 
 Matikan sebuah modul dan modul itu hilang: tidak ada pengaturannya, tidak ada entri menunya, tidak ada bagiannya yang berjalan. Matikan modul yang tidak Anda perlukan — misalnya **Integrasi** di komputer yang tidak memiliki program lain yang berkomunikasi dengan telepon — atau pertahankan telepon yang hanya berfungsi sebagai telepon, bila hanya itu yang dibutuhkan sebuah meja kerja. Paketnya tetap sama: tidak ada yang perlu dibeli dan tidak ada yang perlu dibuka kuncinya.

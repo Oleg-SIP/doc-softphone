@@ -40,14 +40,16 @@ Oznaczenia, które *wszystkie mogą pasować do tej samej rozmowy*. Naciśnij **
 
 Rzeczy wymagające uwagi, znalezione w rozmowie wraz z dowodem i momentem — na przykład *Rozgniewany klient* albo *Ryzyko odejścia*. Sygnały ostrzegawcze są rysowane na czerwono w [oknie nagrań](../interface/recordings.md), a każdy ma wagę: niską, średnią lub wysoką.
 
-## Kształty odpowiedzi i język {#answer-shapes-and-language}
+## Wskazówki {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Ustawienia → Słowniki: kształty odpowiedzi i instrukcje językowe" />
 
-Niżej w zakładce są instrukcje, z których składane są polecenia. Są przechowywane tutaj, aby każde polecenie mogło używać tego samego sformułowania, a ty możesz je zmieniać jak każdą inną pozycję.
+*To, co dodaje się do każdego polecenia o kształcie odpowiedzi i języku, w którym ją napisać.* Są przechowywane tutaj, aby każde polecenie mogło używać tego samego sformułowania, a ty możesz je zmieniać jak każdą inną pozycję — albo napisać własne, na przykład *odpowiadaj krótko* lub *nigdy nie podawaj ceny*, i zaznaczyć je w **Wyślij także** przy dowolnym poleceniu.
 
 | Nazwa | Kod | Co mówi modelowi |
 | --- | --- | --- |
+| **Proza** | `shape-plain` | Odpowiadaj zwykłą prozą, bez JSON, list i nagłówków. |
+| **Pozycje** | `shape-list` | Odpowiadaj listą rzeczy do zrobienia, każda z tym, kto i kiedy. |
 | **Etykiety** | `shape-labels` | Odpowiedz w JSON listą kodów i pewnością co do każdego, używając tylko kodów z otrzymanej listy. |
 | **Ocena** | `shape-score` | Odpowiedz oceną, jej uzasadnieniem i słowami, na których się opiera. |
 | **Kryteria** | `shape-rubric` | Odpowiedz oceną ogólną i oceną każdego kryterium. |
@@ -58,7 +60,7 @@ Niżej w zakładce są instrukcje, z których składane są polecenia. Są przec
 | **Jak mówiono, z nazwy** | `language-as-spoken-named` | To samo, z podaniem nazwy języka. |
 | **Wskazany język** | `language-named` | Pisz we wskazanym przez ciebie języku. |
 
-**Dodaj** na końcu listy dodaje pozycję.
+**Dodaj** na początku listy dodaje pozycję.
 
 ## Domyślne {#defaults}
 

@@ -1,7 +1,7 @@
 ---
 title: Bearbetning
 sidebar_position: 2
-description: Automatisk bearbetning av samtal, de månatliga kostnadsgränserna, språkmodeller, prompter och reglerna som kör dem.
+description: Automatisk bearbetning av samtal, språkmodeller, prompter, reglerna som kör dem och de månatliga kostnadsgränserna.
 ---
 
 **Inställningar → Bearbetning** bestämmer vad som händer med ett samtal när det har spelats in, vilken modell som gör jobbet och vad det får kosta.
@@ -13,20 +13,9 @@ description: Automatisk bearbetning av samtal, de månatliga kostnadsgränserna,
 - **Av:** ingenting händer förrän du ber om det i [fönstret Inspelningar](../interface/recordings.md).
 - **På:** [reglerna](#rules) nedan körs av sig själva. Det är detta som gör ett samtal till en sammanfattning, en kategori och allt annat utan att någon trycker på något. En modell i molnet tar betalt för vart och ett av de här stegen.
 
-Under kryssrutan visar programmet vad som har förbrukats den här månaden och på hur många begäranden, till exempel *Den här månaden: 40.492 token, över 84 begäranden, utan kostnad.*
-
-## Gränser {#limits}
-
-| Fält | Betydelse |
-| --- | --- |
-| **Pengagräns, per månad** | Det mesta modellerna får kosta under en månad. |
-| **Tokengräns, per månad** | Det största antalet token de får använda under en månad. |
-
-Det finns två gränser eftersom en månad kan räknas i två saker. Båda är tomma tills du fyller i dem. När någon av dem nås stannar de automatiska reglerna tills månaden byts. **Det du själv ber om stoppas aldrig.**
-
 ## Språkmodeller {#language-models}
 
-Modellerna som läser en utskrift och skriver om den. Tryck på **Lägg till** för att lägga till en. Var och en visas med sitt namn och under det modellens id och adressen till tjänsten, till exempel `qwen3-32b · http://llm.local:8000/v1`. Den som är markerad **standard** används som standard. En knapp i en modells formulär kontrollerar att tjänsten verkligen svarar innan du förlitar dig på den.
+Modellerna som läser en utskrift och skriver om den. Tryck på **Lägg till** för att lägga till en. Var och en visas med sitt namn och under det modellens id och adressen till tjänsten, till exempel `qwen3-32b · http://localhost:8000/v1`. Den som är markerad **standard** — **QWEN**, en modell på den här datorn, på bilden — används som standard, av prompterna och av de hjälpare i [sufflören](prompter.md) som inte anger en egen modell. **Prova** i en modells formulär kontrollerar att tjänsten verkligen svarar innan du förlitar dig på den.
 
 - En modell **på din egen dator** håller varje samtal inom huset och kostar ingenting att köra.
 - En modell i molnet — OpenAI, Claude, Mistral, DeepSeek, Groq och andra — debiteras per användning. Programmet visar priset för varje anrop i token och i pengar.
@@ -35,7 +24,7 @@ Modellerna som läser en utskrift och skriver om den. Tryck på **Lägg till** f
 
 <Shot name="12b_settings_processing_prompts" alt="Inställningar → Bearbetning: prompterna" />
 
-*Det modellerna ombeds om.* Varje prompt kom med programmet och var och en är din att ändra — och att lägga tillbaka. Var och en visas med sitt namn och under det vad den skriver och i vilken form. Formen — **Svar**, **Punkter**, **Etiketter**, **JSON**, **Löpande text**, **Signaler** eller **Kriterier** — bestämmer hur svaret sparas och visas. Prompterna beskrivs i [Personal Prompt Studio](prompt-studio.md). **Lägg till** skapar en egen prompt.
+*Det modellerna ombeds om.* Varje prompt kom med programmet och var och en är din att ändra — och att lägga tillbaka. Var och en visas med sitt namn och under det vad den skriver och i vilken form; **▲** och **▼** ändrar ordningen i listan. Formen — **Svar**, **Punkter**, **Etiketter**, **JSON**, **Löpande text**, **Signaler** eller **Kriterier** — bestämmer hur svaret sparas och visas. Prompterna beskrivs i [Personal Prompt Studio](prompt-studio.md). **Lägg till** skapar en egen prompt.
 
 ## Regler {#rules}
 
@@ -55,6 +44,19 @@ Modellerna som läser en utskrift och skriver om den. Tryck på **Lägg till** f
 | **Bedöm det, om det var support** | Ber en modell om: **Supportkvalitet**. | bara om kategorin är **Support** |
 
 Ordningen spelar roll: de två sista reglerna behöver kategorin som regeln före dem har satt. **Lägg till** skapar en egen regel.
+
+## Utgifter {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Inställningar → Bearbetning: månadens utgifter och de två gränserna" />
+
+Under **Utgifter** visar programmet vad som har förbrukats den här månaden och på hur många begäranden — *Ingenting har bearbetats den här månaden* på bilden, och till exempel *Den här månaden: 40.492 token, över 84 begäranden, utan kostnad* när något har bearbetats.
+
+| Fält | Betydelse |
+| --- | --- |
+| **Pengagräns, per månad** | Det mesta modellerna får kosta under en månad. |
+| **Tokengräns, per månad** | Det största antalet token de får använda under en månad. |
+
+Det finns två gränser eftersom en månad kan räknas i två saker. Båda är tomma tills du fyller i dem. När någon av dem nås stannar de automatiska reglerna tills månaden byts. **Det du själv ber om stoppas aldrig.** [Sufflören](prompter.md#spending) har egna tak, så att en månad av sammanfattningar inte kan tysta den mitt i ett samtal.
 
 ## Standardvärden {#defaults}
 

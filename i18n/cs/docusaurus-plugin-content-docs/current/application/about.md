@@ -10,7 +10,7 @@ description: Verze, aktualizace, vaše země, licence, obsah hlášení o použ�
 
 ## Verze a země {#version-and-country}
 
-Nahoře je název, **Verze** (na obrázku 1.0.1) a odkaz na web [ai-softphone.com](https://ai-softphone.com/?lang=cs).
+Nahoře je název, **Verze** (na obrázku 1.1.3), odkaz na web [ai-softphone.com](https://ai-softphone.com/?lang=cs) a odkaz na tuto dokumentaci.
 
 **Země** říká programu, kde jste. Pomáhá vybrat nejlepší aktualizační server a otevírá cestu k jazykovým a rozpoznávacím službám ve vaší zemi. **Zjistit automaticky** ji vyplní. Na obrázku je vybráno **Česko**.
 

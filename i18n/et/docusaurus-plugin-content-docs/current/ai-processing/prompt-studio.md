@@ -28,7 +28,9 @@ Teine veerg on see, mida loend juhise nime all näitab: mida see kirjutab ja mil
 | **Müügi kvaliteet** | Kriteeriumid | Hindab vestlust müügikriteeriumide järgi, mida saate muuta. |
 | **Toe kvaliteet** | Kriteeriumid | Hindab, kui hästi probleemi mõisteti ja lahendati. |
 
-Kujud on vastuse fikseeritud struktuurid ja just see võimaldab programmil vastust hoida ning hiljem sellest otsida: **Sildid** on koodid teie loenditest, **Signaalid** on koodid tõsidusega, **Kriteeriumid** on hinne koos põhjendusega ja hinne iga kriteeriumi kohta, **Vastus** on vastus koos sõnadega, millele see tugineb. Juhised, mis ütlevad mudelile kuju, on talletatud jaotises [Sõnastikud](dictionaries.md#answer-shapes-and-language).
+Kujud on vastuse fikseeritud struktuurid ja just see võimaldab programmil vastust hoida ning hiljem sellest otsida: **Sildid** on koodid teie loenditest, **Signaalid** on koodid tõsidusega, **Kriteeriumid** on hinne koos põhjendusega ja hinne iga kriteeriumi kohta, **Vastus** on vastus koos sõnadega, millele see tugineb. Juhised, mis ütlevad mudelile kuju, on talletatud jaotises [Sõnastikud](dictionaries.md#instructions).
+
+Ka [etteütleja](../interface/prompter.md) abilised on juhised, mida käivitatakse iga repliigi peale kõne ajal, mitte lõpetatud vestluse peal. Neid hoitakse eraldi loendis, jaotises [Abilised](prompter.md#assistants) vaates **Seaded → Etteütleja**.
 
 AI Softphone'is tehtud kõned, arvutist [hõivatud](/capture/) koosolekud ja imporditud salvestised läbivad kõik samad juhised, kui neil on ülestähendus.
 
@@ -41,6 +43,6 @@ AI Softphone'is tehtud kõned, arvutist [hõivatud](/capture/) koosolekud ja imp
 - Valige iga juhise jaoks mudel — teie enda arvutis või pilves.
 - Määrake juhiste käivitamise järjekord, lülitage neid sisse ja välja ning muutke need tingimuslikuks — seda tehakse [reeglitega](processing.md#rules): näiteks müügihinnang käivitub ainult kõnedel, mis on liigitatud kategooriasse **Müük**.
 - Hoidke oma kategooriaid, silte ja hoiatussignaale jaotises [Sõnastikud](dictionaries.md).
-- Piirake kulusid [igakuiste piiridega](processing.md#limits).
+- Piirake kulusid [igakuiste piiridega](processing.md#spending).
 
 Algsed juhised ja reeglid saab taastada nupuga **Taasta vaikeväärtused** jaotises **Vaikeväärtused** lehel [Seaded → Töötlemine](processing.md#defaults).

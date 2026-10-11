@@ -7,6 +7,7 @@ description: Pojmovi IP telefonije i AI Softphonea korišćeni u ovoj dokumentac
 | Pojam | Značenje |
 | --- | --- |
 | **Nalog** | Linija: SIP korisničko ime na centrali ili kod operatera. Možete biti prijavljeni na više njih. Pogledajte [Podešavanje SIP naloga](/sip-accounts/setup). |
+| **Pomoćnik** | Ono što šaptač treba da bude dok sluša: titlovi, prevod ili predlozi šta da kažete. Vidi [Podešavanja šaptača](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Dugme koje bira interni broj i lampicom pokazuje da li je slobodan, zvoni ili je zauzet. Pogledajte [Dugmad](/sip-accounts/buttons). |
 | **Poziv na čekanju** | Šta telefon radi kada vas neko pozove dok ste već u razgovoru. Pogledajte [Podešavanja poziva](/sip-accounts/calls#call-waiting). |
 | **Hvatanje** | Snimanje razgovora održanog u drugoj aplikaciji, kao što su Zoom, Teams ili Meet. Pogledajte [Hvatanje](/capture/). |
@@ -19,8 +20,10 @@ description: Pojmovi IP telefonije i AI Softphonea korišćeni u ovoj dokumentac
 | **IP centrala** | Telefonska centrala kancelarije koja radi u mreži; zove se i softswitch. |
 | **Jezički model** | Veštačka inteligencija koja čita prepis i piše o njemu. Pogledajte [Obrada](/ai-processing/processing). |
 | **Uputstvo** | Ono što se traži od jezičkog modela. Pogledajte [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Šaptač** | Prozor koji tokom poziva prikazuje ono što se govori dok se govori, i predloge šta odgovoriti. Vidi [Prozor šaptača](/interface/prompter). |
 | **Prepoznavač** | Usluga koja zvuk pretvara u tekst (prepoznavanje govora). Pogledajte [Prepisivanje](/ai-processing/transcription). |
 | **Upozorenje** | Nešto u razgovoru što traži pažnju, sa dokazom i vremenom. Pogledajte [Rečnici](/ai-processing/dictionaries#red-flags). |
+| **Proba** | Puštanje snimljenog razgovora šaptaču umesto poziva, da biste isprobali pomoćnika. Vidi [Prozor šaptača](/interface/prompter#rehearsing-on-a-recording). |
 | **Registracija** | Telefon javlja centrali gde je, kako bi pozivi stigli do njega. Zelena tačka pored naloga znači da je registrovan. |
 | **Pravilo** | Korak koji se izvodi sam, redom, na svakom razgovoru. Pogledajte [Obrada](/ai-processing/processing#rules). |
 | **SIP** | Protokol kojim telefoni i centrale uspostavljaju pozive. |

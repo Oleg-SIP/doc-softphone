@@ -1,7 +1,7 @@
 ---
 title: Yleiset ongelmat
 sidebar_position: 2
-description: "\"Mitä tarkistaa, kun tili ei rekisteröidy, ääntä ei kuulu, puhelua tai kokousta ei tallenneta, litterointia ei ole tai linkki, pikanäppäin tai API ei tee mitään.\""
+description: "Mitä tarkistaa, kun tili ei rekisteröidy, ääntä ei kuulu, puhelua tai kokousta ei tallenneta, litterointia ei ole tai linkki, pikanäppäin tai API ei tee mitään."
 ---
 
 Jokainen kohta viittaa asetukseen, joka asian ratkaisee. Jos vastausta ei ole tässä, avaa [Diagnostiikka](/troubleshooting/diagnostics): se näyttää, mitä puhelin ja vaihde sanovat toisilleen.
@@ -44,7 +44,7 @@ Se, mitä tapahtuu, kun joku soittaa, kun olet puhelussa, asetetaan kohdassa [Ko
 Katso [Kaappaus](/capture/).
 
 - **Salli äänen kaappaus** kohdassa **Asetukset → Kaappaus** on oltava käytössä.
-- Kun **Automaattinen käynnistys** on asetettu tilaan **Kysy minulta** (oletus), vastaa kysymykseen sen ilmestyessä; tilassa **Ei koskaan** paina itse **Tallenna**.
+- Kun **Automaattinen käynnistys** on asetettu tilaan **Kysy minulta** (oletus), vastaa kysymykseen sen ilmestyessä; tilassa **Ei koskaan** paina itse tallennuspainiketta.
 - Käytä samalla välilehdellä **Kokeile**: ylemmän palkin on liikuttava, kun puhut, alemman, kun jotain soi.
 - **Kaappaus**-moduulin on oltava käytössä kohdassa [Moduulit](/application/modules).
 

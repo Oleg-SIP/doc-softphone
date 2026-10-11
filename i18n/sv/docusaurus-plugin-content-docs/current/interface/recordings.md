@@ -1,7 +1,7 @@
 ---
 title: Fönstret Inspelningar
 sidebar_position: 2
-description: "\"Biblioteket med alla samtal — ett telefonsamtal, en importerad fil eller ett möte fångat från Zoom, Teams eller Meet: filter, spelaren, utskriften som du kan spela upp från vilken rad som helst, och sammanfattningarna.\""
+description: "Biblioteket med alla samtal — ett telefonsamtal, en importerad fil eller ett möte fångat från Zoom, Teams eller Meet: filter, spelaren, utskriften som du kan spela upp från vilken rad som helst, och sammanfattningarna."
 ---
 
 **Inspelningar** är där varje samtal bor, hur det än kom in: ett samtal som rings eller tas emot i telefonen, en ljudfil du importerat eller ett möte fångat från Zoom, Teams, Meet eller något annat program. Alla står i en och samma lista, och var och en öppnas på samma sätt: spelaren, utskriften och allt som språkmodellen skrivit om den. Tryck på **Inspelningar** nere till vänster i [huvudfönstret](main-window.md) för att öppna fönstret.
@@ -22,7 +22,7 @@ På bilden är de tre översta raderna en av varje sort: ett Zoom-möte, en impo
 
 ## Hitta ett samtal {#finding-a-conversation}
 
-Raden överst har fem filter, ett sökfält och en meny:
+Raden överst har fyra filter, ett sökfält och en meny:
 
 | Kontroll | Begränsar listan efter |
 | --- | --- |
@@ -30,7 +30,6 @@ Raden överst har fem filter, ett sökfält och en meny:
 | **Period** | datumet: **I dag**, **I går**, **Senaste 7 dagarna** eller **Välj datum…** |
 | **Kategori** | kategorin det sorterats under — se [Ordlistor](../ai-processing/dictionaries.md) |
 | **Märke** | etiketterna och signalerna det har |
-| **Igenkännare** | den [igenkännare](../ai-processing/transcription.md) som gjorde dess utskrift |
 | **Sök** | det som sades i det — sökningen går igenom utskrifterna av allt du har spelat in |
 
 <Shot name="39_more_menu" alt="Menyn ⋮ i listan: Importera från filer, Exportera till CSV, Öppna i en webbläsare" />

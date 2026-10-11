@@ -1,7 +1,7 @@
 ---
 title: Uruchamianie
 sidebar_position: 2
-description: "\"Uruchamiaj telefon razem z komputerem, pozwól mu działać po zamknięciu okna i otwieraj odnośniki tel:, callto: i sip:.\""
+description: "Uruchamiaj telefon razem z komputerem, pozwól mu działać po zamknięciu okna i otwieraj odnośniki tel:, callto: i sip:."
 ---
 
 **Ustawienia → Uruchamianie** decyduje, jak program się uruchamia, co robi zamknięcie okna i co się dzieje, gdy klikniesz numer telefonu w innym programie.

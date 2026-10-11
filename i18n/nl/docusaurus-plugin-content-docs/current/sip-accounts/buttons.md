@@ -1,7 +1,7 @@
 ---
 title: Knoppen
 sidebar_position: 4
-description: "\"BLF-knoppen: knoppen met één druk die een toestel op uw IP-centrale bellen en laten zien of het vrij is, overgaat of in gesprek is.\""
+description: "BLF-knoppen: knoppen met één druk die een toestel op uw IP-centrale bellen en laten zien of het vrij is, overgaat of in gesprek is."
 ---
 
 Knoppen zijn de **BLF**-toetsen (Busy Lamp Field) van de softphone, dezelfde functie die een bureautoestel op een IP-centrale heeft. Een knop belt een toestel met één druk. Een knop die zijn lijn volgt, toont ook een lampje: de telefoon vraagt de centrale naar dat toestel en laat zien of het vrij is, overgaat of in gesprek is, zoals een receptieconsole of de programmeerbare toetsen van een bureautoestel dat doen.

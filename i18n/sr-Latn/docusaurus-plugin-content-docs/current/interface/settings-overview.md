@@ -10,7 +10,9 @@ description: Kontrolni spisak Pregled i kartice prozora Podešavanja, i gde je s
 
 <Shot name="04_settings_overview" alt="Podešavanja → Pregled: kontrolni spisak onoga što je podešeno" />
 
-**Pregled** je kontrolni spisak onoga što je potrebno da iz programa izvučete najviše. Na vrhu broji korake — na slici *10 koraka gotovo* sa zelenom tačkom i *preostaje 8 koraka* sa crvenom — a traka pokazuje obavljeni deo. Svaki korak je red sa tačkom: zelenom za obavljen korak, crvenom za onaj koji još preostaje.
+Na vrhu kartice **Dokumentacija** otvara ovaj sajt.
+
+**Pregled** je kontrolni spisak onoga što je potrebno da iz programa izvučete najviše. Na vrhu broji korake — na slici *14 koraka gotovo* sa zelenom tačkom i *preostaje 6 koraka* sa crvenom — a traka pokazuje obavljeni deo. Svaki korak je red sa tačkom: zelenom za obavljen korak, crvenom za onaj koji još preostaje.
 
 *Pritisnite red da pročitate čemu služi i otvorite mesto gde se podešava.* Strelica na desnom kraju reda ga proširuje.
 
@@ -20,6 +22,7 @@ description: Kontrolni spisak Pregled i kartice prozora Podešavanja, i gde je s
 | **Hvatanje iz drugih aplikacija** | Uključite hvatanje; Uhvatite razgovor; Dajte mu ime |
 | **Prepisivanje** | Dodajte prepoznavač; Prepišite razgovor |
 | **Obrada** | Dodajte model; Obradite prepis |
+| **Šaptač** | Dozvoli šaptanje; Pokreni šaptača |
 | **Snimci** | Tražite u onome što je rečeno; Izvezite snimak; Izvezite sažetak |
 | **Aplikacija** | Pokreći sa računarom; Držite ga ažurnim |
 | **Povratna informacija** | Šalji prošireni izveštaj; Recite nam šta mislite |
@@ -39,8 +42,9 @@ Koraci su vodič, a ne obaveza: korak koji vam ne treba može da ostane crven.
 | | **Snimanje** | [Snimanje poziva: pristanak, konferencije i koliko se dugo datoteke čuvaju](../recordings.md) |
 | | **Hvatanje** | [Hvatanje zvuka drugih aplikacija](../capture/capture.md): sastanci u Zoomu, Teamsu, Meetu i sličnim |
 | Veštačka inteligencija | **Prepisivanje** | [Prepoznavači](../ai-processing/transcription.md) |
-| | **Obrada** | [Automatska obrada, granice potrošnje, jezički modeli, uputstva i pravila](../ai-processing/processing.md) |
+| | **Obrada** | [Automatska obrada, jezički modeli, uputstva, pravila i granice potrošnje](../ai-processing/processing.md) |
 | | **Rečnici** | [Kategorije, oznake i upozorenja](../ai-processing/dictionaries.md) |
+| | **Šaptač** | [Šaptač uživo: prekidač, veličina teksta, pomoćnici i koliko smeju da potroše](../ai-processing/prompter.md) |
 | Program | **Izgled** | [Raspored, jezik, tema i ikone](../program/appearance.md) |
 | | **Pokretanje** | [Kako se program pokreće, zatvara i otvara veze za pozivanje](../program/startup.md) |
 | | **Prečice** | [Prečice na tastaturi](../program/shortcuts.md) |

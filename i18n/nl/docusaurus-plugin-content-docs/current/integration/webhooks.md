@@ -1,7 +1,7 @@
 ---
 title: Webhooks
 sidebar_position: 1
-description: "\"Laat de telefoon uw CRM of een ander systeem een verzoek sturen wanneer een gesprek begint, verandert of eindigt — met de precieze verzoeken van een inkomend en een uitgaand gesprek.\""
+description: "Laat de telefoon uw CRM of een ander systeem een verzoek sturen wanneer een gesprek begint, verandert of eindigt — met de precieze verzoeken van een inkomend en een uitgaand gesprek."
 ---
 
 Een webhook is een verzoek dat de telefoon naar een adres naar keuze stuurt, telkens wanneer er iets met een gesprek gebeurt. Zo kan een CRM de klantkaart openen vóór de tweede beltoon, een gesprek vastleggen als het eindigt, of een lampje op een wandbord laten branden. Een webhook vraagt geen inkomende firewallregels: de telefoon belt u. Omdat de verzoeken vanaf de werkplek worden verstuurd, hoeft het adres alleen vanaf die computer bereikbaar te zijn — een intern `http://crm.local/calls` werkt net zo goed als een openbaar HTTPS-adres.

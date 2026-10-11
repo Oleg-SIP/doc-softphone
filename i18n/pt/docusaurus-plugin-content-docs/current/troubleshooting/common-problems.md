@@ -1,7 +1,7 @@
 ---
 title: Problemas comuns
 sidebar_position: 2
-description: "\"O que verificar quando uma conta não se regista, não há som, uma chamada ou uma reunião não é gravada, não há transcrição, ou uma ligação, um atalho ou a API não fazem nada.\""
+description: "O que verificar quando uma conta não se regista, não há som, uma chamada ou uma reunião não é gravada, não há transcrição, ou uma ligação, um atalho ou a API não fazem nada."
 ---
 
 Cada entrada aponta para a definição que o decide. Se a resposta não estiver aqui, abra o [Diagnóstico](/troubleshooting/diagnostics): mostra o que o telefone e a central dizem um ao outro.
@@ -44,7 +44,7 @@ O que acontece quando alguém liga enquanto está numa chamada define-se em [Cha
 Veja [Captura](/capture/).
 
 - **Permitir a captura do som** em **Definições → Captura** tem de estar ligado.
-- Com **Início automático** em **Perguntar-me** (o valor por omissão), responda à pergunta quando aparecer; com **Nunca**, carregue você em **Gravar**.
+- Com **Início automático** em **Perguntar-me** (o valor por omissão), responda à pergunta quando aparecer; com **Nunca**, carregue você no botão de gravar.
 - Use **Testar** no mesmo separador: a barra de cima tem de se mexer quando fala, a de baixo quando algo toca.
 - O módulo **Captura** tem de estar ligado em [Módulos](/application/modules).
 

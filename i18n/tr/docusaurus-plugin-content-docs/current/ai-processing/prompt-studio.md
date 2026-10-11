@@ -28,7 +28,9 @@ Sizin LLM'iniz, sizin anahtarınız, sizin denetiminiz: tercih ettiğiniz modeli
 | **Satış niteliği** | Ölçütler | Görüşmeyi, düzenleyebileceğiniz satış ölçütlerine göre değerlendirir. |
 | **Destek niteliği** | Ölçütler | Sorunun ne kadar iyi anlaşıldığını ve ele alındığını değerlendirir. |
 
-Biçimler, bir yanıtın sabit kalıplarıdır; programın yanıtı saklamasını ve daha sonra aramasını sağlayan da budur: **Etiketler** listelerinizden birindeki kodlardır, **İşaretler** önem derecesi olan kodlardır, **Ölçütler** gerekçeli bir puan ve her ölçüt için bir puandır, **Yanıt** dayandığı sözlerle birlikte bir cevaptır. Bir modele kalıbı söyleyen talimatlar [Sözlükler](dictionaries.md#answer-shapes-and-language) içinde tutulur.
+Biçimler, bir yanıtın sabit kalıplarıdır; programın yanıtı saklamasını ve daha sonra aramasını sağlayan da budur: **Etiketler** listelerinizden birindeki kodlardır, **İşaretler** önem derecesi olan kodlardır, **Ölçütler** gerekçeli bir puan ve her ölçüt için bir puandır, **Yanıt** dayandığı sözlerle birlikte bir cevaptır. Bir modele kalıbı söyleyen talimatlar [Sözlükler](dictionaries.md#instructions) içinde tutulur.
+
+[Suflörün](../interface/prompter.md) yardımcıları da yönergedir; bitmiş bir görüşme yerine çağrı sürerken her konuşmaya uygulanır. Ayrı bir listede, **Ayarlar → Suflör** içindeki [Yardımcılar](prompter.md#assistants) altında tutulurlar.
 
 AI Softphone'da yapılan çağrılar, bilgisayardan [yakalanan](/capture/) toplantılar ve içe aktarılan kayıtlar, dökümleri olduktan sonra aynı yönergelerden geçer.
 
@@ -41,6 +43,6 @@ Yapılacaklar, üzerinde anlaşılanı kaydeder — sizin yerinize ileti gönder
 - Her yönerge için modeli seçin — kendi makinenizde ya da bulutta.
 - Yönergelerin çalışma sırasını belirleyin, onları açıp kapatın ve koşula bağlayın — bu [kurallarla](processing.md#rules) yapılır: örneğin bir satış değerlendirmesi yalnızca **Satış** olarak yerleştirilen çağrılarda çalışır.
 - Kendi kategorilerinizi, etiketlerinizi ve uyarı işaretlerinizi [Sözlükler](dictionaries.md) içinde tutun.
-- Maliyeti [aylık sınırlarla](processing.md#limits) sınırlayın.
+- Maliyeti [aylık sınırlarla](processing.md#spending) sınırlayın.
 
 Özgün yönergeler ve kurallar, [Ayarlar → İşleme](processing.md#defaults) içinde **Öntanımlılar** altındaki **Öntanımlılara dön** ile geri getirilebilir.

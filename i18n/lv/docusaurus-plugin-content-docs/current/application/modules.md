@@ -25,8 +25,9 @@ Katram modulim ir izvēles rūtiņa, nosaukums, rinda par to, ko tas dara, un la
 | **Integrācija** | Vietējais API un tīmekļa āķi: [Integrācija](/integration/rest-api). |
 | **Mediju krātuve** | Sarunu bibliotēka un to glabāšanas ilgums: [Ieraksti](/interface/recordings). |
 | **Apstrāde** | Norādījumi un kārtulas, kas tos palaiž: [Apstrāde](/ai-processing/processing). |
+| **Suflieris** | Klausās sarunu tās laikā un piedāvā: [Sufliera logs](/interface/prompter). |
 | **Ierakstīšana** | Zvanu ierakstīšana un paziņošana par to otrai pusei: [Ieraksti](/recordings). |
-| **Telefonija** | SIP, konti, zvani, numura sastādītājs un zvanu vēsture. |
+| **Telefons** | SIP, konti, zvani, numura sastādītājs un zvanu vēsture. |
 | **Pieraksts** | Atpazinēji, rinda, kas tos darbina, un to veidotie atšifrējumi: [Pieraksts](/ai-processing/transcription). |
 
 Izslēdziet moduli, un tā vairs nav: nav tā iestatījumu, nav izvēlnes ieraksta, nekas no tā nedarbojas. Izslēdziet moduli, kas jums nav vajadzīgs — piemēram, **Integrācija** datorā, kurā nekas cits ar tālruni nesazinās —, vai paturiet tālruni, kas ir tikai tālrunis, ja darba vietai vairāk nekā nevajag. Pakotne abos gadījumos ir tā pati: nav nekā, ko pirkt, un nekā, ko atbloķēt.

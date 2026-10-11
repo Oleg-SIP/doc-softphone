@@ -1,7 +1,7 @@
 ---
 title: Arranque
 sidebar_position: 2
-description: "\"Arrancar o telefone com o computador, mantê-lo a funcionar com a janela fechada e abrir ligações tel:, callto: e sip:.\""
+description: "Arrancar o telefone com o computador, mantê-lo a funcionar com a janela fechada e abrir ligações tel:, callto: e sip:."
 ---
 
 **Definições → Arranque** decide como o programa arranca, o que faz o fecho da sua janela e o que acontece quando clica num número de telefone noutro programa.

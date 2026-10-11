@@ -20,6 +20,8 @@ A felvételek, a leiratok és az előzmények egy olyan fájlban vannak, amely a
 3. Leiratot készít róla, beszélőnként, a hanggal összehangolva.
 4. Az Ön által választott nyelvi modell feldolgozza: összefoglaló, feladatok, kategória, címkék és figyelmeztető jelek — és a beszélgetésnek kérdést is feltehet.
 
+Hívás közben a [Súgó](interface/prompter.md) tovább is mehet: abban a pillanatban mutatja, ami elhangzik, amikor elhangzik, és javasolja, mit válaszoljon.
+
 ## Letöltés és rendszerkövetelmények {#download-and-system-requirements}
 
 A program ingyenesen letölthető az [ai-softphone.com](https://ai-softphone.com/#download) oldalról: telepítő (`.exe`) Windowsra, lemezkép (`.dmg`) macOS-re, valamint AppImage vagy `.deb` Linuxra. A telepítő, a lemezkép és az AppImage mellé előtte semmi mást nem kell telepíteni — a Qt, az OpenSSL és a C++ futtatókörnyezet bennük van. Kivétel a `.deb`: ez a rendszer saját C++ futtatókörnyezetét használja, lásd lent. Szüksége lesz egy SIP-fiókra a szolgáltatójától vagy a saját maga által üzemeltetett alközponttól. A felvétel a telepítés pillanatától működik; a leirathoz és a feldolgozáshoz egy Ön által választott szolgáltatás vagy egy saját gépen futó modell kell.
@@ -60,6 +62,7 @@ A **Beállítások → Áttekintés** vezeti Ön helyett ezt a listát: a zöld 
 | Kiválasztani a beszédet szöveggé alakító felismerőt | [Átirat](ai-processing/transcription.md) |
 | Eldönteni, melyik MI dolgozza fel a beszélgetéseit, és mennyibe kerülhet | [Feldolgozás](ai-processing/processing.md) |
 | Módosítani a kategóriákat, a címkéket és a figyelmeztető jeleket | [Szótárak](ai-processing/dictionaries.md) |
+| Látni, mi hangzik el hívás közben, és javaslatokat kapni a válaszra | [A súgó ablaka](interface/prompter.md) |
 | Módosítani az elrendezést, a témát, az indulást és a gyorsbillentyűket | [Megjelenés](program/appearance.md), [Indulás](program/startup.md) és [Gyorsbillentyűk](program/shortcuts.md) |
 | Összekötni egy CRM-et vagy más programot | [Webhookok](integration/webhooks.md) és [Helyi REST API](integration/rest-api.md) |
 | Látni, mit mond egymásnak a telefon és az alközpont | [Diagnosztika](troubleshooting/diagnostics.md) |

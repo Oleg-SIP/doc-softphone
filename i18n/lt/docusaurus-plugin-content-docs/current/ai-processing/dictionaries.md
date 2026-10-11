@@ -40,14 +40,16 @@ Pažymėjimai, kurie *visi gali tikti tam pačiam pokalbiui*. Paspauskite **Prid
 
 Dalykai, kuriems reikia dėmesio, rasti pokalbyje su įrodymu ir laiku — pavyzdžiui, *Supykęs klientas* ar *Pasitraukimo rizika*. Įspėjamieji signalai [įrašų lange](../interface/recordings.md) piešiami raudonai, ir kiekvienas turi rimtumą: žemą, vidutinį ar aukštą.
 
-## Atsakymų formos ir kalba {#answer-shapes-and-language}
+## Nurodymai {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Nustatymai → Žodynai: atsakymų formos ir kalbos instrukcijos" />
 
-Toliau skirtuke yra instrukcijos, iš kurių sudaromi nurodymai. Jos laikomos čia, kad kiekvienas nurodymas galėtų naudoti tą pačią formuluotę, ir galite jas keisti kaip bet kurį kitą įrašą.
+*Tai, kas pridedama prie kiekvieno nurodymo apie atsakymo formą ir kalbą, kuria jį rašyti.* Jos laikomos čia, kad kiekvienas nurodymas galėtų naudoti tą pačią formuluotę, ir galite jas keisti kaip bet kurį kitą įrašą — arba parašyti savo, pavyzdžiui, *atsakyk trumpai* ar *niekada nenurodyk kainos*, ir pažymėti jas bet kurio nurodymo skiltyje **Siųsti taip pat**.
 
 | Pavadinimas | Kodas | Ką tai sako modeliui |
 | --- | --- | --- |
+| **Proza** | `shape-plain` | Atsakyti paprasta proza, be JSON, sąrašų ar antraščių. |
+| **Punktai** | `shape-list` | Atsakyti darbų sąrašu, prie kiekvieno nurodant kas ir kada. |
 | **Žymos** | `shape-labels` | Atsakyti JSON formatu su kodų sąrašu ir tikrumu dėl kiekvieno, naudojant tik kodus iš gauto sąrašo. |
 | **Įvertinimas** | `shape-score` | Atsakyti įvertinimu, jo pagrindimu ir žodžiais, kuriais jis remiasi. |
 | **Kriterijai** | `shape-rubric` | Atsakyti bendru įvertinimu ir įvertinimu kiekvienam kriterijui. |
@@ -58,7 +60,7 @@ Toliau skirtuke yra instrukcijos, iš kurių sudaromi nurodymai. Jos laikomos č
 | **Kaip kalbėta, įvardyta** | `language-as-spoken-named` | Tas pats, įvardijant kalbą. |
 | **Nurodyta kalba** | `language-named` | Rašyti jūsų nurodyta kalba. |
 
-**Pridėti** sąrašo gale prideda įrašą.
+**Pridėti** sąrašo viršuje prideda įrašą.
 
 ## Numatytosios reikšmės {#defaults}
 

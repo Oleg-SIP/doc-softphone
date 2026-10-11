@@ -2,7 +2,7 @@
 title: Captura
 sidebar_label: Captura de outras aplicações
 sidebar_position: 1
-description: "\"A captura grava uma conversa feita noutra aplicação — Zoom, Teams, Meet ou qualquer outra — diretamente a partir do computador.\""
+description: "A captura grava uma conversa feita noutra aplicação — Zoom, Teams, Meet ou qualquer outra — diretamente a partir do computador."
 ---
 
 A **Captura** é a forma como o AI Softphone grava uma conversa que decorre noutro programa, como uma reunião no Zoom, no Teams ou no Meet. Grava a partir do próprio computador, mantendo o outro lado e você em canais separados, e no fim esperam-no a mesma transcrição e a mesma redação de uma chamada.
@@ -34,7 +34,7 @@ A parte do programa que faz isto é o módulo **Captura**, *Gravar uma conversa 
 
 ## Iniciar uma captura {#starting-a-capture}
 
-Depois de a captura ser permitida, o fundo da [janela principal](../interface/main-window.md#capture) mostra o seu estado — **Captura · pronta** — com um botão **Gravar** à direita. Carregue em **Gravar** para começar à mão.
+Depois de a captura ser permitida, o fundo da [janela principal](../interface/main-window.md#capture) mostra o seu estado — **Captura · à espera de uma conversa** — com um botão redondo de gravar à direita, *Gravar esta conversa*. Carregue nele para começar à mão.
 
 ### Início automático {#automatic-start}
 
@@ -42,7 +42,7 @@ Depois de a captura ser permitida, o fundo da [janela principal](../interface/ma
 
 | Opção | O que acontece |
 | --- | --- |
-| **Nunca** | Uma captura só começa quando carrega em **Gravar**. |
+| **Nunca** | Uma captura só começa quando carrega no botão de gravar. |
 | **Perguntar-me** | O programa pergunta se a deve gravar. Por omissão. |
 | **Sempre** | O programa começa a gravar sozinho. |
 
@@ -52,7 +52,7 @@ Em **Aplicações com resposta própria** pode dar-se a uma aplicação uma resp
 
 ### Antes do início {#before-the-start}
 
-O cursor **Antes do início** indica quantos segundos de som são guardados de antes de uma gravação começar, **15 segundos** por omissão. Existe para que nada se perca enquanto a conversa é detetada: uma gravação que começa quando carrega em **Gravar**, ou quando responde à pergunta, começa na mesma com as palavras que vieram antes.
+O cursor **Antes do início** indica quantos segundos de som são guardados de antes de uma gravação começar, **15 segundos** por omissão. Existe para que nada se perca enquanto a conversa é detetada: uma gravação que começa quando carrega no botão de gravar, ou quando responde à pergunta, começa na mesma com as palavras que vieram antes.
 
 ## Capturar uma conversa {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Mais duas definições escolhem como é desenhado o nível do som:
 
 | Definição | Por omissão | Onde |
 | --- | --- | --- |
-| **Imagem na janela principal** | Onda | Os dois canais enquanto decorre uma captura. |
-| **Imagem na barra ao pé do telefone** | Dois níveis | As duas barras finas por baixo de **Captura · pronta**. |
+| **Desenho na janela** | Onda | Os dois canais enquanto decorre uma captura. |
+| **Desenho na barra inferior** | Dois níveis | As duas barras finas por baixo de **Captura · à espera de uma conversa**. |
 
 ### Testar {#testing-it}
 
@@ -86,4 +86,4 @@ Uma conversa capturada aparece na [janela de gravações](../interface/recording
 
 <Shot name="01_recordings" alt="Reuniões capturadas no separador Gravações, marcadas com um ícone de janela" />
 
-É transcrita, resumida, arrumada numa categoria e etiquetada pelas mesmas [regras](../ai-processing/processing.md#rules) que uma chamada. Na transcrição de uma reunião capturada, quem fala aparece como **Outra aplicação**, onde uma chamada mostraria o nome do interlocutor; a **Pesquisa** da biblioteca também encontra o que nela foi dito.
+É transcrita, resumida, arrumada numa categoria e etiquetada pelas mesmas [regras](../ai-processing/processing.md#rules) que uma chamada. Na transcrição de uma reunião capturada, quem fala aparece com o nome da gravação, onde uma chamada mostraria o nome do interlocutor; a **Pesquisa** da biblioteca também encontra o que nela foi dito.

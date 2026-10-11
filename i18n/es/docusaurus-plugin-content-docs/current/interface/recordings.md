@@ -22,7 +22,7 @@ En la imagen, las tres primeras filas son una de cada: una reunión de Zoom, un 
 
 ## Encontrar una conversación {#finding-a-conversation}
 
-La barra de arriba tiene cinco filtros, un campo de búsqueda y un menú:
+La barra de arriba tiene cuatro filtros, un campo de búsqueda y un menú:
 
 | Control | Reduce la lista por |
 | --- | --- |
@@ -30,7 +30,6 @@ La barra de arriba tiene cinco filtros, un campo de búsqueda y un menú:
 | **Periodo** | la fecha: **Hoy**, **Ayer**, **Últimos 7 días** o **Elegir fechas…** |
 | **Categoría** | la categoría en la que se clasificó — consulte [Diccionarios](../ai-processing/dictionaries.md) |
 | **Marca** | las etiquetas y señales que lleva |
-| **Reconocedor** | el [reconocedor](../ai-processing/transcription.md) que hizo su transcripción |
 | **Buscar** | lo que se dijo en ella — la búsqueda recorre las transcripciones de todo lo que ha grabado |
 
 <Shot name="39_more_menu" alt="El menú ⋮ de la lista: Importar de archivo(s), Exportar a CSV, Abrir en un navegador" />

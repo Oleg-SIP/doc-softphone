@@ -7,6 +7,7 @@ description: Tässä dokumentaatiossa käytetyt IP-puhelinliikenteen ja AI Softp
 | Termi | Merkitys |
 | --- | --- |
 | **Tili** | Linja: SIP-käyttäjätunnus vaihteessa tai palveluntarjoajalla. Voit olla kirjautuneena useaan. Katso [SIP-tilin määrittäminen](/sip-accounts/setup). |
+| **Avustaja** | Se, mitä kuiskaajan pyydetään olevan sen kuunnellessa: tekstitys, käännös tai ehdotuksia siitä, mitä sanoa. Katso [Kuiskaajan asetukset](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Painike, joka soittaa alanumeroon ja näyttää merkkivalolla, onko se vapaa, soiko se vai onko se varattu. Katso [Painikkeet](/sip-accounts/buttons). |
 | **Koputus** | Mitä puhelin tekee, kun joku soittaa, kun olet jo puhelussa. Katso [Puheluasetukset](/sip-accounts/calls#call-waiting). |
 | **Kaappaus** | Toisessa sovelluksessa, kuten Zoomissa, Teamsissa tai Meetissä, käydyn keskustelun tallentaminen. Katso [Kaappaus](/capture/). |
@@ -19,8 +20,10 @@ description: Tässä dokumentaatiossa käytetyt IP-puhelinliikenteen ja AI Softp
 | **IP-vaihde** | Toimiston puhelinvaihde, joka toimii verkossa; kutsutaan myös softswitchiksi. |
 | **Kielimalli** | Tekoäly, joka lukee litteroinnin ja kirjoittaa siitä. Katso [Käsittely](/ai-processing/processing). |
 | **Kehote** | Se, mitä kielimallilta pyydetään. Katso [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Kuiskaaja** | Ikkuna, joka näyttää puhelun aikana sen, mitä sanotaan, sitä mukaa kuin sanotaan, ja ehdotuksia vastaukseksi. Katso [Kuiskaajan ikkuna](/interface/prompter). |
 | **Tunnistin** | Palvelu, joka muuttaa äänen tekstiksi (puheentunnistus). Katso [Litterointi](/ai-processing/transcription). |
 | **Merkki** | Jotain keskustelussa, joka vaatii huomiota, todisteen ja ajankohdan kera. Katso [Sanastot](/ai-processing/dictionaries#red-flags). |
+| **Harjoitus** | Tallennetun keskustelun syöttäminen kuiskaajalle puhelun sijaan avustajan kokeilemiseksi. Katso [Kuiskaajan ikkuna](/interface/prompter#rehearsing-on-a-recording). |
 | **Rekisteröinti** | Puhelin kertoo vaihteelle, missä se on, jotta puhelut tavoittavat sen. Vihreä piste tilin kohdalla tarkoittaa, että se on rekisteröity. |
 | **Sääntö** | Askel, joka suoritetaan itsestään, järjestyksessä, jokaiselle keskustelulle. Katso [Käsittely](/ai-processing/processing#rules). |
 | **SIP** | Protokolla, jota puhelimet ja vaihteet käyttävät puheluiden muodostamiseen. |

@@ -2,7 +2,7 @@
 title: Fångst
 sidebar_label: Inspelning från andra program
 sidebar_position: 1
-description: "\"Fångst spelar in ett samtal som hålls i ett annat program — Zoom, Teams, Meet eller vilket annat som helst — direkt från datorn.\""
+description: "Fångst spelar in ett samtal som hålls i ett annat program — Zoom, Teams, Meet eller vilket annat som helst — direkt från datorn."
 ---
 
 **Fångst** är sättet AI Softphone spelar in ett samtal som pågår i ett annat program, som ett möte i Zoom, Teams eller Meet. Den spelar in från själva datorn, med den andra sidan och dig på separata kanaler, och samma utskrift och sammanfattning väntar i slutet, precis som för ett telefonsamtal.
@@ -34,7 +34,7 @@ Den del av programmet som gör detta är modulen **Fångst**, *Spela in ett samt
 
 ## Starta en fångst {#starting-a-capture}
 
-När fångst är tillåten visar nederkanten av [huvudfönstret](../interface/main-window.md#capture) dess tillstånd — **Fångst · klar** — med en knapp **Spela in** till höger. Tryck på **Spela in** för att starta för hand.
+När fångst är tillåten visar nederkanten av [huvudfönstret](../interface/main-window.md#capture) dess tillstånd — **Fångst · väntar på ett samtal** — med en rund inspelningsknapp till höger, *Spela in det här samtalet*. Tryck på den för att starta för hand.
 
 ### Automatisk start {#automatic-start}
 
@@ -42,7 +42,7 @@ När fångst är tillåten visar nederkanten av [huvudfönstret](../interface/ma
 
 | Val | Vad som händer |
 | --- | --- |
-| **Aldrig** | En fångst startar bara när du trycker på **Spela in**. |
+| **Aldrig** | En fångst startar bara när du trycker på inspelningsknappen. |
 | **Fråga mig** | Programmet frågar om det ska spelas in. Standard. |
 | **Alltid** | Programmet börjar spela in av sig självt. |
 
@@ -52,7 +52,7 @@ Under **Program med eget svar** kan ett program få ett eget svar — till exemp
 
 ### Före starten {#before-the-start}
 
-Reglaget **Före starten** anger hur många sekunders ljud från före en inspelnings start som sparas, **15 sekunder** som standard. Det finns för att ingenting ska gå förlorat medan samtalet upptäcks: en inspelning som startar när du trycker på **Spela in**, eller när du svarar på frågan, börjar ändå med orden som kom före.
+Reglaget **Före starten** anger hur många sekunders ljud från före en inspelnings start som sparas, **15 sekunder** som standard. Det finns för att ingenting ska gå förlorat medan samtalet upptäcks: en inspelning som startar när du trycker på inspelningsknappen, eller när du svarar på frågan, börjar ändå med orden som kom före.
 
 ## Fånga ett samtal {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Två andra inställningar väljer hur ljudnivån ritas:
 
 | Inställning | Standard | Var |
 | --- | --- | --- |
-| **Bild i huvudfönstret** | Våg | De två kanalerna medan en fångst pågår. |
-| **Bild i raden vid telefonens fot** | Två nivåer | De två tunna staplarna under **Fångst · klar**. |
+| **Bild i fönstret** | Våg | De två kanalerna medan en fångst pågår. |
+| **Bild i listen längst ned** | Två nivåer | De två tunna staplarna under **Fångst · väntar på ett samtal**. |
 
 ### Prova det {#testing-it}
 
@@ -86,4 +86,4 @@ Ett fångat samtal visas i [fönstret Inspelningar](../interface/recordings.md) 
 
 <Shot name="01_recordings" alt="Fångade möten på fliken Inspelningar, markerade med en fönsterikon" />
 
-Det skrivs ut, sammanfattas, sorteras under en kategori och får etiketter av samma [regler](../ai-processing/processing.md#rules) som ett telefonsamtal. I utskriften av ett fångat möte visas talaren som **Ett annat program** där ett telefonsamtal skulle visa den andra partens namn; bibliotekets **Sök** hittar också det som sades i det.
+Det skrivs ut, sammanfattas, sorteras under en kategori och får etiketter av samma [regler](../ai-processing/processing.md#rules) som ett telefonsamtal. I utskriften av ett fångat möte visas talaren med inspelningens namn där ett telefonsamtal skulle visa den andra partens namn; bibliotekets **Sök** hittar också det som sades i det.

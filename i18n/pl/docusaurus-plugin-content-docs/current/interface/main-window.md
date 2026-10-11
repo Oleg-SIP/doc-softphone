@@ -16,7 +16,7 @@ Od góry do dołu po lewej stronie znajdują się:
 - klawiatura i klawisz połączenia;
 - plakietki kont;
 - przyciski obserwujące inne numery wewnętrzne;
-- cztery miejsca, do których można przejść: **Nagrania**, **Kontakty**, **Historia** i **Ustawienia**.
+- miejsca, do których można przejść: **Nagrania**, **Kontakty**, **Historia**, **Sufler** i **Ustawienia**.
 
 ### Wybieranie numeru {#the-dialler}
 
@@ -36,9 +36,9 @@ Pod klawiaturą jest po jednej plakietce dla każdego [konta](../sip-accounts/se
 
 Pod plakietkami są [przyciski](../sip-accounts/buttons.md), które utworzyłeś dla współpracowników i linii, każdy z lampką — na obrazkach **Nowak** i **Magazyn**. Naciśnij przycisk, aby wybrać jego numer.
 
-### Nagrania, Kontakty, Historia, Ustawienia {#recordings-contacts-history-settings}
+### Nagrania, Kontakty, Historia, Sufler, Ustawienia {#recordings-contacts-history-prompter-settings}
 
-Te cztery pozycje na dole otwierają każda zakładkę po prawej, jedną obok drugiej: [Nagrania](../interface/recordings.md), [Kontakty i historia](contacts-history.md) oraz [Ustawienia](settings-overview.md). Otwarte zakładki pozostają w rzędzie u góry prawej strony.
+Te pozycje na dole otwierają każda zakładkę po prawej, jedną obok drugiej: [Nagrania](../interface/recordings.md), [Kontakty i historia](contacts-history.md), [Sufler](prompter.md) oraz [Ustawienia](settings-overview.md). **Sufler** pojawia się dopiero wtedy, gdy sufler jest dozwolony i ma rozpoznawacz, którym może słuchać. Otwarte zakładki pozostają w rzędzie u góry prawej strony.
 
 ## Trwająca rozmowa {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Złączone połączenia pokazują się jako jedna karta **Konferencja** na linii
 
 Gdy [przechwytywanie z innych aplikacji](../capture/capture.md) jest dozwolone w **Ustawienia → Przechwytywanie**, między plakietkami kont a przyciskami pojawia się pasek.
 
-<Shot name="10_settings_capture" full alt="Pasek przechwytywania u dołu telefonu: Przechwytywanie · gotowe, Nagraj i dwa słupki poziomu" />
+<Shot name="10_settings_capture" full alt="Pasek przechwytywania u dołu telefonu: Przechwytywanie · czekam na rozmowę, przycisk nagrywania i dwa słupki poziomu" />
 
-- **Przechwytywanie · gotowe** oznacza, że program nasłuchuje, czy w innej aplikacji toczy się rozmowa.
-- **Nagraj** ręcznie rozpoczyna przechwytywanie.
-- Dwa cienkie słupki pod nim pokazują poziom dźwięku: górny to ty, dolny to to, co odtwarza komputer. Sposób ich rysowania ustawia się w **Obraz w pasku u dołu telefonu**.
+- **Przechwytywanie · czekam na rozmowę** oznacza, że program nasłuchuje, czy w innej aplikacji toczy się rozmowa.
+- Okrągły przycisk po prawej ręcznie rozpoczyna przechwytywanie.
+- Dwa cienkie słupki pod nim pokazują poziom dźwięku: górny to ty, dolny to to, co odtwarza komputer. Sposób ich rysowania ustawia się w **Rysunek na pasku u dołu**.
 
 Program może też mieszkać w zasobniku (na pasku menu w macOS) i być przywoływany [skrótem klawiszowym](../program/shortcuts.md).

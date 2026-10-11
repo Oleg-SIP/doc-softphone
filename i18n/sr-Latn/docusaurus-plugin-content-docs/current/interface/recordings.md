@@ -1,7 +1,7 @@
 ---
 title: Prozor snimaka
 sidebar_position: 2
-description: "\"Biblioteka svakog razgovora — poziva, uvezene datoteke ili sastanka uhvaćenog iz Zooma, Teamsa ili Meeta: filteri, plejer, prepis koji možete da pustite od bilo kog reda i obrade.\""
+description: "Biblioteka svakog razgovora — poziva, uvezene datoteke ili sastanka uhvaćenog iz Zooma, Teamsa ili Meeta: filteri, plejer, prepis koji možete da pustite od bilo kog reda i obrade."
 ---
 
 **Snimci** su mesto gde živi svaki razgovor, kako god da je stigao: poziv upućen ili primljen u telefonu, zvučna datoteka koju ste uvezli ili sastanak uhvaćen iz Zooma, Teamsa, Meeta ili bilo koje druge aplikacije. Svi stoje na jednom spisku i svaki se otvara na isti način: plejer, prepis i sve što je jezički model napisao o njemu. Pritisnite **Snimci** dole levo u [glavnom prozoru](main-window.md) da ga otvorite.
@@ -22,7 +22,7 @@ Na slici su gornja tri reda po jedan od svake vrste: Zoom sastanak, uvezena dato
 
 ## Pronalaženje razgovora {#finding-a-conversation}
 
-Traka na vrhu ima pet filtera, polje za pretragu i meni:
+Traka na vrhu ima četiri filtera, polje za pretragu i meni:
 
 | Kontrola | Sužava spisak prema |
 | --- | --- |
@@ -30,7 +30,6 @@ Traka na vrhu ima pet filtera, polje za pretragu i meni:
 | **Razdoblje** | datumu: **Danas**, **Juče**, **Poslednjih 7 dana** ili **Izaberite datume…** |
 | **Kategorija** | kategoriji u koju je svrstan — pogledajte [Rečnici](../ai-processing/dictionaries.md) |
 | **Znak** | oznakama i upozorenjima koje nosi |
-| **Prepoznavač** | [prepoznavaču](../ai-processing/transcription.md) koji je napravio njegov prepis |
 | **Pretraga** | onome što je u njemu rečeno — pretraga prolazi kroz prepise svega što ste snimili |
 
 <Shot name="39_more_menu" alt="Meni ⋮ spiska: Uvezi iz datoteka, Izvezi u CSV, Otvori u pregledaču" />

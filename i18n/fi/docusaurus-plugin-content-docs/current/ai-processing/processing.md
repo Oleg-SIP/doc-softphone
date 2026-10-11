@@ -1,7 +1,7 @@
 ---
 title: Käsittely
 sidebar_position: 2
-description: Keskustelujen automaattinen käsittely, kuukausittaiset kulurajat, kielimallit, kehotteet ja niitä suorittavat säännöt.
+description: Keskustelujen automaattinen käsittely, kielimallit, kehotteet, niitä suorittavat säännöt ja kuukausittaiset kulurajat.
 ---
 
 **Asetukset → Käsittely** päättää, mitä keskustelulle tapahtuu sen tallentamisen jälkeen, mikä malli tekee työn ja mitä se saa maksaa.
@@ -13,20 +13,9 @@ description: Keskustelujen automaattinen käsittely, kuukausittaiset kulurajat, 
 - **Pois:** mitään ei tapahdu, ennen kuin pyydät sitä [Tallenteet-ikkunassa](../interface/recordings.md).
 - **Päällä:** alla olevat [säännöt](#rules) suoritetaan itsestään. Tämä muuttaa keskustelun tiivistelmäksi, luokaksi ja kaikeksi muuksi ilman, että kenenkään tarvitsee painaa mitään. Pilvessä oleva malli laskuttaa jokaisesta näistä askelista.
 
-Valintaruudun alla ohjelma näyttää, mitä tässä kuussa on käytetty ja kuinka monella pyynnöllä, esimerkiksi *Tässä kuussa: 40.492 tokenia, 84 pyynnöllä, maksutta.*
-
-## Rajat {#limits}
-
-| Kenttä | Merkitys |
-| --- | --- |
-| **Raharaja, kuukaudessa** | Enimmäismäärä, jonka mallit saavat maksaa kuukaudessa. |
-| **Tokenraja, kuukaudessa** | Enimmäismäärä tokeneita, joita ne saavat käyttää kuukaudessa. |
-
-Rajoja on kaksi, koska kuukauden voi laskea kahdella tavalla. Molemmat ovat tyhjiä, kunnes täytät ne. Kun jompikumpi saavutetaan, automaattiset säännöt pysähtyvät kuukauden vaihtumiseen asti. **Itse pyytämääsi ei koskaan pysäytetä.**
-
 ## Kielimallit {#language-models}
 
-Mallit, jotka lukevat litteroinnin ja kirjoittavat siitä. Paina **Lisää** lisätäksesi sellaisen. Jokainen näkyy luettelossa nimellään, ja sen alla on mallin tunniste ja palvelun osoite, esimerkiksi `qwen3-32b · http://llm.local:8000/v1`. Merkinnällä **oletus** varustettua käytetään oletuksena. Mallin lomakkeessa oleva painike tarkistaa, että palvelu todella vastaa, ennen kuin luotat siihen.
+Mallit, jotka lukevat litteroinnin ja kirjoittavat siitä. Paina **Lisää** lisätäksesi sellaisen. Jokainen näkyy luettelossa nimellään, ja sen alla on mallin tunniste ja palvelun osoite, esimerkiksi `qwen3-32b · http://localhost:8000/v1`. Merkinnällä **oletus** varustettua — kuvassa **QWEN**, tällä tietokoneella toimiva malli — käytetään oletuksena: kehotteissa ja niissä [kuiskaajan](prompter.md) avustajissa, jotka eivät nimeä omaa malliaan. Mallin lomakkeen **Kokeile** tarkistaa, että palvelu todella vastaa, ennen kuin luotat siihen.
 
 - Malli **omalla koneellasi** pitää jokaisen keskustelun talon sisällä eikä maksa mitään.
 - Pilvessä oleva malli — OpenAI, Claude, Mistral, DeepSeek, Groq ja muut — laskutetaan käytön mukaan. Ohjelma näyttää jokaisen kutsun hinnan tokeneina ja rahana.
@@ -35,7 +24,7 @@ Mallit, jotka lukevat litteroinnin ja kirjoittavat siitä. Paina **Lisää** lis
 
 <Shot name="12b_settings_processing_prompts" alt="Asetukset → Käsittely: kehotteet" />
 
-*Se, mitä malleilta pyydetään.* Jokainen kehote tuli ohjelman mukana, ja jokainen on sinun muutettavissasi — ja palautettavissasi. Jokainen näkyy luettelossa nimellään, ja sen alla kerrotaan, mitä se kirjoittaa ja missä muodossa. Muoto — **Vastaus**, **Kohdat**, **Tunnisteet**, **JSON**, **Proosa**, **Merkit** tai **Kriteerit** — päättää, miten vastaus säilytetään ja näytetään. Kehotteet on kuvattu sivulla [Personal Prompt Studio](prompt-studio.md). **Lisää** tekee oman kehotteen.
+*Se, mitä malleilta pyydetään.* Jokainen kehote tuli ohjelman mukana, ja jokainen on sinun muutettavissasi — ja palautettavissasi. Jokainen näkyy luettelossa nimellään, ja sen alla kerrotaan, mitä se kirjoittaa ja missä muodossa; **▲** ja **▼** muuttavat luettelon järjestystä. Muoto — **Vastaus**, **Kohdat**, **Tunnisteet**, **JSON**, **Proosa**, **Merkit** tai **Kriteerit** — päättää, miten vastaus säilytetään ja näytetään. Kehotteet on kuvattu sivulla [Personal Prompt Studio](prompt-studio.md). **Lisää** tekee oman kehotteen.
 
 ## Säännöt {#rules}
 
@@ -55,6 +44,19 @@ Mallit, jotka lukevat litteroinnin ja kirjoittavat siitä. Paina **Lisää** lis
 | **Arvioi se, jos kyse oli tuesta** | Pyytää mallilta: **Tuen laatu**. | vain jos luokka on **Tuki** |
 
 Järjestyksellä on väliä: kaksi viimeistä sääntöä tarvitsevat luokan, jonka niitä edeltävä sääntö on asettanut. **Lisää** tekee oman säännön.
+
+## Kulut {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Asetukset → Käsittely: kuukauden kulut ja kaksi rajaa" />
+
+Kohdassa **Kulut** ohjelma näyttää, mitä tässä kuussa on käytetty ja kuinka monella pyynnöllä — kuvassa *Tässä kuussa ei ole käsitelty mitään*, ja esimerkiksi *Tässä kuussa: 40.492 tokenia, 84 pyynnöllä, maksutta*, kun jotain on käsitelty.
+
+| Kenttä | Merkitys |
+| --- | --- |
+| **Raharaja, kuukaudessa** | Enimmäismäärä, jonka mallit saavat maksaa kuukaudessa. |
+| **Tokenraja, kuukaudessa** | Enimmäismäärä tokeneita, joita ne saavat käyttää kuukaudessa. |
+
+Rajoja on kaksi, koska kuukauden voi laskea kahdella tavalla. Molemmat ovat tyhjiä, kunnes täytät ne. Kun jompikumpi saavutetaan, automaattiset säännöt pysähtyvät kuukauden vaihtumiseen asti. **Itse pyytämääsi ei koskaan pysäytetä.** [Kuiskaajalla](prompter.md#spending) on omat kattonsa, jotta kuukauden tiivistelmät eivät voi vaientaa sitä kesken keskustelun.
 
 ## Oletusarvot {#defaults}
 

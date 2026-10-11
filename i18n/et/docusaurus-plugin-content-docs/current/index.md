@@ -20,6 +20,8 @@ Salvestisi, ülestähendusi ja ajalugu hoitakse failis, mis kuulub teile. Kontot
 3. See kirjutatakse üles kõneleja kaupa, heliga sünkroonis.
 4. Teie valitud keelemudel teeb sellest kokkuvõtte: kokkuvõte, ülesanded, kategooria, sildid ja hoiatussignaalid — ning te saate vestluselt küsimuse küsida.
 
+Kõne ajal saab [Etteütleja](interface/prompter.md) minna kaugemale: see näitab öeldut samal ajal, kui seda öeldakse, ja soovitab, mida vastata.
+
 ## Allalaadimine ja süsteeminõuded {#download-and-system-requirements}
 
 Programmi saab tasuta alla laadida aadressilt [ai-softphone.com](https://ai-softphone.com/#download): paigaldaja (`.exe`) Windowsile, kettatõmmis (`.dmg`) macOS-ile ning AppImage või `.deb` Linuxile. Paigaldaja, kettatõmmis ja AppImage ei vaja midagi eelnevalt paigaldatut — Qt, OpenSSL ja C++ käituskeskkond on neis kaasas. Erand on `.deb`: see kasutab süsteemi enda C++ käituskeskkonda, vt allpool. Teil on vaja SIP-kontot oma teenusepakkujalt või ise hallatavast keskjaamast. Salvestamine töötab kohe pärast programmi paigaldamist; ülestähendus ja kokkuvõte vajavad teie valitud teenust või mudelit teie enda arvutis.
@@ -60,6 +62,7 @@ Selle dokumentatsiooni ekraanipildid on tehtud macOS-is ja näidatud väikestena
 | Valida tuvastaja, mis muudab kõne tekstiks | [Ülestähendus](ai-processing/transcription.md) |
 | Otsustada, milline tehisintellekt teeb teie vestlustest kokkuvõtteid ja kui palju see võib maksta | [Töötlemine](ai-processing/processing.md) |
 | Muuta kategooriaid, silte ja hoiatussignaale | [Sõnastikud](ai-processing/dictionaries.md) |
+| Näha kõne ajal öeldut ja saada soovitusi, mida vastata | [Etteütleja aken](interface/prompter.md) |
 | Muuta paigutust, teemat, käivitumist ja otseteid | [Välimus](program/appearance.md), [Käivitumine](program/startup.md) ja [Otseteed](program/shortcuts.md) |
 | Ühendada CRM või mõni muu programm | [Veebikonksud](integration/webhooks.md) ja [Kohalik REST API](integration/rest-api.md) |
 | Näha, mida telefon ja keskjaam teineteisele ütlevad | [Diagnostika](troubleshooting/diagnostics.md) |

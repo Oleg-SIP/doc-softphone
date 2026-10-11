@@ -7,6 +7,7 @@ description: Pojmy IP telefónie a AI Softphone používané v tejto dokumentác
 | Pojem | Význam |
 | --- | --- |
 | **Účet** | Linka: SIP používateľské meno na ústredni alebo u operátora. Môžete byť prihlásení na viacerých. Pozrite [Nastavenie SIP účtu](/sip-accounts/setup). |
+| **Pomocník** | To, čím má byť našepkávač, kým počúva: titulky, preklad alebo návrhy, čo povedať. Pozri [Nastavenia našepkávača](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Tlačidlo, ktoré vytočí klapku a kontrolkou ukazuje, či je voľná, zvoní alebo je obsadená. Pozrite [Tlačidlá](/sip-accounts/buttons). |
 | **Čakajúci hovor** | Čo telefón urobí, keď niekto volá, kým už máte hovor. Pozrite [Nastavenia hovorov](/sip-accounts/calls#call-waiting). |
 | **Zachytávanie** | Nahrávanie rozhovoru vedeného v inej aplikácii, napríklad v Zoome, Teams alebo Meet. Pozrite [Zachytávanie](/capture/). |
@@ -19,8 +20,10 @@ description: Pojmy IP telefónie a AI Softphone používané v tejto dokumentác
 | **IP ústredňa** | Telefónna ústredňa kancelárie bežiaca v sieti; nazýva sa aj softswitch. |
 | **Jazykový model** | AI, ktorá prečíta prepis a píše o ňom. Pozrite [Spracovanie](/ai-processing/processing). |
 | **Pokyn** | To, o čo je jazykový model žiadaný. Pozrite [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Našepkávač** | Okno, ktoré počas hovoru ukazuje, čo sa hovorí, práve keď sa to hovorí, a návrhy, čo odpovedať. Pozri [Okno našepkávača](/interface/prompter). |
 | **Rozpoznávač** | Služba, ktorá premieňa zvuk na text (rozpoznávanie reči). Pozrite [Prepis](/ai-processing/transcription). |
 | **Varovný signál** | Niečo v rozhovore, čo si vyžaduje pozornosť, s dôkazom a časom. Pozrite [Slovníky](/ai-processing/dictionaries#red-flags). |
+| **Skúška** | Prehranie nahraného rozhovoru našepkávaču namiesto hovoru, aby ste vyskúšali pomocníka. Pozri [Okno našepkávača](/interface/prompter#rehearsing-on-a-recording). |
 | **Registrácia** | Telefón oznamuje ústredni, kde je, aby k nemu hovory došli. Zelená bodka pri účte znamená, že je zaregistrovaný. |
 | **Pravidlo** | Krok, ktorý beží sám, v poradí, pri každom rozhovore. Pozrite [Spracovanie](/ai-processing/processing#rules). |
 | **SIP** | Protokol, ktorým telefóny a ústredne zostavujú hovory. |

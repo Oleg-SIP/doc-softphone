@@ -2,7 +2,7 @@
 title: Przechwytywanie
 sidebar_label: Przechwytywanie z innych aplikacji
 sidebar_position: 1
-description: "\"Przechwytywanie nagrywa rozmowę prowadzoną w innej aplikacji — Zoomie, Teams, Meet czy dowolnej innej — prosto z komputera.\""
+description: "Przechwytywanie nagrywa rozmowę prowadzoną w innej aplikacji — Zoomie, Teams, Meet czy dowolnej innej — prosto z komputera."
 ---
 
 **Przechwytywanie** to sposób, w jaki AI Softphone nagrywa rozmowę toczącą się w innym programie, na przykład spotkanie w Zoomie, Teams lub Meet. Nagrywa z samego komputera, trzymając drugą stronę i ciebie na osobnych kanałach, a na końcu czekają ta sama transkrypcja i to samo opracowanie co przy połączeniu.
@@ -34,7 +34,7 @@ Część programu, która to robi, to moduł **Przechwytywanie**, *Nagrywanie ro
 
 ## Rozpoczynanie przechwytywania {#starting-a-capture}
 
-Gdy przechwytywanie jest dozwolone, na dole [okna głównego](../interface/main-window.md#capture) widać jego stan — **Przechwytywanie · gotowe** — z przyciskiem **Nagraj** po prawej. Naciśnij **Nagraj**, aby rozpocząć ręcznie.
+Gdy przechwytywanie jest dozwolone, na dole [okna głównego](../interface/main-window.md#capture) widać jego stan — **Przechwytywanie · czekam na rozmowę** — z okrągłym przyciskiem nagrywania po prawej, *Nagraj tę rozmowę*. Naciśnij go, aby rozpocząć ręcznie.
 
 ### Automatyczne uruchamianie {#automatic-start}
 
@@ -42,7 +42,7 @@ Gdy przechwytywanie jest dozwolone, na dole [okna głównego](../interface/main-
 
 | Wybór | Co się dzieje |
 | --- | --- |
-| **Nigdy** | Przechwytywanie zaczyna się tylko po naciśnięciu **Nagraj**. |
+| **Nigdy** | Przechwytywanie zaczyna się tylko po naciśnięciu przycisku nagrywania. |
 | **Pytaj mnie** | Program pyta, czy nagrać. Domyślnie. |
 | **Zawsze** | Program zaczyna nagrywać sam. |
 
@@ -52,7 +52,7 @@ W sekcji **Aplikacje z własną odpowiedzią** aplikacji można nadać własną 
 
 ### Przed początkiem {#before-the-start}
 
-Suwak **Przed początkiem** określa, ile sekund dźwięku sprzed rozpoczęcia nagrania jest zachowywane, domyślnie **15 sekund**. Jest po to, żeby nic nie przepadło, zanim rozmowa zostanie zauważona: nagranie, które zaczyna się po naciśnięciu **Nagraj** albo po odpowiedzi na pytanie, i tak zaczyna się od słów, które padły wcześniej.
+Suwak **Przed początkiem** określa, ile sekund dźwięku sprzed rozpoczęcia nagrania jest zachowywane, domyślnie **15 sekund**. Jest po to, żeby nic nie przepadło, zanim rozmowa zostanie zauważona: nagranie, które zaczyna się po naciśnięciu przycisku nagrywania albo po odpowiedzi na pytanie, i tak zaczyna się od słów, które padły wcześniej.
 
 ## Przechwytywanie rozmowy {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Dwa kolejne ustawienia wybierają, jak rysowany jest poziom dźwięku:
 
 | Ustawienie | Domyślnie | Gdzie |
 | --- | --- | --- |
-| **Obraz w oknie głównym** | Fala | Oba kanały podczas przechwytywania. |
-| **Obraz w pasku u dołu telefonu** | Dwa poziomy | Dwa cienkie słupki pod **Przechwytywanie · gotowe**. |
+| **Rysunek w oknie** | Fala | Oba kanały podczas przechwytywania. |
+| **Rysunek na pasku u dołu** | Dwa poziomy | Dwa cienkie słupki pod **Przechwytywanie · czekam na rozmowę**. |
 
 ### Sprawdzanie {#testing-it}
 
@@ -86,4 +86,4 @@ Przechwycona rozmowa pojawia się w [oknie nagrań](../interface/recordings.md) 
 
 <Shot name="01_recordings" alt="Przechwycone spotkania w zakładce Nagrania, oznaczone ikoną okna" />
 
-Jest spisywana, podsumowywana, przypisywana do kategorii i oznaczana etykietami przez te same [reguły](../ai-processing/processing.md#rules) co połączenie. W transkrypcji przechwyconego spotkania mówca jest pokazany jako **Inna aplikacja** tam, gdzie przy połączeniu byłaby nazwa drugiej strony; **Szukaj** w bibliotece znajduje także to, co w nim powiedziano.
+Jest spisywana, podsumowywana, przypisywana do kategorii i oznaczana etykietami przez te same [reguły](../ai-processing/processing.md#rules) co połączenie. W transkrypcji przechwyconego spotkania mówca jest pokazany pod nazwą nagrania tam, gdzie przy połączeniu byłaby nazwa drugiej strony; **Szukaj** w bibliotece znajduje także to, co w nim powiedziano.

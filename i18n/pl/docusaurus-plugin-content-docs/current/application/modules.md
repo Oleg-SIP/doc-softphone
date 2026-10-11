@@ -25,8 +25,9 @@ Każdy moduł ma pole wyboru, nazwę, wiersz o tym, co robi, a po prawej swój s
 | **Integracja** | Lokalne API i webhooki: [Integracja](/integration/rest-api). |
 | **Magazyn mediów** | Biblioteka rozmów i jak długo są przechowywane: [Nagrania](/interface/recordings). |
 | **Przetwarzanie** | Polecenia i reguły, które je uruchamiają: [Przetwarzanie](/ai-processing/processing). |
+| **Sufler** | Słucha rozmowy w jej trakcie i podpowiada: [Okno suflera](/interface/prompter). |
 | **Nagrywanie** | Nagrywanie połączeń i informowanie o tym drugiej strony: [Nagrania](/recordings). |
-| **Telefonia** | SIP, konta, połączenia, pole wybierania i historia połączeń. |
+| **Telefon** | SIP, konta, połączenia, pole wybierania i historia połączeń. |
 | **Transkrypcja** | Rozpoznawacze, kolejka, która je napędza, i transkrypcje, które tworzą: [Transkrypcja](/ai-processing/transcription). |
 
 Wyłącz moduł, a zniknie: żadnych jego ustawień, żadnej pozycji w menu, nic z niego nie działa. Wyłącz moduł, który nie jest ci potrzebny — na przykład **Integracja** na komputerze, na którym nic innego nie rozmawia z telefonem — albo zostaw telefon, który jest tylko telefonem, jeśli to wszystko, czego potrzebuje stanowisko. Pakiet jest w obu przypadkach ten sam: nie ma nic do kupienia ani do odblokowania.

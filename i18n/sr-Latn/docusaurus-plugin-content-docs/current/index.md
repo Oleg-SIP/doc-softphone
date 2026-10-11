@@ -20,6 +20,8 @@ Snimci, prepisi i istorija čuvaju se u datoteci koja je vaša. Ne trebaju vam n
 3. Prepisuje se, govornik po govornik, usklađeno sa zvukom.
 4. Jezički model koji ste izabrali ga obrađuje: sažetak, zadaci, kategorija, oznake i upozorenja — a razgovoru možete postaviti i pitanje.
 
+Tokom poziva [Šaptač](interface/prompter.md) može da ide i dalje: prikazuje ono što se govori dok se govori i predlaže šta odgovoriti.
+
 ## Preuzimanje i sistemski zahtevi {#download-and-system-requirements}
 
 Program se besplatno preuzima sa [ai-softphone.com](https://ai-softphone.com/#download): instalacioni program (`.exe`) za Windows, slika diska (`.dmg`) za macOS i AppImage ili `.deb` za Linux. Instalacioni program, slika diska i AppImage ne traže ništa prethodno instalirano — Qt, OpenSSL i C++ biblioteke nalaze se u njima. Izuzetak je `.deb`: on koristi C++ biblioteke samog sistema, pogledajte niže. Trebaće vam SIP nalog kod vašeg operatera ili na centrali koju sami vodite. Snimanje radi čim se program instalira; za prepis i obradu potrebna je usluga koju izaberete ili model na sopstvenom računaru.
@@ -60,6 +62,7 @@ Snimci ekrana u ovoj dokumentaciji napravljeni su na macOS-u i prikazani umanjen
 | Izaberete prepoznavač koji govor pretvara u tekst | [Prepisivanje](ai-processing/transcription.md) |
 | Odlučite koja veštačka inteligencija obrađuje vaše razgovore i koliko to sme da košta | [Obrada](ai-processing/processing.md) |
 | Promenite kategorije, oznake i upozorenja | [Rečnici](ai-processing/dictionaries.md) |
+| Videti šta se govori tokom poziva i dobiti predloge šta odgovoriti | [Prozor šaptača](interface/prompter.md) |
 | Promenite raspored, temu, pokretanje i prečice | [Izgled](program/appearance.md), [Pokretanje](program/startup.md) i [Prečice](program/shortcuts.md) |
 | Povežete CRM ili drugi program | [Veb-kuke](integration/webhooks.md) i [Lokalni REST API](integration/rest-api.md) |
 | Vidite šta jedno drugom govore telefon i centrala | [Dijagnostika](troubleshooting/diagnostics.md) |

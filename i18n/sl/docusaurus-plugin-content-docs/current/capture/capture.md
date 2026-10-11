@@ -2,7 +2,7 @@
 title: Zajemanje
 sidebar_label: Zajem iz drugih programov
 sidebar_position: 1
-description: "\"Zajemanje posname pogovor v drugem programu — Zoomu, Teams, Meetu ali katerem koli drugem — kar z računalnika.\""
+description: "Zajemanje posname pogovor v drugem programu — Zoomu, Teams, Meetu ali katerem koli drugem — kar z računalnika."
 ---
 
 **Zajemanje** je način, kako AI Softphone posname pogovor, ki poteka v drugem programu, na primer sestanek v Zoomu, Teams ali Meetu. Snema kar z računalnika, pri čemer drugo stran in vas drži na ločenih kanalih, na koncu pa čakata enak prepis in obdelava kot pri klicu.
@@ -34,7 +34,7 @@ Del programa, ki to počne, je modul **Zajemanje**, *snemanje pogovora, ki teče
 
 ## Začetek zajemanja {#starting-a-capture}
 
-Ko je zajemanje dovoljeno, dno [glavnega okna](../interface/main-window.md#capture) pokaže njegovo stanje — **Zajemanje · pripravljeno** — z gumbom **Snemaj** na desni. Pritisnite **Snemaj**, da začnete ročno.
+Ko je zajemanje dovoljeno, dno [glavnega okna](../interface/main-window.md#capture) pokaže njegovo stanje — **Zajemanje · čakam pogovor** — z okroglim gumbom za snemanje na desni, *Posnemi ta pogovor*. Pritisnite ga, da začnete ročno.
 
 ### Samodejni zagon {#automatic-start}
 
@@ -42,7 +42,7 @@ Ko je zajemanje dovoljeno, dno [glavnega okna](../interface/main-window.md#captu
 
 | Izbira | Kaj se zgodi |
 | --- | --- |
-| **Nikoli** | Zajemanje se začne le, ko pritisnete **Snemaj**. |
+| **Nikoli** | Zajemanje se začne le, ko pritisnete gumb za snemanje. |
 | **Vprašaj me** | Program vpraša, ali naj ga posname. Privzeto. |
 | **Vedno** | Program začne snemati sam. |
 
@@ -52,7 +52,7 @@ Pod **Programi z lastnim odgovorom** lahko program dobi svoj odgovor — na prim
 
 ### Pred začetkom {#before-the-start}
 
-Drsnik **Pred začetkom** določa, koliko sekund zvoka se obdrži izpred začetka snemanja, privzeto **15 sekund**. Je zato, da se nič ne izgubi, medtem ko se pogovor opazi: posnetek, ki se začne, ko pritisnete **Snemaj** ali ko odgovorite na vprašanje, se vseeno začne z besedami, ki so bile izrečene prej.
+Drsnik **Pred začetkom** določa, koliko sekund zvoka se obdrži izpred začetka snemanja, privzeto **15 sekund**. Je zato, da se nič ne izgubi, medtem ko se pogovor opazi: posnetek, ki se začne, ko pritisnete gumb za snemanje ali ko odgovorite na vprašanje, se vseeno začne z besedami, ki so bile izrečene prej.
 
 ## Zajemanje pogovora {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Med snemanjem glavno okno pokaže rdečo piko, ime posnetka (na primer **Sestane
 
 | Nastavitev | Privzeto | Kje |
 | --- | --- | --- |
-| **Slika v glavnem oknu** | Val | Oba kanala med zajemanjem. |
-| **Slika v pasu ob vznožju telefona** | Dve ravni | Tanka pasova pod **Zajemanje · pripravljeno**. |
+| **Risba v oknu** | Val | Oba kanala med zajemanjem. |
+| **Risba v vrstici na dnu** | Dve ravni | Tanka pasova pod **Zajemanje · čakam pogovor**. |
 
 ### Preizkus {#testing-it}
 
@@ -78,12 +78,12 @@ Pod **Preveri** ima zavihek dva stolpca: **Vi** in **Druga stran**. *Zgornji sto
 
 ## Poimenovanje {#giving-it-a-name}
 
-Svinčnik poleg imena posnetka omogoča, da ga preimenujete, medtem ko teče. Posnetek, ki ga niste poimenovali, je naveden kot **Drug program**.
+Svinčnik poleg imena posnetka omogoča, da ga preimenujete, medtem ko teče. Posnetek, ki ga niste poimenovali, je naveden kot **Druga aplikacija**.
 
 ## Kam gre posnetek {#where-the-recording-goes}
 
-Zajet pogovor se pojavi v [oknu Posnetki](../interface/recordings.md) kot vsak drug, s svojo ikono, oknom namesto slušalke, in z naslovom, ki ste mu ga dali, ali **Drug program**.
+Zajet pogovor se pojavi v [oknu Posnetki](../interface/recordings.md) kot vsak drug, s svojo ikono, oknom namesto slušalke, in z naslovom, ki ste mu ga dali, ali **Druga aplikacija**.
 
 <Shot name="01_recordings" alt="Zajeti sestanki v zavihku Posnetki, označeni z ikono okna" />
 
-Prepiše se, povzame, uvrsti v kategorijo in označi po istih [pravilih](../ai-processing/processing.md#rules) kot klic. V prepisu zajetega sestanka je govorec prikazan kot **Drug program** tam, kjer bi klic pokazal ime druge strani; **Išči** v knjižnici najde tudi, kar je bilo rečeno v njem.
+Prepiše se, povzame, uvrsti v kategorijo in označi po istih [pravilih](../ai-processing/processing.md#rules) kot klic. V prepisu zajetega sestanka je govorec prikazan z imenom posnetka tam, kjer bi klic pokazal ime druge strani; **Išči** v knjižnici najde tudi, kar je bilo rečeno v njem.

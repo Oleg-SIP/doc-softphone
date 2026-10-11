@@ -16,7 +16,7 @@ Iš viršaus į apačią kairėje pusėje yra:
 - klaviatūra ir skambinimo klavišas;
 - paskyrų ženkliukai;
 - mygtukai, stebintys kitus vidinius numerius;
-- keturios vietos, kur eiti: **Įrašai**, **Kontaktai**, **Istorija** ir **Nustatymai**.
+- vietos, kur eiti: **Įrašai**, **Kontaktai**, **Istorija**, **Suflerius** ir **Nustatymai**.
 
 ### Numerio rinkiklis {#the-dialler}
 
@@ -36,9 +36,9 @@ Po klaviatūra yra po vieną ženkliuką kiekvienai [paskyrai](../sip-accounts/s
 
 Po ženkliukais yra [mygtukai](../sip-accounts/buttons.md), kuriuos sukūrėte kolegoms ir linijoms, kiekvienas su lempute — paveikslėliuose **Kazlauskas** ir **Sandėlis**. Paspauskite mygtuką, kad paskambintumėte jo numeriu.
 
-### Įrašai, Kontaktai, Istorija, Nustatymai {#recordings-contacts-history-settings}
+### Įrašai, Kontaktai, Istorija, Suflerius, Nustatymai {#recordings-contacts-history-prompter-settings}
 
-Šie keturi įrašai apačioje kiekvienas atveria skirtuką dešinėje, vieną šalia kito: [Įrašai](../interface/recordings.md), [Kontaktai ir istorija](contacts-history.md) ir [Nustatymai](settings-overview.md). Atverti skirtukai lieka eilutėje dešinės pusės viršuje.
+Šie įrašai apačioje kiekvienas atveria skirtuką dešinėje, vieną šalia kito: [Įrašai](../interface/recordings.md), [Kontaktai ir istorija](contacts-history.md), [Suflerius](prompter.md) ir [Nustatymai](settings-overview.md). **Suflerius** atsiranda tik tada, kai suflerius leidžiamas ir turi atpažintuvą, kuriuo klausytis. Atverti skirtukai lieka eilutėje dešinės pusės viršuje.
 
 ## Vykstantis skambutis {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Sujungti skambučiai rodomi kaip viena kortelė **Konferencija** paskyros linijo
 
 Kai [perėmimas iš kitų programų](../capture/capture.md) leidžiamas skiltyje **Nustatymai → Fiksavimas**, tarp paskyrų ženkliukų ir mygtukų atsiranda juosta.
 
-<Shot name="10_settings_capture" full alt="Fiksavimo juosta telefono apačioje: Fiksavimas · pasiruošta, Įrašyti ir du lygio stulpeliai" />
+<Shot name="10_settings_capture" full alt="Fiksavimo juosta telefono apačioje: Fiksavimas · laukiu pokalbio, įrašymo mygtukas ir du lygio stulpeliai" />
 
-- **Fiksavimas · pasiruošta** reiškia, kad programa klausosi, ar kitoje programoje vyksta pokalbis.
-- **Įrašyti** pradeda fiksavimą rankomis.
-- Du ploni stulpeliai po juo rodo garso lygį: viršutinis esate jūs, apatinis — tai, ką groja kompiuteris. Kaip jie piešiami, nustatoma skiltyje **Vaizdas juostoje telefono papėdėje**.
+- **Fiksavimas · laukiu pokalbio** reiškia, kad programa klausosi, ar kitoje programoje vyksta pokalbis.
+- Apvalus mygtukas dešinėje pradeda fiksavimą rankomis.
+- Du ploni stulpeliai po juo rodo garso lygį: viršutinis esate jūs, apatinis — tai, ką groja kompiuteris. Kaip jie piešiami, nustatoma skiltyje **Piešinys apatinėje juostoje**.
 
 Programa taip pat gali būti dėkle (macOS — meniu juostoje) ir būti iškviesta [sparčiuoju klavišu](../program/shortcuts.md).

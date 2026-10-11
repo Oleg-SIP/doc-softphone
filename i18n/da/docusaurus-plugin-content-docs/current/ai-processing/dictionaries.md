@@ -40,14 +40,16 @@ Mærker, der *alle kan passe på den samme samtale*. Tryk på **Tilføj** for at
 
 Ting, der kræver opmærksomhed, fundet i samtalen med beviset og tidspunktet — for eksempel *Vred kunde* eller *Risiko for opsigelse*. Signaler tegnes med rødt i [vinduet Optagelser](../interface/recordings.md), og hvert har en alvorsgrad: lav, middel eller høj.
 
-## Svarformer og sprog {#answer-shapes-and-language}
+## Anvisninger {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Indstillinger → Ordlister: svarformer og sproginstruktioner" />
 
-Længere nede på fanen står de instruktioner, prompterne sættes sammen af. De gemmes her, så hver prompt kan bruge samme ordlyd, og du kan ændre dem som enhver anden post.
+*Det, der føjes til hver prompt om svarets form og sproget at skrive det på.* De gemmes her, så hver prompt kan bruge samme ordlyd, og du kan ændre dem som enhver anden post — eller skrive dine egne, såsom *svar kort* eller *nævn aldrig en pris*, og sætte flueben ved dem under **Send også** på en hvilken som helst prompt.
 
 | Navn | Kode | Hvad den fortæller modellen |
 | --- | --- | --- |
+| **Løbende tekst** | `shape-plain` | Svar i almindelig løbende tekst, uden JSON, lister eller overskrifter. |
+| **Punkter** | `shape-list` | Svar med en liste over ting, der skal gøres, hver med hvem og hvornår. |
 | **Etiketter** | `shape-labels` | Svar i JSON med en liste af koder og hvor sikker den er på hver, kun med koder fra den liste, den har fået. |
 | **Karakter** | `shape-score` | Svar med en karakter, begrundelsen for den og de ord, den bygger på. |
 | **Kriterier** | `shape-rubric` | Svar med en samlet karakter og en karakter for hvert kriterium. |
@@ -58,7 +60,7 @@ Længere nede på fanen står de instruktioner, prompterne sættes sammen af. De
 | **Som talt, navngivet** | `language-as-spoken-named` | Det samme, med sprogets navn. |
 | **Et navngivet sprog** | `language-named` | Skriv på det sprog, du angiver. |
 
-**Tilføj** for enden af listen tilføjer en post.
+**Tilføj** øverst på listen tilføjer en post.
 
 ## Standardværdier {#defaults}
 

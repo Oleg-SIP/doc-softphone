@@ -28,7 +28,9 @@ Die zweite Spalte ist das, was die Liste unter dem Namen des Prompts zeigt: was 
 | **Vertriebsqualität** | Kriterien | Bewertet das Gespräch nach Vertriebskriterien, die Sie bearbeiten können. |
 | **Supportqualität** | Kriterien | Beurteilt, wie gut das Problem verstanden und behandelt wurde. |
 
-Die Formen sind feste Gestalten einer Antwort, die es dem Programm erlauben, sie zu speichern und später zu durchsuchen: **Label** sind Codes aus einer Ihrer Listen, **Auffälligkeiten** sind Codes mit einem Schweregrad, **Kriterien** sind eine Bewertung mit Begründung und einer Bewertung je Kriterium, **Antwort** ist eine Antwort mit den Worten, auf die sie sich stützt. Die Anweisungen, die einem Modell die Form beschreiben, liegen in den [Verzeichnissen](dictionaries.md#answer-shapes-and-language).
+Die Formen sind feste Gestalten einer Antwort, die es dem Programm erlauben, sie zu speichern und später zu durchsuchen: **Label** sind Codes aus einer Ihrer Listen, **Auffälligkeiten** sind Codes mit einem Schweregrad, **Kriterien** sind eine Bewertung mit Begründung und einer Bewertung je Kriterium, **Antwort** ist eine Antwort mit den Worten, auf die sie sich stützt. Die Anweisungen, die einem Modell die Form beschreiben, liegen in den [Verzeichnissen](dictionaries.md#instructions).
+
+Auch die Helfer des [Souffleurs](../interface/prompter.md) sind Prompts, die während eines Anrufs auf jede Äußerung angewendet werden statt auf ein fertiges Gespräch. Sie stehen in einer eigenen Liste, unter [Helfer](prompter.md#assistants) in **Einstellungen → Souffleur**.
 
 In AI Softphone geführte Anrufe, vom Computer [mitgeschnittene](/capture/) Besprechungen und importierte Aufnahmen laufen durch dieselben Prompts, sobald sie ein Transkript haben.
 
@@ -41,6 +43,6 @@ Aufgaben halten fest, was vereinbart wurde — sie senden keine Nachrichten, buc
 - Wählen Sie das Modell für jeden Prompt — auf Ihrem eigenen Rechner oder in der Cloud.
 - Legen Sie die Reihenfolge fest, in der Prompts laufen, schalten Sie sie ein und aus und knüpfen Sie sie an Bedingungen — das geschieht mit den [Regeln](processing.md#rules): Eine Vertriebsbewertung läuft zum Beispiel nur bei Gesprächen der Kategorie **Vertrieb**.
 - Pflegen Sie Ihre eigenen Kategorien, Label und Auffälligkeiten in den [Verzeichnissen](dictionaries.md).
-- Begrenzen Sie die Kosten mit den [monatlichen Grenzen](processing.md#limits).
+- Begrenzen Sie die Kosten mit den [monatlichen Grenzen](processing.md#spending).
 
 Die ursprünglichen Prompts und Regeln stellen Sie mit **Voreinstellungen wiederherstellen** unter **Voreinstellungen** in [Einstellungen → Verarbeitung](processing.md#defaults) wieder her.

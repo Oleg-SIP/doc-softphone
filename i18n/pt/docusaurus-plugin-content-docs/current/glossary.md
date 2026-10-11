@@ -7,6 +7,7 @@ description: Os termos da telefonia IP e do AI Softphone usados nesta documenta�
 | Termo | Significado |
 | --- | --- |
 | **Conta** | Uma linha: um utilizador SIP numa central ou num fornecedor. Pode ter sessão iniciada em várias. Veja [Configurar uma conta SIP](/sip-accounts/setup). |
+| **Assistente** | O que se pede ao ponto que seja enquanto ouve: legendas, uma tradução ou sugestões do que dizer. Ver [Definições do ponto](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Um botão que liga para uma extensão e mostra com uma luz se está livre, a tocar ou ocupada. Veja [Botões](/sip-accounts/buttons). |
 | **Chamada em espera** | O que o telefone faz quando alguém liga enquanto já está numa chamada. Veja [Definições de chamadas](/sip-accounts/calls#call-waiting). |
 | **Captura** | Gravar uma conversa feita noutra aplicação, como o Zoom, o Teams ou o Meet. Veja [Captura](/capture/). |
@@ -19,8 +20,10 @@ description: Os termos da telefonia IP e do AI Softphone usados nesta documenta�
 | **Central IP** | A central telefónica de um escritório, a funcionar numa rede; também chamada softswitch. |
 | **Modelo de língua** | A IA que lê uma transcrição e escreve sobre ela. Veja [Processamento](/ai-processing/processing). |
 | **Instrução** | O que é pedido a um modelo de língua (em inglês, prompt). Veja [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Ponto** | Uma janela que mostra o que se diz durante uma chamada à medida que é dito, e sugestões do que responder. Ver [Janela do ponto](/interface/prompter). |
 | **Reconhecedor** | O serviço que transforma áudio em texto (reconhecimento de voz). Veja [Transcrição](/ai-processing/transcription). |
 | **Sinal** | Algo numa conversa que merece atenção, com a prova e o momento. Veja [Dicionários](/ai-processing/dictionaries#red-flags). |
+| **Ensaio** | Fazer ouvir ao ponto uma conversa gravada em vez de uma chamada, para experimentar um assistente. Ver [Janela do ponto](/interface/prompter#rehearsing-on-a-recording). |
 | **Registo** | O telefone a dizer à central onde está, para que as chamadas lhe cheguem. Um ponto verde na conta significa que está registada. |
 | **Regra** | Um passo que corre sozinho, por ordem, em todas as conversas. Veja [Processamento](/ai-processing/processing#rules). |
 | **SIP** | O protocolo que os telefones e as centrais usam para estabelecer chamadas. |

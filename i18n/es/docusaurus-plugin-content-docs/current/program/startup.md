@@ -1,7 +1,7 @@
 ---
 title: Arranque
 sidebar_position: 2
-description: "\"Arrancar el teléfono con el ordenador, mantenerlo en marcha con la ventana cerrada y abrir enlaces tel:, callto: y sip:.\""
+description: "Arrancar el teléfono con el ordenador, mantenerlo en marcha con la ventana cerrada y abrir enlaces tel:, callto: y sip:."
 ---
 
 **Ajustes → Arranque** decide cómo arranca el programa, qué hace al cerrar su ventana y qué ocurre cuando hace clic en un número de teléfono en otro programa.

@@ -20,6 +20,8 @@ Aufnahmen, Transkripte und der Verlauf liegen in einer Datei, die Ihnen gehört.
 3. Es wird Sprecher für Sprecher transkribiert, im Gleichlauf mit dem Ton.
 4. Das Sprachmodell Ihrer Wahl wertet es aus: Zusammenfassung, Aufgaben, Kategorie, Label und Auffälligkeiten — und Sie können dem Gespräch eine Frage stellen.
 
+Während eines Anrufs kann der [Souffleur](interface/prompter.md) noch weiter gehen: Er zeigt, was gesagt wird, während es gesagt wird, und schlägt vor, was Sie antworten können.
+
 ## Download und Systemvoraussetzungen {#download-and-system-requirements}
 
 Das Programm ist kostenlos auf [ai-softphone.com](https://ai-softphone.com/?lang=de#download) erhältlich: ein Installer (`.exe`) für Windows, ein Disk-Image (`.dmg`) für macOS und ein AppImage oder ein `.deb` für Linux. Installer, Disk-Image und AppImage setzen keine vorherige Installation voraus — Qt, OpenSSL und die C++-Laufzeit sind darin enthalten. Die Ausnahme ist das `.deb`: Es nutzt die C++-Laufzeit des Systems, siehe unten. Sie benötigen ein SIP-Konto von Ihrem Anbieter oder von der Telefonanlage, die Sie selbst betreiben. Die Aufnahme funktioniert sofort nach der Installation; Transkript und Auswertung brauchen einen Dienst Ihrer Wahl oder ein Modell auf Ihrem eigenen Rechner.
@@ -60,6 +62,7 @@ Die Bildschirmfotos in dieser Dokumentation stammen von macOS und werden verklei
 | den Spracherkenner wählen möchten, der Sprache in Text verwandelt | [Transkription](ai-processing/transcription.md) |
 | festlegen möchten, welche KI Ihre Gespräche auswertet und was das kosten darf | [Verarbeitung](ai-processing/processing.md) |
 | Kategorien, Label und Auffälligkeiten ändern möchten | [Verzeichnisse](ai-processing/dictionaries.md) |
+| Sehen, was während eines Anrufs gesagt wird, und Vorschläge für eine Antwort bekommen | [Souffleur-Fenster](interface/prompter.md) |
 | Anordnung, Farbschema, Start und Tastenkürzel ändern möchten | [Erscheinungsbild](program/appearance.md), [Start](program/startup.md) und [Tastenkürzel](program/shortcuts.md) |
 | ein CRM oder ein anderes Programm anbinden möchten | [Webhooks](integration/webhooks.md) und [Lokale REST-API](integration/rest-api.md) |
 | sehen möchten, was Telefon und Telefonanlage miteinander besprechen | [Diagnose](troubleshooting/diagnostics.md) |

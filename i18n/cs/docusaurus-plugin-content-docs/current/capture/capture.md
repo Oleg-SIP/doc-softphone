@@ -34,7 +34,7 @@ Nahrává se vše, co počítač přehrává, nejen rozhovor. Tento telefon nem�
 
 ## Spuštění zachytávání {#starting-a-capture}
 
-Jakmile je zachytávání povoleno, dolní část [hlavního okna](../interface/main-window.md#capture) ukazuje jeho stav — **Zachytávání · čekám na hovor** — s tlačítkem **Nahrát** vpravo. Stiskem **Nahrát** spustíte nahrávání ručně.
+Jakmile je zachytávání povoleno, dolní část [hlavního okna](../interface/main-window.md#capture) ukazuje jeho stav — **Zachytávání · čekám na hovor** — s kulatým tlačítkem nahrávání vpravo, *Nahrát tento hovor*. Stiskem ho spustíte ručně.
 
 ### Automatické spuštění {#automatic-start}
 
@@ -42,7 +42,7 @@ Jakmile je zachytávání povoleno, dolní část [hlavního okna](../interface/
 
 | Volba | Co se stane |
 | --- | --- |
-| **Nikdy** | Zachytávání začne, jen když stisknete **Nahrát**. |
+| **Nikdy** | Zachytávání začne, jen když stisknete tlačítko nahrávání. |
 | **Zeptat se mě** | Program se zeptá, zda rozhovor nahrát. Výchozí. |
 | **Vždy** | Program začne nahrávat sám. |
 
@@ -52,7 +52,7 @@ V části **Aplikace s vlastní odpovědí** lze jednotlivé aplikaci dát vlast
 
 ### Před začátkem {#before-the-start}
 
-Posuvník **Před začátkem** určuje, kolik sekund zvuku se uchová z doby před začátkem nahrávání, ve výchozím stavu **15 sekund**. Je tu proto, aby se nic neztratilo, zatímco se rozhovor rozpoznává: nahrávka, která začne stiskem **Nahrát** nebo vaší odpovědí na otázku, stejně začíná slovy, která zazněla předtím.
+Posuvník **Před začátkem** určuje, kolik sekund zvuku se uchová z doby před začátkem nahrávání, ve výchozím stavu **15 sekund**. Je tu proto, aby se nic neztratilo, zatímco se rozhovor rozpoznává: nahrávka, která začne stiskem tlačítka nahrávání nebo vaší odpovědí na otázku, stejně začíná slovy, která zazněla předtím.
 
 ## Zachycení rozhovoru {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Dvě další nastavení vybírají, jak se kreslí úroveň zvuku:
 
 | Nastavení | Výchozí | Kde |
 | --- | --- | --- |
-| **Obraz v hlavním okně** | Vlna | Oba kanály během zachytávání. |
-| **Obraz v pruhu u paty telefonu** | Dvě úrovně | Dva tenké pruhy pod stavem zachytávání. |
+| **Kresba v okně** | Vlna | Oba kanály během zachytávání. |
+| **Kresba v liště dole** | Dvě úrovně | Dva tenké pruhy pod **Zachytávání · čekám na hovor**. |
 
 ### Vyzkoušení {#testing-it}
 
@@ -86,4 +86,4 @@ Zachycený rozhovor se objeví v [okně nahrávek](../interface/recordings.md) j
 
 <Shot name="01_recordings" alt="Zachycené schůzky na kartě Nahrávky, označené ikonou okna" />
 
-Přepíše se, shrne, zařadí do kategorie a oštítkuje podle stejných [pravidel](../ai-processing/processing.md#rules) jako hovor. V přepisu zachycené schůzky je mluvčí uveden jako **Jiná aplikace** tam, kde by hovor ukázal jméno druhé strany; **Hledat** v knihovně najde i to, co v ní zaznělo.
+Přepíše se, shrne, zařadí do kategorie a oštítkuje podle stejných [pravidel](../ai-processing/processing.md#rules) jako hovor. V přepisu zachycené schůzky je mluvčí uveden názvem nahrávky tam, kde by hovor ukázal jméno druhé strany; **Hledat** v knihovně najde i to, co v ní zaznělo.

@@ -1,7 +1,7 @@
 ---
 title: Veebikonksud
 sidebar_position: 1
-description: "\"Laske telefonil saata teie CRM-ile või muule süsteemile päring, kui kõne algab, muutub või lõpeb — koos sissetuleva ja väljamineva kõne täpsete päringutega.\""
+description: "Laske telefonil saata teie CRM-ile või muule süsteemile päring, kui kõne algab, muutub või lõpeb — koos sissetuleva ja väljamineva kõne täpsete päringutega."
 ---
 
 Veebikonks on päring, mille telefon saadab teie valitud aadressile iga kord, kui kõnega midagi juhtub. Nii saab CRM avada kliendikaardi enne teist helinat, logida kõne selle lõppedes või süüdata seinatahvlil tule. Veebikonks ei vaja sissetulevaid tulemüüri reegleid: telefon võtab teiega ise ühendust. Kuna päringud saadetakse tööjaamast, peab aadress olema kättesaadav ainult sellest arvutist — sisemine `http://crm.local/calls` töötab sama hästi kui avalik HTTPS-aadress.

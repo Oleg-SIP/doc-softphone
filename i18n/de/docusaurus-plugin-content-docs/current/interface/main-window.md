@@ -16,7 +16,7 @@ Von oben nach unten enthält die linke Seite:
 - die Wähltasten und die Anruftaste;
 - die Kontochips;
 - die Tasten, die andere Nebenstellen beobachten;
-- die vier Ziele: **Aufnahmen**, **Kontakte**, **Verlauf** und **Einstellungen**.
+- die Ziele: **Aufnahmen**, **Kontakte**, **Verlauf**, **Souffleur** und **Einstellungen**.
 
 ### Die Wählhilfe {#the-dialler}
 
@@ -36,9 +36,9 @@ Unter den Wähltasten gibt es einen Chip für jedes [Konto](../sip-accounts/setu
 
 Unter den Chips stehen die [Tasten](../sip-accounts/buttons.md), die Sie für Kollegen und Leitungen angelegt haben, jede mit einer Lampe — in den Bildern **Weber** und **Lager**. Drücken Sie eine, um ihre Nummer zu wählen.
 
-### Aufnahmen, Kontakte, Verlauf, Einstellungen {#recordings-contacts-history-settings}
+### Aufnahmen, Kontakte, Verlauf, Souffleur, Einstellungen {#recordings-contacts-history-prompter-settings}
 
-Diese vier Einträge unten öffnen rechts einen Reiter, nebeneinander: [Aufnahmen](../interface/recordings.md), [Kontakte und Verlauf](contacts-history.md) und [Einstellungen](settings-overview.md). Geöffnete Reiter bleiben in der Reihe oben auf der rechten Seite.
+Diese Einträge unten öffnen rechts einen Reiter, nebeneinander: [Aufnahmen](../interface/recordings.md), [Kontakte und Verlauf](contacts-history.md), den [Souffleur](prompter.md) und [Einstellungen](settings-overview.md). **Souffleur** steht erst da, wenn der Souffleur erlaubt ist und einen Spracherkenner hat, mit dem er zuhören kann. Geöffnete Reiter bleiben in der Reihe oben auf der rechten Seite.
 
 ## Ein laufendes Gespräch {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Zusammengeführte Gespräche erscheinen als eine Karte **Konferenz** auf der Lei
 
 Ist unter **Einstellungen → Mitschnitt** der [Mitschnitt anderer Anwendungen](../capture/capture.md) erlaubt, erscheint zwischen den Kontochips und den Tasten eine Leiste.
 
-<Shot name="10_settings_capture" full alt="Die Mitschnittleiste am Fuß des Telefons: Mitschnitt · warte auf ein Gespräch, Aufnehmen und zwei Pegelbalken" />
+<Shot name="10_settings_capture" full alt="Die Mitschnittleiste am Fuß des Telefons: Mitschnitt · warte auf ein Gespräch, die Aufnahmetaste und zwei Pegelbalken" />
 
 - **Mitschnitt · warte auf ein Gespräch** sagt, dass das Programm auf ein Gespräch in einer anderen Anwendung wartet.
-- **Aufnehmen** startet einen Mitschnitt von Hand.
-- Die zwei dünnen Balken darunter zeigen den Pegel des Tons: Der obere sind Sie, der untere ist das, was der Computer abspielt. Wie sie gezeichnet werden, wird unter **Bild in der Leiste am Fuß des Telefons** eingestellt.
+- Die runde Taste rechts startet einen Mitschnitt von Hand.
+- Die zwei dünnen Balken darunter zeigen den Pegel des Tons: Der obere sind Sie, der untere ist das, was der Computer abspielt. Wie sie gezeichnet werden, wird unter **Bild in der Fußleiste** eingestellt.
 
 Das Programm kann auch im Infobereich leben (auf macOS in der Menüleiste) und mit einem [Tastenkürzel](../program/shortcuts.md) hervorgeholt werden.

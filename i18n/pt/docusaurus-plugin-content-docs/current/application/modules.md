@@ -25,8 +25,9 @@ Cada módulo tem uma caixa, um nome, uma linha que diz o que faz e, à direita, 
 | **Integração** | A API local e os webhooks: [Integração](/integration/rest-api). |
 | **Arquivo de média** | A biblioteca de conversas e durante quanto tempo são guardadas: [Gravações](/interface/recordings). |
 | **Processamento** | As instruções e as regras que as disparam: [Processamento](/ai-processing/processing). |
+| **Ponto** | Ouve uma conversa em curso e sugere: [Janela do ponto](/interface/prompter). |
 | **Gravação** | Gravar chamadas, e avisar o interlocutor disso: [Gravações](/recordings). |
-| **Telefonia** | SIP, contas, chamadas, o marcador e o registo de chamadas. |
+| **Telefone** | SIP, contas, chamadas, o marcador e o registo de chamadas. |
 | **Transcrição** | Os reconhecedores, a fila que os alimenta e as transcrições que produzem: [Transcrição](/ai-processing/transcription). |
 
 Desligue um módulo e ele desaparece: nada de definições para ele, nada de entrada de menu, nada dele a funcionar. Desligue um módulo de que não precisa — por exemplo **Integração** num computador onde nada mais fala com o telefone — ou fique com um telefone que é só um telefone, quando é tudo o que um posto precisa. O pacote é o mesmo em qualquer caso: não há nada para comprar nem nada para desbloquear.

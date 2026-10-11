@@ -1,7 +1,7 @@
 ---
 title: Veb-kuke
 sidebar_position: 1
-description: "\"Neka telefon vašem CRM-u ili drugom sistemu pošalje zahtev kada poziv počne, promeni se ili završi — sa tačnim zahtevima dolaznog i odlaznog poziva.\""
+description: "Neka telefon vašem CRM-u ili drugom sistemu pošalje zahtev kada poziv počne, promeni se ili završi — sa tačnim zahtevima dolaznog i odlaznog poziva."
 ---
 
 Veb-kuka je zahtev koji telefon šalje na adresu po vašem izboru svaki put kada se sa pozivom nešto desi. Zahvaljujući njoj CRM može da otvori karticu kupca pre drugog zvona, zabeleži poziv kada se završi ili upali lampicu na zidnoj tabli. Veb-kuka ne zahteva pravila zaštitnog zida za dolazni saobraćaj: telefon se povezuje sa vama. Pošto se zahtevi šalju sa radne stanice, adresa mora biti dostupna samo sa tog računara — interna `http://crm.local/calls` radi jednako dobro kao javna HTTPS adresa.

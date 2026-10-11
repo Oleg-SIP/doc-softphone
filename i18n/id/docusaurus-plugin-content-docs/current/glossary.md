@@ -7,6 +7,7 @@ description: Istilah telepon IP dan AI Softphone yang digunakan dalam dokumentas
 | Istilah | Arti |
 | --- | --- |
 | **Akun** | Sebuah saluran: nama pengguna SIP di PBX atau pada penyedia. Anda dapat masuk di beberapa akun sekaligus. Lihat [Menyiapkan akun SIP](/sip-accounts/setup). |
+| **Asisten** | Peran pembisik saat mendengarkan: teks terjemahan langsung, terjemahan, atau saran tentang apa yang perlu dikatakan. Lihat [Pengaturan pembisik](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Tombol yang memanggil sebuah ekstensi dan menunjukkan dengan lampu apakah ekstensi itu bebas, berdering, atau sibuk. Lihat [Tombol](/sip-accounts/buttons). |
 | **Panggilan menunggu** | Apa yang dilakukan telepon ketika seseorang menelepon saat Anda sedang dalam panggilan. Lihat [Pengaturan panggilan](/sip-accounts/calls#call-waiting). |
 | **Penangkapan** | Merekam percakapan yang berlangsung di aplikasi lain, seperti Zoom, Teams, atau Meet. Lihat [Penangkapan](/capture/). |
@@ -19,8 +20,10 @@ description: Istilah telepon IP dan AI Softphone yang digunakan dalam dokumentas
 | **IP PBX** | Sentral telepon kantor yang berjalan di jaringan; disebut juga softswitch. |
 | **Model bahasa** | AI yang membaca transkrip dan menulis tentangnya. Lihat [Pemrosesan](/ai-processing/processing). |
 | **Petunjuk** | Apa yang diminta dari model bahasa. Lihat [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Pembisik** | Jendela yang menampilkan apa yang diucapkan selama panggilan saat diucapkan, beserta saran jawaban. Lihat [Jendela pembisik](/interface/prompter). |
 | **Pengenal suara** | Layanan yang mengubah audio menjadi teks (pengenalan ucapan). Lihat [Transkripsi](/ai-processing/transcription). |
 | **Tanda peringatan** | Sesuatu dalam percakapan yang perlu diperhatikan, beserta bukti dan waktunya. Lihat [Kamus](/ai-processing/dictionaries#red-flags). |
+| **Latihan** | Memutar percakapan yang direkam ke pembisik sebagai ganti panggilan, untuk mencoba asisten. Lihat [Jendela pembisik](/interface/prompter#rehearsing-on-a-recording). |
 | **Registrasi** | Telepon memberi tahu PBX di mana ia berada, agar panggilan dapat sampai kepadanya. Titik hijau pada akun berarti akun itu terdaftar. |
 | **Aturan** | Langkah yang berjalan sendiri, berurutan, pada setiap percakapan. Lihat [Pemrosesan](/ai-processing/processing#rules). |
 | **SIP** | Protokol yang digunakan telepon dan PBX untuk membangun panggilan. |

@@ -20,6 +20,8 @@ Opnames, transcripten en geschiedenis worden bewaard in een bestand dat van u is
 3. Het wordt uitgeschreven, spreker voor spreker, gelijk met de audio.
 4. Het taalmodel dat u kiest werkt het uit: samenvatting, taken, categorie, labels en signalen — en u kunt het gesprek een vraag stellen.
 
+Tijdens een gesprek gaat de [Souffleur](interface/prompter.md) nog verder: hij laat zien wat er gezegd wordt terwijl het gezegd wordt, en stelt voor wat u kunt antwoorden.
+
 ## Downloaden en systeemvereisten {#download-and-system-requirements}
 
 Het programma is gratis te downloaden van [ai-softphone.com](https://ai-softphone.com/#download): een installatieprogramma (`.exe`) voor Windows, een schijfkopie (`.dmg`) voor macOS, en een AppImage of een `.deb` voor Linux. Het installatieprogramma, de schijfkopie en de AppImage hebben vooraf niets anders nodig — Qt, OpenSSL en de C++-runtime zitten erin. De uitzondering is het `.deb`-pakket: dat gebruikt de C++-runtime van het systeem zelf, zie hieronder. U hebt een SIP-account nodig, van uw provider of van de centrale die u zelf beheert. Opnemen werkt zodra het programma geïnstalleerd is; het transcript en de uitwerking vragen een dienst die u kiest of een model op uw eigen machine.
@@ -60,6 +62,7 @@ De schermafbeeldingen in deze documentatie zijn op macOS gemaakt en klein weerge
 | De herkenner kiezen die spraak in tekst omzet | [Transcriptie](ai-processing/transcription.md) |
 | Bepalen welke AI uw gesprekken uitwerkt en wat dat mag kosten | [Verwerking](ai-processing/processing.md) |
 | De categorieën, labels en signalen wijzigen | [Woordenlijsten](ai-processing/dictionaries.md) |
+| Zien wat er tijdens een gesprek gezegd wordt, en suggesties krijgen voor een antwoord | [Souffleurvenster](interface/prompter.md) |
 | De indeling, het thema, het opstarten en de sneltoetsen wijzigen | [Uiterlijk](program/appearance.md), [Opstarten](program/startup.md) en [Sneltoetsen](program/shortcuts.md) |
 | Een CRM of een ander programma koppelen | [Webhooks](integration/webhooks.md) en [Lokale REST-API](integration/rest-api.md) |
 | Zien wat de telefoon en de centrale tegen elkaar zeggen | [Diagnose](troubleshooting/diagnostics.md) |

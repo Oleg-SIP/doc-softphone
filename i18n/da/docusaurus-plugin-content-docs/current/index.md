@@ -20,6 +20,8 @@ Optagelser, udskrifter og historik gemmes i en fil, som du ejer. Der kræves ing
 3. Den skrives ud, taler for taler, i takt med lyden.
 4. Den sprogmodel, du har valgt, opsummerer den: resumé, opgaver, kategori, etiketter og signaler — og du kan stille samtalen et spørgsmål.
 
+Under et opkald kan [Suffløren](interface/prompter.md) gå videre: den viser, hvad der bliver sagt, mens det bliver sagt, og foreslår, hvad du kan svare.
+
 ## Download og systemkrav {#download-and-system-requirements}
 
 Programmet kan hentes gratis fra [ai-softphone.com](https://ai-softphone.com/#download): et installationsprogram (`.exe`) til Windows, et diskbillede (`.dmg`) til macOS og en AppImage eller en `.deb` til Linux. Installationsprogrammet, diskbilledet og AppImage kræver ikke, at noget andet installeres først — Qt, OpenSSL og C++-runtime følger med i dem. Undtagelsen er `.deb`: den bruger systemets egen C++-runtime, se nedenfor. Du skal bruge en SIP-konto, fra din udbyder eller fra det omstillingsanlæg, du selv driver. Optagelse virker, så snart programmet er installeret; udskriften og opsummeringen kræver en tjeneste, du vælger, eller en model på din egen maskine.
@@ -60,6 +62,7 @@ Skærmbillederne i denne dokumentation er taget på macOS og vises små: klik p�
 | Vælge den genkender, der gør tale til tekst | [Transskription](ai-processing/transcription.md) |
 | Bestemme, hvilken AI der opsummerer dine samtaler, og hvad det må koste | [Behandling](ai-processing/processing.md) |
 | Ændre kategorier, etiketter og signaler | [Ordlister](ai-processing/dictionaries.md) |
+| Se, hvad der bliver sagt under et opkald, og få forslag til, hvad du kan svare | [Sufflørens vindue](interface/prompter.md) |
 | Ændre layout, tema, opstart og genveje | [Udseende](program/appearance.md), [Opstart](program/startup.md) og [Genveje](program/shortcuts.md) |
 | Forbinde et CRM eller et andet program | [Webhooks](integration/webhooks.md) og [Lokalt REST-API](integration/rest-api.md) |
 | Se, hvad telefonen og omstillingsanlægget siger til hinanden | [Diagnostik](troubleshooting/diagnostics.md) |

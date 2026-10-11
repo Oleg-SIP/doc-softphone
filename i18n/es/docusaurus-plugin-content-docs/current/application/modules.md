@@ -25,8 +25,9 @@ Cada módulo tiene una casilla, un nombre, una línea que dice lo que hace y, a 
 | **Integración** | La API local y los webhooks: [Integración](/integration/rest-api). |
 | **Almacén de medios** | La biblioteca de conversaciones y cuánto tiempo se conservan: [Grabaciones](/interface/recordings). |
 | **Procesamiento** | Las instrucciones y las reglas que las disparan: [Procesamiento](/ai-processing/processing). |
+| **Apuntador** | Escucha una conversación en curso y sugiere: [Ventana del apuntador](/interface/prompter). |
 | **Grabación** | Grabar llamadas, y avisar de ello al interlocutor: [Grabaciones](/recordings). |
-| **Telefonía** | SIP, cuentas, llamadas, el marcador y el historial de llamadas. |
+| **Teléfono** | SIP, cuentas, llamadas, el marcador y el historial de llamadas. |
 | **Transcripción** | Los reconocedores, la cola que los alimenta y las transcripciones que producen: [Transcripción](/ai-processing/transcription). |
 
 Apague un módulo y desaparece: sin ajustes para él, sin entrada de menú, nada suyo en marcha. Apague un módulo que no le sirva — por ejemplo **Integración** en un ordenador donde nada más habla con el teléfono — o quédese con un teléfono que es solo un teléfono, cuando es todo lo que necesita un puesto. El paquete es el mismo en ambos casos: no hay nada que comprar ni nada que desbloquear.

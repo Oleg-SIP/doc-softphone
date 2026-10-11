@@ -1,7 +1,7 @@
 ---
 title: Fereastra Înregistrări
 sidebar_position: 2
-description: "\"Biblioteca tuturor conversațiilor — un apel, un fișier importat sau o ședință captată din Zoom, Teams ori Meet: filtre, playerul, transcrierea pe care o puteți reda de la orice rând și prelucrările.\""
+description: "Biblioteca tuturor conversațiilor — un apel, un fișier importat sau o ședință captată din Zoom, Teams ori Meet: filtre, playerul, transcrierea pe care o puteți reda de la orice rând și prelucrările."
 ---
 
 **Înregistrări** este locul în care se află fiecare conversație, indiferent cum a sosit: un apel făcut sau primit în telefon, un fișier audio importat de dumneavoastră sau o ședință captată din Zoom, Teams, Meet ori din orice altă aplicație. Toate stau într-o singură listă, iar fiecare se deschide la fel: playerul, transcrierea și tot ce a scris modelul de limbă despre ea. Apăsați **Înregistrări** în stânga jos în [fereastra principală](main-window.md) ca să o deschideți.
@@ -16,13 +16,13 @@ Pictograma din stânga rândului arată cum a ajuns conversația aici.
 | --- | --- | --- | --- |
 | Receptor cu o săgeată | Un apel făcut sau primit în acest telefon. Săgeata arată spre interior pentru un apel primit și spre exterior pentru unul efectuat. | Numele contactului sau numărul | Înregistrată conform setărilor din [Înregistrări](../recordings.md) |
 | Săgeată într-o bară | Un fișier importat din altă parte: de pe un telefon mobil, un reportofon sau alt sistem | Numele fișierului | **⋮ → Importă din fișiere**; vedeți [mai jos](#a-recording-you-already-have) |
-| Fereastră | O ședință ținută într-o altă aplicație | Numele pe care l-ați dat sau **Altă aplicație** | [Captare](../capture/capture.md) |
+| Fereastră | O ședință ținută într-o altă aplicație | Numele pe care l-ați dat sau **O altă aplicație** | [Captare](../capture/capture.md) |
 
 În imagine, primele trei rânduri sunt câte unul din fiecare fel: o ședință Zoom, un fișier importat cu un apel la o bancă și un apel primit pe linia **305 Asistență**. Indiferent de sursă, sunt transcrise, prelucrate și căutate la fel.
 
 ## Găsirea unei conversații {#finding-a-conversation}
 
-Bara din partea de sus are cinci filtre, un câmp de căutare și un meniu:
+Bara din partea de sus are patru filtre, un câmp de căutare și un meniu:
 
 | Control | Restrânge lista după |
 | --- | --- |
@@ -30,7 +30,6 @@ Bara din partea de sus are cinci filtre, un câmp de căutare și un meniu:
 | **Perioadă** | dată: **Astăzi**, **Ieri**, **Ultimele 7 zile** sau **Alege datele…** |
 | **Categorie** | categoria în care a fost încadrată — consultați [Dicționare](../ai-processing/dictionaries.md) |
 | **Marcaj** | etichetele și semnalele de alarmă pe care le poartă |
-| **Recunoscător** | [recunoscătorul](../ai-processing/transcription.md) care a făcut transcrierea |
 | **Caută** | ce s-a spus în ea — căutarea parcurge transcrierile a tot ce ați înregistrat |
 
 <Shot name="39_more_menu" alt="Meniul ⋮ al listei: Importă din fișiere, Exportă în CSV, Deschide într-un navigator" />

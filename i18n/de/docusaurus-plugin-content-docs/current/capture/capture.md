@@ -34,7 +34,7 @@ Der Teil des Programms, der das tut, ist das Modul **Mitschnitt**, *ein Gespräc
 
 ## Einen Mitschnitt starten {#starting-a-capture}
 
-Sobald der Mitschnitt erlaubt ist, zeigt der untere Teil des [Hauptfensters](../interface/main-window.md#capture) seinen Zustand — **Mitschnitt · warte auf ein Gespräch** — mit einer Taste **Aufnehmen** rechts. Drücken Sie **Aufnehmen**, um von Hand zu starten.
+Sobald der Mitschnitt erlaubt ist, zeigt der untere Teil des [Hauptfensters](../interface/main-window.md#capture) seinen Zustand — **Mitschnitt · warte auf ein Gespräch** — mit einer runden Aufnahmetaste rechts, *Dieses Gespräch aufnehmen*. Drücken Sie sie, um von Hand zu starten.
 
 ### Automatischer Start {#automatic-start}
 
@@ -42,7 +42,7 @@ Sobald der Mitschnitt erlaubt ist, zeigt der untere Teil des [Hauptfensters](../
 
 | Auswahl | Was passiert |
 | --- | --- |
-| **Nie** | Ein Mitschnitt beginnt nur, wenn Sie **Aufnehmen** drücken. |
+| **Nie** | Ein Mitschnitt beginnt nur, wenn Sie die Aufnahmetaste drücken. |
 | **Nachfragen** | Das Programm fragt, ob es aufnehmen soll. Der Standard. |
 | **Immer** | Das Programm beginnt die Aufnahme von selbst. |
 
@@ -52,7 +52,7 @@ Unter **Anwendungen mit eigener Antwort** kann eine Anwendung eine eigene Antwor
 
 ### Vor dem Beginn {#before-the-start}
 
-Der Schieberegler **Vor dem Beginn** gibt an, wie viele Sekunden Ton aus der Zeit vor dem Start einer Aufnahme aufbewahrt werden, standardmäßig **15 Sekunden**. Er sorgt dafür, dass nichts verloren geht, während das Gespräch erkannt wird: Eine Aufnahme, die beginnt, wenn Sie **Aufnehmen** drücken oder die Frage beantworten, beginnt trotzdem mit den Worten, die davor fielen.
+Der Schieberegler **Vor dem Beginn** gibt an, wie viele Sekunden Ton aus der Zeit vor dem Start einer Aufnahme aufbewahrt werden, standardmäßig **15 Sekunden**. Er sorgt dafür, dass nichts verloren geht, während das Gespräch erkannt wird: Eine Aufnahme, die beginnt, wenn Sie die Aufnahmetaste drücken oder die Frage beantworten, beginnt trotzdem mit den Worten, die davor fielen.
 
 ## Ein Gespräch mitschneiden {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Zwei weitere Einstellungen wählen, wie der Pegel des Tons gezeichnet wird:
 
 | Einstellung | Standard | Wo |
 | --- | --- | --- |
-| **Bild im Hauptfenster** | Welle | Die zwei Kanäle während eines Mitschnitts. |
-| **Bild in der Leiste am Fuß des Telefons** | Zwei Pegel | Die zwei dünnen Balken unter dem Zustand des Mitschnitts. |
+| **Bild im Fenster** | Welle | Die zwei Kanäle während eines Mitschnitts. |
+| **Bild in der Fußleiste** | Zwei Pegel | Die zwei dünnen Balken unter **Mitschnitt · warte auf ein Gespräch**. |
 
 ### Ausprobieren {#testing-it}
 
@@ -86,4 +86,4 @@ Ein mitgeschnittenes Gespräch erscheint im [Aufnahmefenster](../interface/recor
 
 <Shot name="01_recordings" alt="Mitgeschnittene Besprechungen im Reiter Aufnahmen, mit einem Fenstersymbol markiert" />
 
-Es wird nach denselben [Regeln](../ai-processing/processing.md#rules) wie ein Anruf transkribiert, zusammengefasst, einer Kategorie zugeordnet und mit Labeln versehen. Im Transkript einer mitgeschnittenen Besprechung steht als Sprecher **Eine andere Anwendung**, wo ein Anruf den Namen der Gegenseite zeigen würde; **Suchen** in der Bibliothek findet auch, was darin gesagt wurde.
+Es wird nach denselben [Regeln](../ai-processing/processing.md#rules) wie ein Anruf transkribiert, zusammengefasst, einer Kategorie zugeordnet und mit Labeln versehen. Im Transkript einer mitgeschnittenen Besprechung steht als Sprecher der Name der Aufnahme, wo ein Anruf den Namen der Gegenseite zeigen würde; **Suchen** in der Bibliothek findet auch, was darin gesagt wurde.

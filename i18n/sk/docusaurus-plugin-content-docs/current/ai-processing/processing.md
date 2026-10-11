@@ -1,7 +1,7 @@
 ---
 title: Spracovanie
 sidebar_position: 2
-description: Automatické spracovanie rozhovorov, mesačné hranice výdavkov, jazykové modely, pokyny a pravidlá, ktoré ich spúšťajú.
+description: Automatické spracovanie rozhovorov, jazykové modely, pokyny, pravidlá, ktoré ich spúšťajú, a mesačné hranice výdavkov.
 ---
 
 **Nastavenia → Spracovanie** rozhoduje, čo sa stane s rozhovorom, keď je nahraný, ktorý model robí prácu a koľko to smie stáť.
@@ -13,20 +13,9 @@ description: Automatické spracovanie rozhovorov, mesačné hranice výdavkov, j
 - **Vypnuté:** nič sa nestane, kým o to nepožiadate v [okne Nahrávky](../interface/recordings.md).
 - **Zapnuté:** [pravidlá](#rules) nižšie bežia samy. Práve to premení rozhovor na zhrnutie, kategóriu a všetko ostatné bez toho, aby ktokoľvek čokoľvek stlačil. Model v cloude účtuje za každý z týchto krokov.
 
-Pod začiarkavacím políčkom program ukazuje, koľko sa tento mesiac minulo a na koľko požiadaviek, napríklad *Tento mesiac: 40 492 tokenov, v 84 požiadavkách, bez poplatku.*
-
-## Hranice {#limits}
-
-| Pole | Význam |
-| --- | --- |
-| **Hranica peňazí, mesačne** | Najviac, koľko smú modely stáť za mesiac. |
-| **Hranica tokenov, mesačne** | Najviac tokenov, koľko smú za mesiac použiť. |
-
-Hranice sú dve, lebo mesiac sa dá počítať v dvoch veciach. Obe sú prázdne, kým ich nevyplníte. Keď sa dosiahne ktorákoľvek z nich, automatické pravidlá sa zastavia do konca mesiaca. **To, o čo požiadate sami, sa nikdy nezastaví.**
-
 ## Jazykové modely {#language-models}
 
-Modely, ktoré čítajú prepis a píšu o ňom. Stlačením **Pridať** model pridáte. Každý je uvedený so svojím názvom a pod ním s identifikátorom modelu a adresou svojej služby, napríklad `qwen3-32b · http://llm.local:8000/v1`. Ten označený ako **Predvolený** sa používa predvolene. Tlačidlo vo formulári modelu overí, že služba naozaj odpovedá, skôr než sa na ňu spoľahnete.
+Modely, ktoré čítajú prepis a píšu o ňom. Stlačením **Pridať** model pridáte. Každý je uvedený so svojím názvom a pod ním s identifikátorom modelu a adresou svojej služby, napríklad `qwen3-32b · http://localhost:8000/v1`. Ten označený ako **predvolený** — na obrázku **QWEN**, model na tomto počítači — sa používa predvolene: v pokynoch a v tých pomocníkoch [našepkávača](prompter.md), ktorí neuvádzajú vlastný model. **Vyskúšať** vo formulári modelu overí, že služba naozaj odpovedá, skôr než sa na ňu spoľahnete.
 
 - Model **na vlastnom počítači** drží každý rozhovor v budove a nestojí nič.
 - Model v cloude — OpenAI, Claude, Mistral, DeepSeek, Groq a ďalšie — sa účtuje za použitie. Program ukazuje cenu každého volania v tokenoch aj v peniazoch.
@@ -35,7 +24,7 @@ Modely, ktoré čítajú prepis a píšu o ňom. Stlačením **Pridať** model p
 
 <Shot name="12b_settings_processing_prompts" alt="Nastavenia → Spracovanie: pokyny" />
 
-*To, o čo sú modely žiadané.* Každý pokyn prišiel s programom a každý je váš na zmenu — aj na vrátenie. Každý je uvedený so svojím názvom a pod ním s tým, čo píše a v akej forme. Forma — **Odpoveď**, **Položky**, **Štítky**, **JSON**, **Próza**, **Signály** alebo **Kritériá** — rozhoduje, ako sa odpoveď uchová a zobrazí. Pokyny sú opísané v [Personal Prompt Studio](prompt-studio.md). **Pridať** vytvorí vlastný pokyn.
+*To, o čo sú modely žiadané.* Každý pokyn prišiel s programom a každý je váš na zmenu — aj na vrátenie. Každý je uvedený so svojím názvom a pod ním s tým, čo píše a v akej forme; **▲** a **▼** menia poradie zoznamu. Forma — **Odpoveď**, **Položky**, **Štítky**, **JSON**, **Próza**, **Signály** alebo **Kritériá** — rozhoduje, ako sa odpoveď uchová a zobrazí. Pokyny sú opísané v [Personal Prompt Studio](prompt-studio.md). **Pridať** vytvorí vlastný pokyn.
 
 ## Pravidlá {#rules}
 
@@ -55,6 +44,19 @@ Modely, ktoré čítajú prepis a píšu o ňom. Stlačením **Pridať** model p
 | **Posúdiť ho, ak šlo o podporu** | Pýta sa modelu: **Kvalita podpory**. | iba ak je kategória **Podpora** |
 
 Na poradí záleží: posledné dve pravidlá potrebujú kategóriu, ktorú nastavilo pravidlo pred nimi. **Pridať** vytvorí vlastné pravidlo.
+
+## Výdavky {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Nastavenia → Spracovanie: výdavky za mesiac a dve hranice" />
+
+V časti **Výdavky** program ukazuje, koľko sa tento mesiac minulo a na koľko požiadaviek — na obrázku *Tento mesiac sa nič nespracovalo* a napríklad *Tento mesiac: 40 492 tokenov, v 84 požiadavkách, bez poplatku*, keď sa už niečo spracovalo.
+
+| Pole | Význam |
+| --- | --- |
+| **Hranica peňazí, mesačne** | Najviac, koľko smú modely stáť za mesiac. |
+| **Hranica tokenov, mesačne** | Najviac tokenov, koľko smú za mesiac použiť. |
+
+Hranice sú dve, lebo mesiac sa dá počítať v dvoch veciach. Obe sú prázdne, kým ich nevyplníte. Keď sa dosiahne ktorákoľvek z nich, automatické pravidlá sa zastavia do konca mesiaca. **To, o čo požiadate sami, sa nikdy nezastaví.** [Našepkávač](prompter.md#spending) má vlastné stropy, aby ho mesiac zhrnutí nemohol umlčať uprostred rozhovoru.
 
 ## Predvolené {#defaults}
 

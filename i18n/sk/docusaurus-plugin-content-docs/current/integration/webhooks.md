@@ -1,7 +1,7 @@
 ---
 title: Webhooky
 sidebar_position: 1
-description: "\"Nechajte telefón poslať vášmu CRM alebo inému systému požiadavku, keď sa hovor začne, zmení alebo skončí — s presnými požiadavkami prichádzajúceho a odchádzajúceho hovoru.\""
+description: "Nechajte telefón poslať vášmu CRM alebo inému systému požiadavku, keď sa hovor začne, zmení alebo skončí — s presnými požiadavkami prichádzajúceho a odchádzajúceho hovoru."
 ---
 
 Webhook je požiadavka, ktorú telefón pošle na adresu podľa vášho výberu zakaždým, keď sa s hovorom niečo stane. Vďaka nemu môže CRM otvoriť kartu zákazníka pred druhým zazvonením, zapísať hovor, keď sa skončí, alebo rozsvietiť kontrolku na nástennej tabuli. Webhook nepotrebuje pravidlá brány firewall pre prichádzajúcu prevádzku: telefón sa pripája k vám. Keďže sa požiadavky odosielajú z pracovnej stanice, adresa musí byť dosiahnuteľná iba z tohto počítača — interná `http://crm.local/calls` funguje rovnako dobre ako verejná adresa HTTPS.

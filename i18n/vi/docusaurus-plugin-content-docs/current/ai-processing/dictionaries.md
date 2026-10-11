@@ -40,14 +40,16 @@ Các nhãn *có thể cùng đúng với một cuộc trò chuyện*. Nhấn **T
 
 Những điều cần chú ý, được tìm thấy trong cuộc trò chuyện kèm bằng chứng và thời điểm — ví dụ *Khách giận dữ* hoặc *Nguy cơ rời bỏ*. Dấu hiệu cảnh báo được vẽ màu đỏ trong [cửa sổ Bản ghi](../interface/recordings.md), và mỗi dấu hiệu mang một mức độ nghiêm trọng: thấp, trung bình hoặc cao.
 
-## Khuôn câu trả lời và ngôn ngữ {#answer-shapes-and-language}
+## Chỉ dẫn {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Cài đặt → Từ điển: khuôn câu trả lời và hướng dẫn về ngôn ngữ" />
 
-Xa hơn bên dưới thẻ là các hướng dẫn mà chỉ dẫn được ghép từ đó. Chúng được giữ ở đây để mọi chỉ dẫn có thể dùng cùng một cách diễn đạt, và bạn có thể sửa chúng như mọi mục khác.
+*Những gì được thêm vào mọi chỉ dẫn về hình thức câu trả lời và ngôn ngữ để viết.* Chúng được giữ ở đây để mọi chỉ dẫn có thể dùng cùng một cách diễn đạt, và bạn có thể sửa chúng như mọi mục khác — hoặc tự viết, chẳng hạn *trả lời ngắn gọn* hay *đừng bao giờ nêu giá*, rồi đánh dấu chúng ở **Gửi kèm** trong bất kỳ chỉ dẫn nào.
 
 | Tên | Mã | Nó bảo mô hình điều gì |
 | --- | --- | --- |
+| **Văn xuôi** | `shape-plain` | Trả lời bằng văn xuôi thông thường, không JSON, danh sách hay tiêu đề. |
+| **Các mục** | `shape-list` | Trả lời bằng danh sách việc cần làm, mỗi việc kèm ai làm và khi nào. |
 | **Nhãn** | `shape-labels` | Trả lời bằng JSON với danh sách mã và mức độ chắc chắn cho từng mã, chỉ dùng các mã trong danh sách đã được đưa. |
 | **Điểm số** | `shape-score` | Trả lời bằng một điểm số, lý do và những câu nói làm căn cứ. |
 | **Tiêu chí** | `shape-rubric` | Trả lời bằng một điểm tổng và điểm cho từng tiêu chí. |
@@ -58,7 +60,7 @@ Xa hơn bên dưới thẻ là các hướng dẫn mà chỉ dẫn được ghé
 | **Theo ngôn ngữ đã nói, có nêu tên** | `language-as-spoken-named` | Như trên, có nêu tên ngôn ngữ. |
 | **Một ngôn ngữ được nêu** | `language-named` | Viết bằng ngôn ngữ bạn nêu. |
 
-**Thêm** ở cuối danh sách thêm một mục.
+**Thêm** ở đầu danh sách thêm một mục.
 
 ## Mặc định {#defaults}
 

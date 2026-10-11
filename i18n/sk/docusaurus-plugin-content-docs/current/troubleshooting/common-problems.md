@@ -1,7 +1,7 @@
 ---
 title: Bežné problémy
 sidebar_position: 2
-description: "\"Čo skontrolovať, keď sa účet nechce zaregistrovať, nie je zvuk, hovor alebo stretnutie sa nenahralo, nie je prepis, alebo odkaz, klávesová skratka či API nič nerobí.\""
+description: "Čo skontrolovať, keď sa účet nechce zaregistrovať, nie je zvuk, hovor alebo stretnutie sa nenahralo, nie je prepis, alebo odkaz, klávesová skratka či API nič nerobí."
 ---
 
 Každá položka ukazuje na nastavenie, ktoré o tom rozhoduje. Ak tu odpoveď nie je, otvorte [Diagnostiku](/troubleshooting/diagnostics): ukazuje, čo si telefón a ústredňa hovoria.
@@ -44,7 +44,7 @@ Kodeky sa ponúkajú v poradí zoznamu v [Nastavenia → Hovory](/sip-accounts/c
 Pozrite [Zachytávanie](/capture/).
 
 - **Povoliť zachytávanie zvuku** v **Nastavenia → Zachytávanie** musí byť zapnuté.
-- Keď je **Automatické spustenie** nastavené na **Spýtať sa ma** (predvolené), odpovedzte na otázku, keď sa objaví; pri **Nikdy** stlačte **Nahrať** sami.
+- Keď je **Automatické spustenie** nastavené na **Spýtať sa ma** (predvolené), odpovedzte na otázku, keď sa objaví; pri **Nikdy** stlačte tlačidlo nahrávania sami.
 - Použite **Vyskúšať** na tej istej karte: horný stĺpec sa musí hýbať, keď hovoríte, dolný, keď niečo hrá.
 - Modul **Zachytávanie** musí byť zapnutý v [Moduloch](/application/modules).
 

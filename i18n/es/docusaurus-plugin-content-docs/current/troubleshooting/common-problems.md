@@ -1,7 +1,7 @@
 ---
 title: Problemas frecuentes
 sidebar_position: 2
-description: "\"Qué comprobar cuando una cuenta no se registra, no hay sonido, una llamada o una reunión no se graba, no hay transcripción, o un enlace, un atajo o la API no hacen nada.\""
+description: "Qué comprobar cuando una cuenta no se registra, no hay sonido, una llamada o una reunión no se graba, no hay transcripción, o un enlace, un atajo o la API no hacen nada."
 ---
 
 Cada entrada remite al ajuste que lo decide. Si la respuesta no está aquí, abra el [Diagnóstico](/troubleshooting/diagnostics): muestra lo que se dicen el teléfono y la centralita.
@@ -44,7 +44,7 @@ Lo que ocurre cuando alguien llama mientras usted está en una llamada se ajusta
 Consulte [Captura](/capture/).
 
 - **Permitir la captura de sonido** en **Ajustes → Captura** debe estar encendido.
-- Con **Inicio automático** en **Preguntarme** (el valor por defecto), responda a la pregunta cuando aparezca; con **Nunca**, pulse usted **Grabar**.
+- Con **Inicio automático** en **Preguntarme** (el valor por defecto), responda a la pregunta cuando aparezca; con **Nunca**, pulse usted el botón de grabar.
 - Use **Probar** en la misma pestaña: la barra de arriba debe moverse cuando habla, la de abajo cuando algo suena.
 - El módulo **Captura** debe estar encendido en [Módulos](/application/modules).
 

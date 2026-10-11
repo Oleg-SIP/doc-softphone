@@ -28,7 +28,9 @@ Den anden kolonne er det, listen viser under promptens navn: hvad den skriver, o
 | **Salgskvalitet** | Kriterier | Gennemgår samtalen efter salgskriterier, som du kan redigere. |
 | **Supportkvalitet** | Kriterier | Vurderer, hvor godt problemet blev forstået og håndteret. |
 
-Formerne er faste skabeloner for et svar, og det er det, der lader programmet gemme det og søge i det senere: **Etiketter** er koder fra en af dine lister, **Signaler** er koder med en alvorsgrad, **Kriterier** er en karakter med en begrundelse og en karakter for hvert kriterium, **Svar** er et svar med de ord, det bygger på. De instruktioner, der fortæller en model formen, gemmes i [Ordlister](dictionaries.md#answer-shapes-and-language).
+Formerne er faste skabeloner for et svar, og det er det, der lader programmet gemme det og søge i det senere: **Etiketter** er koder fra en af dine lister, **Signaler** er koder med en alvorsgrad, **Kriterier** er en karakter med en begrundelse og en karakter for hvert kriterium, **Svar** er et svar med de ord, det bygger på. De instruktioner, der fortæller en model formen, gemmes i [Ordlister](dictionaries.md#instructions).
+
+[Sufflørens](../interface/prompter.md) hjælpere er også prompter, der kører på hvert svar, mens et opkald står på, i stedet for på en afsluttet samtale. De står på deres egen liste, under [Hjælpere](prompter.md#assistants) i **Indstillinger → Sufflør**.
 
 Opkald foretaget i AI Softphone, møder [opfanget](/capture/) fra computeren og importerede optagelser går alle gennem de samme prompter, når de har en udskrift.
 
@@ -41,6 +43,6 @@ Opgaver registrerer, hvad der blev aftalt — de sender ikke beskeder, booker ik
 - Vælg modellen for hver prompt — på din egen maskine eller i skyen.
 - Bestem rækkefølgen, prompterne kører i, slå dem til og fra, og gør dem betingede — det gøres med [reglerne](processing.md#rules): for eksempel kører en salgsgennemgang kun på opkald, der er sorteret som **Salg**.
 - Hold dine egne kategorier, etiketter og signaler i [Ordlister](dictionaries.md).
-- Sæt loft over omkostningerne med de [månedlige grænser](processing.md#limits).
+- Sæt loft over omkostningerne med de [månedlige grænser](processing.md#spending).
 
 De oprindelige prompter og regler kan gendannes med **Gendan standardværdier** under **Standardværdier** i [Indstillinger → Behandling](processing.md#defaults).

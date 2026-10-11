@@ -10,7 +10,9 @@ description: Checklistan Översikt och flikarna i fönstret Inställningar, och 
 
 <Shot name="04_settings_overview" alt="Inställningar → Översikt: checklistan över det som är konfigurerat" />
 
-**Översikt** är en checklista över det som krävs för att få ut det mesta av programmet. Överst räknar den stegen — på bilden *10 steg klara* med en grön prick och *8 steg kvar* med en röd — och en stapel visar andelen som är klar. Varje steg är en rad med en prick: grön för ett steg som är klart, röd för ett som återstår.
+Överst på fliken öppnar **Dokumentation** den här webbplatsen.
+
+**Översikt** är en checklista över det som krävs för att få ut det mesta av programmet. Överst räknar den stegen — på bilden *14 steg klara* med en grön prick och *6 steg kvar* med en röd — och en stapel visar andelen som är klar. Varje steg är en rad med en prick: grön för ett steg som är klart, röd för ett som återstår.
 
 *Tryck på en rad för att läsa vad den är till för och öppna där den ställs in.* Pilen längst till höger på raden fäller ut den.
 
@@ -20,6 +22,7 @@ description: Checklistan Översikt och flikarna i fönstret Inställningar, och 
 | **Inspelning från andra program** | Slå på inspelning från program; Spela in ett samtal från ett program; Ge en av dem ett namn |
 | **Transkription** | Lägg till en taligenkänning; Skriv ut ett samtal |
 | **Bearbetning** | Lägg till en modell; Bearbeta en utskrift |
+| **Sufflör** | Tillåt sufflören; Starta sufflören |
 | **Inspelningar** | Sök i det som sades; Exportera en inspelning; Exportera en sammanfattning |
 | **Program** | Starta med datorn; Håll den uppdaterad |
 | **Återkoppling** | Skicka den utökade rapporten; Berätta vad du tycker |
@@ -39,8 +42,9 @@ Stegen är en vägledning, inte en plikt: ett steg du inte har användning för 
 | | **Inspelning** | [Inspelning av samtal: samtycke, konferenser och hur länge filer sparas](../recordings.md) |
 | | **Fångst** | [Fångst av ljudet från andra program](../capture/capture.md): möten i Zoom, Teams, Meet och liknande |
 | AI | **Transkription** | [Igenkännare](../ai-processing/transcription.md) |
-| | **Bearbetning** | [Automatisk bearbetning, kostnadsgränser, språkmodeller, prompter och regler](../ai-processing/processing.md) |
+| | **Bearbetning** | [Automatisk bearbetning, språkmodeller, prompter, regler och kostnadsgränser](../ai-processing/processing.md) |
 | | **Ordlistor** | [Kategorier, etiketter och signaler](../ai-processing/dictionaries.md) |
+| | **Sufflör** | [Den levande sufflören: brytaren, textstorleken, hjälparna och vad de får kosta](../ai-processing/prompter.md) |
 | Program | **Utseende** | [Layout, språk, tema och ikoner](../program/appearance.md) |
 | | **Uppstart** | [Hur programmet startar, stängs och öppnar samtalslänkar](../program/startup.md) |
 | | **Genvägar** | [Tangentgenvägar](../program/shortcuts.md) |

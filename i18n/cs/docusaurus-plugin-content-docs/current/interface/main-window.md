@@ -16,7 +16,7 @@ Levá strana obsahuje shora dolů:
 - klávesnici a tlačítko volání;
 - štítky účtů;
 - tlačítka, která sledují jiné linky;
-- čtyři místa, kam jít: **Nahrávky**, **Kontakty**, **Historie** a **Nastavení**.
+- místa, kam jít: **Nahrávky**, **Kontakty**, **Historie**, **Našeptávač** a **Nastavení**.
 
 ### Vytáčení {#the-dialler}
 
@@ -36,9 +36,9 @@ Pod klávesnicí je jeden štítek pro každý [účet](../sip-accounts/setup.md
 
 Pod štítky jsou [tlačítka](../sip-accounts/buttons.md), která jste vytvořili pro kolegy a linky, každé s kontrolkou — na obrázcích **Novák** a **Sklad**. Stisknutím tlačítka vytočíte jeho číslo.
 
-### Nahrávky, Kontakty, Historie, Nastavení {#recordings-contacts-history-settings}
+### Nahrávky, Kontakty, Historie, Našeptávač, Nastavení {#recordings-contacts-history-prompter-settings}
 
-Tyto čtyři položky dole otevírají kartu vpravo, jednu vedle druhé: [Nahrávky](../interface/recordings.md), [Kontakty a Historie](contacts-history.md) a [Nastavení](settings-overview.md). Otevřené karty zůstávají v řadě nahoře na pravé straně.
+Tyto položky dole otevírají kartu vpravo, jednu vedle druhé: [Nahrávky](../interface/recordings.md), [Kontakty a Historie](contacts-history.md), [Našeptávač](prompter.md) a [Nastavení](settings-overview.md). **Našeptávač** se objeví, až když je našeptávač povolen a má rozpoznávač, kterým poslouchá. Otevřené karty zůstávají v řadě nahoře na pravé straně.
 
 ## Probíhající hovor {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Spojené hovory se zobrazí jako jedna karta **Konference** na lince účtu. Ka�
 
 Když je v **Nastavení → Zachytávání** povoleno [zachytávání jiných aplikací](../capture/capture.md), objeví se mezi štítky účtů a tlačítky pruh.
 
-<Shot name="10_settings_capture" full alt="Pruh zachytávání u paty telefonu: Zachytávání · čekám na hovor, Nahrát a dva ukazatele úrovně" />
+<Shot name="10_settings_capture" full alt="Pruh zachytávání u paty telefonu: Zachytávání · čekám na hovor, tlačítko nahrávání a dva ukazatele úrovně" />
 
 - **Zachytávání · čekám na hovor** říká, že program čeká na rozhovor v jiné aplikaci.
-- **Nahrát** spustí zachytávání ručně.
-- Dva tenké pruhy pod ním ukazují úroveň zvuku: horní jste vy, dolní to, co počítač přehrává. Jak se kreslí, nastavíte v **Obraz v pruhu u paty telefonu**.
+- Kulaté tlačítko vpravo spustí zachytávání ručně.
+- Dva tenké pruhy pod ním ukazují úroveň zvuku: horní jste vy, dolní to, co počítač přehrává. Jak se kreslí, nastavíte v **Kresba v liště dole**.
 
 Program může žít i v oznamovací oblasti (na macOS v řádku nabídek) a vyvolat se [klávesovou zkratkou](../program/shortcuts.md).

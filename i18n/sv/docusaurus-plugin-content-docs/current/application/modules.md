@@ -25,8 +25,9 @@ Varje modul har en kryssruta, ett namn, en rad om vad den gör och till höger d
 | **Integration** | Det lokala API:et och webhookar: [Integration](/integration/rest-api). |
 | **Medielagring** | Biblioteket med samtal och hur länge de sparas: [Inspelningar](/interface/recordings). |
 | **Bearbetning** | Prompter och reglerna som utlöser dem: [Bearbetning](/ai-processing/processing). |
+| **Sufflör** | Lyssnar på ett pågående samtal och föreslår: [Sufflörens fönster](/interface/prompter). |
 | **Inspelning** | Inspelning av samtal, och att tala om det för den andra parten: [Inspelningar](/recordings). |
-| **Telefoni** | SIP, konton, samtal, nummerfältet och samtalshistoriken. |
+| **Telefon** | SIP, konton, samtal, nummerfältet och samtalshistoriken. |
 | **Transkription** | Igenkännare, kön som driver dem och utskrifterna de gör: [Transkription](/ai-processing/transcription). |
 
 Stäng av en modul så är den borta: inga inställningar för den, ingen menypost, ingenting av den körs. Stäng av en modul du inte har användning för — till exempel **Integration** på en dator där ingenting annat pratar med telefonen — eller behåll en telefon som bara är en telefon, när det är allt en arbetsplats behöver. Paketet är detsamma i båda fallen: det finns ingenting att köpa och ingenting att låsa upp.

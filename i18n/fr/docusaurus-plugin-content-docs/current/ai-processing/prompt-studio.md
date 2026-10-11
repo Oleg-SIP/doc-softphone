@@ -28,7 +28,9 @@ La deuxième colonne est ce que la liste affiche sous le nom de l'invite : ce qu
 | **Qualité commerciale** | Critères | Évalue la conversation selon des critères de vente que vous pouvez modifier. |
 | **Qualité de l'assistance** | Critères | Juge à quel point le problème a été compris et traité. |
 
-Les formes sont des modèles fixes de réponse, ce qui permet au programme de la conserver et d'y chercher plus tard : les **Étiquettes** sont des codes tirés de l'une de vos listes, les **Signaux** sont des codes avec une gravité, les **Critères** sont une note avec une justification et une note pour chaque critère, la **Réponse** est une réponse accompagnée des mots sur lesquels elle repose. Les instructions qui indiquent la forme à un modèle sont conservées dans [Dictionnaires](dictionaries.md#answer-shapes-and-language).
+Les formes sont des modèles fixes de réponse, ce qui permet au programme de la conserver et d'y chercher plus tard : les **Étiquettes** sont des codes tirés de l'une de vos listes, les **Signaux** sont des codes avec une gravité, les **Critères** sont une note avec une justification et une note pour chaque critère, la **Réponse** est une réponse accompagnée des mots sur lesquels elle repose. Les instructions qui indiquent la forme à un modèle sont conservées dans [Dictionnaires](dictionaries.md#instructions).
+
+Les assistants du [souffleur](../interface/prompter.md) sont aussi des invites, exécutées sur chaque réponse pendant un appel plutôt que sur une conversation terminée. Ils sont conservés dans une liste à part, sous [Assistants](prompter.md#assistants) dans **Réglages → Souffleur**.
 
 Les appels passés dans AI Softphone, les réunions [capturées](/capture/) depuis l'ordinateur et les enregistrements importés passent tous par les mêmes invites une fois qu'ils ont une transcription.
 
@@ -41,6 +43,6 @@ Les actions à mener consignent ce qui a été convenu — elles n'envoient pas 
 - Choisissez le modèle de chaque invite — sur votre propre machine ou dans le cloud.
 - Définissez l'ordre d'exécution des invites, activez-les et désactivez-les, et rendez-les conditionnelles — cela se fait avec les [règles](processing.md#rules) : par exemple, une évaluation commerciale ne s'exécute que sur les appels classés **Ventes**.
 - Gardez vos propres catégories, étiquettes et signaux dans [Dictionnaires](dictionaries.md).
-- Plafonnez le coût avec les [limites mensuelles](processing.md#limits).
+- Plafonnez le coût avec les [limites mensuelles](processing.md#spending).
 
 Les invites et les règles d'origine peuvent être rétablies avec **Rétablir les valeurs par défaut** sous **Valeurs par défaut** dans [Réglages → Traitement](processing.md#defaults).

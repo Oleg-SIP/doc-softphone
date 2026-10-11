@@ -40,14 +40,16 @@ Contrassegni che *possono valere tutti per la stessa conversazione*. Prema **Agg
 
 Cose che richiedono attenzione, trovate nella conversazione con la prova e il momento — per esempio *Cliente arrabbiato* o *Rischio di abbandono*. I segnali sono disegnati in rosso nella [finestra delle registrazioni](../interface/recordings.md), e ognuno ha una gravità: bassa, media o alta.
 
-## Forme di risposta e lingua {#answer-shapes-and-language}
+## Istruzioni {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Impostazioni → Dizionari: forme di risposta e istruzioni sulla lingua" />
 
-Più in basso nella scheda ci sono le istruzioni con cui vengono composti i prompt. Sono conservate qui perché ogni prompt possa usare la stessa formulazione, e può cambiarle come qualsiasi altra voce.
+*Ciò che viene aggiunto a ogni prompt sulla forma della risposta e sulla lingua in cui scriverla.* Sono conservate qui perché ogni prompt possa usare la stessa formulazione, e può cambiarle come qualsiasi altra voce — o scriverne di sue, come *rispondi in breve* o *non citare mai un prezzo*, e spuntarle sotto **Invia anche** in qualsiasi prompt.
 
 | Nome | Codice | Che cosa dice al modello |
 | --- | --- | --- |
+| **Prosa** | `shape-plain` | Rispondere in prosa semplice, senza JSON, elenchi o titoli. |
+| **Punti** | `shape-list` | Rispondere con un elenco di cose da fare, ognuna con chi e quando. |
 | **Etichette** | `shape-labels` | Rispondere in JSON con un elenco di codici e quanto è sicuro di ciascuno, usando solo codici dell'elenco ricevuto. |
 | **Voto** | `shape-score` | Rispondere con un voto, la sua motivazione e le parole su cui si basa. |
 | **Criteri** | `shape-rubric` | Rispondere con un voto complessivo e un voto per ogni criterio. |
@@ -58,7 +60,7 @@ Più in basso nella scheda ci sono le istruzioni con cui vengono composti i prom
 | **Come parlato, nominata** | `language-as-spoken-named` | Lo stesso, nominando la lingua. |
 | **Una lingua nominata** | `language-named` | Scrivere nella lingua che lei indica. |
 
-**Aggiungi** in fondo all'elenco aggiunge una voce.
+**Aggiungi** in cima all'elenco aggiunge una voce.
 
 ## Valori predefiniti {#defaults}
 

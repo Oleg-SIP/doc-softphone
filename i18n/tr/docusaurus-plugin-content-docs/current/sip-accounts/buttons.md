@@ -1,7 +1,7 @@
 ---
 title: Düğmeler
 sidebar_position: 4
-description: "\"BLF düğmeleri: IP santralinizdeki bir dahiliyi tek dokunuşla arayan ve onun boş mu, çalıyor mu, meşgul mü olduğunu gösteren düğmeler.\""
+description: "BLF düğmeleri: IP santralinizdeki bir dahiliyi tek dokunuşla arayan ve onun boş mu, çalıyor mu, meşgul mü olduğunu gösteren düğmeler."
 ---
 
 Düğmeler, yazılım telefonunun **BLF** (Busy Lamp Field) tuşlarıdır; bir IP santraline bağlı masa telefonundaki işlevin aynısı. Bir düğme tek basışla bir dahiliyi arar. Hattını izleyen bir düğme ayrıca bir lamba da gösterir: telefon santrale o dahiliyi sorar ve tıpkı bir resepsiyon konsolu ya da bir masa telefonunun programlanabilir tuşları gibi onun boş mu, çalıyor mu, meşgul mü olduğunu gösterir.

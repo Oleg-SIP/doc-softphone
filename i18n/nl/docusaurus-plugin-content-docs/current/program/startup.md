@@ -1,7 +1,7 @@
 ---
 title: Opstarten
 sidebar_position: 2
-description: "\"De telefoon met de computer laten starten, laten doordraaien als het venster dicht is, en tel:-, callto:- en sip:-koppelingen openen.\""
+description: "De telefoon met de computer laten starten, laten doordraaien als het venster dicht is, en tel:-, callto:- en sip:-koppelingen openen."
 ---
 
 **Instellingen → Opstarten** bepaalt hoe het programma start, wat het sluiten van het venster doet en wat er gebeurt als u in een ander programma op een telefoonnummer klikt.

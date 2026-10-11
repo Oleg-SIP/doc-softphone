@@ -1,7 +1,7 @@
 ---
 title: Sık karşılaşılan sorunlar
 sidebar_position: 2
-description: "\"Bir hesap kaydolmadığında, ses olmadığında, bir çağrı ya da toplantı kaydedilmediğinde, döküm olmadığında ya da bir bağlantı, bir kısayol veya API hiçbir şey yapmadığında neyi denetlemeli.\""
+description: "Bir hesap kaydolmadığında, ses olmadığında, bir çağrı ya da toplantı kaydedilmediğinde, döküm olmadığında ya da bir bağlantı, bir kısayol veya API hiçbir şey yapmadığında neyi denetlemeli."
 ---
 
 Her girdi, sorunu belirleyen ayarı gösterir. Yanıt burada yoksa [Tanılama](/troubleshooting/diagnostics) penceresini açın: telefonun ve santralin birbirine ne söylediğini gösterir.
@@ -44,7 +44,7 @@ Siz bir çağrıdayken biri aradığında ne olacağı [Çağrı bekletme](/sip-
 Bkz. [Yakalama](/capture/).
 
 - **Ayarlar → Yakalama** içinde **Ses yakalamaya izin ver** açık olmalıdır.
-- **Otomatik başlatma** **Bana sor** (öntanımlı) olarak ayarlıysa soru belirdiğinde yanıtlayın; **Asla** ise **Kaydet** düğmesine kendiniz basın.
+- **Otomatik başlatma** **Bana sor** (öntanımlı) olarak ayarlıysa soru belirdiğinde yanıtlayın; **Asla** ise kayıt düğmesine kendiniz basın.
 - Aynı sekmede **Sına** bölümünü kullanın: siz konuşurken üstteki çubuk, bir şey çalarken alttaki oynamalıdır.
 - [Modüller](/application/modules) içinde **Yakalama** modülü açık olmalıdır.
 

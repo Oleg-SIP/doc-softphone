@@ -22,7 +22,7 @@ Im Bild sind die obersten drei Zeilen je eine von jeder Art: eine Zoom-Besprechu
 
 ## Ein Gespräch finden {#finding-a-conversation}
 
-Die Leiste oben hat fünf Filter, ein Suchfeld und ein Menü:
+Die Leiste oben hat vier Filter, ein Suchfeld und ein Menü:
 
 | Element | Grenzt die Liste ein nach |
 | --- | --- |
@@ -30,7 +30,6 @@ Die Leiste oben hat fünf Filter, ein Suchfeld und ein Menü:
 | **Zeitraum** | dem Datum: **Heute**, **Gestern**, **Letzte 7 Tage** oder **Daten wählen…** |
 | **Kategorie** | der Kategorie, unter der es abgelegt wurde — siehe [Verzeichnisse](../ai-processing/dictionaries.md) |
 | **Markierung** | den Labeln und Auffälligkeiten, die es trägt |
-| **Spracherkenner** | dem [Spracherkenner](../ai-processing/transcription.md), der sein Transkript erstellt hat |
 | **Suchen** | dem, was darin gesagt wurde — die Suche geht durch die Transkripte von allem, was Sie aufgenommen haben |
 
 <Shot name="39_more_menu" alt="Das Menü ⋮ der Liste: Aus Datei(en) importieren, Als CSV exportieren, Im Browser öffnen" />

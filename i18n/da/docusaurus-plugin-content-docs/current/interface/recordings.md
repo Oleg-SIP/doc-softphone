@@ -22,7 +22,7 @@ På billedet er de tre øverste rækker én af hver slags: et Zoom-møde, en imp
 
 ## Finde en samtale {#finding-a-conversation}
 
-Bjælken øverst har fem filtre, et søgefelt og en menu:
+Bjælken øverst har fire filtre, et søgefelt og en menu:
 
 | Kontrol | Indsnævrer listen efter |
 | --- | --- |
@@ -30,7 +30,6 @@ Bjælken øverst har fem filtre, et søgefelt og en menu:
 | **Periode** | datoen: **I dag**, **I går**, **Sidste 7 dage** eller **Vælg datoer…** |
 | **Kategori** | den kategori, den er sorteret under — se [Ordlister](../ai-processing/dictionaries.md) |
 | **Mærke** | de etiketter og signaler, den har |
-| **Genkender** | den [genkender](../ai-processing/transcription.md), der lavede dens udskrift |
 | **Søg** | det, der blev sagt i den — søgningen går gennem udskrifterne af alt, du har optaget |
 
 <Shot name="39_more_menu" alt="Menuen ⋮ i listen: Importér fra fil(er), Eksportér til CSV, Åbn i en browser" />

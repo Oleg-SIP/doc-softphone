@@ -16,7 +16,7 @@ Fra top til bund rummer venstre side:
 - tastaturet og opkaldstasten;
 - kontochipsene;
 - knapperne, der overvåger andre lokalnumre;
-- de fire steder at gå hen: **Optagelser**, **Kontakter**, **Historik** og **Indstillinger**.
+- stederne at gå hen: **Optagelser**, **Kontakter**, **Historik**, **Sufflør** og **Indstillinger**.
 
 ### Opkaldsfeltet {#the-dialler}
 
@@ -36,9 +36,9 @@ Under tastaturet er der én chip for hver [konto](../sip-accounts/setup.md). En 
 
 Under chipsene står de [knapper](../sip-accounts/buttons.md), du har lavet til kolleger og linjer, hver med en lampe — **Nielsen** og **Lager** på billederne. Tryk på en for at ringe til dens nummer.
 
-### Optagelser, Kontakter, Historik, Indstillinger {#recordings-contacts-history-settings}
+### Optagelser, Kontakter, Historik, Sufflør, Indstillinger {#recordings-contacts-history-prompter-settings}
 
-Disse fire punkter nederst åbner hver en fane til højre, side om side: [Optagelser](../interface/recordings.md), [Kontakter og historik](contacts-history.md) og [Indstillinger](settings-overview.md). Faner, du har åbnet, bliver stående i rækken øverst i højre side.
+Disse punkter nederst åbner hver en fane til højre, side om side: [Optagelser](../interface/recordings.md), [Kontakter og historik](contacts-history.md), [Suffløren](prompter.md) og [Indstillinger](settings-overview.md). **Sufflør** er der først, når suffløren er tilladt og har en genkender at lytte med. Faner, du har åbnet, bliver stående i rækken øverst i højre side.
 
 ## Et igangværende opkald {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Opkald, der er slået sammen, vises som ét kort **Konference** på kontoens lin
 
 Når [optagelse fra andre programmer](../capture/capture.md) er tilladt under **Indstillinger → Opfangning**, vises en stribe mellem kontochipsene og knapperne.
 
-<Shot name="10_settings_capture" full alt="Opfangningsstriben ved telefonens fod: Opfangning · klar, Optag og to niveaubjælker" />
+<Shot name="10_settings_capture" full alt="Opfangningsstriben ved telefonens fod: Opfangning · venter på en samtale, optageknappen og to niveaubjælker" />
 
-- **Opfangning · klar** siger, at programmet lytter efter en samtale i et andet program.
-- **Optag** starter en opfangning manuelt.
-- De to tynde bjælker nedenunder viser lydniveauet: den øverste er dig, den nederste er det, computeren afspiller. Hvordan de tegnes, indstilles under **Billede i linjen ved telefonens fod**.
+- **Opfangning · venter på en samtale** siger, at programmet lytter efter en samtale i et andet program.
+- Den runde knap til højre starter en opfangning manuelt.
+- De to tynde bjælker nedenunder viser lydniveauet: den øverste er dig, den nederste er det, computeren afspiller. Hvordan de tegnes, indstilles under **Tegning i linjen nederst**.
 
 Programmet kan også ligge i proceslinjen (menulinjen på macOS) og hentes frem med en [genvej](../program/shortcuts.md).

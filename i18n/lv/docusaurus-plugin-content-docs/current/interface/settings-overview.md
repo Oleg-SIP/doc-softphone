@@ -10,7 +10,9 @@ description: Pārbaudes saraksts Pārskats un loga Iestatījumi cilnes, kā arī
 
 <Shot name="04_settings_overview" alt="Iestatījumi → Pārskats: pārbaudes saraksts par to, kas ir iestatīts" />
 
-**Pārskats** ir pārbaudes saraksts ar to, kas vajadzīgs, lai no programmas gūtu visvairāk. Augšā tas skaita soļus — attēlā *10 soļu izdarīts* ar zaļu punktu un *atlikuši 8 soļi* ar sarkanu — un josla rāda paveikto daļu. Katrs solis ir rinda ar punktu: zaļš paveiktam solim, sarkans vēl atlikušam.
+Cilnes augšā **Dokumentācija** atver šo vietni.
+
+**Pārskats** ir pārbaudes saraksts ar to, kas vajadzīgs, lai no programmas gūtu visvairāk. Augšā tas skaita soļus — attēlā *14 soļu izdarīts* ar zaļu punktu un *atlikuši 6 soļi* ar sarkanu — un josla rāda paveikto daļu. Katrs solis ir rinda ar punktu: zaļš paveiktam solim, sarkans vēl atlikušam.
 
 *Nospiediet rindu, lai izlasītu, kam tā domāta, un atvērtu vietu, kur tas tiek iestatīts.* Bultiņa rindas labajā galā to izvērš.
 
@@ -20,6 +22,7 @@ description: Pārbaudes saraksts Pārskats un loga Iestatījumi cilnes, kā arī
 | **Tveršana no citām lietotnēm** | Ieslēgt tveršanu; Notvert sarunu; Piešķirt tai nosaukumu |
 | **Pieraksts** | Pievienot atpazinēju; Atšifrēt sarunu |
 | **Apstrāde** | Pievienot modeli; Apstrādāt atšifrējumu |
+| **Suflieris** | Atļaut suflieri; Palaist suflieri |
 | **Ieraksti** | Meklēt teiktajā; Eksportēt ierakstu; Eksportēt kopsavilkumu |
 | **Lietotne** | Startēt kopā ar datoru; Uzturēt aktuālu |
 | **Atsauksme** | Sūtīt paplašināto atskaiti; Pastāstiet, ko domājat |
@@ -39,8 +42,9 @@ Soļi ir ceļvedis, nevis pienākums: solis, kas jums nav vajadzīgs, var palikt
 | | **Ierakstīšana** | [Zvanu ierakstīšana: piekrišana, konferences un failu glabāšanas ilgums](../recordings.md) |
 | | **Tveršana** | [Citu lietotņu skaņas tveršana](../capture/capture.md): sapulces Zoom, Teams, Meet un līdzīgās |
 | Mākslīgais intelekts | **Pieraksts** | [Atpazinēji](../ai-processing/transcription.md) |
-| | **Apstrāde** | [Automātiska apstrāde, izdevumu robežas, valodas modeļi, norādījumi un kārtulas](../ai-processing/processing.md) |
+| | **Apstrāde** | [Automātiska apstrāde, valodas modeļi, norādījumi, kārtulas un izdevumu robežas](../ai-processing/processing.md) |
 | | **Vārdnīcas** | [Kategorijas, birkas un brīdinājuma signāli](../ai-processing/dictionaries.md) |
+| | **Suflieris** | [Tiešraides suflieris: slēdzis, teksta lielums, palīgi un tas, ko tie drīkst tērēt](../ai-processing/prompter.md) |
 | Programma | **Izskats** | [Izkārtojums, valoda, motīvs un ikonas](../program/appearance.md) |
 | | **Startēšana** | [Kā programma startē, aizveras un atver zvanu saites](../program/startup.md) |
 | | **Saīsnes** | [Tastatūras saīsnes](../program/shortcuts.md) |

@@ -1,7 +1,7 @@
 ---
 title: Zagon
 sidebar_position: 2
-description: "\"Zaženite telefon z računalnikom, pustite ga teči, ko je okno zaprto, in odpirajte povezave tel:, callto: in sip:.\""
+description: "Zaženite telefon z računalnikom, pustite ga teči, ko je okno zaprto, in odpirajte povezave tel:, callto: in sip:."
 ---
 
 **Nastavitve → Zagon** odloča, kako se program zažene, kaj naredi zaprtje njegovega okna in kaj se zgodi, ko v drugem programu kliknete telefonsko številko.

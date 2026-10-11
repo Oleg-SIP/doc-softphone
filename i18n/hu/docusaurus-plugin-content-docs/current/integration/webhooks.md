@@ -1,7 +1,7 @@
 ---
 title: Webhookok
 sidebar_position: 1
-description: "\"A telefon kérést küld a CRM-nek vagy egy másik rendszernek, amikor egy hívás elindul, megváltozik vagy véget ér — egy bejövő és egy kimenő hívás pontos kéréseivel.\""
+description: "A telefon kérést küld a CRM-nek vagy egy másik rendszernek, amikor egy hívás elindul, megváltozik vagy véget ér — egy bejövő és egy kimenő hívás pontos kéréseivel."
 ---
 
 A webhook egy kérés, amelyet a telefon egy Ön által választott címre küld minden alkalommal, amikor egy hívással történik valami. Ennek segítségével tudja egy CRM megnyitni az ügyfél adatlapját még a második csengés előtt, naplózni egy hívást, amikor véget ér, vagy felkapcsolni egy lámpát egy faliújságon. A webhookhoz nem kellenek bejövő tűzfalszabályok: a telefon kapcsolódik Önhöz. Mivel a kérések a munkaállomásról mennek ki, a címnek csak arról a számítógépről kell elérhetőnek lennie — egy belső `http://crm.local/calls` cím ugyanolyan jól működik, mint egy nyilvános HTTPS-cím.

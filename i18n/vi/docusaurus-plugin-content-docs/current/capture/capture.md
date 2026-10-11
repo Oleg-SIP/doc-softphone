@@ -34,7 +34,7 @@ Phần chương trình làm việc này là mô-đun **Thu âm ngoài**, *Ghi l�
 
 ## Bắt đầu thu {#starting-a-capture}
 
-Khi thu âm đã được cho phép, phần dưới của [cửa sổ chính](../interface/main-window.md#capture) hiển thị trạng thái của nó — **Thu âm ngoài · sẵn sàng** — với nút **Ghi** ở bên phải. Nhấn **Ghi** để bắt đầu bằng tay.
+Khi thu âm đã được cho phép, phần dưới của [cửa sổ chính](../interface/main-window.md#capture) hiển thị trạng thái của nó — **Thu âm ngoài · đang chờ cuộc trò chuyện** — với một nút ghi hình tròn ở bên phải, *Ghi cuộc trò chuyện này*. Nhấn nút đó để bắt đầu bằng tay.
 
 ### Bắt đầu tự động {#automatic-start}
 
@@ -42,7 +42,7 @@ Khi thu âm đã được cho phép, phần dưới của [cửa sổ chính](..
 
 | Lựa chọn | Điều gì xảy ra |
 | --- | --- |
-| **Không bao giờ** | Chỉ bắt đầu thu khi bạn nhấn **Ghi**. |
+| **Không bao giờ** | Chỉ bắt đầu thu khi bạn nhấn nút ghi. |
 | **Hỏi tôi** | Chương trình hỏi có ghi lại hay không. Mặc định. |
 | **Luôn luôn** | Chương trình tự bắt đầu ghi. |
 
@@ -52,7 +52,7 @@ Khi thu âm đã được cho phép, phần dưới của [cửa sổ chính](..
 
 ### Trước lúc bắt đầu {#before-the-start}
 
-Thanh trượt **Trước lúc bắt đầu** là số giây âm thanh được giữ lại từ trước khi bản ghi bắt đầu, mặc định **15 giây**. Nó có mặt để không mất gì trong lúc cuộc trò chuyện đang được nhận ra: bản ghi bắt đầu khi bạn nhấn **Ghi**, hoặc khi bạn trả lời câu hỏi, vẫn mở đầu bằng những lời nói trước đó.
+Thanh trượt **Trước lúc bắt đầu** là số giây âm thanh được giữ lại từ trước khi bản ghi bắt đầu, mặc định **15 giây**. Nó có mặt để không mất gì trong lúc cuộc trò chuyện đang được nhận ra: bản ghi bắt đầu khi bạn nhấn nút ghi, hoặc khi bạn trả lời câu hỏi, vẫn mở đầu bằng những lời nói trước đó.
 
 ## Thu một cuộc trò chuyện {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Hai cài đặt nữa chọn cách vẽ mức âm thanh:
 
 | Cài đặt | Mặc định | Ở đâu |
 | --- | --- | --- |
-| **Hình trong cửa sổ chính** | Sóng | Hai kênh trong khi đang thu. |
-| **Hình trên dải ở chân điện thoại** | Hai mức | Hai thanh mảnh dưới **Thu âm ngoài · sẵn sàng**. |
+| **Hình vẽ trong cửa sổ** | Sóng | Hai kênh trong khi đang thu. |
+| **Hình vẽ ở thanh dưới cùng** | Hai mức | Hai thanh mảnh dưới **Thu âm ngoài · đang chờ cuộc trò chuyện**. |
 
 ### Kiểm tra {#testing-it}
 
@@ -86,4 +86,4 @@ Cuộc trò chuyện đã thu xuất hiện trong [cửa sổ Bản ghi](../inte
 
 <Shot name="01_recordings" alt="Các cuộc họp đã thu trong thẻ Bản ghi, được đánh dấu bằng biểu tượng cửa sổ" />
 
-Nó được chép lời, tóm tắt, xếp vào hạng mục và gắn nhãn bởi cùng các [quy tắc](../ai-processing/processing.md#rules) như một cuộc gọi. Trong bản chép lời của cuộc họp đã thu, người nói được hiển thị là **Ứng dụng khác** ở chỗ một cuộc gọi sẽ hiển thị tên của bên kia; ô **Tìm** của thư viện cũng tìm được những gì đã nói trong đó.
+Nó được chép lời, tóm tắt, xếp vào hạng mục và gắn nhãn bởi cùng các [quy tắc](../ai-processing/processing.md#rules) như một cuộc gọi. Trong bản chép lời của cuộc họp đã thu, người nói được hiển thị bằng tên bản ghi ở chỗ một cuộc gọi sẽ hiển thị tên của bên kia; ô **Tìm** của thư viện cũng tìm được những gì đã nói trong đó.

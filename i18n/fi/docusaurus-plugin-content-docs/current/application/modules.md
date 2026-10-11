@@ -25,8 +25,9 @@ Jokaisella moduulilla on valintaruutu, nimi, rivi siitä, mitä se tekee, ja oik
 | **Integraatio** | Paikallinen API ja webhookit: [Integraatio](/integration/rest-api). |
 | **Mediavarasto** | Keskustelujen kirjasto ja niiden säilytysaika: [Tallenteet](/interface/recordings). |
 | **Käsittely** | Kehotteet ja niitä laukaisevat säännöt: [Käsittely](/ai-processing/processing). |
+| **Kuiskaaja** | Kuuntelee keskustelua sen aikana ja ehdottaa: [Kuiskaajan ikkuna](/interface/prompter). |
 | **Tallennus** | Puheluiden tallentaminen ja siitä kertominen toiselle osapuolelle: [Tallenteet](/recordings). |
-| **Puhelinliikenne** | SIP, tilit, puhelut, numeronvalitsin ja puheluhistoria. |
+| **Puhelin** | SIP, tilit, puhelut, numeronvalitsin ja puheluhistoria. |
 | **Litterointi** | Tunnistimet, niitä ohjaava jono ja niiden tuottamat litteroinnit: [Litterointi](/ai-processing/transcription). |
 
 Poista moduuli käytöstä, niin se on poissa: ei asetuksia, ei valikkokohtaa, eikä mitään siitä ole käynnissä. Poista käytöstä moduuli, jota et tarvitse — esimerkiksi **Integraatio** tietokoneella, jossa mikään muu ei keskustele puhelimen kanssa — tai pidä puhelin, joka on pelkkä puhelin, kun työpiste ei muuta tarvitse. Paketti on sama kummassakin tapauksessa: ei ole mitään ostettavaa eikä mitään avattavaa.

@@ -16,7 +16,7 @@ No augšas uz leju kreisajā pusē ir:
 - tastatūra un zvana taustiņš;
 - kontu žetoni;
 - pogas, kas uzrauga citus iekšējos numurus;
-- četras vietas, kurp doties: **Ieraksti**, **Kontakti**, **Vēsture** un **Iestatījumi**.
+- vietas, kurp doties: **Ieraksti**, **Kontakti**, **Vēsture**, **Suflieris** un **Iestatījumi**.
 
 ### Numura sastādītājs {#the-dialler}
 
@@ -36,9 +36,9 @@ Zem tastatūras ir viens žetons katram [kontam](../sip-accounts/setup.md). Zaļ
 
 Zem žetoniem ir [pogas](../sip-accounts/buttons.md), ko esat izveidojuši kolēģiem un līnijām, katra ar lampiņu — attēlos **Bērziņš** un **Noliktava**. Nospiediet pogu, lai zvanītu uz tās numuru.
 
-### Ieraksti, Kontakti, Vēsture, Iestatījumi {#recordings-contacts-history-settings}
+### Ieraksti, Kontakti, Vēsture, Suflieris, Iestatījumi {#recordings-contacts-history-prompter-settings}
 
-Šie četri ieraksti apakšā katrs atver cilni labajā pusē, blakus viena otrai: [Ieraksti](../interface/recordings.md), [Kontakti un vēsture](contacts-history.md) un [Iestatījumi](settings-overview.md). Atvērtās cilnes paliek rindā labās puses augšā.
+Šie ieraksti apakšā katrs atver cilni labajā pusē, blakus viena otrai: [Ieraksti](../interface/recordings.md), [Kontakti un vēsture](contacts-history.md), [Suflieris](prompter.md) un [Iestatījumi](settings-overview.md). **Suflieris** parādās tikai tad, kad suflieris ir atļauts un tam ir atpazinējs, ar ko klausīties. Atvērtās cilnes paliek rindā labās puses augšā.
 
 ## Notiekošs zvans {#a-call-in-progress}
 
@@ -73,10 +73,10 @@ Apvienoti zvani tiek rādīti kā viena kartīte **Konference** konta līnijā. 
 
 Kad [tveršana no citām lietotnēm](../capture/capture.md) ir atļauta sadaļā **Iestatījumi → Tveršana**, starp kontu žetoniem un pogām parādās josla.
 
-<Shot name="10_settings_capture" full alt="Tveršanas josla tālruņa apakšā: Tveršana · gatavs, Ierakstīt un divas līmeņa joslas" />
+<Shot name="10_settings_capture" full alt="Tveršanas josla tālruņa apakšā: Tveršana · gaidu sarunu, ierakstīšanas poga un divas līmeņa joslas" />
 
-- **Tveršana · gatavs** nozīmē, ka programma klausās, vai citā lietotnē notiek saruna.
-- **Ierakstīt** sāk tveršanu manuāli.
-- Divas tievās joslas zem tās rāda skaņas līmeni: augšējā esat jūs, apakšējā — tas, ko atskaņo dators. To zīmēšanas veidu iestata sadaļā **Attēls joslā telefona pakājē**.
+- **Tveršana · gaidu sarunu** nozīmē, ka programma klausās, vai citā lietotnē notiek saruna.
+- Apaļā poga labajā pusē sāk tveršanu manuāli.
+- Divas tievās joslas zem tās rāda skaņas līmeni: augšējā esat jūs, apakšējā — tas, ko atskaņo dators. To zīmēšanas veidu iestata sadaļā **Zīmējums joslā lejā**.
 
 Programma var arī atrasties paziņojumu apgabalā (macOS — izvēļņu joslā) un tikt izsaukta ar [saīsni](../program/shortcuts.md).

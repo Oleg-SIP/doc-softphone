@@ -1,7 +1,7 @@
 ---
 title: Käivitumine
 sidebar_position: 2
-description: "\"Käivitage telefon koos arvutiga, laske sel aknast hoolimata edasi töötada ja avage lingid tel:, callto: ja sip:.\""
+description: "Käivitage telefon koos arvutiga, laske sel aknast hoolimata edasi töötada ja avage lingid tel:, callto: ja sip:."
 ---
 
 **Seaded → Käivitumine** otsustab, kuidas programm käivitub, mida teeb akna sulgemine ja mis juhtub, kui klõpsate teises programmis telefoninumbril.

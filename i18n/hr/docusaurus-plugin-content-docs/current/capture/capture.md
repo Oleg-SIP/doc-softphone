@@ -2,7 +2,7 @@
 title: Hvatanje
 sidebar_label: Hvatanje iz drugih aplikacija
 sidebar_position: 1
-description: "\"Hvatanje snima razgovor održan u drugoj aplikaciji — Zoomu, Teamsu, Meetu ili bilo kojoj drugoj — izravno s računala.\""
+description: "Hvatanje snima razgovor održan u drugoj aplikaciji — Zoomu, Teamsu, Meetu ili bilo kojoj drugoj — izravno s računala."
 ---
 
 **Hvatanje** je način na koji AI Softphone snima razgovor koji se odvija u drugom programu, poput sastanka u Zoomu, Teamsu ili Meetu. Snima izravno s računala, držeći drugu stranu i vas na odvojenim kanalima, a na kraju čekaju isti prijepis i obrada kao kod poziva.
@@ -34,7 +34,7 @@ Dio programa koji to radi je modul **Hvatanje**, *snimanje razgovora koji teče 
 
 ## Pokretanje hvatanja {#starting-a-capture}
 
-Kad je hvatanje dopušteno, dno [glavnog prozora](../interface/main-window.md#capture) prikazuje njegovo stanje — **Hvatanje · spremno** — s gumbom **Snimaj** desno. Pritisnite **Snimaj** da pokrenete ručno.
+Kad je hvatanje dopušteno, dno [glavnog prozora](../interface/main-window.md#capture) prikazuje njegovo stanje — **Hvatanje · čekam razgovor** — s okruglim gumbom za snimanje desno, *Snimi ovaj razgovor*. Pritisnite ga da pokrenete ručno.
 
 ### Automatsko pokretanje {#automatic-start}
 
@@ -42,7 +42,7 @@ Kad je hvatanje dopušteno, dno [glavnog prozora](../interface/main-window.md#ca
 
 | Izbor | Što se događa |
 | --- | --- |
-| **Nikad** | Hvatanje počinje tek kad pritisnete **Snimaj**. |
+| **Nikad** | Hvatanje počinje tek kad pritisnete gumb za snimanje. |
 | **Pitaj me** | Program pita treba li ga snimiti. Zadano. |
 | **Uvijek** | Program počinje snimati sam. |
 
@@ -52,7 +52,7 @@ Pod **Aplikacije s vlastitim odgovorom** aplikacija može dobiti vlastiti odgovo
 
 ### Prije početka {#before-the-start}
 
-Klizač **Prije početka** određuje koliko se sekundi zvuka čuva od prije početka snimanja, zadano **15 sekundi**. Postoji kako se ništa ne bi izgubilo dok se razgovor primijeti: snimka koja počne kad pritisnete **Snimaj** ili kad odgovorite na pitanje ipak počinje riječima izrečenima prije.
+Klizač **Prije početka** određuje koliko se sekundi zvuka čuva od prije početka snimanja, zadano **15 sekundi**. Postoji kako se ništa ne bi izgubilo dok se razgovor primijeti: snimka koja počne kad pritisnete gumb za snimanje ili kad odgovorite na pitanje ipak počinje riječima izrečenima prije.
 
 ## Hvatanje razgovora {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Još dvije postavke odabiru kako se crta razina zvuka:
 
 | Postavka | Zadano | Gdje |
 | --- | --- | --- |
-| **Slika u glavnom prozoru** | Val | Dva kanala dok hvatanje traje. |
-| **Slika u traci pri dnu telefona** | Dvije razine | Dvije tanke trake ispod **Hvatanje · spremno**. |
+| **Crtež u prozoru** | Val | Dva kanala dok hvatanje traje. |
+| **Crtež u traci pri dnu** | Dvije razine | Dvije tanke trake ispod **Hvatanje · čekam razgovor**. |
 
 ### Provjera {#testing-it}
 
@@ -86,4 +86,4 @@ Uhvaćeni razgovor pojavljuje se u [prozoru Snimke](../interface/recordings.md) 
 
 <Shot name="01_recordings" alt="Uhvaćeni sastanci na kartici Snimke, označeni ikonom prozora" />
 
-Prepisuje se, sažima, svrstava u kategoriju i označava prema istim [pravilima](../ai-processing/processing.md#rules) kao poziv. U prijepisu uhvaćenog sastanka govornik je prikazan kao **Druga aplikacija** tamo gdje bi poziv prikazao ime druge strane; **Traži** u knjižnici pronalazi i ono što je u njemu rečeno.
+Prepisuje se, sažima, svrstava u kategoriju i označava prema istim [pravilima](../ai-processing/processing.md#rules) kao poziv. U prijepisu uhvaćenog sastanka govornik je prikazan pod nazivom snimke tamo gdje bi poziv prikazao ime druge strane; **Traži** u knjižnici pronalazi i ono što je u njemu rečeno.

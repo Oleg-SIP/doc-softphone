@@ -1,7 +1,7 @@
 ---
 title: Web kancaları
 sidebar_position: 1
-description: "\"Bir çağrı başladığında, değiştiğinde ya da bittiğinde telefonun CRM'inize veya başka bir sisteme bir istek göndermesini sağlayın — gelen ve giden bir çağrının tam istekleriyle.\""
+description: "Bir çağrı başladığında, değiştiğinde ya da bittiğinde telefonun CRM'inize veya başka bir sisteme bir istek göndermesini sağlayın — gelen ve giden bir çağrının tam istekleriyle."
 ---
 
 Web kancası, bir çağrıda her bir şey olduğunda telefonun seçtiğiniz bir adrese gönderdiği bir istektir. Bir CRM, müşterinin kartını ikinci zilden önce bu sayede açabilir, bir çağrı bittiğinde onu kaydedebilir ya da bir duvar panosunda bir lamba yakabilir. Web kancası gelen trafik için güvenlik duvarı kuralı gerektirmez: telefon size bağlanır. İstekler iş istasyonundan gönderildiği için adresin yalnızca o bilgisayardan erişilebilir olması yeterlidir — `http://crm.local/calls` gibi bir iç adres de herkese açık bir HTTPS adresi kadar iyi çalışır.

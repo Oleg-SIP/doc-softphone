@@ -10,7 +10,7 @@ A **Beállítások → Névjegy** mindent tartalmaz, ami magáról a programról
 
 ## Verzió és ország {#version-and-country}
 
-Felül a név, a **Verzió** (a képen 1.0.1) és egy hivatkozás a weboldalra, az [ai-softphone.com](https://ai-softphone.com/) címre található.
+Felül a név, a **Verzió** (a képen 1.1.3), egy hivatkozás a weboldalra, az [ai-softphone.com](https://ai-softphone.com/) címre, és egy erre a dokumentációra található.
 
 Az **Ország** megmondja a programnak, hol tartózkodik. Segít kiválasztani a legjobb frissítési kiszolgálót, és utat nyit az országában üzemeltetett nyelvi és beszédszolgáltatások felé. Az **Automatikus felismerés** kitölti.
 

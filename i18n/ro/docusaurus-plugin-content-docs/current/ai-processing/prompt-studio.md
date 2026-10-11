@@ -28,7 +28,9 @@ A doua coloană este ceea ce arată lista sub numele instrucțiunii: ce scrie ș
 | **Calitatea vânzării** | Criterii | Evaluează conversația după criterii de vânzare pe care le puteți edita. |
 | **Calitatea asistenței** | Criterii | Apreciază cât de bine a fost înțeleasă și rezolvată problema. |
 
-Formele sunt structuri fixe ale unui răspuns, ceea ce îi permite programului să-l păstreze și să-l caute mai târziu: **Etichete** sunt coduri dintr-una dintre listele dumneavoastră, **Semnale** sunt coduri cu o gravitate, **Criterii** este o notă cu o justificare și o notă pentru fiecare criteriu, **Răspuns** este un răspuns cu cuvintele pe care se sprijină. Instrucțiunile care îi spun unui model structura sunt păstrate în [Dicționare](dictionaries.md#answer-shapes-and-language).
+Formele sunt structuri fixe ale unui răspuns, ceea ce îi permite programului să-l păstreze și să-l caute mai târziu: **Etichete** sunt coduri dintr-una dintre listele dumneavoastră, **Semnale** sunt coduri cu o gravitate, **Criterii** este o notă cu o justificare și o notă pentru fiecare criteriu, **Răspuns** este un răspuns cu cuvintele pe care se sprijină. Instrucțiunile care îi spun unui model structura sunt păstrate în [Dicționare](dictionaries.md#instructions).
+
+Și asistenții [sufleurului](../interface/prompter.md) sunt instrucțiuni, rulate pe fiecare replică în timpul unui apel, nu pe o conversație încheiată. Sunt păstrați într-o listă separată, la [Asistenți](prompter.md#assistants) în **Setări → Sufleur**.
 
 Apelurile efectuate în AI Softphone, ședințele [captate](/capture/) de pe calculator și înregistrările importate trec toate prin aceleași instrucțiuni după ce au o transcriere.
 
@@ -41,6 +43,6 @@ Sarcinile consemnează ce s-a convenit — nu trimit mesaje, nu programează viz
 - Alegeți modelul pentru fiecare instrucțiune — pe propriul calculator sau în cloud.
 - Stabiliți ordinea în care rulează instrucțiunile, porniți-le și opriți-le și faceți-le condiționate — acest lucru se face cu [regulile](processing.md#rules): de exemplu, o evaluare a vânzării rulează doar pe apelurile încadrate ca **Vânzări**.
 - Păstrați propriile categorii, etichete și semnale de alarmă în [Dicționare](dictionaries.md).
-- Plafonați costul cu [limitele lunare](processing.md#limits).
+- Plafonați costul cu [limitele lunare](processing.md#spending).
 
 Instrucțiunile și regulile originale pot fi restabilite cu **Restabilește valorile implicite**, în secțiunea **Valori implicite** din [Setări → Prelucrare](processing.md#defaults).

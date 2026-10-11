@@ -1,7 +1,7 @@
 ---
 title: Knapper
 sidebar_position: 4
-description: "\"BLF-knapper: knapper med ét tryk, der ringer til et lokalnummer på dit IP-omstillingsanlæg og viser, om det er ledigt, ringer eller er optaget.\""
+description: "BLF-knapper: knapper med ét tryk, der ringer til et lokalnummer på dit IP-omstillingsanlæg og viser, om det er ledigt, ringer eller er optaget."
 ---
 
 Knapper er softphonens **BLF**-taster (Busy Lamp Field), den samme funktion som en bordtelefon på et IP-omstillingsanlæg har. En knap ringer til et lokalnummer med ét tryk. En knap, der overvåger sin linje, viser også en lampe: telefonen spørger omstillingsanlægget om det lokalnummer og viser, om det er ledigt, ringer eller er optaget, ligesom en receptionskonsol eller de programmerbare taster på en bordtelefon gør.

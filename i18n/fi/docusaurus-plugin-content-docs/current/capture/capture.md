@@ -2,7 +2,7 @@
 title: Kaappaus
 sidebar_label: Kaappaus muista sovelluksista
 sidebar_position: 1
-description: "\"Kaappaus tallentaa toisessa sovelluksessa — Zoomissa, Teamsissa, Meetissä tai missä tahansa muussa — käydyn keskustelun suoraan tietokoneelta.\""
+description: "Kaappaus tallentaa toisessa sovelluksessa — Zoomissa, Teamsissa, Meetissä tai missä tahansa muussa — käydyn keskustelun suoraan tietokoneelta."
 ---
 
 **Kaappaus** on tapa, jolla AI Softphone tallentaa toisessa ohjelmassa käytävän keskustelun, kuten kokouksen Zoomissa, Teamsissa tai Meetissä. Se tallentaa suoraan tietokoneelta pitäen toisen osapuolen ja sinut eri kanavilla, ja lopuksi odottavat sama litterointi ja yhteenveto kuin puhelussa.
@@ -34,7 +34,7 @@ Tämän tekevä ohjelman osa on **Kaappaus**-moduuli, *Toisessa sovelluksessa k�
 
 ## Kaappauksen aloittaminen {#starting-a-capture}
 
-Kun kaappaus on sallittu, [pääikkunan](../interface/main-window.md#capture) alareuna näyttää sen tilan — **Kaappaus · valmis** — ja oikealla on **Tallenna**-painike. Paina **Tallenna** aloittaaksesi käsin.
+Kun kaappaus on sallittu, [pääikkunan](../interface/main-window.md#capture) alareuna näyttää sen tilan — **Kaappaus · odotetaan keskustelua** — ja oikealla on pyöreä tallennuspainike, *Tallenna tämä keskustelu*. Paina sitä aloittaaksesi käsin.
 
 ### Automaattinen käynnistys {#automatic-start}
 
@@ -42,7 +42,7 @@ Kun kaappaus on sallittu, [pääikkunan](../interface/main-window.md#capture) al
 
 | Valinta | Mitä tapahtuu |
 | --- | --- |
-| **Ei koskaan** | Kaappaus alkaa vain, kun painat **Tallenna**. |
+| **Ei koskaan** | Kaappaus alkaa vain, kun painat tallennuspainiketta. |
 | **Kysy minulta** | Ohjelma kysyy, tallennetaanko se. Oletus. |
 | **Aina** | Ohjelma alkaa tallentaa itsestään. |
 
@@ -52,7 +52,7 @@ Kohdassa **Sovellukset, joilla on oma vastaus** sovellukselle voi antaa oman vas
 
 ### Ennen alkua {#before-the-start}
 
-Liukusäädin **Ennen alkua** kertoo, kuinka monta sekuntia ääntä tallennuksen alkua edeltävältä ajalta säilytetään, oletuksena **15 sekuntia**. Se on olemassa, jotta mitään ei katoa sillä aikaa, kun keskustelu huomataan: tallenne, joka alkaa, kun painat **Tallenna** tai vastaat kysymykseen, alkaa silti sitä edeltäneillä sanoilla.
+Liukusäädin **Ennen alkua** kertoo, kuinka monta sekuntia ääntä tallennuksen alkua edeltävältä ajalta säilytetään, oletuksena **15 sekuntia**. Se on olemassa, jotta mitään ei katoa sillä aikaa, kun keskustelu huomataan: tallenne, joka alkaa, kun painat tallennuspainiketta tai vastaat kysymykseen, alkaa silti sitä edeltäneillä sanoilla.
 
 ## Keskustelun kaappaaminen {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Kaksi muuta asetusta valitsee, miten äänen taso piirretään:
 
 | Asetus | Oletus | Missä |
 | --- | --- | --- |
-| **Kuva pääikkunassa** | Aalto | Kaksi kanavaa kaappauksen aikana. |
-| **Kuva puhelimen alalaidan palkissa** | Kaksi tasoa | Kaksi ohutta palkkia kohdan **Kaappaus · valmis** alla. |
+| **Kuva ikkunassa** | Aalto | Kaksi kanavaa kaappauksen aikana. |
+| **Kuva alareunan palkissa** | Kaksi tasoa | Kaksi ohutta palkkia kohdan **Kaappaus · odotetaan keskustelua** alla. |
 
 ### Kokeileminen {#testing-it}
 
@@ -86,4 +86,4 @@ Kaapattu keskustelu ilmestyy [Tallenteet-ikkunaan](../interface/recordings.md) k
 
 <Shot name="01_recordings" alt="Kaapatut kokoukset Tallenteet-välilehdellä ikkunakuvakkeella merkittyinä" />
 
-Se litteroidaan, tiivistetään, lajitellaan luokkaan ja merkitään tunnisteilla samoilla [säännöillä](../ai-processing/processing.md#rules) kuin puhelu. Kaapatun kokouksen litteroinnissa puhuja näkyy nimellä **Toinen sovellus** siinä, missä puhelussa näkyisi toisen osapuolen nimi; myös kirjaston **Etsi** löytää siinä sanotun.
+Se litteroidaan, tiivistetään, lajitellaan luokkaan ja merkitään tunnisteilla samoilla [säännöillä](../ai-processing/processing.md#rules) kuin puhelu. Kaapatun kokouksen litteroinnissa puhuja näkyy tallenteen nimellä siinä, missä puhelussa näkyisi toisen osapuolen nimi; myös kirjaston **Etsi** löytää siinä sanotun.

@@ -1,7 +1,7 @@
 ---
 title: Botões
 sidebar_position: 4
-description: "\"Botões BLF: botões de um só toque que ligam para uma extensão da sua central IP e mostram se está livre, a tocar ou ocupada.\""
+description: "Botões BLF: botões de um só toque que ligam para uma extensão da sua central IP e mostram se está livre, a tocar ou ocupada."
 ---
 
 Os botões são as teclas **BLF** (Busy Lamp Field) do softphone, a mesma função que tem um telefone de secretária numa central IP. Um botão liga para uma extensão com um só toque. Um botão que acompanha a sua linha mostra também uma luz: o telefone pergunta à central por essa extensão e mostra se está livre, a tocar ou ocupada, como fazem a consola de uma receção ou as teclas programáveis de um telefone de secretária.

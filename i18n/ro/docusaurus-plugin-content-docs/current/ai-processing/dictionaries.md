@@ -40,14 +40,16 @@ Mărci care *pot fi toate valabile pentru aceeași conversație*. Apăsați **Ad
 
 Lucruri care cer atenție, găsite în conversație împreună cu dovada și momentul — de exemplu *Client furios* sau *Risc de plecare*. Semnalele de alarmă sunt desenate cu roșu în [fereastra Înregistrări](../interface/recordings.md) și fiecare are o gravitate: scăzută, medie sau ridicată.
 
-## Structurile răspunsurilor și limba {#answer-shapes-and-language}
+## Îndrumări {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Setări → Dicționare: structurile răspunsurilor și instrucțiunile de limbă" />
 
-Mai jos în filă se află instrucțiunile din care sunt alcătuite instrucțiunile modelelor. Sunt păstrate aici pentru ca fiecare instrucțiune să poată folosi aceeași formulare, iar dumneavoastră le puteți schimba ca pe orice altă intrare.
+*Ceea ce se adaugă la fiecare instrucțiune despre forma răspunsului și limba în care să fie scris.* Sunt păstrate aici pentru ca fiecare instrucțiune să poată folosi aceeași formulare, iar dumneavoastră le puteți schimba ca pe orice altă intrare — sau puteți scrie unele proprii, de exemplu *răspunde scurt* sau *nu pomeni niciodată un preț*, și le puteți bifa la **Trimite și** în orice instrucțiune.
 
 | Nume | Cod | Ce îi spune modelului |
 | --- | --- | --- |
+| **Proză** | `shape-plain` | Răspunde în proză simplă, fără JSON, liste sau titluri. |
+| **Elemente** | `shape-list` | Răspunde cu o listă de lucruri de făcut, fiecare cu cine și când. |
 | **Etichete** | `shape-labels` | Să răspundă în JSON cu o listă de coduri și cât de sigur este de fiecare, folosind doar coduri din lista primită. |
 | **Notă** | `shape-score` | Să răspundă cu o notă, justificarea ei și cuvintele pe care se bazează. |
 | **Criterii** | `shape-rubric` | Să răspundă cu o notă generală și o notă pentru fiecare criteriu. |
@@ -58,7 +60,7 @@ Mai jos în filă se află instrucțiunile din care sunt alcătuite instrucțiun
 | **Cum s-a vorbit, numit** | `language-as-spoken-named` | La fel, numind limba. |
 | **O limbă anume** | `language-named` | Să scrie în limba pe care o numiți. |
 
-**Adaugă**, la finalul listei, adaugă o intrare.
+**Adaugă**, în partea de sus a listei, adaugă o intrare.
 
 ## Valori implicite {#defaults}
 

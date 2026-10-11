@@ -40,14 +40,16 @@ Märgistused, mis *võivad kõik samale vestlusele sobida*. Vajutage **Lisa**, e
 
 Asjad, mis vajavad tähelepanu, leitud vestlusest koos tõendi ja ajaga — näiteks *Vihane klient* või *Lahkumise oht*. Hoiatussignaalid joonistatakse [salvestiste aknas](../interface/recordings.md) punasega ja igaühel on tõsidus: madal, keskmine või kõrge.
 
-## Vastuse kujud ja keel {#answer-shapes-and-language}
+## Juhised {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Seaded → Sõnastikud: vastuse kujud ja keelejuhised" />
 
-Vahekaardil allpool on juhised, millest juhised kokku pannakse. Neid hoitakse siin, et iga juhis saaks kasutada sama sõnastust, ja te saate neid muuta nagu iga teist kirjet.
+*See, mis lisatakse igale juhisele vastuse kuju ja keele kohta, milles see kirjutada.* Neid hoitakse siin, et iga juhis saaks kasutada sama sõnastust, ja te saate neid muuta nagu iga teist kirjet — või kirjutada oma, näiteks *vasta lühidalt* või *ära kunagi nimeta hinda*, ja märkida need igas juhises jaotises **Saada ka**.
 
 | Nimi | Kood | Mida see mudelile ütleb |
 | --- | --- | --- |
+| **Proosa** | `shape-plain` | Vasta lihtsa proosana, ilma JSONi, loendite ja pealkirjadeta. |
+| **Punktid** | `shape-list` | Vasta tehtavate asjade loendiga, igaühel juures kes ja millal. |
 | **Sildid** | `shape-labels` | Vasta JSON-is koodide loendiga ja kindlusega iga koodi kohta, kasutades ainult antud loendi koode. |
 | **Hinne** | `shape-score` | Vasta hindega, selle põhjendusega ja sõnadega, millele see tugineb. |
 | **Kriteeriumid** | `shape-rubric` | Vasta koondhindega ja hindega iga kriteeriumi kohta. |
@@ -58,7 +60,7 @@ Vahekaardil allpool on juhised, millest juhised kokku pannakse. Neid hoitakse si
 | **Nagu räägiti, nimetatult** | `language-as-spoken-named` | Sama, keelt nimetades. |
 | **Nimetatud keel** | `language-named` | Kirjuta keeles, mille te nimetate. |
 
-Loendi lõpus olev **Lisa** lisab kirje.
+Loendi alguses olev **Lisa** lisab kirje.
 
 ## Vaikeväärtused {#defaults}
 

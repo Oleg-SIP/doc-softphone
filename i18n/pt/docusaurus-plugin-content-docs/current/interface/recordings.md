@@ -1,7 +1,7 @@
 ---
 title: Janela de gravações
 sidebar_position: 2
-description: "\"A biblioteca de todas as conversas — uma chamada, um ficheiro importado ou uma reunião capturada do Zoom, do Teams ou do Meet: filtros, o leitor, a transcrição que pode reproduzir a partir de qualquer linha e as redações.\""
+description: "A biblioteca de todas as conversas — uma chamada, um ficheiro importado ou uma reunião capturada do Zoom, do Teams ou do Meet: filtros, o leitor, a transcrição que pode reproduzir a partir de qualquer linha e as redações."
 ---
 
 **Gravações** é onde vive cada conversa, seja qual for a forma como chegou: uma chamada feita ou recebida no telefone, um ficheiro de áudio que importou ou uma reunião capturada do Zoom, do Teams, do Meet ou de qualquer outra aplicação. Todas ficam numa só lista e todas abrem da mesma maneira: o leitor, a transcrição e tudo o que o modelo de língua redigiu sobre ela. Carregue em **Gravações**, em baixo à esquerda na [janela principal](main-window.md), para a abrir.
@@ -22,7 +22,7 @@ Na imagem, as três primeiras linhas são uma de cada tipo: uma reunião do Zoom
 
 ## Encontrar uma conversa {#finding-a-conversation}
 
-A barra do topo tem cinco filtros, um campo de pesquisa e um menu:
+A barra do topo tem quatro filtros, um campo de pesquisa e um menu:
 
 | Controlo | Restringe a lista por |
 | --- | --- |
@@ -30,7 +30,6 @@ A barra do topo tem cinco filtros, um campo de pesquisa e um menu:
 | **Período** | a data: **Hoje**, **Ontem**, **Últimos 7 dias** ou **Escolher datas…** |
 | **Categoria** | a categoria em que foi arrumada — veja [Dicionários](../ai-processing/dictionaries.md) |
 | **Marca** | as etiquetas e os sinais que tem |
-| **Reconhecedor** | o [reconhecedor](../ai-processing/transcription.md) que fez a sua transcrição |
 | **Procurar** | o que nela foi dito — a pesquisa percorre as transcrições de tudo o que gravou |
 
 <Shot name="39_more_menu" alt="O menu ⋮ da lista: Importar de ficheiros, Exportar para CSV, Abrir num navegador" />

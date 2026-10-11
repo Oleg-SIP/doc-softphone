@@ -25,8 +25,9 @@ Hver modul har en avkrysningsboks, et navn, en linje om hva den gjør, og til h�
 | **Integrasjon** | Det lokale API-et og webhooker: [Integrasjon](/integration/rest-api). |
 | **Medielager** | Biblioteket med samtaler og hvor lenge de beholdes: [Opptak](/interface/recordings). |
 | **Behandling** | Prompter og reglene som utløser dem: [Behandling](/ai-processing/processing). |
+| **Sufflør** | Lytter til en samtale mens den skjer, og foreslår: [Sufflørens vindu](/interface/prompter). |
 | **Opptak** | Opptak av samtaler, og å si fra til den andre parten om det: [Opptak](/recordings). |
-| **Telefoni** | SIP, kontoer, samtaler, nummerfeltet og samtalehistorikken. |
+| **Telefon** | SIP, kontoer, samtaler, nummerfeltet og samtalehistorikken. |
 | **Transkripsjon** | Gjenkjennere, køen som driver dem, og utskriftene de lager: [Transkripsjon](/ai-processing/transcription). |
 
 Slå av en modul, så er den borte: ingen innstillinger for den, ikke noe menypunkt, ingenting av den kjører. Slå av en modul du ikke har bruk for — for eksempel **Integrasjon** på en maskin der ingenting annet snakker med telefonen — eller behold en telefon som bare er en telefon, når det er alt en arbeidsplass trenger. Pakken er den samme uansett: det er ingenting å kjøpe og ingenting å låse opp.

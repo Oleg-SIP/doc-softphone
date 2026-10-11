@@ -1,7 +1,7 @@
 ---
 title: Indulás
 sidebar_position: 2
-description: "\"A telefon indítása a számítógéppel, futva tartása az ablak bezárása után, valamint a tel:, callto: és sip: hivatkozások megnyitása.\""
+description: "A telefon indítása a számítógéppel, futva tartása az ablak bezárása után, valamint a tel:, callto: és sip: hivatkozások megnyitása."
 ---
 
 A **Beállítások → Indulás** dönti el, hogyan indul a program, mit tesz az ablaka bezárása, és mi történik, ha egy másik programban egy telefonszámra kattint.

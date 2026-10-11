@@ -2,7 +2,7 @@
 title: Penangkapan
 sidebar_label: Perekaman dari aplikasi lain
 sidebar_position: 1
-description: "\"Penangkapan merekam percakapan yang berlangsung di aplikasi lain — Zoom, Teams, Meet, atau apa pun — langsung dari komputer.\""
+description: "Penangkapan merekam percakapan yang berlangsung di aplikasi lain — Zoom, Teams, Meet, atau apa pun — langsung dari komputer."
 ---
 
 **Penangkapan** adalah cara AI Softphone merekam percakapan yang berlangsung di program lain, seperti rapat di Zoom, Teams, atau Meet. Perekaman dilakukan dari komputer itu sendiri, dengan pihak seberang dan Anda di kanal yang terpisah, dan di akhir rekaman menunggu transkrip dan hasil olahan yang sama seperti untuk panggilan.
@@ -34,7 +34,7 @@ Bagian program yang melakukan ini adalah modul **Penangkapan**, *Merekam percaka
 
 ## Memulai penangkapan {#starting-a-capture}
 
-Setelah penangkapan diizinkan, bagian bawah [jendela utama](../interface/main-window.md#capture) menampilkan statusnya — **Penangkapan · siap** — dengan tombol **Rekam** di sebelah kanan. Tekan **Rekam** untuk memulai secara manual.
+Setelah penangkapan diizinkan, bagian bawah [jendela utama](../interface/main-window.md#capture) menampilkan statusnya — **Penangkapan · menunggu percakapan** — dengan tombol rekam bundar di sebelah kanan, *Rekam percakapan ini*. Tekan tombol itu untuk memulai secara manual.
 
 ### Mulai otomatis {#automatic-start}
 
@@ -42,7 +42,7 @@ Setelah penangkapan diizinkan, bagian bawah [jendela utama](../interface/main-wi
 
 | Pilihan | Yang terjadi |
 | --- | --- |
-| **Tidak pernah** | Penangkapan hanya dimulai ketika Anda menekan **Rekam**. |
+| **Tidak pernah** | Penangkapan hanya dimulai ketika Anda menekan tombol rekam. |
 | **Tanya saya** | Program bertanya apakah percakapan itu akan direkam. Bawaan. |
 | **Selalu** | Program mulai merekam dengan sendirinya. |
 
@@ -52,7 +52,7 @@ Di bawah **Aplikasi dengan jawaban sendiri**, sebuah aplikasi dapat diberi jawab
 
 ### Sebelum mulai {#before-the-start}
 
-Penggeser **Sebelum mulai** menentukan berapa detik suara yang disimpan dari sebelum perekaman dimulai, secara bawaan **15 detik**. Gunanya agar tidak ada yang hilang selama percakapan sedang dikenali: rekaman yang dimulai saat Anda menekan **Rekam**, atau saat Anda menjawab pertanyaan, tetap diawali dengan kata-kata yang diucapkan sebelumnya.
+Penggeser **Sebelum mulai** menentukan berapa detik suara yang disimpan dari sebelum perekaman dimulai, secara bawaan **15 detik**. Gunanya agar tidak ada yang hilang selama percakapan sedang dikenali: rekaman yang dimulai saat Anda menekan tombol rekam, atau saat Anda menjawab pertanyaan, tetap diawali dengan kata-kata yang diucapkan sebelumnya.
 
 ## Merekam percakapan {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ Dua pengaturan lagi menentukan cara level suara digambar:
 
 | Pengaturan | Bawaan | Di mana |
 | --- | --- | --- |
-| **Gambar di jendela utama** | Gelombang | Kedua kanal selama penangkapan berlangsung. |
-| **Gambar di baris di kaki telepon** | Dua tingkat | Dua bilah tipis di bawah **Penangkapan · siap**. |
+| **Gambar di jendela** | Gelombang | Kedua kanal selama penangkapan berlangsung. |
+| **Gambar di bilah bawah** | Dua tingkat | Dua bilah tipis di bawah **Penangkapan · menunggu percakapan**. |
 
 ### Mengujinya {#testing-it}
 
@@ -86,4 +86,4 @@ Percakapan yang ditangkap muncul di [jendela Rekaman](../interface/recordings.md
 
 <Shot name="01_recordings" alt="Rapat yang ditangkap di tab Rekaman, ditandai dengan ikon jendela" />
 
-Percakapan itu ditranskripsikan, diringkas, dimasukkan ke dalam kategori, dan diberi label oleh [aturan](../ai-processing/processing.md#rules) yang sama seperti panggilan. Dalam transkrip rapat yang ditangkap, pembicara ditampilkan sebagai **Aplikasi lain** di tempat panggilan akan menampilkan nama pihak lain; **Cari** di pustaka juga menemukan apa yang diucapkan di dalamnya.
+Percakapan itu ditranskripsikan, diringkas, dimasukkan ke dalam kategori, dan diberi label oleh [aturan](../ai-processing/processing.md#rules) yang sama seperti panggilan. Dalam transkrip rapat yang ditangkap, pembicara ditampilkan dengan nama rekaman di tempat panggilan akan menampilkan nama pihak lain; **Cari** di pustaka juga menemukan apa yang diucapkan di dalamnya.

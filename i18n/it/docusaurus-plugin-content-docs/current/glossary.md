@@ -7,6 +7,7 @@ description: I termini della telefonia IP e di AI Softphone usati in questa docu
 | Termine | Significato |
 | --- | --- |
 | **Account** | Una linea: un nome utente SIP su un centralino o presso un provider. Può essere collegato a più d'uno. Veda [Configurare un account SIP](/sip-accounts/setup). |
+| **Assistente** | Ciò che si chiede al suggeritore di essere mentre ascolta: sottotitoli, una traduzione o suggerimenti su cosa dire. Vedi [Impostazioni del suggeritore](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Un pulsante che chiama un interno e mostra con una spia se è libero, se squilla o se è occupato. Veda [Pulsanti](/sip-accounts/buttons). |
 | **Avviso di chiamata** | Ciò che fa il telefono quando qualcuno chiama mentre lei è già in conversazione. Veda [Impostazioni delle chiamate](/sip-accounts/calls#call-waiting). |
 | **Cattura** | La registrazione di una conversazione tenuta in un'altra applicazione, come Zoom, Teams o Meet. Veda [Cattura](/capture/). |
@@ -19,8 +20,10 @@ description: I termini della telefonia IP e di AI Softphone usati in questa docu
 | **Centralino IP** | Il centralino telefonico di un ufficio, che funziona su una rete; detto anche softswitch. |
 | **Modello linguistico** | L'IA che legge una trascrizione e ne scrive. Veda [Elaborazione](/ai-processing/processing). |
 | **Prompt** | Ciò che viene chiesto a un modello linguistico. Veda [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Suggeritore** | Una finestra che mostra ciò che si dice durante una chiamata mentre lo si dice, e suggerimenti su cosa rispondere. Vedi [Finestra del suggeritore](/interface/prompter). |
 | **Riconoscitore** | Il servizio che trasforma l'audio in testo (riconoscimento vocale). Veda [Trascrizione](/ai-processing/transcription). |
 | **Segnale** | Qualcosa in una conversazione che richiede attenzione, con la prova e il momento. Veda [Dizionari](/ai-processing/dictionaries#red-flags). |
+| **Prova generale** | Far ascoltare al suggeritore una conversazione registrata invece di una chiamata, per provare un assistente. Vedi [Finestra del suggeritore](/interface/prompter#rehearsing-on-a-recording). |
 | **Registrazione SIP** | Il telefono che dice al centralino dove si trova, così che le chiamate lo raggiungano. Un punto verde sull'account significa che è registrato. |
 | **Regola** | Un passo che gira da sé, in ordine, su ogni conversazione. Veda [Elaborazione](/ai-processing/processing#rules). |
 | **SIP** | Il protocollo che telefoni e centralini usano per stabilire le chiamate. |

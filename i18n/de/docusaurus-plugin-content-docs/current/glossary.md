@@ -7,6 +7,7 @@ description: Die Begriffe der IP-Telefonie und von AI Softphone, die in dieser D
 | Begriff | Bedeutung |
 | --- | --- |
 | **Konto** | Eine Leitung: ein SIP-Benutzername an einer Telefonanlage oder bei einem Anbieter. Sie können an mehreren angemeldet sein. Siehe [Ein SIP-Konto einrichten](/sip-accounts/setup). |
+| **Helfer** | Was der Souffleur sein soll, während er zuhört: Untertitel, eine Übersetzung oder Vorschläge, was Sie sagen können. Siehe [Souffleur-Einstellungen](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Eine Taste, die eine Nebenstelle wählt und mit einer Lampe zeigt, ob sie frei ist, klingelt oder besetzt ist. Siehe [Tasten](/sip-accounts/buttons). |
 | **Anklopfen** | Was das Telefon tut, wenn jemand anruft, während Sie schon telefonieren. Siehe [Anrufeinstellungen](/sip-accounts/calls#call-waiting). |
 | **Mitschnitt** | Ein Gespräch aufnehmen, das in einer anderen Anwendung geführt wird, etwa in Zoom, Teams oder Meet. Siehe [Mitschnitt](/capture/). |
@@ -19,8 +20,10 @@ description: Die Begriffe der IP-Telefonie und von AI Softphone, die in dieser D
 | **IP-Telefonanlage** | Die Telefonanlage eines Büros, in einem Netz betrieben; auch Softswitch genannt. |
 | **Sprachmodell** | Die KI, die ein Transkript liest und darüber schreibt. Siehe [Verarbeitung](/ai-processing/processing). |
 | **Prompt** | Was ein Sprachmodell gefragt wird. Siehe [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Souffleur** | Ein Fenster, das während eines Anrufs zeigt, was gesagt wird, während es gesagt wird, und Vorschläge für eine Antwort. Siehe [Souffleur-Fenster](/interface/prompter). |
 | **Spracherkenner** | Der Dienst, der Ton in Text verwandelt (Spracherkennung). Siehe [Transkription](/ai-processing/transcription). |
 | **Auffälligkeit** | Etwas in einem Gespräch, das Aufmerksamkeit braucht, mit Beleg und Zeitpunkt. Siehe [Verzeichnisse](/ai-processing/dictionaries#red-flags). |
+| **Probe** | Ein aufgenommenes Gespräch statt eines Anrufs in den Souffleur spielen, um einen Helfer auszuprobieren. Siehe [Souffleur-Fenster](/interface/prompter#rehearsing-on-a-recording). |
 | **Anmeldung** | Das Telefon teilt der Telefonanlage mit, wo es ist, damit Anrufe es erreichen. Ein grüner Punkt am Konto bedeutet, dass es angemeldet ist. |
 | **Regel** | Ein Schritt, der von selbst läuft, der Reihe nach, bei jedem Gespräch. Siehe [Verarbeitung](/ai-processing/processing#rules). |
 | **SIP** | Das Protokoll, mit dem Telefone und Telefonanlagen Anrufe aufbauen. |

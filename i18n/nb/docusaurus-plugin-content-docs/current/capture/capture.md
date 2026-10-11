@@ -2,7 +2,7 @@
 title: Fanging
 sidebar_label: Opptak fra andre programmer
 sidebar_position: 1
-description: "\"Fanging tar opp en samtale som holdes i et annet program — Zoom, Teams, Meet eller hvilket som helst annet — rett fra maskinen.\""
+description: "Fanging tar opp en samtale som holdes i et annet program — Zoom, Teams, Meet eller hvilket som helst annet — rett fra maskinen."
 ---
 
 **Fanging** er måten AI Softphone tar opp en samtale på som foregår i et annet program, som et møde i Zoom, Teams eller Meet. Den tar opp fra selve maskinen, med den andre siden og deg på hver sin kanal, og den samme utskriften og det samme sammendraget venter til slutt, som for en telefonsamtale.
@@ -34,7 +34,7 @@ Den delen av programmet som gjør dette, er modulen **Fanging**, *Ta opp en samt
 
 ## Starte en fanging {#starting-a-capture}
 
-Når fanging er tillatt, viser bunnen av [hovedvinduet](../interface/main-window.md#capture) tilstanden — **Fanging · klar** — med en knapp **Ta opp** til høyre. Trykk på **Ta opp** for å starte for hånd.
+Når fanging er tillatt, viser bunnen av [hovedvinduet](../interface/main-window.md#capture) tilstanden — **Fanging · venter på en samtale** — med en rund opptaksknapp til høyre, *Ta opp denne samtalen*. Trykk på den for å starte for hånd.
 
 ### Automatisk start {#automatic-start}
 
@@ -42,7 +42,7 @@ Når fanging er tillatt, viser bunnen av [hovedvinduet](../interface/main-window
 
 | Valg | Hva som skjer |
 | --- | --- |
-| **Aldri** | En fanging starter bare når du trykker på **Ta opp**. |
+| **Aldri** | En fanging starter bare når du trykker på opptaksknappen. |
 | **Spør meg** | Programmet spør om den skal tas opp. Standard. |
 | **Alltid** | Programmet begynner å ta opp av seg selv. |
 
@@ -52,7 +52,7 @@ Under **Programmer med eget svar** kan et program få sitt eget svar — for eks
 
 ### Før starten {#before-the-start}
 
-Glidebryteren **Før starten** angir hvor mange sekunder med lyd fra før et opptak starter som beholdes, **15 sekunder** som standard. Den finnes for at ingenting skal gå tapt mens samtalen blir oppdaget: et opptak som starter når du trykker på **Ta opp**, eller når du svarer på spørsmålet, begynner likevel med ordene som kom før.
+Glidebryteren **Før starten** angir hvor mange sekunder med lyd fra før et opptak starter som beholdes, **15 sekunder** som standard. Den finnes for at ingenting skal gå tapt mens samtalen blir oppdaget: et opptak som starter når du trykker på opptaksknappen, eller når du svarer på spørsmålet, begynner likevel med ordene som kom før.
 
 ## Fange en samtale {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ To andre innstillinger velger hvordan lydnivået tegnes:
 
 | Innstilling | Standard | Hvor |
 | --- | --- | --- |
-| **Bilde i hovedvinduet** | Bølge | De to kanalene mens en fanging pågår. |
-| **Bilde i raden ved foten av telefonen** | To nivåer | De to tynne stolpene under **Fanging · klar**. |
+| **Tegning i vinduet** | Bølge | De to kanalene mens en fanging pågår. |
+| **Tegning i linjen nederst** | To nivåer | De to tynne stolpene under **Fanging · venter på en samtale**. |
 
 ### Prøve det {#testing-it}
 
@@ -86,4 +86,4 @@ En fanget samtale dukker opp i [vinduet Opptak](../interface/recordings.md) som 
 
 <Shot name="01_recordings" alt="Fangede møter på fanen Opptak, markert med et vindusikon" />
 
-Den skrives ut, oppsummeres, sorteres under en kategori og får etiketter av de samme [reglene](../ai-processing/processing.md#rules) som en telefonsamtale. I utskriften av et fanget møde vises den som snakker som **Et annet program**, der en telefonsamtale ville vist navnet på den andre parten; bibliotekets **Søk** finner også det som ble sagt i det.
+Den skrives ut, oppsummeres, sorteres under en kategori og får etiketter av de samme [reglene](../ai-processing/processing.md#rules) som en telefonsamtale. I utskriften av et fanget møte vises den som snakker med navnet på opptaket, der en telefonsamtale ville vist navnet på den andre parten; bibliotekets **Søk** finner også det som ble sagt i det.

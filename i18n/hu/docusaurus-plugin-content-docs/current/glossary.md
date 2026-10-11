@@ -7,6 +7,7 @@ description: A dokumentációban használt IP-telefóniás és AI Softphone-foga
 | Fogalom | Jelentés |
 | --- | --- |
 | **Fiók** | Egy vonal: SIP-felhasználónév egy alközponton vagy egy szolgáltatónál. Egyszerre több fiókba is be lehet jelentkezve. Lásd: [SIP-fiók beállítása](/sip-accounts/setup). |
+| **Segítő** | Az, aminek a súgónak lennie kell, amíg hallgat: felirat, fordítás vagy javaslatok arra, mit mondjon. Lásd [A súgó beállításai](/ai-processing/prompter#assistants). |
 | **BLF** (Busy Lamp Field) | Gomb, amely felhív egy melléket, és egy lámpával jelzi, hogy az szabad, csörög vagy foglalt. Lásd: [Gombok](/sip-accounts/buttons). |
 | **Hívásvárakoztatás** | Az, amit a telefon tesz, ha valaki akkor hívja, amikor Ön már hívásban van. Lásd: [Hívásbeállítások](/sip-accounts/calls#call-waiting). |
 | **Rögzítés** | Egy másik alkalmazásban, például a Zoomban, a Teamsben vagy a Meetben zajló beszélgetés felvétele. Lásd: [Rögzítés](/capture/). |
@@ -19,8 +20,10 @@ description: A dokumentációban használt IP-telefóniás és AI Softphone-foga
 | **IP alközpont** | Egy iroda hálózaton futó telefonközpontja; softswitchnek is nevezik. |
 | **Nyelvi modell** | Az a mesterséges intelligencia, amely elolvassa a leiratot, és ír róla. Lásd: [Feldolgozás](/ai-processing/processing). |
 | **Utasítás** | Az, amit a nyelvi modelltől kérünk. Lásd: [Personal Prompt Studio](/ai-processing/prompt-studio). |
+| **Súgó** | Ablak, amely hívás közben abban a pillanatban mutatja, ami elhangzik, amikor elhangzik, és javaslatokat ad a válaszra. Lásd [A súgó ablaka](/interface/prompter). |
 | **Felismerő** | A hangot szöveggé alakító szolgáltatás (beszédfelismerés). Lásd: [Átirat](/ai-processing/transcription). |
 | **Figyelmeztető jel** | Valami a beszélgetésben, ami figyelmet érdemel, a bizonyítékkal és az időponttal együtt. Lásd: [Szótárak](/ai-processing/dictionaries#red-flags). |
+| **Próba** | Egy rögzített beszélgetés lejátszása a súgónak hívás helyett, egy segítő kipróbálásához. Lásd [A súgó ablaka](/interface/prompter#rehearsing-on-a-recording). |
 | **Regisztráció** | A telefon közli az alközponttal, hol érhető el, hogy a hívások eljussanak hozzá. A fiók melletti zöld pont azt jelenti, hogy regisztrálva van. |
 | **Szabály** | Egy lépés, amely magától, sorrendben lefut minden beszélgetésen. Lásd: [Feldolgozás](/ai-processing/processing#rules). |
 | **SIP** | Az a protokoll, amellyel a telefonok és az alközpontok felépítik a hívásokat. |

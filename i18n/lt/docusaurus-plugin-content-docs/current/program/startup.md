@@ -1,7 +1,7 @@
 ---
 title: Paleidimas
 sidebar_position: 2
-description: "\"Paleiskite telefoną kartu su kompiuteriu, leiskite jam veikti užvėrus langą ir atverkite nuorodas tel:, callto: ir sip:.\""
+description: "Paleiskite telefoną kartu su kompiuteriu, leiskite jam veikti užvėrus langą ir atverkite nuorodas tel:, callto: ir sip:."
 ---
 
 **Nustatymai → Paleidimas** nusprendžia, kaip programa paleidžiama, ką daro lango užvėrimas ir kas nutinka, kai kitoje programoje spustelite telefono numerį.

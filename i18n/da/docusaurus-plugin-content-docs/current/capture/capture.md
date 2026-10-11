@@ -2,7 +2,7 @@
 title: Opfangning
 sidebar_label: Optagelse fra andre programmer
 sidebar_position: 1
-description: "\"Opfangning optager en samtale, der holdes i et andet program — Zoom, Teams, Meet eller et hvilket som helst andet — direkte fra computeren.\""
+description: "Opfangning optager en samtale, der holdes i et andet program — Zoom, Teams, Meet eller et hvilket som helst andet — direkte fra computeren."
 ---
 
 **Opfangning** er den måde, AI Softphone optager en samtale på, der foregår i et andet program, som et møde i Zoom, Teams eller Meet. Den optager fra selve computeren med den anden side og dig på separate kanaler, og den samme udskrift og opsummering venter til sidst, som ved et opkald.
@@ -34,7 +34,7 @@ Den del af programmet, der gør dette, er modulet **Opfangning**, *Optage en sam
 
 ## Starte en opfangning {#starting-a-capture}
 
-Når opfangning er tilladt, viser bunden af [hovedvinduet](../interface/main-window.md#capture) dens tilstand — **Opfangning · klar** — med en knap **Optag** til højre. Tryk på **Optag** for at starte manuelt.
+Når opfangning er tilladt, viser bunden af [hovedvinduet](../interface/main-window.md#capture) dens tilstand — **Opfangning · venter på en samtale** — med en rund optageknap til højre, *Optag denne samtale*. Tryk på den for at starte manuelt.
 
 ### Automatisk start {#automatic-start}
 
@@ -42,7 +42,7 @@ Når opfangning er tilladt, viser bunden af [hovedvinduet](../interface/main-win
 
 | Valg | Hvad der sker |
 | --- | --- |
-| **Aldrig** | En opfangning starter kun, når du trykker på **Optag**. |
+| **Aldrig** | En opfangning starter kun, når du trykker på optageknappen. |
 | **Spørg mig** | Programmet spørger, om den skal optages. Standard. |
 | **Altid** | Programmet begynder at optage af sig selv. |
 
@@ -52,7 +52,7 @@ Under **Programmer med eget svar** kan et program få sit eget svar — for ekse
 
 ### Før starten {#before-the-start}
 
-Skyderen **Før starten** angiver, hvor mange sekunders lyd fra før en optagelse starter der gemmes, **15 sekunder** som standard. Den er der, så intet går tabt, mens samtalen bliver opdaget: en optagelse, der starter, når du trykker på **Optag**, eller når du svarer på spørgsmålet, begynder stadig med de ord, der kom før.
+Skyderen **Før starten** angiver, hvor mange sekunders lyd fra før en optagelse starter der gemmes, **15 sekunder** som standard. Den er der, så intet går tabt, mens samtalen bliver opdaget: en optagelse, der starter, når du trykker på optageknappen, eller når du svarer på spørgsmålet, begynder stadig med de ord, der kom før.
 
 ## Opfange en samtale {#capturing-a-conversation}
 
@@ -69,8 +69,8 @@ To andre indstillinger vælger, hvordan lydniveauet tegnes:
 
 | Indstilling | Standard | Hvor |
 | --- | --- | --- |
-| **Billede i hovedvinduet** | Bølge | De to kanaler, mens en opfangning står på. |
-| **Billede i linjen ved telefonens fod** | To niveauer | De to tynde bjælker under **Opfangning · klar**. |
+| **Tegning i vinduet** | Bølge | De to kanaler, mens en opfangning står på. |
+| **Tegning i linjen nederst** | To niveauer | De to tynde bjælker under **Opfangning · venter på en samtale**. |
 
 ### Prøve det {#testing-it}
 
@@ -86,4 +86,4 @@ En opfanget samtale dukker op i [vinduet Optagelser](../interface/recordings.md)
 
 <Shot name="01_recordings" alt="Opfangede møder på fanen Optagelser, markeret med et vinduesikon" />
 
-Den skrives ud, opsummeres, sorteres under en kategori og forsynes med etiketter af de samme [regler](../ai-processing/processing.md#rules) som et opkald. I udskriften af et opfanget møde vises taleren som **Et andet program**, hvor et opkald ville vise den anden parts navn; bibliotekets **Søg** finder også det, der blev sagt i det.
+Den skrives ud, opsummeres, sorteres under en kategori og forsynes med etiketter af de samme [regler](../ai-processing/processing.md#rules) som et opkald. I udskriften af et opfanget møde vises taleren under optagelsens navn, hvor et opkald ville vise den anden parts navn; bibliotekets **Søg** finder også det, der blev sagt i det.

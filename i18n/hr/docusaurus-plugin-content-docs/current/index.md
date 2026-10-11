@@ -20,6 +20,8 @@ Snimke, prijepisi i povijest čuvaju se u datoteci koja je vaša. Ne trebate ni 
 3. Prepisuje se, govornik po govornik, usklađeno sa zvukom.
 4. Jezični model koji ste odabrali ga obrađuje: sažetak, zadaci, kategorija, oznake i upozoravajući signali — a razgovoru možete postaviti i pitanje.
 
+Tijekom poziva [Šaptač](interface/prompter.md) može ići i dalje: prikazuje ono što se govori dok se govori i predlaže što odgovoriti.
+
 ## Preuzimanje i zahtjevi sustava {#download-and-system-requirements}
 
 Program se besplatno preuzima s [ai-softphone.com](https://ai-softphone.com/#download): instalacijski program (`.exe`) za Windows, slika diska (`.dmg`) za macOS te AppImage ili `.deb` za Linux. Instalacijski program, slika diska i AppImage ne traže ništa prethodno instalirano — Qt, OpenSSL i C++ knjižnice nalaze se u njima. Iznimka je `.deb`: on koristi C++ knjižnice samog sustava, pogledajte niže. Trebat će vam SIP račun kod vašeg operatera ili na centrali koju sami vodite. Snimanje radi čim se program instalira; za prijepis i obradu potrebna je usluga koju odaberete ili model na vlastitom računalu.
@@ -60,6 +62,7 @@ Snimke zaslona u ovoj dokumentaciji napravljene su na macOS-u i prikazane umanje
 | Odabrati prepoznavač koji govor pretvara u tekst | [Prijepis](ai-processing/transcription.md) |
 | Odlučiti koja umjetna inteligencija obrađuje vaše razgovore i koliko to smije stajati | [Obrada](ai-processing/processing.md) |
 | Promijeniti kategorije, oznake i upozoravajuće signale | [Rječnici](ai-processing/dictionaries.md) |
+| Vidjeti što se govori tijekom poziva i dobiti prijedloge što odgovoriti | [Prozor šaptača](interface/prompter.md) |
 | Promijeniti raspored, temu, pokretanje i prečace | [Izgled](program/appearance.md), [Pokretanje](program/startup.md) i [Prečaci](program/shortcuts.md) |
 | Povezati CRM ili drugi program | [Webhookovi](integration/webhooks.md) i [Lokalni REST API](integration/rest-api.md) |
 | Vidjeti što si telefon i centrala govore | [Dijagnostika](troubleshooting/diagnostics.md) |

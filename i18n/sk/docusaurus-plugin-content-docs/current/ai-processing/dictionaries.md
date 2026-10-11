@@ -40,14 +40,16 @@ Označenia, ktoré *môžu na ten istý rozhovor platiť všetky naraz*. Stlače
 
 Veci, ktoré si vyžadujú pozornosť, nájdené v rozhovore s dôkazom a časom — napríklad *Nahnevaný zákazník* alebo *Riziko odchodu*. Varovné signály sú v [okne Nahrávky](../interface/recordings.md) nakreslené červenou a každý nesie závažnosť: nízku, strednú alebo vysokú.
 
-## Tvary odpovedí a jazyk {#answer-shapes-and-language}
+## Pokyny {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Nastavenia → Slovníky: tvary odpovedí a pokyny k jazyku" />
 
-Nižšie na karte sú pokyny, z ktorých sa skladajú pokyny pre modely. Uchovávajú sa tu, aby každý pokyn mohol použiť rovnaké znenie, a môžete ich meniť ako ktorúkoľvek inú položku.
+*To, čo sa pridáva ku každému pokynu o tvare odpovede a jazyku, v ktorom ju písať.* Uchovávajú sa tu, aby každý pokyn mohol použiť rovnaké znenie, a môžete ich meniť ako ktorúkoľvek inú položku — alebo napísať vlastné, napríklad *odpovedaj stručne* či *nikdy neuvádzaj cenu*, a zaškrtnúť ich v **Poslať aj** pri ktoromkoľvek pokyne.
 
 | Názov | Kód | Čo hovorí modelu |
 | --- | --- | --- |
+| **Próza** | `shape-plain` | Odpovedať obyčajnou prózou, bez JSON, zoznamov a nadpisov. |
+| **Položky** | `shape-list` | Odpovedať zoznamom vecí na urobenie, pri každej kto a kedy. |
 | **Štítky** | `shape-labels` | Odpovedz v JSON so zoznamom kódov a s tým, ako si je istý každým z nich, s použitím iba kódov zo zoznamu, ktorý dostal. |
 | **Hodnotenie** | `shape-score` | Odpovedz hodnotením, jeho dôvodom a slovami, na ktorých je založené. |
 | **Kritériá** | `shape-rubric` | Odpovedz celkovým hodnotením a hodnotením každého kritéria. |
@@ -58,7 +60,7 @@ Nižšie na karte sú pokyny, z ktorých sa skladajú pokyny pre modely. Uchová
 | **Ako sa hovorilo, menovite** | `language-as-spoken-named` | To isté, s pomenovaním jazyka. |
 | **Určený jazyk** | `language-named` | Píš v jazyku, ktorý určíte. |
 
-**Pridať** na konci zoznamu pridá položku.
+**Pridať** na začiatku zoznamu pridá položku.
 
 ## Predvolené {#defaults}
 

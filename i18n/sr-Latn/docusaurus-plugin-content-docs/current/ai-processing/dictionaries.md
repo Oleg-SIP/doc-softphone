@@ -40,14 +40,16 @@ Etikete koje *sve mogu da važe za isti razgovor*. Pritisnite **Dodaj** da dodat
 
 Stvari koje traže pažnju, pronađene u razgovoru sa dokazom i vremenom — na primer *Ljutit kupac* ili *Opasnost od odlaska*. Upozorenja su nacrtana crveno u [prozoru Snimci](../interface/recordings.md) i svako nosi ozbiljnost: nisku, srednju ili visoku.
 
-## Oblici odgovora i jezik {#answer-shapes-and-language}
+## Uputstva {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Podešavanja → Rečnici: oblici odgovora i jezička uputstva" />
 
-Niže na kartici nalaze se uputstva od kojih se sklapaju uputstva za modele. Čuvaju se ovde kako bi svako uputstvo moglo da koristi isti tekst, a možete da ih menjate kao bilo koju drugu stavku.
+*Ono što se dodaje svakom uputstvu o obliku odgovora i jeziku na kome ga pisati.* Čuvaju se ovde kako bi svako uputstvo moglo da koristi isti tekst, a možete da ih menjate kao bilo koju drugu stavku — ili da napišete svoja, na primer *odgovaraj kratko* ili *nikada ne pominji cenu*, i označite ih pod **Pošalji i** na bilo kom uputstvu.
 
 | Naziv | Kod | Šta kaže modelu |
 | --- | --- | --- |
+| **Proza** | `shape-plain` | Odgovaraj običnom prozom, bez JSON-a, spiskova i naslova. |
+| **Stavke** | `shape-list` | Odgovaraj spiskom stvari koje treba uraditi, uz svaku ko i kada. |
 | **Oznake** | `shape-labels` | Odgovori u JSON-u sa spiskom kodova i koliko je siguran u svaki, koristeći samo kodove sa spiska koji je dobio. |
 | **Ocena** | `shape-score` | Odgovori ocenom, razlogom za nju i rečima na kojima se zasniva. |
 | **Merila** | `shape-rubric` | Odgovori ukupnom ocenom i ocenom za svako merilo. |
@@ -58,7 +60,7 @@ Niže na kartici nalaze se uputstva od kojih se sklapaju uputstva za modele. Ču
 | **Kako se govorilo, imenovano** | `language-as-spoken-named` | Isto, sa imenovanjem jezika. |
 | **Određen jezik** | `language-named` | Piši na jeziku koji navedete. |
 
-**Dodaj** na kraju spiska dodaje stavku.
+**Dodaj** na vrhu spiska dodaje stavku.
 
 ## Podrazumevane vrednosti {#defaults}
 

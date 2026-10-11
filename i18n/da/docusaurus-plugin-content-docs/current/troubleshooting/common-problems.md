@@ -1,7 +1,7 @@
 ---
 title: Almindelige problemer
 sidebar_position: 2
-description: "\"Hvad du skal tjekke, når en konto ikke vil registrere sig, der ikke er lyd, et opkald eller et møde ikke optages, der ikke er en udskrift, eller et link, en genvej eller API'et ikke gør noget.\""
+description: "Hvad du skal tjekke, når en konto ikke vil registrere sig, der ikke er lyd, et opkald eller et møde ikke optages, der ikke er en udskrift, eller et link, en genvej eller API'et ikke gør noget."
 ---
 
 Hvert punkt peger på den indstilling, der afgør det. Står svaret ikke her, så åbn [Diagnostik](/troubleshooting/diagnostics): det viser, hvad telefonen og omstillingsanlægget siger til hinanden.
@@ -44,7 +44,7 @@ Hvad der sker, når nogen ringer, mens du er i et opkald, indstilles under [Bank
 Se [Opfangning](/capture/).
 
 - **Tillad at lyd opfanges** i **Indstillinger → Opfangning** skal være slået til.
-- Med **Automatisk start** sat til **Spørg mig** (standarden) skal du svare på spørgsmålet, når det dukker op; med **Aldrig** skal du selv trykke på **Optag**.
+- Med **Automatisk start** sat til **Spørg mig** (standarden) skal du svare på spørgsmålet, når det dukker op; med **Aldrig** skal du selv trykke på optageknappen.
 - Brug **Prøv** på samme fane: den øverste bjælke skal bevæge sig, når du taler, den nederste når noget afspilles.
 - Modulet **Opfangning** skal være slået til under [Moduler](/application/modules).
 

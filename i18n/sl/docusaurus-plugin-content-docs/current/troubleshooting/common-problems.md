@@ -1,7 +1,7 @@
 ---
 title: Pogoste težave
 sidebar_position: 2
-description: "\"Kaj preveriti, ko se račun noče registrirati, ni zvoka, klic ali sestanek ni bil posnet, ni prepisa ali povezava, bližnjica ali API ne naredi ničesar.\""
+description: "Kaj preveriti, ko se račun noče registrirati, ni zvoka, klic ali sestanek ni bil posnet, ni prepisa ali povezava, bližnjica ali API ne naredi ničesar."
 ---
 
 Vsak vnos kaže na nastavitev, ki o tem odloča. Če odgovora ni tukaj, odprite [Diagnostiko](/troubleshooting/diagnostics): pokaže, kaj si govorita telefon in centrala.
@@ -44,7 +44,7 @@ Kaj se zgodi, ko vas kdo kliče, medtem ko ste v pogovoru, se nastavi pod [Čaka
 Glejte [Zajemanje](/capture/).
 
 - **Dovoli zajemanje zvoka** v **Nastavitve → Zajemanje** mora biti vklopljeno.
-- Ko je **Samodejni zagon** nastavljen na **Vprašaj me** (privzeto), odgovorite na vprašanje, ko se pojavi; pri **Nikoli** pritisnite **Snemaj** sami.
+- Ko je **Samodejni zagon** nastavljen na **Vprašaj me** (privzeto), odgovorite na vprašanje, ko se pojavi; pri **Nikoli** pritisnite gumb za snemanje sami.
 - Uporabite **Preveri** na istem zavihku: zgornji stolpec se mora premikati, ko govorite, spodnji, ko kaj igra.
 - Modul **Zajemanje** mora biti vklopljen v [Modulih](/application/modules).
 

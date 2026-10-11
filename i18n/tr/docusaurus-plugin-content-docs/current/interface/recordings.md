@@ -1,7 +1,7 @@
 ---
 title: Kayıtlar penceresi
 sidebar_position: 2
-description: "\"Her görüşmenin kitaplığı — bir çağrı, içe aktarılan bir dosya ya da Zoom, Teams veya Meet'ten yakalanan bir toplantı: süzgeçler, oynatıcı, herhangi bir satırdan çalabileceğiniz döküm ve işleme sonuçları.\""
+description: "Her görüşmenin kitaplığı — bir çağrı, içe aktarılan bir dosya ya da Zoom, Teams veya Meet'ten yakalanan bir toplantı: süzgeçler, oynatıcı, herhangi bir satırdan çalabileceğiniz döküm ve işleme sonuçları."
 ---
 
 **Kayıtlar**, nereden gelmiş olursa olsun her görüşmenin yaşadığı yerdir: telefonda yapılan ya da yanıtlanan bir çağrı, içe aktardığınız bir ses dosyası ya da Zoom, Teams, Meet veya başka bir uygulamadan yakalanan bir toplantı. Hepsi tek bir listede durur ve her biri aynı şekilde açılır: oynatıcı, döküm ve dil modelinin onun hakkında yazdığı her şey. Açmak için [ana pencerenin](main-window.md) sol altındaki **Kayıtlar**'a basın.
@@ -22,7 +22,7 @@ Resimde üstteki üç satır birer örnektir: bir Zoom toplantısı, bir bankan�
 
 ## Bir görüşmeyi bulma {#finding-a-conversation}
 
-Üstteki çubukta beş süzgeç, bir arama alanı ve bir menü bulunur:
+Üstteki çubukta dört süzgeç, bir arama alanı ve bir menü bulunur:
 
 | Denetim | Listeyi neye göre daraltır |
 | --- | --- |
@@ -30,7 +30,6 @@ Resimde üstteki üç satır birer örnektir: bir Zoom toplantısı, bir bankan�
 | **Dönem** | tarih: **Bugün**, **Dün**, **Son 7 gün** ya da **Tarih seçin…** |
 | **Kategori** | görüşmenin yerleştirildiği kategori — bkz. [Sözlükler](../ai-processing/dictionaries.md) |
 | **İşaret** | taşıdığı etiketler ve uyarı işaretleri |
-| **Tanıyıcı** | dökümünü oluşturan [tanıyıcı](../ai-processing/transcription.md) |
 | **Ara** | içinde söylenenler — arama, kaydettiğiniz her şeyin dökümlerinde yapılır |
 
 <Shot name="39_more_menu" alt="Listenin ⋮ menüsü: Dosyalardan içe aktar, CSV olarak dışa aktar, Tarayıcıda aç" />

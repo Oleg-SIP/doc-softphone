@@ -1,7 +1,7 @@
 ---
 title: Töötlemine
 sidebar_position: 2
-description: Vestluste automaatne töötlemine, igakuised kulupiirid, keelemudelid, juhised ja neid käivitavad reeglid.
+description: Vestluste automaatne töötlemine, keelemudelid, juhised, neid käivitavad reeglid ja igakuised kulupiirid.
 ---
 
 **Seaded → Töötlemine** otsustab, mis juhtub vestlusega pärast salvestamist, milline mudel töö ära teeb ja kui palju see võib maksta.
@@ -13,20 +13,9 @@ description: Vestluste automaatne töötlemine, igakuised kulupiirid, keelemudel
 - **Väljas:** midagi ei juhtu, kuni te seda [salvestiste aknas](../interface/recordings.md) palute.
 - **Sees:** allpool olevad [reeglid](#rules) töötavad iseenesest. See muudab vestluse kokkuvõtteks, kategooriaks ja kõigeks muuks, ilma et keegi midagi vajutaks. Pilves olev mudel võtab tasu iga sellise sammu eest.
 
-Märkeruudu all näitab programm, kui palju on sel kuul kulutatud ja kui mitme päringuga, näiteks *Sel kuul: 40.492 märki, 84 päringus, tasuta.*
-
-## Piirid {#limits}
-
-| Väli | Tähendus |
-| --- | --- |
-| **Rahapiir, kuus** | Suurim summa, mida mudelid võivad kuus maksta. |
-| **Märkide piir, kuus** | Suurim märkide arv, mida need võivad kuus kasutada. |
-
-Piire on kaks, sest kuud saab mõõta kahes ühikus. Mõlemad on tühjad, kuni need täidate. Kui üks neist saavutatakse, peatuvad automaatsed reeglid kuni kuu vahetumiseni. **Seda, mida te ise palute, ei peatata kunagi.**
-
 ## Keelemudelid {#language-models}
 
-Mudelid, mis loevad ülestähendust ja kirjutavad selle kohta. Vajutage **Lisa**, et lisada. Igaüks on loendis oma nimega ja selle all on mudeli tunnus ning teenuse aadress, näiteks `qwen3-32b · http://llm.local:8000/v1`. Mudelit, mis on tähistatud kui **vaikimisi**, kasutatakse vaikimisi. Mudeli vormis olev nupp kontrollib, kas teenus tõesti vastab, enne kui sellele toetute.
+Mudelid, mis loevad ülestähendust ja kirjutavad selle kohta. Vajutage **Lisa**, et lisada. Igaüks on loendis oma nimega ja selle all on mudeli tunnus ning teenuse aadress, näiteks `qwen3-32b · http://localhost:8000/v1`. Mudelit, mis on tähistatud kui **vaikimisi** — pildil **QWEN**, selles arvutis töötav mudel —, kasutatakse vaikimisi: juhistes ja nendes [etteütleja](prompter.md) abilistes, mis ei nimeta oma mudelit. Mudeli vormis olev **Kontrolli** kontrollib, kas teenus tõesti vastab, enne kui sellele toetute.
 
 - Mudel **teie enda arvutis** hoiab iga vestluse maja sees ja selle käitamine ei maksa midagi.
 - Pilves olev mudel — OpenAI, Claude, Mistral, DeepSeek, Groq ja teised — on tasuline kasutuse järgi. Programm näitab iga päringu hinda märkides ja rahas.
@@ -35,7 +24,7 @@ Mudelid, mis loevad ülestähendust ja kirjutavad selle kohta. Vajutage **Lisa**
 
 <Shot name="12b_settings_processing_prompts" alt="Seaded → Töötlemine: juhised" />
 
-*See, mida mudelitelt palutakse.* Iga juhis tuli programmiga ja igaüks on teie oma, et seda muuta — ja tagasi panna. Igaüks on loendis oma nimega ja selle all on, mida see kirjutab ja millisel kujul. Kuju — **Vastus**, **Punktid**, **Sildid**, **JSON**, **Proosa**, **Signaalid** või **Kriteeriumid** — otsustab, kuidas vastust hoitakse ja näidatakse. Juhiseid kirjeldatakse lehel [Personal Prompt Studio](prompt-studio.md). **Lisa** teeb teie oma juhise.
+*See, mida mudelitelt palutakse.* Iga juhis tuli programmiga ja igaüks on teie oma, et seda muuta — ja tagasi panna. Igaüks on loendis oma nimega ja selle all on, mida see kirjutab ja millisel kujul; **▲** ja **▼** muudavad loendi järjekorda. Kuju — **Vastus**, **Punktid**, **Sildid**, **JSON**, **Proosa**, **Signaalid** või **Kriteeriumid** — otsustab, kuidas vastust hoitakse ja näidatakse. Juhiseid kirjeldatakse lehel [Personal Prompt Studio](prompt-studio.md). **Lisa** teeb teie oma juhise.
 
 ## Reeglid {#rules}
 
@@ -55,6 +44,19 @@ Mudelid, mis loevad ülestähendust ja kirjutavad selle kohta. Vajutage **Lisa**
 | **Hinda seda, kui oli tugi** | Palub mudelilt: **Toe kvaliteet**. | ainult kui kategooria on **Tugi** |
 
 Järjekord on oluline: kaks viimast reeglit vajavad kategooriat, mille neile eelnev reegel on määranud. **Lisa** teeb teie oma reegli.
+
+## Kulud {#spending}
+
+<Shot name="12d_settings_processing_spending" alt="Seaded → Töötlemine: kuu kulud ja kaks piiri" />
+
+Jaotises **Kulud** näitab programm, kui palju on sel kuul kulutatud ja kui mitme päringuga — pildil *Sel kuul ei ole midagi töödeldud* ja näiteks *Sel kuul: 40.492 märki, 84 päringus, tasuta*, kui midagi on töödeldud.
+
+| Väli | Tähendus |
+| --- | --- |
+| **Rahapiir, kuus** | Suurim summa, mida mudelid võivad kuus maksta. |
+| **Märkide piir, kuus** | Suurim märkide arv, mida need võivad kuus kasutada. |
+
+Piire on kaks, sest kuud saab mõõta kahes ühikus. Mõlemad on tühjad, kuni need täidate. Kui üks neist saavutatakse, peatuvad automaatsed reeglid kuni kuu vahetumiseni. **Seda, mida te ise palute, ei peatata kunagi.** [Etteütlejal](prompter.md#spending) on omad laed, et kuu jagu kokkuvõtteid ei saaks seda keset vestlust vaigistada.
 
 ## Vaikeväärtused {#defaults}
 

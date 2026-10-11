@@ -25,8 +25,9 @@ Fiecare modul are o casetă de bifat, un nume, un rând care spune ce face și, 
 | **Integrare** | API-ul local și webhookurile: [Integrare](/integration/rest-api). |
 | **Depozit media** | Biblioteca de conversații și cât timp sunt păstrate: [Înregistrări](/interface/recordings). |
 | **Prelucrare** | Instrucțiunile și regulile care le declanșează: [Prelucrare](/ai-processing/processing). |
+| **Sufleur** | Ascultă o conversație în desfășurare și sugerează: [Fereastra sufleurului](/interface/prompter). |
 | **Înregistrare** | Înregistrarea apelurilor și anunțarea celeilalte părți despre aceasta: [Înregistrări](/recordings). |
-| **Telefonie** | SIP, conturile, apelurile, tastatura de apelare și istoricul apelurilor. |
+| **Telefon** | SIP, conturile, apelurile, tastatura de apelare și istoricul apelurilor. |
 | **Transcriere** | Recunoscătoarele, coada care le alimentează și transcrierile pe care le produc: [Transcriere](/ai-processing/transcription). |
 
 Opriți un modul și acesta dispare: nicio setare pentru el, nicio intrare de meniu, nimic din el nu mai rulează. Opriți un modul de care nu aveți nevoie — de exemplu **Integrare** pe un calculator unde niciun alt program nu comunică cu telefonul — sau păstrați un telefon care este doar telefon, acolo unde de atât are nevoie un birou. Pachetul este același în ambele cazuri: nu este nimic de cumpărat și nimic de deblocat.

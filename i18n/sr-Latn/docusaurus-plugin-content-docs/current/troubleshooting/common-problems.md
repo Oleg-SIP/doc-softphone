@@ -1,7 +1,7 @@
 ---
 title: Česti problemi
 sidebar_position: 2
-description: "\"Šta proveriti kada nalog neće da se registruje, nema zvuka, poziv ili sastanak nije snimljen, nema prepisa ili veza, prečica ili API ništa ne rade.\""
+description: "Šta proveriti kada nalog neće da se registruje, nema zvuka, poziv ili sastanak nije snimljen, nema prepisa ili veza, prečica ili API ništa ne rade."
 ---
 
 Svaka stavka upućuje na podešavanje koje o tome odlučuje. Ako odgovora ovde nema, otvorite [Dijagnostiku](/troubleshooting/diagnostics): prikazuje šta jedno drugom govore telefon i centrala.
@@ -44,7 +44,7 @@ Kodeci se nude redosledom spiska u [Podešavanja → Pozivi](/sip-accounts/calls
 Pogledajte [Hvatanje](/capture/).
 
 - **Dozvoli hvatanje zvuka** u **Podešavanja → Hvatanje** mora biti uključeno.
-- Kada je **Automatsko pokretanje** podešeno na **Pitaj me** (podrazumevano), odgovorite na pitanje kada se pojavi; uz **Nikad** pritisnite **Snimi** sami.
+- Kada je **Automatsko pokretanje** podešeno na **Pitaj me** (podrazumevano), odgovorite na pitanje kada se pojavi; uz **Nikad** pritisnite dugme za snimanje sami.
 - Koristite **Isprobaj** na istoj kartici: gornja traka mora da se pomera kada govorite, donja kada nešto svira.
 - Modul **Hvatanje** mora biti uključen u [Modulima](/application/modules).
 

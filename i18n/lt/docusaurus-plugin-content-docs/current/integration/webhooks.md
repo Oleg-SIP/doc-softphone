@@ -1,7 +1,7 @@
 ---
 title: Žiniatinklio kabliai
 sidebar_position: 1
-description: "\"Leiskite telefonui siųsti užklausą jūsų CRM ar kitai sistemai, kai skambutis prasideda, pasikeičia ar baigiasi — su tiksliomis įeinančio ir išeinančio skambučio užklausomis.\""
+description: "Leiskite telefonui siųsti užklausą jūsų CRM ar kitai sistemai, kai skambutis prasideda, pasikeičia ar baigiasi — su tiksliomis įeinančio ir išeinančio skambučio užklausomis."
 ---
 
 Žiniatinklio kablys — tai užklausa, kurią telefonas siunčia jūsų pasirinktu adresu kaskart, kai kas nors nutinka skambučiui. Taip CRM gali atverti kliento kortelę prieš antrą skambėjimą, užregistruoti skambutį jam pasibaigus ar uždegti lemputę sieniniame skydelyje. Žiniatinklio kabliui nereikia įeinančių ugniasienės taisyklių: telefonas pats kreipiasi į jus. Kadangi užklausos siunčiamos iš darbo vietos kompiuterio, adresas turi būti pasiekiamas tik iš to kompiuterio — vidinis `http://crm.local/calls` veikia taip pat gerai kaip viešas HTTPS adresas.
