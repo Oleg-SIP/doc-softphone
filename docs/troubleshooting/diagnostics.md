@@ -39,14 +39,41 @@ The drop-down chooses how much the program writes to its log file; in the pictur
 
 ### Files
 
-The tab lists where the program keeps its files and how big each is. On macOS:
+The tab lists where the program keeps its files and how big each is.
 
-| File | Where | Holds |
-| --- | --- | --- |
-| Settings | `~/Library/Preferences/ai-softphone/settings.json` | The settings. Never passwords or tokens. |
-| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Contacts, history, transcripts and write-ups. |
-| Recordings | `~/Library/Application Support/ai-softphone/recordings` | The audio of the recordings. |
-| Log | `~/Library/Logs/ai-softphone/ai-softphone.log` | The log. |
+| File | Holds |
+| --- | --- |
+| Settings | The settings. Never passwords or tokens. |
+| Database | Contacts, history, transcripts and write-ups. |
+| Recordings | The audio of the recordings. |
+| Log | The log. |
+
+**Windows**
+
+| File | Where |
+| --- | --- |
+| Settings | `%APPDATA%\ai-softphone\settings.json` |
+| Database | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Recordings | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Log | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| File | Where |
+| --- | --- |
+| Settings | `~/Library/Preferences/ai-softphone/settings.json` |
+| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Recordings | `~/Library/Application Support/ai-softphone/recordings` |
+| Log | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| File | Where |
+| --- | --- |
+| Settings | `~/.config/ai-softphone/settings.json` |
+| Database | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Recordings | `~/.local/share/ai-softphone/recordings` |
+| Log | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Under the list, **Open** shows the log and **Clear** empties it. Clear the log just before you reproduce a problem; clearing cannot be undone.
 
