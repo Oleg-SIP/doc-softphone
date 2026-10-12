@@ -1,7 +1,7 @@
 ---
 title: Common problems
 sidebar_position: 2
-description: "What to check when an account will not register, there is no sound, a call or a meeting is not recorded, there is no transcript, or a link, a hotkey or the API does nothing."
+description: "What to check when an account will not register, there is no sound, a call or a meeting is not recorded, there is no transcript, the prompter does not start, or a link, a hotkey or the API does nothing."
 ---
 
 Each entry points to the setting that decides it. If the answer is not here, open [Diagnostics](/troubleshooting/diagnostics): it shows what the phone and the PBX say to each other.
@@ -54,6 +54,12 @@ See [Capture](/capture/).
 - There has to be a [recogniser](/ai-processing/transcription) and a [language model](/ai-processing/processing#language-models), and each has to answer at its address.
 - When the monthly **Money limit** or **Token limit** is reached, the automatic rules stop until the month turns. Asking for something yourself is never stopped.
 - The steps of [Settings → Overview](/interface/settings-overview) show what is still to set up.
+
+## The prompter does not appear, or does not start
+
+**Prompter** appears in the list at the foot of the phone only when three things are there: a recogniser with an **Address for the prompter** that passed its **Test** in [Settings → Transcription](/ai-processing/transcription#live-recognition-for-the-prompter), a language model, and the tick **Allow the prompter to be used** in [Settings → Prompter](/ai-processing/prompter). The **Prompter** module must be on in [Modules](/application/modules).
+
+If the window opens but the prompter does not start, the line under its buttons says what is missing. [When it does not start](/interface/prompter#when-it-does-not-start) lists every message and what to do.
 
 ## The phone disappeared when I closed the window
 
