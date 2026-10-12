@@ -1,7 +1,7 @@
 ---
 title: Probleme frecvente
 sidebar_position: 2
-description: Ce să verificați când un cont nu se înregistrează, nu există sunet, un apel sau o ședință nu este înregistrată, nu există transcriere ori când un link, o scurtătură sau API-ul nu face nimic.
+description: Ce să verificați când un cont nu se înregistrează, nu există sunet, un apel sau o ședință nu este înregistrată, nu există transcriere, sufleurul nu pornește ori când un link, o scurtătură sau API-ul nu face nimic.
 ---
 
 Fiecare intrare trimite la setarea care o hotărăște. Dacă răspunsul nu este aici, deschideți [Diagnostic](/troubleshooting/diagnostics): arată ce își spun telefonul și centrala.
@@ -54,6 +54,12 @@ Consultați [Captare](/capture/).
 - Trebuie să existe un [recunoscător](/ai-processing/transcription) și un [model de limbă](/ai-processing/processing#language-models), iar fiecare trebuie să răspundă la adresa lui.
 - Când este atinsă **Limită de bani, lunar** sau **Limită de tokenuri, lunar**, regulile automate se opresc până la începutul lunii următoare. Ceea ce cereți chiar dumneavoastră nu este oprit niciodată.
 - Pașii din [Setări → Prezentare generală](/interface/settings-overview) arată ce mai rămâne de configurat.
+
+## Sufleurul nu apare sau nu pornește {#the-prompter-does-not-appear-or-does-not-start}
+
+**Sufleur** apare în lista din partea de jos a telefonului doar când există trei lucruri: un recunoscător cu o **Adresă pentru sufleur** care a trecut de **Verifică** în [Setări → Transcriere](/ai-processing/transcription#live-recognition-for-the-prompter), un model de limbaj și bifa **Permite folosirea sufleurului** în [Setări → Sufleur](/ai-processing/prompter). Modulul **Sufleur** trebuie să fie activat în [Module](/application/modules).
+
+Dacă fereastra se deschide, dar sufleurul nu pornește, rândul de sub butoanele lui spune ce lipsește. [Când nu pornește](/interface/prompter#when-it-does-not-start) enumeră fiecare mesaj și ce e de făcut.
 
 ## Telefonul a dispărut când am închis fereastra {#the-phone-disappeared-when-i-closed-the-window}
 

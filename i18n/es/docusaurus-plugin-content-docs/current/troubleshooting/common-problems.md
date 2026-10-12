@@ -1,7 +1,7 @@
 ---
 title: Problemas frecuentes
 sidebar_position: 2
-description: "Qué comprobar cuando una cuenta no se registra, no hay sonido, una llamada o una reunión no se graba, no hay transcripción, o un enlace, un atajo o la API no hacen nada."
+description: "Qué comprobar cuando una cuenta no se registra, no hay sonido, una llamada o una reunión no se graba, no hay transcripción, el apuntador no arranca, o un enlace, un atajo o la API no hacen nada."
 ---
 
 Cada entrada remite al ajuste que lo decide. Si la respuesta no está aquí, abra el [Diagnóstico](/troubleshooting/diagnostics): muestra lo que se dicen el teléfono y la centralita.
@@ -54,6 +54,12 @@ Consulte [Captura](/capture/).
 - Tiene que haber un [reconocedor](/ai-processing/transcription) y un [modelo de lenguaje](/ai-processing/processing#language-models), y cada uno tiene que responder en su dirección.
 - Cuando se alcanza el **Límite de dinero** o el **Límite de tokens** mensual, las reglas automáticas se detienen hasta que cambia el mes. Lo que pide usted mismo nunca se detiene.
 - Los pasos de [Ajustes → Resumen general](/interface/settings-overview) muestran lo que falta por configurar.
+
+## El apuntador no aparece o no arranca {#the-prompter-does-not-appear-or-does-not-start}
+
+**Apuntador** aparece en la lista de la parte inferior del teléfono solo cuando se cumplen tres cosas: un reconocedor con una **Dirección para el apuntador** que haya pasado su **Probar** en [Ajustes → Transcripción](/ai-processing/transcription#live-recognition-for-the-prompter), un modelo de lenguaje y la casilla **Permitir el uso del apuntador** en [Ajustes → Apuntador](/ai-processing/prompter). El módulo **Apuntador** tiene que estar activado en [Módulos](/application/modules).
+
+Si la ventana se abre pero el apuntador no arranca, la línea bajo sus botones dice qué falta. [Cuando no arranca](/interface/prompter#when-it-does-not-start) recoge todos los mensajes y qué hacer con cada uno.
 
 ## El teléfono desapareció al cerrar la ventana {#the-phone-disappeared-when-i-closed-the-window}
 

@@ -1,7 +1,7 @@
 ---
 title: Bežné problémy
 sidebar_position: 2
-description: "Čo skontrolovať, keď sa účet nechce zaregistrovať, nie je zvuk, hovor alebo stretnutie sa nenahralo, nie je prepis, alebo odkaz, klávesová skratka či API nič nerobí."
+description: "Čo skontrolovať, keď sa účet nechce zaregistrovať, nie je zvuk, hovor alebo stretnutie sa nenahralo, nie je prepis, našepkávač sa nespustí, alebo odkaz, klávesová skratka či API nič nerobí."
 ---
 
 Každá položka ukazuje na nastavenie, ktoré o tom rozhoduje. Ak tu odpoveď nie je, otvorte [Diagnostiku](/troubleshooting/diagnostics): ukazuje, čo si telefón a ústredňa hovoria.
@@ -54,6 +54,12 @@ Pozrite [Zachytávanie](/capture/).
 - Musí existovať [rozpoznávač](/ai-processing/transcription) a [jazykový model](/ai-processing/processing#language-models) a každý musí odpovedať na svojej adrese.
 - Keď sa dosiahne mesačná **Hranica peňazí** alebo **Hranica tokenov**, automatické pravidlá sa zastavia do konca mesiaca. To, o čo požiadate sami, sa nikdy nezastaví.
 - Kroky v [Nastavenia → Prehľad](/interface/settings-overview) ukazujú, čo ešte treba nastaviť.
+
+## Našepkávač sa neobjaví alebo sa nespustí {#the-prompter-does-not-appear-or-does-not-start}
+
+**Našepkávač** sa v zozname v spodnej časti telefónu objaví, len keď sú splnené tri veci: rozpoznávač s vyplnenou **Adresa pre našepkávača**, ktorý prešiel **Vyskúšať** v [Nastavenia → Prepis](/ai-processing/transcription#live-recognition-for-the-prompter), jazykový model a zaškrtnuté **Povoliť používanie našepkávača** v [Nastavenia → Našepkávač](/ai-processing/prompter). Modul **Našepkávač** musí byť zapnutý v [Moduly](/application/modules).
+
+Ak sa okno otvorí, ale našepkávač sa nespustí, riadok pod jeho tlačidlami povie, čo chýba. [Keď sa nespustí](/interface/prompter#when-it-does-not-start) uvádza všetky hlásenia a čo s nimi robiť.
 
 ## Telefón zmizol, keď som zatvoril okno {#the-phone-disappeared-when-i-closed-the-window}
 

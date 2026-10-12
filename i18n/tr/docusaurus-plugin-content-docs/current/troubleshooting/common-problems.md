@@ -1,7 +1,7 @@
 ---
 title: Sık karşılaşılan sorunlar
 sidebar_position: 2
-description: "Bir hesap kaydolmadığında, ses olmadığında, bir çağrı ya da toplantı kaydedilmediğinde, döküm olmadığında ya da bir bağlantı, bir kısayol veya API hiçbir şey yapmadığında neyi denetlemeli."
+description: "Bir hesap kaydolmadığında, ses olmadığında, bir çağrı ya da toplantı kaydedilmediğinde, döküm olmadığında, suflör başlamadığında ya da bir bağlantı, bir kısayol veya API hiçbir şey yapmadığında neyi denetlemeli."
 ---
 
 Her girdi, sorunu belirleyen ayarı gösterir. Yanıt burada yoksa [Tanılama](/troubleshooting/diagnostics) penceresini açın: telefonun ve santralin birbirine ne söylediğini gösterir.
@@ -54,6 +54,12 @@ Bkz. [Yakalama](/capture/).
 - Bir [tanıyıcı](/ai-processing/transcription) ve bir [dil modeli](/ai-processing/processing#language-models) bulunmalı ve her biri kendi adresinde yanıt vermelidir.
 - Aylık **Para sınırı** ya da **Belirteç sınırı** dolduğunda otomatik kurallar ay dönene kadar durur. Bir şeyi kendiniz istemeniz hiçbir zaman durdurulmaz.
 - [Ayarlar → Genel bakış](/interface/settings-overview) adımları neyin hâlâ kurulması gerektiğini gösterir.
+
+## Suflör görünmüyor ya da başlamıyor {#the-prompter-does-not-appear-or-does-not-start}
+
+**Suflör**, telefonun altındaki listede yalnızca üç şey sağlandığında görünür: [Ayarlar → Yazıya döküm](/ai-processing/transcription#live-recognition-for-the-prompter) altında **Suflör için adres** girilmiş ve **Sına** denemesini geçmiş bir tanıyıcı, bir dil modeli ve [Ayarlar → Suflör](/ai-processing/prompter) altında **Suflörün kullanılmasına izin ver** işareti. **Suflör** modülü [Modüller](/application/modules) altında açık olmalıdır.
+
+Pencere açılıyor ama suflör başlamıyorsa, düğmelerinin altındaki satır neyin eksik olduğunu söyler. [Başlamadığında](/interface/prompter#when-it-does-not-start) bölümü tüm iletileri ve ne yapılacağını listeler.
 
 ## Pencereyi kapattığımda telefon kayboldu {#the-phone-disappeared-when-i-closed-the-window}
 

@@ -1,7 +1,7 @@
 ---
 title: Problemas comuns
 sidebar_position: 2
-description: "O que verificar quando uma conta não se regista, não há som, uma chamada ou uma reunião não é gravada, não há transcrição, ou uma ligação, um atalho ou a API não fazem nada."
+description: "O que verificar quando uma conta não se regista, não há som, uma chamada ou uma reunião não é gravada, não há transcrição, o ponto não arranca, ou uma ligação, um atalho ou a API não fazem nada."
 ---
 
 Cada entrada aponta para a definição que o decide. Se a resposta não estiver aqui, abra o [Diagnóstico](/troubleshooting/diagnostics): mostra o que o telefone e a central dizem um ao outro.
@@ -54,6 +54,12 @@ Veja [Captura](/capture/).
 - Tem de haver um [reconhecedor](/ai-processing/transcription) e um [modelo de língua](/ai-processing/processing#language-models), e cada um tem de responder no seu endereço.
 - Quando o **Limite de dinheiro** ou o **Limite de tokens** mensal é atingido, as regras automáticas param até o mês mudar. O que pede você mesmo nunca é parado.
 - Os passos de [Definições → Visão geral](/interface/settings-overview) mostram o que ainda falta configurar.
+
+## O ponto não aparece ou não arranca {#the-prompter-does-not-appear-or-does-not-start}
+
+**Ponto** só aparece na lista no fundo do telefone quando há três coisas: um reconhecedor com um **Endereço para o ponto** que passou no seu **Testar** em [Definições → Transcrição](/ai-processing/transcription#live-recognition-for-the-prompter), um modelo de linguagem e a caixa **Permitir o uso do ponto** em [Definições → Ponto](/ai-processing/prompter). O módulo **Ponto** tem de estar ligado em [Módulos](/application/modules).
+
+Se a janela abre mas o ponto não arranca, a linha por baixo dos botões diz o que falta. [Quando não arranca](/interface/prompter#when-it-does-not-start) lista cada mensagem e o que fazer.
 
 ## O telefone desapareceu quando fechei a janela {#the-phone-disappeared-when-i-closed-the-window}
 

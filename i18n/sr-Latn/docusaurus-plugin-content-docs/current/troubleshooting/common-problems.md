@@ -1,7 +1,7 @@
 ---
 title: Česti problemi
 sidebar_position: 2
-description: "Šta proveriti kada nalog neće da se registruje, nema zvuka, poziv ili sastanak nije snimljen, nema prepisa ili veza, prečica ili API ništa ne rade."
+description: "Šta proveriti kada nalog neće da se registruje, nema zvuka, poziv ili sastanak nije snimljen, nema prepisa, šaptač se ne pokreće ili veza, prečica ili API ništa ne rade."
 ---
 
 Svaka stavka upućuje na podešavanje koje o tome odlučuje. Ako odgovora ovde nema, otvorite [Dijagnostiku](/troubleshooting/diagnostics): prikazuje šta jedno drugom govore telefon i centrala.
@@ -54,6 +54,12 @@ Pogledajte [Hvatanje](/capture/).
 - Mora da postoje [prepoznavač](/ai-processing/transcription) i [jezički model](/ai-processing/processing#language-models), a svaki mora da odgovara na svojoj adresi.
 - Kada se dostigne mesečna **Novčana granica** ili **Granica žetona**, automatska pravila staju do kraja meseca. Ono što zatražite sami nikada se ne zaustavlja.
 - Koraci u [Podešavanja → Pregled](/interface/settings-overview) pokazuju šta još treba podesiti.
+
+## Šaptač se ne pojavljuje ili se ne pokreće {#the-prompter-does-not-appear-or-does-not-start}
+
+**Šaptač** se pojavljuje na listi pri dnu telefona samo kada postoje tri stvari: prepoznavač sa **Adresa za šaptača** koji je prošao svoj **Isprobaj** u [Podešavanja → Prepisivanje](/ai-processing/transcription#live-recognition-for-the-prompter), jezički model i oznaka **Dozvoli korišćenje šaptača** u [Podešavanja → Šaptač](/ai-processing/prompter). Modul **Šaptač** mora biti uključen u [Moduli](/application/modules).
+
+Ako se prozor otvori, a šaptač se ne pokrene, red ispod njegovih dugmadi kaže šta nedostaje. [Kada se ne pokreće](/interface/prompter#when-it-does-not-start) navodi sve poruke i šta treba uraditi.
 
 ## Telefon je nestao kada sam zatvorio prozor {#the-phone-disappeared-when-i-closed-the-window}
 

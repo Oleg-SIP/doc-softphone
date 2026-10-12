@@ -1,7 +1,7 @@
 ---
 title: Levinud probleemid
 sidebar_position: 2
-description: "Mida kontrollida, kui konto ei registreeru, heli pole, kõnet või koosolekut ei salvestata, ülestähendust pole või link, otsetee või API ei tee midagi."
+description: "Mida kontrollida, kui konto ei registreeru, heli pole, kõnet või koosolekut ei salvestata, ülestähendust pole, etteütleja ei käivitu või link, otsetee või API ei tee midagi."
 ---
 
 Iga punkt viitab seadele, mis selle otsustab. Kui vastust siin pole, avage [Diagnostika](/troubleshooting/diagnostics): see näitab, mida telefon ja keskjaam teineteisele ütlevad.
@@ -54,6 +54,12 @@ Vaadake [Hõivamine](/capture/).
 - Peab olema [tuvastaja](/ai-processing/transcription) ja [keelemudel](/ai-processing/processing#language-models) ning kumbki peab oma aadressil vastama.
 - Kui igakuine **Rahapiir** või **Märkide piir** on saavutatud, peatuvad automaatsed reeglid kuni kuu vahetumiseni. Seda, mida te ise palute, ei peatata kunagi.
 - Jaotise [Seaded → Ülevaade](/interface/settings-overview) sammud näitavad, mis on veel seadistamata.
+
+## Etteütleja ei ilmu või ei käivitu {#the-prompter-does-not-appear-or-does-not-start}
+
+**Etteütleja** ilmub telefoni allosas olevasse loendisse ainult siis, kui olemas on kolm asja: tuvastaja, millel on **Aadress etteütleja jaoks** ja mis on läbinud **Kontrolli** jaotises [Seaded → Ülestähendus](/ai-processing/transcription#live-recognition-for-the-prompter), keelemudel ning märge **Luba etteütleja kasutamine** jaotises [Seaded → Etteütleja](/ai-processing/prompter). Moodul **Etteütleja** peab olema sisse lülitatud jaotises [Moodulid](/application/modules).
+
+Kui aken avaneb, aga etteütleja ei käivitu, ütleb nuppude all olev rida, mis puudu on. [Kui see ei käivitu](/interface/prompter#when-it-does-not-start) loetleb kõik teated ja selle, mida teha.
 
 ## Telefon kadus, kui aken suleti {#the-phone-disappeared-when-i-closed-the-window}
 

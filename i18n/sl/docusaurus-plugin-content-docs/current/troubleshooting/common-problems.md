@@ -1,7 +1,7 @@
 ---
 title: Pogoste težave
 sidebar_position: 2
-description: "Kaj preveriti, ko se račun noče registrirati, ni zvoka, klic ali sestanek ni bil posnet, ni prepisa ali povezava, bližnjica ali API ne naredi ničesar."
+description: "Kaj preveriti, ko se račun noče registrirati, ni zvoka, klic ali sestanek ni bil posnet, ni prepisa, se šepetalec ne zažene ali povezava, bližnjica ali API ne naredi ničesar."
 ---
 
 Vsak vnos kaže na nastavitev, ki o tem odloča. Če odgovora ni tukaj, odprite [Diagnostiko](/troubleshooting/diagnostics): pokaže, kaj si govorita telefon in centrala.
@@ -54,6 +54,12 @@ Glejte [Zajemanje](/capture/).
 - Obstajati morata [razpoznavalnik](/ai-processing/transcription) in [jezikovni model](/ai-processing/processing#language-models), vsak pa mora odgovarjati na svojem naslovu.
 - Ko je dosežena mesečna **Denarna meja** ali **Meja žetonov**, se samodejna pravila ustavijo do konca meseca. Kar zahtevate sami, se nikoli ne ustavi.
 - Koraki v [Nastavitve → Pregled](/interface/settings-overview) kažejo, kaj je še treba nastaviti.
+
+## Šepetalec se ne pojavi ali se ne zažene {#the-prompter-does-not-appear-or-does-not-start}
+
+**Šepetalec** se na seznamu na dnu telefona pojavi le, ko so izpolnjene tri stvari: razpoznavalnik z **Naslov za šepetalca**, ki je opravil svoj **Preveri** v [Nastavitve → Prepis](/ai-processing/transcription#live-recognition-for-the-prompter), jezikovni model in kljukica **Dovoli uporabo šepetalca** v [Nastavitve → Šepetalec](/ai-processing/prompter). Modul **Šepetalec** mora biti vklopljen v [Moduli](/application/modules).
+
+Če se okno odpre, šepetalec pa se ne zažene, vrstica pod njegovimi gumbi pove, kaj manjka. [Ko se ne zažene](/interface/prompter#when-it-does-not-start) našteje vsa sporočila in kaj storiti.
 
 ## Telefon je izginil, ko sem zaprl okno {#the-phone-disappeared-when-i-closed-the-window}
 

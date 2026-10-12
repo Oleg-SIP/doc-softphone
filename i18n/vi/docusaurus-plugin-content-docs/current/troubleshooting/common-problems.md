@@ -1,7 +1,7 @@
 ---
 title: Sự cố thường gặp
 sidebar_position: 2
-description: Cần kiểm tra gì khi tài khoản không đăng ký được, không có âm thanh, cuộc gọi hay cuộc họp không được ghi, không có bản chép lời, hoặc liên kết, phím tắt hay API không có tác dụng.
+description: Cần kiểm tra gì khi tài khoản không đăng ký được, không có âm thanh, cuộc gọi hay cuộc họp không được ghi, không có bản chép lời, người nhắc không chạy, hoặc liên kết, phím tắt hay API không có tác dụng.
 ---
 
 Mỗi mục chỉ tới cài đặt quyết định vấn đề đó. Nếu câu trả lời không có ở đây, hãy mở [Chẩn đoán](/troubleshooting/diagnostics): nó cho thấy điện thoại và tổng đài nói gì với nhau.
@@ -54,6 +54,12 @@ Xem [Thu âm ngoài](/capture/).
 - Phải có một [bộ nhận dạng](/ai-processing/transcription) và một [mô hình ngôn ngữ](/ai-processing/processing#language-models), và mỗi thứ phải trả lời tại địa chỉ của nó.
 - Khi chạm tới **Hạn mức tiền** hoặc **Hạn mức token** hằng tháng, các quy tắc tự động dừng lại cho tới khi sang tháng mới. Những gì chính bạn yêu cầu thì không bao giờ bị dừng.
 - Các bước trong [Cài đặt → Tổng quan](/interface/settings-overview) cho thấy những gì còn phải thiết lập.
+
+## Người nhắc không xuất hiện hoặc không chạy {#the-prompter-does-not-appear-or-does-not-start}
+
+**Người nhắc** chỉ xuất hiện trong danh sách ở cuối điện thoại khi có đủ ba thứ: một bộ nhận dạng có **Địa chỉ cho người nhắc** đã vượt qua lần **Thử** trong [Cài đặt → Gỡ băng](/ai-processing/transcription#live-recognition-for-the-prompter), một mô hình ngôn ngữ, và dấu chọn **Cho phép dùng người nhắc** trong [Cài đặt → Người nhắc](/ai-processing/prompter). Mô-đun **Người nhắc** phải được bật trong [Mô-đun](/application/modules).
+
+Nếu cửa sổ mở ra nhưng người nhắc không chạy, dòng bên dưới các nút của nó cho biết còn thiếu gì. [Khi nó không chạy](/interface/prompter#when-it-does-not-start) liệt kê mọi thông báo và cách xử lý.
 
 ## Điện thoại biến mất khi tôi đóng cửa sổ {#the-phone-disappeared-when-i-closed-the-window}
 

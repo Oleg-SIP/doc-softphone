@@ -1,7 +1,7 @@
 ---
 title: Yleiset ongelmat
 sidebar_position: 2
-description: "Mitä tarkistaa, kun tili ei rekisteröidy, ääntä ei kuulu, puhelua tai kokousta ei tallenneta, litterointia ei ole tai linkki, pikanäppäin tai API ei tee mitään."
+description: "Mitä tarkistaa, kun tili ei rekisteröidy, ääntä ei kuulu, puhelua tai kokousta ei tallenneta, litterointia ei ole, kuiskaaja ei käynnisty tai linkki, pikanäppäin tai API ei tee mitään."
 ---
 
 Jokainen kohta viittaa asetukseen, joka asian ratkaisee. Jos vastausta ei ole tässä, avaa [Diagnostiikka](/troubleshooting/diagnostics): se näyttää, mitä puhelin ja vaihde sanovat toisilleen.
@@ -54,6 +54,12 @@ Katso [Kaappaus](/capture/).
 - On oltava [tunnistin](/ai-processing/transcription) ja [kielimalli](/ai-processing/processing#language-models), ja kummankin on vastattava osoitteessaan.
 - Kun kuukauden **Raharaja** tai **Tokenraja** saavutetaan, automaattiset säännöt pysähtyvät kuukauden vaihtumiseen asti. Itse pyytämääsi ei koskaan pysäytetä.
 - Kohdan [Asetukset → Yleiskatsaus](/interface/settings-overview) askeleet näyttävät, mitä on vielä määrittämättä.
+
+## Kuiskaaja ei näy tai ei käynnisty {#the-prompter-does-not-appear-or-does-not-start}
+
+**Kuiskaaja** näkyy puhelimen alaosan luettelossa vain, kun kolme asiaa on kunnossa: tunnistin, jolla on **Osoite kuiskaajaa varten** ja joka on läpäissyt **Kokeile**-testin kohdassa [Asetukset → Litterointi](/ai-processing/transcription#live-recognition-for-the-prompter), kielimalli sekä valinta **Salli kuiskaajan käyttö** kohdassa [Asetukset → Kuiskaaja](/ai-processing/prompter). Moduulin **Kuiskaaja** on oltava käytössä kohdassa [Moduulit](/application/modules).
+
+Jos ikkuna avautuu mutta kuiskaaja ei käynnisty, sen painikkeiden alla oleva rivi kertoo, mitä puuttuu. [Kun se ei käynnisty](/interface/prompter#when-it-does-not-start) luettelee kaikki ilmoitukset ja sen, mitä tehdä.
 
 ## Puhelin katosi, kun suljin ikkunan {#the-phone-disappeared-when-i-closed-the-window}
 

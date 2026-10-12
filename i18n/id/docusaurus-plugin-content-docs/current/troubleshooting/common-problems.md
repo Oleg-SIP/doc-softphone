@@ -1,7 +1,7 @@
 ---
 title: Masalah umum
 sidebar_position: 2
-description: "Apa yang perlu diperiksa ketika akun tidak mau terdaftar, tidak ada suara, panggilan atau rapat tidak terekam, tidak ada transkrip, atau tautan, tombol pintas, maupun API tidak berfungsi."
+description: "Apa yang perlu diperiksa ketika akun tidak mau terdaftar, tidak ada suara, panggilan atau rapat tidak terekam, tidak ada transkrip, pembisik tidak mau mulai, atau tautan, tombol pintas, maupun API tidak berfungsi."
 ---
 
 Setiap entri merujuk ke pengaturan yang menentukannya. Jika jawabannya tidak ada di sini, buka [Diagnostik](/troubleshooting/diagnostics): jendela itu menampilkan apa yang dipertukarkan telepon dan PBX.
@@ -54,6 +54,12 @@ Lihat [Penangkapan](/capture/).
 - Harus ada [pengenal suara](/ai-processing/transcription) dan [model bahasa](/ai-processing/processing#language-models), dan masing-masing harus menjawab di alamatnya.
 - Ketika **Batas uang, per bulan** atau **Batas token, per bulan** tercapai, aturan otomatis berhenti sampai bulan berganti. Permintaan yang Anda ajukan sendiri tidak pernah dihentikan.
 - Langkah-langkah di [Pengaturan → Ikhtisar](/interface/settings-overview) menunjukkan apa yang masih perlu disiapkan.
+
+## Pembisik tidak muncul atau tidak mau mulai {#the-prompter-does-not-appear-or-does-not-start}
+
+**Pembisik** muncul di daftar bagian bawah telepon hanya jika tiga hal terpenuhi: pengenal suara dengan **Alamat untuk pembisik** yang lolos **Uji** di [Pengaturan → Transkripsi](/ai-processing/transcription#live-recognition-for-the-prompter), sebuah model bahasa, dan centang **Izinkan pembisik digunakan** di [Pengaturan → Pembisik](/ai-processing/prompter). Modul **Pembisik** harus aktif di [Modul](/application/modules).
+
+Jika jendelanya terbuka tetapi pembisik tidak mau mulai, baris di bawah tombol-tombolnya menyebutkan apa yang kurang. [Jika tidak mau mulai](/interface/prompter#when-it-does-not-start) memuat semua pesan dan apa yang harus dilakukan.
 
 ## Telepon menghilang saat saya menutup jendela {#the-phone-disappeared-when-i-closed-the-window}
 

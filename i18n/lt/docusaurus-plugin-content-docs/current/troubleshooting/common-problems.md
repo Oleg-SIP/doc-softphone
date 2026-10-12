@@ -1,7 +1,7 @@
 ---
 title: Dažnos problemos
 sidebar_position: 2
-description: "Ką patikrinti, kai paskyra neužsiregistruoja, nėra garso, skambutis ar susitikimas neįrašomas, nėra iššifruoto teksto arba nuoroda, spartusis klavišas ar API nieko nedaro."
+description: "Ką patikrinti, kai paskyra neužsiregistruoja, nėra garso, skambutis ar susitikimas neįrašomas, nėra iššifruoto teksto, suflerius nepasileidžia arba nuoroda, spartusis klavišas ar API nieko nedaro."
 ---
 
 Kiekvienas punktas nurodo nustatymą, kuris tai lemia. Jei atsakymo čia nėra, atverkite [Diagnostika](/troubleshooting/diagnostics): ji rodo, ką telefonas ir stotelė sako vienas kitam.
@@ -54,6 +54,12 @@ Kas nutinka, kai kas nors skambina, kol kalbate, nustatoma skiltyje [Skambučio 
 - Turi būti [atpažintuvas](/ai-processing/transcription) ir [kalbos modelis](/ai-processing/processing#language-models), ir kiekvienas turi atsakyti savo adresu.
 - Pasiekus mėnesio **Pinigų riba** ar **Žetonų riba**, automatinės taisyklės sustoja iki mėnesio pabaigos. Tai, ko prašote patys, niekada nesustabdoma.
 - Skilties [Nustatymai → Apžvalga](/interface/settings-overview) žingsniai rodo, ką dar reikia nustatyti.
+
+## Suflerius neatsiranda arba nepasileidžia {#the-prompter-does-not-appear-or-does-not-start}
+
+**Suflerius** telefono apačioje esančiame sąraše atsiranda tik tada, kai yra trys dalykai: atpažintuvas su **Adresas sufleriui**, sėkmingai išlaikęs **Patikrinti** skiltyje [Nustatymai → Užrašas](/ai-processing/transcription#live-recognition-for-the-prompter), kalbos modelis ir žymė **Leisti naudoti suflerių** skiltyje [Nustatymai → Suflerius](/ai-processing/prompter). Modulis **Suflerius** turi būti įjungtas skiltyje [Moduliai](/application/modules).
+
+Jei langas atsidaro, bet suflerius nepasileidžia, eilutė po jo mygtukais pasako, ko trūksta. [Kai jis nepasileidžia](/interface/prompter#when-it-does-not-start) pateikia visus pranešimus ir ką daryti.
 
 ## Telefonas dingo, kai užvėriau langą {#the-phone-disappeared-when-i-closed-the-window}
 

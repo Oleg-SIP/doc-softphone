@@ -1,7 +1,7 @@
 ---
 title: Vanlige problemer
 sidebar_position: 2
-description: "Hva du bør sjekke når en konto ikke vil registrere seg, det ikke er lyd, en samtale eller et møde ikke tas opp, det ikke er noen utskrift, eller en lenke, en snarvei eller API-et ikke gjør noe."
+description: "Hva du bør sjekke når en konto ikke vil registrere seg, det ikke er lyd, en samtale eller et møte ikke tas opp, det ikke er noen utskrift, suffløren ikke starter, eller en lenke, en snarvei eller API-et ikke gjør noe."
 ---
 
 Hvert punkt viser til innstillingen som avgjør det. Står ikke svaret her, åpner du [Diagnostikk](/troubleshooting/diagnostics): det viser hva telefonen og sentralen sier til hverandre.
@@ -54,6 +54,12 @@ Se [Fanging](/capture/).
 - Det må finnes en [gjenkjenner](/ai-processing/transcription) og en [språkmodell](/ai-processing/processing#language-models), og hver må svare på sin adresse.
 - Når den månedlige **Pengegrense** eller **Tokengrense** er nådd, stopper de automatiske reglene til måneden skifter. Det du selv ber om, stoppes aldri.
 - Trinnene i [Innstillinger → Oversikt](/interface/settings-overview) viser hva som fortsatt gjenstår å sette opp.
+
+## Suffløren dukker ikke opp eller starter ikke {#the-prompter-does-not-appear-or-does-not-start}
+
+**Sufflør** dukker bare opp i listen nederst i telefonen når tre ting er på plass: en gjenkjenner med en **Adresse for suffløren** som har bestått sin **Prøv** under [Innstillinger → Transkripsjon](/ai-processing/transcription#live-recognition-for-the-prompter), en språkmodell og avkrysningen **Tillat bruk av suffløren** under [Innstillinger → Sufflør](/ai-processing/prompter). Modulen **Sufflør** må være slått på under [Moduler](/application/modules).
+
+Hvis vinduet åpnes, men suffløren ikke starter, står det i linjen under knappene hva som mangler. [Når den ikke starter](/interface/prompter#when-it-does-not-start) viser alle meldingene og hva du skal gjøre.
 
 ## Telefonen forsvant da jeg lukket vinduet {#the-phone-disappeared-when-i-closed-the-window}
 

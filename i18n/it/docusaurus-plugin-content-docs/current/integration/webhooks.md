@@ -42,7 +42,7 @@ POST /calls HTTP/1.1
 Host: crm.local
 Authorization: Bearer my-secret-token
 Content-Type: application/json
-User-Agent: ai-softphone/1.0.1-macos-dmg
+User-Agent: ai-softphone/1.1.5-macos-dmg
 ```
 
 Lo `User-Agent` porta la versione del programma e il modo in cui è stato installato.

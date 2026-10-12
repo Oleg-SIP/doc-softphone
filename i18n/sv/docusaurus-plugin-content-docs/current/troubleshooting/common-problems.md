@@ -1,7 +1,7 @@
 ---
 title: Vanliga problem
 sidebar_position: 2
-description: "Vad du ska kontrollera när ett konto inte vill registrera sig, det inte hörs något, ett samtal eller ett möte inte spelas in, det inte finns någon utskrift, eller en länk, en genväg eller API:et inte gör något."
+description: "Vad du ska kontrollera när ett konto inte vill registrera sig, det inte hörs något, ett samtal eller ett möte inte spelas in, det inte finns någon utskrift, sufflören inte startar, eller en länk, en genväg eller API:et inte gör något."
 ---
 
 Varje punkt pekar på inställningen som avgör saken. Finns svaret inte här öppnar du [Diagnostik](/troubleshooting/diagnostics): det visar vad telefonen och växeln säger till varandra.
@@ -54,6 +54,12 @@ Se [Fångst](/capture/).
 - Det måste finnas en [igenkännare](/ai-processing/transcription) och en [språkmodell](/ai-processing/processing#language-models), och var och en måste svara på sin adress.
 - När den månatliga **Pengagräns** eller **Tokengräns** har nåtts stannar de automatiska reglerna tills månaden byts. Det du själv ber om stoppas aldrig.
 - Stegen i [Inställningar → Översikt](/interface/settings-overview) visar vad som återstår att konfigurera.
+
+## Sufflören syns inte eller startar inte {#the-prompter-does-not-appear-or-does-not-start}
+
+**Sufflör** syns i listan längst ned i telefonen bara när tre saker finns: en igenkännare med en **Adress för sufflören** som har klarat sitt **Prova** under [Inställningar → Transkription](/ai-processing/transcription#live-recognition-for-the-prompter), en språkmodell och kryssrutan **Tillåt att suffeln används** under [Inställningar → Sufflör](/ai-processing/prompter). Modulen **Sufflör** måste vara påslagen under [Moduler](/application/modules).
+
+Om fönstret öppnas men sufflören inte startar, säger raden under knapparna vad som saknas. [När den inte startar](/interface/prompter#when-it-does-not-start) räknar upp alla meddelanden och vad du ska göra.
 
 ## Telefonen försvann när jag stängde fönstret {#the-phone-disappeared-when-i-closed-the-window}
 

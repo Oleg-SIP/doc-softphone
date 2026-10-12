@@ -1,7 +1,7 @@
 ---
 title: Veelvoorkomende problemen
 sidebar_position: 2
-description: "Wat u controleert als een account niet registreert, er geen geluid is, een gesprek of vergadering niet wordt opgenomen, er geen transcript is, of een koppeling, een sneltoets of de API niets doet."
+description: "Wat u controleert als een account niet registreert, er geen geluid is, een gesprek of vergadering niet wordt opgenomen, er geen transcript is, de souffleur niet start, of een koppeling, een sneltoets of de API niets doet."
 ---
 
 Elk punt verwijst naar de instelling die erover beslist. Staat het antwoord hier niet, open dan [Diagnose](/troubleshooting/diagnostics): het toont wat de telefoon en de centrale tegen elkaar zeggen.
@@ -54,6 +54,12 @@ Zie [Vastleggen](/capture/).
 - Er moeten een [herkenner](/ai-processing/transcription) en een [taalmodel](/ai-processing/processing#language-models) zijn, en elk moet op zijn adres antwoorden.
 - Als de maandelijkse **Geldgrens** of **Tokengrens** is bereikt, stoppen de automatische regels tot de volgende maand. Wat u zelf vraagt, wordt nooit gestopt.
 - De stappen van [Instellingen → Overzicht](/interface/settings-overview) laten zien wat er nog moet worden ingesteld.
+
+## De souffleur verschijnt niet of start niet {#the-prompter-does-not-appear-or-does-not-start}
+
+**Souffleur** verschijnt alleen in de lijst onderaan de telefoon als er drie dingen zijn: een herkenner met een **Adres voor de souffleur** die zijn **Testen** heeft doorstaan onder [Instellingen → Transcriptie](/ai-processing/transcription#live-recognition-for-the-prompter), een taalmodel, en het vinkje **Gebruik van de souffleur toestaan** onder [Instellingen → Souffleur](/ai-processing/prompter). De module **Souffleur** moet aanstaan onder [Modules](/application/modules).
+
+Als het venster opengaat maar de souffleur niet start, zegt de regel onder de knoppen wat er ontbreekt. [Als hij niet start](/interface/prompter#when-it-does-not-start) noemt elke melding en wat u dan doet.
 
 ## De telefoon verdween toen ik het venster sloot {#the-phone-disappeared-when-i-closed-the-window}
 

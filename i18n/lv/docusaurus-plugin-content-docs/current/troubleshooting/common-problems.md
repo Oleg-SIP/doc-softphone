@@ -1,7 +1,7 @@
 ---
 title: Biežākās problēmas
 sidebar_position: 2
-description: "Ko pārbaudīt, ja konts nereģistrējas, nav skaņas, zvans vai sapulce netiek ierakstīta, nav atšifrējuma vai saite, saīsne vai API neko nedara."
+description: "Ko pārbaudīt, ja konts nereģistrējas, nav skaņas, zvans vai sapulce netiek ierakstīta, nav atšifrējuma, suflieris nepalaižas vai saite, saīsne vai API neko nedara."
 ---
 
 Katrs punkts norāda uz iestatījumu, kas par to lemj. Ja atbildes šeit nav, atveriet [Diagnostika](/troubleshooting/diagnostics): tā rāda, ko tālrunis un centrāle saka viens otram.
@@ -54,6 +54,12 @@ Skatiet [Tveršana](/capture/).
 - Jābūt [atpazinējam](/ai-processing/transcription) un [valodas modelim](/ai-processing/processing#language-models), un katram jāatbild savā adresē.
 - Kad ikmēneša **Naudas robeža** vai **Marķieru robeža** ir sasniegta, automātiskās kārtulas apstājas līdz mēneša maiņai. Tas, ko pieprasāt paši, nekad netiek apturēts.
 - Sadaļas [Iestatījumi → Pārskats](/interface/settings-overview) soļi rāda, kas vēl jāiestata.
+
+## Suflieris neparādās vai nepalaižas {#the-prompter-does-not-appear-or-does-not-start}
+
+**Suflieris** parādās saraksta apakšā telefonā tikai tad, ja ir trīs lietas: atpazinējs ar **Adrese suflierim**, kas izturējis savu **Pārbaudīt** sadaļā [Iestatījumi → Pieraksts](/ai-processing/transcription#live-recognition-for-the-prompter), valodas modelis un atzīme **Atļaut sufliera lietošanu** sadaļā [Iestatījumi → Suflieris](/ai-processing/prompter). Modulim **Suflieris** jābūt ieslēgtam sadaļā [Moduļi](/application/modules).
+
+Ja logs atveras, bet suflieris nepalaižas, rinda zem tā pogām pasaka, kā trūkst. [Ja tas nepalaižas](/interface/prompter#when-it-does-not-start) uzskaita visus ziņojumus un to, ko darīt.
 
 ## Tālrunis pazuda, kad aizvēru logu {#the-phone-disappeared-when-i-closed-the-window}
 

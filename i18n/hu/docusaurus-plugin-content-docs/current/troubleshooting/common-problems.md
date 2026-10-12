@@ -1,7 +1,7 @@
 ---
 title: Gyakori problémák
 sidebar_position: 2
-description: "Mit ellenőrizzen, ha egy fiók nem regisztrál, nincs hang, egy hívásról vagy megbeszélésről nem készül felvétel, nincs leirat, vagy egy hivatkozás, egy gyorsbillentyű vagy az API nem csinál semmit."
+description: "Mit ellenőrizzen, ha egy fiók nem regisztrál, nincs hang, egy hívásról vagy megbeszélésről nem készül felvétel, nincs leirat, a súgó nem indul el, vagy egy hivatkozás, egy gyorsbillentyű vagy az API nem csinál semmit."
 ---
 
 Minden bejegyzés arra a beállításra mutat, amelyen az adott dolog múlik. Ha a válasz nincs itt, nyissa meg a [Diagnosztikát](/troubleshooting/diagnostics): megmutatja, mit mond egymásnak a telefon és az alközpont.
@@ -54,6 +54,12 @@ Lásd: [Rögzítés](/capture/).
 - Szükség van egy [felismerőre](/ai-processing/transcription) és egy [nyelvi modellre](/ai-processing/processing#language-models), és mindkettőnek válaszolnia kell a címén.
 - Ha eléri a havi **Pénzkorlát** vagy **Tokenkorlát** értékét, az automatikus szabályok a hónap fordulójáig leállnak. Amit Ön maga kér, az soha nem áll le.
 - A [Beállítások → Áttekintés](/interface/settings-overview) lépései megmutatják, mit kell még beállítani.
+
+## A súgó nem jelenik meg, vagy nem indul el {#the-prompter-does-not-appear-or-does-not-start}
+
+A **Súgó** csak akkor jelenik meg a telefon alján lévő listában, ha három dolog megvan: egy felismerő, amelynek van **Cím a súgóhoz** beállítása, és sikeres volt a **Próba** a [Beállítások → Átirat](/ai-processing/transcription#live-recognition-for-the-prompter) alatt, egy nyelvi modell, valamint a [Beállítások → Súgó](/ai-processing/prompter) alatt bejelölt **A súgó használatának engedélyezése** négyzet. A **Súgó** modulnak bekapcsolva kell lennie a [Modulok](/application/modules) alatt.
+
+Ha az ablak megnyílik, de a súgó nem indul el, a gombjai alatti sor megmondja, mi hiányzik. A [Ha nem indul el](/interface/prompter#when-it-does-not-start) rész felsorolja az összes üzenetet és a teendőket.
 
 ## A telefon eltűnt, amikor bezártam az ablakot {#the-phone-disappeared-when-i-closed-the-window}
 

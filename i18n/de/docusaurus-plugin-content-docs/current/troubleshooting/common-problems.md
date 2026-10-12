@@ -1,7 +1,7 @@
 ---
 title: Häufige Probleme
 sidebar_position: 2
-description: "Was zu prüfen ist, wenn sich ein Konto nicht anmeldet, kein Ton da ist, ein Anruf oder eine Besprechung nicht aufgenommen wird, kein Transkript entsteht oder ein Link, ein Tastenkürzel oder die API nichts tut."
+description: "Was zu prüfen ist, wenn sich ein Konto nicht anmeldet, kein Ton da ist, ein Anruf oder eine Besprechung nicht aufgenommen wird, kein Transkript entsteht, der Souffleur nicht startet oder ein Link, ein Tastenkürzel oder die API nichts tut."
 ---
 
 Jeder Eintrag verweist auf die Einstellung, die darüber entscheidet. Steht die Antwort nicht hier, öffnen Sie die [Diagnose](/troubleshooting/diagnostics): Sie zeigt, was Telefon und Telefonanlage einander sagen.
@@ -54,6 +54,12 @@ Siehe [Mitschnitt](/capture/).
 - Es muss einen [Spracherkenner](/ai-processing/transcription) und ein [Sprachmodell](/ai-processing/processing#language-models) geben, und jedes muss unter seiner Adresse antworten.
 - Ist die monatliche **Geldgrenze** oder **Token-Grenze** erreicht, halten die automatischen Regeln bis zum Monatswechsel an. Selbst anzufordern wird nie angehalten.
 - Die Schritte unter [Einstellungen → Übersicht](/interface/settings-overview) zeigen, was noch einzurichten ist.
+
+## Der Souffleur erscheint nicht oder startet nicht {#the-prompter-does-not-appear-or-does-not-start}
+
+**Souffleur** erscheint in der Liste unten im Telefon nur, wenn drei Dinge vorhanden sind: ein Spracherkenner mit einer **Adresse für den Souffleur**, der sein **Prüfen** unter [Einstellungen → Transkription](/ai-processing/transcription#live-recognition-for-the-prompter) bestanden hat, ein Sprachmodell und das Häkchen **Souffleur erlauben** unter [Einstellungen → Souffleur](/ai-processing/prompter). Das Modul **Souffleur** muss unter [Module](/application/modules) eingeschaltet sein.
+
+Öffnet sich das Fenster, aber der Souffleur startet nicht, sagt die Zeile unter seinen Schaltflächen, was fehlt. [Wenn er nicht startet](/interface/prompter#when-it-does-not-start) listet alle Meldungen auf und was zu tun ist.
 
 ## Das Telefon ist verschwunden, als ich das Fenster geschlossen habe {#the-phone-disappeared-when-i-closed-the-window}
 

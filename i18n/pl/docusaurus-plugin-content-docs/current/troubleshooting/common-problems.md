@@ -1,7 +1,7 @@
 ---
 title: Typowe problemy
 sidebar_position: 2
-description: "Co sprawdzić, gdy konto nie chce się zarejestrować, nie ma dźwięku, połączenie lub spotkanie nie zostaje nagrane, nie ma transkrypcji albo odnośnik, skrót lub API nic nie robi."
+description: "Co sprawdzić, gdy konto nie chce się zarejestrować, nie ma dźwięku, połączenie lub spotkanie nie zostaje nagrane, nie ma transkrypcji, sufler się nie uruchamia albo odnośnik, skrót lub API nic nie robi."
 ---
 
 Każdy punkt wskazuje ustawienie, które o tym decyduje. Jeśli odpowiedzi tu nie ma, otwórz [Diagnostykę](/troubleshooting/diagnostics): pokazuje, co telefon i centrala mówią sobie nawzajem.
@@ -54,6 +54,12 @@ Zobacz [Przechwytywanie](/capture/).
 - Musi być [rozpoznawacz](/ai-processing/transcription) i [model językowy](/ai-processing/processing#language-models), a każdy musi odpowiadać pod swoim adresem.
 - Gdy miesięczna **Granica pieniędzy** lub **Granica tokenów** zostanie osiągnięta, reguły automatyczne zatrzymują się do końca miesiąca. To, o co prosisz sam, nigdy nie jest zatrzymywane.
 - Kroki w [Ustawienia → Przegląd](/interface/settings-overview) pokazują, co jeszcze trzeba skonfigurować.
+
+## Sufler się nie pojawia albo się nie uruchamia {#the-prompter-does-not-appear-or-does-not-start}
+
+**Sufler** pojawia się na liście u dołu telefonu tylko wtedy, gdy są spełnione trzy warunki: jest rozpoznawacz z polem **Adres dla suflera**, który przeszedł **Sprawdź** w [Ustawienia → Transkrypcja](/ai-processing/transcription#live-recognition-for-the-prompter), jest model językowy i zaznaczono **Zezwalaj na używanie suflera** w [Ustawienia → Sufler](/ai-processing/prompter). Moduł **Sufler** musi być włączony w [Moduły](/application/modules).
+
+Jeśli okno się otwiera, ale sufler się nie uruchamia, wiersz pod jego przyciskami mówi, czego brakuje. [Gdy się nie uruchamia](/interface/prompter#when-it-does-not-start) wymienia wszystkie komunikaty i co zrobić.
 
 ## Telefon zniknął, gdy zamknąłem okno {#the-phone-disappeared-when-i-closed-the-window}
 

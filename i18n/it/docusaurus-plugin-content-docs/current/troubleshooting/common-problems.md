@@ -1,7 +1,7 @@
 ---
 title: Problemi comuni
 sidebar_position: 2
-description: "Che cosa controllare quando un account non si registra, non c'è audio, una chiamata o una riunione non viene registrata, non c'è trascrizione, o un collegamento, una scorciatoia o l'API non fanno nulla."
+description: "Che cosa controllare quando un account non si registra, non c'è audio, una chiamata o una riunione non viene registrata, non c'è trascrizione, il suggeritore non si avvia, o un collegamento, una scorciatoia o l'API non fanno nulla."
 ---
 
 Ogni voce rimanda all'impostazione che ne decide. Se la risposta non è qui, apra la [Diagnostica](/troubleshooting/diagnostics): mostra che cosa si dicono il telefono e il centralino.
@@ -54,6 +54,12 @@ Veda [Cattura](/capture/).
 - Ci devono essere un [riconoscitore](/ai-processing/transcription) e un [modello linguistico](/ai-processing/processing#language-models), e ciascuno deve rispondere al suo indirizzo.
 - Quando viene raggiunto il **Limite di spesa** o il **Limite di token** mensile, le regole automatiche si fermano fino al mese successivo. Ciò che chiede lei stesso non viene mai fermato.
 - I passi di [Impostazioni → Panoramica](/interface/settings-overview) mostrano che cosa resta da configurare.
+
+## Il suggeritore non compare o non si avvia {#the-prompter-does-not-appear-or-does-not-start}
+
+**Suggeritore** compare nell'elenco in fondo al telefono solo quando ci sono tre cose: un riconoscitore con un **Indirizzo per il suggeritore** che ha superato la sua **Prova** in [Impostazioni → Trascrizione](/ai-processing/transcription#live-recognition-for-the-prompter), un modello linguistico e la spunta **Consentire l'uso del suggeritore** in [Impostazioni → Suggeritore](/ai-processing/prompter). Il modulo **Suggeritore** deve essere attivo in [Moduli](/application/modules).
+
+Se la finestra si apre ma il suggeritore non si avvia, la riga sotto i suoi pulsanti dice che cosa manca. [Quando non si avvia](/interface/prompter#when-it-does-not-start) elenca ogni messaggio e che cosa fare.
 
 ## Il telefono è sparito quando ho chiuso la finestra {#the-phone-disappeared-when-i-closed-the-window}
 

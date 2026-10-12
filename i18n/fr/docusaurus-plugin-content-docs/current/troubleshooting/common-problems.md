@@ -1,7 +1,7 @@
 ---
 title: Problèmes courants
 sidebar_position: 2
-description: "Que vérifier quand un compte ne s'enregistre pas, qu'il n'y a pas de son, qu'un appel ou une réunion n'est pas enregistré, qu'il n'y a pas de transcription, ou qu'un lien, un raccourci ou l'API ne fait rien."
+description: "Que vérifier quand un compte ne s'enregistre pas, qu'il n'y a pas de son, qu'un appel ou une réunion n'est pas enregistré, qu'il n'y a pas de transcription, que le souffleur ne démarre pas, ou qu'un lien, un raccourci ou l'API ne fait rien."
 ---
 
 Chaque entrée renvoie au réglage qui en décide. Si la réponse n'est pas ici, ouvrez le [Diagnostic](/troubleshooting/diagnostics) : il montre ce que le téléphone et l'IPBX se disent.
@@ -54,6 +54,12 @@ Voir [Capture](/capture/).
 - Il faut une [reconnaissance](/ai-processing/transcription) et un [modèle de langue](/ai-processing/processing#language-models), et chacun doit répondre à son adresse.
 - Quand la **Limite d'argent** ou la **Limite de jetons** mensuelle est atteinte, les règles automatiques s'arrêtent jusqu'au mois suivant. Ce que vous demandez vous-même n'est jamais bloqué.
 - Les étapes de [Réglages → Vue d’ensemble](/interface/settings-overview) montrent ce qui reste à configurer.
+
+## Le souffleur n'apparaît pas ou ne démarre pas {#the-prompter-does-not-appear-or-does-not-start}
+
+**Souffleur** n'apparaît dans la liste en bas du téléphone que lorsque trois choses sont réunies : une reconnaissance dotée d'une **Adresse pour le souffleur** qui a réussi son **Tester** dans [Réglages → Transcription](/ai-processing/transcription#live-recognition-for-the-prompter), un modèle de langue, et la case **Autoriser l'usage du souffleur** dans [Réglages → Souffleur](/ai-processing/prompter). Le module **Souffleur** doit être activé dans [Modules](/application/modules).
+
+Si la fenêtre s'ouvre mais que le souffleur ne démarre pas, la ligne sous ses boutons dit ce qui manque. [Quand il ne démarre pas](/interface/prompter#when-it-does-not-start) donne chaque message et ce qu'il faut faire.
 
 ## Le téléphone a disparu quand j'ai fermé la fenêtre {#the-phone-disappeared-when-i-closed-the-window}
 

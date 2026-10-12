@@ -1,7 +1,7 @@
 ---
 title: Časté problémy
 sidebar_position: 2
-description: "Co zkontrolovat, když se účet nezaregistruje, není slyšet zvuk, hovor nebo schůzka se nenahrají, chybí přepis nebo když odkaz, zkratka či API nic nedělají."
+description: "Co zkontrolovat, když se účet nezaregistruje, není slyšet zvuk, hovor nebo schůzka se nenahrají, chybí přepis, nespustí se našeptávač nebo když odkaz, zkratka či API nic nedělají."
 ---
 
 Každá položka ukazuje na nastavení, které o tom rozhoduje. Pokud tu odpověď není, otevřete [Diagnostiku](/troubleshooting/diagnostics): ukazuje, co si telefon a ústředna říkají.
@@ -54,6 +54,12 @@ Viz [Zachytávání](/capture/).
 - Musí existovat [rozpoznávač](/ai-processing/transcription) a [jazykový model](/ai-processing/processing#language-models) a každý musí na své adrese odpovídat.
 - Když se dosáhne měsíční **Mez peněz** nebo **Mez tokenů**, automatická pravidla se zastaví až do začátku dalšího měsíce. Když o něco požádáte sami, nezastaví se to nikdy.
 - Kroky v [Nastavení → Přehled](/interface/settings-overview) ukazují, co ještě zbývá nastavit.
+
+## Našeptávač se neobjeví nebo se nespustí {#the-prompter-does-not-appear-or-does-not-start}
+
+**Našeptávač** se v seznamu ve spodní části telefonu objeví, jen když jsou splněny tři věci: rozpoznávač s vyplněnou **Adresa pro našeptávače**, který prošel **Vyzkoušet** v [Nastavení → Přepis](/ai-processing/transcription#live-recognition-for-the-prompter), jazykový model a zaškrtnuté **Povolit používání našeptávače** v [Nastavení → Našeptávač](/ai-processing/prompter). Modul **Našeptávač** musí být zapnutý v [Moduly](/application/modules).
+
+Když se okno otevře, ale našeptávač se nespustí, řádek pod jeho tlačítky řekne, co chybí. [Když se nespustí](/interface/prompter#when-it-does-not-start) uvádí všechna hlášení a co s nimi dělat.
 
 ## Po zavření okna telefon zmizel {#the-phone-disappeared-when-i-closed-the-window}
 
