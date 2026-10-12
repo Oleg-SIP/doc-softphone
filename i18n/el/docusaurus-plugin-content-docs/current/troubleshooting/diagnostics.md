@@ -39,14 +39,41 @@ description: Το παράθυρο που δείχνει κάθε λέξη πο�
 
 ### Αρχεία {#files}
 
-Η καρτέλα παραθέτει πού φυλάσσει το πρόγραμμα τα αρχεία του και πόσο μεγάλο είναι το καθένα. Στο macOS:
+Η καρτέλα παραθέτει πού φυλάσσει το πρόγραμμα τα αρχεία του και πόσο μεγάλο είναι το καθένα.
 
-| Αρχείο | Πού | Περιέχει |
-| --- | --- | --- |
-| Ρυθμίσεις | `~/Library/Preferences/ai-softphone/settings.json` | Τις ρυθμίσεις. Ποτέ κωδικούς ή διακριτικά. |
-| Βάση δεδομένων | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Επαφές, ιστορικό, απομαγνητοφωνήσεις και επεξεργασίες. |
-| Εγγραφές | `~/Library/Application Support/ai-softphone/recordings` | Τον ήχο των εγγραφών. |
-| Αρχείο καταγραφής | `~/Library/Logs/ai-softphone/ai-softphone.log` | Το αρχείο καταγραφής. |
+| Αρχείο | Περιέχει |
+| --- | --- |
+| Ρυθμίσεις | Τις ρυθμίσεις. Ποτέ κωδικούς ή διακριτικά. |
+| Βάση δεδομένων | Επαφές, ιστορικό, απομαγνητοφωνήσεις και επεξεργασίες. |
+| Εγγραφές | Τον ήχο των εγγραφών. |
+| Αρχείο καταγραφής | Το αρχείο καταγραφής. |
+
+**Windows**
+
+| Αρχείο | Πού |
+| --- | --- |
+| Ρυθμίσεις | `%APPDATA%\ai-softphone\settings.json` |
+| Βάση δεδομένων | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Εγγραφές | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Αρχείο καταγραφής | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Αρχείο | Πού |
+| --- | --- |
+| Ρυθμίσεις | `~/Library/Preferences/ai-softphone/settings.json` |
+| Βάση δεδομένων | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Εγγραφές | `~/Library/Application Support/ai-softphone/recordings` |
+| Αρχείο καταγραφής | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Αρχείο | Πού |
+| --- | --- |
+| Ρυθμίσεις | `~/.config/ai-softphone/settings.json` |
+| Βάση δεδομένων | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Εγγραφές | `~/.local/share/ai-softphone/recordings` |
+| Αρχείο καταγραφής | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Κάτω από τη λίστα, το **Άνοιγμα** δείχνει το αρχείο καταγραφής και η **Εκκαθάριση** το αδειάζει. Κάντε εκκαθάριση του αρχείου καταγραφής ακριβώς πριν αναπαραγάγετε ένα πρόβλημα· η εκκαθάριση δεν αναιρείται.
 

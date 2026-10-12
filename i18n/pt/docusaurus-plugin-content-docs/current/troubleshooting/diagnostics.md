@@ -39,14 +39,41 @@ A lista pendente escolhe quanto o programa escreve no seu ficheiro de registo; n
 
 ### Ficheiros {#files}
 
-O separador lista onde o programa guarda os seus ficheiros e o tamanho de cada um. No macOS:
+O separador lista onde o programa guarda os seus ficheiros e o tamanho de cada um.
 
-| Ficheiro | Onde | Contém |
-| --- | --- | --- |
-| Definições | `~/Library/Preferences/ai-softphone/settings.json` | As definições. Nunca palavras-passe nem códigos. |
-| Base de dados | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Contactos, histórico, transcrições e redações. |
-| Gravações | `~/Library/Application Support/ai-softphone/recordings` | O áudio das gravações. |
-| Registo | `~/Library/Logs/ai-softphone/ai-softphone.log` | O registo. |
+| Ficheiro | Contém |
+| --- | --- |
+| Definições | As definições. Nunca palavras-passe nem códigos. |
+| Base de dados | Contactos, histórico, transcrições e redações. |
+| Gravações | O áudio das gravações. |
+| Registo | O registo. |
+
+**Windows**
+
+| Ficheiro | Onde |
+| --- | --- |
+| Definições | `%APPDATA%\ai-softphone\settings.json` |
+| Base de dados | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Gravações | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Registo | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Ficheiro | Onde |
+| --- | --- |
+| Definições | `~/Library/Preferences/ai-softphone/settings.json` |
+| Base de dados | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Gravações | `~/Library/Application Support/ai-softphone/recordings` |
+| Registo | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Ficheiro | Onde |
+| --- | --- |
+| Definições | `~/.config/ai-softphone/settings.json` |
+| Base de dados | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Gravações | `~/.local/share/ai-softphone/recordings` |
+| Registo | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Por baixo da lista, **Abrir** mostra o registo e **Esvaziar** esvazia-o. Esvazie o registo mesmo antes de reproduzir um problema; esvaziá-lo não pode ser desfeito.
 

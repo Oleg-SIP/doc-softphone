@@ -39,14 +39,41 @@ De keuzelijst kiest hoeveel het programma in zijn logbestand schrijft; op de afb
 
 ### Bestanden {#files}
 
-Het tabblad toont waar het programma zijn bestanden bewaart en hoe groot elk is. Op macOS:
+Het tabblad toont waar het programma zijn bestanden bewaart en hoe groot elk is.
 
-| Bestand | Waar | Bevat |
-| --- | --- | --- |
-| Instellingen | `~/Library/Preferences/ai-softphone/settings.json` | De instellingen. Nooit wachtwoorden of tokens. |
-| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Contacten, geschiedenis, transcripten en uitwerkingen. |
-| Opnames | `~/Library/Application Support/ai-softphone/recordings` | De audio van de opnames. |
-| Logboek | `~/Library/Logs/ai-softphone/ai-softphone.log` | Het logboek. |
+| Bestand | Bevat |
+| --- | --- |
+| Instellingen | De instellingen. Nooit wachtwoorden of tokens. |
+| Database | Contacten, geschiedenis, transcripten en uitwerkingen. |
+| Opnames | De audio van de opnames. |
+| Logboek | Het logboek. |
+
+**Windows**
+
+| Bestand | Waar |
+| --- | --- |
+| Instellingen | `%APPDATA%\ai-softphone\settings.json` |
+| Database | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Opnames | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Logboek | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Bestand | Waar |
+| --- | --- |
+| Instellingen | `~/Library/Preferences/ai-softphone/settings.json` |
+| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Opnames | `~/Library/Application Support/ai-softphone/recordings` |
+| Logboek | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Bestand | Waar |
+| --- | --- |
+| Instellingen | `~/.config/ai-softphone/settings.json` |
+| Database | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Opnames | `~/.local/share/ai-softphone/recordings` |
+| Logboek | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Onder de lijst toont **Openen** het logboek en maakt **Legen** het leeg. Leeg het logboek vlak voordat u een probleem nabootst; legen kan niet ongedaan worden gemaakt.
 

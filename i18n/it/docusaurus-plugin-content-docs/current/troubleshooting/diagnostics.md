@@ -39,14 +39,41 @@ Il menu a discesa sceglie quanto scrive il programma nel suo file di registro; n
 
 ### File {#files}
 
-La scheda elenca dove il programma conserva i suoi file e quanto è grande ciascuno. Su macOS:
+La scheda elenca dove il programma conserva i suoi file e quanto è grande ciascuno.
 
-| File | Dove | Contiene |
-| --- | --- | --- |
-| Impostazioni | `~/Library/Preferences/ai-softphone/settings.json` | Le impostazioni. Mai password né token. |
-| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Contatti, cronologia, trascrizioni e resoconti. |
-| Registrazioni | `~/Library/Application Support/ai-softphone/recordings` | L'audio delle registrazioni. |
-| Registro | `~/Library/Logs/ai-softphone/ai-softphone.log` | Il registro. |
+| File | Contiene |
+| --- | --- |
+| Impostazioni | Le impostazioni. Mai password né token. |
+| Database | Contatti, cronologia, trascrizioni e resoconti. |
+| Registrazioni | L'audio delle registrazioni. |
+| Registro | Il registro. |
+
+**Windows**
+
+| File | Dove |
+| --- | --- |
+| Impostazioni | `%APPDATA%\ai-softphone\settings.json` |
+| Database | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Registrazioni | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Registro | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| File | Dove |
+| --- | --- |
+| Impostazioni | `~/Library/Preferences/ai-softphone/settings.json` |
+| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Registrazioni | `~/Library/Application Support/ai-softphone/recordings` |
+| Registro | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| File | Dove |
+| --- | --- |
+| Impostazioni | `~/.config/ai-softphone/settings.json` |
+| Database | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Registrazioni | `~/.local/share/ai-softphone/recordings` |
+| Registro | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Sotto l'elenco, **Apri** mostra il registro e **Svuota** lo svuota. Svuoti il registro subito prima di riprodurre un problema; svuotarlo non si può annullare.
 

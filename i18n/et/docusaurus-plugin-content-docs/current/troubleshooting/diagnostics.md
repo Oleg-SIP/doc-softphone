@@ -39,14 +39,41 @@ Ripploend valib, kui palju programm oma logifaili kirjutab; pildil on see **Üks
 
 ### Failid {#files}
 
-Vahekaart loetleb, kus programm oma faile hoiab ja kui suur igaüks on. macOS-is:
+Vahekaart loetleb, kus programm oma faile hoiab ja kui suur igaüks on.
 
-| Fail | Kus | Sisaldab |
-| --- | --- | --- |
-| Seaded | `~/Library/Preferences/ai-softphone/settings.json` | Seaded. Mitte kunagi paroole ega märgiseid. |
-| Andmebaas | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontaktid, ajalugu, ülestähendused ja kokkuvõtted. |
-| Salvestised | `~/Library/Application Support/ai-softphone/recordings` | Salvestiste heli. |
-| Logi | `~/Library/Logs/ai-softphone/ai-softphone.log` | Logi. |
+| Fail | Sisaldab |
+| --- | --- |
+| Seaded | Seaded. Mitte kunagi paroole ega märgiseid. |
+| Andmebaas | Kontaktid, ajalugu, ülestähendused ja kokkuvõtted. |
+| Salvestised | Salvestiste heli. |
+| Logi | Logi. |
+
+**Windows**
+
+| Fail | Kus |
+| --- | --- |
+| Seaded | `%APPDATA%\ai-softphone\settings.json` |
+| Andmebaas | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Salvestised | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Logi | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Fail | Kus |
+| --- | --- |
+| Seaded | `~/Library/Preferences/ai-softphone/settings.json` |
+| Andmebaas | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Salvestised | `~/Library/Application Support/ai-softphone/recordings` |
+| Logi | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Fail | Kus |
+| --- | --- |
+| Seaded | `~/.config/ai-softphone/settings.json` |
+| Andmebaas | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Salvestised | `~/.local/share/ai-softphone/recordings` |
+| Logi | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Loendi all näitab **Ava** logi ja **Tühjenda** tühjendab selle. Tühjendage logi vahetult enne probleemi taasesitamist; tühjendamist ei saa tagasi võtta.
 

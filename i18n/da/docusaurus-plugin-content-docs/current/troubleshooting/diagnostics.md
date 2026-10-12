@@ -39,14 +39,41 @@ Rullelisten vælger, hvor meget programmet skriver i sin logfil; på billedet er
 
 ### Filer {#files}
 
-Fanen viser, hvor programmet gemmer sine filer, og hvor store de hver er. På macOS:
+Fanen viser, hvor programmet gemmer sine filer, og hvor store de hver er.
 
-| Fil | Hvor | Indeholder |
-| --- | --- | --- |
-| Indstillinger | `~/Library/Preferences/ai-softphone/settings.json` | Indstillingerne. Aldrig adgangskoder eller nøgler. |
-| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontakter, historik, udskrifter og opsummeringer. |
-| Optagelser | `~/Library/Application Support/ai-softphone/recordings` | Lyden fra optagelserne. |
-| Log | `~/Library/Logs/ai-softphone/ai-softphone.log` | Loggen. |
+| Fil | Indeholder |
+| --- | --- |
+| Indstillinger | Indstillingerne. Aldrig adgangskoder eller nøgler. |
+| Database | Kontakter, historik, udskrifter og opsummeringer. |
+| Optagelser | Lyden fra optagelserne. |
+| Log | Loggen. |
+
+**Windows**
+
+| Fil | Hvor |
+| --- | --- |
+| Indstillinger | `%APPDATA%\ai-softphone\settings.json` |
+| Database | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Optagelser | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Log | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Fil | Hvor |
+| --- | --- |
+| Indstillinger | `~/Library/Preferences/ai-softphone/settings.json` |
+| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Optagelser | `~/Library/Application Support/ai-softphone/recordings` |
+| Log | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Fil | Hvor |
+| --- | --- |
+| Indstillinger | `~/.config/ai-softphone/settings.json` |
+| Database | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Optagelser | `~/.local/share/ai-softphone/recordings` |
+| Log | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Under listen viser **Åbn** loggen, og **Ryd** tømmer den. Ryd loggen lige før du genskaber et problem; rydning kan ikke fortrydes.
 

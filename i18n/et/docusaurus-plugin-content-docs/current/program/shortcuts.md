@@ -8,7 +8,7 @@ description: Klahviotseteed, mis vastavad, lõpetavad, panevad ootele, vaigistav
 
 <Shot name="16_settings_shortcuts" alt="Seaded → Klahvi otseteed (macOS)">macOS</Shot>
 
-| Toiming | Otsetee Windowsis | Otsetee macOS-is | **Vaikimisi** |
+| Toiming | Otsetee Windowsis ja Linuxis | Otsetee macOS-is | **Vaikimisi** |
 | --- | --- | --- | --- |
 | **Vasta kõnele** | Ctrl+Alt+A | ⌃⌥A | väljas |
 | **Lõpeta** | Ctrl+Alt+E | ⌃⌥E | väljas |

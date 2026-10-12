@@ -39,14 +39,41 @@ La liste déroulante choisit la quantité de choses que le programme écrit dans
 
 ### Fichiers {#files}
 
-L'onglet liste où le programme garde ses fichiers et la taille de chacun. Sous macOS :
+L'onglet liste où le programme garde ses fichiers et la taille de chacun.
 
-| Fichier | Emplacement | Contenu |
-| --- | --- | --- |
-| Réglages | `~/Library/Preferences/ai-softphone/settings.json` | Les réglages. Jamais de mots de passe ni de jetons. |
-| Base de données | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Contacts, journal, transcriptions et comptes rendus. |
-| Enregistrements | `~/Library/Application Support/ai-softphone/recordings` | L'audio des enregistrements. |
-| Journal | `~/Library/Logs/ai-softphone/ai-softphone.log` | Le journal. |
+| Fichier | Contenu |
+| --- | --- |
+| Réglages | Les réglages. Jamais de mots de passe ni de jetons. |
+| Base de données | Contacts, journal, transcriptions et comptes rendus. |
+| Enregistrements | L'audio des enregistrements. |
+| Journal | Le journal. |
+
+**Windows**
+
+| Fichier | Emplacement |
+| --- | --- |
+| Réglages | `%APPDATA%\ai-softphone\settings.json` |
+| Base de données | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Enregistrements | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Journal | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Fichier | Emplacement |
+| --- | --- |
+| Réglages | `~/Library/Preferences/ai-softphone/settings.json` |
+| Base de données | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Enregistrements | `~/Library/Application Support/ai-softphone/recordings` |
+| Journal | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Fichier | Emplacement |
+| --- | --- |
+| Réglages | `~/.config/ai-softphone/settings.json` |
+| Base de données | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Enregistrements | `~/.local/share/ai-softphone/recordings` |
+| Journal | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Sous la liste, **Ouvrir** affiche le journal et **Vider** le vide. Videz le journal juste avant de reproduire un problème ; le vider ne peut pas être annulé.
 

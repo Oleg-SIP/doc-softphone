@@ -39,14 +39,41 @@ Die Auswahlliste wählt, wie viel das Programm in seine Protokolldatei schreibt;
 
 ### Dateien {#files}
 
-Der Reiter listet, wo das Programm seine Dateien ablegt und wie groß jede ist. Unter macOS:
+Der Reiter listet, wo das Programm seine Dateien ablegt und wie groß jede ist.
 
-| Datei | Ort | Enthält |
-| --- | --- | --- |
-| Einstellungen | `~/Library/Preferences/ai-softphone/settings.json` | Die Einstellungen. Nie Passwörter oder Tokens. |
-| Datenbank | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontakte, Verlauf, Transkripte und Auswertungen. |
-| Aufnahmen | `~/Library/Application Support/ai-softphone/recordings` | Der Ton der Aufnahmen. |
-| Protokoll | `~/Library/Logs/ai-softphone/ai-softphone.log` | Das Protokoll. |
+| Datei | Enthält |
+| --- | --- |
+| Einstellungen | Die Einstellungen. Nie Passwörter oder Tokens. |
+| Datenbank | Kontakte, Verlauf, Transkripte und Auswertungen. |
+| Aufnahmen | Der Ton der Aufnahmen. |
+| Protokoll | Das Protokoll. |
+
+**Windows**
+
+| Datei | Ort |
+| --- | --- |
+| Einstellungen | `%APPDATA%\ai-softphone\settings.json` |
+| Datenbank | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Aufnahmen | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Protokoll | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Datei | Ort |
+| --- | --- |
+| Einstellungen | `~/Library/Preferences/ai-softphone/settings.json` |
+| Datenbank | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Aufnahmen | `~/Library/Application Support/ai-softphone/recordings` |
+| Protokoll | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Datei | Ort |
+| --- | --- |
+| Einstellungen | `~/.config/ai-softphone/settings.json` |
+| Datenbank | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Aufnahmen | `~/.local/share/ai-softphone/recordings` |
+| Protokoll | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Unter der Liste zeigt **Öffnen** das Protokoll und **Leeren** leert es. Leeren Sie das Protokoll unmittelbar, bevor Sie ein Problem nachstellen; Leeren lässt sich nicht rückgängig machen.
 

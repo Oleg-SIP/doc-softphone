@@ -39,14 +39,41 @@ Açılır liste, programın günlük dosyasına ne kadar yazacağını seçer; r
 
 ### Dosyalar {#files}
 
-Sekme, programın dosyalarını nerede tuttuğunu ve her birinin ne kadar büyük olduğunu listeler. macOS'ta:
+Sekme, programın dosyalarını nerede tuttuğunu ve her birinin ne kadar büyük olduğunu listeler.
 
-| Dosya | Nerede | Ne içerir |
-| --- | --- | --- |
-| Ayarlar | `~/Library/Preferences/ai-softphone/settings.json` | Ayarlar. Asla parolalar ya da belirteçler değil. |
-| Veritabanı | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kişiler, geçmiş, dökümler ve işleme sonuçları. |
-| Kayıtlar | `~/Library/Application Support/ai-softphone/recordings` | Kayıtların sesi. |
-| Günlük | `~/Library/Logs/ai-softphone/ai-softphone.log` | Günlük. |
+| Dosya | Ne içerir |
+| --- | --- |
+| Ayarlar | Ayarlar. Asla parolalar ya da belirteçler değil. |
+| Veritabanı | Kişiler, geçmiş, dökümler ve işleme sonuçları. |
+| Kayıtlar | Kayıtların sesi. |
+| Günlük | Günlük. |
+
+**Windows**
+
+| Dosya | Nerede |
+| --- | --- |
+| Ayarlar | `%APPDATA%\ai-softphone\settings.json` |
+| Veritabanı | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Kayıtlar | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Günlük | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Dosya | Nerede |
+| --- | --- |
+| Ayarlar | `~/Library/Preferences/ai-softphone/settings.json` |
+| Veritabanı | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Kayıtlar | `~/Library/Application Support/ai-softphone/recordings` |
+| Günlük | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Dosya | Nerede |
+| --- | --- |
+| Ayarlar | `~/.config/ai-softphone/settings.json` |
+| Veritabanı | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Kayıtlar | `~/.local/share/ai-softphone/recordings` |
+| Günlük | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Listenin altında **Aç** günlüğü gösterir, **Temizle** onu boşaltır. Bir sorunu yeniden oluşturmadan hemen önce günlüğü temizleyin; temizleme geri alınamaz.
 

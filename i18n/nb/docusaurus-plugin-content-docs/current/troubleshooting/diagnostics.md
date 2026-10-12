@@ -39,14 +39,41 @@ Nedtrekkslisten velger hvor mye programmet skriver i loggfilen; på bildet er de
 
 ### Filer {#files}
 
-Fanen viser hvor programmet lagrer filene sine og hvor store de er. På macOS:
+Fanen viser hvor programmet lagrer filene sine og hvor store de er.
 
-| Fil | Hvor | Inneholder |
-| --- | --- | --- |
-| Innstillinger | `~/Library/Preferences/ai-softphone/settings.json` | Innstillingene. Aldri passord eller nøkler. |
-| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontakter, historikk, utskrifter og sammendrag. |
-| Opptak | `~/Library/Application Support/ai-softphone/recordings` | Lyden fra opptakene. |
-| Logg | `~/Library/Logs/ai-softphone/ai-softphone.log` | Loggen. |
+| Fil | Inneholder |
+| --- | --- |
+| Innstillinger | Innstillingene. Aldri passord eller nøkler. |
+| Database | Kontakter, historikk, utskrifter og sammendrag. |
+| Opptak | Lyden fra opptakene. |
+| Logg | Loggen. |
+
+**Windows**
+
+| Fil | Hvor |
+| --- | --- |
+| Innstillinger | `%APPDATA%\ai-softphone\settings.json` |
+| Database | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Opptak | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Logg | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Fil | Hvor |
+| --- | --- |
+| Innstillinger | `~/Library/Preferences/ai-softphone/settings.json` |
+| Database | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Opptak | `~/Library/Application Support/ai-softphone/recordings` |
+| Logg | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Fil | Hvor |
+| --- | --- |
+| Innstillinger | `~/.config/ai-softphone/settings.json` |
+| Database | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Opptak | `~/.local/share/ai-softphone/recordings` |
+| Logg | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Under listen viser **Åpne** loggen, og **Tøm** tømmer den. Tøm loggen rett før du gjenskaper et problem; tømming kan ikke angres.
 

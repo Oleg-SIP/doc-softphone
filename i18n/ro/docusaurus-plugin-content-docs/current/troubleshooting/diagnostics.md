@@ -39,14 +39,41 @@ Lista derulantă alege cât de mult scrie programul în fișierul jurnal; în im
 
 ### Fișiere {#files}
 
-Fila arată unde își păstrează programul fișierele și cât de mare este fiecare. Pe macOS:
+Fila arată unde își păstrează programul fișierele și cât de mare este fiecare.
 
-| Fișier | Unde | Conține |
-| --- | --- | --- |
-| Setări | `~/Library/Preferences/ai-softphone/settings.json` | Setările. Niciodată parole sau tokenuri. |
-| Bază de date | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Contacte, istoric, transcrieri și prelucrări. |
-| Înregistrări | `~/Library/Application Support/ai-softphone/recordings` | Sunetul înregistrărilor. |
-| Jurnal | `~/Library/Logs/ai-softphone/ai-softphone.log` | Jurnalul. |
+| Fișier | Conține |
+| --- | --- |
+| Setări | Setările. Niciodată parole sau tokenuri. |
+| Bază de date | Contacte, istoric, transcrieri și prelucrări. |
+| Înregistrări | Sunetul înregistrărilor. |
+| Jurnal | Jurnalul. |
+
+**Windows**
+
+| Fișier | Unde |
+| --- | --- |
+| Setări | `%APPDATA%\ai-softphone\settings.json` |
+| Bază de date | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Înregistrări | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Jurnal | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Fișier | Unde |
+| --- | --- |
+| Setări | `~/Library/Preferences/ai-softphone/settings.json` |
+| Bază de date | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Înregistrări | `~/Library/Application Support/ai-softphone/recordings` |
+| Jurnal | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Fișier | Unde |
+| --- | --- |
+| Setări | `~/.config/ai-softphone/settings.json` |
+| Bază de date | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Înregistrări | `~/.local/share/ai-softphone/recordings` |
+| Jurnal | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Sub listă, **Deschide** afișează jurnalul, iar **Golește** îl golește. Goliți jurnalul chiar înainte să reproduceți o problemă; golirea nu poate fi anulată.
 

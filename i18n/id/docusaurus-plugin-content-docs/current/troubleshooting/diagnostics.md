@@ -39,14 +39,41 @@ Daftar tarik-turun memilih seberapa banyak yang ditulis program ke berkas lognya
 
 ### Berkas {#files}
 
-Tab ini mencantumkan tempat program menyimpan berkas-berkasnya dan seberapa besar masing-masing. Di macOS:
+Tab ini mencantumkan tempat program menyimpan berkas-berkasnya dan seberapa besar masing-masing.
 
-| Berkas | Lokasi | Isi |
-| --- | --- | --- |
-| Pengaturan | `~/Library/Preferences/ai-softphone/settings.json` | Pengaturan. Tidak pernah berisi kata sandi atau token. |
-| Basis data | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontak, riwayat, transkrip, dan hasil olahan. |
-| Rekaman | `~/Library/Application Support/ai-softphone/recordings` | Audio rekaman. |
-| Log | `~/Library/Logs/ai-softphone/ai-softphone.log` | Log. |
+| Berkas | Isi |
+| --- | --- |
+| Pengaturan | Pengaturan. Tidak pernah berisi kata sandi atau token. |
+| Basis data | Kontak, riwayat, transkrip, dan hasil olahan. |
+| Rekaman | Audio rekaman. |
+| Log | Log. |
+
+**Windows**
+
+| Berkas | Lokasi |
+| --- | --- |
+| Pengaturan | `%APPDATA%\ai-softphone\settings.json` |
+| Basis data | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Rekaman | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Log | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Berkas | Lokasi |
+| --- | --- |
+| Pengaturan | `~/Library/Preferences/ai-softphone/settings.json` |
+| Basis data | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Rekaman | `~/Library/Application Support/ai-softphone/recordings` |
+| Log | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Berkas | Lokasi |
+| --- | --- |
+| Pengaturan | `~/.config/ai-softphone/settings.json` |
+| Basis data | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Rekaman | `~/.local/share/ai-softphone/recordings` |
+| Log | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Di bawah daftar, **Buka** menampilkan log dan **Bersihkan** mengosongkannya. Bersihkan log tepat sebelum Anda mereproduksi masalah; pembersihan tidak dapat dibatalkan.
 

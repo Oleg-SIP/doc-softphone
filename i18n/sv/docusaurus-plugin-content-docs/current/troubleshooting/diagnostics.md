@@ -39,14 +39,41 @@ Listrutan väljer hur mycket programmet skriver i sin loggfil; på bilden är de
 
 ### Filer {#files}
 
-Fliken visar var programmet sparar sina filer och hur stor var och en är. På macOS:
+Fliken visar var programmet sparar sina filer och hur stor var och en är.
 
-| Fil | Var | Innehåller |
-| --- | --- | --- |
-| Inställningar | `~/Library/Preferences/ai-softphone/settings.json` | Inställningarna. Aldrig lösenord eller nycklar. |
-| Databas | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontakter, historik, utskrifter och sammanfattningar. |
-| Inspelningar | `~/Library/Application Support/ai-softphone/recordings` | Ljudet från inspelningarna. |
-| Logg | `~/Library/Logs/ai-softphone/ai-softphone.log` | Loggen. |
+| Fil | Innehåller |
+| --- | --- |
+| Inställningar | Inställningarna. Aldrig lösenord eller nycklar. |
+| Databas | Kontakter, historik, utskrifter och sammanfattningar. |
+| Inspelningar | Ljudet från inspelningarna. |
+| Logg | Loggen. |
+
+**Windows**
+
+| Fil | Var |
+| --- | --- |
+| Inställningar | `%APPDATA%\ai-softphone\settings.json` |
+| Databas | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Inspelningar | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Logg | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Fil | Var |
+| --- | --- |
+| Inställningar | `~/Library/Preferences/ai-softphone/settings.json` |
+| Databas | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Inspelningar | `~/Library/Application Support/ai-softphone/recordings` |
+| Logg | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Fil | Var |
+| --- | --- |
+| Inställningar | `~/.config/ai-softphone/settings.json` |
+| Databas | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Inspelningar | `~/.local/share/ai-softphone/recordings` |
+| Logg | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Under listan visar **Öppna** loggen och **Rensa** tömmer den. Rensa loggen precis innan du återskapar ett problem; rensningen kan inte ångras.
 

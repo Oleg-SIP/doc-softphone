@@ -39,14 +39,41 @@ Rozbaľovací zoznam vyberá, koľko program zapisuje do svojho súboru záznamu
 
 ### Súbory {#files}
 
-Karta uvádza, kde program uchováva svoje súbory a aké veľké sú. V macOS:
+Karta uvádza, kde program uchováva svoje súbory a aké veľké sú.
 
-| Súbor | Kde | Obsahuje |
-| --- | --- | --- |
-| Nastavenia | `~/Library/Preferences/ai-softphone/settings.json` | Nastavenia. Nikdy heslá ani tokeny. |
-| Databáza | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontakty, históriu, prepisy a spracovania. |
-| Nahrávky | `~/Library/Application Support/ai-softphone/recordings` | Zvuk nahrávok. |
-| Záznam | `~/Library/Logs/ai-softphone/ai-softphone.log` | Záznam. |
+| Súbor | Obsahuje |
+| --- | --- |
+| Nastavenia | Nastavenia. Nikdy heslá ani tokeny. |
+| Databáza | Kontakty, históriu, prepisy a spracovania. |
+| Nahrávky | Zvuk nahrávok. |
+| Záznam | Záznam. |
+
+**Windows**
+
+| Súbor | Kde |
+| --- | --- |
+| Nastavenia | `%APPDATA%\ai-softphone\settings.json` |
+| Databáza | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Nahrávky | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Záznam | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Súbor | Kde |
+| --- | --- |
+| Nastavenia | `~/Library/Preferences/ai-softphone/settings.json` |
+| Databáza | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Nahrávky | `~/Library/Application Support/ai-softphone/recordings` |
+| Záznam | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Súbor | Kde |
+| --- | --- |
+| Nastavenia | `~/.config/ai-softphone/settings.json` |
+| Databáza | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Nahrávky | `~/.local/share/ai-softphone/recordings` |
+| Záznam | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Pod zoznamom **Otvoriť** zobrazí záznam a **Vymazať** ho vyprázdni. Záznam vymažte tesne predtým, než problém zopakujete; vymazanie sa nedá vrátiť.
 

@@ -39,14 +39,41 @@ Lista rozwijana wybiera, ile program zapisuje w swoim pliku dziennika; na obrazk
 
 ### Pliki {#files}
 
-Zakładka wymienia, gdzie program trzyma swoje pliki i jak duży jest każdy z nich. W macOS:
+Zakładka wymienia, gdzie program trzyma swoje pliki i jak duży jest każdy z nich.
 
-| Plik | Gdzie | Zawiera |
-| --- | --- | --- |
-| Ustawienia | `~/Library/Preferences/ai-softphone/settings.json` | Ustawienia. Nigdy hasła ani tokeny. |
-| Baza danych | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontakty, historia, transkrypcje i opracowania. |
-| Nagrania | `~/Library/Application Support/ai-softphone/recordings` | Dźwięk nagrań. |
-| Dziennik | `~/Library/Logs/ai-softphone/ai-softphone.log` | Dziennik. |
+| Plik | Zawiera |
+| --- | --- |
+| Ustawienia | Ustawienia. Nigdy hasła ani tokeny. |
+| Baza danych | Kontakty, historia, transkrypcje i opracowania. |
+| Nagrania | Dźwięk nagrań. |
+| Dziennik | Dziennik. |
+
+**Windows**
+
+| Plik | Gdzie |
+| --- | --- |
+| Ustawienia | `%APPDATA%\ai-softphone\settings.json` |
+| Baza danych | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Nagrania | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Dziennik | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Plik | Gdzie |
+| --- | --- |
+| Ustawienia | `~/Library/Preferences/ai-softphone/settings.json` |
+| Baza danych | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Nagrania | `~/Library/Application Support/ai-softphone/recordings` |
+| Dziennik | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Plik | Gdzie |
+| --- | --- |
+| Ustawienia | `~/.config/ai-softphone/settings.json` |
+| Baza danych | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Nagrania | `~/.local/share/ai-softphone/recordings` |
+| Dziennik | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Pod listą **Otwórz** pokazuje dziennik, a **Wyczyść** go opróżnia. Wyczyść dziennik tuż przed odtworzeniem problemu; wyczyszczenia nie można cofnąć.
 

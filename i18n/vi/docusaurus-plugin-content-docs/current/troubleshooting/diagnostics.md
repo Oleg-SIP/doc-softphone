@@ -39,14 +39,41 @@ Danh sách thả xuống chọn lượng thông tin chương trình ghi vào t�
 
 ### Tệp {#files}
 
-Thẻ liệt kê nơi chương trình lưu các tệp của nó và dung lượng của từng tệp. Trên macOS:
+Thẻ liệt kê nơi chương trình lưu các tệp của nó và dung lượng của từng tệp.
 
-| Tệp | Ở đâu | Chứa gì |
-| --- | --- | --- |
-| Cài đặt | `~/Library/Preferences/ai-softphone/settings.json` | Các cài đặt. Không bao giờ có mật khẩu hay token. |
-| Cơ sở dữ liệu | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Danh bạ, lịch sử, bản chép lời và kết quả xử lý. |
-| Bản ghi | `~/Library/Application Support/ai-softphone/recordings` | Âm thanh của các bản ghi. |
-| Nhật ký | `~/Library/Logs/ai-softphone/ai-softphone.log` | Nhật ký. |
+| Tệp | Chứa gì |
+| --- | --- |
+| Cài đặt | Các cài đặt. Không bao giờ có mật khẩu hay token. |
+| Cơ sở dữ liệu | Danh bạ, lịch sử, bản chép lời và kết quả xử lý. |
+| Bản ghi | Âm thanh của các bản ghi. |
+| Nhật ký | Nhật ký. |
+
+**Windows**
+
+| Tệp | Ở đâu |
+| --- | --- |
+| Cài đặt | `%APPDATA%\ai-softphone\settings.json` |
+| Cơ sở dữ liệu | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Bản ghi | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Nhật ký | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Tệp | Ở đâu |
+| --- | --- |
+| Cài đặt | `~/Library/Preferences/ai-softphone/settings.json` |
+| Cơ sở dữ liệu | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Bản ghi | `~/Library/Application Support/ai-softphone/recordings` |
+| Nhật ký | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Tệp | Ở đâu |
+| --- | --- |
+| Cài đặt | `~/.config/ai-softphone/settings.json` |
+| Cơ sở dữ liệu | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Bản ghi | `~/.local/share/ai-softphone/recordings` |
+| Nhật ký | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Dưới danh sách, **Mở** hiển thị nhật ký và **Dọn** làm trống nó. Hãy dọn nhật ký ngay trước khi tái hiện sự cố; việc dọn không thể hoàn tác.
 

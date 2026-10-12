@@ -39,14 +39,41 @@ A **Küldjön másolatot a rendszernaplóba** a naplót a rendszer saját napló
 
 ### Fájlok {#files}
 
-A lap felsorolja, hol tárolja a program a fájljait, és mekkora mindegyik. macOS-en:
+A lap felsorolja, hol tárolja a program a fájljait, és mekkora mindegyik.
 
-| Fájl | Hol | Mit tartalmaz |
-| --- | --- | --- |
-| Beállítások | `~/Library/Preferences/ai-softphone/settings.json` | A beállításokat. Soha nem jelszavakat vagy tokeneket. |
-| Adatbázis | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Névjegyeket, előzményeket, leiratokat és feldolgozásokat. |
-| Felvételek | `~/Library/Application Support/ai-softphone/recordings` | A felvételek hanganyagát. |
-| Napló | `~/Library/Logs/ai-softphone/ai-softphone.log` | A naplót. |
+| Fájl | Mit tartalmaz |
+| --- | --- |
+| Beállítások | A beállításokat. Soha nem jelszavakat vagy tokeneket. |
+| Adatbázis | Névjegyeket, előzményeket, leiratokat és feldolgozásokat. |
+| Felvételek | A felvételek hanganyagát. |
+| Napló | A naplót. |
+
+**Windows**
+
+| Fájl | Hol |
+| --- | --- |
+| Beállítások | `%APPDATA%\ai-softphone\settings.json` |
+| Adatbázis | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Felvételek | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Napló | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Fájl | Hol |
+| --- | --- |
+| Beállítások | `~/Library/Preferences/ai-softphone/settings.json` |
+| Adatbázis | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Felvételek | `~/Library/Application Support/ai-softphone/recordings` |
+| Napló | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Fájl | Hol |
+| --- | --- |
+| Beállítások | `~/.config/ai-softphone/settings.json` |
+| Adatbázis | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Felvételek | `~/.local/share/ai-softphone/recordings` |
+| Napló | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 A lista alatt a **Megnyitás** megmutatja a naplót, a **Kiürítés** pedig kiüríti. Közvetlenül azelőtt ürítse ki a naplót, hogy reprodukálna egy problémát; a kiürítés nem vonható vissza.
 

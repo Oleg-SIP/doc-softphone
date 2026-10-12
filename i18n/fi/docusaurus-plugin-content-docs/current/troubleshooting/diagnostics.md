@@ -39,14 +39,41 @@ Pudotusvalikko valitsee, kuinka paljon ohjelma kirjoittaa lokitiedostoonsa; kuva
 
 ### Tiedostot {#files}
 
-Välilehti luettelee, missä ohjelma säilyttää tiedostonsa ja kuinka suuri kukin on. macOS:ssä:
+Välilehti luettelee, missä ohjelma säilyttää tiedostonsa ja kuinka suuri kukin on.
 
-| Tiedosto | Missä | Sisältää |
-| --- | --- | --- |
-| Asetukset | `~/Library/Preferences/ai-softphone/settings.json` | Asetukset. Ei koskaan salasanoja tai tunnuksia. |
-| Tietokanta | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Yhteystiedot, historia, litteroinnit ja yhteenvedot. |
-| Tallenteet | `~/Library/Application Support/ai-softphone/recordings` | Tallenteiden ääni. |
-| Loki | `~/Library/Logs/ai-softphone/ai-softphone.log` | Loki. |
+| Tiedosto | Sisältää |
+| --- | --- |
+| Asetukset | Asetukset. Ei koskaan salasanoja tai tunnuksia. |
+| Tietokanta | Yhteystiedot, historia, litteroinnit ja yhteenvedot. |
+| Tallenteet | Tallenteiden ääni. |
+| Loki | Loki. |
+
+**Windows**
+
+| Tiedosto | Missä |
+| --- | --- |
+| Asetukset | `%APPDATA%\ai-softphone\settings.json` |
+| Tietokanta | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Tallenteet | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Loki | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Tiedosto | Missä |
+| --- | --- |
+| Asetukset | `~/Library/Preferences/ai-softphone/settings.json` |
+| Tietokanta | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Tallenteet | `~/Library/Application Support/ai-softphone/recordings` |
+| Loki | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Tiedosto | Missä |
+| --- | --- |
+| Asetukset | `~/.config/ai-softphone/settings.json` |
+| Tietokanta | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Tallenteet | `~/.local/share/ai-softphone/recordings` |
+| Loki | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Luettelon alla **Avaa** näyttää lokin ja **Tyhjennä** tyhjentää sen. Tyhjennä loki juuri ennen kuin toistat ongelman; tyhjentämistä ei voi perua.
 

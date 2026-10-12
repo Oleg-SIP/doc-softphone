@@ -39,14 +39,41 @@ Išskleidžiamasis sąrašas pasirenka, kiek programa rašo į savo žurnalo fai
 
 ### Failai {#files}
 
-Skirtukas pateikia, kur programa laiko savo failus ir kokio dydžio kiekvienas. macOS:
+Skirtukas pateikia, kur programa laiko savo failus ir kokio dydžio kiekvienas.
 
-| Failas | Kur | Turinys |
-| --- | --- | --- |
-| Nustatymai | `~/Library/Preferences/ai-softphone/settings.json` | Nustatymai. Niekada slaptažodžiai ar prieigos raktai. |
-| Duomenų bazė | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontaktai, istorija, iššifruoti tekstai ir apibendrinimai. |
-| Įrašai | `~/Library/Application Support/ai-softphone/recordings` | Įrašų garsas. |
-| Žurnalas | `~/Library/Logs/ai-softphone/ai-softphone.log` | Žurnalas. |
+| Failas | Turinys |
+| --- | --- |
+| Nustatymai | Nustatymai. Niekada slaptažodžiai ar prieigos raktai. |
+| Duomenų bazė | Kontaktai, istorija, iššifruoti tekstai ir apibendrinimai. |
+| Įrašai | Įrašų garsas. |
+| Žurnalas | Žurnalas. |
+
+**Windows**
+
+| Failas | Kur |
+| --- | --- |
+| Nustatymai | `%APPDATA%\ai-softphone\settings.json` |
+| Duomenų bazė | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Įrašai | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Žurnalas | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Failas | Kur |
+| --- | --- |
+| Nustatymai | `~/Library/Preferences/ai-softphone/settings.json` |
+| Duomenų bazė | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Įrašai | `~/Library/Application Support/ai-softphone/recordings` |
+| Žurnalas | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Failas | Kur |
+| --- | --- |
+| Nustatymai | `~/.config/ai-softphone/settings.json` |
+| Duomenų bazė | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Įrašai | `~/.local/share/ai-softphone/recordings` |
+| Žurnalas | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Po sąrašu **Atverti** parodo žurnalą, o **Išvalyti** jį išvalo. Išvalykite žurnalą prieš pat atkartodami problemą; išvalymo atšaukti negalima.
 

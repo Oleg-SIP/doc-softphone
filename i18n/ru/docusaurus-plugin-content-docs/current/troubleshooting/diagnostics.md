@@ -39,14 +39,41 @@ description: Окно, где видно каждое слово, которым
 
 ### Файлы {#files}
 
-На вкладке перечислено, где программа хранит свои файлы и сколько каждый занимает. В macOS:
+На вкладке перечислено, где программа хранит свои файлы и сколько каждый занимает.
 
-| Файл | Где | Что хранит |
-| --- | --- | --- |
-| Настройки | `~/Library/Preferences/ai-softphone/settings.json` | Настройки. Никогда — пароли и токены. |
-| База данных | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Контакты, историю, расшифровки и разборы. |
-| Записи | `~/Library/Application Support/ai-softphone/recordings` | Звук записей. |
-| Журнал | `~/Library/Logs/ai-softphone/ai-softphone.log` | Журнал. |
+| Файл | Что хранит |
+| --- | --- |
+| Настройки | Настройки. Никогда — пароли и токены. |
+| База данных | Контакты, историю, расшифровки и разборы. |
+| Записи | Звук записей. |
+| Журнал | Журнал. |
+
+**Windows**
+
+| Файл | Где |
+| --- | --- |
+| Настройки | `%APPDATA%\ai-softphone\settings.json` |
+| База данных | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Записи | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Журнал | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Файл | Где |
+| --- | --- |
+| Настройки | `~/Library/Preferences/ai-softphone/settings.json` |
+| База данных | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Записи | `~/Library/Application Support/ai-softphone/recordings` |
+| Журнал | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Файл | Где |
+| --- | --- |
+| Настройки | `~/.config/ai-softphone/settings.json` |
+| База данных | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Записи | `~/.local/share/ai-softphone/recordings` |
+| Журнал | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Под списком **Открыть** показывает журнал, а **Очистить** очищает его. *Очистите журнал прямо перед тем, как воспроизвести проблему. Очистку отменить нельзя.*
 

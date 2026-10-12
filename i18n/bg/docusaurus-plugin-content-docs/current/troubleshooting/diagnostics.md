@@ -39,14 +39,41 @@ description: Прозорецът, който показва всяка дума
 
 ### Файлове {#files}
 
-Разделът изброява къде програмата държи файловете си и колко голям е всеки. В macOS:
+Разделът изброява къде програмата държи файловете си и колко голям е всеки.
 
-| Файл | Къде | Съдържа |
-| --- | --- | --- |
-| Настройки | `~/Library/Preferences/ai-softphone/settings.json` | Настройките. Никога пароли или токени. |
-| База данни | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Контакти, история, стенограми и обработки. |
-| Записи | `~/Library/Application Support/ai-softphone/recordings` | Звука на записите. |
-| Дневник | `~/Library/Logs/ai-softphone/ai-softphone.log` | Дневника. |
+| Файл | Съдържа |
+| --- | --- |
+| Настройки | Настройките. Никога пароли или токени. |
+| База данни | Контакти, история, стенограми и обработки. |
+| Записи | Звука на записите. |
+| Дневник | Дневника. |
+
+**Windows**
+
+| Файл | Къде |
+| --- | --- |
+| Настройки | `%APPDATA%\ai-softphone\settings.json` |
+| База данни | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Записи | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Дневник | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Файл | Къде |
+| --- | --- |
+| Настройки | `~/Library/Preferences/ai-softphone/settings.json` |
+| База данни | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Записи | `~/Library/Application Support/ai-softphone/recordings` |
+| Дневник | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Файл | Къде |
+| --- | --- |
+| Настройки | `~/.config/ai-softphone/settings.json` |
+| База данни | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Записи | `~/.local/share/ai-softphone/recordings` |
+| Дневник | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Под списъка **Отвори** показва дневника, а **Изчисти** го изпразва. Изчистете дневника точно преди да възпроизведете проблем; изчистването не може да бъде отменено.
 

@@ -39,14 +39,41 @@ El desplegable elige cuánto escribe el programa en su archivo de registro; en l
 
 ### Archivos {#files}
 
-La pestaña lista dónde guarda el programa sus archivos y cuánto ocupa cada uno. En macOS:
+La pestaña lista dónde guarda el programa sus archivos y cuánto ocupa cada uno.
 
-| Archivo | Dónde | Contiene |
-| --- | --- | --- |
-| Ajustes | `~/Library/Preferences/ai-softphone/settings.json` | Los ajustes. Nunca contraseñas ni tokens. |
-| Base de datos | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Contactos, historial, transcripciones y redacciones. |
-| Grabaciones | `~/Library/Application Support/ai-softphone/recordings` | El audio de las grabaciones. |
-| Registro | `~/Library/Logs/ai-softphone/ai-softphone.log` | El registro. |
+| Archivo | Contiene |
+| --- | --- |
+| Ajustes | Los ajustes. Nunca contraseñas ni tokens. |
+| Base de datos | Contactos, historial, transcripciones y redacciones. |
+| Grabaciones | El audio de las grabaciones. |
+| Registro | El registro. |
+
+**Windows**
+
+| Archivo | Dónde |
+| --- | --- |
+| Ajustes | `%APPDATA%\ai-softphone\settings.json` |
+| Base de datos | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Grabaciones | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Registro | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Archivo | Dónde |
+| --- | --- |
+| Ajustes | `~/Library/Preferences/ai-softphone/settings.json` |
+| Base de datos | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Grabaciones | `~/Library/Application Support/ai-softphone/recordings` |
+| Registro | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Archivo | Dónde |
+| --- | --- |
+| Ajustes | `~/.config/ai-softphone/settings.json` |
+| Base de datos | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Grabaciones | `~/.local/share/ai-softphone/recordings` |
+| Registro | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Bajo la lista, **Abrir** muestra el registro y **Vaciar** lo vacía. Vacíe el registro justo antes de reproducir un problema; vaciarlo no se puede deshacer.
 

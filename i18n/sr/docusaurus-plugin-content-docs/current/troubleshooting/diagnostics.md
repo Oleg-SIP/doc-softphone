@@ -39,14 +39,41 @@ description: Прозор који приказује сваку реч коју
 
 ### Датотеке {#files}
 
-Картица наводи где програм чува своје датотеке и колико је свака велика. На macOS-у:
+Картица наводи где програм чува своје датотеке и колико је свака велика.
 
-| Датотека | Где | Садржи |
-| --- | --- | --- |
-| Подешавања | `~/Library/Preferences/ai-softphone/settings.json` | Подешавања. Никада лозинке ни жетоне. |
-| База података | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Контакте, историју, преписе и обраде. |
-| Снимци | `~/Library/Application Support/ai-softphone/recordings` | Звук снимака. |
-| Дневник | `~/Library/Logs/ai-softphone/ai-softphone.log` | Дневник. |
+| Датотека | Садржи |
+| --- | --- |
+| Подешавања | Подешавања. Никада лозинке ни жетоне. |
+| База података | Контакте, историју, преписе и обраде. |
+| Снимци | Звук снимака. |
+| Дневник | Дневник. |
+
+**Windows**
+
+| Датотека | Где |
+| --- | --- |
+| Подешавања | `%APPDATA%\ai-softphone\settings.json` |
+| База података | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Снимци | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Дневник | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Датотека | Где |
+| --- | --- |
+| Подешавања | `~/Library/Preferences/ai-softphone/settings.json` |
+| База података | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Снимци | `~/Library/Application Support/ai-softphone/recordings` |
+| Дневник | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Датотека | Где |
+| --- | --- |
+| Подешавања | `~/.config/ai-softphone/settings.json` |
+| База података | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Снимци | `~/.local/share/ai-softphone/recordings` |
+| Дневник | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Испод списка **Отвори** приказује дневник, а **Испразни** га празни. Испразните дневник непосредно пре него што поновите проблем; пражњење не може да се поништи.
 

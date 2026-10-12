@@ -39,14 +39,41 @@ Padajući meni bira koliko program upisuje u svoju datoteku dnevnika; na slici j
 
 ### Datoteke {#files}
 
-Kartica navodi gde program čuva svoje datoteke i koliko je svaka velika. Na macOS-u:
+Kartica navodi gde program čuva svoje datoteke i koliko je svaka velika.
 
-| Datoteka | Gde | Sadrži |
-| --- | --- | --- |
-| Podešavanja | `~/Library/Preferences/ai-softphone/settings.json` | Podešavanja. Nikada lozinke ni žetone. |
-| Baza podataka | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontakte, istoriju, prepise i obrade. |
-| Snimci | `~/Library/Application Support/ai-softphone/recordings` | Zvuk snimaka. |
-| Dnevnik | `~/Library/Logs/ai-softphone/ai-softphone.log` | Dnevnik. |
+| Datoteka | Sadrži |
+| --- | --- |
+| Podešavanja | Podešavanja. Nikada lozinke ni žetone. |
+| Baza podataka | Kontakte, istoriju, prepise i obrade. |
+| Snimci | Zvuk snimaka. |
+| Dnevnik | Dnevnik. |
+
+**Windows**
+
+| Datoteka | Gde |
+| --- | --- |
+| Podešavanja | `%APPDATA%\ai-softphone\settings.json` |
+| Baza podataka | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Snimci | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Dnevnik | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Datoteka | Gde |
+| --- | --- |
+| Podešavanja | `~/Library/Preferences/ai-softphone/settings.json` |
+| Baza podataka | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Snimci | `~/Library/Application Support/ai-softphone/recordings` |
+| Dnevnik | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Datoteka | Gde |
+| --- | --- |
+| Podešavanja | `~/.config/ai-softphone/settings.json` |
+| Baza podataka | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Snimci | `~/.local/share/ai-softphone/recordings` |
+| Dnevnik | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Ispod spiska **Otvori** prikazuje dnevnik, a **Isprazni** ga prazni. Ispraznite dnevnik neposredno pre nego što ponovite problem; pražnjenje ne može da se poništi.
 

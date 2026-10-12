@@ -39,14 +39,41 @@ Nolaižamais saraksts izvēlas, cik daudz programma raksta savā žurnāla fail�
 
 ### Faili {#files}
 
-Cilne uzskaita, kur programma glabā savus failus un cik liels ir katrs. macOS:
+Cilne uzskaita, kur programma glabā savus failus un cik liels ir katrs.
 
-| Fails | Kur | Satur |
-| --- | --- | --- |
-| Iestatījumi | `~/Library/Preferences/ai-softphone/settings.json` | Iestatījumus. Nekad paroles vai pilnvaras. |
-| Datubāze | `~/Library/Application Support/ai-softphone/ai-softphone.db` | Kontaktus, vēsturi, atšifrējumus un apkopojumus. |
-| Ieraksti | `~/Library/Application Support/ai-softphone/recordings` | Ierakstu skaņu. |
-| Žurnāls | `~/Library/Logs/ai-softphone/ai-softphone.log` | Žurnālu. |
+| Fails | Satur |
+| --- | --- |
+| Iestatījumi | Iestatījumus. Nekad paroles vai pilnvaras. |
+| Datubāze | Kontaktus, vēsturi, atšifrējumus un apkopojumus. |
+| Ieraksti | Ierakstu skaņu. |
+| Žurnāls | Žurnālu. |
+
+**Windows**
+
+| Fails | Kur |
+| --- | --- |
+| Iestatījumi | `%APPDATA%\ai-softphone\settings.json` |
+| Datubāze | `%LOCALAPPDATA%\ai-softphone\ai-softphone.db` |
+| Ieraksti | `%LOCALAPPDATA%\ai-softphone\recordings` |
+| Žurnāls | `%LOCALAPPDATA%\ai-softphone\logs\ai-softphone.log` |
+
+**macOS**
+
+| Fails | Kur |
+| --- | --- |
+| Iestatījumi | `~/Library/Preferences/ai-softphone/settings.json` |
+| Datubāze | `~/Library/Application Support/ai-softphone/ai-softphone.db` |
+| Ieraksti | `~/Library/Application Support/ai-softphone/recordings` |
+| Žurnāls | `~/Library/Logs/ai-softphone/ai-softphone.log` |
+
+**Linux**
+
+| Fails | Kur |
+| --- | --- |
+| Iestatījumi | `~/.config/ai-softphone/settings.json` |
+| Datubāze | `~/.local/share/ai-softphone/ai-softphone.db` |
+| Ieraksti | `~/.local/share/ai-softphone/recordings` |
+| Žurnāls | `~/.local/state/ai-softphone/ai-softphone.log` |
 
 Zem saraksta **Atvērt** parāda žurnālu, un **Iztukšot** to iztukšo. Iztukšojiet žurnālu tieši pirms problēmas atkārtošanas; iztukšošanu nevar atsaukt.
 
