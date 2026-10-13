@@ -1,7 +1,7 @@
 ---
 title: Typowe problemy
 sidebar_position: 2
-description: "Co sprawdzić, gdy konto nie chce się zarejestrować, nie ma dźwięku, połączenie lub spotkanie nie zostaje nagrane, nie ma transkrypcji, sufler się nie uruchamia albo odnośnik, skrót lub API nic nie robi."
+description: "Co sprawdzić, gdy konto nie chce się zarejestrować, nie ma dźwięku, połączenie lub spotkanie nie zostaje nagrane, nie ma transkrypcji, sufler się nie uruchamia albo odnośnik, skrót lub API nic nie robi, a także co znaczą komunikaty samego telefonu."
 ---
 
 Każdy punkt wskazuje ustawienie, które o tym decyduje. Jeśli odpowiedzi tu nie ma, otwórz [Diagnostykę](/troubleshooting/diagnostics): pokazuje, co telefon i centrala mówią sobie nawzajem.
@@ -88,3 +88,40 @@ Naciśnij **Wyślij zdarzenie testowe** w [Ustawienia → Integracja](/integrati
 ## Skrót nic nie robi {#a-hotkey-does-nothing}
 
 Otwórz [Skróty](/program/shortcuts). Skrót działa, gdy telefon jest programem, którego używasz; aby używać go z każdego programu, zaznacz **Wszędzie**. Kliknij skrót i naciśnij kombinację ponownie, jeśli przejął ją inny program.
+
+## Komunikaty telefonu {#messages-the-phone-shows}
+
+Gdy coś się nie udaje, telefon pisze dlaczego w osobnym wierszu. Wiersz pod listą sam znika po kilku sekundach.
+
+### Połączenie się nie wybiera {#when-a-call-is-not-placed}
+
+| Komunikat | Co zrobić |
+| --- | --- |
+| *Nie skonfigurowano żadnego konta* | Dodaj konto w [Ustawienia → Konta](/sip-accounts/setup). |
+| *Żadne konto nie jest włączone, więc nie ma linii, z której dzwonić.* | Zaznacz pole wyboru konta w **Ustawienia → Konta**. |
+| *Żadna linia nie jest jeszcze zarejestrowana.* | Konto jest włączone, ale jeszcze nie zarejestrowane w centrali. Poczekaj, aż jego kropka zrobi się zielona; jeśli nie, zobacz [Konto nie chce się zarejestrować](#the-account-will-not-register). |
+| *Trwa już tyle rozmów, ile ten telefon udźwignie.* | Rozłącz jedną z rozmów i zadzwoń ponownie. |
+| *Konto, z którego by to zadzwoniono, już nie istnieje.* | Wiersz należy do konta, które zostało w międzyczasie usunięte. Wybierz numer na klawiaturze. |
+| *Ten wiersz nie ma numeru do oddzwonienia.* | Dzwoniący ukrył numer, więc nie ma gdzie oddzwonić. |
+
+### Konto się nie łączy {#when-an-account-does-not-connect}
+
+| Komunikat | Co zrobić |
+| --- | --- |
+| *Nie znaleziono tego adresu serwera. Sprawdź, czy nie ma literówki.* | Sprawdź **Adres serwera** w [formularzu konta](/sip-accounts/setup). |
+| *Nie udało się dotrzeć do serwera. Sprawdź adres, port i swoją sieć.* | Sprawdź **Adres serwera**, a także **Transport** i **Port** w **Ustawienia serwera**. SIP może też blokować zapora sieciowa. |
+| *Serwer odrzucił tę nazwę użytkownika lub to hasło.* | Sprawdź **Nazwa użytkownika** i **Hasło**. Jeśli centrala sprawdza hasło pod inną nazwą, wypełnij **Użytkownik uwierzytelniania**. |
+| *Nie udało się zweryfikować certyfikatu serwera. Jeśli administrator serwera wystawił go sam, odznacz „Weryfikuj certyfikat” w sekcji „Ustawienia serwera”.* | Pojawia się przy połączeniu TLS. Jeśli centrala używa certyfikatu, który sama wystawiła, odznacz **Weryfikuj certyfikat** w **Ustawienia serwera**. |
+| *Nie udało się odczytać hasła do tego konta z pęku kluczy. Odblokuj go i połącz się ponownie.* | Odblokuj magazyn haseł komputera (w macOS pęk kluczy), a potem naciśnij **Połącz** przy koncie. |
+
+### W trakcie rozmowy {#during-a-call}
+
+| Komunikat | Co zrobić |
+| --- | --- |
+| *Brak wspólnego formatu dźwięku* | Centrala i telefon nie mają wspólnego kodeka. Włącz któryś z używanych przez centralę w [Formaty dźwięku](/sip-accounts/calls#audio-formats). |
+| *Brak mikrofonu i głośników* | Wybierz urządzenia w [Ustawienia → Urządzenia](/sip-accounts/devices). |
+| *Bez nagrywania: na dysku zostało tylko tyle, ile wynosi granica. Zwolnij miejsce albo zmień granicę w ustawieniach.* | Wolne miejsce na dysku spadło do **Próg wolnego miejsca** — zobacz [Nagrania](/recordings). Zwolnij miejsce albo obniż próg. |
+
+### Przy uruchamianiu telefonu {#when-the-phone-starts}
+
+*Nie można odczytać bazy danych* oznacza, że bazę danych utworzyła inna wersja programu i ta nie umie jej odczytać. Zwykle starszą wersję uruchomiono na danych nowszej: ponowne zainstalowanie nowszej wersji otworzy bazę taką, jaka była. **Zacznij od nowa** zamiast tego tworzy pustą bazę — wszystkie kontakty i wszystkie rozmowy w historii przepadają i nie da się tego cofnąć. Zanim go naciśniesz, możesz zachować kopię pliku bazy; [Diagnostyka](/troubleshooting/diagnostics#files) mówi, gdzie on jest.

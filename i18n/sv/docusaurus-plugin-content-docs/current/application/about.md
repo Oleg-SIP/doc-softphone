@@ -20,6 +20,16 @@ Fliken talar om ifall du har den senaste versionen och när det senast kontrolle
 
 **Leta efter uppdateringar automatiskt**, på som standard, kontrollerar en gång om dagen och strax efter att telefonen har startat. Den ber en server om en liten fil, och ingenting laddas ner eller installeras utan att du säger till.
 
+När det finns en ny version står det på fliken *Version … finns. Ingenting hämtas förrän du ber om det.* **Vad som ändrats** visar vad som är nytt i den, och **Hämta** hämtar den.
+
+När den är hämtad stänger **Installera och starta om** telefonen och startar den igen i den nya versionen. Telefonen gör aldrig detta själv, så att inget som pågår bryts: tryck på knappen när du inte är i ett samtal. En avisering, *En ny version finns*, säger det också, med knappen **Uppdatera nu**.
+
+| När det står på fliken | |
+| --- | --- |
+| *Version … finns. Den här kopian installerades av ett paket, så den nya installeras på samma sätt.* | Programmet kommer från ett paket, till exempel från din Linuxdistribution. Tryck på **Hämta paketet** och installera den nya versionen på samma sätt som du installerade den här. |
+| *Det här bygget har ingen uppdateringsadress, så det frågar aldrig. De som publiceras på webbplatsen har en.* | Programmet är byggt från källkoden i stället för hämtat från webbplatsen och letar inte efter uppdateringar. |
+| *Ingen uppdateringsserver svarade.* | Servrarna gick inte att nå. Om datorn är ansluten kan det hjälpa att välja **Land** ovan: det kan finnas en server närmare dig. |
+
 ## Licens {#licence}
 
 Programmet är fri programvara under GPL-2.0-or-later. Det levereras utan någon garanti, och du får vidaredistribuera det enligt licensens villkor; hela texten följer med i filen `LICENSE`.

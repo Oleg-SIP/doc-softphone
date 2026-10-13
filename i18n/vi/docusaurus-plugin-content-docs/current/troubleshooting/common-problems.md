@@ -1,7 +1,7 @@
 ---
 title: Sự cố thường gặp
 sidebar_position: 2
-description: Cần kiểm tra gì khi tài khoản không đăng ký được, không có âm thanh, cuộc gọi hay cuộc họp không được ghi, không có bản chép lời, người nhắc không chạy, hoặc liên kết, phím tắt hay API không có tác dụng.
+description: Cần kiểm tra gì khi tài khoản không đăng ký được, không có âm thanh, cuộc gọi hay cuộc họp không được ghi, không có bản chép lời, người nhắc không chạy, hoặc liên kết, phím tắt hay API không có tác dụng, và ý nghĩa của các thông báo do chính điện thoại hiển thị.
 ---
 
 Mỗi mục chỉ tới cài đặt quyết định vấn đề đó. Nếu câu trả lời không có ở đây, hãy mở [Chẩn đoán](/troubleshooting/diagnostics): nó cho thấy điện thoại và tổng đài nói gì với nhau.
@@ -88,3 +88,40 @@ Nhấn **Gửi một sự kiện thử** trong [Cài đặt → Tích hợp](/in
 ## Phím tắt không có tác dụng {#a-hotkey-does-nothing}
 
 Mở [Phím tắt](/program/shortcuts). Phím tắt hoạt động trong lúc điện thoại là chương trình bạn đang dùng; để dùng nó từ mọi chương trình, hãy đánh dấu **Ở mọi nơi**. Nhấp vào phím tắt và nhấn lại tổ hợp phím nếu một chương trình khác đã chiếm nó.
+
+## Các thông báo của điện thoại {#messages-the-phone-shows}
+
+Khi điều gì đó không xảy ra, điện thoại cho biết lý do trên một dòng riêng. Dòng bên dưới danh sách tự biến mất sau vài giây.
+
+### Khi cuộc gọi không được thực hiện {#when-a-call-is-not-placed}
+
+| Thông báo | Cần làm gì |
+| --- | --- |
+| *Chưa có tài khoản nào được thiết lập* | Thêm tài khoản trong [Cài đặt → Tài khoản](/sip-accounts/setup). |
+| *Không có tài khoản nào đang bật, nên không có đường dây để gọi đi.* | Đánh dấu ô của một tài khoản trong **Cài đặt → Tài khoản**. |
+| *Chưa có đường dây nào đăng ký.* | Tài khoản đã bật nhưng chưa đăng ký trên tổng đài. Hãy đợi chấm của nó chuyển sang xanh; nếu không, xem [Tài khoản không đăng ký được](#the-account-will-not-register). |
+| *Số cuộc gọi đang chạy đã bằng mức máy này chịu được.* | Gác một trong các cuộc gọi, rồi gọi lại. |
+| *Tài khoản đáng lẽ dùng để gọi đã không còn.* | Dòng này thuộc về một tài khoản đã bị xóa. Hãy bấm số trên bàn phím quay số. |
+| *Dòng này không có số để gọi lại.* | Người gọi đã ẩn số, nên không có số nào để gọi lại. |
+
+### Khi tài khoản không kết nối {#when-an-account-does-not-connect}
+
+| Thông báo | Cần làm gì |
+| --- | --- |
+| *Không tìm thấy địa chỉ máy chủ đó. Hãy kiểm tra xem có gõ sai không.* | Kiểm tra **Địa chỉ máy chủ** trong [biểu mẫu tài khoản](/sip-accounts/setup). |
+| *Không liên hệ được máy chủ. Hãy kiểm tra địa chỉ, cổng và mạng của bạn.* | Kiểm tra **Địa chỉ máy chủ**, cùng **Giao vận** và **Cổng** trong **Cài đặt máy chủ**. Tường lửa cũng có thể đang chặn SIP. |
+| *Máy chủ từ chối tên đăng nhập hoặc mật khẩu này.* | Kiểm tra **Tên đăng nhập** và **Mật khẩu**. Nếu tổng đài kiểm tra mật khẩu dưới một tên khác, hãy điền **Người dùng xác thực**. |
+| *Không thể xác minh chứng chỉ của máy chủ. Nếu quản trị viên máy chủ tự tạo chứng chỉ, hãy bỏ chọn “Xác minh chứng chỉ” trong “Cài đặt máy chủ”.* | Xuất hiện với kết nối TLS. Nếu tổng đài dùng chứng chỉ do chính nó tạo, hãy bỏ chọn **Xác minh chứng chỉ** trong **Cài đặt máy chủ**. |
+| *Không đọc được mật khẩu của tài khoản này từ kho khoá. Hãy mở khoá rồi kết nối lại.* | Mở khóa kho mật khẩu của máy tính (Keychain trên macOS), rồi bấm **Kết nối** ở tài khoản. |
+
+### Trong cuộc gọi {#during-a-call}
+
+| Thông báo | Cần làm gì |
+| --- | --- |
+| *Không có định dạng âm thanh chung* | Tổng đài và điện thoại không có codec chung. Hãy bật một codec mà tổng đài dùng trong [Định dạng âm thanh](/sip-accounts/calls#audio-formats). |
+| *Không có micrô hay loa* | Chọn thiết bị trong [Cài đặt → Thiết bị](/sip-accounts/devices). |
+| *Không ghi âm: dung lượng đĩa đã chạm ngưỡng. Hãy dọn bớt, hoặc đổi ngưỡng trong Cài đặt.* | Dung lượng trống trên đĩa đã chạm **Ngưỡng dung lượng đĩa** — xem [Bản ghi](/recordings). Giải phóng dung lượng, hoặc hạ ngưỡng xuống. |
+
+### Khi điện thoại khởi động {#when-the-phone-starts}
+
+*Không đọc được cơ sở dữ liệu* nghĩa là cơ sở dữ liệu được tạo bởi một phiên bản khác của chương trình và phiên bản này không đọc được. Thường là một phiên bản cũ hơn đã được chạy trên dữ liệu của phiên bản mới hơn: cài lại phiên bản mới hơn sẽ mở cơ sở dữ liệu như cũ. **Bắt đầu lại** thì ngược lại, tạo một cơ sở dữ liệu trống — mọi liên hệ và mọi cuộc gọi trong lịch sử đều mất, và không thể hoàn tác. Trước khi bấm, bạn có thể giữ một bản sao của tệp cơ sở dữ liệu; [Chẩn đoán](/troubleshooting/diagnostics#files) cho biết tệp nằm ở đâu.

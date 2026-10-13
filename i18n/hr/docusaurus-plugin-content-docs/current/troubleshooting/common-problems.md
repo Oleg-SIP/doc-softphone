@@ -1,7 +1,7 @@
 ---
 title: Česti problemi
 sidebar_position: 2
-description: "Što provjeriti kad se račun ne želi registrirati, nema zvuka, poziv ili sastanak nije snimljen, nema prijepisa, šaptač se ne pokreće ili poveznica, prečac ili API ništa ne rade."
+description: "Što provjeriti kad se račun ne želi registrirati, nema zvuka, poziv ili sastanak nije snimljen, nema prijepisa, šaptač se ne pokreće ili poveznica, prečac ili API ništa ne rade, te što znače poruke samog telefona."
 ---
 
 Svaka stavka upućuje na postavku koja o tome odlučuje. Ako odgovora ovdje nema, otvorite [Dijagnostiku](/troubleshooting/diagnostics): prikazuje što si telefon i centrala govore.
@@ -88,3 +88,40 @@ Pritisnite **Pošalji probni događaj** u [Postavke → Integracija](/integratio
 ## Prečac ništa ne radi {#a-hotkey-does-nothing}
 
 Otvorite [Prečaci](/program/shortcuts). Prečac radi dok je telefon program koji koristite; da biste ga koristili iz bilo kojeg programa, označite **Svugdje**. Kliknite prečac i ponovno pritisnite kombinaciju ako ju je preuzeo drugi program.
+
+## Poruke telefona {#messages-the-phone-shows}
+
+Kad se nešto ne dogodi, telefon u zasebnom retku kaže zašto. Redak ispod popisa sam nestaje nakon nekoliko sekundi.
+
+### Kad poziv ne krene {#when-a-call-is-not-placed}
+
+| Poruka | Što učiniti |
+| --- | --- |
+| *Nije postavljen nijedan račun* | Dodajte račun u [Postavke → Računi](/sip-accounts/setup). |
+| *Nijedan račun nije uključen, pa nema linije s koje bi se zvalo.* | Označite potvrdni okvir računa u **Postavke → Računi**. |
+| *Nijedna linija još nije registrirana.* | Račun je uključen, ali još nije registriran na centrali. Pričekajte da mu točka pozeleni; ako ne pozeleni, pogledajte [Račun se ne želi registrirati](#the-account-will-not-register). |
+| *Već traje onoliko razgovora koliko ovaj telefon nosi.* | Prekinite jedan od poziva pa nazovite ponovno. |
+| *Račun s kojeg bi se ovo zvalo više ne postoji.* | Redak pripada računu koji je u međuvremenu izbrisan. Birajte broj na brojčaniku. |
+| *Ovaj redak nema broja za uzvrat.* | Pozivatelj je sakrio broj, pa nemate koga nazvati natrag. |
+
+### Kad se račun ne poveže {#when-an-account-does-not-connect}
+
+| Poruka | Što učiniti |
+| --- | --- |
+| *Ta se adresa poslužitelja nije mogla pronaći. Provjerite ima li tipfelera.* | Provjerite **Adresa poslužitelja** u [obrascu računa](/sip-accounts/setup). |
+| *Poslužitelj se nije mogao dosegnuti. Provjerite adresu, port i svoju mrežu.* | Provjerite **Adresa poslužitelja**, kao i **Prijenos** i **Port** pod **Postavke poslužitelja**. SIP može zaustavljati i vatrozid. |
+| *Poslužitelj je odbio ovo korisničko ime ili lozinku.* | Provjerite **Korisničko ime** i **Lozinka**. Ako centrala provjerava lozinku pod drugim imenom, ispunite **Korisnik za provjeru**. |
+| *Certifikat poslužitelja nije moguće provjeriti. Ako ga je administrator poslužitelja sam izdao, poništite „Provjeravaj certifikat” u „Postavke poslužitelja”.* | Pojavljuje se kod TLS veze. Ako centrala koristi certifikat koji je sama napravila, uklonite oznaku **Provjeravaj certifikat** pod **Postavke poslužitelja**. |
+| *Lozinka ovog računa nije se mogla pročitati iz privjeska. Otključajte ga i povežite se ponovno.* | Otključajte spremnik lozinki računala (na macOS-u Privjesak ključeva), zatim pritisnite **Poveži** uz račun. |
+
+### Tijekom poziva {#during-a-call}
+
+| Poruka | Što učiniti |
+| --- | --- |
+| *Nema zajedničkog zvučnog formata* | Centrala i telefon nemaju zajednički kodek. Uključite neki koji centrala koristi u [Zvučni formati](/sip-accounts/calls#audio-formats). |
+| *Nema ni mikrofona ni zvučnika* | Odaberite uređaje u [Postavke → Uređaji](/sip-accounts/devices). |
+| *Ne snima se: disk je pao do granice. Oslobodite mjesto ili promijenite granicu u postavkama.* | Slobodni prostor na disku pao je na **Prag prostora na disku** — pogledajte [Snimke](/recordings). Oslobodite prostor ili smanjite prag. |
+
+### Pri pokretanju telefona {#when-the-phone-starts}
+
+*Baza podataka se ne može pročitati* znači da je bazu podataka napravila druga inačica programa i ova je ne može pročitati. Obično je starija inačica pokrenuta na podacima novije: ako ponovno instalirate noviju inačicu, ona otvara bazu kakva je bila. **Počni ispočetka** umjesto toga radi praznu bazu — svaki kontakt i svaki poziv u povijesti nestaju, i to se ne može poništiti. Prije nego što pritisnete, možete sačuvati kopiju datoteke baze; [Dijagnostika](/troubleshooting/diagnostics#files) kaže gdje se nalazi.

@@ -1,7 +1,7 @@
 ---
 title: Pogoste težave
 sidebar_position: 2
-description: "Kaj preveriti, ko se račun noče registrirati, ni zvoka, klic ali sestanek ni bil posnet, ni prepisa, se šepetalec ne zažene ali povezava, bližnjica ali API ne naredi ničesar."
+description: "Kaj preveriti, ko se račun noče registrirati, ni zvoka, klic ali sestanek ni bil posnet, ni prepisa, se šepetalec ne zažene ali povezava, bližnjica ali API ne naredi ničesar ter kaj pomenijo sporočila samega telefona."
 ---
 
 Vsak vnos kaže na nastavitev, ki o tem odloča. Če odgovora ni tukaj, odprite [Diagnostiko](/troubleshooting/diagnostics): pokaže, kaj si govorita telefon in centrala.
@@ -88,3 +88,40 @@ Pritisnite **Pošlji preizkusni dogodek** v [Nastavitve → Integracija](/integr
 ## Bližnjica ne naredi ničesar {#a-hotkey-does-nothing}
 
 Odprite [Bližnjice](/program/shortcuts). Bližnjica deluje, ko je telefon program, ki ga uporabljate; da jo uporabljate iz katerega koli programa, označite **Povsod**. Kliknite bližnjico in znova pritisnite kombinacijo, če jo je prevzel drug program.
+
+## Sporočila telefona {#messages-the-phone-shows}
+
+Ko se nekaj ne zgodi, telefon v svoji vrstici pove zakaj. Vrstica pod seznamom po nekaj sekundah sama izgine.
+
+### Ko klic ne steče {#when-a-call-is-not-placed}
+
+| Sporočilo | Kaj storiti |
+| --- | --- |
+| *Nastavljen ni noben račun* | Dodajte račun v [Nastavitve → Računi](/sip-accounts/setup). |
+| *Noben račun ni vklopljen, zato ni linije, s katere bi klicali.* | Označite potrditveno polje računa v **Nastavitve → Računi**. |
+| *Nobena linija še ni registrirana.* | Račun je vklopljen, a na centrali še ni registriran. Počakajte, da njegova pika postane zelena; če ne postane, glejte [Račun se noče registrirati](#the-account-will-not-register). |
+| *Teče že toliko pogovorov, kolikor jih ta telefon nosi.* | Končajte enega od klicev in pokličite znova. |
+| *Računa, s katerega bi bilo to klicano, ni več.* | Vrstica pripada računu, ki je bil medtem izbrisan. Številko vtipkajte na številčnici. |
+| *Ta vrstica nima številke za povratni klic.* | Klicatelj je skril številko, zato ni koga poklicati nazaj. |
+
+### Ko se račun ne poveže {#when-an-account-does-not-connect}
+
+| Sporočilo | Kaj storiti |
+| --- | --- |
+| *Tega naslova strežnika ni bilo mogoče najti. Preverite, ali ni v njem tipkarske napake.* | Preverite **Naslov strežnika** v [obrazcu računa](/sip-accounts/setup). |
+| *Strežnika ni bilo mogoče doseči. Preverite naslov, vrata in svoje omrežje.* | Preverite **Naslov strežnika** ter **Prenos** in **Vrata** pod **Nastavitve strežnika**. SIP lahko ustavlja tudi požarni zid. |
+| *Strežnik je zavrnil to uporabniško ime ali geslo.* | Preverite **Uporabniško ime** in **Geslo**. Če centrala preverja geslo pod drugim imenom, izpolnite **Uporabnik za preverjanje**. |
+| *Potrdila strežnika ni bilo mogoče preveriti. Če ga je skrbnik strežnika izdal sam, počistite »Preverjaj potrdilo« v »Nastavitve strežnika«.* | Pojavi se pri povezavi TLS. Če centrala uporablja potrdilo, ki ga je naredila sama, odstranite kljukico **Preverjaj potrdilo** pod **Nastavitve strežnika**. |
+| *Gesla tega računa ni bilo mogoče prebrati iz zbirke ključev. Odklenite jo in se znova povežite.* | Odklenite shrambo gesel računalnika (v macOS Keychain), nato pri računu pritisnite **Poveži**. |
+
+### Med klicem {#during-a-call}
+
+| Sporočilo | Kaj storiti |
+| --- | --- |
+| *Ni skupne zvočne oblike* | Centrala in telefon nimata skupnega kodeka. Vklopite enega, ki ga centrala uporablja, v [Zvočni formati](/sip-accounts/calls#audio-formats). |
+| *Ne mikrofona ne zvočnikov* | Izberite naprave v [Nastavitve → Naprave](/sip-accounts/devices). |
+| *Ne snema se: disk je padel do meje. Sprostite prostor ali spremenite mejo v nastavitvah.* | Prosti prostor na disku je dosegel prag (**Prag prostora na disku**) — glejte [Posnetki](/recordings). Sprostite prostor ali znižajte prag. |
+
+### Ob zagonu telefona {#when-the-phone-starts}
+
+*Zbirke podatkov ni mogoče prebrati* pomeni, da je zbirko podatkov naredila druga različica programa in je ta ne zna prebrati. Običajno je bila starejša različica zagnana na podatkih novejše: če znova namestite novejšo različico, ta zbirko odpre takšno, kot je bila. **Začni znova** pa naredi prazno zbirko — vsi stiki in vsi klici v zgodovini se izgubijo, in tega ni mogoče razveljaviti. Preden pritisnete, lahko shranite kopijo datoteke zbirke; kje je, pove [Diagnostika](/troubleshooting/diagnostics#files).

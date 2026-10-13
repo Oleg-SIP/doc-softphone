@@ -20,6 +20,16 @@ La scheda dice se ha la versione più recente e quando è stato fatto l'ultimo c
 
 **Cerca gli aggiornamenti automaticamente**, attivo per impostazione predefinita, controlla una volta al giorno e poco dopo l'avvio del telefono. Chiede a un server un piccolo file, e nulla viene scaricato o installato senza che lo dica lei.
 
+Quando c'è una nuova versione, la scheda dice *La versione … è disponibile. Non viene scaricato nulla finché non lo chiede.* **Che cosa è cambiato** mostra che cosa c'è di nuovo, e **Scarica** la scarica.
+
+Una volta scaricata, **Installa e riavvia** chiude il telefono e lo riavvia nella nuova versione. Il telefono non lo fa mai da solo, per non interrompere niente di quello che è in corso: prema il pulsante quando non è in chiamata. Lo dice anche una notifica, *È disponibile una nuova versione*, con un pulsante **Aggiorna ora**.
+
+| Quando la scheda dice | |
+| --- | --- |
+| *La versione … è disponibile. Questa copia è stata installata da un pacchetto, quindi la nuova si installa allo stesso modo.* | Il programma viene da un pacchetto, per esempio dalla sua distribuzione Linux. Prema **Prendi il pacchetto** e installi la nuova versione nello stesso modo in cui ha installato questa. |
+| *Questa build non ha un indirizzo di aggiornamento, quindi non chiede mai. Quelle pubblicate sul sito ce l'hanno.* | Il programma è stato compilato dal codice sorgente invece che scaricato dal sito, e non cerca aggiornamenti. |
+| *Nessun server di aggiornamento ha risposto.* | I server non erano raggiungibili. Se il computer è in linea, scegliere il **Paese** qui sopra può aiutare: potrebbe esserci un server più vicino. |
+
 ## Licenza {#licence}
 
 Il programma è software libero sotto GPL-2.0-or-later. Viene fornito senza alcuna garanzia, e può ridistribuirlo secondo i termini di quella licenza; il testo completo è nel file chiamato `LICENSE`.

@@ -20,6 +20,16 @@ Cilne pasaka, vai jums ir jaunākā versija un kad pēdējo reizi pārbaudīts. 
 
 **Meklēt atjauninājumus automātiski**, pēc noklusējuma ieslēgts, pārbauda reizi dienā un drīz pēc tālruņa startēšanas. Tas lūdz serverim vienu nelielu failu, un nekas netiek lejupielādēts vai instalēts bez jūsu atļaujas.
 
+Kad ir pieejama jauna versija, cilnē rakstīts *Versija … ir pieejama. Nekas netiek lejupielādēts, kamēr jūs to nelūdzat.* **Kas mainījies** parāda, kas tajā jauns, un **Lejupielādēt** to lejupielādē.
+
+Kad tā ir lejupielādēta, **Uzstādīt un startēt no jauna** aizver tālruni un palaiž to atkal jau jaunajā versijā. Tālrunis to nekad nedara pats, lai nepārtrauktu neko, kas notiek: nospiediet pogu, kad nerunājat. To pasaka arī paziņojums *Ir pieejama jauna versija* ar pogu **Atjaunināt tagad**.
+
+| Ja cilnē rakstīts | |
+| --- | --- |
+| *Versija … ir pieejama. Šis eksemplārs tika uzstādīts ar pakotni, tāpēc jaunais uzstādās tāpat.* | Programma ir instalēta no pakotnes, piemēram, no jūsu Linux distribūcijas. Nospiediet **Paņemt pakotni** un instalējiet jauno versiju tāpat, kā instalējāt šo. |
+| *Šim būvējumam nav atjaunināšanas adreses, tāpēc tas nekad nejautā. Vietnē publicētajiem tā ir.* | Programma ir izveidota no pirmkoda, nevis lejupielādēta no tīmekļa vietnes, un atjauninājumus nemeklē. |
+| *Neviens atjaunināšanas serveris neatbildēja.* | Serverus neizdevās sasniegt. Ja dators ir tiešsaistē, var palīdzēt laukā **Valsts** augstāk izvēlēties savu valsti: varbūt jums tuvāk ir kāds serveris. |
+
 ## Licence {#licence}
 
 Programma ir brīvā programmatūra ar licenci GPL-2.0-or-later. Tā tiek piedāvāta bez jebkādas garantijas, un jūs varat to izplatīt tālāk saskaņā ar šīs licences noteikumiem; pilns teksts ir pievienots failā ar nosaukumu `LICENSE`.

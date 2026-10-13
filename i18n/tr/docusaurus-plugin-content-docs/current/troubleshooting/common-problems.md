@@ -1,7 +1,7 @@
 ---
 title: Sık karşılaşılan sorunlar
 sidebar_position: 2
-description: "Bir hesap kaydolmadığında, ses olmadığında, bir çağrı ya da toplantı kaydedilmediğinde, döküm olmadığında, suflör başlamadığında ya da bir bağlantı, bir kısayol veya API hiçbir şey yapmadığında neyi denetlemeli."
+description: "Bir hesap kaydolmadığında, ses olmadığında, bir çağrı ya da toplantı kaydedilmediğinde, döküm olmadığında, suflör başlamadığında ya da bir bağlantı, bir kısayol veya API hiçbir şey yapmadığında neyi denetlemeli ve telefonun kendi iletilerinin ne anlama geldiği."
 ---
 
 Her girdi, sorunu belirleyen ayarı gösterir. Yanıt burada yoksa [Tanılama](/troubleshooting/diagnostics) penceresini açın: telefonun ve santralin birbirine ne söylediğini gösterir.
@@ -88,3 +88,40 @@ Santral, dahilinin boş olup olmadığını bildirmiyor. Düğme yine de arama y
 ## Bir kısayol hiçbir şey yapmıyor {#a-hotkey-does-nothing}
 
 [Kısayollar](/program/shortcuts) bölümünü açın. Bir kısayol, telefon kullandığınız program olduğu sürece çalışır; onu herhangi bir programdan kullanmak için **Her yerde** seçeneğini işaretleyin. Başka bir program onu almışsa kısayola tıklayın ve tuş birleşimine yeniden basın.
+
+## Telefonun iletileri {#messages-the-phone-shows}
+
+Bir şey olmadığında telefon nedenini ayrı bir satırda söyler. Bir listenin altındaki satır birkaç saniye sonra kendiliğinden kaybolur.
+
+### Arama yapılamadığında {#when-a-call-is-not-placed}
+
+| İleti | Ne yapmalı |
+| --- | --- |
+| *Kurulmuş hesap yok* | [Ayarlar → Hesaplar](/sip-accounts/setup) içinde bir hesap ekleyin. |
+| *Açık bir hesap yok, bu yüzden arama yapılacak hat yok.* | **Ayarlar → Hesaplar** içinde bir hesabın onay kutusunu işaretleyin. |
+| *Henüz kayıtlı bir hat yok.* | Hesap açık ama santrale henüz kayıtlı değil. Noktasının yeşile dönmesini bekleyin; dönmezse [Hesap kaydolmuyor](#the-account-will-not-register) bölümüne bakın. |
+| *Bu telefonun taşıyabileceği kadar çağrı açık.* | Görüşmelerden birini kapatın, sonra yeniden arayın. |
+| *Bunun arayacağı hesap artık yok.* | Satır, o zamandan beri silinmiş bir hesaba ait. Numarayı tuş takımında çevirin. |
+| *Bu satırda geri aranacak numara yok.* | Arayan numarasını gizlemiş, bu yüzden geri aranacak bir numara yok. |
+
+### Hesap bağlanmadığında {#when-an-account-does-not-connect}
+
+| İleti | Ne yapmalı |
+| --- | --- |
+| *Bu sunucu adresi bulunamadı. Yazım yanlışlarına bakın.* | [Hesap formunda](/sip-accounts/setup) **Sunucu adresi** alanını denetleyin. |
+| *Sunucuya ulaşılamadı. Adresi, kapıyı ve ağınızı denetleyin.* | **Sunucu adresi** alanını, ayrıca **Sunucu ayarları** altındaki **Taşıma** ve **Kapı** değerlerini denetleyin. SIP'i bir güvenlik duvarı da durduruyor olabilir. |
+| *Sunucu bu kullanıcı adını ya da parolayı reddetti.* | **Kullanıcı adı** ve **Parola** alanlarını denetleyin. Santral parolayı başka bir ad altında denetliyorsa **Kimlik doğrulama kullanıcısı** alanını doldurun. |
+| *Sunucunun sertifikası doğrulanamadı. Sertifikayı sunucunun yöneticisi kendisi oluşturduysa “Sunucu ayarları” içinde “Sertifikayı doğrula” seçeneğinin işaretini kaldırın.* | TLS bağlantısında görünür. Santral kendi yaptığı bir sertifika kullanıyorsa **Sunucu ayarları** altında **Sertifikayı doğrula** işaretini kaldırın. |
+| *Bu hesabın parolası anahtarlıktan okunamadı. Anahtarlığın kilidini açıp yeniden bağlanın.* | Bilgisayarın anahtar zincirinin kilidini açın (macOS'te Anahtar Zinciri), sonra hesabın yanında **Bağlan** düğmesine basın. |
+
+### Görüşme sırasında {#during-a-call}
+
+| İleti | Ne yapmalı |
+| --- | --- |
+| *Ortak ses biçimi yok* | Santralin ve telefonun ortak bir kodeki yok. Santralin kullandığı bir kodeki [Ses biçimleri](/sip-accounts/calls#audio-formats) bölümünde açın. |
+| *Mikrofon ya da hoparlör yok* | Aygıtları [Ayarlar → Aygıtlar](/sip-accounts/devices) içinde seçin. |
+| *Kayıt yapılmıyor: diskte kalan yer sınıra indi. Biraz yer açın ya da Ayarlar'dan sınırı değiştirin.* | Diskteki boş alan **Disk alanı eşiği** değerine indi — bkz. [Kayıtlar](/recordings). Yer açın ya da eşiği düşürün. |
+
+### Telefon başlarken {#when-the-phone-starts}
+
+*Veritabanı okunamıyor*, veritabanının programın başka bir sürümü tarafından yapıldığı ve bu sürümün onu okuyamadığı anlamına gelir. Çoğu zaman daha eski bir sürüm, daha yeni bir sürümün verileriyle başlatılmıştır: daha yeni sürümü yeniden kurarsanız veritabanını olduğu gibi açar. **Baştan başla** ise boş bir veritabanı yapar — tüm kişiler ve geçmişteki tüm aramalar kaybolur, bu geri alınamaz. Basmadan önce veritabanı dosyasının bir kopyasını saklayabilirsiniz; yerini [Tanılama](/troubleshooting/diagnostics#files) söyler.

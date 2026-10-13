@@ -20,6 +20,16 @@ Karta říká, zda máte nejnovější verzi a kdy se naposledy kontrolovalo. **
 
 **Kontrolovat aktualizace automaticky**, ve výchozím stavu zapnuto, kontroluje jednou denně a krátce po spuštění telefonu. Požádá server o jeden malý soubor a nic se nestáhne ani nenainstaluje, dokud to neřeknete.
 
+Když vyjde nová verze, karta napíše *Verze … je dostupná. Nic se nestahuje, dokud o to nepožádáte.* **Co se změnilo** ukáže, co je v ní nového, a **Stáhnout** ji stáhne.
+
+Až je stažená, **Nainstalovat a restartovat** telefon zavře a spustí ho znovu už v nové verzi. Telefon to nikdy neudělá sám, aby nepřerušil nic, co právě probíhá: stiskněte tlačítko, když zrovna netelefonujete. Řekne to i oznámení *Je dostupná nová verze* s tlačítkem **Aktualizovat teď**.
+
+| Když karta píše | |
+| --- | --- |
+| *Verze … je dostupná. Tato kopie byla nainstalována z balíčku, takže nová se nainstaluje stejně.* | Program byl nainstalován z balíčku, například z vaší linuxové distribuce. Stiskněte **Získat balíček** a novou verzi nainstalujte stejně, jako jste nainstalovali tuto. |
+| *Toto sestavení nemá aktualizační adresu, takže se nikdy neptá. Ta zveřejněná na webu ji mají.* | Program byl sestaven ze zdrojového kódu, ne stažen z webu, a aktualizace nehledá. |
+| *Žádný aktualizační server neodpověděl.* | Servery nebyly dosažitelné. Pokud je počítač online, může pomoci vyplnit **Země** výše: možná je nějaký server blíž k vám. |
+
 ## Licence {#licence}
 
 Program je svobodný software pod licencí GPL-2.0-or-later. Dodává se bez jakékoli záruky a smíte ho šířit dál za podmínek této licence; celý text je v souboru `LICENSE`.

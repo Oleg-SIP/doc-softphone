@@ -1,7 +1,7 @@
 ---
 title: Problèmes courants
 sidebar_position: 2
-description: "Que vérifier quand un compte ne s'enregistre pas, qu'il n'y a pas de son, qu'un appel ou une réunion n'est pas enregistré, qu'il n'y a pas de transcription, que le souffleur ne démarre pas, ou qu'un lien, un raccourci ou l'API ne fait rien."
+description: "Que vérifier quand un compte ne s'enregistre pas, qu'il n'y a pas de son, qu'un appel ou une réunion n'est pas enregistré, qu'il n'y a pas de transcription, que le souffleur ne démarre pas, ou qu'un lien, un raccourci ou l'API ne fait rien, et ce que veulent dire les messages du téléphone lui-même."
 ---
 
 Chaque entrée renvoie au réglage qui en décide. Si la réponse n'est pas ici, ouvrez le [Diagnostic](/troubleshooting/diagnostics) : il montre ce que le téléphone et l'IPBX se disent.
@@ -88,3 +88,40 @@ Appuyez sur **Envoyer un événement de test** dans [Réglages → Intégration]
 ## Un raccourci ne fait rien {#a-hotkey-does-nothing}
 
 Ouvrez [Raccourcis](/program/shortcuts). Un raccourci fonctionne quand le téléphone est le programme que vous utilisez ; pour l'utiliser depuis n'importe quel programme, cochez **Partout**. Cliquez sur le raccourci et appuyez à nouveau sur la combinaison si un autre programme l'a prise.
+
+## Les messages du téléphone {#messages-the-phone-shows}
+
+Quand quelque chose ne se fait pas, le téléphone dit pourquoi sur une ligne à part. Une ligne sous une liste disparaît d'elle-même après quelques secondes.
+
+### Quand un appel ne part pas {#when-a-call-is-not-placed}
+
+| Message | Que faire |
+| --- | --- |
+| *Aucun compte n'est configuré* | Ajoutez un compte dans [Réglages → Comptes](/sip-accounts/setup). |
+| *Aucun compte n'est activé, il n'y a donc pas de ligne pour appeler.* | Cochez la case d'un compte dans **Réglages → Comptes**. |
+| *Aucune ligne n'est encore enregistrée.* | Le compte est activé mais pas encore enregistré sur l'IPBX. Attendez que son point passe au vert ; sinon, voir [Le compte ne s'enregistre pas](#the-account-will-not-register). |
+| *Il y a déjà autant d'appels que ce téléphone en supporte.* | Raccrochez l'un des appels, puis rappelez. |
+| *Le compte depuis lequel cela aurait été appelé n'existe plus.* | La ligne appartient à un compte supprimé depuis. Composez le numéro dans le clavier. |
+| *Cette ligne n'a pas de numéro à rappeler.* | L'appelant a masqué son numéro : il n'y a rien à rappeler. |
+
+### Quand un compte ne se connecte pas {#when-an-account-does-not-connect}
+
+| Message | Que faire |
+| --- | --- |
+| *Cette adresse de serveur reste introuvable. Vérifiez qu'elle ne contient pas de faute de frappe.* | Vérifiez l'**Adresse du serveur** dans [le formulaire du compte](/sip-accounts/setup). |
+| *Impossible de joindre le serveur. Vérifiez l'adresse, le port et votre réseau.* | Vérifiez l'**Adresse du serveur**, ainsi que **Transport** et **Port** sous **Réglages du serveur**. Un pare-feu peut aussi bloquer le SIP. |
+| *Le serveur a rejeté cet identifiant ou ce mot de passe.* | Vérifiez **Identifiant** et **Mot de passe**. Si l'IPBX vérifie le mot de passe sous un autre nom, remplissez **Utilisateur d'authentification**. |
+| *Le certificat du serveur n’a pas pu être vérifié. Si l’administrateur du serveur l’a émis lui-même, décochez « Vérifier le certificat » dans « Réglages du serveur ».* | Apparaît avec une connexion TLS. Si l'IPBX utilise un certificat qu'il a fait lui-même, décochez **Vérifier le certificat** sous **Réglages du serveur**. |
+| *Le mot de passe de ce compte n'a pas pu être lu dans le trousseau. Déverrouillez-le et connectez-vous à nouveau.* | Déverrouillez le trousseau de l'ordinateur (le trousseau d'accès sur macOS), puis appuyez sur **Connecter** à côté du compte. |
+
+### Pendant un appel {#during-a-call}
+
+| Message | Que faire |
+| --- | --- |
+| *Aucun format audio en commun* | L'IPBX et le téléphone n'ont aucun codec en commun. Activez-en un que l'IPBX utilise dans [Formats audio](/sip-accounts/calls#audio-formats). |
+| *Ni micro ni haut-parleurs* | Choisissez les appareils dans [Réglages → Appareils](/sip-accounts/devices). |
+| *Pas d'enregistrement : le disque est descendu à la limite. Libérez de la place, ou changez la limite dans les réglages.* | L'espace libre sur le disque a atteint le **Seuil d'espace disque** — voir [Enregistrements](/recordings). Libérez de la place ou abaissez le seuil. |
+
+### Au démarrage du téléphone {#when-the-phone-starts}
+
+*Base de données illisible* signifie que la base de données a été créée par une autre version du programme, et que celle-ci ne sait pas la lire. Le plus souvent, une version plus ancienne a été lancée sur les données d'une plus récente : réinstaller la version plus récente rouvre la base telle qu'elle était. **Repartir de zéro**, au contraire, crée une base vide — chaque contact et chaque appel de l'historique sont perdus, et c'est irréversible. Avant d'appuyer, vous pouvez garder une copie du fichier de la base ; [Diagnostic](/troubleshooting/diagnostics#files) indique où il se trouve.

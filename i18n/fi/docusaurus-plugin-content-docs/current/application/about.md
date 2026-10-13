@@ -20,6 +20,16 @@ Välilehti kertoo, onko sinulla uusin versio ja milloin asia viimeksi tarkistett
 
 **Etsi päivityksiä automaattisesti**, oletuksena käytössä, tarkistaa kerran päivässä ja pian puhelimen käynnistymisen jälkeen. Se pyytää palvelimelta yhden pienen tiedoston, eikä mitään ladata tai asenneta ilman lupaasi.
 
+Kun uusi versio on saatavilla, välilehdellä lukee *Versio … on saatavilla. Mitään ei ladata ennen kuin pyydät.* **Mikä on muuttunut** näyttää, mitä siinä on uutta, ja **Lataa** lataa sen.
+
+Kun se on ladattu, **Asenna ja käynnistä uudelleen** sulkee puhelimen ja käynnistää sen uudelleen uudessa versiossa. Puhelin ei koskaan tee tätä itse, jotta mikään käynnissä oleva ei katkea: paina painiketta, kun et ole puhelussa. Myös ilmoitus, *Uusi versio on saatavilla*, kertoo siitä, ja siinä on painike **Päivitä nyt**.
+
+| Kun välilehdellä lukee | |
+| --- | --- |
+| *Versio … on saatavilla. Tämä kopio asennettiin paketista, joten uusi asennetaan samalla tavalla.* | Ohjelma on asennettu paketista, esimerkiksi Linux-jakelustasi. Paina **Hae paketti** ja asenna uusi versio samalla tavalla kuin asensit tämän. |
+| *Tällä koosteella ei ole päivitysosoitetta, joten se ei kysy koskaan. Sivustolla julkaistuilla on.* | Ohjelma on käännetty lähdekoodista eikä ladattu verkkosivustolta, eikä se etsi päivityksiä. |
+| *Yksikään päivityspalvelin ei vastannut.* | Palvelimiin ei saatu yhteyttä. Jos tietokone on verkossa, voi auttaa, kun valitset yllä kohdan **Maa**: lähempänä sinua voi olla palvelin. |
+
 ## Lisenssi {#licence}
 
 Ohjelma on vapaa ohjelmisto GPL-2.0-or-later-lisenssillä. Sillä ei ole takuuta, ja voit levittää sitä edelleen kyseisen lisenssin ehdoin; koko teksti toimitetaan tiedostossa nimeltä `LICENSE`.

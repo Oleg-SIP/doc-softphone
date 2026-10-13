@@ -20,6 +20,16 @@ Sekme, en yeni sürüme sahip olup olmadığınızı ve en son ne zaman denetlen
 
 **Güncellemelere kendiliğinden bak**, öntanımlı olarak açık, günde bir kez ve telefon başladıktan kısa süre sonra denetler. Bir sunucudan küçük bir dosya ister; siz söylemedikçe hiçbir şey indirilmez ya da kurulmaz.
 
+Yeni bir sürüm olduğunda sekmede şu yazar: *… sürümü var. Siz istemeden hiçbir şey indirilmez.* **Ne değişti** yeniliklerini gösterir, **İndir** ise sürümü indirir.
+
+İndirildikten sonra **Kur ve yeniden başlat** telefonu kapatır ve yeni sürümde yeniden başlatır. Süren bir şey kesilmesin diye telefon bunu asla kendiliğinden yapmaz: düğmeye görüşmede değilken basın. Bunu bir bildirim de söyler: *Yeni bir sürüm var*, **Şimdi güncelle** düğmesiyle.
+
+| Sekmede şu yazıyorsa | |
+| --- | --- |
+| *… sürümü var. Bu kopya bir paketle kurulmuş, bu yüzden yenisi de aynı yolla kurulur.* | Program bir paketten kurulmuştur, örneğin Linux dağıtımınızdan. **Paketi al** düğmesine basın ve yeni sürümü bunu kurduğunuz yolla kurun. |
+| *Bu sürümün güncelleme adresi yok, bu yüzden hiç sormaz. Sitede yayımlanan sürümlerin vardır.* | Program web sitesinden indirilmek yerine kaynak kodundan derlenmiştir ve güncelleme aramaz. |
+| *Hiçbir güncelleme sunucusu yanıt vermedi.* | Sunuculara ulaşılamadı. Bilgisayar çevrimiçiyse yukarıda **Ülke** seçmek yardımcı olabilir: size daha yakın bir sunucu olabilir. |
+
 ## Lisans {#licence}
 
 Program GPL-2.0-or-later altında özgür yazılımdır. Hiçbir garanti olmadan gelir ve onu bu lisansın koşulları altında yeniden dağıtabilirsiniz; tam metin `LICENSE` adlı dosyada gelir.

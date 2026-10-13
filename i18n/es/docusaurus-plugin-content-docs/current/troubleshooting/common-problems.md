@@ -1,7 +1,7 @@
 ---
 title: Problemas frecuentes
 sidebar_position: 2
-description: "Qué comprobar cuando una cuenta no se registra, no hay sonido, una llamada o una reunión no se graba, no hay transcripción, el apuntador no arranca, o un enlace, un atajo o la API no hacen nada."
+description: "Qué comprobar cuando una cuenta no se registra, no hay sonido, una llamada o una reunión no se graba, no hay transcripción, el apuntador no arranca, o un enlace, un atajo o la API no hacen nada, y qué significan los mensajes del propio teléfono."
 ---
 
 Cada entrada remite al ajuste que lo decide. Si la respuesta no está aquí, abra el [Diagnóstico](/troubleshooting/diagnostics): muestra lo que se dicen el teléfono y la centralita.
@@ -88,3 +88,40 @@ Pulse **Enviar un evento de prueba** en [Ajustes → Integración](/integration/
 ## Un atajo no hace nada {#a-hotkey-does-nothing}
 
 Abra [Atajos](/program/shortcuts). Un atajo funciona mientras el teléfono es el programa que está usando; para usarlo desde cualquier programa, marque **En todas partes**. Haga clic en el atajo y vuelva a pulsar la combinación si otro programa se la ha quedado.
+
+## Mensajes del teléfono {#messages-the-phone-shows}
+
+Cuando algo no ocurre, el teléfono dice por qué en una línea aparte. Una línea bajo una lista desaparece sola al cabo de unos segundos.
+
+### Cuando una llamada no sale {#when-a-call-is-not-placed}
+
+| Mensaje | Qué hacer |
+| --- | --- |
+| *No hay ninguna cuenta configurada* | Añada una cuenta en [Ajustes → Cuentas](/sip-accounts/setup). |
+| *No hay ninguna cuenta activada, así que no hay línea desde la que llamar.* | Marque la casilla de una cuenta en **Ajustes → Cuentas**. |
+| *Todavía no hay ninguna línea registrada.* | La cuenta está activada pero aún no se ha registrado en la centralita. Espere a que su punto se ponga verde; si no, consulte [La cuenta no se registra](#the-account-will-not-register). |
+| *Ya hay tantas llamadas como este teléfono admite.* | Cuelgue una de las llamadas y vuelva a llamar. |
+| *La cuenta desde la que se habría llamado ya no está.* | La fila pertenece a una cuenta que se ha eliminado desde entonces. Marque el número en el teclado. |
+| *Esta fila no tiene número al que devolver la llamada.* | Quien llamó ocultó su número, así que no hay a quién devolver la llamada. |
+
+### Cuando una cuenta no se conecta {#when-an-account-does-not-connect}
+
+| Mensaje | Qué hacer |
+| --- | --- |
+| *No se ha encontrado esa dirección de servidor. Compruebe si tiene alguna errata.* | Compruebe **Dirección del servidor** en [el formulario de la cuenta](/sip-accounts/setup). |
+| *No se ha podido llegar al servidor. Compruebe la dirección, el puerto y su red.* | Compruebe **Dirección del servidor**, y también **Transporte** y **Puerto** en **Ajustes del servidor**. Un cortafuegos también puede estar bloqueando SIP. |
+| *El servidor ha rechazado este usuario o esta contraseña.* | Compruebe **Usuario** y **Contraseña**. Si la centralita comprueba la contraseña con otro nombre, rellene **Usuario de autenticación**. |
+| *No se ha podido verificar el certificado del servidor. Si el administrador del servidor lo emitió por su cuenta, desmarque «Verificar el certificado» en «Ajustes del servidor».* | Aparece con una conexión TLS. Si la centralita usa un certificado hecho por ella misma, desmarque **Verificar el certificado** en **Ajustes del servidor**. |
+| *La contraseña de esta cuenta no se ha podido leer del llavero. Desbloquéelo y conecte de nuevo.* | Desbloquee el llavero del ordenador (el Llavero en macOS) y luego pulse **Conectar** junto a la cuenta. |
+
+### Durante una llamada {#during-a-call}
+
+| Mensaje | Qué hacer |
+| --- | --- |
+| *Ningún formato de audio en común* | La centralita y el teléfono no tienen ningún códec en común. Active uno que use la centralita en [Formatos de audio](/sip-accounts/calls#audio-formats). |
+| *Sin micrófono ni altavoces* | Elija los dispositivos en [Ajustes → Dispositivos](/sip-accounts/devices). |
+| *Sin grabar: el disco ha bajado hasta el límite. Libere espacio o cambie el límite en los ajustes.* | El espacio libre en el disco ha llegado al **Umbral de espacio en disco** — consulte [Grabaciones](/recordings). Libere espacio o baje el umbral. |
+
+### Al iniciar el teléfono {#when-the-phone-starts}
+
+*No se puede leer la base de datos* significa que la base de datos la creó otra versión del programa y esta no puede leerla. Normalmente se abrió una versión más antigua con los datos de una más nueva: si vuelve a instalar la versión más nueva, esta abre la base tal como estaba. **Empezar de nuevo**, en cambio, crea una base vacía — se pierden todos los contactos y todas las llamadas del historial, y no se puede deshacer. Antes de pulsarlo, puede guardar una copia del archivo de la base; [Diagnóstico](/troubleshooting/diagnostics#files) dice dónde está.

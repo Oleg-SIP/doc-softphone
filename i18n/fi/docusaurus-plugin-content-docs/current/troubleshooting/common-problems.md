@@ -1,7 +1,7 @@
 ---
 title: Yleiset ongelmat
 sidebar_position: 2
-description: "Mitä tarkistaa, kun tili ei rekisteröidy, ääntä ei kuulu, puhelua tai kokousta ei tallenneta, litterointia ei ole, kuiskaaja ei käynnisty tai linkki, pikanäppäin tai API ei tee mitään."
+description: "Mitä tarkistaa, kun tili ei rekisteröidy, ääntä ei kuulu, puhelua tai kokousta ei tallenneta, litterointia ei ole, kuiskaaja ei käynnisty tai linkki, pikanäppäin tai API ei tee mitään sekä mitä puhelimen omat ilmoitukset tarkoittavat."
 ---
 
 Jokainen kohta viittaa asetukseen, joka asian ratkaisee. Jos vastausta ei ole tässä, avaa [Diagnostiikka](/troubleshooting/diagnostics): se näyttää, mitä puhelin ja vaihde sanovat toisilleen.
@@ -88,3 +88,40 @@ Paina **Lähetä testitapahtuma** kohdassa [Asetukset → Integraatio](/integrat
 ## Pikanäppäin ei tee mitään {#a-hotkey-does-nothing}
 
 Avaa [Pikanäppäimet](/program/shortcuts). Pikanäppäin toimii, kun puhelin on käyttämäsi ohjelma; käyttääksesi sitä mistä tahansa ohjelmasta rastita **Kaikkialla**. Napsauta pikanäppäintä ja paina yhdistelmää uudelleen, jos toinen ohjelma on ottanut sen.
+
+## Puhelimen ilmoitukset {#messages-the-phone-shows}
+
+Kun jokin ei onnistu, puhelin kertoo syyn omalla rivillään. Luettelon alla oleva rivi katoaa itsestään muutaman sekunnin kuluttua.
+
+### Kun puhelu ei lähde {#when-a-call-is-not-placed}
+
+| Ilmoitus | Mitä tehdä |
+| --- | --- |
+| *Yhtään tiliä ei ole määritetty* | Lisää tili kohdassa [Asetukset → Tilit](/sip-accounts/setup). |
+| *Yhtään tiliä ei ole päällä, joten ei ole linjaa, josta soittaa.* | Valitse tilin valintaruutu kohdassa **Asetukset → Tilit**. |
+| *Yhtään linjaa ei ole vielä rekisteröity.* | Tili on käytössä, mutta sitä ei ole vielä rekisteröity vaihteeseen. Odota, että sen piste muuttuu vihreäksi; jos ei muutu, katso [Tili ei rekisteröidy](#the-account-will-not-register). |
+| *Puheluita on jo niin monta kuin tämä puhelin kantaa.* | Lopeta yksi puheluista ja soita sitten uudelleen. |
+| *Tiliä, josta tämä olisi soitettu, ei enää ole.* | Rivi kuuluu tilille, joka on sittemmin poistettu. Valitse numero näppäimistöllä. |
+| *Tällä rivillä ei ole numeroa, johon soittaa takaisin.* | Soittaja piilotti numeronsa, joten takaisin ei voi soittaa. |
+
+### Kun tili ei yhdisty {#when-an-account-does-not-connect}
+
+| Ilmoitus | Mitä tehdä |
+| --- | --- |
+| *Tuota palvelinosoitetta ei löytynyt. Tarkista, onko siinä kirjoitusvirheitä.* | Tarkista **Palvelimen osoite** [tilin lomakkeesta](/sip-accounts/setup). |
+| *Palvelimeen ei saatu yhteyttä. Tarkista osoite, portti ja verkkosi.* | Tarkista **Palvelimen osoite** sekä **Siirtotapa** ja **Portti** kohdassa **Palvelinasetukset**. Myös palomuuri voi pysäyttää SIP-liikenteen. |
+| *Palvelin hylkäsi tämän käyttäjätunnuksen tai salasanan.* | Tarkista **Käyttäjätunnus** ja **Salasana**. Jos vaihde tarkistaa salasanan eri nimellä, täytä **Todennuskäyttäjä**. |
+| *Palvelimen varmennetta ei voitu tarkistaa. Jos palvelimen ylläpitäjä on laatinut sen itse, poista valinta ”Tarkista varmenne” kohdasta ”Palvelinasetukset”.* | Näkyy TLS-yhteydessä. Jos vaihde käyttää itse tekemäänsä varmennetta, poista valinta **Tarkista varmenne** kohdassa **Palvelinasetukset**. |
+| *Tämän tilin salasanaa ei saatu luettua avainnipusta. Avaa se ja yhdistä uudelleen.* | Avaa tietokoneen avainnipun lukitus (macOS:ssä Avainnippu) ja paina sitten tilin kohdalla **Yhdistä**. |
+
+### Puhelun aikana {#during-a-call}
+
+| Ilmoitus | Mitä tehdä |
+| --- | --- |
+| *Ei yhteistä äänimuotoa* | Vaihteella ja puhelimella ei ole yhteistä koodekkia. Ota käyttöön jokin vaihteen käyttämä kohdassa [Ääniformaatit](/sip-accounts/calls#audio-formats). |
+| *Ei mikrofonia eikä kaiuttimia* | Valitse laitteet kohdassa [Asetukset → Laitteet](/sip-accounts/devices). |
+| *Ei tallenneta: levy on laskenut rajaan asti. Vapauta tilaa tai muuta rajaa asetuksista.* | Levyn vapaa tila on laskenut arvoon **Levytilan raja** — katso [Tallenteet](/recordings). Vapauta tilaa tai laske rajaa. |
+
+### Kun puhelin käynnistyy {#when-the-phone-starts}
+
+*Tietokantaa ei voi lukea* tarkoittaa, että tietokannan on tehnyt ohjelman eri versio eikä tämä osaa lukea sitä. Yleensä vanhempi versio on käynnistetty uudemman version tiedoilla: kun asennat uudemman version uudelleen, se avaa tietokannan sellaisena kuin se oli. **Aloita alusta** taas tekee tyhjän tietokannan — jokainen yhteystieto ja jokainen historian puhelu katoaa, eikä sitä voi perua. Ennen kuin painat sitä, voit ottaa kopion tietokantatiedostosta; [Diagnostiikka](/troubleshooting/diagnostics#files) kertoo, missä se on.

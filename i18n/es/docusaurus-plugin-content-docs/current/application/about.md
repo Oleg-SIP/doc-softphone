@@ -20,6 +20,16 @@ La pestaña dice si tiene la versión más reciente y cuándo se comprobó por �
 
 **Buscar actualizaciones automáticamente**, encendido por defecto, comprueba una vez al día y poco después de que arranque el teléfono. Pide a un servidor un archivo pequeño, y no se descarga ni se instala nada sin que usted lo diga.
 
+Cuando hay una versión nueva, la pestaña dice *La versión … está disponible. No se descarga nada hasta que usted lo pida.* **Qué ha cambiado** muestra lo que trae de nuevo, y **Descargar** la descarga.
+
+Una vez descargada, **Instalar y reiniciar** cierra el teléfono y lo vuelve a abrir ya en la versión nueva. El teléfono nunca lo hace por sí solo, para no cortar nada que esté en curso: pulse el botón cuando no esté en una llamada. Una notificación, *Hay una versión nueva disponible*, también lo dice, con un botón **Actualizar ahora**.
+
+| Cuando la pestaña dice | |
+| --- | --- |
+| *La versión … está disponible. Esta copia se instaló mediante un paquete, así que la nueva se instala igual.* | El programa se instaló desde un paquete, por ejemplo de su distribución de Linux. Pulse **Obtener el paquete** e instale la versión nueva igual que instaló esta. |
+| *Esta compilación no tiene dirección de actualización, así que nunca pregunta. Las publicadas en el sitio web sí la tienen.* | El programa se compiló a partir de su código fuente en lugar de descargarse del sitio web, y no busca actualizaciones. |
+| *Ningún servidor de actualizaciones ha respondido.* | No se pudo llegar a los servidores. Si el ordenador tiene conexión, elegir su **País** más arriba puede ayudar: quizá haya un servidor más cerca de usted. |
+
 ## Licencia {#licence}
 
 El programa es software libre bajo la GPL-2.0-or-later. Se ofrece sin ninguna garantía, y puede redistribuirlo según los términos de esa licencia; el texto completo va en el archivo llamado `LICENSE`.

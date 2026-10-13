@@ -20,6 +20,16 @@ Het tabblad zegt of u de nieuwste versie hebt en wanneer er voor het laatst is g
 
 **Automatisch op updates controleren**, standaard aan, controleert eenmaal per dag en kort nadat de telefoon is gestart. Het vraagt een server om één klein bestand, en er wordt niets gedownload of geïnstalleerd zonder dat u dat zegt.
 
+Als er een nieuwe versie is, zegt het tabblad *Versie … is beschikbaar. Er wordt niets gedownload tot u erom vraagt.* **Wat er veranderd is** laat zien wat erin nieuw is, en **Downloaden** haalt haar op.
+
+Als ze gedownload is, sluit **Installeren en opnieuw starten** de telefoon en start hem opnieuw in de nieuwe versie. Uit zichzelf doet de telefoon dat nooit, zodat niets wat bezig is wordt afgebroken: druk op de knop wanneer u niet in gesprek bent. Een melding, *Er is een nieuwe versie beschikbaar*, zegt het ook, met een knop **Nu bijwerken**.
+
+| Als het tabblad zegt | |
+| --- | --- |
+| *Versie … is beschikbaar. Deze kopie is door een pakket geïnstalleerd, dus de nieuwe wordt op dezelfde manier geïnstalleerd.* | Het programma komt uit een pakket, bijvoorbeeld van uw Linux-distributie. Druk op **Het pakket ophalen** en installeer de nieuwe versie zoals u deze hebt geïnstalleerd. |
+| *Deze build heeft geen updateadres, dus vraagt hij nooit. De builds op de website hebben er een.* | Het programma is uit de broncode gebouwd in plaats van van de website gedownload, en zoekt niet naar updates. |
+| *Geen enkele updateserver antwoordde.* | De servers waren niet bereikbaar. Als de computer online is, kan het helpen hierboven het **Land** te kiezen: misschien is er een server dichter bij u. |
+
 ## Licentie {#licence}
 
 Het programma is vrije software onder de GPL-2.0-or-later. Het wordt geleverd zonder enige garantie, en u mag het verspreiden onder de voorwaarden van die licentie; de volledige tekst zit in het bestand `LICENSE`.

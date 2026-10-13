@@ -20,6 +20,16 @@ Zavihek pove, ali imate najnovejšo različico in kdaj je bilo nazadnje preverje
 
 **Samodejno preverjaj posodobitve**, privzeto vklopljeno, preveri enkrat na dan in kmalu po zagonu telefona. Strežnik prosi za eno majhno datoteko, nič pa se ne prenese ali namesti brez vašega soglasja.
 
+Ko je na voljo nova različica, zavihek napiše *Različica … je na voljo. Nič se ne prenese, dokler ne zahtevate.* **Kaj se je spremenilo** pokaže, kaj je v njej novega, **Prenesi** pa jo prenese.
+
+Ko je prenesena, **Namesti in znova zaženi** zapre telefon in ga znova zažene že v novi različici. Telefon tega nikoli ne naredi sam, da ne bi prekinil ničesar, kar poteka: pritisnite gumb, ko niste v klicu. To pove tudi obvestilo *Na voljo je nova različica* z gumbom **Posodobi zdaj**.
+
+| Ko zavihek napiše | |
+| --- | --- |
+| *Različica … je na voljo. Ta izvod je bil nameščen s paketom, zato se novi namesti enako.* | Program je nameščen iz paketa, na primer iz vaše distribucije Linuxa. Pritisnite **Vzemi paket** in namestite novo različico tako, kot ste namestili to. |
+| *Ta izgradnja nima posodobitvenega naslova, zato nikoli ne vpraša. Tiste, objavljene na spletišču, ga imajo.* | Program je preveden iz izvorne kode in ne prenesen s spletnega mesta, zato posodobitev ne išče. |
+| *Noben posodobitveni strežnik ni odgovoril.* | Strežniki niso bili dosegljivi. Če je računalnik povezan, lahko pomaga izbira polja **Država** zgoraj: morda je kakšen strežnik bližje vam. |
+
 ## Licenca {#licence}
 
 Program je prosto programje pod licenco GPL-2.0-or-later. Na voljo je brez kakršne koli garancije, razširjate pa ga lahko pod pogoji te licence; celotno besedilo je priloženo v datoteki z imenom `LICENSE`.

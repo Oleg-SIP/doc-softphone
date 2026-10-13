@@ -1,7 +1,7 @@
 ---
 title: Levinud probleemid
 sidebar_position: 2
-description: "Mida kontrollida, kui konto ei registreeru, heli pole, kõnet või koosolekut ei salvestata, ülestähendust pole, etteütleja ei käivitu või link, otsetee või API ei tee midagi."
+description: "Mida kontrollida, kui konto ei registreeru, heli pole, kõnet või koosolekut ei salvestata, ülestähendust pole, etteütleja ei käivitu või link, otsetee või API ei tee midagi ning mida telefoni enda teated tähendavad."
 ---
 
 Iga punkt viitab seadele, mis selle otsustab. Kui vastust siin pole, avage [Diagnostika](/troubleshooting/diagnostics): see näitab, mida telefon ja keskjaam teineteisele ütlevad.
@@ -88,3 +88,40 @@ Vajutage **Saada proovisündmus** jaotises [Seaded → Sidumine](/integration/we
 ## Otsetee ei tee midagi {#a-hotkey-does-nothing}
 
 Avage [Otseteed](/program/shortcuts). Otsetee töötab siis, kui telefon on programm, mida te kasutate; et seda igast programmist kasutada, märkige **Kõikjal**. Klõpsake otseteel ja vajutage kombinatsiooni uuesti, kui mõni teine programm on selle endale võtnud.
+
+## Telefoni teated {#messages-the-phone-shows}
+
+Kui midagi ei õnnestu, ütleb telefon eraldi real, miks. Loendi all olev rida kaob mõne sekundi pärast ise.
+
+### Kui kõnet ei alustata {#when-a-call-is-not-placed}
+
+| Teade | Mida teha |
+| --- | --- |
+| *Ühtegi kontot pole seadistatud* | Lisage konto jaotises [Seaded → Kontod](/sip-accounts/setup). |
+| *Ükski konto pole sisse lülitatud, seega ei ole liini, millelt helistada.* | Märkige konto märkeruut jaotises **Seaded → Kontod**. |
+| *Ühtegi liini pole veel registreeritud.* | Konto on sees, kuid keskjaamas veel registreerimata. Oodake, kuni selle täpp roheliseks läheb; kui ei lähe, vaadake [Konto ei registreeru](#the-account-will-not-register). |
+| *Käib juba nii palju kõnesid, kui see telefon kannab.* | Lõpetage üks kõnedest ja helistage uuesti. |
+| *Kontot, millelt see oleks helistatud, enam ei ole.* | Rida kuulub kontole, mis on vahepeal kustutatud. Valige number numbriklahvistikul. |
+| *Sellel real ei ole numbrit, millele tagasi helistada.* | Helistaja peitis oma numbri, seega pole kuhu tagasi helistada. |
+
+### Kui konto ei ühendu {#when-an-account-does-not-connect}
+
+| Teade | Mida teha |
+| --- | --- |
+| *Seda serveriaadressi ei leitud. Kontrollige, ega selles pole kirjaviga.* | Kontrollige [konto vormis](/sip-accounts/setup) välja **Serveri aadress**. |
+| *Serverini ei jõudnud. Kontrollige aadressi, porti ja oma võrku.* | Kontrollige välja **Serveri aadress** ning jaotises **Serveri seaded** välju **Transport** ja **Port**. SIP-i võib peatada ka tulemüür. |
+| *Server lükkas selle kasutajanime või parooli tagasi.* | Kontrollige välju **Kasutajanimi** ja **Parool**. Kui keskjaam kontrollib parooli muu nime all, täitke **Autentimise kasutaja**. |
+| *Serveri sertifikaati ei õnnestunud kontrollida. Kui serveri administraator on selle ise väljastanud, eemaldage märge „Kontrolli sertifikaati“ jaotises „Serveri seaded“.* | Ilmub TLS-ühenduse puhul. Kui keskjaam kasutab enda tehtud sertifikaati, eemaldage jaotises **Serveri seaded** märge **Kontrolli sertifikaati**. |
+| *Selle konto parooli ei õnnestunud võtmehoidjast lugeda. Avage see lukust ja ühenduge uuesti.* | Avage arvuti võtmehoidja (macOS-is Keychain) ja vajutage siis konto juures **Ühenda**. |
+
+### Kõne ajal {#during-a-call}
+
+| Teade | Mida teha |
+| --- | --- |
+| *Ühist helivormingut pole* | Keskjaamal ja telefonil pole ühist koodekit. Lülitage jaotises [Helivormingud](/sip-accounts/calls#audio-formats) sisse mõni, mida keskjaam kasutab. |
+| *Ei mikrofoni ega kõlareid* | Valige seadmed jaotises [Seaded → Seadmed](/sip-accounts/devices). |
+| *Ei salvestata: ketas on langenud piirini. Vabastage ruumi või muutke piiri seadetes.* | Vaba ruum kettal on jõudnud piirini **Kettaruumi lävi** — vaadake [Salvestised](/recordings). Vabastage ruumi või alandage läve. |
+
+### Telefoni käivitamisel {#when-the-phone-starts}
+
+*Andmebaasi ei saa lugeda* tähendab, et andmebaasi tegi programmi teine versioon ja see versioon ei suuda seda lugeda. Tavaliselt käivitati vanem versioon uuema andmetel: kui paigaldate uuema versiooni uuesti, avab see andmebaasi sellisena, nagu see oli. **Alusta otsast** teeb seevastu tühja andmebaasi — kõik kontaktid ja kõik ajaloo kõned kaovad ning seda ei saa tagasi võtta. Enne vajutamist võite andmebaasi failist koopia teha; kus see asub, ütleb [Diagnostika](/troubleshooting/diagnostics#files).

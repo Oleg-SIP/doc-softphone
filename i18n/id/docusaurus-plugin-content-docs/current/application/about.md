@@ -20,6 +20,16 @@ Tab ini menyatakan apakah Anda memiliki versi terbaru dan kapan terakhir kali di
 
 **Cari pembaruan otomatis**, menyala secara bawaan, memeriksa sekali sehari dan sesaat setelah telepon dijalankan. Program meminta satu berkas kecil dari server, dan tidak ada yang diunduh atau dipasang tanpa persetujuan Anda.
 
+Jika ada versi baru, tab menuliskan *Versi … tersedia. Tidak ada yang diunduh sampai Anda meminta.* **Apa yang berubah** menunjukkan apa yang baru di dalamnya, dan **Unduh** mengunduhnya.
+
+Setelah terunduh, **Pasang dan jalankan ulang** menutup telepon dan menjalankannya lagi dalam versi baru. Telepon tidak pernah melakukannya sendiri, agar tidak ada yang sedang berlangsung terputus: tekan tombolnya saat Anda tidak sedang menelepon. Sebuah notifikasi, *Ada versi baru*, juga memberitahukannya, dengan tombol **Perbarui sekarang**.
+
+| Jika tab menuliskan | |
+| --- | --- |
+| *Versi … tersedia. Salinan ini dipasang oleh paket, jadi yang baru dipasang dengan cara yang sama.* | Program dipasang dari sebuah paket, misalnya dari distribusi Linux Anda. Tekan **Ambil paketnya**, lalu pasang versi baru dengan cara yang sama seperti Anda memasang yang ini. |
+| *Versi ini tidak punya alamat pembaruan, jadi tidak pernah bertanya. Versi yang diterbitkan di situs web punya.* | Program dibangun dari kode sumbernya, bukan diunduh dari situs web, dan tidak mencari pembaruan. |
+| *Tidak ada server pembaruan yang menjawab.* | Server tidak dapat dijangkau. Jika komputer terhubung ke internet, memilih **Negara** di atas mungkin membantu: mungkin ada server yang lebih dekat dengan Anda. |
+
 ## Lisensi {#licence}
 
 Program ini adalah perangkat lunak bebas di bawah GPL-2.0-or-later. Program ini disediakan tanpa jaminan apa pun, dan Anda boleh menyebarluaskannya kembali sesuai ketentuan lisensi tersebut; teks lengkapnya disertakan dalam berkas bernama `LICENSE`.

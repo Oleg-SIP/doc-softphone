@@ -20,6 +20,16 @@ L'onglet indique si vous avez la version la plus récente et quand la dernière 
 
 **Rechercher les mises à jour automatiquement**, activé par défaut, vérifie une fois par jour et peu après le démarrage du téléphone. Il demande un petit fichier à un serveur, et rien n'est téléchargé ni installé sans votre accord.
 
+Quand une nouvelle version existe, l'onglet indique *La version … est disponible. Rien n'est téléchargé tant que vous ne le demandez pas.* **Ce qui a changé** montre ce qu'elle apporte, et **Télécharger** la télécharge.
+
+Une fois téléchargée, **Installer et redémarrer** ferme le téléphone et le relance dans la nouvelle version. Le téléphone ne le fait jamais de lui-même, pour ne rien couper de ce qui est en cours : appuyez sur le bouton quand vous n'êtes pas en communication. Une notification, *Une nouvelle version est disponible*, le signale aussi, avec un bouton **Mettre à jour maintenant**.
+
+| Quand l'onglet indique | |
+| --- | --- |
+| *La version … est disponible. Cette copie a été installée par un paquet, la nouvelle s'installe donc de la même façon.* | Le programme vient d'un paquet, par exemple de votre distribution Linux. Appuyez sur **Récupérer le paquet**, puis installez la nouvelle version comme vous avez installé celle-ci. |
+| *Cette version n'a pas d'adresse de mise à jour, elle ne demande donc jamais. Les versions publiées sur le site en ont une.* | Le programme a été compilé à partir de son code source au lieu d'être téléchargé depuis le site, et ne cherche pas de mises à jour. |
+| *Aucun serveur de mise à jour n'a répondu.* | Les serveurs n'ont pas pu être joints. Si l'ordinateur est en ligne, choisir votre **Pays** plus haut peut aider : il existe peut-être un serveur plus proche de vous. |
+
 ## Licence {#licence}
 
 Le programme est un logiciel libre sous licence GPL-2.0-or-later. Il est fourni sans garantie, et vous pouvez le redistribuer selon les termes de cette licence ; le texte complet est livré dans le fichier nommé `LICENSE`.

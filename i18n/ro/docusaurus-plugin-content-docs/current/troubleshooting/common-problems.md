@@ -1,7 +1,7 @@
 ---
 title: Probleme frecvente
 sidebar_position: 2
-description: Ce să verificați când un cont nu se înregistrează, nu există sunet, un apel sau o ședință nu este înregistrată, nu există transcriere, sufleurul nu pornește ori când un link, o scurtătură sau API-ul nu face nimic.
+description: Ce să verificați când un cont nu se înregistrează, nu există sunet, un apel sau o ședință nu este înregistrată, nu există transcriere, sufleurul nu pornește ori când un link, o scurtătură sau API-ul nu face nimic, precum și ce înseamnă mesajele telefonului însuși.
 ---
 
 Fiecare intrare trimite la setarea care o hotărăște. Dacă răspunsul nu este aici, deschideți [Diagnostic](/troubleshooting/diagnostics): arată ce își spun telefonul și centrala.
@@ -88,3 +88,40 @@ Apăsați **Trimite un eveniment de probă** în [Setări → Integrare](/integr
 ## O scurtătură nu face nimic {#a-hotkey-does-nothing}
 
 Deschideți [Scurtături](/program/shortcuts). O scurtătură funcționează cât timp telefonul este programul pe care îl folosiți; ca să o folosiți din orice program, bifați **Peste tot**. Faceți clic pe scurtătură și apăsați din nou combinația dacă un alt program a preluat-o.
+
+## Mesajele telefonului {#messages-the-phone-shows}
+
+Când ceva nu se întâmplă, telefonul spune de ce pe un rând separat. Un rând de sub o listă dispare singur după câteva secunde.
+
+### Când un apel nu pleacă {#when-a-call-is-not-placed}
+
+| Mesaj | Ce trebuie făcut |
+| --- | --- |
+| *Nu este configurat niciun cont* | Adăugați un cont în [Setări → Conturi](/sip-accounts/setup). |
+| *Niciun cont nu este pornit, deci nu există linie de pe care să se sune.* | Bifați caseta unui cont în **Setări → Conturi**. |
+| *Nicio linie nu este încă înregistrată.* | Contul este pornit, dar încă nu este înregistrat la centrală. Așteptați ca punctul lui să devină verde; dacă nu devine, vedeți [Contul nu se înregistrează](#the-account-will-not-register). |
+| *Sunt deja atâtea apeluri câte duce acest telefon.* | Închideți unul dintre apeluri, apoi sunați din nou. |
+| *Contul de pe care s-ar fi sunat nu mai există.* | Rândul aparține unui cont care între timp a fost șters. Formați numărul la tastatură. |
+| *Acest rând nu are număr la care să se sune înapoi.* | Apelantul și-a ascuns numărul, deci nu aveți pe cine suna înapoi. |
+
+### Când un cont nu se conectează {#when-an-account-does-not-connect}
+
+| Mesaj | Ce trebuie făcut |
+| --- | --- |
+| *Adresa aceea de server nu a fost găsită. Verificați dacă nu are greșeli de scriere.* | Verificați **Adresa serverului** în [formularul contului](/sip-accounts/setup). |
+| *Serverul nu a putut fi atins. Verificați adresa, portul și rețeaua dumneavoastră.* | Verificați **Adresa serverului**, precum și **Transport** și **Port** din **Setările serverului**. Și un firewall poate opri SIP. |
+| *Serverul a respins acest nume de utilizator sau această parolă.* | Verificați **Nume de utilizator** și **Parolă**. Dacă centrala verifică parola pentru alt nume, completați **Utilizator de autentificare**. |
+| *Certificatul serverului nu a putut fi verificat. Dacă administratorul serverului l-a emis singur, debifați „Verifică certificatul” în „Setările serverului”.* | Apare la o conexiune TLS. Dacă centrala folosește un certificat făcut de ea însăși, debifați **Verifică certificatul** din **Setările serverului**. |
+| *Parola acestui cont nu a putut fi citită din portchei. Deblocați-l și conectați-vă din nou.* | Deblocați seiful de parole al computerului (Keychain pe macOS), apoi apăsați **Conectează** lângă cont. |
+
+### În timpul unui apel {#during-a-call}
+
+| Mesaj | Ce trebuie făcut |
+| --- | --- |
+| *Niciun format audio comun* | Centrala și telefonul nu au niciun codec comun. Porniți unul folosit de centrală în [Formate audio](/sip-accounts/calls#audio-formats). |
+| *Nici microfon, nici difuzoare* | Alegeți dispozitivele în [Setări → Dispozitive](/sip-accounts/devices). |
+| *Nu se înregistrează: discul a coborât până la limită. Eliberați spațiu sau schimbați limita din setări.* | Spațiul liber de pe disc a ajuns la **Pragul de spațiu pe disc** — vedeți [Înregistrări](/recordings). Eliberați spațiu sau coborâți pragul. |
+
+### La pornirea telefonului {#when-the-phone-starts}
+
+*Baza de date nu poate fi citită* înseamnă că baza de date a fost făcută de o altă versiune a programului, iar aceasta nu o poate citi. De obicei, o versiune mai veche a fost pornită pe datele uneia mai noi: dacă reinstalați versiunea mai nouă, aceasta deschide baza așa cum era. **Începe de la capăt**, în schimb, face o bază goală — fiecare contact și fiecare apel din istoric se pierd, iar asta nu se poate anula. Înainte să apăsați, puteți păstra o copie a fișierului bazei; [Diagnostic](/troubleshooting/diagnostics#files) spune unde se află.

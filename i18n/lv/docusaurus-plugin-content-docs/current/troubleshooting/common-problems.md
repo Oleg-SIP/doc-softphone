@@ -1,7 +1,7 @@
 ---
 title: Biežākās problēmas
 sidebar_position: 2
-description: "Ko pārbaudīt, ja konts nereģistrējas, nav skaņas, zvans vai sapulce netiek ierakstīta, nav atšifrējuma, suflieris nepalaižas vai saite, saīsne vai API neko nedara."
+description: "Ko pārbaudīt, ja konts nereģistrējas, nav skaņas, zvans vai sapulce netiek ierakstīta, nav atšifrējuma, suflieris nepalaižas vai saite, saīsne vai API neko nedara, kā arī ko nozīmē paša tālruņa ziņojumi."
 ---
 
 Katrs punkts norāda uz iestatījumu, kas par to lemj. Ja atbildes šeit nav, atveriet [Diagnostika](/troubleshooting/diagnostics): tā rāda, ko tālrunis un centrāle saka viens otram.
@@ -88,3 +88,40 @@ Nospiediet **Nosūtīt pārbaudes notikumu** sadaļā [Iestatījumi → Integrā
 ## Saīsne neko nedara {#a-hotkey-does-nothing}
 
 Atveriet [Saīsnes](/program/shortcuts). Saīsne darbojas, kamēr tālrunis ir programma, ko izmantojat; lai to izmantotu no jebkuras programmas, atzīmējiet **Visur**. Noklikšķiniet uz saīsnes un nospiediet kombināciju vēlreiz, ja cita programma to ir aizņēmusi.
+
+## Tālruņa ziņojumi {#messages-the-phone-shows}
+
+Kad kaut kas nenotiek, tālrunis atsevišķā rindā pasaka, kāpēc. Rinda zem saraksta pēc dažām sekundēm pazūd pati.
+
+### Kad zvans netiek veikts {#when-a-call-is-not-placed}
+
+| Ziņojums | Ko darīt |
+| --- | --- |
+| *Nav iestatīts neviens konts* | Pievienojiet kontu sadaļā [Iestatījumi → Konti](/sip-accounts/setup). |
+| *Nav ieslēgts neviens konts, tāpēc nav līnijas, no kuras zvanīt.* | Atzīmējiet konta izvēles rūtiņu sadaļā **Iestatījumi → Konti**. |
+| *Vēl nav reģistrēta neviena līnija.* | Konts ir ieslēgts, bet centrālē vēl nav reģistrēts. Pagaidiet, līdz tā punkts kļūst zaļš; ja nekļūst, skatiet [Konts nereģistrējas](#the-account-will-not-register). |
+| *Jau notiek tik daudz sarunu, cik šis telefons nes.* | Nolieciet klausuli vienā no zvaniem un zvaniet vēlreiz. |
+| *Konta, no kura tas būtu zvanīts, vairs nav.* | Rinda pieder kontam, kas pa to laiku izdzēsts. Sastādiet numuru numuru sastādītājā. |
+| *Šai rindai nav numura, uz kuru atzvanīt.* | Zvanītājs paslēpa numuru, tāpēc nav kam atzvanīt. |
+
+### Kad konts nepieslēdzas {#when-an-account-does-not-connect}
+
+| Ziņojums | Ko darīt |
+| --- | --- |
+| *Šo servera adresi neizdevās atrast. Pārbaudiet, vai tajā nav drukas kļūdas.* | Pārbaudiet **Servera adrese** [konta veidlapā](/sip-accounts/setup). |
+| *Serveri neizdevās sasniegt. Pārbaudiet adresi, portu un savu tīklu.* | Pārbaudiet **Servera adrese**, kā arī **Transports** un **Ports** sadaļā **Servera iestatījumi**. SIP var apturēt arī ugunsmūris. |
+| *Serveris noraidīja šo lietotājvārdu vai paroli.* | Pārbaudiet **Lietotājvārds** un **Parole**. Ja centrāle pārbauda paroli ar citu vārdu, aizpildiet **Autentifikācijas lietotājs**. |
+| *Servera sertifikātu neizdevās pārbaudīt. Ja servera administrators to izdevis pats, sadaļā „Servera iestatījumi” noņemiet atzīmi „Pārbaudīt sertifikātu”.* | Parādās TLS savienojumā. Ja centrāle izmanto pašas izveidotu sertifikātu, noņemiet atzīmi **Pārbaudīt sertifikātu** sadaļā **Servera iestatījumi**. |
+| *Šī konta paroli neizdevās nolasīt no atslēgu saišķa. Atslēdziet to un savienojieties vēlreiz.* | Atbloķējiet datora atslēgu glabātuvi (macOS — Keychain), tad pie konta nospiediet **Savienot**. |
+
+### Zvana laikā {#during-a-call}
+
+| Ziņojums | Ko darīt |
+| --- | --- |
+| *Nav kopēja skaņas formāta* | Centrālei un tālrunim nav kopīga kodeka. Ieslēdziet kādu, ko izmanto centrāle, sadaļā [Audio formāti](/sip-accounts/calls#audio-formats). |
+| *Nav ne mikrofona, ne skaļruņu* | Izvēlieties ierīces sadaļā [Iestatījumi → Ierīces](/sip-accounts/devices). |
+| *Neieraksta: disks ir nokrities līdz robežai. Atbrīvojiet vietu vai mainiet robežu iestatījumos.* | Brīvā vieta diskā ir sasniegusi **Diska vietas slieksnis** — skatiet [Ieraksti](/recordings). Atbrīvojiet vietu vai samaziniet slieksni. |
+
+### Palaižot tālruni {#when-the-phone-starts}
+
+*Datubāzi nevar nolasīt* nozīmē, ka datubāzi izveidoja cita programmas versija un šī to nespēj nolasīt. Parasti vecāka versija palaista uz jaunākas versijas datiem: ja atkal instalēsiet jaunāko versiju, tā datubāzi atvērs tādu, kāda tā bija. **Sākt no jauna** turpretī izveido tukšu datubāzi — visi kontakti un visi vēstures zvani tiek zaudēti, un to nevar atsaukt. Pirms nospiežat, varat saglabāt datubāzes faila kopiju; kur tas atrodas, pasaka [Diagnostika](/troubleshooting/diagnostics#files).

@@ -20,6 +20,16 @@ O separador diz se tem a versão mais recente e quando foi verificada pela últi
 
 **Procurar atualizações automaticamente**, ligado por omissão, verifica uma vez por dia e pouco depois de o telefone arrancar. Pede um pequeno ficheiro a um servidor, e nada é transferido ou instalado sem que o diga.
 
+Quando há uma versão nova, o separador diz *A versão … está disponível. Nada é descarregado até que o peça.* **O que mudou** mostra o que traz de novo, e **Descarregar** descarrega-a.
+
+Depois de descarregada, **Instalar e reiniciar** fecha o telefone e volta a abri-lo já na versão nova. O telefone nunca o faz sozinho, para não cortar nada que esteja em curso: carregue no botão quando não estiver numa chamada. Uma notificação, *Está disponível uma versão nova*, também o diz, com um botão **Atualizar agora**.
+
+| Quando o separador diz | |
+| --- | --- |
+| *A versão … está disponível. Esta cópia foi instalada por um pacote, por isso a nova instala-se do mesmo modo.* | O programa foi instalado a partir de um pacote, por exemplo da sua distribuição Linux. Carregue em **Obter o pacote** e instale a versão nova da mesma forma que instalou esta. |
+| *Esta compilação não tem endereço de atualização, por isso nunca pergunta. As publicadas no sítio têm.* | O programa foi compilado a partir do código-fonte em vez de descarregado do site, e não procura atualizações. |
+| *Nenhum servidor de atualizações respondeu.* | Não foi possível chegar aos servidores. Se o computador estiver ligado à rede, escolher o seu **País** acima pode ajudar: talvez haja um servidor mais perto de si. |
+
 ## Licença {#licence}
 
 O programa é software livre sob a GPL-2.0-or-later. Vem sem qualquer garantia, e pode redistribuí-lo nos termos dessa licença; o texto completo vem no ficheiro chamado `LICENSE`.

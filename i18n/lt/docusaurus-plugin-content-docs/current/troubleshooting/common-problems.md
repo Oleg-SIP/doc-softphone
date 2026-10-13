@@ -1,7 +1,7 @@
 ---
 title: Dažnos problemos
 sidebar_position: 2
-description: "Ką patikrinti, kai paskyra neužsiregistruoja, nėra garso, skambutis ar susitikimas neįrašomas, nėra iššifruoto teksto, suflerius nepasileidžia arba nuoroda, spartusis klavišas ar API nieko nedaro."
+description: "Ką patikrinti, kai paskyra neužsiregistruoja, nėra garso, skambutis ar susitikimas neįrašomas, nėra iššifruoto teksto, suflerius nepasileidžia arba nuoroda, spartusis klavišas ar API nieko nedaro, taip pat ką reiškia paties telefono pranešimai."
 ---
 
 Kiekvienas punktas nurodo nustatymą, kuris tai lemia. Jei atsakymo čia nėra, atverkite [Diagnostika](/troubleshooting/diagnostics): ji rodo, ką telefonas ir stotelė sako vienas kitam.
@@ -88,3 +88,40 @@ Paspauskite **Siųsti bandomąjį įvykį** skiltyje [Nustatymai → Integracija
 ## Spartusis klavišas nieko nedaro {#a-hotkey-does-nothing}
 
 Atverkite [Spartieji klavišai](/program/shortcuts). Spartusis klavišas veikia, kol telefonas yra jūsų naudojama programa; kad jį naudotumėte iš bet kurios programos, pažymėkite **Visur**. Spustelėkite spartųjį klavišą ir vėl paspauskite derinį, jei kita programa jį perėmė.
+
+## Telefono pranešimai {#messages-the-phone-shows}
+
+Kai kas nors nepavyksta, telefonas atskiroje eilutėje parašo kodėl. Eilutė po sąrašu po kelių sekundžių pradingsta pati.
+
+### Kai skambutis neprasideda {#when-a-call-is-not-placed}
+
+| Pranešimas | Ką daryti |
+| --- | --- |
+| *Nenustatyta nė viena paskyra* | Pridėkite paskyrą skiltyje [Nustatymai → Paskyros](/sip-accounts/setup). |
+| *Neįjungta nė viena paskyra, todėl nėra linijos, iš kurios skambinti.* | Pažymėkite paskyros žymimąjį langelį skiltyje **Nustatymai → Paskyros**. |
+| *Dar neregistruota nė viena linija.* | Paskyra įjungta, bet stotelėje dar neužregistruota. Palaukite, kol jos taškas taps žalias; jei netampa, žr. [Paskyra neužsiregistruoja](#the-account-will-not-register). |
+| *Jau vyksta tiek pokalbių, kiek šis telefonas neša.* | Užbaikite vieną iš pokalbių ir skambinkite dar kartą. |
+| *Paskyros, iš kurios tai būtų buvę skambinta, nebėra.* | Eilutė priklauso paskyrai, kuri jau ištrinta. Surinkite numerį rinkiklyje. |
+| *Ši eilutė neturi numerio, kuriuo būtų galima perskambinti.* | Skambintojas paslėpė numerį, todėl nėra kam perskambinti. |
+
+### Kai paskyra neprisijungia {#when-an-account-does-not-connect}
+
+| Pranešimas | Ką daryti |
+| --- | --- |
+| *To serverio adreso nepavyko rasti. Patikrinkite, ar jame nėra rašybos klaidos.* | Patikrinkite **Serverio adresas** [paskyros formoje](/sip-accounts/setup). |
+| *Serverio nepavyko pasiekti. Patikrinkite adresą, prievadą ir savo tinklą.* | Patikrinkite **Serverio adresas**, taip pat **Transportas** ir **Prievadas** skiltyje **Serverio nustatymai**. SIP gali stabdyti ir užkarda. |
+| *Serveris atmetė šį naudotojo vardą arba slaptažodį.* | Patikrinkite **Naudotojo vardas** ir **Slaptažodis**. Jei stotelė tikrina slaptažodį pagal kitą vardą, užpildykite **Tapatybės nustatymo naudotojas**. |
+| *Nepavyko patikrinti serverio sertifikato. Jei serverio administratorius jį išdavė pats, skiltyje „Serverio nustatymai“ panaikinkite „Tikrinti sertifikatą“.* | Rodoma esant TLS ryšiui. Jei stotelė naudoja pačios sukurtą sertifikatą, nuimkite žymą **Tikrinti sertifikatą** skiltyje **Serverio nustatymai**. |
+| *Šios paskyros slaptažodžio nepavyko perskaityti iš raktinės. Atrakinkite ją ir prisijunkite iš naujo.* | Atrakinkite kompiuterio slaptažodžių saugyklą (macOS — Keychain), tada prie paskyros paspauskite **Prijungti**. |
+
+### Pokalbio metu {#during-a-call}
+
+| Pranešimas | Ką daryti |
+| --- | --- |
+| *Nėra bendro garso formato* | Stotelė ir telefonas neturi bendro kodeko. Įjunkite kurį nors stotelės naudojamą skiltyje [Garso formatai](/sip-accounts/calls#audio-formats). |
+| *Nei mikrofono, nei garsiakalbių* | Pasirinkite įrenginius skiltyje [Nustatymai → Įrenginiai](/sip-accounts/devices). |
+| *Neįrašoma: diskas nusileido iki ribos. Atlaisvinkite vietos arba pakeiskite ribą nustatymuose.* | Laisva vieta diske pasiekė slenkstį (**Disko vietos slenkstis**) — žr. [Įrašai](/recordings). Atlaisvinkite vietos arba sumažinkite slenkstį. |
+
+### Paleidžiant telefoną {#when-the-phone-starts}
+
+*Duomenų bazės perskaityti negalima* reiškia, kad duomenų bazę sukūrė kita programos versija ir ši jos perskaityti negali. Paprastai senesnė versija buvo paleista su naujesnės duomenimis: iš naujo įdiegus naujesnę versiją, ji atvers duomenų bazę tokią, kokia buvo. **Pradėti iš naujo**, priešingai, sukuria tuščią duomenų bazę — visi kontaktai ir visi istorijos skambučiai dingsta, ir to atšaukti negalima. Prieš spausdami galite išsisaugoti duomenų bazės failo kopiją; kur jis yra, nurodo [Diagnostika](/troubleshooting/diagnostics#files).

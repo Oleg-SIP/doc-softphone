@@ -1,7 +1,7 @@
 ---
 title: Vanlige problemer
 sidebar_position: 2
-description: "Hva du bør sjekke når en konto ikke vil registrere seg, det ikke er lyd, en samtale eller et møte ikke tas opp, det ikke er noen utskrift, suffløren ikke starter, eller en lenke, en snarvei eller API-et ikke gjør noe."
+description: "Hva du bør sjekke når en konto ikke vil registrere seg, det ikke er lyd, en samtale eller et møte ikke tas opp, det ikke er noen utskrift, suffløren ikke starter, eller en lenke, en snarvei eller API-et ikke gjør noe, og hva telefonens egne meldinger betyr."
 ---
 
 Hvert punkt viser til innstillingen som avgjør det. Står ikke svaret her, åpner du [Diagnostikk](/troubleshooting/diagnostics): det viser hva telefonen og sentralen sier til hverandre.
@@ -88,3 +88,40 @@ Trykk på **Send en testhendelse** under [Innstillinger → Integrasjon](/integr
 ## En snarvei gjør ingenting {#a-hotkey-does-nothing}
 
 Åpne [Snarveier](/program/shortcuts). En snarvei virker mens telefonen er programmet du bruker; for å bruke den fra alle programmer krysser du av for **Overalt**. Klikk på snarveien, og trykk kombinasjonen på nytt hvis et annet program har tatt den.
+
+## Meldinger fra telefonen {#messages-the-phone-shows}
+
+Når noe ikke skjer, sier telefonen hvorfor på en egen linje. En linje under en liste forsvinner av seg selv etter noen sekunder.
+
+### Når en samtale ikke blir satt opp {#when-a-call-is-not-placed}
+
+| Melding | Hva du gjør |
+| --- | --- |
+| *Ingen konto er satt opp* | Legg til en konto under [Innstillinger → Kontoer](/sip-accounts/setup). |
+| *Ingen konto er slått på, så det finnes ingen linje å ringe fra.* | Kryss av for en konto under **Innstillinger → Kontoer**. |
+| *Ingen linje er registrert ennå.* | Kontoen er slått på, men er ennå ikke registrert på sentralen. Vent til prikken blir grønn; hvis ikke, se [Kontoen vil ikke registrere seg](#the-account-will-not-register). |
+| *Det går allerede så mange samtaler som denne telefonen bærer.* | Legg på en av samtalene, og ring på nytt. |
+| *Kontoen dette ville blitt ringt fra, finnes ikke lenger.* | Raden hører til en konto som siden er slettet. Slå nummeret i tastaturet. |
+| *Denne raden har ikke noe nummer å ringe tilbake til.* | Den som ringte skjulte nummeret, så det er ingenting å ringe tilbake til. |
+
+### Når en konto ikke kobler til {#when-an-account-does-not-connect}
+
+| Melding | Hva du gjør |
+| --- | --- |
+| *Den serveradressen ble ikke funnet. Se etter skrivefeil.* | Sjekk **Serveradresse** i [kontoskjemaet](/sip-accounts/setup). |
+| *Serveren kunne ikke nås. Kontroller adressen, porten og nettverket ditt.* | Sjekk **Serveradresse**, og **Transport** og **Port** under **Serverinnstillinger**. En brannmur kan også stoppe SIP. |
+| *Serveren avviste dette brukernavnet eller passordet.* | Sjekk **Brukernavn** og **Passord**. Hvis sentralen sjekker passordet under et annet navn, fyller du ut **Autentiseringsbruker**. |
+| *Serverens sertifikat kunne ikke bekreftes. Hvis serverens administrator har laget det selv, fjerner du avkrysningen for «Bekreft sertifikatet» under «Serverinnstillinger».* | Vises ved en TLS-tilkobling. Hvis sentralen bruker et sertifikat den har laget selv, fjerner du avkrysningen for **Bekreft sertifikatet** under **Serverinnstillinger**. |
+| *Passordet til denne kontoen kunne ikke leses fra nøkkelringen. Lås den opp og koble til igjen.* | Lås opp nøkkelringen på datamaskinen (nøkkelringen på macOS), og trykk deretter på **Koble til** ved kontoen. |
+
+### Under en samtale {#during-a-call}
+
+| Melding | Hva du gjør |
+| --- | --- |
+| *Ingen felles lydformat* | Sentralen og telefonen har ingen felles kodek. Slå på en som sentralen bruker, under [Lydformater](/sip-accounts/calls#audio-formats). |
+| *Verken mikrofon eller høyttalere* | Velg enhetene under [Innstillinger → Enheter](/sip-accounts/devices). |
+| *Tar ikke opp: disken er nede ved grensen. Frigjør plass, eller endre grensen i innstillingene.* | Ledig plass på disken har nådd **Terskel for diskplass** — se [Opptak](/recordings). Frigjør plass, eller senk terskelen. |
+
+### Når telefonen starter {#when-the-phone-starts}
+
+*Databasen kan ikke leses* betyr at databasen ble laget av en annen versjon av programmet, og at denne ikke kan lese den. Som regel er en eldre versjon startet på dataene til en nyere: installerer du den nyere versjonen igjen, åpner den databasen slik den var. **Begynne på nytt** lager i stedet en tom database — alle kontakter og alle samtaler i loggen går tapt, og det kan ikke angres. Før du trykker, kan du ta vare på en kopi av databasefilen; [Diagnostikk](/troubleshooting/diagnostics#files) sier hvor den ligger.

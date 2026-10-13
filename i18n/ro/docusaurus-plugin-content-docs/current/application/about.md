@@ -20,6 +20,16 @@ Fila spune dacă aveți cea mai nouă versiune și când s-a verificat ultima da
 
 **Caută actualizări automat**, pornit implicit, verifică o dată pe zi și la scurt timp după pornirea telefonului. Cere unui server un singur fișier mic și nu se descarcă și nu se instalează nimic fără acordul dumneavoastră.
 
+Când există o versiune nouă, fila spune *Versiunea … este disponibilă. Nu se descarcă nimic până nu cereți.* **Ce s-a schimbat** arată ce aduce nou, iar **Descarcă** o descarcă.
+
+După ce s-a descărcat, **Instalează și repornește** închide telefonul și îl pornește din nou în noua versiune. Telefonul nu face asta niciodată singur, ca să nu întrerupă nimic din ce este în curs: apăsați butonul când nu sunteți într-un apel. O notificare, *Este disponibilă o versiune nouă*, spune și ea asta, cu un buton **Actualizează acum**.
+
+| Când fila spune | |
+| --- | --- |
+| *Versiunea … este disponibilă. Această copie a fost instalată dintr-un pachet, deci cea nouă se instalează la fel.* | Programul provine dintr-un pachet, de exemplu din distribuția dumneavoastră de Linux. Apăsați **Ia pachetul** și instalați versiunea nouă la fel cum ați instalat-o pe aceasta. |
+| *Această versiune nu are adresă de actualizare, deci nu întreabă niciodată. Cele publicate pe site au.* | Programul a fost compilat din codul sursă în loc să fie descărcat de pe site și nu caută actualizări. |
+| *Niciun server de actualizări nu a răspuns.* | Serverele nu au putut fi contactate. Dacă computerul este online, poate ajuta să alegeți **Țară** mai sus: poate există un server mai aproape de dumneavoastră. |
+
 ## Licență {#licence}
 
 Programul este software liber, sub licența GPL-2.0-or-later. Vine fără nicio garanție și îl puteți redistribui în condițiile acestei licențe; textul complet este livrat în fișierul numit `LICENSE`.

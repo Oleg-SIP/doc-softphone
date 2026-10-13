@@ -1,7 +1,7 @@
 ---
 title: Veelvoorkomende problemen
 sidebar_position: 2
-description: "Wat u controleert als een account niet registreert, er geen geluid is, een gesprek of vergadering niet wordt opgenomen, er geen transcript is, de souffleur niet start, of een koppeling, een sneltoets of de API niets doet."
+description: "Wat u controleert als een account niet registreert, er geen geluid is, een gesprek of vergadering niet wordt opgenomen, er geen transcript is, de souffleur niet start, of een koppeling, een sneltoets of de API niets doet, en wat de eigen meldingen van de telefoon betekenen."
 ---
 
 Elk punt verwijst naar de instelling die erover beslist. Staat het antwoord hier niet, open dan [Diagnose](/troubleshooting/diagnostics): het toont wat de telefoon en de centrale tegen elkaar zeggen.
@@ -88,3 +88,40 @@ Druk op **Een testgebeurtenis verzenden** bij [Instellingen → Integratie](/int
 ## Een sneltoets doet niets {#a-hotkey-does-nothing}
 
 Open [Sneltoetsen](/program/shortcuts). Een sneltoets werkt zolang de telefoon het programma is dat u gebruikt; om hem vanuit elk programma te gebruiken, vinkt u **Overal** aan. Klik op de sneltoets en druk de combinatie opnieuw in als een ander programma haar heeft overgenomen.
+
+## Meldingen van de telefoon {#messages-the-phone-shows}
+
+Als iets niet lukt, zegt de telefoon waarom op een eigen regel. Een regel onder een lijst verdwijnt na een paar seconden vanzelf.
+
+### Als een gesprek niet wordt opgezet {#when-a-call-is-not-placed}
+
+| Melding | Wat te doen |
+| --- | --- |
+| *Er is geen account ingesteld* | Voeg een account toe bij [Instellingen → Accounts](/sip-accounts/setup). |
+| *Er staat geen account aan, dus er is geen lijn om vanaf te bellen.* | Vink een account aan bij **Instellingen → Accounts**. |
+| *Er is nog geen lijn geregistreerd.* | Het account staat aan, maar is nog niet op de centrale geregistreerd. Wacht tot de stip groen wordt; gebeurt dat niet, zie [Het account registreert niet](#the-account-will-not-register). |
+| *Er lopen al zoveel gesprekken als deze telefoon aankan.* | Hang een van de gesprekken op en bel dan opnieuw. |
+| *Het account waarvandaan dit gebeld zou zijn bestaat niet meer.* | De regel hoort bij een account dat intussen is verwijderd. Kies het nummer in het kiesvenster. |
+| *Deze regel heeft geen nummer om terug te bellen.* | De beller heeft het nummer afgeschermd, dus er valt niets terug te bellen. |
+
+### Als een account geen verbinding maakt {#when-an-account-does-not-connect}
+
+| Melding | Wat te doen |
+| --- | --- |
+| *Dat serveradres is niet gevonden. Controleer het op tikfouten.* | Controleer **Serveradres** in [het accountformulier](/sip-accounts/setup). |
+| *De server was niet te bereiken. Controleer het adres, de poort en uw netwerk.* | Controleer **Serveradres**, en **Transport** en **Poort** onder **Serverinstellingen**. Ook een firewall kan SIP tegenhouden. |
+| *De server heeft deze gebruikersnaam of dit wachtwoord geweigerd.* | Controleer **Gebruikersnaam** en **Wachtwoord**. Als de centrale het wachtwoord onder een andere naam controleert, vul dan **Authenticatiegebruiker** in. |
+| *Het certificaat van de server kon niet worden gecontroleerd. Als de beheerder van de server het zelf heeft uitgegeven, zet dan ‘Certificaat controleren’ uit onder ‘Serverinstellingen’.* | Verschijnt bij een TLS-verbinding. Als de centrale een certificaat gebruikt dat ze zelf heeft gemaakt, vink dan **Certificaat controleren** uit onder **Serverinstellingen**. |
+| *Het wachtwoord van dit account kon niet uit de sleutelbos worden gelezen. Ontgrendel die en verbind opnieuw.* | Ontgrendel de sleutelbos van de computer (op macOS de sleutelhanger) en druk dan bij het account op **Verbinden**. |
+
+### Tijdens een gesprek {#during-a-call}
+
+| Melding | Wat te doen |
+| --- | --- |
+| *Geen gemeenschappelijk audioformaat* | De centrale en de telefoon hebben geen codec gemeen. Zet bij [Audioformaten](/sip-accounts/calls#audio-formats) een codec aan die de centrale gebruikt. |
+| *Geen microfoon of luidsprekers* | Kies de apparaten bij [Instellingen → Apparaten](/sip-accounts/devices). |
+| *Niet opgenomen: de schijf is tot de grens gedaald. Maak ruimte vrij, of wijzig de grens in de instellingen.* | De vrije ruimte op de schijf heeft de **Drempel voor schijfruimte** bereikt — zie [Opnames](/recordings). Maak ruimte vrij of verlaag de drempel. |
+
+### Bij het starten van de telefoon {#when-the-phone-starts}
+
+*Database onleesbaar* betekent dat de database door een andere versie van het programma is gemaakt en dat deze haar niet kan lezen. Meestal is een oudere versie gestart op de gegevens van een nieuwere: als u de nieuwere versie opnieuw installeert, opent die haar zoals ze was. **Opnieuw beginnen** maakt in plaats daarvan een lege database — elk contact en elk gesprek in de geschiedenis gaat verloren, en dat kan niet ongedaan worden gemaakt. Voordat u erop drukt, kunt u een kopie van het databasebestand bewaren; [Diagnose](/troubleshooting/diagnostics#files) zegt waar het staat.

@@ -1,7 +1,7 @@
 ---
 title: Häufige Probleme
 sidebar_position: 2
-description: "Was zu prüfen ist, wenn sich ein Konto nicht anmeldet, kein Ton da ist, ein Anruf oder eine Besprechung nicht aufgenommen wird, kein Transkript entsteht, der Souffleur nicht startet oder ein Link, ein Tastenkürzel oder die API nichts tut."
+description: "Was zu prüfen ist, wenn sich ein Konto nicht anmeldet, kein Ton da ist, ein Anruf oder eine Besprechung nicht aufgenommen wird, kein Transkript entsteht, der Souffleur nicht startet oder ein Link, ein Tastenkürzel oder die API nichts tut, und was die eigenen Meldungen des Telefons bedeuten."
 ---
 
 Jeder Eintrag verweist auf die Einstellung, die darüber entscheidet. Steht die Antwort nicht hier, öffnen Sie die [Diagnose](/troubleshooting/diagnostics): Sie zeigt, was Telefon und Telefonanlage einander sagen.
@@ -88,3 +88,40 @@ Drücken Sie **Ein Testereignis senden** unter [Einstellungen → Integration](/
 ## Ein Tastenkürzel tut nichts {#a-hotkey-does-nothing}
 
 Öffnen Sie [Tastenkürzel](/program/shortcuts). Ein Kürzel funktioniert, wenn das Telefon das Programm ist, das Sie gerade verwenden; um es aus jedem Programm zu nutzen, kreuzen Sie **Überall** an. Hat ein anderes Programm die Kombination belegt, klicken Sie auf das Kürzel und drücken Sie die Kombination erneut.
+
+## Meldungen des Telefons {#messages-the-phone-shows}
+
+Wenn etwas nicht klappt, sagt das Telefon in einer eigenen Zeile, warum. Eine Zeile unter einer Liste verschwindet nach ein paar Sekunden von selbst.
+
+### Wenn ein Anruf nicht zustande kommt {#when-a-call-is-not-placed}
+
+| Meldung | Was zu tun ist |
+| --- | --- |
+| *Es ist kein Konto eingerichtet* | Legen Sie ein Konto unter [Einstellungen → Konten](/sip-accounts/setup) an. |
+| *Es ist kein Konto eingeschaltet, also gibt es keine Leitung, von der aus gewählt werden könnte.* | Setzen Sie unter **Einstellungen → Konten** das Häkchen bei einem Konto. |
+| *Es ist noch keine Leitung angemeldet.* | Das Konto ist eingeschaltet, aber noch nicht an der Telefonanlage angemeldet. Warten Sie, bis sein Punkt grün wird; wenn nicht, siehe [Das Konto meldet sich nicht an](#the-account-will-not-register). |
+| *Es laufen bereits so viele Gespräche, wie dieses Telefon trägt.* | Legen Sie bei einem der Anrufe auf und rufen Sie dann erneut an. |
+| *Das Konto, von dem aus das gewählt worden wäre, gibt es nicht mehr.* | Die Zeile gehört zu einem Konto, das inzwischen gelöscht wurde. Wählen Sie die Nummer im Wählfeld. |
+| *Diese Zeile hat keine Nummer zum Zurückrufen.* | Der Anrufer hat seine Nummer unterdrückt, es gibt also nichts zurückzurufen. |
+
+### Wenn ein Konto sich nicht verbindet {#when-an-account-does-not-connect}
+
+| Meldung | Was zu tun ist |
+| --- | --- |
+| *Diese Serveradresse war nicht auffindbar. Prüfen Sie sie auf Tippfehler.* | Prüfen Sie **Serveradresse** im [Kontoformular](/sip-accounts/setup). |
+| *Der Server war nicht erreichbar. Prüfen Sie Adresse, Port und Netzwerk.* | Prüfen Sie **Serveradresse** sowie **Transport** und **Port** unter **Servereinstellungen**. Auch eine Firewall kann SIP aufhalten. |
+| *Der Server hat diesen Benutzernamen oder das Passwort abgelehnt.* | Prüfen Sie **Benutzername** und **Passwort**. Prüft die Telefonanlage das Passwort unter einem anderen Namen, füllen Sie **Authentifizierungsbenutzer** aus. |
+| *Das Zertifikat des Servers konnte nicht überprüft werden. Wenn der Administrator des Servers es selbst ausgestellt hat, deaktivieren Sie „Zertifikat prüfen“ in „Servereinstellungen“.* | Erscheint bei einer TLS-Verbindung. Verwendet die Telefonanlage ein selbst ausgestelltes Zertifikat, entfernen Sie das Häkchen bei **Zertifikat prüfen** unter **Servereinstellungen**. |
+| *Das Passwort für dieses Konto ließ sich nicht aus dem Schlüsselbund lesen. Entsperren Sie ihn und verbinden Sie erneut.* | Entsperren Sie den Schlüsselbund des Computers (unter macOS die Schlüsselbundverwaltung) und drücken Sie dann **Verbinden** beim Konto. |
+
+### Während eines Gesprächs {#during-a-call}
+
+| Meldung | Was zu tun ist |
+| --- | --- |
+| *Kein gemeinsames Tonformat* | Telefonanlage und Telefon haben keinen Codec gemeinsam. Schalten Sie unter [Tonformate](/sip-accounts/calls#audio-formats) einen ein, den die Telefonanlage verwendet. |
+| *Kein Mikrofon und keine Lautsprecher* | Wählen Sie die Geräte unter [Einstellungen → Geräte](/sip-accounts/devices). |
+| *Keine Aufnahme: der Speicherplatz reicht nur noch bis zur Grenze. Geben Sie Platz frei oder ändern Sie die Grenze in den Einstellungen.* | Der freie Platz auf dem Datenträger hat die **Schwelle für freien Speicher** erreicht — siehe [Aufnahmen](/recordings). Schaffen Sie Platz oder senken Sie die Schwelle. |
+
+### Beim Start des Telefons {#when-the-phone-starts}
+
+*Datenbank nicht lesbar* heißt, dass die Datenbank von einer anderen Version des Programms angelegt wurde und diese sie nicht lesen kann. Meist wurde eine ältere Version auf den Daten einer neueren gestartet: Installieren Sie die neuere Version wieder, öffnet sie die Datenbank so, wie sie war. **Neu anfangen** legt dagegen eine leere Datenbank an — jeder Kontakt und jeder Anruf im Verlauf geht verloren, und das lässt sich nicht rückgängig machen. Bevor Sie es drücken, können Sie eine Kopie der Datenbankdatei aufheben; wo sie liegt, steht unter [Diagnose](/troubleshooting/diagnostics#files).

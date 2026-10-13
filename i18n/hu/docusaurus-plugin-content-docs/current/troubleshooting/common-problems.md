@@ -1,7 +1,7 @@
 ---
 title: Gyakori problémák
 sidebar_position: 2
-description: "Mit ellenőrizzen, ha egy fiók nem regisztrál, nincs hang, egy hívásról vagy megbeszélésről nem készül felvétel, nincs leirat, a súgó nem indul el, vagy egy hivatkozás, egy gyorsbillentyű vagy az API nem csinál semmit."
+description: "Mit ellenőrizzen, ha egy fiók nem regisztrál, nincs hang, egy hívásról vagy megbeszélésről nem készül felvétel, nincs leirat, a súgó nem indul el, vagy egy hivatkozás, egy gyorsbillentyű vagy az API nem csinál semmit, és mit jelentenek a telefon saját üzenetei."
 ---
 
 Minden bejegyzés arra a beállításra mutat, amelyen az adott dolog múlik. Ha a válasz nincs itt, nyissa meg a [Diagnosztikát](/troubleshooting/diagnostics): megmutatja, mit mond egymásnak a telefon és az alközpont.
@@ -88,3 +88,40 @@ Nyomja meg a **Teszt esemény küldése** gombot a [Beállítások → Integrác
 ## Egy gyorsbillentyű nem csinál semmit {#a-hotkey-does-nothing}
 
 Nyissa meg a [Gyorsbillentyűk](/program/shortcuts) lapot. Egy billentyűparancs akkor működik, amikor éppen a telefont használja; ha bármely programból szeretné használni, jelölje be a **Mindenhol** lehetőséget. Kattintson a billentyűparancsra, és nyomja le újra a kombinációt, ha egy másik program elvette.
+
+## A telefon üzenetei {#messages-the-phone-shows}
+
+Ha valami nem történik meg, a telefon külön sorban megírja, miért. A lista alatti sor néhány másodperc múlva magától eltűnik.
+
+### Ha egy hívás nem indul el {#when-a-call-is-not-placed}
+
+| Üzenet | Teendő |
+| --- | --- |
+| *Nincs beállítva egyetlen fiók sem* | Adjon hozzá egy fiókot a [Beállítások → Fiókok](/sip-accounts/setup) lapon. |
+| *Egyetlen fiók sincs bekapcsolva, tehát nincs vonal, amelyről hívni lehetne.* | Jelölje be egy fiók jelölőnégyzetét a **Beállítások → Fiókok** lapon. |
+| *Még egyetlen vonal sincs regisztrálva.* | A fiók be van kapcsolva, de az alközpontban még nincs regisztrálva. Várja meg, amíg a pontja zöldre vált; ha nem vált, lásd: [A fiók nem regisztrál](#the-account-will-not-register). |
+| *Már annyi hívás van, amennyit ez a telefon elbír.* | Tegye le az egyik hívást, majd hívjon újra. |
+| *A fiók, amelyről ezt hívták volna, már nincs meg.* | A sor egy azóta törölt fiókhoz tartozik. Tárcsázza a számot a számlapon. |
+| *Ebben a sorban nincs szám, amelyet vissza lehetne hívni.* | A hívó elrejtette a számát, így nincs kit visszahívni. |
+
+### Ha egy fiók nem kapcsolódik {#when-an-account-does-not-connect}
+
+| Üzenet | Teendő |
+| --- | --- |
+| *Ezt a kiszolgálócímet nem sikerült megtalálni. Ellenőrizze, nincs-e benne elgépelés.* | Ellenőrizze a **Kiszolgáló címe** mezőt [a fiók űrlapján](/sip-accounts/setup). |
+| *Nem sikerült elérni a kiszolgálót. Ellenőrizze a címet, a portot és a hálózatát.* | Ellenőrizze a **Kiszolgáló címe** mezőt, valamint a **Kiszolgálóbeállítások** alatt az **Átvitel** és a **Port** értékét. A SIP-et tűzfal is megállíthatja. |
+| *A kiszolgáló elutasította ezt a felhasználónevet vagy jelszót.* | Ellenőrizze a **Felhasználónév** és a **Jelszó** mezőt. Ha az alközpont más néven ellenőrzi a jelszót, töltse ki a **Hitelesítési felhasználó** mezőt. |
+| *A kiszolgáló tanúsítványát nem sikerült ellenőrizni. Ha a kiszolgáló rendszergazdája maga állította ki, a „Kiszolgálóbeállítások” alatt kapcsolja ki „A tanúsítvány ellenőrzése” lehetőséget.* | TLS-kapcsolatnál jelenik meg. Ha az alközpont saját maga készítette tanúsítványt használ, vegye ki a pipát **A tanúsítvány ellenőrzése** elől a **Kiszolgálóbeállítások** alatt. |
+| *A fiók jelszavát nem sikerült kiolvasni a kulcstartóból. Oldja fel, és kapcsolódjon újra.* | Oldja fel a számítógép kulcstartóját (macOS-en a Kulcskarikát), majd nyomja meg a fióknál a **Kapcsolódás** gombot. |
+
+### Hívás közben {#during-a-call}
+
+| Üzenet | Teendő |
+| --- | --- |
+| *Nincs közös hangformátum* | Az alközpontnak és a telefonnak nincs közös kodekje. Kapcsoljon be egyet, amelyet az alközpont használ, a [Hangformátumok](/sip-accounts/calls#audio-formats) résznél. |
+| *Nincs mikrofon és nincs hangszóró* | Válassza ki az eszközöket a [Beállítások → Eszközök](/sip-accounts/devices) lapon. |
+| *Nincs felvétel: a lemez lement a határig. Szabadítson fel helyet, vagy változtassa meg a határt a beállításokban.* | A lemezen a szabad hely elérte a **Lemezhely-küszöb** értékét – lásd: [Felvételek](/recordings). Szabadítson fel helyet, vagy csökkentse a küszöböt. |
+
+### A telefon indításakor {#when-the-phone-starts}
+
+Az *Az adatbázis nem olvasható* üzenet azt jelenti, hogy az adatbázist a program egy másik verziója készítette, és ez a verzió nem tudja olvasni. Többnyire egy régebbi verziót indítottak el egy újabb adataival: ha újra telepíti az újabb verziót, az olyannak nyitja meg az adatbázist, amilyen volt. A **Kezdje elölről** gomb viszont üres adatbázist készít – minden névjegy és az előzmények minden hívása elvész, és ez nem vonható vissza. Mielőtt megnyomná, készíthet másolatot az adatbázisfájlról; hogy hol van, azt a [Diagnosztika](/troubleshooting/diagnostics#files) írja le.

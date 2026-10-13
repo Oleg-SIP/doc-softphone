@@ -20,6 +20,16 @@ Der Reiter sagt, ob Sie die neueste Version haben und wann zuletzt geprüft wurd
 
 **Automatisch nach Updates suchen**, standardmäßig an, prüft einmal am Tag und kurz nach dem Start des Telefons. Es fragt einen Server nach einer kleinen Datei, und nichts wird heruntergeladen oder installiert, ohne dass Sie es sagen.
 
+Gibt es eine neue Version, sagt der Reiter *Version … ist verfügbar. Es wird nichts heruntergeladen, bevor Sie es verlangen.* **Was sich geändert hat** zeigt, was darin neu ist, und **Herunterladen** lädt sie herunter.
+
+Ist sie heruntergeladen, schließt **Installieren und neu starten** das Telefon und startet es in der neuen Version wieder. Von selbst tut das Telefon das nie, damit nichts Laufendes abgebrochen wird: Drücken Sie die Schaltfläche, wenn Sie gerade nicht telefonieren. Eine Mitteilung, *Eine neue Version ist verfügbar*, sagt es ebenfalls, mit der Schaltfläche **Jetzt aktualisieren**.
+
+| Wenn der Reiter sagt | |
+| --- | --- |
+| *Version … ist verfügbar. Diese Kopie wurde aus einem Paket installiert, deshalb wird die neue genauso installiert.* | Das Programm stammt aus einem Paket, etwa aus Ihrer Linux-Distribution. Drücken Sie **Paket holen** und installieren Sie die neue Version so, wie Sie diese installiert haben. |
+| *Diese Fassung hat keine Update-Adresse, deshalb fragt sie nie nach. Die auf der Website veröffentlichten Fassungen haben eine.* | Das Programm wurde aus dem Quellcode gebaut statt von der Website geladen und sucht nicht nach Updates. |
+| *Kein Update-Server hat geantwortet.* | Die Server waren nicht erreichbar. Ist der Computer online, kann es helfen, oben das **Land** zu wählen: Vielleicht gibt es einen Server näher bei Ihnen. |
+
 ## Lizenz {#licence}
 
 Das Programm ist freie Software unter der GPL-2.0-or-later. Es kommt ohne jede Gewährleistung, und Sie dürfen es unter den Bedingungen dieser Lizenz weitergeben; der vollständige Text liegt in der Datei `LICENSE`.

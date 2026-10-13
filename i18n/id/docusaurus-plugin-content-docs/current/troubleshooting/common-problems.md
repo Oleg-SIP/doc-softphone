@@ -1,7 +1,7 @@
 ---
 title: Masalah umum
 sidebar_position: 2
-description: "Apa yang perlu diperiksa ketika akun tidak mau terdaftar, tidak ada suara, panggilan atau rapat tidak terekam, tidak ada transkrip, pembisik tidak mau mulai, atau tautan, tombol pintas, maupun API tidak berfungsi."
+description: "Apa yang perlu diperiksa ketika akun tidak mau terdaftar, tidak ada suara, panggilan atau rapat tidak terekam, tidak ada transkrip, pembisik tidak mau mulai, atau tautan, tombol pintas, maupun API tidak berfungsi, dan arti pesan-pesan dari telepon itu sendiri."
 ---
 
 Setiap entri merujuk ke pengaturan yang menentukannya. Jika jawabannya tidak ada di sini, buka [Diagnostik](/troubleshooting/diagnostics): jendela itu menampilkan apa yang dipertukarkan telepon dan PBX.
@@ -88,3 +88,40 @@ Tekan **Kirim peristiwa uji** di [Pengaturan → Integrasi](/integration/webhook
 ## Tombol pintas tidak berfungsi {#a-hotkey-does-nothing}
 
 Buka [Pintasan](/program/shortcuts). Pintasan berfungsi selama telepon adalah program yang sedang Anda gunakan; untuk menggunakannya dari program mana pun, centang **Di mana saja**. Klik pintasan dan tekan kombinasinya lagi jika program lain telah mengambilnya.
+
+## Pesan dari telepon {#messages-the-phone-shows}
+
+Jika sesuatu tidak terjadi, telepon menyebutkan alasannya di baris tersendiri. Baris di bawah daftar hilang sendiri setelah beberapa detik.
+
+### Saat panggilan tidak keluar {#when-a-call-is-not-placed}
+
+| Pesan | Yang perlu dilakukan |
+| --- | --- |
+| *Belum ada akun yang disiapkan* | Tambahkan akun di [Pengaturan → Akun](/sip-accounts/setup). |
+| *Tidak ada akun yang menyala, jadi tidak ada saluran untuk menelepon.* | Centang kotak sebuah akun di **Pengaturan → Akun**. |
+| *Belum ada saluran yang terdaftar.* | Akun sudah menyala tetapi belum terdaftar di PBX. Tunggu sampai titiknya menjadi hijau; jika tidak, lihat [Akun tidak mau terdaftar](#the-account-will-not-register). |
+| *Panggilan yang berlangsung sudah sebanyak yang sanggup ditangani telepon ini.* | Tutup salah satu panggilan, lalu telepon lagi. |
+| *Akun yang akan dipakai untuk ini sudah tidak ada.* | Baris ini milik akun yang sudah dihapus. Tekan nomornya di papan tombol. |
+| *Baris ini tidak punya nomor untuk ditelepon balik.* | Penelepon menyembunyikan nomornya, jadi tidak ada yang bisa ditelepon balik. |
+
+### Saat akun tidak tersambung {#when-an-account-does-not-connect}
+
+| Pesan | Yang perlu dilakukan |
+| --- | --- |
+| *Alamat server itu tidak ditemukan. Periksa kalau-kalau ada salah ketik.* | Periksa **Alamat server** di [formulir akun](/sip-accounts/setup). |
+| *Server tidak dapat dihubungi. Periksa alamat, porta, dan jaringan Anda.* | Periksa **Alamat server**, serta **Angkutan** dan **Porta** di bawah **Pengaturan server**. Firewall juga bisa menghalangi SIP. |
+| *Server menolak nama pengguna atau kata sandi ini.* | Periksa **Nama pengguna** dan **Kata sandi**. Jika PBX memeriksa kata sandi dengan nama lain, isi **Pengguna autentikasi**. |
+| *Sertifikat server tidak dapat diverifikasi. Jika administrator server membuatnya sendiri, hapus centang “Verifikasi sertifikat” di “Pengaturan server”.* | Muncul pada sambungan TLS. Jika PBX memakai sertifikat buatannya sendiri, hapus centang **Verifikasi sertifikat** di bawah **Pengaturan server**. |
+| *Kata sandi akun ini tidak terbaca dari gantungan kunci. Bukalah kuncinya lalu sambung lagi.* | Buka kunci gantungan kunci komputer (Keychain di macOS), lalu tekan **Sambungkan** pada akun. |
+
+### Selama panggilan {#during-a-call}
+
+| Pesan | Yang perlu dilakukan |
+| --- | --- |
+| *Tidak ada format audio yang sama* | PBX dan telepon tidak punya codec yang sama. Nyalakan salah satu yang dipakai PBX di [Format audio](/sip-accounts/calls#audio-formats). |
+| *Tidak ada mikrofon atau pengeras suara* | Pilih perangkatnya di [Pengaturan → Perangkat](/sip-accounts/devices). |
+| *Tidak merekam: ruang disk sudah mencapai batas. Kosongkan sebagian, atau ubah batasnya di Pengaturan.* | Ruang kosong di disk sudah mencapai **Ambang ruang disk** — lihat [Rekaman](/recordings). Kosongkan ruang, atau turunkan ambangnya. |
+
+### Saat telepon dijalankan {#when-the-phone-starts}
+
+*Basis data tidak terbaca* berarti basis data dibuat oleh versi program yang lain dan versi ini tidak dapat membacanya. Biasanya versi yang lebih lama dijalankan pada data versi yang lebih baru: jika versi yang lebih baru dipasang lagi, ia membuka basis data seperti semula. **Mulai dari awal** justru membuat basis data kosong — setiap kontak dan setiap panggilan di riwayat hilang, dan itu tidak dapat dibatalkan. Sebelum menekannya, Anda dapat menyimpan salinan berkas basis data; [Diagnostik](/troubleshooting/diagnostics#files) menyebutkan letaknya.

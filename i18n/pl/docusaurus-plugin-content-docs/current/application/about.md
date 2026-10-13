@@ -20,6 +20,16 @@ Zakładka mówi, czy masz najnowszą wersję i kiedy ostatnio to sprawdzano. **S
 
 **Sprawdzaj aktualizacje automatycznie**, domyślnie włączone, sprawdza raz dziennie i wkrótce po uruchomieniu telefonu. Prosi serwer o jeden mały plik, a nic nie jest pobierane ani instalowane bez twojej zgody.
 
+Gdy wychodzi nowa wersja, karta pisze *Wersja … jest dostępna. Nic nie jest pobierane, dopóki o to nie poprosisz.* **Co się zmieniło** pokazuje, co w niej nowego, a **Pobierz** ją pobiera.
+
+Gdy jest pobrana, **Zainstaluj i uruchom ponownie** zamyka telefon i uruchamia go ponownie już w nowej wersji. Telefon nigdy nie robi tego sam, żeby nie przerwać niczego, co trwa: naciśnij przycisk, gdy nie rozmawiasz. Mówi o tym też powiadomienie *Dostępna jest nowa wersja* z przyciskiem **Aktualizuj teraz**.
+
+| Gdy karta pisze | |
+| --- | --- |
+| *Wersja … jest dostępna. Ta kopia została zainstalowana z pakietu, więc nowa instaluje się tak samo.* | Program zainstalowano z pakietu, na przykład z twojej dystrybucji Linuksa. Naciśnij **Pobierz pakiet** i zainstaluj nową wersję tak samo, jak zainstalowano tę. |
+| *Ta kompilacja nie ma adresu aktualizacji, więc nigdy nie pyta. Te publikowane na stronie go mają.* | Program zbudowano z kodu źródłowego zamiast pobrać ze strony i nie szuka aktualizacji. |
+| *Żaden serwer aktualizacji nie odpowiedział.* | Nie udało się połączyć z serwerami. Jeśli komputer jest w sieci, może pomóc wybór pola **Kraj** powyżej: może jest serwer bliżej ciebie. |
+
 ## Licencja {#licence}
 
 Program jest wolnym oprogramowaniem na licencji GPL-2.0-or-later. Jest dostarczany bez żadnej gwarancji, a ty możesz go rozpowszechniać na warunkach tej licencji; pełny tekst jest dołączony w pliku o nazwie `LICENSE`.

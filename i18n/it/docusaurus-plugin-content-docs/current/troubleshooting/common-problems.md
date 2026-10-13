@@ -1,7 +1,7 @@
 ---
 title: Problemi comuni
 sidebar_position: 2
-description: "Che cosa controllare quando un account non si registra, non c'è audio, una chiamata o una riunione non viene registrata, non c'è trascrizione, il suggeritore non si avvia, o un collegamento, una scorciatoia o l'API non fanno nulla."
+description: "Che cosa controllare quando un account non si registra, non c'è audio, una chiamata o una riunione non viene registrata, non c'è trascrizione, il suggeritore non si avvia, o un collegamento, una scorciatoia o l'API non fanno nulla, e che cosa significano i messaggi del telefono stesso."
 ---
 
 Ogni voce rimanda all'impostazione che ne decide. Se la risposta non è qui, apra la [Diagnostica](/troubleshooting/diagnostics): mostra che cosa si dicono il telefono e il centralino.
@@ -88,3 +88,40 @@ Prema **Invia un evento di prova** in [Impostazioni → Integrazione](/integrati
 ## Una scorciatoia non fa nulla {#a-hotkey-does-nothing}
 
 Apra [Scorciatoie](/program/shortcuts). Una scorciatoia funziona mentre il telefono è il programma che sta usando; per usarla da qualsiasi programma, spunti **Ovunque**. Faccia clic sulla scorciatoia e prema di nuovo la combinazione se un altro programma se l'è presa.
+
+## I messaggi del telefono {#messages-the-phone-shows}
+
+Quando qualcosa non avviene, il telefono dice perché su una riga a parte. Una riga sotto un elenco sparisce da sola dopo qualche secondo.
+
+### Quando una chiamata non parte {#when-a-call-is-not-placed}
+
+| Messaggio | Che cosa fare |
+| --- | --- |
+| *Non è configurato alcun account* | Aggiunga un account in [Impostazioni → Account](/sip-accounts/setup). |
+| *Non è attivo alcun account, quindi non c'è una linea da cui chiamare.* | Spunti la casella di un account in **Impostazioni → Account**. |
+| *Non è ancora registrata alcuna linea.* | L'account è attivo ma non ancora registrato sul centralino. Attenda che il suo punto diventi verde; se non succede, veda [L'account non si registra](#the-account-will-not-register). |
+| *Ci sono già tante chiamate quante questo telefono ne regge.* | Chiuda una delle chiamate, poi richiami. |
+| *L'account da cui questa sarebbe partita non c'è più.* | La riga appartiene a un account che nel frattempo è stato eliminato. Componga il numero nel tastierino. |
+| *Questa riga non ha un numero da richiamare.* | Chi ha chiamato ha nascosto il numero, quindi non c'è nessuno da richiamare. |
+
+### Quando un account non si connette {#when-an-account-does-not-connect}
+
+| Messaggio | Che cosa fare |
+| --- | --- |
+| *Questo indirizzo di server non si trova. Controlli che non ci siano errori di battitura.* | Controlli **Indirizzo del server** nel [modulo dell'account](/sip-accounts/setup). |
+| *Non è stato possibile raggiungere il server. Controlli indirizzo, porta e rete.* | Controlli **Indirizzo del server**, e **Trasporto** e **Porta** in **Impostazioni del server**. Anche un firewall può bloccare il SIP. |
+| *Il server ha rifiutato questo nome utente o questa password.* | Controlli **Nome utente** e **Password**. Se il centralino verifica la password con un altro nome, compili **Utente di autenticazione**. |
+| *Non è stato possibile verificare il certificato del server. Se l’amministratore del server lo ha emesso da sé, deseleziona «Verifica il certificato» in «Impostazioni del server».* | Compare con una connessione TLS. Se il centralino usa un certificato fatto da sé, tolga la spunta a **Verifica il certificato** in **Impostazioni del server**. |
+| *La password di questo account non si è potuta leggere dal portachiavi. Lo sblocchi e si connetta di nuovo.* | Sblocchi il portachiavi del computer (Accesso Portachiavi su macOS), poi prema **Connetti** accanto all'account. |
+
+### Durante una chiamata {#during-a-call}
+
+| Messaggio | Che cosa fare |
+| --- | --- |
+| *Nessun formato audio in comune* | Il centralino e il telefono non hanno codec in comune. Attivi uno di quelli usati dal centralino in [Formati audio](/sip-accounts/calls#audio-formats). |
+| *Né microfono né altoparlanti* | Scelga i dispositivi in [Impostazioni → Dispositivi](/sip-accounts/devices). |
+| *Nessuna registrazione: il disco è sceso al limite. Liberi spazio, o cambi il limite nelle impostazioni.* | Lo spazio libero sul disco ha raggiunto la **Soglia di spazio su disco** — veda [Registrazioni](/recordings). Liberi spazio o abbassi la soglia. |
+
+### All'avvio del telefono {#when-the-phone-starts}
+
+*Database illeggibile* significa che il database è stato creato da un'altra versione del programma e questa non sa leggerlo. Di solito una versione più vecchia è stata avviata sui dati di una più nuova: reinstallando la versione più nuova, il database si riapre com'era. **Ricominciare** invece crea un database vuoto — ogni contatto e ogni chiamata della cronologia vanno persi, e non si può annullare. Prima di premerlo, può tenere una copia del file del database; [Diagnostica](/troubleshooting/diagnostics#files) dice dove si trova.

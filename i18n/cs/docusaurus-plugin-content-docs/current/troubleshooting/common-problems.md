@@ -1,7 +1,7 @@
 ---
 title: Časté problémy
 sidebar_position: 2
-description: "Co zkontrolovat, když se účet nezaregistruje, není slyšet zvuk, hovor nebo schůzka se nenahrají, chybí přepis, nespustí se našeptávač nebo když odkaz, zkratka či API nic nedělají."
+description: "Co zkontrolovat, když se účet nezaregistruje, není slyšet zvuk, hovor nebo schůzka se nenahrají, chybí přepis, nespustí se našeptávač nebo když odkaz, zkratka či API nic nedělají a co znamenají hlášení samotného telefonu."
 ---
 
 Každá položka ukazuje na nastavení, které o tom rozhoduje. Pokud tu odpověď není, otevřete [Diagnostiku](/troubleshooting/diagnostics): ukazuje, co si telefon a ústředna říkají.
@@ -88,3 +88,40 @@ Stiskněte **Poslat zkušební událost** v [Nastavení → Integrace](/integrat
 ## Klávesová zkratka nic nedělá {#a-hotkey-does-nothing}
 
 Otevřete [Zkratky](/program/shortcuts). Zkratka funguje, když je telefon program, který právě používáte; chcete-li ji používat z jakéhokoli programu, zaškrtněte **Všude**. Pokud kombinaci zabral jiný program, klikněte na zkratku a stiskněte kombinaci znovu.
+
+## Hlášení telefonu {#messages-the-phone-shows}
+
+Když se něco nestane, telefon napíše proč na samostatném řádku. Řádek pod seznamem po několika sekundách sám zmizí.
+
+### Hovor se nevytočí {#when-a-call-is-not-placed}
+
+| Hlášení | Co dělat |
+| --- | --- |
+| *Není nastaven žádný účet* | Přidejte účet v [Nastavení → Účty](/sip-accounts/setup). |
+| *Není zapnutý žádný účet, takže není linka, ze které volat.* | Zaškrtněte políčko účtu v **Nastavení → Účty**. |
+| *Zatím není zaregistrovaná žádná linka.* | Účet je zapnutý, ale na ústředně ještě není registrován. Počkejte, až jeho tečka zezelená; pokud ne, viz [Účet se nezaregistruje](#the-account-will-not-register). |
+| *Probíhá už tolik hovorů, kolik tento telefon unese.* | Zavěste jeden z hovorů a zavolejte znovu. |
+| *Účet, ze kterého by se to volalo, už neexistuje.* | Řádek patří k účtu, který byl mezitím smazán. Vytočte číslo v číselníku. |
+| *Tento řádek nemá číslo, na které zavolat zpět.* | Volající skryl číslo, takže není komu zavolat zpět. |
+
+### Účet se nepřipojí {#when-an-account-does-not-connect}
+
+| Hlášení | Co dělat |
+| --- | --- |
+| *Tuto adresu serveru se nepodařilo najít. Zkontrolujte, zda v ní není překlep.* | Zkontrolujte **Adresa serveru** ve [formuláři účtu](/sip-accounts/setup). |
+| *Nepodařilo se dosáhnout serveru. Zkontrolujte adresu, port a svou síť.* | Zkontrolujte **Adresa serveru** a také **Přenos** a **Port** v části **Nastavení serveru**. SIP může blokovat i firewall. |
+| *Server odmítl toto uživatelské jméno nebo heslo.* | Zkontrolujte **Uživatelské jméno** a **Heslo**. Pokud ústředna ověřuje heslo pod jiným jménem, vyplňte **Ověřovací uživatel**. |
+| *Certifikát serveru se nepodařilo ověřit. Pokud ho správce serveru vydal sám, zrušte zaškrtnutí „Ověřovat certifikát“ v části „Nastavení serveru“.* | Objeví se u spojení TLS. Pokud ústředna používá certifikát, který si sama vytvořila, zrušte zaškrtnutí **Ověřovat certifikát** v části **Nastavení serveru**. |
+| *Heslo k tomuto účtu se nepodařilo přečíst z klíčenky. Odemkněte ji a připojte se znovu.* | Odemkněte úložiště hesel počítače (v macOS Klíčenku) a pak u účtu stiskněte **Připojit**. |
+
+### Během hovoru {#during-a-call}
+
+| Hlášení | Co dělat |
+| --- | --- |
+| *Žádný společný zvukový formát* | Ústředna a telefon nemají společný kodek. Zapněte některý, který ústředna používá, v části [Zvukové formáty](/sip-accounts/calls#audio-formats). |
+| *Žádný mikrofon ani reproduktory* | Vyberte zařízení v [Nastavení → Zařízení](/sip-accounts/devices). |
+| *Nenahrává se: na disku zbývá jen tolik, kolik činí mez. Uvolněte místo nebo změňte mez v nastavení.* | Volné místo na disku kleslo na **Práh místa na disku** — viz [Nahrávky](/recordings). Uvolněte místo nebo práh snižte. |
+
+### Při spuštění telefonu {#when-the-phone-starts}
+
+*Databázi nelze přečíst* znamená, že databázi vytvořila jiná verze programu a tato ji neumí přečíst. Obvykle byla starší verze spuštěna nad daty novější: když znovu nainstalujete novější verzi, otevře ji tak, jak byla. **Začít znovu** naopak vytvoří prázdnou databázi — všechny kontakty a všechny hovory v historii se ztratí a nelze to vrátit. Než ho stisknete, můžete si uložit kopii souboru databáze; kde je, říká [Diagnostika](/troubleshooting/diagnostics#files).

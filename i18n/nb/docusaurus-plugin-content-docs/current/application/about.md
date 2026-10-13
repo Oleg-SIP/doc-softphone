@@ -20,6 +20,16 @@ Fanen forteller om du har den nyeste versjonen og når det sist ble sjekket. **S
 
 **Se etter oppdateringer automatisk**, på som standard, sjekker én gang om dagen og kort tid etter at telefonen har startet. Den ber en server om én liten fil, og ingenting lastes ned eller installeres uten at du sier ja.
 
+Når det finnes en ny versjon, står det i fanen *Versjon … finnes. Ingenting lastes ned før du ber om det.* **Hva som er endret** viser hva som er nytt i den, og **Last ned** henter den.
+
+Når den er lastet ned, lukker **Installer og start på nytt** telefonen og starter den igjen i den nye versjonen. Telefonen gjør aldri dette selv, så ingenting som pågår blir brutt: trykk på knappen når du ikke er i en samtale. En varsling, *Det finnes en ny versjon*, sier det også, med en **Oppdater nå**-knapp.
+
+| Når det står i fanen | |
+| --- | --- |
+| *Versjon … finnes. Denne kopien ble installert av en pakke, så den nye installeres på samme måte.* | Programmet kom fra en pakke, for eksempel fra Linux-distribusjonen din. Trykk på **Hent pakken**, og installer den nye versjonen på samme måte som du installerte denne. |
+| *Denne utgaven har ingen oppdateringsadresse, så den spør aldri. De som publiseres på nettstedet, har en.* | Programmet er bygget fra kildekoden i stedet for lastet ned fra nettstedet, og ser ikke etter oppdateringer. |
+| *Ingen oppdateringsserver svarte.* | Serverne kunne ikke nås. Hvis datamaskinen er tilkoblet, kan det hjelpe å velge **Land** ovenfor: det kan finnes en server nærmere deg. |
+
 ## Lisens {#licence}
 
 Programmet er fri programvare under GPL-2.0-or-later. Det leveres uten noen garanti, og du kan videreformidle det på vilkårene i den lisensen; hele teksten følger med i filen `LICENSE`.

@@ -20,6 +20,16 @@ Skirtukas nurodo, ar turite naujausią versiją ir kada paskutinį kartą tikrin
 
 **Ieškoti atnaujinimų automatiškai**, pagal numatymą įjungta, tikrina kartą per dieną ir netrukus po telefono paleidimo. Ji paprašo serverio vieno nedidelio failo, ir niekas neatsisiunčiama ir neįdiegiama be jūsų leidimo.
 
+Kai yra nauja versija, kortelėje parašyta *Versija … yra. Niekas neatsiunčiama, kol nepaprašote.* **Kas pasikeitė** parodo, kas joje naujo, o **Atsiųsti** ją atsisiunčia.
+
+Kai ji atsisiųsta, **Įdiegti ir paleisti iš naujo** uždaro telefoną ir vėl paleidžia jį jau naujoje versijoje. Telefonas niekada to nedaro pats, kad nenutrauktų to, kas vyksta: spauskite mygtuką, kai nesikalbate. Tai pasako ir pranešimas *Yra nauja versija* su mygtuku **Atnaujinti dabar**.
+
+| Kai kortelėje parašyta | |
+| --- | --- |
+| *Versija … yra. Ši kopija įdiegta paketu, todėl naujoji įsidiegia taip pat.* | Programa įdiegta iš paketo, pavyzdžiui, iš jūsų Linux distribucijos. Paspauskite **Paimti paketą** ir įdiekite naują versiją taip pat, kaip įdiegėte šią. |
+| *Ši laida neturi atnaujinimų adreso, todėl niekada neklausia. Svetainėje paskelbtos jį turi.* | Programa sukompiliuota iš pradinio kodo, o ne atsisiųsta iš svetainės, ir atnaujinimų neieško. |
+| *Nė vienas atnaujinimų serveris neatsakė.* | Serverių pasiekti nepavyko. Jei kompiuteris prisijungęs prie tinklo, gali padėti aukščiau nurodyta **Šalis**: galbūt arčiau jūsų yra serveris. |
+
 ## Licencija {#licence}
 
 Programa yra laisvoji programinė įranga pagal GPL-2.0-or-later. Ji pateikiama be jokios garantijos, ir galite ją platinti toliau pagal tos licencijos sąlygas; visas tekstas pateikiamas faile pavadinimu `LICENSE`.

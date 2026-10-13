@@ -20,6 +20,16 @@ The tab says whether you have the newest version and when it was last checked. *
 
 **Look for updates automatically**, on by default, checks once a day and shortly after the phone starts. It asks a server for one small file, and nothing is downloaded or installed without you saying so.
 
+When there is a new version, the tab says *Version … is available. Nothing is downloaded until you ask.* **What changed** shows what is new in it, and **Download** fetches it.
+
+Once it is downloaded, **Install and restart** closes the phone and starts it again in the new version. The phone never does this by itself, so that nothing in progress is cut off: press the button when you are not on a call. A notification, *A new version is available*, says so as well, with an **Update now** button.
+
+| When the tab says | |
+| --- | --- |
+| *Version … is available. This copy was installed by a package, so the new one is installed the same way.* | The program came from a package, for example from your Linux distribution. Press **Get the package**, and install the new one the way you installed this one. |
+| *This build has no update address, so it never asks. The builds published on the website have one.* | The program was built from its source code rather than downloaded from the website, and does not look for updates. |
+| *No update server answered.* | The servers could not be reached. If the computer is online, choosing your **Country** above may help: there may be a server nearer you. |
+
 ## Licence
 
 The program is free software under the GPL-2.0-or-later. It comes with no warranty, and you may redistribute it under that licence's terms; the full text ships in the file named `LICENSE`.

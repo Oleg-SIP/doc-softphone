@@ -20,6 +20,16 @@ A lap megmutatja, hogy a legújabb verzió van-e telepítve, és mikor történt
 
 A **Frissítések automatikus keresése**, amely alapértelmezés szerint be van kapcsolva, naponta egyszer és röviddel a telefon indulása után ellenőriz. Egy kiszolgálótól egyetlen kis fájlt kér le, és semmi sem töltődik le vagy települ az Ön jóváhagyása nélkül.
 
+Ha van új verzió, a lap ezt írja: *A(z) … verzió elérhető. Semmi sem töltődik le, amíg nem kéri.* A **Mi változott** gomb megmutatja, mi az újdonság benne, a **Letöltés** gomb pedig letölti.
+
+Ha letöltődött, a **Telepítés és újraindítás** gomb bezárja a telefont, és már az új verzióban indítja újra. A telefon ezt sosem teszi meg magától, hogy semmi folyamatban lévőt ne szakítson meg: akkor nyomja meg a gombot, amikor nem beszél telefonon. Egy értesítés is jelzi ezt – *Új verzió érhető el* –, **Frissítés most** gombbal.
+
+| Ha a lap ezt írja | |
+| --- | --- |
+| *A(z) … verzió elérhető. Ezt a példányt csomag telepítette, így az új is ugyanúgy települ.* | A program csomagból települt, például a Linux-disztribúciójából. Nyomja meg a **Csomag beszerzése** gombot, és az új verziót ugyanúgy telepítse, ahogy ezt. |
+| *Ennek a változatnak nincs frissítési címe, ezért soha nem kérdez. A webhelyen közzétetteknek van.* | A programot a forráskódjából fordították, nem a webhelyről töltötték le, és nem keres frissítéseket. |
+| *Egyetlen frissítési kiszolgáló sem válaszolt.* | A kiszolgálók nem voltak elérhetők. Ha a számítógép online, segíthet, ha fent kiválasztja az **Ország** mezőben az országát: lehet, hogy van Önhöz közelebbi kiszolgáló. |
+
 ## Licenc {#licence}
 
 A program GPL-2.0-or-later licencű szabad szoftver. Semmilyen garanciát nem vállalunk rá, és a licenc feltételei szerint továbbterjesztheti; a teljes szöveg a `LICENSE` nevű fájlban található.

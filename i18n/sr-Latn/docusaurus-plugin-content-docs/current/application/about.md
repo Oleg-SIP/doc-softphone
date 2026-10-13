@@ -20,6 +20,16 @@ Kartica kaže da li imate najnoviju verziju i kada je poslednji put provereno. *
 
 **Traži ažuriranja samostalno**, podrazumevano uključeno, proverava jednom dnevno i ubrzo nakon pokretanja telefona. Traži od servera jednu malu datoteku, a ništa se ne preuzima niti instalira bez vašeg pristanka.
 
+Kada postoji nova verzija, kartica kaže *Verzija … je dostupna. Ništa se ne preuzima dok ne zatražite.* **Šta se promenilo** pokazuje šta je u njoj novo, a **Preuzmi** je preuzima.
+
+Kada je preuzeta, **Instaliraj i pokreni ponovo** zatvara telefon i ponovo ga pokreće već u novoj verziji. Telefon to nikada ne radi sam, da ne bi prekinuo ništa što je u toku: pritisnite dugme kada niste u pozivu. To kaže i obaveštenje *Dostupna je nova verzija*, sa dugmetom **Ažuriraj odmah**.
+
+| Kada kartica kaže | |
+| --- | --- |
+| *Verzija … je dostupna. Ovaj primerak je instaliran paketom, pa se i nova instalira na isti način.* | Program je instaliran iz paketa, na primer iz vaše distribucije Linux-a. Pritisnite **Preuzmi paket** i instalirajte novu verziju na isti način na koji ste instalirali ovu. |
+| *Ova verzija nema adresu za ažuriranja, pa nikada ne pita. Verzije objavljene na sajtu je imaju.* | Program je izgrađen iz izvornog koda umesto da je preuzet sa veb-sajta i ne traži ažuriranja. |
+| *Nijedan server za ažuriranja nije odgovorio.* | Serveri nisu bili dostupni. Ako je računar na mreži, može pomoći izbor polja **Država** iznad: možda postoji server bliži vama. |
+
 ## Licenca {#licence}
 
 Program je slobodan softver pod licencom GPL-2.0-or-later. Dolazi bez ikakve garancije, a možete da ga dalje distribuirate pod uslovima te licence; ceo tekst isporučuje se u datoteci nazvanoj `LICENSE`.

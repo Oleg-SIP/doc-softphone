@@ -1,7 +1,7 @@
 ---
 title: Almindelige problemer
 sidebar_position: 2
-description: "Hvad du skal tjekke, når en konto ikke vil registrere sig, der ikke er lyd, et opkald eller et møde ikke optages, der ikke er en udskrift, suffløren ikke starter, eller et link, en genvej eller API'et ikke gør noget."
+description: "Hvad du skal tjekke, når en konto ikke vil registrere sig, der ikke er lyd, et opkald eller et møde ikke optages, der ikke er en udskrift, suffløren ikke starter, eller et link, en genvej eller API'et ikke gør noget, og hvad telefonens egne meddelelser betyder."
 ---
 
 Hvert punkt peger på den indstilling, der afgør det. Står svaret ikke her, så åbn [Diagnostik](/troubleshooting/diagnostics): det viser, hvad telefonen og omstillingsanlægget siger til hinanden.
@@ -88,3 +88,40 @@ Tryk på **Send en testhændelse** under [Indstillinger → Integration](/integr
 ## En genvej gør ingenting {#a-hotkey-does-nothing}
 
 Åbn [Genveje](/program/shortcuts). En genvej virker, mens telefonen er det program, du bruger; for at bruge den fra ethvert program skal du sætte flueben ved **Overalt**. Klik på genvejen, og tryk kombinationen igen, hvis et andet program har taget den.
+
+## Telefonens meddelelser {#messages-the-phone-shows}
+
+Når noget ikke sker, siger telefonen hvorfor på en linje for sig. En linje under en liste forsvinder af sig selv efter et par sekunder.
+
+### Når et opkald ikke bliver foretaget {#when-a-call-is-not-placed}
+
+| Meddelelse | Hvad du gør |
+| --- | --- |
+| *Der er ingen konto sat op* | Tilføj en konto under [Indstillinger → Konti](/sip-accounts/setup). |
+| *Der er ingen konto slået til, så der er ingen linje at ringe fra.* | Sæt flueben ved en konto under **Indstillinger → Konti**. |
+| *Der er endnu ingen linje registreret.* | Kontoen er slået til, men endnu ikke registreret på omstillingsanlægget. Vent, til dens prik bliver grøn; sker det ikke, se [Kontoen vil ikke registrere sig](#the-account-will-not-register). |
+| *Der kører allerede så mange samtaler, som denne telefon bærer.* | Læg på i et af opkaldene, og ring så igen. |
+| *Kontoen, dette ville være ringet fra, findes ikke længere.* | Rækken hører til en konto, der siden er slettet. Tast nummeret i tastaturet. |
+| *Denne række har intet nummer at ringe tilbage til.* | Den, der ringede, skjulte nummeret, så der er intet at ringe tilbage til. |
+
+### Når en konto ikke forbinder {#when-an-account-does-not-connect}
+
+| Meddelelse | Hvad du gør |
+| --- | --- |
+| *Den serveradresse kunne ikke findes. Kontrollér den for tastefejl.* | Tjek **Serveradresse** i [kontoformularen](/sip-accounts/setup). |
+| *Serveren kunne ikke nås. Kontrollér adressen, porten og dit netværk.* | Tjek **Serveradresse** samt **Transport** og **Port** under **Serverindstillinger**. En firewall kan også stoppe SIP. |
+| *Serveren afviste dette brugernavn eller denne adgangskode.* | Tjek **Brugernavn** og **Adgangskode**. Hvis omstillingsanlægget tjekker adgangskoden under et andet navn, så udfyld **Godkendelsesbruger**. |
+| *Serverens certifikat kunne ikke bekræftes. Hvis serverens administrator selv har lavet det, så fjern fluebenet ved »Bekræft certifikatet« under »Serverindstillinger«.* | Vises ved en TLS-forbindelse. Hvis omstillingsanlægget bruger et certifikat, det selv har lavet, så fjern fluebenet ved **Bekræft certifikatet** under **Serverindstillinger**. |
+| *Adgangskoden til denne konto kunne ikke læses fra nøgleringen. Lås den op og forbind igen.* | Lås computerens nøglering op (nøgleringen på macOS), og tryk så på **Forbind** ved kontoen. |
+
+### Under et opkald {#during-a-call}
+
+| Meddelelse | Hvad du gør |
+| --- | --- |
+| *Intet fælles lydformat* | Omstillingsanlægget og telefonen har ingen fælles codec. Slå en, som omstillingsanlægget bruger, til under [Lydformater](/sip-accounts/calls#audio-formats). |
+| *Hverken mikrofon eller højttalere* | Vælg enhederne under [Indstillinger → Enheder](/sip-accounts/devices). |
+| *Optager ikke: disken er nået ned til grænsen. Frigør plads, eller ret grænsen i indstillingerne.* | Den ledige plads på disken har nået **Tærskel for diskplads** — se [Optagelser](/recordings). Frigør plads, eller sænk tærsklen. |
+
+### Når telefonen starter {#when-the-phone-starts}
+
+*Databasen kan ikke læses* betyder, at databasen er lavet af en anden version af programmet, og at denne ikke kan læse den. Som regel er en ældre version startet på en nyere versions data: installerer du den nyere version igen, åbner den databasen, som den var. **Begynd forfra** laver i stedet en tom database — alle kontakter og alle opkald i historikken går tabt, og det kan ikke fortrydes. Før du trykker, kan du gemme en kopi af databasefilen; [Diagnostik](/troubleshooting/diagnostics#files) siger, hvor den ligger.

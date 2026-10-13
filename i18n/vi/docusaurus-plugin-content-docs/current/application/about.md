@@ -20,6 +20,16 @@ Thẻ cho biết bạn có đang dùng phiên bản mới nhất không và lầ
 
 **Tự động tìm cập nhật**, mặc định bật, kiểm tra mỗi ngày một lần và ngay sau khi điện thoại khởi động. Nó hỏi máy chủ một tệp nhỏ, và không có gì được tải về hay cài đặt nếu bạn không đồng ý.
 
+Khi có phiên bản mới, thẻ ghi *Đã có phiên bản … Không có gì được tải về cho tới khi bạn yêu cầu.* **Có gì thay đổi** cho biết có gì mới, còn **Tải về** tải phiên bản đó về.
+
+Khi đã tải xong, **Cài và khởi động lại** đóng điện thoại và khởi động lại ở phiên bản mới. Điện thoại không bao giờ tự làm việc này, để không cắt ngang điều gì đang diễn ra: hãy bấm nút khi bạn không đang gọi. Một thông báo, *Đã có phiên bản mới*, cũng cho biết điều đó, kèm nút **Cập nhật ngay**.
+
+| Khi thẻ ghi | |
+| --- | --- |
+| *Đã có phiên bản … Bản này được cài bằng gói, nên bản mới cũng cài theo cách đó.* | Chương trình được cài từ một gói, chẳng hạn từ bản phân phối Linux của bạn. Bấm **Lấy gói cài**, rồi cài phiên bản mới theo cách bạn đã cài phiên bản này. |
+| *Bản dựng này không có địa chỉ cập nhật, nên nó không bao giờ hỏi. Các bản công bố trên trang web thì có.* | Chương trình được biên dịch từ mã nguồn thay vì tải từ trang web, và không tìm bản cập nhật. |
+| *Không máy chủ cập nhật nào trả lời.* | Không liên lạc được với máy chủ. Nếu máy tính đang trực tuyến, chọn **Quốc gia** ở trên có thể giúp ích: có thể có máy chủ gần bạn hơn. |
+
 ## Giấy phép {#licence}
 
 Chương trình là phần mềm tự do theo giấy phép GPL-2.0-or-later. Nó không đi kèm bất kỳ bảo đảm nào, và bạn có thể phân phối lại nó theo các điều khoản của giấy phép đó; toàn văn giấy phép có trong tệp tên `LICENSE`.

@@ -1,7 +1,7 @@
 ---
 title: Problemas comuns
 sidebar_position: 2
-description: "O que verificar quando uma conta não se regista, não há som, uma chamada ou uma reunião não é gravada, não há transcrição, o ponto não arranca, ou uma ligação, um atalho ou a API não fazem nada."
+description: "O que verificar quando uma conta não se regista, não há som, uma chamada ou uma reunião não é gravada, não há transcrição, o ponto não arranca, ou uma ligação, um atalho ou a API não fazem nada, e o que significam as mensagens do próprio telefone."
 ---
 
 Cada entrada aponta para a definição que o decide. Se a resposta não estiver aqui, abra o [Diagnóstico](/troubleshooting/diagnostics): mostra o que o telefone e a central dizem um ao outro.
@@ -88,3 +88,40 @@ Carregue em **Enviar um evento de teste** em [Definições → Integração](/in
 ## Um atalho não faz nada {#a-hotkey-does-nothing}
 
 Abra [Atalhos](/program/shortcuts). Um atalho funciona enquanto o telefone é o programa que está a usar; para o usar a partir de qualquer programa, marque **Em todo o lado**. Clique no atalho e carregue de novo na combinação se outro programa a tiver tomado.
+
+## Mensagens do telefone {#messages-the-phone-shows}
+
+Quando algo não acontece, o telefone diz porquê numa linha própria. Uma linha por baixo de uma lista desaparece sozinha ao fim de alguns segundos.
+
+### Quando uma chamada não sai {#when-a-call-is-not-placed}
+
+| Mensagem | O que fazer |
+| --- | --- |
+| *Não há nenhuma conta configurada* | Adicione uma conta em [Definições → Contas](/sip-accounts/setup). |
+| *Não há nenhuma conta ligada, por isso não há linha a partir da qual chamar.* | Marque a caixa de uma conta em **Definições → Contas**. |
+| *Ainda não há nenhuma linha registada.* | A conta está ligada mas ainda não está registada na central. Espere que o ponto fique verde; se não ficar, veja [A conta não se regista](#the-account-will-not-register). |
+| *Já há tantas chamadas quantas este telefone aguenta.* | Desligue uma das chamadas e volte a ligar. |
+| *A conta a partir da qual isto teria sido chamado já não existe.* | A linha pertence a uma conta que entretanto foi eliminada. Marque o número no teclado. |
+| *Esta linha não tem número para devolver a chamada.* | Quem ligou ocultou o número, por isso não há para onde devolver a chamada. |
+
+### Quando uma conta não liga {#when-an-account-does-not-connect}
+
+| Mensagem | O que fazer |
+| --- | --- |
+| *Esse endereço de servidor não foi encontrado. Verifique se não tem erros de escrita.* | Verifique **Endereço do servidor** no [formulário da conta](/sip-accounts/setup). |
+| *Não foi possível chegar ao servidor. Verifique o endereço, a porta e a sua rede.* | Verifique **Endereço do servidor**, e também **Transporte** e **Porta** em **Definições do servidor**. Uma firewall também pode estar a bloquear o SIP. |
+| *O servidor rejeitou este utilizador ou esta palavra-passe.* | Verifique **Utilizador** e **Palavra-passe**. Se a central verificar a palavra-passe com outro nome, preencha **Utilizador de autenticação**. |
+| *Não foi possível verificar o certificado do servidor. Se o administrador do servidor o emitiu por conta própria, desmarque «Verificar o certificado» em «Definições do servidor».* | Aparece numa ligação TLS. Se a central usar um certificado feito por ela própria, desmarque **Verificar o certificado** em **Definições do servidor**. |
+| *A palavra-passe desta conta não pôde ser lida do porta-chaves. Desbloqueie-o e ligue outra vez.* | Desbloqueie o porta-chaves do computador (o Acesso a Porta-chaves no macOS) e depois carregue em **Ligar** junto à conta. |
+
+### Durante uma chamada {#during-a-call}
+
+| Mensagem | O que fazer |
+| --- | --- |
+| *Nenhum formato de áudio em comum* | A central e o telefone não têm nenhum codec em comum. Ative um que a central use em [Formatos de áudio](/sip-accounts/calls#audio-formats). |
+| *Sem microfone nem altifalantes* | Escolha os dispositivos em [Definições → Dispositivos](/sip-accounts/devices). |
+| *Sem gravar: o disco desceu até ao limite. Liberte espaço, ou mude o limite nas definições.* | O espaço livre no disco chegou ao **Limiar de espaço em disco** — veja [Gravações](/recordings). Liberte espaço ou baixe o limiar. |
+
+### Ao iniciar o telefone {#when-the-phone-starts}
+
+*Base de dados ilegível* significa que a base de dados foi criada por outra versão do programa e esta não a consegue ler. Normalmente, uma versão mais antiga foi aberta com os dados de uma mais recente: reinstalar a versão mais recente abre a base tal como estava. **Recomeçar**, pelo contrário, cria uma base vazia — perdem-se todos os contactos e todas as chamadas do histórico, e não é possível anular. Antes de carregar, pode guardar uma cópia do ficheiro da base; [Diagnóstico](/troubleshooting/diagnostics#files) diz onde está.

@@ -20,6 +20,16 @@ Vahekaart ütleb, kas teil on uusim versioon ja millal viimati kontrolliti. **Ot
 
 **Otsi uuendusi automaatselt**, vaikimisi sees, kontrollib kord päevas ja varsti pärast telefoni käivitamist. See küsib serverilt ühe väikese faili ning midagi ei laadita alla ega paigaldata ilma teie loata.
 
+Kui on uus versioon, on vahekaardil kirjas *Versioon … on saadaval. Midagi ei laadita alla, kuni te ei palu.* **Mis muutus** näitab, mis selles uut on, ja **Laadi alla** laadib selle alla.
+
+Kui see on alla laaditud, sulgeb **Paigalda ja käivita uuesti** telefoni ja käivitab selle uuesti juba uues versioonis. Telefon ei tee seda kunagi ise, et midagi pooleliolevat ei katkeks: vajutage nuppu, kui te parasjagu ei räägi. Sama ütleb ka teavitus *Saadaval on uus versioon* nupuga **Uuenda kohe**.
+
+| Kui vahekaardil on kirjas | |
+| --- | --- |
+| *Versioon … on saadaval. See koopia paigaldati pakiga, seega uus paigaldatakse samamoodi.* | Programm on paigaldatud paketist, näiteks teie Linuxi distributsioonist. Vajutage **Võta pakk** ja paigaldage uus versioon samamoodi, nagu paigaldasite selle. |
+| *Sellel koostel ei ole uuendusaadressi, seega ta ei küsi kunagi. Veebisaidil avaldatutel on.* | Programm on ehitatud lähtekoodist, mitte veebisaidilt alla laaditud, ja uuendusi ei otsi. |
+| *Ükski uuendusserver ei vastanud.* | Serveriteni ei jõutud. Kui arvuti on võrgus, võib aidata välja **Riik** valimine eespool: võib-olla on teile lähemal server. |
+
 ## Litsents {#licence}
 
 Programm on vaba tarkvara litsentsi GPL-2.0-or-later all. Sellel puudub igasugune garantii ja te võite seda selle litsentsi tingimustel edasi levitada; täistekst on kaasas failis nimega `LICENSE`.
