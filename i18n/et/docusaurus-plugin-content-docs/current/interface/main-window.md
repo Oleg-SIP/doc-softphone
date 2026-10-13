@@ -38,7 +38,7 @@ Märkide all on [nupud](../sip-accounts/buttons.md), mille olete teinud kolleegi
 
 ### Salvestised, Kontaktid, Ajalugu, Etteütleja, Seaded {#recordings-contacts-history-prompter-settings}
 
-Need kirjed allosas avavad igaüks vahekaardi paremal, kõrvuti: [Salvestised](../interface/recordings.md), [Kontaktid ja ajalugu](contacts-history.md), [Etteütleja](prompter.md) ja [Seaded](settings-overview.md). **Etteütleja** on seal alles siis, kui etteütleja on lubatud ja tal on tuvastaja, millega kuulata. Avatud vahekaardid jäävad paremal pool ülemisse ritta.
+Need kirjed allosas avavad igaüks vahekaardi paremal, kõrvuti: [Salvestised](../interface/recordings.md), [Kontaktid ja ajalugu](contacts-history.md), [Etteütleja](prompter.md) ja [Seaded](settings-overview.md). **Etteütleja** on seal alles siis, kui kolm asja on paigas: etteütleja on lubatud, tuvastaja, kes oskab vestluse ajal kuulata, on nupuga **Kontrolli** kontrollitud, ja samuti keelemudel — vaadake [Etteütleja seaded](../ai-processing/prompter.md#what-it-needs). Avatud vahekaardid jäävad paremal pool ülemisse ritta.
 
 ## Pooleliolev kõne {#a-call-in-progress}
 

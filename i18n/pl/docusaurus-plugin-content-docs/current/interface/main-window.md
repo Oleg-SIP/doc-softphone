@@ -38,7 +38,7 @@ Pod plakietkami są [przyciski](../sip-accounts/buttons.md), które utworzyłeś
 
 ### Nagrania, Kontakty, Historia, Sufler, Ustawienia {#recordings-contacts-history-prompter-settings}
 
-Te pozycje na dole otwierają każda zakładkę po prawej, jedną obok drugiej: [Nagrania](../interface/recordings.md), [Kontakty i historia](contacts-history.md), [Sufler](prompter.md) oraz [Ustawienia](settings-overview.md). **Sufler** pojawia się dopiero wtedy, gdy sufler jest dozwolony i ma rozpoznawacz, którym może słuchać. Otwarte zakładki pozostają w rzędzie u góry prawej strony.
+Te pozycje na dole otwierają każda zakładkę po prawej, jedną obok drugiej: [Nagrania](../interface/recordings.md), [Kontakty i historia](contacts-history.md), [Sufler](prompter.md) oraz [Ustawienia](settings-overview.md). **Sufler** pojawia się dopiero wtedy, gdy spełnione są trzy warunki: sufler jest dozwolony, rozpoznawacz, który umie słuchać w trakcie rozmowy, został sprawdzony przyciskiem **Sprawdź**, i tak samo model językowy — zobacz [Ustawienia suflera](../ai-processing/prompter.md#what-it-needs). Otwarte zakładki pozostają w rzędzie u góry prawej strony.
 
 ## Trwająca rozmowa {#a-call-in-progress}
 

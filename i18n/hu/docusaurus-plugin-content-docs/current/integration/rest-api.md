@@ -35,7 +35,7 @@ Nem kell külön szolgáltatást telepíteni, és újraindításra sincs szüks�
 Hogy egy program mit tehet, az attól függ, hogy módosít-e tárolt adatokat, nem attól, hogy olvas-e:
 
 - **Token nélkül** a számítógép bármely programja mindent olvashat az engedélyezett csoportokban, és vezérelheti a hívásokat: indíthat, fogadhat, bonthat, tartásba tehet, folytathat, átadhat és DTMF-et küldhet.
-- **A tokennel** az `Authorization` fejlécben azokat a végpontokat is használhatja, amelyek a tárolt adatokat módosítják. Token nélkül ezeket a végpontokat a program sem ki nem szolgálja, sem fel nem sorolja az API saját oldalán.
+- **A tokennel** az `Authorization` fejlécben [azokat a végpontokat is használhatja, amelyek a tárolt adatokat módosítják](#endpoints-that-need-the-token). Token nélkül ezek a végpontok nem szerepelnek az API saját oldalán, és `401`-gyel válaszolnak. Ha egyáltalán nincs token beállítva, semmi sem módosíthatja a tárolt adatokat.
 
 A tokent a számítógép kulcstartója őrzi, nem a beállításfájl, és a `/settings` soha nem adja vissza.
 
@@ -67,6 +67,20 @@ Az alapcím `http://127.0.0.1:8377`. Az alábbi végpontokhoz nem kell token.
 | GET | `/accounts` | A SIP-fiókok és regisztrációs állapotuk. Jelszót soha. |
 | GET | `/settings` | A teljes konfiguráció, a titkos adatok nélkül. |
 | GET | `/taxonomy` | Kategóriák, címkék és figyelmeztető jelek, a kódjaikkal. |
+
+### A tokent igénylő végpontok {#endpoints-that-need-the-token}
+
+Ezek a tárolt adatokat módosítják, ezért minden kérésnek vinnie kell a tokent az `Authorization` fejlécben. Az API saját oldala csak olyan kérésnek mutatja őket, amely viszi.
+
+| Módszer | Útvonal | Mit csinál |
+| --- | --- | --- |
+| POST | `/contacts` | Hozzáad egy névjegyet: `{"name": "...", "number": "...", "account_id": "..."}`; az `account_id` nem kötelező. |
+| PUT | `/contacts/{id}` | Lecserél egy névjegyet. |
+| DELETE | `/contacts/{id}` | Eltávolít egy névjegyet. |
+| DELETE | `/history/{id}` | Elfelejt egy hívást a hívásnaplóból. |
+| DELETE | `/history` | Elfelejti az egész hívásnaplót. Nem vonható vissza. |
+| PUT | `/accounts/{id}` | Lecseréli egy fiók beállításait. A jelszó nincs köztük. |
+| PUT | `/settings` | Lecseréli a beállításokat. |
 
 Minden azonosító a telefon által kiadott UUID: a hívás `id` értéke a `/calls` végpontból vagy a `POST /calls` válaszából származik, a fiók `id` értéke a `/accounts` végpontból.
 
@@ -164,6 +178,9 @@ Minden hiba JSON egyetlen `error` kulccsal, amely embereknek szól, nem gépi fe
 | Állapotkód | Törzs | Jelentés |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Az útvonal nem létezik, vagy a hozzáférési csoportja ki van kapcsolva; szándékosan mindkettő ugyanazt a választ adja. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Az útvonal létezik, de ezt a módszert nem fogadja: például `POST /settings` a `PUT` helyett. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Tárolt adatot módosító végpont olyan telefonon, ahol a **Token** mező üres. Töltse ki a **Helyi vezérlés** részben. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Tárolt adatot módosító végpont a helyes token nélkül. |
 | 404 | `{"error":"no contact with that id"}` | Az útvonal helyes, az azonosító nem. |
 | 400 | `{"error":"no call with that id"}` | A hívás véget ért, vagy sosem létezett. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` szám nélkül. Semmi sem került tárcsázásra. |
@@ -203,7 +220,7 @@ A korábbi verziók camelCase neveket és rövid azonosítókat használtak. Az 
 | --- | --- |
 | Elutasított kapcsolat a `127.0.0.1:8377` címen | A helyi vezérlés ki van kapcsolva, a telefon nem fut, vagy a portot módosították. |
 | `404 {"error":"no such endpoint"}` egy ezen az oldalon szereplő útvonalra | A hozzáférési csoportja ki van kapcsolva. |
-| Az olvasás működik, az írást elutasítja | A tárolt adatokat módosító végpontokhoz token kell az `Authorization` fejlécben. |
+| Az olvasás működik, az írást `401`-gyel elutasítja | A tárolt adatokat módosító végpontoknak kell a token az `Authorization` fejlécben, és a telefonon előbb ki kell tölteni a **Token** mezőt. |
 | A kategóriák címei nem angolul vannak | A címek a felület nyelvét követik. Az illesztést a `/taxonomy` `code` értéke alapján végezze. |
 | Hiányzik az `accountId`, a `startedAt` vagy az `at` | Az integrációt a korábbi nevekre írták; lásd fent. |
 

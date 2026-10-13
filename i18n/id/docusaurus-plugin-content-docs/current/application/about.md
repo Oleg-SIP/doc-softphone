@@ -10,7 +10,7 @@ description: Versi, pembaruan, negara Anda, lisensi, isi laporan penggunaan, for
 
 ## Versi dan negara {#version-and-country}
 
-Di bagian atas terdapat nama, **Versi** (pada gambar 1.1.3), tautan ke situs web, [ai-softphone.com](https://ai-softphone.com/), dan tautan ke dokumentasi ini.
+Di bagian atas terdapat nama, **Versi** (pada gambar 1.1.5), tautan ke situs web, [ai-softphone.com](https://ai-softphone.com/), dan tautan ke dokumentasi ini.
 
 **Negara** memberi tahu program di mana Anda berada. Ini membantu memilih server pembaruan terbaik, dan membuka jalan ke layanan bahasa dan ucapan yang dihosting di negara Anda. **Deteksi otomatis** mengisinya.
 
@@ -58,10 +58,10 @@ Formulir untuk menulis kepada pengembang tanpa meninggalkan program.
 | --- | --- |
 | **Perihal** dan **Pesan** | Apa yang ingin Anda sampaikan. |
 | **Nama Anda** dan **Alamat untuk jawaban** | Keduanya opsional. Tanpa alamat, kami tidak dapat menjawab. |
-| **Lampirkan log** | Menambahkan bagian akhir log, sekitar 512 kB. Lihat [Diagnostik](/troubleshooting/diagnostics). |
+| **Lampirkan log** | Menambahkan bagian akhir log, paling banyak sekitar 512 kB; baris di bawah kotak centang menyebutkan berapa besarnya sekarang (111 kB di gambar). Lihat [Diagnostik](/troubleshooting/diagnostics). |
 
 **Kirim** tetap abu-abu sampai ada sesuatu yang bisa dikirim.
 
 ## Dibangun dengan {#built-with}
 
-Komponen yang menjadi dasar program, masing-masing dengan lisensinya: Qt 6 (GPL-2.0 atau GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (domain publik), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later), dan klien PulseAudio (LGPL-2.1-or-later). Masing-masing digunakan di bawah lisensi yang tertera di sampingnya; bila sebuah komponen menawarkan beberapa lisensi, yang disebutkan itulah yang dipakai.
+Komponen yang menjadi dasar program, masing-masing dengan lisensinya: Qt 6 (GPL-2.0 atau GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (domain publik), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later), dan klien PulseAudio (LGPL-2.1-or-later). Masing-masing digunakan di bawah lisensi yang tertera di sampingnya; bila sebuah komponen menawarkan beberapa lisensi, yang disebutkan itulah yang dipakai.

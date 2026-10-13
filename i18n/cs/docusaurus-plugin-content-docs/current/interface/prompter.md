@@ -10,7 +10,7 @@ description: "Okno živého našeptávače: slova hovoru ve chvíli, kdy zazní,
 
 Na obrázku pomocník **Námitky v hovoru** poslouchá obchodní hovor. Levý sloupec je to, co zaznělo, každý řádek se svým časem a stranou; pravý je to, co model navrhl ke každé replice zákazníka; nejnovější nápověda je velkým písmem zopakovaná nad oběma.
 
-**Našeptávač** se objeví v seznamu ve spodní části telefonu mezi **Historie** a **Nastavení**, jakmile jsou splněny tři věci: našeptávač je povolený, existuje rozpoznávač, který umí poslouchat během rozhovoru, a — pro pomocníky, kteří něco navrhují — jazykový model. To vše se nastavuje v [Nastavení → Našeptávač](/ai-processing/prompter), kde je i velikost textu a samotní pomocníci.
+**Našeptávač** se objeví v seznamu dole na telefonu, mezi **Historie** a **Nastavení**, jakmile platí tři věci: našeptávač je povolen, je tu rozpoznávač, který umí poslouchat během rozhovoru, a je tu jazykový model, kterého se ptají pomocníci, kteří něco navrhují. To vše se nastavuje v [Nastavení → Našeptávač](/ai-processing/prompter), kde je i velikost textu a samotní pomocníci.
 
 ## Okno {#the-window}
 <Shot name="44_prompter_window" alt="Okno našeptávače se zvoleným pomocníkem Námitky v hovoru před spuštěním" />

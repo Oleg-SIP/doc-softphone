@@ -10,7 +10,7 @@ description: Versionen, uppdateringar, ditt land, licensen, vad användningsrapp
 
 ## Version och land {#version-and-country}
 
-Överst finns namnet, **Version** (på bilden 1.1.3), en länk till webbplatsen, [ai-softphone.com](https://ai-softphone.com/), och en till den här dokumentationen.
+Överst finns namnet, **Version** (på bilden 1.1.5), en länk till webbplatsen, [ai-softphone.com](https://ai-softphone.com/), och en till den här dokumentationen.
 
 **Land** talar om för programmet var du är. Det hjälper till att välja den bästa uppdateringsservern och öppnar för språk- och taltjänster som drivs i ditt land. **Ta reda på det automatiskt** fyller i det.
 
@@ -58,10 +58,10 @@ Ett formulär som skriver till utvecklarna utan att lämna programmet.
 | --- | --- |
 | **Ämne** och **Meddelande** | Det du vill säga. |
 | **Ditt namn** och **Adress för ett svar** | Båda är frivilliga. Utan en adress finns det inget sätt att svara. |
-| **Bifoga loggen** | Lägger till slutet av loggen, ungefär 512 kB. Se [Diagnostik](/troubleshooting/diagnostics). |
+| **Bifoga loggen** | Lägger till slutet av loggen, högst ungefär 512 kB; raden under kryssrutan säger hur mycket det är nu (111 kB på bilden). Se [Diagnostik](/troubleshooting/diagnostics). |
 
 **Skicka** förblir grå tills det finns något att skicka.
 
 ## Byggt med {#built-with}
 
-Komponenterna som programmet är byggt på, var och en med sin licens: Qt 6 (GPL-2.0 eller GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (public domain), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) och PulseAudio-klienten (LGPL-2.1-or-later). Var och en används under licensen bredvid; där en komponent erbjuder flera är det den nämnda som har valts.
+Komponenterna som programmet är byggt på, var och en med sin licens: Qt 6 (GPL-2.0 eller GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (public domain), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) och PulseAudio-klienten (LGPL-2.1-or-later). Var och en används under licensen bredvid; där en komponent erbjuder flera är det den nämnda som har valts.

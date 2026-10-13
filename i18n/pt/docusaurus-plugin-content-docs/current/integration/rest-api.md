@@ -35,7 +35,7 @@ Não é instalado nenhum serviço à parte e não é preciso reiniciar. A parte 
 O que um programa pode fazer depende de mudar dados guardados ou não, e não de ler:
 
 - **Sem código**, qualquer programa do computador pode ler tudo nos grupos ligados e controlar chamadas: fazer, atender, desligar, pôr em espera, retomar, transferir e enviar DTMF.
-- **Com o código** no cabeçalho `Authorization`, pode também usar os pontos de acesso que mudam o que está guardado. Sem o código, esses pontos de acesso nem são servidos nem aparecem na própria página da API.
+- **Com o código** no cabeçalho `Authorization`, pode também usar [os pontos de acesso que mudam o que está guardado](#endpoints-that-need-the-token). Sem o código, esses pontos de acesso não aparecem na própria página da API e respondem `401`. Sem nenhum código definido, nada pode mudar o que está guardado.
 
 O código é guardado no porta-chaves do computador, não no ficheiro de definições, e nunca é devolvido por `/settings`.
 
@@ -67,6 +67,20 @@ O endereço base é `http://127.0.0.1:8377`. Os pontos de acesso abaixo não pre
 | GET | `/accounts` | As contas SIP e o seu estado de registo. Nunca uma palavra-passe. |
 | GET | `/settings` | Toda a configuração, sem os segredos. |
 | GET | `/taxonomy` | Categorias, etiquetas e sinais, com os seus códigos. |
+
+### Pontos de acesso que pedem o código {#endpoints-that-need-the-token}
+
+Mudam o que está guardado, por isso cada pedido tem de levar o código no cabeçalho `Authorization`. A própria página da API só os mostra a um pedido que o leve.
+
+| Método | Caminho | Faz |
+| --- | --- | --- |
+| POST | `/contacts` | Adiciona um contacto: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` é opcional. |
+| PUT | `/contacts/{id}` | Substitui um contacto. |
+| DELETE | `/contacts/{id}` | Remove um contacto. |
+| DELETE | `/history/{id}` | Esquece uma chamada do registo de chamadas. |
+| DELETE | `/history` | Esquece todo o registo de chamadas. Não pode ser desfeito. |
+| PUT | `/accounts/{id}` | Substitui as definições de uma conta. A palavra-passe não está entre elas. |
+| PUT | `/settings` | Substitui as definições. |
 
 Cada identificador é um UUID emitido pelo telefone: o `id` de uma chamada vem de `/calls` ou da resposta a `POST /calls`, o `id` de uma conta de `/accounts`.
 
@@ -164,6 +178,9 @@ Cada erro é JSON com uma única chave `error`, pensada para pessoas, não para 
 | Estado | Corpo | Significado |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | O caminho não existe, ou o seu grupo de acesso está desligado; ambos dão de propósito a mesma resposta. |
+| 405 | `{"error":"that endpoint does not take this method"}` | O caminho existe, mas não aceita este método: por exemplo `POST /settings` em vez de `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Um ponto de acesso que muda o que está guardado, num telefone onde o campo **Código** está vazio. Preencha-o em **Controlo local**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Um ponto de acesso que muda o que está guardado, sem o código certo. |
 | 404 | `{"error":"no contact with that id"}` | O caminho está certo, o identificador não. |
 | 400 | `{"error":"no call with that id"}` | A chamada terminou, ou nunca existiu. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` sem número. Nada foi marcado. |
@@ -203,7 +220,7 @@ As versões anteriores usavam nomes em camelCase e identificadores curtos. `acco
 | --- | --- |
 | Ligação recusada em `127.0.0.1:8377` | O controlo local está desligado, o telefone não está a funcionar, ou a porta foi mudada. |
 | `404 {"error":"no such endpoint"}` para um caminho desta página | O seu grupo de acesso está desligado. |
-| A leitura funciona, a escrita é recusada | Os pontos de acesso que mudam dados guardados precisam do código no cabeçalho `Authorization`. |
+| Ler funciona, escrever é recusado com `401` | Os pontos de acesso que mudam dados guardados pedem o código no cabeçalho `Authorization`, e o campo **Código** do telefone tem de ser preenchido primeiro. |
 | Os títulos das categorias não estão em inglês | Os títulos seguem a língua da interface. Faça corresponder pelo `code` de `/taxonomy`. |
 | Faltam `accountId`, `startedAt` ou `at` | A integração foi escrita para os nomes antigos; veja acima. |
 

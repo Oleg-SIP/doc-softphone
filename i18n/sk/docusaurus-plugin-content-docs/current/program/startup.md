@@ -17,7 +17,7 @@ description: "Spúšťajte telefón s počítačom, nechajte ho bežať po zatvo
 
 ## Zatvorenie {#close}
 
-**Nechať telefón bežať, keď sa zavrie okno**, predvolene zapnuté. Zatvorené okno nie je zavesený telefón: hovory stále prichádzajú a ikona v oblasti oznámení (na paneli s ponukami v macOS) okno vráti. Vypnite to a zatvorenie okna program ukončí.
+**Nechať telefón bežať, keď sa zavrie okno**, predvolene zapnuté. Zatvorené okno nie je zavesený telefón: hovory stále prichádzajú a ikona v oblasti oznámení (na paneli s ponukami v macOS) okno vráti. Na pracovnej ploche bez oblasti oznámení, napríklad v GNOME bez rozšírenia pre stavové ikony, telefón namiesto toho čaká minimalizovaný na paneli úloh a riadok pod prepínačom to hovorí. Vypnite to a zatvorenie okna program ukončí.
 
 ## Odkazy na volanie {#call-links}
 

@@ -35,7 +35,7 @@ Ne instalira se zasebna usluga i nije potrebno ponovno pokretanje. Dio programa 
 Što program smije raditi ovisi o tome mijenja li spremljene podatke, a ne o tome čita li:
 
 - **Bez tokena** bilo koji program na računalu smije čitati sve u uključenim skupinama i upravljati pozivima: uputiti, javiti se, spustiti, staviti na čekanje, nastaviti, proslijediti i slati DTMF.
-- **S tokenom** u zaglavlju `Authorization` smije koristiti i krajnje točke koje mijenjaju ono što je spremljeno. Bez tokena te se krajnje točke niti poslužuju niti navode na vlastitoj stranici API-ja.
+- **S tokenom** u zaglavlju `Authorization` smije koristiti i [krajnje točke koje mijenjaju ono što je spremljeno](#endpoints-that-need-the-token). Bez tokena te se krajnje točke ne navode na vlastitoj stranici API-ja i odgovaraju s `401`. Ako token uopće nije postavljen, ništa ne može promijeniti spremljeno.
 
 Token se čuva u spremniku ključeva računala, ne u datoteci postavki, i `/settings` ga nikada ne vraća.
 
@@ -67,6 +67,20 @@ Osnovna adresa je `http://127.0.0.1:8377`. Krajnje točke u nastavku ne trebaju 
 | GET | `/accounts` | SIP računi i stanje njihove registracije. Nikada lozinka. |
 | GET | `/settings` | Cijela konfiguracija, bez tajni. |
 | GET | `/taxonomy` | Kategorije, oznake i upozoravajući signali, s njihovim kodovima. |
+
+### Krajnje točke kojima treba token {#endpoints-that-need-the-token}
+
+One mijenjaju ono što je spremljeno, pa svaki zahtjev mora nositi token u zaglavlju `Authorization`. Vlastita stranica API-ja prikazuje ih samo zahtjevu koji ga nosi.
+
+| Metoda | Putanja | Što radi |
+| --- | --- | --- |
+| POST | `/contacts` | Dodaje kontakt: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` nije obavezan. |
+| PUT | `/contacts/{id}` | Zamjenjuje kontakt. |
+| DELETE | `/contacts/{id}` | Uklanja kontakt. |
+| DELETE | `/history/{id}` | Zaboravlja jedan poziv iz zapisnika poziva. |
+| DELETE | `/history` | Zaboravlja cijeli zapisnik poziva. To se ne može poništiti. |
+| PUT | `/accounts/{id}` | Zamjenjuje postavke računa. Lozinka nije među njima. |
+| PUT | `/settings` | Zamjenjuje postavke. |
 
 Svaki identifikator je UUID koji dodjeljuje telefon: `id` poziva dolazi iz `/calls` ili iz odgovora na `POST /calls`, `id` računa iz `/accounts`.
 
@@ -164,6 +178,9 @@ Svaka pogreška je JSON s jednim ključem `error`, namijenjena ljudima, a ne ra�
 | Status | Tijelo | Značenje |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Putanja ne postoji ili je njezina skupina pristupa isključena; oboje namjerno daje isti odgovor. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Putanja postoji, ali ne prima tu metodu: na primjer `POST /settings` umjesto `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Krajnja točka koja mijenja spremljeno, na telefonu gdje je polje **Token** prazno. Ispunite ga u **Lokalno upravljanje**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Krajnja točka koja mijenja spremljeno, bez ispravnog tokena. |
 | 404 | `{"error":"no contact with that id"}` | Putanja je ispravna, identifikator nije. |
 | 400 | `{"error":"no call with that id"}` | Poziv je završio ili nikada nije postojao. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` bez broja. Ništa nije birano. |
@@ -203,7 +220,7 @@ Ranije inačice koristile su nazive u camelCaseu i kratke identifikatore. `accou
 | --- | --- |
 | Veza odbijena na `127.0.0.1:8377` | Lokalno upravljanje je isključeno, telefon ne radi ili je port promijenjen. |
 | `404 {"error":"no such endpoint"}` za putanju s ove stranice | Njezina skupina pristupa je isključena. |
-| Čitanje radi, pisanje je odbijeno | Krajnje točke koje mijenjaju spremljene podatke trebaju token u zaglavlju `Authorization`. |
+| Čitanje radi, pisanje se odbija s `401` | Krajnjim točkama koje mijenjaju spremljene podatke treba token u zaglavlju `Authorization`, a na telefonu najprije treba ispuniti polje **Token**. |
 | Naslovi kategorija nisu na engleskom | Naslovi prate jezik sučelja. Uparujte po `code` iz `/taxonomy`. |
 | Nedostaju `accountId`, `startedAt` ili `at` | Integracija je pisana za ranije nazive; pogledajte gore. |
 

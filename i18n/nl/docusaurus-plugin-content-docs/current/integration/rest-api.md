@@ -35,7 +35,7 @@ Er wordt geen aparte dienst geïnstalleerd en er is geen herstart nodig. Het dee
 Wat een programma mag, hangt ervan af of het opgeslagen gegevens wijzigt, niet of het leest:
 
 - **Zonder token** mag elk programma op de computer alles in de opengezette groepen lezen en gesprekken besturen: bellen, opnemen, ophangen, in de wacht zetten, hervatten, doorverbinden en DTMF sturen.
-- **Met het token** in de koptekst `Authorization` mag het ook de eindpunten gebruiken die opgeslagen gegevens wijzigen. Zonder het token worden die eindpunten niet aangeboden en niet vermeld op de eigen pagina van de API.
+- **Met het token** in de koptekst `Authorization` mag het ook [de eindpunten gebruiken die opgeslagen gegevens wijzigen](#endpoints-that-need-the-token). Zonder het token worden die eindpunten niet vermeld op de eigen pagina van de API en antwoorden ze met `401`. Is er helemaal geen token ingesteld, dan kan niets de opgeslagen gegevens wijzigen.
 
 Het token wordt bewaard in de sleutelhanger van de computer, niet in het instellingenbestand, en wordt nooit teruggegeven door `/settings`.
 
@@ -67,6 +67,20 @@ Het basisadres is `http://127.0.0.1:8377`. De eindpunten hieronder hebben geen t
 | GET | `/accounts` | De SIP-accounts en hun registratietoestand. Nooit een wachtwoord. |
 | GET | `/settings` | De hele configuratie, zonder de geheimen. |
 | GET | `/taxonomy` | Categorieën, labels en signalen, met hun codes. |
+
+### Eindpunten die het token nodig hebben {#endpoints-that-need-the-token}
+
+Ze wijzigen opgeslagen gegevens, dus elk verzoek moet het token meedragen in de koptekst `Authorization`. De eigen pagina van de API toont ze alleen aan een verzoek dat het meedraagt.
+
+| Methode | Pad | Doet |
+| --- | --- | --- |
+| POST | `/contacts` | Voegt een contact toe: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` is optioneel. |
+| PUT | `/contacts/{id}` | Vervangt een contact. |
+| DELETE | `/contacts/{id}` | Verwijdert een contact. |
+| DELETE | `/history/{id}` | Vergeet één gesprek uit de gesprekslijst. |
+| DELETE | `/history` | Vergeet de hele gesprekslijst. Dat is niet terug te draaien. |
+| PUT | `/accounts/{id}` | Vervangt de instellingen van een account. Het wachtwoord hoort daar niet bij. |
+| PUT | `/settings` | Vervangt de instellingen. |
 
 Elke identificatie is een UUID die de telefoon uitgeeft: een gespreks-`id` komt uit `/calls` of uit het antwoord op `POST /calls`, een account-`id` uit `/accounts`.
 
@@ -164,6 +178,9 @@ Elke fout is JSON met één sleutel `error`, bedoeld voor mensen, niet om te par
 | Status | Body | Betekenis |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Het pad bestaat niet, of de toegangsgroep staat uit; beide geven met opzet hetzelfde antwoord. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Het pad bestaat, maar neemt deze methode niet: bijvoorbeeld `POST /settings` in plaats van `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Een eindpunt dat opgeslagen gegevens wijzigt, op een telefoon waar het veld **Token** leeg is. Vul het in onder **Lokale bediening**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Een eindpunt dat opgeslagen gegevens wijzigt, zonder het juiste token. |
 | 404 | `{"error":"no contact with that id"}` | Het pad klopt, de identificatie niet. |
 | 400 | `{"error":"no call with that id"}` | Het gesprek is beëindigd, of heeft nooit bestaan. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` zonder nummer. Er werd niets gebeld. |
@@ -203,7 +220,7 @@ Eerdere versies gebruikten namen in camelCase en korte identificaties. `accountI
 | --- | --- |
 | Verbinding geweigerd op `127.0.0.1:8377` | Lokale bediening staat uit, de telefoon draait niet, of de poort is gewijzigd. |
 | `404 {"error":"no such endpoint"}` voor een pad op deze pagina | De toegangsgroep staat uit. |
-| Lezen werkt, schrijven wordt geweigerd | De eindpunten die opgeslagen gegevens wijzigen, hebben het token in de koptekst `Authorization` nodig. |
+| Lezen werkt, schrijven wordt geweigerd met `401` | De eindpunten die opgeslagen gegevens wijzigen, hebben het token nodig in de koptekst `Authorization`, en op de telefoon moet eerst het veld **Token** zijn ingevuld. |
 | Categorietitels zijn niet in het Engels | Titels volgen de interfacetaal. Koppel op `code` uit `/taxonomy`. |
 | `accountId`, `startedAt` of `at` ontbreken | De koppeling is geschreven voor de eerdere namen; zie hierboven. |
 

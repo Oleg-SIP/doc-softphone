@@ -17,7 +17,7 @@ description: "Käivitage telefon koos arvutiga, laske sel aknast hoolimata edasi
 
 ## Sulgemine {#close}
 
-**Lase telefonil edasi töötada, kui aken suletakse**, vaikimisi sees. Suletud aken ei ole lõpetatud telefon: kõned saabuvad endiselt ja teavitusala ikoon (macOS-is menüüribal) toob akna tagasi. Lülitage see välja ja akna sulgemine lõpetab programmi töö.
+**Lase telefonil edasi töötada, kui aken suletakse**, vaikimisi sees. Suletud aken ei ole lõpetatud telefon: kõned saabuvad endiselt ja teavitusala ikoon (macOS-is menüüribal) toob akna tagasi. Töölaual, kus teavitusala pole, näiteks GNOME-s ilma olekuikoonide laienduseta, ootab telefon selle asemel tegumiribale minimeerituna ja lüliti all olev rida ütleb seda. Lülitage see välja ja akna sulgemine lõpetab programmi töö.
 
 ## Kõnelingid {#call-links}
 

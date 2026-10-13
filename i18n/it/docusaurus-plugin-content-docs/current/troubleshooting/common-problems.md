@@ -63,7 +63,7 @@ Se la finestra si apre ma il suggeritore non si avvia, la riga sotto i suoi puls
 
 ## Il telefono è sparito quando ho chiuso la finestra {#the-phone-disappeared-when-i-closed-the-window}
 
-Con **Lascia il telefono in funzione quando la finestra è chiusa** attivo, il telefono è ancora in funzione e le chiamate arrivano ancora. L'icona nell'area di notifica (la barra dei menu su macOS) riporta la finestra. Veda [Avvio](/program/startup).
+Con **Lascia il telefono in funzione quando la finestra è chiusa** attivo, il telefono è ancora in funzione e le chiamate arrivano ancora. L'icona nell'area di notifica (la barra dei menu su macOS) riporta la finestra. Su un desktop senza area di notifica, il telefono è ridotto a icona nella barra delle applicazioni. Veda [Avvio](/program/startup).
 
 ## Un numero di telefono in un browser o in un CRM non chiama {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

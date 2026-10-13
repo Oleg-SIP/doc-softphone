@@ -17,7 +17,7 @@ description: "De telefoon met de computer laten starten, laten doordraaien als h
 
 ## Sluiten {#close}
 
-**De telefoon laten doordraaien wanneer het venster wordt gesloten**, standaard aan. Een gesloten venster is geen opgehangen telefoon: gesprekken komen nog steeds binnen, en het pictogram in het meldingsgebied (de menubalk op macOS) haalt het venster terug. Zet dit uit en het sluiten van het venster sluit het programma af.
+**De telefoon laten doordraaien wanneer het venster wordt gesloten**, standaard aan. Een gesloten venster is geen opgehangen telefoon: gesprekken komen nog steeds binnen, en het pictogram in het meldingsgebied (de menubalk op macOS) haalt het venster terug. Op een bureaublad zonder meldingsgebied, zoals GNOME zonder extensie voor statuspictogrammen, wacht de telefoon in plaats daarvan geminimaliseerd in de taakbalk, en de regel onder de schakelaar zegt dat. Zet dit uit en het sluiten van het venster sluit het programma af.
 
 ## Belkoppelingen {#call-links}
 

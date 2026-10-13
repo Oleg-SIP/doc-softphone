@@ -35,7 +35,7 @@ Ingen egen tjeneste installeres, og det trengs ingen omstart. Den delen av progr
 Hva et program får gjøre, avhenger av om det endrer lagrede data, ikke av om det leser:
 
 - **Uten nøkkel** kan ethvert program på maskinen lese alt i gruppene som er åpnet, og styre samtaler: ringe, svare, legge på, sette på vent, gjenoppta, sette over og sende DTMF.
-- **Med nøkkelen** i hodet `Authorization` kan det også bruke endepunktene som endrer det som er lagret. Uten nøkkelen verken tilbys eller vises disse endepunktene på API-ets egen side.
+- **Med nøkkelen** i hodet `Authorization` kan det også bruke [endepunktene som endrer det som er lagret](#endpoints-that-need-the-token). Uten nøkkelen vises ikke disse endepunktene på API-ets egen side, og de svarer `401`. Er det ikke satt noen nøkkel i det hele tatt, kan ingenting endre det som er lagret.
 
 Nøkkelen lagres i maskinens nøkkelring, ikke i innstillingsfilen, og returneres aldri av `/settings`.
 
@@ -67,6 +67,20 @@ Grunnadressen er `http://127.0.0.1:8377`. Endepunktene nedenfor trenger ingen n�
 | GET | `/accounts` | SIP-kontoene og registreringstilstanden deres. Aldri et passord. |
 | GET | `/settings` | Hele konfigurasjonen, uten hemmelighetene. |
 | GET | `/taxonomy` | Kategorier, etiketter og signaler, med kodene deres. |
+
+### Endepunkter som krever nøkkelen {#endpoints-that-need-the-token}
+
+De endrer det som er lagret, så hver forespørsel må ha med nøkkelen i hodet `Authorization`. API-ets egen side viser dem bare til en forespørsel som har den med.
+
+| Metode | Sti | Gjør |
+| --- | --- | --- |
+| POST | `/contacts` | Legger til en kontakt: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` er valgfri. |
+| PUT | `/contacts/{id}` | Erstatter en kontakt. |
+| DELETE | `/contacts/{id}` | Fjerner en kontakt. |
+| DELETE | `/history/{id}` | Glemmer én samtale i samtaleloggen. |
+| DELETE | `/history` | Glemmer hele samtaleloggen. Det kan ikke angres. |
+| PUT | `/accounts/{id}` | Erstatter innstillingene for en konto. Passordet er ikke blant dem. |
+| PUT | `/settings` | Erstatter innstillingene. |
 
 Hver identifikator er en UUID utstedt av telefonen: en samtales `id` kommer fra `/calls` eller fra svaret på `POST /calls`, en kontos `id` fra `/accounts`.
 
@@ -164,6 +178,9 @@ Hver feil er JSON med én enkelt nøkkel `error`, ment for mennesker, ikke for m
 | Status | Innhold | Betydning |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Stien finnes ikke, eller tilgangsgruppen er av; begge gir med vilje det samme svaret. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Stien finnes, men tar ikke denne metoden: for eksempel `POST /settings` i stedet for `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Et endepunkt som endrer det som er lagret, på en telefon der feltet **Nøkkel** er tomt. Fyll det ut under **Lokal styring**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Et endepunkt som endrer det som er lagret, uten riktig nøkkel. |
 | 404 | `{"error":"no contact with that id"}` | Stien er riktig, identifikatoren er det ikke. |
 | 400 | `{"error":"no call with that id"}` | Samtalen er slutt, eller har aldri eksistert. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` uten et nummer. Ingenting ble ringt. |
@@ -203,7 +220,7 @@ Tidligere versjoner brukte navn i camelCase og korte identifikatorer. `accountId
 | --- | --- |
 | Tilkobling avvist på `127.0.0.1:8377` | Lokal styring er av, telefonen kjører ikke, eller porten er endret. |
 | `404 {"error":"no such endpoint"}` for en sti på denne siden | Tilgangsgruppen er av. |
-| Lesing virker, skriving avvises | Endepunktene som endrer lagrede data, krever nøkkelen i hodet `Authorization`. |
+| Lesing virker, skriving avvises med `401` | Endepunktene som endrer lagrede data, krever nøkkelen i hodet `Authorization`, og feltet **Nøkkel** på telefonen må fylles ut først. |
 | Kategorititlene er ikke på engelsk | Titlene følger grensesnittspråket. Match på `code` fra `/taxonomy`. |
 | `accountId`, `startedAt` eller `at` mangler | Integrasjonen ble skrevet for de tidligere navnene; se over. |
 

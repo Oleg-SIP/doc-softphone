@@ -10,7 +10,7 @@ Le **Souffleur** écoute une conversation pendant qu'elle a lieu. Dans une fenê
 
 Sur l'image, l'assistant **Objections pendant l'appel** écoute un appel de vente. La colonne de gauche est ce qui a été dit, chaque ligne avec son heure et son côté ; celle de droite est ce que le modèle a suggéré à chaque réponse du client ; la suggestion la plus récente est répétée en gros caractères au-dessus des deux.
 
-**Souffleur** apparaît dans la liste en bas du téléphone, entre **Journal** et **Réglages**, dès que trois conditions sont réunies : le souffleur est autorisé, il existe une reconnaissance capable d'écouter pendant une conversation et — pour les assistants qui suggèrent quelque chose — un modèle de langue. Tout cela se règle dans [Réglages → Souffleur](/ai-processing/prompter), où se trouvent aussi la taille du texte et les assistants eux-mêmes.
+**Souffleur** apparaît dans la liste au pied du téléphone, entre **Journal** et **Réglages**, dès que trois choses sont en place : le souffleur est autorisé, il y a une reconnaissance capable d'écouter pendant une conversation, et il y a un modèle de langue, qu'interrogent les assistants qui suggèrent quelque chose. Tout cela se règle dans [Réglages → Souffleur](/ai-processing/prompter), où se trouvent aussi la taille du texte et les assistants eux-mêmes.
 
 ## La fenêtre {#the-window}
 <Shot name="44_prompter_window" alt="La fenêtre du souffleur avec l'assistant Objections pendant l'appel choisi, avant le démarrage" />

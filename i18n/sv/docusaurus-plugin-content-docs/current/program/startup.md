@@ -17,7 +17,7 @@ description: "Starta telefonen med datorn, låt den gå vidare när fönstret ä
 
 ## Stängning {#close}
 
-**Låt telefonen gå vidare när fönstret stängs**, på som standard. Ett stängt fönster är inte en pålagd telefon: samtal kommer fortfarande in, och ikonen i meddelandefältet (menyraden på macOS) tar tillbaka fönstret. Stäng av detta så avslutar stängningen av fönstret programmet.
+**Låt telefonen gå vidare när fönstret stängs**, på som standard. Ett stängt fönster är inte en pålagd telefon: samtal kommer fortfarande in, och ikonen i meddelandefältet (menyraden på macOS) tar tillbaka fönstret. På ett skrivbord utan meddelandefält, som GNOME utan ett tillägg för statusikoner, väntar telefonen i stället minimerad i aktivitetsfältet, och raden under reglaget säger det. Stäng av detta så avslutar stängningen av fönstret programmet.
 
 ## Samtalslänkar {#call-links}
 

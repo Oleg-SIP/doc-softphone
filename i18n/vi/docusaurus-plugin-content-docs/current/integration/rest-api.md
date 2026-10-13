@@ -35,7 +35,7 @@ Không có dịch vụ riêng nào được cài đặt và không cần khởi 
 Một chương trình được làm gì phụ thuộc vào việc nó có thay đổi dữ liệu đã lưu hay không, chứ không phụ thuộc vào việc nó có đọc hay không:
 
 - **Không có token**, bất kỳ chương trình nào trên máy tính cũng có thể đọc mọi thứ trong các nhóm đã bật và điều khiển cuộc gọi: gọi, trả lời, cúp máy, giữ máy, tiếp tục, chuyển cuộc gọi và gửi DTMF.
-- **Có token** trong tiêu đề `Authorization`, nó còn có thể dùng các endpoint thay đổi dữ liệu đã lưu. Không có token, các endpoint đó không được phục vụ và cũng không được liệt kê trên trang của chính API.
+- **Có token** trong tiêu đề `Authorization`, nó còn có thể dùng [các endpoint thay đổi dữ liệu đã lưu](#endpoints-that-need-the-token). Không có token, các endpoint đó không được liệt kê trên trang của chính API và trả lời `401`. Nếu hoàn toàn không đặt token, không gì có thể thay đổi dữ liệu đã lưu.
 
 Token được giữ trong kho khoá của máy tính, không nằm trong tệp cài đặt, và không bao giờ được `/settings` trả về.
 
@@ -67,6 +67,20 @@ Không có token, bất kỳ chương trình nào đang chạy trên máy tính 
 | GET | `/accounts` | Các tài khoản SIP và trạng thái đăng ký của chúng. Không bao giờ có mật khẩu. |
 | GET | `/settings` | Toàn bộ cấu hình, không kèm các thông tin bí mật. |
 | GET | `/taxonomy` | Hạng mục, nhãn và dấu hiệu cảnh báo, kèm mã của chúng. |
+
+### Các endpoint cần token {#endpoints-that-need-the-token}
+
+Chúng thay đổi dữ liệu đã lưu, nên mỗi yêu cầu phải mang token trong tiêu đề `Authorization`. Trang của chính API chỉ hiển thị chúng cho yêu cầu có mang token.
+
+| Phương thức | Đường dẫn | Tác dụng |
+| --- | --- | --- |
+| POST | `/contacts` | Thêm một liên hệ: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` là tuỳ chọn. |
+| PUT | `/contacts/{id}` | Thay thế một liên hệ. |
+| DELETE | `/contacts/{id}` | Xoá một liên hệ. |
+| DELETE | `/history/{id}` | Quên một cuộc gọi trong nhật ký cuộc gọi. |
+| DELETE | `/history` | Quên toàn bộ nhật ký cuộc gọi. Không thể hoàn tác. |
+| PUT | `/accounts/{id}` | Thay thế cài đặt của một tài khoản. Mật khẩu không nằm trong đó. |
+| PUT | `/settings` | Thay thế cài đặt. |
 
 Mọi mã định danh đều là UUID do điện thoại cấp: `id` của cuộc gọi lấy từ `/calls` hoặc từ câu trả lời của `POST /calls`, `id` của tài khoản lấy từ `/accounts`.
 
@@ -164,6 +178,9 @@ Mọi lỗi đều là JSON với một khoá `error` duy nhất, dành cho con 
 | Mã trạng thái | Phần thân | Ý nghĩa |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Đường dẫn không tồn tại, hoặc nhóm truy cập của nó đang tắt; cả hai cố ý cho cùng một câu trả lời. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Đường dẫn có tồn tại nhưng không nhận phương thức này: ví dụ `POST /settings` thay vì `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Một endpoint thay đổi dữ liệu đã lưu, trên điện thoại mà trường **Token** còn trống. Hãy điền nó trong **Điều khiển cục bộ**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Một endpoint thay đổi dữ liệu đã lưu, không có token đúng. |
 | 404 | `{"error":"no contact with that id"}` | Đường dẫn đúng, mã định danh thì không. |
 | 400 | `{"error":"no call with that id"}` | Cuộc gọi đã kết thúc, hoặc chưa từng tồn tại. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` không có số. Không có gì được quay số. |
@@ -203,7 +220,7 @@ Các phiên bản trước dùng tên camelCase và mã định danh ngắn. `ac
 | --- | --- |
 | Kết nối bị từ chối trên `127.0.0.1:8377` | Điều khiển cục bộ đang tắt, điện thoại không chạy, hoặc cổng đã bị đổi. |
 | `404 {"error":"no such endpoint"}` với một đường dẫn có trên trang này | Nhóm truy cập của nó đang tắt. |
-| Đọc được, nhưng ghi bị từ chối | Các endpoint thay đổi dữ liệu đã lưu cần token trong tiêu đề `Authorization`. |
+| Đọc được, ghi bị từ chối với `401` | Các endpoint thay đổi dữ liệu đã lưu cần token trong tiêu đề `Authorization`, và trên điện thoại phải điền trường **Token** trước. |
 | Tiêu đề hạng mục không phải tiếng Anh | Tiêu đề theo ngôn ngữ giao diện. Hãy đối chiếu theo `code` từ `/taxonomy`. |
 | Thiếu `accountId`, `startedAt` hoặc `at` | Tích hợp được viết cho các tên cũ; xem ở trên. |
 

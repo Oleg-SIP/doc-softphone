@@ -38,7 +38,7 @@ Under brikkene står [knappene](../sip-accounts/buttons.md) du har laget for kol
 
 ### Opptak, Kontakter, Historikk, Sufflør, Innstillinger {#recordings-contacts-history-prompter-settings}
 
-Disse punktene nederst åpner hver sin fane til høyre, side om side: [Opptak](../interface/recordings.md), [Kontakter og historikk](contacts-history.md), [Suffløren](prompter.md) og [Innstillinger](settings-overview.md). **Sufflør** er der først når suffløren er tillatt og har en gjenkjenner å lytte med. Faner du har åpnet, blir stående i raden øverst på høyre side.
+Disse punktene nederst åpner hver sin fane til høyre, side om side: [Opptak](../interface/recordings.md), [Kontakter og historikk](contacts-history.md), [Suffløren](prompter.md) og [Innstillinger](settings-overview.md). **Sufflør** er der først når tre ting er på plass: suffløren er tillatt, en gjenkjenner som kan lytte mens en samtale pågår, er prøvd med **Prøv**, og det samme er en språkmodell — se [Innstillinger for suffløren](../ai-processing/prompter.md#what-it-needs). Faner du har åpnet, blir stående i raden øverst på høyre side.
 
 ## En pågående samtale {#a-call-in-progress}
 

@@ -38,7 +38,7 @@ Pod štítkami sú [tlačidlá](../sip-accounts/buttons.md), ktoré ste vytvoril
 
 ### Nahrávky, Kontakty, História, Našepkávač, Nastavenia {#recordings-contacts-history-prompter-settings}
 
-Tieto položky dole otvárajú kartu vpravo, jednu vedľa druhej: [Nahrávky](../interface/recordings.md), [Kontakty a História](contacts-history.md), [Našepkávač](prompter.md) a [Nastavenia](settings-overview.md). **Našepkávač** sa zobrazí až vtedy, keď je našepkávač povolený a má rozpoznávač, ktorým počúva. Karty, ktoré ste otvorili, zostávajú v rade navrchu pravej strany.
+Tieto položky dole otvárajú kartu vpravo, jednu vedľa druhej: [Nahrávky](../interface/recordings.md), [Kontakty a História](contacts-history.md), [Našepkávač](prompter.md) a [Nastavenia](settings-overview.md). **Našepkávač** sa tam objaví až vtedy, keď platia tri veci: našepkávač je povolený, rozpoznávač, ktorý vie počúvať počas rozhovoru, bol overený tlačidlom **Vyskúšať** a rovnako aj jazykový model — pozrite [Nastavenia našepkávača](../ai-processing/prompter.md#what-it-needs). Karty, ktoré ste otvorili, zostávajú v rade navrchu pravej strany.
 
 ## Prebiehajúci hovor {#a-call-in-progress}
 

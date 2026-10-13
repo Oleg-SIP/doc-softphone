@@ -10,7 +10,7 @@ O **Ponto** escuta uma conversa enquanto ela decorre. Numa janela própria escre
 
 Na imagem, o assistente **Objeções na chamada** escuta uma chamada de vendas. A coluna da esquerda é o que foi dito, cada linha com a sua hora e o seu lado; a da direita é o que o modelo sugeriu a cada resposta do cliente; a sugestão mais recente repete-se em letra grande por cima das duas.
 
-**Ponto** aparece na lista no fundo do telefone, entre **Histórico** e **Definições**, assim que se reúnem três coisas: o ponto está permitido, há um reconhecedor capaz de ouvir enquanto decorre uma conversa e — para os assistentes que sugerem algo — um modelo de linguagem. Tudo isto se configura em [Definições → Ponto](/ai-processing/prompter), onde estão também o tamanho do texto e os próprios assistentes.
+**Ponto** aparece na lista ao fundo do telefone, entre **Histórico** e **Definições**, assim que três coisas estão em ordem: o ponto está permitido, há um reconhecedor capaz de ouvir enquanto decorre uma conversa, e há um modelo de linguagem, a que os assistentes que sugerem algo perguntam. Tudo isto se configura em [Definições → Ponto](/ai-processing/prompter), onde estão também o tamanho do texto e os próprios assistentes.
 
 ## A janela {#the-window}
 <Shot name="44_prompter_window" alt="A janela do ponto com o assistente Objeções na chamada escolhido, antes de iniciar" />

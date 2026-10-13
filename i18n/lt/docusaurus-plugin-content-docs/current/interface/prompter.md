@@ -10,7 +10,7 @@ description: "Gyvo sufleriaus langas: skambučio žodžiai tuo metu, kai jie tar
 
 Paveikslėlyje pagalbininkas **Prieštaravimai skambutyje** klausosi pardavimo skambučio. Kairysis stulpelis yra tai, kas buvo pasakyta, kiekviena eilutė su savo laiku ir puse; dešinysis — tai, ką modelis patarė į kiekvieną kliento atsakymą; naujausias patarimas dideliu šriftu pakartotas virš abiejų.
 
-**Suflerius** atsiranda telefono apačioje esančiame sąraše tarp **Istorija** ir **Nustatymai**, kai tik įvykdomi trys dalykai: suflerius leidžiamas, yra atpažintuvas, mokantis klausytis vykstant pokalbiui, ir — ką nors patariantiems pagalbininkams — kalbos modelis. Visa tai nustatoma skiltyje [Nustatymai → Suflerius](/ai-processing/prompter), kurioje yra ir teksto dydis bei patys pagalbininkai.
+**Suflerius** atsiranda sąraše telefono apačioje, tarp **Istorija** ir **Nustatymai**, kai tik įvykdyti trys dalykai: suflerius leidžiamas, yra atpažintuvas, kuris moka klausytis vykstant pokalbiui, ir yra kalbos modelis, kurio klausia ką nors patariantys pagalbininkai. Visa tai nustatoma skiltyje [Nustatymai → Suflerius](/ai-processing/prompter), kurioje yra ir teksto dydis bei patys pagalbininkai.
 
 ## Langas {#the-window}
 <Shot name="44_prompter_window" alt="Sufleriaus langas su pasirinktu pagalbininku Prieštaravimai skambutyje prieš paleidžiant" />

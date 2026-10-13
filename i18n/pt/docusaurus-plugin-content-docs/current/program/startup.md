@@ -17,7 +17,7 @@ description: "Arrancar o telefone com o computador, mantê-lo a funcionar com a 
 
 ## Fecho {#close}
 
-**Deixar o telefone a funcionar quando a janela é fechada**, ligado por omissão. Uma janela fechada não é um telefone desligado: as chamadas continuam a chegar, e o ícone na área de notificação (a barra de menus no macOS) traz a janela de volta. Desligue isto e fechar a janela sai do programa.
+**Deixar o telefone a funcionar quando a janela é fechada**, ligado por omissão. Uma janela fechada não é um telefone desligado: as chamadas continuam a chegar, e o ícone na área de notificação (a barra de menus no macOS) traz a janela de volta. Num ambiente de trabalho sem área de notificação, como o GNOME sem uma extensão para ícones de estado, o telefone espera em vez disso minimizado na barra de tarefas, e a linha por baixo do interruptor di-lo. Desligue isto e fechar a janela sai do programa.
 
 ## Ligações de chamada {#call-links}
 

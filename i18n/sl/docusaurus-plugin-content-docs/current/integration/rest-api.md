@@ -35,7 +35,7 @@ Nobena ločena storitev se ne namesti in ponovni zagon ni potreben. Del programa
 Kaj program sme, je odvisno od tega, ali spreminja shranjene podatke, ne od tega, ali bere:
 
 - **Brez žetona** lahko kateri koli program na računalniku bere vse v vklopljenih skupinah in upravlja klice: opravi, sprejme, odloži, zadrži, nadaljuje, preusmeri in pošlje DTMF.
-- **Z žetonom** v glavi `Authorization` lahko uporablja tudi končne točke, ki spreminjajo, kar je shranjeno. Brez žetona se te končne točke ne strežejo in niso navedene na lastni strani API-ja.
+- **Z žetonom** v glavi `Authorization` lahko uporablja tudi [končne točke, ki spreminjajo, kar je shranjeno](#endpoints-that-need-the-token). Brez žetona te končne točke niso navedene na lastni strani API-ja in odgovorijo z `401`. Če žeton sploh ni nastavljen, shranjenega ne more spremeniti nič.
 
 Žeton se hrani v shrambi ključev računalnika, ne v datoteki z nastavitvami, in ga `/settings` nikoli ne vrne.
 
@@ -67,6 +67,20 @@ Osnovni naslov je `http://127.0.0.1:8377`. Spodnje končne točke ne potrebujejo
 | GET | `/accounts` | Računi SIP in stanje njihove registracije. Nikoli geslo. |
 | GET | `/settings` | Celotna konfiguracija, brez skrivnosti. |
 | GET | `/taxonomy` | Kategorije, oznake in opozorilni znaki z njihovimi kodami. |
+
+### Končne točke, ki potrebujejo žeton {#endpoints-that-need-the-token}
+
+Spreminjajo, kar je shranjeno, zato mora vsaka zahteva nositi žeton v glavi `Authorization`. Lastna stran API-ja jih pokaže le zahtevi, ki ga nosi.
+
+| Metoda | Pot | Kaj naredi |
+| --- | --- | --- |
+| POST | `/contacts` | Doda stik: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` ni obvezen. |
+| PUT | `/contacts/{id}` | Zamenja stik. |
+| DELETE | `/contacts/{id}` | Odstrani stik. |
+| DELETE | `/history/{id}` | Pozabi en klic iz dnevnika klicev. |
+| DELETE | `/history` | Pozabi ves dnevnik klicev. Tega ni mogoče razveljaviti. |
+| PUT | `/accounts/{id}` | Zamenja nastavitve računa. Gesla med njimi ni. |
+| PUT | `/settings` | Zamenja nastavitve. |
 
 Vsak identifikator je UUID, ki ga dodeli telefon: `id` klica pride iz `/calls` ali iz odgovora na `POST /calls`, `id` računa iz `/accounts`.
 
@@ -164,6 +178,9 @@ Vsaka napaka je JSON z enim samim ključem `error`, namenjena ljudem, ne razčle
 | Stanje | Telo | Pomen |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Pot ne obstaja ali je njena skupina dostopa izklopljena; oboje namerno da enak odgovor. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Pot obstaja, a te metode ne sprejme: na primer `POST /settings` namesto `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Končna točka, ki spreminja shranjeno, na telefonu, kjer je polje **Žeton** prazno. Izpolnite ga v **Krajevno upravljanje**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Končna točka, ki spreminja shranjeno, brez pravega žetona. |
 | 404 | `{"error":"no contact with that id"}` | Pot je pravilna, identifikator ne. |
 | 400 | `{"error":"no call with that id"}` | Klic se je končal ali ni nikoli obstajal. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` brez številke. Nič ni bilo poklicano. |
@@ -203,7 +220,7 @@ Prejšnje različice so uporabljale imena v camelCase in kratke identifikatorje.
 | --- | --- |
 | Povezava zavrnjena na `127.0.0.1:8377` | Krajevno upravljanje je izklopljeno, telefon ne teče ali so bila vrata spremenjena. |
 | `404 {"error":"no such endpoint"}` za pot s te strani | Njena skupina dostopa je izklopljena. |
-| Branje deluje, pisanje je zavrnjeno | Končne točke, ki spreminjajo shranjene podatke, potrebujejo žeton v glavi `Authorization`. |
+| Branje deluje, pisanje je zavrnjeno z `401` | Končne točke, ki spreminjajo shranjene podatke, potrebujejo žeton v glavi `Authorization`, na telefonu pa je treba najprej izpolniti polje **Žeton**. |
 | Naslovi kategorij niso v angleščini | Naslovi sledijo jeziku vmesnika. Ujemajte po `code` iz `/taxonomy`. |
 | Manjkajo `accountId`, `startedAt` ali `at` | Integracija je bila napisana za prejšnja imena; glejte zgoraj. |
 

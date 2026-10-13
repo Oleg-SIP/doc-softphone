@@ -49,7 +49,7 @@ Järjekord on oluline: kaks viimast reeglit vajavad kategooriat, mille neile eel
 
 <Shot name="12d_settings_processing_spending" alt="Seaded → Töötlemine: kuu kulud ja kaks piiri" />
 
-Jaotises **Kulud** näitab programm, kui palju on sel kuul kulutatud ja kui mitme päringuga — pildil *Sel kuul ei ole midagi töödeldud* ja näiteks *Sel kuul: 40.492 märki, 84 päringus, tasuta*, kui midagi on töödeldud.
+Jaotises **Kulud** näitab programm, kui palju on sel kuul kulutatud ja kui mitme päringuga — pildil *Sel kuul ei ole midagi töödeldud* ja näiteks *Sel kuul: 40 492 märki, 84 päringus, tasuta*, kui midagi on töödeldud.
 
 | Väli | Tähendus |
 | --- | --- |

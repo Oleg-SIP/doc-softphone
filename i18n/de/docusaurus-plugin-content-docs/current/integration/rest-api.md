@@ -35,7 +35,7 @@ Es wird kein eigener Dienst installiert, und es braucht keinen Neustart. Der Tei
 Was ein Programm darf, hängt davon ab, ob es gespeicherte Daten ändert, nicht davon, ob es liest:
 
 - **Ohne Token** darf jedes Programm auf dem Rechner alles in den freigegebenen Gruppen lesen und Anrufe steuern: tätigen, annehmen, auflegen, halten, fortsetzen, weiterleiten und DTMF senden.
-- **Mit dem Token** in der Kopfzeile `Authorization` darf es zusätzlich die Endpunkte verwenden, die Gespeichertes ändern. Ohne Token werden diese Endpunkte weder bedient noch auf der eigenen Seite der Schnittstelle aufgeführt.
+- **Mit dem Token** in der Kopfzeile `Authorization` darf es zusätzlich [die Endpunkte verwenden, die Gespeichertes ändern](#endpoints-that-need-the-token). Ohne Token werden diese Endpunkte auf der eigenen Seite der Schnittstelle nicht aufgeführt und antworten mit `401`. Ist gar kein Token gesetzt, kann nichts das Gespeicherte ändern.
 
 Das Token liegt im Schlüsselbund des Rechners, nicht in der Einstellungsdatei, und wird von `/settings` nie zurückgegeben.
 
@@ -67,6 +67,20 @@ Die Basisadresse ist `http://127.0.0.1:8377`. Die Endpunkte unten brauchen kein 
 | GET | `/accounts` | Die SIP-Konten und ihr Anmeldezustand. Nie ein Passwort. |
 | GET | `/settings` | Die gesamte Konfiguration, ohne die Geheimnisse. |
 | GET | `/taxonomy` | Kategorien, Label und Auffälligkeiten mit ihren Codes. |
+
+### Endpunkte, die das Token brauchen {#endpoints-that-need-the-token}
+
+Sie ändern Gespeichertes, deshalb muss jede Anfrage das Token in der Kopfzeile `Authorization` tragen. Die eigene Seite der Schnittstelle führt sie nur für eine Anfrage auf, die es trägt.
+
+| Methode | Pfad | Bewirkt |
+| --- | --- | --- |
+| POST | `/contacts` | Fügt einen Kontakt hinzu: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` ist freiwillig. |
+| PUT | `/contacts/{id}` | Ersetzt einen Kontakt. |
+| DELETE | `/contacts/{id}` | Entfernt einen Kontakt. |
+| DELETE | `/history/{id}` | Vergisst einen Anruf der Anrufliste. |
+| DELETE | `/history` | Vergisst die ganze Anrufliste. Das lässt sich nicht rückgängig machen. |
+| PUT | `/accounts/{id}` | Ersetzt die Einstellungen eines Kontos. Das Passwort gehört nicht dazu. |
+| PUT | `/settings` | Ersetzt die Einstellungen. |
 
 Jede Kennung ist eine vom Telefon vergebene UUID: Eine Anruf-`id` kommt aus `/calls` oder aus der Antwort auf `POST /calls`, eine Konto-`id` aus `/accounts`.
 
@@ -164,6 +178,9 @@ Jeder Fehler ist JSON mit einem einzigen Schlüssel `error`, für Menschen gedac
 | Status | Körper | Bedeutung |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Der Pfad existiert nicht, oder seine Zugangsgruppe ist aus; beides gibt mit Absicht dieselbe Antwort. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Den Pfad gibt es, diese Methode nimmt er nicht: etwa `POST /settings` statt `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Ein Endpunkt, der Gespeichertes ändert, auf einem Telefon, bei dem das Feld **Token** leer ist. Füllen Sie es unter **Lokale Steuerung** aus. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Ein Endpunkt, der Gespeichertes ändert, ohne das richtige Token. |
 | 404 | `{"error":"no contact with that id"}` | Der Pfad stimmt, die Kennung nicht. |
 | 400 | `{"error":"no call with that id"}` | Der Anruf ist beendet oder hat nie existiert. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` ohne Nummer. Es wurde nichts gewählt. |
@@ -203,7 +220,7 @@ Frühere Versionen verwendeten Namen in camelCase und kurze Kennungen. `accountI
 | --- | --- |
 | Verbindung zu `127.0.0.1:8377` abgelehnt | Die lokale Steuerung ist aus, das Telefon läuft nicht, oder der Port wurde geändert. |
 | `404 {"error":"no such endpoint"}` für einen Pfad auf dieser Seite | Seine Zugangsgruppe ist aus. |
-| Lesen geht, Schreiben wird abgelehnt | Die Endpunkte, die gespeicherte Daten ändern, brauchen das Token in der Kopfzeile `Authorization`. |
+| Lesen geht, Schreiben wird mit `401` abgelehnt | Die Endpunkte, die gespeicherte Daten ändern, brauchen das Token in der Kopfzeile `Authorization`, und am Telefon muss zuerst das Feld **Token** ausgefüllt sein. |
 | Kategorietitel sind nicht englisch | Titel folgen der Oberflächensprache. Gleichen Sie über `code` aus `/taxonomy` ab. |
 | `accountId`, `startedAt` oder `at` fehlen | Die Integration wurde für die früheren Namen geschrieben; siehe oben. |
 

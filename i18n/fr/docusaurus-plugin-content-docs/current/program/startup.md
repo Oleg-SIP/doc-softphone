@@ -17,7 +17,7 @@ description: "Démarrer le téléphone avec l'ordinateur, le laisser tourner qua
 
 ## Fermeture {#close}
 
-**Laisser le téléphone tourner quand la fenêtre est fermée**, activé par défaut. Une fenêtre fermée n'est pas un téléphone raccroché : les appels arrivent toujours, et l'icône de la zone de notification (la barre des menus sous macOS) fait revenir la fenêtre. Désactivez ce réglage et fermer la fenêtre quitte le programme.
+**Laisser le téléphone tourner quand la fenêtre est fermée**, activé par défaut. Une fenêtre fermée n'est pas un téléphone raccroché : les appels arrivent toujours, et l'icône de la zone de notification (la barre des menus sous macOS) fait revenir la fenêtre. Sur un bureau sans zone de notification, comme GNOME sans extension pour les icônes d'état, le téléphone attend à la place réduit dans la barre des tâches, et la ligne sous l'interrupteur le dit. Désactivez ce réglage et fermer la fenêtre quitte le programme.
 
 ## Liens d'appel {#call-links}
 

@@ -38,7 +38,7 @@ Debajo de las fichas están los [botones](../sip-accounts/buttons.md) que ha cre
 
 ### Grabaciones, Contactos, Historial, Apuntador, Ajustes {#recordings-contacts-history-prompter-settings}
 
-Estas entradas de abajo abren una pestaña a la derecha, una junto a otra: [Grabaciones](../interface/recordings.md), [Contactos e historial](contacts-history.md), el [Apuntador](prompter.md) y [Ajustes](settings-overview.md). **Apuntador** solo aparece cuando el apuntador está permitido y tiene un reconocedor con el que escuchar. Las pestañas que ha abierto se quedan en la fila de arriba de la parte derecha.
+Estas entradas de abajo abren una pestaña a la derecha, una junto a otra: [Grabaciones](../interface/recordings.md), [Contactos e historial](contacts-history.md), el [Apuntador](prompter.md) y [Ajustes](settings-overview.md). **Apuntador** solo aparece cuando se cumplen tres cosas: el apuntador está permitido, un reconocedor que sepa escuchar mientras transcurre una conversación se ha comprobado con **Probar**, y también un modelo de lenguaje — consulte [Ajustes del apuntador](../ai-processing/prompter.md#what-it-needs). Las pestañas que ha abierto se quedan en la fila de arriba de la parte derecha.
 
 ## Una llamada en curso {#a-call-in-progress}
 

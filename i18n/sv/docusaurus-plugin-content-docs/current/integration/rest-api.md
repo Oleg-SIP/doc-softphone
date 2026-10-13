@@ -35,7 +35,7 @@ Ingen separat tjänst installeras och ingen omstart behövs. Den del av programm
 Vad ett program får göra beror på om det ändrar sparade data, inte på om det läser:
 
 - **Utan nyckel** får vilket program som helst på datorn läsa allt i de öppnade grupperna och styra samtal: ringa, svara, lägga på, parkera, återuppta, koppla vidare och skicka DTMF.
-- **Med nyckeln** i huvudet `Authorization` får det också använda slutpunkterna som ändrar det som är sparat. Utan nyckeln varken tillhandahålls eller visas de slutpunkterna på API:ets egen sida.
+- **Med nyckeln** i huvudet `Authorization` får det också använda [slutpunkterna som ändrar det som är sparat](#endpoints-that-need-the-token). Utan nyckeln visas inte de slutpunkterna på API:ets egen sida, och de svarar `401`. Är ingen nyckel satt alls kan ingenting ändra det som är sparat.
 
 Nyckeln sparas i datorns nyckelring, inte i inställningsfilen, och returneras aldrig av `/settings`.
 
@@ -67,6 +67,20 @@ Basadressen är `http://127.0.0.1:8377`. Slutpunkterna nedan behöver ingen nyck
 | GET | `/accounts` | SIP-kontona och deras registreringstillstånd. Aldrig ett lösenord. |
 | GET | `/settings` | Hela konfigurationen, utan hemligheterna. |
 | GET | `/taxonomy` | Kategorier, etiketter och signaler, med sina koder. |
+
+### Slutpunkter som kräver nyckeln {#endpoints-that-need-the-token}
+
+De ändrar det som är sparat, så varje begäran måste bära nyckeln i huvudet `Authorization`. API:ets egen sida visar dem bara för en begäran som bär den.
+
+| Metod | Sökväg | Gör |
+| --- | --- | --- |
+| POST | `/contacts` | Lägger till en kontakt: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` är valfritt. |
+| PUT | `/contacts/{id}` | Ersätter en kontakt. |
+| DELETE | `/contacts/{id}` | Tar bort en kontakt. |
+| DELETE | `/history/{id}` | Glömmer ett samtal i samtalsloggen. |
+| DELETE | `/history` | Glömmer hela samtalsloggen. Det går inte att ångra. |
+| PUT | `/accounts/{id}` | Ersätter inställningarna för ett konto. Lösenordet är inte bland dem. |
+| PUT | `/settings` | Ersätter inställningarna. |
 
 Varje identifierare är ett UUID som utfärdas av telefonen: ett samtals `id` kommer från `/calls` eller från svaret på `POST /calls`, ett kontos `id` från `/accounts`.
 
@@ -164,6 +178,9 @@ Varje fel är JSON med en enda nyckel `error`, avsedd för människor, inte för
 | Status | Innehåll | Betydelse |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Sökvägen finns inte, eller dess åtkomstgrupp är av; båda ger avsiktligt samma svar. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Sökvägen finns, men tar inte den metoden: till exempel `POST /settings` i stället för `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | En slutpunkt som ändrar det som är sparat, på en telefon där fältet **Nyckel** är tomt. Fyll i det under **Lokal styrning**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | En slutpunkt som ändrar det som är sparat, utan rätt nyckel. |
 | 404 | `{"error":"no contact with that id"}` | Sökvägen är rätt, identifieraren är det inte. |
 | 400 | `{"error":"no call with that id"}` | Samtalet har slutat, eller har aldrig funnits. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` utan nummer. Ingenting ringdes. |
@@ -203,7 +220,7 @@ Tidigare versioner använde namn i camelCase och korta identifierare. `accountId
 | --- | --- |
 | Anslutning nekad på `127.0.0.1:8377` | Lokal styrning är av, telefonen körs inte, eller porten har ändrats. |
 | `404 {"error":"no such endpoint"}` för en sökväg på den här sidan | Dess åtkomstgrupp är av. |
-| Läsning fungerar, skrivning avvisas | Slutpunkterna som ändrar sparade data kräver nyckeln i huvudet `Authorization`. |
+| Läsning fungerar, skrivning avvisas med `401` | Slutpunkterna som ändrar sparade data kräver nyckeln i huvudet `Authorization`, och fältet **Nyckel** på telefonen måste fyllas i först. |
 | Kategorititlarna är inte på engelska | Titlarna följer gränssnittets språk. Matcha på `code` från `/taxonomy`. |
 | `accountId`, `startedAt` eller `at` saknas | Integrationen skrevs för de tidigare namnen; se ovan. |
 

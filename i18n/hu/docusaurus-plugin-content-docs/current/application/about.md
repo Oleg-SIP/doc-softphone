@@ -10,7 +10,7 @@ A **Beállítások → Névjegy** mindent tartalmaz, ami magáról a programról
 
 ## Verzió és ország {#version-and-country}
 
-Felül a név, a **Verzió** (a képen 1.1.3), egy hivatkozás a weboldalra, az [ai-softphone.com](https://ai-softphone.com/) címre, és egy erre a dokumentációra található.
+Felül a név, a **Verzió** (a képen 1.1.5), egy hivatkozás a weboldalra, az [ai-softphone.com](https://ai-softphone.com/) címre, és egy erre a dokumentációra található.
 
 Az **Ország** megmondja a programnak, hol tartózkodik. Segít kiválasztani a legjobb frissítési kiszolgálót, és utat nyit az országában üzemeltetett nyelvi és beszédszolgáltatások felé. Az **Automatikus felismerés** kitölti.
 
@@ -58,10 +58,10 @@ Az alapjelentés jogalapja a jogos érdek: annak ismerete, hogy mely verziók va
 | --- | --- |
 | **Tárgy** és **Üzenet** | Amit mondani szeretne. |
 | **Az Ön neve** és **Válaszcím** | Mindkettő nem kötelező. Cím nélkül nem tudunk válaszolni. |
-| **Napló csatolása** | Hozzáfűzi a napló végét, körülbelül 512 kB-ot. Lásd: [Diagnosztika](/troubleshooting/diagnostics). |
+| **Napló csatolása** | Hozzáfűzi a napló végét, legfeljebb körülbelül 512 kB-ot; a jelölőnégyzet alatti sor megmondja, mennyi az most (a képen 111 kB). Lásd: [Diagnosztika](/troubleshooting/diagnostics). |
 
 A **Küldés** szürke marad, amíg nincs mit elküldeni.
 
 ## Mire épül {#built-with}
 
-Az összetevők, amelyekre a program épül, mindegyik a saját licencével: Qt 6 (GPL-2.0 vagy GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (közkincs), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) és PulseAudio kliens (LGPL-2.1-or-later). Mindegyiket a mellette feltüntetett licenc alapján használjuk; ahol egy összetevő többet is kínál, a megnevezett az, amelyet választottunk.
+Az összetevők, amelyekre a program épül, mindegyik a saját licencével: Qt 6 (GPL-2.0 vagy GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (közkincs), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) és PulseAudio kliens (LGPL-2.1-or-later). Mindegyiket a mellette feltüntetett licenc alapján használjuk; ahol egy összetevő többet is kínál, a megnevezett az, amelyet választottunk.

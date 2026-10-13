@@ -49,7 +49,7 @@ A ordem importa: as duas últimas regras precisam da categoria que a regra anter
 
 <Shot name="12d_settings_processing_spending" alt="Definições → Processamento: a despesa do mês e os dois limites" />
 
-Em **Despesa** o programa mostra o que foi gasto este mês e em quantos pedidos — *Este mês não foi processado nada* na imagem, e por exemplo *Este mês: 40.492 tokens, em 84 pedidos, sem custo* quando já houver alguma coisa.
+Em **Despesa** o programa mostra o que foi gasto este mês e em quantos pedidos — *Este mês não foi processado nada* na imagem, e por exemplo *Este mês: 40 492 tokens, em 84 pedidos, sem custo* quando já houver alguma coisa.
 
 | Campo | Significado |
 | --- | --- |

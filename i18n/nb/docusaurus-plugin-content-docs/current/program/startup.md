@@ -17,7 +17,7 @@ description: "Start telefonen sammen med maskinen, la den gå videre når vindue
 
 ## Lukking {#close}
 
-**La telefonen gå videre når vinduet lukkes**, på som standard. Et lukket vindu er ikke en telefon som er lagt på: samtaler kommer fortsatt inn, og ikonet i varslingsområdet (menylinjen på macOS) henter vinduet fram igjen. Slå dette av, så avslutter lukking av vinduet programmet.
+**La telefonen gå videre når vinduet lukkes**, på som standard. Et lukket vindu er ikke en telefon som er lagt på: samtaler kommer fortsatt inn, og ikonet i varslingsområdet (menylinjen på macOS) henter vinduet fram igjen. På et skrivebord uten varslingsområde, som GNOME uten en utvidelse for statusikoner, venter telefonen i stedet minimert på oppgavelinjen, og linjen under bryteren sier det. Slå dette av, så avslutter lukking av vinduet programmet.
 
 ## Ringelenker {#call-links}
 

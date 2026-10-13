@@ -63,7 +63,7 @@ Hvis vinduet åbner, men suffløren ikke starter, står der i linjen under knapp
 
 ## Telefonen forsvandt, da jeg lukkede vinduet {#the-phone-disappeared-when-i-closed-the-window}
 
-Med **Lad telefonen køre videre, når vinduet lukkes** slået til kører telefonen stadig, og opkald kommer stadig ind. Ikonet i statusområdet (menulinjen på macOS) henter vinduet frem igen. Se [Opstart](/program/startup).
+Med **Lad telefonen køre videre, når vinduet lukkes** slået til kører telefonen stadig, og opkald kommer stadig ind. Ikonet i statusområdet (menulinjen på macOS) henter vinduet frem igen. På et skrivebord uden statusområde ligger telefonen minimeret på proceslinjen. Se [Opstart](/program/startup).
 
 ## Et telefonnummer i en browser eller et CRM ringer ikke op {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

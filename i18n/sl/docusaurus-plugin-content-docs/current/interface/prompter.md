@@ -10,7 +10,7 @@ description: "Okno šepetalca v živo: besede klica v trenutku, ko so izrečene,
 
 Na sliki pomočnik **Ugovori v klicu** posluša prodajni klic. Levi stolpec je tisto, kar je bilo izrečeno, vsaka vrstica s svojim časom in stranjo; desni je tisto, kar je model predlagal ob vsakem odgovoru stranke; najnovejši predlog je z velikimi črkami ponovljen nad obema.
 
-**Šepetalec** se pojavi na seznamu na dnu telefona med **Zgodovina** in **Nastavitve**, takoj ko so izpolnjene tri stvari: šepetalec je dovoljen, obstaja razpoznavalnik, ki zna poslušati med pogovorom, in — za pomočnike, ki kaj predlagajo — jezikovni model. Vse to se nastavi v [Nastavitve → Šepetalec](/ai-processing/prompter), kjer sta tudi velikost besedila in sami pomočniki.
+**Šepetalec** se pojavi na seznamu na dnu telefona, med **Zgodovina** in **Nastavitve**, takoj ko so izpolnjene tri stvari: šepetalec je dovoljen, obstaja razpoznavalnik, ki zna poslušati med pogovorom, in obstaja jezikovni model, ki ga sprašujejo pomočniki, ki kaj predlagajo. Vse to se nastavi v [Nastavitve → Šepetalec](/ai-processing/prompter), kjer sta tudi velikost besedila in sami pomočniki.
 
 ## Okno {#the-window}
 <Shot name="44_prompter_window" alt="Okno šepetalca z izbranim pomočnikom Ugovori v klicu, pred zagonom" />

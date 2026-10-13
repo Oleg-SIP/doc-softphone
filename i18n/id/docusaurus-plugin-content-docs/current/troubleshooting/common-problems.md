@@ -63,7 +63,7 @@ Jika jendelanya terbuka tetapi pembisik tidak mau mulai, baris di bawah tombol-t
 
 ## Telepon menghilang saat saya menutup jendela {#the-phone-disappeared-when-i-closed-the-window}
 
-Bila **Biarkan telepon tetap berjalan saat jendelanya ditutup** menyala, telepon masih berjalan, dan panggilan tetap masuk. Ikon di area pemberitahuan (bilah menu di macOS) memunculkan kembali jendelanya. Lihat [Awalan](/program/startup).
+Bila **Biarkan telepon tetap berjalan saat jendelanya ditutup** menyala, telepon masih berjalan, dan panggilan tetap masuk. Ikon di area pemberitahuan (bilah menu di macOS) memunculkan kembali jendelanya. Di desktop tanpa area pemberitahuan, telepon diminimalkan di bilah tugas. Lihat [Awalan](/program/startup).
 
 ## Nomor telepon di peramban atau CRM tidak menelepon {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

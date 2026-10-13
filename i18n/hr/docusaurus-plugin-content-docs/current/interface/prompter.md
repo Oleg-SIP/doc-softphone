@@ -10,7 +10,7 @@ description: "Prozor šaptača u živo: riječi poziva u trenutku kad se izgovar
 
 Na slici pomoćnik **Prigovori u pozivu** sluša prodajni poziv. Lijevi stupac je ono što je rečeno, svaki redak sa svojim vremenom i stranom; desni je ono što je model predložio na svaki odgovor kupca; najnoviji prijedlog ponovljen je velikim slovima iznad obaju.
 
-**Šaptač** se pojavljuje na popisu pri dnu telefona, između **Povijest** i **Postavke**, čim su ispunjene tri stvari: šaptač je dopušten, postoji prepoznavač koji zna slušati dok traje razgovor i — za pomoćnike koji nešto predlažu — jezični model. Sve se to postavlja u [Postavke → Šaptač](/ai-processing/prompter), gdje su i veličina teksta i sami pomoćnici.
+**Šaptač** se pojavljuje na popisu pri dnu telefona, između **Povijest** i **Postavke**, čim su ispunjene tri stvari: šaptač je dopušten, postoji prepoznavač koji zna slušati dok traje razgovor, i postoji jezični model kojeg pitaju pomoćnici koji nešto predlažu. Sve se to postavlja u [Postavke → Šaptač](/ai-processing/prompter), gdje su i veličina teksta i sami pomoćnici.
 
 ## Prozor {#the-window}
 <Shot name="44_prompter_window" alt="Prozor šaptača s odabranim pomoćnikom Prigovori u pozivu, prije pokretanja" />

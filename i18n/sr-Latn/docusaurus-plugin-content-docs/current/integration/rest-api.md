@@ -35,7 +35,7 @@ Ne instalira se zasebna usluga i nije potrebno ponovno pokretanje. Deo programa 
 Šta program sme da radi zavisi od toga da li menja sačuvane podatke, a ne od toga da li čita:
 
 - **Bez žetona** bilo koji program na računaru sme da čita sve u uključenim grupama i da upravlja pozivima: da uputi, javi se, prekine, stavi na čekanje, nastavi, prosledi i šalje DTMF.
-- **Sa žetonom** u zaglavlju `Authorization` sme da koristi i krajnje tačke koje menjaju ono što je sačuvano. Bez žetona te krajnje tačke se niti služe niti navode na sopstvenoj stranici API-ja.
+- **Sa žetonom** u zaglavlju `Authorization` sme da koristi i [krajnje tačke koje menjaju ono što je sačuvano](#endpoints-that-need-the-token). Bez žetona te krajnje tačke se ne navode na sopstvenoj stranici API-ja i odgovaraju sa `401`. Ako žeton uopšte nije podešen, ništa ne može da promeni sačuvano.
 
 Žeton se čuva u skladištu ključeva računara, ne u datoteci podešavanja, i `/settings` ga nikada ne vraća.
 
@@ -67,6 +67,20 @@ Osnovna adresa je `http://127.0.0.1:8377`. Krajnje tačke u nastavku ne zahtevaj
 | GET | `/accounts` | SIP nalozi i stanje njihove registracije. Nikada lozinka. |
 | GET | `/settings` | Cela konfiguracija, bez tajni. |
 | GET | `/taxonomy` | Kategorije, oznake i upozorenja, sa njihovim kodovima. |
+
+### Krajnje tačke kojima treba žeton {#endpoints-that-need-the-token}
+
+One menjaju ono što je sačuvano, pa svaki zahtev mora da nosi žeton u zaglavlju `Authorization`. Sopstvena stranica API-ja ih prikazuje samo zahtevu koji ga nosi.
+
+| Metod | Putanja | Šta radi |
+| --- | --- | --- |
+| POST | `/contacts` | Dodaje kontakt: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` nije obavezan. |
+| PUT | `/contacts/{id}` | Zamenjuje kontakt. |
+| DELETE | `/contacts/{id}` | Uklanja kontakt. |
+| DELETE | `/history/{id}` | Zaboravlja jedan poziv iz dnevnika poziva. |
+| DELETE | `/history` | Zaboravlja ceo dnevnik poziva. To se ne može opozvati. |
+| PUT | `/accounts/{id}` | Zamenjuje podešavanja naloga. Lozinka nije među njima. |
+| PUT | `/settings` | Zamenjuje podešavanja. |
 
 Svaki identifikator je UUID koji dodeljuje telefon: `id` poziva dolazi iz `/calls` ili iz odgovora na `POST /calls`, `id` naloga iz `/accounts`.
 
@@ -164,6 +178,9 @@ Svaka greška je JSON sa jednim ključem `error`, namenjena ljudima, a ne rašč
 | Status | Telo | Značenje |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Putanja ne postoji ili je njena grupa pristupa isključena; oboje namerno daje isti odgovor. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Putanja postoji, ali ne prima tu metodu: na primer `POST /settings` umesto `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Krajnja tačka koja menja sačuvano, na telefonu gde je polje **Žeton** prazno. Popunite ga u **Lokalno upravljanje**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Krajnja tačka koja menja sačuvano, bez ispravnog žetona. |
 | 404 | `{"error":"no contact with that id"}` | Putanja je ispravna, identifikator nije. |
 | 400 | `{"error":"no call with that id"}` | Poziv se završio ili nikada nije postojao. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` bez broja. Ništa nije birano. |
@@ -203,7 +220,7 @@ Ranije verzije su koristile nazive u camelCaseu i kratke identifikatore. `accoun
 | --- | --- |
 | Veza odbijena na `127.0.0.1:8377` | Lokalno upravljanje je isključeno, telefon ne radi ili je port promenjen. |
 | `404 {"error":"no such endpoint"}` za putanju sa ove stranice | Njena grupa pristupa je isključena. |
-| Čitanje radi, pisanje je odbijeno | Krajnje tačke koje menjaju sačuvane podatke zahtevaju žeton u zaglavlju `Authorization`. |
+| Čitanje radi, pisanje se odbija sa `401` | Krajnjim tačkama koje menjaju sačuvane podatke treba žeton u zaglavlju `Authorization`, a na telefonu najpre treba popuniti polje **Žeton**. |
 | Naslovi kategorija nisu na engleskom | Naslovi prate jezik sučelja. Uparujte po `code` iz `/taxonomy`. |
 | Nedostaju `accountId`, `startedAt` ili `at` | Integracija je pisana za ranije nazive; pogledajte gore. |
 

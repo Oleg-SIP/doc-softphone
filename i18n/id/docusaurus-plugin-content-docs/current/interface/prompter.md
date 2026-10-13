@@ -10,7 +10,7 @@ description: "Jendela pembisik langsung: kata-kata dalam panggilan saat diucapka
 
 Pada gambar, asisten **Penolakan dalam panggilan** sedang mendengarkan panggilan penjualan. Kolom kiri adalah apa yang dikatakan, setiap baris dengan waktu dan pihaknya; kolom kanan adalah apa yang disarankan model untuk setiap jawaban pelanggan; saran terbaru diulang dengan huruf besar di atas keduanya.
 
-**Pembisik** muncul di daftar bagian bawah telepon, di antara **Riwayat** dan **Pengaturan**, begitu tiga hal terpenuhi: pembisik diizinkan, ada pengenal suara yang bisa menyimak selagi percakapan berlangsung, dan — untuk asisten yang memberi saran — sebuah model bahasa. Semua itu diatur di [Pengaturan → Pembisik](/ai-processing/prompter), tempat ukuran teks dan asisten itu sendiri juga berada.
+**Pembisik** muncul di daftar di bagian bawah telepon, di antara **Riwayat** dan **Pengaturan**, begitu tiga hal terpenuhi: pembisik diizinkan, ada pengenal suara yang bisa menyimak selagi percakapan berlangsung, dan ada model bahasa, yang ditanya oleh asisten yang memberi saran. Semua itu diatur di [Pengaturan → Pembisik](/ai-processing/prompter), tempat ukuran teks dan asisten itu sendiri juga berada.
 
 ## Jendela {#the-window}
 <Shot name="44_prompter_window" alt="Jendela pembisik dengan asisten Penolakan dalam panggilan dipilih, sebelum dimulai" />

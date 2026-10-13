@@ -38,7 +38,7 @@ Dưới các ô tài khoản là các [nút bấm](../sip-accounts/buttons.md) b
 
 ### Bản ghi, Danh bạ, Lịch sử, Người nhắc, Cài đặt {#recordings-contacts-history-prompter-settings}
 
-Các mục ở dưới cùng này mở một thẻ ở bên phải, cạnh nhau: [Bản ghi](../interface/recordings.md), [Danh bạ và Lịch sử](contacts-history.md), [Người nhắc](prompter.md) và [Cài đặt](settings-overview.md). **Người nhắc** chỉ xuất hiện khi người nhắc được cho phép và có bộ nhận dạng để nghe. Các thẻ bạn đã mở ở lại trên hàng phía trên cùng của nửa bên phải.
+Các mục ở dưới cùng này mở một thẻ ở bên phải, cạnh nhau: [Bản ghi](../interface/recordings.md), [Danh bạ và Lịch sử](contacts-history.md), [Người nhắc](prompter.md) và [Cài đặt](settings-overview.md). **Người nhắc** chỉ có ở đó khi đủ ba điều: người nhắc được cho phép, một bộ nhận dạng biết lắng nghe trong khi cuộc trò chuyện diễn ra đã được kiểm tra bằng **Thử**, và một mô hình ngôn ngữ cũng vậy — xem [Cài đặt người nhắc](../ai-processing/prompter.md#what-it-needs). Các thẻ bạn đã mở ở lại trên hàng phía trên cùng của nửa bên phải.
 
 ## Cuộc gọi đang diễn ra {#a-call-in-progress}
 

@@ -35,7 +35,7 @@ Erillistä palvelua ei asenneta eikä uudelleenkäynnistystä tarvita. Tämän t
 Se, mitä ohjelma saa tehdä, riippuu siitä, muuttaako se tallennettuja tietoja, ei siitä, lukeeko se:
 
 - **Ilman tunnusta** mikä tahansa tietokoneen ohjelma voi lukea kaiken käytössä olevista ryhmistä ja hallita puheluita: soittaa, vastata, lopettaa, asettaa pitoon, jatkaa, siirtää ja lähettää DTMF:ää.
-- **Tunnuksen kanssa** `Authorization`-otsakkeessa se voi käyttää myös päätepisteitä, jotka muuttavat tallennettua. Ilman tunnusta näitä päätepisteitä ei tarjota eikä luetella API:n omalla sivulla.
+- **Tunnuksen kanssa** `Authorization`-otsakkeessa se voi käyttää myös [päätepisteitä, jotka muuttavat tallennettua](#endpoints-that-need-the-token). Ilman tunnusta näitä päätepisteitä ei luetella API:n omalla sivulla, ja ne vastaavat `401`. Jos tunnusta ei ole asetettu lainkaan, mikään ei voi muuttaa tallennettua.
 
 Tunnus säilytetään tietokoneen avainnipussa, ei asetustiedostossa, eikä `/settings` koskaan palauta sitä.
 
@@ -67,6 +67,20 @@ Perusosoite on `http://127.0.0.1:8377`. Alla olevat päätepisteet eivät tarvit
 | GET | `/accounts` | SIP-tilit ja niiden rekisteröintitila. Ei koskaan salasanaa. |
 | GET | `/settings` | Koko kokoonpano ilman salaisuuksia. |
 | GET | `/taxonomy` | Luokat, tunnisteet ja merkit koodeineen. |
+
+### Päätepisteet, jotka tarvitsevat tunnuksen {#endpoints-that-need-the-token}
+
+Ne muuttavat tallennettua, joten jokaisen pyynnön on kannettava tunnusta `Authorization`-otsakkeessa. API:n oma sivu näyttää ne vain pyynnölle, joka kantaa sitä.
+
+| Menetelmä | Polku | Toiminto |
+| --- | --- | --- |
+| POST | `/contacts` | Lisää yhteystiedon: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` on valinnainen. |
+| PUT | `/contacts/{id}` | Korvaa yhteystiedon. |
+| DELETE | `/contacts/{id}` | Poistaa yhteystiedon. |
+| DELETE | `/history/{id}` | Unohtaa yhden puhelun puheluhistoriasta. |
+| DELETE | `/history` | Unohtaa koko puheluhistorian. Sitä ei voi perua. |
+| PUT | `/accounts/{id}` | Korvaa tilin asetukset. Salasana ei ole niiden joukossa. |
+| PUT | `/settings` | Korvaa asetukset. |
 
 Jokainen tunniste on puhelimen myöntämä UUID: puhelun `id` tulee kohdasta `/calls` tai vastauksesta `POST /calls`-pyyntöön, tilin `id` kohdasta `/accounts`.
 
@@ -164,6 +178,9 @@ Jokainen virhe on JSONia, jossa on yksi `error`-avain, tarkoitettu ihmisille, ei
 | Tila | Runko | Merkitys |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Polkua ei ole tai sen pääsyryhmä on pois käytöstä; molemmat antavat tarkoituksella saman vastauksen. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Polku on olemassa, mutta se ei ota tätä menetelmää: esimerkiksi `POST /settings` eikä `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Tallennettua muuttava päätepiste puhelimessa, jossa kenttä **Tunnus** on tyhjä. Täytä se kohdassa **Paikallinen ohjaus**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Tallennettua muuttava päätepiste ilman oikeaa tunnusta. |
 | 404 | `{"error":"no contact with that id"}` | Polku on oikea, tunniste ei. |
 | 400 | `{"error":"no call with that id"}` | Puhelu on päättynyt tai sitä ei koskaan ollut. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` ilman numeroa. Mitään ei valittu. |
@@ -203,7 +220,7 @@ Aiemmissa versioissa käytettiin camelCase-nimiä ja lyhyitä tunnisteita. `acco
 | --- | --- |
 | Yhteys estetty osoitteessa `127.0.0.1:8377` | Paikallinen ohjaus on pois käytöstä, puhelin ei ole käynnissä tai porttia on muutettu. |
 | `404 {"error":"no such endpoint"}` tämän sivun polulle | Sen pääsyryhmä on pois käytöstä. |
-| Lukeminen toimii, kirjoittaminen hylätään | Tallennettuja tietoja muuttavat päätepisteet tarvitsevat tunnuksen `Authorization`-otsakkeessa. |
+| Lukeminen toimii, kirjoittaminen hylätään koodilla `401` | Tallennettuja tietoja muuttavat päätepisteet tarvitsevat tunnuksen `Authorization`-otsakkeessa, ja puhelimessa on ensin täytettävä kenttä **Tunnus**. |
 | Luokkien otsikot eivät ole englanniksi | Otsikot seuraavat käyttöliittymän kieltä. Yhdistä `/taxonomy`-kohdan `code`-kentän perusteella. |
 | `accountId`, `startedAt` tai `at` puuttuu | Integraatio on kirjoitettu aiemmille nimille; katso yltä. |
 

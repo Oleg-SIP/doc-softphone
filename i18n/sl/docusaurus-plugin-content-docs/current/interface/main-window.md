@@ -38,7 +38,7 @@ Pod značkami so [gumbi](../sip-accounts/buttons.md), ki ste jih naredili za sod
 
 ### Posnetki, Stiki, Zgodovina, Šepetalec, Nastavitve {#recordings-contacts-history-prompter-settings}
 
-Ti vnosi spodaj odprejo zavihek na desni, drug ob drugem: [Posnetki](../interface/recordings.md), [Stiki in Zgodovina](contacts-history.md), [Šepetalec](prompter.md) ter [Nastavitve](settings-overview.md). **Šepetalec** se pojavi šele, ko je šepetalec dovoljen in ima razpoznavalnik, s katerim posluša. Zavihki, ki ste jih odprli, ostanejo v vrsti na vrhu desne strani.
+Ti vnosi spodaj odprejo zavihek na desni, drug ob drugem: [Posnetki](../interface/recordings.md), [Stiki in Zgodovina](contacts-history.md), [Šepetalec](prompter.md) ter [Nastavitve](settings-overview.md). **Šepetalec** se pojavi šele, ko so izpolnjene tri stvari: šepetalec je dovoljen, razpoznavalnik, ki zna poslušati med pogovorom, je bil preverjen z gumbom **Preveri**, in prav tako jezikovni model — glejte [Nastavitve šepetalca](../ai-processing/prompter.md#what-it-needs). Zavihki, ki ste jih odprli, ostanejo v vrsti na vrhu desne strani.
 
 ## Klic v teku {#a-call-in-progress}
 

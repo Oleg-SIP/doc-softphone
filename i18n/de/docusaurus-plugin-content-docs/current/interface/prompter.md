@@ -10,7 +10,7 @@ Der **Souffleur** hört ein Gespräch mit, während es stattfindet. In einem eig
 
 Im Bild hört der Helfer **Einwände im Gespräch** ein Verkaufsgespräch mit. Die linke Spalte ist das Gesagte, jede Zeile mit ihrer Zeit und ihrer Seite; die rechte ist das, was das Modell zu jeder Antwort des Kunden vorgeschlagen hat; der neueste Vorschlag steht in großer Schrift noch einmal über beiden.
 
-**Souffleur** erscheint in der Liste unten im Telefon, zwischen **Verlauf** und **Einstellungen**, sobald drei Dinge erfüllt sind: der Souffleur ist erlaubt, es gibt einen Spracherkenner, der zuhören kann, während ein Gespräch läuft, und — für die Helfer, die etwas vorschlagen — ein Sprachmodell. All das wird unter [Einstellungen → Souffleur](/ai-processing/prompter) eingerichtet, wo auch die Schriftgröße und die Helfer selbst stehen.
+**Souffleur** erscheint in der Liste unten am Telefon, zwischen **Verlauf** und **Einstellungen**, sobald drei Dinge gegeben sind: Der Souffleur ist erlaubt, es gibt einen Spracherkenner, der während eines Gesprächs zuhören kann, und es gibt ein Sprachmodell, das die Helfer fragen, die etwas vorschlagen. All das wird unter [Einstellungen → Souffleur](/ai-processing/prompter) eingerichtet, wo auch die Schriftgröße und die Helfer selbst stehen.
 
 ## Das Fenster {#the-window}
 <Shot name="44_prompter_window" alt="Das Souffleur-Fenster mit dem Helfer Einwände im Gespräch, vor dem Start" />

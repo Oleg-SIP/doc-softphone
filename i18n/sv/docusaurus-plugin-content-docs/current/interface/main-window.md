@@ -38,7 +38,7 @@ Under brickorna står [knapparna](../sip-accounts/buttons.md) du har skapat för
 
 ### Inspelningar, Kontakter, Historik, Sufflör, Inställningar {#recordings-contacts-history-prompter-settings}
 
-De här posterna längst ned öppnar var sin flik till höger, bredvid varandra: [Inspelningar](../interface/recordings.md), [Kontakter och historik](contacts-history.md), [Sufflören](prompter.md) och [Inställningar](settings-overview.md). **Sufflör** finns där först när sufflören är tillåten och har en igenkännare att lyssna med. Flikar du har öppnat ligger kvar i raden överst på höger sida.
+De här posterna längst ned öppnar var sin flik till höger, bredvid varandra: [Inspelningar](../interface/recordings.md), [Kontakter och historik](contacts-history.md), [Sufflören](prompter.md) och [Inställningar](settings-overview.md). **Sufflör** finns där först när tre saker är på plats: sufflören är tillåten, en igenkännare som kan lyssna medan ett samtal pågår har kontrollerats med **Prova**, och detsamma gäller en språkmodell — se [Inställningar för sufflören](../ai-processing/prompter.md#what-it-needs). Flikar du har öppnat ligger kvar i raden överst på höger sida.
 
 ## Ett pågående samtal {#a-call-in-progress}
 

@@ -35,7 +35,7 @@ Neinštaluje sa žiadna samostatná služba a nie je potrebný reštart. Časť 
 Čo program smie robiť, závisí od toho, či mení uložené údaje, nie od toho, či číta:
 
 - **Bez tokenu** môže ktorýkoľvek program v počítači čítať všetko v zapnutých skupinách a ovládať hovory: uskutočniť, prijať, zavesiť, podržať, obnoviť, prepojiť a poslať DTMF.
-- **S tokenom** v hlavičke `Authorization` môže používať aj koncové body, ktoré menia to, čo je uložené. Bez tokenu sa tieto koncové body ani neobsluhujú, ani neuvádzajú na vlastnej stránke API.
+- **S tokenom** v hlavičke `Authorization` môže používať aj [koncové body, ktoré menia to, čo je uložené](#endpoints-that-need-the-token). Bez tokenu sa tieto koncové body neuvádzajú na vlastnej stránke API a odpovedajú `401`. Keď token nie je nastavený vôbec, uložené nemôže zmeniť nič.
 
 Token sa uchováva v kľúčenke počítača, nie v súbore nastavení, a `/settings` ho nikdy nevracia.
 
@@ -67,6 +67,20 @@ Základná adresa je `http://127.0.0.1:8377`. Koncové body nižšie nepotrebuj�
 | GET | `/accounts` | SIP účty a stav ich registrácie. Nikdy heslo. |
 | GET | `/settings` | Celá konfigurácia, bez tajomstiev. |
 | GET | `/taxonomy` | Kategórie, štítky a varovné signály s ich kódmi. |
+
+### Koncové body, ktoré potrebujú token {#endpoints-that-need-the-token}
+
+Menia to, čo je uložené, preto musí každá požiadavka niesť token v hlavičke `Authorization`. Vlastná stránka API ich ukazuje len požiadavke, ktorá ho nesie.
+
+| Metóda | Cesta | Čo robí |
+| --- | --- | --- |
+| POST | `/contacts` | Pridá kontakt: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` je nepovinné. |
+| PUT | `/contacts/{id}` | Nahradí kontakt. |
+| DELETE | `/contacts/{id}` | Odstráni kontakt. |
+| DELETE | `/history/{id}` | Zabudne jeden hovor zo zoznamu hovorov. |
+| DELETE | `/history` | Zabudne celý zoznam hovorov. Nedá sa to vrátiť. |
+| PUT | `/accounts/{id}` | Nahradí nastavenia účtu. Heslo medzi nimi nie je. |
+| PUT | `/settings` | Nahradí nastavenia. |
 
 Každý identifikátor je UUID pridelené telefónom: `id` hovoru pochádza z `/calls` alebo z odpovede na `POST /calls`, `id` účtu z `/accounts`.
 
@@ -164,6 +178,9 @@ Každá chyba je JSON s jediným kľúčom `error`, určeným pre ľudí, nie na
 | Stav | Telo | Význam |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Cesta neexistuje alebo je jej skupina prístupu vypnutá; obe situácie dávajú zámerne rovnakú odpoveď. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Cesta existuje, ale túto metódu neprijíma: napríklad `POST /settings` namiesto `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Koncový bod, ktorý mení uložené, na telefóne, kde je pole **Token** prázdne. Vyplňte ho v časti **Miestne ovládanie**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Koncový bod, ktorý mení uložené, bez správneho tokenu. |
 | 404 | `{"error":"no contact with that id"}` | Cesta je správna, identifikátor nie. |
 | 400 | `{"error":"no call with that id"}` | Hovor sa skončil alebo nikdy neexistoval. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` bez čísla. Nič sa nevytočilo. |
@@ -203,7 +220,7 @@ Staršie verzie používali názvy v camelCase a krátke identifikátory. `accou
 | --- | --- |
 | Odmietnuté spojenie na `127.0.0.1:8377` | Miestne ovládanie je vypnuté, telefón nebeží alebo sa zmenil port. |
 | `404 {"error":"no such endpoint"}` pre cestu z tejto stránky | Jej skupina prístupu je vypnutá. |
-| Čítanie funguje, zápis je odmietnutý | Koncové body, ktoré menia uložené údaje, potrebujú token v hlavičke `Authorization`. |
+| Čítanie funguje, zápis sa odmieta s `401` | Koncové body, ktoré menia uložené údaje, potrebujú token v hlavičke `Authorization` a na telefóne treba najprv vyplniť pole **Token**. |
 | Názvy kategórií nie sú po anglicky | Názvy sa riadia jazykom rozhrania. Párujte podľa `code` z `/taxonomy`. |
 | Chýbajú `accountId`, `startedAt` alebo `at` | Integrácia bola napísaná pre staršie názvy; pozrite vyššie. |
 

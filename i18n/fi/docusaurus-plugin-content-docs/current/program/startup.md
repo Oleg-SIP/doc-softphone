@@ -17,7 +17,7 @@ description: "Käynnistä puhelin tietokoneen mukana, pidä se käynnissä ikkun
 
 ## Sulkeminen {#close}
 
-**Anna puhelimen jatkaa, kun ikkuna suljetaan**, oletuksena käytössä. Suljettu ikkuna ei ole lopetettu puhelin: puhelut tulevat edelleen, ja ilmoitusalueen kuvake (macOS:ssä valikkorivillä) tuo ikkunan takaisin. Poista tämä käytöstä, niin ikkunan sulkeminen lopettaa ohjelman.
+**Anna puhelimen jatkaa, kun ikkuna suljetaan**, oletuksena käytössä. Suljettu ikkuna ei ole lopetettu puhelin: puhelut tulevat edelleen, ja ilmoitusalueen kuvake (macOS:ssä valikkorivillä) tuo ikkunan takaisin. Työpöydällä, jolla ei ole ilmoitusaluetta, kuten GNOMEssa ilman tilakuvakkeiden laajennusta, puhelin odottaa sen sijaan pienennettynä tehtäväpalkissa, ja kytkimen alla oleva rivi kertoo sen. Poista tämä käytöstä, niin ikkunan sulkeminen lopettaa ohjelman.
 
 ## Soittolinkit {#call-links}
 

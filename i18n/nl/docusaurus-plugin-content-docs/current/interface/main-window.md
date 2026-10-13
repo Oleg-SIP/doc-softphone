@@ -38,7 +38,7 @@ Onder de chips staan de [knoppen](../sip-accounts/buttons.md) die u voor collega
 
 ### Opnames, Contacten, Geschiedenis, Souffleur, Instellingen {#recordings-contacts-history-prompter-settings}
 
-Deze items onderaan openen elk een tabblad rechts, naast elkaar: [Opnames](../interface/recordings.md), [Contacten en geschiedenis](contacts-history.md), de [Souffleur](prompter.md) en [Instellingen](settings-overview.md). **Souffleur** staat er pas als de souffleur is toegestaan en een herkenner heeft om mee te luisteren. Tabbladen die u hebt geopend blijven in de rij bovenaan de rechterkant staan.
+Deze items onderaan openen elk een tabblad rechts, naast elkaar: [Opnames](../interface/recordings.md), [Contacten en geschiedenis](contacts-history.md), de [Souffleur](prompter.md) en [Instellingen](settings-overview.md). **Souffleur** staat er pas als drie dingen geregeld zijn: de souffleur is toegestaan, een herkenner die kan meeluisteren terwijl een gesprek loopt is gecontroleerd met **Testen**, en een taalmodel ook — zie [Instellingen van de souffleur](../ai-processing/prompter.md#what-it-needs). Tabbladen die u hebt geopend blijven in de rij bovenaan de rechterkant staan.
 
 ## Een lopend gesprek {#a-call-in-progress}
 

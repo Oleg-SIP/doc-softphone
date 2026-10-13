@@ -10,7 +10,7 @@ description: "Canlı suflörün penceresi: bir görüşmenin sözleri söylendi�
 
 Resimde **Görüşmedeki itirazlar** yardımcısı bir satış görüşmesini dinliyor. Sol sütun söylenenlerdir, her satır kendi saati ve tarafıyla; sağ sütun modelin müşterinin her yanıtına önerdikleridir; en yeni öneri ikisinin üzerinde büyük harflerle yinelenir.
 
-**Suflör**, üç koşul sağlanır sağlanmaz telefonun altındaki listede **Geçmiş** ile **Ayarlar** arasında görünür: suflöre izin verilmiştir, görüşme sürerken dinleyebilen bir tanıyıcı vardır ve — bir şey öneren yardımcılar için — bir dil modeli vardır. Bunların hepsi [Ayarlar → Suflör](/ai-processing/prompter) altında ayarlanır; yazı boyutu ve yardımcıların kendisi de oradadır.
+**Suflör**, üç şey yerine gelir gelmez telefonun altındaki listede, **Geçmiş** ile **Ayarlar** arasında görünür: suflöre izin verilmiştir, görüşme sürerken dinleyebilen bir tanıyıcı vardır ve bir şey öneren yardımcıların sorduğu bir dil modeli vardır. Bunların hepsi [Ayarlar → Suflör](/ai-processing/prompter) altında ayarlanır; yazı boyutu ve yardımcıların kendisi de oradadır.
 
 ## Pencere {#the-window}
 <Shot name="44_prompter_window" alt="Görüşmedeki itirazlar yardımcısı seçili suflör penceresi, başlatılmadan önce" />

@@ -38,7 +38,7 @@ Merkkien alla ovat [painikkeet](../sip-accounts/buttons.md), jotka olet tehnyt k
 
 ### Tallenteet, Yhteystiedot, Historia, Kuiskaaja, Asetukset {#recordings-contacts-history-prompter-settings}
 
-Nämä alareunan kohdat avaavat kukin välilehden oikealle, rinnakkain: [Tallenteet](../interface/recordings.md), [Yhteystiedot ja historia](contacts-history.md), [Kuiskaaja](prompter.md) ja [Asetukset](settings-overview.md). **Kuiskaaja** näkyy vasta, kun kuiskaaja on sallittu ja sillä on tunnistin, jolla kuunnella. Avaamasi välilehdet pysyvät oikean puolen yläreunan rivissä.
+Nämä alareunan kohdat avaavat kukin välilehden oikealle, rinnakkain: [Tallenteet](../interface/recordings.md), [Yhteystiedot ja historia](contacts-history.md), [Kuiskaaja](prompter.md) ja [Asetukset](settings-overview.md). **Kuiskaaja** on siellä vasta, kun kolme asiaa on kunnossa: kuiskaaja on sallittu, tunnistin, joka osaa kuunnella keskustelun aikana, on tarkistettu painikkeella **Kokeile**, ja samoin kielimalli — katso [Kuiskaajan asetukset](../ai-processing/prompter.md#what-it-needs). Avaamasi välilehdet pysyvät oikean puolen yläreunan rivissä.
 
 ## Käynnissä oleva puhelu {#a-call-in-progress}
 

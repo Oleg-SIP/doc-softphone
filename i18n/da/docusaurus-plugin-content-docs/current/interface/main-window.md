@@ -38,7 +38,7 @@ Under chipsene står de [knapper](../sip-accounts/buttons.md), du har lavet til 
 
 ### Optagelser, Kontakter, Historik, Sufflør, Indstillinger {#recordings-contacts-history-prompter-settings}
 
-Disse punkter nederst åbner hver en fane til højre, side om side: [Optagelser](../interface/recordings.md), [Kontakter og historik](contacts-history.md), [Suffløren](prompter.md) og [Indstillinger](settings-overview.md). **Sufflør** er der først, når suffløren er tilladt og har en genkender at lytte med. Faner, du har åbnet, bliver stående i rækken øverst i højre side.
+Disse punkter nederst åbner hver en fane til højre, side om side: [Optagelser](../interface/recordings.md), [Kontakter og historik](contacts-history.md), [Suffløren](prompter.md) og [Indstillinger](settings-overview.md). **Sufflør** er der først, når tre ting er på plads: suffløren er tilladt, en genkender, der kan lytte, mens en samtale er i gang, er afprøvet med **Prøv**, og det samme er en sprogmodel — se [Indstillinger for suffløren](../ai-processing/prompter.md#what-it-needs). Faner, du har åbnet, bliver stående i rækken øverst i højre side.
 
 ## Et igangværende opkald {#a-call-in-progress}
 

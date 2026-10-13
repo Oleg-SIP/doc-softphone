@@ -35,7 +35,7 @@ Atskira paslauga neįdiegiama ir paleisti iš naujo nereikia. Programos dalį, k
 Ką programa gali daryti, priklauso nuo to, ar ji keičia išsaugotus duomenis, o ne nuo to, ar ji skaito:
 
 - **Be prieigos rakto** bet kuri kompiuterio programa gali skaityti viską įjungtose grupėse ir valdyti skambučius: skambinti, atsiliepti, padėti ragelį, sulaikyti, tęsti, peradresuoti ir siųsti DTMF.
-- **Su prieigos raktu** antraštėje `Authorization` ji taip pat gali naudoti galinius taškus, kurie keičia tai, kas išsaugota. Be prieigos rakto šie galiniai taškai nei teikiami, nei pateikiami paties API puslapyje.
+- **Su prieigos raktu** antraštėje `Authorization` ji taip pat gali naudoti [galinius taškus, kurie keičia tai, kas išsaugota](#endpoints-that-need-the-token). Be prieigos rakto šie galiniai taškai nepateikiami paties API puslapyje ir atsako `401`. Jei prieigos raktas visai nenustatytas, niekas negali pakeisti to, kas išsaugota.
 
 Prieigos raktas laikomas kompiuterio raktų pakete, o ne nustatymų faile, ir `/settings` jo niekada negrąžina.
 
@@ -67,6 +67,20 @@ Bazinis adresas yra `http://127.0.0.1:8377`. Toliau nurodytiems galiniams taška
 | GET | `/accounts` | SIP paskyros ir jų registracijos būsena. Niekada slaptažodis. |
 | GET | `/settings` | Visa konfigūracija be paslapčių. |
 | GET | `/taxonomy` | Kategorijos, žymos ir įspėjamieji signalai su jų kodais. |
+
+### Galiniai taškai, kuriems reikia prieigos rakto {#endpoints-that-need-the-token}
+
+Jie keičia tai, kas išsaugota, todėl kiekviena užklausa turi nešti prieigos raktą antraštėje `Authorization`. Paties API puslapis juos rodo tik užklausai, kuri jį neša.
+
+| Metodas | Kelias | Ką daro |
+| --- | --- | --- |
+| POST | `/contacts` | Prideda kontaktą: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` neprivalomas. |
+| PUT | `/contacts/{id}` | Pakeičia kontaktą. |
+| DELETE | `/contacts/{id}` | Pašalina kontaktą. |
+| DELETE | `/history/{id}` | Pamiršta vieną skambutį iš skambučių žurnalo. |
+| DELETE | `/history` | Pamiršta visą skambučių žurnalą. To atšaukti negalima. |
+| PUT | `/accounts/{id}` | Pakeičia paskyros nustatymus. Slaptažodžio tarp jų nėra. |
+| PUT | `/settings` | Pakeičia nustatymus. |
 
 Kiekvienas identifikatorius yra telefono išduotas UUID: skambučio `id` gaunamas iš `/calls` arba iš atsakymo į `POST /calls`, paskyros `id` — iš `/accounts`.
 
@@ -164,6 +178,9 @@ Kiekviena klaida yra JSON su vienu raktu `error`, skirta žmonėms, o ne mašini
 | Būsena | Turinys | Reikšmė |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Kelio nėra arba jo prieigos grupė išjungta; abu atvejai tyčia duoda tą patį atsakymą. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Kelias yra, bet šio metodo nepriima: pavyzdžiui, `POST /settings` vietoj `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Išsaugotą turinį keičiantis galinis taškas telefone, kuriame laukas **Prieigos raktas** tuščias. Užpildykite jį skiltyje **Vietinis valdymas**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Išsaugotą turinį keičiantis galinis taškas be teisingo prieigos rakto. |
 | 404 | `{"error":"no contact with that id"}` | Kelias teisingas, identifikatorius ne. |
 | 400 | `{"error":"no call with that id"}` | Skambutis baigėsi arba niekada neegzistavo. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` be numerio. Niekas nebuvo surinkta. |
@@ -203,7 +220,7 @@ Ankstesnės versijos naudojo camelCase pavadinimus ir trumpus identifikatorius. 
 | --- | --- |
 | Ryšys atmestas adresu `127.0.0.1:8377` | Vietinis valdymas išjungtas, telefonas neveikia arba prievadas pakeistas. |
 | `404 {"error":"no such endpoint"}` šio puslapio keliui | Jo prieigos grupė išjungta. |
-| Skaitymas veikia, rašymas atmetamas | Galiniams taškams, kurie keičia išsaugotus duomenis, reikia prieigos rakto antraštėje `Authorization`. |
+| Skaitymas veikia, rašymas atmetamas su `401` | Išsaugotus duomenis keičiantiems galiniams taškams reikia prieigos rakto antraštėje `Authorization`, o telefone pirmiausia reikia užpildyti lauką **Prieigos raktas**. |
 | Kategorijų pavadinimai ne anglų kalba | Pavadinimai seka sąsajos kalbą. Siekite pagal `code` iš `/taxonomy`. |
 | Trūksta `accountId`, `startedAt` arba `at` | Integracija parašyta ankstesniems pavadinimams; žr. aukščiau. |
 

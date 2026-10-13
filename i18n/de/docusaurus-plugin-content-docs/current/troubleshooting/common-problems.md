@@ -63,7 +63,7 @@ Siehe [Mitschnitt](/capture/).
 
 ## Das Telefon ist verschwunden, als ich das Fenster geschlossen habe {#the-phone-disappeared-when-i-closed-the-window}
 
-Mit **Das Telefon weiterlaufen lassen, wenn das Fenster geschlossen wird** läuft das Telefon weiter, und Anrufe kommen weiter an. Das Symbol im Infobereich (auf macOS in der Menüleiste) holt das Fenster zurück. Siehe [Start](/program/startup).
+Mit **Das Telefon weiterlaufen lassen, wenn das Fenster geschlossen wird** läuft das Telefon weiter, und Anrufe kommen weiter an. Das Symbol im Infobereich (auf macOS in der Menüleiste) holt das Fenster zurück. Auf einem Desktop ohne Infobereich liegt das Telefon minimiert in der Taskleiste. Siehe [Start](/program/startup).
 
 ## Eine Telefonnummer im Browser oder im CRM ruft nicht an {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

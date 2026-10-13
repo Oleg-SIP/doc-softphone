@@ -49,7 +49,7 @@ Kolejność ma znaczenie: dwie ostatnie reguły potrzebują kategorii, którą u
 
 <Shot name="12d_settings_processing_spending" alt="Ustawienia → Przetwarzanie: wydatki miesiąca i dwie granice" />
 
-W sekcji **Wydatki** program pokazuje, ile wydano w tym miesiącu i w ilu żądaniach — na obrazku *W tym miesiącu nic nie przetworzono*, a na przykład *W tym miesiącu: 40.492 tokenów, w 84 żądaniach, bez opłat*, gdy już coś przetworzono.
+W sekcji **Wydatki** program pokazuje, ile wydano w tym miesiącu i w ilu żądaniach — na obrazku *W tym miesiącu nic nie przetworzono*, a na przykład *W tym miesiącu: 40 492 tokenów, w 84 żądaniach, bez opłat*, gdy już coś przetworzono.
 
 | Pole | Znaczenie |
 | --- | --- |

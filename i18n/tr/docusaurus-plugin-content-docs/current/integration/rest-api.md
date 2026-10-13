@@ -35,7 +35,7 @@ Ayrı bir hizmet kurulmaz ve yeniden başlatma gerekmez. Programın bunu yapan b
 Bir programın neler yapabileceği, okuyup okumamasına değil, saklanan verileri değiştirip değiştirmediğine bağlıdır:
 
 - **Belirteç olmadan**, bilgisayardaki herhangi bir program etkin gruplardaki her şeyi okuyabilir ve çağrıları yönetebilir: arama yapma, yanıtlama, kapatma, bekletme, sürdürme, aktarma ve DTMF gönderme.
-- `Authorization` başlığında **belirteçle**, saklananları değiştiren uç noktaları da kullanabilir. Belirteç olmadan bu uç noktalar ne sunulur ne de API'nin kendi sayfasında listelenir.
+- `Authorization` başlığında **belirteçle**, [saklananları değiştiren uç noktaları](#endpoints-that-need-the-token) da kullanabilir. Belirteç olmadan bu uç noktalar API'nin kendi sayfasında listelenmez ve `401` ile yanıt verir. Hiç belirteç ayarlanmamışsa saklananları hiçbir şey değiştiremez.
 
 Belirteç ayar dosyasında değil, bilgisayarın anahtarlığında saklanır ve `/settings` tarafından asla döndürülmez.
 
@@ -67,6 +67,20 @@ Temel adres `http://127.0.0.1:8377`'dir. Aşağıdaki uç noktalar belirteç ger
 | GET | `/accounts` | SIP hesapları ve kayıt durumları. Asla parola değil. |
 | GET | `/settings` | Gizli bilgiler olmadan tüm yapılandırma. |
 | GET | `/taxonomy` | Kodlarıyla birlikte kategoriler, etiketler ve uyarı işaretleri. |
+
+### Belirteç isteyen uç noktalar {#endpoints-that-need-the-token}
+
+Bunlar saklananları değiştirir, bu yüzden her istek `Authorization` başlığında belirteci taşımalıdır. API'nin kendi sayfası onları yalnızca belirteci taşıyan bir isteğe gösterir.
+
+| Yöntem | Yol | Ne yapar |
+| --- | --- | --- |
+| POST | `/contacts` | Bir kişi ekler: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` isteğe bağlıdır. |
+| PUT | `/contacts/{id}` | Bir kişiyi değiştirir. |
+| DELETE | `/contacts/{id}` | Bir kişiyi kaldırır. |
+| DELETE | `/history/{id}` | Çağrı geçmişinden bir çağrıyı unutur. |
+| DELETE | `/history` | Tüm çağrı geçmişini unutur. Geri alınamaz. |
+| PUT | `/accounts/{id}` | Bir hesabın ayarlarını değiştirir. Parola bunların arasında değildir. |
+| PUT | `/settings` | Ayarları değiştirir. |
 
 Her tanımlayıcı telefonun verdiği bir UUID'dir: bir çağrının `id` değeri `/calls` ya da `POST /calls` yanıtından, bir hesabın `id` değeri `/accounts`'tan gelir.
 
@@ -164,6 +178,9 @@ Her hata, tek bir `error` anahtarı olan bir JSON'dur; ayrıştırma için deği
 | Durum | Gövde | Anlamı |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Yol yok ya da erişim grubu kapalı; ikisi de bilerek aynı yanıtı verir. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Yol var, ama bu yöntemi kabul etmiyor: örneğin `PUT` yerine `POST /settings`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Saklananları değiştiren bir uç nokta, **Belirteç** alanının boş olduğu bir telefonda. Bu alanı **Yerel denetim** altında doldurun. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Saklananları değiştiren bir uç nokta, doğru belirteç olmadan. |
 | 404 | `{"error":"no contact with that id"}` | Yol doğru, tanımlayıcı yanlış. |
 | 400 | `{"error":"no call with that id"}` | Çağrı bitti ya da hiç var olmadı. |
 | 400 | `{"error":"a call needs a number"}` | Numarasız `POST /calls`. Hiçbir şey aranmadı. |
@@ -203,7 +220,7 @@ Reddedilen istekler `api_requests_refused_total` içinde sayılır; böylece ses
 | --- | --- |
 | `127.0.0.1:8377` üzerinde bağlantı reddedildi | Yerel denetim kapalı, telefon çalışmıyor ya da kapı değiştirildi. |
 | Bu sayfadaki bir yol için `404 {"error":"no such endpoint"}` | Yolun erişim grubu kapalı. |
-| Okuma çalışıyor, yazma reddediliyor | Saklanan verileri değiştiren uç noktalar `Authorization` başlığında belirteç gerektirir. |
+| Okuma çalışıyor, yazma `401` ile reddediliyor | Saklanan verileri değiştiren uç noktalar `Authorization` başlığında belirteç gerektirir ve telefonda önce **Belirteç** alanının doldurulması gerekir. |
 | Kategori başlıkları İngilizce değil | Başlıklar arayüz dilini izler. `/taxonomy` içindeki `code` ile eşleştirin. |
 | `accountId`, `startedAt` ya da `at` eksik | Bütünleştirme önceki adlara göre yazılmış; yukarıya bakın. |
 

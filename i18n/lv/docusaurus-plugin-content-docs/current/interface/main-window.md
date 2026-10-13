@@ -38,7 +38,7 @@ Zem žetoniem ir [pogas](../sip-accounts/buttons.md), ko esat izveidojuši kolē
 
 ### Ieraksti, Kontakti, Vēsture, Suflieris, Iestatījumi {#recordings-contacts-history-prompter-settings}
 
-Šie ieraksti apakšā katrs atver cilni labajā pusē, blakus viena otrai: [Ieraksti](../interface/recordings.md), [Kontakti un vēsture](contacts-history.md), [Suflieris](prompter.md) un [Iestatījumi](settings-overview.md). **Suflieris** parādās tikai tad, kad suflieris ir atļauts un tam ir atpazinējs, ar ko klausīties. Atvērtās cilnes paliek rindā labās puses augšā.
+Šie ieraksti apakšā katrs atver cilni labajā pusē, blakus viena otrai: [Ieraksti](../interface/recordings.md), [Kontakti un vēsture](contacts-history.md), [Suflieris](prompter.md) un [Iestatījumi](settings-overview.md). **Suflieris** parādās tikai tad, kad izpildītas trīs lietas: suflieris ir atļauts, atpazinējs, kas prot klausīties sarunas laikā, ir pārbaudīts ar **Pārbaudīt**, un tāpat valodas modelis — skatiet [Sufliera iestatījumi](../ai-processing/prompter.md#what-it-needs). Atvērtās cilnes paliek rindā labās puses augšā.
 
 ## Notiekošs zvans {#a-call-in-progress}
 

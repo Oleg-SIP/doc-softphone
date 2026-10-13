@@ -17,7 +17,7 @@ description: "Start telefonen sammen med computeren, lad den køre videre, når 
 
 ## Lukning {#close}
 
-**Lad telefonen køre videre, når vinduet lukkes**, slået til som standard. Et lukket vindue er ikke en telefon, der er lagt på: opkald kommer stadig ind, og ikonet i statusområdet (menulinjen på macOS) henter vinduet frem igen. Slå dette fra, så afslutter lukningen af vinduet programmet.
+**Lad telefonen køre videre, når vinduet lukkes**, slået til som standard. Et lukket vindue er ikke en telefon, der er lagt på: opkald kommer stadig ind, og ikonet i statusområdet (menulinjen på macOS) henter vinduet frem igen. På et skrivebord uden statusområde, som GNOME uden en udvidelse til statusikoner, venter telefonen i stedet minimeret på proceslinjen, og linjen under kontakten siger det. Slå dette fra, så afslutter lukningen af vinduet programmet.
 
 ## Opkaldslinks {#call-links}
 

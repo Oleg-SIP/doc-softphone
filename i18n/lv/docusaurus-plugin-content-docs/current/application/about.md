@@ -10,7 +10,7 @@ description: Versija, atjauninājumi, jūsu valsts, licence, lietošanas atskait
 
 ## Versija un valsts {#version-and-country}
 
-Augšā ir nosaukums, **Versija** (attēlā 1.1.3), saite uz tīmekļa vietni [ai-softphone.com](https://ai-softphone.com/) un saite uz šo dokumentāciju.
+Augšā ir nosaukums, **Versija** (attēlā 1.1.5), saite uz tīmekļa vietni [ai-softphone.com](https://ai-softphone.com/) un saite uz šo dokumentāciju.
 
 **Valsts** pasaka programmai, kur jūs atrodaties. Tas palīdz izvēlēties labāko atjauninājumu serveri un paver ceļu valodas un runas pakalpojumiem, kas mitināti jūsu valstī. **Noteikt automātiski** to aizpilda.
 
@@ -58,10 +58,10 @@ Veidlapa, kas raksta izstrādātājiem, neatstājot programmu.
 | --- | --- |
 | **Temats** un **Ziņa** | Tas, ko vēlaties pateikt. |
 | **Jūsu vārds** un **Adrese atbildei** | Abi nav obligāti. Bez adreses nav iespējams atbildēt. |
-| **Pievienot žurnālu** | Pievieno žurnāla beigas, aptuveni 512 kB. Skatiet [Diagnostika](/troubleshooting/diagnostics). |
+| **Pievienot žurnālu** | Pievieno žurnāla beigas, ne vairāk kā aptuveni 512 kB; rinda zem izvēles rūtiņas pasaka, cik tas ir pašlaik (attēlā 111 kB). Skatiet [Diagnostika](/troubleshooting/diagnostics). |
 
 **Nosūtīt** paliek pelēks, līdz ir ko nosūtīt.
 
 ## Veidots ar {#built-with}
 
-Komponenti, uz kuriem programma veidota, katrs ar savu licenci: Qt 6 (GPL-2.0 vai GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (publiskais domēns), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) un PulseAudio klients (LGPL-2.1-or-later). Katrs tiek izmantots ar blakus norādīto licenci; ja komponents piedāvā vairākas, izvēlēta ir nosauktā.
+Komponenti, uz kuriem programma veidota, katrs ar savu licenci: Qt 6 (GPL-2.0 vai GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (publiskais domēns), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) un PulseAudio klients (LGPL-2.1-or-later). Katrs tiek izmantots ar blakus norādīto licenci; ja komponents piedāvā vairākas, izvēlēta ir nosauktā.

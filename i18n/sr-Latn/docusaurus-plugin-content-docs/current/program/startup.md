@@ -17,7 +17,7 @@ description: "Pokrenite telefon sa računarom, neka radi kada se prozor zatvori 
 
 ## Zatvaranje {#close}
 
-**Neka telefon radi i kada se prozor zatvori**, podrazumevano uključeno. Zatvoren prozor nije spuštena slušalica: pozivi i dalje stižu, a ikona u oblasti obaveštenja (traci menija na macOS-u) vraća prozor. Isključite ovo i zatvaranje prozora izlazi iz programa.
+**Neka telefon radi i kada se prozor zatvori**, podrazumevano uključeno. Zatvoren prozor nije spuštena slušalica: pozivi i dalje stižu, a ikona u oblasti obaveštenja (traci menija na macOS-u) vraća prozor. Na radnoj površini bez oblasti obaveštenja, kao što je GNOME bez proširenja za ikone stanja, telefon umesto toga čeka umanjen na traci zadataka, a red ispod prekidača to kaže. Isključite ovo i zatvaranje prozora izlazi iz programa.
 
 ## Veze za pozivanje {#call-links}
 

@@ -63,7 +63,7 @@ Ha az ablak megnyílik, de a súgó nem indul el, a gombjai alatti sor megmondja
 
 ## A telefon eltűnt, amikor bezártam az ablakot {#the-phone-disappeared-when-i-closed-the-window}
 
-Ha **A telefon fusson tovább, ha az ablak bezárul** be van kapcsolva, a telefon továbbra is fut, és a hívások továbbra is beérkeznek. Az értesítési területen (macOS-en a menüsorban) lévő ikon visszahozza az ablakot. Lásd: [Indulás](/program/startup).
+Ha **A telefon fusson tovább, ha az ablak bezárul** be van kapcsolva, a telefon továbbra is fut, és a hívások továbbra is beérkeznek. Az értesítési területen (macOS-en a menüsorban) lévő ikon visszahozza az ablakot. Értesítési terület nélküli asztali környezetben a telefon kis méretre állítva a tálcán van. Lásd: [Indulás](/program/startup).
 
 ## Egy böngészőben vagy CRM-ben lévő telefonszám nem indít hívást {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

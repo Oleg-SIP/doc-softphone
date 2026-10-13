@@ -38,7 +38,7 @@ Ispod znački su [gumbi](../sip-accounts/buttons.md) koje ste napravili za koleg
 
 ### Snimke, Kontakti, Povijest, Šaptač, Postavke {#recordings-contacts-history-prompter-settings}
 
-Ove stavke na dnu otvaraju karticu desno, jednu pokraj druge: [Snimke](../interface/recordings.md), [Kontakti i Povijest](contacts-history.md), [Šaptač](prompter.md) te [Postavke](settings-overview.md). **Šaptač** se pojavljuje tek kad je šaptač dopušten i ima prepoznavač kojim sluša. Kartice koje ste otvorili ostaju u retku na vrhu desne strane.
+Ove stavke na dnu otvaraju karticu desno, jednu pokraj druge: [Snimke](../interface/recordings.md), [Kontakti i Povijest](contacts-history.md), [Šaptač](prompter.md) te [Postavke](settings-overview.md). **Šaptač** se pojavljuje tek kad su ispunjene tri stvari: šaptač je dopušten, prepoznavač koji zna slušati dok traje razgovor provjeren je gumbom **Provjeri**, a isto tako i jezični model — pogledajte [Postavke šaptača](../ai-processing/prompter.md#what-it-needs). Kartice koje ste otvorili ostaju u retku na vrhu desne strane.
 
 ## Poziv u tijeku {#a-call-in-progress}
 

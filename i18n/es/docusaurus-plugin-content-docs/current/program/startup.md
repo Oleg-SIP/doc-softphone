@@ -17,7 +17,7 @@ description: "Arrancar el teléfono con el ordenador, mantenerlo en marcha con l
 
 ## Cierre {#close}
 
-**Dejar el teléfono en marcha al cerrar la ventana**, encendido por defecto. Una ventana cerrada no es un teléfono colgado: las llamadas siguen llegando, y el icono del área de notificación (la barra de menús en macOS) devuelve la ventana. Apague esto y cerrar la ventana sale del programa.
+**Dejar el teléfono en marcha al cerrar la ventana**, encendido por defecto. Una ventana cerrada no es un teléfono colgado: las llamadas siguen llegando, y el icono del área de notificación (la barra de menús en macOS) devuelve la ventana. En un escritorio sin área de notificación, como GNOME sin una extensión para iconos de estado, el teléfono espera en su lugar minimizado en la barra de tareas, y la línea bajo el interruptor lo dice. Apague esto y cerrar la ventana sale del programa.
 
 ## Enlaces de llamada {#call-links}
 

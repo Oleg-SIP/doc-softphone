@@ -17,7 +17,7 @@ description: "Startējiet tālruni kopā ar datoru, ļaujiet tam darboties, kad 
 
 ## Aizvēršana {#close}
 
-**Ļaut telefonam darboties tālāk, kad logs aizveras**, pēc noklusējuma ieslēgts. Aizvērts logs nav nolikta klausule: zvani joprojām pienāk, un ikona paziņojumu apgabalā (macOS — izvēļņu joslā) atgriež logu. Izslēdziet to, un loga aizvēršana aizver programmu.
+**Ļaut telefonam darboties tālāk, kad logs aizveras**, pēc noklusējuma ieslēgts. Aizvērts logs nav nolikta klausule: zvani joprojām pienāk, un ikona paziņojumu apgabalā (macOS — izvēļņu joslā) atgriež logu. Darbvirsmā, kurā nav paziņojumu apgabala, piemēram, GNOME bez statusa ikonu paplašinājuma, tālrunis tā vietā gaida minimizēts uzdevumjoslā, un rinda zem slēdža to pasaka. Izslēdziet to, un loga aizvēršana aizver programmu.
 
 ## Zvanu saites {#call-links}
 

@@ -17,7 +17,7 @@ description: "Zaženite telefon z računalnikom, pustite ga teči, ko je okno za
 
 ## Zaprtje {#close}
 
-**Pusti telefon teči, ko se okno zapre**, privzeto vklopljeno. Zaprto okno ni odložen telefon: klici še vedno prihajajo, ikona v področju za obvestila (v menijski vrstici v macOS) pa vrne okno. Izklopite to in zaprtje okna konča program.
+**Pusti telefon teči, ko se okno zapre**, privzeto vklopljeno. Zaprto okno ni odložen telefon: klici še vedno prihajajo, ikona v področju za obvestila (v menijski vrstici v macOS) pa vrne okno. Na namizju brez področja za obvestila, na primer v GNOME brez razširitve za ikone stanja, telefon namesto tega čaka pomanjšan v opravilni vrstici, vrstica pod stikalom pa to pove. Izklopite to in zaprtje okna konča program.
 
 ## Povezave za klic {#call-links}
 

@@ -38,7 +38,7 @@ Sub insigne se află [butoanele](../sip-accounts/buttons.md) pe care le-ați cre
 
 ### Înregistrări, Contacte, Istoric, Sufleur, Setări {#recordings-contacts-history-prompter-settings}
 
-Aceste intrări din partea de jos deschid câte o filă în dreapta, una lângă alta: [Înregistrări](../interface/recordings.md), [Contacte și Istoric](contacts-history.md), [Sufleurul](prompter.md) și [Setări](settings-overview.md). **Sufleur** apare doar după ce sufleurul este permis și are un recunoscător cu care să asculte. Filele pe care le-ați deschis rămân în rândul din partea de sus a laturii din dreapta.
+Aceste intrări din partea de jos deschid câte o filă în dreapta, una lângă alta: [Înregistrări](../interface/recordings.md), [Contacte și Istoric](contacts-history.md), [Sufleurul](prompter.md) și [Setări](settings-overview.md). **Sufleur** apare doar când sunt îndeplinite trei lucruri: sufleurul este permis, un recunoscător care știe să asculte în timpul unei conversații a fost verificat cu **Verifică**, la fel și un model de limbaj — consultați [Setările sufleurului](../ai-processing/prompter.md#what-it-needs). Filele pe care le-ați deschis rămân în rândul din partea de sus a laturii din dreapta.
 
 ## Un apel în curs {#a-call-in-progress}
 

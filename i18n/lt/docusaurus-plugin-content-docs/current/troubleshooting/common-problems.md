@@ -63,7 +63,7 @@ Jei langas atsidaro, bet suflerius nepasileidžia, eilutė po jo mygtukais pasak
 
 ## Telefonas dingo, kai užvėriau langą {#the-phone-disappeared-when-i-closed-the-window}
 
-Kai **Leisti telefonui veikti toliau, kai langas užveriamas** įjungta, telefonas vis dar veikia, o skambučiai vis dar ateina. Piktograma pranešimų srityje (macOS — meniu juostoje) grąžina langą. Žr. [Paleidimas](/program/startup).
+Kai **Leisti telefonui veikti toliau, kai langas užveriamas** įjungta, telefonas vis dar veikia, o skambučiai vis dar ateina. Piktograma pranešimų srityje (macOS — meniu juostoje) grąžina langą. Darbalaukyje be pranešimų srities telefonas sumažintas užduočių juostoje. Žr. [Paleidimas](/program/startup).
 
 ## Telefono numeris naršyklėje ar CRM neskambina {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

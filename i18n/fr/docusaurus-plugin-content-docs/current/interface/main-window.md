@@ -38,7 +38,7 @@ Sous les pastilles se trouvent les [boutons](../sip-accounts/buttons.md) que vou
 
 ### Enregistrements, Contacts, Journal, Souffleur, Réglages {#recordings-contacts-history-prompter-settings}
 
-Ces entrées en bas ouvrent chacune un onglet à droite, côte à côte : [Enregistrements](../interface/recordings.md), [Contacts et journal](contacts-history.md), le [Souffleur](prompter.md) et [Réglages](settings-overview.md). **Souffleur** n'apparaît qu'une fois le souffleur autorisé et doté d'une reconnaissance pour écouter. Les onglets ouverts restent dans la rangée en haut de la partie droite.
+Ces entrées en bas ouvrent chacune un onglet à droite, côte à côte : [Enregistrements](../interface/recordings.md), [Contacts et journal](contacts-history.md), le [Souffleur](prompter.md) et [Réglages](settings-overview.md). **Souffleur** n'y figure qu'une fois trois choses en place : le souffleur est autorisé, une reconnaissance capable d'écouter pendant une conversation a été vérifiée avec **Tester**, et un modèle de langue aussi — voir [Réglages du souffleur](../ai-processing/prompter.md#what-it-needs). Les onglets ouverts restent dans la rangée en haut de la partie droite.
 
 ## Un appel en cours {#a-call-in-progress}
 

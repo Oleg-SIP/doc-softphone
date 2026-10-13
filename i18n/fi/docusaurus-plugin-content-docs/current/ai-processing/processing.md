@@ -49,7 +49,7 @@ Järjestyksellä on väliä: kaksi viimeistä sääntöä tarvitsevat luokan, jo
 
 <Shot name="12d_settings_processing_spending" alt="Asetukset → Käsittely: kuukauden kulut ja kaksi rajaa" />
 
-Kohdassa **Kulut** ohjelma näyttää, mitä tässä kuussa on käytetty ja kuinka monella pyynnöllä — kuvassa *Tässä kuussa ei ole käsitelty mitään*, ja esimerkiksi *Tässä kuussa: 40.492 tokenia, 84 pyynnöllä, maksutta*, kun jotain on käsitelty.
+Kohdassa **Kulut** ohjelma näyttää, mitä tässä kuussa on käytetty ja kuinka monella pyynnöllä — kuvassa *Tässä kuussa ei ole käsitelty mitään*, ja esimerkiksi *Tässä kuussa: 40 492 tokenia, 84 pyynnöllä, maksutta*, kun jotain on käsitelty.
 
 | Kenttä | Merkitys |
 | --- | --- |

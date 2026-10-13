@@ -10,7 +10,7 @@ description: Versio, päivitykset, maasi, lisenssi, käyttöraportin sisältö, 
 
 ## Versio ja maa {#version-and-country}
 
-Yläreunassa ovat nimi, **Versio** (kuvassa 1.1.3), linkki verkkosivustolle, [ai-softphone.com](https://ai-softphone.com/), ja linkki tähän dokumentaatioon.
+Yläreunassa ovat nimi, **Versio** (kuvassa 1.1.5), linkki verkkosivustolle, [ai-softphone.com](https://ai-softphone.com/), ja linkki tähän dokumentaatioon.
 
 **Maa** kertoo ohjelmalle, missä olet. Se auttaa valitsemaan parhaan päivityspalvelimen ja avaa tien maassasi isännöityihin kieli- ja puhepalveluihin. **Tunnista automaattisesti** täyttää sen.
 
@@ -58,10 +58,10 @@ Lomake, joka kirjoittaa kehittäjille poistumatta ohjelmasta.
 | --- | --- |
 | **Aihe** ja **Viesti** | Mitä haluat sanoa. |
 | **Nimesi** ja **Osoite vastausta varten** | Molemmat ovat valinnaisia. Ilman osoitetta sinulle ei voi vastata. |
-| **Liitä loki** | Lisää lokin lopun, noin 512 kt. Katso [Diagnostiikka](/troubleshooting/diagnostics). |
+| **Liitä loki** | Lisää lokin lopun, enintään noin 512 kt; valintaruudun alla oleva rivi kertoo, paljonko se on nyt (kuvassa 111 kt). Katso [Diagnostiikka](/troubleshooting/diagnostics). |
 
 **Lähetä** pysyy harmaana, kunnes on jotain lähetettävää.
 
 ## Rakennettu käyttäen {#built-with}
 
-Komponentit, joiden varaan ohjelma on rakennettu, kukin lisensseineen: Qt 6 (GPL-2.0 tai GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (public domain), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) ja PulseAudio-asiakas (LGPL-2.1-or-later). Kutakin käytetään vieressä mainitulla lisenssillä; jos komponentti tarjoaa useita, valittu on se, joka on mainittu.
+Komponentit, joiden varaan ohjelma on rakennettu, kukin lisensseineen: Qt 6 (GPL-2.0 tai GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (public domain), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) ja PulseAudio-asiakas (LGPL-2.1-or-later). Kutakin käytetään vieressä mainitulla lisenssillä; jos komponentti tarjoaa useita, valittu on se, joka on mainittu.

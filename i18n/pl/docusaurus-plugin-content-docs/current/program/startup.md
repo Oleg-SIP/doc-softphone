@@ -17,7 +17,7 @@ description: "Uruchamiaj telefon razem z komputerem, pozwól mu działać po zam
 
 ## Zamykanie {#close}
 
-**Pozostaw telefon działający po zamknięciu okna**, domyślnie włączone. Zamknięte okno to nie odłożona słuchawka: połączenia nadal przychodzą, a ikona w obszarze powiadomień (na pasku menu w macOS) przywraca okno. Wyłącz to, a zamknięcie okna zakończy program.
+**Pozostaw telefon działający po zamknięciu okna**, domyślnie włączone. Zamknięte okno to nie odłożona słuchawka: połączenia nadal przychodzą, a ikona w obszarze powiadomień (na pasku menu w macOS) przywraca okno. Na pulpicie bez obszaru powiadomień, takim jak GNOME bez rozszerzenia do ikon stanu, telefon zamiast tego czeka zminimalizowany na pasku zadań, a wiersz pod przełącznikiem to mówi. Wyłącz to, a zamknięcie okna zakończy program.
 
 ## Odnośniki do połączeń {#call-links}
 

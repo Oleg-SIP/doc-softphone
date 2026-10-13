@@ -10,7 +10,7 @@ De **Souffleur** luistert mee met een gesprek terwijl het plaatsvindt. In een ei
 
 Op de afbeelding luistert de assistent **Bezwaren in het gesprek** mee met een verkoopgesprek. De linkerkolom is wat er gezegd is, elke regel met zijn tijd en zijn kant; de rechterkolom is wat het model bij elk antwoord van de klant voorstelde; de nieuwste suggestie staat in grote letters nog eens boven beide.
 
-**Souffleur** verschijnt in de lijst onderaan de telefoon, tussen **Geschiedenis** en **Instellingen**, zodra drie dingen geregeld zijn: de souffleur is toegestaan, er is een herkenner die kan meeluisteren terwijl een gesprek loopt, en — voor de assistenten die iets voorstellen — een taalmodel. Dat alles wordt ingesteld in [Instellingen → Souffleur](/ai-processing/prompter), waar ook de tekstgrootte en de assistenten zelf staan.
+**Souffleur** verschijnt in de lijst onderaan de telefoon, tussen **Geschiedenis** en **Instellingen**, zodra drie dingen geregeld zijn: de souffleur is toegestaan, er is een herkenner die kan meeluisteren terwijl een gesprek loopt, en er is een taalmodel, dat de assistenten die iets voorstellen raadplegen. Dat alles wordt ingesteld in [Instellingen → Souffleur](/ai-processing/prompter), waar ook de tekstgrootte en de assistenten zelf staan.
 
 ## Het venster {#the-window}
 <Shot name="44_prompter_window" alt="Het souffleurvenster met de assistent Bezwaren in het gesprek gekozen, vóór de start" />

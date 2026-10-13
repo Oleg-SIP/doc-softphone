@@ -63,7 +63,7 @@ Jos ikkuna avautuu mutta kuiskaaja ei käynnisty, sen painikkeiden alla oleva ri
 
 ## Puhelin katosi, kun suljin ikkunan {#the-phone-disappeared-when-i-closed-the-window}
 
-Kun **Anna puhelimen jatkaa, kun ikkuna suljetaan** on käytössä, puhelin on edelleen käynnissä ja puhelut tulevat edelleen. Ilmoitusalueen kuvake (macOS:ssä valikkorivillä) tuo ikkunan takaisin. Katso [Käynnistys](/program/startup).
+Kun **Anna puhelimen jatkaa, kun ikkuna suljetaan** on käytössä, puhelin on edelleen käynnissä ja puhelut tulevat edelleen. Ilmoitusalueen kuvake (macOS:ssä valikkorivillä) tuo ikkunan takaisin. Työpöydällä, jolla ei ole ilmoitusaluetta, puhelin on pienennettynä tehtäväpalkissa. Katso [Käynnistys](/program/startup).
 
 ## Selaimen tai CRM:n puhelinnumero ei soita {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

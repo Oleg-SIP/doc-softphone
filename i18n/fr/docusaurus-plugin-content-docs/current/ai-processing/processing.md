@@ -49,7 +49,7 @@ L'ordre compte : les deux dernières règles ont besoin de la catégorie que la 
 
 <Shot name="12d_settings_processing_spending" alt="Réglages → Traitement : les dépenses du mois et les deux limites" />
 
-Sous **Dépenses**, le programme affiche ce qui a été dépensé ce mois-ci et sur combien de requêtes — *Rien n'a été traité ce mois-ci* sur l'image, et par exemple *Ce mois-ci : 40.492 jetons, sur 84 requêtes, sans frais* une fois que quelque chose l'a été.
+Sous **Dépenses**, le programme affiche ce qui a été dépensé ce mois-ci et sur combien de requêtes — *Rien n'a été traité ce mois-ci* sur l'image, et par exemple *Ce mois-ci : 40 492 jetons, sur 84 requêtes, sans frais* une fois que quelque chose l'a été.
 
 | Champ | Signification |
 | --- | --- |

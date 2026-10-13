@@ -38,7 +38,7 @@ Rozetlerin altında, iş arkadaşlarınız ve hatlar için oluşturduğunuz [dü
 
 ### Kayıtlar, Kişiler, Geçmiş, Suflör, Ayarlar {#recordings-contacts-history-prompter-settings}
 
-Alttaki bu girdiler sağda yan yana birer sekme açar: [Kayıtlar](../interface/recordings.md), [Kişiler ve Geçmiş](contacts-history.md), [Suflör](prompter.md) ve [Ayarlar](settings-overview.md). **Suflör** ancak suflöre izin verildiğinde ve dinleyeceği bir tanıyıcı olduğunda görünür. Açtığınız sekmeler sağ tarafın üstündeki sırada kalır.
+Alttaki bu girdiler sağda yan yana birer sekme açar: [Kayıtlar](../interface/recordings.md), [Kişiler ve Geçmiş](contacts-history.md), [Suflör](prompter.md) ve [Ayarlar](settings-overview.md). **Suflör** ancak üç şey yerine geldiğinde orada olur: suflöre izin verilmiştir, görüşme sürerken dinleyebilen bir tanıyıcı **Sına** ile denetlenmiştir ve bir dil modeli de öyle — bkz. [Suflör ayarları](../ai-processing/prompter.md#what-it-needs). Açtığınız sekmeler sağ tarafın üstündeki sırada kalır.
 
 ## Süren bir çağrı {#a-call-in-progress}
 

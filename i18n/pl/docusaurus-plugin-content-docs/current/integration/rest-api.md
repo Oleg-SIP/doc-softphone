@@ -35,7 +35,7 @@ Nie instaluje się żadnej osobnej usługi i nie trzeba niczego uruchamiać pono
 To, co program może robić, zależy od tego, czy zmienia zapisane dane, a nie od tego, czy odczytuje:
 
 - **Bez tokenu** każdy program na komputerze może odczytywać wszystko we włączonych grupach i sterować połączeniami: wykonywać, odbierać, rozłączać, zawieszać, wznawiać, przekazywać i wysyłać DTMF.
-- **Z tokenem** w nagłówku `Authorization` może też używać punktów końcowych, które zmieniają to, co zapisane. Bez tokenu te punkty końcowe nie są ani obsługiwane, ani wymieniane na własnej stronie API.
+- **Z tokenem** w nagłówku `Authorization` może też używać [punktów końcowych, które zmieniają to, co zapisane](#endpoints-that-need-the-token). Bez tokenu te punkty końcowe nie są wymieniane na własnej stronie API i odpowiadają `401`. Gdy token w ogóle nie jest ustawiony, nic nie może zmienić tego, co zapisane.
 
 Token jest przechowywany w pęku kluczy komputera, nie w pliku ustawień, i nigdy nie jest zwracany przez `/settings`.
 
@@ -67,6 +67,20 @@ Adres bazowy to `http://127.0.0.1:8377`. Poniższe punkty końcowe nie wymagają
 | GET | `/accounts` | Konta SIP i stan ich rejestracji. Nigdy hasło. |
 | GET | `/settings` | Cała konfiguracja, bez sekretów. |
 | GET | `/taxonomy` | Kategorie, etykiety i sygnały ostrzegawcze, z ich kodami. |
+
+### Punkty końcowe, które wymagają tokenu {#endpoints-that-need-the-token}
+
+Zmieniają to, co zapisane, więc każde żądanie musi nieść token w nagłówku `Authorization`. Własna strona API pokazuje je tylko żądaniu, które go niesie.
+
+| Metoda | Ścieżka | Co robi |
+| --- | --- | --- |
+| POST | `/contacts` | Dodaje kontakt: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` jest opcjonalne. |
+| PUT | `/contacts/{id}` | Zastępuje kontakt. |
+| DELETE | `/contacts/{id}` | Usuwa kontakt. |
+| DELETE | `/history/{id}` | Zapomina jedno połączenie z rejestru połączeń. |
+| DELETE | `/history` | Zapomina cały rejestr połączeń. Nie da się tego cofnąć. |
+| PUT | `/accounts/{id}` | Zastępuje ustawienia konta. Hasła wśród nich nie ma. |
+| PUT | `/settings` | Zastępuje ustawienia. |
 
 Każdy identyfikator to UUID nadany przez telefon: `id` połączenia pochodzi z `/calls` albo z odpowiedzi na `POST /calls`, `id` konta z `/accounts`.
 
@@ -164,6 +178,9 @@ Każdy błąd to JSON z jednym kluczem `error`, przeznaczony dla ludzi, nie do p
 | Status | Treść | Znaczenie |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Ścieżka nie istnieje albo jej grupa dostępu jest wyłączona; oba przypadki celowo dają tę samą odpowiedź. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Ścieżka istnieje, ale nie przyjmuje tej metody: na przykład `POST /settings` zamiast `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Punkt końcowy, który zmienia to, co zapisane, na telefonie, gdzie pole **Token** jest puste. Wypełnij je w **Sterowanie lokalne**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Punkt końcowy, który zmienia to, co zapisane, bez właściwego tokenu. |
 | 404 | `{"error":"no contact with that id"}` | Ścieżka jest prawidłowa, identyfikator nie. |
 | 400 | `{"error":"no call with that id"}` | Połączenie się zakończyło albo nigdy nie istniało. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` bez numeru. Nic nie zostało wybrane. |
@@ -203,7 +220,7 @@ Wcześniejsze wersje używały nazw w camelCase i krótkich identyfikatorów. `a
 | --- | --- |
 | Odmowa połączenia na `127.0.0.1:8377` | Sterowanie lokalne jest wyłączone, telefon nie działa albo zmieniono port. |
 | `404 {"error":"no such endpoint"}` dla ścieżki z tej strony | Jej grupa dostępu jest wyłączona. |
-| Odczyt działa, zapis jest odrzucany | Punkty końcowe zmieniające zapisane dane wymagają tokenu w nagłówku `Authorization`. |
+| Odczyt działa, zapis jest odrzucany z `401` | Punkty końcowe, które zmieniają zapisane dane, wymagają tokenu w nagłówku `Authorization`, a na telefonie trzeba najpierw wypełnić pole **Token**. |
 | Tytuły kategorii nie są po angielsku | Tytuły idą za językiem interfejsu. Dopasowuj po `code` z `/taxonomy`. |
 | Brakuje `accountId`, `startedAt` lub `at` | Integracja została napisana dla wcześniejszych nazw; zobacz wyżej. |
 

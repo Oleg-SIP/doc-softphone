@@ -63,7 +63,7 @@ Dacă fereastra se deschide, dar sufleurul nu pornește, rândul de sub butoanel
 
 ## Telefonul a dispărut când am închis fereastra {#the-phone-disappeared-when-i-closed-the-window}
 
-Cu **Lasă telefonul să meargă când fereastra se închide** pornit, telefonul încă rulează, iar apelurile sosesc în continuare. Pictograma din zona de notificări (bara de meniu pe macOS) readuce fereastra. Consultați [Pornire](/program/startup).
+Cu **Lasă telefonul să meargă când fereastra se închide** pornit, telefonul încă rulează, iar apelurile sosesc în continuare. Pictograma din zona de notificări (bara de meniu pe macOS) readuce fereastra. Pe un desktop fără zonă de notificări, telefonul este minimizat în bara de activități. Consultați [Pornire](/program/startup).
 
 ## Un număr de telefon dintr-un navigator sau dintr-un CRM nu sună {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

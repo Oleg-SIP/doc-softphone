@@ -63,7 +63,7 @@ Als het venster opengaat maar de souffleur niet start, zegt de regel onder de kn
 
 ## De telefoon verdween toen ik het venster sloot {#the-phone-disappeared-when-i-closed-the-window}
 
-Met **De telefoon laten doordraaien wanneer het venster wordt gesloten** aan draait de telefoon nog en komen gesprekken nog binnen. Het pictogram in het meldingsgebied (de menubalk op macOS) haalt het venster terug. Zie [Opstarten](/program/startup).
+Met **De telefoon laten doordraaien wanneer het venster wordt gesloten** aan draait de telefoon nog en komen gesprekken nog binnen. Het pictogram in het meldingsgebied (de menubalk op macOS) haalt het venster terug. Op een bureaublad zonder meldingsgebied staat de telefoon geminimaliseerd in de taakbalk. Zie [Opstarten](/program/startup).
 
 ## Een telefoonnummer in een browser of CRM belt niet {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

@@ -10,7 +10,7 @@ description: Phiên bản, cập nhật, quốc gia của bạn, giấy phép, n
 
 ## Phiên bản và quốc gia {#version-and-country}
 
-Ở trên cùng là tên, **Phiên bản** (trong hình là 1.1.3), liên kết tới trang web, [ai-softphone.com](https://ai-softphone.com/), và liên kết tới tài liệu này.
+Ở trên cùng là tên, **Phiên bản** (trong hình là 1.1.5), liên kết tới trang web, [ai-softphone.com](https://ai-softphone.com/), và liên kết tới tài liệu này.
 
 **Quốc gia** cho chương trình biết bạn đang ở đâu. Nó giúp chọn máy chủ cập nhật tốt nhất, và mở đường tới các dịch vụ ngôn ngữ và giọng nói đặt tại quốc gia của bạn. **Tự động nhận biết** sẽ điền giá trị này.
 
@@ -58,10 +58,10 @@ Một biểu mẫu để viết cho các nhà phát triển mà không cần r�
 | --- | --- |
 | **Chủ đề** và **Nội dung** | Điều bạn muốn nói. |
 | **Tên của bạn** và **Địa chỉ để trả lời** | Cả hai đều không bắt buộc. Không có địa chỉ thì không có cách nào trả lời bạn. |
-| **Đính kèm nhật ký** | Thêm phần cuối của nhật ký, khoảng 512 kB. Xem [Chẩn đoán](/troubleshooting/diagnostics). |
+| **Đính kèm nhật ký** | Thêm phần cuối của nhật ký, tối đa khoảng 512 kB; dòng dưới ô đánh dấu cho biết hiện giờ là bao nhiêu (111 kB trong hình). Xem [Chẩn đoán](/troubleshooting/diagnostics). |
 
 **Gửi** giữ màu xám cho tới khi có nội dung để gửi.
 
 ## Được dựng bằng {#built-with}
 
-Các thành phần mà chương trình được dựng trên đó, mỗi thành phần kèm giấy phép của nó: Qt 6 (GPL-2.0 hoặc GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (phạm vi công cộng), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) và PulseAudio client (LGPL-2.1-or-later). Mỗi thành phần được dùng theo giấy phép ghi bên cạnh; khi một thành phần có nhiều giấy phép, giấy phép được nêu tên là giấy phép được chọn.
+Các thành phần mà chương trình được dựng trên đó, mỗi thành phần kèm giấy phép của nó: Qt 6 (GPL-2.0 hoặc GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (phạm vi công cộng), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) và PulseAudio client (LGPL-2.1-or-later). Mỗi thành phần được dùng theo giấy phép ghi bên cạnh; khi một thành phần có nhiều giấy phép, giấy phép được nêu tên là giấy phép được chọn.

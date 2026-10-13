@@ -10,7 +10,7 @@ Il **Suggeritore** ascolta una conversazione mentre avviene. In una finestra tut
 
 Nell'immagine l'assistente **Obiezioni nella chiamata** ascolta una chiamata di vendita. La colonna di sinistra è ciò che è stato detto, ogni riga con la sua ora e la sua parte; quella di destra è ciò che il modello ha suggerito a ogni risposta del cliente; il suggerimento più recente è ripetuto a caratteri grandi sopra le due.
 
-**Suggeritore** compare nell'elenco in fondo al telefono, tra **Cronologia** e **Impostazioni**, non appena ci sono tre cose: il suggeritore è consentito, c'è un riconoscitore capace di ascoltare mentre una conversazione è in corso e — per gli assistenti che suggeriscono qualcosa — un modello linguistico. Tutto questo si imposta in [Impostazioni → Suggeritore](/ai-processing/prompter), dove si trovano anche la dimensione del testo e gli assistenti stessi.
+**Suggeritore** compare nell'elenco in fondo al telefono, tra **Cronologia** e **Impostazioni**, appena ci sono tre cose: il suggeritore è consentito, c'è un riconoscitore capace di ascoltare mentre una conversazione è in corso, e c'è un modello linguistico, che gli assistenti che suggeriscono qualcosa interrogano. Tutto questo si imposta in [Impostazioni → Suggeritore](/ai-processing/prompter), dove si trovano anche la dimensione del testo e gli assistenti stessi.
 
 ## La finestra {#the-window}
 <Shot name="44_prompter_window" alt="La finestra del suggeritore con l'assistente Obiezioni nella chiamata scelto, prima dell'avvio" />

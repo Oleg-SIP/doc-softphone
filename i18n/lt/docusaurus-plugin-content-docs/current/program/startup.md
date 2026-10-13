@@ -17,7 +17,7 @@ description: "Paleiskite telefoną kartu su kompiuteriu, leiskite jam veikti už
 
 ## Užvėrimas {#close}
 
-**Leisti telefonui veikti toliau, kai langas užveriamas**, pagal numatymą įjungta. Užvertas langas nėra padėtas ragelis: skambučiai vis tiek ateina, o piktograma pranešimų srityje (macOS — meniu juostoje) grąžina langą. Išjunkite tai, ir lango užvėrimas uždarys programą.
+**Leisti telefonui veikti toliau, kai langas užveriamas**, pagal numatymą įjungta. Užvertas langas nėra padėtas ragelis: skambučiai vis tiek ateina, o piktograma pranešimų srityje (macOS — meniu juostoje) grąžina langą. Darbalaukyje, kuriame nėra pranešimų srities, pavyzdžiui, GNOME be būsenos piktogramų plėtinio, telefonas vietoj to laukia sumažintas užduočių juostoje, ir eilutė po jungikliu tai sako. Išjunkite tai, ir lango užvėrimas uždarys programą.
 
 ## Skambučių nuorodos {#call-links}
 

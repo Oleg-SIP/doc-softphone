@@ -10,7 +10,7 @@ El **Apuntador** escucha una conversación mientras transcurre. En una ventana p
 
 En la imagen, el ayudante **Objeciones en la llamada** escucha una llamada de ventas. La columna izquierda es lo que se ha dicho, cada línea con su hora y su lado; la derecha, lo que el modelo sugirió ante cada respuesta del cliente; la sugerencia más reciente se repite en letra grande encima de las dos.
 
-**Apuntador** aparece en la lista de la parte inferior del teléfono, entre **Historial** y **Ajustes**, en cuanto se cumplen tres cosas: el apuntador está permitido, hay un reconocedor capaz de escuchar mientras transcurre una conversación y —para los ayudantes que sugieren algo— un modelo de lenguaje. Todo ello se configura en [Ajustes → Apuntador](/ai-processing/prompter), donde también están el tamaño del texto y los propios ayudantes.
+**Apuntador** aparece en la lista al pie del teléfono, entre **Historial** y **Ajustes**, en cuanto se cumplen tres cosas: el apuntador está permitido, hay un reconocedor que sabe escuchar mientras transcurre una conversación, y hay un modelo de lenguaje, al que preguntan los ayudantes que sugieren algo. Todo ello se configura en [Ajustes → Apuntador](/ai-processing/prompter), donde también están el tamaño del texto y los propios ayudantes.
 
 ## La ventana {#the-window}
 <Shot name="44_prompter_window" alt="La ventana del apuntador con el ayudante Objeciones en la llamada elegido, antes de iniciarlo" />

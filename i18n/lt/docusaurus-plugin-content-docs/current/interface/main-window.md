@@ -38,7 +38,7 @@ Po ženkliukais yra [mygtukai](../sip-accounts/buttons.md), kuriuos sukūrėte k
 
 ### Įrašai, Kontaktai, Istorija, Suflerius, Nustatymai {#recordings-contacts-history-prompter-settings}
 
-Šie įrašai apačioje kiekvienas atveria skirtuką dešinėje, vieną šalia kito: [Įrašai](../interface/recordings.md), [Kontaktai ir istorija](contacts-history.md), [Suflerius](prompter.md) ir [Nustatymai](settings-overview.md). **Suflerius** atsiranda tik tada, kai suflerius leidžiamas ir turi atpažintuvą, kuriuo klausytis. Atverti skirtukai lieka eilutėje dešinės pusės viršuje.
+Šie įrašai apačioje kiekvienas atveria skirtuką dešinėje, vieną šalia kito: [Įrašai](../interface/recordings.md), [Kontaktai ir istorija](contacts-history.md), [Suflerius](prompter.md) ir [Nustatymai](settings-overview.md). **Suflerius** atsiranda tik tada, kai įvykdyti trys dalykai: suflerius leidžiamas, atpažintuvas, kuris moka klausytis vykstant pokalbiui, patikrintas mygtuku **Patikrinti**, o taip pat ir kalbos modelis — žr. [Sufleriaus nustatymai](../ai-processing/prompter.md#what-it-needs). Atverti skirtukai lieka eilutėje dešinės pusės viršuje.
 
 ## Vykstantis skambutis {#a-call-in-progress}
 

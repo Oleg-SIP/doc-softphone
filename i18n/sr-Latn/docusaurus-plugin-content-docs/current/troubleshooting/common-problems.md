@@ -63,7 +63,7 @@ Ako se prozor otvori, a šaptač se ne pokrene, red ispod njegovih dugmadi kaže
 
 ## Telefon je nestao kada sam zatvorio prozor {#the-phone-disappeared-when-i-closed-the-window}
 
-Kada je uključeno **Neka telefon radi i kada se prozor zatvori**, telefon i dalje radi, a pozivi i dalje stižu. Ikona u oblasti obaveštenja (traci menija na macOS-u) vraća prozor. Pogledajte [Pokretanje](/program/startup).
+Kada je uključeno **Neka telefon radi i kada se prozor zatvori**, telefon i dalje radi, a pozivi i dalje stižu. Ikona u oblasti obaveštenja (traci menija na macOS-u) vraća prozor. Na radnoj površini bez oblasti obaveštenja telefon je umanjen na traci zadataka. Pogledajte [Pokretanje](/program/startup).
 
 ## Telefonski broj u pregledaču ili CRM-u ne poziva {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

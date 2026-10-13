@@ -10,7 +10,7 @@ description: Verze, aktualizace, vaše země, licence, obsah hlášení o použ�
 
 ## Verze a země {#version-and-country}
 
-Nahoře je název, **Verze** (na obrázku 1.1.3), odkaz na web [ai-softphone.com](https://ai-softphone.com/?lang=cs) a odkaz na tuto dokumentaci.
+Nahoře je název, **Verze** (na obrázku 1.1.5), odkaz na web [ai-softphone.com](https://ai-softphone.com/?lang=cs) a odkaz na tuto dokumentaci.
 
 **Země** říká programu, kde jste. Pomáhá vybrat nejlepší aktualizační server a otevírá cestu k jazykovým a rozpoznávacím službám ve vaší zemi. **Zjistit automaticky** ji vyplní. Na obrázku je vybráno **Česko**.
 
@@ -58,10 +58,10 @@ Formulář, kterým napíšete vývojářům, aniž byste opustili program.
 | --- | --- |
 | **Předmět** a **Zpráva** | Co chcete říct. |
 | **Vaše jméno** a **Adresa pro odpověď** | Obojí je nepovinné. Bez adresy není jak odpovědět. |
-| **Přiložit protokol** | Přidá konec protokolu, asi 512 kB. Viz [Diagnostika](/troubleshooting/diagnostics). |
+| **Přiložit protokol** | Přidá konec protokolu, nejvýše asi 512 kB; řádek pod zaškrtávacím políčkem říká, kolik to je teď (na obrázku 111 kB). Viz [Diagnostika](/troubleshooting/diagnostics). |
 
 **Odeslat** zůstává šedé, dokud není co poslat.
 
 ## Postaveno s {#built-with}
 
-Komponenty, na kterých je program postaven, každá se svou licencí: Qt 6 (GPL-2.0 nebo GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (public domain), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) a PulseAudio client (LGPL-2.1-or-later). Každá se používá pod licencí uvedenou vedle ní; kde komponenta nabízí několik, je uvedena ta zvolená.
+Komponenty, na kterých je program postaven, každá se svou licencí: Qt 6 (GPL-2.0 nebo GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (public domain), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) a PulseAudio client (LGPL-2.1-or-later). Každá se používá pod licencí uvedenou vedle ní; kde komponenta nabízí několik, je uvedena ta zvolená.

@@ -17,7 +17,7 @@ description: "Spouštění telefonu s počítačem, běh i po zavření okna a o
 
 ## Zavírání {#close}
 
-**Nechat telefon běžet, když se zavře okno**, ve výchozím stavu zapnuto. Zavřené okno není zavěšený telefon: hovory stále přicházejí a ikona v oznamovací oblasti (na macOS v řádku nabídek) okno vrátí. Vypněte to a zavřením okna program skončí.
+**Nechat telefon běžet, když se zavře okno**, ve výchozím stavu zapnuto. Zavřené okno není zavěšený telefon: hovory stále přicházejí a ikona v oznamovací oblasti (na macOS v řádku nabídek) okno vrátí. Na ploše, která oznamovací oblast nemá, například v GNOME bez rozšíření pro stavové ikony, telefon místo toho čeká minimalizovaný na hlavním panelu a řádek pod přepínačem to říká. Vypněte to a zavřením okna program skončí.
 
 ## Odkazy pro volání {#call-links}
 

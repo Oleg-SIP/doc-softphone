@@ -10,7 +10,7 @@ description: "Cửa sổ của người nhắc trực tiếp: lời của cuộc
 
 Trong ảnh, trợ lý **Phản đối trong cuộc gọi** đang nghe một cuộc gọi bán hàng. Cột bên trái là những gì đã được nói, mỗi dòng kèm thời điểm và phía nói; cột bên phải là những gì mô hình gợi ý cho từng câu trả lời của khách hàng; gợi ý mới nhất được lặp lại bằng chữ lớn phía trên cả hai cột.
 
-**Người nhắc** xuất hiện trong danh sách ở cuối điện thoại, giữa **Lịch sử** và **Cài đặt**, ngay khi có đủ ba điều: người nhắc được cho phép, có một bộ nhận dạng biết lắng nghe trong khi cuộc trò chuyện diễn ra, và — với các trợ lý có gợi ý — một mô hình ngôn ngữ. Tất cả được thiết lập trong [Cài đặt → Người nhắc](/ai-processing/prompter), nơi cũng có cỡ chữ và chính các trợ lý.
+**Người nhắc** xuất hiện trong danh sách ở cuối điện thoại, giữa **Lịch sử** và **Cài đặt**, ngay khi đủ ba điều: người nhắc được cho phép, có một bộ nhận dạng biết lắng nghe trong khi cuộc trò chuyện diễn ra, và có một mô hình ngôn ngữ mà các trợ lý có gợi ý sẽ hỏi. Tất cả được thiết lập trong [Cài đặt → Người nhắc](/ai-processing/prompter), nơi cũng có cỡ chữ và chính các trợ lý.
 
 ## Cửa sổ {#the-window}
 <Shot name="44_prompter_window" alt="Cửa sổ người nhắc với trợ lý Phản đối trong cuộc gọi được chọn, trước khi bắt đầu" />

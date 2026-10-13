@@ -63,7 +63,7 @@ Si la fenêtre s'ouvre mais que le souffleur ne démarre pas, la ligne sous ses 
 
 ## Le téléphone a disparu quand j'ai fermé la fenêtre {#the-phone-disappeared-when-i-closed-the-window}
 
-Avec **Laisser le téléphone tourner quand la fenêtre est fermée** activé, le téléphone tourne toujours, et les appels arrivent toujours. L'icône de la zone de notification (la barre des menus sous macOS) fait revenir la fenêtre. Voir [Démarrage](/program/startup).
+Avec **Laisser le téléphone tourner quand la fenêtre est fermée** activé, le téléphone tourne toujours, et les appels arrivent toujours. L'icône de la zone de notification (la barre des menus sous macOS) fait revenir la fenêtre. Sur un bureau sans zone de notification, le téléphone est réduit dans la barre des tâches. Voir [Démarrage](/program/startup).
 
 ## Un numéro de téléphone dans un navigateur ou un CRM n'appelle pas {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

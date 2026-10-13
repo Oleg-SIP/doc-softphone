@@ -10,7 +10,7 @@ description: Sürüm, güncellemeler, ülkeniz, lisans, kullanım raporunun içe
 
 ## Sürüm ve ülke {#version-and-country}
 
-En üstte ad, **Sürüm** (resimde 1.1.3), web sitesine bir bağlantı, [ai-softphone.com](https://ai-softphone.com/), ve bu belgelere bir bağlantı bulunur.
+En üstte ad, **Sürüm** (resimde 1.1.5), web sitesine bir bağlantı, [ai-softphone.com](https://ai-softphone.com/), ve bu belgelere bir bağlantı bulunur.
 
 **Ülke**, programa nerede olduğunuzu söyler. En iyi güncelleme sunucusunun seçilmesine yardım eder ve ülkenizde barındırılan dil ve konuşma hizmetlerinin yolunu açar. **Kendiliğinden bul** onu doldurur.
 
@@ -58,10 +58,10 @@ Programdan çıkmadan geliştiricilere yazmanızı sağlayan bir form.
 | --- | --- |
 | **Konu** ve **İleti** | Söylemek istediğiniz şey. |
 | **Adınız** ve **Yanıt için adres** | İkisi de isteğe bağlıdır. Adres olmadan size yanıt verilemez. |
-| **Günlüğü ekle** | Günlüğün sonunu, yaklaşık 512 kB, ekler. Bkz. [Tanılama](/troubleshooting/diagnostics). |
+| **Günlüğü ekle** | Günlüğün sonunu ekler, en fazla yaklaşık 512 kB; onay kutusunun altındaki satır şu an ne kadar olduğunu söyler (resimde 111 kB). Bkz. [Tanılama](/troubleshooting/diagnostics). |
 
 **Gönder**, gönderilecek bir şey olana kadar gri kalır.
 
 ## Neyle oluşturuldu {#built-with}
 
-Programın üzerine kurulduğu bileşenler, her biri lisansıyla: Qt 6 (GPL-2.0 ya da GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (kamu malı), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) ve PulseAudio istemcisi (LGPL-2.1-or-later). Her biri yanındaki lisans altında kullanılır; bir bileşen birkaç lisans sunduğunda, adı geçen lisans seçilmiş olandır.
+Programın üzerine kurulduğu bileşenler, her biri lisansıyla: Qt 6 (GPL-2.0 ya da GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (kamu malı), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) ve PulseAudio istemcisi (LGPL-2.1-or-later). Her biri yanındaki lisans altında kullanılır; bir bileşen birkaç lisans sunduğunda, adı geçen lisans seçilmiş olandır.

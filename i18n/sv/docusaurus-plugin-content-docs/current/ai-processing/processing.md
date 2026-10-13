@@ -49,7 +49,7 @@ Ordningen spelar roll: de två sista reglerna behöver kategorin som regeln för
 
 <Shot name="12d_settings_processing_spending" alt="Inställningar → Bearbetning: månadens utgifter och de två gränserna" />
 
-Under **Utgifter** visar programmet vad som har förbrukats den här månaden och på hur många begäranden — *Ingenting har bearbetats den här månaden* på bilden, och till exempel *Den här månaden: 40.492 token, över 84 begäranden, utan kostnad* när något har bearbetats.
+Under **Utgifter** visar programmet vad som har förbrukats den här månaden och på hur många begäranden — *Ingenting har bearbetats den här månaden* på bilden, och till exempel *Den här månaden: 40 492 token, över 84 begäranden, utan kostnad* när något har bearbetats.
 
 | Fält | Betydelse |
 | --- | --- |

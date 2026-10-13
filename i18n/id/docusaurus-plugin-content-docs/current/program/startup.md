@@ -17,7 +17,7 @@ description: "Jalankan telepon bersama komputer, biarkan tetap berjalan saat jen
 
 ## Menutup {#close}
 
-**Biarkan telepon tetap berjalan saat jendelanya ditutup**, menyala secara bawaan. Jendela yang ditutup bukan berarti telepon yang dimatikan: panggilan tetap masuk, dan ikon di area pemberitahuan (bilah menu di macOS) memunculkan kembali jendelanya. Matikan ini, maka menutup jendela akan keluar dari program.
+**Biarkan telepon tetap berjalan saat jendelanya ditutup**, menyala secara bawaan. Jendela yang ditutup bukan berarti telepon yang dimatikan: panggilan tetap masuk, dan ikon di area pemberitahuan (bilah menu di macOS) memunculkan kembali jendelanya. Di desktop yang tidak punya area pemberitahuan, seperti GNOME tanpa ekstensi untuk ikon status, telepon justru menunggu dalam keadaan diminimalkan di bilah tugas, dan baris di bawah sakelar mengatakannya. Matikan ini, maka menutup jendela akan keluar dari program.
 
 ## Tautan panggilan {#call-links}
 

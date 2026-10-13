@@ -35,7 +35,7 @@ Der installeres ingen separat tjeneste, og der kræves ingen genstart. Den del a
 Hvad et program må, afhænger af, om det ændrer gemte data, ikke af, om det læser:
 
 - **Uden en nøgle** må ethvert program på computeren læse alt i de åbnede grupper og styre opkald: foretage, besvare, lægge på, parkere, genoptage, viderestille og sende DTMF.
-- **Med nøglen** i hovedet `Authorization` må det også bruge de endepunkter, der ændrer det gemte. Uden nøglen bliver disse endepunkter hverken stillet til rådighed eller vist på API'ets egen side.
+- **Med nøglen** i hovedet `Authorization` må det også bruge [de endepunkter, der ændrer det gemte](#endpoints-that-need-the-token). Uden nøglen vises disse endepunkter ikke på API'ets egen side, og de svarer `401`. Er der slet ingen nøgle sat, kan intet ændre det gemte.
 
 Nøglen gemmes i computerens nøglering, ikke i indstillingsfilen, og returneres aldrig af `/settings`.
 
@@ -67,6 +67,20 @@ Grundadressen er `http://127.0.0.1:8377`. Endepunkterne nedenfor kræver ingen n
 | GET | `/accounts` | SIP-kontiene og deres registreringstilstand. Aldrig en adgangskode. |
 | GET | `/settings` | Hele konfigurationen uden hemmelighederne. |
 | GET | `/taxonomy` | Kategorier, etiketter og signaler med deres koder. |
+
+### Endepunkter, der kræver nøglen {#endpoints-that-need-the-token}
+
+De ændrer det gemte, så hver forespørgsel skal have nøglen med i hovedet `Authorization`. API'ets egen side viser dem kun for en forespørgsel, der har den med.
+
+| Metode | Sti | Gør |
+| --- | --- | --- |
+| POST | `/contacts` | Tilføjer en kontakt: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` er valgfri. |
+| PUT | `/contacts/{id}` | Erstatter en kontakt. |
+| DELETE | `/contacts/{id}` | Fjerner en kontakt. |
+| DELETE | `/history/{id}` | Glemmer ét opkald i opkaldsloggen. |
+| DELETE | `/history` | Glemmer hele opkaldsloggen. Det kan ikke fortrydes. |
+| PUT | `/accounts/{id}` | Erstatter indstillingerne for en konto. Adgangskoden er ikke blandt dem. |
+| PUT | `/settings` | Erstatter indstillingerne. |
 
 Hver identifikator er en UUID udstedt af telefonen: et opkalds `id` kommer fra `/calls` eller fra svaret på `POST /calls`, en kontos `id` fra `/accounts`.
 
@@ -164,6 +178,9 @@ Hver fejl er JSON med en enkelt nøgle `error`, beregnet til mennesker, ikke til
 | Status | Indhold | Betydning |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Stien findes ikke, eller dens adgangsgruppe er slået fra; begge giver med vilje samme svar. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Stien findes, men tager ikke denne metode: for eksempel `POST /settings` i stedet for `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Et endepunkt, der ændrer det gemte, på en telefon, hvor feltet **Nøgle** er tomt. Udfyld det under **Lokal styring**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Et endepunkt, der ændrer det gemte, uden den rigtige nøgle. |
 | 404 | `{"error":"no contact with that id"}` | Stien er rigtig, identifikatoren er ikke. |
 | 400 | `{"error":"no call with that id"}` | Opkaldet er slut eller har aldrig eksisteret. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` uden et nummer. Der blev ikke ringet op. |
@@ -203,7 +220,7 @@ Tidligere versioner brugte navne i camelCase og korte identifikatorer. `accountI
 | --- | --- |
 | Forbindelse afvist på `127.0.0.1:8377` | Lokal styring er slået fra, telefonen kører ikke, eller porten er ændret. |
 | `404 {"error":"no such endpoint"}` for en sti på denne side | Dens adgangsgruppe er slået fra. |
-| Læsning virker, skrivning afvises | De endepunkter, der ændrer gemte data, kræver nøglen i hovedet `Authorization`. |
+| Læsning virker, skrivning afvises med `401` | De endepunkter, der ændrer gemte data, kræver nøglen i hovedet `Authorization`, og feltet **Nøgle** på telefonen skal udfyldes først. |
 | Kategorititler er ikke på engelsk | Titler følger brugerfladens sprog. Match på `code` fra `/taxonomy`. |
 | `accountId`, `startedAt` eller `at` mangler | Integrationen blev skrevet til de tidligere navne; se ovenfor. |
 

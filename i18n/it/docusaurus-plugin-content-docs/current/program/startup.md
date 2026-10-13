@@ -17,7 +17,7 @@ description: "Avviare il telefono con il computer, tenerlo in funzione quando la
 
 ## Chiusura {#close}
 
-**Lascia il telefono in funzione quando la finestra è chiusa**, attivo per impostazione predefinita. Una finestra chiusa non è un telefono riagganciato: le chiamate arrivano comunque, e l'icona nell'area di notifica (la barra dei menu su macOS) riporta la finestra. Lo disattivi e chiudere la finestra chiude il programma.
+**Lascia il telefono in funzione quando la finestra è chiusa**, attivo per impostazione predefinita. Una finestra chiusa non è un telefono riagganciato: le chiamate arrivano comunque, e l'icona nell'area di notifica (la barra dei menu su macOS) riporta la finestra. Su un desktop senza area di notifica, come GNOME senza un'estensione per le icone di stato, il telefono aspetta invece ridotto a icona nella barra delle applicazioni, e la riga sotto l'interruttore lo dice. Lo disattivi e chiudere la finestra chiude il programma.
 
 ## Collegamenti di chiamata {#call-links}
 

@@ -63,7 +63,7 @@ Om fönstret öppnas men sufflören inte startar, säger raden under knapparna v
 
 ## Telefonen försvann när jag stängde fönstret {#the-phone-disappeared-when-i-closed-the-window}
 
-Med **Låt telefonen gå vidare när fönstret stängs** påslaget är telefonen fortfarande igång och samtal kommer fortfarande in. Ikonen i meddelandefältet (menyraden på macOS) tar tillbaka fönstret. Se [Uppstart](/program/startup).
+Med **Låt telefonen gå vidare när fönstret stängs** påslaget är telefonen fortfarande igång och samtal kommer fortfarande in. Ikonen i meddelandefältet (menyraden på macOS) tar tillbaka fönstret. På ett skrivbord utan meddelandefält ligger telefonen minimerad i aktivitetsfältet. Se [Uppstart](/program/startup).
 
 ## Ett telefonnummer i en webbläsare eller ett CRM ringer inte {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

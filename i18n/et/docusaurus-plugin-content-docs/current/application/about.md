@@ -10,7 +10,7 @@ description: Versioon, uuendused, teie riik, litsents, kasutusaruande sisu, taga
 
 ## Versioon ja riik {#version-and-country}
 
-Ülal on nimi, **Versioon** (pildil 1.1.3), link veebisaidile [ai-softphone.com](https://ai-softphone.com/) ja link sellele dokumentatsioonile.
+Ülal on nimi, **Versioon** (pildil 1.1.5), link veebisaidile [ai-softphone.com](https://ai-softphone.com/) ja link sellele dokumentatsioonile.
 
 **Riik** ütleb programmile, kus te olete. See aitab valida parima uuendusserveri ja avab tee teie riigis majutatud keele- ja kõneteenustele. **Tuvasta automaatselt** täidab selle.
 
@@ -58,10 +58,10 @@ Vorm, mis kirjutab arendajatele programmist lahkumata.
 | --- | --- |
 | **Teema** ja **Sõnum** | See, mida tahate öelda. |
 | **Teie nimi** ja **Aadress vastuse jaoks** | Mõlemad on valikulised. Ilma aadressita ei ole võimalik vastata. |
-| **Lisa logi** | Lisab logi lõpu, umbes 512 kB. Vaadake [Diagnostika](/troubleshooting/diagnostics). |
+| **Lisa logi** | Lisab logi lõpu, kõige rohkem umbes 512 kB; märkeruudu all olev rida ütleb, kui palju see praegu on (pildil 111 kB). Vaadake [Diagnostika](/troubleshooting/diagnostics). |
 
 **Saada** jääb halliks, kuni on midagi saata.
 
 ## Ehitatud kasutades {#built-with}
 
-Komponendid, millele programm on ehitatud, igaüks oma litsentsiga: Qt 6 (GPL-2.0 või GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (avalik omand), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) ja PulseAudio klient (LGPL-2.1-or-later). Igaüht kasutatakse kõrval nimetatud litsentsi alusel; kui komponent pakub mitut, on valitud nimetatu.
+Komponendid, millele programm on ehitatud, igaüks oma litsentsiga: Qt 6 (GPL-2.0 või GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (avalik omand), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) ja PulseAudio klient (LGPL-2.1-or-later). Igaüht kasutatakse kõrval nimetatud litsentsi alusel; kui komponent pakub mitut, on valitud nimetatu.

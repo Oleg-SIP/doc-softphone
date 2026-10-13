@@ -35,7 +35,7 @@ Non viene installato nessun servizio separato e non serve riavviare. La parte de
 Che cosa può fare un programma dipende da se cambia dati salvati, non da se legge:
 
 - **Senza token**, qualsiasi programma sul computer può leggere tutto nei gruppi attivi e controllare le chiamate: fare, rispondere, riagganciare, mettere in attesa, riprendere, trasferire e inviare DTMF.
-- **Con il token** nell'intestazione `Authorization`, può anche usare gli endpoint che cambiano ciò che è salvato. Senza il token, quegli endpoint non vengono né serviti né elencati nella pagina dell'API.
+- **Con il token** nell'intestazione `Authorization`, può anche usare [gli endpoint che cambiano ciò che è salvato](#endpoints-that-need-the-token). Senza il token, quegli endpoint non sono elencati nella pagina dell'API e rispondono `401`. Se non è impostato alcun token, niente può cambiare ciò che è salvato.
 
 Il token è conservato nel portachiavi del computer, non nel file di impostazioni, e non viene mai restituito da `/settings`.
 
@@ -67,6 +67,20 @@ L'indirizzo di base è `http://127.0.0.1:8377`. Gli endpoint qui sotto non richi
 | GET | `/accounts` | Gli account SIP e il loro stato di registrazione. Mai una password. |
 | GET | `/settings` | L'intera configurazione, senza i segreti. |
 | GET | `/taxonomy` | Categorie, etichette e segnali, con i loro codici. |
+
+### Endpoint che richiedono il token {#endpoints-that-need-the-token}
+
+Cambiano ciò che è salvato, quindi ogni richiesta deve portare il token nell'intestazione `Authorization`. La pagina dell'API li mostra solo a una richiesta che lo porta.
+
+| Metodo | Percorso | Che cosa fa |
+| --- | --- | --- |
+| POST | `/contacts` | Aggiunge un contatto: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` è facoltativo. |
+| PUT | `/contacts/{id}` | Sostituisce un contatto. |
+| DELETE | `/contacts/{id}` | Rimuove un contatto. |
+| DELETE | `/history/{id}` | Dimentica una chiamata del registro chiamate. |
+| DELETE | `/history` | Dimentica l'intero registro chiamate. Non si può annullare. |
+| PUT | `/accounts/{id}` | Sostituisce le impostazioni di un account. La password non è tra queste. |
+| PUT | `/settings` | Sostituisce le impostazioni. |
 
 Ogni identificativo è un UUID emesso dal telefono: l'`id` di una chiamata viene da `/calls` o dalla risposta a `POST /calls`, l'`id` di un account da `/accounts`.
 
@@ -164,6 +178,9 @@ Ogni errore è JSON con una sola chiave `error`, pensata per le persone, non per
 | Stato | Corpo | Significato |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Il percorso non esiste, o il suo gruppo di accesso è spento; entrambi danno di proposito la stessa risposta. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Il percorso esiste, ma non accetta questo metodo: per esempio `POST /settings` invece di `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Un endpoint che cambia ciò che è salvato, su un telefono in cui il campo **Token** è vuoto. Lo compili in **Controllo locale**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Un endpoint che cambia ciò che è salvato, senza il token giusto. |
 | 404 | `{"error":"no contact with that id"}` | Il percorso è giusto, l'identificativo no. |
 | 400 | `{"error":"no call with that id"}` | La chiamata è finita, o non è mai esistita. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` senza numero. Non è stato composto nulla. |
@@ -203,7 +220,7 @@ Le versioni precedenti usavano nomi in camelCase e identificativi brevi. `accoun
 | --- | --- |
 | Connessione rifiutata su `127.0.0.1:8377` | Il controllo locale è spento, il telefono non è in esecuzione o la porta è stata cambiata. |
 | `404 {"error":"no such endpoint"}` per un percorso di questa pagina | Il suo gruppo di accesso è spento. |
-| La lettura funziona, la scrittura viene rifiutata | Gli endpoint che cambiano dati salvati richiedono il token nell'intestazione `Authorization`. |
+| La lettura funziona, la scrittura è rifiutata con `401` | Gli endpoint che cambiano i dati salvati richiedono il token nell'intestazione `Authorization`, e prima va compilato il campo **Token** sul telefono. |
 | I titoli delle categorie non sono in inglese | I titoli seguono la lingua dell'interfaccia. Faccia corrispondere su `code` da `/taxonomy`. |
 | Mancano `accountId`, `startedAt` o `at` | L'integrazione è stata scritta per i nomi precedenti; veda sopra. |
 

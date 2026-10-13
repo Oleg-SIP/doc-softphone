@@ -63,7 +63,7 @@ Nếu cửa sổ mở ra nhưng người nhắc không chạy, dòng bên dướ
 
 ## Điện thoại biến mất khi tôi đóng cửa sổ {#the-phone-disappeared-when-i-closed-the-window}
 
-Khi **Giữ điện thoại chạy khi đóng cửa sổ** được bật, điện thoại vẫn đang chạy và cuộc gọi vẫn đến. Biểu tượng trong vùng thông báo (thanh menu trên macOS) mở lại cửa sổ. Xem [Khởi động](/program/startup).
+Khi **Giữ điện thoại chạy khi đóng cửa sổ** được bật, điện thoại vẫn đang chạy và cuộc gọi vẫn đến. Biểu tượng trong vùng thông báo (thanh menu trên macOS) mở lại cửa sổ. Trên màn hình nền không có vùng thông báo, điện thoại được thu nhỏ trên thanh tác vụ. Xem [Khởi động](/program/startup).
 
 ## Số điện thoại trong trình duyệt hay CRM không gọi được {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

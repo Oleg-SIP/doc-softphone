@@ -38,7 +38,7 @@ Ispod znački su [dugmad](../sip-accounts/buttons.md) koju ste napravili za kole
 
 ### Snimci, Kontakti, Istorija, Šaptač, Podešavanja {#recordings-contacts-history-prompter-settings}
 
-Ove stavke na dnu otvaraju karticu desno, jednu pored druge: [Snimci](../interface/recordings.md), [Kontakti i Istorija](contacts-history.md), [Šaptač](prompter.md) i [Podešavanja](settings-overview.md). **Šaptač** se pojavljuje tek kada je šaptač dozvoljen i ima prepoznavač kojim sluša. Kartice koje ste otvorili ostaju u redu na vrhu desne strane.
+Ove stavke na dnu otvaraju karticu desno, jednu pored druge: [Snimci](../interface/recordings.md), [Kontakti i Istorija](contacts-history.md), [Šaptač](prompter.md) i [Podešavanja](settings-overview.md). **Šaptač** se pojavljuje tek kada su ispunjene tri stvari: šaptač je dozvoljen, prepoznavač koji zna da sluša dok traje razgovor proveren je dugmetom **Isprobaj**, a isto tako i jezički model — pogledajte [Podešavanja šaptača](../ai-processing/prompter.md#what-it-needs). Kartice koje ste otvorili ostaju u redu na vrhu desne strane.
 
 ## Poziv u toku {#a-call-in-progress}
 

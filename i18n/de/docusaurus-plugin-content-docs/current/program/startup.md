@@ -17,7 +17,7 @@ description: "Das Telefon mit dem Rechner starten, es weiterlaufen lassen, wenn 
 
 ## Schließung {#close}
 
-**Das Telefon weiterlaufen lassen, wenn das Fenster geschlossen wird**, standardmäßig an. Ein geschlossenes Fenster ist kein aufgelegtes Telefon: Anrufe kommen weiter an, und das Symbol im Infobereich (auf macOS in der Menüleiste) holt das Fenster zurück. Schalten Sie das aus, beendet das Schließen des Fensters das Programm.
+**Das Telefon weiterlaufen lassen, wenn das Fenster geschlossen wird**, standardmäßig an. Ein geschlossenes Fenster ist kein aufgelegtes Telefon: Anrufe kommen weiter an, und das Symbol im Infobereich (auf macOS in der Menüleiste) holt das Fenster zurück. Auf einem Desktop ohne Infobereich, etwa GNOME ohne eine Erweiterung für Statussymbole, wartet das Telefon stattdessen minimiert in der Taskleiste, und die Zeile unter dem Schalter sagt das. Schalten Sie das aus, beendet das Schließen des Fensters das Programm.
 
 ## Anruf-Links {#call-links}
 

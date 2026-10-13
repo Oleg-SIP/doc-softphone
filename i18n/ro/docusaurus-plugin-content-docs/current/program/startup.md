@@ -17,7 +17,7 @@ description: "Porniți telefonul odată cu calculatorul, lăsați-l să meargă 
 
 ## Închidere {#close}
 
-**Lasă telefonul să meargă când fereastra se închide**, pornit implicit. O fereastră închisă nu înseamnă un telefon închis: apelurile sosesc în continuare, iar pictograma din zona de notificări (bara de meniu pe macOS) readuce fereastra. Opriți această setare și închiderea ferestrei va închide programul.
+**Lasă telefonul să meargă când fereastra se închide**, pornit implicit. O fereastră închisă nu înseamnă un telefon închis: apelurile sosesc în continuare, iar pictograma din zona de notificări (bara de meniu pe macOS) readuce fereastra. Pe un desktop fără zonă de notificări, cum ar fi GNOME fără o extensie pentru pictogramele de stare, telefonul așteaptă în schimb minimizat în bara de activități, iar rândul de sub comutator spune asta. Opriți această setare și închiderea ferestrei va închide programul.
 
 ## Linkuri de apel {#call-links}
 

@@ -63,7 +63,7 @@ Ja logs atveras, bet suflieris nepalaižas, rinda zem tā pogām pasaka, kā tr�
 
 ## Tālrunis pazuda, kad aizvēru logu {#the-phone-disappeared-when-i-closed-the-window}
 
-Ja **Ļaut telefonam darboties tālāk, kad logs aizveras** ir ieslēgts, tālrunis joprojām darbojas un zvani joprojām pienāk. Ikona paziņojumu apgabalā (macOS — izvēļņu joslā) atgriež logu. Skatiet [Startēšana](/program/startup).
+Ja **Ļaut telefonam darboties tālāk, kad logs aizveras** ir ieslēgts, tālrunis joprojām darbojas un zvani joprojām pienāk. Ikona paziņojumu apgabalā (macOS — izvēļņu joslā) atgriež logu. Darbvirsmā bez paziņojumu apgabala tālrunis ir minimizēts uzdevumjoslā. Skatiet [Startēšana](/program/startup).
 
 ## Tālruņa numurs pārlūkā vai CRM nezvana {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

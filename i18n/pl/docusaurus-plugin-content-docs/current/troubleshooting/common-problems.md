@@ -63,7 +63,7 @@ Jeśli okno się otwiera, ale sufler się nie uruchamia, wiersz pod jego przycis
 
 ## Telefon zniknął, gdy zamknąłem okno {#the-phone-disappeared-when-i-closed-the-window}
 
-Gdy **Pozostaw telefon działający po zamknięciu okna** jest włączone, telefon nadal działa, a połączenia nadal przychodzą. Ikona w obszarze powiadomień (na pasku menu w macOS) przywraca okno. Zobacz [Uruchamianie](/program/startup).
+Gdy **Pozostaw telefon działający po zamknięciu okna** jest włączone, telefon nadal działa, a połączenia nadal przychodzą. Ikona w obszarze powiadomień (na pasku menu w macOS) przywraca okno. Na pulpicie bez obszaru powiadomień telefon jest zminimalizowany na pasku zadań. Zobacz [Uruchamianie](/program/startup).
 
 ## Numer telefonu w przeglądarce lub CRM nie dzwoni {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

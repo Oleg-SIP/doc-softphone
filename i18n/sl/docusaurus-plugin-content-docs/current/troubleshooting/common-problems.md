@@ -63,7 +63,7 @@ Glejte [Zajemanje](/capture/).
 
 ## Telefon je izginil, ko sem zaprl okno {#the-phone-disappeared-when-i-closed-the-window}
 
-Ko je vklopljeno **Pusti telefon teči, ko se okno zapre**, telefon še vedno teče in klici še vedno prihajajo. Ikona v področju za obvestila (v menijski vrstici v macOS) vrne okno. Glejte [Zagon](/program/startup).
+Ko je vklopljeno **Pusti telefon teči, ko se okno zapre**, telefon še vedno teče in klici še vedno prihajajo. Ikona v področju za obvestila (v menijski vrstici v macOS) vrne okno. Na namizju brez področja za obvestila je telefon pomanjšan v opravilni vrstici. Glejte [Zagon](/program/startup).
 
 ## Telefonska številka v brskalniku ali CRM ne pokliče {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

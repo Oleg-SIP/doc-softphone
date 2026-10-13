@@ -35,7 +35,7 @@ Eraldi teenust ei paigaldata ja taaskäivitust pole vaja. Seda tegeva programmi 
 See, mida programm teha tohib, sõltub sellest, kas see muudab talletatud andmeid, mitte sellest, kas see loeb:
 
 - **Ilma märgiseta** võib iga arvutis olev programm lugeda kõike sisselülitatud rühmades ja juhtida kõnesid: helistada, vastata, lõpetada, ootele panna, jätkata, ümber suunata ja saata DTMF-i.
-- **Märgisega** päises `Authorization` võib see kasutada ka lõpp-punkte, mis muudavad talletatut. Ilma märgiseta neid lõpp-punkte ei pakuta ega loetleta API enda lehel.
+- **Märgisega** päises `Authorization` võib see kasutada ka [lõpp-punkte, mis muudavad talletatut](#endpoints-that-need-the-token). Ilma märgiseta neid lõpp-punkte API enda lehel ei loetleta ja need vastavad `401`. Kui märgist pole üldse seatud, ei saa miski talletatut muuta.
 
 Märgist hoitakse arvuti võtmehoidjas, mitte seadete failis, ja `/settings` ei tagasta seda kunagi.
 
@@ -67,6 +67,20 @@ Baasaadress on `http://127.0.0.1:8377`. Allolevad lõpp-punktid ei vaja märgist
 | GET | `/accounts` | SIP-kontod ja nende registreerimisolek. Mitte kunagi parooli. |
 | GET | `/settings` | Kogu konfiguratsioon ilma saladusteta. |
 | GET | `/taxonomy` | Kategooriad, sildid ja hoiatussignaalid koos koodidega. |
+
+### Lõpp-punktid, mis vajavad märgist {#endpoints-that-need-the-token}
+
+Need muudavad talletatut, seega peab iga päring kandma märgist päises `Authorization`. API enda leht näitab neid ainult päringule, mis seda kannab.
+
+| Meetod | Tee | Mida teeb |
+| --- | --- | --- |
+| POST | `/contacts` | Lisab kontakti: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` ei ole kohustuslik. |
+| PUT | `/contacts/{id}` | Asendab kontakti. |
+| DELETE | `/contacts/{id}` | Eemaldab kontakti. |
+| DELETE | `/history/{id}` | Unustab kõnelogist ühe kõne. |
+| DELETE | `/history` | Unustab kogu kõnelogi. Seda ei saa tagasi võtta. |
+| PUT | `/accounts/{id}` | Asendab konto seaded. Parooli nende hulgas ei ole. |
+| PUT | `/settings` | Asendab seaded. |
 
 Iga identifikaator on telefoni väljastatud UUID: kõne `id` tuleb `/calls` kaudu või vastusest päringule `POST /calls`, konto `id` `/accounts` kaudu.
 
@@ -164,6 +178,9 @@ Iga viga on JSON ühe võtmega `error`, mõeldud inimestele, mitte masinaga pars
 | Olek | Sisu | Tähendus |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Teed ei ole või selle juurdepääsurühm on väljas; mõlemad annavad meelega sama vastuse. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Tee on olemas, aga seda meetodit ei võta: näiteks `POST /settings` `PUT`-i asemel. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Talletatut muutev lõpp-punkt telefonis, kus väli **Märgis** on tühi. Täitke see jaotises **Kohalik juhtimine**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Talletatut muutev lõpp-punkt ilma õige märgiseta. |
 | 404 | `{"error":"no contact with that id"}` | Tee on õige, identifikaator mitte. |
 | 400 | `{"error":"no call with that id"}` | Kõne on lõppenud või seda pole kunagi olnud. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` ilma numbrita. Midagi ei valitud. |
@@ -203,7 +220,7 @@ Varasemad versioonid kasutasid camelCase-nimesid ja lühikesi identifikaatoreid.
 | --- | --- |
 | Ühendusest keelduti aadressil `127.0.0.1:8377` | Kohalik juhtimine on väljas, telefon ei tööta või porti on muudetud. |
 | `404 {"error":"no such endpoint"}` selle lehe teele | Selle juurdepääsurühm on väljas. |
-| Lugemine töötab, kirjutamine lükatakse tagasi | Talletatud andmeid muutvad lõpp-punktid vajavad märgist päises `Authorization`. |
+| Lugemine töötab, kirjutamine lükatakse tagasi koodiga `401` | Talletatud andmeid muutvad lõpp-punktid vajavad märgist päises `Authorization` ja telefonis tuleb esmalt täita väli **Märgis**. |
 | Kategooriate pealkirjad ei ole inglise keeles | Pealkirjad järgivad kasutajaliidese keelt. Siduge `/taxonomy` välja `code` järgi. |
 | `accountId`, `startedAt` või `at` puuduvad | Sidumine kirjutati varasemate nimede jaoks; vaadake ülalt. |
 

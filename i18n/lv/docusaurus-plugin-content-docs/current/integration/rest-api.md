@@ -35,7 +35,7 @@ Atsevišķs pakalpojums netiek instalēts, un restartēšana nav vajadzīga. Pro
 Tas, ko programma drīkst darīt, ir atkarīgs no tā, vai tā maina saglabātos datus, nevis no tā, vai tā lasa:
 
 - **Bez pilnvaras** jebkura datora programma drīkst lasīt visu ieslēgtajās grupās un vadīt zvanus: veikt, atbildēt, nolikt klausuli, aizturēt, turpināt, pāradresēt un sūtīt DTMF.
-- **Ar pilnvaru** galvenē `Authorization` tā drīkst izmantot arī galapunktus, kas maina saglabāto. Bez pilnvaras šie galapunkti netiek ne piedāvāti, ne uzskaitīti paša API lapā.
+- **Ar pilnvaru** galvenē `Authorization` tā drīkst izmantot arī [galapunktus, kas maina saglabāto](#endpoints-that-need-the-token). Bez pilnvaras šie galapunkti netiek uzskaitīti paša API lapā un atbild ar `401`. Ja pilnvara nav iestatīta vispār, saglabāto nevar mainīt nekas.
 
 Pilnvara tiek glabāta datora atslēgu saišķī, nevis iestatījumu failā, un `/settings` to nekad neatgriež.
 
@@ -67,6 +67,20 @@ Bāzes adrese ir `http://127.0.0.1:8377`. Zemāk esošajiem galapunktiem pilnvar
 | GET | `/accounts` | SIP konti un to reģistrācijas stāvoklis. Nekad parole. |
 | GET | `/settings` | Visa konfigurācija bez noslēpumiem. |
 | GET | `/taxonomy` | Kategorijas, birkas un brīdinājuma signāli ar to kodiem. |
+
+### Galapunkti, kam vajag pilnvaru {#endpoints-that-need-the-token}
+
+Tie maina saglabāto, tāpēc katram pieprasījumam jānes pilnvara galvenē `Authorization`. Paša API lapa tos rāda tikai pieprasījumam, kas to nes.
+
+| Metode | Ceļš | Ko dara |
+| --- | --- | --- |
+| POST | `/contacts` | Pievieno kontaktu: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` nav obligāts. |
+| PUT | `/contacts/{id}` | Aizstāj kontaktu. |
+| DELETE | `/contacts/{id}` | Noņem kontaktu. |
+| DELETE | `/history/{id}` | Aizmirst vienu zvanu no zvanu žurnāla. |
+| DELETE | `/history` | Aizmirst visu zvanu žurnālu. To nevar atsaukt. |
+| PUT | `/accounts/{id}` | Aizstāj konta iestatījumus. Parole nav starp tiem. |
+| PUT | `/settings` | Aizstāj iestatījumus. |
 
 Katrs identifikators ir tālruņa izsniegts UUID: zvana `id` nāk no `/calls` vai no atbildes uz `POST /calls`, konta `id` — no `/accounts`.
 
@@ -164,6 +178,9 @@ Katra kļūda ir JSON ar vienu atslēgu `error`, paredzēta cilvēkiem, nevis ma
 | Statuss | Saturs | Nozīme |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Ceļš neeksistē, vai tā piekļuves grupa ir izslēgta; abi apzināti dod to pašu atbildi. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Ceļš pastāv, bet šo metodi nepieņem: piemēram, `POST /settings` `PUT` vietā. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Saglabāto mainošs galapunkts tālrunī, kurā lauks **Pilnvara** ir tukšs. Aizpildiet to sadaļā **Vietējā vadība**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Saglabāto mainošs galapunkts bez pareizās pilnvaras. |
 | 404 | `{"error":"no contact with that id"}` | Ceļš ir pareizs, identifikators nav. |
 | 400 | `{"error":"no call with that id"}` | Zvans ir beidzies vai nekad nav pastāvējis. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` bez numura. Nekas netika sastādīts. |
@@ -203,7 +220,7 @@ Agrākās versijās izmantoja camelCase nosaukumus un īsus identifikatorus. `ac
 | --- | --- |
 | Savienojums atteikts adresē `127.0.0.1:8377` | Vietējā vadība ir izslēgta, tālrunis nedarbojas, vai ports ir mainīts. |
 | `404 {"error":"no such endpoint"}` šīs lapas ceļam | Tā piekļuves grupa ir izslēgta. |
-| Lasīšana darbojas, rakstīšana tiek noraidīta | Galapunktiem, kas maina saglabātos datus, vajadzīga pilnvara galvenē `Authorization`. |
+| Lasīšana darbojas, rakstīšana tiek noraidīta ar `401` | Galapunktiem, kas maina saglabātos datus, vajag pilnvaru galvenē `Authorization`, un tālrunī vispirms jāaizpilda lauks **Pilnvara**. |
 | Kategoriju virsraksti nav angļu valodā | Virsraksti seko saskarnes valodai. Sasaistiet pēc `code` no `/taxonomy`. |
 | Trūkst `accountId`, `startedAt` vai `at` | Integrācija rakstīta agrākajiem nosaukumiem; skatiet augstāk. |
 

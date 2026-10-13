@@ -38,7 +38,7 @@ Di bawah cip terdapat [tombol](../sip-accounts/buttons.md) yang Anda buat untuk 
 
 ### Rekaman, Kontak, Riwayat, Pembisik, Pengaturan {#recordings-contacts-history-prompter-settings}
 
-Entri di bagian bawah ini membuka tab di kanan, bersebelahan: [Rekaman](../interface/recordings.md), [Kontak dan Riwayat](contacts-history.md), [Pembisik](prompter.md), serta [Pengaturan](settings-overview.md). **Pembisik** baru muncul setelah pembisik diizinkan dan memiliki pengenal suara untuk mendengarkan. Tab yang sudah Anda buka tetap berada di baris paling atas sisi kanan.
+Entri di bagian bawah ini membuka tab di kanan, bersebelahan: [Rekaman](../interface/recordings.md), [Kontak dan Riwayat](contacts-history.md), [Pembisik](prompter.md), serta [Pengaturan](settings-overview.md). **Pembisik** baru ada setelah tiga hal terpenuhi: pembisik diizinkan, pengenal suara yang bisa menyimak selagi percakapan berlangsung sudah diperiksa dengan **Uji**, begitu pula model bahasa — lihat [Pengaturan pembisik](../ai-processing/prompter.md#what-it-needs). Tab yang sudah Anda buka tetap berada di baris paling atas sisi kanan.
 
 ## Panggilan yang sedang berlangsung {#a-call-in-progress}
 

@@ -10,7 +10,7 @@ description: "Okno suflera na żywo: słowa rozmowy w chwili, gdy padają, i pod
 
 Na obrazku pomocnik **Zastrzeżenia w rozmowie** słucha rozmowy sprzedażowej. Lewa kolumna to to, co powiedziano, każdy wiersz ze swoim czasem i stroną; prawa to to, co model podpowiedział przy każdej wypowiedzi klienta; najnowsza podpowiedź jest powtórzona dużą czcionką nad obiema.
 
-**Sufler** pojawia się na liście u dołu telefonu, między **Historia** a **Ustawienia**, gdy tylko spełnione są trzy warunki: sufler jest dozwolony, jest rozpoznawacz, który umie słuchać w trakcie rozmowy, oraz — dla pomocników, którzy coś podpowiadają — model językowy. Wszystko to ustawia się w [Ustawienia → Sufler](/ai-processing/prompter), gdzie są też rozmiar tekstu i sami pomocnicy.
+**Sufler** pojawia się na liście u dołu telefonu, między **Historia** a **Ustawienia**, gdy tylko spełnione są trzy warunki: sufler jest dozwolony, jest rozpoznawacz, który umie słuchać w trakcie rozmowy, i jest model językowy, o który pytają pomocnicy, którzy coś podpowiadają. Wszystko to ustawia się w [Ustawienia → Sufler](/ai-processing/prompter), gdzie są też rozmiar tekstu i sami pomocnicy.
 
 ## Okno {#the-window}
 <Shot name="44_prompter_window" alt="Okno suflera z wybranym pomocnikiem Zastrzeżenia w rozmowie, przed uruchomieniem" />

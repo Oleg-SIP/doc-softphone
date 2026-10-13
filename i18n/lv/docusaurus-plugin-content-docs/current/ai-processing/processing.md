@@ -49,7 +49,7 @@ Secībai ir nozīme: abām pēdējām kārtulām vajadzīga kategorija, ko iesta
 
 <Shot name="12d_settings_processing_spending" alt="Iestatījumi → Apstrāde: mēneša tēriņi un abas robežas" />
 
-Sadaļā **Tēriņi** programma rāda, cik šomēnes iztērēts un cik pieprasījumos — attēlā *Šomēnes nekas nav apstrādāts*, un, piemēram, *Šomēnes: 40.492 marķieru, 84 pieprasījumos, bez maksas*, kad kaut kas ir apstrādāts.
+Sadaļā **Tēriņi** programma rāda, cik šomēnes iztērēts un cik pieprasījumos — attēlā *Šomēnes nekas nav apstrādāts*, un, piemēram, *Šomēnes: 40 492 marķieru, 84 pieprasījumos, bez maksas*, kad kaut kas ir apstrādāts.
 
 | Lauks | Nozīme |
 | --- | --- |

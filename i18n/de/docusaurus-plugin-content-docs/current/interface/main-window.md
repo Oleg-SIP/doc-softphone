@@ -38,7 +38,7 @@ Unter den Chips stehen die [Tasten](../sip-accounts/buttons.md), die Sie für Ko
 
 ### Aufnahmen, Kontakte, Verlauf, Souffleur, Einstellungen {#recordings-contacts-history-prompter-settings}
 
-Diese Einträge unten öffnen rechts einen Reiter, nebeneinander: [Aufnahmen](../interface/recordings.md), [Kontakte und Verlauf](contacts-history.md), den [Souffleur](prompter.md) und [Einstellungen](settings-overview.md). **Souffleur** steht erst da, wenn der Souffleur erlaubt ist und einen Spracherkenner hat, mit dem er zuhören kann. Geöffnete Reiter bleiben in der Reihe oben auf der rechten Seite.
+Diese Einträge unten öffnen rechts einen Reiter, nebeneinander: [Aufnahmen](../interface/recordings.md), [Kontakte und Verlauf](contacts-history.md), den [Souffleur](prompter.md) und [Einstellungen](settings-overview.md). **Souffleur** erscheint erst, wenn drei Dinge gegeben sind: Der Souffleur ist erlaubt, ein Spracherkenner, der während eines Gesprächs zuhören kann, wurde mit **Prüfen** geprüft, und ebenso ein Sprachmodell — siehe [Souffleur-Einstellungen](../ai-processing/prompter.md#what-it-needs). Geöffnete Reiter bleiben in der Reihe oben auf der rechten Seite.
 
 ## Ein laufendes Gespräch {#a-call-in-progress}
 

@@ -35,7 +35,7 @@ Tidak ada layanan terpisah yang dipasang dan tidak perlu memulai ulang. Bagian p
 Apa yang boleh dilakukan sebuah program bergantung pada apakah ia mengubah data yang tersimpan, bukan pada apakah ia membaca:
 
 - **Tanpa token**, program apa pun di komputer boleh membaca semua yang ada di kelompok yang diaktifkan dan mengendalikan panggilan: melakukan, menjawab, menutup, menahan, melanjutkan, mengalihkan, dan mengirim DTMF.
-- **Dengan token** di tajuk `Authorization`, program juga boleh menggunakan endpoint yang mengubah apa yang tersimpan. Tanpa token, endpoint tersebut tidak dilayani dan tidak dicantumkan di halaman API sendiri.
+- **Dengan token** di tajuk `Authorization`, program juga boleh menggunakan [endpoint yang mengubah apa yang tersimpan](#endpoints-that-need-the-token). Tanpa token, endpoint tersebut tidak dicantumkan di halaman API sendiri dan menjawab `401`. Jika token sama sekali tidak diatur, tidak ada yang bisa mengubah apa yang tersimpan.
 
 Token disimpan di gantungan kunci komputer, bukan di berkas pengaturan, dan tidak pernah dikembalikan oleh `/settings`.
 
@@ -67,6 +67,20 @@ Alamat dasarnya `http://127.0.0.1:8377`. Endpoint di bawah ini tidak memerlukan 
 | GET | `/accounts` | Akun SIP dan status registrasinya. Tidak pernah berisi kata sandi. |
 | GET | `/settings` | Seluruh konfigurasi, tanpa rahasia. |
 | GET | `/taxonomy` | Kategori, label, dan tanda peringatan, beserta kodenya. |
+
+### Endpoint yang memerlukan token {#endpoints-that-need-the-token}
+
+Endpoint ini mengubah apa yang tersimpan, jadi setiap permintaan harus membawa token di tajuk `Authorization`. Halaman API sendiri hanya menampilkannya kepada permintaan yang membawanya.
+
+| Metode | Jalur | Fungsi |
+| --- | --- | --- |
+| POST | `/contacts` | Menambahkan kontak: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` opsional. |
+| PUT | `/contacts/{id}` | Mengganti kontak. |
+| DELETE | `/contacts/{id}` | Menghapus kontak. |
+| DELETE | `/history/{id}` | Melupakan satu panggilan dari log panggilan. |
+| DELETE | `/history` | Melupakan seluruh log panggilan. Tidak bisa dibatalkan. |
+| PUT | `/accounts/{id}` | Mengganti pengaturan sebuah akun. Kata sandi tidak termasuk. |
+| PUT | `/settings` | Mengganti pengaturan. |
 
 Setiap pengenal adalah UUID yang dikeluarkan oleh telepon: `id` panggilan berasal dari `/calls` atau dari jawaban atas `POST /calls`, `id` akun dari `/accounts`.
 
@@ -164,6 +178,9 @@ Setiap kesalahan berupa JSON dengan satu kunci `error`, ditujukan untuk manusia,
 | Status | Isi | Arti |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Jalurnya tidak ada, atau kelompok aksesnya mati; keduanya sengaja memberikan jawaban yang sama. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Jalurnya ada, tetapi tidak menerima metode ini: misalnya `POST /settings` alih-alih `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Endpoint yang mengubah apa yang tersimpan, pada telepon yang kolom **Token**-nya kosong. Isi kolom itu di **Kendali lokal**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Endpoint yang mengubah apa yang tersimpan, tanpa token yang benar. |
 | 404 | `{"error":"no contact with that id"}` | Jalurnya benar, pengenalnya tidak. |
 | 400 | `{"error":"no call with that id"}` | Panggilan telah berakhir, atau tidak pernah ada. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` tanpa nomor. Tidak ada yang diputar. |
@@ -203,7 +220,7 @@ Versi sebelumnya menggunakan nama camelCase dan pengenal pendek. `accountId` kin
 | --- | --- |
 | Koneksi ditolak di `127.0.0.1:8377` | Kendali lokal mati, telepon tidak berjalan, atau porta telah diubah. |
 | `404 {"error":"no such endpoint"}` untuk jalur di halaman ini | Kelompok aksesnya mati. |
-| Membaca berhasil, menulis ditolak | Endpoint yang mengubah data tersimpan memerlukan token di tajuk `Authorization`. |
+| Membaca berhasil, menulis ditolak dengan `401` | Endpoint yang mengubah data tersimpan memerlukan token di tajuk `Authorization`, dan kolom **Token** di telepon harus diisi lebih dulu. |
 | Judul kategori tidak dalam bahasa Inggris | Judul mengikuti bahasa antarmuka. Cocokkan berdasarkan `code` dari `/taxonomy`. |
 | `accountId`, `startedAt`, atau `at` tidak ada | Integrasi ditulis untuk nama-nama lama; lihat di atas. |
 

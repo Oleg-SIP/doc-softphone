@@ -17,7 +17,7 @@ A **Beállítások → Indulás** dönti el, hogyan indul a program, mit tesz az
 
 ## Bezárás {#close}
 
-**A telefon fusson tovább, ha az ablak bezárul**, alapértelmezés szerint bekapcsolva. A bezárt ablak nem jelent letett telefont: a hívások továbbra is beérkeznek, és az értesítési területen (macOS-en a menüsorban) lévő ikon visszahozza az ablakot. Ha ezt kikapcsolja, az ablak bezárásával a program kilép.
+**A telefon fusson tovább, ha az ablak bezárul**, alapértelmezés szerint bekapcsolva. A bezárt ablak nem jelent letett telefont: a hívások továbbra is beérkeznek, és az értesítési területen (macOS-en a menüsorban) lévő ikon visszahozza az ablakot. Olyan asztali környezetben, ahol nincs értesítési terület, például GNOME alatt állapotikon-bővítmény nélkül, a telefon ehelyett kis méretre állítva vár a tálcán, és a kapcsoló alatti sor ezt mondja. Ha ezt kikapcsolja, az ablak bezárásával a program kilép.
 
 ## Hívási hivatkozások {#call-links}
 

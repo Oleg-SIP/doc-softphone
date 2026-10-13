@@ -63,7 +63,7 @@ Kui aken avaneb, aga etteütleja ei käivitu, ütleb nuppude all olev rida, mis 
 
 ## Telefon kadus, kui aken suleti {#the-phone-disappeared-when-i-closed-the-window}
 
-Kui **Lase telefonil edasi töötada, kui aken suletakse** on sees, töötab telefon edasi ja kõned saabuvad endiselt. Teavitusala ikoon (macOS-is menüüribal) toob akna tagasi. Vaadake [Käivitumine](/program/startup).
+Kui **Lase telefonil edasi töötada, kui aken suletakse** on sees, töötab telefon edasi ja kõned saabuvad endiselt. Teavitusala ikoon (macOS-is menüüribal) toob akna tagasi. Töölaual, kus teavitusala pole, on telefon tegumiribale minimeeritud. Vaadake [Käivitumine](/program/startup).
 
 ## Brauseris või CRM-is olev telefoninumber ei helista {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

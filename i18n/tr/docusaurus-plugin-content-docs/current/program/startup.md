@@ -17,7 +17,7 @@ description: "Telefonu bilgisayarla birlikte başlatın, penceresi kapatıldığ
 
 ## Kapatma {#close}
 
-**Pencere kapatıldığında telefon çalışmaya devam etsin**, öntanımlı olarak açık. Kapatılmış bir pencere, kapatılmış bir telefon demek değildir: çağrılar yine gelir ve bildirim alanındaki (macOS'ta menü çubuğundaki) simge pencereyi geri getirir. Bunu kapatırsanız pencereyi kapatmak programdan çıkar.
+**Pencere kapatıldığında telefon çalışmaya devam etsin**, öntanımlı olarak açık. Kapatılmış bir pencere, kapatılmış bir telefon demek değildir: çağrılar yine gelir ve bildirim alanındaki (macOS'ta menü çubuğundaki) simge pencereyi geri getirir. Bildirim alanı olmayan bir masaüstünde, örneğin durum simgeleri uzantısı olmayan GNOME'da, telefon bunun yerine görev çubuğunda simge durumunda bekler ve anahtarın altındaki satır bunu söyler. Bunu kapatırsanız pencereyi kapatmak programdan çıkar.
 
 ## Arama bağlantıları {#call-links}
 

@@ -49,7 +49,7 @@ Rekkefølgen betyr noe: de to siste reglene trenger kategorien som regelen før 
 
 <Shot name="12d_settings_processing_spending" alt="Innstillinger → Behandling: månedens forbruk og de to grensene" />
 
-Under **Forbruk** viser programmet hva som er brukt denne måneden og på hvor mange forespørsler — *Ingenting er behandlet denne måneden* på bildet, og for eksempel *Denne måneden: 40.492 tokener, over 84 forespørsler, uten kostnad* når noe er behandlet.
+Under **Forbruk** viser programmet hva som er brukt denne måneden og på hvor mange forespørsler — *Ingenting er behandlet denne måneden* på bildet, og for eksempel *Denne måneden: 40 492 tokener, over 84 forespørsler, uten kostnad* når noe er behandlet.
 
 | Felt | Betydning |
 | --- | --- |

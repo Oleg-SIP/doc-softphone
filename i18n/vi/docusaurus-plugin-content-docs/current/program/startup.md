@@ -17,7 +17,7 @@ description: "Khởi động điện thoại cùng máy tính, giữ nó chạy 
 
 ## Đóng {#close}
 
-**Giữ điện thoại chạy khi đóng cửa sổ**, mặc định bật. Đóng cửa sổ không có nghĩa là gác máy: cuộc gọi vẫn đến, và biểu tượng trong vùng thông báo (thanh menu trên macOS) mở lại cửa sổ. Tắt tuỳ chọn này thì đóng cửa sổ sẽ thoát chương trình.
+**Giữ điện thoại chạy khi đóng cửa sổ**, mặc định bật. Đóng cửa sổ không có nghĩa là gác máy: cuộc gọi vẫn đến, và biểu tượng trong vùng thông báo (thanh menu trên macOS) mở lại cửa sổ. Trên màn hình nền không có vùng thông báo, như GNOME không có tiện ích mở rộng cho biểu tượng trạng thái, điện thoại thay vào đó chờ ở dạng thu nhỏ trên thanh tác vụ, và dòng dưới công tắc nói điều đó. Tắt tuỳ chọn này thì đóng cửa sổ sẽ thoát chương trình.
 
 ## Liên kết gọi {#call-links}
 

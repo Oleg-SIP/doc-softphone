@@ -10,7 +10,7 @@ description: "Tiešraides sufliera logs: sarunas vārdi tajā brīdī, kad tos i
 
 Attēlā palīgs **Iebildumi sarunā** klausās pārdošanas sarunu. Kreisā kolonna ir tas, kas tika teikts, katra rinda ar savu laiku un pusi; labā ir tas, ko modelis ieteica uz katru klienta atbildi; jaunākais ieteikums lielā rakstā atkārtots virs abām.
 
-**Suflieris** parādās saraksta apakšā telefonā starp **Vēsture** un **Iestatījumi**, tiklīdz izpildītas trīs lietas: suflieris ir atļauts, ir atpazinējs, kas prot klausīties sarunas laikā, un — palīgiem, kas kaut ko iesaka — valodas modelis. To visu iestata sadaļā [Iestatījumi → Suflieris](/ai-processing/prompter), kur ir arī teksta lielums un paši palīgi.
+**Suflieris** parādās sarakstā tālruņa apakšā, starp **Vēsture** un **Iestatījumi**, tiklīdz izpildītas trīs lietas: suflieris ir atļauts, ir atpazinējs, kas prot klausīties sarunas laikā, un ir valodas modelis, kuram jautā palīgi, kas kaut ko iesaka. To visu iestata sadaļā [Iestatījumi → Suflieris](/ai-processing/prompter), kur ir arī teksta lielums un paši palīgi.
 
 ## Logs {#the-window}
 <Shot name="44_prompter_window" alt="Sufliera logs ar izvēlētu palīgu Iebildumi sarunā pirms palaišanas" />

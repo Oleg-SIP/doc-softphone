@@ -10,7 +10,7 @@ description: "Fereastra sufleurului în direct: cuvintele unui apel în clipa î
 
 În imagine, asistentul **Obiecții în apel** ascultă un apel de vânzare. Coloana din stânga este ce s-a spus, fiecare rând cu ora și partea sa; cea din dreapta este ce a sugerat modelul la fiecare replică a clientului; cea mai nouă sugestie este repetată cu litere mari deasupra ambelor.
 
-**Sufleur** apare în lista din partea de jos a telefonului, între **Istoric** și **Setări**, de îndată ce sunt îndeplinite trei lucruri: sufleurul este permis, există un recunoscător care știe să asculte în timpul unei conversații și — pentru asistenții care sugerează ceva — un model de limbaj. Toate acestea se stabilesc în [Setări → Sufleur](/ai-processing/prompter), unde se află și dimensiunea textului și asistenții înșiși.
+**Sufleur** apare în lista din josul telefonului, între **Istoric** și **Setări**, de îndată ce sunt îndeplinite trei lucruri: sufleurul este permis, există un recunoscător care știe să asculte în timpul unei conversații și există un model de limbaj, pe care îl întreabă asistenții care sugerează ceva. Toate acestea se stabilesc în [Setări → Sufleur](/ai-processing/prompter), unde se află și dimensiunea textului și asistenții înșiși.
 
 ## Fereastra {#the-window}
 <Shot name="44_prompter_window" alt="Fereastra sufleurului cu asistentul Obiecții în apel ales, înainte de pornire" />

@@ -38,7 +38,7 @@ A jelvények alatt azok a [gombok](../sip-accounts/buttons.md) vannak, amelyeket
 
 ### Felvételek, Névjegyek, Előzmények, Súgó, Beállítások {#recordings-contacts-history-prompter-settings}
 
-Ezek az alsó elemek egy-egy lapot nyitnak jobbra, egymás mellett: [Felvételek](../interface/recordings.md), [Névjegyek és Előzmények](contacts-history.md), a [Súgó](prompter.md), valamint [Beállítások](settings-overview.md). A **Súgó** csak akkor jelenik meg, ha a súgó engedélyezve van, és van felismerője, amellyel hallgathat. A megnyitott lapok a jobb oldal tetején lévő sorban maradnak.
+Ezek az alsó elemek egy-egy lapot nyitnak jobbra, egymás mellett: [Felvételek](../interface/recordings.md), [Névjegyek és Előzmények](contacts-history.md), a [Súgó](prompter.md), valamint [Beállítások](settings-overview.md). **Súgó** csak akkor jelenik meg, ha három dolog teljesül: a súgó engedélyezve van, egy beszélgetés közben is hallgatni tudó felismerő átment a **Próba** gombbal végzett ellenőrzésen, és ugyanígy egy nyelvi modell is — lásd: [A súgó beállításai](../ai-processing/prompter.md#what-it-needs). A megnyitott lapok a jobb oldal tetején lévő sorban maradnak.
 
 ## Folyamatban lévő hívás {#a-call-in-progress}
 

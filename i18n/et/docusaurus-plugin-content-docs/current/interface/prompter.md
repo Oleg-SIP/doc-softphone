@@ -10,7 +10,7 @@ description: "Otse töötava etteütleja aken: kõne sõnad nende ütlemise ajal
 
 Pildil kuulab abiline **Vastuväited kõnes** müügikõnet. Vasak veerg on see, mida öeldi, iga rida oma aja ja poolega; parem on see, mida mudel kliendi igale vastusele soovitas; uusim soovitus on suures kirjas korratud mõlema kohal.
 
-**Etteütleja** ilmub telefoni allosas olevasse loendisse **Ajalugu** ja **Seaded** vahele niipea, kui kolm asja on paigas: etteütleja on lubatud, on olemas tuvastaja, kes oskab vestluse ajal kuulata, ja — midagi soovitavate abiliste jaoks — keelemudel. Kõik see seatakse jaotises [Seaded → Etteütleja](/ai-processing/prompter), kus on ka kirja suurus ja abilised ise.
+**Etteütleja** ilmub telefoni allosas olevasse loendisse, **Ajalugu** ja **Seaded** vahele, niipea kui kolm asja on paigas: etteütleja on lubatud, on tuvastaja, kes oskab vestluse ajal kuulata, ja on keelemudel, mille poole pöörduvad midagi soovitavad abilised. Kõik see seatakse jaotises [Seaded → Etteütleja](/ai-processing/prompter), kus on ka kirja suurus ja abilised ise.
 
 ## Aken {#the-window}
 <Shot name="44_prompter_window" alt="Etteütleja aken, kus on valitud abiline Vastuväited kõnes, enne käivitamist" />

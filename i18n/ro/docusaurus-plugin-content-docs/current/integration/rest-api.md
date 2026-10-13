@@ -35,7 +35,7 @@ Nu se instalează niciun serviciu separat și nu este nevoie de repornire. Parte
 Ce poate face un program depinde de faptul că modifică sau nu datele stocate, nu de faptul că citește:
 
 - **Fără token**, orice program de pe calculator poate citi tot din grupurile activate și poate controla apelurile: efectuare, răspuns, închidere, punere în așteptare, reluare, transfer și trimitere DTMF.
-- **Cu tokenul** în antetul `Authorization`, poate folosi și punctele finale care modifică ce este stocat. Fără token, aceste puncte finale nu sunt nici servite, nici listate pe pagina proprie a API-ului.
+- **Cu tokenul** în antetul `Authorization`, poate folosi și [punctele finale care modifică ce este stocat](#endpoints-that-need-the-token). Fără token, aceste puncte finale nu sunt listate pe pagina proprie a API-ului și răspund cu `401`. Dacă nu este setat niciun token, nimic nu poate modifica ce este stocat.
 
 Tokenul este păstrat în depozitul de chei al calculatorului, nu în fișierul de setări, și nu este returnat niciodată de `/settings`.
 
@@ -67,6 +67,20 @@ Adresa de bază este `http://127.0.0.1:8377`. Punctele finale de mai jos nu au n
 | GET | `/accounts` | Conturile SIP și starea înregistrării lor. Niciodată parola. |
 | GET | `/settings` | Întreaga configurație, fără secrete. |
 | GET | `/taxonomy` | Categorii, etichete și semnale de alarmă, cu codurile lor. |
+
+### Puncte finale care cer tokenul {#endpoints-that-need-the-token}
+
+Ele modifică ce este stocat, așa că fiecare cerere trebuie să poarte tokenul în antetul `Authorization`. Pagina proprie a API-ului le arată doar unei cereri care îl poartă.
+
+| Metodă | Cale | Ce face |
+| --- | --- | --- |
+| POST | `/contacts` | Adaugă un contact: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` este opțional. |
+| PUT | `/contacts/{id}` | Înlocuiește un contact. |
+| DELETE | `/contacts/{id}` | Elimină un contact. |
+| DELETE | `/history/{id}` | Uită un apel din jurnalul de apeluri. |
+| DELETE | `/history` | Uită tot jurnalul de apeluri. Nu se poate anula. |
+| PUT | `/accounts/{id}` | Înlocuiește setările unui cont. Parola nu este printre ele. |
+| PUT | `/settings` | Înlocuiește setările. |
 
 Fiecare identificator este un UUID emis de telefon: `id` al unui apel vine din `/calls` sau din răspunsul la `POST /calls`, `id` al unui cont din `/accounts`.
 
@@ -164,6 +178,9 @@ Fiecare eroare este un JSON cu o singură cheie, `error`, destinată oamenilor, 
 | Stare | Corp | Semnificație |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Calea nu există sau grupul ei de acces este oprit; ambele dau intenționat același răspuns. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Calea există, dar nu acceptă această metodă: de exemplu `POST /settings` în loc de `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Un punct final care modifică ce este stocat, pe un telefon unde câmpul **Token** este gol. Completați-l în **Comandă locală**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Un punct final care modifică ce este stocat, fără tokenul corect. |
 | 404 | `{"error":"no contact with that id"}` | Calea este corectă, identificatorul nu. |
 | 400 | `{"error":"no call with that id"}` | Apelul s-a încheiat sau nu a existat niciodată. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` fără număr. Nu s-a format nimic. |
@@ -203,7 +220,7 @@ Versiunile anterioare foloseau nume în camelCase și identificatori scurți. `a
 | --- | --- |
 | Conexiune refuzată pe `127.0.0.1:8377` | Comanda locală este oprită, telefonul nu rulează sau portul a fost schimbat. |
 | `404 {"error":"no such endpoint"}` pentru o cale de pe această pagină | Grupul ei de acces este oprit. |
-| Citirea funcționează, scrierea este refuzată | Punctele finale care modifică datele stocate au nevoie de token în antetul `Authorization`. |
+| Citirea merge, scrierea este refuzată cu `401` | Punctele finale care modifică datele stocate cer tokenul în antetul `Authorization`, iar pe telefon trebuie întâi completat câmpul **Token**. |
 | Titlurile categoriilor nu sunt în engleză | Titlurile urmează limba interfeței. Potriviți după `code` din `/taxonomy`. |
 | Lipsesc `accountId`, `startedAt` sau `at` | Integrarea a fost scrisă pentru numele anterioare; vedeți mai sus. |
 

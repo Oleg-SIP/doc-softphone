@@ -38,7 +38,7 @@ Sotto i bollini ci sono i [pulsanti](../sip-accounts/buttons.md) che ha creato p
 
 ### Registrazioni, Contatti, Cronologia, Suggeritore, Impostazioni {#recordings-contacts-history-prompter-settings}
 
-Queste voci in basso aprono una scheda a destra, una accanto all'altra: [Registrazioni](../interface/recordings.md), [Contatti e cronologia](contacts-history.md), il [Suggeritore](prompter.md) e [Impostazioni](settings-overview.md). **Suggeritore** compare solo quando il suggeritore è consentito e ha un riconoscitore con cui ascoltare. Le schede aperte restano nella fila in alto della parte destra.
+Queste voci in basso aprono una scheda a destra, una accanto all'altra: [Registrazioni](../interface/recordings.md), [Contatti e cronologia](contacts-history.md), il [Suggeritore](prompter.md) e [Impostazioni](settings-overview.md). **Suggeritore** compare solo quando ci sono tre cose: il suggeritore è consentito, un riconoscitore capace di ascoltare mentre una conversazione è in corso è stato verificato con **Prova**, e così anche un modello linguistico — veda [Impostazioni del suggeritore](../ai-processing/prompter.md#what-it-needs). Le schede aperte restano nella fila in alto della parte destra.
 
 ## Una chiamata in corso {#a-call-in-progress}
 

@@ -10,7 +10,7 @@ description: Versiunea, actualizările, țara dumneavoastră, licența, conținu
 
 ## Versiune și țară {#version-and-country}
 
-În partea de sus se află numele, **Versiunea** (în imagine 1.1.3), un link către site, [ai-softphone.com](https://ai-softphone.com/), și unul către această documentație.
+În partea de sus se află numele, **Versiunea** (în imagine 1.1.5), un link către site, [ai-softphone.com](https://ai-softphone.com/), și unul către această documentație.
 
 **Țară** îi spune programului unde vă aflați. Ajută la alegerea celui mai bun server de actualizări și deschide calea către serviciile de limbă și de vorbire găzduite în țara dumneavoastră. **Detectează automat** o completează.
 
@@ -58,10 +58,10 @@ Un formular prin care le scrieți dezvoltatorilor fără să părăsiți program
 | --- | --- |
 | **Subiect** și **Mesaj** | Ce doriți să spuneți. |
 | **Numele dumneavoastră** și **Adresă pentru răspuns** | Ambele sunt opționale. Fără o adresă nu există nicio cale de a vă răspunde. |
-| **Atașează jurnalul** | Adaugă finalul jurnalului, aproximativ 512 kB. Consultați [Diagnostic](/troubleshooting/diagnostics). |
+| **Atașează jurnalul** | Adaugă finalul jurnalului, cel mult aproximativ 512 kB; rândul de sub căsuță spune cât este acum (111 kB în imagine). Consultați [Diagnostic](/troubleshooting/diagnostics). |
 
 **Trimite** rămâne gri până când există ceva de trimis.
 
 ## Construit cu {#built-with}
 
-Componentele pe care este construit programul, fiecare cu licența sa: Qt 6 (GPL-2.0 sau GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (domeniu public), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) și clientul PulseAudio (LGPL-2.1-or-later). Fiecare este folosită sub licența menționată alături; acolo unde o componentă oferă mai multe, cea numită este cea aleasă.
+Componentele pe care este construit programul, fiecare cu licența sa: Qt 6 (GPL-2.0 sau GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (domeniu public), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) și clientul PulseAudio (LGPL-2.1-or-later). Fiecare este folosită sub licența menționată alături; acolo unde o componentă oferă mai multe, cea numită este cea aleasă.

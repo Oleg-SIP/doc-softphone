@@ -63,7 +63,7 @@ Když se okno otevře, ale našeptávač se nespustí, řádek pod jeho tlačít
 
 ## Po zavření okna telefon zmizel {#the-phone-disappeared-when-i-closed-the-window}
 
-Se zapnutým **Nechat telefon běžet, když se zavře okno** telefon stále běží a hovory stále přicházejí. Ikona v oznamovací oblasti (na macOS v řádku nabídek) okno vrátí. Viz [Spuštění](/program/startup).
+Se zapnutým **Nechat telefon běžet, když se zavře okno** telefon stále běží a hovory stále přicházejí. Ikona v oznamovací oblasti (na macOS v řádku nabídek) okno vrátí. Na ploše bez oznamovací oblasti je telefon minimalizovaný na hlavním panelu. Viz [Spuštění](/program/startup).
 
 ## Telefonní číslo v prohlížeči nebo CRM nevolá {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

@@ -10,7 +10,7 @@ description: "Vinduet til suffløren i realtid: ordene i et opkald, mens de bliv
 
 På billedet lytter hjælperen **Indvendinger i samtalen** med på et salgsopkald. Den venstre kolonne er det, der blev sagt, hver linje med tidspunkt og side; den højre er det, modellen foreslog til hvert af kundens svar; det nyeste forslag gentages med stor skrift over begge.
 
-**Sufflør** dukker op i listen nederst i telefonen, mellem **Historik** og **Indstillinger**, så snart tre ting er på plads: suffløren er tilladt, der er en genkender, som kan lytte, mens en samtale er i gang, og — for de hjælpere, der foreslår noget — en sprogmodel. Det hele indstilles under [Indstillinger → Sufflør](/ai-processing/prompter), hvor også skriftstørrelsen og selve hjælperne findes.
+**Sufflør** vises i listen nederst på telefonen, mellem **Historik** og **Indstillinger**, så snart tre ting er på plads: suffløren er tilladt, der er en genkender, der kan lytte, mens en samtale er i gang, og der er en sprogmodel, som de hjælpere, der foreslår noget, spørger. Det hele indstilles under [Indstillinger → Sufflør](/ai-processing/prompter), hvor også skriftstørrelsen og selve hjælperne findes.
 
 ## Vinduet {#the-window}
 <Shot name="44_prompter_window" alt="Sufflørens vindue med hjælperen Indvendinger i samtalen valgt, før start" />

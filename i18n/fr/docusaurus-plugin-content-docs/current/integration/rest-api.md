@@ -35,7 +35,7 @@ Aucun service séparé n'est installé et aucun redémarrage n'est nécessaire. 
 Ce qu'un programme peut faire dépend de s'il modifie des données stockées, et non de s'il lit :
 
 - **Sans jeton**, n'importe quel programme de l'ordinateur peut lire tout ce qui se trouve dans les groupes activés et contrôler les appels : passer, répondre, raccrocher, mettre en attente, reprendre, transférer et envoyer des DTMF.
-- **Avec le jeton** dans l'en-tête `Authorization`, il peut aussi utiliser les points d'accès qui modifient ce qui est stocké. Sans le jeton, ces points d'accès ne sont ni servis ni listés sur la page de l'API.
+- **Avec le jeton** dans l'en-tête `Authorization`, il peut aussi utiliser [les points d'accès qui modifient ce qui est stocké](#endpoints-that-need-the-token). Sans le jeton, ces points d'accès ne sont pas listés sur la page de l'API et répondent `401`. Sans aucun jeton défini, rien ne peut modifier ce qui est stocké.
 
 Le jeton est conservé dans le trousseau de l'ordinateur, pas dans le fichier de réglages, et n'est jamais renvoyé par `/settings`.
 
@@ -67,6 +67,20 @@ L'adresse de base est `http://127.0.0.1:8377`. Les points d'accès ci-dessous n'
 | GET | `/accounts` | Les comptes SIP et leur état d'enregistrement. Jamais de mot de passe. |
 | GET | `/settings` | Toute la configuration, sans les secrets. |
 | GET | `/taxonomy` | Catégories, étiquettes et signaux, avec leurs codes. |
+
+### Points d'accès qui demandent le jeton {#endpoints-that-need-the-token}
+
+Ils modifient ce qui est stocké, donc chaque requête doit porter le jeton dans l'en-tête `Authorization`. La page de l'API ne les montre qu'à une requête qui le porte.
+
+| Méthode | Chemin | Action |
+| --- | --- | --- |
+| POST | `/contacts` | Ajoute un contact : `{"name": "...", "number": "...", "account_id": "..."}` ; `account_id` est facultatif. |
+| PUT | `/contacts/{id}` | Remplace un contact. |
+| DELETE | `/contacts/{id}` | Supprime un contact. |
+| DELETE | `/history/{id}` | Oublie un appel du journal des appels. |
+| DELETE | `/history` | Oublie tout le journal des appels. C'est irréversible. |
+| PUT | `/accounts/{id}` | Remplace les réglages d'un compte. Le mot de passe n'en fait pas partie. |
+| PUT | `/settings` | Remplace les réglages. |
 
 Chaque identifiant est un UUID émis par le téléphone : l'`id` d'un appel vient de `/calls` ou de la réponse à `POST /calls`, l'`id` d'un compte de `/accounts`.
 
@@ -164,6 +178,9 @@ Chaque erreur est du JSON avec une seule clé `error`, destinée aux personnes, 
 | Statut | Corps | Signification |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | Le chemin n'existe pas, ou son groupe d'accès est désactivé ; les deux donnent volontairement la même réponse. |
+| 405 | `{"error":"that endpoint does not take this method"}` | Le chemin existe, mais n'accepte pas cette méthode : par exemple `POST /settings` au lieu de `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | Un point d'accès qui modifie ce qui est stocké, sur un téléphone où le champ **Jeton** est vide. Remplissez-le sous **Commande locale**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | Un point d'accès qui modifie ce qui est stocké, sans le bon jeton. |
 | 404 | `{"error":"no contact with that id"}` | Le chemin est bon, l'identifiant ne l'est pas. |
 | 400 | `{"error":"no call with that id"}` | L'appel est terminé, ou n'a jamais existé. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` sans numéro. Rien n'a été composé. |
@@ -203,7 +220,7 @@ Les versions précédentes utilisaient des noms en camelCase et des identifiants
 | --- | --- |
 | Connexion refusée sur `127.0.0.1:8377` | La commande locale est désactivée, le téléphone ne tourne pas, ou le port a été changé. |
 | `404 {"error":"no such endpoint"}` pour un chemin de cette page | Son groupe d'accès est désactivé. |
-| La lecture fonctionne, l'écriture est refusée | Les points d'accès qui modifient des données stockées ont besoin du jeton dans l'en-tête `Authorization`. |
+| La lecture marche, l'écriture est refusée avec `401` | Les points d'accès qui modifient les données stockées demandent le jeton dans l'en-tête `Authorization`, et le champ **Jeton** doit d'abord être rempli sur le téléphone. |
 | Les titres des catégories ne sont pas en anglais | Les titres suivent la langue de l'interface. Faites la correspondance sur `code` de `/taxonomy`. |
 | `accountId`, `startedAt` ou `at` manquent | L'intégration a été écrite pour les anciens noms ; voir ci-dessus. |
 

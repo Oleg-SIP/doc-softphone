@@ -38,7 +38,7 @@ Por baixo das fichas estão os [botões](../sip-accounts/buttons.md) que criou p
 
 ### Gravações, Contactos, Histórico, Ponto, Definições {#recordings-contacts-history-prompter-settings}
 
-Estas entradas em baixo abrem um separador à direita, lado a lado: [Gravações](../interface/recordings.md), [Contactos e histórico](contacts-history.md), o [Ponto](prompter.md) e [Definições](settings-overview.md). **Ponto** só aparece quando o ponto está permitido e tem um reconhecedor com que ouvir. Os separadores que abriu ficam na fila do topo do lado direito.
+Estas entradas em baixo abrem um separador à direita, lado a lado: [Gravações](../interface/recordings.md), [Contactos e histórico](contacts-history.md), o [Ponto](prompter.md) e [Definições](settings-overview.md). **Ponto** só lá está quando três coisas estão em ordem: o ponto está permitido, um reconhecedor capaz de ouvir enquanto decorre uma conversa foi verificado com **Testar**, e um modelo de linguagem também — veja [Definições do ponto](../ai-processing/prompter.md#what-it-needs). Os separadores que abriu ficam na fila do topo do lado direito.
 
 ## Uma chamada em curso {#a-call-in-progress}
 

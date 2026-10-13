@@ -10,7 +10,7 @@ description: "Fönstret för sufflören i realtid: orden i ett samtal medan de s
 
 På bilden lyssnar hjälparen **Invändningar i samtalet** på ett säljsamtal. Den vänstra kolumnen är det som sades, varje rad med sin tid och sin sida; den högra är vad modellen föreslog till varje svar från kunden; det senaste förslaget upprepas i stor stil ovanför båda.
 
-**Sufflör** dyker upp i listan längst ned i telefonen, mellan **Historik** och **Inställningar**, så snart tre saker är på plats: sufflören är tillåten, det finns en igenkännare som kan lyssna medan ett samtal pågår, och — för de hjälpare som föreslår något — en språkmodell. Allt detta ställs in under [Inställningar → Sufflör](/ai-processing/prompter), där även textstorleken och själva hjälparna finns.
+**Sufflör** visas i listan längst ned i telefonen, mellan **Historik** och **Inställningar**, så snart tre saker är på plats: sufflören är tillåten, det finns en igenkännare som kan lyssna medan ett samtal pågår, och det finns en språkmodell som de hjälpare som föreslår något frågar. Allt detta ställs in under [Inställningar → Sufflör](/ai-processing/prompter), där även textstorleken och själva hjälparna finns.
 
 ## Fönstret {#the-window}
 <Shot name="44_prompter_window" alt="Sufflörens fönster med hjälparen Invändningar i samtalet vald, före start" />

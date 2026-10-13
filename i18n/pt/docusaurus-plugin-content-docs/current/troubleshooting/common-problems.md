@@ -63,7 +63,7 @@ Se a janela abre mas o ponto não arranca, a linha por baixo dos botões diz o q
 
 ## O telefone desapareceu quando fechei a janela {#the-phone-disappeared-when-i-closed-the-window}
 
-Com **Deixar o telefone a funcionar quando a janela é fechada** ligado, o telefone continua a funcionar e as chamadas continuam a chegar. O ícone na área de notificação (a barra de menus no macOS) traz a janela de volta. Veja [Arranque](/program/startup).
+Com **Deixar o telefone a funcionar quando a janela é fechada** ligado, o telefone continua a funcionar e as chamadas continuam a chegar. O ícone na área de notificação (a barra de menus no macOS) traz a janela de volta. Num ambiente de trabalho sem área de notificação, o telefone fica minimizado na barra de tarefas. Veja [Arranque](/program/startup).
 
 ## Um número de telefone num navegador ou num CRM não liga {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

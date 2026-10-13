@@ -10,7 +10,7 @@ A **Súgó** beszélgetés közben hallgatja a beszélgetést. Saját ablakában
 
 A képen az **Ellenvetések a hívásban** segítő egy értékesítési hívást hallgat. A bal oszlop az, ami elhangzott, minden sor a saját idejével és oldalával; a jobb az, amit a modell az ügyfél egyes válaszaira javasolt; a legújabb javaslat nagy betűkkel megismétlődik mindkettő fölött.
 
-A **Súgó** a telefon alján lévő listában, az **Előzmények** és a **Beállítások** között jelenik meg, amint három dolog teljesül: a súgó engedélyezve van, van olyan felismerő, amely beszélgetés közben is tud hallgatni, és — a valamit javasló segítőkhöz — egy nyelvi modell. Mindezt a [Beállítások → Súgó](/ai-processing/prompter) alatt lehet beállítani, ahol a betűméret és maguk a segítők is megtalálhatók.
+**Súgó** megjelenik a telefon alján lévő listában, **Előzmények** és **Beállítások** között, amint három dolog teljesül: a súgó engedélyezve van, van egy beszélgetés közben is hallgatni tudó felismerő, és van egy nyelvi modell, amelyet a valamit javasló segítők kérdeznek. Mindezt a [Beállítások → Súgó](/ai-processing/prompter) alatt lehet beállítani, ahol a betűméret és maguk a segítők is megtalálhatók.
 
 ## Az ablak {#the-window}
 <Shot name="44_prompter_window" alt="A súgó ablaka az Ellenvetések a hívásban segítővel kiválasztva, indítás előtt" />

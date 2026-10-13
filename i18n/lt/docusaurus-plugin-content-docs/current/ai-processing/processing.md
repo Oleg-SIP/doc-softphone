@@ -49,7 +49,7 @@ Tvarka svarbi: paskutinėms dviem taisyklėms reikia kategorijos, kurią nustat�
 
 <Shot name="12d_settings_processing_spending" alt="Nustatymai → Apdorojimas: mėnesio išlaidos ir abi ribos" />
 
-Skiltyje **Išlaidos** programa rodo, kiek išleista šį mėnesį ir per kiek užklausų — paveikslėlyje *Šį mėnesį niekas nebuvo apdorota*, o, pavyzdžiui, *Šį mėnesį: 40.492 žetonų, per 84 užklausas, be mokesčio*, kai kas nors jau apdorota.
+Skiltyje **Išlaidos** programa rodo, kiek išleista šį mėnesį ir per kiek užklausų — paveikslėlyje *Šį mėnesį niekas nebuvo apdorota*, o, pavyzdžiui, *Šį mėnesį: 40 492 žetonų, per 84 užklausas, be mokesčio*, kai kas nors jau apdorota.
 
 | Laukas | Reikšmė |
 | --- | --- |

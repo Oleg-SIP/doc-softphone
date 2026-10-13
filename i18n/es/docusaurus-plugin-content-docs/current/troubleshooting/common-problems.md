@@ -63,7 +63,7 @@ Si la ventana se abre pero el apuntador no arranca, la línea bajo sus botones d
 
 ## El teléfono desapareció al cerrar la ventana {#the-phone-disappeared-when-i-closed-the-window}
 
-Con **Dejar el teléfono en marcha al cerrar la ventana** encendido, el teléfono sigue en marcha y las llamadas siguen llegando. El icono del área de notificación (la barra de menús en macOS) devuelve la ventana. Consulte [Arranque](/program/startup).
+Con **Dejar el teléfono en marcha al cerrar la ventana** encendido, el teléfono sigue en marcha y las llamadas siguen llegando. El icono del área de notificación (la barra de menús en macOS) devuelve la ventana. En un escritorio sin área de notificación, el teléfono queda minimizado en la barra de tareas. Consulte [Arranque](/program/startup).
 
 ## Un número de teléfono en un navegador o en un CRM no llama {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

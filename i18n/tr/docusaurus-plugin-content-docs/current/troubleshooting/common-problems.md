@@ -63,7 +63,7 @@ Pencere açılıyor ama suflör başlamıyorsa, düğmelerinin altındaki satır
 
 ## Pencereyi kapattığımda telefon kayboldu {#the-phone-disappeared-when-i-closed-the-window}
 
-**Pencere kapatıldığında telefon çalışmaya devam etsin** açıkken telefon hâlâ çalışır ve çağrılar yine gelir. Bildirim alanındaki (macOS'ta menü çubuğundaki) simge pencereyi geri getirir. Bkz. [Başlangıç](/program/startup).
+**Pencere kapatıldığında telefon çalışmaya devam etsin** açıkken telefon hâlâ çalışır ve çağrılar yine gelir. Bildirim alanındaki (macOS'ta menü çubuğundaki) simge pencereyi geri getirir. Bildirim alanı olmayan bir masaüstünde telefon görev çubuğunda simge durumundadır. Bkz. [Başlangıç](/program/startup).
 
 ## Bir tarayıcıdaki ya da CRM'deki telefon numarası arama yapmıyor {#a-phone-number-in-a-browser-or-a-crm-does-not-call}
 

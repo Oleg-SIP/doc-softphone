@@ -10,7 +10,7 @@ description: A versão, as atualizações, o seu país, a licença, o que conté
 
 ## Versão e país {#version-and-country}
 
-No topo estão o nome, a **Versão** (na imagem 1.1.3), uma ligação para o site, [ai-softphone.com](https://ai-softphone.com/), e outra para esta documentação.
+No topo estão o nome, a **Versão** (na imagem 1.1.5), uma ligação para o site, [ai-softphone.com](https://ai-softphone.com/), e outra para esta documentação.
 
 **País** diz ao programa onde está. Ajuda a escolher o melhor servidor de atualizações e abre caminho a serviços de língua e de voz alojados no seu país. **Detetar automaticamente** preenche-o.
 
@@ -58,10 +58,10 @@ Um formulário que escreve aos programadores sem sair do programa.
 | --- | --- |
 | **Assunto** e **Mensagem** | O que quer dizer. |
 | **O seu nome** e **Endereço para resposta** | Ambos facultativos. Sem endereço, não há forma de lhe responder. |
-| **Anexar o registo** | Acrescenta o fim do registo, cerca de 512 kB. Veja [Diagnóstico](/troubleshooting/diagnostics). |
+| **Anexar o registo** | Acrescenta o fim do registo, no máximo cerca de 512 kB; a linha por baixo da caixa diz quanto é agora (111 kB na imagem). Veja [Diagnóstico](/troubleshooting/diagnostics). |
 
 **Enviar** fica cinzento até haver algo para enviar.
 
 ## Feito com {#built-with}
 
-Os componentes sobre os quais o programa é feito, cada um com a sua licença: Qt 6 (GPL-2.0 ou GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), SQLite (domínio público), nlohmann/json (MIT), cpp-httplib (MIT), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) e o cliente PulseAudio (LGPL-2.1-or-later). Cada um é usado sob a licença indicada ao lado; quando um componente oferece várias, é adotada a que está indicada.
+Os componentes sobre os quais o programa é feito, cada um com a sua licença: Qt 6 (GPL-2.0 ou GPL-3.0), pjproject (PJSIP) (GPL-2.0-or-later), Opus (BSD-3-Clause), SQLite (domínio público), nlohmann/json (MIT), cpp-httplib (MIT), IXWebSocket (BSD-3-Clause), nghttp2 (MIT), LAME (LGPL-2.0-or-later), minimp3 (CC0-1.0), OpenSSL (Apache-2.0), Fluent UI System Icons (MIT), libsecret (LGPL-2.1-or-later), ALSA (LGPL-2.1-or-later) e o cliente PulseAudio (LGPL-2.1-or-later). Cada um é usado sob a licença indicada ao lado; quando um componente oferece várias, é adotada a que está indicada.

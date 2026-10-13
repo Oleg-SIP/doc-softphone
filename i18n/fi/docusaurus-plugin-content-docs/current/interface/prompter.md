@@ -10,7 +10,7 @@ description: "Suoran kuiskaajan ikkuna: puhelun sanat sitä mukaa kuin ne sanota
 
 Kuvassa avustaja **Vastaväitteet puhelussa** kuuntelee myyntipuhelua. Vasen sarake on se, mitä sanottiin, jokainen rivi aikoineen ja puolineen; oikea on se, mitä malli ehdotti asiakkaan kuhunkin vastaukseen; uusin vihje toistetaan isolla kummankin yläpuolella.
 
-**Kuiskaaja** ilmestyy puhelimen alaosan luetteloon **Historia**- ja **Asetukset**-kohtien väliin heti, kun kolme asiaa on kunnossa: kuiskaaja on sallittu, on tunnistin, joka osaa kuunnella keskustelun aikana, ja — jotakin ehdottaville avustajille — kielimalli. Kaikki tämä asetetaan kohdassa [Asetukset → Kuiskaaja](/ai-processing/prompter), jossa ovat myös tekstin koko ja itse avustajat.
+**Kuiskaaja** ilmestyy puhelimen alaosan luetteloon, kohtien **Historia** ja **Asetukset** väliin, heti kun kolme asiaa on kunnossa: kuiskaaja on sallittu, on tunnistin, joka osaa kuunnella keskustelun aikana, ja on kielimalli, jolta jotakin ehdottavat avustajat kysyvät. Kaikki tämä asetetaan kohdassa [Asetukset → Kuiskaaja](/ai-processing/prompter), jossa ovat myös tekstin koko ja itse avustajat.
 
 ## Ikkuna {#the-window}
 <Shot name="44_prompter_window" alt="Kuiskaajan ikkuna, jossa on valittuna avustaja Vastaväitteet puhelussa, ennen käynnistystä" />
