@@ -13,18 +13,20 @@ Une conversation est transcrite quand vous le demandez dans la [fenêtre des enr
 ## Reconnaissances {#recognisers}
 Une reconnaissance est un service de reconnaissance vocale auquel le téléphone envoie le son. **Ajouter** en ajoute une ; le bouton **Tester** de sa fiche vérifie que le service répond vraiment. Chacune figure dans la liste avec son nom et, en dessous, le modèle et l'adresse de son service. Le tableau liste chaque type de service que le téléphone prend en charge, tel que **Type** sur la fiche les propose, avec l’adresse et les modèles qu’une nouvelle reconnaissance de ce type reçoit ; la dernière colonne montre les cinq configurées sur l’image :
 
-| Type | Adresse | Modèle | Sur l’image |
-| --- | --- | --- | --- |
-| **Compatible OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, en direct `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, en direct `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(vide : le modèle par défaut du service)*, en direct `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(vide : le modèle par défaut du service)*, en direct `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(vide : le modèle par défaut du service)* | — |
-| **Vosk (sur votre propre machine)** | votre serveur, par exemple `ws://localhost:2700` | *(réglé sur le serveur)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (sur votre propre machine)** | votre serveur, par exemple `ws://localhost:9090` | en direct `small` | — |
-| **NVIDIA Riva (sur votre propre machine)** | votre serveur, par exemple `localhost:50051` | *(réglé sur le serveur)* | — |
+| Type | Adresse pour les transcriptions | Adresse pour le souffleur | Modèle | Sur l’image |
+| --- | --- | --- | --- | --- |
+| **Compatible OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, en direct `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, en direct `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, ou `eu.`, `us.`, `au.` à la place de `global.` pour une région | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(vide : le modèle par défaut du service)*, en direct `grok-voice-transcribe-2.0` | **X.ai** · en direct `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(vide : le modèle par défaut du service)*, en direct `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(vide : le modèle par défaut du service)* | — |
+| **Vosk (sur votre propre machine)** | votre serveur, par exemple `ws://localhost:2700` | *(le même serveur)* | *(réglé sur le serveur)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (sur votre propre machine)** | votre serveur, par exemple `ws://localhost:9090` | *(le même serveur)* | en direct `small` | — |
+| **NVIDIA Riva (sur votre propre machine)** | votre serveur, par exemple `localhost:50051` | *(le même serveur)* | *(réglé sur le serveur)* | — |
+
+L'**Adresse pour le souffleur** est le plus souvent une adresse WebSocket : `wss://` pour un service dans le cloud, `ws://` pour un serveur de votre propre réseau ; NVIDIA Riva s'indique sous la forme `hôte:port`.
 
 Les deux marques à droite d'une ligne disent pour quoi la reconnaissance est celle par défaut. L'horloge est allumée sur celle par défaut **pour les transcriptions** — **X.ai** sur l'image —, utilisée quand vous n'en choisissez pas une autre. L'éclair est allumé sur celle par défaut **pour le souffleur** — **Vosk** sur l'image. Vous pouvez garder plusieurs reconnaissances ; la liste déroulante au-dessus d'une transcription dans la [fenêtre des enregistrements](/interface/recordings#transcript-or-write-up-the-drop-down) liste les transcriptions faites par chacune.
 
@@ -38,10 +40,10 @@ Un clic sur une reconnaissance ouvre sa fiche.
 | **Nom** | Le nom dans les listes. |
 | **Type** | Le type de service, qui décide comment le téléphone lui parle : **Compatible OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, et trois qui tournent sur votre propre machine — **Vosk**, **WhisperLive** et **NVIDIA Riva**. |
 | **Adresse pour les transcriptions** | Où sont envoyées les conversations terminées. |
-| **Adresse pour le souffleur** | Où part le son en direct pendant qu'une conversation a lieu. *Vide : déduit de l'adresse voisine*, comme `wss://api.x.ai` sur l'image. |
+| **Adresse pour le souffleur** | Où part le son en direct pendant qu'une conversation a lieu. Le plus souvent une adresse WebSocket : `wss://` pour un service dans le cloud, comme `wss://api.x.ai` sur l'image, `ws://` pour un serveur de votre propre réseau. *Vide : déduit de l'adresse voisine*. |
 | **Clé** | La clé du service. *Cela est gardé dans le trousseau de cet ordinateur, jamais dans un fichier de réglages.* |
 | **Tester** | Interroge le service et dit ce qu'il a répondu, par exemple *A répondu, et propose 3 modèles*. |
-| **Modèle pour les transcriptions** et **Modèle pour le souffleur** | Le modèle, exactement comme le service le nomme. *Vide : aucun nom de modèle n'est envoyé*, et le service prend son propre modèle par défaut ; quand le fournisseur en publie un, la fiche le nomme. Le champ n'est pas affiché pour un type qui n'offre pas de choix. |
+| **Modèle pour les transcriptions** et **Modèle pour le souffleur** | Le modèle, exactement comme le service le nomme. *Vide : aucun nom de modèle n'est envoyé*, et le service prend son propre modèle par défaut ; quand le fournisseur en publie un, la fiche le nomme. Le champ n'est pas affiché pour un type qui n'offre pas de choix. Sur l'image, xAI n'a pas de **Modèle pour les transcriptions**, et le **Modèle pour le souffleur** est `grok-voice-transcribe-2.0`. |
 | **Par défaut pour les transcriptions** | En fait la reconnaissance utilisée quand vous n'en choisissez pas une autre. |
 | **Par défaut pour le souffleur** | En fait la reconnaissance avec laquelle écoute un nouvel assistant du souffleur. |
 | **Activé** | Désactivée, la reconnaissance reste dans la liste et n'est pas utilisée. |
@@ -67,10 +69,10 @@ Un clic sur une reconnaissance ouvre sa fiche.
 ## Reconnaissance en direct pour le souffleur {#live-recognition-for-the-prompter}
 Le [souffleur](../interface/prompter.md) a besoin d'une reconnaissance qui écoute pendant que quelqu'un parle, par un flux plutôt qu'avec un fichier terminé. Ces types en sont capables : **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Compatible OpenAI** (avec la transcription en temps réel d'OpenAI), **AssemblyAI**, **Soniox** et **Speechmatics** dans le cloud et **Vosk**, **WhisperLive** et **NVIDIA Riva** sur votre propre machine. Une reconnaissance sur votre propre machine garde la voix de l'interlocuteur dans vos murs et ne facture rien.
 
-Pour en utiliser une : ouvrez sa fiche, vérifiez l'**Adresse pour le souffleur** (ou laissez-la se déduire), choisissez le **Modèle pour le souffleur** si le service en propose plusieurs — les modèles en direct sont souvent différents de ceux pour les fichiers, comme `scribe_v2_realtime` chez ElevenLabs — et appuyez sur **Tester**. Cochez **Par défaut pour le souffleur** pour que les nouveaux assistants écoutent avec elle.
+Pour en utiliser une : ouvrez sa fiche, vérifiez l'**Adresse pour le souffleur** — le plus souvent une adresse WebSocket, par exemple `wss://api.x.ai` pour X.ai, `wss://api.deepgram.com` pour Deepgram ou `ws://localhost:2700` pour Vosk ; vide, elle est déduite de l'**Adresse pour les transcriptions**. Choisissez ensuite le **Modèle pour le souffleur** : les modèles en direct diffèrent souvent de ceux pour les fichiers — `grok-voice-transcribe-2.0` pour X.ai, comme sur la fiche de l'image, `scribe_v2_realtime` pour ElevenLabs, `gpt-live-transcribe` pour OpenAI, `stt-rt-v5` pour Soniox. Appuyez sur **Tester**. Cochez **Par défaut pour le souffleur** pour que les nouveaux assistants écoutent avec elle.
 
 ## Quel modèle choisir {#which-model-to-choose}
-Le tableau liste les modèles de reconnaissance vocale de chaque type de la liste **Type**. Les modèles en **gras** sont ceux configurés sur l'image ; pour la reconnaissance X.ai le modèle est vide, c'est donc le modèle par défaut du service, **`grok-voice-transcribe-2.0`**, qui est utilisé. **Pour** dit à quoi sert un modèle : aux enregistrements terminés (*transcriptions*), à la parole en direct pour le [souffleur](#live-recognition-for-the-prompter) (*souffleur*), ou aux *deux*.
+Le tableau liste les modèles de reconnaissance vocale de chaque type de la liste **Type**. Les modèles en **gras** sont ceux configurés sur l'image ; pour la reconnaissance X.ai le modèle est vide, c'est donc le modèle par défaut du service, **`grok-voice-transcribe-2.0`**, qui est utilisé. C'est le **Modèle pour les transcriptions** qui y est vide ; le **Modèle pour le souffleur** est réglé sur ce même modèle. **Pour** dit à quoi sert un modèle : aux enregistrements terminés (*transcriptions*), à la parole en direct pour le [souffleur](#live-recognition-for-the-prompter) (*souffleur*), ou aux *deux*.
 
 | Type et adresse | Modèle | Pour | À quoi il sert |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Le tableau liste les modèles de reconnaissance vocale de chaque type de la list
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | les deux | Le plus précis, pour une conversation dans une seule langue. Une nouvelle reconnaissance de ce type le reçoit. |
 | | `standard` | les deux | Plus rapide et moins cher, un peu moins précis. |
 | | `melia-1` | transcriptions | Une conversation en plusieurs langues, qui en change au milieu d'une phrase, revient en une seule transcription. Enregistrements seulement, dans les régions UE et États-Unis ; pas encore de dictionnaire personnalisé ni d'étiquettes de locuteurs. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | les deux | Le modèle par défaut ; 25 langues. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | les deux | Le seul modèle actuel, et celui par défaut : 38 langues, reconnues d'elles-mêmes. Fichiers jusqu'à 500 Mo ; la parole en direct part vers `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transcriptions | Obsolète : le service le renvoie vers `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transcriptions | Plus de 60 langues, avec séparation des locuteurs. |
 | | `stt-rt-v5` | souffleur | En direct, dans les mêmes 60 langues et plus, et il entend où finit un tour de parole. Le téléphone le propose pour le souffleur. |

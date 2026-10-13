@@ -13,18 +13,20 @@ Ein Gespräch wird transkribiert, wenn Sie es im [Aufnahmefenster](/interface/re
 ## Spracherkenner {#recognisers}
 Ein Spracherkenner ist ein Dienst für Spracherkennung, an den das Telefon den Ton schickt. Mit **Hinzufügen** fügen Sie einen hinzu; die Schaltfläche **Prüfen** auf seiner Karte prüft, ob der Dienst wirklich antwortet. Jeder steht mit seinem Namen in der Liste und darunter mit dem Modell und der Adresse seines Dienstes. Die Tabelle zeigt jede Art von Dienst, die das Telefon unterstützt, so wie **Art** auf der Karte sie anbietet, mit der Adresse und den Modellen, die ein neuer Spracherkenner dieser Art bekommt; die letzte Spalte zeigt die fünf im Bild eingerichteten:
 
-| Art | Adresse | Modell | Im Bild |
-| --- | --- | --- | --- |
-| **OpenAI-kompatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, live `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, live `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(leer: die Vorgabe des Dienstes)*, live `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(leer: die Vorgabe des Dienstes)*, live `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(leer: die Vorgabe des Dienstes)* | — |
-| **Vosk (auf Ihrer eigenen Maschine)** | Ihr Server, zum Beispiel `ws://localhost:2700` | *(auf dem Server eingestellt)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (auf Ihrer eigenen Maschine)** | Ihr Server, zum Beispiel `ws://localhost:9090` | live `small` | — |
-| **NVIDIA Riva (auf Ihrer eigenen Maschine)** | Ihr Server, zum Beispiel `localhost:50051` | *(auf dem Server eingestellt)* | — |
+| Art | Adresse für Transkripte | Adresse für den Souffleur | Modell | Im Bild |
+| --- | --- | --- | --- | --- |
+| **OpenAI-kompatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, live `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, live `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, für eine Region `eu.`, `us.` oder `au.` statt `global.` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(leer: die Vorgabe des Dienstes)*, live `grok-voice-transcribe-2.0` | **X.ai** · live `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(leer: die Vorgabe des Dienstes)*, live `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(leer: die Vorgabe des Dienstes)* | — |
+| **Vosk (auf Ihrer eigenen Maschine)** | Ihr Server, zum Beispiel `ws://localhost:2700` | *(derselbe Server)* | *(auf dem Server eingestellt)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (auf Ihrer eigenen Maschine)** | Ihr Server, zum Beispiel `ws://localhost:9090` | *(derselbe Server)* | live `small` | — |
+| **NVIDIA Riva (auf Ihrer eigenen Maschine)** | Ihr Server, zum Beispiel `localhost:50051` | *(derselbe Server)* | *(auf dem Server eingestellt)* | — |
+
+Die **Adresse für den Souffleur** ist meist eine WebSocket-Adresse: `wss://` für einen Dienst in der Cloud, `ws://` für einen Server im eigenen Netz; NVIDIA Riva wird als `Host:Port` angegeben.
 
 Die zwei Zeichen rechts in einer Zeile sagen, wofür der Spracherkenner die Vorgabe ist. Die Uhr leuchtet bei der Vorgabe **für Transkripte** — im Bild **X.ai** —, die verwendet wird, wenn Sie keinen anderen wählen. Der Blitz leuchtet bei der Vorgabe **für den Souffleur** — im Bild **Vosk**. Sie können mehrere Spracherkenner behalten; die Auswahlliste über einem Transkript im [Aufnahmefenster](/interface/recordings#transcript-or-write-up-the-drop-down) zeigt die Transkripte, die jeder von ihnen gemacht hat.
 
@@ -38,10 +40,10 @@ Ein Klick auf einen Spracherkenner öffnet seine Karte.
 | **Name** | Der Name in den Listen. |
 | **Art** | Die Art des Dienstes, die bestimmt, wie das Telefon mit ihm spricht: **OpenAI-kompatibel (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** und drei, die auf Ihrer eigenen Maschine laufen — **Vosk**, **WhisperLive** und **NVIDIA Riva**. |
 | **Adresse für Transkripte** | Wohin abgeschlossene Gespräche geschickt werden. |
-| **Adresse für den Souffleur** | Wohin der Live-Ton geht, während ein Gespräch läuft. *Leer wird aus der Adresse daneben ermittelt*, wie `wss://api.x.ai` im Bild. |
+| **Adresse für den Souffleur** | Wohin der Live-Ton geht, während ein Gespräch läuft. Meist eine WebSocket-Adresse: `wss://` für einen Dienst in der Cloud, wie `wss://api.x.ai` im Bild, `ws://` für einen Server im eigenen Netz. *Leer wird aus der Adresse daneben ermittelt*. |
 | **Schlüssel** | Der Schlüssel des Dienstes. *Es liegt im Schlüsselbund dieses Rechners, nie in einer Einstellungsdatei.* |
 | **Prüfen** | Fragt den Dienst und sagt, was er geantwortet hat, zum Beispiel *Hat geantwortet und bietet 3 Modelle an*. |
-| **Modell für Transkripte** und **Modell für den Souffleur** | Das Modell, genau so, wie der Dienst es nennt. *Leer sendet keinen Modellnamen*, und der Dienst nimmt seine eigene Vorgabe; wo der Anbieter eine veröffentlicht, nennt die Karte sie. Für eine Art ohne Auswahl wird das Feld nicht gezeigt. |
+| **Modell für Transkripte** und **Modell für den Souffleur** | Das Modell, genau so, wie der Dienst es nennt. *Leer sendet keinen Modellnamen*, und der Dienst nimmt seine eigene Vorgabe; wo der Anbieter eine veröffentlicht, nennt die Karte sie. Für eine Art ohne Auswahl wird das Feld nicht gezeigt. Im Bild hat xAI kein Feld **Modell für Transkripte**, und das **Modell für den Souffleur** ist auf `grok-voice-transcribe-2.0` gesetzt. |
 | **Vorgabe für Transkripte** | Macht diesen zum Spracherkenner, der verwendet wird, wenn Sie keinen anderen wählen. |
 | **Vorgabe für den Souffleur** | Macht diesen zum Spracherkenner, mit dem ein neuer Helfer des Souffleurs zuhört. |
 | **Eingeschaltet** | Ausgeschaltet bleibt der Spracherkenner in der Liste und wird nicht verwendet. |
@@ -67,10 +69,10 @@ Ein Klick auf einen Spracherkenner öffnet seine Karte.
 ## Live-Erkennung für den Souffleur {#live-recognition-for-the-prompter}
 Der [Souffleur](../interface/prompter.md) braucht einen Spracherkenner, der zuhört, während jemand spricht — über einen Datenstrom statt mit einer fertigen Datei. Diese Arten können das: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-kompatibel** (mit der Echtzeit-Transkription von OpenAI), **AssemblyAI**, **Soniox** und **Speechmatics** in der Cloud und **Vosk**, **WhisperLive** und **NVIDIA Riva** auf Ihrer eigenen Maschine. Ein Spracherkenner auf Ihrer eigenen Maschine behält die Stimme der Gegenseite im Haus und kostet nichts.
 
-So nutzen Sie einen: Öffnen Sie seine Karte, prüfen Sie die **Adresse für den Souffleur** (oder lassen Sie sie ermitteln), wählen Sie das **Modell für den Souffleur**, wo der Dienst mehrere anbietet — die Live-Modelle sind oft andere als die für Dateien, etwa `scribe_v2_realtime` bei ElevenLabs —, und drücken Sie **Prüfen**. Haken Sie **Vorgabe für den Souffleur** an, damit neue Helfer mit ihm zuhören.
+So nutzen Sie einen: Öffnen Sie seine Karte, prüfen Sie die **Adresse für den Souffleur** — meist eine WebSocket-Adresse, etwa `wss://api.x.ai` für X.ai, `wss://api.deepgram.com` für Deepgram oder `ws://localhost:2700` für Vosk; leer wird sie aus der **Adresse für Transkripte** ermittelt. Wählen Sie dann das **Modell für den Souffleur**: Die Live-Modelle sind oft andere als die für Dateien — `grok-voice-transcribe-2.0` für X.ai, wie auf der Karte im Bild, `scribe_v2_realtime` für ElevenLabs, `gpt-live-transcribe` für OpenAI, `stt-rt-v5` für Soniox. Drücken Sie **Prüfen**. Haken Sie **Vorgabe für den Souffleur** an, damit neue Helfer mit ihm zuhören.
 
 ## Welches Modell wählen {#which-model-to-choose}
-Die Tabelle listet die Spracherkennungsmodelle jeder Art aus der Liste **Art**. Die **fett** gedruckten Modelle sind die im Bild eingerichteten; beim Spracherkenner X.ai ist das Modell leer, also wird die Vorgabe des Dienstes, **`grok-voice-transcribe-2.0`**, verwendet. **Wofür** sagt, wofür ein Modell gemacht ist: für fertige Aufnahmen (*Transkripte*), für Live-Sprache für den [Souffleur](#live-recognition-for-the-prompter) (*Souffleur*) oder für *beides*.
+Die Tabelle listet die Spracherkennungsmodelle jeder Art aus der Liste **Art**. Die **fett** gedruckten Modelle sind die im Bild eingerichteten; beim Spracherkenner X.ai ist das Modell leer, also wird die Vorgabe des Dienstes, **`grok-voice-transcribe-2.0`**, verwendet. Leer ist dort das **Modell für Transkripte**; das **Modell für den Souffleur** ist auf dasselbe Modell gesetzt. **Wofür** sagt, wofür ein Modell gemacht ist: für fertige Aufnahmen (*Transkripte*), für Live-Sprache für den [Souffleur](#live-recognition-for-the-prompter) (*Souffleur*) oder für *beides*.
 
 | Art und Adresse | Modell | Wofür | Wozu es dient |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Die Tabelle listet die Spracherkennungsmodelle jeder Art aus der Liste **Art**. 
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | beides | Das genaueste, für ein Gespräch in einer Sprache. Ein neuer Spracherkenner dieser Art bekommt es. |
 | | `standard` | beides | Schneller und günstiger, etwas weniger genau. |
 | | `melia-1` | Transkripte | Ein Gespräch in mehreren Sprachen, mit Wechseln mitten im Satz, kommt als ein Transkript zurück. Nur für Aufnahmen, in den Regionen EU und USA; noch ohne eigenes Wörterbuch und Sprecherkennzeichnung. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | beides | Die Vorgabe; 25 Sprachen. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | beides | Das einzige aktuelle Modell und die Vorgabe: 38 Sprachen, die es selbst erkennt. Dateien bis 500 MB; Live-Sprache geht an `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | Transkripte | Veraltet: Der Dienst leitet es auf `2.0` um. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | Transkripte | Über 60 Sprachen, mit Sprechertrennung. |
 | | `stt-rt-v5` | Souffleur | Live, in denselben über 60 Sprachen, und hört, wo ein Sprecherwechsel endet. Das Telefon bietet es für den Souffleur an. |

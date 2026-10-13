@@ -13,18 +13,20 @@ Một cuộc trò chuyện được gỡ băng khi bạn yêu cầu trong [cửa
 ## Bộ nhận dạng {#recognisers}
 Bộ nhận dạng là dịch vụ nhận dạng giọng nói mà điện thoại gửi âm thanh tới. **Thêm** thêm một bộ mới; nút **Thử** trên thẻ của nó kiểm tra xem dịch vụ có thật sự trả lời không. Mỗi bộ hiện trong danh sách với tên của nó, bên dưới là mô hình và địa chỉ dịch vụ. Bảng liệt kê mọi loại dịch vụ mà điện thoại hỗ trợ, đúng như trường **Loại** trên thẻ đưa ra, cùng địa chỉ và các mô hình mà một bộ nhận dạng mới thuộc loại đó được gán; cột cuối cho thấy năm bộ được thiết lập trong hình:
 
-| Loại | Địa chỉ | Mô hình | Trong hình |
-| --- | --- | --- | --- |
-| **Tương thích OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, trực tiếp `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, trực tiếp `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(trống: mô hình mặc định của dịch vụ)*, trực tiếp `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(trống: mô hình mặc định của dịch vụ)*, trực tiếp `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(trống: mô hình mặc định của dịch vụ)* | — |
-| **Vosk (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `ws://localhost:2700` | *(đặt trên máy chủ)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `ws://localhost:9090` | trực tiếp `small` | — |
-| **NVIDIA Riva (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `localhost:50051` | *(đặt trên máy chủ)* | — |
+| Loại | Địa chỉ cho bản gỡ băng | Địa chỉ cho người nhắc | Mô hình | Trong hình |
+| --- | --- | --- | --- | --- |
+| **Tương thích OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, trực tiếp `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, trực tiếp `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, hoặc `eu.`, `us.`, `au.` thay cho `global.` theo khu vực | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(trống: mô hình mặc định của dịch vụ)*, trực tiếp `grok-voice-transcribe-2.0` | **X.ai** · trực tiếp `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(trống: mô hình mặc định của dịch vụ)*, trực tiếp `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(trống: mô hình mặc định của dịch vụ)* | — |
+| **Vosk (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `ws://localhost:2700` | *(cùng máy chủ đó)* | *(đặt trên máy chủ)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `ws://localhost:9090` | *(cùng máy chủ đó)* | trực tiếp `small` | — |
+| **NVIDIA Riva (trên máy của chính bạn)** | máy chủ của bạn, ví dụ `localhost:50051` | *(cùng máy chủ đó)* | *(đặt trên máy chủ)* | — |
+
+**Địa chỉ cho người nhắc** thường là địa chỉ WebSocket: `wss://` cho dịch vụ trên đám mây, `ws://` cho máy chủ trong mạng của bạn; NVIDIA Riva được nhập dạng `máy:cổng`.
 
 Hai dấu ở bên phải một dòng cho biết bộ nhận dạng là mặc định cho việc gì. Đồng hồ sáng ở bộ mặc định **cho các bản gỡ băng** — **X.ai** trong hình —, được dùng khi bạn không chọn bộ khác. Tia chớp sáng ở bộ mặc định **cho người nhắc** — **Vosk** trong hình. Bạn có thể giữ nhiều bộ nhận dạng; danh sách thả xuống phía trên một bản gỡ băng trong [cửa sổ Bản ghi](/interface/recordings#transcript-or-write-up-the-drop-down) liệt kê các bản gỡ băng do từng bộ tạo ra.
 
@@ -38,10 +40,10 @@ Nhấn vào một bộ nhận dạng sẽ mở thẻ của nó.
 | **Tên** | Tên trong các danh sách. |
 | **Loại** | Loại dịch vụ, quyết định cách điện thoại nói chuyện với nó: **Tương thích OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, và ba loại chạy trên máy của chính bạn — **Vosk**, **WhisperLive** và **NVIDIA Riva**. |
 | **Địa chỉ cho bản gỡ băng** | Nơi các cuộc trò chuyện đã kết thúc được gửi tới. |
-| **Địa chỉ cho người nhắc** | Nơi âm thanh trực tiếp được gửi tới trong lúc cuộc trò chuyện diễn ra. *Để trống thì suy ra từ địa chỉ bên cạnh*, như `wss://api.x.ai` trong hình. |
+| **Địa chỉ cho người nhắc** | Nơi âm thanh trực tiếp được gửi tới trong lúc cuộc trò chuyện diễn ra. Thường là địa chỉ WebSocket: `wss://` cho dịch vụ trên đám mây, như `wss://api.x.ai` trong hình, `ws://` cho máy chủ trong mạng của bạn. *Để trống thì suy ra từ địa chỉ bên cạnh*. |
 | **Khoá** | Khoá của dịch vụ. *Được giữ trong kho khoá của máy tính này, không bao giờ trong tệp cài đặt.* |
 | **Thử** | Hỏi dịch vụ và cho biết nó đã trả lời gì, ví dụ *Đã trả lời, và cung cấp 3 mô hình*. |
-| **Mô hình cho bản gỡ băng** và **Mô hình cho người nhắc** | Mô hình, đúng như dịch vụ gọi tên nó. *Để trống sẽ không gửi tên mô hình*, và dịch vụ dùng mô hình mặc định của mình; nơi nhà cung cấp công bố mô hình đó, thẻ sẽ nêu tên. Với loại không có lựa chọn, trường này không hiện. |
+| **Mô hình cho bản gỡ băng** và **Mô hình cho người nhắc** | Mô hình, đúng như dịch vụ gọi tên nó. *Để trống sẽ không gửi tên mô hình*, và dịch vụ dùng mô hình mặc định của mình; nơi nhà cung cấp công bố mô hình đó, thẻ sẽ nêu tên. Với loại không có lựa chọn, trường này không hiện. Trong hình, xAI không có **Mô hình cho bản gỡ băng**, còn **Mô hình cho người nhắc** đặt là `grok-voice-transcribe-2.0`. |
 | **Mặc định cho các bản gỡ băng** | Biến bộ này thành bộ nhận dạng được dùng khi bạn không chọn bộ khác. |
 | **Mặc định cho người nhắc** | Biến bộ này thành bộ nhận dạng mà một trợ lý mới của người nhắc dùng để nghe. |
 | **Đang bật** | Khi tắt, bộ nhận dạng vẫn ở trong danh sách nhưng không được dùng. |
@@ -67,10 +69,10 @@ Nhấn vào một bộ nhận dạng sẽ mở thẻ của nó.
 ## Nhận dạng trực tiếp cho người nhắc {#live-recognition-for-the-prompter}
 [Người nhắc](../interface/prompter.md) cần một bộ nhận dạng nghe trong lúc ai đó đang nói, qua một luồng chứ không phải một tệp đã xong. Những loại sau làm được: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Tương thích OpenAI** (với tính năng gỡ băng thời gian thực của OpenAI), **AssemblyAI**, **Soniox** và **Speechmatics** trên đám mây và **Vosk**, **WhisperLive**, **NVIDIA Riva** trên máy của chính bạn. Bộ nhận dạng trên máy của chính bạn giữ giọng của người bên kia trong nội bộ và không tốn phí.
 
-Để dùng một bộ: mở thẻ của nó, kiểm tra **Địa chỉ cho người nhắc** (hoặc để nó tự suy ra), chọn **Mô hình cho người nhắc** nếu dịch vụ có nhiều mô hình — các mô hình trực tiếp thường khác với mô hình cho tệp, như `scribe_v2_realtime` của ElevenLabs — rồi nhấn **Thử**. Đánh dấu **Mặc định cho người nhắc** để các trợ lý mới nghe bằng bộ đó.
+Để dùng một bộ: mở thẻ của nó, kiểm tra **Địa chỉ cho người nhắc** — thường là địa chỉ WebSocket, ví dụ `wss://api.x.ai` cho X.ai, `wss://api.deepgram.com` cho Deepgram hoặc `ws://localhost:2700` cho Vosk; nếu để trống, địa chỉ được suy ra từ **Địa chỉ cho bản gỡ băng**. Sau đó chọn **Mô hình cho người nhắc**: các mô hình trực tiếp thường khác các mô hình cho tệp — `grok-voice-transcribe-2.0` cho X.ai, như trên thẻ trong hình, `scribe_v2_realtime` cho ElevenLabs, `gpt-live-transcribe` cho OpenAI, `stt-rt-v5` cho Soniox. Nhấn **Thử**. Đánh dấu **Mặc định cho người nhắc** để các trợ lý mới nghe bằng bộ đó.
 
 ## Nên chọn mô hình nào {#which-model-to-choose}
-Bảng liệt kê các mô hình nhận dạng giọng nói của mọi loại trong danh sách **Loại**. Các mô hình in **đậm** là những mô hình được thiết lập trong hình; với bộ nhận dạng X.ai, mô hình để trống nên mô hình mặc định của dịch vụ, **`grok-voice-transcribe-2.0`**, được dùng. Cột **Dùng cho** cho biết mô hình được làm cho việc gì: bản ghi đã xong (*gỡ băng*), lời nói trực tiếp cho [người nhắc](#live-recognition-for-the-prompter) (*người nhắc*), hay *cả hai*.
+Bảng liệt kê các mô hình nhận dạng giọng nói của mọi loại trong danh sách **Loại**. Các mô hình in **đậm** là những mô hình được thiết lập trong hình; với bộ nhận dạng X.ai, mô hình để trống nên mô hình mặc định của dịch vụ, **`grok-voice-transcribe-2.0`**, được dùng. Ô để trống ở đó là **Mô hình cho bản gỡ băng**; **Mô hình cho người nhắc** được đặt cùng mô hình đó. Cột **Dùng cho** cho biết mô hình được làm cho việc gì: bản ghi đã xong (*gỡ băng*), lời nói trực tiếp cho [người nhắc](#live-recognition-for-the-prompter) (*người nhắc*), hay *cả hai*.
 
 | Loại và địa chỉ | Mô hình | Dùng cho | Dùng để làm gì |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Bảng liệt kê các mô hình nhận dạng giọng nói của mọi loại t
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | cả hai | Chính xác nhất, cho cuộc trò chuyện bằng một ngôn ngữ. Bộ nhận dạng mới thuộc loại này được gán mô hình này. |
 | | `standard` | cả hai | Nhanh hơn và rẻ hơn, kém chính xác hơn một chút. |
 | | `melia-1` | gỡ băng | Cuộc trò chuyện nhiều ngôn ngữ, đổi ngôn ngữ giữa câu, trở về thành một bản gỡ băng duy nhất. Chỉ cho bản ghi, ở vùng EU và Mỹ; chưa có từ điển riêng và nhãn người nói. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | cả hai | Mặc định; 25 ngôn ngữ. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | cả hai | Mô hình hiện hành duy nhất và là mặc định: 38 ngôn ngữ, tự nhận biết. Tệp đến 500 MB; lời nói trực tiếp gửi tới `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | gỡ băng | Đã lỗi thời: dịch vụ chuyển nó sang `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | gỡ băng | Hơn 60 ngôn ngữ, có tách người nói. |
 | | `stt-rt-v5` | người nhắc | Trực tiếp, với cùng hơn 60 ngôn ngữ, và nghe được chỗ một lượt nói kết thúc. Điện thoại đề xuất nó cho người nhắc. |

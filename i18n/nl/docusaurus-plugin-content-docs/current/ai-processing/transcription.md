@@ -13,18 +13,20 @@ Een gesprek wordt getranscribeerd als u daarom vraagt in het [venster Opnames](/
 ## Herkenners {#recognisers}
 Een herkenner is een spraakherkenningsdienst waar de telefoon het geluid naartoe stuurt. Met **Toevoegen** voegt u er een toe; de knop **Testen** op zijn kaart controleert of de dienst echt antwoordt. Elke herkenner staat in de lijst met zijn naam en daaronder het model en het adres van zijn dienst. De tabel toont elke soort dienst die de telefoon ondersteunt, zoals **Soort** op de kaart ze aanbiedt, met het adres en de modellen die een nieuwe herkenner van die soort krijgt; de laatste kolom toont de vijf die op de afbeelding zijn ingesteld:
 
-| Soort | Adres | Model | Op de afbeelding |
-| --- | --- | --- | --- |
-| **OpenAI-compatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, live `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, live `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(leeg: de standaard van de dienst)*, live `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(leeg: de standaard van de dienst)*, live `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(leeg: de standaard van de dienst)* | — |
-| **Vosk (op uw eigen machine)** | uw server, bijvoorbeeld `ws://localhost:2700` | *(op de server ingesteld)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (op uw eigen machine)** | uw server, bijvoorbeeld `ws://localhost:9090` | live `small` | — |
-| **NVIDIA Riva (op uw eigen machine)** | uw server, bijvoorbeeld `localhost:50051` | *(op de server ingesteld)* | — |
+| Soort | Adres voor transcripties | Adres voor de souffleur | Model | Op de afbeelding |
+| --- | --- | --- | --- | --- |
+| **OpenAI-compatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, live `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, live `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, of `eu.`, `us.`, `au.` in plaats van `global.` voor een regio | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(leeg: de standaard van de dienst)*, live `grok-voice-transcribe-2.0` | **X.ai** · live `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(leeg: de standaard van de dienst)*, live `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(leeg: de standaard van de dienst)* | — |
+| **Vosk (op uw eigen machine)** | uw server, bijvoorbeeld `ws://localhost:2700` | *(dezelfde server)* | *(op de server ingesteld)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (op uw eigen machine)** | uw server, bijvoorbeeld `ws://localhost:9090` | *(dezelfde server)* | live `small` | — |
+| **NVIDIA Riva (op uw eigen machine)** | uw server, bijvoorbeeld `localhost:50051` | *(dezelfde server)* | *(op de server ingesteld)* | — |
+
+Het **Adres voor de souffleur** is meestal een WebSocket-adres: `wss://` voor een dienst in de cloud, `ws://` voor een server in uw eigen netwerk; NVIDIA Riva wordt opgegeven als `host:poort`.
 
 De twee tekens rechts in een rij zeggen waarvoor de herkenner de standaard is. De klok brandt bij de standaard **voor transcripties** — **X.ai** op de afbeelding —, die gebruikt wordt als u geen andere kiest. De bliksem brandt bij de standaard **voor de souffleur** — **Vosk** op de afbeelding. U kunt meerdere herkenners houden; de keuzelijst boven een transcriptie in het [venster Opnames](/interface/recordings#transcript-or-write-up-the-drop-down) toont de transcripties die elk ervan gemaakt heeft.
 
@@ -38,10 +40,10 @@ Een klik op een herkenner opent zijn kaart.
 | **Naam** | De naam in de lijsten. |
 | **Soort** | De soort dienst, die bepaalt hoe de telefoon ermee praat: **OpenAI-compatibel (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, en drie die op uw eigen machine draaien — **Vosk**, **WhisperLive** en **NVIDIA Riva**. |
 | **Adres voor transcripties** | Waar afgelopen gesprekken naartoe gaan. |
-| **Adres voor de souffleur** | Waar het live geluid naartoe gaat terwijl een gesprek bezig is. *Leeg wordt afgeleid uit het adres ernaast*, zoals `wss://api.x.ai` op de afbeelding. |
+| **Adres voor de souffleur** | Waar het live geluid naartoe gaat terwijl een gesprek bezig is. Meestal een WebSocket-adres: `wss://` voor een dienst in de cloud, zoals `wss://api.x.ai` op de afbeelding, `ws://` voor een server in uw eigen netwerk. *Leeg wordt afgeleid uit het adres ernaast*. |
 | **Sleutel** | De sleutel van de dienst. *Het staat in de sleutelbos van deze computer, nooit in een instellingenbestand.* |
 | **Testen** | Vraagt de dienst iets en zegt wat die antwoordde, bijvoorbeeld *Heeft geantwoord, en biedt 3 modellen aan*. |
-| **Model voor transcripties** en **Model voor de souffleur** | Het model, precies zoals de dienst het noemt. *Leeg stuurt geen modelnaam mee*, en de dienst gebruikt zijn eigen standaard; waar de leverancier er een publiceert, noemt de kaart die. Voor een soort zonder keuze wordt het veld niet getoond. |
+| **Model voor transcripties** en **Model voor de souffleur** | Het model, precies zoals de dienst het noemt. *Leeg stuurt geen modelnaam mee*, en de dienst gebruikt zijn eigen standaard; waar de leverancier er een publiceert, noemt de kaart die. Voor een soort zonder keuze wordt het veld niet getoond. Op de afbeelding heeft xAI geen **Model voor transcripties**, en het **Model voor de souffleur** staat op `grok-voice-transcribe-2.0`. |
 | **Standaard voor transcripties** | Maakt dit de herkenner die gebruikt wordt als u geen andere kiest. |
 | **Standaard voor de souffleur** | Maakt dit de herkenner waarmee een nieuwe assistent van de souffleur luistert. |
 | **Aan** | Uit blijft de herkenner in de lijst staan en wordt hij niet gebruikt. |
@@ -67,10 +69,10 @@ Een klik op een herkenner opent zijn kaart.
 ## Live herkenning voor de souffleur {#live-recognition-for-the-prompter}
 De [souffleur](../interface/prompter.md) heeft een herkenner nodig die luistert terwijl iemand praat, via een stroom in plaats van met een afgerond bestand. Deze soorten kunnen dat: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-compatibel** (met de realtime transcriptie van OpenAI), **AssemblyAI**, **Soniox** en **Speechmatics** in de cloud en **Vosk**, **WhisperLive** en **NVIDIA Riva** op uw eigen machine. Een herkenner op uw eigen machine houdt de stem van de andere partij binnen de deur en rekent niets.
 
-Zo gebruikt u er een: open zijn kaart, controleer het **Adres voor de souffleur** (of laat het afleiden), kies het **Model voor de souffleur** waar de dienst er meerdere aanbiedt — de live modellen zijn vaak andere dan die voor bestanden, zoals `scribe_v2_realtime` van ElevenLabs — en druk op **Testen**. Vink **Standaard voor de souffleur** aan om nieuwe assistenten ermee te laten luisteren.
+Zo gebruikt u er een: open zijn kaart, controleer het **Adres voor de souffleur** — meestal een WebSocket-adres, zoals `wss://api.x.ai` voor X.ai, `wss://api.deepgram.com` voor Deepgram of `ws://localhost:2700` voor Vosk; leeg wordt het afgeleid uit het **Adres voor transcripties**. Kies daarna het **Model voor de souffleur**: de live-modellen verschillen vaak van die voor bestanden — `grok-voice-transcribe-2.0` voor X.ai, zoals op de kaart op de afbeelding, `scribe_v2_realtime` voor ElevenLabs, `gpt-live-transcribe` voor OpenAI, `stt-rt-v5` voor Soniox. Druk op **Testen**. Vink **Standaard voor de souffleur** aan om nieuwe assistenten ermee te laten luisteren.
 
 ## Welk model u kiest {#which-model-to-choose}
-De tabel toont de spraakherkenningsmodellen van elke soort in de lijst **Soort**. De **vetgedrukte** modellen zijn die op de afbeelding zijn ingesteld; bij de herkenner X.ai is het model leeg, dus wordt de standaard van de dienst, **`grok-voice-transcribe-2.0`**, gebruikt. **Voor** zegt waarvoor een model gemaakt is: afgeronde opnames (*transcripties*), live spraak voor de [souffleur](#live-recognition-for-the-prompter) (*souffleur*), of *allebei*.
+De tabel toont de spraakherkenningsmodellen van elke soort in de lijst **Soort**. De **vetgedrukte** modellen zijn die op de afbeelding zijn ingesteld; bij de herkenner X.ai is het model leeg, dus wordt de standaard van de dienst, **`grok-voice-transcribe-2.0`**, gebruikt. Leeg is daar het **Model voor transcripties**; het **Model voor de souffleur** staat op hetzelfde model. **Voor** zegt waarvoor een model gemaakt is: afgeronde opnames (*transcripties*), live spraak voor de [souffleur](#live-recognition-for-the-prompter) (*souffleur*), of *allebei*.
 
 | Soort en adres | Model | Voor | Waarvoor het dient |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ De tabel toont de spraakherkenningsmodellen van elke soort in de lijst **Soort**
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | allebei | Het nauwkeurigst, voor een gesprek in één taal. Een nieuwe herkenner van deze soort krijgt het. |
 | | `standard` | allebei | Sneller en goedkoper, iets minder nauwkeurig. |
 | | `melia-1` | transcripties | Een gesprek in meerdere talen, dat midden in een zin wisselt, komt terug als één transcriptie. Alleen opnames, in de regio's EU en VS; nog zonder eigen woordenboek en sprekerlabels. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | allebei | De standaard; 25 talen. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | allebei | Het enige huidige model en de standaard: 38 talen, die het zelf herkent. Bestanden tot 500 MB; live spraak gaat naar `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transcripties | Verouderd: de dienst stuurt het door naar `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transcripties | Meer dan 60 talen, met scheiding van sprekers. |
 | | `stt-rt-v5` | souffleur | Live, in dezelfde 60+ talen, en hoort waar een beurt eindigt. De telefoon biedt het aan voor de souffleur. |

@@ -13,18 +13,20 @@ Vestlus tähendatakse üles, kui te seda [Salvestiste aknas](/interface/recordin
 ## Tuvastajad {#recognisers}
 Tuvastaja on kõnetuvastusteenus, millele telefon heli saadab. **Lisa** lisab uue; selle kaardi nupp **Kontrolli** kontrollib, kas teenus tõesti vastab. Igaüks on loendis oma nimega ja selle all on teenuse mudel ja aadress. Tabel loetleb kõik teenuseliigid, mida telefon toetab, nii nagu kaardi **Liik** neid pakub, koos aadressi ja mudelitega, mille selle liigi uus tuvastaja saab; viimane veerg näitab pildil seadistatud viit:
 
-| Liik | Aadress | Mudel | Pildil |
-| --- | --- | --- | --- |
-| **OpenAI-ga ühilduv (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, otse `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, otse `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(tühi: teenuse vaikemudel)*, otse `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(tühi: teenuse vaikemudel)*, otse `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(tühi: teenuse vaikemudel)* | — |
-| **Vosk (teie enda masinas)** | teie server, näiteks `ws://localhost:2700` | *(seatakse serveris)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (teie enda masinas)** | teie server, näiteks `ws://localhost:9090` | otse `small` | — |
-| **NVIDIA Riva (teie enda masinas)** | teie server, näiteks `localhost:50051` | *(seatakse serveris)* | — |
+| Liik | Aadress ülestähenduste jaoks | Aadress etteütleja jaoks | Mudel | Pildil |
+| --- | --- | --- | --- | --- |
+| **OpenAI-ga ühilduv (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, otse `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, otse `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com` või piirkonna jaoks `eu.`, `us.`, `au.` `global.` asemel | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(tühi: teenuse vaikemudel)*, otse `grok-voice-transcribe-2.0` | **X.ai** · otse `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(tühi: teenuse vaikemudel)*, otse `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(tühi: teenuse vaikemudel)* | — |
+| **Vosk (teie enda masinas)** | teie server, näiteks `ws://localhost:2700` | *(sama server)* | *(seatakse serveris)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (teie enda masinas)** | teie server, näiteks `ws://localhost:9090` | *(sama server)* | otse `small` | — |
+| **NVIDIA Riva (teie enda masinas)** | teie server, näiteks `localhost:50051` | *(sama server)* | *(seatakse serveris)* | — |
+
+Väli **Aadress etteütleja jaoks** on tavaliselt WebSocketi aadress: `wss://` pilves oleva teenuse jaoks, `ws://` teie oma võrgus oleva serveri jaoks; NVIDIA Riva antakse kujul `host:port`.
 
 Kaks märki rea paremas servas näitavad, mille jaoks tuvastaja on vaikimisi valitud. Kell põleb vaikimisi tuvastajal **ülestähenduste jaoks** — pildil **X.ai** —, mida kasutatakse, kui te muud ei vali. Välk põleb vaikimisi tuvastajal **etteütleja jaoks** — pildil **Vosk**. Tuvastajaid võib olla mitu; ülestähenduse kohal olev ripploend [Salvestiste aknas](/interface/recordings#transcript-or-write-up-the-drop-down) näitab igaühe tehtud ülestähendusi.
 
@@ -38,10 +40,10 @@ Tuvastajale vajutamine avab selle kaardi.
 | **Nimi** | Nimi loendites. |
 | **Liik** | Teenuse liik, mis otsustab, kuidas telefon sellega räägib: **OpenAI-ga ühilduv (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ja kolm, mis töötavad teie enda masinas — **Vosk**, **WhisperLive** ja **NVIDIA Riva**. |
 | **Aadress ülestähenduste jaoks** | Kuhu lõppenud vestlused saadetakse. |
-| **Aadress etteütleja jaoks** | Kuhu otseheli vestluse ajal läheb. *Tühi tuletatakse kõrvalolevast aadressist*, nagu pildil `wss://api.x.ai`. |
+| **Aadress etteütleja jaoks** | Kuhu otseheli vestluse ajal läheb. Tavaliselt WebSocketi aadress: `wss://` pilves oleva teenuse jaoks, nagu `wss://api.x.ai` pildil, `ws://` teie oma võrgus oleva serveri jaoks. *Tühi tuletatakse kõrvalolevast aadressist*. |
 | **Võti** | Teenuse võti. *See on selle arvuti võtmehoidjas, mitte kunagi seadistusfailis.* |
 | **Kontrolli** | Küsib teenuselt ja ütleb, mida see vastas, näiteks *Vastas ja pakub 3 mudelit*. |
-| **Mudel ülestähenduste jaoks** ja **Mudel etteütleja jaoks** | Mudel täpselt nii, nagu teenus seda nimetab. *Tühjana ei saadeta mudeli nime*, ja teenus kasutab oma vaikemudelit; kui pakkuja selle avaldab, nimetab kaart selle. Liigi puhul, millel valikut pole, välja ei näidata. |
+| **Mudel ülestähenduste jaoks** ja **Mudel etteütleja jaoks** | Mudel täpselt nii, nagu teenus seda nimetab. *Tühjana ei saadeta mudeli nime*, ja teenus kasutab oma vaikemudelit; kui pakkuja selle avaldab, nimetab kaart selle. Liigi puhul, millel valikut pole, välja ei näidata. Pildil pole xAI-l välja **Mudel ülestähenduste jaoks** ja väljal **Mudel etteütleja jaoks** on `grok-voice-transcribe-2.0`. |
 | **Vaikimisi ülestähenduste jaoks** | Teeb sellest tuvastaja, mida kasutatakse, kui te muud ei vali. |
 | **Vaikimisi etteütleja jaoks** | Teeb sellest tuvastaja, millega etteütleja uus abiline kuulab. |
 | **Sees** | Väljalülitatuna jääb tuvastaja loendisse, kuid seda ei kasutata. |
@@ -67,10 +69,10 @@ Tuvastajale vajutamine avab selle kaardi.
 ## Otsetuvastus etteütleja jaoks {#live-recognition-for-the-prompter}
 [Etteütleja](../interface/prompter.md) vajab tuvastajat, mis kuulab, kui keegi räägib, voona, mitte valmis failina. Seda oskavad need liigid: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-ga ühilduv** (OpenAI reaalajas ülestähendusega), **AssemblyAI**, **Soniox** ja **Speechmatics** pilves ning **Vosk**, **WhisperLive** ja **NVIDIA Riva** teie enda masinas. Teie enda masinas töötav tuvastaja hoiab teise poole hääle majas ega maksa midagi.
 
-Nii kasutate üht: avage selle kaart, kontrollige välja **Aadress etteütleja jaoks** (või laske see tuletada), valige **Mudel etteütleja jaoks**, kui teenus pakub mitut — otsemudelid erinevad sageli failide omadest, näiteks ElevenLabsi `scribe_v2_realtime` —, ja vajutage **Kontrolli**. Märkige **Vaikimisi etteütleja jaoks**, et uued abilised kuulaksid sellega.
+Nii kasutate üht: avage selle kaart, kontrollige välja **Aadress etteütleja jaoks** — tavaliselt WebSocketi aadress, näiteks `wss://api.x.ai` X.ai jaoks, `wss://api.deepgram.com` Deepgrami jaoks või `ws://localhost:2700` Voski jaoks; tühjana tuletatakse see väljast **Aadress ülestähenduste jaoks**. Seejärel valige **Mudel etteütleja jaoks**: otsemudelid erinevad sageli failide omadest — X.ai jaoks `grok-voice-transcribe-2.0` nagu kaardil pildil, ElevenLabsi jaoks `scribe_v2_realtime`, OpenAI jaoks `gpt-live-transcribe`, Sonioxi jaoks `stt-rt-v5`. Vajutage **Kontrolli**. Märkige **Vaikimisi etteütleja jaoks**, et uued abilised kuulaksid sellega.
 
 ## Millise mudeli valida {#which-model-to-choose}
-Tabel loetleb loendi **Liik** iga liigi kõnetuvastusmudelid. **Paksus** kirjas mudelid on pildil seadistatud; tuvastaja X.ai mudel on tühi, seega kasutatakse teenuse vaikemudelit **`grok-voice-transcribe-2.0`**. **Milleks** ütleb, milleks mudel on tehtud: valmis salvestiste jaoks (*ülestähendused*), [etteütleja](#live-recognition-for-the-prompter) otsekõne jaoks (*etteütleja*) või *mõlemaks*.
+Tabel loetleb loendi **Liik** iga liigi kõnetuvastusmudelid. **Paksus** kirjas mudelid on pildil seadistatud; tuvastaja X.ai mudel on tühi, seega kasutatakse teenuse vaikemudelit **`grok-voice-transcribe-2.0`**. Tühi on seal väli **Mudel ülestähenduste jaoks**; väljal **Mudel etteütleja jaoks** on sama mudel. **Milleks** ütleb, milleks mudel on tehtud: valmis salvestiste jaoks (*ülestähendused*), [etteütleja](#live-recognition-for-the-prompter) otsekõne jaoks (*etteütleja*) või *mõlemaks*.
 
 | Liik ja aadress | Mudel | Milleks | Mille jaoks see on |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Tabel loetleb loendi **Liik** iga liigi kõnetuvastusmudelid. **Paksus** kirjas 
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | mõlemaks | Kõige täpsem, ühes keeles peetud vestluse jaoks. Selle liigi uus tuvastaja saab selle. |
 | | `standard` | mõlemaks | Kiirem ja odavam, veidi vähem täpne. |
 | | `melia-1` | ülestähendused | Mitmekeelne vestlus, mis vahetab keelt keset lauset, tuleb tagasi ühe ülestähendusena. Ainult salvestised, EL-i ja USA piirkonnas; oma sõnastikku ja kõnelejate märgiseid veel pole. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | mõlemaks | Vaikemudel; 25 keelt. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | mõlemaks | Ainus praegune mudel ja vaikimisi mudel: 38 keelt, mille ta ise ära tunneb. Failid kuni 500 MB; otsekõne läheb aadressile `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | ülestähendused | Aegunud: teenus suunab selle ümber `2.0` peale. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | ülestähendused | Üle 60 keele, kõnelejate eristamisega. |
 | | `stt-rt-v5` | etteütleja | Otse, samas enam kui 60 keeles, ja kuuleb, kus repliik lõpeb. Telefon pakub seda etteütlejale. |

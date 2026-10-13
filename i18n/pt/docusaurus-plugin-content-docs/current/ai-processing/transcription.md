@@ -13,18 +13,20 @@ Uma conversa é transcrita quando o pede na [janela de gravações](/interface/r
 ## Reconhecedores {#recognisers}
 Um reconhecedor é um serviço de reconhecimento de fala para o qual o telefone envia o som. **Adicionar** acrescenta um; o botão **Testar** da sua ficha verifica que o serviço responde mesmo. Cada um aparece na lista com o seu nome e, por baixo, o modelo e o endereço do seu serviço. A tabela lista cada tipo de serviço que o telefone suporta, tal como **Tipo** na ficha os oferece, com o endereço e os modelos que um novo reconhecedor desse tipo recebe; a última coluna mostra os cinco configurados na imagem:
 
-| Tipo | Endereço | Modelo | Na imagem |
-| --- | --- | --- | --- |
-| **Compatível com OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, ao vivo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, ao vivo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(vazio: o modelo por omissão do serviço)*, ao vivo `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(vazio: o modelo por omissão do serviço)*, ao vivo `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(vazio: o modelo por omissão do serviço)* | — |
-| **Vosk (na sua própria máquina)** | o seu servidor, por exemplo `ws://localhost:2700` | *(definido no servidor)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (na sua própria máquina)** | o seu servidor, por exemplo `ws://localhost:9090` | ao vivo `small` | — |
-| **NVIDIA Riva (na sua própria máquina)** | o seu servidor, por exemplo `localhost:50051` | *(definido no servidor)* | — |
+| Tipo | Endereço para as transcrições | Endereço para o ponto | Modelo | Na imagem |
+| --- | --- | --- | --- | --- |
+| **Compatível com OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, ao vivo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, ao vivo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, ou `eu.`, `us.`, `au.` em vez de `global.` para uma região | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(vazio: o modelo por omissão do serviço)*, ao vivo `grok-voice-transcribe-2.0` | **X.ai** · ao vivo `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(vazio: o modelo por omissão do serviço)*, ao vivo `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(vazio: o modelo por omissão do serviço)* | — |
+| **Vosk (na sua própria máquina)** | o seu servidor, por exemplo `ws://localhost:2700` | *(o mesmo servidor)* | *(definido no servidor)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (na sua própria máquina)** | o seu servidor, por exemplo `ws://localhost:9090` | *(o mesmo servidor)* | ao vivo `small` | — |
+| **NVIDIA Riva (na sua própria máquina)** | o seu servidor, por exemplo `localhost:50051` | *(o mesmo servidor)* | *(definido no servidor)* | — |
+
+O **Endereço para o ponto** é normalmente um endereço WebSocket: `wss://` para um serviço na nuvem, `ws://` para um servidor da sua rede; o NVIDIA Riva indica-se como `anfitrião:porta`.
 
 As duas marcas à direita de uma linha dizem para que é o reconhecedor por omissão. O relógio acende-se no reconhecedor por omissão **para as transcrições** — **X.ai** na imagem —, usado quando não escolhe outro. O relâmpago acende-se no reconhecedor por omissão **para o ponto** — **Vosk** na imagem. Pode ter vários reconhecedores; a lista pendente por cima de uma transcrição na [janela de gravações](/interface/recordings#transcript-or-write-up-the-drop-down) mostra as transcrições feitas por cada um.
 
@@ -38,10 +40,10 @@ Premir um reconhecedor abre a sua ficha.
 | **Nome** | O nome nas listas. |
 | **Tipo** | O tipo de serviço, que decide como o telefone fala com ele: **Compatível com OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, e três que correm na sua própria máquina — **Vosk**, **WhisperLive** e **NVIDIA Riva**. |
 | **Endereço para as transcrições** | Para onde são enviadas as conversas terminadas. |
-| **Endereço para o ponto** | Para onde vai o som ao vivo enquanto uma conversa decorre. *Vazio é deduzido do endereço ao lado*, como `wss://api.x.ai` na imagem. |
+| **Endereço para o ponto** | Para onde vai o som ao vivo enquanto uma conversa decorre. Normalmente um endereço WebSocket: `wss://` para um serviço na nuvem, como `wss://api.x.ai` na imagem, `ws://` para um servidor da sua rede. *Vazio é deduzido do endereço ao lado*. |
 | **Chave** | A chave do serviço. *Fica no porta-chaves deste computador, nunca num ficheiro de definições.* |
 | **Testar** | Pergunta ao serviço e diz o que ele respondeu, por exemplo *Respondeu, e oferece 3 modelos*. |
-| **Modelo para as transcrições** e **Modelo para o ponto** | O modelo, exatamente como o serviço o chama. *Vazio não envia nome de modelo*, e o serviço usa o seu próprio modelo por omissão; quando o fornecedor publica um, a ficha indica-o. O campo não aparece para um tipo que não dá escolha. |
+| **Modelo para as transcrições** e **Modelo para o ponto** | O modelo, exatamente como o serviço o chama. *Vazio não envia nome de modelo*, e o serviço usa o seu próprio modelo por omissão; quando o fornecedor publica um, a ficha indica-o. O campo não aparece para um tipo que não dá escolha. Na imagem, o xAI não tem **Modelo para as transcrições**, e o **Modelo para o ponto** é `grok-voice-transcribe-2.0`. |
 | **Por omissão para as transcrições** | Faz deste o reconhecedor usado quando não escolhe outro. |
 | **Por omissão para o ponto** | Faz deste o reconhecedor com que um novo assistente do ponto escuta. |
 | **Ligado** | Desligado, o reconhecedor fica na lista e não é usado. |
@@ -67,10 +69,10 @@ Premir um reconhecedor abre a sua ficha.
 ## Reconhecimento ao vivo para o ponto {#live-recognition-for-the-prompter}
 O [ponto](../interface/prompter.md) precisa de um reconhecedor que escute enquanto alguém fala, por um fluxo e não com um ficheiro terminado. Estes tipos conseguem: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Compatível com OpenAI** (com a transcrição em tempo real da OpenAI), **AssemblyAI**, **Soniox** e **Speechmatics** na nuvem e **Vosk**, **WhisperLive** e **NVIDIA Riva** na sua própria máquina. Um reconhecedor na sua própria máquina mantém a voz do interlocutor dentro de portas e não cobra nada.
 
-Para usar um: abra a sua ficha, verifique o **Endereço para o ponto** (ou deixe-o ser deduzido), escolha o **Modelo para o ponto** quando o serviço oferece vários — os modelos ao vivo são muitas vezes diferentes dos de ficheiros, como `scribe_v2_realtime` da ElevenLabs — e prima **Testar**. Marque **Por omissão para o ponto** para que os novos assistentes escutem com ele.
+Para usar um: abra a sua ficha, verifique o **Endereço para o ponto** — normalmente um endereço WebSocket, por exemplo `wss://api.x.ai` para o X.ai, `wss://api.deepgram.com` para o Deepgram ou `ws://localhost:2700` para o Vosk; vazio, é deduzido do **Endereço para as transcrições**. Depois escolha o **Modelo para o ponto**: os modelos ao vivo são muitas vezes diferentes dos de ficheiros — `grok-voice-transcribe-2.0` para o X.ai, como na ficha da imagem, `scribe_v2_realtime` para o ElevenLabs, `gpt-live-transcribe` para o OpenAI, `stt-rt-v5` para o Soniox. Prima **Testar**. Marque **Por omissão para o ponto** para que os novos assistentes escutem com ele.
 
 ## Que modelo escolher {#which-model-to-choose}
-A tabela lista os modelos de reconhecimento de fala de cada tipo da lista **Tipo**. Os modelos a **negrito** são os configurados na imagem; para o reconhecedor X.ai o modelo está vazio, por isso é usado o modelo por omissão do serviço, **`grok-voice-transcribe-2.0`**. **Para** diz para que serve um modelo: gravações terminadas (*transcrições*), fala ao vivo para o [ponto](#live-recognition-for-the-prompter) (*ponto*), ou *ambos*.
+A tabela lista os modelos de reconhecimento de fala de cada tipo da lista **Tipo**. Os modelos a **negrito** são os configurados na imagem; para o reconhecedor X.ai o modelo está vazio, por isso é usado o modelo por omissão do serviço, **`grok-voice-transcribe-2.0`**. O que lá está vazio é o **Modelo para as transcrições**; o **Modelo para o ponto** tem o mesmo modelo. **Para** diz para que serve um modelo: gravações terminadas (*transcrições*), fala ao vivo para o [ponto](#live-recognition-for-the-prompter) (*ponto*), ou *ambos*.
 
 | Tipo e endereço | Modelo | Para | Para que serve |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ A tabela lista os modelos de reconhecimento de fala de cada tipo da lista **Tipo
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | ambos | O mais preciso, para uma conversa numa só língua. Um novo reconhecedor deste tipo recebe-o. |
 | | `standard` | ambos | Mais rápido e barato, um pouco menos preciso. |
 | | `melia-1` | transcrições | Uma conversa em várias línguas, que muda a meio da frase, volta como uma só transcrição. Só gravações, nas regiões UE e EUA; ainda sem dicionário próprio nem etiquetas de oradores. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | ambos | O modelo por omissão; 25 línguas. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | ambos | O único modelo atual e o predefinido: 38 línguas, que reconhece por si. Ficheiros até 500 MB; a fala ao vivo vai para `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transcrições | Obsoleto: o serviço reencaminha-o para `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transcrições | Mais de 60 línguas, com separação de oradores. |
 | | `stt-rt-v5` | ponto | Ao vivo, nas mesmas mais de 60 línguas, e ouve onde termina uma vez de falar. O telefone oferece-o para o ponto. |

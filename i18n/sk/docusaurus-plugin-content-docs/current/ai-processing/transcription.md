@@ -13,18 +13,20 @@ Hovor sa prepíše, keď o to požiadate v [okne nahrávok](/interface/recording
 ## Rozpoznávače {#recognisers}
 Rozpoznávač je služba na rozpoznávanie reči, ktorej telefón posiela zvuk. **Pridať** pridá nový; tlačidlo **Vyskúšať** na jeho karte overí, že služba naozaj odpovedá. Každý je v zozname so svojím názvom a pod ním s modelom a adresou svojej služby. Tabuľka uvádza každý druh služby, ktorý telefón podporuje, tak ako ich ponúka **Druh** na karte, s adresou a modelmi, ktoré dostane nový rozpoznávač tohto druhu; posledný stĺpec ukazuje päť nastavených na obrázku:
 
-| Druh | Adresa | Model | Na obrázku |
-| --- | --- | --- | --- |
-| **Kompatibilný s OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, naživo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, naživo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(prázdne: predvolený model služby)*, naživo `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(prázdne: predvolený model služby)*, naživo `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(prázdne: predvolený model služby)* | — |
-| **Vosk (na vašom vlastnom stroji)** | váš server, napríklad `ws://localhost:2700` | *(nastavuje sa na serveri)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (na vašom vlastnom stroji)** | váš server, napríklad `ws://localhost:9090` | naživo `small` | — |
-| **NVIDIA Riva (na vašom vlastnom stroji)** | váš server, napríklad `localhost:50051` | *(nastavuje sa na serveri)* | — |
+| Druh | Adresa pre prepisy | Adresa pre našepkávača | Model | Na obrázku |
+| --- | --- | --- | --- | --- |
+| **Kompatibilný s OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, naživo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, naživo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, pre región `eu.`, `us.` alebo `au.` namiesto `global.` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(prázdne: predvolený model služby)*, naživo `grok-voice-transcribe-2.0` | **X.ai** · naživo `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(prázdne: predvolený model služby)*, naživo `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(prázdne: predvolený model služby)* | — |
+| **Vosk (na vašom vlastnom stroji)** | váš server, napríklad `ws://localhost:2700` | *(ten istý server)* | *(nastavuje sa na serveri)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (na vašom vlastnom stroji)** | váš server, napríklad `ws://localhost:9090` | *(ten istý server)* | naživo `small` | — |
+| **NVIDIA Riva (na vašom vlastnom stroji)** | váš server, napríklad `localhost:50051` | *(ten istý server)* | *(nastavuje sa na serveri)* | — |
+
+Pole **Adresa pre našepkávača** obvykle obsahuje adresu WebSocket: `wss://` pre službu v cloude, `ws://` pre server vo vašej sieti; NVIDIA Riva sa zadáva ako `hostiteľ:port`.
 
 Dve značky vpravo v riadku hovoria, na čo je rozpoznávač predvolený. Hodiny svietia pri predvolenom **pre prepisy** — na obrázku **X.ai** —, ktorý sa použije, keď nezvolíte iný. Blesk svieti pri predvolenom **pre našepkávača** — na obrázku **Vosk**. Rozpoznávačov môžete mať niekoľko; rozbaľovací zoznam nad prepisom v [okne nahrávok](/interface/recordings#transcript-or-write-up-the-drop-down) ukazuje prepisy, ktoré urobil každý z nich.
 
@@ -38,10 +40,10 @@ Kliknutie na rozpoznávač otvorí jeho kartu.
 | **Názov** | Názov v zoznamoch. |
 | **Druh** | Druh služby, podľa ktorého telefón vie, ako s ňou hovoriť: **Kompatibilný s OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** a tri, ktoré bežia na vašom vlastnom stroji — **Vosk**, **WhisperLive** a **NVIDIA Riva**. |
 | **Adresa pre prepisy** | Kam sa posielajú skončené hovory. |
-| **Adresa pre našepkávača** | Kam ide živý zvuk počas hovoru. *Prázdne sa odvodí z adresy vedľa*, ako `wss://api.x.ai` na obrázku. |
+| **Adresa pre našepkávača** | Kam ide živý zvuk počas hovoru. Zvyčajne adresa WebSocket: `wss://` pre službu v cloude, ako `wss://api.x.ai` na obrázku, `ws://` pre server vo vašej sieti. *Prázdne sa odvodí z adresy vedľa*. |
 | **Kľúč** | Kľúč služby. *Leží v kľúčenke tohto počítača, nikdy v súbore nastavení.* |
 | **Vyskúšať** | Opýta sa služby a povie, čo odpovedala, napríklad *Odpovedal a ponúka 3 modely*. |
-| **Model pre prepisy** a **Model pre našepkávača** | Model presne tak, ako ho služba nazýva. *Prázdne neposiela žiadne meno modelu*, a služba použije svoj predvolený; kde ho dodávateľ zverejňuje, karta ho uvádza. Pri druhu bez výberu sa pole nezobrazuje. |
+| **Model pre prepisy** a **Model pre našepkávača** | Model presne tak, ako ho služba nazýva. *Prázdne neposiela žiadne meno modelu*, a služba použije svoj predvolený; kde ho dodávateľ zverejňuje, karta ho uvádza. Pri druhu bez výberu sa pole nezobrazuje. Na obrázku xAI nemá pole **Model pre prepisy** a pole **Model pre našepkávača** je nastavené na `grok-voice-transcribe-2.0`. |
 | **Predvolený pre prepisy** | Urobí z tohto rozpoznávač, ktorý sa použije, keď nezvolíte iný. |
 | **Predvolený pre našepkávača** | Urobí z tohto rozpoznávač, ktorým počúva nový pomocník našepkávača. |
 | **Zapnuté** | Vypnutý rozpoznávač zostáva v zozname, ale nepoužíva sa. |
@@ -67,10 +69,10 @@ Kliknutie na rozpoznávač otvorí jeho kartu.
 ## Živé rozpoznávanie pre našepkávača {#live-recognition-for-the-prompter}
 [Našepkávač](../interface/prompter.md) potrebuje rozpoznávač, ktorý počúva, kým niekto hovorí — prúdom, nie hotovým súborom. Vedia to tieto druhy: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Kompatibilný s OpenAI** (s prepisom OpenAI v reálnom čase), **AssemblyAI**, **Soniox** a **Speechmatics** v cloude a **Vosk**, **WhisperLive** a **NVIDIA Riva** na vašom vlastnom stroji. Rozpoznávač na vašom vlastnom stroji drží hlas druhej strany v dome a nič nestojí.
 
-Ako ho použiť: otvorte jeho kartu, skontrolujte **Adresa pre našepkávača** (alebo ju nechajte odvodiť), zvoľte **Model pre našepkávača**, ak služba ponúka niekoľko — živé modely sa často líšia od modelov pre súbory, napríklad `scribe_v2_realtime` pri ElevenLabs — a stlačte **Vyskúšať**. Zaškrtnite **Predvolený pre našepkávača**, aby noví pomocníci počúvali práve ním.
+Ako ho použiť: otvorte jeho kartu, skontrolujte pole **Adresa pre našepkávača** — zvyčajne adresu WebSocket, napríklad `wss://api.x.ai` pre X.ai, `wss://api.deepgram.com` pre Deepgram alebo `ws://localhost:2700` pre Vosk; prázdne sa odvodí z poľa **Adresa pre prepisy**. Potom zvoľte **Model pre našepkávača**: živé modely sa často líšia od modelov pre súbory — `grok-voice-transcribe-2.0` pre X.ai ako na karte na obrázku, `scribe_v2_realtime` pre ElevenLabs, `gpt-live-transcribe` pre OpenAI, `stt-rt-v5` pre Soniox. Stlačte **Vyskúšať**. Zaškrtnite **Predvolený pre našepkávača**, aby noví pomocníci počúvali práve ním.
 
 ## Ktorý model vybrať {#which-model-to-choose}
-Tabuľka uvádza modely rozpoznávania reči každého druhu zo zoznamu **Druh**. **Tučne** sú modely nastavené na obrázku; pri rozpoznávači X.ai je model prázdny, takže sa použije predvolený model služby, **`grok-voice-transcribe-2.0`**. **Na čo** hovorí, na čo je model určený: na hotové nahrávky (*prepisy*), na živú reč [našepkávača](#live-recognition-for-the-prompter) (*našepkávač*), alebo na *oboje*.
+Tabuľka uvádza modely rozpoznávania reči každého druhu zo zoznamu **Druh**. **Tučne** sú modely nastavené na obrázku; pri rozpoznávači X.ai je model prázdny, takže sa použije predvolený model služby, **`grok-voice-transcribe-2.0`**. Prázdne je tam pole **Model pre prepisy**; pole **Model pre našepkávača** je nastavené na ten istý model. **Na čo** hovorí, na čo je model určený: na hotové nahrávky (*prepisy*), na živú reč [našepkávača](#live-recognition-for-the-prompter) (*našepkávač*), alebo na *oboje*.
 
 | Druh a adresa | Model | Na čo | Na čo slúži |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Tabuľka uvádza modely rozpoznávania reči každého druhu zo zoznamu **Druh**
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | oboje | Najpresnejší, pre hovor v jednom jazyku. Dostane ho nový rozpoznávač tohto druhu. |
 | | `standard` | oboje | Rýchlejší a lacnejší, o niečo menej presný. |
 | | `melia-1` | prepisy | Hovor vo viacerých jazykoch, ktorý mení jazyk uprostred vety, sa vráti ako jeden prepis. Len nahrávky, v regiónoch EÚ a USA; zatiaľ bez vlastného slovníka a označenia hovoriacich. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | oboje | Predvolený; 25 jazykov. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | oboje | Jediný súčasný model a zároveň predvolený: 38 jazykov, ktoré rozpozná sám. Súbory do 500 MB; živá reč ide na `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | prepisy | Zastaraný: služba ho presmeruje na `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | prepisy | Viac ako 60 jazykov, s rozlíšením hovoriacich. |
 | | `stt-rt-v5` | našepkávač | Naživo, v tých istých 60+ jazykoch, a počuje, kde končí slovo hovoriaceho. Telefón ho ponúka pre našepkávača. |

@@ -13,18 +13,20 @@ O conversație este transcrisă când cereți acest lucru în [fereastra Înregi
 ## Recunoscătoare {#recognisers}
 Un recunoscător este un serviciu de recunoaștere a vorbirii căruia telefonul îi trimite sunetul. **Adaugă** adaugă unul nou; butonul **Verifică** de pe fișa lui verifică dacă serviciul chiar răspunde. Fiecare apare în listă cu numele său și, dedesubt, cu modelul și adresa serviciului său. Tabelul enumeră fiecare fel de serviciu pe care îl suportă telefonul, așa cum le oferă **Fel** pe fișă, cu adresa și modelele pe care le primește un recunoscător nou de acest fel; ultima coloană arată cele cinci configurate în imagine:
 
-| Fel | Adresă | Model | În imagine |
-| --- | --- | --- | --- |
-| **Compatibil OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, în direct `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, în direct `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(gol: modelul implicit al serviciului)*, în direct `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(gol: modelul implicit al serviciului)*, în direct `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(gol: modelul implicit al serviciului)* | — |
-| **Vosk (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `ws://localhost:2700` | *(se setează pe server)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `ws://localhost:9090` | în direct `small` | — |
-| **NVIDIA Riva (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `localhost:50051` | *(se setează pe server)* | — |
+| Fel | Adresă pentru transcrieri | Adresă pentru sufleur | Model | În imagine |
+| --- | --- | --- | --- | --- |
+| **Compatibil OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, în direct `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, în direct `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com` sau, pentru o regiune, `eu.`, `us.`, `au.` în loc de `global.` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(gol: modelul implicit al serviciului)*, în direct `grok-voice-transcribe-2.0` | **X.ai** · în direct `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(gol: modelul implicit al serviciului)*, în direct `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(gol: modelul implicit al serviciului)* | — |
+| **Vosk (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `ws://localhost:2700` | *(același server)* | *(se setează pe server)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `ws://localhost:9090` | *(același server)* | în direct `small` | — |
+| **NVIDIA Riva (pe propria dumneavoastră mașină)** | serverul dumneavoastră, de exemplu `localhost:50051` | *(același server)* | *(se setează pe server)* | — |
+
+Câmpul **Adresă pentru sufleur** conține de obicei o adresă WebSocket: `wss://` pentru un serviciu în cloud, `ws://` pentru un server din rețeaua proprie; NVIDIA Riva se indică sub forma `gazdă:port`.
 
 Cele două semne din dreapta unui rând spun pentru ce este recunoscătorul implicit. Ceasul se aprinde la cel implicit **pentru transcrieri** — **X.ai** în imagine —, folosit când nu alegeți altul. Fulgerul se aprinde la cel implicit **pentru sufleur** — **Vosk** în imagine. Puteți păstra mai multe recunoscătoare; lista derulantă de deasupra unei transcrieri din [fereastra Înregistrări](/interface/recordings#transcript-or-write-up-the-drop-down) arată transcrierile făcute de fiecare dintre ele.
 
@@ -38,10 +40,10 @@ Un clic pe un recunoscător îi deschide fișa.
 | **Nume** | Numele din liste. |
 | **Fel** | Felul serviciului, care hotărăște cum vorbește telefonul cu el: **Compatibil OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** și trei care rulează pe propria dumneavoastră mașină — **Vosk**, **WhisperLive** și **NVIDIA Riva**. |
 | **Adresă pentru transcrieri** | Unde sunt trimise conversațiile încheiate. |
-| **Adresă pentru sufleur** | Unde merge sunetul în direct în timpul unei conversații. *Gol se deduce din adresa alăturată*, ca `wss://api.x.ai` în imagine. |
+| **Adresă pentru sufleur** | Unde merge sunetul în direct în timpul unei conversații. De obicei o adresă WebSocket: `wss://` pentru un serviciu în cloud, ca `wss://api.x.ai` din imagine, `ws://` pentru un server din rețeaua proprie. *Gol se deduce din adresa alăturată*. |
 | **Cheie** | Cheia serviciului. *Stă în portcheiul acestui calculator, niciodată într-un fișier de setări.* |
 | **Verifică** | Întreabă serviciul și spune ce a răspuns, de exemplu *A răspuns și oferă 3 modele*. |
-| **Model pentru transcrieri** și **Model pentru sufleur** | Modelul, exact cum îl numește serviciul. *Gol nu trimite niciun nume de model*, iar serviciul folosește modelul său implicit; acolo unde furnizorul publică unul, fișa îl numește. Câmpul nu apare la un fel care nu oferă alegere. |
+| **Model pentru transcrieri** și **Model pentru sufleur** | Modelul, exact cum îl numește serviciul. *Gol nu trimite niciun nume de model*, iar serviciul folosește modelul său implicit; acolo unde furnizorul publică unul, fișa îl numește. Câmpul nu apare la un fel care nu oferă alegere. În imagine, xAI nu are câmpul **Model pentru transcrieri**, iar **Model pentru sufleur** este `grok-voice-transcribe-2.0`. |
 | **Implicit pentru transcrieri** | Îl face recunoscătorul folosit când nu alegeți altul. |
 | **Implicit pentru sufleur** | Îl face recunoscătorul cu care ascultă un asistent nou al sufleurului. |
 | **Pornit** | Oprit, recunoscătorul rămâne în listă și nu este folosit. |
@@ -67,10 +69,10 @@ Un clic pe un recunoscător îi deschide fișa.
 ## Recunoaștere în direct pentru sufleur {#live-recognition-for-the-prompter}
 [Sufleurul](../interface/prompter.md) are nevoie de un recunoscător care ascultă în timp ce cineva vorbește, printr-un flux, nu cu un fișier încheiat. Aceste feluri pot: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Compatibil OpenAI** (cu transcrierea în timp real a OpenAI), **AssemblyAI**, **Soniox** și **Speechmatics** în cloud și **Vosk**, **WhisperLive** și **NVIDIA Riva** pe propria dumneavoastră mașină. Un recunoscător pe propria mașină păstrează vocea interlocutorului în casă și nu costă nimic.
 
-Ca să folosiți unul: deschideți-i fișa, verificați **Adresă pentru sufleur** (sau lăsați-o să se deducă), alegeți **Model pentru sufleur** acolo unde serviciul oferă mai multe — modelele în direct diferă adesea de cele pentru fișiere, cum e `scribe_v2_realtime` la ElevenLabs — și apăsați **Verifică**. Bifați **Implicit pentru sufleur** ca asistenții noi să asculte cu el.
+Ca să folosiți unul: deschideți-i fișa, verificați câmpul **Adresă pentru sufleur** — de obicei o adresă WebSocket, de exemplu `wss://api.x.ai` pentru X.ai, `wss://api.deepgram.com` pentru Deepgram sau `ws://localhost:2700` pentru Vosk; gol, este dedus din câmpul **Adresă pentru transcrieri**. Apoi alegeți **Model pentru sufleur**: modelele în direct diferă adesea de cele pentru fișiere — `grok-voice-transcribe-2.0` pentru X.ai, ca în fișa din imagine, `scribe_v2_realtime` pentru ElevenLabs, `gpt-live-transcribe` pentru OpenAI, `stt-rt-v5` pentru Soniox. Apăsați **Verifică**. Bifați **Implicit pentru sufleur** ca asistenții noi să asculte cu el.
 
 ## Ce model să alegeți {#which-model-to-choose}
-Tabelul enumeră modelele de recunoaștere a vorbirii ale fiecărui fel din lista **Fel**. Modelele cu **aldine** sunt cele configurate în imagine; la recunoscătorul X.ai modelul este gol, așa că se folosește modelul implicit al serviciului, **`grok-voice-transcribe-2.0`**. **Pentru** spune pentru ce este făcut un model: pentru înregistrări încheiate (*transcrieri*), pentru vorbirea în direct a [sufleurului](#live-recognition-for-the-prompter) (*sufleur*) sau pentru *amândouă*.
+Tabelul enumeră modelele de recunoaștere a vorbirii ale fiecărui fel din lista **Fel**. Modelele cu **aldine** sunt cele configurate în imagine; la recunoscătorul X.ai modelul este gol, așa că se folosește modelul implicit al serviciului, **`grok-voice-transcribe-2.0`**. Gol acolo este câmpul **Model pentru transcrieri**; **Model pentru sufleur** este setat pe același model. **Pentru** spune pentru ce este făcut un model: pentru înregistrări încheiate (*transcrieri*), pentru vorbirea în direct a [sufleurului](#live-recognition-for-the-prompter) (*sufleur*) sau pentru *amândouă*.
 
 | Fel și adresă | Model | Pentru | La ce folosește |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Tabelul enumeră modelele de recunoaștere a vorbirii ale fiecărui fel din list
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | amândouă | Cel mai precis, pentru o conversație într-o singură limbă. Un recunoscător nou de acest fel îl primește. |
 | | `standard` | amândouă | Mai rapid și mai ieftin, puțin mai puțin precis. |
 | | `melia-1` | transcrieri | O conversație în mai multe limbi, care schimbă limba în mijlocul frazei, vine înapoi ca o singură transcriere. Doar înregistrări, în regiunile UE și SUA; deocamdată fără dicționar propriu și etichete de vorbitori. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | amândouă | Modelul implicit; 25 de limbi. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | amândouă | Singurul model actual și cel implicit: 38 de limbi, recunoscute singur. Fișiere de până la 500 MB; vorbirea în direct merge la `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transcrieri | Învechit: serviciul îl redirecționează spre `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transcrieri | Peste 60 de limbi, cu separarea vorbitorilor. |
 | | `stt-rt-v5` | sufleur | În direct, în aceleași peste 60 de limbi, și aude unde se termină o intervenție. Telefonul îl oferă pentru sufleur. |

@@ -13,18 +13,20 @@ Keskustelu litteroidaan, kun pyydät sitä [Tallenteet-ikkunassa](/interface/rec
 ## Tunnistimet {#recognisers}
 Tunnistin on puheentunnistuspalvelu, jolle puhelin lähettää äänen. **Lisää** lisää uuden; sen kortin **Kokeile**-painike tarkistaa, että palvelu todella vastaa. Jokainen näkyy luettelossa nimellään ja sen alla palvelunsa malli ja osoite. Taulukko luettelee jokaisen puhelimen tukeman palvelulajin sellaisina kuin kortin **Laji** niitä tarjoaa, sekä osoitteen ja mallit, jotka tämän lajin uusi tunnistin saa; viimeinen sarake näyttää kuvassa asetetut viisi:
 
-| Laji | Osoite | Malli | Kuvassa |
-| --- | --- | --- | --- |
-| **OpenAI-yhteensopiva (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, suora `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, suora `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(tyhjä: palvelun oletus)*, suora `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(tyhjä: palvelun oletus)*, suora `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(tyhjä: palvelun oletus)* | — |
-| **Vosk (omalla koneellasi)** | oma palvelimesi, esimerkiksi `ws://localhost:2700` | *(asetetaan palvelimella)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (omalla koneellasi)** | oma palvelimesi, esimerkiksi `ws://localhost:9090` | suora `small` | — |
-| **NVIDIA Riva (omalla koneellasi)** | oma palvelimesi, esimerkiksi `localhost:50051` | *(asetetaan palvelimella)* | — |
+| Laji | Osoite litterointeja varten | Osoite kuiskaajaa varten | Malli | Kuvassa |
+| --- | --- | --- | --- | --- |
+| **OpenAI-yhteensopiva (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, suora `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, suora `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, tai alueelle `eu.`, `us.` tai `au.` `global.`-osan tilalla | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(tyhjä: palvelun oletus)*, suora `grok-voice-transcribe-2.0` | **X.ai** · suora `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(tyhjä: palvelun oletus)*, suora `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(tyhjä: palvelun oletus)* | — |
+| **Vosk (omalla koneellasi)** | oma palvelimesi, esimerkiksi `ws://localhost:2700` | *(sama palvelin)* | *(asetetaan palvelimella)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (omalla koneellasi)** | oma palvelimesi, esimerkiksi `ws://localhost:9090` | *(sama palvelin)* | suora `small` | — |
+| **NVIDIA Riva (omalla koneellasi)** | oma palvelimesi, esimerkiksi `localhost:50051` | *(sama palvelin)* | *(asetetaan palvelimella)* | — |
+
+Kenttä **Osoite kuiskaajaa varten** on yleensä WebSocket-osoite: `wss://` pilvipalvelulle, `ws://` oman verkkosi palvelimelle; NVIDIA Riva annetaan muodossa `palvelin:portti`.
 
 Rivin oikean reunan kaksi merkkiä kertovat, minkä oletus tunnistin on. Kello palaa oletuksella **litterointeja varten** — kuvassa **X.ai** —, jota käytetään, kun et valitse muuta. Salama palaa oletuksella **kuiskaajaa varten** — kuvassa **Vosk**. Voit pitää useita tunnistimia; litteroinnin yläpuolella oleva pudotusvalikko [Tallenteet-ikkunassa](/interface/recordings#transcript-or-write-up-the-drop-down) luettelee kunkin niistä tekemät litteroinnit.
 
@@ -38,10 +40,10 @@ Tunnistimen painaminen avaa sen kortin.
 | **Nimi** | Nimi luetteloissa. |
 | **Laji** | Palvelun laji, joka ratkaisee, miten puhelin keskustelee sen kanssa: **OpenAI-yhteensopiva (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ja kolme omalla koneellasi toimivaa — **Vosk**, **WhisperLive** ja **NVIDIA Riva**. |
 | **Osoite litterointeja varten** | Minne päättyneet keskustelut lähetetään. |
-| **Osoite kuiskaajaa varten** | Minne suora ääni menee keskustelun aikana. *Tyhjä päätellään viereisestä osoitteesta*, kuten `wss://api.x.ai` kuvassa. |
+| **Osoite kuiskaajaa varten** | Minne suora ääni menee keskustelun aikana. Yleensä WebSocket-osoite: `wss://` pilvipalvelulle, kuten kuvan `wss://api.x.ai`, `ws://` oman verkkosi palvelimelle. *Tyhjä päätellään viereisestä osoitteesta*. |
 | **Avain** | Palvelun avain. *Se säilytetään tämän tietokoneen avainnipussa, ei koskaan asetustiedostossa.* |
 | **Kokeile** | Kysyy palvelulta ja kertoo, mitä se vastasi, esimerkiksi *Vastasi ja tarjoaa 3 mallia*. |
-| **Malli litterointeja varten** ja **Malli kuiskaajaa varten** | Malli täsmälleen niin kuin palvelu sen nimeää. *Tyhjä ei lähetä mallin nimeä*, ja palvelu käyttää omaa oletustaan; jos toimittaja julkaisee sellaisen, kortti mainitsee sen. Kenttää ei näytetä lajille, jossa ei ole valinnanvaraa. |
+| **Malli litterointeja varten** ja **Malli kuiskaajaa varten** | Malli täsmälleen niin kuin palvelu sen nimeää. *Tyhjä ei lähetä mallin nimeä*, ja palvelu käyttää omaa oletustaan; jos toimittaja julkaisee sellaisen, kortti mainitsee sen. Kenttää ei näytetä lajille, jossa ei ole valinnanvaraa. Kuvassa xAI:lla ei ole kenttää **Malli litterointeja varten**, ja kentässä **Malli kuiskaajaa varten** on `grok-voice-transcribe-2.0`. |
 | **Oletus litterointeja varten** | Tekee tästä tunnistimen, jota käytetään, kun et valitse muuta. |
 | **Oletus kuiskaajaa varten** | Tekee tästä tunnistimen, jolla kuiskaajan uusi avustaja kuuntelee. |
 | **Päällä** | Pois päältä tunnistin pysyy luettelossa, mutta sitä ei käytetä. |
@@ -67,10 +69,10 @@ Tunnistimen painaminen avaa sen kortin.
 ## Suora tunnistus kuiskaajalle {#live-recognition-for-the-prompter}
 [Kuiskaaja](../interface/prompter.md) tarvitsee tunnistimen, joka kuuntelee jonkun puhuessa, virtana eikä valmiina tiedostona. Nämä lajit osaavat sen: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-yhteensopiva** (OpenAI:n reaaliaikaisella litteroinnilla), **AssemblyAI**, **Soniox** ja **Speechmatics** pilvessä sekä **Vosk**, **WhisperLive** ja **NVIDIA Riva** omalla koneellasi. Omalla koneella toimiva tunnistin pitää toisen osapuolen äänen talon sisällä eikä maksa mitään.
 
-Näin otat sellaisen käyttöön: avaa sen kortti, tarkista **Osoite kuiskaajaa varten** (tai anna sen päätellä itsensä), valitse **Malli kuiskaajaa varten**, jos palvelu tarjoaa useita — suorat mallit ovat usein eri kuin tiedostojen mallit, kuten ElevenLabsin `scribe_v2_realtime` — ja paina **Kokeile**. Rastita **Oletus kuiskaajaa varten**, niin uudet avustajat kuuntelevat sillä.
+Näin otat sellaisen käyttöön: avaa sen kortti, tarkista kenttä **Osoite kuiskaajaa varten** — yleensä WebSocket-osoite, esimerkiksi `wss://api.x.ai` X.ai:lle, `wss://api.deepgram.com` Deepgramille tai `ws://localhost:2700` Voskille; tyhjänä se päätellään kentästä **Osoite litterointeja varten**. Valitse sitten **Malli kuiskaajaa varten**: suorat mallit ovat usein eri kuin tiedostojen mallit — X.ai:lle `grok-voice-transcribe-2.0` kuten kuvan kortissa, ElevenLabsille `scribe_v2_realtime`, OpenAI:lle `gpt-live-transcribe`, Sonioxille `stt-rt-v5`. Paina **Kokeile**. Rastita **Oletus kuiskaajaa varten**, niin uudet avustajat kuuntelevat sillä.
 
 ## Minkä mallin valitset {#which-model-to-choose}
-Taulukko luettelee **Laji**-luettelon jokaisen lajin puheentunnistusmallit. **Lihavoidut** mallit ovat kuvassa asetettuja; tunnistimen X.ai malli on tyhjä, joten käytetään palvelun oletusta, **`grok-voice-transcribe-2.0`**. **Käyttö** kertoo, mihin malli on tehty: valmiisiin tallenteisiin (*litteroinnit*), suoraan puheeseen [kuiskaajaa](#live-recognition-for-the-prompter) varten (*kuiskaaja*) vai *molempiin*.
+Taulukko luettelee **Laji**-luettelon jokaisen lajin puheentunnistusmallit. **Lihavoidut** mallit ovat kuvassa asetettuja; tunnistimen X.ai malli on tyhjä, joten käytetään palvelun oletusta, **`grok-voice-transcribe-2.0`**. Tyhjä on siellä kenttä **Malli litterointeja varten**; kentässä **Malli kuiskaajaa varten** on sama malli. **Käyttö** kertoo, mihin malli on tehty: valmiisiin tallenteisiin (*litteroinnit*), suoraan puheeseen [kuiskaajaa](#live-recognition-for-the-prompter) varten (*kuiskaaja*) vai *molempiin*.
 
 | Laji ja osoite | Malli | Käyttö | Mihin se sopii |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Taulukko luettelee **Laji**-luettelon jokaisen lajin puheentunnistusmallit. **Li
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | molemmat | Tarkin, yhdellä kielellä käytävään keskusteluun. Tämän lajin uusi tunnistin saa sen. |
 | | `standard` | molemmat | Nopeampi ja halvempi, hieman epätarkempi. |
 | | `melia-1` | litteroinnit | Monikielinen keskustelu, joka vaihtaa kieltä kesken lauseen, palaa yhtenä litterointina. Vain tallenteille, EU- ja USA-alueilla; omaa sanastoa ja puhujamerkintöjä ei vielä ole. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | molemmat | Oletus; 25 kieltä. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | molemmat | Ainoa nykyinen malli ja oletus: 38 kieltä, jotka se tunnistaa itse. Tiedostot enintään 500 Mt; suora puhe menee osoitteeseen `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | litteroinnit | Vanhentunut: palvelu ohjaa sen `2.0`:aan. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | litteroinnit | Yli 60 kieltä, puhujat erotellen. |
 | | `stt-rt-v5` | kuiskaaja | Suora, samoilla yli 60 kielellä, ja kuulee, missä puheenvuoro päättyy. Puhelin tarjoaa sitä kuiskaajalle. |

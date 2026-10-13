@@ -13,18 +13,20 @@ Sebuah percakapan ditranskripsi saat Anda memintanya di [jendela Rekaman](/inter
 ## Pengenal suara {#recognisers}
 Pengenal suara adalah layanan pengenalan ucapan yang menerima suara dari telepon. **Tambah** menambahkan yang baru; tombol **Uji** di kartunya memeriksa bahwa layanan benar-benar menjawab. Masing-masing tercantum dengan namanya dan, di bawahnya, model serta alamat layanannya. Tabel ini mencantumkan setiap jenis layanan yang didukung telepon, sebagaimana ditawarkan **Jenis** di kartu, beserta alamat dan model yang diberikan kepada pengenal suara baru dari jenis itu; kolom terakhir menunjukkan lima yang diatur di gambar:
 
-| Jenis | Alamat | Model | Di gambar |
-| --- | --- | --- | --- |
-| **Sesuai OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, langsung `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, langsung `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(kosong: model bawaan layanan)*, langsung `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(kosong: model bawaan layanan)*, langsung `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(kosong: model bawaan layanan)* | — |
-| **Vosk (di mesin Anda sendiri)** | server Anda, misalnya `ws://localhost:2700` | *(diatur di server)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (di mesin Anda sendiri)** | server Anda, misalnya `ws://localhost:9090` | langsung `small` | — |
-| **NVIDIA Riva (di mesin Anda sendiri)** | server Anda, misalnya `localhost:50051` | *(diatur di server)* | — |
+| Jenis | Alamat untuk transkripsi | Alamat untuk pembisik | Model | Di gambar |
+| --- | --- | --- | --- | --- |
+| **Sesuai OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, langsung `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, langsung `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, atau `eu.`, `us.`, `au.` sebagai ganti `global.` untuk suatu wilayah | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(kosong: model bawaan layanan)*, langsung `grok-voice-transcribe-2.0` | **X.ai** · langsung `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(kosong: model bawaan layanan)*, langsung `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(kosong: model bawaan layanan)* | — |
+| **Vosk (di mesin Anda sendiri)** | server Anda, misalnya `ws://localhost:2700` | *(server yang sama)* | *(diatur di server)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (di mesin Anda sendiri)** | server Anda, misalnya `ws://localhost:9090` | *(server yang sama)* | langsung `small` | — |
+| **NVIDIA Riva (di mesin Anda sendiri)** | server Anda, misalnya `localhost:50051` | *(server yang sama)* | *(diatur di server)* | — |
+
+**Alamat untuk pembisik** biasanya berupa alamat WebSocket: `wss://` untuk layanan di cloud, `ws://` untuk server di jaringan Anda sendiri; NVIDIA Riva ditulis sebagai `host:port`.
 
 Dua tanda di kanan baris menunjukkan pengenal suara itu menjadi bawaan untuk apa. Jam menyala pada bawaan **untuk transkripsi** — **X.ai** di gambar —, yang dipakai bila Anda tidak memilih yang lain. Petir menyala pada bawaan **untuk pembisik** — **Vosk** di gambar. Anda dapat menyimpan beberapa pengenal suara; daftar tarik-turun di atas transkrip di [jendela Rekaman](/interface/recordings#transcript-or-write-up-the-drop-down) menampilkan transkrip yang dibuat oleh masing-masing.
 
@@ -38,10 +40,10 @@ Menekan sebuah pengenal suara membuka kartunya.
 | **Nama** | Nama di daftar. |
 | **Jenis** | Jenis layanan, yang menentukan cara telepon berbicara dengannya: **Sesuai OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, dan tiga yang berjalan di mesin Anda sendiri — **Vosk**, **WhisperLive**, dan **NVIDIA Riva**. |
 | **Alamat untuk transkripsi** | Ke mana percakapan yang sudah selesai dikirim. |
-| **Alamat untuk pembisik** | Ke mana suara langsung dikirim selagi percakapan berlangsung. *Kosong diturunkan dari alamat di sebelahnya*, seperti `wss://api.x.ai` di gambar. |
+| **Alamat untuk pembisik** | Ke mana suara langsung dikirim selagi percakapan berlangsung. Biasanya alamat WebSocket: `wss://` untuk layanan di cloud, seperti `wss://api.x.ai` di gambar, `ws://` untuk server di jaringan Anda sendiri. *Kosong diturunkan dari alamat di sebelahnya*. |
 | **Kunci** | Kunci layanan. *Disimpan di gantungan kunci komputer ini, tidak pernah di berkas pengaturan.* |
 | **Uji** | Bertanya kepada layanan dan menyampaikan jawabannya, misalnya *Menjawab, dan menawarkan 3 model*. |
-| **Model untuk transkripsi** dan **Model untuk pembisik** | Model, persis seperti nama yang diberikan layanan. *Kosong tidak mengirim nama model*, dan layanan memakai bawaannya sendiri; bila vendor menerbitkannya, kartu menyebutkannya. Kolom tidak ditampilkan untuk jenis yang tidak punya pilihan. |
+| **Model untuk transkripsi** dan **Model untuk pembisik** | Model, persis seperti nama yang diberikan layanan. *Kosong tidak mengirim nama model*, dan layanan memakai bawaannya sendiri; bila vendor menerbitkannya, kartu menyebutkannya. Kolom tidak ditampilkan untuk jenis yang tidak punya pilihan. Di gambar, xAI tidak punya **Model untuk transkripsi**, dan **Model untuk pembisik** diisi `grok-voice-transcribe-2.0`. |
 | **Bawaan untuk transkripsi** | Menjadikan ini pengenal suara yang dipakai bila Anda tidak memilih yang lain. |
 | **Bawaan untuk pembisik** | Menjadikan ini pengenal suara yang dipakai asisten baru pembisik untuk mendengarkan. |
 | **Aktif** | Bila dimatikan, pengenal suara tetap ada di daftar tetapi tidak dipakai. |
@@ -67,10 +69,10 @@ Menekan sebuah pengenal suara membuka kartunya.
 ## Pengenalan langsung untuk pembisik {#live-recognition-for-the-prompter}
 [Pembisik](../interface/prompter.md) membutuhkan pengenal suara yang mendengarkan selagi seseorang berbicara, lewat aliran, bukan dengan berkas yang sudah jadi. Jenis-jenis ini bisa: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Sesuai OpenAI** (dengan transkripsi waktu nyata OpenAI), **AssemblyAI**, **Soniox**, dan **Speechmatics** di cloud serta **Vosk**, **WhisperLive**, dan **NVIDIA Riva** di mesin Anda sendiri. Pengenal suara di mesin Anda sendiri menjaga suara lawan bicara tetap di dalam gedung dan tidak memungut biaya.
 
-Untuk memakainya: buka kartunya, periksa **Alamat untuk pembisik** (atau biarkan diturunkan), pilih **Model untuk pembisik** bila layanan menawarkan beberapa — model langsung sering berbeda dari model untuk berkas, seperti `scribe_v2_realtime` milik ElevenLabs — lalu tekan **Uji**. Centang **Bawaan untuk pembisik** agar asisten baru mendengarkan dengannya.
+Untuk memakainya: buka kartunya, periksa **Alamat untuk pembisik** — biasanya alamat WebSocket, misalnya `wss://api.x.ai` untuk X.ai, `wss://api.deepgram.com` untuk Deepgram, atau `ws://localhost:2700` untuk Vosk; bila kosong, alamat ini diturunkan dari **Alamat untuk transkripsi**. Lalu pilih **Model untuk pembisik**: model langsung sering berbeda dari model untuk berkas — `grok-voice-transcribe-2.0` untuk X.ai, seperti pada kartu di gambar, `scribe_v2_realtime` untuk ElevenLabs, `gpt-live-transcribe` untuk OpenAI, `stt-rt-v5` untuk Soniox. Tekan **Uji**. Centang **Bawaan untuk pembisik** agar asisten baru mendengarkan dengannya.
 
 ## Model mana yang dipilih {#which-model-to-choose}
-Tabel ini mencantumkan model pengenalan ucapan dari setiap jenis di daftar **Jenis**. Model yang **tebal** adalah yang diatur di gambar; untuk pengenal suara X.ai modelnya kosong, jadi bawaan layanan, **`grok-voice-transcribe-2.0`**, yang dipakai. Kolom **Untuk** menyatakan untuk apa sebuah model dibuat: rekaman yang sudah jadi (*transkripsi*), ucapan langsung untuk [pembisik](#live-recognition-for-the-prompter) (*pembisik*), atau *keduanya*.
+Tabel ini mencantumkan model pengenalan ucapan dari setiap jenis di daftar **Jenis**. Model yang **tebal** adalah yang diatur di gambar; untuk pengenal suara X.ai modelnya kosong, jadi bawaan layanan, **`grok-voice-transcribe-2.0`**, yang dipakai. Yang kosong di sana adalah **Model untuk transkripsi**; **Model untuk pembisik** diisi model yang sama. Kolom **Untuk** menyatakan untuk apa sebuah model dibuat: rekaman yang sudah jadi (*transkripsi*), ucapan langsung untuk [pembisik](#live-recognition-for-the-prompter) (*pembisik*), atau *keduanya*.
 
 | Jenis dan alamat | Model | Untuk | Kegunaannya |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Tabel ini mencantumkan model pengenalan ucapan dari setiap jenis di daftar **Jen
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | keduanya | Paling akurat, untuk percakapan dalam satu bahasa. Pengenal suara baru dari jenis ini mendapatkannya. |
 | | `standard` | keduanya | Lebih cepat dan murah, sedikit kurang akurat. |
 | | `melia-1` | transkripsi | Percakapan dalam beberapa bahasa, yang berganti bahasa di tengah kalimat, kembali sebagai satu transkrip. Hanya rekaman, di wilayah UE dan AS; belum ada kamus sendiri dan label pembicara. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | keduanya | Bawaan; 25 bahasa. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | keduanya | Satu-satunya model saat ini sekaligus bawaan: 38 bahasa, dikenali sendiri. Berkas hingga 500 MB; ucapan langsung dikirim ke `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transkripsi | Usang: layanan mengalihkannya ke `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transkripsi | Lebih dari 60 bahasa, dengan pemisahan pembicara. |
 | | `stt-rt-v5` | pembisik | Langsung, dalam 60+ bahasa yang sama, dan mendengar di mana giliran bicara berakhir. Telepon menawarkannya untuk pembisik. |

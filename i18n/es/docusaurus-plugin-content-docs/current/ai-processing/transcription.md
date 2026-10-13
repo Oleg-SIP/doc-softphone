@@ -13,18 +13,20 @@ Una conversación se transcribe cuando lo pide en la [ventana de grabaciones](/i
 ## Reconocedores {#recognisers}
 Un reconocedor es un servicio de reconocimiento de voz al que el teléfono envía el sonido. **Añadir** añade uno; el botón **Probar** de su ficha comprueba que el servicio responde de verdad. Cada uno aparece en la lista con su nombre y, debajo, el modelo y la dirección de su servicio. La tabla lista cada tipo de servicio que admite el teléfono, tal como los ofrece **Tipo** en la ficha, con la dirección y los modelos que recibe un reconocedor nuevo de ese tipo; la última columna muestra los cinco configurados en la imagen:
 
-| Tipo | Dirección | Modelo | En la imagen |
-| --- | --- | --- | --- |
-| **Compatible con OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, en directo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, en directo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(vacío: el modelo predeterminado del servicio)*, en directo `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(vacío: el modelo predeterminado del servicio)*, en directo `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(vacío: el modelo predeterminado del servicio)* | — |
-| **Vosk (en su propia máquina)** | su servidor, por ejemplo `ws://localhost:2700` | *(se fija en el servidor)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (en su propia máquina)** | su servidor, por ejemplo `ws://localhost:9090` | en directo `small` | — |
-| **NVIDIA Riva (en su propia máquina)** | su servidor, por ejemplo `localhost:50051` | *(se fija en el servidor)* | — |
+| Tipo | Dirección para transcripciones | Dirección para el apuntador | Modelo | En la imagen |
+| --- | --- | --- | --- | --- |
+| **Compatible con OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, en directo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, en directo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, o `eu.`, `us.`, `au.` en lugar de `global.` para una región | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(vacío: el modelo predeterminado del servicio)*, en directo `grok-voice-transcribe-2.0` | **X.ai** · en directo `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(vacío: el modelo predeterminado del servicio)*, en directo `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(vacío: el modelo predeterminado del servicio)* | — |
+| **Vosk (en su propia máquina)** | su servidor, por ejemplo `ws://localhost:2700` | *(el mismo servidor)* | *(se fija en el servidor)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (en su propia máquina)** | su servidor, por ejemplo `ws://localhost:9090` | *(el mismo servidor)* | en directo `small` | — |
+| **NVIDIA Riva (en su propia máquina)** | su servidor, por ejemplo `localhost:50051` | *(el mismo servidor)* | *(se fija en el servidor)* | — |
+
+La **Dirección para el apuntador** suele ser una dirección WebSocket: `wss://` para un servicio en la nube, `ws://` para un servidor de su propia red; NVIDIA Riva se indica como `host:puerto`.
 
 Las dos marcas a la derecha de una fila dicen para qué es el reconocedor predeterminado. El reloj se enciende en el predeterminado **para transcripciones** — **X.ai** en la imagen —, que se usa cuando no elige otro. El rayo se enciende en el predeterminado **para el apuntador** — **Vosk** en la imagen. Puede tener varios reconocedores; la lista desplegable encima de una transcripción en la [ventana de grabaciones](/interface/recordings#transcript-or-write-up-the-drop-down) muestra las transcripciones hechas por cada uno.
 
@@ -38,10 +40,10 @@ Al pulsar un reconocedor se abre su ficha.
 | **Nombre** | El nombre en las listas. |
 | **Tipo** | El tipo de servicio, que decide cómo le habla el teléfono: **Compatible con OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, y tres que funcionan en su propia máquina — **Vosk**, **WhisperLive** y **NVIDIA Riva**. |
 | **Dirección para transcripciones** | Adónde se envían las conversaciones terminadas. |
-| **Dirección para el apuntador** | Adónde va el sonido en directo mientras transcurre una conversación. *Vacío se deduce de la dirección de al lado*, como `wss://api.x.ai` en la imagen. |
+| **Dirección para el apuntador** | Adónde va el sonido en directo mientras transcurre una conversación. Suele ser una dirección WebSocket: `wss://` para un servicio en la nube, como `wss://api.x.ai` en la imagen, `ws://` para un servidor de su propia red. *Vacío se deduce de la dirección de al lado*. |
 | **Clave** | La clave del servicio. *Se guarda en el llavero de este ordenador, nunca en un archivo de ajustes.* |
 | **Probar** | Pregunta al servicio y dice qué respondió, por ejemplo *Ha respondido, y ofrece 3 modelos*. |
-| **Modelo para transcripciones** y **Modelo para el apuntador** | El modelo, exactamente como lo llama el servicio. *Vacío no envía ningún nombre de modelo*, y el servicio usa su propio predeterminado; cuando el proveedor publica uno, la ficha lo nombra. El campo no se muestra para un tipo que no da a elegir. |
+| **Modelo para transcripciones** y **Modelo para el apuntador** | El modelo, exactamente como lo llama el servicio. *Vacío no envía ningún nombre de modelo*, y el servicio usa su propio predeterminado; cuando el proveedor publica uno, la ficha lo nombra. El campo no se muestra para un tipo que no da a elegir. En la imagen, xAI no tiene **Modelo para transcripciones**, y el **Modelo para el apuntador** es `grok-voice-transcribe-2.0`. |
 | **Predeterminado para transcripciones** | Lo convierte en el reconocedor que se usa cuando no elige otro. |
 | **Predeterminado para el apuntador** | Lo convierte en el reconocedor con el que escucha un ayudante nuevo del apuntador. |
 | **Activado** | Desactivado, el reconocedor sigue en la lista y no se usa. |
@@ -67,10 +69,10 @@ Al pulsar un reconocedor se abre su ficha.
 ## Reconocimiento en directo para el apuntador {#live-recognition-for-the-prompter}
 El [apuntador](../interface/prompter.md) necesita un reconocedor que escuche mientras alguien habla, por un flujo y no con un archivo terminado. Estos tipos pueden: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Compatible con OpenAI** (con la transcripción en tiempo real de OpenAI), **AssemblyAI**, **Soniox** y **Speechmatics** en la nube y **Vosk**, **WhisperLive** y **NVIDIA Riva** en su propia máquina. Un reconocedor en su propia máquina deja la voz del interlocutor dentro de casa y no cobra nada.
 
-Para usar uno: abra su ficha, compruebe la **Dirección para el apuntador** (o deje que se deduzca), elija el **Modelo para el apuntador** si el servicio ofrece varios — los modelos en directo suelen ser distintos de los de archivos, como `scribe_v2_realtime` de ElevenLabs — y pulse **Probar**. Marque **Predeterminado para el apuntador** para que los ayudantes nuevos escuchen con él.
+Para usar uno: abra su ficha, compruebe la **Dirección para el apuntador** — normalmente una dirección WebSocket, como `wss://api.x.ai` para X.ai, `wss://api.deepgram.com` para Deepgram o `ws://localhost:2700` para Vosk; si se deja vacía, se deduce de la **Dirección para transcripciones**. Después elija el **Modelo para el apuntador**: los modelos en directo suelen ser distintos de los de archivos — `grok-voice-transcribe-2.0` para X.ai, como en la ficha de la imagen, `scribe_v2_realtime` para ElevenLabs, `gpt-live-transcribe` para OpenAI, `stt-rt-v5` para Soniox. Pulse **Probar**. Marque **Predeterminado para el apuntador** para que los ayudantes nuevos escuchen con él.
 
 ## Qué modelo elegir {#which-model-to-choose}
-La tabla lista los modelos de reconocimiento de voz de cada tipo de la lista **Tipo**. Los modelos en **negrita** son los configurados en la imagen; para el reconocedor X.ai el modelo está vacío, así que se usa el predeterminado del servicio, **`grok-voice-transcribe-2.0`**. **Para** dice para qué está hecho un modelo: para grabaciones terminadas (*transcripciones*), para el habla en directo del [apuntador](#live-recognition-for-the-prompter) (*apuntador*), o para *ambos*.
+La tabla lista los modelos de reconocimiento de voz de cada tipo de la lista **Tipo**. Los modelos en **negrita** son los configurados en la imagen; para el reconocedor X.ai el modelo está vacío, así que se usa el predeterminado del servicio, **`grok-voice-transcribe-2.0`**. Lo que allí está vacío es el **Modelo para transcripciones**; el **Modelo para el apuntador** tiene el mismo modelo. **Para** dice para qué está hecho un modelo: para grabaciones terminadas (*transcripciones*), para el habla en directo del [apuntador](#live-recognition-for-the-prompter) (*apuntador*), o para *ambos*.
 
 | Tipo y dirección | Modelo | Para | Para qué sirve |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ La tabla lista los modelos de reconocimiento de voz de cada tipo de la lista **T
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | ambos | El más preciso, para una conversación en un solo idioma. Un reconocedor nuevo de este tipo lo recibe. |
 | | `standard` | ambos | Más rápido y barato, algo menos preciso. |
 | | `melia-1` | transcripciones | Una conversación en varios idiomas, que cambia a mitad de frase, vuelve como una sola transcripción. Solo grabaciones, en las regiones UE y EE. UU.; todavía sin diccionario propio ni etiquetas de hablantes. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | ambos | El predeterminado; 25 idiomas. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | ambos | El único modelo actual y el predeterminado: 38 idiomas, que reconoce por sí mismo. Archivos de hasta 500 MB; la voz en directo va a `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transcripciones | Obsoleto: el servicio lo redirige a `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transcripciones | Más de 60 idiomas, con separación de hablantes. |
 | | `stt-rt-v5` | apuntador | En directo, en los mismos más de 60 idiomas, y oye dónde termina un turno. El teléfono lo ofrece para el apuntador. |

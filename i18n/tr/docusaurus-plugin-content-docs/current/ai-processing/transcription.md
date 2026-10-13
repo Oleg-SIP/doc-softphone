@@ -13,18 +13,20 @@ Bir görüşme, [Kayıtlar penceresinde](/interface/recordings) istediğinizde y
 ## Tanıyıcılar {#recognisers}
 Tanıyıcı, telefonun sesi gönderdiği bir konuşma tanıma hizmetidir. **Ekle** yeni bir tane ekler; kartındaki **Sına** düğmesi hizmetin gerçekten yanıt verip vermediğini denetler. Her biri listede adıyla, altında da hizmetinin modeli ve adresiyle görünür. Tablo, telefonun desteklediği her hizmet türünü, karttaki **Tür** alanının sunduğu biçimde, o türden yeni bir tanıyıcının aldığı adres ve modellerle birlikte listeler; son sütun resimde ayarlı beş tanıyıcıyı gösterir:
 
-| Tür | Adres | Model | Resimde |
-| --- | --- | --- | --- |
-| **OpenAI uyumlu (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, canlı `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, canlı `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(boş: hizmetin öntanımlı modeli)*, canlı `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(boş: hizmetin öntanımlı modeli)*, canlı `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(boş: hizmetin öntanımlı modeli)* | — |
-| **Vosk (kendi makinenizde)** | kendi sunucunuz, örneğin `ws://localhost:2700` | *(sunucuda ayarlanır)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (kendi makinenizde)** | kendi sunucunuz, örneğin `ws://localhost:9090` | canlı `small` | — |
-| **NVIDIA Riva (kendi makinenizde)** | kendi sunucunuz, örneğin `localhost:50051` | *(sunucuda ayarlanır)* | — |
+| Tür | Yazıya dökümler için adres | Suflör için adres | Model | Resimde |
+| --- | --- | --- | --- | --- |
+| **OpenAI uyumlu (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, canlı `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, canlı `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`; bir bölge için `global.` yerine `eu.`, `us.` veya `au.` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(boş: hizmetin öntanımlı modeli)*, canlı `grok-voice-transcribe-2.0` | **X.ai** · canlı `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(boş: hizmetin öntanımlı modeli)*, canlı `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(boş: hizmetin öntanımlı modeli)* | — |
+| **Vosk (kendi makinenizde)** | kendi sunucunuz, örneğin `ws://localhost:2700` | *(aynı sunucu)* | *(sunucuda ayarlanır)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (kendi makinenizde)** | kendi sunucunuz, örneğin `ws://localhost:9090` | *(aynı sunucu)* | canlı `small` | — |
+| **NVIDIA Riva (kendi makinenizde)** | kendi sunucunuz, örneğin `localhost:50051` | *(aynı sunucu)* | *(sunucuda ayarlanır)* | — |
+
+**Suflör için adres** genellikle bir WebSocket adresidir: buluttaki bir hizmet için `wss://`, kendi ağınızdaki bir sunucu için `ws://`; NVIDIA Riva `sunucu:bağlantı noktası` biçiminde girilir.
 
 Satırın sağındaki iki işaret, tanıyıcının neyin öntanımlısı olduğunu söyler. Saat, **yazıya dökümler için** öntanımlı olanda yanar — resimde **X.ai** —; başka birini seçmediğinizde o kullanılır. Şimşek, **suflör için** öntanımlı olanda yanar — resimde **Vosk**. Birden çok tanıyıcı tutabilirsiniz; [Kayıtlar penceresinde](/interface/recordings#transcript-or-write-up-the-drop-down) bir yazıya dökümün üstündeki açılır liste her birinin yaptığı dökümleri gösterir.
 
@@ -38,10 +40,10 @@ Bir tanıyıcıya basmak kartını açar.
 | **Ad** | Listelerdeki ad. |
 | **Tür** | Telefonun hizmetle nasıl konuşacağını belirleyen hizmet türü: **OpenAI uyumlu (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ve kendi makinenizde çalışan üç tür — **Vosk**, **WhisperLive** ve **NVIDIA Riva**. |
 | **Yazıya dökümler için adres** | Biten görüşmelerin gönderildiği yer. |
-| **Suflör için adres** | Görüşme sürerken canlı sesin gittiği yer. *Boşsa yanındaki adresten çıkarılır*, resimdeki `wss://api.x.ai` gibi. |
+| **Suflör için adres** | Görüşme sürerken canlı sesin gittiği yer. Genellikle bir WebSocket adresidir: buluttaki bir hizmet için `wss://` (resimdeki `wss://api.x.ai` gibi), kendi ağınızdaki bir sunucu için `ws://`. *Boşsa yanındaki adresten çıkarılır*. |
 | **Anahtar** | Hizmetin anahtarı. *Bu bilgisayarın anahtarlığında tutulur, hiçbir zaman bir ayar dosyasında değil.* |
 | **Sına** | Hizmete sorar ve ne yanıt verdiğini söyler, örneğin *Yanıt verdi ve 3 model sunuyor*. |
-| **Yazıya dökümler için model** ve **Suflör için model** | Model, tam olarak hizmetin adlandırdığı gibi. *Boş, model adı göndermez*, ve hizmet kendi öntanımlısını kullanır; sağlayıcı bir tane yayımlıyorsa kart onu belirtir. Seçeneği olmayan bir tür için alan gösterilmez. |
+| **Yazıya dökümler için model** ve **Suflör için model** | Model, tam olarak hizmetin adlandırdığı gibi. *Boş, model adı göndermez*, ve hizmet kendi öntanımlısını kullanır; sağlayıcı bir tane yayımlıyorsa kart onu belirtir. Seçeneği olmayan bir tür için alan gösterilmez. Resimde xAI'de **Yazıya dökümler için model** alanı yoktur; **Suflör için model** ise `grok-voice-transcribe-2.0` olarak ayarlıdır. |
 | **Yazıya dökümler için öntanımlı** | Bunu, başka birini seçmediğinizde kullanılan tanıyıcı yapar. |
 | **Suflör için öntanımlı** | Bunu, suflörün yeni bir yardımcısının dinlediği tanıyıcı yapar. |
 | **Etkin** | Kapalıyken tanıyıcı listede kalır ama kullanılmaz. |
@@ -67,10 +69,10 @@ Bir tanıyıcıya basmak kartını açar.
 ## Suflör için canlı tanıma {#live-recognition-for-the-prompter}
 [Suflörün](../interface/prompter.md), biri konuşurken dinleyen bir tanıyıcıya ihtiyacı vardır — bitmiş bir dosyayla değil, bir akışla. Bu türler bunu yapabilir: bulutta **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI uyumlu** (OpenAI'nin gerçek zamanlı yazıya dökümüyle), **AssemblyAI**, **Soniox** ve **Speechmatics**, kendi makinenizde de **Vosk**, **WhisperLive** ve **NVIDIA Riva**. Kendi makinenizdeki bir tanıyıcı karşı tarafın sesini binanın içinde tutar ve hiçbir ücret almaz.
 
-Birini kullanmak için: kartını açın, **Suflör için adres** alanını denetleyin (ya da çıkarılmasına izin verin), hizmet birkaç tane sunuyorsa **Suflör için model** seçin — canlı modeller çoğu zaman dosyalar içinkilerden farklıdır, ElevenLabs'in `scribe_v2_realtime` modeli gibi — ve **Sına**'ya basın. Yeni yardımcıların onunla dinlemesi için **Suflör için öntanımlı** kutusunu işaretleyin.
+Birini kullanmak için: kartını açın, **Suflör için adres** alanını kontrol edin — genellikle bir WebSocket adresidir, örneğin X.ai için `wss://api.x.ai`, Deepgram için `wss://api.deepgram.com` veya Vosk için `ws://localhost:2700`; boş bırakılırsa **Yazıya dökümler için adres** alanından çıkarılır. Ardından **Suflör için model** alanından modeli seçin: canlı modeller çoğu zaman dosya modellerinden farklıdır — resimdeki kartta olduğu gibi X.ai için `grok-voice-transcribe-2.0`, ElevenLabs için `scribe_v2_realtime`, OpenAI için `gpt-live-transcribe`, Soniox için `stt-rt-v5`. **Sına** düğmesine basın. Yeni yardımcıların onunla dinlemesi için **Suflör için öntanımlı** kutusunu işaretleyin.
 
 ## Hangi modeli seçmeli {#which-model-to-choose}
-Tablo, **Tür** listesindeki her türün konuşma tanıma modellerini listeler. **Kalın** yazılan modeller resimde ayarlı olanlardır; X.ai tanıyıcısında model boş olduğundan hizmetin öntanımlısı, **`grok-voice-transcribe-2.0`**, kullanılır. **Ne için** sütunu bir modelin ne için yapıldığını söyler: bitmiş kayıtlar için (*yazıya dökümler*), [suflör](#live-recognition-for-the-prompter) için canlı konuşma (*suflör*) ya da *her ikisi*.
+Tablo, **Tür** listesindeki her türün konuşma tanıma modellerini listeler. **Kalın** yazılan modeller resimde ayarlı olanlardır; X.ai tanıyıcısında model boş olduğundan hizmetin öntanımlısı, **`grok-voice-transcribe-2.0`**, kullanılır. Orada boş olan **Yazıya dökümler için model** alanıdır; **Suflör için model** aynı modele ayarlıdır. **Ne için** sütunu bir modelin ne için yapıldığını söyler: bitmiş kayıtlar için (*yazıya dökümler*), [suflör](#live-recognition-for-the-prompter) için canlı konuşma (*suflör*) ya da *her ikisi*.
 
 | Tür ve adres | Model | Ne için | Ne işe yarar |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Tablo, **Tür** listesindeki her türün konuşma tanıma modellerini listeler. 
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | her ikisi | Tek dilde süren bir görüşme için en doğrusu. Bu türden yeni bir tanıyıcı bunu alır. |
 | | `standard` | her ikisi | Daha hızlı ve ucuz, biraz daha az doğru. |
 | | `melia-1` | yazıya dökümler | Cümle ortasında dil değiştiren çok dilli bir görüşme tek bir yazıya döküm olarak döner. Yalnızca kayıtlar için, AB ve ABD bölgelerinde; henüz özel sözlük ve konuşmacı etiketi yok. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | her ikisi | Öntanımlı; 25 dil. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | her ikisi | Güncel tek model ve öntanımlı olan: 38 dil, dili kendisi tanır. 500 MB'a kadar dosyalar; canlı konuşma `wss://api.x.ai` adresine gider. |
 | | `grok-voice-transcribe-1.0` | yazıya dökümler | Eskidi: hizmet onu `2.0`'a yönlendirir. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | yazıya dökümler | 60'tan fazla dil, konuşmacı ayrımıyla. |
 | | `stt-rt-v5` | suflör | Canlı, aynı 60'tan fazla dilde; bir konuşma sırasının nerede bittiğini duyar. Telefon bunu suflör için önerir. |

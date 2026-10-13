@@ -13,18 +13,20 @@ Egy beszélgetés akkor kerül átiratba, amikor kéri a [Felvételek ablakban](
 ## Felismerők {#recognisers}
 A felismerő olyan beszédfelismerő szolgáltatás, amelynek a telefon a hangot küldi. A **Hozzáadás** újat ad hozzá; a kártyáján lévő **Próba** gomb ellenőrzi, hogy a szolgáltatás tényleg válaszol-e. Mindegyik a nevével szerepel a listában, alatta a szolgáltatása modelljével és címével. A táblázat felsorolja a telefon által támogatott összes szolgáltatásfajtát, ahogy a kártya **Fajta** mezője kínálja őket, a címmel és a modellekkel, amelyeket egy ilyen fajtájú új felismerő kap; az utolsó oszlop a képen beállított ötöt mutatja:
 
-| Fajta | Cím | Modell | A képen |
-| --- | --- | --- | --- |
-| **OpenAI-kompatibilis (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, élő `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, élő `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(üres: a szolgáltatás alapértelmezése)*, élő `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(üres: a szolgáltatás alapértelmezése)*, élő `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(üres: a szolgáltatás alapértelmezése)* | — |
-| **Vosk (a saját gépén)** | a saját szervere, például `ws://localhost:2700` | *(a szerveren állítható be)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (a saját gépén)** | a saját szervere, például `ws://localhost:9090` | élő `small` | — |
-| **NVIDIA Riva (a saját gépén)** | a saját szervere, például `localhost:50051` | *(a szerveren állítható be)* | — |
+| Fajta | Cím az átiratokhoz | Cím a súgóhoz | Modell | A képen |
+| --- | --- | --- | --- | --- |
+| **OpenAI-kompatibilis (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, élő `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, élő `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, régióhoz `global.` helyett `eu.`, `us.` vagy `au.` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(üres: a szolgáltatás alapértelmezése)*, élő `grok-voice-transcribe-2.0` | **X.ai** · élő `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(üres: a szolgáltatás alapértelmezése)*, élő `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(üres: a szolgáltatás alapértelmezése)* | — |
+| **Vosk (a saját gépén)** | a saját szervere, például `ws://localhost:2700` | *(ugyanaz a szerver)* | *(a szerveren állítható be)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (a saját gépén)** | a saját szervere, például `ws://localhost:9090` | *(ugyanaz a szerver)* | élő `small` | — |
+| **NVIDIA Riva (a saját gépén)** | a saját szervere, például `localhost:50051` | *(ugyanaz a szerver)* | *(a szerveren állítható be)* | — |
+
+A **Cím a súgóhoz** mező általában WebSocket-cím: `wss://` felhőben futó szolgáltatáshoz, `ws://` a saját hálózatában lévő szerverhez; az NVIDIA Riva `gép:port` alakban adható meg.
 
 A sor jobb szélén lévő két jel azt mutatja, mire alapértelmezett a felismerő. Az óra az alapértelmezettnél világít **az átiratokhoz** — a képen **X.ai** —, ezt használja a telefon, ha nem választ mást. A villám az alapértelmezettnél világít **a súgóhoz** — a képen **Vosk**. Több felismerőt is tarthat; az átirat feletti legördülő lista a [Felvételek ablakban](/interface/recordings#transcript-or-write-up-the-drop-down) az egyes felismerők által készített átiratokat mutatja.
 
@@ -38,10 +40,10 @@ Egy felismerőre kattintva megnyílik a kártyája.
 | **Név** | A név a listákban. |
 | **Fajta** | A szolgáltatás fajtája, amely eldönti, hogyan beszél vele a telefon: **OpenAI-kompatibilis (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, valamint három, amely a saját gépén fut — **Vosk**, **WhisperLive** és **NVIDIA Riva**. |
 | **Cím az átiratokhoz** | Ahová a befejezett beszélgetések mennek. |
-| **Cím a súgóhoz** | Ahová az élő hang megy beszélgetés közben. *Üresen a melletti címből adódik*, mint a képen a `wss://api.x.ai`. |
+| **Cím a súgóhoz** | Ahová az élő hang megy beszélgetés közben. Általában WebSocket-cím: `wss://` felhőben futó szolgáltatáshoz, mint a képen a `wss://api.x.ai`, `ws://` a saját hálózatában lévő szerverhez. *Üresen a melletti címből adódik*. |
 | **Kulcs** | A szolgáltatás kulcsa. *Ennek a gépnek a kulcstartójában van, soha nem beállításfájlban.* |
 | **Próba** | Megkérdezi a szolgáltatást, és elmondja, mit válaszolt, például *Válaszolt, és 3 modellt kínál*. |
-| **Modell az átiratokhoz** és **Modell a súgóhoz** | A modell pontosan úgy, ahogy a szolgáltatás nevezi. *Üresen nem küld modellnevet*, és a szolgáltatás a saját alapértelmezését használja; ha a szállító közzétesz ilyet, a kártya megnevezi. Olyan fajtánál, ahol nincs választás, a mező nem látszik. |
+| **Modell az átiratokhoz** és **Modell a súgóhoz** | A modell pontosan úgy, ahogy a szolgáltatás nevezi. *Üresen nem küld modellnevet*, és a szolgáltatás a saját alapértelmezését használja; ha a szállító közzétesz ilyet, a kártya megnevezi. Olyan fajtánál, ahol nincs választás, a mező nem látszik. A képen az xAI-nál nincs **Modell az átiratokhoz** mező, a **Modell a súgóhoz** pedig `grok-voice-transcribe-2.0`. |
 | **Alapértelmezett az átiratokhoz** | Ezt teszi azzá a felismerővé, amelyet akkor használ a telefon, ha nem választ mást. |
 | **Alapértelmezett a súgóhoz** | Ezt teszi azzá a felismerővé, amellyel a súgó új segítője hallgat. |
 | **Bekapcsolva** | Kikapcsolva a felismerő a listában marad, de nem használja a telefon. |
@@ -67,10 +69,10 @@ A **Speciális beállítások** megnyitja a kártya többi részét. A legfontos
 ## Élő felismerés a súgóhoz {#live-recognition-for-the-prompter}
 A [súgónak](../interface/prompter.md) olyan felismerő kell, amely hallgat, miközben valaki beszél — folyamként, nem kész fájllal. Ezek a fajták képesek erre: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-kompatibilis** (az OpenAI valós idejű átiratával), **AssemblyAI**, **Soniox** és **Speechmatics** a felhőben valamint **Vosk**, **WhisperLive** és **NVIDIA Riva** a saját gépén. A saját gépén futó felismerő a házon belül tartja a másik fél hangját, és semmibe sem kerül.
 
-Így használja: nyissa meg a kártyáját, ellenőrizze a **Cím a súgóhoz** mezőt (vagy hagyja, hogy adódjon), válassza ki a **Modell a súgóhoz** mezőt, ha a szolgáltatás többet kínál — az élő modellek gyakran mások, mint a fájlokhoz valók, például az ElevenLabs `scribe_v2_realtime` modellje —, és nyomja meg a **Próba** gombot. Jelölje be az **Alapértelmezett a súgóhoz** mezőt, hogy az új segítők ezzel hallgassanak.
+Így használja: nyissa meg a kártyáját, ellenőrizze a **Cím a súgóhoz** mezőt — általában WebSocket-cím, például `wss://api.x.ai` az X.ai-hoz, `wss://api.deepgram.com` a Deepgramhoz vagy `ws://localhost:2700` a Voskhoz; üresen a **Cím az átiratokhoz** mezőből adódik. Ezután válassza ki a modellt a **Modell a súgóhoz** mezőben: az élő modellek gyakran mások, mint a fájlokhoz valók — az X.ai-hoz `grok-voice-transcribe-2.0`, mint a képen látható kártyán, az ElevenLabshoz `scribe_v2_realtime`, az OpenAI-hoz `gpt-live-transcribe`, a Sonioxhoz `stt-rt-v5`. Nyomja meg a **Próba** gombot. Jelölje be az **Alapértelmezett a súgóhoz** mezőt, hogy az új segítők ezzel hallgassanak.
 
 ## Melyik modellt válassza {#which-model-to-choose}
-A táblázat a **Fajta** lista minden fajtájának beszédfelismerő modelljeit sorolja fel. A **félkövér** modellek vannak beállítva a képen; az X.ai felismerőnél a modell üres, ezért a szolgáltatás alapértelmezését, a **`grok-voice-transcribe-2.0`** modellt használja. A **Mire** oszlop megmondja, mire készült egy modell: kész felvételekhez (*átiratok*), élő beszédhez a [súgó](#live-recognition-for-the-prompter) számára (*súgó*), vagy *mindkettőre*.
+A táblázat a **Fajta** lista minden fajtájának beszédfelismerő modelljeit sorolja fel. A **félkövér** modellek vannak beállítva a képen; az X.ai felismerőnél a modell üres, ezért a szolgáltatás alapértelmezését, a **`grok-voice-transcribe-2.0`** modellt használja. Ott a **Modell az átiratokhoz** mező üres; a **Modell a súgóhoz** ugyanerre a modellre van állítva. A **Mire** oszlop megmondja, mire készült egy modell: kész felvételekhez (*átiratok*), élő beszédhez a [súgó](#live-recognition-for-the-prompter) számára (*súgó*), vagy *mindkettőre*.
 
 | Fajta és cím | Modell | Mire | Mire jó |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ A táblázat a **Fajta** lista minden fajtájának beszédfelismerő modelljeit 
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | mindkettő | A legpontosabb, egy nyelven folyó beszélgetéshez. Az ilyen fajtájú új felismerő ezt kapja. |
 | | `standard` | mindkettő | Gyorsabb és olcsóbb, kicsit kevésbé pontos. |
 | | `melia-1` | átiratok | Több nyelven folyó, mondat közben nyelvet váltó beszélgetés egyetlen átiratként jön vissza. Csak felvételekhez, az EU és az USA régióban; saját szótár és beszélőjelölés egyelőre nincs. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | mindkettő | Az alapértelmezett; 25 nyelv. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | mindkettő | Az egyetlen jelenlegi modell és az alapértelmezett: 38 nyelv, amelyet magától felismer. Fájlok 500 MB-ig; az élő beszéd a `wss://api.x.ai` címre megy. |
 | | `grok-voice-transcribe-1.0` | átiratok | Elavult: a szolgáltatás a `2.0` modellre irányítja. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | átiratok | Több mint 60 nyelv, a beszélők szétválasztásával. |
 | | `stt-rt-v5` | súgó | Élőben, ugyanazon a több mint 60 nyelven, és hallja, hol ér véget egy megszólalás. A telefon ezt kínálja a súgóhoz. |

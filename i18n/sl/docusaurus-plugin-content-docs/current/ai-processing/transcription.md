@@ -13,18 +13,20 @@ Pogovor se prepiše, ko to zahtevate v [oknu Posnetki](/interface/recordings), a
 ## Razpoznavalniki {#recognisers}
 Razpoznavalnik je storitev za razpoznavanje govora, ki ji telefon pošilja zvok. **Dodaj** doda novega; gumb **Preveri** na njegovi kartici preveri, ali storitev res odgovarja. Vsak je na seznamu s svojim imenom, pod njim pa sta model in naslov njegove storitve. Tabela navaja vsako vrsto storitve, ki jo telefon podpira, tako kot jih ponuja **Vrsta** na kartici, z naslovom in modeli, ki jih dobi nov razpoznavalnik te vrste; zadnji stolpec kaže pet nastavljenih na sliki:
 
-| Vrsta | Naslov | Model | Na sliki |
-| --- | --- | --- | --- |
-| **Združljivo z OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, v živo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, v živo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(prazno: privzeti model storitve)*, v živo `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(prazno: privzeti model storitve)*, v živo `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(prazno: privzeti model storitve)* | — |
-| **Vosk (na vašem lastnem računalniku)** | vaš strežnik, na primer `ws://localhost:2700` | *(nastavi se na strežniku)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (na vašem lastnem računalniku)** | vaš strežnik, na primer `ws://localhost:9090` | v živo `small` | — |
-| **NVIDIA Riva (na vašem lastnem računalniku)** | vaš strežnik, na primer `localhost:50051` | *(nastavi se na strežniku)* | — |
+| Vrsta | Naslov za prepise | Naslov za šepetalca | Model | Na sliki |
+| --- | --- | --- | --- | --- |
+| **Združljivo z OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, v živo `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, v živo `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com` ali za regijo `eu.`, `us.`, `au.` namesto `global.` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(prazno: privzeti model storitve)*, v živo `grok-voice-transcribe-2.0` | **X.ai** · v živo `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(prazno: privzeti model storitve)*, v živo `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(prazno: privzeti model storitve)* | — |
+| **Vosk (na vašem lastnem računalniku)** | vaš strežnik, na primer `ws://localhost:2700` | *(isti strežnik)* | *(nastavi se na strežniku)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (na vašem lastnem računalniku)** | vaš strežnik, na primer `ws://localhost:9090` | *(isti strežnik)* | v živo `small` | — |
+| **NVIDIA Riva (na vašem lastnem računalniku)** | vaš strežnik, na primer `localhost:50051` | *(isti strežnik)* | *(nastavi se na strežniku)* | — |
+
+Polje **Naslov za šepetalca** običajno vsebuje naslov WebSocket: `wss://` za storitev v oblaku, `ws://` za strežnik v vašem omrežju; NVIDIA Riva se poda kot `gostitelj:vrata`.
 
 Oznaki na desni strani vrstice povesta, za kaj je razpoznavalnik privzet. Ura sveti pri privzetem **za prepise** — na sliki **X.ai** —, ki se uporabi, ko ne izberete drugega. Strela sveti pri privzetem **za šepetalca** — na sliki **Vosk**. Razpoznavalnikov imate lahko več; spustni seznam nad prepisom v [oknu Posnetki](/interface/recordings#transcript-or-write-up-the-drop-down) prikaže prepise, ki jih je naredil vsak od njih.
 
@@ -38,10 +40,10 @@ Klik na razpoznavalnik odpre njegovo kartico.
 | **Ime** | Ime na seznamih. |
 | **Vrsta** | Vrsta storitve, od katere je odvisno, kako se telefon z njo pogovarja: **Združljivo z OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** in tri, ki tečejo na vašem lastnem računalniku — **Vosk**, **WhisperLive** in **NVIDIA Riva**. |
 | **Naslov za prepise** | Kam se pošiljajo končani pogovori. |
-| **Naslov za šepetalca** | Kam gre zvok v živo med pogovorom. *Prazno se izpelje iz naslova poleg*, kot `wss://api.x.ai` na sliki. |
+| **Naslov za šepetalca** | Kam gre zvok v živo med pogovorom. Običajno naslov WebSocket: `wss://` za storitev v oblaku, kot `wss://api.x.ai` na sliki, `ws://` za strežnik v vašem omrežju. *Prazno se izpelje iz naslova poleg*. |
 | **Ključ** | Ključ storitve. *Je v zbirki ključev tega računalnika, nikoli v datoteki z nastavitvami.* |
 | **Preveri** | Vpraša storitev in pove, kaj je odgovorila, na primer *Odgovoril je in ponuja 3 modele*. |
-| **Model za prepise** in **Model za šepetalca** | Model natanko tako, kot ga imenuje storitev. *Prazno ne pošlje imena modela*, in storitev uporabi svojega privzetega; kjer ga ponudnik objavlja, ga kartica navede. Pri vrsti brez izbire polje ni prikazano. |
+| **Model za prepise** in **Model za šepetalca** | Model natanko tako, kot ga imenuje storitev. *Prazno ne pošlje imena modela*, in storitev uporabi svojega privzetega; kjer ga ponudnik objavlja, ga kartica navede. Pri vrsti brez izbire polje ni prikazano. Na sliki xAI nima polja **Model za prepise**, v polju **Model za šepetalca** pa je `grok-voice-transcribe-2.0`. |
 | **Privzeto za prepise** | Iz tega naredi razpoznavalnik, ki se uporabi, ko ne izberete drugega. |
 | **Privzeto za šepetalca** | Iz tega naredi razpoznavalnik, s katerim posluša nov pomočnik šepetalca. |
 | **Vklopljeno** | Izklopljen razpoznavalnik ostane na seznamu, a se ne uporablja. |
@@ -67,10 +69,10 @@ Klik na razpoznavalnik odpre njegovo kartico.
 ## Razpoznavanje v živo za šepetalca {#live-recognition-for-the-prompter}
 [Šepetalec](../interface/prompter.md) potrebuje razpoznavalnik, ki posluša, medtem ko nekdo govori — s tokom, ne s končano datoteko. To zmorejo te vrste: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Združljivo z OpenAI** (s prepisovanjem OpenAI v realnem času), **AssemblyAI**, **Soniox** in **Speechmatics** v oblaku ter **Vosk**, **WhisperLive** in **NVIDIA Riva** na vašem lastnem računalniku. Razpoznavalnik na vašem lastnem računalniku obdrži glas sogovornika v hiši in ne stane nič.
 
-Kako ga uporabiti: odprite njegovo kartico, preverite **Naslov za šepetalca** (ali pustite, da se izpelje), izberite **Model za šepetalca**, kjer storitev ponuja več modelov — modeli v živo se pogosto razlikujejo od tistih za datoteke, na primer `scribe_v2_realtime` pri ElevenLabs — in pritisnite **Preveri**. Označite **Privzeto za šepetalca**, da bodo novi pomočniki poslušali z njim.
+Kako ga uporabiti: odprite njegovo kartico, preverite polje **Naslov za šepetalca** — običajno naslov WebSocket, na primer `wss://api.x.ai` za X.ai, `wss://api.deepgram.com` za Deepgram ali `ws://localhost:2700` za Vosk; prazno se izpelje iz polja **Naslov za prepise**. Nato izberite **Model za šepetalca**: modeli v živo se pogosto razlikujejo od modelov za datoteke — `grok-voice-transcribe-2.0` za X.ai, kot na kartici na sliki, `scribe_v2_realtime` za ElevenLabs, `gpt-live-transcribe` za OpenAI, `stt-rt-v5` za Soniox. Pritisnite **Preveri**. Označite **Privzeto za šepetalca**, da bodo novi pomočniki poslušali z njim.
 
 ## Kateri model izbrati {#which-model-to-choose}
-Tabela navaja modele za razpoznavanje govora vsake vrste s seznama **Vrsta**. **Krepko** so označeni modeli, nastavljeni na sliki; pri razpoznavalniku X.ai je model prazen, zato se uporabi privzeti model storitve, **`grok-voice-transcribe-2.0`**. **Za kaj** pove, za kaj je model narejen: za končane posnetke (*prepisi*), za govor v živo za [šepetalca](#live-recognition-for-the-prompter) (*šepetalec*) ali za *oboje*.
+Tabela navaja modele za razpoznavanje govora vsake vrste s seznama **Vrsta**. **Krepko** so označeni modeli, nastavljeni na sliki; pri razpoznavalniku X.ai je model prazen, zato se uporabi privzeti model storitve, **`grok-voice-transcribe-2.0`**. Prazno je tam polje **Model za prepise**; v polju **Model za šepetalca** je isti model. **Za kaj** pove, za kaj je model narejen: za končane posnetke (*prepisi*), za govor v živo za [šepetalca](#live-recognition-for-the-prompter) (*šepetalec*) ali za *oboje*.
 
 | Vrsta in naslov | Model | Za kaj | Čemu služi |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Tabela navaja modele za razpoznavanje govora vsake vrste s seznama **Vrsta**. **
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | oboje | Najnatančnejši, za pogovor v enem jeziku. Dobi ga nov razpoznavalnik te vrste. |
 | | `standard` | oboje | Hitrejši in cenejši, nekoliko manj natančen. |
 | | `melia-1` | prepisi | Pogovor v več jezikih, ki jezik zamenja sredi stavka, se vrne kot en prepis. Samo posnetki, v regijah EU in ZDA; zaenkrat brez lastnega slovarja in oznak govorcev. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | oboje | Privzeti; 25 jezikov. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | oboje | Edini trenutni model in privzeti: 38 jezikov, ki jih prepozna sam. Datoteke do 500 MB; govor v živo gre na `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | prepisi | Zastarel: storitev ga preusmeri na `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | prepisi | Več kot 60 jezikov, z ločevanjem govorcev. |
 | | `stt-rt-v5` | šepetalec | V živo, v istih 60+ jezikih, in sliši, kje se replika konča. Telefon ga ponuja za šepetalca. |

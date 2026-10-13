@@ -13,18 +13,20 @@ Ett samtal transkriberas när du ber om det i [fönstret Inspelningar](/interfac
 ## Igenkännare {#recognisers}
 En igenkännare är en taligenkänningstjänst som telefonen skickar ljudet till. **Lägg till** lägger till en; knappen **Prova** på dess kort kontrollerar att tjänsten verkligen svarar. Var och en står i listan med sitt namn och under det modellen och adressen till sin tjänst. Tabellen visar varje sorts tjänst som telefonen stöder, så som **Sort** på kortet erbjuder dem, med adressen och modellerna som en ny igenkännare av den sorten får; den sista kolumnen visar de fem som är inställda på bilden:
 
-| Sort | Adress | Modell | På bilden |
-| --- | --- | --- | --- |
-| **OpenAI-kompatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, levande `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, levande `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(tomt: tjänstens standard)*, levande `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(tomt: tjänstens standard)*, levande `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(tomt: tjänstens standard)* | — |
-| **Vosk (på din egen maskin)** | din server, till exempel `ws://localhost:2700` | *(ställs in på servern)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (på din egen maskin)** | din server, till exempel `ws://localhost:9090` | levande `small` | — |
-| **NVIDIA Riva (på din egen maskin)** | din server, till exempel `localhost:50051` | *(ställs in på servern)* | — |
+| Sort | Adress för transkriptioner | Adress för sufflören | Modell | På bilden |
+| --- | --- | --- | --- | --- |
+| **OpenAI-kompatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, levande `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, levande `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, eller `eu.`, `us.`, `au.` i stället för `global.` för en region | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(tomt: tjänstens standard)*, levande `grok-voice-transcribe-2.0` | **X.ai** · levande `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(tomt: tjänstens standard)*, levande `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(tomt: tjänstens standard)* | — |
+| **Vosk (på din egen maskin)** | din server, till exempel `ws://localhost:2700` | *(samma server)* | *(ställs in på servern)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (på din egen maskin)** | din server, till exempel `ws://localhost:9090` | *(samma server)* | levande `small` | — |
+| **NVIDIA Riva (på din egen maskin)** | din server, till exempel `localhost:50051` | *(samma server)* | *(ställs in på servern)* | — |
+
+Fältet **Adress för sufflören** är oftast en WebSocket-adress: `wss://` för en tjänst i molnet, `ws://` för en server i ditt eget nätverk; NVIDIA Riva anges som `värd:port`.
 
 De två märkena till höger i en rad säger vad igenkännaren är standard för. Klockan lyser vid standarden **för transkriptioner** — **X.ai** på bilden —, som används när du inte väljer någon annan. Blixten lyser vid standarden **för sufflören** — **Vosk** på bilden. Du kan behålla flera igenkännare; rullgardinslistan ovanför en transkription i [fönstret Inspelningar](/interface/recordings#transcript-or-write-up-the-drop-down) visar de transkriptioner som var och en har gjort.
 
@@ -38,10 +40,10 @@ Ett klick på en igenkännare öppnar dess kort.
 | **Namn** | Namnet i listorna. |
 | **Sort** | Tjänstens sort, som avgör hur telefonen pratar med den: **OpenAI-kompatibel (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** och tre som körs på din egen maskin — **Vosk**, **WhisperLive** och **NVIDIA Riva**. |
 | **Adress för transkriptioner** | Dit avslutade samtal skickas. |
-| **Adress för sufflören** | Dit det levande ljudet går medan ett samtal pågår. *Tomt härleds från adressen bredvid*, som `wss://api.x.ai` på bilden. |
+| **Adress för sufflören** | Dit det levande ljudet går medan ett samtal pågår. Oftast en WebSocket-adress: `wss://` för en tjänst i molnet, som `wss://api.x.ai` på bilden, `ws://` för en server i ditt eget nätverk. *Tomt härleds från adressen bredvid*. |
 | **Nyckel** | Tjänstens nyckel. *Det ligger i den här datorns nyckelring, aldrig i en inställningsfil.* |
 | **Prova** | Frågar tjänsten och säger vad den svarade, till exempel *Svarade, och erbjuder 3 modeller*. |
-| **Modell för transkriptioner** och **Modell för sufflören** | Modellen, exakt som tjänsten kallar den. *Tomt skickar inget modellnamn*, och tjänsten använder sin egen standard; där leverantören publicerar en nämner kortet den. Fältet visas inte för en sort utan val. |
+| **Modell för transkriptioner** och **Modell för sufflören** | Modellen, exakt som tjänsten kallar den. *Tomt skickar inget modellnamn*, och tjänsten använder sin egen standard; där leverantören publicerar en nämner kortet den. Fältet visas inte för en sort utan val. På bilden har xAI inget fält **Modell för transkriptioner**, och **Modell för sufflören** är satt till `grok-voice-transcribe-2.0`. |
 | **Standard för transkriptioner** | Gör den här till igenkännaren som används när du inte väljer någon annan. |
 | **Standard för sufflören** | Gör den här till igenkännaren som en ny hjälpare i sufflören lyssnar med. |
 | **På** | Avslagen stannar igenkännaren i listan och används inte. |
@@ -67,10 +69,10 @@ Ett klick på en igenkännare öppnar dess kort.
 ## Levande igenkänning för sufflören {#live-recognition-for-the-prompter}
 [Sufflören](../interface/prompter.md) behöver en igenkännare som lyssnar medan någon talar, via en ström i stället för med en färdig fil. Dessa sorter kan det: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-kompatibel** (med OpenAI:s realtidstranskription), **AssemblyAI**, **Soniox** och **Speechmatics** i molnet och **Vosk**, **WhisperLive** och **NVIDIA Riva** på din egen maskin. En igenkännare på din egen maskin håller den andra partens röst inom huset och kostar ingenting.
 
-Så använder du en: öppna dess kort, kontrollera **Adress för sufflören** (eller låt den härledas), välj **Modell för sufflören** där tjänsten erbjuder flera — de levande modellerna är ofta andra än de för filer, som ElevenLabs `scribe_v2_realtime` — och tryck på **Prova**. Bocka för **Standard för sufflören** så att nya hjälpare lyssnar med den.
+Så använder du en: öppna dess kort, kontrollera fältet **Adress för sufflören** — oftast en WebSocket-adress, till exempel `wss://api.x.ai` för X.ai, `wss://api.deepgram.com` för Deepgram eller `ws://localhost:2700` för Vosk; tomt härleds det ur fältet **Adress för transkriptioner**. Välj sedan **Modell för sufflören**: livemodellerna är ofta andra än de för filer — `grok-voice-transcribe-2.0` för X.ai, som på kortet på bilden, `scribe_v2_realtime` för ElevenLabs, `gpt-live-transcribe` för OpenAI, `stt-rt-v5` för Soniox. Tryck på **Prova**. Bocka för **Standard för sufflören** så att nya hjälpare lyssnar med den.
 
 ## Vilken modell du ska välja {#which-model-to-choose}
-Tabellen listar taligenkänningsmodellerna för varje sort i listan **Sort**. Modellerna i **fetstil** är de som är inställda på bilden; för igenkännaren X.ai är modellen tom, så tjänstens standard, **`grok-voice-transcribe-2.0`**, är den som används. **För** säger vad en modell är gjord för: färdiga inspelningar (*transkriptioner*), levande tal för [sufflören](#live-recognition-for-the-prompter) (*sufflör*) eller *båda*.
+Tabellen listar taligenkänningsmodellerna för varje sort i listan **Sort**. Modellerna i **fetstil** är de som är inställda på bilden; för igenkännaren X.ai är modellen tom, så tjänstens standard, **`grok-voice-transcribe-2.0`**, är den som används. Tomt är där fältet **Modell för transkriptioner**; **Modell för sufflören** är satt till samma modell. **För** säger vad en modell är gjord för: färdiga inspelningar (*transkriptioner*), levande tal för [sufflören](#live-recognition-for-the-prompter) (*sufflör*) eller *båda*.
 
 | Sort och adress | Modell | För | Vad den är till för |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Tabellen listar taligenkänningsmodellerna för varje sort i listan **Sort**. Mo
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | båda | Den mest exakta, för ett samtal på ett språk. En ny igenkännare av den här sorten får den. |
 | | `standard` | båda | Snabbare och billigare, lite mindre exakt. |
 | | `melia-1` | transkriptioner | Ett samtal på flera språk, som byter mitt i en mening, kommer tillbaka som en enda transkription. Bara inspelningar, i regionerna EU och USA; ännu utan egen ordlista och talaretiketter. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | båda | Standarden; 25 språk. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | båda | Den enda aktuella modellen och standarden: 38 språk, som den känner igen själv. Filer upp till 500 MB; levande tal går till `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transkriptioner | Föråldrad: tjänsten skickar den vidare till `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transkriptioner | Över 60 språk, med åtskillnad av talare. |
 | | `stt-rt-v5` | sufflör | Levande, på samma 60+ språk, och hör var en tur slutar. Telefonen erbjuder den för sufflören. |

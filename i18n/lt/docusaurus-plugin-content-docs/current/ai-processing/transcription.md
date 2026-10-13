@@ -13,18 +13,20 @@ Pokalbis užrašomas, kai to paprašote [įrašų lange](/interface/recordings),
 ## Atpažintuvai {#recognisers}
 Atpažintuvas — tai kalbos atpažinimo paslauga, kuriai telefonas siunčia garsą. **Pridėti** prideda naują; jo kortelės mygtukas **Patikrinti** patikrina, ar paslauga tikrai atsako. Kiekvienas sąraše rodomas su pavadinimu, o po juo — jo paslaugos modelis ir adresas. Lentelėje išvardytos visos telefono palaikomos paslaugų rūšys, kaip jas siūlo kortelės **Rūšis**, su adresu ir modeliais, kuriuos gauna naujas tos rūšies atpažintuvas; paskutinis stulpelis rodo penkis paveikslėlyje nustatytus:
 
-| Rūšis | Adresas | Modelis | Paveikslėlyje |
-| --- | --- | --- | --- |
-| **Suderinama su OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, gyvai `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, gyvai `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(tuščia: paslaugos numatytasis)*, gyvai `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(tuščia: paslaugos numatytasis)*, gyvai `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(tuščia: paslaugos numatytasis)* | — |
-| **Vosk (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `ws://localhost:2700` | *(nustatomas serveryje)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `ws://localhost:9090` | gyvai `small` | — |
-| **NVIDIA Riva (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `localhost:50051` | *(nustatomas serveryje)* | — |
+| Rūšis | Adresas užrašams | Adresas sufleriui | Modelis | Paveikslėlyje |
+| --- | --- | --- | --- | --- |
+| **Suderinama su OpenAI (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, gyvai `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, gyvai `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com` arba regionui `eu.`, `us.`, `au.` vietoj `global.` | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(tuščia: paslaugos numatytasis)*, gyvai `grok-voice-transcribe-2.0` | **X.ai** · gyvai `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(tuščia: paslaugos numatytasis)*, gyvai `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(tuščia: paslaugos numatytasis)* | — |
+| **Vosk (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `ws://localhost:2700` | *(tas pats serveris)* | *(nustatomas serveryje)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `ws://localhost:9090` | *(tas pats serveris)* | gyvai `small` | — |
+| **NVIDIA Riva (jūsų pačių kompiuteryje)** | jūsų serveris, pavyzdžiui `localhost:50051` | *(tas pats serveris)* | *(nustatomas serveryje)* | — |
+
+Laukas **Adresas sufleriui** paprastai yra WebSocket adresas: `wss://` debesijos paslaugai, `ws://` serveriui jūsų tinkle; NVIDIA Riva nurodoma kaip `serveris:prievadas`.
 
 Du ženklai eilutės dešinėje rodo, kam atpažintuvas yra numatytasis. Laikrodis šviečia prie numatytojo **užrašams** — paveikslėlyje **X.ai** —, kuris naudojamas, kai nepasirenkate kito. Žaibas šviečia prie numatytojo **sufleriui** — paveikslėlyje **Vosk**. Galite laikyti kelis atpažintuvus; išskleidžiamasis sąrašas virš užrašo [įrašų lange](/interface/recordings#transcript-or-write-up-the-drop-down) rodo kiekvieno iš jų padarytus užrašus.
 
@@ -38,10 +40,10 @@ Paspaudus atpažintuvą atsiveria jo kortelė.
 | **Pavadinimas** | Pavadinimas sąrašuose. |
 | **Rūšis** | Paslaugos rūšis, nuo kurios priklauso, kaip telefonas su ja kalbasi: **Suderinama su OpenAI (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** ir trys, veikiančios jūsų pačių kompiuteryje, — **Vosk**, **WhisperLive** ir **NVIDIA Riva**. |
 | **Adresas užrašams** | Kur siunčiami baigti pokalbiai. |
-| **Adresas sufleriui** | Kur keliauja gyvas garsas pokalbio metu. *Tuščia nustatoma pagal šalia esantį adresą*, kaip `wss://api.x.ai` paveikslėlyje. |
+| **Adresas sufleriui** | Kur keliauja gyvas garsas pokalbio metu. Paprastai WebSocket adresas: `wss://` debesijos paslaugai, kaip `wss://api.x.ai` paveikslėlyje, `ws://` serveriui jūsų tinkle. *Tuščia nustatoma pagal šalia esantį adresą*. |
 | **Raktas** | Paslaugos raktas. *Tai laikoma šio kompiuterio raktinėje, niekada nustatymų faile.* |
 | **Patikrinti** | Paklausia paslaugos ir pasako, ką ji atsakė, pavyzdžiui, *Atsakė ir siūlo 3 modelius*. |
-| **Modelis užrašams** ir **Modelis sufleriui** | Modelis tiksliai taip, kaip jį vadina paslauga. *Tuščia nesiunčia modelio pavadinimo*, ir paslauga naudoja savo numatytąjį; jei tiekėjas jį skelbia, kortelė jį nurodo. Rūšiai, kuri neturi pasirinkimo, laukas nerodomas. |
+| **Modelis užrašams** ir **Modelis sufleriui** | Modelis tiksliai taip, kaip jį vadina paslauga. *Tuščia nesiunčia modelio pavadinimo*, ir paslauga naudoja savo numatytąjį; jei tiekėjas jį skelbia, kortelė jį nurodo. Rūšiai, kuri neturi pasirinkimo, laukas nerodomas. Paveikslėlyje xAI neturi lauko **Modelis užrašams**, o lauke **Modelis sufleriui** nustatyta `grok-voice-transcribe-2.0`. |
 | **Numatytasis užrašams** | Padaro šį atpažintuvą tuo, kuris naudojamas, kai nepasirenkate kito. |
 | **Numatytasis sufleriui** | Padaro šį atpažintuvą tuo, kuriuo klauso naujas suflerio pagalbininkas. |
 | **Įjungta** | Išjungtas atpažintuvas lieka sąraše, bet nenaudojamas. |
@@ -67,10 +69,10 @@ Paspaudus atpažintuvą atsiveria jo kortelė.
 ## Gyvas atpažinimas sufleriui {#live-recognition-for-the-prompter}
 [Sufleriui](../interface/prompter.md) reikia atpažintuvo, kuris klausosi, kol kas nors kalba, srautu, o ne baigtu failu. Tai gali šios rūšys: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **Suderinama su OpenAI** (su OpenAI realiojo laiko užrašymu), **AssemblyAI**, **Soniox** ir **Speechmatics** debesyje ir **Vosk**, **WhisperLive** bei **NVIDIA Riva** jūsų pačių kompiuteryje. Atpažintuvas jūsų pačių kompiuteryje išlaiko pašnekovo balsą jūsų patalpose ir nieko nekainuoja.
 
-Kaip jį naudoti: atverkite jo kortelę, patikrinkite **Adresas sufleriui** (arba leiskite jį nustatyti), pasirinkite **Modelis sufleriui**, jei paslauga siūlo kelis, — gyvi modeliai dažnai skiriasi nuo failų modelių, pavyzdžiui, ElevenLabs `scribe_v2_realtime`, — ir paspauskite **Patikrinti**. Pažymėkite **Numatytasis sufleriui**, kad nauji pagalbininkai klausytųsi juo.
+Kaip jį naudoti: atverkite jo kortelę, patikrinkite lauką **Adresas sufleriui** — paprastai WebSocket adresą, pavyzdžiui, `wss://api.x.ai` X.ai, `wss://api.deepgram.com` Deepgram arba `ws://localhost:2700` Vosk; tuščias jis išvedamas iš lauko **Adresas užrašams**. Tada pasirinkite **Modelis sufleriui**: gyvi modeliai dažnai skiriasi nuo skirtų failams — X.ai `grok-voice-transcribe-2.0`, kaip kortelėje paveikslėlyje, ElevenLabs `scribe_v2_realtime`, OpenAI `gpt-live-transcribe`, Soniox `stt-rt-v5`. Spauskite **Patikrinti**. Pažymėkite **Numatytasis sufleriui**, kad nauji pagalbininkai klausytųsi juo.
 
 ## Kurį modelį pasirinkti {#which-model-to-choose}
-Lentelėje išvardyti kiekvienos sąrašo **Rūšis** rūšies kalbos atpažinimo modeliai. **Paryškinti** modeliai yra nustatyti paveikslėlyje; atpažintuvo X.ai modelis tuščias, todėl naudojamas paslaugos numatytasis **`grok-voice-transcribe-2.0`**. **Kam** nurodo, kam modelis skirtas: baigtiems įrašams (*užrašai*), gyvai kalbai [sufleriui](#live-recognition-for-the-prompter) (*suflerius*) ar *abiem*.
+Lentelėje išvardyti kiekvienos sąrašo **Rūšis** rūšies kalbos atpažinimo modeliai. **Paryškinti** modeliai yra nustatyti paveikslėlyje; atpažintuvo X.ai modelis tuščias, todėl naudojamas paslaugos numatytasis **`grok-voice-transcribe-2.0`**. Tuščias ten yra laukas **Modelis užrašams**; lauke **Modelis sufleriui** nustatytas tas pats modelis. **Kam** nurodo, kam modelis skirtas: baigtiems įrašams (*užrašai*), gyvai kalbai [sufleriui](#live-recognition-for-the-prompter) (*suflerius*) ar *abiem*.
 
 | Rūšis ir adresas | Modelis | Kam | Kam jis tinka |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Lentelėje išvardyti kiekvienos sąrašo **Rūšis** rūšies kalbos atpažinim
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | abiem | Tiksliausias, pokalbiui viena kalba. Jį gauna naujas šios rūšies atpažintuvas. |
 | | `standard` | abiem | Greitesnis ir pigesnis, šiek tiek mažiau tikslus. |
 | | `melia-1` | užrašai | Pokalbis keliomis kalbomis, keičiantis kalbą sakinio viduryje, grįžta vienu užrašu. Tik įrašams, ES ir JAV regionuose; savo žodyno ir kalbėtojų žymų kol kas nėra. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | abiem | Numatytasis; 25 kalbos. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | abiem | Vienintelis dabartinis ir numatytasis modelis: 38 kalbos, kurias atpažįsta pats. Failai iki 500 MB; gyva kalba siunčiama į `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | užrašai | Pasenęs: paslauga jį nukreipia į `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | užrašai | Daugiau nei 60 kalbų, su kalbėtojų atskyrimu. |
 | | `stt-rt-v5` | suflerius | Gyvai, tomis pačiomis 60+ kalbų, ir girdi, kur baigiasi replika. Telefonas jį siūlo sufleriui. |

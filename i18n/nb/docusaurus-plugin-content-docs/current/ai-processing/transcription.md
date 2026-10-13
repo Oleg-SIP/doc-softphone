@@ -13,18 +13,20 @@ En samtale blir transkribert når du ber om det i [vinduet Opptak](/interface/re
 ## Gjenkjennere {#recognisers}
 En gjenkjenner er en talegjenkjenningstjeneste som telefonen sender lyden til. **Legg til** legger til en; knappen **Prøv** på kortet dens sjekker at tjenesten virkelig svarer. Hver står i listen med navnet sitt og under det modellen og adressen til tjenesten. Tabellen viser hvert slag tjeneste telefonen støtter, slik **Slag** på kortet tilbyr dem, med adressen og modellene en ny gjenkjenner av det slaget får; den siste kolonnen viser de fem som er satt opp på bildet:
 
-| Slag | Adresse | Modell | På bildet |
-| --- | --- | --- | --- |
-| **OpenAI-kompatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, levende `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, levende `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(tomt: tjenestens standard)*, levende `grok-voice-transcribe-2.0` | **X.ai** |
-| **Soniox** | `https://api.soniox.com` | *(tomt: tjenestens standard)*, levende `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(tomt: tjenestens standard)* | — |
-| **Vosk (på din egen maskin)** | din server, for eksempel `ws://localhost:2700` | *(stilles inn på serveren)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (på din egen maskin)** | din server, for eksempel `ws://localhost:9090` | levende `small` | — |
-| **NVIDIA Riva (på din egen maskin)** | din server, for eksempel `localhost:50051` | *(stilles inn på serveren)* | — |
+| Slag | Adresse for transkripsjoner | Adresse for suffløren | Modell | På bildet |
+| --- | --- | --- | --- | --- |
+| **OpenAI-kompatibel (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, levende `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, levende `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, eller `eu.`, `us.`, `au.` i stedet for `global.` for en region | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(tomt: tjenestens standard)*, levende `grok-voice-transcribe-2.0` | **X.ai** · levende `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(tomt: tjenestens standard)*, levende `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(tomt: tjenestens standard)* | — |
+| **Vosk (på din egen maskin)** | din server, for eksempel `ws://localhost:2700` | *(samme server)* | *(stilles inn på serveren)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (på din egen maskin)** | din server, for eksempel `ws://localhost:9090` | *(samme server)* | levende `small` | — |
+| **NVIDIA Riva (på din egen maskin)** | din server, for eksempel `localhost:50051` | *(samme server)* | *(stilles inn på serveren)* | — |
+
+Feltet **Adresse for suffløren** er som regel en WebSocket-adresse: `wss://` for en tjeneste i skyen, `ws://` for en server i ditt eget nettverk; NVIDIA Riva oppgis som `vert:port`.
 
 De to merkene til høyre i en rad sier hva gjenkjenneren er standard for. Klokken lyser ved standarden **for transkripsjoner** — **X.ai** på bildet —, som brukes når du ikke velger en annen. Lynet lyser ved standarden **for suffløren** — **Vosk** på bildet. Du kan beholde flere gjenkjennere; nedtrekkslisten over en transkripsjon i [vinduet Opptak](/interface/recordings#transcript-or-write-up-the-drop-down) viser transkripsjonene hver av dem har laget.
 
@@ -38,10 +40,10 @@ Et klikk på en gjenkjenner åpner kortet dens.
 | **Navn** | Navnet i listene. |
 | **Slag** | Tjenestens slag, som avgjør hvordan telefonen snakker med den: **OpenAI-kompatibel (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics** og tre som kjører på din egen maskin — **Vosk**, **WhisperLive** og **NVIDIA Riva**. |
 | **Adresse for transkripsjoner** | Hvor avsluttede samtaler sendes. |
-| **Adresse for suffløren** | Hvor den levende lyden går mens en samtale pågår. *Tomt utledes fra adressen ved siden av*, som `wss://api.x.ai` på bildet. |
+| **Adresse for suffløren** | Hvor den levende lyden går mens en samtale pågår. Som regel en WebSocket-adresse: `wss://` for en tjeneste i skyen, som `wss://api.x.ai` på bildet, `ws://` for en server i ditt eget nettverk. *Tomt utledes fra adressen ved siden av*. |
 | **Nøkkel** | Tjenestens nøkkel. *Det ligger i nøkkelringen til denne maskinen, aldri i en innstillingsfil.* |
 | **Prøv** | Spør tjenesten og forteller hva den svarte, for eksempel *Svarte, og tilbyr 3 modeller*. |
-| **Modell for transkripsjoner** og **Modell for suffløren** | Modellen, nøyaktig slik tjenesten kaller den. *Tomt sender ikke noe modellnavn*, og tjenesten bruker sin egen standard; der leverandøren publiserer en, nevner kortet den. Feltet vises ikke for et slag uten valg. |
+| **Modell for transkripsjoner** og **Modell for suffløren** | Modellen, nøyaktig slik tjenesten kaller den. *Tomt sender ikke noe modellnavn*, og tjenesten bruker sin egen standard; der leverandøren publiserer en, nevner kortet den. Feltet vises ikke for et slag uten valg. På bildet har xAI ikke noe felt **Modell for transkripsjoner**, og **Modell for suffløren** er satt til `grok-voice-transcribe-2.0`. |
 | **Standard for transkripsjoner** | Gjør denne til gjenkjenneren som brukes når du ikke velger en annen. |
 | **Standard for suffløren** | Gjør denne til gjenkjenneren en ny hjelper i suffløren lytter med. |
 | **På** | Slått av blir gjenkjenneren stående i listen og brukes ikke. |
@@ -67,10 +69,10 @@ Et klikk på en gjenkjenner åpner kortet dens.
 ## Levende gjenkjenning for suffløren {#live-recognition-for-the-prompter}
 [Suffløren](../interface/prompter.md) trenger en gjenkjenner som lytter mens noen snakker, over en strøm i stedet for med en ferdig fil. Disse slagene kan det: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-kompatibel** (med OpenAIs sanntidstranskripsjon), **AssemblyAI**, **Soniox** og **Speechmatics** i skyen og **Vosk**, **WhisperLive** og **NVIDIA Riva** på din egen maskin. En gjenkjenner på din egen maskin holder stemmen til den andre parten innenfor veggene og koster ingenting.
 
-Slik bruker du en: åpne kortet dens, sjekk **Adresse for suffløren** (eller la den utledes), velg **Modell for suffløren** der tjenesten tilbyr flere — de levende modellene er ofte andre enn dem for filer, som ElevenLabs' `scribe_v2_realtime` — og trykk **Prøv**. Kryss av for **Standard for suffløren** for at nye hjelpere skal lytte med den.
+Slik bruker du en: åpne kortet dens, sjekk feltet **Adresse for suffløren** — som regel en WebSocket-adresse, for eksempel `wss://api.x.ai` for X.ai, `wss://api.deepgram.com` for Deepgram eller `ws://localhost:2700` for Vosk; tomt utledes det av feltet **Adresse for transkripsjoner**. Velg deretter **Modell for suffløren**: livemodellene er ofte andre enn dem for filer — `grok-voice-transcribe-2.0` for X.ai, som på kortet på bildet, `scribe_v2_realtime` for ElevenLabs, `gpt-live-transcribe` for OpenAI, `stt-rt-v5` for Soniox. Trykk **Prøv**. Kryss av for **Standard for suffløren** for at nye hjelpere skal lytte med den.
 
 ## Hvilken modell du bør velge {#which-model-to-choose}
-Tabellen viser talegjenkjenningsmodellene for hvert slag i listen **Slag**. Modellene i **fet** skrift er de som er satt opp på bildet; for gjenkjenneren X.ai er modellen tom, så tjenestens standard, **`grok-voice-transcribe-2.0`**, er den som brukes. **For** sier hva en modell er laget for: ferdige opptak (*transkripsjoner*), levende tale for [suffløren](#live-recognition-for-the-prompter) (*sufflør*) eller *begge*.
+Tabellen viser talegjenkjenningsmodellene for hvert slag i listen **Slag**. Modellene i **fet** skrift er de som er satt opp på bildet; for gjenkjenneren X.ai er modellen tom, så tjenestens standard, **`grok-voice-transcribe-2.0`**, er den som brukes. Tomt er der feltet **Modell for transkripsjoner**; **Modell for suffløren** er satt til samme modell. **For** sier hva en modell er laget for: ferdige opptak (*transkripsjoner*), levende tale for [suffløren](#live-recognition-for-the-prompter) (*sufflør*) eller *begge*.
 
 | Slag og adresse | Modell | For | Hva den er til |
 | --- | --- | --- | --- |
@@ -94,7 +96,7 @@ Tabellen viser talegjenkjenningsmodellene for hvert slag i listen **Slag**. Mode
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | begge | Den mest nøyaktige, for en samtale på ett språk. En ny gjenkjenner av dette slaget får den. |
 | | `standard` | begge | Raskere og billigere, litt mindre nøyaktig. |
 | | `melia-1` | transkripsjoner | En samtale på flere språk, som bytter midt i en setning, kommer tilbake som én transkripsjon. Bare opptak, i regionene EU og USA; ennå uten egen ordliste og talermerker. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | begge | Standarden; 25 språk. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | begge | Den eneste aktuelle modellen og standarden: 38 språk, som den gjenkjenner selv. Filer opptil 500 MB; levende tale går til `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transkripsjoner | Foreldet: tjenesten sender den videre til `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transkripsjoner | Over 60 språk, med atskillelse av talere. |
 | | `stt-rt-v5` | sufflør | Levende, på de samme 60+ språkene, og hører hvor en tur slutter. Telefonen tilbyr den for suffløren. |
