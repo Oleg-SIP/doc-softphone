@@ -12,20 +12,20 @@ A conversation is transcribed when you ask for it in the [Recordings window](/in
 
 ## Recognisers
 
-A recogniser is a speech-to-text service the phone sends audio to. Press **Add** to add one; the **Test** button of its card checks that the service really answers. Each is listed with its name and, under it, the model and the address of its service. The table lists every kind of service the phone supports, as **Kind** on the card offers them, with the address and the models a new recogniser of that kind is given; the last column shows the five set up in the picture:
+A recogniser is a speech-to-text service the phone sends audio to. Press **Add** to add one; the **Test** button of its card checks that the service really answers. Each is listed with its name and, under it, the model and the address of its service. The table lists every kind of service the phone supports, as **Kind** on the card offers them, with the two addresses and the models a new recogniser of that kind is given; the last column shows the five set up in the picture. The address for the prompter is usually a WebSocket one: `wss://` for a service in the cloud, `ws://` for a server in your own network; NVIDIA Riva is given as `host:port`.
 
-| Kind | Address | Models | In the picture |
-| --- | --- | --- | --- |
-| **OpenAI-compatible (Whisper, OpenAI)** | `https://api.openai.com/v1` | `gpt-4o-transcribe`, live `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
-| **Deepgram** | `https://api.deepgram.com/v1` | `nova-3` | **Deepgram** · `nova-2` |
-| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `scribe_v1`, live `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
-| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `enhanced` | — |
-| **xAI (Grok)** | `https://api.x.ai/v1` | *(empty: the service default)*, live `grok-voice-transcribe-2.0` | **X.ai** · *(empty)* |
-| **Soniox** | `https://api.soniox.com` | *(empty: the service default)*, live `stt-rt-v5` | — |
-| **AssemblyAI** | `https://api.assemblyai.com` | *(empty: the service default)* | — |
-| **Vosk (on your own machine)** | your server, for example `ws://localhost:2700` | *(set on the server)* | **Vosk** · `ws://localhost:2700` |
-| **WhisperLive (on your own machine)** | your server, for example `ws://localhost:9090` | live `small` | — |
-| **NVIDIA Riva (on your own machine)** | your server, for example `localhost:50051` | *(set on the server)* | — |
+| Kind | Address for transcripts | Address for the prompter | Models | In the picture |
+| --- | --- | --- | --- | --- |
+| **OpenAI-compatible (Whisper, OpenAI)** | `https://api.openai.com/v1` | `wss://api.openai.com` | `gpt-4o-transcribe`, live `gpt-live-transcribe` | **OpenAI** · `gpt-4o-transcribe` |
+| **Deepgram** | `https://api.deepgram.com/v1` | `wss://api.deepgram.com` | `nova-3` | **Deepgram** · `nova-2` |
+| **ElevenLabs (Scribe)** | `https://api.elevenlabs.io/v1` | `wss://api.elevenlabs.io` | `scribe_v1`, live `scribe_v2_realtime` | **ElevenLabs** · `scribe_v2` |
+| **Speechmatics** | `https://asr.api.speechmatics.com/v2` | `wss://global.rt.speechmatics.com`, or `eu.`, `us.`, `au.` in place of `global.` for a region | `enhanced` | — |
+| **xAI (Grok)** | `https://api.x.ai/v1` | `wss://api.x.ai` | *(empty: the service default)*, live `grok-voice-transcribe-2.0` | **X.ai** · *(empty)*, live `grok-voice-transcribe-2.0` |
+| **Soniox** | `https://api.soniox.com` | `wss://stt-rt.soniox.com` | *(empty: the service default)*, live `stt-rt-v5` | — |
+| **AssemblyAI** | `https://api.assemblyai.com` | `wss://streaming.assemblyai.com` | *(empty: the service default)* | — |
+| **Vosk (on your own machine)** | your server, for example `ws://localhost:2700` | *(the same server)* | *(set on the server)* | **Vosk** · `ws://localhost:2700` |
+| **WhisperLive (on your own machine)** | your server, for example `ws://localhost:9090` | *(the same server)* | live `small` | — |
+| **NVIDIA Riva (on your own machine)** | your server, for example `localhost:50051` | *(the same server)* | *(set on the server)* | — |
 
 The two marks at the right of a row say what the recogniser is the default for. The clock is lit on the default **for transcripts** — **X.ai** in the picture — which is used when you do not choose another. The lightning is lit on the default **for the prompter** — **Vosk** in the picture. You can keep several recognisers; the drop-down above a transcript in the [Recordings window](/interface/recordings#transcript-or-write-up-the-drop-down) lists the transcripts made by each one.
 
@@ -33,17 +33,17 @@ The two marks at the right of a row say what the recogniser is the default for. 
 
 Pressing a recogniser opens its card.
 
-<Shot name="43_recogniser_card" alt="The card of the X.ai recogniser: kind, the two addresses, key, Test and the defaults" />
+<Shot name="43_recogniser_card" alt="The card of the X.ai recogniser: kind, the two addresses, key, Test, the model for the prompter and the defaults" />
 
 | Field | What it is |
 | --- | --- |
 | **Name** | The name in the lists. |
 | **Kind** | The kind of service, which decides how the phone talks to it: **OpenAI-compatible (Whisper, OpenAI)**, **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **AssemblyAI**, **Soniox**, **Speechmatics**, and three that run on your own machine — **Vosk**, **WhisperLive** and **NVIDIA Riva**. |
 | **Address for transcripts** | Where finished conversations are sent. |
-| **Address for the prompter** | Where live audio is sent while a conversation is happening. *Empty is worked out from the address beside it*, as `wss://api.x.ai` in the picture. |
+| **Address for the prompter** | Where live audio is sent while a conversation is happening. It is usually a WebSocket address: `wss://` for a service in the cloud, such as `wss://api.x.ai` in the picture, `ws://` for a server in your own network. *Empty is worked out from the address beside it.* |
 | **Key** | The service's key. *It is kept in this computer's keyring, never in a settings file.* |
 | **Test** | Asks the service and says what it answered, for example *Answered, and offers 3 model(s)*. |
-| **Model for transcripts** and **Model for the prompter** | The model, exactly as the service names it. *Empty sends no model name*, and the service uses its own default; where the vendor publishes one, the card names it. A field is not shown for a kind that has no choice. |
+| **Model for transcripts** and **Model for the prompter** | The model, exactly as the service names it. *Empty sends no model name*, and the service uses its own default; where the vendor publishes one, the card names it. A field is not shown for a kind that has no choice — as **Model for transcripts** for xAI in the picture, where **Model for the prompter** is set to `grok-voice-transcribe-2.0`. |
 | **Default for transcripts** | Makes this the recogniser used when you do not choose another. |
 | **Default for the prompter** | Makes this the recogniser a new assistant of the prompter listens with. |
 | **Enabled** | Off, the recogniser stays in the list and is not used. |
@@ -70,11 +70,11 @@ Pressing a recogniser opens its card.
 
 The [Prompter](../interface/prompter.md) needs a recogniser that listens while somebody is talking, over a stream rather than with a finished file. These kinds can: **Deepgram**, **ElevenLabs (Scribe)**, **xAI (Grok)**, **OpenAI-compatible** (with OpenAI's realtime transcription), **AssemblyAI**, **Soniox** and **Speechmatics** in the cloud, and **Vosk**, **WhisperLive** and **NVIDIA Riva** on your own machine. A recogniser on your own machine keeps the other party's voice in the building and charges nothing.
 
-To use one: open its card, check the **Address for the prompter** (or let it be worked out), choose the **Model for the prompter** where the service offers several — the live models are often different from the ones for files, such as ElevenLabs' `scribe_v2_realtime` — and press **Test**. Tick **Default for the prompter** to make it the one new assistants listen with.
+To use one: open its card and check the **Address for the prompter** — usually a WebSocket address, such as `wss://api.x.ai` for X.ai, `wss://api.deepgram.com` for Deepgram or `ws://localhost:2700` for Vosk; left empty, it is worked out from the address for transcripts. Then choose the **Model for the prompter**: the live models are often different from the ones for files — `grok-voice-transcribe-2.0` for X.ai, as on the card in the picture, `scribe_v2_realtime` for ElevenLabs, `gpt-live-transcribe` for OpenAI, `stt-rt-v5` for Soniox. Press **Test**. Tick **Default for the prompter** to make it the one new assistants listen with.
 
 ## Which model to choose
 
-The table lists the speech-to-text models of every kind in the **Kind** list. The models in **bold** are the ones set up in the picture; for the X.ai recogniser the model is empty, so the service default, **`grok-voice-transcribe-2.0`**, is the one used. **For** says what a model is made for: finished recordings (*transcripts*), live speech for the [prompter](#live-recognition-for-the-prompter) (*prompter*), or *both*.
+The table lists the speech-to-text models of every kind in the **Kind** list. The models in **bold** are the ones set up in the picture; for the X.ai recogniser the model for transcripts is empty, so the service default, **`grok-voice-transcribe-2.0`**, is the one used, and the model for the prompter is set to the same model. **For** says what a model is made for: finished recordings (*transcripts*), live speech for the [prompter](#live-recognition-for-the-prompter) (*prompter*), or *both*.
 
 | Kind and address | Model | For | What it is for |
 | --- | --- | --- | --- |
@@ -98,7 +98,7 @@ The table lists the speech-to-text models of every kind in the **Kind** list. Th
 | **Speechmatics**<br />`https://asr.api.speechmatics.com/v2` | `enhanced` | both | The most accurate, for a conversation in one language. A new recogniser of this kind is given it. |
 | | `standard` | both | Faster and cheaper, a little less accurate. |
 | | `melia-1` | transcripts | A conversation in several languages, switching mid-sentence, comes back as one transcript. Recordings only, in the EU and US regions; no custom dictionary or speaker labels yet. |
-| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | both | The default; 25 languages. |
+| **xAI (Grok)**<br />`https://api.x.ai/v1` | **`grok-voice-transcribe-2.0`** | both | The only current model and the default: 38 languages, recognised by itself. Files up to 500 MB; live speech goes to `wss://api.x.ai`. |
 | | `grok-voice-transcribe-1.0` | transcripts | Deprecated: the service sends it to `2.0`. |
 | **Soniox**<br />`https://api.soniox.com` | `stt-async-v5` | transcripts | 60+ languages, with speaker separation. |
 | | `stt-rt-v5` | prompter | Live, in the same 60+ languages, and hears where a turn ends. The phone offers it for the prompter. |
