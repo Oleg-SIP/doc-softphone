@@ -1,7 +1,7 @@
 ---
 title: Common problems
 sidebar_position: 2
-description: "What to check when an account will not register, there is no sound, a call or a meeting is not recorded, there is no transcript, the prompter does not start, or a link, a hotkey or the API does nothing."
+description: "What to check when an account will not register, there is no sound, a call or a meeting is not recorded, there is no transcript, the prompter does not start, or a link, a hotkey or the API does nothing, and what the phone's own messages mean."
 ---
 
 Each entry points to the setting that decides it. If the answer is not here, open [Diagnostics](/troubleshooting/diagnostics): it shows what the phone and the PBX say to each other.
@@ -88,3 +88,40 @@ Press **Send a test event** in [Settings → Integration](/integration/webhooks)
 ## A hotkey does nothing
 
 Open [Shortcuts](/program/shortcuts). A shortcut works while the phone is the program you are using; to use it from any program, tick **Everywhere**. Click the shortcut and press the combination again if another program has taken it.
+
+## Messages the phone shows
+
+When something does not happen, the phone says why in a line of its own. A line under a list goes away by itself after a few seconds.
+
+### When a call is not placed
+
+| Message | What to do |
+| --- | --- |
+| *No account is set up* | Add an account in [Settings → Accounts](/sip-accounts/setup). |
+| *No account is switched on, so there is no line to call from.* | Tick the checkbox of an account in **Settings → Accounts**. |
+| *No line is registered yet.* | The account is on but not yet registered on the PBX. Wait for its dot to turn green; if it does not, see [The account will not register](#the-account-will-not-register). |
+| *As many calls are up as this phone will carry.* | Hang up one of the calls, then call again. |
+| *The account this would have called from is no longer there.* | The row belongs to an account that has since been deleted. Dial the number in the dialler. |
+| *This row has no number to call back.* | The caller hid the number, so there is nothing to call back. |
+
+### When an account does not connect
+
+| Message | What to do |
+| --- | --- |
+| *Could not find that server address. Check it for typing mistakes.* | Check **Server address** in [the account form](/sip-accounts/setup). |
+| *Could not reach the server. Check the address, the port, and your network.* | Check **Server address**, and **Transport** and **Port** under **Server settings**. A firewall may also be stopping SIP. |
+| *The server rejected this username or password.* | Check **Username** and **Password**. If the PBX checks the password under another name, fill in **Authentication user**. |
+| *The server's certificate could not be verified. If the server's administrator made it themselves, untick Verify the certificate in Server settings.* | Shown for a TLS connection. If the PBX uses a certificate it made itself, untick **Verify the certificate** under **Server settings**. |
+| *The password for this account could not be read from the keychain. Unlock it and connect again.* | Unlock the computer's keyring (the keychain on macOS), then press **Connect** on the account. |
+
+### During a call
+
+| Message | What to do |
+| --- | --- |
+| *No audio format in common* | The PBX and the phone have no codec in common. Turn on one the PBX uses in [Audio formats](/sip-accounts/calls#audio-formats). |
+| *No microphone or speakers* | Choose the devices in [Settings → Devices](/sip-accounts/devices). |
+| *Not recording: the disk is down to the space. Free some, or change the limit in Settings.* | The disk has reached the **Disk space threshold** of [Recordings](/recordings). Free some space, or lower the threshold. |
+
+### When the phone starts
+
+*Database cannot be read* means the database was made by a different version of the program, and this one cannot read it. Usually an older version was started on the data of a newer one: installing the newer version again opens it as it was. **Start again** makes an empty database instead — every contact and every call in the history is lost, and that cannot be undone. Before you press it, you can keep a copy of the database file; [Diagnostics](/troubleshooting/diagnostics#files) says where it is.
