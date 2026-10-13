@@ -17,7 +17,7 @@ description: "Start the phone with the computer, keep it running when its window
 
 ## Close
 
-**Keep the phone running when the window is closed**, on by default. A closed window is not a hung-up phone: calls still arrive, and the icon in the notification area (the menu bar on macOS) brings the window back. Turn this off and closing the window quits the program.
+**Keep the phone running when the window is closed**, on by default. A closed window is not a hung-up phone: calls still arrive, and the icon in the notification area (the menu bar on macOS) brings the window back. On a desktop that has no notification area, such as GNOME without an extension for status icons, the phone waits minimised in the task bar instead, and the line under the switch says so. Turn this off and closing the window quits the program.
 
 ## Call links
 

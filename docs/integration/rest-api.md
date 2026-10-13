@@ -35,7 +35,7 @@ No separate service is installed and no restart is needed. The part of the progr
 What a program may do depends on whether it changes stored data, not on whether it reads:
 
 - **Without a token**, any program on the computer may read everything in the enabled groups and control calls: place, answer, hang up, hold, resume, transfer and send DTMF.
-- **With the token** in the `Authorization` header, it may also use the endpoints that change what is stored. Without the token those endpoints are neither served nor listed on the API's own page.
+- **With the token** in the `Authorization` header, it may also use the [endpoints that change what is stored](#endpoints-that-need-the-token). Without the token those endpoints are not listed on the API's own page, and they answer `401`. With no token set at all, nothing can change what is stored.
 
 The token is kept in the computer's keyring, not in the settings file, and is never returned by `/settings`.
 
@@ -67,6 +67,20 @@ The base address is `http://127.0.0.1:8377`. The endpoints below need no token.
 | GET | `/accounts` | The SIP accounts and their registration state. Never a password. |
 | GET | `/settings` | The whole configuration, without the secrets. |
 | GET | `/taxonomy` | Categories, tags and red flags, with their codes. |
+
+### Endpoints that need the token
+
+These change what is stored, so each request has to carry the token in the `Authorization` header. The API's own page lists them only to a request that carries it.
+
+| Method | Path | Does |
+| --- | --- | --- |
+| POST | `/contacts` | Adds a contact: `{"name": "...", "number": "...", "account_id": "..."}`; `account_id` is optional. |
+| PUT | `/contacts/{id}` | Replaces a contact. |
+| DELETE | `/contacts/{id}` | Removes a contact. |
+| DELETE | `/history/{id}` | Forgets one call of the call log. |
+| DELETE | `/history` | Forgets the whole call log. It cannot be undone. |
+| PUT | `/accounts/{id}` | Replaces the settings of an account. The password is not among them. |
+| PUT | `/settings` | Replaces the settings. |
 
 Every identifier is a UUID issued by the phone: a call `id` comes from `/calls` or from the answer to `POST /calls`, an account `id` from `/accounts`.
 
@@ -164,6 +178,9 @@ Every error is JSON with a single `error` key, meant for people, not for parsing
 | Status | Body | Meaning |
 | --- | --- | --- |
 | 404 | `{"error":"no such endpoint"}` | The path does not exist, or its access group is off; both give the same answer on purpose. |
+| 405 | `{"error":"that endpoint does not take this method"}` | The path exists, the method does not: for example `POST /settings` instead of `PUT`. |
+| 401 | `{"error":"writing needs a token, and none is configured"}` | An endpoint that changes what is stored, on a phone where no **Token** is set. Set one under **Local control**. |
+| 401 | `{"error":"this endpoint needs the authorization token"}` | An endpoint that changes what is stored, without the right token. |
 | 404 | `{"error":"no contact with that id"}` | The path is right, the identifier is not. |
 | 400 | `{"error":"no call with that id"}` | The call has ended, or never existed. |
 | 400 | `{"error":"a call needs a number"}` | `POST /calls` without a number. Nothing was dialled. |
@@ -203,7 +220,7 @@ Earlier versions used camelCase names and short identifiers. `accountId` is now 
 | --- | --- |
 | Connection refused on `127.0.0.1:8377` | Local control is off, the phone is not running, or the port was changed. |
 | `404 {"error":"no such endpoint"}` for a path on this page | Its access group is off. |
-| Reading works, writing is refused | The endpoints that change stored data need the token in the `Authorization` header. |
+| Reading works, writing is refused with `401` | The endpoints that change stored data need the token in the `Authorization` header, and a **Token** has to be set on the phone first. |
 | Category titles are not in English | Titles follow the interface language. Match on `code` from `/taxonomy`. |
 | `accountId`, `startedAt` or `at` are missing | The integration was written for the earlier names; see above. |
 

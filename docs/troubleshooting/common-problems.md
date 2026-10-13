@@ -63,7 +63,7 @@ If the window opens but the prompter does not start, the line under its buttons 
 
 ## The phone disappeared when I closed the window
 
-With **Keep the phone running when the window is closed** on, the phone is still running, and calls still arrive. The icon in the notification area (the menu bar on macOS) brings the window back. See [Startup](/program/startup).
+With **Keep the phone running when the window is closed** on, the phone is still running, and calls still arrive. The icon in the notification area (the menu bar on macOS) brings the window back; on a desktop without a notification area the phone is minimised in the task bar. See [Startup](/program/startup).
 
 ## A phone number in a browser or a CRM does not call
 

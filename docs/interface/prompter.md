@@ -10,7 +10,7 @@ The **Prompter** listens to a conversation while it is happening. In a window of
 
 In the picture the **Objections on a call** assistant is listening to a sales call. The left column is what was said, each line with its time and its side; the right one is what the model suggested about each reply of the customer; the newest suggestion is repeated in large type above the two.
 
-**Prompter** appears in the list at the foot of the phone, between **History** and **Settings**, once three things are in place: the prompter is allowed, there is a recogniser that can listen while a conversation happens, and — for the assistants that suggest something — a language model. All of them are set up in [Settings → Prompter](/ai-processing/prompter), which also holds the text size and the assistants themselves.
+**Prompter** appears in the list at the foot of the phone, between **History** and **Settings**, once three things are in place: the prompter is allowed, there is a recogniser that can listen while a conversation happens, and there is a language model, which the assistants that suggest something ask. All of them are set up in [Settings → Prompter](/ai-processing/prompter), which also holds the text size and the assistants themselves.
 
 ## The window
 

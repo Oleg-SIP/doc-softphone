@@ -49,7 +49,7 @@ The order matters: the last two rules need the category that the rule before the
 
 <Shot name="12d_settings_processing_spending" alt="Settings → Processing: the spending of the month and the two limits" />
 
-Under **Spending** the program shows what has been spent this month and on how many requests — *Nothing has been processed this month* in the picture, and for example *This month: 40.492 tokens, over 84 request(s), at no charge* once something has.
+Under **Spending** the program shows what has been spent this month and on how many requests — *Nothing has been processed this month* in the picture, and for example *This month: 40,492 tokens, over 84 request(s), at no charge* once something has.
 
 | Field | Meaning |
 | --- | --- |
