@@ -24,4 +24,13 @@ const home = readFileSync(join(build, 'index.html'), 'utf8');
 assert.doesNotMatch(home, /navbar__link--active[^>]*>English|dropdown--right|hreflang="(?!ru|x-default)/, 'language switcher or alternate language in the build');
 assert.match(home, /<html[^>]*lang="ru/);
 assert.ok(home.includes('href="https://ai-softphone.ru/"'), 'link to the main site missing');
+// Yandex.Metrika: in <head> ahead of the stylesheets and every script file
+// (only the page's own title, meta and inline data come first); its
+// <noscript> part is at the top of <body>
+const head = home.slice(0, home.indexOf('</head>'));
+const counterAt = head.indexOf('mc.yandex.ru/metrika/tag.js?id=113807738');
+assert.ok(counterAt > 0, 'Yandex.Metrika counter missing from <head>');
+assert.ok(counterAt < head.indexOf('<script src='), 'Yandex.Metrika counter after the script files');
+assert.ok(counterAt < head.indexOf('<link rel="stylesheet"'), 'Yandex.Metrika counter after the stylesheets');
+assert.match(home, /<body[^>]*>[\s\S]{0,1500}?<noscript><div><img src="https:\/\/mc\.yandex\.ru\/watch\/113807738"/, 'Yandex.Metrika <noscript> not at the top of <body>');
 console.log(`finish-ru: ${urls.length} pages, robots.txt written, checks passed`);

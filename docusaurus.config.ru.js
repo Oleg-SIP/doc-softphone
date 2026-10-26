@@ -2,9 +2,8 @@
 /* The Russian-only documentation for http://docs.ai-softphone.ru/ — the
    same pages as i18n/ru, built on their own (npm run build:ru), in the
    look of ai-softphone.ru: no language switcher, a link to the main site at
-   the top and at the bottom, and no Google Analytics (the main site counts
-   its visits with Yandex.Metrika; put a counter in `headTags` below if the
-   documentation should be counted too). */
+   the top and at the bottom, and Yandex.Metrika instead of Google Analytics
+   (counter 113807738, the snippet below as Yandex gives it). */
 import base from './docusaurus.config.js';
 
 const productUrl = 'https://ai-softphone.ru/';
@@ -14,6 +13,35 @@ const productUrl = 'https://ai-softphone.ru/';
 const url = process.env.SITE_URL || 'http://docs.ai-softphone.ru';
 
 const year = new Date().getFullYear();
+
+/* Yandex.Metrika: the counter's code as Yandex gives it, as near the top of
+   the page as it goes (the first thing in <head>, the <noscript> part the
+   first thing in <body>), so a visit is counted even when the page is closed
+   at once. Later pages of the single-page application are reported by
+   src/clientModules/ym.js. */
+const YM_ID = 113807738;
+
+const ymCounter = `
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=${YM_ID}', 'ym');
+
+    ym(${YM_ID}, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+`;
+
+const ymNoscript = `<!-- Yandex.Metrika counter --><noscript><div><img src="https://mc.yandex.ru/watch/${YM_ID}" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->`;
+
+/** @type {import('@docusaurus/types').PluginModule} */
+const yandexMetrika = () => ({
+  name: 'yandex-metrika',
+  injectHtmlTags: () => ({
+    headTags: [{ tagName: 'script', attributes: { type: 'text/javascript' }, innerHTML: ymCounter }],
+    preBodyTags: [ymNoscript],
+  }),
+});
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -52,7 +80,9 @@ const config = {
     { tagName: 'meta', attributes: { name: 'theme-color', content: '#E6372D' } },
   ],
 
-  clientModules: [],
+  clientModules: ['./src/clientModules/ym.js'],
+
+  plugins: [yandexMetrika, ...(base.plugins || [])],
 
   presets: [
     [
