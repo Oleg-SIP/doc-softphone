@@ -1,5 +1,5 @@
 // @ts-check
-/* The Russian-only documentation for http://docs.ai-softphone.ru/ — the
+/* The Russian-only documentation for https://docs.ai-softphone.ru/ — the
    same pages as i18n/ru, built on their own (npm run build:ru), in the
    look of ai-softphone.ru: no language switcher, a link to the main site at
    the top and at the bottom, and Yandex.Metrika instead of Google Analytics
