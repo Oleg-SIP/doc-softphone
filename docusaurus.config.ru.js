@@ -8,9 +8,8 @@ import base from './docusaurus.config.js';
 
 const productUrl = 'https://ai-softphone.ru/';
 
-// The site speaks http:// until the host has a certificate for the
-// subdomain; set SITE_URL=https://docs.ai-softphone.ru then.
-const url = process.env.SITE_URL || 'http://docs.ai-softphone.ru';
+// The site is served over https:// (SITE_URL overrides it for a test host).
+const url = process.env.SITE_URL || 'https://docs.ai-softphone.ru';
 
 const year = new Date().getFullYear();
 
