@@ -32,16 +32,16 @@ Modeli koji čitaju prepis i pišu o njemu. Pritisnite **Dodaj** da dodate jedan
 
 *Ono što radi samo, ovim redom. Svako se okida najviše jednom po razgovoru.* Pravilo je red sa poljem za potvrdu koje ga uključuje ili isključuje, njegovim nazivom, a ispod njega sa onim što radi. **▲** i **▼** menjaju redosled. Program dolazi sa osam:
 
-| Pravilo | Šta radi | Kada |
-| --- | --- | --- |
-| **Prepiši svaki razgovor** | Prepisuje ga. | uvek |
-| **Sažmi ga** | Pita model: **Sažetak**. | uvek |
-| **Svedi ga na jedan red** | Pita model: **Sažetak u jednom redu**. | uvek |
-| **Svrstaj ga u kategoriju** | Pita model: **Kategorija**. | uvek |
-| **Označi ga** | Pita model: **Oznake**. | uvek |
-| **Podigni ono što vredi pogledati** | Pita model: **Upozorenja**. | uvek |
-| **Oceni ga, ako je bila prodaja** | Pita model: **Kvalitet prodaje**. | samo ako je kategorija **Prodaja** |
-| **Oceni ga, ako je bila podrška** | Pita model: **Kvalitet podrške**. | samo ako je kategorija **Podrška** |
+| Pravilo | `code` | Šta radi | `prompt` | Kada |
+| --- | --- | --- | --- | --- |
+| **Prepiši svaki razgovor** | `transcribe` | Prepisuje ga. | — | uvek |
+| **Sažmi ga** | `summary` | Pita model: **Sažetak**. | `summary` | uvek |
+| **Svedi ga na jedan red** | `super-summary` | Pita model: **Sažetak u jednom redu**. | `super-summary` | uvek |
+| **Svrstaj ga u kategoriju** | `categorise` | Pita model: **Kategorija**. | `categorise` | uvek |
+| **Označi ga** | `tags` | Pita model: **Oznake**. | `tags` | uvek |
+| **Podigni ono što vredi pogledati** | `red-flags` | Pita model: **Upozorenja**. | `red-flags` | uvek |
+| **Oceni ga, ako je bila prodaja** | `sales-quality` | Pita model: **Kvalitet prodaje**. | `sales-quality` | samo ako je kategorija **Prodaja** |
+| **Oceni ga, ako je bila podrška** | `support-quality` | Pita model: **Kvalitet podrške**. | `support-quality` | samo ako je kategorija **Podrška** |
 
 Redosled je važan: poslednja dva pravila trebaju kategoriju koju je postavilo pravilo pre njih. **Dodaj** pravi sopstveno pravilo.
 
@@ -63,3 +63,13 @@ Granice su dve jer mesec može da se broji u dve stvari. Obe su prazne dok ih ne
 **Vrati podrazumevano** vraća uputstva i pravila kakva su došla sa programom, na trenutnom jeziku sučelja. Vaši jezički modeli ostaju netaknuti.
 
 Uputstva i pravila koja su došla sa programom ostaju na jeziku na kom su bila kada promenite jezik sučelja; **Vrati podrazumevano** ih prenosi na novi. Svako uputstvo je tada desno označeno kao *izmenjeno*.
+
+## Podrazumevano izvršavanje {#default-execution}
+
+Pokrenite `summary` pre `super-summary`, koji koristi `{{artifact:summary}}`. Pokrenite `categorise` pre ocene kvaliteta: `sales-quality` zahteva kategoriju `sales`, a `support-quality` kategoriju `support`.
+
+Za `action-items`, `topics`, `entities` i `qa` nema podrazumevanih automatskih pravila. Pokrenite upit ručno ili dodajte odgovarajuće pravilo; pri pokretanju `qa` unesite pitanje.
+
+Podrazumevani skup se čuva pri prvoj upotrebi. Izmena Markdown izvoza ne menja aplikaciju: uredite karticu upita ili vratite podrazumevane postavke.
+
+[Standardni tekstovi upita](prompt-studio.md#standard-templates)

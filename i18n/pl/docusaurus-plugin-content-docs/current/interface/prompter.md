@@ -60,3 +60,16 @@ Okno mówi w wierszu pod przyciskami, czego brakuje.
 | *Rozpoznawacz nie zaczął słuchać. Sprawdź jego adres na żywo i model w Ustawienia → Transkrypcja.* | Adres dla suflera, model albo klucz jest błędny. **Sprawdź** na karcie rozpoznawacza powie, co dokładnie. |
 | *Miesięczny budżet na rozpoznawacze jest wyczerpany.* | Zwiększ **Rozpoznawacze, miesięcznie** albo poczekaj na nowy miesiąc. |
 | *Miesięczny budżet na modele jest wyczerpany. Słowa idą dalej; suflowanie się zatrzymało.* | Zwiększ **Modele, miesięcznie**. |
+
+## Dołączeni asystenci {#standard-assistants}
+
+| `code` | Dołączeni asystenci |
+| --- | --- |
+| `rt-subtitles` | Napisy |
+| `rt-translate` | Tłumaczenie |
+| `rt-objections` | Sprzedaż |
+| `rt-interview` | Pomoc na rozmowie |
+
+To nazwy dołączonych asystentów; zrzuty ekranu mogą pokazywać wcześniejsze nazwy. „—” od `rt-objections` oznacza brak przydatnej sugestii. Instrukcje obejmują również pytania bez odpowiedzi i gotowość do zakupu.
+
+[Domyślne teksty promptów](../ai-processing/prompter.md#assistant-templates)

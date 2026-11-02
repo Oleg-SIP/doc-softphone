@@ -32,3 +32,7 @@ description: "Selles dokumentatsioonis kasutatud IP-telefonia ja AI Softphone'i 
 | **Ülestähendus** | Vestlus tekstina, repliik repliigi haaval, heliga sünkroonis. |
 | **Veebikonks** | Päring, mille telefon saadab teisele süsteemile, kui kõne algab, muutub või lõpeb. Vaadake [Veebikonksud](/integration/webhooks). |
 | **Lairiba** | Koodek, mille helivahemik on laiem kui telefoniliinil, nii et hääl on selgem. |
+| **[Kohatäitja](ai-processing/prompt-studio.md#placeholders)** | Viiba element, mis asendatakse vestluse andmetega. |
+| **[Teise viiba tulemus](ai-processing/processing.md#default-execution)** | Olemasolev tulemus, mida kasutab teine viip, näiteks `{{artifact:summary}}`. |
+| **[Mudeli roll](ai-processing/prompt-studio.md#role-and-task)** | `system` määrab mudeli käitumise, `body` kirjeldab ülesannet. Vastuse kuju ja keel antakse eraldi loendite juhistega. |
+| **[Vastuse kuju](ai-processing/dictionaries.md#response-formats)** | Tulemuse struktuur, näiteks tekst, punktid, sildid, ohumärgid või hindamiskriteeriumid. |

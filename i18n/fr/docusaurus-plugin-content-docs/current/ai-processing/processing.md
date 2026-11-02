@@ -32,16 +32,16 @@ Les modèles qui lisent une transcription et écrivent à son sujet. Appuyez sur
 
 *Ce qui s'exécute tout seul, dans cet ordre. Chacune se déclenche au plus une fois par conversation.* Une règle est une ligne avec une case qui l'active ou la désactive, son nom, et en dessous ce qu'elle fait. **▲** et **▼** changent l'ordre. Le programme en fournit huit :
 
-| Règle | Action | Quand |
-| --- | --- | --- |
-| **Transcrire chaque conversation** | La transcrit. | toujours |
-| **La résumer** | Demande à un modèle : **Résumé**. | toujours |
-| **La réduire à une ligne** | Demande à un modèle : **Résumé en une ligne**. | toujours |
-| **La classer dans une catégorie** | Demande à un modèle : **Catégorie**. | toujours |
-| **L'étiqueter** | Demande à un modèle : **Étiquettes**. | toujours |
-| **Signaler ce qui mérite un coup d'œil** | Demande à un modèle : **Signaux**. | toujours |
-| **L'évaluer, si c'était une vente** | Demande à un modèle : **Qualité commerciale**. | seulement si la catégorie est **Ventes** |
-| **L'évaluer, si c'était de l'assistance** | Demande à un modèle : **Qualité de l'assistance**. | seulement si la catégorie est **Assistance** |
+| Règle | `code` | Action | `prompt` | Quand |
+| --- | --- | --- | --- | --- |
+| **Transcrire chaque conversation** | `transcribe` | La transcrit. | — | toujours |
+| **La résumer** | `summary` | Demande à un modèle : **Résumé**. | `summary` | toujours |
+| **La réduire à une ligne** | `super-summary` | Demande à un modèle : **Résumé en une ligne**. | `super-summary` | toujours |
+| **La classer dans une catégorie** | `categorise` | Demande à un modèle : **Catégorie**. | `categorise` | toujours |
+| **L'étiqueter** | `tags` | Demande à un modèle : **Étiquettes**. | `tags` | toujours |
+| **Signaler ce qui mérite un coup d'œil** | `red-flags` | Demande à un modèle : **Signaux**. | `red-flags` | toujours |
+| **L'évaluer, si c'était une vente** | `sales-quality` | Demande à un modèle : **Qualité commerciale**. | `sales-quality` | seulement si la catégorie est **Ventes** |
+| **L'évaluer, si c'était de l'assistance** | `support-quality` | Demande à un modèle : **Qualité de l'assistance**. | `support-quality` | seulement si la catégorie est **Assistance** |
 
 L'ordre compte : les deux dernières règles ont besoin de la catégorie que la règle précédente a définie. **Ajouter** crée une règle à vous.
 
@@ -63,3 +63,13 @@ Il y a deux limites parce qu'un mois peut se compter en deux choses. Les deux so
 **Rétablir les valeurs par défaut** remet les invites et les règles telles qu'elles étaient livrées avec le programme, dans la langue actuelle de l'interface. Vos modèles de langue ne sont pas touchés.
 
 Les invites et les règles livrées avec le programme restent dans leur langue quand vous changez la langue de l'interface ; **Rétablir les valeurs par défaut** les fait passer dans la nouvelle. Chaque invite est alors marquée *modifiée* à droite.
+
+## Exécution par défaut {#default-execution}
+
+Exécutez `summary` avant `super-summary`, qui utilise `{{artifact:summary}}`. Exécutez `categorise` avant l’évaluation : `sales-quality` exige la catégorie `sales`, et `support-quality` exige `support`.
+
+Aucune règle automatique par défaut ne lance `action-items`, `topics`, `entities` ou `qa`. Lancez le prompt manuellement ou ajoutez une règle adaptée ; saisissez la question au lancement de `qa`.
+
+Le jeu par défaut est enregistré lors de la première utilisation. Modifier un export Markdown ne change pas l’application : modifiez la fiche du prompt ou rétablissez les valeurs par défaut.
+
+[Textes des prompts par défaut](prompt-studio.md#standard-templates)

@@ -39,12 +39,14 @@ Sufleurul se citește în timp ce vorbiți, adesea de mai departe decât restul 
 
 Un asistent este ceea ce i se cere unui sufleur să fie. *Fiecare ascultă o conversație în desfășurare și scrie ceva în fereastra sufleurului: cuvintele așa cum sunt spuse, o traducere a lor, sau o sugestie despre ce să spuneți mai departe.* Pe care să-l rulați alegeți în fereastra sufleurului. Programul vine cu patru:
 
-| Asistent | Ce scrie | Întreabă un model |
-| --- | --- | --- |
-| **Subtitrări** | Cuvintele ambelor părți, pe măsură ce sunt spuse. | nu |
-| **Traducere** | Cuvintele celeilalte părți, traduse în limba programului. | da |
-| **Obiecții în apel** | Pentru cine vinde la telefon: când clientul ridică o obiecție, obiecția pe un rând și un rând care îi răspunde. | da |
-| **Ajutor la interviu** | Pentru cine susține un interviu: răspunsul la întrebarea abia pusă, în câteva rânduri scurte, sau ce să atingeți în următorul răspuns. | da |
+| Asistent | `code` | Ce scrie | Întreabă un model |
+| --- | --- | --- | --- |
+| **Subtitrări** | `rt-subtitles` | Cuvintele ambelor părți, pe măsură ce sunt spuse. | nu |
+| **Traducere** | `rt-translate` | Cuvintele celeilalte părți, traduse în limba programului. | da |
+| **Vânzări** | `rt-objections` | Pentru cine vinde la telefon: când clientul ridică o obiecție, obiecția pe un rând și un rând care îi răspunde. | da |
+| **Ajutor la interviu** | `rt-interview` | Pentru cine susține un interviu: răspunsul la întrebarea abia pusă, în câteva rânduri scurte, sau ce să atingeți în următorul răspuns. | da |
+
+Acestea sunt numele asistenților incluși; capturile pot arăta nume anterioare. „—” de la `rt-objections` înseamnă că nu există o sugestie utilă. Instrucțiunile acoperă și întrebările fără răspuns și disponibilitatea de a cumpăra.
 
 **▲** și **▼** schimbă ordinea, care este ordinea listei derulante din [fereastra sufleurului](/interface/prompter#the-window). **Adaugă** creează un asistent al dumneavoastră. **Restabilește valorile implicite** readuce instrucțiunile și regulile așa cum au venit cu programul, aici ca și în [Prelucrare](/ai-processing/processing#defaults); modelele dumneavoastră de limbaj rămân neatinse.
 
@@ -74,3 +76,81 @@ Apăsarea pe un asistent îi deschide cardul. Este același card ca al unei [ins
 | **Modele, pe lună** | Sugestiile se opresc, iar subtitrările continuă. |
 
 Gol înseamnă fără plafon. Cât costă un minut de audio în direct este **Preț pe minut** al recunoscătorului, introdus pe cardul lui în [Transcriere](/ai-processing/transcription#the-recognisers-card); fără el, sufleurul spune că suma afișată este o estimare.
+
+## Asistenți incluși {#assistant-templates}
+
+`system` stabilește comportamentul modelului; `body` descrie sarcina. Forma și limba răspunsului sunt furnizate separat prin instrucțiunile dicționarului.
+
+[Substituenți](prompt-studio.md#placeholders)
+
+### Subtitrări (`rt-subtitles`) {#rt-subtitles}
+
+**Forma răspunsului:** `plain`.
+
+Rol și sarcină goale: modelul lingvistic nu este apelat.
+
+### Traducere (`rt-translate`) {#rt-translate}
+
+**Forma răspunsului:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Traduci vorbirea în timp ce are loc. Răspunzi numai cu traducerea — fără preambul, fără ghilimele, fără explicații — și lași numele, numerele și prețurile exact așa cum au fost spuse.
+```
+
+**Sarcină (`body`)**
+
+```text
+Tradu în {{language}}:
+
+{{reply}}
+```
+
+### Vânzări (`rt-objections`) {#rt-objections}
+
+**Forma răspunsului:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Ajutați o persoană care vinde la telefon. Răspundeți în câteva rânduri scurte, care pot fi citite în timp ce ascultă, niciodată în paragrafe, și nu promiteți niciodată nimic în numele ei.
+```
+
+**Sarcină (`body`)**
+
+```text
+Interlocutorul a spus chiar acum:
+
+{{reply}}
+
+Mai devreme în această conversație:
+
+{{conversation}}
+
+Spuneți într-un rând ce se întâmplă — o obiecție, o întrebare fără răspuns, un semn că sunt pregătiți — și într-un rând ce să spuneți mai departe. Dacă nu e nimic de spus, scrieți doar „—”.
+```
+
+### Ajutor la interviu (`rt-interview`) {#rt-interview}
+
+**Forma răspunsului:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Ajutați o persoană care susține un interviu. Răspundeți în câteva rânduri scurte, care pot fi citite în timp ce ascultă, niciodată în paragrafe, și nu inventați niciodată fapte despre ea.
+```
+
+**Sarcină (`body`)**
+
+```text
+Interlocutorul a spus chiar acum:
+
+{{reply}}
+
+Mai devreme în această conversație:
+
+{{conversation}}
+
+În trei rânduri scurte, spuneți ce întreabă de fapt și ce ar trebui să acopere un răspuns bun.
+```

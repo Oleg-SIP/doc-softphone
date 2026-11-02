@@ -60,3 +60,16 @@ Pencere, düğmelerin altındaki bir satırda neyin eksik olduğunu söyler.
 | *Tanıyıcı dinlemeye başlamadı. Canlı adresini ve modelini Ayarlar → Yazıya döküm altında denetleyin.* | Suflör için adres, model ya da anahtar yanlış. Tanıyıcının kartındaki **Sına** hangisi olduğunu söyler. |
 | *Bu ayın tanıyıcılar için ayrılan tutarı tükendi.* | **Tanıyıcılar, ayda** değerini artırın ya da ayın dönmesini bekleyin. |
 | *Bu ayın modeller için ayrılan tutarı tükendi. Sözler sürüyor; sufle durdu.* | **Modeller, ayda** değerini artırın. |
+
+## Yerleşik asistanlar {#standard-assistants}
+
+| `code` | Yerleşik asistanlar |
+| --- | --- |
+| `rt-subtitles` | Altyazılar |
+| `rt-translate` | Çeviri |
+| `rt-objections` | Satış |
+| `rt-interview` | Mülakat yardımı |
+
+Bunlar yerleşik asistan adlarıdır; ekran görüntülerinde önceki adlar olabilir. `rt-objections` yanıtındaki “—”, yararlı bir öneri olmadığı anlamına gelir. Talimatlar, yanıtlanmamış soruları ve satın alma isteğini de kapsar.
+
+[Varsayılan istem metinleri](../ai-processing/prompter.md#assistant-templates)

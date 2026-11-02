@@ -39,12 +39,14 @@ A súgót beszéd közben olvassák, gyakran messzebbről, mint a telefon többi
 
 A segítő az, aminek a súgónak lennie kell. *Mindegyik egy folyó beszélgetést hallgat, és ír valamit a súgó ablakába: a szavakat úgy, ahogy elhangzanak, azok fordítását, vagy javaslatot arra, mit mondjon ezután.* Hogy melyik fusson, a súgó ablakában választja ki. A program négyet hoz magával:
 
-| Segítő | Mit ír | Modellt kérdez |
-| --- | --- | --- |
-| **Feliratok** | Mindkét fél szavait, ahogy elhangzanak. | nem |
-| **Fordítás** | A másik fél szavait a program nyelvére fordítva. | igen |
-| **Ellenvetések a hívásban** | Telefonon értékesítőknek: ha az ügyfél ellenvetést tesz, az ellenvetést egy sorban és egy sort, amely válaszol rá. | igen |
-| **Segítség az interjún** | Annak, akivel interjút folytatnak: a választ az imént feltett kérdésre néhány rövid sorban, vagy azt, amit a következő válaszban érdemes érinteni. | igen |
+| Segítő | `code` | Mit ír | Modellt kérdez |
+| --- | --- | --- | --- |
+| **Feliratok** | `rt-subtitles` | Mindkét fél szavait, ahogy elhangzanak. | nem |
+| **Fordítás** | `rt-translate` | A másik fél szavait a program nyelvére fordítva. | igen |
+| **Értékesítés** | `rt-objections` | Telefonon értékesítőknek: ha az ügyfél ellenvetést tesz, az ellenvetést egy sorban és egy sort, amely válaszol rá. | igen |
+| **Segítség az interjún** | `rt-interview` | Annak, akivel interjút folytatnak: a választ az imént feltett kérdésre néhány rövid sorban, vagy azt, amit a következő válaszban érdemes érinteni. | igen |
+
+Ezek a beépített asszisztensnevek; a képernyőképeken korábbi nevek is szerepelhetnek. Az `rt-objections` „—” válasza azt jelenti, hogy nincs hasznos javaslat. Az utasítások a megválaszolatlan kérdéseket és a vásárlási hajlandóságot is lefedik.
 
 A **▲** és a **▼** a sorrendet módosítja, és ez a sorrend a legördülő listában is [a súgó ablakában](/interface/prompter#the-window). A **Hozzáadás** saját segítőt hoz létre. Az **Alapértékek visszaállítása** visszaállítja az utasításokat és a szabályokat úgy, ahogy a programmal érkeztek, itt és a [Feldolgozás](/ai-processing/processing#defaults) alatt egyaránt; a nyelvi modelljei érintetlenek maradnak.
 
@@ -74,3 +76,81 @@ Egy segítőre kattintva megnyílik a kártyája. Ugyanaz a kártya, mint egy [u
 | **Modellek, havonta** | A javaslatok leállnak, a feliratok folytatódnak. |
 
 Az üres mező plafon nélkülit jelent. Egy perc élő hang ára a felismerő **Ár percenként** értéke, amelyet a kártyáján, az [Átirat](/ai-processing/transcription#the-recognisers-card) alatt adhat meg; enélkül a súgó jelzi, hogy a mutatott összeg becslés.
+
+## Beépített asszisztensek {#assistant-templates}
+
+A `system` a modell viselkedését határozza meg, a `body` a feladatot írja le. A válasz formáját és nyelvét külön szótári utasítások adják meg.
+
+[Helyőrzők](prompt-studio.md#placeholders)
+
+### Feliratok (`rt-subtitles`) {#rt-subtitles}
+
+**A válasz formája:** `plain`.
+
+Üres szerep és feladat: nincs nyelvimodell-hívás.
+
+### Fordítás (`rt-translate`) {#rt-translate}
+
+**A válasz formája:** `plain`.
+
+**Szerep (`system`)**
+
+```text
+Beszédet fordítasz, miközben elhangzik. Csak a fordítással válaszolsz — bevezető nélkül, idézőjelek nélkül, magyarázat nélkül —, a neveket, számokat és árakat pedig pontosan úgy hagyod, ahogy elhangzottak.
+```
+
+**Feladat (`body`)**
+
+```text
+Fordítsd le erre: {{language}}:
+
+{{reply}}
+```
+
+### Értékesítés (`rt-objections`) {#rt-objections}
+
+**A válasz formája:** `plain`.
+
+**Szerep (`system`)**
+
+```text
+Olyan embernek segít, aki telefonon ad el. Néhány rövid sorban válaszol, amit hallgatás közben el tud olvasni, soha nem bekezdésekben, és soha nem ígér semmit a nevében.
+```
+
+**Feladat (`body`)**
+
+```text
+A másik fél most ezt mondta:
+
+{{reply}}
+
+Korábban ebben a beszélgetésben:
+
+{{conversation}}
+
+Mondja el egy sorban, mi történik — ellenvetés, megválaszolatlan kérdés, a vásárlási szándék jele —, és egy sorban, mit mondjon ezután. Ha nincs mit mondani, csak ezt írja: „—”.
+```
+
+### Segítség az interjún (`rt-interview`) {#rt-interview}
+
+**A válasz formája:** `plain`.
+
+**Szerep (`system`)**
+
+```text
+Olyan embernek segít, akivel interjút folytatnak. Néhány rövid sorban válaszol, amit hallgatás közben el tud olvasni, soha nem bekezdésekben, és soha nem talál ki róla tényeket.
+```
+
+**Feladat (`body`)**
+
+```text
+A másik fél most ezt mondta:
+
+{{reply}}
+
+Korábban ebben a beszélgetésben:
+
+{{conversation}}
+
+Három rövid sorban mondja meg, mit kérdez valójában, és mit kellene egy jó válasznak érintenie.
+```

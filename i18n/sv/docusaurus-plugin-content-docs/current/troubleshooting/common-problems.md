@@ -125,3 +125,21 @@ När något inte händer säger telefonen varför på en egen rad. En rad under 
 ### När telefonen startar {#when-the-phone-starts}
 
 *Databasen går inte att läsa* betyder att databasen gjordes av en annan version av programmet och att den här inte kan läsa den. Oftast har en äldre version startats på data från en nyare: installerar du den nyare versionen igen öppnar den databasen som den var. **Börja om** gör i stället en tom databas — alla kontakter och alla samtal i historiken försvinner, och det går inte att ångra. Innan du trycker kan du spara en kopia av databasfilen; [Diagnostik](/troubleshooting/diagnostics#files) säger var den ligger.
+
+## Standardkörning {#default-prompt-execution}
+
+Det finns inga automatiska standardregler för `action-items`, `topics`, `entities` eller `qa`. Kör prompten manuellt eller lägg till en lämplig regel; ange frågan när du kör `qa`.
+
+Kör `summary` före `super-summary`, som använder `{{artifact:summary}}`. Kör `categorise` före kvalitetsbedömningen: `sales-quality` kräver `sales`, och `support-quality` kräver `support`.
+
+[Standardkörning](../ai-processing/processing.md#default-execution)
+
+## Förstå resultaten {#prompt-result-notes}
+
+En tom lista med uppgifter eller flaggor kan vara korrekt. Saknade ansvariga och datum får inte hittas på. Svar på frågor måste enbart bygga på transkriptionen.
+
+Detta är assistenternas medföljande namn; skärmbilder kan visa tidigare namn. ”—” från `rt-objections` betyder att inget användbart förslag finns. Instruktionerna omfattar också obesvarade frågor och köpberedskap.
+
+Standarduppsättningen sparas vid första användningen. En redigerad Markdown-export ändrar inte programmet: Redigera promptkortet eller återställ standardinställningarna.
+
+[Standardtexter för promptar](../ai-processing/prompt-studio.md#standard-templates) · [Medföljande assistenter](../ai-processing/prompter.md#assistant-templates)

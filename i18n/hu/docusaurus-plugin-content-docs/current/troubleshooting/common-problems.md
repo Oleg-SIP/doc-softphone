@@ -125,3 +125,21 @@ Ha valami nem történik meg, a telefon külön sorban megírja, miért. A lista
 ### A telefon indításakor {#when-the-phone-starts}
 
 Az *Az adatbázis nem olvasható* üzenet azt jelenti, hogy az adatbázist a program egy másik verziója készítette, és ez a verzió nem tudja olvasni. Többnyire egy régebbi verziót indítottak el egy újabb adataival: ha újra telepíti az újabb verziót, az olyannak nyitja meg az adatbázist, amilyen volt. A **Kezdje elölről** gomb viszont üres adatbázist készít – minden névjegy és az előzmények minden hívása elvész, és ez nem vonható vissza. Mielőtt megnyomná, készíthet másolatot az adatbázisfájlról; hogy hol van, azt a [Diagnosztika](/troubleshooting/diagnostics#files) írja le.
+
+## Alapértelmezett futtatás {#default-prompt-execution}
+
+Az `action-items`, `topics`, `entities` és `qa` promptokhoz nincs alapértelmezett automatikus szabály. Indítsa őket kézzel, vagy adjon hozzá megfelelő szabályt; a `qa` indításakor írja be a kérdést.
+
+A `summary` fusson a `super-summary` előtt, amely a `{{artifact:summary}}` eredményét használja. A `categorise` előzze meg a minőségértékelést: a `sales-quality` feltétele `sales`, a `support-quality` feltétele `support`.
+
+[Alapértelmezett futtatás](../ai-processing/processing.md#default-execution)
+
+## Az eredmények értelmezése {#prompt-result-notes}
+
+Az üres feladat- vagy figyelmeztetési lista helyes eredmény is lehet. Hiányzó felelősöket és határidőket nem szabad kitalálni. A kérdésekre adott válaszok csak az átiraton alapulhatnak.
+
+Ezek a beépített asszisztensnevek; a képernyőképeken korábbi nevek is szerepelhetnek. Az `rt-objections` „—” válasza azt jelenti, hogy nincs hasznos javaslat. Az utasítások a megválaszolatlan kérdéseket és a vásárlási hajlandóságot is lefedik.
+
+Az alapértelmezett készlet az első használatkor kerül mentésre. A Markdown-export szerkesztése nem módosítja az alkalmazást: szerkessze a prompt kártyáját, vagy állítsa vissza az alapértékeket.
+
+[Alapértelmezett promptszövegek](../ai-processing/prompt-studio.md#standard-templates) · [Beépített asszisztensek](../ai-processing/prompter.md#assistant-templates)

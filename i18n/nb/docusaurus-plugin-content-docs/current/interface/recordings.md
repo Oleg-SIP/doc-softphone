@@ -186,3 +186,13 @@ Et opptak laget et annet sted — på en mobiltelefon, en diktafon eller et anne
 ## Slette et opptak {#deleting-a-recording}
 
 Når et opptak slettes, forsvinner alt som er laget av det, sammen med det: utskriftene og sammendragene. Hvor lenge opptak beholdes av seg selv, stilles inn under [Opptak](../recordings.md#retention).
+
+## Forstå resultatene {#result-notes}
+
+Det finnes ingen automatiske standardregler for `action-items`, `topics`, `entities` eller `qa`. Kjør prompten manuelt eller legg til en passende regel; skriv spørsmålet når du kjører `qa`.
+
+En tom liste med oppgaver eller varsler kan være riktig. Manglende ansvarlige og datoer skal ikke diktes opp. Svar på spørsmål må bare bygge på transkripsjonen.
+
+Kjør `summary` før `super-summary`, som bruker `{{artifact:summary}}`. Kjør `categorise` før kvalitetsvurdering: `sales-quality` krever `sales`, og `support-quality` krever `support`.
+
+[Standardtekster for prompter](../ai-processing/prompt-studio.md#standard-templates) · [Svarformater](../ai-processing/dictionaries.md#response-formats)

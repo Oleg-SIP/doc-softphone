@@ -60,3 +60,16 @@ La ventana dice qué falta en una línea bajo los botones.
 | *El reconocedor no empezó a escuchar. Compruebe su dirección en vivo y su modelo en Ajustes → Transcripción.* | La dirección para el apuntador, el modelo o la clave es incorrecta. **Probar** en la tarjeta del reconocedor dice cuál. |
 | *El importe mensual para reconocedores está agotado.* | Suba **Reconocedores, al mes** o espere a que cambie el mes. |
 | *El importe mensual para modelos está agotado. Las palabras siguen; el apuntado se ha detenido.* | Suba **Modelos, al mes**. |
+
+## Asistentes incluidos {#standard-assistants}
+
+| `code` | Asistentes incluidos |
+| --- | --- |
+| `rt-subtitles` | Subtítulos |
+| `rt-translate` | Traducción |
+| `rt-objections` | Ventas |
+| `rt-interview` | Ayuda en la entrevista |
+
+Estos son los nombres incluidos de los asistentes; las capturas pueden mostrar nombres anteriores. «—» de `rt-objections` indica que no hay una sugerencia útil. Las instrucciones también cubren preguntas pendientes y señales de intención de compra.
+
+[Textos de los prompts predeterminados](../ai-processing/prompter.md#assistant-templates)

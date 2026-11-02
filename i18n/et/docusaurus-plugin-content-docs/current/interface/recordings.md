@@ -186,3 +186,13 @@ Mujal — mobiiltelefonis, diktofonis või muus süsteemis — tehtud salvestise
 ## Salvestise kustutamine {#deleting-a-recording}
 
 Kui salvestis kustutatakse, kaob koos sellega kõik sellest tehtu: ülestähendused ja kokkuvõtted. Kui kaua salvestisi ise hoitakse, seadistatakse jaotises [Salvestised](../recordings.md#retention).
+
+## Tulemuste mõistmine {#result-notes}
+
+Viipadel `action-items`, `topics`, `entities` ja `qa` puuduvad automaatsed vaikereeglid. Käivitage viip käsitsi või lisage sobiv reegel; sisestage küsimus viiba `qa` käivitamisel.
+
+Tühi ülesannete või ohumärkide loend võib olla õige tulemus. Puuduvaid vastutajaid ja kuupäevi ei tohi välja mõelda. Küsimustele tuleb vastata ainult transkriptsiooni põhjal.
+
+Käivitage `summary` enne viipa `super-summary`, mis kasutab väärtust `{{artifact:summary}}`. Käivitage `categorise` enne kvaliteedihindamist: `sales-quality` vajab kategooriat `sales`, `support-quality` kategooriat `support`.
+
+[Viipade standardtekstid](../ai-processing/prompt-studio.md#standard-templates) · [Vastuse vormingud](../ai-processing/dictionaries.md#response-formats)

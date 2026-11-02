@@ -125,3 +125,21 @@ Keď sa niečo nestane, telefón napíše prečo na samostatnom riadku. Riadok p
 ### Pri spustení telefónu {#when-the-phone-starts}
 
 *Databázu nemožno prečítať* znamená, že databázu vytvorila iná verzia programu a táto ju nevie prečítať. Zvyčajne bola staršia verzia spustená nad dátami novšej: keď znova nainštalujete novšiu verziu, otvorí ju tak, ako bola. **Začať odznova** naopak vytvorí prázdnu databázu — všetky kontakty a všetky hovory v histórii sa stratia a nedá sa to vrátiť. Skôr ako ho stlačíte, môžete si uložiť kópiu súboru databázy; kde je, hovorí [Diagnostika](/troubleshooting/diagnostics#files).
+
+## Predvolené spúšťanie {#default-prompt-execution}
+
+Pre `action-items`, `topics`, `entities` ani `qa` nie sú predvolené automatické pravidlá. Spustite prompt ručne alebo pridajte vhodné pravidlo; pri spustení `qa` zadajte otázku.
+
+Spustite `summary` pred `super-summary`, ktorý používa `{{artifact:summary}}`. Pred hodnotením kvality spustite `categorise`: `sales-quality` vyžaduje kategóriu `sales`, `support-quality` kategóriu `support`.
+
+[Predvolené spúšťanie](../ai-processing/processing.md#default-execution)
+
+## Ako čítať výsledky {#prompt-result-notes}
+
+Prázdny zoznam úloh alebo príznakov môže byť správny výsledok. Chýbajúce zodpovedné osoby a termíny sa nesmú vymýšľať. Odpovede na otázky musia vychádzať iba z prepisu.
+
+Sú to dodávané názvy asistentov; snímky obrazovky môžu ukazovať staršie názvy. „—“ od `rt-objections` znamená, že nie je užitočný návrh. Pokyny zahŕňajú aj nezodpovedané otázky a pripravenosť nakúpiť.
+
+Predvolená sada sa uloží pri prvom použití. Úprava exportu Markdown nemení aplikáciu: upravte kartu promptu alebo obnovte predvolené nastavenia.
+
+[Predvolené texty promptov](../ai-processing/prompt-studio.md#standard-templates) · [Dodávaní asistenti](../ai-processing/prompter.md#assistant-templates)

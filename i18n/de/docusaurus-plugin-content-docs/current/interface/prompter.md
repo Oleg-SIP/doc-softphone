@@ -60,3 +60,16 @@ Das Fenster sagt in einer Zeile unter den Schaltflächen, was fehlt.
 | *Der Spracherkenner hat nicht zu hören begonnen. Prüfen Sie seine Live-Adresse und sein Modell unter Einstellungen → Transkription.* | Die Adresse für den Souffleur, das Modell oder der Schlüssel ist falsch. **Prüfen** auf der Karte des Spracherkenners sagt, was davon. |
 | *Das Monatsbudget für Spracherkenner ist aufgebraucht.* | Erhöhen Sie **Spracherkenner, pro Monat** oder warten Sie, bis der Monat wechselt. |
 | *Das Monatsbudget für Modelle ist aufgebraucht. Die Worte laufen weiter, das Soufflieren ist beendet.* | Erhöhen Sie **Modelle, pro Monat**. |
+
+## Mitgelieferte Helfer {#standard-assistants}
+
+| `code` | Mitgelieferte Helfer |
+| --- | --- |
+| `rt-subtitles` | Untertitel |
+| `rt-translate` | Übersetzung |
+| `rt-objections` | Vertrieb |
+| `rt-interview` | Hilfe im Vorstellungsgespräch |
+
+Dies sind die mitgelieferten Helfernamen; Screenshots können frühere Namen zeigen. „—“ von `rt-objections` bedeutet, dass kein sinnvoller Vorschlag vorliegt. Die Anweisungen behandeln auch offene Fragen und Kaufbereitschaft.
+
+[Standardtexte der Prompts](../ai-processing/prompter.md#assistant-templates)

@@ -60,3 +60,16 @@ Het venster zegt in een regel onder de knoppen wat er ontbreekt.
 | *De herkenner is niet gaan meeluisteren. Controleer zijn live adres en zijn model onder Instellingen → Transcriptie.* | Het adres voor de souffleur, het model of de sleutel klopt niet. **Testen** op de kaart van de herkenner zegt welke. |
 | *Het maandbudget voor herkenners is op.* | Verhoog **Herkenners, per maand**, of wacht tot de maand om is. |
 | *Het maandbudget voor modellen is op. De woorden gaan door; het souffleren is gestopt.* | Verhoog **Modellen, per maand**. |
+
+## Meegeleverde assistenten {#standard-assistants}
+
+| `code` | Meegeleverde assistenten |
+| --- | --- |
+| `rt-subtitles` | Ondertitels |
+| `rt-translate` | Vertaling |
+| `rt-objections` | Verkoop |
+| `rt-interview` | Hulp bij het gesprek |
+
+Dit zijn de meegeleverde assistentnamen; schermafbeeldingen kunnen eerdere namen tonen. “—” van `rt-objections` betekent dat er geen nuttige suggestie is. De instructies behandelen ook onbeantwoorde vragen en koopbereidheid.
+
+[Standaardteksten van prompts](../ai-processing/prompter.md#assistant-templates)

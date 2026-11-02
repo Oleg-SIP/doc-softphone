@@ -32,16 +32,16 @@ Mallit, jotka lukevat litteroinnin ja kirjoittavat siitä. Paina **Lisää** lis
 
 *Se, mikä suoritetaan itsestään, tässä järjestyksessä. Kukin laukeaa enintään kerran keskustelua kohti.* Sääntö on rivi, jossa on valintaruutu, joka ottaa sen käyttöön tai poistaa käytöstä, sen nimi ja sen alla, mitä se tekee. **▲** ja **▼** muuttavat järjestystä. Ohjelman mukana tulee kahdeksan:
 
-| Sääntö | Toiminto | Milloin |
-| --- | --- | --- |
-| **Litteroi jokainen keskustelu** | Litteroi sen. | aina |
-| **Tiivistä se** | Pyytää mallilta: **Tiivistelmä**. | aina |
-| **Tiivistä se yhdeksi riviksi** | Pyytää mallilta: **Yhden rivin tiivistelmä**. | aina |
-| **Lajittele se luokkaan** | Pyytää mallilta: **Luokka**. | aina |
-| **Merkitse se** | Pyytää mallilta: **Tunnisteet**. | aina |
-| **Nosta esiin kaikki, mikä ansaitsee katseen** | Pyytää mallilta: **Merkit**. | aina |
-| **Arvioi se, jos kyse oli myynnistä** | Pyytää mallilta: **Myynnin laatu**. | vain jos luokka on **Myynti** |
-| **Arvioi se, jos kyse oli tuesta** | Pyytää mallilta: **Tuen laatu**. | vain jos luokka on **Tuki** |
+| Sääntö | `code` | Toiminto | `prompt` | Milloin |
+| --- | --- | --- | --- | --- |
+| **Litteroi jokainen keskustelu** | `transcribe` | Litteroi sen. | — | aina |
+| **Tiivistä se** | `summary` | Pyytää mallilta: **Tiivistelmä**. | `summary` | aina |
+| **Tiivistä se yhdeksi riviksi** | `super-summary` | Pyytää mallilta: **Yhden rivin tiivistelmä**. | `super-summary` | aina |
+| **Lajittele se luokkaan** | `categorise` | Pyytää mallilta: **Luokka**. | `categorise` | aina |
+| **Merkitse se** | `tags` | Pyytää mallilta: **Tunnisteet**. | `tags` | aina |
+| **Nosta esiin kaikki, mikä ansaitsee katseen** | `red-flags` | Pyytää mallilta: **Merkit**. | `red-flags` | aina |
+| **Arvioi se, jos kyse oli myynnistä** | `sales-quality` | Pyytää mallilta: **Myynnin laatu**. | `sales-quality` | vain jos luokka on **Myynti** |
+| **Arvioi se, jos kyse oli tuesta** | `support-quality` | Pyytää mallilta: **Tuen laatu**. | `support-quality` | vain jos luokka on **Tuki** |
 
 Järjestyksellä on väliä: kaksi viimeistä sääntöä tarvitsevat luokan, jonka niitä edeltävä sääntö on asettanut. **Lisää** tekee oman säännön.
 
@@ -63,3 +63,13 @@ Rajoja on kaksi, koska kuukauden voi laskea kahdella tavalla. Molemmat ovat tyhj
 **Palauta oletusarvot** palauttaa kehotteet ja säännöt sellaisiksi kuin ne tulivat ohjelman mukana, käyttöliittymän nykyisellä kielellä. Kielimalleihisi ei kosketa.
 
 Ohjelman mukana tulleet kehotteet ja säännöt pysyvät sillä kielellä, jolla ne olivat, kun vaihdat käyttöliittymän kieltä; **Palauta oletusarvot** tuo ne uudelle kielelle. Jokainen kehote merkitään silloin oikealla *muutettu*.
+
+## Oletussuoritus {#default-execution}
+
+Suorita `summary` ennen kehotetta `super-summary`, joka käyttää arvoa `{{artifact:summary}}`. Suorita `categorise` ennen laatuarviointia: `sales-quality` edellyttää luokkaa `sales` ja `support-quality` luokkaa `support`.
+
+Kehotteille `action-items`, `topics`, `entities` ja `qa` ei ole automaattisia oletussääntöjä. Käynnistä kehote käsin tai lisää sopiva sääntö; anna kysymys käynnistäessäsi kehotteen `qa`.
+
+Oletuskokoelma tallennetaan ensimmäisellä käyttökerralla. Markdown-viennin muokkaaminen ei muuta sovellusta: muokkaa kehotteen korttia tai palauta oletukset.
+
+[Kehotteiden oletustekstit](prompt-studio.md#standard-templates)

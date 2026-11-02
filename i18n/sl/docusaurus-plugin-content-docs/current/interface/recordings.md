@@ -186,3 +186,13 @@ Posnetek, narejen drugje — na mobilnem telefonu, diktafonu ali v drugem sistem
 ## Brisanje posnetka {#deleting-a-recording}
 
 Ko se posnetek izbriše, gre z njim vse, kar je iz njega nastalo: prepisi in obdelave. Kako dolgo se posnetki hranijo sami od sebe, se nastavi v [Posnetkih](../recordings.md#retention).
+
+## Razumevanje rezultatov {#result-notes}
+
+Za `action-items`, `topics`, `entities` in `qa` ni privzetih samodejnih pravil. Poziv zaženite ročno ali dodajte ustrezno pravilo; ob zagonu `qa` vnesite vprašanje.
+
+Prazen seznam nalog ali opozoril je lahko pravilen rezultat. Manjkajočih odgovornih oseb in rokov ni dovoljeno izmišljati. Odgovori na vprašanja morajo temeljiti samo na prepisu.
+
+Zaženite `summary` pred `super-summary`, ki uporablja `{{artifact:summary}}`. Pred oceno kakovosti zaženite `categorise`: `sales-quality` potrebuje kategorijo `sales`, `support-quality` pa `support`.
+
+[Privzeta besedila pozivov](../ai-processing/prompt-studio.md#standard-templates) · [Oblike odgovorov](../ai-processing/dictionaries.md#response-formats)

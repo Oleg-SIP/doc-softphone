@@ -125,3 +125,21 @@ Quando qualcosa non avviene, il telefono dice perché su una riga a parte. Una r
 ### All'avvio del telefono {#when-the-phone-starts}
 
 *Database illeggibile* significa che il database è stato creato da un'altra versione del programma e questa non sa leggerlo. Di solito una versione più vecchia è stata avviata sui dati di una più nuova: reinstallando la versione più nuova, il database si riapre com'era. **Ricominciare** invece crea un database vuoto — ogni contatto e ogni chiamata della cronologia vanno persi, e non si può annullare. Prima di premerlo, può tenere una copia del file del database; [Diagnostica](/troubleshooting/diagnostics#files) dice dove si trova.
+
+## Esecuzione predefinita {#default-prompt-execution}
+
+Non esistono regole automatiche predefinite per `action-items`, `topics`, `entities` o `qa`. Eseguire il prompt manualmente o aggiungere una regola adatta; inserire la domanda quando si esegue `qa`.
+
+Eseguire `summary` prima di `super-summary`, che usa `{{artifact:summary}}`. Eseguire `categorise` prima della valutazione: `sales-quality` richiede `sales`, mentre `support-quality` richiede `support`.
+
+[Esecuzione predefinita](../ai-processing/processing.md#default-execution)
+
+## Interpretare i risultati {#prompt-result-notes}
+
+Un elenco vuoto di attività o segnalazioni può essere corretto. Non vanno inventati responsabili o scadenze. Le risposte alle domande devono basarsi soltanto sulla trascrizione.
+
+Questi sono i nomi degli assistenti inclusi; le schermate possono mostrare nomi precedenti. «—» da `rt-objections` significa che non c’è un suggerimento utile. Le istruzioni trattano anche domande aperte e segnali di disponibilità all’acquisto.
+
+Il set predefinito viene salvato al primo utilizzo. Modificare un’esportazione Markdown non cambia l’applicazione: modificare la scheda del prompt o ripristinare i valori predefiniti.
+
+[Testi dei prompt predefiniti](../ai-processing/prompt-studio.md#standard-templates) · [Assistenti inclusi](../ai-processing/prompter.md#assistant-templates)

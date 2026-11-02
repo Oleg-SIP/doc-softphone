@@ -18,10 +18,10 @@ Görüşmenin ne hakkında olduğu; **görüşme başına bir tane seçilir**. P
 
 | Ad | Kod | Ne için kullanılır |
 | --- | --- | --- |
-| **Satış** | `sales` | Satış yapma, fiyat verme, pazarlık etme ya da bir satın almanın ardından takip — bir müşterinin bir şeyin ne kadar tuttuğunu sorması dahil. |
-| **Destek** | `support` | Birine zaten sahip olduğu bir ürün ya da hizmetle ilgili yardım: bir arıza, kullanımıyla ilgili bir soru, nasıl çalıştığına dair bir yakınma. |
-| **Özel** | `personal` | Hiç iş değil — bu hattan yapılmış olan özel bir görüşme. |
-| **Diğer** | `other` | İş, ama ne satış ne destek: bir tedarikçi, bir iş arkadaşı, bir teslimat, yanlış bir numara. Diğerleri arasında tahmin yürütmek yerine bunu seçin. |
+| **Satış** | `sales` | Satma, fiyat verme, pazarlık ya da bir alışverişin ardını izleme — müşterinin bir şeyin kaça olduğunu sorması da buna girer. |
+| **Destek** | `support` | Birine, zaten sahip olduğu bir ürün ya da hizmet konusunda yardım: bir arıza, kullanımla ilgili bir soru, işleyişinden bir yakınma. |
+| **Özel** | `personal` | Hiç iş değil — rastgele bu hatta yapılmış özel bir konuşma. |
+| **Diğer** | `other` | İş, ama ne satış ne destek: bir tedarikçi, bir çalışma arkadaşı, bir teslimat, yanlış numara. Ötekiler arasında tahmin yürütmek yerine bunu seçin. |
 
 Kendi kategorinizi eklemek için **Ekle** düğmesine basın.
 
@@ -31,14 +31,22 @@ Kendi kategorinizi eklemek için **Ekle** düğmesine basın.
 
 | Ad | Kod | Ne için kullanılır |
 | --- | --- | --- |
-| **Geri arama sözü** | `callback` | Bu çağrıdaki biri geri arama sözü verdi ya da geri aranmayı istedi. |
-| **Yakınma** | `complaint` | Karşı taraf, çözülmüş olsun ya da olmasın, memnuniyetsizliğini dile getirdi. |
-| **Üste taşındı** | `escalation` | Çağrı başka birine devredildi ya da karşı taraf devredilmesini istedi. |
-| **VIP müşteri** | `vip` | Karşı tarafa önemli bir müşteri olarak davranıldı ya da kendisi öyle olduğunu söyledi. |
+| **Geri arama sözü** | `callback` | Bu çağrıda biri geri arayacağına söz verdi ya da kendisinin aranmasını istedi. |
+| **Yakınma** | `complaint` | Karşı taraf hoşnutsuzluğunu dile getirdi, çözülmüş olsun ya da olmasın. |
+| **Üste taşındı** | `escalation` | Çağrı başka birine verildi ya da karşı taraf bunu istedi. |
+| **VIP müşteri** | `vip` | Karşı tarafa önemli bir müşteri gibi davranıldı ya da kendisi öyle olduğunu söyledi. |
 
 ## Uyarı işaretleri {#red-flags}
 
 Görüşmede kanıtı ve zamanıyla bulunan, dikkat gerektiren şeyler — örneğin *Öfkeli müşteri* ya da *Ayrılma tehlikesi*. Uyarı işaretleri [Kayıtlar penceresinde](../interface/recordings.md) kırmızıyla çizilir ve her birinin bir önem derecesi vardır: düşük, orta ya da yüksek.
+
+| Ad | Kod | `severity` | Ne için kullanılır |
+| --- | --- | --- | --- |
+| **Öfkeli müşteri** | `angry-customer` | `high` | Karşı tarafın öfkeli olduğu, hakaret ettiği ya da ayrılmakla korkuttuğu duyuluyordu. |
+| **Ayrılma tehlikesi** | `churn-risk` | `high` | İptal, yenilememe ya da başkasına geçme, ne kadar sakin söylenmiş olursa olsun, dile getirildi. |
+| **Verilen söz** | `promise-made` | `medium` | Bizim taraf belirli bir şeye bağlandı — bir tarih, bir fiyat, bir onarım, bir geri ödeme. |
+| **Duyarlı veri** | `sensitive-data` | `high` | Bir kart numarası, parola, belge numarası ya da bir kayıtta bulunmaması gereken başka bir şey sesli okundu. |
+| **Rakip** | `competitor` | `low` | Karşı taraf aynı şeyi sunan başka birini adlandırdı ya da bizi onunla karşılaştırdı. |
 
 ## Yönergeler {#instructions}
 
@@ -65,3 +73,96 @@ Listenin başındaki **Ekle** bir girdi ekler.
 ## Öntanımlılar {#defaults}
 
 **Öntanımlılara dön**, her sözlüğü programla geldiği hâline, geçerli arayüz dilinde geri getirir. Görüşmelerinizin zaten yerleştirildiği yerlere dokunulmaz.
+
+## Yanıt biçimleri {#response-formats}
+
+Bu bloklar yerleşik talimatları aynen aktarır. Yanıt biçimlerini açıklarlar; alternatifler bir gösterim biçimidir, çalıştırılabilir JSON örnekleri değildir.
+
+### Düzyazı (`shape-plain`) {#shape-plain}
+
+```text
+Yalın düzyazıyla yanıtlayın. JSON, liste ya da başlık kullanmayın.
+```
+
+### Maddeler (`shape-list`) {#shape-list}
+
+```text
+Yalnızca JSON ile, tam olarak şu biçimde yanıtlayın:
+{"items": [{"text": "yapılacak olan", "owner": "kim, ya da boş", "due": "ne zaman, ya da boş"}]}
+Sıralanacak bir şey yoksa boş dizi kullanın. JSON dışında hiçbir şey yazmayın.
+```
+
+### Etiketler (`shape-labels`) {#shape-labels}
+
+```text
+Yalnızca JSON ile, tam olarak şu biçimde yanıtlayın:
+{"labels": [{"code": "verilen listeden bir kod", "confidence": 0.0}]}
+Yalnızca listedeki kodları kullanın. Hiçbiri uymuyorsa boş dizi kullanın. Kod
+uydurmayın ve JSON dışında hiçbir şey yazmayın.
+```
+
+### Puan (`shape-score`) {#shape-score}
+
+```text
+Yalnızca JSON ile, tam olarak şu biçimde yanıtlayın:
+{"score": 3, "rationale": "neden bu sayı da bir üstü değil",
+ "evidence": [{"at_ms": 0, "quote": "dayandığınız sözler"}]}
+Puan 1 ile 5 arası bir tam sayıdır. JSON dışında hiçbir şey yazmayın.
+```
+
+### Ölçütler (`shape-rubric`) {#shape-rubric}
+
+```text
+Yalnızca JSON ile, tam olarak şu biçimde yanıtlayın:
+{"overall": 3, "rationale": "neden bu sayı da bir üstü değil",
+ "criteria": [{"name": "ölçüt, size verildiği gibi",
+               "verdict": "pass" ya da "weak" ya da "fail" ya da "n/a",
+               "note": "tek cümle"}]}
+Verilen her ölçütü değerlendirin, başkasını değil. Genel puan 1 ile 5 arası bir
+tam sayıdır. JSON dışında hiçbir şey yazmayın.
+```
+
+### İşaretler (`shape-flags`) {#shape-flags}
+
+```text
+Yalnızca JSON ile, tam olarak şu biçimde yanıtlayın:
+{"flags": [{"code": "verilen listeden bir kod",
+            "severity": "low" ya da "medium" ya da "high",
+            "evidence": "dayandığınız sözler",
+            "at_ms": 0}]}
+Yalnızca listedeki kodları kullanın ve her birini en çok bir kez kaldırın. Hiçbir
+şey uymuyorsa boş dizi kullanın. JSON dışında hiçbir şey yazmayın.
+```
+
+### Yanıt (`shape-qa`) {#shape-qa}
+
+```text
+Yalnızca JSON ile, tam olarak şu biçimde yanıtlayın:
+{"answer": "yanıtınız ya da açıkça görüşmenin bunu söylemediği",
+ "citations": [{"at_ms": 0, "quote": "yanıtınızın dayandığı sözler"}]}
+Görüşmeden başka hiçbir şeyden yanıtlamayın. JSON dışında hiçbir şey yazmayın.
+```
+
+### JSON (`shape-json`) {#shape-json}
+
+```text
+Yalnızca JSON ile, yukarıda istenen biçimde yanıtlayın. JSON dışında hiçbir şey yazmayın.
+```
+
+### Konuşulduğu gibi (`language-as-spoken`) {#language-as-spoken}
+
+```text
+Yanıtınızı, görüşmenin yapıldığı dilde yazın.
+```
+
+### Konuşulduğu gibi, adıyla (`language-as-spoken-named`) {#language-as-spoken-named}
+
+```text
+Yanıtınızı, görüşmenin yapıldığı dilde yazın; o da şudur: {language}.
+```
+
+### Belirtilen dil (`language-named`) {#language-named}
+
+```text
+Yanıtınızı şu dilde yazın: {language}.
+```

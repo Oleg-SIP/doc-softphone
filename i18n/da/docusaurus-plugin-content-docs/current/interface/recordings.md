@@ -186,3 +186,13 @@ En optagelse lavet et andet sted — på en mobiltelefon, en diktafon eller et a
 ## Slette en optagelse {#deleting-a-recording}
 
 Når en optagelse slettes, forsvinder alt, hvad der er lavet ud fra den, sammen med den: udskrifterne og opsummeringerne. Hvor længe optagelser gemmes af sig selv, indstilles under [Optagelser](../recordings.md#retention).
+
+## Forstå resultaterne {#result-notes}
+
+Der er ingen automatiske standardregler for `action-items`, `topics`, `entities` eller `qa`. Kør prompten manuelt eller tilføj en passende regel; indtast spørgsmålet, når du kører `qa`.
+
+En tom liste over opgaver eller flag kan være korrekt. Manglende ansvarlige og datoer må ikke opfindes. Svar på spørgsmål skal udelukkende bygge på transskriptionen.
+
+Kør `summary` før `super-summary`, som bruger `{{artifact:summary}}`. Kør `categorise` før kvalitetsvurderingen: `sales-quality` kræver `sales`, og `support-quality` kræver `support`.
+
+[Standardtekster til prompts](../ai-processing/prompt-studio.md#standard-templates) · [Svarformater](../ai-processing/dictionaries.md#response-formats)

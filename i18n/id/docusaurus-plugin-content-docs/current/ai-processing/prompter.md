@@ -39,12 +39,14 @@ Pembisik dibaca sambil berbicara, sering dari jarak lebih jauh daripada bagian t
 
 Asisten adalah peran yang diminta dari pembisik. *Masing-masing mendengarkan percakapan yang sedang berlangsung dan menulis sesuatu di jendela pembisik: kata-kata sebagaimana diucapkan, terjemahannya, atau saran tentang apa yang harus dikatakan selanjutnya.* Yang mana dijalankan, Anda pilih di jendela pembisik. Program ini menyertakan empat:
 
-| Asisten | Yang ditulisnya | Bertanya kepada model |
-| --- | --- | --- |
-| **Subtitel** | Kata-kata kedua pihak, saat diucapkan. | tidak |
-| **Terjemahan** | Kata-kata pihak lain, diterjemahkan ke bahasa program. | ya |
-| **Penolakan dalam panggilan** | Bagi yang berjualan lewat telepon: saat pelanggan mengajukan keberatan, keberatan itu dalam satu baris dan satu baris yang menjawabnya. | ya |
-| **Bantuan wawancara** | Bagi yang sedang diwawancarai: jawaban atas pertanyaan yang baru diajukan dalam beberapa baris pendek, atau apa yang perlu dibahas di jawaban berikutnya. | ya |
+| Asisten | `code` | Yang ditulisnya | Bertanya kepada model |
+| --- | --- | --- | --- |
+| **Subtitel** | `rt-subtitles` | Kata-kata kedua pihak, saat diucapkan. | tidak |
+| **Terjemahan** | `rt-translate` | Kata-kata pihak lain, diterjemahkan ke bahasa program. | ya |
+| **Penjualan** | `rt-objections` | Bagi yang berjualan lewat telepon: saat pelanggan mengajukan keberatan, keberatan itu dalam satu baris dan satu baris yang menjawabnya. | ya |
+| **Bantuan wawancara** | `rt-interview` | Bagi yang sedang diwawancarai: jawaban atas pertanyaan yang baru diajukan dalam beberapa baris pendek, atau apa yang perlu dibahas di jawaban berikutnya. | ya |
+
+Ini adalah nama asisten bawaan; tangkapan layar mungkin menampilkan nama sebelumnya. “—” dari `rt-objections` berarti tidak ada saran yang berguna. Instruksinya juga mencakup pertanyaan yang belum dijawab dan kesiapan membeli.
 
 **▲** dan **▼** mengubah urutan, yang juga menjadi urutan daftar tarik-turun di [jendela pembisik](/interface/prompter#the-window). **Tambah** membuat asisten Anda sendiri. **Kembalikan bawaan** mengembalikan petunjuk dan aturan seperti saat datang bersama program, di sini maupun di [Pemrosesan](/ai-processing/processing#defaults); model bahasa Anda tidak diubah.
 
@@ -74,3 +76,81 @@ Menekan sebuah asisten membuka kartunya. Kartu ini sama dengan kartu sebuah [pet
 | **Model, sebulan** | Saran berhenti dan subtitel tetap berjalan. |
 
 Kosong berarti tanpa batas. Biaya satu menit audio langsung adalah **Harga per menit** pengenal suara, yang diisi pada kartunya di [Transkripsi](/ai-processing/transcription#the-recognisers-card); tanpa itu, pembisik menyebutkan bahwa angka yang ditampilkan hanyalah perkiraan.
+
+## Asisten bawaan {#assistant-templates}
+
+`system` mengatur perilaku model; `body` menjelaskan tugas. Bentuk dan bahasa jawaban diberikan terpisah melalui instruksi daftar.
+
+[Placeholder](prompt-studio.md#placeholders)
+
+### Subtitel (`rt-subtitles`) {#rt-subtitles}
+
+**Bentuk jawaban:** `plain`.
+
+Peran dan tugas kosong: model bahasa tidak dipanggil.
+
+### Terjemahan (`rt-translate`) {#rt-translate}
+
+**Bentuk jawaban:** `plain`.
+
+**Peran (`system`)**
+
+```text
+Kamu menerjemahkan ucapan seiring ia terjadi. Kamu menjawab hanya dengan terjemahannya — tanpa pembuka, tanpa tanda kutip, tanpa penjelasan — dan membiarkan nama, angka dan harga tepat seperti yang diucapkan.
+```
+
+**Tugas (`body`)**
+
+```text
+Terjemahkan ke {{language}}:
+
+{{reply}}
+```
+
+### Penjualan (`rt-objections`) {#rt-objections}
+
+**Bentuk jawaban:** `plain`.
+
+**Peran (`system`)**
+
+```text
+Anda membantu seseorang yang menjual melalui telepon. Anda menjawab dalam beberapa baris pendek yang dapat dibaca sambil mendengarkan, tidak pernah dalam paragraf, dan tidak pernah menjanjikan apa pun atas namanya.
+```
+
+**Tugas (`body`)**
+
+```text
+Pihak lain baru saja berkata:
+
+{{reply}}
+
+Sebelumnya dalam percakapan ini:
+
+{{conversation}}
+
+Sebutkan dalam satu baris apa yang sedang terjadi — penolakan, pertanyaan yang belum dijawab, tanda mereka siap membeli — dan dalam satu baris apa yang harus dikatakan berikutnya. Jika tidak ada yang perlu dikatakan, tulis hanya „—”.
+```
+
+### Bantuan wawancara (`rt-interview`) {#rt-interview}
+
+**Bentuk jawaban:** `plain`.
+
+**Peran (`system`)**
+
+```text
+Anda membantu seseorang yang sedang diwawancarai. Anda menjawab dalam beberapa baris pendek yang dapat dibaca sambil mendengarkan, tidak pernah dalam paragraf, dan tidak pernah mengarang fakta tentang orang itu.
+```
+
+**Tugas (`body`)**
+
+```text
+Pihak lain baru saja berkata:
+
+{{reply}}
+
+Sebelumnya dalam percakapan ini:
+
+{{conversation}}
+
+Dalam tiga baris pendek, katakan apa yang sebenarnya ia tanyakan dan apa yang harus dicakup oleh jawaban yang baik.
+```

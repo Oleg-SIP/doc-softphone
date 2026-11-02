@@ -32,16 +32,16 @@ Modellerna som läser en utskrift och skriver om den. Tryck på **Lägg till** f
 
 *Det som körs av sig självt, i den här ordningen. Var och en avfyras högst en gång per samtal.* En regel är en rad med en kryssruta som slår på eller stänger av den, dess namn och under det vad den gör. **▲** och **▼** ändrar ordningen. Programmet levereras med åtta:
 
-| Regel | Gör | När |
-| --- | --- | --- |
-| **Transkribera varje samtal** | Skriver ut det. | alltid |
-| **Sammanfatta det** | Ber en modell om: **Sammanfattning**. | alltid |
-| **Koka ner det till en rad** | Ber en modell om: **Sammanfattning på en rad**. | alltid |
-| **Sortera det under en kategori** | Ber en modell om: **Kategori**. | alltid |
-| **Etikettera det** | Ber en modell om: **Etiketter**. | alltid |
-| **Ta upp allt som är värt en blick** | Ber en modell om: **Signaler**. | alltid |
-| **Bedöm det, om det var försäljning** | Ber en modell om: **Säljkvalitet**. | bara om kategorin är **Försäljning** |
-| **Bedöm det, om det var support** | Ber en modell om: **Supportkvalitet**. | bara om kategorin är **Support** |
+| Regel | `code` | Gör | `prompt` | När |
+| --- | --- | --- | --- | --- |
+| **Transkribera varje samtal** | `transcribe` | Skriver ut det. | — | alltid |
+| **Sammanfatta det** | `summary` | Ber en modell om: **Sammanfattning**. | `summary` | alltid |
+| **Koka ner det till en rad** | `super-summary` | Ber en modell om: **Sammanfattning på en rad**. | `super-summary` | alltid |
+| **Sortera det under en kategori** | `categorise` | Ber en modell om: **Kategori**. | `categorise` | alltid |
+| **Etikettera det** | `tags` | Ber en modell om: **Etiketter**. | `tags` | alltid |
+| **Ta upp allt som är värt en blick** | `red-flags` | Ber en modell om: **Signaler**. | `red-flags` | alltid |
+| **Bedöm det, om det var försäljning** | `sales-quality` | Ber en modell om: **Säljkvalitet**. | `sales-quality` | bara om kategorin är **Försäljning** |
+| **Bedöm det, om det var support** | `support-quality` | Ber en modell om: **Supportkvalitet**. | `support-quality` | bara om kategorin är **Support** |
 
 Ordningen spelar roll: de två sista reglerna behöver kategorin som regeln före dem har satt. **Lägg till** skapar en egen regel.
 
@@ -63,3 +63,13 @@ Det finns två gränser eftersom en månad kan räknas i två saker. Båda är t
 **Återställ standardvärden** ställer tillbaka prompterna och reglerna som de kom med programmet, på gränssnittets nuvarande språk. Dina språkmodeller lämnas orörda.
 
 Prompterna och reglerna som kom med programmet stannar på det språk de var på när du byter gränssnittsspråk; **Återställ standardvärden** för över dem till det nya. Varje prompt markeras då *ändrad* till höger.
+
+## Standardkörning {#default-execution}
+
+Kör `summary` före `super-summary`, som använder `{{artifact:summary}}`. Kör `categorise` före kvalitetsbedömningen: `sales-quality` kräver `sales`, och `support-quality` kräver `support`.
+
+Det finns inga automatiska standardregler för `action-items`, `topics`, `entities` eller `qa`. Kör prompten manuellt eller lägg till en lämplig regel; ange frågan när du kör `qa`.
+
+Standarduppsättningen sparas vid första användningen. En redigerad Markdown-export ändrar inte programmet: Redigera promptkortet eller återställ standardinställningarna.
+
+[Standardtexter för promptar](prompt-studio.md#standard-templates)

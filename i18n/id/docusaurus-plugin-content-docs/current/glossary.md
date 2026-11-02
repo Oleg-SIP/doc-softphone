@@ -32,3 +32,7 @@ description: Istilah telepon IP dan AI Softphone yang digunakan dalam dokumentas
 | **Transkrip** | Percakapan dalam bentuk teks, giliran demi giliran, selaras dengan audionya. |
 | **Webhook** | Permintaan yang dikirim telepon ke sistem lain ketika panggilan dimulai, berubah, atau berakhir. Lihat [Webhook](/integration/webhooks). |
 | **Pita lebar** | Codec dengan rentang suara yang lebih lebar daripada saluran telepon biasa, sehingga suara terdengar lebih jelas. |
+| **[Placeholder](ai-processing/prompt-studio.md#placeholders)** | Elemen dalam prompt yang diganti dengan data percakapan. |
+| **[Hasil prompt lain](ai-processing/processing.md#default-execution)** | Hasil yang sudah ada dan digunakan kembali oleh prompt lain, misalnya `{{artifact:summary}}`. |
+| **[Peran model](ai-processing/prompt-studio.md#role-and-task)** | `system` mengatur perilaku model; `body` menjelaskan tugas. Bentuk dan bahasa jawaban diberikan terpisah melalui instruksi daftar. |
+| **[Bentuk jawaban](ai-processing/dictionaries.md#response-formats)** | Struktur hasil, seperti prosa, butir, tag, peringatan, atau kriteria penilaian. |

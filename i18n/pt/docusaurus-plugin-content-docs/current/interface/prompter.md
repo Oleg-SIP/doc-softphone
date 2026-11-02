@@ -60,3 +60,16 @@ A janela diz o que falta numa linha por baixo dos botões.
 | *O reconhecedor não começou a ouvir. Verifique o seu endereço em direto e o seu modelo em Definições → Transcrição.* | O endereço para o ponto, o modelo ou a chave está errado. **Testar** no cartão do reconhecedor diz qual. |
 | *A verba mensal para reconhecedores está esgotada.* | Aumente **Reconhecedores, por mês**, ou espere que o mês mude. |
 | *A verba mensal para modelos está esgotada. As palavras continuam; o apontar parou.* | Aumente **Modelos, por mês**. |
+
+## Assistentes incluídos {#standard-assistants}
+
+| `code` | Assistentes incluídos |
+| --- | --- |
+| `rt-subtitles` | Legendas |
+| `rt-translate` | Tradução |
+| `rt-objections` | Vendas |
+| `rt-interview` | Ajuda na entrevista |
+
+Estes são os nomes dos assistentes incluídos; as capturas podem mostrar nomes anteriores. «—» de `rt-objections` significa que não há uma sugestão útil. As instruções também abrangem perguntas por responder e sinais de intenção de compra.
+
+[Textos dos prompts predefinidos](../ai-processing/prompter.md#assistant-templates)

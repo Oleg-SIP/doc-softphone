@@ -186,3 +186,13 @@ Kitur — mobiliuoju telefonu, diktofonu ar kitoje sistemoje — padarytą įra�
 ## Įrašo trynimas {#deleting-a-recording}
 
 Kai įrašas ištrinamas, kartu su juo dingsta viskas, kas iš jo sukurta: iššifruoti tekstai ir apibendrinimai. Kiek laiko įrašai laikomi savaime, nustatoma skiltyje [Įrašai](../recordings.md#retention).
+
+## Rezultatų supratimas {#result-notes}
+
+Užklausoms `action-items`, `topics`, `entities` ir `qa` nėra numatytųjų automatinių taisyklių. Paleiskite užklausą rankiniu būdu arba pridėkite tinkamą taisyklę; paleisdami `qa`, įveskite klausimą.
+
+Tuščias užduočių ar įspėjimų sąrašas gali būti teisingas rezultatas. Negalima išgalvoti trūkstamų atsakingų asmenų ir datų. Atsakymai į klausimus turi remtis tik transkriptu.
+
+Vykdykite `summary` prieš `super-summary`, kuri naudoja `{{artifact:summary}}`. Prieš kokybės vertinimą vykdykite `categorise`: `sales-quality` reikia kategorijos `sales`, o `support-quality` — `support`.
+
+[Numatytieji užklausų tekstai](../ai-processing/prompt-studio.md#standard-templates) · [Atsakymų formatai](../ai-processing/dictionaries.md#response-formats)

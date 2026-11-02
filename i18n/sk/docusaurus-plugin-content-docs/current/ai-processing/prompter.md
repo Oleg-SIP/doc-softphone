@@ -39,12 +39,14 @@ Našepkávač sa číta počas hovorenia, často z väčšej vzdialenosti než z
 
 Pomocník je to, čím má našepkávač byť. *Každý z nich počúva prebiehajúci hovor a píše niečo do okna našepkávača: slová tak, ako padajú, ich preklad, alebo nápovedu, čo povedať ďalej.* Ktorý spustiť, vyberáte v okne našepkávača. Program prináša štyroch:
 
-| Pomocník | Čo píše | Pýta sa modelu |
-| --- | --- | --- |
-| **Titulky** | Slová oboch strán, keď zaznievajú. | nie |
-| **Preklad** | Slová druhej strany preložené do jazyka programu. | áno |
-| **Námietky v hovore** | Pre toho, kto predáva po telefóne: keď zákazník vznesie námietku, námietku v jednom riadku a jeden riadok, ktorý na ňu odpovedá. | áno |
-| **Pomoc pri pohovore** | Pre toho, s kým sa vedie pohovor: odpoveď na práve položenú otázku v niekoľkých krátkych riadkoch alebo to, čo zahrnúť do ďalšej odpovede. | áno |
+| Pomocník | `code` | Čo píše | Pýta sa modelu |
+| --- | --- | --- | --- |
+| **Titulky** | `rt-subtitles` | Slová oboch strán, keď zaznievajú. | nie |
+| **Preklad** | `rt-translate` | Slová druhej strany preložené do jazyka programu. | áno |
+| **Predaj** | `rt-objections` | Pre toho, kto predáva po telefóne: keď zákazník vznesie námietku, námietku v jednom riadku a jeden riadok, ktorý na ňu odpovedá. | áno |
+| **Pomoc pri pohovore** | `rt-interview` | Pre toho, s kým sa vedie pohovor: odpoveď na práve položenú otázku v niekoľkých krátkych riadkoch alebo to, čo zahrnúť do ďalšej odpovede. | áno |
+
+Sú to dodávané názvy asistentov; snímky obrazovky môžu ukazovať staršie názvy. „—“ od `rt-objections` znamená, že nie je užitočný návrh. Pokyny zahŕňajú aj nezodpovedané otázky a pripravenosť nakúpiť.
 
 **▲** a **▼** menia poradie a to je poradie rozbaľovacieho zoznamu v [okne našepkávača](/interface/prompter#the-window). **Pridať** vytvorí vlastného pomocníka. **Obnoviť predvolené** vráti pokyny a pravidlá do stavu, v akom prišli s programom, tu aj v [Spracovanie](/ai-processing/processing#defaults); vaše jazykové modely zostanú nedotknuté.
 
@@ -74,3 +76,81 @@ Kliknutím na pomocníka sa otvorí jeho karta. Je to tá istá karta ako pri [p
 | **Modely, za mesiac** | Nápovedy sa zastavia a titulky pokračujú. |
 
 Prázdne znamená bez stropu. Cena minúty živého zvuku je **Cena za minútu** rozpoznávača, zadaná na jeho karte v [Prepis](/ai-processing/transcription#the-recognisers-card); bez nej našepkávač upozorní, že zobrazená suma je odhad.
+
+## Dodávaní asistenti {#assistant-templates}
+
+`system` určuje správanie modelu; `body` opisuje úlohu. Tvar a jazyk odpovede sa zadávajú samostatne pokynmi zo zoznamov.
+
+[Zástupné symboly](prompt-studio.md#placeholders)
+
+### Titulky (`rt-subtitles`) {#rt-subtitles}
+
+**Tvar odpovede:** `plain`.
+
+Prázdna rola a úloha: jazykový model sa nevolá.
+
+### Preklad (`rt-translate`) {#rt-translate}
+
+**Tvar odpovede:** `plain`.
+
+**Rola (`system`)**
+
+```text
+Prekladáš reč, ako prebieha. Odpovedáš iba prekladom — bez úvodu, bez úvodzoviek, bez vysvetlenia — a mená, čísla a ceny necháváš presne tak, ako boli povedané.
+```
+
+**Úloha (`body`)**
+
+```text
+Prelož do {{language}}:
+
+{{reply}}
+```
+
+### Predaj (`rt-objections`) {#rt-objections}
+
+**Tvar odpovede:** `plain`.
+
+**Rola (`system`)**
+
+```text
+Pomáhate človeku, ktorý predáva po telefóne. Odpovedáte niekoľkými krátkymi riadkami, ktoré sa dajú čítať pri počúvaní, nikdy odsekmi, a nikdy nič nesľubujete v jeho mene.
+```
+
+**Úloha (`body`)**
+
+```text
+Druhá strana práve povedala:
+
+{{reply}}
+
+Skôr v tomto rozhovore:
+
+{{conversation}}
+
+Jedným riadkom pomenujte, čo sa deje — námietka, nezodpovedaná otázka, znak, že sú pripravení kúpiť — a jedným riadkom, čo povedať ďalej. Ak niet čo povedať, napíšte len „—“.
+```
+
+### Pomoc pri pohovore (`rt-interview`) {#rt-interview}
+
+**Tvar odpovede:** `plain`.
+
+**Rola (`system`)**
+
+```text
+Pomáhate človeku, s ktorým sa vedie pohovor. Odpovedáte niekoľkými krátkymi riadkami, ktoré sa dajú čítať pri počúvaní, nikdy odsekmi, a nikdy si o ňom nevymýšľate fakty.
+```
+
+**Úloha (`body`)**
+
+```text
+Druhá strana práve povedala:
+
+{{reply}}
+
+Skôr v tomto rozhovore:
+
+{{conversation}}
+
+V troch krátkych riadkoch povedzte, na čo sa naozaj pýta a čo by mala dobrá odpoveď obsahovať.
+```

@@ -32,16 +32,16 @@ Mudelid, mis loevad ülestähendust ja kirjutavad selle kohta. Vajutage **Lisa**
 
 *See, mis töötab iseenesest, selles järjekorras. Igaüks käivitub kõige rohkem korra vestluse kohta.* Reegel on rida märkeruuduga, mis lülitab selle sisse või välja, selle nimega ja selle all kirjeldusega, mida see teeb. **▲** ja **▼** muudavad järjekorda. Programmiga tuleb kaasa kaheksa:
 
-| Reegel | Mida teeb | Millal |
-| --- | --- | --- |
-| **Kirjuta iga vestlus üles** | Kirjutab selle üles. | alati |
-| **Võta see kokku** | Palub mudelilt: **Kokkuvõte**. | alati |
-| **Taanda see üheks reaks** | Palub mudelilt: **Ühereakokkuvõte**. | alati |
-| **Liigita see kategooriasse** | Palub mudelilt: **Kategooria**. | alati |
-| **Märgista see** | Palub mudelilt: **Sildid**. | alati |
-| **Tõsta esile, mis väärib pilku** | Palub mudelilt: **Hoiatussignaalid**. | alati |
-| **Hinda seda, kui oli müük** | Palub mudelilt: **Müügi kvaliteet**. | ainult kui kategooria on **Müük** |
-| **Hinda seda, kui oli tugi** | Palub mudelilt: **Toe kvaliteet**. | ainult kui kategooria on **Tugi** |
+| Reegel | `code` | Mida teeb | `prompt` | Millal |
+| --- | --- | --- | --- | --- |
+| **Kirjuta iga vestlus üles** | `transcribe` | Kirjutab selle üles. | — | alati |
+| **Võta see kokku** | `summary` | Palub mudelilt: **Kokkuvõte**. | `summary` | alati |
+| **Taanda see üheks reaks** | `super-summary` | Palub mudelilt: **Ühereakokkuvõte**. | `super-summary` | alati |
+| **Liigita see kategooriasse** | `categorise` | Palub mudelilt: **Kategooria**. | `categorise` | alati |
+| **Märgista see** | `tags` | Palub mudelilt: **Sildid**. | `tags` | alati |
+| **Tõsta esile, mis väärib pilku** | `red-flags` | Palub mudelilt: **Hoiatussignaalid**. | `red-flags` | alati |
+| **Hinda seda, kui oli müük** | `sales-quality` | Palub mudelilt: **Müügi kvaliteet**. | `sales-quality` | ainult kui kategooria on **Müük** |
+| **Hinda seda, kui oli tugi** | `support-quality` | Palub mudelilt: **Toe kvaliteet**. | `support-quality` | ainult kui kategooria on **Tugi** |
 
 Järjekord on oluline: kaks viimast reeglit vajavad kategooriat, mille neile eelnev reegel on määranud. **Lisa** teeb teie oma reegli.
 
@@ -63,3 +63,13 @@ Piire on kaks, sest kuud saab mõõta kahes ühikus. Mõlemad on tühjad, kuni n
 **Taasta vaikeväärtused** taastab juhised ja reeglid sellisena, nagu need programmiga kaasa tulid, kasutajaliidese praeguses keeles. Teie keelemudeleid see ei puuduta.
 
 Programmiga kaasa tulnud juhised ja reeglid jäävad kasutajaliidese keele vahetamisel sellesse keelde, milles need olid; **Taasta vaikeväärtused** toob need uude keelde. Iga juhis märgitakse siis paremal kui *muudetud*.
+
+## Vaikimisi käivitamine {#default-execution}
+
+Käivitage `summary` enne viipa `super-summary`, mis kasutab väärtust `{{artifact:summary}}`. Käivitage `categorise` enne kvaliteedihindamist: `sales-quality` vajab kategooriat `sales`, `support-quality` kategooriat `support`.
+
+Viipadel `action-items`, `topics`, `entities` ja `qa` puuduvad automaatsed vaikereeglid. Käivitage viip käsitsi või lisage sobiv reegel; sisestage küsimus viiba `qa` käivitamisel.
+
+Standardkomplekt salvestatakse esimesel kasutamisel. Markdown-ekspordi muutmine ei muuda rakendust: muutke viiba kaarti või taastage vaikeväärtused.
+
+[Viipade standardtekstid](prompt-studio.md#standard-templates)

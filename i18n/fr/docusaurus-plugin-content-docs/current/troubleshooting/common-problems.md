@@ -125,3 +125,21 @@ Quand quelque chose ne se fait pas, le téléphone dit pourquoi sur une ligne à
 ### Au démarrage du téléphone {#when-the-phone-starts}
 
 *Base de données illisible* signifie que la base de données a été créée par une autre version du programme, et que celle-ci ne sait pas la lire. Le plus souvent, une version plus ancienne a été lancée sur les données d'une plus récente : réinstaller la version plus récente rouvre la base telle qu'elle était. **Repartir de zéro**, au contraire, crée une base vide — chaque contact et chaque appel de l'historique sont perdus, et c'est irréversible. Avant d'appuyer, vous pouvez garder une copie du fichier de la base ; [Diagnostic](/troubleshooting/diagnostics#files) indique où il se trouve.
+
+## Exécution par défaut {#default-prompt-execution}
+
+Aucune règle automatique par défaut ne lance `action-items`, `topics`, `entities` ou `qa`. Lancez le prompt manuellement ou ajoutez une règle adaptée ; saisissez la question au lancement de `qa`.
+
+Exécutez `summary` avant `super-summary`, qui utilise `{{artifact:summary}}`. Exécutez `categorise` avant l’évaluation : `sales-quality` exige la catégorie `sales`, et `support-quality` exige `support`.
+
+[Exécution par défaut](../ai-processing/processing.md#default-execution)
+
+## Comprendre les résultats {#prompt-result-notes}
+
+Une liste vide de tâches ou d’alertes peut être correcte. Il ne faut inventer ni responsable ni échéance. Les réponses aux questions doivent reposer uniquement sur la transcription.
+
+Voici les noms des assistants fournis ; les captures peuvent montrer des noms antérieurs. « — » de `rt-objections` signifie qu’aucune suggestion utile n’est disponible. Les consignes couvrent aussi les questions ouvertes et les signes d’intention d’achat.
+
+Le jeu par défaut est enregistré lors de la première utilisation. Modifier un export Markdown ne change pas l’application : modifiez la fiche du prompt ou rétablissez les valeurs par défaut.
+
+[Textes des prompts par défaut](../ai-processing/prompt-studio.md#standard-templates) · [Assistants fournis](../ai-processing/prompter.md#assistant-templates)

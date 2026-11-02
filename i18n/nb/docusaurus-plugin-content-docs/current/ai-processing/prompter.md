@@ -39,12 +39,14 @@ Suffløren leses mens du snakker, ofte på lengre avstand enn resten av telefone
 
 En hjelper er det en sufflør blir bedt om å være. *Hver av dem lytter til en pågående samtale og skriver noe i sufflørens vindu: ordene slik de sies, en oversettelse av dem, eller et forslag til hva du kan si videre.* Hvilken som kjører, velger du i sufflørens vindu. Programmet har med fire:
 
-| Hjelper | Hva den skriver | Spør en modell |
-| --- | --- | --- |
-| **Undertekster** | Ordene til begge sider, mens de blir sagt. | nei |
-| **Oversettelse** | Ordene til den andre siden, oversatt til programmets språk. | ja |
-| **Innvendinger i samtalen** | For den som selger over telefon: når kunden kommer med en innvending, innvendingen på én linje og én linje som svarer på den. | ja |
-| **Hjelp i intervjuet** | For den som er på jobbintervju: svaret på spørsmålet som nettopp ble stilt, i noen få korte linjer, eller hva neste svar bør ta opp. | ja |
+| Hjelper | `code` | Hva den skriver | Spør en modell |
+| --- | --- | --- | --- |
+| **Undertekster** | `rt-subtitles` | Ordene til begge sider, mens de blir sagt. | nei |
+| **Oversettelse** | `rt-translate` | Ordene til den andre siden, oversatt til programmets språk. | ja |
+| **Salg** | `rt-objections` | For den som selger over telefon: når kunden kommer med en innvending, innvendingen på én linje og én linje som svarer på den. | ja |
+| **Hjelp i intervjuet** | `rt-interview` | For den som er på jobbintervju: svaret på spørsmålet som nettopp ble stilt, i noen få korte linjer, eller hva neste svar bør ta opp. | ja |
+
+Dette er assistentenes medfølgende navn; skjermbilder kan vise tidligere navn. «—» fra `rt-objections` betyr at det ikke finnes et nyttig forslag. Instruksjonene dekker også ubesvarte spørsmål og kjøpsvilje.
 
 **▲** og **▼** endrer rekkefølgen, og det er rekkefølgen i nedtrekkslisten i [sufflørens vindu](/interface/prompter#the-window). **Legg til** lager en egen hjelper. **Gjenopprett standardverdier** setter promptene og reglene tilbake slik de kom med programmet, her som under [Behandling](/ai-processing/processing#defaults); språkmodellene dine blir ikke rørt.
 
@@ -74,3 +76,81 @@ Et trykk på en hjelper åpner kortet dens. Det er det samme kortet som for en [
 | **Modeller, per måned** | Forslagene stanser, og undertekstene fortsetter. |
 
 Tomt betyr ingen tak. Hva et minutt sanntidslyd koster, er gjenkjennerens **Pris per minutt**, oppgitt på kortet under [Transkripsjon](/ai-processing/transcription#the-recognisers-card); uten den sier suffløren at beløpet som vises, er et anslag.
+
+## Medfølgende assistenter {#assistant-templates}
+
+`system` bestemmer modellens atferd; `body` beskriver oppgaven. Svarform og språk angis separat gjennom instruksjoner i listene.
+
+[Plassholdere](prompt-studio.md#placeholders)
+
+### Undertekster (`rt-subtitles`) {#rt-subtitles}
+
+**Svarform:** `plain`.
+
+Tom rolle og oppgave: ingen forespørsel til språkmodellen.
+
+### Oversettelse (`rt-translate`) {#rt-translate}
+
+**Svarform:** `plain`.
+
+**Rolle (`system`)**
+
+```text
+Du oversetter tale mens den blir sagt. Du svarer bare med oversettelsen — ingen innledning, ingen anførselstegn, ingen forklaring — og du lar navn, tall og priser stå akkurat slik de ble sagt.
+```
+
+**Oppgave (`body`)**
+
+```text
+Oversett til {{language}}:
+
+{{reply}}
+```
+
+### Salg (`rt-objections`) {#rt-objections}
+
+**Svarform:** `plain`.
+
+**Rolle (`system`)**
+
+```text
+Du hjelper en person som selger over telefon. Du svarer med noen få korte linjer som kan leses mens man lytter, aldri i avsnitt, og du lover aldri noe på personens vegne.
+```
+
+**Oppgave (`body`)**
+
+```text
+Den andre personen sa nettopp:
+
+{{reply}}
+
+Tidligere i denne samtalen:
+
+{{conversation}}
+
+Si på én linje hva som skjer — en innvending, et spørsmål du ikke har svart på, et tegn på at de er klare — og på én linje hva du skal si nå. Er det ingenting å si, skriv bare «—».
+```
+
+### Hjelp i intervjuet (`rt-interview`) {#rt-interview}
+
+**Svarform:** `plain`.
+
+**Rolle (`system`)**
+
+```text
+Du hjelper en person som blir intervjuet. Du svarer med noen få korte linjer som kan leses mens man lytter, aldri i avsnitt, og du dikter aldri opp opplysninger om personen.
+```
+
+**Oppgave (`body`)**
+
+```text
+Den andre personen sa nettopp:
+
+{{reply}}
+
+Tidligere i denne samtalen:
+
+{{conversation}}
+
+Si i tre korte linjer hva hun egentlig spør om, og hva et godt svar bør dekke.
+```

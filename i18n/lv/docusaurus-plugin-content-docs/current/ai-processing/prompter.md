@@ -39,12 +39,14 @@ Suflieri lasa runājot, bieži no lielāka attāluma nekā pārējo telefonu, t�
 
 Palīgs ir tas, par ko suflierim lūdz būt. *Katrs no tiem klausās notiekošu sarunu un raksta kaut ko sufliera logā: vārdus tā, kā tie tiek izrunāti, to tulkojumu vai ieteikumu, ko teikt tālāk.* Kuru palaist, jūs izvēlaties sufliera logā. Programmai līdzi nāk četri:
 
-| Palīgs | Ko tas raksta | Jautā modelim |
-| --- | --- | --- |
-| **Subtitri** | Abu pušu vārdus, kad tie tiek teikti. | nē |
-| **Tulkojums** | Otras puses vārdus, iztulkotus programmas valodā. | jā |
-| **Iebildumi sarunā** | Tam, kas pārdod pa telefonu: kad klients izsaka iebildumu, iebildumu vienā rindā un vienu rindu, kas uz to atbild. | jā |
-| **Palīdzība intervijā** | Tam, ar kuru notiek intervija: atbildi uz tikko uzdoto jautājumu dažās īsās rindās vai to, kas jāaptver nākamajā atbildē. | jā |
+| Palīgs | `code` | Ko tas raksta | Jautā modelim |
+| --- | --- | --- | --- |
+| **Subtitri** | `rt-subtitles` | Abu pušu vārdus, kad tie tiek teikti. | nē |
+| **Tulkojums** | `rt-translate` | Otras puses vārdus, iztulkotus programmas valodā. | jā |
+| **Pārdošana** | `rt-objections` | Tam, kas pārdod pa telefonu: kad klients izsaka iebildumu, iebildumu vienā rindā un vienu rindu, kas uz to atbild. | jā |
+| **Palīdzība intervijā** | `rt-interview` | Tam, ar kuru notiek intervija: atbildi uz tikko uzdoto jautājumu dažās īsās rindās vai to, kas jāaptver nākamajā atbildē. | jā |
+
+Tie ir iekļauto asistentu nosaukumi; ekrānattēlos var būt agrāki nosaukumi. `rt-objections` atbilde “—” nozīmē, ka nav noderīga ieteikuma. Instrukcijas aptver arī neatbildētus jautājumus un gatavību pirkt.
 
 **▲** un **▼** maina secību, un tā ir secība [sufliera loga](/interface/prompter#the-window) nolaižamajā sarakstā. **Pievienot** izveido jūsu pašu palīgu. **Atjaunot noklusējumus** atjauno norādījumus un noteikumus tādus, kādi tie nāca ar programmu, gan šeit, gan sadaļā [Apstrāde](/ai-processing/processing#defaults); jūsu valodas modeļi paliek neskarti.
 
@@ -74,3 +76,81 @@ Nospiežot palīgu, atveras tā kartīte. Tā ir tā pati kartīte, kas [norād�
 | **Modeļi, mēnesī** | Ieteikumi apstājas, un subtitri turpinās. |
 
 Tukšs nozīmē, ka griestu nav. Tiešraides audio minūtes cena ir atpazinēja **Cena par minūti**, kas norādīta tā kartītē sadaļā [Pieraksts](/ai-processing/transcription#the-recognisers-card); bez tās suflieris pasaka, ka rādītā summa ir aplēse.
+
+## Iekļautie asistenti {#assistant-templates}
+
+`system` nosaka modeļa uzvedību; `body` apraksta uzdevumu. Atbildes forma un valoda tiek norādīta atsevišķi ar sarakstu instrukcijām.
+
+[Vietturi](prompt-studio.md#placeholders)
+
+### Subtitri (`rt-subtitles`) {#rt-subtitles}
+
+**Atbildes forma:** `plain`.
+
+Tukša loma un uzdevums: valodas modelis netiek izsaukts.
+
+### Tulkojums (`rt-translate`) {#rt-translate}
+
+**Atbildes forma:** `plain`.
+
+**Loma (`system`)**
+
+```text
+Tu tulko runu tās norises laikā. Tu atbildi tikai ar tulkojumu — bez ievada, bez pēdiņām, bez skaidrojuma — un vārdus, skaitļus un cenas atstāj tieši tādus, kādi tie tika pateikti.
+```
+
+**Uzdevums (`body`)**
+
+```text
+Pārtulko uz {{language}}:
+
+{{reply}}
+```
+
+### Pārdošana (`rt-objections`) {#rt-objections}
+
+**Atbildes forma:** `plain`.
+
+**Loma (`system`)**
+
+```text
+Jūs palīdzat cilvēkam, kurš pārdod pa telefonu. Jūs atbildat ar dažām īsām rindām, ko var lasīt klausoties, nekad ar rindkopām, un nekad neko neapsolāt viņa vārdā.
+```
+
+**Uzdevums (`body`)**
+
+```text
+Sarunu partneris tikko teica:
+
+{{reply}}
+
+Iepriekš šajā sarunā:
+
+{{conversation}}
+
+Vienā rindā pasakiet, kas notiek — iebildums, neatbildēts jautājums, pazīme, ka viņi ir gatavi pirkt — un vienā rindā, ko teikt tālāk. Ja teikt nav nekā, rakstiet tikai „—“.
+```
+
+### Palīdzība intervijā (`rt-interview`) {#rt-interview}
+
+**Atbildes forma:** `plain`.
+
+**Loma (`system`)**
+
+```text
+Jūs palīdzat cilvēkam, ar kuru notiek darba intervija. Jūs atbildat ar dažām īsām rindām, ko var lasīt klausoties, nekad ar rindkopām, un nekad neizdomājat par viņu faktus.
+```
+
+**Uzdevums (`body`)**
+
+```text
+Sarunu partneris tikko teica:
+
+{{reply}}
+
+Iepriekš šajā sarunā:
+
+{{conversation}}
+
+Trīs īsās rindās sakiet, ko viņš patiesībā jautā un kas labā atbildē būtu jāaptver.
+```

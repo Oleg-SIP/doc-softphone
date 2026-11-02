@@ -32,3 +32,7 @@ description: Pojmy IP telefonie a AI Softphone používané v této dokumentaci 
 | **Přepis** | Rozhovor jako text, replika po replice, souběžně se zvukem. |
 | **Webhook** | Požadavek, který telefon pošle jinému systému, když hovor začne, změní se nebo skončí. Viz [Webhooky](/integration/webhooks). |
 | **Širokopásmový** | Kodek se širším rozsahem zvuku, než má telefonní linka, takže hlas je zřetelnější. |
+| **[Zástupný symbol](ai-processing/prompt-studio.md#placeholders)** | Prvek promptu, který se nahrazuje údaji rozhovoru. |
+| **[Výsledek jiného promptu](ai-processing/processing.md#default-execution)** | Existující výsledek znovu použitý jiným promptem, například `{{artifact:summary}}`. |
+| **[Role modelu](ai-processing/prompt-studio.md#role-and-task)** | `system` určuje chování modelu; `body` popisuje úkol. Tvar a jazyk odpovědi se předávají samostatně instrukcemi ze seznamů. |
+| **[Tvar odpovědi](ai-processing/dictionaries.md#response-formats)** | Struktura výsledku, například próza, položky, štítky, příznaky nebo kritéria. |

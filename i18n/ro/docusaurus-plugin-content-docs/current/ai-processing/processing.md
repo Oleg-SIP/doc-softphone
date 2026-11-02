@@ -32,16 +32,16 @@ Modelele care citesc o transcriere și scriu despre ea. Apăsați **Adaugă** ca
 
 *Ceea ce rulează de la sine, în această ordine. Fiecare se declanșează cel mult o dată pe conversație.* O regulă este un rând cu o casetă de bifat care o pornește sau o oprește, numele ei și, dedesubt, ce face. **▲** și **▼** schimbă ordinea. Programul vine cu opt:
 
-| Regulă | Ce face | Când |
-| --- | --- | --- |
-| **Transcrie fiecare convorbire** | O transcrie. | întotdeauna |
-| **Rezumă-o** | Întreabă un model: **Rezumat**. | întotdeauna |
-| **Redu-o la un rând** | Întreabă un model: **Rezumat într-un rând**. | întotdeauna |
-| **Încadreaz-o într-o categorie** | Întreabă un model: **Categorie**. | întotdeauna |
-| **Etichetează-o** | Întreabă un model: **Etichete**. | întotdeauna |
-| **Ridică ce merită o privire** | Întreabă un model: **Semnale de alarmă**. | întotdeauna |
-| **Apreciaz-o, dacă a fost o vânzare** | Întreabă un model: **Calitatea vânzării**. | doar dacă categoria este **Vânzări** |
-| **Apreciaz-o, dacă a fost asistență** | Întreabă un model: **Calitatea asistenței**. | doar dacă categoria este **Asistență** |
+| Regulă | `code` | Ce face | `prompt` | Când |
+| --- | --- | --- | --- | --- |
+| **Transcrie fiecare convorbire** | `transcribe` | O transcrie. | — | întotdeauna |
+| **Rezumă-o** | `summary` | Întreabă un model: **Rezumat**. | `summary` | întotdeauna |
+| **Redu-o la un rând** | `super-summary` | Întreabă un model: **Rezumat într-un rând**. | `super-summary` | întotdeauna |
+| **Încadreaz-o într-o categorie** | `categorise` | Întreabă un model: **Categorie**. | `categorise` | întotdeauna |
+| **Etichetează-o** | `tags` | Întreabă un model: **Etichete**. | `tags` | întotdeauna |
+| **Ridică ce merită o privire** | `red-flags` | Întreabă un model: **Semnale de alarmă**. | `red-flags` | întotdeauna |
+| **Apreciaz-o, dacă a fost o vânzare** | `sales-quality` | Întreabă un model: **Calitatea vânzării**. | `sales-quality` | doar dacă categoria este **Vânzări** |
+| **Apreciaz-o, dacă a fost asistență** | `support-quality` | Întreabă un model: **Calitatea asistenței**. | `support-quality` | doar dacă categoria este **Asistență** |
 
 Ordinea contează: ultimele două reguli au nevoie de categoria stabilită de regula dinaintea lor. **Adaugă** creează o regulă proprie.
 
@@ -63,3 +63,13 @@ Există două limite pentru că o lună poate fi socotită în două feluri. Amb
 **Restabilește valorile implicite** readuce instrucțiunile și regulile la forma cu care au venit odată cu programul, în limba actuală a interfeței. Modelele de limbă rămân neatinse.
 
 Instrucțiunile și regulile venite cu programul rămân în limba în care erau atunci când schimbați limba interfeței; **Restabilește valorile implicite** le aduce în limba nouă. Fiecare instrucțiune este apoi marcată *schimbată* în dreapta.
+
+## Executare implicită {#default-execution}
+
+Executați `summary` înainte de `super-summary`, care folosește `{{artifact:summary}}`. Executați `categorise` înainte de evaluarea calității: `sales-quality` necesită `sales`, iar `support-quality` necesită `support`.
+
+Nu există reguli automate implicite pentru `action-items`, `topics`, `entities` sau `qa`. Executați promptul manual sau adăugați o regulă potrivită; introduceți întrebarea la executarea `qa`.
+
+Setul implicit este salvat la prima utilizare. Editarea unui export Markdown nu modifică aplicația: editați fișa promptului sau restabiliți valorile implicite.
+
+[Textele implicite ale prompturilor](prompt-studio.md#standard-templates)

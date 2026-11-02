@@ -39,12 +39,14 @@ Sufflören läses medan du talar, ofta på längre avstånd än resten av telefo
 
 En hjälpare är det en sufflör ombeds vara. *Var och en lyssnar på ett pågående samtal och skriver något i sufflörens fönster: orden så som de sägs, en översättning av dem, eller ett förslag på vad du kan säga härnäst.* Vilken som körs väljer du i sufflörens fönster. Programmet har med fyra:
 
-| Hjälpare | Vad den skriver | Frågar en modell |
-| --- | --- | --- |
-| **Undertexter** | Båda sidornas ord, medan de sägs. | nej |
-| **Översättning** | Den andra sidans ord, översatta till programmets språk. | ja |
-| **Invändningar i samtalet** | För den som säljer per telefon: när kunden kommer med en invändning, invändningen på en rad och en rad som besvarar den. | ja |
-| **Hjälp i intervjun** | För den som blir intervjuad: svaret på frågan som just ställdes, på några korta rader, eller vad nästa svar bör ta upp. | ja |
+| Hjälpare | `code` | Vad den skriver | Frågar en modell |
+| --- | --- | --- | --- |
+| **Undertexter** | `rt-subtitles` | Båda sidornas ord, medan de sägs. | nej |
+| **Översättning** | `rt-translate` | Den andra sidans ord, översatta till programmets språk. | ja |
+| **Försäljning** | `rt-objections` | För den som säljer per telefon: när kunden kommer med en invändning, invändningen på en rad och en rad som besvarar den. | ja |
+| **Hjälp i intervjun** | `rt-interview` | För den som blir intervjuad: svaret på frågan som just ställdes, på några korta rader, eller vad nästa svar bör ta upp. | ja |
+
+Detta är assistenternas medföljande namn; skärmbilder kan visa tidigare namn. ”—” från `rt-objections` betyder att inget användbart förslag finns. Instruktionerna omfattar också obesvarade frågor och köpberedskap.
 
 **▲** och **▼** ändrar ordningen, och det är ordningen i listrutan i [sufflörens fönster](/interface/prompter#the-window). **Lägg till** skapar en egen hjälpare. **Återställ standardvärden** sätter tillbaka prompterna och reglerna som de kom med programmet, här liksom under [Bearbetning](/ai-processing/processing#defaults); dina språkmodeller lämnas i fred.
 
@@ -74,3 +76,81 @@ Ett tryck på en hjälpare öppnar dess kort. Det är samma kort som för en [pr
 | **Modeller, per månad** | Förslagen stannar och undertexterna fortsätter. |
 
 Tomt betyder inget tak. Vad en minut realtidsljud kostar är igenkännarens **Pris per minut**, angivet på dess kort under [Transkription](/ai-processing/transcription#the-recognisers-card); utan det säger sufflören att beloppet den visar är en uppskattning.
+
+## Medföljande assistenter {#assistant-templates}
+
+`system` styr modellens beteende; `body` beskriver uppgiften. Svarsform och språk anges separat genom instruktioner i listorna.
+
+[Platshållare](prompt-studio.md#placeholders)
+
+### Undertexter (`rt-subtitles`) {#rt-subtitles}
+
+**Svarsform:** `plain`.
+
+Tom roll och uppgift: inget anrop till språkmodellen.
+
+### Översättning (`rt-translate`) {#rt-translate}
+
+**Svarsform:** `plain`.
+
+**Roll (`system`)**
+
+```text
+Du översätter tal medan det sägs. Du svarar bara med översättningen — ingen inledning, inga citattecken, ingen förklaring — och du låter namn, tal och priser stå precis som de sades.
+```
+
+**Uppgift (`body`)**
+
+```text
+Översätt till {{language}}:
+
+{{reply}}
+```
+
+### Försäljning (`rt-objections`) {#rt-objections}
+
+**Svarsform:** `plain`.
+
+**Roll (`system`)**
+
+```text
+Du hjälper någon som säljer per telefon. Du svarar med några korta rader som kan läsas medan man lyssnar, aldrig i stycken, och du lovar aldrig något i personens namn.
+```
+
+**Uppgift (`body`)**
+
+```text
+Den andra personen sa just:
+
+{{reply}}
+
+Tidigare i detta samtal:
+
+{{conversation}}
+
+Säg på en rad vad som händer — en invändning, en obesvarad fråga, ett tecken på att de är redo — och på en rad vad du ska säga härnäst. Finns inget att säga, skriv bara ”—”.
+```
+
+### Hjälp i intervjun (`rt-interview`) {#rt-interview}
+
+**Svarsform:** `plain`.
+
+**Roll (`system`)**
+
+```text
+Du hjälper någon som blir intervjuad. Du svarar med några korta rader som kan läsas medan man lyssnar, aldrig i stycken, och du hittar aldrig på fakta om personen.
+```
+
+**Uppgift (`body`)**
+
+```text
+Den andra personen sa just:
+
+{{reply}}
+
+Tidigare i detta samtal:
+
+{{conversation}}
+
+Säg i tre korta rader vad hon egentligen frågar om och vad ett gott svar bör täcka.
+```

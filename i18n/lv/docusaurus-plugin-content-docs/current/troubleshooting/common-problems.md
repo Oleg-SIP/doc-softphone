@@ -125,3 +125,21 @@ Kad kaut kas nenotiek, tālrunis atsevišķā rindā pasaka, kāpēc. Rinda zem 
 ### Palaižot tālruni {#when-the-phone-starts}
 
 *Datubāzi nevar nolasīt* nozīmē, ka datubāzi izveidoja cita programmas versija un šī to nespēj nolasīt. Parasti vecāka versija palaista uz jaunākas versijas datiem: ja atkal instalēsiet jaunāko versiju, tā datubāzi atvērs tādu, kāda tā bija. **Sākt no jauna** turpretī izveido tukšu datubāzi — visi kontakti un visi vēstures zvani tiek zaudēti, un to nevar atsaukt. Pirms nospiežat, varat saglabāt datubāzes faila kopiju; kur tas atrodas, pasaka [Diagnostika](/troubleshooting/diagnostics#files).
+
+## Noklusējuma izpilde {#default-prompt-execution}
+
+Uzvednēm `action-items`, `topics`, `entities` un `qa` nav noklusējuma automātisko noteikumu. Palaidiet uzvedni manuāli vai pievienojiet atbilstošu noteikumu; palaižot `qa`, ievadiet jautājumu.
+
+Izpildiet `summary` pirms `super-summary`, kas izmanto `{{artifact:summary}}`. Izpildiet `categorise` pirms kvalitātes vērtēšanas: `sales-quality` vajag kategoriju `sales`, bet `support-quality` — `support`.
+
+[Noklusējuma izpilde](../ai-processing/processing.md#default-execution)
+
+## Rezultātu skaidrojums {#prompt-result-notes}
+
+Tukšs uzdevumu vai brīdinājumu saraksts var būt pareizs rezultāts. Trūkstošos atbildīgos un datumus nedrīkst izdomāt. Atbildēm uz jautājumiem jābalstās tikai transkriptā.
+
+Tie ir iekļauto asistentu nosaukumi; ekrānattēlos var būt agrāki nosaukumi. `rt-objections` atbilde “—” nozīmē, ka nav noderīga ieteikuma. Instrukcijas aptver arī neatbildētus jautājumus un gatavību pirkt.
+
+Noklusējuma kopa tiek saglabāta pirmajā lietošanas reizē. Markdown eksporta rediģēšana nemaina lietotni: rediģējiet uzvednes kartīti vai atjaunojiet noklusējuma vērtības.
+
+[Noklusējuma uzvedņu teksti](../ai-processing/prompt-studio.md#standard-templates) · [Iekļautie asistenti](../ai-processing/prompter.md#assistant-templates)

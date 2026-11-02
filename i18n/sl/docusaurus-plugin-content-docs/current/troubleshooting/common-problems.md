@@ -125,3 +125,21 @@ Ko se nekaj ne zgodi, telefon v svoji vrstici pove zakaj. Vrstica pod seznamom p
 ### Ob zagonu telefona {#when-the-phone-starts}
 
 *Zbirke podatkov ni mogoče prebrati* pomeni, da je zbirko podatkov naredila druga različica programa in je ta ne zna prebrati. Običajno je bila starejša različica zagnana na podatkih novejše: če znova namestite novejšo različico, ta zbirko odpre takšno, kot je bila. **Začni znova** pa naredi prazno zbirko — vsi stiki in vsi klici v zgodovini se izgubijo, in tega ni mogoče razveljaviti. Preden pritisnete, lahko shranite kopijo datoteke zbirke; kje je, pove [Diagnostika](/troubleshooting/diagnostics#files).
+
+## Privzeto izvajanje {#default-prompt-execution}
+
+Za `action-items`, `topics`, `entities` in `qa` ni privzetih samodejnih pravil. Poziv zaženite ročno ali dodajte ustrezno pravilo; ob zagonu `qa` vnesite vprašanje.
+
+Zaženite `summary` pred `super-summary`, ki uporablja `{{artifact:summary}}`. Pred oceno kakovosti zaženite `categorise`: `sales-quality` potrebuje kategorijo `sales`, `support-quality` pa `support`.
+
+[Privzeto izvajanje](../ai-processing/processing.md#default-execution)
+
+## Razumevanje rezultatov {#prompt-result-notes}
+
+Prazen seznam nalog ali opozoril je lahko pravilen rezultat. Manjkajočih odgovornih oseb in rokov ni dovoljeno izmišljati. Odgovori na vprašanja morajo temeljiti samo na prepisu.
+
+To so priložena imena pomočnikov; posnetki zaslona lahko kažejo prejšnja imena. »—« iz `rt-objections` pomeni, da ni koristnega predloga. Navodila zajemajo tudi neodgovorjena vprašanja in pripravljenost za nakup.
+
+Privzeti nabor se shrani ob prvi uporabi. Urejanje izvoza Markdown ne spremeni aplikacije: uredite kartico poziva ali obnovite privzete nastavitve.
+
+[Privzeta besedila pozivov](../ai-processing/prompt-studio.md#standard-templates) · [Priloženi pomočniki](../ai-processing/prompter.md#assistant-templates)

@@ -125,3 +125,21 @@ Gdy coś się nie udaje, telefon pisze dlaczego w osobnym wierszu. Wiersz pod li
 ### Przy uruchamianiu telefonu {#when-the-phone-starts}
 
 *Nie można odczytać bazy danych* oznacza, że bazę danych utworzyła inna wersja programu i ta nie umie jej odczytać. Zwykle starszą wersję uruchomiono na danych nowszej: ponowne zainstalowanie nowszej wersji otworzy bazę taką, jaka była. **Zacznij od nowa** zamiast tego tworzy pustą bazę — wszystkie kontakty i wszystkie rozmowy w historii przepadają i nie da się tego cofnąć. Zanim go naciśniesz, możesz zachować kopię pliku bazy; [Diagnostyka](/troubleshooting/diagnostics#files) mówi, gdzie on jest.
+
+## Domyślne uruchamianie {#default-prompt-execution}
+
+Nie ma domyślnych reguł automatycznych dla `action-items`, `topics`, `entities` ani `qa`. Uruchom prompt ręcznie lub dodaj odpowiednią regułę; wpisz pytanie przy uruchamianiu `qa`.
+
+Uruchom `summary` przed `super-summary`, który korzysta z `{{artifact:summary}}`. Uruchom `categorise` przed oceną jakości: `sales-quality` wymaga kategorii `sales`, a `support-quality` kategorii `support`.
+
+[Domyślne uruchamianie](../ai-processing/processing.md#default-execution)
+
+## Interpretacja wyników {#prompt-result-notes}
+
+Pusta lista zadań lub ostrzeżeń może być prawidłowym wynikiem. Nie wolno wymyślać brakujących osób odpowiedzialnych ani terminów. Odpowiedzi na pytania muszą opierać się wyłącznie na transkrypcji.
+
+To nazwy dołączonych asystentów; zrzuty ekranu mogą pokazywać wcześniejsze nazwy. „—” od `rt-objections` oznacza brak przydatnej sugestii. Instrukcje obejmują również pytania bez odpowiedzi i gotowość do zakupu.
+
+Domyślny zestaw jest zapisywany przy pierwszym użyciu. Edycja eksportu Markdown nie zmienia aplikacji: edytuj kartę promptu lub przywróć ustawienia domyślne.
+
+[Domyślne teksty promptów](../ai-processing/prompt-studio.md#standard-templates) · [Dołączeni asystenci](../ai-processing/prompter.md#assistant-templates)

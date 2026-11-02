@@ -60,3 +60,16 @@ Vinduet siger i en linje under knapperne, hvad der mangler.
 | *Genkenderen begyndte ikke at lytte. Kontrollér dens live-adresse og dens model under Indstillinger → Transskription.* | Adressen til suffløren, modellen eller nøglen er forkert. **Prøv** på genkenderens kort siger hvilken. |
 | *Månedens beløb til genkendere er brugt op.* | Hæv **Genkendere, pr. måned**, eller vent, til måneden skifter. |
 | *Månedens beløb til modeller er brugt op. Ordene fortsætter; sufflering er stoppet.* | Hæv **Modeller, pr. måned**. |
+
+## Medfølgende assistenter {#standard-assistants}
+
+| `code` | Medfølgende assistenter |
+| --- | --- |
+| `rt-subtitles` | Undertekster |
+| `rt-translate` | Oversættelse |
+| `rt-objections` | Salg |
+| `rt-interview` | Hjælp til samtalen |
+
+Dette er assistenternes medfølgende navne; skærmbilleder kan vise tidligere navne. “—” fra `rt-objections` betyder, at der ikke er et nyttigt forslag. Instruktionerne dækker også ubesvarede spørgsmål og købsparathed.
+
+[Standardtekster til prompts](../ai-processing/prompter.md#assistant-templates)

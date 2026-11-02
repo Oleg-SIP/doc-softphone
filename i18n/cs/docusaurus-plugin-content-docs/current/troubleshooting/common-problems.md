@@ -125,3 +125,21 @@ Když se něco nestane, telefon napíše proč na samostatném řádku. Řádek 
 ### Při spuštění telefonu {#when-the-phone-starts}
 
 *Databázi nelze přečíst* znamená, že databázi vytvořila jiná verze programu a tato ji neumí přečíst. Obvykle byla starší verze spuštěna nad daty novější: když znovu nainstalujete novější verzi, otevře ji tak, jak byla. **Začít znovu** naopak vytvoří prázdnou databázi — všechny kontakty a všechny hovory v historii se ztratí a nelze to vrátit. Než ho stisknete, můžete si uložit kopii souboru databáze; kde je, říká [Diagnostika](/troubleshooting/diagnostics#files).
+
+## Výchozí spouštění {#default-prompt-execution}
+
+Pro `action-items`, `topics`, `entities` ani `qa` nejsou výchozí automatická pravidla. Spusťte prompt ručně nebo přidejte vhodné pravidlo; při spuštění `qa` zadejte otázku.
+
+Spusťte `summary` před `super-summary`, který používá `{{artifact:summary}}`. Před hodnocením kvality spusťte `categorise`: `sales-quality` vyžaduje kategorii `sales`, `support-quality` kategorii `support`.
+
+[Výchozí spouštění](../ai-processing/processing.md#default-execution)
+
+## Jak číst výsledky {#prompt-result-notes}
+
+Prázdný seznam úkolů nebo příznaků může být správný výsledek. Chybějící odpovědné osoby ani termíny se nesmějí vymýšlet. Odpovědi na otázky musí vycházet pouze z přepisu.
+
+Jde o dodávané názvy asistentů; snímky obrazovky mohou ukazovat starší názvy. „—“ od `rt-objections` znamená, že není užitečný návrh. Instrukce zahrnují také nezodpovězené otázky a připravenost nakoupit.
+
+Výchozí sada se uloží při prvním použití. Úprava exportu Markdown nemění aplikaci: upravte kartu promptu nebo obnovte výchozí nastavení.
+
+[Výchozí texty promptů](../ai-processing/prompt-studio.md#standard-templates) · [Dodávaní asistenti](../ai-processing/prompter.md#assistant-templates)

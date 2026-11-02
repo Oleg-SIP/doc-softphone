@@ -60,3 +60,16 @@ La fenêtre dit ce qui manque dans une ligne sous les boutons.
 | *La reconnaissance n'a pas commencé à écouter. Vérifiez son adresse en direct et son modèle sous Réglages → Transcription.* | L'adresse pour le souffleur, le modèle ou la clé est faux. **Tester** sur la carte de la reconnaissance dit lequel. |
 | *Le budget mensuel des reconnaissances est épuisé.* | Augmentez **Reconnaissances, par mois**, ou attendez le changement de mois. |
 | *Le budget mensuel des modèles est épuisé. Les mots continuent ; le soufflage s'est arrêté.* | Augmentez **Modèles, par mois**. |
+
+## Assistants fournis {#standard-assistants}
+
+| `code` | Assistants fournis |
+| --- | --- |
+| `rt-subtitles` | Sous-titres |
+| `rt-translate` | Traduction |
+| `rt-objections` | Ventes |
+| `rt-interview` | Aide en entretien |
+
+Voici les noms des assistants fournis ; les captures peuvent montrer des noms antérieurs. « — » de `rt-objections` signifie qu’aucune suggestion utile n’est disponible. Les consignes couvrent aussi les questions ouvertes et les signes d’intention d’achat.
+
+[Textes des prompts par défaut](../ai-processing/prompter.md#assistant-templates)

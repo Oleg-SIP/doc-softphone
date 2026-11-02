@@ -18,10 +18,10 @@ O czym była rozmowa; **na rozmowę wybiera się jedną**. Program zaczyna od cz
 
 | Nazwa | Kod | Do czego |
 | --- | --- | --- |
-| **Sprzedaż** | `sales` | Sprzedaż, wycena, negocjacje lub kontynuacja zakupu — także klient, który pyta, ile coś kosztuje. |
-| **Wsparcie** | `support` | Pomoc komuś z produktem lub usługą, które już ma: usterka, pytanie o użytkowanie, skarga na działanie. |
-| **Prywatna** | `personal` | Zupełnie nie służbowa — prywatna rozmowa, która akurat odbyła się na tej linii. |
-| **Inne** | `other` | Służbowa, ale ani sprzedaż, ani wsparcie: dostawca, współpracownik, dostawa, pomyłka. Wybierz to raczej niż zgadywać między pozostałymi. |
+| **Sprzedaż** | `sales` | Sprzedawanie, wycenianie, negocjowanie albo dopilnowanie zakupu — w tym pytanie klienta o cenę. |
+| **Wsparcie** | `support` | Pomoc komuś z produktem lub usługą, którą już ma: usterka, pytanie o obsługę, skarga na działanie. |
+| **Prywatna** | `personal` | Wcale nie służbowa — prywatna rozmowa, która akurat odbyła się na tej linii. |
+| **Inne** | `other` | Służbowa, ale ani sprzedaż, ani wsparcie: dostawca, współpracownik, dostawa, pomyłka. Wybierz to zamiast zgadywać między pozostałymi. |
 
 Naciśnij **Dodaj**, aby dodać własną kategorię.
 
@@ -31,14 +31,22 @@ Oznaczenia, które *wszystkie mogą pasować do tej samej rozmowy*. Naciśnij **
 
 | Nazwa | Kod | Do czego |
 | --- | --- | --- |
-| **Obiecane oddzwonienie** | `callback` | Ktoś w tej rozmowie obiecał oddzwonić albo poprosił o oddzwonienie. |
-| **Skarga** | `complaint` | Druga strona wyraziła niezadowolenie, niezależnie od tego, czy sprawę rozwiązano. |
+| **Obiecane oddzwonienie** | `callback` | Ktoś w tej rozmowie obiecał oddzwonić albo poprosił, żeby do niego oddzwonić. |
+| **Skarga** | `complaint` | Druga strona wyraziła niezadowolenie, niezależnie od tego, czy sprawę załatwiono. |
 | **Przekazana wyżej** | `escalation` | Rozmowę przekazano komuś innemu albo druga strona o to poprosiła. |
-| **Klient VIP** | `vip` | Drugą stronę potraktowano jako ważnego klienta albo sama tak się przedstawiła. |
+| **Klient VIP** | `vip` | Drugą stronę potraktowano jako ważnego klienta albo sama tak o sobie powiedziała. |
 
 ## Sygnały ostrzegawcze {#red-flags}
 
 Rzeczy wymagające uwagi, znalezione w rozmowie wraz z dowodem i momentem — na przykład *Rozgniewany klient* albo *Ryzyko odejścia*. Sygnały ostrzegawcze są rysowane na czerwono w [oknie nagrań](../interface/recordings.md), a każdy ma wagę: niską, średnią lub wysoką.
+
+| Nazwa | Kod | `severity` | Do czego |
+| --- | --- | --- | --- |
+| **Rozgniewany klient** | `angry-customer` | `high` | Słychać było, że druga strona jest zła, obraża albo grozi odejściem. |
+| **Ryzyko odejścia** | `churn-risk` | `high` | Padło rezygnowanie, nieprzedłużanie albo przejście do kogoś innego, choćby spokojnie. |
+| **Złożona obietnica** | `promise-made` | `medium` | Nasza strona zobowiązała się do czegoś konkretnego — terminu, ceny, naprawy, zwrotu. |
+| **Dane wrażliwe** | `sensitive-data` | `high` | Odczytano numer karty, hasło, numer dokumentu albo cokolwiek innego, czego w nagraniu być nie powinno. |
+| **Konkurent** | `competitor` | `low` | Druga strona wymieniła kogoś innego oferującego to samo albo nas z nim porównała. |
 
 ## Wskazówki {#instructions}
 
@@ -65,3 +73,96 @@ Rzeczy wymagające uwagi, znalezione w rozmowie wraz z dowodem i momentem — na
 ## Domyślne {#defaults}
 
 **Przywróć domyślne** przywraca każdy słownik do postaci, w jakiej przyszedł z programem, w bieżącym języku interfejsu. To, pod czym twoje rozmowy są już przypisane, pozostaje nietknięte.
+
+## Formaty odpowiedzi {#response-formats}
+
+Bloki odtwarzają dołączone instrukcje. Opisują formaty odpowiedzi; alternatywy są zapisem możliwości, a nie wykonywalnymi przykładami JSON.
+
+### Proza (`shape-plain`) {#shape-plain}
+
+```text
+Odpowiedz zwykłą prozą. Nie używaj JSON-a, list ani nagłówków.
+```
+
+### Pozycje (`shape-list`) {#shape-list}
+
+```text
+Odpowiedz wyłącznie JSON-em, dokładnie takiej postaci:
+{"items": [{"text": "co ma zostać zrobione", "owner": "kto, albo pusto", "due": "kiedy, albo pusto"}]}
+Gdy nie ma czego wymienić, użyj pustej tablicy. Nie pisz nic poza JSON-em.
+```
+
+### Etykiety (`shape-labels`) {#shape-labels}
+
+```text
+Odpowiedz wyłącznie JSON-em, dokładnie takiej postaci:
+{"labels": [{"code": "kod z podanej listy", "confidence": 0.0}]}
+Używaj tylko kodów z listy. Gdy żaden nie pasuje, użyj pustej tablicy. Nie
+wymyślaj kodu i nie pisz nic poza JSON-em.
+```
+
+### Ocena (`shape-score`) {#shape-score}
+
+```text
+Odpowiedz wyłącznie JSON-em, dokładnie takiej postaci:
+{"score": 3, "rationale": "dlaczego ta liczba, a nie o jedną wyższa",
+ "evidence": [{"at_ms": 0, "quote": "słowa, na których to oparto"}]}
+Ocena jest liczbą całkowitą od 1 do 5. Nie pisz nic poza JSON-em.
+```
+
+### Kryteria (`shape-rubric`) {#shape-rubric}
+
+```text
+Odpowiedz wyłącznie JSON-em, dokładnie takiej postaci:
+{"overall": 3, "rationale": "dlaczego ta liczba, a nie o jedną wyższa",
+ "criteria": [{"name": "kryterium tak, jak je podano",
+               "verdict": "pass" albo "weak" albo "fail" albo "n/a",
+               "note": "jedno zdanie"}]}
+Oceń każde podane kryterium i żadne inne. Ocena łączna jest liczbą całkowitą
+od 1 do 5. Nie pisz nic poza JSON-em.
+```
+
+### Sygnały (`shape-flags`) {#shape-flags}
+
+```text
+Odpowiedz wyłącznie JSON-em, dokładnie takiej postaci:
+{"flags": [{"code": "kod z podanej listy",
+            "severity": "low" albo "medium" albo "high",
+            "evidence": "słowa, na których to oparto",
+            "at_ms": 0}]}
+Używaj tylko kodów z listy i podnoś każdy najwyżej raz. Gdy nic nie pasuje,
+użyj pustej tablicy. Nie pisz nic poza JSON-em.
+```
+
+### Odpowiedź (`shape-qa`) {#shape-qa}
+
+```text
+Odpowiedz wyłącznie JSON-em, dokładnie takiej postaci:
+{"answer": "twoja odpowiedź albo wprost, że rozmowa tego nie mówi",
+ "citations": [{"at_ms": 0, "quote": "słowa, na których opiera się odpowiedź"}]}
+Nie odpowiadaj z niczego poza rozmową. Nie pisz nic poza JSON-em.
+```
+
+### JSON (`shape-json`) {#shape-json}
+
+```text
+Odpowiedz wyłącznie JSON-em, w postaci opisanej wyżej. Nie pisz nic poza JSON-em.
+```
+
+### Jak mówiono (`language-as-spoken`) {#language-as-spoken}
+
+```text
+Napisz odpowiedź w tym samym języku, w którym była rozmowa.
+```
+
+### Jak mówiono, z nazwy (`language-as-spoken-named`) {#language-as-spoken-named}
+
+```text
+Napisz odpowiedź w tym samym języku, w którym była rozmowa, czyli po: {language}.
+```
+
+### Wskazany język (`language-named`) {#language-named}
+
+```text
+Napisz odpowiedź w tym języku: {language}.
+```

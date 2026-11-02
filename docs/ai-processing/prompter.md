@@ -42,12 +42,14 @@ The prompter is read while you are talking, often from further away than the res
 
 An assistant is what a prompter is asked to be. *Each one listens to a conversation as it happens and writes something into the prompter's window: the words as they are said, a translation of them, or a suggestion for what to say next.* You choose which one to run in the prompter window. The program comes with four:
 
-| Assistant | What it writes | Asks a model |
-| --- | --- | --- |
-| **Subtitles** | The words of both sides, as they are said. | no |
-| **Translation** | The other side's words, translated into the language of the program. | yes |
-| **Objections on a call** | For someone selling on the telephone: when the customer raises an objection, the objection in one line and one line that answers it. | yes |
-| **Interview help** | For someone being interviewed: the answer to the question just asked, in a few short lines, or what to cover in the next reply. | yes |
+| Assistant | `code` | What it writes | Asks a model |
+| --- | --- | --- | --- |
+| **Subtitles** | `rt-subtitles` | The words of both sides, as they are said. | no |
+| **Translation** | `rt-translate` | The other side's words, translated into the language of the program. | yes |
+| **Sales** | `rt-objections` | For someone selling on the telephone: when the customer raises an objection, the objection in one line and one line that answers it. | yes |
+| **Interview help** | `rt-interview` | For someone being interviewed: the answer to the question just asked, in a few short lines, or what to cover in the next reply. | yes |
+
+These are the shipped assistant names; screenshots may use earlier names. “—” from `rt-objections` means there is no useful suggestion. The assistant also covers unanswered questions and readiness to buy.
 
 **▲** and **▼** change the order, which is the order of the drop-down in the [prompter window](/interface/prompter#the-window). **Add** makes an assistant of your own. **Restore defaults** puts the prompts and the rules back as they came with the program, here and under [Processing](/ai-processing/processing#defaults) alike; your language models are left alone.
 
@@ -79,3 +81,81 @@ Pressing an assistant opens its card. It is the same card as a [prompt](/ai-proc
 | **Models, a month** | The prompting stops and the subtitles carry on. |
 
 Empty is no ceiling. What a minute of live audio costs is the recogniser's **Price a minute**, set on its card in [Transcription](/ai-processing/transcription#the-recognisers-card); without it the prompter says that the figure it shows is an estimate.
+
+## Standard assistants {#assistant-templates}
+
+`system` sets the model’s behaviour; `body` describes the task. The answer shape and reply language are supplied separately through dictionary instructions.
+
+[Placeholders](prompt-studio.md#placeholders)
+
+### Subtitles (`rt-subtitles`) {#rt-subtitles}
+
+**Answer shape:** `plain`.
+
+Empty role and task: no language-model call.
+
+### Translation (`rt-translate`) {#rt-translate}
+
+**Answer shape:** `plain`.
+
+**Role (`system`)**
+
+```text
+You translate speech as it happens. You answer with the translation alone — no preamble, no quotation marks, no explanation — and you keep names, numbers and prices exactly as they were said.
+```
+
+**Task (`body`)**
+
+```text
+Translate into {{language}}:
+
+{{reply}}
+```
+
+### Sales (`rt-objections`) {#rt-objections}
+
+**Answer shape:** `plain`.
+
+**Role (`system`)**
+
+```text
+You help somebody selling on the telephone. You answer in a few short lines they can read while listening, never in paragraphs, and you never promise anything on their behalf.
+```
+
+**Task (`body`)**
+
+```text
+The other person has just said:
+
+{{reply}}
+
+Earlier in this conversation:
+
+{{conversation}}
+
+Say in one line what is happening — an objection, a question you have not answered, a sign they are ready — and in one line what to say next. If there is nothing worth saying, say only "—".
+```
+
+### Interview help (`rt-interview`) {#rt-interview}
+
+**Answer shape:** `plain`.
+
+**Role (`system`)**
+
+```text
+You help somebody who is being interviewed. You answer in a few short lines they can read while listening, never in paragraphs, and you never invent facts about them.
+```
+
+**Task (`body`)**
+
+```text
+The other person has just said:
+
+{{reply}}
+
+Earlier in this conversation:
+
+{{conversation}}
+
+If they asked a question, give the answer itself, in a few short lines, out of what is common knowledge on the subject. If no question was asked, say briefly what the candidate should cover in their next reply.
+```

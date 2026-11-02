@@ -186,3 +186,13 @@ A recording made somewhere else — on a mobile phone, a dictaphone or another s
 ## Deleting a recording
 
 When a recording is deleted, everything made from it goes with it: the transcripts and the write-ups. How long recordings are kept by themselves is set in [Recordings](../recordings.md#retention).
+
+## Understanding results {#result-notes}
+
+There are no default automatic rules for `action-items`, `topics`, `entities` or `qa`. Run the prompt manually or add a suitable rule; enter the question when running `qa`.
+
+An empty list of tasks or flags can be a valid result. Missing owners and dates must not be invented. Answers to questions must be based only on the transcript.
+
+Run `summary` before `super-summary`, which uses `{{artifact:summary}}`. Run `categorise` before quality assessment: `sales-quality` needs category `sales`, and `support-quality` needs `support`.
+
+[Standard prompt texts](../ai-processing/prompt-studio.md#standard-templates) · [Response formats](../ai-processing/dictionaries.md#response-formats)

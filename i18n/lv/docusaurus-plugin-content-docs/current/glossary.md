@@ -32,3 +32,7 @@ description: Šajā dokumentācijā lietotie IP telefonijas un AI Softphone term
 | **Atšifrējums** | Saruna tekstā, replika pēc replikas, sinhroni ar skaņu. |
 | **Tīmekļa āķis** | Pieprasījums, ko tālrunis nosūta citai sistēmai, kad zvans sākas, mainās vai beidzas. Skatiet [Tīmekļa āķi](/integration/webhooks). |
 | **Platjoslas** | Kodeks ar plašāku skaņas diapazonu nekā tālruņa līnijai, tāpēc balss ir skaidrāka. |
+| **[Vietturis](ai-processing/prompt-studio.md#placeholders)** | Uzvednes elements, kas tiek aizstāts ar sarunas datiem. |
+| **[Citas uzvednes rezultāts](ai-processing/processing.md#default-execution)** | Esošs rezultāts, ko atkārtoti izmanto cita uzvedne, piemēram, `{{artifact:summary}}`. |
+| **[Modeļa loma](ai-processing/prompt-studio.md#role-and-task)** | `system` nosaka modeļa uzvedību; `body` apraksta uzdevumu. Atbildes forma un valoda tiek norādīta atsevišķi ar sarakstu instrukcijām. |
+| **[Atbildes forma](ai-processing/dictionaries.md#response-formats)** | Rezultāta struktūra, piemēram, teksts, punkti, atzīmes, brīdinājumi vai kritēriji. |

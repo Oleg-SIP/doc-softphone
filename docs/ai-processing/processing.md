@@ -32,16 +32,16 @@ The models that read a transcript and write about it. Press **Add** to add one. 
 
 *What runs by itself, in this order. Each one fires at most once per conversation.* A rule is a line with a check box that switches it on or off, its name, and under it what it does. **▲** and **▼** change the order. The program comes with eight:
 
-| Rule | Does | When |
-| --- | --- | --- |
-| **Transcribe every conversation** | Transcribes it. | always |
-| **Summarise it** | Asks a model: **Summary**. | always |
-| **Reduce it to one line** | Asks a model: **One-line summary**. | always |
-| **File it under a category** | Asks a model: **Category**. | always |
-| **Label it** | Asks a model: **Tags**. | always |
-| **Raise anything worth a look** | Asks a model: **Red flags**. | always |
-| **Assess it, if it was a sale** | Asks a model: **Sales quality**. | only if the category is **Sales** |
-| **Assess it, if it was support** | Asks a model: **Support quality**. | only if the category is **Support** |
+| Rule | `code` | Does | `prompt` | When |
+| --- | --- | --- | --- | --- |
+| **Transcribe every conversation** | `transcribe` | Transcribes it. | — | always |
+| **Summarise it** | `summary` | Asks a model: **Summary**. | `summary` | always |
+| **Reduce it to one line** | `super-summary` | Asks a model: **One-line summary**. | `super-summary` | always |
+| **File it under a category** | `categorise` | Asks a model: **Category**. | `categorise` | always |
+| **Label it** | `tags` | Asks a model: **Tags**. | `tags` | always |
+| **Raise anything worth a look** | `red-flags` | Asks a model: **Red flags**. | `red-flags` | always |
+| **Assess it, if it was a sale** | `sales-quality` | Asks a model: **Sales quality**. | `sales-quality` | only if the category is **Sales** |
+| **Assess it, if it was support** | `support-quality` | Asks a model: **Support quality**. | `support-quality` | only if the category is **Support** |
 
 The order matters: the last two rules need the category that the rule before them has set. **Add** makes a rule of your own.
 
@@ -63,3 +63,13 @@ There are two limits because a month can be counted in two things. Both are empt
 **Restore defaults** puts the prompts and the rules back as they came with the program, in the current interface language. Your language models are left alone.
 
 The prompts and rules that came with the program stay in the language they were in when you switch the interface language; **Restore defaults** brings them into the new one. Each prompt is then marked *changed* at the right.
+
+## Default execution {#default-execution}
+
+Run `summary` before `super-summary`, which uses `{{artifact:summary}}`. Run `categorise` before quality assessment: `sales-quality` needs category `sales`, and `support-quality` needs `support`.
+
+There are no default automatic rules for `action-items`, `topics`, `entities` or `qa`. Run the prompt manually or add a suitable rule; enter the question when running `qa`.
+
+The standard set is saved on first use. Editing a Markdown export does not change the application: edit the prompt card or restore defaults.
+
+[Standard prompt texts](prompt-studio.md#standard-templates)

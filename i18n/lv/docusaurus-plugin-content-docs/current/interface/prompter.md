@@ -60,3 +60,16 @@ Logs rindā zem pogām pasaka, kas trūkst.
 | *Atpazinējs nesāka klausīties. Pārbaudiet tā tiešo adresi un modeli sadaļā Iestatījumi → Pieraksts.* | Adrese suflierim, modelis vai atslēga ir nepareiza. **Pārbaudīt** atpazinēja kartītē pasaka, kas tieši. |
 | *Šā mēneša summa atpazinējiem ir iztērēta.* | Palieliniet **Atpazinēji, mēnesī** vai gaidiet, līdz mainās mēnesis. |
 | *Šā mēneša summa modeļiem ir iztērēta. Vārdi turpinās; suflēšana ir apstājusies.* | Palieliniet **Modeļi, mēnesī**. |
+
+## Iekļautie asistenti {#standard-assistants}
+
+| `code` | Iekļautie asistenti |
+| --- | --- |
+| `rt-subtitles` | Subtitri |
+| `rt-translate` | Tulkojums |
+| `rt-objections` | Pārdošana |
+| `rt-interview` | Palīdzība intervijā |
+
+Tie ir iekļauto asistentu nosaukumi; ekrānattēlos var būt agrāki nosaukumi. `rt-objections` atbilde “—” nozīmē, ka nav noderīga ieteikuma. Instrukcijas aptver arī neatbildētus jautājumus un gatavību pirkt.
+
+[Noklusējuma uzvedņu teksti](../ai-processing/prompter.md#assistant-templates)

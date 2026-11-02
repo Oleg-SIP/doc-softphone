@@ -60,3 +60,16 @@ Aken ütleb nuppude all oleval real, mis puudu on.
 | *Tuvastaja ei hakanud kuulama. Kontrollige selle otseaadressi ja mudelit Seaded → Ülestähendus all.* | Aadress etteütleja jaoks, mudel või võti on vale. **Kontrolli** tuvastaja kaardil ütleb, milline. |
 | *Selle kuu summa tuvastajate jaoks on otsas.* | Tõstke **Tuvastajad, kuus** või oodake kuu vahetumist. |
 | *Selle kuu summa mudelite jaoks on otsas. Sõnad jätkuvad; etteütlemine on peatunud.* | Tõstke **Mudelid, kuus**. |
+
+## Kaasasolevad assistendid {#standard-assistants}
+
+| `code` | Kaasasolevad assistendid |
+| --- | --- |
+| `rt-subtitles` | Subtiitrid |
+| `rt-translate` | Tõlge |
+| `rt-objections` | Müük |
+| `rt-interview` | Abi vestlusel |
+
+Need on kaasasolevate assistentide nimed; kuvatõmmistel võivad olla varasemad nimed. Viiba `rt-objections` vastus „—“ tähendab, et kasulikku soovitust pole. Juhised hõlmavad ka vastamata küsimusi ja ostuvalmidust.
+
+[Viipade standardtekstid](../ai-processing/prompter.md#assistant-templates)

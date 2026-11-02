@@ -60,3 +60,16 @@ Okno v vrstici pod gumbi pove, kaj manjka.
 | *Razpoznavalnik ni začel poslušati. Preverite njegov živi naslov in model v Nastavitve → Prepis.* | Naslov za šepetalca, model ali ključ je napačen. **Preveri** na kartici razpoznavalnika pove, kaj točno. |
 | *Mesečni znesek za razpoznavalnike je porabljen.* | Povečajte **Razpoznavalniki, na mesec** ali počakajte na nov mesec. |
 | *Mesečni znesek za modele je porabljen. Besede gredo naprej; šepetanje se je ustavilo.* | Povečajte **Modeli, na mesec**. |
+
+## Priloženi pomočniki {#standard-assistants}
+
+| `code` | Priloženi pomočniki |
+| --- | --- |
+| `rt-subtitles` | Podnapisi |
+| `rt-translate` | Prevod |
+| `rt-objections` | Prodaja |
+| `rt-interview` | Pomoč na razgovoru |
+
+To so priložena imena pomočnikov; posnetki zaslona lahko kažejo prejšnja imena. »—« iz `rt-objections` pomeni, da ni koristnega predloga. Navodila zajemajo tudi neodgovorjena vprašanja in pripravljenost za nakup.
+
+[Privzeta besedila pozivov](../ai-processing/prompter.md#assistant-templates)

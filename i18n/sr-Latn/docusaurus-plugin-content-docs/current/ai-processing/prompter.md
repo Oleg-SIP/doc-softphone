@@ -39,12 +39,14 @@ Glas druge strane šalje se prepoznavaču dok govori, što nije ništa manje od 
 
 Pomoćnik je ono što se od šaptača traži da bude. *Svaki od njih sluša razgovor u toku i piše nešto u prozor šaptača: reči onako kako se izgovaraju, njihov prevod, ili predlog šta reći dalje.* Koji pokrenuti, birate u prozoru šaptača. Program donosi četiri:
 
-| Pomoćnik | Šta piše | Pita model |
-| --- | --- | --- |
-| **Titlovi** | Reči obe strane dok se izgovaraju. | ne |
-| **Prevod** | Reči druge strane, prevedene na jezik programa. | da |
-| **Primedbe u pozivu** | Za onoga ko prodaje telefonom: kada kupac iznese primedbu, primedbu u jednom redu i jedan red koji na nju odgovara. | da |
-| **Pomoć na razgovoru** | Za onoga s kim se vodi razgovor za posao: odgovor na upravo postavljeno pitanje u nekoliko kratkih redova ili ono što obuhvatiti u sledećem odgovoru. | da |
+| Pomoćnik | `code` | Šta piše | Pita model |
+| --- | --- | --- | --- |
+| **Titlovi** | `rt-subtitles` | Reči obe strane dok se izgovaraju. | ne |
+| **Prevod** | `rt-translate` | Reči druge strane, prevedene na jezik programa. | da |
+| **Prodaja** | `rt-objections` | Za onoga ko prodaje telefonom: kada kupac iznese primedbu, primedbu u jednom redu i jedan red koji na nju odgovara. | da |
+| **Pomoć na razgovoru** | `rt-interview` | Za onoga s kim se vodi razgovor za posao: odgovor na upravo postavljeno pitanje u nekoliko kratkih redova ili ono što obuhvatiti u sledećem odgovoru. | da |
+
+Ovo su ugrađena imena pomoćnika; snimci ekrana mogu prikazivati ranija imena. „—” iz `rt-objections` znači da nema korisnog predloga. Uputstva pokrivaju i neodgovorena pitanja i spremnost za kupovinu.
 
 **▲** i **▼** menjaju redosled, a to je redosled padajuće liste u [prozoru šaptača](/interface/prompter#the-window). **Dodaj** stvara sopstvenog pomoćnika. **Vrati podrazumevano** vraća uputstva i pravila kakva su došla sa programom, ovde kao i u [Obrada](/ai-processing/processing#defaults); vaši jezički modeli ostaju netaknuti.
 
@@ -74,3 +76,81 @@ Klik na pomoćnika otvara njegovu karticu. To je ista kartica kao kod [uputstva]
 | **Modeli, mesečno** | Predlozi prestaju, a titlovi se nastavljaju. |
 
 Prazno znači bez ograničenja. Cena minuta zvuka uživo je **Cena po minutu** prepoznavača, upisana na njegovoj kartici u [Prepisivanje](/ai-processing/transcription#the-recognisers-card); bez nje šaptač upozorava da je prikazani iznos procena.
+
+## Ugrađeni pomoćnici {#assistant-templates}
+
+`system` određuje ponašanje modela, a `body` opisuje zadatak. Oblik i jezik odgovora daju se odvojeno kroz uputstva iz spiskova.
+
+[Zamenske oznake](prompt-studio.md#placeholders)
+
+### Titlovi (`rt-subtitles`) {#rt-subtitles}
+
+**Oblik odgovora:** `plain`.
+
+Prazna uloga i zadatak: jezički model se ne poziva.
+
+### Prevod (`rt-translate`) {#rt-translate}
+
+**Oblik odgovora:** `plain`.
+
+**Uloga (`system`)**
+
+```text
+Prevodiš govor dok se odvija. Odgovaraš samo prevodom — bez uvoda, bez navodnika, bez objašnjenja — a imena, brojeve i cene ostavljaš tačno onako kako su izgovoreni.
+```
+
+**Zadatak (`body`)**
+
+```text
+Prevedi na {{language}}:
+
+{{reply}}
+```
+
+### Prodaja (`rt-objections`) {#rt-objections}
+
+**Oblik odgovora:** `plain`.
+
+**Uloga (`system`)**
+
+```text
+Pomažete osobi koja prodaje telefonom. Odgovarate s nekoliko kratkih redova koji se mogu čitati tokom slušanja, nikada pasusima, i nikada ništa ne obećavate u njeno ime.
+```
+
+**Zadatak (`body`)**
+
+```text
+Sagovornik je upravo rekao:
+
+{{reply}}
+
+Ranije u ovom razgovoru:
+
+{{conversation}}
+
+Jednim redom recite šta se dešava — primedba, neodgovoreno pitanje, znak da su spremni da kupe — i jednim redom šta reći dalje. Ako nema šta da se kaže, napišite samo „—“.
+```
+
+### Pomoć na razgovoru (`rt-interview`) {#rt-interview}
+
+**Oblik odgovora:** `plain`.
+
+**Uloga (`system`)**
+
+```text
+Pomažete osobi s kojom se vodi razgovor za posao. Odgovarate s nekoliko kratkih redova koji se mogu čitati tokom slušanja, nikada pasusima, i nikada ne izmišljate činjenice o njoj.
+```
+
+**Zadatak (`body`)**
+
+```text
+Sagovornik je upravo rekao:
+
+{{reply}}
+
+Ranije u ovom razgovoru:
+
+{{conversation}}
+
+U tri kratka reda recite šta zapravo pita i šta bi dobar odgovor trebalo da obuhvati.
+```

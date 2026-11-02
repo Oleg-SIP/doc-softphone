@@ -186,3 +186,13 @@ Nahrávku urobenú inde — na mobilnom telefóne, diktafóne alebo v inom syst�
 ## Zmazanie nahrávky {#deleting-a-recording}
 
 Keď sa nahrávka zmaže, odíde s ňou všetko, čo z nej vzniklo: prepisy aj spracovania. Ako dlho sa nahrávky uchovávajú samy, sa nastavuje v [Nahrávkach](../recordings.md#retention).
+
+## Ako čítať výsledky {#result-notes}
+
+Pre `action-items`, `topics`, `entities` ani `qa` nie sú predvolené automatické pravidlá. Spustite prompt ručne alebo pridajte vhodné pravidlo; pri spustení `qa` zadajte otázku.
+
+Prázdny zoznam úloh alebo príznakov môže byť správny výsledok. Chýbajúce zodpovedné osoby a termíny sa nesmú vymýšľať. Odpovede na otázky musia vychádzať iba z prepisu.
+
+Spustite `summary` pred `super-summary`, ktorý používa `{{artifact:summary}}`. Pred hodnotením kvality spustite `categorise`: `sales-quality` vyžaduje kategóriu `sales`, `support-quality` kategóriu `support`.
+
+[Predvolené texty promptov](../ai-processing/prompt-studio.md#standard-templates) · [Formáty odpovedí](../ai-processing/dictionaries.md#response-formats)

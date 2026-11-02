@@ -32,3 +32,7 @@ description: Termenii de telefonie IP și de AI Softphone folosiți în această
 | **Transcriere** | O conversație sub formă de text, replică cu replică, sincronizată cu sunetul. |
 | **Webhook** | O cerere pe care telefonul o trimite altui sistem când un apel începe, se schimbă sau se încheie. Consultați [Webhookuri](/integration/webhooks). |
 | **Bandă largă** | Un codec cu o gamă de sunet mai largă decât a unei linii telefonice, astfel încât vocea este mai clară. |
+| **[Substituent](ai-processing/prompt-studio.md#placeholders)** | Un element al promptului înlocuit cu datele conversației. |
+| **[Rezultatul altui prompt](ai-processing/processing.md#default-execution)** | Un rezultat existent reutilizat de alt prompt, de exemplu `{{artifact:summary}}`. |
+| **[Rolul modelului](ai-processing/prompt-studio.md#role-and-task)** | `system` stabilește comportamentul modelului; `body` descrie sarcina. Forma și limba răspunsului sunt furnizate separat prin instrucțiunile dicționarului. |
+| **[Forma răspunsului](ai-processing/dictionaries.md#response-formats)** | Structura rezultatului, precum proză, elemente, etichete, alerte sau criterii. |

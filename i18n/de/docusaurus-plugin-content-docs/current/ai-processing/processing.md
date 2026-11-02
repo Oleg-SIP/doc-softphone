@@ -34,16 +34,16 @@ Nach einem Wechsel der Oberflächensprache und **Voreinstellungen wiederherstell
 
 *Was von selbst läuft, in dieser Reihenfolge. Jede greift höchstens einmal je Gespräch.* Eine Regel ist eine Zeile mit einem Kontrollkästchen, das sie ein- oder ausschaltet, ihrem Namen und darunter dem, was sie tut. **▲** und **▼** ändern die Reihenfolge. Das Programm bringt acht mit:
 
-| Regel | Tut | Wann |
-| --- | --- | --- |
-| **Jedes Gespräch transkribieren** | Transkribiert es. | immer |
-| **Zusammenfassen** | Fragt ein Modell: **Zusammenfassung**. | immer |
-| **Auf eine Zeile bringen** | Fragt ein Modell: **Zusammenfassung in einer Zeile**. | immer |
-| **Einer Kategorie zuordnen** | Fragt ein Modell: **Kategorie**. | immer |
-| **Mit Labeln versehen** | Fragt ein Modell: **Label**. | immer |
-| **Alles anführen, was einen Blick wert ist** | Fragt ein Modell: **Auffälligkeiten**. | immer |
-| **Beurteilen, wenn es Vertrieb war** | Fragt ein Modell: **Vertriebsqualität**. | nur wenn die Kategorie **Vertrieb** ist |
-| **Beurteilen, wenn es Support war** | Fragt ein Modell: **Supportqualität**. | nur wenn die Kategorie **Support** ist |
+| Regel | `code` | Tut | `prompt` | Wann |
+| --- | --- | --- | --- | --- |
+| **Jedes Gespräch transkribieren** | `transcribe` | Transkribiert es. | — | immer |
+| **Zusammenfassen** | `summary` | Fragt ein Modell: **Zusammenfassung**. | `summary` | immer |
+| **Auf eine Zeile bringen** | `super-summary` | Fragt ein Modell: **Zusammenfassung in einer Zeile**. | `super-summary` | immer |
+| **Einer Kategorie zuordnen** | `categorise` | Fragt ein Modell: **Kategorie**. | `categorise` | immer |
+| **Mit Labeln versehen** | `tags` | Fragt ein Modell: **Label**. | `tags` | immer |
+| **Alles anführen, was einen Blick wert ist** | `red-flags` | Fragt ein Modell: **Auffälligkeiten**. | `red-flags` | immer |
+| **Beurteilen, wenn es Vertrieb war** | `sales-quality` | Fragt ein Modell: **Vertriebsqualität**. | `sales-quality` | nur wenn die Kategorie **Vertrieb** ist |
+| **Beurteilen, wenn es Support war** | `support-quality` | Fragt ein Modell: **Supportqualität**. | `support-quality` | nur wenn die Kategorie **Support** ist |
 
 Die Reihenfolge zählt: Die letzten beiden Regeln brauchen die Kategorie, die die Regel davor gesetzt hat. **Hinzufügen** legt eine eigene Regel an.
 
@@ -63,3 +63,13 @@ Es gibt zwei Grenzen, weil sich ein Monat in zwei Dingen zählen lässt. Beide s
 ## Voreinstellungen {#defaults}
 
 **Voreinstellungen wiederherstellen** setzt Prompts und Regeln auf den Auslieferungsstand zurück, in der aktuellen Oberflächensprache. Ihre Sprachmodelle bleiben unberührt.
+
+## Standardausführung {#default-execution}
+
+Führen Sie `summary` vor `super-summary` aus, das `{{artifact:summary}}` verwendet. `categorise` muss vor der Qualitätsbewertung laufen: `sales-quality` benötigt `sales`, `support-quality` benötigt `support`.
+
+Für `action-items`, `topics`, `entities` und `qa` gibt es keine automatischen Standardregeln. Starten Sie den Prompt manuell oder ergänzen Sie eine passende Regel; bei `qa` geben Sie die Frage ein.
+
+Der Standardsatz wird beim ersten Einsatz gespeichert. Eine bearbeitete Markdown-Datei ändert die Anwendung nicht: Bearbeiten Sie die Prompt-Karte oder stellen Sie die Voreinstellungen wieder her.
+
+[Standardtexte der Prompts](prompt-studio.md#standard-templates)

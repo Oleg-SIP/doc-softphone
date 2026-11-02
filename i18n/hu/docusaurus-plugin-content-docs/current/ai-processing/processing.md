@@ -32,16 +32,16 @@ Azok a modellek, amelyek elolvassák a leiratot, és írnak róla. Új modell fe
 
 *Az, ami magától fut, ebben a sorrendben. Mindegyik legfeljebb egyszer sül el beszélgetésenként.* Egy szabály egy sor, benne egy jelölőnégyzet, amely be- vagy kikapcsolja, a szabály neve, alatta pedig az, hogy mit csinál. A **▲** és **▼** módosítja a sorrendet. A program nyolc szabállyal érkezik:
 
-| Szabály | Mit csinál | Mikor |
-| --- | --- | --- |
-| **Minden beszélgetés leírása** | Leiratot készít róla. | mindig |
-| **Összefoglalás** | Megkérdez egy modellt: **Összefoglaló**. | mindig |
-| **Egy sorra szűkítés** | Megkérdez egy modellt: **Egysoros összefoglaló**. | mindig |
-| **Besorolás kategóriába** | Megkérdez egy modellt: **Kategória**. | mindig |
-| **Címkézés** | Megkérdez egy modellt: **Címkék**. | mindig |
-| **Ami figyelmet érdemel, kiemelése** | Megkérdez egy modellt: **Figyelmeztető jelek**. | mindig |
-| **Értékelés, ha értékesítés volt** | Megkérdez egy modellt: **Értékesítés minősége**. | csak ha a kategória **Értékesítés** |
-| **Értékelés, ha támogatás volt** | Megkérdez egy modellt: **Támogatás minősége**. | csak ha a kategória **Támogatás** |
+| Szabály | `code` | Mit csinál | `prompt` | Mikor |
+| --- | --- | --- | --- | --- |
+| **Minden beszélgetés leírása** | `transcribe` | Leiratot készít róla. | — | mindig |
+| **Összefoglalás** | `summary` | Megkérdez egy modellt: **Összefoglaló**. | `summary` | mindig |
+| **Egy sorra szűkítés** | `super-summary` | Megkérdez egy modellt: **Egysoros összefoglaló**. | `super-summary` | mindig |
+| **Besorolás kategóriába** | `categorise` | Megkérdez egy modellt: **Kategória**. | `categorise` | mindig |
+| **Címkézés** | `tags` | Megkérdez egy modellt: **Címkék**. | `tags` | mindig |
+| **Ami figyelmet érdemel, kiemelése** | `red-flags` | Megkérdez egy modellt: **Figyelmeztető jelek**. | `red-flags` | mindig |
+| **Értékelés, ha értékesítés volt** | `sales-quality` | Megkérdez egy modellt: **Értékesítés minősége**. | `sales-quality` | csak ha a kategória **Értékesítés** |
+| **Értékelés, ha támogatás volt** | `support-quality` | Megkérdez egy modellt: **Támogatás minősége**. | `support-quality` | csak ha a kategória **Támogatás** |
 
 A sorrend számít: az utolsó két szabálynak szüksége van arra a kategóriára, amelyet az előttük lévő szabály állít be. A **Hozzáadás** saját szabályt hoz létre.
 
@@ -63,3 +63,13 @@ Két korlát van, mert egy hónapot kétféle egységben lehet mérni. Mindkett�
 Az **Alapértékek visszaállítása** visszaállítja az utasításokat és a szabályokat a programmal érkezett állapotukra, a felület aktuális nyelvén. A nyelvi modelljeit érintetlenül hagyja.
 
 A programmal érkezett utasítások és szabályok a felület nyelvének váltásakor azon a nyelven maradnak, amelyen addig voltak; az **Alapértékek visszaállítása** hozza át őket az új nyelvre. Ezután minden utasítás mellett jobbra a *módosítva* jelölés áll.
+
+## Alapértelmezett futtatás {#default-execution}
+
+A `summary` fusson a `super-summary` előtt, amely a `{{artifact:summary}}` eredményét használja. A `categorise` előzze meg a minőségértékelést: a `sales-quality` feltétele `sales`, a `support-quality` feltétele `support`.
+
+Az `action-items`, `topics`, `entities` és `qa` promptokhoz nincs alapértelmezett automatikus szabály. Indítsa őket kézzel, vagy adjon hozzá megfelelő szabályt; a `qa` indításakor írja be a kérdést.
+
+Az alapértelmezett készlet az első használatkor kerül mentésre. A Markdown-export szerkesztése nem módosítja az alkalmazást: szerkessze a prompt kártyáját, vagy állítsa vissza az alapértékeket.
+
+[Alapértelmezett promptszövegek](prompt-studio.md#standard-templates)

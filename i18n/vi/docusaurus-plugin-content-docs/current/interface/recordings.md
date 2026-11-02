@@ -186,3 +186,13 @@ Một bản ghi được tạo ở nơi khác — trên điện thoại di độ
 ## Xoá một bản ghi {#deleting-a-recording}
 
 Khi một bản ghi bị xoá, mọi thứ được tạo ra từ nó cũng bị xoá theo: các bản chép lời và kết quả xử lý. Thời gian tự động giữ bản ghi được thiết lập trong [Bản ghi](../recordings.md#retention).
+
+## Hiểu kết quả {#result-notes}
+
+Không có quy tắc tự động mặc định cho `action-items`, `topics`, `entities` hoặc `qa`. Hãy chạy lời nhắc thủ công hoặc thêm quy tắc phù hợp; nhập câu hỏi khi chạy `qa`.
+
+Danh sách nhiệm vụ hoặc cảnh báo trống có thể là kết quả đúng. Không được tự đặt người phụ trách hoặc thời hạn còn thiếu. Câu trả lời phải chỉ dựa trên bản chép lời.
+
+Chạy `summary` trước `super-summary`, vì lời nhắc sau sử dụng `{{artifact:summary}}`. Chạy `categorise` trước khi đánh giá chất lượng: `sales-quality` yêu cầu phân loại `sales`, còn `support-quality` yêu cầu `support`.
+
+[Nội dung lời nhắc mặc định](../ai-processing/prompt-studio.md#standard-templates) · [Định dạng câu trả lời](../ai-processing/dictionaries.md#response-formats)

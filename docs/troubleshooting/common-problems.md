@@ -125,3 +125,21 @@ When something does not happen, the phone says why in a line of its own. A line 
 ### When the phone starts
 
 *Database cannot be read* means the database was made by a different version of the program, and this one cannot read it. Usually an older version was started on the data of a newer one: installing the newer version again opens it as it was. **Start again** makes an empty database instead — every contact and every call in the history is lost, and that cannot be undone. Before you press it, you can keep a copy of the database file; [Diagnostics](/troubleshooting/diagnostics#files) says where it is.
+
+## Default execution {#default-prompt-execution}
+
+There are no default automatic rules for `action-items`, `topics`, `entities` or `qa`. Run the prompt manually or add a suitable rule; enter the question when running `qa`.
+
+Run `summary` before `super-summary`, which uses `{{artifact:summary}}`. Run `categorise` before quality assessment: `sales-quality` needs category `sales`, and `support-quality` needs `support`.
+
+[Default execution](../ai-processing/processing.md#default-execution)
+
+## Understanding results {#prompt-result-notes}
+
+An empty list of tasks or flags can be a valid result. Missing owners and dates must not be invented. Answers to questions must be based only on the transcript.
+
+These are the shipped assistant names; screenshots may use earlier names. “—” from `rt-objections` means there is no useful suggestion. The assistant also covers unanswered questions and readiness to buy.
+
+The standard set is saved on first use. Editing a Markdown export does not change the application: edit the prompt card or restore defaults.
+
+[Standard prompt texts](../ai-processing/prompt-studio.md#standard-templates) · [Standard assistants](../ai-processing/prompter.md#assistant-templates)

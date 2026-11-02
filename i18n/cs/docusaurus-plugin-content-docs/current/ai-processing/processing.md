@@ -34,16 +34,16 @@ Po přepnutí jazyka rozhraní a stisku **Obnovit výchozí** jsou pokyny v nov�
 
 *To, co běží samo, v tomto pořadí. Každé se spustí nejvýše jednou na hovor.* Pravidlo je řádek se zaškrtávacím políčkem, které ho zapíná a vypíná, jeho názvem a pod ním tím, co dělá. **▲** a **▼** mění pořadí. Program přichází s osmi:
 
-| Pravidlo | Dělá | Kdy |
-| --- | --- | --- |
-| **Přepsat každý hovor** | Přepíše ho. | vždy |
-| **Shrnout ho** | Zeptá se modelu: **Shrnutí**. | vždy |
-| **Zkrátit ho na jeden řádek** | Zeptá se modelu: **Shrnutí na jeden řádek**. | vždy |
-| **Zařadit ho do kategorie** | Zeptá se modelu: **Kategorie**. | vždy |
-| **Označit ho** | Zeptá se modelu: **Štítky**. | vždy |
-| **Zvednout, co stojí za pohled** | Zeptá se modelu: **Varovné signály**. | vždy |
-| **Posoudit ho, pokud šlo o prodej** | Zeptá se modelu: **Kvalita prodeje**. | jen pokud je kategorie **Prodej** |
-| **Posoudit ho, pokud šlo o podporu** | Zeptá se modelu: **Kvalita podpory**. | jen pokud je kategorie **Podpora** |
+| Pravidlo | `code` | Dělá | `prompt` | Kdy |
+| --- | --- | --- | --- | --- |
+| **Přepsat každý hovor** | `transcribe` | Přepíše ho. | — | vždy |
+| **Shrnout ho** | `summary` | Zeptá se modelu: **Shrnutí**. | `summary` | vždy |
+| **Zkrátit ho na jeden řádek** | `super-summary` | Zeptá se modelu: **Shrnutí na jeden řádek**. | `super-summary` | vždy |
+| **Zařadit ho do kategorie** | `categorise` | Zeptá se modelu: **Kategorie**. | `categorise` | vždy |
+| **Označit ho** | `tags` | Zeptá se modelu: **Štítky**. | `tags` | vždy |
+| **Zvednout, co stojí za pohled** | `red-flags` | Zeptá se modelu: **Varovné signály**. | `red-flags` | vždy |
+| **Posoudit ho, pokud šlo o prodej** | `sales-quality` | Zeptá se modelu: **Kvalita prodeje**. | `sales-quality` | jen pokud je kategorie **Prodej** |
+| **Posoudit ho, pokud šlo o podporu** | `support-quality` | Zeptá se modelu: **Kvalita podpory**. | `support-quality` | jen pokud je kategorie **Podpora** |
 
 Na pořadí záleží: poslední dvě pravidla potřebují kategorii, kterou nastavilo pravidlo před nimi. **Přidat** vytvoří vlastní pravidlo.
 
@@ -63,3 +63,13 @@ Limity jsou dva, protože měsíc se dá počítat ve dvou jednotkách. Oba jsou
 ## Výchozí {#defaults}
 
 **Obnovit výchozí** vrátí pokyny a pravidla tak, jak přišly s programem, v aktuálním jazyce rozhraní. Vaše jazykové modely zůstanou nedotčené.
+
+## Výchozí spouštění {#default-execution}
+
+Spusťte `summary` před `super-summary`, který používá `{{artifact:summary}}`. Před hodnocením kvality spusťte `categorise`: `sales-quality` vyžaduje kategorii `sales`, `support-quality` kategorii `support`.
+
+Pro `action-items`, `topics`, `entities` ani `qa` nejsou výchozí automatická pravidla. Spusťte prompt ručně nebo přidejte vhodné pravidlo; při spuštění `qa` zadejte otázku.
+
+Výchozí sada se uloží při prvním použití. Úprava exportu Markdown nemění aplikaci: upravte kartu promptu nebo obnovte výchozí nastavení.
+
+[Výchozí texty promptů](prompt-studio.md#standard-templates)

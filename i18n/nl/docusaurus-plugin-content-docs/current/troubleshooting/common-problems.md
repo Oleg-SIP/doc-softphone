@@ -125,3 +125,21 @@ Als iets niet lukt, zegt de telefoon waarom op een eigen regel. Een regel onder 
 ### Bij het starten van de telefoon {#when-the-phone-starts}
 
 *Database onleesbaar* betekent dat de database door een andere versie van het programma is gemaakt en dat deze haar niet kan lezen. Meestal is een oudere versie gestart op de gegevens van een nieuwere: als u de nieuwere versie opnieuw installeert, opent die haar zoals ze was. **Opnieuw beginnen** maakt in plaats daarvan een lege database — elk contact en elk gesprek in de geschiedenis gaat verloren, en dat kan niet ongedaan worden gemaakt. Voordat u erop drukt, kunt u een kopie van het databasebestand bewaren; [Diagnose](/troubleshooting/diagnostics#files) zegt waar het staat.
+
+## Standaarduitvoering {#default-prompt-execution}
+
+Er zijn geen automatische standaardregels voor `action-items`, `topics`, `entities` of `qa`. Start de prompt handmatig of voeg een passende regel toe; voer de vraag in bij het starten van `qa`.
+
+Voer `summary` uit vóór `super-summary`, dat `{{artifact:summary}}` gebruikt. Voer `categorise` uit vóór de kwaliteitsbeoordeling: `sales-quality` vereist `sales`, en `support-quality` vereist `support`.
+
+[Standaarduitvoering](../ai-processing/processing.md#default-execution)
+
+## Resultaten begrijpen {#prompt-result-notes}
+
+Een lege lijst met taken of waarschuwingen kan correct zijn. Ontbrekende verantwoordelijken en datums mogen niet worden verzonnen. Antwoorden op vragen moeten uitsluitend op het transcript berusten.
+
+Dit zijn de meegeleverde assistentnamen; schermafbeeldingen kunnen eerdere namen tonen. “—” van `rt-objections` betekent dat er geen nuttige suggestie is. De instructies behandelen ook onbeantwoorde vragen en koopbereidheid.
+
+De standaardset wordt bij het eerste gebruik opgeslagen. Een Markdown-export bewerken verandert de toepassing niet: bewerk de promptkaart of herstel de standaardinstellingen.
+
+[Standaardteksten van prompts](../ai-processing/prompt-studio.md#standard-templates) · [Meegeleverde assistenten](../ai-processing/prompter.md#assistant-templates)

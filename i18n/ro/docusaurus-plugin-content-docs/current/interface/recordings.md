@@ -186,3 +186,13 @@ O înregistrare făcută în altă parte — pe un telefon mobil, un reportofon 
 ## Ștergerea unei înregistrări {#deleting-a-recording}
 
 Când o înregistrare este ștearsă, tot ce s-a făcut pe baza ei dispare odată cu ea: transcrierile și prelucrările. Cât timp se păstrează înregistrările de la sine se stabilește în [Înregistrări](../recordings.md#retention).
+
+## Interpretarea rezultatelor {#result-notes}
+
+Nu există reguli automate implicite pentru `action-items`, `topics`, `entities` sau `qa`. Executați promptul manual sau adăugați o regulă potrivită; introduceți întrebarea la executarea `qa`.
+
+O listă goală de sarcini sau alerte poate fi corectă. Responsabilii și termenele care lipsesc nu trebuie inventate. Răspunsurile la întrebări trebuie să se bazeze numai pe transcriere.
+
+Executați `summary` înainte de `super-summary`, care folosește `{{artifact:summary}}`. Executați `categorise` înainte de evaluarea calității: `sales-quality` necesită `sales`, iar `support-quality` necesită `support`.
+
+[Textele implicite ale prompturilor](../ai-processing/prompt-studio.md#standard-templates) · [Formate de răspuns](../ai-processing/dictionaries.md#response-formats)

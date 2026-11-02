@@ -60,3 +60,16 @@ Cửa sổ cho biết thiếu gì trong một dòng bên dưới các nút.
 | *Bộ nhận dạng chưa bắt đầu lắng nghe. Hãy kiểm tra địa chỉ trực tiếp và mô hình của nó trong Cài đặt → Gỡ băng.* | Địa chỉ cho người nhắc, mô hình hoặc khoá bị sai. **Thử** trên thẻ của bộ nhận dạng cho biết cái nào. |
 | *Khoản của tháng này cho các bộ nhận dạng đã dùng hết.* | Tăng **Bộ nhận dạng, mỗi tháng**, hoặc chờ sang tháng mới. |
 | *Khoản của tháng này cho các mô hình đã dùng hết. Lời nói vẫn tiếp tục; việc nhắc lời đã dừng.* | Tăng **Mô hình, mỗi tháng**. |
+
+## Trợ lý có sẵn {#standard-assistants}
+
+| `code` | Trợ lý có sẵn |
+| --- | --- |
+| `rt-subtitles` | Phụ đề |
+| `rt-translate` | Bản dịch |
+| `rt-objections` | Kinh doanh |
+| `rt-interview` | Trợ giúp phỏng vấn |
+
+Đây là tên các trợ lý có sẵn; ảnh chụp màn hình có thể hiển thị tên cũ. “—” từ `rt-objections` nghĩa là không có gợi ý hữu ích. Hướng dẫn cũng bao gồm câu hỏi chưa được trả lời và dấu hiệu sẵn sàng mua.
+
+[Nội dung lời nhắc mặc định](../ai-processing/prompter.md#assistant-templates)

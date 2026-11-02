@@ -125,3 +125,21 @@ Cuando algo no ocurre, el teléfono dice por qué en una línea aparte. Una lín
 ### Al iniciar el teléfono {#when-the-phone-starts}
 
 *No se puede leer la base de datos* significa que la base de datos la creó otra versión del programa y esta no puede leerla. Normalmente se abrió una versión más antigua con los datos de una más nueva: si vuelve a instalar la versión más nueva, esta abre la base tal como estaba. **Empezar de nuevo**, en cambio, crea una base vacía — se pierden todos los contactos y todas las llamadas del historial, y no se puede deshacer. Antes de pulsarlo, puede guardar una copia del archivo de la base; [Diagnóstico](/troubleshooting/diagnostics#files) dice dónde está.
+
+## Ejecución predeterminada {#default-prompt-execution}
+
+No hay reglas automáticas predeterminadas para `action-items`, `topics`, `entities` ni `qa`. Ejecute el prompt manualmente o añada una regla adecuada; introduzca la pregunta al ejecutar `qa`.
+
+Ejecute `summary` antes de `super-summary`, que utiliza `{{artifact:summary}}`. Ejecute `categorise` antes de evaluar la calidad: `sales-quality` requiere `sales`, y `support-quality` requiere `support`.
+
+[Ejecución predeterminada](../ai-processing/processing.md#default-execution)
+
+## Interpretar los resultados {#prompt-result-notes}
+
+Una lista vacía de tareas o alertas puede ser correcta. No deben inventarse responsables ni fechas. Las respuestas a preguntas deben basarse únicamente en la transcripción.
+
+Estos son los nombres incluidos de los asistentes; las capturas pueden mostrar nombres anteriores. «—» de `rt-objections` indica que no hay una sugerencia útil. Las instrucciones también cubren preguntas pendientes y señales de intención de compra.
+
+El conjunto predeterminado se guarda al usar la aplicación por primera vez. Editar un archivo Markdown exportado no cambia la aplicación: edite la ficha del prompt o restaure los valores predeterminados.
+
+[Textos de los prompts predeterminados](../ai-processing/prompt-studio.md#standard-templates) · [Asistentes incluidos](../ai-processing/prompter.md#assistant-templates)

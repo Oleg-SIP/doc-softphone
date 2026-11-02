@@ -39,12 +39,14 @@ Suflerius skaitomas kalbant, dažnai iš toliau nei likęs telefonas, todėl abu
 
 Pagalbininkas yra tai, kuo sufleriaus prašoma būti. *Kiekvienas jų klauso vykstančio pokalbio ir rašo kažką į suflerio langą: žodžius tokius, kokie pasakomi, jų vertimą arba patarimą, ką sakyti toliau.* Kurį paleisti, pasirenkate sufleriaus lange. Su programa pateikiami keturi:
 
-| Pagalbininkas | Ką jis rašo | Klausia modelio |
-| --- | --- | --- |
-| **Subtitrai** | Abiejų pusių žodžius, kai jie tariami. | ne |
-| **Vertimas** | Kitos pusės žodžius, išverstus į programos kalbą. | taip |
-| **Prieštaravimai skambutyje** | Parduodančiam telefonu: kai klientas išsako prieštaravimą, prieštaravimą viena eilute ir vieną eilutę, kuri į jį atsako. | taip |
-| **Pagalba per pokalbį** | Tam, su kuriuo vyksta darbo pokalbis: atsakymą į ką tik užduotą klausimą keliomis trumpomis eilutėmis arba tai, ką aptarti kitame atsakyme. | taip |
+| Pagalbininkas | `code` | Ką jis rašo | Klausia modelio |
+| --- | --- | --- | --- |
+| **Subtitrai** | `rt-subtitles` | Abiejų pusių žodžius, kai jie tariami. | ne |
+| **Vertimas** | `rt-translate` | Kitos pusės žodžius, išverstus į programos kalbą. | taip |
+| **Pardavimai** | `rt-objections` | Parduodančiam telefonu: kai klientas išsako prieštaravimą, prieštaravimą viena eilute ir vieną eilutę, kuri į jį atsako. | taip |
+| **Pagalba per pokalbį** | `rt-interview` | Tam, su kuriuo vyksta darbo pokalbis: atsakymą į ką tik užduotą klausimą keliomis trumpomis eilutėmis arba tai, ką aptarti kitame atsakyme. | taip |
+
+Tai įtrauktų asistentų pavadinimai; ekrano nuotraukose gali būti ankstesni pavadinimai. `rt-objections` atsakymas „—“ reiškia, kad nėra naudingo pasiūlymo. Instrukcijos apima ir neatsakytus klausimus bei pasirengimą pirkti.
 
 **▲** ir **▼** keičia tvarką, ir tai yra [sufleriaus lango](/interface/prompter#the-window) išskleidžiamojo sąrašo tvarka. **Pridėti** sukuria jūsų pačių pagalbininką. **Atkurti numatytuosius** grąžina nurodymus ir taisykles tokius, kokie atėjo su programa, tiek čia, tiek skiltyje [Apdorojimas](/ai-processing/processing#defaults); jūsų kalbos modeliai lieka nepaliesti.
 
@@ -74,3 +76,81 @@ Paspaudus pagalbininką atsiveria jo kortelė. Tai ta pati kortelė kaip [nurody
 | **Modeliai, per mėnesį** | Patarimai sustoja, o subtitrai tęsiasi. |
 
 Tuščia reiškia, kad lubų nėra. Gyvo garso minutės kaina yra atpažintuvo **Kaina už minutę**, nurodyta jo kortelėje skiltyje [Užrašas](/ai-processing/transcription#the-recognisers-card); be jos suflerius praneša, kad rodoma suma yra apytikslė.
+
+## Įtraukti asistentai {#assistant-templates}
+
+`system` nustato modelio elgseną, o `body` aprašo užduotį. Atsakymo forma ir kalba atskirai nurodomos sąrašų instrukcijose.
+
+[Vietos žymos](prompt-studio.md#placeholders)
+
+### Subtitrai (`rt-subtitles`) {#rt-subtitles}
+
+**Atsakymo forma:** `plain`.
+
+Tuščias vaidmuo ir užduotis: kalbos modelis nekviečiamas.
+
+### Vertimas (`rt-translate`) {#rt-translate}
+
+**Atsakymo forma:** `plain`.
+
+**Vaidmuo (`system`)**
+
+```text
+Verti kalbą jai vykstant. Atsakai tik vertimu — be įžangos, be kabučių, be paaiškinimų — o vardus, skaičius ir kainas palieki lygiai taip, kaip pasakyta.
+```
+
+**Užduotis (`body`)**
+
+```text
+Išversk į {{language}}:
+
+{{reply}}
+```
+
+### Pardavimai (`rt-objections`) {#rt-objections}
+
+**Atsakymo forma:** `plain`.
+
+**Vaidmuo (`system`)**
+
+```text
+Padedate žmogui, kuris pardavinėja telefonu. Atsakote keliomis trumpomis eilutėmis, kurias galima perskaityti klausant, niekada pastraipomis, ir niekada nieko nežadate jo vardu.
+```
+
+**Užduotis (`body`)**
+
+```text
+Pašnekesio dalyvis ką tik pasakė:
+
+{{reply}}
+
+Anksčiau šiame pokalbyje:
+
+{{conversation}}
+
+Viena eilute pasakykite, kas vyksta — prieštaravimas, neatsakytas klausimas, ženklas, kad jie pasiruošę pirkti — ir viena eilute, ką sakyti toliau. Jei sakyti nėra ko, parašykite tik „—“.
+```
+
+### Pagalba per pokalbį (`rt-interview`) {#rt-interview}
+
+**Atsakymo forma:** `plain`.
+
+**Vaidmuo (`system`)**
+
+```text
+Padedate žmogui, su kuriuo vyksta darbo pokalbis. Atsakote keliomis trumpomis eilutėmis, kurias galima perskaityti klausant, niekada pastraipomis, ir niekada neišsigalvojate apie jį faktų.
+```
+
+**Užduotis (`body`)**
+
+```text
+Pašnekesio dalyvis ką tik pasakė:
+
+{{reply}}
+
+Anksčiau šiame pokalbyje:
+
+{{conversation}}
+
+Trimis trumpomis eilutėmis pasakykite, ko jis iš tikrųjų klausia ir ką turėtų apimti geras atsakymas.
+```

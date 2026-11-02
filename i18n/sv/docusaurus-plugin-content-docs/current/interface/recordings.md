@@ -186,3 +186,13 @@ En inspelning som gjorts någon annanstans — på en mobiltelefon, en diktafon 
 ## Ta bort en inspelning {#deleting-a-recording}
 
 När en inspelning tas bort försvinner allt som gjorts av den tillsammans med den: utskrifterna och sammanfattningarna. Hur länge inspelningar sparas av sig själva ställs in under [Gallring](../recordings.md#retention).
+
+## Förstå resultaten {#result-notes}
+
+Det finns inga automatiska standardregler för `action-items`, `topics`, `entities` eller `qa`. Kör prompten manuellt eller lägg till en lämplig regel; ange frågan när du kör `qa`.
+
+En tom lista med uppgifter eller flaggor kan vara korrekt. Saknade ansvariga och datum får inte hittas på. Svar på frågor måste enbart bygga på transkriptionen.
+
+Kör `summary` före `super-summary`, som använder `{{artifact:summary}}`. Kör `categorise` före kvalitetsbedömningen: `sales-quality` kräver `sales`, och `support-quality` kräver `support`.
+
+[Standardtexter för promptar](../ai-processing/prompt-studio.md#standard-templates) · [Svarsformat](../ai-processing/dictionaries.md#response-formats)

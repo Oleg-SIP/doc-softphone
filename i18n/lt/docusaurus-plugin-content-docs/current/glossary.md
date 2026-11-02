@@ -32,3 +32,7 @@ description: Šioje dokumentacijoje vartojami IP telefonijos ir AI Softphone ter
 | **Iššifruotas tekstas** | Pokalbis tekstu, replika po replikos, sinchroniškai su garsu. |
 | **Žiniatinklio kablys** | Užklausa, kurią telefonas siunčia kitai sistemai, kai skambutis prasideda, pasikeičia ar baigiasi. Žr. [Žiniatinklio kabliai](/integration/webhooks). |
 | **Plačiajuostis** | Kodekas, kurio garso diapazonas platesnis nei telefono linijos, todėl balsas aiškesnis. |
+| **[Vietos žyma](ai-processing/prompt-studio.md#placeholders)** | Užklausos elementas, pakeičiamas pokalbio duomenimis. |
+| **[Kitos užklausos rezultatas](ai-processing/processing.md#default-execution)** | Esamas rezultatas, kurį pakartotinai naudoja kita užklausa, pavyzdžiui, `{{artifact:summary}}`. |
+| **[Modelio vaidmuo](ai-processing/prompt-studio.md#role-and-task)** | `system` nustato modelio elgseną, o `body` aprašo užduotį. Atsakymo forma ir kalba atskirai nurodomos sąrašų instrukcijose. |
+| **[Atsakymo forma](ai-processing/dictionaries.md#response-formats)** | Rezultato struktūra, pavyzdžiui, tekstas, punktai, žymos, įspėjimai ar kriterijai. |

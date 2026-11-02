@@ -32,3 +32,7 @@ description: Os termos da telefonia IP e do AI Softphone usados nesta documenta�
 | **Transcrição** | Uma conversa em texto, fala a fala, sincronizada com o áudio. |
 | **Webhook** | Um pedido que o telefone envia a outro sistema quando uma chamada começa, muda ou termina. Veja [Webhooks](/integration/webhooks). |
 | **Banda larga** | Um codec com uma gama de som mais ampla do que a de uma linha telefónica, para que a voz se ouça mais clara. |
+| **[Marcador de substituição](ai-processing/prompt-studio.md#placeholders)** | Um elemento do prompt substituído por dados da conversa. |
+| **[Resultado de outro prompt](ai-processing/processing.md#default-execution)** | Um resultado existente reutilizado por outro prompt, por exemplo `{{artifact:summary}}`. |
+| **[Papel do modelo](ai-processing/prompt-studio.md#role-and-task)** | `system` define o comportamento do modelo; `body` descreve a tarefa. A forma e o idioma da resposta são fornecidos separadamente pelas instruções do dicionário. |
+| **[Forma da resposta](ai-processing/dictionaries.md#response-formats)** | A estrutura do resultado: prosa, itens, etiquetas, alertas ou critérios. |

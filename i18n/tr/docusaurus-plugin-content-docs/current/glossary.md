@@ -32,3 +32,7 @@ description: Bu belgelerde kullanılan IP telefonculuğu ve AI Softphone terimle
 | **Döküm** | Sesle eşzamanlı, söz sırasına göre metne dökülmüş bir görüşme. |
 | **Web kancası** | Bir çağrı başladığında, değiştiğinde ya da bittiğinde telefonun başka bir sisteme gönderdiği istek. Bkz. [Web kancaları](/integration/webhooks). |
 | **Geniş bant** | Bir telefon hattınınkinden daha geniş bir ses aralığına sahip, böylece sesi daha net kılan kodek. |
+| **[Yer tutucu](ai-processing/prompt-studio.md#placeholders)** | İstemde görüşme verileriyle değiştirilen bir öğe. |
+| **[Başka bir istemin sonucu](ai-processing/processing.md#default-execution)** | Başka bir istemin yeniden kullandığı mevcut sonuç; örneğin `{{artifact:summary}}`. |
+| **[Modelin rolü](ai-processing/prompt-studio.md#role-and-task)** | `system` modelin davranışını belirler, `body` görevi açıklar. Yanıt yapısı ve dili, sözlük talimatlarıyla ayrıca verilir. |
+| **[Yanıt yapısı](ai-processing/dictionaries.md#response-formats)** | Düz yazı, öğeler, etiketler, uyarılar veya ölçütler gibi sonuç yapısı. |

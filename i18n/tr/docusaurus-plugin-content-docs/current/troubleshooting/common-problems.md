@@ -125,3 +125,21 @@ Bir şey olmadığında telefon nedenini ayrı bir satırda söyler. Bir listeni
 ### Telefon başlarken {#when-the-phone-starts}
 
 *Veritabanı okunamıyor*, veritabanının programın başka bir sürümü tarafından yapıldığı ve bu sürümün onu okuyamadığı anlamına gelir. Çoğu zaman daha eski bir sürüm, daha yeni bir sürümün verileriyle başlatılmıştır: daha yeni sürümü yeniden kurarsanız veritabanını olduğu gibi açar. **Baştan başla** ise boş bir veritabanı yapar — tüm kişiler ve geçmişteki tüm aramalar kaybolur, bu geri alınamaz. Basmadan önce veritabanı dosyasının bir kopyasını saklayabilirsiniz; yerini [Tanılama](/troubleshooting/diagnostics#files) söyler.
+
+## Varsayılan çalıştırma {#default-prompt-execution}
+
+`action-items`, `topics`, `entities` ve `qa` için varsayılan otomatik kural yoktur. İstemi elle çalıştırın veya uygun bir kural ekleyin; `qa` çalıştırılırken soruyu girin.
+
+`{{artifact:summary}}` kullanan `super-summary` öncesinde `summary` çalıştırılmalıdır. Kalite değerlendirmesinden önce `categorise` çalıştırılmalıdır: `sales-quality`, `sales` kategorisini; `support-quality` ise `support` kategorisini gerektirir.
+
+[Varsayılan çalıştırma](../ai-processing/processing.md#default-execution)
+
+## Sonuçları anlama {#prompt-result-notes}
+
+Boş görev veya uyarı listesi doğru bir sonuç olabilir. Eksik sorumlular ve tarihler uydurulmamalıdır. Sorulara verilen yanıtlar yalnızca döküme dayanmalıdır.
+
+Bunlar yerleşik asistan adlarıdır; ekran görüntülerinde önceki adlar olabilir. `rt-objections` yanıtındaki “—”, yararlı bir öneri olmadığı anlamına gelir. Talimatlar, yanıtlanmamış soruları ve satın alma isteğini de kapsar.
+
+Varsayılan küme ilk kullanımda kaydedilir. Markdown dışa aktarımını düzenlemek uygulamayı değiştirmez: istem kartını düzenleyin veya varsayılanları geri yükleyin.
+
+[Varsayılan istem metinleri](../ai-processing/prompt-studio.md#standard-templates) · [Yerleşik asistanlar](../ai-processing/prompter.md#assistant-templates)

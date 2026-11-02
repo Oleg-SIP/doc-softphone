@@ -186,3 +186,13 @@ Uma gravação feita noutro sítio — num telemóvel, num gravador ou noutro si
 ## Eliminar uma gravação {#deleting-a-recording}
 
 Quando uma gravação é eliminada, vai com ela tudo o que dela foi feito: as transcrições e as redações. Durante quanto tempo se guardam as gravações por si só define-se em [Gravações](../recordings.md#retention).
+
+## Interpretar os resultados {#result-notes}
+
+Não existem regras automáticas predefinidas para `action-items`, `topics`, `entities` ou `qa`. Execute o prompt manualmente ou adicione uma regra adequada; introduza a pergunta ao executar `qa`.
+
+Uma lista vazia de tarefas ou alertas pode ser correta. Não se devem inventar responsáveis nem datas. As respostas às perguntas devem basear-se apenas na transcrição.
+
+Execute `summary` antes de `super-summary`, que usa `{{artifact:summary}}`. Execute `categorise` antes da avaliação: `sales-quality` exige `sales`, e `support-quality` exige `support`.
+
+[Textos dos prompts predefinidos](../ai-processing/prompt-studio.md#standard-templates) · [Formatos de resposta](../ai-processing/dictionaries.md#response-formats)

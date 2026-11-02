@@ -19,9 +19,9 @@ Despre ce a fost conversația; **se alege una singură pe conversație**. Progra
 | Nume | Cod | Se folosește pentru |
 | --- | --- | --- |
 | **Vânzări** | `sales` | Vânzare, ofertare, negociere sau urmărirea unei achiziții — inclusiv un client care întreabă cât costă ceva. |
-| **Asistență** | `support` | Ajutorarea cuiva cu un produs sau un serviciu pe care îl are deja: o defecțiune, o întrebare despre utilizare, o plângere despre cum funcționează. |
-| **Personal** | `personal` | Deloc despre afaceri — o conversație privată care s-a întâmplat să aibă loc pe această linie. |
-| **Altele** | `other` | Despre afaceri, dar nici vânzare, nici asistență: un furnizor, un coleg, o livrare, un număr greșit. Alegeți această categorie în loc să ghiciți între celelalte. |
+| **Asistență** | `support` | Ajutor dat cuiva pentru un produs sau un serviciu pe care îl are deja: o defecțiune, o întrebare despre folosire, o plângere despre cum funcționează. |
+| **Personal** | `personal` | Deloc de serviciu — o convorbire particulară purtată întâmplător pe această linie. |
+| **Altele** | `other` | De serviciu, dar nici vânzare, nici asistență: un furnizor, un coleg, o livrare, un număr greșit. Alegeți asta în loc să ghiciți între celelalte. |
 
 Apăsați **Adaugă** ca să adăugați o categorie proprie.
 
@@ -31,14 +31,22 @@ Mărci care *pot fi toate valabile pentru aceeași conversație*. Apăsați **Ad
 
 | Nume | Cod | Se folosește pentru |
 | --- | --- | --- |
-| **Revenire promisă** | `callback` | Cineva din acest apel a promis să sune înapoi sau a cerut să fie sunat înapoi. |
-| **Plângere** | `complaint` | Cealaltă parte și-a exprimat nemulțumirea, indiferent dacă problema a fost rezolvată sau nu. |
-| **Escaladat** | `escalation` | Apelul a fost predat altcuiva sau cealaltă parte a cerut acest lucru. |
-| **Client VIP** | `vip` | Cealaltă parte a fost tratată ca un client important sau a spus că este unul. |
+| **Revenire promisă** | `callback` | Cineva din această convorbire a promis că sună înapoi sau a cerut să fie sunat înapoi. |
+| **Plângere** | `complaint` | Cealaltă parte și-a arătat nemulțumirea, indiferent dacă s-a rezolvat sau nu. |
+| **Escaladat** | `escalation` | Apelul a fost dat altcuiva sau cealaltă parte a cerut asta. |
+| **Client VIP** | `vip` | Cealaltă parte a fost tratată drept un client important sau a spus ea însăși că este. |
 
 ## Semnale de alarmă {#red-flags}
 
 Lucruri care cer atenție, găsite în conversație împreună cu dovada și momentul — de exemplu *Client furios* sau *Risc de plecare*. Semnalele de alarmă sunt desenate cu roșu în [fereastra Înregistrări](../interface/recordings.md) și fiecare are o gravitate: scăzută, medie sau ridicată.
+
+| Nume | Cod | `severity` | Se folosește pentru |
+| --- | --- | --- | --- |
+| **Client furios** | `angry-customer` | `high` | Se auzea că cealaltă parte este furioasă, jignește sau amenință că pleacă. |
+| **Risc de plecare** | `churn-risk` | `high` | S-a vorbit despre anulare, neprelungire sau trecerea la altcineva, oricât de calm. |
+| **Promisiune făcută** | `promise-made` | `medium` | Partea noastră s-a angajat la ceva anume — o dată, un preț, o reparație, o restituire. |
+| **Date sensibile** | `sensitive-data` | `high` | S-a citit cu voce tare un număr de card, o parolă, un număr de act sau orice altceva care nu ar trebui să fie într-o înregistrare. |
+| **Concurent** | `competitor` | `low` | Cealaltă parte a numit pe altcineva care oferă același lucru sau ne-a comparat cu el. |
 
 ## Îndrumări {#instructions}
 
@@ -65,3 +73,96 @@ Lucruri care cer atenție, găsite în conversație împreună cu dovada și mom
 ## Valori implicite {#defaults}
 
 **Restabilește valorile implicite** readuce fiecare dicționar la forma cu care a venit odată cu programul, în limba actuală a interfeței. Încadrarea conversațiilor deja prelucrate rămâne neatinsă.
+
+## Formate de răspuns {#response-formats}
+
+Blocurile reproduc instrucțiunile incluse. Descriu formatele răspunsurilor; alternativele sunt o notație, nu exemple JSON executabile.
+
+### Proză (`shape-plain`) {#shape-plain}
+
+```text
+Răspundeți în proză simplă. Nu folosiți JSON, liste sau titluri.
+```
+
+### Elemente (`shape-list`) {#shape-list}
+
+```text
+Răspundeți doar cu JSON, exact de această formă:
+{"items": [{"text": "ce este de făcut", "owner": "cine, sau gol", "due": "când, sau gol"}]}
+Folosiți o listă goală când nu este nimic de enumerat. Nu scrieți nimic în afara JSON-ului.
+```
+
+### Etichete (`shape-labels`) {#shape-labels}
+
+```text
+Răspundeți doar cu JSON, exact de această formă:
+{"labels": [{"code": "un cod din lista primită", "confidence": 0.0}]}
+Folosiți doar coduri din listă. Folosiți o listă goală când niciunul nu se
+potrivește. Nu inventați un cod și nu scrieți nimic în afara JSON-ului.
+```
+
+### Notă (`shape-score`) {#shape-score}
+
+```text
+Răspundeți doar cu JSON, exact de această formă:
+{"score": 3, "rationale": "de ce acest număr și nu unul mai mare",
+ "evidence": [{"at_ms": 0, "quote": "cuvintele pe care v-ați bazat"}]}
+Nota este un număr întreg de la 1 la 5. Nu scrieți nimic în afara JSON-ului.
+```
+
+### Criterii (`shape-rubric`) {#shape-rubric}
+
+```text
+Răspundeți doar cu JSON, exact de această formă:
+{"overall": 3, "rationale": "de ce acest număr și nu unul mai mare",
+ "criteria": [{"name": "criteriul așa cum v-a fost dat",
+               "verdict": "pass" sau "weak" sau "fail" sau "n/a",
+               "note": "o propoziție"}]}
+Judecați fiecare criteriu primit și niciunul altul. Nota generală este un număr
+întreg de la 1 la 5. Nu scrieți nimic în afara JSON-ului.
+```
+
+### Semnale (`shape-flags`) {#shape-flags}
+
+```text
+Răspundeți doar cu JSON, exact de această formă:
+{"flags": [{"code": "un cod din lista primită",
+            "severity": "low" sau "medium" sau "high",
+            "evidence": "cuvintele pe care v-ați bazat",
+            "at_ms": 0}]}
+Folosiți doar coduri din listă și ridicați fiecare cel mult o dată. Folosiți o
+listă goală când nimic nu se potrivește. Nu scrieți nimic în afara JSON-ului.
+```
+
+### Răspuns (`shape-qa`) {#shape-qa}
+
+```text
+Răspundeți doar cu JSON, exact de această formă:
+{"answer": "răspunsul dumneavoastră sau, pe șleau, că discuția nu spune",
+ "citations": [{"at_ms": 0, "quote": "cuvintele pe care se sprijină răspunsul"}]}
+Nu răspundeți din nimic altceva decât din discuție. Nu scrieți nimic în afara JSON-ului.
+```
+
+### JSON (`shape-json`) {#shape-json}
+
+```text
+Răspundeți doar cu JSON, în forma cerută mai sus. Nu scrieți nimic în afara JSON-ului.
+```
+
+### Cum s-a vorbit (`language-as-spoken`) {#language-as-spoken}
+
+```text
+Scrieți răspunsul în aceeași limbă în care a fost discuția.
+```
+
+### Cum s-a vorbit, numit (`language-as-spoken-named`) {#language-as-spoken-named}
+
+```text
+Scrieți răspunsul în aceeași limbă în care a fost discuția, adică {language}.
+```
+
+### O limbă anume (`language-named`) {#language-named}
+
+```text
+Scrieți răspunsul în această limbă: {language}.
+```

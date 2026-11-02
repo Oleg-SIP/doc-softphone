@@ -186,3 +186,13 @@ Snimak napravljen negde drugde — na mobilnom telefonu, diktafonu ili u drugom 
 ## Brisanje snimka {#deleting-a-recording}
 
 Kada se snimak obriše, sa njim odlazi sve što je iz njega nastalo: prepisi i obrade. Koliko se dugo snimci sami čuvaju podešava se u [Snimanju poziva](../recordings.md#retention).
+
+## Tumačenje rezultata {#result-notes}
+
+Za `action-items`, `topics`, `entities` i `qa` nema podrazumevanih automatskih pravila. Pokrenite upit ručno ili dodajte odgovarajuće pravilo; pri pokretanju `qa` unesite pitanje.
+
+Prazan spisak zadataka ili upozorenja može biti ispravan rezultat. Ne smeju se izmišljati izvršioci i rokovi koji nedostaju. Odgovori na pitanja moraju se zasnivati samo na transkriptu.
+
+Pokrenite `summary` pre `super-summary`, koji koristi `{{artifact:summary}}`. Pokrenite `categorise` pre ocene kvaliteta: `sales-quality` zahteva kategoriju `sales`, a `support-quality` kategoriju `support`.
+
+[Standardni tekstovi upita](../ai-processing/prompt-studio.md#standard-templates) · [Formati odgovora](../ai-processing/dictionaries.md#response-formats)

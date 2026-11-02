@@ -60,3 +60,16 @@ Ikkuna kertoo painikkeiden alla olevalla rivillä, mitä puuttuu.
 | *Tunnistin ei alkanut kuunnella. Tarkista sen suora osoite ja malli kohdassa Asetukset → Litterointi.* | Osoite kuiskaajaa varten, malli tai avain on väärin. Tunnistimen kortin **Kokeile** kertoo, mikä. |
 | *Tämän kuun summa tunnistimille on käytetty.* | Nosta kohtaa **Tunnistimet, kuukaudessa** tai odota kuukauden vaihtumista. |
 | *Tämän kuun summa malleille on käytetty. Sanat jatkuvat; kuiskaaminen on pysähtynyt.* | Nosta kohtaa **Mallit, kuukaudessa**. |
+
+## Mukana tulevat avustajat {#standard-assistants}
+
+| `code` | Mukana tulevat avustajat |
+| --- | --- |
+| `rt-subtitles` | Tekstitykset |
+| `rt-translate` | Käännös |
+| `rt-objections` | Myynti |
+| `rt-interview` | Apua työhaastattelussa |
+
+Nämä ovat mukana toimitettujen avustajien nimet; kuvakaappauksissa voi olla aiempia nimiä. Kehotteen `rt-objections` vastaus ”—” tarkoittaa, ettei hyödyllistä ehdotusta ole. Ohjeet kattavat myös avoimet kysymykset ja ostovalmiuden.
+
+[Kehotteiden oletustekstit](../ai-processing/prompter.md#assistant-templates)

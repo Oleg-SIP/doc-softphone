@@ -186,3 +186,13 @@ Eine anderswo gemachte Aufnahme — auf dem Mobiltelefon, einem Diktiergerät od
 ## Eine Aufnahme löschen {#deleting-a-recording}
 
 Wird eine Aufnahme gelöscht, geht alles mit, was aus ihr entstanden ist: die Transkripte und die Auswertungen. Wie lange Aufnahmen von selbst aufbewahrt werden, wird unter [Aufnahmen](../recordings.md#retention) eingestellt.
+
+## Ergebnisse verstehen {#result-notes}
+
+Für `action-items`, `topics`, `entities` und `qa` gibt es keine automatischen Standardregeln. Starten Sie den Prompt manuell oder ergänzen Sie eine passende Regel; bei `qa` geben Sie die Frage ein.
+
+Eine leere Aufgaben- oder Auffälligkeitsliste kann korrekt sein. Fehlende Zuständige und Termine dürfen nicht erfunden werden. Antworten auf Fragen müssen allein auf dem Transkript beruhen.
+
+Führen Sie `summary` vor `super-summary` aus, das `{{artifact:summary}}` verwendet. `categorise` muss vor der Qualitätsbewertung laufen: `sales-quality` benötigt `sales`, `support-quality` benötigt `support`.
+
+[Standardtexte der Prompts](../ai-processing/prompt-studio.md#standard-templates) · [Antwortformate](../ai-processing/dictionaries.md#response-formats)

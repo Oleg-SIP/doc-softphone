@@ -39,12 +39,14 @@ Người nhắc được đọc trong khi bạn nói, thường từ xa hơn ph�
 
 Trợ lý là vai trò mà người nhắc được yêu cầu đảm nhận. *Mỗi trợ lý lắng nghe một cuộc trò chuyện đang diễn ra và viết điều gì đó vào cửa sổ người nhắc: các từ đúng như được nói ra, bản dịch của chúng, hoặc gợi ý về điều nên nói tiếp.* Chạy trợ lý nào là do bạn chọn trong cửa sổ người nhắc. Chương trình có sẵn bốn trợ lý:
 
-| Trợ lý | Viết gì | Hỏi mô hình |
-| --- | --- | --- |
-| **Phụ đề** | Lời của cả hai bên, ngay khi được nói ra. | không |
-| **Bản dịch** | Lời của phía bên kia, dịch sang ngôn ngữ của chương trình. | có |
-| **Phản đối trong cuộc gọi** | Cho người bán hàng qua điện thoại: khi khách hàng nêu một phản đối, phản đối đó trong một dòng và một dòng để đáp lại. | có |
-| **Trợ giúp phỏng vấn** | Cho người đang được phỏng vấn: câu trả lời cho câu hỏi vừa được hỏi trong vài dòng ngắn, hoặc những gì nên đề cập trong câu trả lời tiếp theo. | có |
+| Trợ lý | `code` | Viết gì | Hỏi mô hình |
+| --- | --- | --- | --- |
+| **Phụ đề** | `rt-subtitles` | Lời của cả hai bên, ngay khi được nói ra. | không |
+| **Bản dịch** | `rt-translate` | Lời của phía bên kia, dịch sang ngôn ngữ của chương trình. | có |
+| **Kinh doanh** | `rt-objections` | Cho người bán hàng qua điện thoại: khi khách hàng nêu một phản đối, phản đối đó trong một dòng và một dòng để đáp lại. | có |
+| **Trợ giúp phỏng vấn** | `rt-interview` | Cho người đang được phỏng vấn: câu trả lời cho câu hỏi vừa được hỏi trong vài dòng ngắn, hoặc những gì nên đề cập trong câu trả lời tiếp theo. | có |
+
+Đây là tên các trợ lý có sẵn; ảnh chụp màn hình có thể hiển thị tên cũ. “—” từ `rt-objections` nghĩa là không có gợi ý hữu ích. Hướng dẫn cũng bao gồm câu hỏi chưa được trả lời và dấu hiệu sẵn sàng mua.
 
 **▲** và **▼** thay đổi thứ tự, cũng là thứ tự của danh sách thả xuống trong [cửa sổ người nhắc](/interface/prompter#the-window). **Thêm** tạo một trợ lý của riêng bạn. **Khôi phục mặc định** đưa các chỉ dẫn và quy tắc về như khi đi kèm chương trình, ở đây cũng như trong [Xử lý](/ai-processing/processing#defaults); các mô hình ngôn ngữ của bạn được giữ nguyên.
 
@@ -74,3 +76,81 @@ Nhấn vào một trợ lý sẽ mở thẻ của nó. Đó là cùng loại th�
 | **Mô hình, mỗi tháng** | Việc gợi ý dừng lại, còn phụ đề vẫn tiếp tục. |
 
 Để trống nghĩa là không giới hạn. Chi phí một phút âm thanh trực tiếp là **Giá mỗi phút** của bộ nhận dạng, nhập trên thẻ của nó trong [Gỡ băng](/ai-processing/transcription#the-recognisers-card); nếu không có, người nhắc sẽ cho biết con số hiển thị chỉ là ước tính.
+
+## Trợ lý có sẵn {#assistant-templates}
+
+`system` xác định hành vi của mô hình; `body` mô tả nhiệm vụ. Cấu trúc và ngôn ngữ trả lời được cung cấp riêng qua các hướng dẫn trong danh mục.
+
+[Biến thay thế](prompt-studio.md#placeholders)
+
+### Phụ đề (`rt-subtitles`) {#rt-subtitles}
+
+**Cấu trúc câu trả lời:** `plain`.
+
+Vai trò và nhiệm vụ trống: không gọi mô hình ngôn ngữ.
+
+### Bản dịch (`rt-translate`) {#rt-translate}
+
+**Cấu trúc câu trả lời:** `plain`.
+
+**Vai trò (`system`)**
+
+```text
+Bạn dịch lời nói ngay khi nó diễn ra. Bạn chỉ trả lời bằng bản dịch — không mở đầu, không dấu ngoặc kép, không giải thích — và giữ tên, số và giá đúng như đã nói.
+```
+
+**Nhiệm vụ (`body`)**
+
+```text
+Dịch sang {{language}}:
+
+{{reply}}
+```
+
+### Kinh doanh (`rt-objections`) {#rt-objections}
+
+**Cấu trúc câu trả lời:** `plain`.
+
+**Vai trò (`system`)**
+
+```text
+Bạn giúp một người bán hàng qua điện thoại. Bạn trả lời bằng vài dòng ngắn có thể đọc trong khi nghe, không bao giờ bằng đoạn văn, và không bao giờ hứa điều gì thay cho người đó.
+```
+
+**Nhiệm vụ (`body`)**
+
+```text
+Người đối diện vừa nói:
+
+{{reply}}
+
+Trước đó trong cuộc trò chuyện này:
+
+{{conversation}}
+
+Nói trong một dòng điều đang diễn ra — một phản đối, một câu hỏi chưa được trả lời, một dấu hiệu họ đã sẵn sàng — và trong một dòng điều nên nói tiếp. Nếu không có gì đáng nói, chỉ viết „—”.
+```
+
+### Trợ giúp phỏng vấn (`rt-interview`) {#rt-interview}
+
+**Cấu trúc câu trả lời:** `plain`.
+
+**Vai trò (`system`)**
+
+```text
+Bạn giúp một người đang được phỏng vấn. Bạn trả lời bằng vài dòng ngắn có thể đọc trong khi nghe, không bao giờ bằng đoạn văn, và không bao giờ bịa ra thông tin về người đó.
+```
+
+**Nhiệm vụ (`body`)**
+
+```text
+Người đối diện vừa nói:
+
+{{reply}}
+
+Trước đó trong cuộc trò chuyện này:
+
+{{conversation}}
+
+Trong ba dòng ngắn, hãy nói họ thực sự đang hỏi gì và một câu trả lời tốt nên bao gồm những gì.
+```

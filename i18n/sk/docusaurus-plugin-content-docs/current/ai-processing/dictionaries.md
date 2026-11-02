@@ -18,10 +18,10 @@ O čom bol rozhovor; **pre každý rozhovor sa vyberá jedna**. Program začína
 
 | Názov | Kód | Používa sa pre |
 | --- | --- | --- |
-| **Predaj** | `sales` | Predaj, cenové ponuky, vyjednávanie alebo nadväzovanie na nákup — vrátane zákazníka, ktorý sa pýta, koľko niečo stojí. |
-| **Podpora** | `support` | Pomoc niekomu s produktom alebo službou, ktorú už má: porucha, otázka o používaní, sťažnosť na to, ako funguje. |
-| **Súkromný** | `personal` | Vôbec nie biznis — súkromný rozhovor, ktorý sa náhodou uskutočnil na tejto linke. |
-| **Iné** | `other` | Biznis, ale ani predaj, ani podpora: dodávateľ, kolega, doručenie, omyl v čísle. Vyberte toto radšej než hádať medzi ostatnými. |
+| **Predaj** | `sales` | Predaj, ponuka, vyjednávanie alebo dotiahnutie nákupu — vrátane zákazníka, ktorý sa pýta, čo niečo stojí. |
+| **Podpora** | `support` | Pomoc niekomu s výrobkom alebo službou, ktorú už má: porucha, otázka k používaniu, sťažnosť na to, ako to funguje. |
+| **Súkromný** | `personal` | Vôbec nie pracovný — súkromný hovor, ktorý sa náhodou viedol na tejto linke. |
+| **Iné** | `other` | Pracovný, ale ani predaj, ani podpora: dodávateľ, kolega, dodávka, omyl. Zvoľte toto, namiesto toho, aby ste hádali medzi ostatnými. |
 
 Stlačením **Pridať** pridáte vlastnú kategóriu.
 
@@ -31,14 +31,22 @@ Označenia, ktoré *môžu na ten istý rozhovor platiť všetky naraz*. Stlače
 
 | Názov | Kód | Používa sa pre |
 | --- | --- | --- |
-| **Sľúbené zavolať späť** | `callback` | Niekto v tomto hovore sľúbil zavolať späť alebo požiadal o spätné zavolanie. |
-| **Sťažnosť** | `complaint` | Druhá strana vyjadrila nespokojnosť, či už bola vyriešená, alebo nie. |
-| **Posunuté vyššie** | `escalation` | Hovor bol odovzdaný niekomu inému alebo o to druhá strana požiadala. |
-| **Zákazník VIP** | `vip` | S druhou stranou sa zaobchádzalo ako s dôležitým klientom, alebo sama povedala, že ním je. |
+| **Sľúbené zavolať späť** | `callback` | Niekto v tomto hovore sľúbil zavolať späť alebo o spätné zavolanie požiadal. |
+| **Sťažnosť** | `complaint` | Druhá strana vyjadrila nespokojnosť, či sa to vyriešilo, alebo nie. |
+| **Posunuté vyššie** | `escalation` | Hovor bol odovzdaný niekomu inému, alebo o to druhá strana požiadala. |
+| **Zákazník VIP** | `vip` | S druhou stranou sa jednalo ako s dôležitým zákazníkom, alebo to o sebe sama povedala. |
 
 ## Varovné signály {#red-flags}
 
 Veci, ktoré si vyžadujú pozornosť, nájdené v rozhovore s dôkazom a časom — napríklad *Nahnevaný zákazník* alebo *Riziko odchodu*. Varovné signály sú v [okne Nahrávky](../interface/recordings.md) nakreslené červenou a každý nesie závažnosť: nízku, strednú alebo vysokú.
+
+| Názov | Kód | `severity` | Používa sa pre |
+| --- | --- | --- | --- |
+| **Nahnevaný zákazník** | `angry-customer` | `high` | Bolo počuť, že je druhá strana nahnevaná, uráža alebo hrozí odchodom. |
+| **Riziko odchodu** | `churn-risk` | `high` | Padlo zrušenie, nepredĺženie alebo prechod k niekomu inému, hoci akokoľvek pokojne. |
+| **Daný sľub** | `promise-made` | `medium` | Naša strana sa zaviazala k niečomu konkrétnemu — termínu, cene, oprave, vráteniu peňazí. |
+| **Citlivé údaje** | `sensitive-data` | `high` | Nahlas zaznelo číslo karty, heslo, číslo dokladu alebo čokoľvek iné, čo v nahrávke byť nemá. |
+| **Konkurent** | `competitor` | `low` | Druhá strana menovala niekoho iného, kto ponúka to isté, alebo nás s ním porovnala. |
 
 ## Pokyny {#instructions}
 
@@ -65,3 +73,96 @@ Veci, ktoré si vyžadujú pozornosť, nájdené v rozhovore s dôkazom a časom
 ## Predvolené {#defaults}
 
 **Obnoviť predvolené** vráti každý slovník do stavu, v akom prišiel s programom, v aktuálnom jazyku rozhrania. To, kam sú vaše rozhovory už zaradené, zostane nedotknuté.
+
+## Formáty odpovedí {#response-formats}
+
+Bloky uvádzajú dodávané pokyny. Opisujú formáty odpovedí; alternatívy sú zápisom možností, nie spustiteľnými príkladmi JSON.
+
+### Próza (`shape-plain`) {#shape-plain}
+
+```text
+Odpovedzte prostou prózou. Nepoužívajte JSON, zoznamy ani nadpisy.
+```
+
+### Položky (`shape-list`) {#shape-list}
+
+```text
+Odpovedzte iba JSONom, presne tohto tvaru:
+{"items": [{"text": "čo sa má urobiť", "owner": "kto, alebo prázdne", "due": "kedy, alebo prázdne"}]}
+Keď nie je čo vypísať, použite prázdne pole. Nepíšte nič mimo JSON.
+```
+
+### Štítky (`shape-labels`) {#shape-labels}
+
+```text
+Odpovedzte iba JSONom, presne tohto tvaru:
+{"labels": [{"code": "kód zo zoznamu, ktorý ste dostali", "confidence": 0.0}]}
+Používajte len kódy zo zoznamu. Keď nesedí žiadny, použite prázdne pole. Kód si
+nevymýšľajte a nepíšte nič mimo JSON.
+```
+
+### Hodnotenie (`shape-score`) {#shape-score}
+
+```text
+Odpovedzte iba JSONom, presne tohto tvaru:
+{"score": 3, "rationale": "prečo toto číslo a nie o jedno vyššie",
+ "evidence": [{"at_ms": 0, "quote": "slová, o ktoré sa to opiera"}]}
+Hodnotenie je celé číslo od 1 do 5. Nepíšte nič mimo JSON.
+```
+
+### Kritériá (`shape-rubric`) {#shape-rubric}
+
+```text
+Odpovedzte iba JSONom, presne tohto tvaru:
+{"overall": 3, "rationale": "prečo toto číslo a nie o jedno vyššie",
+ "criteria": [{"name": "kritérium tak, ako vám bolo zadané",
+               "verdict": "pass" alebo "weak" alebo "fail" alebo "n/a",
+               "note": "jedna veta"}]}
+Posúďte každé zadané kritérium a žiadne iné. Celkové hodnotenie je celé číslo
+od 1 do 5. Nepíšte nič mimo JSON.
+```
+
+### Signály (`shape-flags`) {#shape-flags}
+
+```text
+Odpovedzte iba JSONom, presne tohto tvaru:
+{"flags": [{"code": "kód zo zoznamu, ktorý ste dostali",
+            "severity": "low" alebo "medium" alebo "high",
+            "evidence": "slová, o ktoré sa to opiera",
+            "at_ms": 0}]}
+Používajte len kódy zo zoznamu a každý zdvihnite najviac raz. Keď nesedí nič,
+použite prázdne pole. Nepíšte nič mimo JSON.
+```
+
+### Odpoveď (`shape-qa`) {#shape-qa}
+
+```text
+Odpovedzte iba JSONom, presne tohto tvaru:
+{"answer": "vaša odpoveď, alebo rovno to, že to hovor nehovorí",
+ "citations": [{"at_ms": 0, "quote": "slová, o ktoré sa odpoveď opiera"}]}
+Neodpovedajte z ničoho iného než z hovoru. Nepíšte nič mimo JSON.
+```
+
+### JSON (`shape-json`) {#shape-json}
+
+```text
+Odpovedzte iba JSONom, v tvare opísanom vyššie. Nepíšte nič mimo JSON.
+```
+
+### Ako sa hovorilo (`language-as-spoken`) {#language-as-spoken}
+
+```text
+Odpoveď napíšte v tom istom jazyku, v akom bol hovor.
+```
+
+### Ako sa hovorilo, menovite (`language-as-spoken-named`) {#language-as-spoken-named}
+
+```text
+Odpoveď napíšte v tom istom jazyku, v akom bol hovor, teda: {language}.
+```
+
+### Určený jazyk (`language-named`) {#language-named}
+
+```text
+Odpoveď napíšte v tomto jazyku: {language}.
+```

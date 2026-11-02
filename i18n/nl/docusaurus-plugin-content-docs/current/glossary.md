@@ -32,3 +32,7 @@ description: De termen van IP-telefonie en van AI Softphone die in deze document
 | **Transcript** | Een gesprek als tekst, beurt voor beurt, gelijk met de audio. |
 | **Webhook** | Een verzoek dat de telefoon naar een ander systeem stuurt wanneer een gesprek begint, verandert of eindigt. Zie [Webhooks](/integration/webhooks). |
 | **Breedband** | Een codec met een breder geluidsbereik dan een telefoonlijn, zodat de stem duidelijker klinkt. |
+| **[Plaatsaanduiding](ai-processing/prompt-studio.md#placeholders)** | Een element in de prompt dat wordt vervangen door gespreksgegevens. |
+| **[Resultaat van een andere prompt](ai-processing/processing.md#default-execution)** | Een bestaand resultaat dat een andere prompt hergebruikt, bijvoorbeeld `{{artifact:summary}}`. |
+| **[Modelrol](ai-processing/prompt-studio.md#role-and-task)** | `system` bepaalt het gedrag van het model; `body` beschrijft de opdracht. De antwoordvorm en taal worden afzonderlijk via lijstinstructies opgegeven. |
+| **[Antwoordvorm](ai-processing/dictionaries.md#response-formats)** | De structuur van het resultaat, zoals lopende tekst, items, tags, waarschuwingen of criteria. |

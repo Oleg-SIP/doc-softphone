@@ -42,6 +42,14 @@ Kennzeichen, *die alle zugleich auf dasselbe Gespräch zutreffen dürfen*. Mit *
 
 Dinge, die Aufmerksamkeit brauchen, im Gespräch gefunden, mit Beleg und Zeitpunkt — zum Beispiel *Verärgerter Kunde* oder *Abwanderungsgefahr*. Auffälligkeiten sind im [Aufnahmefenster](../interface/recordings.md) rot gezeichnet, und jede trägt einen Schweregrad: niedrig, mittel oder hoch.
 
+| Name | Code | `severity` | Verwendet für |
+| --- | --- | --- | --- |
+| **Verärgerter Kunde** | `angry-customer` | `high` | Die Gegenseite war hörbar verärgert, wurde beleidigend oder drohte mit Abwanderung. |
+| **Abwanderungsgefahr** | `churn-risk` | `high` | Kündigung, Nichtverlängerung oder ein Wechsel zu jemand anderem kam zur Sprache, wie ruhig auch immer. |
+| **Zusage gemacht** | `promise-made` | `medium` | Unsere Seite hat sich zu etwas Konkretem verpflichtet — einem Termin, einem Preis, einer Behebung, einer Erstattung. |
+| **Sensible Daten** | `sensitive-data` | `high` | Eine Kartennummer, ein Passwort, eine Ausweisnummer oder etwas anderes, das nicht in einer Aufnahme stehen sollte, wurde vorgelesen. |
+| **Wettbewerber** | `competitor` | `low` | Die Gegenseite hat jemand anderen mit demselben Angebot genannt oder uns damit verglichen. |
+
 ## Anweisungen {#instructions}
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Einstellungen → Verzeichnisse: Antwortformen und Sprachanweisungen" />
@@ -67,3 +75,97 @@ Dinge, die Aufmerksamkeit brauchen, im Gespräch gefunden, mit Beleg und Zeitpun
 ## Voreinstellungen {#defaults}
 
 **Voreinstellungen wiederherstellen** setzt jedes Verzeichnis auf den Auslieferungsstand zurück, in der aktuellen Oberflächensprache. Worunter Ihre Gespräche bereits abgelegt sind, bleibt unberührt.
+
+## Antwortformate {#response-formats}
+
+Diese Blöcke geben die mitgelieferten Anweisungen wieder. Sie beschreiben Antwortformate; Alternativen sind eine Schreibweise, keine ausführbaren JSON-Beispiele.
+
+### Fließtext (`shape-plain`) {#shape-plain}
+
+```text
+Antworten Sie in Fließtext. Verwenden Sie kein JSON, keine Listen und keine Überschriften.
+```
+
+### Punkte (`shape-list`) {#shape-list}
+
+```text
+Antworten Sie nur mit JSON, genau in dieser Form:
+{"items": [{"text": "was zu tun ist", "owner": "wer, oder leer", "due": "wann, oder leer"}]}
+Geben Sie ein leeres Array zurück, wenn es nichts aufzuzählen gibt. Schreiben Sie nichts außerhalb des JSON.
+```
+
+### Label (`shape-labels`) {#shape-labels}
+
+```text
+Antworten Sie nur mit JSON, genau in dieser Form:
+{"labels": [{"code": "ein Code aus der Liste, die Sie bekommen haben", "confidence": 0.0}]}
+Verwenden Sie nur Codes aus der Liste. Geben Sie ein leeres Array zurück, wenn keiner passt.
+Erfinden Sie keinen Code und schreiben Sie nichts außerhalb des JSON.
+```
+
+### Bewertung (`shape-score`) {#shape-score}
+
+```text
+Antworten Sie nur mit JSON, genau in dieser Form:
+{"score": 3, "rationale": "warum diese Zahl und nicht eine höhere",
+ "evidence": [{"at_ms": 0, "quote": "die Worte, auf die Sie sich stützen"}]}
+Die Bewertung ist eine ganze Zahl von 1 bis 5. Schreiben Sie nichts außerhalb des JSON.
+```
+
+### Kriterien (`shape-rubric`) {#shape-rubric}
+
+```text
+Antworten Sie nur mit JSON, genau in dieser Form:
+{"overall": 3, "rationale": "warum diese Zahl und nicht eine höhere",
+ "criteria": [{"name": "das Kriterium, wie es Ihnen gegeben wurde",
+               "verdict": "pass" oder "weak" oder "fail" oder "n/a",
+               "note": "ein Satz"}]}
+Beurteilen Sie jedes Kriterium, das Sie bekommen haben, und keine anderen. Die Gesamtnote ist eine
+ganze Zahl von 1 bis 5. Schreiben Sie nichts außerhalb des JSON.
+```
+
+### Auffälligkeiten (`shape-flags`) {#shape-flags}
+
+```text
+Antworten Sie nur mit JSON, genau in dieser Form:
+{"flags": [{"code": "ein Code aus der Liste, die Sie bekommen haben",
+            "severity": "low" oder "medium" oder "high",
+            "evidence": "die Worte, auf die Sie sich stützen",
+            "at_ms": 0}]}
+Verwenden Sie nur Codes aus der Liste und führen Sie jeden höchstens einmal an. Geben Sie ein leeres
+Array zurück, wenn nichts zutrifft. Schreiben Sie nichts außerhalb des JSON.
+```
+
+### Antwort (`shape-qa`) {#shape-qa}
+
+```text
+Antworten Sie nur mit JSON, genau in dieser Form:
+{"answer": "Ihre Antwort, oder sagen Sie klar, dass das Gespräch dazu nichts sagt",
+ "citations": [{"at_ms": 0, "quote": "die Worte, auf denen Ihre Antwort ruht"}]}
+Antworten Sie aus nichts anderem als dem Gespräch. Schreiben Sie nichts außerhalb
+des JSON.
+```
+
+### JSON (`shape-json`) {#shape-json}
+
+```text
+Antworten Sie nur mit JSON, in der oben verlangten Form. Schreiben Sie nichts außerhalb des JSON.
+```
+
+### Wie gesprochen (`language-as-spoken`) {#language-as-spoken}
+
+```text
+Schreiben Sie Ihre Antwort in derselben Sprache, in der das Gespräch geführt wurde.
+```
+
+### Wie gesprochen, benannt (`language-as-spoken-named`) {#language-as-spoken-named}
+
+```text
+Schreiben Sie Ihre Antwort in derselben Sprache, in der das Gespräch geführt wurde, nämlich {language}.
+```
+
+### Eine benannte Sprache (`language-named`) {#language-named}
+
+```text
+Schreiben Sie Ihre Antwort in dieser Sprache: {language}.
+```

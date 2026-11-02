@@ -125,3 +125,21 @@ Kun jokin ei onnistu, puhelin kertoo syyn omalla rivillään. Luettelon alla ole
 ### Kun puhelin käynnistyy {#when-the-phone-starts}
 
 *Tietokantaa ei voi lukea* tarkoittaa, että tietokannan on tehnyt ohjelman eri versio eikä tämä osaa lukea sitä. Yleensä vanhempi versio on käynnistetty uudemman version tiedoilla: kun asennat uudemman version uudelleen, se avaa tietokannan sellaisena kuin se oli. **Aloita alusta** taas tekee tyhjän tietokannan — jokainen yhteystieto ja jokainen historian puhelu katoaa, eikä sitä voi perua. Ennen kuin painat sitä, voit ottaa kopion tietokantatiedostosta; [Diagnostiikka](/troubleshooting/diagnostics#files) kertoo, missä se on.
+
+## Oletussuoritus {#default-prompt-execution}
+
+Kehotteille `action-items`, `topics`, `entities` ja `qa` ei ole automaattisia oletussääntöjä. Käynnistä kehote käsin tai lisää sopiva sääntö; anna kysymys käynnistäessäsi kehotteen `qa`.
+
+Suorita `summary` ennen kehotetta `super-summary`, joka käyttää arvoa `{{artifact:summary}}`. Suorita `categorise` ennen laatuarviointia: `sales-quality` edellyttää luokkaa `sales` ja `support-quality` luokkaa `support`.
+
+[Oletussuoritus](../ai-processing/processing.md#default-execution)
+
+## Tulosten tulkinta {#prompt-result-notes}
+
+Tyhjä tehtävä- tai varoitusluettelo voi olla oikea tulos. Puuttuvia vastuuhenkilöitä ja päivämääriä ei saa keksiä. Kysymyksiin vastataan vain litteroinnin perusteella.
+
+Nämä ovat mukana toimitettujen avustajien nimet; kuvakaappauksissa voi olla aiempia nimiä. Kehotteen `rt-objections` vastaus ”—” tarkoittaa, ettei hyödyllistä ehdotusta ole. Ohjeet kattavat myös avoimet kysymykset ja ostovalmiuden.
+
+Oletuskokoelma tallennetaan ensimmäisellä käyttökerralla. Markdown-viennin muokkaaminen ei muuta sovellusta: muokkaa kehotteen korttia tai palauta oletukset.
+
+[Kehotteiden oletustekstit](../ai-processing/prompt-studio.md#standard-templates) · [Mukana tulevat avustajat](../ai-processing/prompter.md#assistant-templates)

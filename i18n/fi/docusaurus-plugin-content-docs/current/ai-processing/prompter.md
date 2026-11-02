@@ -39,12 +39,14 @@ Kuiskaajaa luetaan puhuessa, usein kauempaa kuin muuta puhelinta, joten valitset
 
 Avustaja on se, mitä kuiskaajan pyydetään olevan. *Kukin niistä kuuntelee käynnissä olevaa keskustelua ja kirjoittaa jotakin kuiskaajan ikkunaan: sanat sellaisina kuin ne sanotaan, niiden käännöksen, tai vihjeen siitä, mitä sanoa seuraavaksi.* Minkä niistä käynnistät, valitset kuiskaajan ikkunassa. Ohjelman mukana tulee neljä:
 
-| Avustaja | Mitä se kirjoittaa | Kysyy mallilta |
-| --- | --- | --- |
-| **Tekstitykset** | Kummankin puolen sanat sitä mukaa kuin ne sanotaan. | ei |
-| **Käännös** | Toisen puolen sanat käännettyinä ohjelman kielelle. | kyllä |
-| **Vastaväitteet puhelussa** | Puhelimessa myyvälle: kun asiakas esittää vastaväitteen, vastaväite yhdellä rivillä ja yksi rivi, joka vastaa siihen. | kyllä |
-| **Apua työhaastattelussa** | Haastateltavalle: vastaus juuri esitettyyn kysymykseen muutamalla lyhyellä rivillä tai se, mitä seuraavassa vastauksessa kannattaa käsitellä. | kyllä |
+| Avustaja | `code` | Mitä se kirjoittaa | Kysyy mallilta |
+| --- | --- | --- | --- |
+| **Tekstitykset** | `rt-subtitles` | Kummankin puolen sanat sitä mukaa kuin ne sanotaan. | ei |
+| **Käännös** | `rt-translate` | Toisen puolen sanat käännettyinä ohjelman kielelle. | kyllä |
+| **Myynti** | `rt-objections` | Puhelimessa myyvälle: kun asiakas esittää vastaväitteen, vastaväite yhdellä rivillä ja yksi rivi, joka vastaa siihen. | kyllä |
+| **Apua työhaastattelussa** | `rt-interview` | Haastateltavalle: vastaus juuri esitettyyn kysymykseen muutamalla lyhyellä rivillä tai se, mitä seuraavassa vastauksessa kannattaa käsitellä. | kyllä |
+
+Nämä ovat mukana toimitettujen avustajien nimet; kuvakaappauksissa voi olla aiempia nimiä. Kehotteen `rt-objections` vastaus ”—” tarkoittaa, ettei hyödyllistä ehdotusta ole. Ohjeet kattavat myös avoimet kysymykset ja ostovalmiuden.
 
 **▲** ja **▼** muuttavat järjestystä, ja se on [kuiskaajan ikkunan](/interface/prompter#the-window) pudotusvalikon järjestys. **Lisää** luo oman avustajan. **Palauta oletusarvot** palauttaa kehotteet ja säännöt sellaisiksi kuin ne tulivat ohjelman mukana, täällä samoin kuin kohdassa [Käsittely](/ai-processing/processing#defaults); kielimalleihisi ei kosketa.
 
@@ -74,3 +76,81 @@ Avustajan painaminen avaa sen kortin. Se on sama kortti kuin [kehotteella](/ai-p
 | **Mallit, kuukaudessa** | Vihjeet loppuvat ja tekstitykset jatkuvat. |
 
 Tyhjä tarkoittaa, ettei kattoa ole. Suoran äänen minuutin hinta on tunnistimen **Hinta minuutilta**, joka annetaan sen kortissa kohdassa [Litterointi](/ai-processing/transcription#the-recognisers-card); ilman sitä kuiskaaja kertoo, että näytetty summa on arvio.
+
+## Mukana tulevat avustajat {#assistant-templates}
+
+`system` määrittää mallin toimintatavan ja `body` tehtävän. Vastauksen muoto ja kieli annetaan erikseen luetteloiden ohjeilla.
+
+[Paikkamerkit](prompt-studio.md#placeholders)
+
+### Tekstitykset (`rt-subtitles`) {#rt-subtitles}
+
+**Vastauksen muoto:** `plain`.
+
+Tyhjä rooli ja tehtävä: kielimallia ei kutsuta.
+
+### Käännös (`rt-translate`) {#rt-translate}
+
+**Vastauksen muoto:** `plain`.
+
+**Rooli (`system`)**
+
+```text
+Käännät puhetta sitä mukaa kuin sitä puhutaan. Vastaat pelkällä käännöksellä — ei alkusanoja, ei lainausmerkkejä, ei selitystä — ja jätät nimet, luvut ja hinnat täsmälleen sellaisiksi kuin ne sanottiin.
+```
+
+**Tehtävä (`body`)**
+
+```text
+Käännä kielelle {{language}}:
+
+{{reply}}
+```
+
+### Myynti (`rt-objections`) {#rt-objections}
+
+**Vastauksen muoto:** `plain`.
+
+**Rooli (`system`)**
+
+```text
+Autat henkilöä, joka myy puhelimessa. Vastaat muutamalla lyhyellä rivillä, jotka hän voi lukea kuunnellessaan, et koskaan kappaleina, etkä koskaan lupaa mitään hänen puolestaan.
+```
+
+**Tehtävä (`body`)**
+
+```text
+Toinen osapuoli sanoi juuri:
+
+{{reply}}
+
+Aiemmin tässä keskustelussa:
+
+{{conversation}}
+
+Kerro yhdellä rivillä, mitä on meneillään — vastaväite, vastaamaton kysymys, merkki ostovalmiudesta — ja yhdellä rivillä, mitä sanoa seuraavaksi. Jos sanottavaa ei ole, kirjoita vain ”—”.
+```
+
+### Apua työhaastattelussa (`rt-interview`) {#rt-interview}
+
+**Vastauksen muoto:** `plain`.
+
+**Rooli (`system`)**
+
+```text
+Autat henkilöä, jota haastatellaan. Vastaat muutamalla lyhyellä rivillä, jotka hän voi lukea kuunnellessaan, et koskaan kappaleina, etkä koskaan keksi hänestä tietoja.
+```
+
+**Tehtävä (`body`)**
+
+```text
+Toinen osapuoli sanoi juuri:
+
+{{reply}}
+
+Aiemmin tässä keskustelussa:
+
+{{conversation}}
+
+Sano kolmella lyhyellä rivillä, mitä hän todella kysyy ja mitä hyvän vastauksen pitäisi kattaa.
+```

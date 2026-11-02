@@ -32,16 +32,16 @@ Modeli, ki preberejo prepis in pišejo o njem. Pritisnite **Dodaj**, da dodate e
 
 *To, kar teče samo, v tem vrstnem redu. Vsako se sproži največ enkrat na pogovor.* Pravilo je vrstica s potrditvenim poljem, ki ga vklopi ali izklopi, njegovim imenom, pod njim pa s tem, kaj naredi. **▲** in **▼** spremenita vrstni red. Program pride z osmimi:
 
-| Pravilo | Kaj naredi | Kdaj |
-| --- | --- | --- |
-| **Prepiši vsak pogovor** | Ga prepiše. | vedno |
-| **Povzemi ga** | Vpraša model: **Povzetek**. | vedno |
-| **Skrči ga na eno vrstico** | Vpraša model: **Povzetek v eni vrstici**. | vedno |
-| **Uvrsti ga v kategorijo** | Vpraša model: **Kategorija**. | vedno |
-| **Označi ga** | Vpraša model: **Oznake**. | vedno |
-| **Sproži, kar je vredno pogleda** | Vpraša model: **Opozorilni znaki**. | vedno |
-| **Presodi ga, če je šlo za prodajo** | Vpraša model: **Kakovost prodaje**. | le če je kategorija **Prodaja** |
-| **Presodi ga, če je šlo za podporo** | Vpraša model: **Kakovost podpore**. | le če je kategorija **Podpora** |
+| Pravilo | `code` | Kaj naredi | `prompt` | Kdaj |
+| --- | --- | --- | --- | --- |
+| **Prepiši vsak pogovor** | `transcribe` | Ga prepiše. | — | vedno |
+| **Povzemi ga** | `summary` | Vpraša model: **Povzetek**. | `summary` | vedno |
+| **Skrči ga na eno vrstico** | `super-summary` | Vpraša model: **Povzetek v eni vrstici**. | `super-summary` | vedno |
+| **Uvrsti ga v kategorijo** | `categorise` | Vpraša model: **Kategorija**. | `categorise` | vedno |
+| **Označi ga** | `tags` | Vpraša model: **Oznake**. | `tags` | vedno |
+| **Sproži, kar je vredno pogleda** | `red-flags` | Vpraša model: **Opozorilni znaki**. | `red-flags` | vedno |
+| **Presodi ga, če je šlo za prodajo** | `sales-quality` | Vpraša model: **Kakovost prodaje**. | `sales-quality` | le če je kategorija **Prodaja** |
+| **Presodi ga, če je šlo za podporo** | `support-quality` | Vpraša model: **Kakovost podpore**. | `support-quality` | le če je kategorija **Podpora** |
 
 Vrstni red je pomemben: zadnji dve pravili potrebujeta kategorijo, ki jo je nastavilo pravilo pred njima. **Dodaj** naredi lastno pravilo.
 
@@ -63,3 +63,13 @@ Meji sta dve, ker se mesec lahko šteje v dveh stvareh. Obe sta prazni, dokler j
 **Obnovi privzeto** vrne navodila in pravila, kot so prišla s programom, v trenutnem jeziku vmesnika. Vaši jezikovni modeli ostanejo nedotaknjeni.
 
 Navodila in pravila, ki so prišla s programom, ob zamenjavi jezika vmesnika ostanejo v jeziku, v katerem so bila; **Obnovi privzeto** jih prenese v novega. Vsako navodilo je nato na desni označeno kot *spremenjeno*.
+
+## Privzeto izvajanje {#default-execution}
+
+Zaženite `summary` pred `super-summary`, ki uporablja `{{artifact:summary}}`. Pred oceno kakovosti zaženite `categorise`: `sales-quality` potrebuje kategorijo `sales`, `support-quality` pa `support`.
+
+Za `action-items`, `topics`, `entities` in `qa` ni privzetih samodejnih pravil. Poziv zaženite ročno ali dodajte ustrezno pravilo; ob zagonu `qa` vnesite vprašanje.
+
+Privzeti nabor se shrani ob prvi uporabi. Urejanje izvoza Markdown ne spremeni aplikacije: uredite kartico poziva ali obnovite privzete nastavitve.
+
+[Privzeta besedila pozivov](prompt-studio.md#standard-templates)

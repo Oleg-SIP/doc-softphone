@@ -125,3 +125,21 @@ Kad se nešto ne dogodi, telefon u zasebnom retku kaže zašto. Redak ispod popi
 ### Pri pokretanju telefona {#when-the-phone-starts}
 
 *Baza podataka se ne može pročitati* znači da je bazu podataka napravila druga inačica programa i ova je ne može pročitati. Obično je starija inačica pokrenuta na podacima novije: ako ponovno instalirate noviju inačicu, ona otvara bazu kakva je bila. **Počni ispočetka** umjesto toga radi praznu bazu — svaki kontakt i svaki poziv u povijesti nestaju, i to se ne može poništiti. Prije nego što pritisnete, možete sačuvati kopiju datoteke baze; [Dijagnostika](/troubleshooting/diagnostics#files) kaže gdje se nalazi.
+
+## Zadano izvršavanje {#default-prompt-execution}
+
+Za `action-items`, `topics`, `entities` i `qa` nema zadanih automatskih pravila. Pokrenite upit ručno ili dodajte odgovarajuće pravilo; pri pokretanju `qa` unesite pitanje.
+
+Pokrenite `summary` prije `super-summary`, koji koristi `{{artifact:summary}}`. Pokrenite `categorise` prije procjene kvalitete: `sales-quality` zahtijeva kategoriju `sales`, a `support-quality` kategoriju `support`.
+
+[Zadano izvršavanje](../ai-processing/processing.md#default-execution)
+
+## Tumačenje rezultata {#prompt-result-notes}
+
+Prazan popis zadataka ili upozorenja može biti ispravan rezultat. Ne smiju se izmišljati nedostajući izvršitelji i rokovi. Odgovori na pitanja moraju se temeljiti samo na transkriptu.
+
+Ovo su ugrađeni nazivi pomoćnika; snimke zaslona mogu prikazivati prijašnje nazive. „—” iz `rt-objections` znači da nema korisnog prijedloga. Upute obuhvaćaju i neodgovorena pitanja te spremnost na kupnju.
+
+Zadani skup sprema se pri prvoj uporabi. Uređivanje Markdown izvoza ne mijenja aplikaciju: uredite karticu upita ili vratite zadane postavke.
+
+[Standardni tekstovi upita](../ai-processing/prompt-studio.md#standard-templates) · [Ugrađeni pomoćnici](../ai-processing/prompter.md#assistant-templates)

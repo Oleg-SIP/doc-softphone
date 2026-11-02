@@ -39,12 +39,14 @@ De souffleur leest u terwijl u praat, vaak van verder weg dan de rest van de tel
 
 Een assistent is wat een souffleur moet zijn. *Elk ervan luistert naar een lopend gesprek en schrijft iets in het venster van de souffleur: de woorden zoals ze gezegd worden, een vertaling ervan, of een suggestie voor wat u hierna kunt zeggen.* Welke er draait, kiest u in het souffleurvenster. Het programma levert er vier mee:
 
-| Assistent | Wat hij schrijft | Raadpleegt een model |
-| --- | --- | --- |
-| **Ondertitels** | De woorden van beide kanten, terwijl ze gezegd worden. | nee |
-| **Vertaling** | De woorden van de andere kant, vertaald in de taal van het programma. | ja |
-| **Bezwaren in het gesprek** | Voor wie telefonisch verkoopt: als de klant een bezwaar opwerpt, het bezwaar in één regel en één regel die erop antwoordt. | ja |
-| **Hulp bij het gesprek** | Voor wie een sollicitatiegesprek heeft: het antwoord op de zojuist gestelde vraag, in een paar korte regels, of wat er in het volgende antwoord aan bod moet komen. | ja |
+| Assistent | `code` | Wat hij schrijft | Raadpleegt een model |
+| --- | --- | --- | --- |
+| **Ondertitels** | `rt-subtitles` | De woorden van beide kanten, terwijl ze gezegd worden. | nee |
+| **Vertaling** | `rt-translate` | De woorden van de andere kant, vertaald in de taal van het programma. | ja |
+| **Verkoop** | `rt-objections` | Voor wie telefonisch verkoopt: als de klant een bezwaar opwerpt, het bezwaar in één regel en één regel die erop antwoordt. | ja |
+| **Hulp bij het gesprek** | `rt-interview` | Voor wie een sollicitatiegesprek heeft: het antwoord op de zojuist gestelde vraag, in een paar korte regels, of wat er in het volgende antwoord aan bod moet komen. | ja |
+
+Dit zijn de meegeleverde assistentnamen; schermafbeeldingen kunnen eerdere namen tonen. “—” van `rt-objections` betekent dat er geen nuttige suggestie is. De instructies behandelen ook onbeantwoorde vragen en koopbereidheid.
 
 **▲** en **▼** wijzigen de volgorde, en dat is de volgorde van de keuzelijst in het [souffleurvenster](/interface/prompter#the-window). **Toevoegen** maakt een eigen assistent. **Standaardwaarden herstellen** zet de prompts en de regels terug zoals ze met het programma kwamen, hier en onder [Verwerking](/ai-processing/processing#defaults); uw taalmodellen blijven ongemoeid.
 
@@ -74,3 +76,81 @@ Klikken op een assistent opent zijn kaart. Het is dezelfde kaart als die van een
 | **Modellen, per maand** | Het souffleren stopt en de ondertitels lopen door. |
 
 Leeg betekent geen plafond. Wat een minuut live audio kost, is de **Prijs per minuut** van de herkenner, ingevuld op zijn kaart onder [Transcriptie](/ai-processing/transcription#the-recognisers-card); zonder die prijs meldt de souffleur dat het getoonde bedrag een schatting is.
+
+## Meegeleverde assistenten {#assistant-templates}
+
+`system` bepaalt het gedrag van het model; `body` beschrijft de opdracht. De antwoordvorm en taal worden afzonderlijk via lijstinstructies opgegeven.
+
+[Plaatsaanduidingen](prompt-studio.md#placeholders)
+
+### Ondertitels (`rt-subtitles`) {#rt-subtitles}
+
+**Antwoordvorm:** `plain`.
+
+Lege rol en opdracht: geen aanroep van een taalmodel.
+
+### Vertaling (`rt-translate`) {#rt-translate}
+
+**Antwoordvorm:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Je vertaalt spraak terwijl die gesproken wordt. Je antwoordt alleen met de vertaling — geen inleiding, geen aanhalingstekens, geen uitleg — en je laat namen, getallen en prijzen precies zoals ze gezegd zijn.
+```
+
+**Opdracht (`body`)**
+
+```text
+Vertaal naar het {{language}}:
+
+{{reply}}
+```
+
+### Verkoop (`rt-objections`) {#rt-objections}
+
+**Antwoordvorm:** `plain`.
+
+**Rol (`system`)**
+
+```text
+U helpt iemand die telefonisch verkoopt. U antwoordt in enkele korte regels die hij tijdens het luisteren kan lezen, nooit in alinea's, en u belooft nooit iets namens hem.
+```
+
+**Opdracht (`body`)**
+
+```text
+De ander zei net:
+
+{{reply}}
+
+Eerder in dit gesprek:
+
+{{conversation}}
+
+Zeg in één regel wat er gebeurt — een bezwaar, een onbeantwoorde vraag, een teken dat ze eraan toe zijn — en in één regel wat je nu moet zeggen. Is er niets te zeggen, schrijf dan alleen „—”.
+```
+
+### Hulp bij het gesprek (`rt-interview`) {#rt-interview}
+
+**Antwoordvorm:** `plain`.
+
+**Rol (`system`)**
+
+```text
+U helpt iemand die een sollicitatiegesprek heeft. U antwoordt in enkele korte regels die hij tijdens het luisteren kan lezen, nooit in alinea's, en u verzint nooit feiten over hem.
+```
+
+**Opdracht (`body`)**
+
+```text
+De ander zei net:
+
+{{reply}}
+
+Eerder in dit gesprek:
+
+{{conversation}}
+
+Zeg in drie korte regels wat hij werkelijk vraagt en wat een goed antwoord zou moeten bevatten.
+```

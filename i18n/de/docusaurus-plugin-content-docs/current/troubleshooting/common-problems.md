@@ -125,3 +125,21 @@ Wenn etwas nicht klappt, sagt das Telefon in einer eigenen Zeile, warum. Eine Ze
 ### Beim Start des Telefons {#when-the-phone-starts}
 
 *Datenbank nicht lesbar* heißt, dass die Datenbank von einer anderen Version des Programms angelegt wurde und diese sie nicht lesen kann. Meist wurde eine ältere Version auf den Daten einer neueren gestartet: Installieren Sie die neuere Version wieder, öffnet sie die Datenbank so, wie sie war. **Neu anfangen** legt dagegen eine leere Datenbank an — jeder Kontakt und jeder Anruf im Verlauf geht verloren, und das lässt sich nicht rückgängig machen. Bevor Sie es drücken, können Sie eine Kopie der Datenbankdatei aufheben; wo sie liegt, steht unter [Diagnose](/troubleshooting/diagnostics#files).
+
+## Standardausführung {#default-prompt-execution}
+
+Für `action-items`, `topics`, `entities` und `qa` gibt es keine automatischen Standardregeln. Starten Sie den Prompt manuell oder ergänzen Sie eine passende Regel; bei `qa` geben Sie die Frage ein.
+
+Führen Sie `summary` vor `super-summary` aus, das `{{artifact:summary}}` verwendet. `categorise` muss vor der Qualitätsbewertung laufen: `sales-quality` benötigt `sales`, `support-quality` benötigt `support`.
+
+[Standardausführung](../ai-processing/processing.md#default-execution)
+
+## Ergebnisse verstehen {#prompt-result-notes}
+
+Eine leere Aufgaben- oder Auffälligkeitsliste kann korrekt sein. Fehlende Zuständige und Termine dürfen nicht erfunden werden. Antworten auf Fragen müssen allein auf dem Transkript beruhen.
+
+Dies sind die mitgelieferten Helfernamen; Screenshots können frühere Namen zeigen. „—“ von `rt-objections` bedeutet, dass kein sinnvoller Vorschlag vorliegt. Die Anweisungen behandeln auch offene Fragen und Kaufbereitschaft.
+
+Der Standardsatz wird beim ersten Einsatz gespeichert. Eine bearbeitete Markdown-Datei ändert die Anwendung nicht: Bearbeiten Sie die Prompt-Karte oder stellen Sie die Voreinstellungen wieder her.
+
+[Standardtexte der Prompts](../ai-processing/prompt-studio.md#standard-templates) · [Mitgelieferte Helfer](../ai-processing/prompter.md#assistant-templates)

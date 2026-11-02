@@ -186,3 +186,13 @@ Muualla — matkapuhelimella, sanelimella tai toisessa järjestelmässä — teh
 ## Tallenteen poistaminen {#deleting-a-recording}
 
 Kun tallenne poistetaan, kaikki siitä tehty lähtee sen mukana: litteroinnit ja yhteenvedot. Kuinka kauan tallenteita säilytetään itsestään, asetetaan kohdassa [Tallenteet](../recordings.md#retention).
+
+## Tulosten tulkinta {#result-notes}
+
+Kehotteille `action-items`, `topics`, `entities` ja `qa` ei ole automaattisia oletussääntöjä. Käynnistä kehote käsin tai lisää sopiva sääntö; anna kysymys käynnistäessäsi kehotteen `qa`.
+
+Tyhjä tehtävä- tai varoitusluettelo voi olla oikea tulos. Puuttuvia vastuuhenkilöitä ja päivämääriä ei saa keksiä. Kysymyksiin vastataan vain litteroinnin perusteella.
+
+Suorita `summary` ennen kehotetta `super-summary`, joka käyttää arvoa `{{artifact:summary}}`. Suorita `categorise` ennen laatuarviointia: `sales-quality` edellyttää luokkaa `sales` ja `support-quality` luokkaa `support`.
+
+[Kehotteiden oletustekstit](../ai-processing/prompt-studio.md#standard-templates) · [Vastausmuodot](../ai-processing/dictionaries.md#response-formats)

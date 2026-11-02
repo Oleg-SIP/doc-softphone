@@ -32,16 +32,16 @@ Model yang membaca transkrip dan menulis tentangnya. Tekan **Tambah** untuk mena
 
 *Yang berjalan sendiri, dalam urutan ini. Masing-masing menyala paling banyak sekali per percakapan.* Aturan adalah sebuah baris dengan kotak centang yang menyalakan atau mematikannya, namanya, dan di bawahnya apa yang dilakukannya. **▲** dan **▼** mengubah urutannya. Program dilengkapi delapan aturan:
 
-| Aturan | Fungsi | Kapan |
-| --- | --- | --- |
-| **Transkripsikan tiap percakapan** | Mentranskripsikannya. | selalu |
-| **Ringkas** | Meminta model: **Ringkasan**. | selalu |
-| **Padatkan jadi satu baris** | Meminta model: **Ringkasan satu baris**. | selalu |
-| **Tempatkan dalam kategori** | Meminta model: **Kategori**. | selalu |
-| **Beri label** | Meminta model: **Label**. | selalu |
-| **Angkat yang patut dilihat** | Meminta model: **Tanda peringatan**. | selalu |
-| **Nilai, bila itu penjualan** | Meminta model: **Kualitas penjualan**. | hanya jika kategorinya **Penjualan** |
-| **Nilai, bila itu dukungan** | Meminta model: **Kualitas dukungan**. | hanya jika kategorinya **Dukungan** |
+| Aturan | `code` | Fungsi | `prompt` | Kapan |
+| --- | --- | --- | --- | --- |
+| **Transkripsikan tiap percakapan** | `transcribe` | Mentranskripsikannya. | — | selalu |
+| **Ringkas** | `summary` | Meminta model: **Ringkasan**. | `summary` | selalu |
+| **Padatkan jadi satu baris** | `super-summary` | Meminta model: **Ringkasan satu baris**. | `super-summary` | selalu |
+| **Tempatkan dalam kategori** | `categorise` | Meminta model: **Kategori**. | `categorise` | selalu |
+| **Beri label** | `tags` | Meminta model: **Label**. | `tags` | selalu |
+| **Angkat yang patut dilihat** | `red-flags` | Meminta model: **Tanda peringatan**. | `red-flags` | selalu |
+| **Nilai, bila itu penjualan** | `sales-quality` | Meminta model: **Kualitas penjualan**. | `sales-quality` | hanya jika kategorinya **Penjualan** |
+| **Nilai, bila itu dukungan** | `support-quality` | Meminta model: **Kualitas dukungan**. | `support-quality` | hanya jika kategorinya **Dukungan** |
 
 Urutan itu penting: dua aturan terakhir memerlukan kategori yang telah ditetapkan oleh aturan sebelumnya. **Tambah** membuat aturan Anda sendiri.
 
@@ -63,3 +63,13 @@ Ada dua batas karena sebulan dapat dihitung dengan dua satuan. Keduanya kosong s
 **Kembalikan bawaan** mengembalikan petunjuk dan aturan seperti saat datang bersama program, dalam bahasa antarmuka saat ini. Model bahasa Anda tidak disentuh.
 
 Petunjuk dan aturan yang datang bersama program tetap dalam bahasa aslinya ketika Anda mengganti bahasa antarmuka; **Kembalikan bawaan** membawanya ke bahasa yang baru. Setiap petunjuk kemudian ditandai *diubah* di sebelah kanan.
+
+## Eksekusi bawaan {#default-execution}
+
+Jalankan `summary` sebelum `super-summary`, yang menggunakan `{{artifact:summary}}`. Jalankan `categorise` sebelum penilaian kualitas: `sales-quality` memerlukan kategori `sales`, sedangkan `support-quality` memerlukan `support`.
+
+Tidak ada aturan otomatis bawaan untuk `action-items`, `topics`, `entities`, atau `qa`. Jalankan prompt secara manual atau tambahkan aturan yang sesuai; masukkan pertanyaan saat menjalankan `qa`.
+
+Kumpulan bawaan disimpan saat penggunaan pertama. Mengedit ekspor Markdown tidak mengubah aplikasi: edit kartu prompt atau pulihkan pengaturan bawaan.
+
+[Teks prompt bawaan](prompt-studio.md#standard-templates)

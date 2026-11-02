@@ -39,12 +39,14 @@ On lit le souffleur en parlant, souvent de plus loin que le reste du téléphone
 
 Un assistant est ce qu'on demande à un souffleur d'être. *Chacun écoute une conversation en cours et écrit quelque chose dans la fenêtre du souffleur : les mots tels qu'ils sont dits, leur traduction, ou une suggestion de ce qu'il faut dire ensuite.* C'est dans la fenêtre du souffleur que vous choisissez lequel lancer. Le programme en fournit quatre :
 
-| Assistant | Ce qu'il écrit | Interroge un modèle |
-| --- | --- | --- |
-| **Sous-titres** | Les mots des deux côtés, à mesure qu'ils sont dits. | non |
-| **Traduction** | Les mots de l'autre côté, traduits dans la langue du programme. | oui |
-| **Objections pendant l'appel** | Pour qui vend par téléphone : quand le client soulève une objection, l'objection en une ligne et une ligne qui y répond. | oui |
-| **Aide en entretien** | Pour qui passe un entretien : la réponse à la question qui vient d'être posée, en quelques lignes courtes, ou ce qu'il faut aborder dans la réponse suivante. | oui |
+| Assistant | `code` | Ce qu'il écrit | Interroge un modèle |
+| --- | --- | --- | --- |
+| **Sous-titres** | `rt-subtitles` | Les mots des deux côtés, à mesure qu'ils sont dits. | non |
+| **Traduction** | `rt-translate` | Les mots de l'autre côté, traduits dans la langue du programme. | oui |
+| **Ventes** | `rt-objections` | Pour qui vend par téléphone : quand le client soulève une objection, l'objection en une ligne et une ligne qui y répond. | oui |
+| **Aide en entretien** | `rt-interview` | Pour qui passe un entretien : la réponse à la question qui vient d'être posée, en quelques lignes courtes, ou ce qu'il faut aborder dans la réponse suivante. | oui |
+
+Voici les noms des assistants fournis ; les captures peuvent montrer des noms antérieurs. « — » de `rt-objections` signifie qu’aucune suggestion utile n’est disponible. Les consignes couvrent aussi les questions ouvertes et les signes d’intention d’achat.
 
 **▲** et **▼** changent l'ordre, qui est celui de la liste déroulante de la [fenêtre du souffleur](/interface/prompter#the-window). **Ajouter** crée un assistant à vous. **Rétablir les valeurs par défaut** remet les invites et les règles telles qu'elles sont livrées avec le programme, ici comme sous [Traitement](/ai-processing/processing#defaults) ; vos modèles de langue sont laissés tranquilles.
 
@@ -74,3 +76,81 @@ Un clic sur un assistant ouvre sa carte. C'est la même carte que celle d'une [i
 | **Modèles, par mois** | Le soufflage s'arrête et les sous-titres continuent. |
 
 Vide signifie aucun plafond. Le coût d'une minute d'audio en direct est le **Prix à la minute** de la reconnaissance, saisi sur sa carte dans [Transcription](/ai-processing/transcription#the-recognisers-card) ; sans lui, le souffleur indique que le montant affiché est une estimation.
+
+## Assistants fournis {#assistant-templates}
+
+`system` définit le comportement du modèle ; `body` décrit la tâche. La forme et la langue de réponse sont précisées séparément par les instructions des répertoires.
+
+[Variables de substitution](prompt-studio.md#placeholders)
+
+### Sous-titres (`rt-subtitles`) {#rt-subtitles}
+
+**Forme de réponse:** `plain`.
+
+Rôle et consigne vides : aucun appel au modèle de langage.
+
+### Traduction (`rt-translate`) {#rt-translate}
+
+**Forme de réponse:** `plain`.
+
+**Rôle (`system`)**
+
+```text
+Tu traduis la parole au fil de la conversation. Tu réponds uniquement par la traduction — pas de préambule, pas de guillemets, pas d'explication — et tu laisses les noms, les nombres et les prix exactement tels qu'ils ont été dits.
+```
+
+**Consigne (`body`)**
+
+```text
+Traduis en {{language}} :
+
+{{reply}}
+```
+
+### Ventes (`rt-objections`) {#rt-objections}
+
+**Forme de réponse:** `plain`.
+
+**Rôle (`system`)**
+
+```text
+Vous aidez une personne qui vend par téléphone. Vous répondez en quelques lignes courtes qu'elle peut lire en écoutant, jamais en paragraphes, et vous ne promettez jamais rien en son nom.
+```
+
+**Consigne (`body`)**
+
+```text
+L'autre personne vient de dire :
+
+{{reply}}
+
+Plus tôt dans cette conversation :
+
+{{conversation}}
+
+Dites en une ligne ce qui se passe — une objection, une question restée sans réponse, un signe qu'ils sont prêts — et en une ligne quoi dire ensuite. S'il n'y a rien à dire, n'écrivez que « — ».
+```
+
+### Aide en entretien (`rt-interview`) {#rt-interview}
+
+**Forme de réponse:** `plain`.
+
+**Rôle (`system`)**
+
+```text
+Vous aidez une personne qui passe un entretien. Vous répondez en quelques lignes courtes qu'elle peut lire en écoutant, jamais en paragraphes, et vous n'inventez jamais de faits à son sujet.
+```
+
+**Consigne (`body`)**
+
+```text
+L'autre personne vient de dire :
+
+{{reply}}
+
+Plus tôt dans cette conversation :
+
+{{conversation}}
+
+En trois lignes courtes, dites ce qu'elle demande réellement et ce qu'une bonne réponse devrait couvrir.
+```

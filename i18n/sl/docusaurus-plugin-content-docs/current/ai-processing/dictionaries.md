@@ -18,10 +18,10 @@ O čem je bil pogovor; **za vsak pogovor se izbere ena**. Program začne s štir
 
 | Ime | Koda | Uporablja se za |
 | --- | --- | --- |
-| **Prodaja** | `sales` | Prodajo, ponudbe, pogajanja ali nadaljevanje nakupa — vključno s stranko, ki vpraša, koliko kaj stane. |
+| **Prodaja** | `sales` | Prodaja, ponudba, pogajanje ali dokončanje nakupa — vključno s stranko, ki vpraša, koliko nekaj stane. |
 | **Podpora** | `support` | Pomoč nekomu z izdelkom ali storitvijo, ki jo že ima: okvara, vprašanje o uporabi, pritožba nad delovanjem. |
-| **Zasebno** | `personal` | Sploh ne posel — zaseben pogovor, ki je slučajno potekal na tej liniji. |
-| **Drugo** | `other` | Posel, a ne prodaja ne podpora: dobavitelj, sodelavec, dostava, napačna številka. Izberite to, namesto da ugibate med drugimi. |
+| **Zasebno** | `personal` | Sploh ne službeno — zasebni pogovor, ki je slučajno potekal po tej liniji. |
+| **Drugo** | `other` | Službeno, a niti prodaja niti podpora: dobavitelj, sodelavec, dostava, napačna številka. Izberite to, namesto da ugibate med ostalimi. |
 
 Pritisnite **Dodaj**, da dodate lastno kategorijo.
 
@@ -31,14 +31,22 @@ Nalepke, ki *lahko vse hkrati veljajo za isti pogovor*. Pritisnite **Dodaj**, da
 
 | Ime | Koda | Uporablja se za |
 | --- | --- | --- |
-| **Obljubljen povratni klic** | `callback` | Nekdo v tem klicu je obljubil, da bo poklical nazaj, ali prosil, naj ga pokličejo nazaj. |
-| **Pritožba** | `complaint` | Druga stran je izrazila nezadovoljstvo, ne glede na to, ali je bilo rešeno. |
-| **Predano naprej** | `escalation` | Klic je bil predan nekomu drugemu ali je druga stran to zahtevala. |
-| **Stranka VIP** | `vip` | Z drugo stranjo so ravnali kot s pomembno stranko ali je sama rekla, da je to. |
+| **Obljubljen povratni klic** | `callback` | Nekdo v tem klicu je obljubil, da pokliče nazaj, ali prosil, naj ga pokličejo. |
+| **Pritožba** | `complaint` | Druga stran je izrazila nezadovoljstvo, ne glede na to, ali se je rešilo. |
+| **Predano naprej** | `escalation` | Klic je bil predan nekomu drugemu ali pa je druga stran to zahtevala. |
+| **Stranka VIP** | `vip` | Z drugo stranjo so ravnali kot s pomembno stranko ali pa je sama rekla, da to je. |
 
 ## Opozorilni znaki {#red-flags}
 
 Stvari, ki zahtevajo pozornost, najdene v pogovoru z dokazom in časom — na primer *Jezna stranka* ali *Tveganje odhoda*. Opozorilni znaki so v [oknu Posnetki](../interface/recordings.md) narisani rdeče in vsak nosi resnost: nizko, srednjo ali visoko.
+
+| Ime | Koda | `severity` | Uporablja se za |
+| --- | --- | --- | --- |
+| **Jezna stranka** | `angry-customer` | `high` | Slišalo se je, da je druga stran jezna, da žali ali grozi z odhodom. |
+| **Tveganje odhoda** | `churn-risk` | `high` | Omenjena je bila odpoved, nepodaljšanje ali prehod k nekomu drugemu, pa naj bo še tako mirno. |
+| **Dana obljuba** | `promise-made` | `medium` | Naša stran se je zavezala k nečemu določenemu — datumu, ceni, popravilu, vračilu. |
+| **Občutljivi podatki** | `sensitive-data` | `high` | Na glas so bili prebrani številka kartice, geslo, številka dokumenta ali karkoli drugega, kar v posnetku ne bi smelo biti. |
+| **Konkurent** | `competitor` | `low` | Druga stran je imenovala nekoga drugega, ki ponuja isto, ali nas z njim primerjala. |
 
 ## Navodila {#instructions}
 
@@ -65,3 +73,96 @@ Stvari, ki zahtevajo pozornost, najdene v pogovoru z dokazom in časom — na pr
 ## Privzete vrednosti {#defaults}
 
 **Obnovi privzeto** vrne vsak slovar, kot je prišel s programom, v trenutnem jeziku vmesnika. Kam so vaši pogovori že uvrščeni, ostane nedotaknjeno.
+
+## Oblike odgovorov {#response-formats}
+
+Bloki navajajo priložena navodila. Opisujejo oblike odgovorov; alternative so način zapisa, ne izvedljivi primeri JSON.
+
+### Proza (`shape-plain`) {#shape-plain}
+
+```text
+Odgovorite v navadni prozi. Ne uporabljajte JSON-a, seznamov ali naslovov.
+```
+
+### Postavke (`shape-list`) {#shape-list}
+
+```text
+Odgovorite samo z JSON-om, natanko te oblike:
+{"items": [{"text": "kaj je treba narediti", "owner": "kdo, ali prazno", "due": "do kdaj, ali prazno"}]}
+Ko ni česa našteti, uporabite prazno polje. Zunaj JSON-a ne pišite ničesar.
+```
+
+### Oznake (`shape-labels`) {#shape-labels}
+
+```text
+Odgovorite samo z JSON-om, natanko te oblike:
+{"labels": [{"code": "koda s seznama, ki ste ga dobili", "confidence": 0.0}]}
+Uporabljajte samo kode s seznama. Ko nobena ne ustreza, uporabite prazno polje.
+Kode si ne izmišljajte in zunaj JSON-a ne pišite ničesar.
+```
+
+### Ocena (`shape-score`) {#shape-score}
+
+```text
+Odgovorite samo z JSON-om, natanko te oblike:
+{"score": 3, "rationale": "zakaj to število in ne eno višje",
+ "evidence": [{"at_ms": 0, "quote": "besede, na katerih to stoji"}]}
+Ocena je celo število od 1 do 5. Zunaj JSON-a ne pišite ničesar.
+```
+
+### Merila (`shape-rubric`) {#shape-rubric}
+
+```text
+Odgovorite samo z JSON-om, natanko te oblike:
+{"overall": 3, "rationale": "zakaj to število in ne eno višje",
+ "criteria": [{"name": "merilo tako, kot vam je bilo dano",
+               "verdict": "pass" ali "weak" ali "fail" ali "n/a",
+               "note": "en stavek"}]}
+Presodite vsako dano merilo in nobenega drugega. Skupna ocena je celo število
+od 1 do 5. Zunaj JSON-a ne pišite ničesar.
+```
+
+### Signali (`shape-flags`) {#shape-flags}
+
+```text
+Odgovorite samo z JSON-om, natanko te oblike:
+{"flags": [{"code": "koda s seznama, ki ste ga dobili",
+            "severity": "low" ali "medium" ali "high",
+            "evidence": "besede, na katerih to stoji",
+            "at_ms": 0}]}
+Uporabljajte samo kode s seznama in vsako sprožite največ enkrat. Ko ne ustreza
+nič, uporabite prazno polje. Zunaj JSON-a ne pišite ničesar.
+```
+
+### Odgovor (`shape-qa`) {#shape-qa}
+
+```text
+Odgovorite samo z JSON-om, natanko te oblike:
+{"answer": "vaš odgovor ali naravnost to, da pogovor tega ne pove",
+ "citations": [{"at_ms": 0, "quote": "besede, na katerih odgovor stoji"}]}
+Ne odgovarjajte iz ničesar razen iz pogovora. Zunaj JSON-a ne pišite ničesar.
+```
+
+### JSON (`shape-json`) {#shape-json}
+
+```text
+Odgovorite samo z JSON-om, v obliki, zahtevani zgoraj. Zunaj JSON-a ne pišite ničesar.
+```
+
+### Kot se je govorilo (`language-as-spoken`) {#language-as-spoken}
+
+```text
+Odgovor napišite v istem jeziku, v katerem je bil pogovor.
+```
+
+### Kot se je govorilo, imenovano (`language-as-spoken-named`) {#language-as-spoken-named}
+
+```text
+Odgovor napišite v istem jeziku, v katerem je bil pogovor, to pa je {language}.
+```
+
+### Določen jezik (`language-named`) {#language-named}
+
+```text
+Odgovor napišite v tem jeziku: {language}.
+```

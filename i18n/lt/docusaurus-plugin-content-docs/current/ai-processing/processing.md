@@ -32,16 +32,16 @@ Modeliai, kurie skaito iššifruotą tekstą ir rašo apie jį. Paspauskite **Pr
 
 *Tai, kas veikia savaime, tokia tvarka. Kiekviena suveikia daugiausia kartą per pokalbį.* Taisyklė yra eilutė su žymimuoju langeliu, kuris ją įjungia ar išjungia, jos pavadinimu, o po juo — ką ji daro. **▲** ir **▼** keičia tvarką. Programa pateikiama su aštuoniomis:
 
-| Taisyklė | Ką daro | Kada |
-| --- | --- | --- |
-| **Užrašyti kiekvieną pokalbį** | Jį iššifruoja. | visada |
-| **Apibendrinti jį** | Prašo modelio: **Santrauka**. | visada |
-| **Sutraukti jį į vieną eilutę** | Prašo modelio: **Santrauka viena eilute**. | visada |
-| **Priskirti jį kategorijai** | Prašo modelio: **Kategorija**. | visada |
-| **Pažymėti jį** | Prašo modelio: **Žymos**. | visada |
-| **Iškelti, kas verta žvilgsnio** | Prašo modelio: **Įspėjamieji signalai**. | visada |
-| **Įvertinti jį, jei buvo pardavimas** | Prašo modelio: **Pardavimo kokybė**. | tik jei kategorija **Pardavimai** |
-| **Įvertinti jį, jei buvo pagalba** | Prašo modelio: **Pagalbos kokybė**. | tik jei kategorija **Pagalba** |
+| Taisyklė | `code` | Ką daro | `prompt` | Kada |
+| --- | --- | --- | --- | --- |
+| **Užrašyti kiekvieną pokalbį** | `transcribe` | Jį iššifruoja. | — | visada |
+| **Apibendrinti jį** | `summary` | Prašo modelio: **Santrauka**. | `summary` | visada |
+| **Sutraukti jį į vieną eilutę** | `super-summary` | Prašo modelio: **Santrauka viena eilute**. | `super-summary` | visada |
+| **Priskirti jį kategorijai** | `categorise` | Prašo modelio: **Kategorija**. | `categorise` | visada |
+| **Pažymėti jį** | `tags` | Prašo modelio: **Žymos**. | `tags` | visada |
+| **Iškelti, kas verta žvilgsnio** | `red-flags` | Prašo modelio: **Įspėjamieji signalai**. | `red-flags` | visada |
+| **Įvertinti jį, jei buvo pardavimas** | `sales-quality` | Prašo modelio: **Pardavimo kokybė**. | `sales-quality` | tik jei kategorija **Pardavimai** |
+| **Įvertinti jį, jei buvo pagalba** | `support-quality` | Prašo modelio: **Pagalbos kokybė**. | `support-quality` | tik jei kategorija **Pagalba** |
 
 Tvarka svarbi: paskutinėms dviem taisyklėms reikia kategorijos, kurią nustatė prieš jas esanti taisyklė. **Pridėti** sukuria jūsų taisyklę.
 
@@ -63,3 +63,13 @@ Ribų yra dvi, nes mėnesį galima matuoti dviem vienetais. Abi tuščios, kol j
 **Atkurti numatytuosius** grąžina nurodymus ir taisykles tokius, kokie atėjo su programa, dabartine sąsajos kalba. Jūsų kalbos modeliai nepaliečiami.
 
 Su programa atėję nurodymai ir taisyklės lieka ta kalba, kuria buvo, kai keičiate sąsajos kalbą; **Atkurti numatytuosius** perkelia juos į naująją. Tada kiekvienas nurodymas dešinėje pažymimas kaip *pakeista*.
+
+## Numatytasis vykdymas {#default-execution}
+
+Vykdykite `summary` prieš `super-summary`, kuri naudoja `{{artifact:summary}}`. Prieš kokybės vertinimą vykdykite `categorise`: `sales-quality` reikia kategorijos `sales`, o `support-quality` — `support`.
+
+Užklausoms `action-items`, `topics`, `entities` ir `qa` nėra numatytųjų automatinių taisyklių. Paleiskite užklausą rankiniu būdu arba pridėkite tinkamą taisyklę; paleisdami `qa`, įveskite klausimą.
+
+Numatytasis rinkinys išsaugomas pirmą kartą naudojant programą. Markdown eksporto redagavimas nekeičia programos: redaguokite užklausos kortelę arba atkurkite numatytąsias nuostatas.
+
+[Numatytieji užklausų tekstai](prompt-studio.md#standard-templates)

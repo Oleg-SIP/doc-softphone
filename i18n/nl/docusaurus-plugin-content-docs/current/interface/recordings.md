@@ -186,3 +186,13 @@ Een opname die ergens anders is gemaakt — op een mobiele telefoon, een dictafo
 ## Een opname verwijderen {#deleting-a-recording}
 
 Als een opname wordt verwijderd, gaat alles wat ervan gemaakt is mee: de transcripten en de uitwerkingen. Hoelang opnames vanzelf bewaard blijven stelt u in bij [Opnames](../recordings.md#retention).
+
+## Resultaten begrijpen {#result-notes}
+
+Er zijn geen automatische standaardregels voor `action-items`, `topics`, `entities` of `qa`. Start de prompt handmatig of voeg een passende regel toe; voer de vraag in bij het starten van `qa`.
+
+Een lege lijst met taken of waarschuwingen kan correct zijn. Ontbrekende verantwoordelijken en datums mogen niet worden verzonnen. Antwoorden op vragen moeten uitsluitend op het transcript berusten.
+
+Voer `summary` uit vóór `super-summary`, dat `{{artifact:summary}}` gebruikt. Voer `categorise` uit vóór de kwaliteitsbeoordeling: `sales-quality` vereist `sales`, en `support-quality` vereist `support`.
+
+[Standaardteksten van prompts](../ai-processing/prompt-studio.md#standard-templates) · [Antwoordformaten](../ai-processing/dictionaries.md#response-formats)

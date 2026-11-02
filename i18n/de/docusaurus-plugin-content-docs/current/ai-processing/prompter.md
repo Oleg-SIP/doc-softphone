@@ -39,12 +39,14 @@ Den Souffleur liest man während des Sprechens, oft aus größerer Entfernung al
 
 Ein Helfer ist das, was ein Souffleur sein soll. *Jeder hört einem laufenden Gespräch zu und schreibt etwas in das Fenster des Souffleurs: die Wörter, wie sie gesprochen werden, eine Übersetzung davon oder einen Vorschlag, was als Nächstes zu sagen ist.* Welchen Sie laufen lassen, wählen Sie im Souffleur-Fenster. Das Programm bringt vier mit:
 
-| Helfer | Was er schreibt | Fragt ein Modell |
-| --- | --- | --- |
-| **Untertitel** | Die Worte beider Seiten, während sie gesagt werden. | nein |
-| **Übersetzung** | Die Worte der Gegenseite, übersetzt in die Sprache des Programms. | ja |
-| **Einwände im Gespräch** | Für jemanden, der am Telefon verkauft: Wenn der Kunde einen Einwand bringt, den Einwand in einer Zeile und eine Zeile, die ihn beantwortet. | ja |
-| **Hilfe im Vorstellungsgespräch** | Für jemanden, der ein Vorstellungsgespräch führt: die Antwort auf die gerade gestellte Frage in wenigen kurzen Zeilen oder das, was in der nächsten Antwort vorkommen sollte. | ja |
+| Helfer | `code` | Was er schreibt | Fragt ein Modell |
+| --- | --- | --- | --- |
+| **Untertitel** | `rt-subtitles` | Die Worte beider Seiten, während sie gesagt werden. | nein |
+| **Übersetzung** | `rt-translate` | Die Worte der Gegenseite, übersetzt in die Sprache des Programms. | ja |
+| **Vertrieb** | `rt-objections` | Für jemanden, der am Telefon verkauft: Wenn der Kunde einen Einwand bringt, den Einwand in einer Zeile und eine Zeile, die ihn beantwortet. | ja |
+| **Hilfe im Vorstellungsgespräch** | `rt-interview` | Für jemanden, der ein Vorstellungsgespräch führt: die Antwort auf die gerade gestellte Frage in wenigen kurzen Zeilen oder das, was in der nächsten Antwort vorkommen sollte. | ja |
+
+Dies sind die mitgelieferten Helfernamen; Screenshots können frühere Namen zeigen. „—“ von `rt-objections` bedeutet, dass kein sinnvoller Vorschlag vorliegt. Die Anweisungen behandeln auch offene Fragen und Kaufbereitschaft.
 
 **▲** und **▼** ändern die Reihenfolge, und das ist die Reihenfolge im Auswahlfeld des [Souffleur-Fensters](/interface/prompter#the-window). **Hinzufügen** legt einen eigenen Helfer an. **Voreinstellungen wiederherstellen** setzt die Prompts und die Regeln so zurück, wie sie mit dem Programm kamen, hier wie unter [Verarbeitung](/ai-processing/processing#defaults); Ihre Sprachmodelle bleiben unberührt.
 
@@ -74,3 +76,81 @@ Ein Druck auf einen Helfer öffnet seine Karte. Es ist dieselbe Karte wie die ei
 | **Modelle, pro Monat** | Das Soufflieren hört auf, die Untertitel laufen weiter. |
 
 Leer heißt keine Obergrenze. Was eine Minute Live-Audio kostet, ist der **Preis je Minute** des Spracherkenners, eingetragen auf seiner Karte unter [Transkription](/ai-processing/transcription#the-recognisers-card); ohne ihn sagt der Souffleur, dass der angezeigte Betrag eine Schätzung ist.
+
+## Mitgelieferte Helfer {#assistant-templates}
+
+`system` legt das Verhalten des Modells fest; `body` beschreibt die Aufgabe. Antwortform und Sprache werden separat durch Verzeichnisanweisungen vorgegeben.
+
+[Platzhalter](prompt-studio.md#placeholders)
+
+### Untertitel (`rt-subtitles`) {#rt-subtitles}
+
+**Antwortform:** `plain`.
+
+Leere Rolle und Aufgabe: kein Aufruf des Sprachmodells.
+
+### Übersetzung (`rt-translate`) {#rt-translate}
+
+**Antwortform:** `plain`.
+
+**Rolle (`system`)**
+
+```text
+Du übersetzt Gesprochenes, während es gesagt wird. Du antwortest nur mit der Übersetzung — keine Vorrede, keine Anführungszeichen, keine Erklärung — und lässt Namen, Zahlen und Preise genau so, wie sie gesagt wurden.
+```
+
+**Aufgabe (`body`)**
+
+```text
+Übersetze ins {{language}}:
+
+{{reply}}
+```
+
+### Vertrieb (`rt-objections`) {#rt-objections}
+
+**Antwortform:** `plain`.
+
+**Rolle (`system`)**
+
+```text
+Sie helfen jemandem, der am Telefon verkauft. Sie antworten in wenigen kurzen Zeilen, die man beim Zuhören lesen kann, niemals in Absätzen, und versprechen nie etwas in seinem Namen.
+```
+
+**Aufgabe (`body`)**
+
+```text
+Die andere Person hat gerade gesagt:
+
+{{reply}}
+
+Früher in diesem Gespräch:
+
+{{conversation}}
+
+Sagen Sie in einer Zeile, was gerade geschieht — ein Einwand, eine offene Frage, ein Zeichen von Kaufbereitschaft — und in einer Zeile, was als Nächstes zu sagen ist. Gibt es nichts zu sagen, schreiben Sie nur „—“.
+```
+
+### Hilfe im Vorstellungsgespräch (`rt-interview`) {#rt-interview}
+
+**Antwortform:** `plain`.
+
+**Rolle (`system`)**
+
+```text
+Sie helfen jemandem, der ein Vorstellungsgespräch führt. Sie antworten in wenigen kurzen Zeilen, die man beim Zuhören lesen kann, niemals in Absätzen, und erfinden nie Tatsachen über diese Person.
+```
+
+**Aufgabe (`body`)**
+
+```text
+Die andere Person hat gerade gesagt:
+
+{{reply}}
+
+Früher in diesem Gespräch:
+
+{{conversation}}
+
+Sagen Sie in drei kurzen Zeilen, wonach sie wirklich fragt und was eine gute Antwort abdecken sollte.
+```

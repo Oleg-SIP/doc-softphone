@@ -32,3 +32,7 @@ description: Begreppen inom IP-telefoni och AI Softphone som används i den här
 | **Utskrift** | Ett samtal som text, replik för replik, i takt med ljudet. |
 | **Webhook** | En begäran som telefonen skickar till ett annat system när ett samtal börjar, ändras eller slutar. Se [Webhookar](/integration/webhooks). |
 | **Bredband** | En kodek med bredare ljudomfång än en telefonlinje, så att rösten blir tydligare. |
+| **[Platshållare](ai-processing/prompt-studio.md#placeholders)** | Ett element i prompten som ersätts med samtalsdata. |
+| **[Resultat från en annan prompt](ai-processing/processing.md#default-execution)** | Ett befintligt resultat som återanvänds av en annan prompt, till exempel `{{artifact:summary}}`. |
+| **[Modellens roll](ai-processing/prompt-studio.md#role-and-task)** | `system` styr modellens beteende; `body` beskriver uppgiften. Svarsform och språk anges separat genom instruktioner i listorna. |
+| **[Svarsform](ai-processing/dictionaries.md#response-formats)** | Resultatets struktur, exempelvis löptext, punkter, etiketter, flaggor eller kriterier. |

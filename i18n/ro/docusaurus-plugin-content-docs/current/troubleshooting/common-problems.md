@@ -125,3 +125,21 @@ Când ceva nu se întâmplă, telefonul spune de ce pe un rând separat. Un rân
 ### La pornirea telefonului {#when-the-phone-starts}
 
 *Baza de date nu poate fi citită* înseamnă că baza de date a fost făcută de o altă versiune a programului, iar aceasta nu o poate citi. De obicei, o versiune mai veche a fost pornită pe datele uneia mai noi: dacă reinstalați versiunea mai nouă, aceasta deschide baza așa cum era. **Începe de la capăt**, în schimb, face o bază goală — fiecare contact și fiecare apel din istoric se pierd, iar asta nu se poate anula. Înainte să apăsați, puteți păstra o copie a fișierului bazei; [Diagnostic](/troubleshooting/diagnostics#files) spune unde se află.
+
+## Executare implicită {#default-prompt-execution}
+
+Nu există reguli automate implicite pentru `action-items`, `topics`, `entities` sau `qa`. Executați promptul manual sau adăugați o regulă potrivită; introduceți întrebarea la executarea `qa`.
+
+Executați `summary` înainte de `super-summary`, care folosește `{{artifact:summary}}`. Executați `categorise` înainte de evaluarea calității: `sales-quality` necesită `sales`, iar `support-quality` necesită `support`.
+
+[Executare implicită](../ai-processing/processing.md#default-execution)
+
+## Interpretarea rezultatelor {#prompt-result-notes}
+
+O listă goală de sarcini sau alerte poate fi corectă. Responsabilii și termenele care lipsesc nu trebuie inventate. Răspunsurile la întrebări trebuie să se bazeze numai pe transcriere.
+
+Acestea sunt numele asistenților incluși; capturile pot arăta nume anterioare. „—” de la `rt-objections` înseamnă că nu există o sugestie utilă. Instrucțiunile acoperă și întrebările fără răspuns și disponibilitatea de a cumpăra.
+
+Setul implicit este salvat la prima utilizare. Editarea unui export Markdown nu modifică aplicația: editați fișa promptului sau restabiliți valorile implicite.
+
+[Textele implicite ale prompturilor](../ai-processing/prompt-studio.md#standard-templates) · [Asistenți incluși](../ai-processing/prompter.md#assistant-templates)

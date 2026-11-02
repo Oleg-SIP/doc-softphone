@@ -39,12 +39,14 @@ Glas druge strani se med govorjenjem pošilja razpoznavalniku, kar ni nič manj 
 
 Pomočnik je tisto, kar naj bo šepetalec. *Vsak od njih posluša pogovor v teku in piše nekaj v okno šepetalca: besede tako, kot so izgovorjene, njihov prevod, ali predlog, kaj reči naprej.* Katerega zagnati, izberete v oknu šepetalca. Program jih prinaša štiri:
 
-| Pomočnik | Kaj piše | Vpraša model |
-| --- | --- | --- |
-| **Podnapisi** | Besede obeh strani, ko so izrečene. | ne |
-| **Prevod** | Besede druge strani, prevedene v jezik programa. | da |
-| **Ugovori v klicu** | Za tistega, ki prodaja po telefonu: ko stranka izrazi ugovor, ugovor v eni vrstici in eno vrstico, ki nanj odgovori. | da |
-| **Pomoč na razgovoru** | Za tistega, s katerim poteka razgovor: odgovor na pravkar zastavljeno vprašanje v nekaj kratkih vrsticah ali to, kar zajeti v naslednjem odgovoru. | da |
+| Pomočnik | `code` | Kaj piše | Vpraša model |
+| --- | --- | --- | --- |
+| **Podnapisi** | `rt-subtitles` | Besede obeh strani, ko so izrečene. | ne |
+| **Prevod** | `rt-translate` | Besede druge strani, prevedene v jezik programa. | da |
+| **Prodaja** | `rt-objections` | Za tistega, ki prodaja po telefonu: ko stranka izrazi ugovor, ugovor v eni vrstici in eno vrstico, ki nanj odgovori. | da |
+| **Pomoč na razgovoru** | `rt-interview` | Za tistega, s katerim poteka razgovor: odgovor na pravkar zastavljeno vprašanje v nekaj kratkih vrsticah ali to, kar zajeti v naslednjem odgovoru. | da |
+
+To so priložena imena pomočnikov; posnetki zaslona lahko kažejo prejšnja imena. »—« iz `rt-objections` pomeni, da ni koristnega predloga. Navodila zajemajo tudi neodgovorjena vprašanja in pripravljenost za nakup.
 
 **▲** in **▼** spreminjata vrstni red, in to je vrstni red spustnega seznama v [oknu šepetalca](/interface/prompter#the-window). **Dodaj** ustvari lastnega pomočnika. **Obnovi privzeto** povrne navodila in pravila v stanje, v katerem so prišla s programom, tu in v [Obdelava](/ai-processing/processing#defaults); vaši jezikovni modeli ostanejo nedotaknjeni.
 
@@ -74,3 +76,81 @@ Klik na pomočnika odpre njegovo kartico. To je ista kartica kot pri [navodilu](
 | **Modeli, na mesec** | Predlogi se ustavijo, podnapisi pa tečejo naprej. |
 
 Prazno pomeni brez omejitve. Cena minute zvoka v živo je **Cena na minuto** razpoznavalnika, vpisana na njegovi kartici v [Prepis](/ai-processing/transcription#the-recognisers-card); brez nje šepetalec opozori, da je prikazani znesek ocena.
+
+## Priloženi pomočniki {#assistant-templates}
+
+`system` določa vedenje modela, `body` pa opisuje nalogo. Oblika in jezik odgovora se podata ločeno z navodili iz seznamov.
+
+[Nadomestne oznake](prompt-studio.md#placeholders)
+
+### Podnapisi (`rt-subtitles`) {#rt-subtitles}
+
+**Oblika odgovora:** `plain`.
+
+Prazna vloga in naloga: jezikovni model se ne pokliče.
+
+### Prevod (`rt-translate`) {#rt-translate}
+
+**Oblika odgovora:** `plain`.
+
+**Vloga (`system`)**
+
+```text
+Prevajaš govor med tem, ko poteka. Odgovarjaš samo s prevodom — brez uvoda, brez narekovajev, brez razlage — imena, številke in cene pa puščaš natanko tako, kot so bila izgovorjena.
+```
+
+**Naloga (`body`)**
+
+```text
+Prevedi v {{language}}:
+
+{{reply}}
+```
+
+### Prodaja (`rt-objections`) {#rt-objections}
+
+**Oblika odgovora:** `plain`.
+
+**Vloga (`system`)**
+
+```text
+Pomagate osebi, ki prodaja po telefonu. Odgovarjate z nekaj kratkimi vrsticami, ki jih je mogoče brati med poslušanjem, nikoli z odstavki, in nikoli ničesar ne obljubljate v njenem imenu.
+```
+
+**Naloga (`body`)**
+
+```text
+Sogovornik je pravkar rekel:
+
+{{reply}}
+
+Prej v tem pogovoru:
+
+{{conversation}}
+
+V eni vrstici povejte, kaj se dogaja — ugovor, neodgovorjeno vprašanje, znak, da so pripravljeni kupiti — in v eni vrstici, kaj reči naprej. Če ni kaj reči, napišite samo »—«.
+```
+
+### Pomoč na razgovoru (`rt-interview`) {#rt-interview}
+
+**Oblika odgovora:** `plain`.
+
+**Vloga (`system`)**
+
+```text
+Pomagate osebi, s katero poteka razgovor. Odgovarjate z nekaj kratkimi vrsticami, ki jih je mogoče brati med poslušanjem, nikoli z odstavki, in nikoli si ne izmišljujete dejstev o njej.
+```
+
+**Naloga (`body`)**
+
+```text
+Sogovornik je pravkar rekel:
+
+{{reply}}
+
+Prej v tem pogovoru:
+
+{{conversation}}
+
+V treh kratkih vrsticah povejte, kaj v resnici sprašuje in kaj bi moral dober odgovor zajeti.
+```

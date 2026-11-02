@@ -39,12 +39,14 @@ Etteütlejat loetakse rääkimise ajal, sageli kaugemalt kui ülejäänud telefo
 
 Abiline on see, mida etteütlejalt palutakse olla. *Igaüks neist kuulab käimasolevat vestlust ja kirjutab midagi etteütleja aknasse: sõnad nii, nagu need öeldakse, nende tõlke või soovituse, mida edasi öelda.* Millise käivitate, valite etteütleja aknas. Programmiga tuleb kaasa neli:
 
-| Abiline | Mida see kirjutab | Küsib mudelilt |
-| --- | --- | --- |
-| **Subtiitrid** | Mõlema poole sõnad nende ütlemise ajal. | ei |
-| **Tõlge** | Teise poole sõnad, tõlgituna programmi keelde. | jah |
-| **Vastuväited kõnes** | Telefoni teel müüjale: kui klient esitab vastuväite, vastuväide ühel real ja üks rida, mis sellele vastab. | jah |
-| **Abi vestlusel** | Intervjueeritavale: vastus äsja esitatud küsimusele mõne lühikese reaga või see, mida järgmises vastuses käsitleda. | jah |
+| Abiline | `code` | Mida see kirjutab | Küsib mudelilt |
+| --- | --- | --- | --- |
+| **Subtiitrid** | `rt-subtitles` | Mõlema poole sõnad nende ütlemise ajal. | ei |
+| **Tõlge** | `rt-translate` | Teise poole sõnad, tõlgituna programmi keelde. | jah |
+| **Müük** | `rt-objections` | Telefoni teel müüjale: kui klient esitab vastuväite, vastuväide ühel real ja üks rida, mis sellele vastab. | jah |
+| **Abi vestlusel** | `rt-interview` | Intervjueeritavale: vastus äsja esitatud küsimusele mõne lühikese reaga või see, mida järgmises vastuses käsitleda. | jah |
+
+Need on kaasasolevate assistentide nimed; kuvatõmmistel võivad olla varasemad nimed. Viiba `rt-objections` vastus „—“ tähendab, et kasulikku soovitust pole. Juhised hõlmavad ka vastamata küsimusi ja ostuvalmidust.
 
 **▲** ja **▼** muudavad järjekorda, mis on [etteütleja akna](/interface/prompter#the-window) rippmenüü järjekord. **Lisa** loob oma abilise. **Taasta vaikeväärtused** taastab juhised ja reeglid sellisena, nagu need programmiga kaasa tulid, siin nagu ka jaotises [Töötlemine](/ai-processing/processing#defaults); teie keelemudelitega midagi ei juhtu.
 
@@ -74,3 +76,81 @@ Abilisele vajutamine avab selle kaardi. See on sama kaart mis [juhisel](/ai-proc
 | **Mudelid, kuus** | Soovitused lõpevad ja subtiitrid jätkuvad. |
 
 Tühi tähendab, et piirmäära pole. Otseheli minuti hind on tuvastaja **Hind minuti eest**, mis sisestatakse selle kaardile jaotises [Ülestähendus](/ai-processing/transcription#the-recognisers-card); ilma selleta ütleb etteütleja, et näidatud summa on hinnang.
+
+## Kaasasolevad assistendid {#assistant-templates}
+
+`system` määrab mudeli käitumise, `body` kirjeldab ülesannet. Vastuse kuju ja keel antakse eraldi loendite juhistega.
+
+[Kohatäitjad](prompt-studio.md#placeholders)
+
+### Subtiitrid (`rt-subtitles`) {#rt-subtitles}
+
+**Vastuse kuju:** `plain`.
+
+Tühi roll ja ülesanne: keelemudelit ei kutsuta.
+
+### Tõlge (`rt-translate`) {#rt-translate}
+
+**Vastuse kuju:** `plain`.
+
+**Roll (`system`)**
+
+```text
+Tõlgid kõnet selle toimumise ajal. Vastad ainult tõlkega — ei sissejuhatust, ei jutumärke, ei selgitust — ja jätad nimed, numbrid ja hinnad täpselt nii, nagu need öeldi.
+```
+
+**Ülesanne (`body`)**
+
+```text
+Tõlgi keelde {{language}}:
+
+{{reply}}
+```
+
+### Müük (`rt-objections`) {#rt-objections}
+
+**Vastuse kuju:** `plain`.
+
+**Roll (`system`)**
+
+```text
+Aitate inimest, kes müüb telefoni teel. Vastate mõne lühikese reaga, mida saab kuulamise ajal lugeda, mitte kunagi lõikudena, ja te ei luba kunagi midagi tema nimel.
+```
+
+**Ülesanne (`body`)**
+
+```text
+Vestluskaaslane ütles just:
+
+{{reply}}
+
+Varem selles vestluses:
+
+{{conversation}}
+
+Öelge ühe reaga, mis toimub — vastuväide, vastuseta küsimus, märk ostuvalmidusest — ja ühe reaga, mida edasi öelda. Kui öelda pole midagi, kirjutage ainult „—“.
+```
+
+### Abi vestlusel (`rt-interview`) {#rt-interview}
+
+**Vastuse kuju:** `plain`.
+
+**Roll (`system`)**
+
+```text
+Aitate inimest, kellega peetakse töövestlust. Vastate mõne lühikese reaga, mida saab kuulamise ajal lugeda, mitte kunagi lõikudena, ja te ei mõtle temast kunagi fakte välja.
+```
+
+**Ülesanne (`body`)**
+
+```text
+Vestluskaaslane ütles just:
+
+{{reply}}
+
+Varem selles vestluses:
+
+{{conversation}}
+
+Öelge kolme lühikese reaga, mida ta tegelikult küsib ja mida hea vastus peaks katma.
+```

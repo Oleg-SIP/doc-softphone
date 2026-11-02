@@ -60,3 +60,16 @@ La finestra dice cosa manca in una riga sotto i pulsanti.
 | *Il riconoscitore non ha iniziato ad ascoltare. Controlla il suo indirizzo dal vivo e il suo modello in Impostazioni → Trascrizione.* | L'indirizzo per il suggeritore, il modello o la chiave è sbagliato. **Prova** sulla scheda del riconoscitore dice quale. |
 | *Il budget mensile per i riconoscitori è esaurito.* | Alzi **Riconoscitori, al mese** o attenda che cambi il mese. |
 | *Il budget mensile per i modelli è esaurito. Le parole continuano; il suggerimento si è fermato.* | Alzi **Modelli, al mese**. |
+
+## Assistenti inclusi {#standard-assistants}
+
+| `code` | Assistenti inclusi |
+| --- | --- |
+| `rt-subtitles` | Sottotitoli |
+| `rt-translate` | Traduzione |
+| `rt-objections` | Vendite |
+| `rt-interview` | Aiuto al colloquio |
+
+Questi sono i nomi degli assistenti inclusi; le schermate possono mostrare nomi precedenti. «—» da `rt-objections` significa che non c’è un suggerimento utile. Le istruzioni trattano anche domande aperte e segnali di disponibilità all’acquisto.
+
+[Testi dei prompt predefiniti](../ai-processing/prompter.md#assistant-templates)

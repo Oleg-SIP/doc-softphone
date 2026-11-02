@@ -39,12 +39,14 @@ Našeptávač se čte během mluvení, často z větší vzdálenosti než zbyte
 
 Pomocník je to, čím má našeptávač být. *Každý z nich poslouchá probíhající hovor a píše něco do okna našeptávače: slova tak, jak padají, jejich překlad, nebo nápovědu, co říct dál.* Který spustit, vybíráte v okně našeptávače. Program přináší čtyři:
 
-| Pomocník | Co píše | Ptá se modelu |
-| --- | --- | --- |
-| **Titulky** | Slova obou stran, jak zaznívají. | ne |
-| **Překlad** | Slova druhé strany přeložená do jazyka programu. | ano |
-| **Námitky v hovoru** | Pro toho, kdo prodává po telefonu: když zákazník vznese námitku, námitku na jednom řádku a jeden řádek, který na ni odpovídá. | ano |
-| **Pomoc při pohovoru** | Pro toho, s kým se vede pohovor: odpověď na právě položenou otázku na několika krátkých řádcích nebo to, co zahrnout do další odpovědi. | ano |
+| Pomocník | `code` | Co píše | Ptá se modelu |
+| --- | --- | --- | --- |
+| **Titulky** | `rt-subtitles` | Slova obou stran, jak zaznívají. | ne |
+| **Překlad** | `rt-translate` | Slova druhé strany přeložená do jazyka programu. | ano |
+| **Prodej** | `rt-objections` | Pro toho, kdo prodává po telefonu: když zákazník vznese námitku, námitku na jednom řádku a jeden řádek, který na ni odpovídá. | ano |
+| **Pomoc při pohovoru** | `rt-interview` | Pro toho, s kým se vede pohovor: odpověď na právě položenou otázku na několika krátkých řádcích nebo to, co zahrnout do další odpovědi. | ano |
+
+Jde o dodávané názvy asistentů; snímky obrazovky mohou ukazovat starší názvy. „—“ od `rt-objections` znamená, že není užitečný návrh. Instrukce zahrnují také nezodpovězené otázky a připravenost nakoupit.
 
 **▲** a **▼** mění pořadí a to je pořadí rozbalovacího seznamu v [okně našeptávače](/interface/prompter#the-window). **Přidat** vytvoří vlastního pomocníka. **Obnovit výchozí** vrátí pokyny a pravidla do stavu, v jakém přišly s programem, tady i ve [Zpracování](/ai-processing/processing#defaults); vaše jazykové modely zůstanou nedotčeny.
 
@@ -74,3 +76,81 @@ Klepnutím na pomocníka se otevře jeho karta. Je to stejná karta jako u [poky
 | **Modely, za měsíc** | Nápovědy se zastaví a titulky pokračují. |
 
 Prázdné znamená bez stropu. Cena minuty živého zvuku je **Cena za minutu** rozpoznávače, zadaná na jeho kartě v [Přepis](/ai-processing/transcription#the-recognisers-card); bez ní našeptávač upozorní, že zobrazená částka je odhad.
+
+## Dodávaní asistenti {#assistant-templates}
+
+`system` určuje chování modelu; `body` popisuje úkol. Tvar a jazyk odpovědi se předávají samostatně instrukcemi ze seznamů.
+
+[Zástupné symboly](prompt-studio.md#placeholders)
+
+### Titulky (`rt-subtitles`) {#rt-subtitles}
+
+**Tvar odpovědi:** `plain`.
+
+Prázdná role a úkol: jazykový model se nevolá.
+
+### Překlad (`rt-translate`) {#rt-translate}
+
+**Tvar odpovědi:** `plain`.
+
+**Role (`system`)**
+
+```text
+Překládáš řeč, jak probíhá. Odpovídáš pouze překladem — bez úvodu, bez uvozovek, bez vysvětlení — a jména, čísla a ceny necháváš přesně tak, jak byly řečeny.
+```
+
+**Úkol (`body`)**
+
+```text
+Přelož do {{language}}:
+
+{{reply}}
+```
+
+### Prodej (`rt-objections`) {#rt-objections}
+
+**Tvar odpovědi:** `plain`.
+
+**Role (`system`)**
+
+```text
+Pomáháte člověku, který prodává po telefonu. Odpovídáte několika krátkými řádky, které lze číst při poslechu, nikdy odstavci, a nikdy nic neslibujete jeho jménem.
+```
+
+**Úkol (`body`)**
+
+```text
+Druhá strana právě řekla:
+
+{{reply}}
+
+Dříve v tomto rozhovoru:
+
+{{conversation}}
+
+Jedním řádkem pojmenujte, co se děje — námitka, nezodpovězená otázka, známka toho, že jsou připraveni koupit — a jedním řádkem, co říct dál. Není-li co říct, napište jen „—“.
+```
+
+### Pomoc při pohovoru (`rt-interview`) {#rt-interview}
+
+**Tvar odpovědi:** `plain`.
+
+**Role (`system`)**
+
+```text
+Pomáháte člověku, se kterým se vede pohovor. Odpovídáte několika krátkými řádky, které lze číst při poslechu, nikdy odstavci, a nikdy si o něm nevymýšlíte fakta.
+```
+
+**Úkol (`body`)**
+
+```text
+Druhá strana právě řekla:
+
+{{reply}}
+
+Dříve v tomto rozhovoru:
+
+{{conversation}}
+
+Ve třech krátkých řádcích řekněte, na co se skutečně ptá a co by měla dobrá odpověď obsahovat.
+```

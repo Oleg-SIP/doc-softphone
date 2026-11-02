@@ -39,12 +39,14 @@ Il suggeritore si legge mentre si parla, spesso da più lontano del resto del te
 
 Un assistente è ciò che si chiede a un suggeritore di essere. *Ciascuno ascolta una conversazione in corso e scrive qualcosa nella finestra del suggeritore: le parole così come vengono dette, una loro traduzione, o un suggerimento su cosa dire poi.* Quale eseguire lo sceglie nella finestra del suggeritore. Il programma ne porta quattro:
 
-| Assistente | Che cosa scrive | Interroga un modello |
-| --- | --- | --- |
-| **Sottotitoli** | Le parole di entrambe le parti, mentre vengono dette. | no |
-| **Traduzione** | Le parole dell'altra parte, tradotte nella lingua del programma. | sì |
-| **Obiezioni nella chiamata** | Per chi vende al telefono: quando il cliente solleva un'obiezione, l'obiezione in una riga e una riga che le risponde. | sì |
-| **Aiuto al colloquio** | Per chi sostiene un colloquio: la risposta alla domanda appena fatta, in poche righe brevi, oppure che cosa toccare nella risposta successiva. | sì |
+| Assistente | `code` | Che cosa scrive | Interroga un modello |
+| --- | --- | --- | --- |
+| **Sottotitoli** | `rt-subtitles` | Le parole di entrambe le parti, mentre vengono dette. | no |
+| **Traduzione** | `rt-translate` | Le parole dell'altra parte, tradotte nella lingua del programma. | sì |
+| **Vendite** | `rt-objections` | Per chi vende al telefono: quando il cliente solleva un'obiezione, l'obiezione in una riga e una riga che le risponde. | sì |
+| **Aiuto al colloquio** | `rt-interview` | Per chi sostiene un colloquio: la risposta alla domanda appena fatta, in poche righe brevi, oppure che cosa toccare nella risposta successiva. | sì |
+
+Questi sono i nomi degli assistenti inclusi; le schermate possono mostrare nomi precedenti. «—» da `rt-objections` significa che non c’è un suggerimento utile. Le istruzioni trattano anche domande aperte e segnali di disponibilità all’acquisto.
 
 **▲** e **▼** cambiano l'ordine, che è quello del menu a tendina della [finestra del suggeritore](/interface/prompter#the-window). **Aggiungi** crea un assistente tutto suo. **Ripristina i valori predefiniti** riporta i prompt e le regole a come sono arrivati con il programma, qui come in [Elaborazione](/ai-processing/processing#defaults); i suoi modelli linguistici restano intatti.
 
@@ -74,3 +76,81 @@ Premendo un assistente si apre la sua scheda. È la stessa scheda di un [prompt]
 | **Modelli, al mese** | I suggerimenti si fermano e i sottotitoli continuano. |
 
 Vuoto significa nessun tetto. Quanto costa un minuto di audio dal vivo è il **Prezzo al minuto** del riconoscitore, indicato sulla sua scheda in [Trascrizione](/ai-processing/transcription#the-recognisers-card); senza di esso il suggeritore avvisa che la cifra mostrata è una stima.
+
+## Assistenti inclusi {#assistant-templates}
+
+`system` definisce il comportamento del modello; `body` descrive il compito. Forma e lingua della risposta sono specificate separatamente dalle istruzioni del dizionario.
+
+[Segnaposto](prompt-studio.md#placeholders)
+
+### Sottotitoli (`rt-subtitles`) {#rt-subtitles}
+
+**Forma della risposta:** `plain`.
+
+Ruolo e compito vuoti: nessuna chiamata al modello linguistico.
+
+### Traduzione (`rt-translate`) {#rt-translate}
+
+**Forma della risposta:** `plain`.
+
+**Ruolo (`system`)**
+
+```text
+Traduci il parlato mentre avviene. Rispondi solo con la traduzione — nessun preambolo, nessuna virgoletta, nessuna spiegazione — e lasci nomi, numeri e prezzi esattamente come sono stati detti.
+```
+
+**Compito (`body`)**
+
+```text
+Traduci in {{language}}:
+
+{{reply}}
+```
+
+### Vendite (`rt-objections`) {#rt-objections}
+
+**Forma della risposta:** `plain`.
+
+**Ruolo (`system`)**
+
+```text
+Aiuti una persona che vende al telefono. Rispondi in poche righe brevi che possa leggere mentre ascolta, mai in paragrafi, e non prometti mai nulla a suo nome.
+```
+
+**Compito (`body`)**
+
+```text
+L'altra persona ha appena detto:
+
+{{reply}}
+
+Prima in questa conversazione:
+
+{{conversation}}
+
+Di' in una riga che cosa sta succedendo — un'obiezione, una domanda rimasta senza risposta, un segno che sono pronti — e in una riga che cosa dire adesso. Se non c'è nulla da dire, scrivi solo «—».
+```
+
+### Aiuto al colloquio (`rt-interview`) {#rt-interview}
+
+**Forma della risposta:** `plain`.
+
+**Ruolo (`system`)**
+
+```text
+Aiuti una persona che sta sostenendo un colloquio. Rispondi in poche righe brevi che possa leggere mentre ascolta, mai in paragrafi, e non inventi mai fatti sul suo conto.
+```
+
+**Compito (`body`)**
+
+```text
+L'altra persona ha appena detto:
+
+{{reply}}
+
+Prima in questa conversazione:
+
+{{conversation}}
+
+In tre righe brevi, di' che cosa sta chiedendo davvero e che cosa dovrebbe coprire una buona risposta.
+```

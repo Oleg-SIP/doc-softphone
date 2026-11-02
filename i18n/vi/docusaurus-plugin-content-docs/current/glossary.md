@@ -32,3 +32,7 @@ description: Các thuật ngữ về điện thoại IP và về AI Softphone đ
 | **Bản chép lời** | Cuộc trò chuyện dưới dạng văn bản, từng lượt lời, khớp với âm thanh. |
 | **Webhook** | Yêu cầu mà điện thoại gửi đến một hệ thống khác khi cuộc gọi bắt đầu, thay đổi hoặc kết thúc. Xem [Webhook](/integration/webhooks). |
 | **Băng rộng** | Codec có dải âm rộng hơn đường dây điện thoại, nên giọng nói rõ hơn. |
+| **[Biến thay thế](ai-processing/prompt-studio.md#placeholders)** | Một thành phần trong lời nhắc được thay bằng dữ liệu cuộc trò chuyện. |
+| **[Kết quả của lời nhắc khác](ai-processing/processing.md#default-execution)** | Kết quả đã có được lời nhắc khác sử dụng lại, ví dụ `{{artifact:summary}}`. |
+| **[Vai trò của mô hình](ai-processing/prompt-studio.md#role-and-task)** | `system` xác định hành vi của mô hình; `body` mô tả nhiệm vụ. Cấu trúc và ngôn ngữ trả lời được cung cấp riêng qua các hướng dẫn trong danh mục. |
+| **[Cấu trúc câu trả lời](ai-processing/dictionaries.md#response-formats)** | Cấu trúc của kết quả, như văn bản, mục, nhãn, cảnh báo hoặc bộ tiêu chí. |

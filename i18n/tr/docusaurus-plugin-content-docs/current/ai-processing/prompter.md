@@ -39,12 +39,14 @@ Suflör konuşurken, çoğu zaman telefonun geri kalanından daha uzaktan okunur
 
 Yardımcı, bir suflörden olması istenen şeydir. *Her biri süren bir konuşmayı dinler ve suflörün penceresine bir şey yazar: sözcükleri söylendiği gibi, çevirilerini ya da sonra ne söyleneceğine dair bir öneri.* Hangisinin çalışacağını suflör penceresinde seçersiniz. Program dört tane ile gelir:
 
-| Yardımcı | Ne yazar | Modele sorar |
-| --- | --- | --- |
-| **Altyazılar** | İki tarafın sözlerini söylendikleri anda. | hayır |
-| **Çeviri** | Karşı tarafın sözlerini programın diline çevrilmiş olarak. | evet |
-| **Görüşmedeki itirazlar** | Telefonda satış yapan biri için: müşteri bir itiraz dile getirdiğinde, itirazı tek satırda ve ona yanıt veren tek bir satır. | evet |
-| **Mülakat yardımı** | Mülakata giren biri için: az önce sorulan sorunun yanıtı birkaç kısa satırda ya da bir sonraki yanıtta neye değinileceği. | evet |
+| Yardımcı | `code` | Ne yazar | Modele sorar |
+| --- | --- | --- | --- |
+| **Altyazılar** | `rt-subtitles` | İki tarafın sözlerini söylendikleri anda. | hayır |
+| **Çeviri** | `rt-translate` | Karşı tarafın sözlerini programın diline çevrilmiş olarak. | evet |
+| **Satış** | `rt-objections` | Telefonda satış yapan biri için: müşteri bir itiraz dile getirdiğinde, itirazı tek satırda ve ona yanıt veren tek bir satır. | evet |
+| **Mülakat yardımı** | `rt-interview` | Mülakata giren biri için: az önce sorulan sorunun yanıtı birkaç kısa satırda ya da bir sonraki yanıtta neye değinileceği. | evet |
+
+Bunlar yerleşik asistan adlarıdır; ekran görüntülerinde önceki adlar olabilir. `rt-objections` yanıtındaki “—”, yararlı bir öneri olmadığı anlamına gelir. Talimatlar, yanıtlanmamış soruları ve satın alma isteğini de kapsar.
 
 **▲** ve **▼** sırayı değiştirir; bu, [suflör penceresindeki](/interface/prompter#the-window) açılır listenin sırasıdır. **Ekle** kendi yardımcınızı oluşturur. **Öntanımlılara dön**, yönergeleri ve kuralları programla geldikleri hâline döndürür; burada da [İşleme](/ai-processing/processing#defaults) altında da; dil modellerinize dokunulmaz.
 
@@ -74,3 +76,81 @@ Bir yardımcıya tıklamak kartını açar. İşleme altındaki bir [yönergenin
 | **Modeller, ayda** | Öneriler durur, altyazılar sürer. |
 
 Boş, tavan yok demektir. Canlı sesin bir dakikasının maliyeti, tanıyıcının [Yazıya döküm](/ai-processing/transcription#the-recognisers-card) altındaki kartına girilen **Dakika başına fiyat** değeridir; o olmadan suflör, gösterdiği tutarın bir tahmin olduğunu söyler.
+
+## Yerleşik asistanlar {#assistant-templates}
+
+`system` modelin davranışını belirler, `body` görevi açıklar. Yanıt yapısı ve dili, sözlük talimatlarıyla ayrıca verilir.
+
+[Yer tutucular](prompt-studio.md#placeholders)
+
+### Altyazılar (`rt-subtitles`) {#rt-subtitles}
+
+**Yanıt yapısı:** `plain`.
+
+Rol ve görev boş: dil modeli çağrılmaz.
+
+### Çeviri (`rt-translate`) {#rt-translate}
+
+**Yanıt yapısı:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Konuşmayı söylenirken çevirirsin. Yalnızca çeviriyle yanıt verirsin — giriş yok, tırnak yok, açıklama yok — ve adları, sayıları ve fiyatları tam söylendiği gibi bırakırsın.
+```
+
+**Görev (`body`)**
+
+```text
+{{language}} diline çevir:
+
+{{reply}}
+```
+
+### Satış (`rt-objections`) {#rt-objections}
+
+**Yanıt yapısı:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Telefonda satış yapan birine yardım ediyorsunuz. Dinlerken okunabilecek birkaç kısa satırla yanıt verirsiniz, asla paragraflarla değil, ve onun adına asla bir şey vaat etmezsiniz.
+```
+
+**Görev (`body`)**
+
+```text
+Karşı taraf şimdi şunu söyledi:
+
+{{reply}}
+
+Bu görüşmede daha önce:
+
+{{conversation}}
+
+Tek satırda ne olup bittiğini söyleyin — bir itiraz, yanıtlanmamış bir soru, almaya hazır olduklarının işareti — ve tek satırda bundan sonra ne söyleneceğini. Söylenecek bir şey yoksa yalnızca „—” yazın.
+```
+
+### Mülakat yardımı (`rt-interview`) {#rt-interview}
+
+**Yanıt yapısı:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Mülakata giren birine yardım ediyorsunuz. Dinlerken okunabilecek birkaç kısa satırla yanıt verirsiniz, asla paragraflarla değil, ve onun hakkında asla bilgi uydurmazsınız.
+```
+
+**Görev (`body`)**
+
+```text
+Karşı taraf şimdi şunu söyledi:
+
+{{reply}}
+
+Bu görüşmede daha önce:
+
+{{conversation}}
+
+Üç kısa satırda, aslında ne sorduğunu ve iyi bir yanıtın neleri kapsaması gerektiğini söyleyin.
+```

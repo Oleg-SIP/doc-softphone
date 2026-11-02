@@ -32,16 +32,16 @@ Modely, ktoré čítajú prepis a píšu o ňom. Stlačením **Pridať** model p
 
 *To, čo beží samo, v tomto poradí. Každé sa spustí najviac raz na hovor.* Pravidlo je riadok so začiarkavacím políčkom, ktoré ho zapína alebo vypína, s jeho názvom a pod ním s tým, čo robí. **▲** a **▼** menia poradie. Program prichádza s ôsmimi:
 
-| Pravidlo | Čo robí | Kedy |
-| --- | --- | --- |
-| **Prepísať každý hovor** | Prepíše ho. | vždy |
-| **Zhrnúť ho** | Pýta sa modelu: **Zhrnutie**. | vždy |
-| **Skrátiť ho na jeden riadok** | Pýta sa modelu: **Zhrnutie na jeden riadok**. | vždy |
-| **Zaradiť ho do kategórie** | Pýta sa modelu: **Kategória**. | vždy |
-| **Označiť ho** | Pýta sa modelu: **Štítky**. | vždy |
-| **Zdvihnúť, čo stojí za pohľad** | Pýta sa modelu: **Varovné signály**. | vždy |
-| **Posúdiť ho, ak šlo o predaj** | Pýta sa modelu: **Kvalita predaja**. | iba ak je kategória **Predaj** |
-| **Posúdiť ho, ak šlo o podporu** | Pýta sa modelu: **Kvalita podpory**. | iba ak je kategória **Podpora** |
+| Pravidlo | `code` | Čo robí | `prompt` | Kedy |
+| --- | --- | --- | --- | --- |
+| **Prepísať každý hovor** | `transcribe` | Prepíše ho. | — | vždy |
+| **Zhrnúť ho** | `summary` | Pýta sa modelu: **Zhrnutie**. | `summary` | vždy |
+| **Skrátiť ho na jeden riadok** | `super-summary` | Pýta sa modelu: **Zhrnutie na jeden riadok**. | `super-summary` | vždy |
+| **Zaradiť ho do kategórie** | `categorise` | Pýta sa modelu: **Kategória**. | `categorise` | vždy |
+| **Označiť ho** | `tags` | Pýta sa modelu: **Štítky**. | `tags` | vždy |
+| **Zdvihnúť, čo stojí za pohľad** | `red-flags` | Pýta sa modelu: **Varovné signály**. | `red-flags` | vždy |
+| **Posúdiť ho, ak šlo o predaj** | `sales-quality` | Pýta sa modelu: **Kvalita predaja**. | `sales-quality` | iba ak je kategória **Predaj** |
+| **Posúdiť ho, ak šlo o podporu** | `support-quality` | Pýta sa modelu: **Kvalita podpory**. | `support-quality` | iba ak je kategória **Podpora** |
 
 Na poradí záleží: posledné dve pravidlá potrebujú kategóriu, ktorú nastavilo pravidlo pred nimi. **Pridať** vytvorí vlastné pravidlo.
 
@@ -63,3 +63,13 @@ Hranice sú dve, lebo mesiac sa dá počítať v dvoch veciach. Obe sú prázdne
 **Obnoviť predvolené** vráti pokyny a pravidlá do stavu, v akom prišli s programom, v aktuálnom jazyku rozhrania. Vaše jazykové modely zostanú nedotknuté.
 
 Pokyny a pravidlá, ktoré prišli s programom, zostanú pri zmene jazyka rozhrania v jazyku, v akom boli; **Obnoviť predvolené** ich prenesie do nového. Každý pokyn je potom vpravo označený ako *zmenené*.
+
+## Predvolené spúšťanie {#default-execution}
+
+Spustite `summary` pred `super-summary`, ktorý používa `{{artifact:summary}}`. Pred hodnotením kvality spustite `categorise`: `sales-quality` vyžaduje kategóriu `sales`, `support-quality` kategóriu `support`.
+
+Pre `action-items`, `topics`, `entities` ani `qa` nie sú predvolené automatické pravidlá. Spustite prompt ručne alebo pridajte vhodné pravidlo; pri spustení `qa` zadajte otázku.
+
+Predvolená sada sa uloží pri prvom použití. Úprava exportu Markdown nemení aplikáciu: upravte kartu promptu alebo obnovte predvolené nastavenia.
+
+[Predvolené texty promptov](prompt-studio.md#standard-templates)

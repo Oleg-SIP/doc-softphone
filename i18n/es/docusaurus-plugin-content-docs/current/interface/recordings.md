@@ -186,3 +186,13 @@ Una grabación hecha en otro sitio — en un móvil, una grabadora u otro sistem
 ## Eliminar una grabación {#deleting-a-recording}
 
 Cuando se elimina una grabación, todo lo que se hizo a partir de ella desaparece con ella: las transcripciones y las redacciones. Cuánto tiempo se conservan las grabaciones por sí solas se ajusta en [Grabaciones](../recordings.md#retention).
+
+## Interpretar los resultados {#result-notes}
+
+No hay reglas automáticas predeterminadas para `action-items`, `topics`, `entities` ni `qa`. Ejecute el prompt manualmente o añada una regla adecuada; introduzca la pregunta al ejecutar `qa`.
+
+Una lista vacía de tareas o alertas puede ser correcta. No deben inventarse responsables ni fechas. Las respuestas a preguntas deben basarse únicamente en la transcripción.
+
+Ejecute `summary` antes de `super-summary`, que utiliza `{{artifact:summary}}`. Ejecute `categorise` antes de evaluar la calidad: `sales-quality` requiere `sales`, y `support-quality` requiere `support`.
+
+[Textos de los prompts predeterminados](../ai-processing/prompt-studio.md#standard-templates) · [Formatos de respuesta](../ai-processing/dictionaries.md#response-formats)

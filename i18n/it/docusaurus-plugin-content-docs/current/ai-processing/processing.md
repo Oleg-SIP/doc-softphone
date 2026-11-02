@@ -32,16 +32,16 @@ I modelli che leggono una trascrizione e ne scrivono. Prema **Aggiungi** per agg
 
 *Ciò che gira da sé, in quest'ordine. Ognuna scatta al più una volta per conversazione.* Una regola è una riga con una casella che la attiva o la disattiva, il suo nome e, sotto, che cosa fa. **▲** e **▼** cambiano l'ordine. Il programma ne fornisce otto:
 
-| Regola | Che cosa fa | Quando |
-| --- | --- | --- |
-| **Trascrivere ogni conversazione** | La trascrive. | sempre |
-| **Riassumerla** | Chiede a un modello: **Riassunto**. | sempre |
-| **Ridurla a una riga** | Chiede a un modello: **Riassunto in una riga**. | sempre |
-| **Classificarla in una categoria** | Chiede a un modello: **Categoria**. | sempre |
-| **Etichettarla** | Chiede a un modello: **Etichette**. | sempre |
-| **Sollevare tutto ciò che merita uno sguardo** | Chiede a un modello: **Segnali**. | sempre |
-| **Valutarla, se era una vendita** | Chiede a un modello: **Qualità commerciale**. | solo se la categoria è **Vendite** |
-| **Valutarla, se era assistenza** | Chiede a un modello: **Qualità dell'assistenza**. | solo se la categoria è **Assistenza** |
+| Regola | `code` | Che cosa fa | `prompt` | Quando |
+| --- | --- | --- | --- | --- |
+| **Trascrivere ogni conversazione** | `transcribe` | La trascrive. | — | sempre |
+| **Riassumerla** | `summary` | Chiede a un modello: **Riassunto**. | `summary` | sempre |
+| **Ridurla a una riga** | `super-summary` | Chiede a un modello: **Riassunto in una riga**. | `super-summary` | sempre |
+| **Classificarla in una categoria** | `categorise` | Chiede a un modello: **Categoria**. | `categorise` | sempre |
+| **Etichettarla** | `tags` | Chiede a un modello: **Etichette**. | `tags` | sempre |
+| **Sollevare tutto ciò che merita uno sguardo** | `red-flags` | Chiede a un modello: **Segnali**. | `red-flags` | sempre |
+| **Valutarla, se era una vendita** | `sales-quality` | Chiede a un modello: **Qualità commerciale**. | `sales-quality` | solo se la categoria è **Vendite** |
+| **Valutarla, se era assistenza** | `support-quality` | Chiede a un modello: **Qualità dell'assistenza**. | `support-quality` | solo se la categoria è **Assistenza** |
 
 L'ordine conta: le ultime due regole hanno bisogno della categoria impostata dalla regola precedente. **Aggiungi** crea una regola sua.
 
@@ -63,3 +63,13 @@ I limiti sono due perché un mese si può contare in due cose. Entrambi sono vuo
 **Ripristina i valori predefiniti** rimette i prompt e le regole come erano forniti con il programma, nella lingua attuale dell'interfaccia. I suoi modelli linguistici non vengono toccati.
 
 I prompt e le regole forniti con il programma restano nella lingua in cui erano quando cambia la lingua dell'interfaccia; **Ripristina i valori predefiniti** li porta nella nuova. Ogni prompt viene allora indicato come *modificato* a destra.
+
+## Esecuzione predefinita {#default-execution}
+
+Eseguire `summary` prima di `super-summary`, che usa `{{artifact:summary}}`. Eseguire `categorise` prima della valutazione: `sales-quality` richiede `sales`, mentre `support-quality` richiede `support`.
+
+Non esistono regole automatiche predefinite per `action-items`, `topics`, `entities` o `qa`. Eseguire il prompt manualmente o aggiungere una regola adatta; inserire la domanda quando si esegue `qa`.
+
+Il set predefinito viene salvato al primo utilizzo. Modificare un’esportazione Markdown non cambia l’applicazione: modificare la scheda del prompt o ripristinare i valori predefiniti.
+
+[Testi dei prompt predefiniti](prompt-studio.md#standard-templates)

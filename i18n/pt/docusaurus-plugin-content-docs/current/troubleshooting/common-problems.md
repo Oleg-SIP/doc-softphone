@@ -125,3 +125,21 @@ Quando algo não acontece, o telefone diz porquê numa linha própria. Uma linha
 ### Ao iniciar o telefone {#when-the-phone-starts}
 
 *Base de dados ilegível* significa que a base de dados foi criada por outra versão do programa e esta não a consegue ler. Normalmente, uma versão mais antiga foi aberta com os dados de uma mais recente: reinstalar a versão mais recente abre a base tal como estava. **Recomeçar**, pelo contrário, cria uma base vazia — perdem-se todos os contactos e todas as chamadas do histórico, e não é possível anular. Antes de carregar, pode guardar uma cópia do ficheiro da base; [Diagnóstico](/troubleshooting/diagnostics#files) diz onde está.
+
+## Execução predefinida {#default-prompt-execution}
+
+Não existem regras automáticas predefinidas para `action-items`, `topics`, `entities` ou `qa`. Execute o prompt manualmente ou adicione uma regra adequada; introduza a pergunta ao executar `qa`.
+
+Execute `summary` antes de `super-summary`, que usa `{{artifact:summary}}`. Execute `categorise` antes da avaliação: `sales-quality` exige `sales`, e `support-quality` exige `support`.
+
+[Execução predefinida](../ai-processing/processing.md#default-execution)
+
+## Interpretar os resultados {#prompt-result-notes}
+
+Uma lista vazia de tarefas ou alertas pode ser correta. Não se devem inventar responsáveis nem datas. As respostas às perguntas devem basear-se apenas na transcrição.
+
+Estes são os nomes dos assistentes incluídos; as capturas podem mostrar nomes anteriores. «—» de `rt-objections` significa que não há uma sugestão útil. As instruções também abrangem perguntas por responder e sinais de intenção de compra.
+
+O conjunto predefinido é guardado na primeira utilização. Editar uma exportação Markdown não altera a aplicação: edite a ficha do prompt ou reponha as predefinições.
+
+[Textos dos prompts predefinidos](../ai-processing/prompt-studio.md#standard-templates) · [Assistentes incluídos](../ai-processing/prompter.md#assistant-templates)

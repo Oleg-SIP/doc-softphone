@@ -186,3 +186,13 @@ Nagranie zrobione gdzie indziej — telefonem komórkowym, dyktafonem albo w inn
 ## Usuwanie nagrania {#deleting-a-recording}
 
 Gdy nagranie zostaje usunięte, znika razem z nim wszystko, co z niego powstało: transkrypcje i opracowania. Jak długo nagrania są przechowywane samoczynnie, ustawia się w [Nagraniach](../recordings.md#retention).
+
+## Interpretacja wyników {#result-notes}
+
+Nie ma domyślnych reguł automatycznych dla `action-items`, `topics`, `entities` ani `qa`. Uruchom prompt ręcznie lub dodaj odpowiednią regułę; wpisz pytanie przy uruchamianiu `qa`.
+
+Pusta lista zadań lub ostrzeżeń może być prawidłowym wynikiem. Nie wolno wymyślać brakujących osób odpowiedzialnych ani terminów. Odpowiedzi na pytania muszą opierać się wyłącznie na transkrypcji.
+
+Uruchom `summary` przed `super-summary`, który korzysta z `{{artifact:summary}}`. Uruchom `categorise` przed oceną jakości: `sales-quality` wymaga kategorii `sales`, a `support-quality` kategorii `support`.
+
+[Domyślne teksty promptów](../ai-processing/prompt-studio.md#standard-templates) · [Formaty odpowiedzi](../ai-processing/dictionaries.md#response-formats)

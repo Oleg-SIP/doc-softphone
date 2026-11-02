@@ -186,3 +186,13 @@ Citur — mobilajā tālrunī, diktofonā vai citā sistēmā — veiktu ierakst
 ## Ieraksta dzēšana {#deleting-a-recording}
 
 Kad ieraksts tiek dzēsts, līdz ar to pazūd viss, kas no tā izveidots: atšifrējumi un apkopojumi. Cik ilgi ieraksti tiek glabāti paši, iestata sadaļā [Ieraksti](../recordings.md#retention).
+
+## Rezultātu skaidrojums {#result-notes}
+
+Uzvednēm `action-items`, `topics`, `entities` un `qa` nav noklusējuma automātisko noteikumu. Palaidiet uzvedni manuāli vai pievienojiet atbilstošu noteikumu; palaižot `qa`, ievadiet jautājumu.
+
+Tukšs uzdevumu vai brīdinājumu saraksts var būt pareizs rezultāts. Trūkstošos atbildīgos un datumus nedrīkst izdomāt. Atbildēm uz jautājumiem jābalstās tikai transkriptā.
+
+Izpildiet `summary` pirms `super-summary`, kas izmanto `{{artifact:summary}}`. Izpildiet `categorise` pirms kvalitātes vērtēšanas: `sales-quality` vajag kategoriju `sales`, bet `support-quality` — `support`.
+
+[Noklusējuma uzvedņu teksti](../ai-processing/prompt-studio.md#standard-templates) · [Atbilžu formāti](../ai-processing/dictionaries.md#response-formats)

@@ -32,3 +32,7 @@ description: The terms of IP telephony and of AI Softphone used in this document
 | **Transcript** | A conversation as text, turn by turn, in step with the audio. |
 | **Webhook** | A request the phone sends to another system when a call starts, changes or ends. See [Webhooks](/integration/webhooks). |
 | **Wideband** | A codec with a wider range of sound than a phone line has, so the voice is clearer. |
+| **[Placeholder](ai-processing/prompt-studio.md#placeholders)** | A token in the prompt that is replaced with conversation data. |
+| **[Result of another prompt](ai-processing/processing.md#default-execution)** | An existing result reused by another prompt, for example `{{artifact:summary}}`. |
+| **[Model role](ai-processing/prompt-studio.md#role-and-task)** | `system` sets the model’s behaviour; `body` describes the task. The answer shape and reply language are supplied separately through dictionary instructions. |
+| **[Answer shape](ai-processing/dictionaries.md#response-formats)** | The structure of the result, such as prose, items, labels, flags or a rubric. |

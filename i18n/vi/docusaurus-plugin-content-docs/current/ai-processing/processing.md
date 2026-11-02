@@ -32,16 +32,16 @@ Các mô hình đọc bản chép lời và viết về nó. Nhấn **Thêm** đ
 
 *Những gì tự chạy, theo thứ tự này. Mỗi cái kích hoạt nhiều nhất một lần cho mỗi cuộc trò chuyện.* Một quy tắc là một dòng có ô đánh dấu để bật hoặc tắt, tên của nó, và bên dưới là việc nó làm. **▲** và **▼** thay đổi thứ tự. Chương trình đi kèm tám quy tắc:
 
-| Quy tắc | Tác dụng | Khi nào |
-| --- | --- | --- |
-| **Gỡ băng mọi cuộc trò chuyện** | Chép lời cuộc trò chuyện. | luôn luôn |
-| **Tóm tắt nó** | Hỏi một mô hình: **Tóm tắt**. | luôn luôn |
-| **Rút nó thành một dòng** | Hỏi một mô hình: **Tóm tắt một dòng**. | luôn luôn |
-| **Xếp nó vào một hạng mục** | Hỏi một mô hình: **Hạng mục**. | luôn luôn |
-| **Gắn nhãn cho nó** | Hỏi một mô hình: **Nhãn**. | luôn luôn |
-| **Nêu những gì đáng xem** | Hỏi một mô hình: **Dấu hiệu cảnh báo**. | luôn luôn |
-| **Đánh giá nó, nếu là bán hàng** | Hỏi một mô hình: **Chất lượng bán hàng**. | chỉ khi hạng mục là **Bán hàng** |
-| **Đánh giá nó, nếu là hỗ trợ** | Hỏi một mô hình: **Chất lượng hỗ trợ**. | chỉ khi hạng mục là **Hỗ trợ** |
+| Quy tắc | `code` | Tác dụng | `prompt` | Khi nào |
+| --- | --- | --- | --- | --- |
+| **Gỡ băng mọi cuộc trò chuyện** | `transcribe` | Chép lời cuộc trò chuyện. | — | luôn luôn |
+| **Tóm tắt nó** | `summary` | Hỏi một mô hình: **Tóm tắt**. | `summary` | luôn luôn |
+| **Rút nó thành một dòng** | `super-summary` | Hỏi một mô hình: **Tóm tắt một dòng**. | `super-summary` | luôn luôn |
+| **Xếp nó vào một hạng mục** | `categorise` | Hỏi một mô hình: **Hạng mục**. | `categorise` | luôn luôn |
+| **Gắn nhãn cho nó** | `tags` | Hỏi một mô hình: **Nhãn**. | `tags` | luôn luôn |
+| **Nêu những gì đáng xem** | `red-flags` | Hỏi một mô hình: **Dấu hiệu cảnh báo**. | `red-flags` | luôn luôn |
+| **Đánh giá nó, nếu là bán hàng** | `sales-quality` | Hỏi một mô hình: **Chất lượng bán hàng**. | `sales-quality` | chỉ khi hạng mục là **Bán hàng** |
+| **Đánh giá nó, nếu là hỗ trợ** | `support-quality` | Hỏi một mô hình: **Chất lượng hỗ trợ**. | `support-quality` | chỉ khi hạng mục là **Hỗ trợ** |
 
 Thứ tự là quan trọng: hai quy tắc cuối cần hạng mục do quy tắc trước đó đặt. **Thêm** tạo một quy tắc của riêng bạn.
 
@@ -63,3 +63,13 @@ Có hai hạn mức vì một tháng có thể được tính bằng hai thứ. 
 **Khôi phục mặc định** đưa các chỉ dẫn và quy tắc về như khi đi kèm chương trình, bằng ngôn ngữ giao diện hiện tại. Các mô hình ngôn ngữ của bạn được giữ nguyên.
 
 Các chỉ dẫn và quy tắc đi kèm chương trình vẫn giữ ngôn ngữ ban đầu khi bạn đổi ngôn ngữ giao diện; **Khôi phục mặc định** đưa chúng sang ngôn ngữ mới. Khi đó mỗi chỉ dẫn được đánh dấu *đã sửa* ở bên phải.
+
+## Thực thi mặc định {#default-execution}
+
+Chạy `summary` trước `super-summary`, vì lời nhắc sau sử dụng `{{artifact:summary}}`. Chạy `categorise` trước khi đánh giá chất lượng: `sales-quality` yêu cầu phân loại `sales`, còn `support-quality` yêu cầu `support`.
+
+Không có quy tắc tự động mặc định cho `action-items`, `topics`, `entities` hoặc `qa`. Hãy chạy lời nhắc thủ công hoặc thêm quy tắc phù hợp; nhập câu hỏi khi chạy `qa`.
+
+Bộ mặc định được lưu trong lần sử dụng đầu tiên. Chỉnh sửa bản xuất Markdown không thay đổi ứng dụng: hãy sửa thẻ lời nhắc hoặc khôi phục mặc định.
+
+[Nội dung lời nhắc mặc định](prompt-studio.md#standard-templates)

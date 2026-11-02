@@ -32,16 +32,16 @@ Bir dökümü okuyup onun hakkında yazan modeller. Bir tane eklemek için **Ekl
 
 *Kendi kendine bu düzende çalışanlar. Her biri görüşme başına en çok bir kez ateşlenir.* Bir kural; onu açıp kapatan bir onay kutusu, adı ve altında ne yaptığı bulunan bir satırdır. **▲** ve **▼** sırayı değiştirir. Program sekiz kuralla gelir:
 
-| Kural | Ne yapar | Ne zaman |
-| --- | --- | --- |
-| **Her görüşmeyi yazıya dök** | Görüşmeyi yazıya döker. | her zaman |
-| **Özetle** | Bir modele sorar: **Özet**. | her zaman |
-| **Tek satıra indir** | Bir modele sorar: **Tek satırlık özet**. | her zaman |
-| **Bir kategoriye yerleştir** | Bir modele sorar: **Kategori**. | her zaman |
-| **Etiketle** | Bir modele sorar: **Etiketler**. | her zaman |
-| **Bakılmaya değeni öne çıkar** | Bir modele sorar: **Uyarı işaretleri**. | her zaman |
-| **Satışsa değerlendir** | Bir modele sorar: **Satış niteliği**. | yalnızca kategori **Satış** ise |
-| **Destekse değerlendir** | Bir modele sorar: **Destek niteliği**. | yalnızca kategori **Destek** ise |
+| Kural | `code` | Ne yapar | `prompt` | Ne zaman |
+| --- | --- | --- | --- | --- |
+| **Her görüşmeyi yazıya dök** | `transcribe` | Görüşmeyi yazıya döker. | — | her zaman |
+| **Özetle** | `summary` | Bir modele sorar: **Özet**. | `summary` | her zaman |
+| **Tek satıra indir** | `super-summary` | Bir modele sorar: **Tek satırlık özet**. | `super-summary` | her zaman |
+| **Bir kategoriye yerleştir** | `categorise` | Bir modele sorar: **Kategori**. | `categorise` | her zaman |
+| **Etiketle** | `tags` | Bir modele sorar: **Etiketler**. | `tags` | her zaman |
+| **Bakılmaya değeni öne çıkar** | `red-flags` | Bir modele sorar: **Uyarı işaretleri**. | `red-flags` | her zaman |
+| **Satışsa değerlendir** | `sales-quality` | Bir modele sorar: **Satış niteliği**. | `sales-quality` | yalnızca kategori **Satış** ise |
+| **Destekse değerlendir** | `support-quality` | Bir modele sorar: **Destek niteliği**. | `support-quality` | yalnızca kategori **Destek** ise |
 
 Sıra önemlidir: son iki kural, kendilerinden önceki kuralın belirlediği kategoriye ihtiyaç duyar. **Ekle** kendi kuralınızı oluşturur.
 
@@ -63,3 +63,13 @@ Sıra önemlidir: son iki kural, kendilerinden önceki kuralın belirlediği kat
 **Öntanımlılara dön**, yönergeleri ve kuralları programla geldikleri hâline, geçerli arayüz dilinde geri getirir. Dil modellerinize dokunulmaz.
 
 Arayüz dilini değiştirdiğinizde programla gelen yönergeler ve kurallar oldukları dilde kalır; **Öntanımlılara dön** onları yeni dile getirir. Ardından her yönerge sağda *değiştirildi* olarak işaretlenir.
+
+## Varsayılan çalıştırma {#default-execution}
+
+`{{artifact:summary}}` kullanan `super-summary` öncesinde `summary` çalıştırılmalıdır. Kalite değerlendirmesinden önce `categorise` çalıştırılmalıdır: `sales-quality`, `sales` kategorisini; `support-quality` ise `support` kategorisini gerektirir.
+
+`action-items`, `topics`, `entities` ve `qa` için varsayılan otomatik kural yoktur. İstemi elle çalıştırın veya uygun bir kural ekleyin; `qa` çalıştırılırken soruyu girin.
+
+Varsayılan küme ilk kullanımda kaydedilir. Markdown dışa aktarımını düzenlemek uygulamayı değiştirmez: istem kartını düzenleyin veya varsayılanları geri yükleyin.
+
+[Varsayılan istem metinleri](prompt-studio.md#standard-templates)

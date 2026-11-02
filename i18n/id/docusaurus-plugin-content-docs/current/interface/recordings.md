@@ -186,3 +186,13 @@ Rekaman yang dibuat di tempat lain — di ponsel, perekam suara, atau sistem lai
 ## Menghapus rekaman {#deleting-a-recording}
 
 Ketika sebuah rekaman dihapus, semua yang dibuat darinya ikut terhapus: transkrip dan hasil olahannya. Berapa lama rekaman disimpan dengan sendirinya diatur di [Rekaman](../recordings.md#retention).
+
+## Memahami hasil {#result-notes}
+
+Tidak ada aturan otomatis bawaan untuk `action-items`, `topics`, `entities`, atau `qa`. Jalankan prompt secara manual atau tambahkan aturan yang sesuai; masukkan pertanyaan saat menjalankan `qa`.
+
+Daftar tugas atau peringatan yang kosong dapat merupakan hasil yang benar. Penanggung jawab dan tanggal yang tidak disebutkan tidak boleh dikarang. Jawaban pertanyaan harus berdasarkan transkrip saja.
+
+Jalankan `summary` sebelum `super-summary`, yang menggunakan `{{artifact:summary}}`. Jalankan `categorise` sebelum penilaian kualitas: `sales-quality` memerlukan kategori `sales`, sedangkan `support-quality` memerlukan `support`.
+
+[Teks prompt bawaan](../ai-processing/prompt-studio.md#standard-templates) · [Format jawaban](../ai-processing/dictionaries.md#response-formats)

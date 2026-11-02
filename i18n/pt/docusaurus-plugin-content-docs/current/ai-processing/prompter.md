@@ -39,12 +39,14 @@ O ponto lê-se enquanto se fala, muitas vezes de mais longe do que o resto do te
 
 Um assistente é aquilo que se pede a um ponto que seja. *Cada um escuta uma conversa a decorrer e escreve algo na janela do ponto: as palavras tal como são ditas, uma tradução delas, ou uma sugestão do que dizer a seguir.* Qual correr escolhe-o na janela do ponto. O programa traz quatro:
 
-| Assistente | O que escreve | Pergunta a um modelo |
-| --- | --- | --- |
-| **Legendas** | As palavras dos dois lados, à medida que são ditas. | não |
-| **Tradução** | As palavras do outro lado, traduzidas para a língua do programa. | sim |
-| **Objeções na chamada** | Para quem vende por telefone: quando o cliente levanta uma objeção, a objeção numa linha e uma linha que lhe responde. | sim |
-| **Ajuda na entrevista** | Para quem está numa entrevista: a resposta à pergunta acabada de fazer, em poucas linhas curtas, ou o que abordar na resposta seguinte. | sim |
+| Assistente | `code` | O que escreve | Pergunta a um modelo |
+| --- | --- | --- | --- |
+| **Legendas** | `rt-subtitles` | As palavras dos dois lados, à medida que são ditas. | não |
+| **Tradução** | `rt-translate` | As palavras do outro lado, traduzidas para a língua do programa. | sim |
+| **Vendas** | `rt-objections` | Para quem vende por telefone: quando o cliente levanta uma objeção, a objeção numa linha e uma linha que lhe responde. | sim |
+| **Ajuda na entrevista** | `rt-interview` | Para quem está numa entrevista: a resposta à pergunta acabada de fazer, em poucas linhas curtas, ou o que abordar na resposta seguinte. | sim |
+
+Estes são os nomes dos assistentes incluídos; as capturas podem mostrar nomes anteriores. «—» de `rt-objections` significa que não há uma sugestão útil. As instruções também abrangem perguntas por responder e sinais de intenção de compra.
 
 **▲** e **▼** mudam a ordem, que é a da lista da [janela do ponto](/interface/prompter#the-window). **Adicionar** cria um assistente seu. **Repor os valores por omissão** devolve as instruções e as regras ao estado em que vieram com o programa, aqui como em [Processamento](/ai-processing/processing#defaults); os seus modelos de linguagem ficam intocados.
 
@@ -74,3 +76,81 @@ Premir um assistente abre o seu cartão. É o mesmo cartão de uma [instrução]
 | **Modelos, por mês** | As sugestões param e as legendas continuam. |
 
 Vazio significa sem teto. O custo de um minuto de áudio em direto é o **Preço por minuto** do reconhecedor, indicado no seu cartão em [Transcrição](/ai-processing/transcription#the-recognisers-card); sem ele, o ponto avisa que o valor mostrado é uma estimativa.
+
+## Assistentes incluídos {#assistant-templates}
+
+`system` define o comportamento do modelo; `body` descreve a tarefa. A forma e o idioma da resposta são fornecidos separadamente pelas instruções do dicionário.
+
+[Marcadores de substituição](prompt-studio.md#placeholders)
+
+### Legendas (`rt-subtitles`) {#rt-subtitles}
+
+**Forma da resposta:** `plain`.
+
+Papel e tarefa vazios: não há chamada ao modelo de linguagem.
+
+### Tradução (`rt-translate`) {#rt-translate}
+
+**Forma da resposta:** `plain`.
+
+**Papel (`system`)**
+
+```text
+Traduzes a fala à medida que acontece. Respondes apenas com a tradução — sem preâmbulo, sem aspas, sem explicações — e deixas nomes, números e preços exactamente como foram ditos.
+```
+
+**Tarefa (`body`)**
+
+```text
+Traduz para {{language}}:
+
+{{reply}}
+```
+
+### Vendas (`rt-objections`) {#rt-objections}
+
+**Forma da resposta:** `plain`.
+
+**Papel (`system`)**
+
+```text
+Ajuda alguém que vende por telefone. Responde em poucas linhas curtas que possa ler enquanto ouve, nunca em parágrafos, e nunca promete nada em nome dessa pessoa.
+```
+
+**Tarefa (`body`)**
+
+```text
+A outra pessoa acabou de dizer:
+
+{{reply}}
+
+Antes nesta conversa:
+
+{{conversation}}
+
+Diz numa linha o que está a acontecer — uma objeção, uma pergunta por responder, um sinal de que estão prontos — e numa linha o que dizer a seguir. Se não houver nada a dizer, escreve apenas «—».
+```
+
+### Ajuda na entrevista (`rt-interview`) {#rt-interview}
+
+**Forma da resposta:** `plain`.
+
+**Papel (`system`)**
+
+```text
+Ajuda alguém que está a ser entrevistado. Responde em poucas linhas curtas que possa ler enquanto ouve, nunca em parágrafos, e nunca inventa factos sobre essa pessoa.
+```
+
+**Tarefa (`body`)**
+
+```text
+A outra pessoa acabou de dizer:
+
+{{reply}}
+
+Antes nesta conversa:
+
+{{conversation}}
+
+Em três linhas curtas, diz o que está realmente a perguntar e o que uma boa resposta deveria cobrir.
+```

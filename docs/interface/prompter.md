@@ -64,3 +64,16 @@ The window says what is missing in a line under the buttons.
 | *The recogniser did not start listening. Check its live address and its model under Settings → Transcription.* | The address for the prompter, the model or the key is wrong. **Test** on the recogniser's card says which. |
 | *This month's allowance for recognisers is used up.* | Raise **Recognisers, a month**, or wait for the month to turn. |
 | *This month's allowance for models is used up. The words carry on; the prompting has stopped.* | Raise **Models, a month**. |
+
+## Standard assistants {#standard-assistants}
+
+| `code` | Standard assistants |
+| --- | --- |
+| `rt-subtitles` | Subtitles |
+| `rt-translate` | Translation |
+| `rt-objections` | Sales |
+| `rt-interview` | Interview help |
+
+These are the shipped assistant names; screenshots may use earlier names. “—” from `rt-objections` means there is no useful suggestion. The assistant also covers unanswered questions and readiness to buy.
+
+[Standard prompt texts](../ai-processing/prompter.md#assistant-templates)

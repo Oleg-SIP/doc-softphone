@@ -32,16 +32,16 @@ De modeller, der læser en udskrift og skriver om den. Tryk på **Tilføj** for 
 
 *Det, der kører af sig selv, i denne rækkefølge. Hver udløses højst én gang per samtale.* En regel er en linje med et afkrydsningsfelt, der slår den til eller fra, dens navn og nedenunder, hvad den gør. **▲** og **▼** ændrer rækkefølgen. Programmet leveres med otte:
 
-| Regel | Gør | Hvornår |
-| --- | --- | --- |
-| **Transskribér hver samtale** | Skriver den ud. | altid |
-| **Resumér den** | Beder en model om: **Resumé**. | altid |
-| **Kog den ned til én linje** | Beder en model om: **Resumé på én linje**. | altid |
-| **Sortér den under en kategori** | Beder en model om: **Kategori**. | altid |
-| **Mærk den** | Beder en model om: **Etiketter**. | altid |
-| **Rejs alt, der er et blik værd** | Beder en model om: **Signaler**. | altid |
-| **Bedøm den, hvis det var salg** | Beder en model om: **Salgskvalitet**. | kun hvis kategorien er **Salg** |
-| **Bedøm den, hvis det var support** | Beder en model om: **Supportkvalitet**. | kun hvis kategorien er **Support** |
+| Regel | `code` | Gør | `prompt` | Hvornår |
+| --- | --- | --- | --- | --- |
+| **Transskribér hver samtale** | `transcribe` | Skriver den ud. | — | altid |
+| **Resumér den** | `summary` | Beder en model om: **Resumé**. | `summary` | altid |
+| **Kog den ned til én linje** | `super-summary` | Beder en model om: **Resumé på én linje**. | `super-summary` | altid |
+| **Sortér den under en kategori** | `categorise` | Beder en model om: **Kategori**. | `categorise` | altid |
+| **Mærk den** | `tags` | Beder en model om: **Etiketter**. | `tags` | altid |
+| **Rejs alt, der er et blik værd** | `red-flags` | Beder en model om: **Signaler**. | `red-flags` | altid |
+| **Bedøm den, hvis det var salg** | `sales-quality` | Beder en model om: **Salgskvalitet**. | `sales-quality` | kun hvis kategorien er **Salg** |
+| **Bedøm den, hvis det var support** | `support-quality` | Beder en model om: **Supportkvalitet**. | `support-quality` | kun hvis kategorien er **Support** |
 
 Rækkefølgen betyder noget: de to sidste regler har brug for den kategori, som reglen før dem har sat. **Tilføj** laver din egen regel.
 
@@ -63,3 +63,13 @@ Der er to grænser, fordi en måned kan tælles i to ting. Begge er tomme, indti
 **Gendan standardværdier** sætter prompterne og reglerne tilbage, som de kom med programmet, på brugerfladens nuværende sprog. Dine sprogmodeller bliver ikke rørt.
 
 De prompter og regler, der kom med programmet, forbliver på det sprog, de var på, når du skifter brugerfladens sprog; **Gendan standardværdier** bringer dem over på det nye. Hver prompt markeres så *ændret* til højre.
+
+## Standardkørsel {#default-execution}
+
+Kør `summary` før `super-summary`, som bruger `{{artifact:summary}}`. Kør `categorise` før kvalitetsvurderingen: `sales-quality` kræver `sales`, og `support-quality` kræver `support`.
+
+Der er ingen automatiske standardregler for `action-items`, `topics`, `entities` eller `qa`. Kør prompten manuelt eller tilføj en passende regel; indtast spørgsmålet, når du kører `qa`.
+
+Standardsættet gemmes ved første brug. En ændret Markdown-eksport ændrer ikke programmet: Rediger promptens kort eller gendan standardindstillingerne.
+
+[Standardtekster til prompts](prompt-studio.md#standard-templates)

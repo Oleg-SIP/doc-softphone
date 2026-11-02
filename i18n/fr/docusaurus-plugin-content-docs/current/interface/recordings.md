@@ -186,3 +186,13 @@ Un enregistrement fait ailleurs — sur un téléphone mobile, un dictaphone ou 
 ## Supprimer un enregistrement {#deleting-a-recording}
 
 Quand un enregistrement est supprimé, tout ce qui en a été tiré disparaît avec lui : les transcriptions et les comptes rendus. La durée de conservation automatique des enregistrements se règle dans [Enregistrements](../recordings.md#retention).
+
+## Comprendre les résultats {#result-notes}
+
+Aucune règle automatique par défaut ne lance `action-items`, `topics`, `entities` ou `qa`. Lancez le prompt manuellement ou ajoutez une règle adaptée ; saisissez la question au lancement de `qa`.
+
+Une liste vide de tâches ou d’alertes peut être correcte. Il ne faut inventer ni responsable ni échéance. Les réponses aux questions doivent reposer uniquement sur la transcription.
+
+Exécutez `summary` avant `super-summary`, qui utilise `{{artifact:summary}}`. Exécutez `categorise` avant l’évaluation : `sales-quality` exige la catégorie `sales`, et `support-quality` exige `support`.
+
+[Textes des prompts par défaut](../ai-processing/prompt-studio.md#standard-templates) · [Formats de réponse](../ai-processing/dictionaries.md#response-formats)

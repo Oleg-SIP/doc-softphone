@@ -32,3 +32,7 @@ description: Pojęcia telefonii IP i AI Softphone używane w tej dokumentacji, z
 | **Transkrypcja** | Rozmowa w postaci tekstu, wypowiedź po wypowiedzi, zsynchronizowana z dźwiękiem. |
 | **Webhook** | Żądanie, które telefon wysyła do innego systemu, gdy połączenie się zaczyna, zmienia lub kończy. Zobacz [Webhooki](/integration/webhooks). |
 | **Szerokopasmowy** | Kodek o szerszym zakresie dźwięku niż linia telefoniczna, dzięki czemu głos jest wyraźniejszy. |
+| **[Symbol zastępczy](ai-processing/prompt-studio.md#placeholders)** | Element promptu zastępowany danymi rozmowy. |
+| **[Wynik innego promptu](ai-processing/processing.md#default-execution)** | Istniejący wynik używany ponownie przez inny prompt, na przykład `{{artifact:summary}}`. |
+| **[Rola modelu](ai-processing/prompt-studio.md#role-and-task)** | `system` określa zachowanie modelu, a `body` opisuje zadanie. Postać i język odpowiedzi są przekazywane osobno przez instrukcje słownika. |
+| **[Postać odpowiedzi](ai-processing/dictionaries.md#response-formats)** | Struktura wyniku, taka jak tekst, punkty, etykiety, ostrzeżenia lub kryteria. |

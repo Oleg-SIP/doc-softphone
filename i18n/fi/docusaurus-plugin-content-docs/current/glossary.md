@@ -32,3 +32,7 @@ description: Tässä dokumentaatiossa käytetyt IP-puhelinliikenteen ja AI Softp
 | **Litterointi** | Keskustelu tekstinä, repliikki kerrallaan, tahdissa äänen kanssa. |
 | **Webhook** | Pyyntö, jonka puhelin lähettää toiseen järjestelmään, kun puhelu alkaa, muuttuu tai päättyy. Katso [Webhookit](/integration/webhooks). |
 | **Laajakaista** | Koodekki, jonka äänialue on puhelinlinjaa laajempi, joten ääni on selkeämpi. |
+| **[Paikkamerkki](ai-processing/prompt-studio.md#placeholders)** | Kehotteen kohta, joka korvataan keskustelun tiedoilla. |
+| **[Toisen kehotteen tulos](ai-processing/processing.md#default-execution)** | Aiempi tulos, jota toinen kehote käyttää, esimerkiksi `{{artifact:summary}}`. |
+| **[Mallin rooli](ai-processing/prompt-studio.md#role-and-task)** | `system` määrittää mallin toimintatavan ja `body` tehtävän. Vastauksen muoto ja kieli annetaan erikseen luetteloiden ohjeilla. |
+| **[Vastauksen muoto](ai-processing/dictionaries.md#response-formats)** | Tuloksen rakenne, kuten teksti, kohdat, tunnisteet, varoitukset tai arviointikriteerit. |

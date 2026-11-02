@@ -186,3 +186,13 @@ Başka bir yerde — bir cep telefonunda, bir ses kayıt cihazında ya da başka
 ## Bir kaydı silme {#deleting-a-recording}
 
 Bir kayıt silindiğinde ondan üretilen her şey de onunla birlikte gider: dökümler ve işleme sonuçları. Kayıtların kendiliğinden ne kadar süre saklanacağı [Kayıtlar](../recordings.md#retention) bölümünde belirlenir.
+
+## Sonuçları anlama {#result-notes}
+
+`action-items`, `topics`, `entities` ve `qa` için varsayılan otomatik kural yoktur. İstemi elle çalıştırın veya uygun bir kural ekleyin; `qa` çalıştırılırken soruyu girin.
+
+Boş görev veya uyarı listesi doğru bir sonuç olabilir. Eksik sorumlular ve tarihler uydurulmamalıdır. Sorulara verilen yanıtlar yalnızca döküme dayanmalıdır.
+
+`{{artifact:summary}}` kullanan `super-summary` öncesinde `summary` çalıştırılmalıdır. Kalite değerlendirmesinden önce `categorise` çalıştırılmalıdır: `sales-quality`, `sales` kategorisini; `support-quality` ise `support` kategorisini gerektirir.
+
+[Varsayılan istem metinleri](../ai-processing/prompt-studio.md#standard-templates) · [Yanıt biçimleri](../ai-processing/dictionaries.md#response-formats)

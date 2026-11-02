@@ -39,12 +39,14 @@ Sufler czyta się w trakcie mówienia, często z większej odległości niż res
 
 Pomocnik to to, czym sufler ma być. *Każdy z nich słucha trwającej rozmowy i pisze coś w oknie suflera: słowa tak, jak padają, ich tłumaczenie albo podpowiedź, co powiedzieć dalej.* Którego uruchomić, wybierasz w oknie suflera. Program ma czterech:
 
-| Pomocnik | Co pisze | Pyta model |
-| --- | --- | --- |
-| **Napisy** | Słowa obu stron, w chwili gdy padają. | nie |
-| **Tłumaczenie** | Słowa drugiej strony, przetłumaczone na język programu. | tak |
-| **Zastrzeżenia w rozmowie** | Dla sprzedającego przez telefon: gdy klient zgłasza zastrzeżenie, zastrzeżenie w jednym wierszu i jeden wiersz, który na nie odpowiada. | tak |
-| **Pomoc na rozmowie** | Dla osoby na rozmowie kwalifikacyjnej: odpowiedź na właśnie zadane pytanie w kilku krótkich wierszach albo to, co poruszyć w następnej odpowiedzi. | tak |
+| Pomocnik | `code` | Co pisze | Pyta model |
+| --- | --- | --- | --- |
+| **Napisy** | `rt-subtitles` | Słowa obu stron, w chwili gdy padają. | nie |
+| **Tłumaczenie** | `rt-translate` | Słowa drugiej strony, przetłumaczone na język programu. | tak |
+| **Sprzedaż** | `rt-objections` | Dla sprzedającego przez telefon: gdy klient zgłasza zastrzeżenie, zastrzeżenie w jednym wierszu i jeden wiersz, który na nie odpowiada. | tak |
+| **Pomoc na rozmowie** | `rt-interview` | Dla osoby na rozmowie kwalifikacyjnej: odpowiedź na właśnie zadane pytanie w kilku krótkich wierszach albo to, co poruszyć w następnej odpowiedzi. | tak |
+
+To nazwy dołączonych asystentów; zrzuty ekranu mogą pokazywać wcześniejsze nazwy. „—” od `rt-objections` oznacza brak przydatnej sugestii. Instrukcje obejmują również pytania bez odpowiedzi i gotowość do zakupu.
 
 **▲** i **▼** zmieniają kolejność, i jest to kolejność listy rozwijanej w [oknie suflera](/interface/prompter#the-window). **Dodaj** tworzy własnego pomocnika. **Przywróć domyślne** przywraca polecenia i reguły do stanu, w jakim przyszły z programem, tutaj i w [Przetwarzanie](/ai-processing/processing#defaults); twoje modele językowe pozostają nietknięte.
 
@@ -74,3 +76,81 @@ Kliknięcie pomocnika otwiera jego kartę. To ta sama karta co dla [polecenia](/
 | **Modele, miesięcznie** | Podpowiedzi ustają, a napisy trwają dalej. |
 
 Puste oznacza brak limitu. Koszt minuty dźwięku na żywo to **Cena za minutę** rozpoznawacza, podana na jego karcie w [Transkrypcja](/ai-processing/transcription#the-recognisers-card); bez niej sufler informuje, że pokazana kwota jest szacunkiem.
+
+## Dołączeni asystenci {#assistant-templates}
+
+`system` określa zachowanie modelu, a `body` opisuje zadanie. Postać i język odpowiedzi są przekazywane osobno przez instrukcje słownika.
+
+[Symbole zastępcze](prompt-studio.md#placeholders)
+
+### Napisy (`rt-subtitles`) {#rt-subtitles}
+
+**Postać odpowiedzi:** `plain`.
+
+Pusta rola i zadanie: model językowy nie jest wywoływany.
+
+### Tłumaczenie (`rt-translate`) {#rt-translate}
+
+**Postać odpowiedzi:** `plain`.
+
+**Rola (`system`)**
+
+```text
+Tłumaczysz mowę na bieżąco. Odpowiadasz tylko tłumaczeniem — bez wstępu, bez cudzysłowów, bez wyjaśnień — a nazwy, liczby i ceny zostawiasz dokładnie tak, jak zostały powiedziane.
+```
+
+**Zadanie (`body`)**
+
+```text
+Przetłumacz na {{language}}:
+
+{{reply}}
+```
+
+### Sprzedaż (`rt-objections`) {#rt-objections}
+
+**Postać odpowiedzi:** `plain`.
+
+**Rola (`system`)**
+
+```text
+Pomagasz osobie, która sprzedaje przez telefon. Odpowiadasz kilkoma krótkimi wierszami, które można przeczytać podczas słuchania, nigdy akapitami, i nigdy niczego nie obiecujesz w jej imieniu.
+```
+
+**Zadanie (`body`)**
+
+```text
+Rozmówca właśnie powiedział:
+
+{{reply}}
+
+Wcześniej w tej rozmowie:
+
+{{conversation}}
+
+Jednym wierszem nazwij, co się dzieje — zastrzeżenie, pytanie bez odpowiedzi, sygnał gotowości do zakupu — i jednym wierszem, co powiedzieć dalej. Jeśli nie ma czego powiedzieć, napisz tylko „—”.
+```
+
+### Pomoc na rozmowie (`rt-interview`) {#rt-interview}
+
+**Postać odpowiedzi:** `plain`.
+
+**Rola (`system`)**
+
+```text
+Pomagasz osobie, z którą prowadzona jest rozmowa kwalifikacyjna. Odpowiadasz kilkoma krótkimi wierszami, które można przeczytać podczas słuchania, nigdy akapitami, i nigdy nie wymyślasz faktów na jej temat.
+```
+
+**Zadanie (`body`)**
+
+```text
+Rozmówca właśnie powiedział:
+
+{{reply}}
+
+Wcześniej w tej rozmowie:
+
+{{conversation}}
+
+W trzech krótkich wierszach powiedz, o co naprawdę pyta i co powinna objąć dobra odpowiedź.
+```

@@ -60,3 +60,16 @@ Langas eilutėje po mygtukais pasako, ko trūksta.
 | *Atpažintuvas neprisidėjo klausytis. Patikrinkite jo gyvą adresą ir modelį skiltyje Nustatymai → Užrašas.* | Adresas sufleriui, modelis arba raktas neteisingi. **Patikrinti** atpažintuvo kortelėje pasakys, kuris. |
 | *Šio mėnesio suma atpažintuvams išnaudota.* | Padidinkite **Atpažintuvai, per mėnesį** arba palaukite, kol pasikeis mėnuo. |
 | *Šio mėnesio suma modeliams išnaudota. Žodžiai tęsiasi; suflavimas sustojo.* | Padidinkite **Modeliai, per mėnesį**. |
+
+## Įtraukti asistentai {#standard-assistants}
+
+| `code` | Įtraukti asistentai |
+| --- | --- |
+| `rt-subtitles` | Subtitrai |
+| `rt-translate` | Vertimas |
+| `rt-objections` | Pardavimai |
+| `rt-interview` | Pagalba per pokalbį |
+
+Tai įtrauktų asistentų pavadinimai; ekrano nuotraukose gali būti ankstesni pavadinimai. `rt-objections` atsakymas „—“ reiškia, kad nėra naudingo pasiūlymo. Instrukcijos apima ir neatsakytus klausimus bei pasirengimą pirkti.
+
+[Numatytieji užklausų tekstai](../ai-processing/prompter.md#assistant-templates)

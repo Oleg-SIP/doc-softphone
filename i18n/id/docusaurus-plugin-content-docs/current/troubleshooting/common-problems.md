@@ -125,3 +125,21 @@ Jika sesuatu tidak terjadi, telepon menyebutkan alasannya di baris tersendiri. B
 ### Saat telepon dijalankan {#when-the-phone-starts}
 
 *Basis data tidak terbaca* berarti basis data dibuat oleh versi program yang lain dan versi ini tidak dapat membacanya. Biasanya versi yang lebih lama dijalankan pada data versi yang lebih baru: jika versi yang lebih baru dipasang lagi, ia membuka basis data seperti semula. **Mulai dari awal** justru membuat basis data kosong — setiap kontak dan setiap panggilan di riwayat hilang, dan itu tidak dapat dibatalkan. Sebelum menekannya, Anda dapat menyimpan salinan berkas basis data; [Diagnostik](/troubleshooting/diagnostics#files) menyebutkan letaknya.
+
+## Eksekusi bawaan {#default-prompt-execution}
+
+Tidak ada aturan otomatis bawaan untuk `action-items`, `topics`, `entities`, atau `qa`. Jalankan prompt secara manual atau tambahkan aturan yang sesuai; masukkan pertanyaan saat menjalankan `qa`.
+
+Jalankan `summary` sebelum `super-summary`, yang menggunakan `{{artifact:summary}}`. Jalankan `categorise` sebelum penilaian kualitas: `sales-quality` memerlukan kategori `sales`, sedangkan `support-quality` memerlukan `support`.
+
+[Eksekusi bawaan](../ai-processing/processing.md#default-execution)
+
+## Memahami hasil {#prompt-result-notes}
+
+Daftar tugas atau peringatan yang kosong dapat merupakan hasil yang benar. Penanggung jawab dan tanggal yang tidak disebutkan tidak boleh dikarang. Jawaban pertanyaan harus berdasarkan transkrip saja.
+
+Ini adalah nama asisten bawaan; tangkapan layar mungkin menampilkan nama sebelumnya. “—” dari `rt-objections` berarti tidak ada saran yang berguna. Instruksinya juga mencakup pertanyaan yang belum dijawab dan kesiapan membeli.
+
+Kumpulan bawaan disimpan saat penggunaan pertama. Mengedit ekspor Markdown tidak mengubah aplikasi: edit kartu prompt atau pulihkan pengaturan bawaan.
+
+[Teks prompt bawaan](../ai-processing/prompt-studio.md#standard-templates) · [Asisten bawaan](../ai-processing/prompter.md#assistant-templates)

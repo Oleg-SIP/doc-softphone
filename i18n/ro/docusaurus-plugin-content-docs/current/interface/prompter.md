@@ -60,3 +60,16 @@ Fereastra spune ce lipsește pe un rând sub butoane.
 | *Recunoscătorul nu a început să asculte. Verificați-i adresa în direct și modelul în Setări → Transcriere.* | Adresa pentru sufleur, modelul sau cheia sunt greșite. **Verifică** pe cardul recunoscătorului spune care. |
 | *Suma lunară pentru recunoscători s-a epuizat.* | Măriți **Recunoscători, pe lună** sau așteptați luna următoare. |
 | *Suma lunară pentru modele s-a epuizat. Cuvintele continuă; sufleurul s-a oprit.* | Măriți **Modele, pe lună**. |
+
+## Asistenți incluși {#standard-assistants}
+
+| `code` | Asistenți incluși |
+| --- | --- |
+| `rt-subtitles` | Subtitrări |
+| `rt-translate` | Traducere |
+| `rt-objections` | Vânzări |
+| `rt-interview` | Ajutor la interviu |
+
+Acestea sunt numele asistenților incluși; capturile pot arăta nume anterioare. „—” de la `rt-objections` înseamnă că nu există o sugestie utilă. Instrucțiunile acoperă și întrebările fără răspuns și disponibilitatea de a cumpăra.
+
+[Textele implicite ale prompturilor](../ai-processing/prompter.md#assistant-templates)

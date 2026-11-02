@@ -32,3 +32,7 @@ description: Pojmovi IP telefonije i AI Softphonea korišteni u ovoj dokumentaci
 | **Prijepis** | Razgovor kao tekst, replika po replika, usklađen sa zvukom. |
 | **Webhook** | Zahtjev koji telefon šalje drugom sustavu kad poziv počne, promijeni se ili završi. Pogledajte [Webhookovi](/integration/webhooks). |
 | **Širokopojasni** | Kodek sa širim rasponom zvuka nego što ga ima telefonska linija, pa je glas jasniji. |
+| **[Zamjenska oznaka](ai-processing/prompt-studio.md#placeholders)** | Element upita koji se zamjenjuje podacima razgovora. |
+| **[Rezultat drugog upita](ai-processing/processing.md#default-execution)** | Postojeći rezultat koji drugi upit ponovno koristi, primjerice `{{artifact:summary}}`. |
+| **[Uloga modela](ai-processing/prompt-studio.md#role-and-task)** | `system` određuje ponašanje modela, a `body` opisuje zadatak. Oblik i jezik odgovora daju se zasebno putem uputa iz popisa. |
+| **[Oblik odgovora](ai-processing/dictionaries.md#response-formats)** | Struktura rezultata, poput proze, stavki, oznaka, upozorenja ili kriterija. |

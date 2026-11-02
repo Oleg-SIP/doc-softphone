@@ -186,3 +186,13 @@ Una registrazione fatta altrove — su un cellulare, un dittafono o un altro sis
 ## Eliminare una registrazione {#deleting-a-recording}
 
 Quando si elimina una registrazione, se ne va con essa tutto ciò che ne è stato ricavato: le trascrizioni e i resoconti. Per quanto tempo le registrazioni si conservano da sole si imposta in [Registrazioni](../recordings.md#retention).
+
+## Interpretare i risultati {#result-notes}
+
+Non esistono regole automatiche predefinite per `action-items`, `topics`, `entities` o `qa`. Eseguire il prompt manualmente o aggiungere una regola adatta; inserire la domanda quando si esegue `qa`.
+
+Un elenco vuoto di attività o segnalazioni può essere corretto. Non vanno inventati responsabili o scadenze. Le risposte alle domande devono basarsi soltanto sulla trascrizione.
+
+Eseguire `summary` prima di `super-summary`, che usa `{{artifact:summary}}`. Eseguire `categorise` prima della valutazione: `sales-quality` richiede `sales`, mentre `support-quality` richiede `support`.
+
+[Testi dei prompt predefiniti](../ai-processing/prompt-studio.md#standard-templates) · [Formati di risposta](../ai-processing/dictionaries.md#response-formats)

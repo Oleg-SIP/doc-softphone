@@ -60,3 +60,16 @@ Az ablak a gombok alatti sorban megmondja, mi hiányzik.
 | *A felismerő nem kezdett hallgatni. Ellenőrizze az élő címét és a modelljét a Beállítások → Átirat alatt.* | A súgó címe, a modell vagy a kulcs hibás. A felismerő kártyáján a **Próba** megmondja, melyik. |
 | *A hónap felismerőkre szánt összege elfogyott.* | Emelje meg a **Felismerők, havonta** értékét, vagy várja meg a hónap fordulóját. |
 | *A hónap modellekre szánt összege elfogyott. A szavak folytatódnak; a súgás megállt.* | Emelje meg a **Modellek, havonta** értékét. |
+
+## Beépített asszisztensek {#standard-assistants}
+
+| `code` | Beépített asszisztensek |
+| --- | --- |
+| `rt-subtitles` | Feliratok |
+| `rt-translate` | Fordítás |
+| `rt-objections` | Értékesítés |
+| `rt-interview` | Segítség az interjún |
+
+Ezek a beépített asszisztensnevek; a képernyőképeken korábbi nevek is szerepelhetnek. Az `rt-objections` „—” válasza azt jelenti, hogy nincs hasznos javaslat. Az utasítások a megválaszolatlan kérdéseket és a vásárlási hajlandóságot is lefedik.
+
+[Alapértelmezett promptszövegek](../ai-processing/prompter.md#assistant-templates)

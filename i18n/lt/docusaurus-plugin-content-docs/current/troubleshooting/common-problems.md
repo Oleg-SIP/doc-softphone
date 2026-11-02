@@ -125,3 +125,21 @@ Kai kas nors nepavyksta, telefonas atskiroje eilutėje parašo kodėl. Eilutė p
 ### Paleidžiant telefoną {#when-the-phone-starts}
 
 *Duomenų bazės perskaityti negalima* reiškia, kad duomenų bazę sukūrė kita programos versija ir ši jos perskaityti negali. Paprastai senesnė versija buvo paleista su naujesnės duomenimis: iš naujo įdiegus naujesnę versiją, ji atvers duomenų bazę tokią, kokia buvo. **Pradėti iš naujo**, priešingai, sukuria tuščią duomenų bazę — visi kontaktai ir visi istorijos skambučiai dingsta, ir to atšaukti negalima. Prieš spausdami galite išsisaugoti duomenų bazės failo kopiją; kur jis yra, nurodo [Diagnostika](/troubleshooting/diagnostics#files).
+
+## Numatytasis vykdymas {#default-prompt-execution}
+
+Užklausoms `action-items`, `topics`, `entities` ir `qa` nėra numatytųjų automatinių taisyklių. Paleiskite užklausą rankiniu būdu arba pridėkite tinkamą taisyklę; paleisdami `qa`, įveskite klausimą.
+
+Vykdykite `summary` prieš `super-summary`, kuri naudoja `{{artifact:summary}}`. Prieš kokybės vertinimą vykdykite `categorise`: `sales-quality` reikia kategorijos `sales`, o `support-quality` — `support`.
+
+[Numatytasis vykdymas](../ai-processing/processing.md#default-execution)
+
+## Rezultatų supratimas {#prompt-result-notes}
+
+Tuščias užduočių ar įspėjimų sąrašas gali būti teisingas rezultatas. Negalima išgalvoti trūkstamų atsakingų asmenų ir datų. Atsakymai į klausimus turi remtis tik transkriptu.
+
+Tai įtrauktų asistentų pavadinimai; ekrano nuotraukose gali būti ankstesni pavadinimai. `rt-objections` atsakymas „—“ reiškia, kad nėra naudingo pasiūlymo. Instrukcijos apima ir neatsakytus klausimus bei pasirengimą pirkti.
+
+Numatytasis rinkinys išsaugomas pirmą kartą naudojant programą. Markdown eksporto redagavimas nekeičia programos: redaguokite užklausos kortelę arba atkurkite numatytąsias nuostatas.
+
+[Numatytieji užklausų tekstai](../ai-processing/prompt-studio.md#standard-templates) · [Įtraukti asistentai](../ai-processing/prompter.md#assistant-templates)

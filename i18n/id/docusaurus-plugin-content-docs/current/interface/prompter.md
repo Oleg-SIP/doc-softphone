@@ -60,3 +60,16 @@ Jendela menyebutkan apa yang kurang pada satu baris di bawah tombol.
 | *Pengenal suara tidak mulai menyimak. Periksa alamat langsung dan modelnya di Pengaturan → Transkripsi.* | Alamat untuk pembisik, model, atau kuncinya salah. **Uji** pada kartu pengenal suara menyebutkan yang mana. |
 | *Dana bulan ini untuk pengenal suara sudah habis.* | Naikkan **Pengenal suara, sebulan**, atau tunggu bulan berganti. |
 | *Dana bulan ini untuk model sudah habis. Kata-kata berlanjut; pembisikan sudah berhenti.* | Naikkan **Model, sebulan**. |
+
+## Asisten bawaan {#standard-assistants}
+
+| `code` | Asisten bawaan |
+| --- | --- |
+| `rt-subtitles` | Subtitel |
+| `rt-translate` | Terjemahan |
+| `rt-objections` | Penjualan |
+| `rt-interview` | Bantuan wawancara |
+
+Ini adalah nama asisten bawaan; tangkapan layar mungkin menampilkan nama sebelumnya. “—” dari `rt-objections` berarti tidak ada saran yang berguna. Instruksinya juga mencakup pertanyaan yang belum dijawab dan kesiapan membeli.
+
+[Teks prompt bawaan](../ai-processing/prompter.md#assistant-templates)

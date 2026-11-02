@@ -60,3 +60,16 @@ Okno povie v riadku pod tlačidlami, čo chýba.
 | *Rozpoznávač nezačal počúvať. Skontrolujte jeho živú adresu a model v Nastavenia → Prepis.* | Adresa pre našepkávača, model alebo kľúč je nesprávny. **Vyskúšať** na karte rozpoznávača povie, čo presne. |
 | *Mesačný rozpočet na rozpoznávače je vyčerpaný.* | Zvýšte **Rozpoznávače, za mesiac** alebo počkajte na nový mesiac. |
 | *Mesačný rozpočet na modely je vyčerpaný. Slová pokračujú; našepkávanie sa zastavilo.* | Zvýšte **Modely, za mesiac**. |
+
+## Dodávaní asistenti {#standard-assistants}
+
+| `code` | Dodávaní asistenti |
+| --- | --- |
+| `rt-subtitles` | Titulky |
+| `rt-translate` | Preklad |
+| `rt-objections` | Predaj |
+| `rt-interview` | Pomoc pri pohovore |
+
+Sú to dodávané názvy asistentov; snímky obrazovky môžu ukazovať staršie názvy. „—“ od `rt-objections` znamená, že nie je užitočný návrh. Pokyny zahŕňajú aj nezodpovedané otázky a pripravenosť nakúpiť.
+
+[Predvolené texty promptov](../ai-processing/prompter.md#assistant-templates)

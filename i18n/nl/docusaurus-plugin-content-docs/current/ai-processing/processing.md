@@ -32,16 +32,16 @@ De modellen die een transcript lezen en erover schrijven. Druk op **Toevoegen** 
 
 *Wat vanzelf loopt, in deze volgorde. Elke vuurt hoogstens één keer per gesprek.* Een regel is een regel met een vakje dat hem aan- of uitzet, zijn naam en daaronder wat hij doet. **▲** en **▼** wijzigen de volgorde. Het programma levert er acht:
 
-| Regel | Doet | Wanneer |
-| --- | --- | --- |
-| **Elk gesprek transcriberen** | Schrijft het uit. | altijd |
-| **Het samenvatten** | Vraagt een model: **Samenvatting**. | altijd |
-| **Het tot één regel terugbrengen** | Vraagt een model: **Samenvatting van één regel**. | altijd |
-| **Het onder een categorie ordenen** | Vraagt een model: **Categorie**. | altijd |
-| **Het labelen** | Vraagt een model: **Labels**. | altijd |
-| **Noemen wat een blik waard is** | Vraagt een model: **Signalen**. | altijd |
-| **Het beoordelen, als het verkoop was** | Vraagt een model: **Verkoopkwaliteit**. | alleen als de categorie **Verkoop** is |
-| **Het beoordelen, als het ondersteuning was** | Vraagt een model: **Kwaliteit van de ondersteuning**. | alleen als de categorie **Ondersteuning** is |
+| Regel | `code` | Doet | `prompt` | Wanneer |
+| --- | --- | --- | --- | --- |
+| **Elk gesprek transcriberen** | `transcribe` | Schrijft het uit. | — | altijd |
+| **Het samenvatten** | `summary` | Vraagt een model: **Samenvatting**. | `summary` | altijd |
+| **Het tot één regel terugbrengen** | `super-summary` | Vraagt een model: **Samenvatting van één regel**. | `super-summary` | altijd |
+| **Het onder een categorie ordenen** | `categorise` | Vraagt een model: **Categorie**. | `categorise` | altijd |
+| **Het labelen** | `tags` | Vraagt een model: **Labels**. | `tags` | altijd |
+| **Noemen wat een blik waard is** | `red-flags` | Vraagt een model: **Signalen**. | `red-flags` | altijd |
+| **Het beoordelen, als het verkoop was** | `sales-quality` | Vraagt een model: **Verkoopkwaliteit**. | `sales-quality` | alleen als de categorie **Verkoop** is |
+| **Het beoordelen, als het ondersteuning was** | `support-quality` | Vraagt een model: **Kwaliteit van de ondersteuning**. | `support-quality` | alleen als de categorie **Ondersteuning** is |
 
 De volgorde doet ertoe: de laatste twee regels hebben de categorie nodig die de regel ervoor heeft gezet. **Toevoegen** maakt een eigen regel.
 
@@ -63,3 +63,13 @@ Er zijn twee grenzen omdat een maand in twee dingen geteld kan worden. Beide zij
 **Standaardwaarden herstellen** zet de prompts en de regels terug zoals ze met het programma kwamen, in de huidige taal van de interface. Uw taalmodellen blijven ongemoeid.
 
 De prompts en regels die met het programma kwamen, blijven in hun taal als u de taal van de interface wijzigt; **Standaardwaarden herstellen** zet ze in de nieuwe. Elke prompt wordt dan rechts gemarkeerd als *gewijzigd*.
+
+## Standaarduitvoering {#default-execution}
+
+Voer `summary` uit vóór `super-summary`, dat `{{artifact:summary}}` gebruikt. Voer `categorise` uit vóór de kwaliteitsbeoordeling: `sales-quality` vereist `sales`, en `support-quality` vereist `support`.
+
+Er zijn geen automatische standaardregels voor `action-items`, `topics`, `entities` of `qa`. Start de prompt handmatig of voeg een passende regel toe; voer de vraag in bij het starten van `qa`.
+
+De standaardset wordt bij het eerste gebruik opgeslagen. Een Markdown-export bewerken verandert de toepassing niet: bewerk de promptkaart of herstel de standaardinstellingen.
+
+[Standaardteksten van prompts](prompt-studio.md#standard-templates)

@@ -39,12 +39,14 @@ El apuntador se lee mientras se habla, a menudo desde más lejos que el resto de
 
 Un ayudante es lo que se le pide a un apuntador que sea. *Cada uno escucha una conversación en curso y escribe algo en la ventana del apuntador: las palabras tal como se dicen, su traducción, o una sugerencia de qué decir a continuación.* Cuál ejecutar lo elige en la ventana del apuntador. El programa trae cuatro:
 
-| Ayudante | Qué escribe | Pregunta a un modelo |
-| --- | --- | --- |
-| **Subtítulos** | Las palabras de ambos lados, a medida que se dicen. | no |
-| **Traducción** | Las palabras del otro lado, traducidas al idioma del programa. | sí |
-| **Objeciones en la llamada** | Para quien vende por teléfono: cuando el cliente plantea una objeción, la objeción en una línea y una línea que la responde. | sí |
-| **Ayuda en la entrevista** | Para quien está en una entrevista: la respuesta a la pregunta recién hecha, en unas pocas líneas cortas, o qué tratar en la siguiente respuesta. | sí |
+| Ayudante | `code` | Qué escribe | Pregunta a un modelo |
+| --- | --- | --- | --- |
+| **Subtítulos** | `rt-subtitles` | Las palabras de ambos lados, a medida que se dicen. | no |
+| **Traducción** | `rt-translate` | Las palabras del otro lado, traducidas al idioma del programa. | sí |
+| **Ventas** | `rt-objections` | Para quien vende por teléfono: cuando el cliente plantea una objeción, la objeción en una línea y una línea que la responde. | sí |
+| **Ayuda en la entrevista** | `rt-interview` | Para quien está en una entrevista: la respuesta a la pregunta recién hecha, en unas pocas líneas cortas, o qué tratar en la siguiente respuesta. | sí |
+
+Estos son los nombres incluidos de los asistentes; las capturas pueden mostrar nombres anteriores. «—» de `rt-objections` indica que no hay una sugerencia útil. Las instrucciones también cubren preguntas pendientes y señales de intención de compra.
 
 **▲** y **▼** cambian el orden, que es el del desplegable de la [ventana del apuntador](/interface/prompter#the-window). **Añadir** crea un ayudante propio. **Restaurar los valores por defecto** devuelve las instrucciones y las reglas a como venían con el programa, aquí y en [Procesamiento](/ai-processing/processing#defaults) por igual; sus modelos de lenguaje no se tocan.
 
@@ -74,3 +76,81 @@ Al pulsar un ayudante se abre su tarjeta. Es la misma tarjeta que la de una [ins
 | **Modelos, al mes** | Las sugerencias se detienen y los subtítulos siguen. |
 
 Vacío significa sin tope. Lo que cuesta un minuto de audio en vivo es el **Precio por minuto** del reconocedor, indicado en su tarjeta en [Transcripción](/ai-processing/transcription#the-recognisers-card); sin él, el apuntador avisa de que la cifra que muestra es una estimación.
+
+## Asistentes incluidos {#assistant-templates}
+
+`system` define el comportamiento del modelo; `body` describe la tarea. La forma y el idioma de respuesta se proporcionan aparte mediante instrucciones del diccionario.
+
+[Variables de sustitución](prompt-studio.md#placeholders)
+
+### Subtítulos (`rt-subtitles`) {#rt-subtitles}
+
+**Forma de respuesta:** `plain`.
+
+Rol y tarea vacíos: no se llama al modelo de lenguaje.
+
+### Traducción (`rt-translate`) {#rt-translate}
+
+**Forma de respuesta:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Traduces el habla a medida que ocurre. Respondes solo con la traducción —sin preámbulo, sin comillas, sin explicaciones— y dejas los nombres, los números y los precios exactamente como se dijeron.
+```
+
+**Tarea (`body`)**
+
+```text
+Traduce al {{language}}:
+
+{{reply}}
+```
+
+### Ventas (`rt-objections`) {#rt-objections}
+
+**Forma de respuesta:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Ayuda a alguien que vende por teléfono. Responde en unas pocas líneas cortas que pueda leer mientras escucha, nunca en párrafos, y nunca prometes nada en su nombre.
+```
+
+**Tarea (`body`)**
+
+```text
+La otra persona acaba de decir:
+
+{{reply}}
+
+Antes en esta conversación:
+
+{{conversation}}
+
+Di en una línea qué está pasando — una objeción, una pregunta sin responder, una señal de que están listos — y en una línea qué decir a continuación. Si no hay nada que valga la pena decir, escribe solo «—».
+```
+
+### Ayuda en la entrevista (`rt-interview`) {#rt-interview}
+
+**Forma de respuesta:** `plain`.
+
+**Rol (`system`)**
+
+```text
+Ayuda a alguien a quien están entrevistando. Responde en unas pocas líneas cortas que pueda leer mientras escucha, nunca en párrafos, y nunca inventa datos sobre esa persona.
+```
+
+**Tarea (`body`)**
+
+```text
+La otra persona acaba de decir:
+
+{{reply}}
+
+Antes en esta conversación:
+
+{{conversation}}
+
+En tres líneas cortas, di qué está preguntando realmente y qué debería cubrir una buena respuesta.
+```

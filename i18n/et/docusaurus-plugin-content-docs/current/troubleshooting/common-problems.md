@@ -125,3 +125,21 @@ Kui midagi ei õnnestu, ütleb telefon eraldi real, miks. Loendi all olev rida k
 ### Telefoni käivitamisel {#when-the-phone-starts}
 
 *Andmebaasi ei saa lugeda* tähendab, et andmebaasi tegi programmi teine versioon ja see versioon ei suuda seda lugeda. Tavaliselt käivitati vanem versioon uuema andmetel: kui paigaldate uuema versiooni uuesti, avab see andmebaasi sellisena, nagu see oli. **Alusta otsast** teeb seevastu tühja andmebaasi — kõik kontaktid ja kõik ajaloo kõned kaovad ning seda ei saa tagasi võtta. Enne vajutamist võite andmebaasi failist koopia teha; kus see asub, ütleb [Diagnostika](/troubleshooting/diagnostics#files).
+
+## Vaikimisi käivitamine {#default-prompt-execution}
+
+Viipadel `action-items`, `topics`, `entities` ja `qa` puuduvad automaatsed vaikereeglid. Käivitage viip käsitsi või lisage sobiv reegel; sisestage küsimus viiba `qa` käivitamisel.
+
+Käivitage `summary` enne viipa `super-summary`, mis kasutab väärtust `{{artifact:summary}}`. Käivitage `categorise` enne kvaliteedihindamist: `sales-quality` vajab kategooriat `sales`, `support-quality` kategooriat `support`.
+
+[Vaikimisi käivitamine](../ai-processing/processing.md#default-execution)
+
+## Tulemuste mõistmine {#prompt-result-notes}
+
+Tühi ülesannete või ohumärkide loend võib olla õige tulemus. Puuduvaid vastutajaid ja kuupäevi ei tohi välja mõelda. Küsimustele tuleb vastata ainult transkriptsiooni põhjal.
+
+Need on kaasasolevate assistentide nimed; kuvatõmmistel võivad olla varasemad nimed. Viiba `rt-objections` vastus „—“ tähendab, et kasulikku soovitust pole. Juhised hõlmavad ka vastamata küsimusi ja ostuvalmidust.
+
+Standardkomplekt salvestatakse esimesel kasutamisel. Markdown-ekspordi muutmine ei muuda rakendust: muutke viiba kaarti või taastage vaikeväärtused.
+
+[Viipade standardtekstid](../ai-processing/prompt-studio.md#standard-templates) · [Kaasasolevad assistendid](../ai-processing/prompter.md#assistant-templates)

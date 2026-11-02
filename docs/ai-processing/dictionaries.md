@@ -40,6 +40,14 @@ Labels that *may all be true of the same conversation*. Press **Add** to add one
 
 Things that need attention, found in the conversation with the evidence and the time — for example *Angry customer* or *Churn risk*. Red flags are drawn in red in the [Recordings window](../interface/recordings.md), and each carries a severity: low, medium or high.
 
+| Name | Code | `severity` | Used for |
+| --- | --- | --- | --- |
+| **Angry customer** | `angry-customer` | `high` | The other party was audibly angry, insulting, or threatened to leave. |
+| **Churn risk** | `churn-risk` | `high` | Cancelling, not renewing or moving to somebody else was raised, however calmly. |
+| **Promise made** | `promise-made` | `medium` | Our side committed to something specific — a date, a price, a fix, a refund. |
+| **Sensitive data** | `sensitive-data` | `high` | A card number, a password, a document number or anything else that should not be in a recording was read out. |
+| **Competitor** | `competitor` | `low` | The other party named or compared us with somebody else offering the same thing. |
+
 ## Instructions
 
 <Shot name="13b_settings_dictionaries_scrolled" alt="Settings → Dictionaries: answer shapes and language instructions" />
@@ -65,3 +73,97 @@ Things that need attention, found in the conversation with the evidence and the 
 ## Defaults
 
 **Restore defaults** puts every dictionary back as it came with the program, in the current interface language. What your conversations are already filed under is left alone.
+
+## Response formats {#response-formats}
+
+These blocks reproduce the shipped instructions. They describe answer formats; alternatives such as “or” are notation, not executable JSON examples.
+
+### Prose (`shape-plain`) {#shape-plain}
+
+```text
+Answer in plain prose. Do not use JSON, lists or headings.
+```
+
+### Items (`shape-list`) {#shape-list}
+
+```text
+Answer with JSON only, of exactly this shape:
+{"items": [{"text": "what is to be done", "owner": "who, or empty", "due": "when, or empty"}]}
+Use an empty array when there is nothing to list. Do not write anything outside the JSON.
+```
+
+### Labels (`shape-labels`) {#shape-labels}
+
+```text
+Answer with JSON only, of exactly this shape:
+{"labels": [{"code": "a code from the list you were given", "confidence": 0.0}]}
+Use only codes from the list. Use an empty array when none of them fits. Do not
+invent a code, and do not write anything outside the JSON.
+```
+
+### Score (`shape-score`) {#shape-score}
+
+```text
+Answer with JSON only, of exactly this shape:
+{"score": 3, "rationale": "why that number and not one higher",
+ "evidence": [{"at_ms": 0, "quote": "the words you based it on"}]}
+The score is a whole number from 1 to 5. Do not write anything outside the JSON.
+```
+
+### Rubric (`shape-rubric`) {#shape-rubric}
+
+```text
+Answer with JSON only, of exactly this shape:
+{"overall": 3, "rationale": "why that number and not one higher",
+ "criteria": [{"name": "the criterion as it was given to you",
+               "verdict": "pass" or "weak" or "fail" or "n/a",
+               "note": "one sentence"}]}
+Judge every criterion you were given and no others. The overall score is a whole
+number from 1 to 5. Do not write anything outside the JSON.
+```
+
+### Flags (`shape-flags`) {#shape-flags}
+
+```text
+Answer with JSON only, of exactly this shape:
+{"flags": [{"code": "a code from the list you were given",
+            "severity": "low" or "medium" or "high",
+            "evidence": "the words you based it on",
+            "at_ms": 0}]}
+Use only codes from the list, and raise each one at most once. Use an empty
+array when nothing applies. Do not write anything outside the JSON.
+```
+
+### Answer (`shape-qa`) {#shape-qa}
+
+```text
+Answer with JSON only, of exactly this shape:
+{"answer": "your answer, or say plainly that the conversation does not say",
+ "citations": [{"at_ms": 0, "quote": "the words your answer rests on"}]}
+Do not answer from anything but the conversation. Do not write anything outside
+the JSON.
+```
+
+### JSON (`shape-json`) {#shape-json}
+
+```text
+Answer with JSON only, in the shape asked for above. Do not write anything outside the JSON.
+```
+
+### As spoken (`language-as-spoken`) {#language-as-spoken}
+
+```text
+Write your answer in the same language the conversation was in.
+```
+
+### As spoken, named (`language-as-spoken-named`) {#language-as-spoken-named}
+
+```text
+Write your answer in the same language the conversation was in, which is {language}.
+```
+
+### A named language (`language-named`) {#language-named}
+
+```text
+Write your answer in this language: {language}.
+```

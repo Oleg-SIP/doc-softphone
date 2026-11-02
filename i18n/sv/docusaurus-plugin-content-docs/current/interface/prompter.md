@@ -60,3 +60,16 @@ Fönstret säger på en rad under knapparna vad som saknas.
 | *Igenkännaren började inte lyssna. Kontrollera dess live-adress och dess modell under Inställningar → Transkription.* | Adressen för sufflören, modellen eller nyckeln är fel. **Prova** på igenkännarens kort säger vilken. |
 | *Månadens belopp för igenkännare är förbrukat.* | Höj **Igenkännare, per månad**, eller vänta tills månaden byts. |
 | *Månadens belopp för modeller är förbrukat. Orden fortsätter; sufflering har stannat.* | Höj **Modeller, per månad**. |
+
+## Medföljande assistenter {#standard-assistants}
+
+| `code` | Medföljande assistenter |
+| --- | --- |
+| `rt-subtitles` | Undertexter |
+| `rt-translate` | Översättning |
+| `rt-objections` | Försäljning |
+| `rt-interview` | Hjälp i intervjun |
+
+Detta är assistenternas medföljande namn; skärmbilder kan visa tidigare namn. ”—” från `rt-objections` betyder att inget användbart förslag finns. Instruktionerna omfattar också obesvarade frågor och köpberedskap.
+
+[Standardtexter för promptar](../ai-processing/prompter.md#assistant-templates)

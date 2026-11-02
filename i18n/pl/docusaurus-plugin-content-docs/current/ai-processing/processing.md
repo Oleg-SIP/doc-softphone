@@ -32,16 +32,16 @@ Modele, które czytają transkrypcję i piszą o niej. Naciśnij **Dodaj**, aby 
 
 *To, co działa samo, w tej kolejności. Każda uruchamia się najwyżej raz na rozmowę.* Reguła to wiersz z polem wyboru, które ją włącza lub wyłącza, jej nazwą, a pod nią tym, co robi. **▲** i **▼** zmieniają kolejność. Program ma ich osiem:
 
-| Reguła | Co robi | Kiedy |
-| --- | --- | --- |
-| **Zapisz każdą rozmowę** | Spisuje ją. | zawsze |
-| **Podsumuj ją** | Prosi model o: **Podsumowanie**. | zawsze |
-| **Sprowadź ją do jednego zdania** | Prosi model o: **Podsumowanie w jednym zdaniu**. | zawsze |
-| **Przypisz ją do kategorii** | Prosi model o: **Kategoria**. | zawsze |
-| **Oznacz ją** | Prosi model o: **Etykiety**. | zawsze |
-| **Podnieś, co warte uwagi** | Prosi model o: **Sygnały ostrzegawcze**. | zawsze |
-| **Oceń ją, jeśli to była sprzedaż** | Prosi model o: **Jakość sprzedaży**. | tylko jeśli kategoria to **Sprzedaż** |
-| **Oceń ją, jeśli to było wsparcie** | Prosi model o: **Jakość wsparcia**. | tylko jeśli kategoria to **Wsparcie** |
+| Reguła | `code` | Co robi | `prompt` | Kiedy |
+| --- | --- | --- | --- | --- |
+| **Zapisz każdą rozmowę** | `transcribe` | Spisuje ją. | — | zawsze |
+| **Podsumuj ją** | `summary` | Prosi model o: **Podsumowanie**. | `summary` | zawsze |
+| **Sprowadź ją do jednego zdania** | `super-summary` | Prosi model o: **Podsumowanie w jednym zdaniu**. | `super-summary` | zawsze |
+| **Przypisz ją do kategorii** | `categorise` | Prosi model o: **Kategoria**. | `categorise` | zawsze |
+| **Oznacz ją** | `tags` | Prosi model o: **Etykiety**. | `tags` | zawsze |
+| **Podnieś, co warte uwagi** | `red-flags` | Prosi model o: **Sygnały ostrzegawcze**. | `red-flags` | zawsze |
+| **Oceń ją, jeśli to była sprzedaż** | `sales-quality` | Prosi model o: **Jakość sprzedaży**. | `sales-quality` | tylko jeśli kategoria to **Sprzedaż** |
+| **Oceń ją, jeśli to było wsparcie** | `support-quality` | Prosi model o: **Jakość wsparcia**. | `support-quality` | tylko jeśli kategoria to **Wsparcie** |
 
 Kolejność ma znaczenie: dwie ostatnie reguły potrzebują kategorii, którą ustawiła reguła przed nimi. **Dodaj** tworzy twoją własną regułę.
 
@@ -63,3 +63,13 @@ Granice są dwie, bo miesiąc można liczyć w dwóch jednostkach. Obie są pust
 **Przywróć domyślne** przywraca polecenia i reguły do postaci, w jakiej przyszły z programem, w bieżącym języku interfejsu. Twoje modele językowe pozostają nietknięte.
 
 Polecenia i reguły dostarczone z programem zostają w języku, w którym były, gdy zmieniasz język interfejsu; **Przywróć domyślne** przenosi je do nowego. Każde polecenie jest wtedy oznaczone po prawej jako *zmienione*.
+
+## Domyślne uruchamianie {#default-execution}
+
+Uruchom `summary` przed `super-summary`, który korzysta z `{{artifact:summary}}`. Uruchom `categorise` przed oceną jakości: `sales-quality` wymaga kategorii `sales`, a `support-quality` kategorii `support`.
+
+Nie ma domyślnych reguł automatycznych dla `action-items`, `topics`, `entities` ani `qa`. Uruchom prompt ręcznie lub dodaj odpowiednią regułę; wpisz pytanie przy uruchamianiu `qa`.
+
+Domyślny zestaw jest zapisywany przy pierwszym użyciu. Edycja eksportu Markdown nie zmienia aplikacji: edytuj kartę promptu lub przywróć ustawienia domyślne.
+
+[Domyślne teksty promptów](prompt-studio.md#standard-templates)

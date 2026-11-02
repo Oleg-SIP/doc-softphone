@@ -186,3 +186,13 @@ Egy máshol — mobiltelefonon, diktafonon vagy egy másik rendszerben — kész
 ## Felvétel törlése {#deleting-a-recording}
 
 Amikor egy felvételt töröl, minden, ami belőle készült, vele együtt törlődik: a leiratok és a feldolgozások. Hogy meddig maradnak meg maguktól a felvételek, azt a [Felvételek](../recordings.md#retention) oldal állítja be.
+
+## Az eredmények értelmezése {#result-notes}
+
+Az `action-items`, `topics`, `entities` és `qa` promptokhoz nincs alapértelmezett automatikus szabály. Indítsa őket kézzel, vagy adjon hozzá megfelelő szabályt; a `qa` indításakor írja be a kérdést.
+
+Az üres feladat- vagy figyelmeztetési lista helyes eredmény is lehet. Hiányzó felelősöket és határidőket nem szabad kitalálni. A kérdésekre adott válaszok csak az átiraton alapulhatnak.
+
+A `summary` fusson a `super-summary` előtt, amely a `{{artifact:summary}}` eredményét használja. A `categorise` előzze meg a minőségértékelést: a `sales-quality` feltétele `sales`, a `support-quality` feltétele `support`.
+
+[Alapértelmezett promptszövegek](../ai-processing/prompt-studio.md#standard-templates) · [Válaszformátumok](../ai-processing/dictionaries.md#response-formats)

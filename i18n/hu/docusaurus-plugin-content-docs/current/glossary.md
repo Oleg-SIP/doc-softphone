@@ -32,3 +32,7 @@ description: A dokumentációban használt IP-telefóniás és AI Softphone-foga
 | **Leirat** | A beszélgetés szövegként, megszólalásról megszólalásra, a hanggal összehangolva. |
 | **Webhook** | Kérés, amelyet a telefon egy másik rendszernek küld, amikor egy hívás elindul, megváltozik vagy véget ér. Lásd: [Webhookok](/integration/webhooks). |
 | **Széles sávú** | Olyan kodek, amely szélesebb hangtartományt visz át, mint egy telefonvonal, így a hang tisztább. |
+| **[Helyőrző](ai-processing/prompt-studio.md#placeholders)** | A prompt olyan eleme, amelyet a beszélgetés adatai helyettesítenek. |
+| **[Másik prompt eredménye](ai-processing/processing.md#default-execution)** | Meglévő eredmény, amelyet egy másik prompt újra felhasznál, például `{{artifact:summary}}`. |
+| **[A modell szerepe](ai-processing/prompt-studio.md#role-and-task)** | A `system` a modell viselkedését határozza meg, a `body` a feladatot írja le. A válasz formáját és nyelvét külön szótári utasítások adják meg. |
+| **[A válasz formája](ai-processing/dictionaries.md#response-formats)** | Az eredmény szerkezete, például folyószöveg, elemek, címkék, jelzések vagy értékelési szempontok. |

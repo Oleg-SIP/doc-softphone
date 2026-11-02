@@ -18,10 +18,10 @@ Cuộc trò chuyện nói về điều gì; **mỗi cuộc trò chuyện chọn 
 
 | Tên | Mã | Dùng cho |
 | --- | --- | --- |
-| **Bán hàng** | `sales` | Bán hàng, báo giá, thương lượng hoặc theo dõi một giao dịch mua — kể cả khi khách hỏi một thứ giá bao nhiêu. |
-| **Hỗ trợ** | `support` | Giúp ai đó với sản phẩm hoặc dịch vụ họ đã có: một lỗi, một câu hỏi về cách dùng, một lời phàn nàn về cách nó hoạt động. |
-| **Cá nhân** | `personal` | Hoàn toàn không phải công việc — một cuộc trò chuyện riêng tình cờ diễn ra trên đường dây này. |
-| **Khác** | `other` | Công việc, nhưng không phải bán hàng cũng không phải hỗ trợ: nhà cung cấp, đồng nghiệp, giao hàng, nhầm số. Hãy chọn mục này thay vì đoán giữa các mục kia. |
+| **Bán hàng** | `sales` | Bán, báo giá, thương lượng hay theo sát một vụ mua — kể cả khách hỏi giá một thứ gì đó. |
+| **Hỗ trợ** | `support` | Giúp ai đó về sản phẩm hay dịch vụ họ đã có: một hỏng hóc, một câu hỏi về cách dùng, một lời than phiền về cách nó hoạt động. |
+| **Cá nhân** | `personal` | Hoàn toàn không phải việc công — một cuộc trò chuyện riêng tình cờ diễn ra trên đường dây này. |
+| **Khác** | `other` | Việc công, nhưng không phải bán hàng cũng chẳng phải hỗ trợ: một nhà cung cấp, một đồng nghiệp, một chuyến giao hàng, một cuộc gọi nhầm. Hãy chọn cái này thay vì đoán giữa những cái kia. |
 
 Nhấn **Thêm** để thêm một hạng mục của riêng bạn.
 
@@ -31,14 +31,22 @@ Các nhãn *có thể cùng đúng với một cuộc trò chuyện*. Nhấn **T
 
 | Tên | Mã | Dùng cho |
 | --- | --- | --- |
-| **Đã hứa gọi lại** | `callback` | Ai đó trong cuộc gọi đã hứa gọi lại, hoặc đề nghị được gọi lại. |
-| **Than phiền** | `complaint` | Bên kia bày tỏ sự không hài lòng, dù có được giải quyết hay không. |
-| **Đã chuyển lên** | `escalation` | Cuộc gọi đã được chuyển cho người khác, hoặc bên kia yêu cầu chuyển. |
-| **Khách VIP** | `vip` | Bên kia được đối xử như, hoặc tự nhận là, một khách hàng quan trọng. |
+| **Đã hứa gọi lại** | `callback` | Ai đó trong cuộc gọi này hứa sẽ gọi lại, hoặc xin được gọi lại. |
+| **Than phiền** | `complaint` | Phía bên kia bày tỏ sự không hài lòng, dù đã được giải quyết hay chưa. |
+| **Đã chuyển lên** | `escalation` | Cuộc gọi được giao cho người khác, hoặc phía bên kia đề nghị như vậy. |
+| **Khách VIP** | `vip` | Phía bên kia được đối xử như một khách hàng quan trọng, hoặc tự nói mình là như vậy. |
 
 ## Dấu hiệu cảnh báo {#red-flags}
 
 Những điều cần chú ý, được tìm thấy trong cuộc trò chuyện kèm bằng chứng và thời điểm — ví dụ *Khách giận dữ* hoặc *Nguy cơ rời bỏ*. Dấu hiệu cảnh báo được vẽ màu đỏ trong [cửa sổ Bản ghi](../interface/recordings.md), và mỗi dấu hiệu mang một mức độ nghiêm trọng: thấp, trung bình hoặc cao.
+
+| Tên | Mã | `severity` | Dùng cho |
+| --- | --- | --- | --- |
+| **Khách giận dữ** | `angry-customer` | `high` | Nghe rõ phía bên kia đang giận, xúc phạm, hoặc doạ sẽ bỏ đi. |
+| **Nguy cơ rời bỏ** | `churn-risk` | `high` | Việc huỷ, không gia hạn hay chuyển sang bên khác đã được nêu ra, dù bình thản đến đâu. |
+| **Đã hứa** | `promise-made` | `medium` | Phía ta đã cam kết một điều cụ thể — một ngày, một mức giá, một lần sửa, một khoản hoàn tiền. |
+| **Dữ liệu nhạy cảm** | `sensitive-data` | `high` | Một số thẻ, mật khẩu, số giấy tờ hay bất cứ thứ gì không nên có trong bản ghi đã được đọc lên thành tiếng. |
+| **Đối thủ** | `competitor` | `low` | Phía bên kia nêu tên một bên khác cung cấp thứ tương tự, hoặc so sánh chúng ta với họ. |
 
 ## Chỉ dẫn {#instructions}
 
@@ -65,3 +73,96 @@ Những điều cần chú ý, được tìm thấy trong cuộc trò chuyện k
 ## Mặc định {#defaults}
 
 **Khôi phục mặc định** đưa mọi từ điển về như khi đi kèm chương trình, bằng ngôn ngữ giao diện hiện tại. Những gì các cuộc trò chuyện của bạn đã được xếp vào thì được giữ nguyên.
+
+## Định dạng câu trả lời {#response-formats}
+
+Các khối này giữ nguyên hướng dẫn có sẵn. Chúng mô tả định dạng câu trả lời; các lựa chọn thay thế là cách ký hiệu, không phải ví dụ JSON có thể thực thi.
+
+### Văn xuôi (`shape-plain`) {#shape-plain}
+
+```text
+Hãy trả lời bằng văn xuôi thường. Đừng dùng JSON, danh sách hay tiêu đề.
+```
+
+### Các mục (`shape-list`) {#shape-list}
+
+```text
+Chỉ trả lời bằng JSON, đúng theo hình thức này:
+{"items": [{"text": "việc cần làm", "owner": "ai, hoặc để trống", "due": "khi nào, hoặc để trống"}]}
+Khi không có gì để liệt kê, hãy dùng mảng rỗng. Đừng viết gì ngoài JSON.
+```
+
+### Nhãn (`shape-labels`) {#shape-labels}
+
+```text
+Chỉ trả lời bằng JSON, đúng theo hình thức này:
+{"labels": [{"code": "một mã trong danh sách được đưa cho bạn", "confidence": 0.0}]}
+Chỉ dùng các mã trong danh sách. Khi không mã nào hợp, hãy dùng mảng rỗng.
+Đừng bịa ra mã, và đừng viết gì ngoài JSON.
+```
+
+### Điểm số (`shape-score`) {#shape-score}
+
+```text
+Chỉ trả lời bằng JSON, đúng theo hình thức này:
+{"score": 3, "rationale": "vì sao là con số đó chứ không phải cao hơn một bậc",
+ "evidence": [{"at_ms": 0, "quote": "những lời làm căn cứ"}]}
+Điểm số là một số nguyên từ 1 đến 5. Đừng viết gì ngoài JSON.
+```
+
+### Tiêu chí (`shape-rubric`) {#shape-rubric}
+
+```text
+Chỉ trả lời bằng JSON, đúng theo hình thức này:
+{"overall": 3, "rationale": "vì sao là con số đó chứ không phải cao hơn một bậc",
+ "criteria": [{"name": "tiêu chí đúng như được đưa cho bạn",
+               "verdict": "pass" hoặc "weak" hoặc "fail" hoặc "n/a",
+               "note": "một câu"}]}
+Hãy xét mọi tiêu chí được đưa cho bạn và không xét cái nào khác. Điểm chung là
+một số nguyên từ 1 đến 5. Đừng viết gì ngoài JSON.
+```
+
+### Dấu hiệu (`shape-flags`) {#shape-flags}
+
+```text
+Chỉ trả lời bằng JSON, đúng theo hình thức này:
+{"flags": [{"code": "một mã trong danh sách được đưa cho bạn",
+            "severity": "low" hoặc "medium" hoặc "high",
+            "evidence": "những lời làm căn cứ",
+            "at_ms": 0}]}
+Chỉ dùng các mã trong danh sách, và nêu mỗi mã nhiều nhất một lần. Khi không có
+gì hợp, hãy dùng mảng rỗng. Đừng viết gì ngoài JSON.
+```
+
+### Câu trả lời (`shape-qa`) {#shape-qa}
+
+```text
+Chỉ trả lời bằng JSON, đúng theo hình thức này:
+{"answer": "câu trả lời của bạn, hoặc nói thẳng là cuộc trò chuyện không cho biết",
+ "citations": [{"at_ms": 0, "quote": "những lời mà câu trả lời dựa vào"}]}
+Đừng trả lời từ bất cứ đâu ngoài cuộc trò chuyện. Đừng viết gì ngoài JSON.
+```
+
+### JSON (`shape-json`) {#shape-json}
+
+```text
+Chỉ trả lời bằng JSON, theo hình thức đã nêu ở trên. Đừng viết gì ngoài JSON.
+```
+
+### Theo ngôn ngữ đã nói (`language-as-spoken`) {#language-as-spoken}
+
+```text
+Hãy viết câu trả lời bằng đúng ngôn ngữ của cuộc trò chuyện.
+```
+
+### Theo ngôn ngữ đã nói, có nêu tên (`language-as-spoken-named`) {#language-as-spoken-named}
+
+```text
+Hãy viết câu trả lời bằng đúng ngôn ngữ của cuộc trò chuyện, tức là {language}.
+```
+
+### Một ngôn ngữ được nêu (`language-named`) {#language-named}
+
+```text
+Hãy viết câu trả lời bằng ngôn ngữ này: {language}.
+```

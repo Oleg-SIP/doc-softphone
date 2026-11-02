@@ -32,16 +32,16 @@ Los modelos que leen una transcripción y escriben sobre ella. Pulse **Añadir**
 
 *Lo que se ejecuta solo, en este orden. Cada una se dispara como mucho una vez por conversación.* Una regla es una línea con una casilla que la enciende o la apaga, su nombre y, debajo, lo que hace. **▲** y **▼** cambian el orden. El programa trae ocho:
 
-| Regla | Hace | Cuándo |
-| --- | --- | --- |
-| **Transcribir cada conversación** | La transcribe. | siempre |
-| **Resumirla** | Pide a un modelo: **Resumen**. | siempre |
-| **Reducirla a una línea** | Pide a un modelo: **Resumen de una línea**. | siempre |
-| **Clasificarla en una categoría** | Pide a un modelo: **Categoría**. | siempre |
-| **Etiquetarla** | Pide a un modelo: **Etiquetas**. | siempre |
-| **Señalar lo que merezca un vistazo** | Pide a un modelo: **Señales**. | siempre |
-| **Evaluarla, si fue una venta** | Pide a un modelo: **Calidad comercial**. | solo si la categoría es **Ventas** |
-| **Evaluarla, si fue soporte** | Pide a un modelo: **Calidad del soporte**. | solo si la categoría es **Soporte** |
+| Regla | `code` | Hace | `prompt` | Cuándo |
+| --- | --- | --- | --- | --- |
+| **Transcribir cada conversación** | `transcribe` | La transcribe. | — | siempre |
+| **Resumirla** | `summary` | Pide a un modelo: **Resumen**. | `summary` | siempre |
+| **Reducirla a una línea** | `super-summary` | Pide a un modelo: **Resumen de una línea**. | `super-summary` | siempre |
+| **Clasificarla en una categoría** | `categorise` | Pide a un modelo: **Categoría**. | `categorise` | siempre |
+| **Etiquetarla** | `tags` | Pide a un modelo: **Etiquetas**. | `tags` | siempre |
+| **Señalar lo que merezca un vistazo** | `red-flags` | Pide a un modelo: **Señales**. | `red-flags` | siempre |
+| **Evaluarla, si fue una venta** | `sales-quality` | Pide a un modelo: **Calidad comercial**. | `sales-quality` | solo si la categoría es **Ventas** |
+| **Evaluarla, si fue soporte** | `support-quality` | Pide a un modelo: **Calidad del soporte**. | `support-quality` | solo si la categoría es **Soporte** |
 
 El orden importa: las dos últimas reglas necesitan la categoría que ha puesto la regla anterior. **Añadir** crea una regla propia.
 
@@ -63,3 +63,13 @@ Hay dos límites porque un mes puede medirse en dos cosas. Ambos están vacíos 
 **Restaurar los valores por defecto** devuelve las instrucciones y las reglas a como venían con el programa, en el idioma actual de la interfaz. Sus modelos de lenguaje no se tocan.
 
 Las instrucciones y las reglas que venían con el programa se quedan en el idioma en que estaban cuando cambia el idioma de la interfaz; **Restaurar los valores por defecto** las pasa al nuevo. Cada instrucción queda entonces marcada como *cambiada* a la derecha.
+
+## Ejecución predeterminada {#default-execution}
+
+Ejecute `summary` antes de `super-summary`, que utiliza `{{artifact:summary}}`. Ejecute `categorise` antes de evaluar la calidad: `sales-quality` requiere `sales`, y `support-quality` requiere `support`.
+
+No hay reglas automáticas predeterminadas para `action-items`, `topics`, `entities` ni `qa`. Ejecute el prompt manualmente o añada una regla adecuada; introduzca la pregunta al ejecutar `qa`.
+
+El conjunto predeterminado se guarda al usar la aplicación por primera vez. Editar un archivo Markdown exportado no cambia la aplicación: edite la ficha del prompt o restaure los valores predeterminados.
+
+[Textos de los prompts predeterminados](prompt-studio.md#standard-templates)

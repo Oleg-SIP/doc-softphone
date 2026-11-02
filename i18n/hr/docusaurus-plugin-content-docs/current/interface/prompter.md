@@ -60,3 +60,16 @@ Prozor u retku ispod gumba kaže što nedostaje.
 | *Prepoznavač nije počeo slušati. Provjerite njegovu adresu u živo i model u Postavke → Prijepis.* | Adresa za šaptača, model ili ključ nisu ispravni. **Provjeri** na kartici prepoznavača kaže što točno. |
 | *Mjesečni iznos za prepoznavače je potrošen.* | Povećajte **Prepoznavači, mjesečno** ili pričekajte novi mjesec. |
 | *Mjesečni iznos za modele je potrošen. Riječi idu dalje; šaptanje je stalo.* | Povećajte **Modeli, mjesečno**. |
+
+## Ugrađeni pomoćnici {#standard-assistants}
+
+| `code` | Ugrađeni pomoćnici |
+| --- | --- |
+| `rt-subtitles` | Titlovi |
+| `rt-translate` | Prijevod |
+| `rt-objections` | Prodaja |
+| `rt-interview` | Pomoć na razgovoru |
+
+Ovo su ugrađeni nazivi pomoćnika; snimke zaslona mogu prikazivati prijašnje nazive. „—” iz `rt-objections` znači da nema korisnog prijedloga. Upute obuhvaćaju i neodgovorena pitanja te spremnost na kupnju.
+
+[Standardni tekstovi upita](../ai-processing/prompter.md#assistant-templates)

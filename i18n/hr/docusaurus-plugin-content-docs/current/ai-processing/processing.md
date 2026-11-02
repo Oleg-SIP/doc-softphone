@@ -32,16 +32,16 @@ Modeli koji čitaju prijepis i pišu o njemu. Pritisnite **Dodaj** da dodate jed
 
 *Ono što radi samo, ovim redom. Svako se okida najviše jednom po razgovoru.* Pravilo je redak s potvrdnim okvirom koji ga uključuje ili isključuje, njegovim nazivom, a ispod njega s onim što radi. **▲** i **▼** mijenjaju redoslijed. Program dolazi s osam:
 
-| Pravilo | Što radi | Kada |
-| --- | --- | --- |
-| **Prepiši svaki razgovor** | Prepisuje ga. | uvijek |
-| **Sažmi ga** | Pita model: **Sažetak**. | uvijek |
-| **Svedi ga na jedan redak** | Pita model: **Sažetak u jednom retku**. | uvijek |
-| **Svrstaj ga u kategoriju** | Pita model: **Kategorija**. | uvijek |
-| **Označi ga** | Pita model: **Oznake**. | uvijek |
-| **Podigni ono što zaslužuje pogled** | Pita model: **Upozoravajući signali**. | uvijek |
-| **Prosudi ga, ako je bila prodaja** | Pita model: **Kvaliteta prodaje**. | samo ako je kategorija **Prodaja** |
-| **Prosudi ga, ako je bila podrška** | Pita model: **Kvaliteta podrške**. | samo ako je kategorija **Podrška** |
+| Pravilo | `code` | Što radi | `prompt` | Kada |
+| --- | --- | --- | --- | --- |
+| **Prepiši svaki razgovor** | `transcribe` | Prepisuje ga. | — | uvijek |
+| **Sažmi ga** | `summary` | Pita model: **Sažetak**. | `summary` | uvijek |
+| **Svedi ga na jedan redak** | `super-summary` | Pita model: **Sažetak u jednom retku**. | `super-summary` | uvijek |
+| **Svrstaj ga u kategoriju** | `categorise` | Pita model: **Kategorija**. | `categorise` | uvijek |
+| **Označi ga** | `tags` | Pita model: **Oznake**. | `tags` | uvijek |
+| **Podigni ono što zaslužuje pogled** | `red-flags` | Pita model: **Upozoravajući signali**. | `red-flags` | uvijek |
+| **Prosudi ga, ako je bila prodaja** | `sales-quality` | Pita model: **Kvaliteta prodaje**. | `sales-quality` | samo ako je kategorija **Prodaja** |
+| **Prosudi ga, ako je bila podrška** | `support-quality` | Pita model: **Kvaliteta podrške**. | `support-quality` | samo ako je kategorija **Podrška** |
 
 Redoslijed je važan: zadnja dva pravila trebaju kategoriju koju je postavilo pravilo prije njih. **Dodaj** stvara vlastito pravilo.
 
@@ -63,3 +63,13 @@ Granice su dvije jer se mjesec može brojati u dvije stvari. Obje su prazne dok 
 **Vrati zadano** vraća upute i pravila kakvi su došli s programom, na trenutnom jeziku sučelja. Vaši jezični modeli ostaju netaknuti.
 
 Upute i pravila koji su došli s programom ostaju na jeziku na kojem su bili kad promijenite jezik sučelja; **Vrati zadano** prenosi ih na novi. Svaka je uputa tada desno označena kao *promijenjeno*.
+
+## Zadano izvršavanje {#default-execution}
+
+Pokrenite `summary` prije `super-summary`, koji koristi `{{artifact:summary}}`. Pokrenite `categorise` prije procjene kvalitete: `sales-quality` zahtijeva kategoriju `sales`, a `support-quality` kategoriju `support`.
+
+Za `action-items`, `topics`, `entities` i `qa` nema zadanih automatskih pravila. Pokrenite upit ručno ili dodajte odgovarajuće pravilo; pri pokretanju `qa` unesite pitanje.
+
+Zadani skup sprema se pri prvoj uporabi. Uređivanje Markdown izvoza ne mijenja aplikaciju: uredite karticu upita ili vratite zadane postavke.
+
+[Standardni tekstovi upita](prompt-studio.md#standard-templates)

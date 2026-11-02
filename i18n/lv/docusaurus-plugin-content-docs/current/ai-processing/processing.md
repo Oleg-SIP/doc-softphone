@@ -32,16 +32,16 @@ Modeļi, kas lasa atšifrējumu un raksta par to. Nospiediet **Pievienot**, lai 
 
 *Tas, kas darbojas pats, šādā secībā. Katrs iedarbojas ne vairāk kā reizi sarunā.* Kārtula ir rinda ar izvēles rūtiņu, kas to ieslēdz vai izslēdz, tās nosaukumu un zem tā — ko tā dara. **▲** un **▼** maina secību. Programmai līdzi nāk astoņas:
 
-| Kārtula | Ko dara | Kad |
-| --- | --- | --- |
-| **Atšifrēt katru sarunu** | Atšifrē to. | vienmēr |
-| **Apkopot to** | Prasa modelim: **Kopsavilkums**. | vienmēr |
-| **Sašaurināt to līdz vienai rindai** | Prasa modelim: **Kopsavilkums vienā rindā**. | vienmēr |
-| **Iedalīt to kategorijā** | Prasa modelim: **Kategorija**. | vienmēr |
-| **Apzīmēt to** | Prasa modelim: **Birkas**. | vienmēr |
-| **Izcelt to, kas vērts ieskata** | Prasa modelim: **Brīdinājuma signāli**. | vienmēr |
-| **Novērtēt to, ja bija pārdošana** | Prasa modelim: **Pārdošanas kvalitāte**. | tikai ja kategorija ir **Pārdošana** |
-| **Novērtēt to, ja bija atbalsts** | Prasa modelim: **Atbalsta kvalitāte**. | tikai ja kategorija ir **Atbalsts** |
+| Kārtula | `code` | Ko dara | `prompt` | Kad |
+| --- | --- | --- | --- | --- |
+| **Atšifrēt katru sarunu** | `transcribe` | Atšifrē to. | — | vienmēr |
+| **Apkopot to** | `summary` | Prasa modelim: **Kopsavilkums**. | `summary` | vienmēr |
+| **Sašaurināt to līdz vienai rindai** | `super-summary` | Prasa modelim: **Kopsavilkums vienā rindā**. | `super-summary` | vienmēr |
+| **Iedalīt to kategorijā** | `categorise` | Prasa modelim: **Kategorija**. | `categorise` | vienmēr |
+| **Apzīmēt to** | `tags` | Prasa modelim: **Birkas**. | `tags` | vienmēr |
+| **Izcelt to, kas vērts ieskata** | `red-flags` | Prasa modelim: **Brīdinājuma signāli**. | `red-flags` | vienmēr |
+| **Novērtēt to, ja bija pārdošana** | `sales-quality` | Prasa modelim: **Pārdošanas kvalitāte**. | `sales-quality` | tikai ja kategorija ir **Pārdošana** |
+| **Novērtēt to, ja bija atbalsts** | `support-quality` | Prasa modelim: **Atbalsta kvalitāte**. | `support-quality` | tikai ja kategorija ir **Atbalsts** |
 
 Secībai ir nozīme: abām pēdējām kārtulām vajadzīga kategorija, ko iestatījusi iepriekšējā kārtula. **Pievienot** izveido jūsu kārtulu.
 
@@ -63,3 +63,13 @@ Robežas ir divas, jo mēnesi var mērīt divās vienībās. Abas ir tukšas, l�
 **Atjaunot noklusējumus** atjauno norādījumus un kārtulas tādus, kādi tie nāca kopā ar programmu, pašreizējā saskarnes valodā. Jūsu valodas modeļi netiek skarti.
 
 Kopā ar programmu nākušie norādījumi un kārtulas paliek valodā, kurā tie bija, kad maināt saskarnes valodu; **Atjaunot noklusējumus** tos pārnes jaunajā valodā. Tad katrs norādījums labajā pusē tiek atzīmēts kā *mainīts*.
+
+## Noklusējuma izpilde {#default-execution}
+
+Izpildiet `summary` pirms `super-summary`, kas izmanto `{{artifact:summary}}`. Izpildiet `categorise` pirms kvalitātes vērtēšanas: `sales-quality` vajag kategoriju `sales`, bet `support-quality` — `support`.
+
+Uzvednēm `action-items`, `topics`, `entities` un `qa` nav noklusējuma automātisko noteikumu. Palaidiet uzvedni manuāli vai pievienojiet atbilstošu noteikumu; palaižot `qa`, ievadiet jautājumu.
+
+Noklusējuma kopa tiek saglabāta pirmajā lietošanas reizē. Markdown eksporta rediģēšana nemaina lietotni: rediģējiet uzvednes kartīti vai atjaunojiet noklusējuma vērtības.
+
+[Noklusējuma uzvedņu teksti](prompt-studio.md#standard-templates)

@@ -32,3 +32,7 @@ description: "Les termes de la téléphonie IP et d'AI Softphone employés dans 
 | **Transcription** | Une conversation sous forme de texte, réplique par réplique, en phase avec l'audio. |
 | **Webhook** | Une requête que le téléphone envoie à un autre système quand un appel commence, change ou se termine. Voir [Webhooks](/integration/webhooks). |
 | **Large bande** | Un codec qui transmet une gamme de sons plus large qu'une ligne téléphonique, de sorte que la voix est plus claire. |
+| **[Variable de substitution](ai-processing/prompt-studio.md#placeholders)** | Un élément du prompt remplacé par les données de la conversation. |
+| **[Résultat d’un autre prompt](ai-processing/processing.md#default-execution)** | Un résultat existant réutilisé par un autre prompt, par exemple `{{artifact:summary}}`. |
+| **[Rôle du modèle](ai-processing/prompt-studio.md#role-and-task)** | `system` définit le comportement du modèle ; `body` décrit la tâche. La forme et la langue de réponse sont précisées séparément par les instructions des répertoires. |
+| **[Forme de réponse](ai-processing/dictionaries.md#response-formats)** | La structure du résultat : prose, éléments, étiquettes, alertes ou grille de critères. |

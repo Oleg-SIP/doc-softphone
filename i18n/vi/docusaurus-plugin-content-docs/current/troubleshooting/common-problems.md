@@ -125,3 +125,21 @@ Khi điều gì đó không xảy ra, điện thoại cho biết lý do trên m�
 ### Khi điện thoại khởi động {#when-the-phone-starts}
 
 *Không đọc được cơ sở dữ liệu* nghĩa là cơ sở dữ liệu được tạo bởi một phiên bản khác của chương trình và phiên bản này không đọc được. Thường là một phiên bản cũ hơn đã được chạy trên dữ liệu của phiên bản mới hơn: cài lại phiên bản mới hơn sẽ mở cơ sở dữ liệu như cũ. **Bắt đầu lại** thì ngược lại, tạo một cơ sở dữ liệu trống — mọi liên hệ và mọi cuộc gọi trong lịch sử đều mất, và không thể hoàn tác. Trước khi bấm, bạn có thể giữ một bản sao của tệp cơ sở dữ liệu; [Chẩn đoán](/troubleshooting/diagnostics#files) cho biết tệp nằm ở đâu.
+
+## Thực thi mặc định {#default-prompt-execution}
+
+Không có quy tắc tự động mặc định cho `action-items`, `topics`, `entities` hoặc `qa`. Hãy chạy lời nhắc thủ công hoặc thêm quy tắc phù hợp; nhập câu hỏi khi chạy `qa`.
+
+Chạy `summary` trước `super-summary`, vì lời nhắc sau sử dụng `{{artifact:summary}}`. Chạy `categorise` trước khi đánh giá chất lượng: `sales-quality` yêu cầu phân loại `sales`, còn `support-quality` yêu cầu `support`.
+
+[Thực thi mặc định](../ai-processing/processing.md#default-execution)
+
+## Hiểu kết quả {#prompt-result-notes}
+
+Danh sách nhiệm vụ hoặc cảnh báo trống có thể là kết quả đúng. Không được tự đặt người phụ trách hoặc thời hạn còn thiếu. Câu trả lời phải chỉ dựa trên bản chép lời.
+
+Đây là tên các trợ lý có sẵn; ảnh chụp màn hình có thể hiển thị tên cũ. “—” từ `rt-objections` nghĩa là không có gợi ý hữu ích. Hướng dẫn cũng bao gồm câu hỏi chưa được trả lời và dấu hiệu sẵn sàng mua.
+
+Bộ mặc định được lưu trong lần sử dụng đầu tiên. Chỉnh sửa bản xuất Markdown không thay đổi ứng dụng: hãy sửa thẻ lời nhắc hoặc khôi phục mặc định.
+
+[Nội dung lời nhắc mặc định](../ai-processing/prompt-studio.md#standard-templates) · [Trợ lý có sẵn](../ai-processing/prompter.md#assistant-templates)

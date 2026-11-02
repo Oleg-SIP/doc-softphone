@@ -32,16 +32,16 @@ Os modelos que leem uma transcrição e escrevem sobre ela. Carregue em **Adicio
 
 *O que corre sozinho, por esta ordem. Cada uma dispara no máximo uma vez por conversa.* Uma regra é uma linha com uma caixa que a liga ou desliga, o seu nome e, por baixo, o que faz. **▲** e **▼** mudam a ordem. O programa traz oito:
 
-| Regra | Faz | Quando |
-| --- | --- | --- |
-| **Transcrever todas as conversas** | Transcreve-a. | sempre |
-| **Resumi-la** | Pede a um modelo: **Resumo**. | sempre |
-| **Reduzi-la a uma linha** | Pede a um modelo: **Resumo de uma linha**. | sempre |
-| **Arrumá-la numa categoria** | Pede a um modelo: **Categoria**. | sempre |
-| **Etiquetá-la** | Pede a um modelo: **Etiquetas**. | sempre |
-| **Levantar o que merecer um olhar** | Pede a um modelo: **Sinais**. | sempre |
-| **Avaliá-la, se foi uma venda** | Pede a um modelo: **Qualidade comercial**. | só se a categoria for **Vendas** |
-| **Avaliá-la, se foi apoio** | Pede a um modelo: **Qualidade do apoio**. | só se a categoria for **Apoio** |
+| Regra | `code` | Faz | `prompt` | Quando |
+| --- | --- | --- | --- | --- |
+| **Transcrever todas as conversas** | `transcribe` | Transcreve-a. | — | sempre |
+| **Resumi-la** | `summary` | Pede a um modelo: **Resumo**. | `summary` | sempre |
+| **Reduzi-la a uma linha** | `super-summary` | Pede a um modelo: **Resumo de uma linha**. | `super-summary` | sempre |
+| **Arrumá-la numa categoria** | `categorise` | Pede a um modelo: **Categoria**. | `categorise` | sempre |
+| **Etiquetá-la** | `tags` | Pede a um modelo: **Etiquetas**. | `tags` | sempre |
+| **Levantar o que merecer um olhar** | `red-flags` | Pede a um modelo: **Sinais**. | `red-flags` | sempre |
+| **Avaliá-la, se foi uma venda** | `sales-quality` | Pede a um modelo: **Qualidade comercial**. | `sales-quality` | só se a categoria for **Vendas** |
+| **Avaliá-la, se foi apoio** | `support-quality` | Pede a um modelo: **Qualidade do apoio**. | `support-quality` | só se a categoria for **Apoio** |
 
 A ordem importa: as duas últimas regras precisam da categoria que a regra anterior definiu. **Adicionar** cria uma regra sua.
 
@@ -63,3 +63,13 @@ Há dois limites porque um mês pode ser contado em duas coisas. Ambos estão va
 **Repor os valores por omissão** volta a pôr as instruções e as regras como vieram com o programa, na língua atual da interface. Os seus modelos de língua não são tocados.
 
 As instruções e as regras que vieram com o programa ficam na língua em que estavam quando muda a língua da interface; **Repor os valores por omissão** passa-as para a nova. Cada instrução fica então marcada como *mudada* à direita.
+
+## Execução predefinida {#default-execution}
+
+Execute `summary` antes de `super-summary`, que usa `{{artifact:summary}}`. Execute `categorise` antes da avaliação: `sales-quality` exige `sales`, e `support-quality` exige `support`.
+
+Não existem regras automáticas predefinidas para `action-items`, `topics`, `entities` ou `qa`. Execute o prompt manualmente ou adicione uma regra adequada; introduza a pergunta ao executar `qa`.
+
+O conjunto predefinido é guardado na primeira utilização. Editar uma exportação Markdown não altera a aplicação: edite a ficha do prompt ou reponha as predefinições.
+
+[Textos dos prompts predefinidos](prompt-studio.md#standard-templates)
